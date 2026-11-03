@@ -1,0 +1,187 @@
+{
+  "status": "success",
+  "usage": {
+    "input_tokens": 7524,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2081,
+    "reasoning_tokens": null
+  },
+  "cost_usd": 0.089645,
+  "output": {
+    "item_id": "E-RES-617",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Turn the abstract topic into a bounded Bareni workflow decision. Explain one practical next step."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Sound like a technical expert using plain language: direct, calm, practical,\nfounder-to-founder, and trustworthy."
+          }
+        ],
+        "rationale": "This is a drafting instruction for how to open the post and frame the topic, not an assertion of a current Bareni capability or observed result. The framing as a workflow decision point matches the approved task and persona focus.",
+        "use_guidance": "Keep as an explicitly proposed opening frame. Explain \"spot check\" in plain terms on first use, present the scaling limitation as reasoning rather than as a measured finding, and do not attach any customer example or observed frequency."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Practicality: explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step."
+          },
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI\n  fits"
+          }
+        ],
+        "rationale": "Supplying a diagnostic question the owner can ask themselves is a permissible instruction/recommendation, not a factual claim about Bareni's implementation or about market behaviour. The persona focus explicitly allows one diagnostic question.",
+        "use_guidance": "Keep explicitly as a question the reader can ask about their own workflow. Present the conditions (low volume, high exception rate, high cost of a false pass) as reasoning, not as a validated rule or benchmark, and do not add any statistic about typical small-business volumes."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "FORBIDDEN",
+        "evidence": [
+          {
+            "source_id": "C05",
+            "quote": "Numbers require a source and status. Keep observed results, estimates, targets,\n  synthetic data, and examples distinct. Never invent a benchmark, guarantee, ROI,\n  saving, revenue lift, productivity result, or thesis-validated capability."
+          },
+          {
+            "source_id": "C03",
+            "quote": "Three-way matching against purchase orders and receipts is not built."
+          }
+        ],
+        "rationale": "The specific numeric boundary (\"more than ~10–15 items per week\", \"failure rate is <5%\") is an invented threshold with no source or status in approved evidence, and it functions as a benchmark for when automation replaces a check. The added implication that AI extraction can replace the check also outruns disclosed limits (for example, PDF/scan ingestion and OCR are not implemented; three-way matching is not built).",
+        "use_guidance": "Exclude the invented 10–15 per week and <5% figures. If a boundary is needed, use the separately supported approach in Q02 and Q05: have the owner measure their own volume and failure rate for one week and discuss the result, without publishing any numeric cut-off as a Bareni rule."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI\n  fits"
+          },
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "S01",
+            "quote": "Do not force AI where it is unsuitable."
+          }
+        ],
+        "rationale": "This is an instruction to state honestly where automation does not fit and to keep human judgment in place. It recommends restraint rather than asserting a current fact or capability, and it aligns with the human-approval boundary.",
+        "use_guidance": "Keep explicitly proposed. Frame declined areas as current scope discipline rather than as work that can never be automated, avoid legal advice, and retain the point that human approval remains mandatory for money movement and other high-risk decisions."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Practicality: explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step."
+          },
+          {
+            "source_id": "C03",
+            "quote": "Self-built demo using entirely synthetic data for a fictional German\n  manufacturer."
+          },
+          {
+            "source_id": "C04",
+            "quote": "Bareni currently declines high-sensitivity medical, legal, and financial work;\n  bulk cold-email automation; scan-heavy OCR-dependent workflows"
+          }
+        ],
+        "rationale": "The core next step — measure volume and failure rate for one week on one repeatable workflow — is a permissible manual instruction, but the claim's final sentence asserts that the resulting number decides automation versus optimisation, which presents a single measurement as a sufficient decision rule. The example workflows also need a boundary so invoice review is not read as a working end-to-end capability.",
+        "use_guidance": "Add the qualification that the one-week count is an input to a judgement, not an automatic decision rule, and that the examples are illustrative workflow types rather than deployed Bareni systems. Note that scan-heavy or OCR-dependent invoice handling is currently out of scope. Then the manual measurement step can be used."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "CTA rule:** None."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Informational posts use no CTA or one soft closing sentence."
+          },
+          {
+            "source_id": "C02",
+            "quote": "Normal sequence: free 30-minute diagnostic; free one-page pilot proposal;"
+          }
+        ],
+        "rationale": "A soft closing sentence is permitted, but the claim as written describes a \"diagnostic offer\" and a 30-minute conversation, which reads as the standard primary CTA that this task forbids. The core (a restrained closing) is supportable only once the offer framing is removed.",
+        "use_guidance": "Add the condition that no CTA wording is used: drop \"diagnostic offer\" and any \"Book a free 30-minute diagnostic\" phrasing, and close with at most one soft, non-promotional sentence. Do not imply scarcity, urgency, or a scheduled call."
+      }
+    ]
+  },
+  "raw_text": "{\"item_id\":\"E-RES-617\",\"ledger\":[{\"claim_id\":\"Q01\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"S01\",\"quote\":\"Turn the abstract topic into a bounded Bareni workflow decision. Explain one practical next step.\"},{\"source_id\":\"C05\",\"quote\":\"Sound like a technical expert using plain language: direct, calm, practical,\\nfounder-to-founder, and trustworthy.\"}],\"rationale\":\"This is a drafting instruction for how to open the post and frame the topic, not an assertion of a current Bareni capability or observed result. The framing as a workflow decision point matches the approved task and persona focus.\",\"use_guidance\":\"Keep as an explicitly proposed opening frame. Explain \\\"spot check\\\" in plain terms on first use, present the scaling limitation as reasoning rather than as a measured finding, and do not attach any customer example or observed frequency.\"},{\"claim_id\":\"Q02\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"S01\",\"quote\":\"Practicality: explain one observable workflow decision, threshold, diagnostic question,\\n  control, or next step.\"},{\"source_id\":\"C02\",\"quote\":\"The diagnostic identifies the one recurring workflow, says honestly whether AI\\n  fits\"}],\"rationale\":\"Supplying a diagnostic question the owner can ask themselves is a permissible instruction/recommendation, not a factual claim about Bareni's implementation or about market behaviour. The persona focus explicitly allows one diagnostic question.\",\"use_guidance\":\"Keep explicitly as a question the reader can ask about their own workflow. Present the conditions (low volume, high exception rate, high cost of a false pass) as reasoning, not as a validated rule or benchmark, and do not add any statistic about typical small-business volumes.\"},{\"claim_id\":\"Q03\",\"category\":\"FORBIDDEN\",\"evidence\":[{\"source_id\":\"C05\",\"quote\":\"Numbers require a source and status. Keep observed results, estimates, targets,\\n  synthetic data, and examples distinct. Never invent a benchmark, guarantee, ROI,\\n  saving, revenue lift, productivity result, or thesis-validated capability.\"},{\"source_id\":\"C03\",\"quote\":\"Three-way matching against purchase orders and receipts is not built.\"}],\"rationale\":\"The specific numeric boundary (\\\"more than ~10–15 items per week\\\", \\\"failure rate is <5%\\\") is an invented threshold with no source or status in approved evidence, and it functions as a benchmark for when automation replaces a check. The added implication that AI extraction can replace the check also outruns disclosed limits (for example, PDF/scan ingestion and OCR are not implemented; three-way matching is not built).\",\"use_guidance\":\"Exclude the invented 10–15 per week and <5% figures. If a boundary is needed, use the separately supported approach in Q02 and Q05: have the owner measure their own volume and failure rate for one week and discuss the result, without publishing any numeric cut-off as a Bareni rule.\"},{\"claim_id\":\"Q04\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C02\",\"quote\":\"The diagnostic identifies the one recurring workflow, says honestly whether AI\\n  fits\"},{\"source_id\":\"C04\",\"quote\":\"Human approval is mandatory for money movement and other high-risk decisions.\"},{\"source_id\":\"S01\",\"quote\":\"Do not force AI where it is unsuitable.\"}],\"rationale\":\"This is an instruction to state honestly where automation does not fit and to keep human judgment in place. It recommends restraint rather than asserting a current fact or capability, and it aligns with the human-approval boundary.\",\"use_guidance\":\"Keep explicitly proposed. Frame declined areas as current scope discipline rather than as work that can never be automated, avoid legal advice, and retain the point that human approval remains mandatory for money movement and other high-risk decisions.\"},{\"claim_id\":\"Q05\",\"category\":\"QUALIFICATIONS\",\"evidence\":[{\"source_id\":\"S01\",\"quote\":\"Practicality: explain one observable workflow decision, threshold, diagnostic question,\\n  control, or next step.\"},{\"source_id\":\"C03\",\"quote\":\"Self-built demo using entirely synthetic data for a fictional German\\n  manufacturer.\"},{\"source_id\":\"C04\",\"quote\":\"Bareni currently declines high-sensitivity medical, legal, and financial work;\\n  bulk cold-email automation; scan-heavy OCR-dependent workflows\"}],\"rationale\":\"The core next step — measure volume and failure rate for one week on one repeatable workflow — is a permissible manual instruction, but the claim's final sentence asserts that the resulting number decides automation versus optimisation, which presents a single measurement as a sufficient decision rule. The example workflows also need a boundary so invoice review is not read as a working end-to-end capability.\",\"use_guidance\":\"Add the qualification that the one-week count is an input to a judgement, not an automatic decision rule, and that the examples are illustrative workflow types rather than deployed Bareni systems. Note that scan-heavy or OCR-dependent invoice handling is currently out of scope. Then the manual measurement step can be used.\"},{\"claim_id\":\"Q06\",\"category\":\"QUALIFICATIONS\",\"evidence\":[{\"source_id\":\"S01\",\"quote\":\"CTA rule:** None.\"},{\"source_id\":\"C05\",\"quote\":\"Informational posts use no CTA or one soft closing sentence.\"},{\"source_id\":\"C02\",\"quote\":\"Normal sequence: free 30-minute diagnostic; free one-page pilot proposal;\"}],\"rationale\":\"A soft closing sentence is permitted, but the claim as written describes a \\\"diagnostic offer\\\" and a 30-minute conversation, which reads as the standard primary CTA that this task forbids. The core (a restrained closing) is supportable only once the offer framing is removed.\",\"use_guidance\":\"Add the condition that no CTA wording is used: drop \\\"diagnostic offer\\\" and any \\\"Book a free 30-minute diagnostic\\\" phrasing, and close with at most one soft, non-promotional sentence. Do not imply scarcity, urgency, or a scheduled call.\"}]}",
+  "provider_response": {
+    "id": "msg_011CeqxaRGQu25iknXuxHk6d",
+    "container": null,
+    "content": [
+      {
+        "citations": null,
+        "text": "{\"item_id\":\"E-RES-617\",\"ledger\":[{\"claim_id\":\"Q01\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"S01\",\"quote\":\"Turn the abstract topic into a bounded Bareni workflow decision. Explain one practical next step.\"},{\"source_id\":\"C05\",\"quote\":\"Sound like a technical expert using plain language: direct, calm, practical,\\nfounder-to-founder, and trustworthy.\"}],\"rationale\":\"This is a drafting instruction for how to open the post and frame the topic, not an assertion of a current Bareni capability or observed result. The framing as a workflow decision point matches the approved task and persona focus.\",\"use_guidance\":\"Keep as an explicitly proposed opening frame. Explain \\\"spot check\\\" in plain terms on first use, present the scaling limitation as reasoning rather than as a measured finding, and do not attach any customer example or observed frequency.\"},{\"claim_id\":\"Q02\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"S01\",\"quote\":\"Practicality: explain one observable workflow decision, threshold, diagnostic question,\\n  control, or next step.\"},{\"source_id\":\"C02\",\"quote\":\"The diagnostic identifies the one recurring workflow, says honestly whether AI\\n  fits\"}],\"rationale\":\"Supplying a diagnostic question the owner can ask themselves is a permissible instruction/recommendation, not a factual claim about Bareni's implementation or about market behaviour. The persona focus explicitly allows one diagnostic question.\",\"use_guidance\":\"Keep explicitly as a question the reader can ask about their own workflow. Present the conditions (low volume, high exception rate, high cost of a false pass) as reasoning, not as a validated rule or benchmark, and do not add any statistic about typical small-business volumes.\"},{\"claim_id\":\"Q03\",\"category\":\"FORBIDDEN\",\"evidence\":[{\"source_id\":\"C05\",\"quote\":\"Numbers require a source and status. Keep observed results, estimates, targets,\\n  synthetic data, and examples distinct. Never invent a benchmark, guarantee, ROI,\\n  saving, revenue lift, productivity result, or thesis-validated capability.\"},{\"source_id\":\"C03\",\"quote\":\"Three-way matching against purchase orders and receipts is not built.\"}],\"rationale\":\"The specific numeric boundary (\\\"more than ~10–15 items per week\\\", \\\"failure rate is <5%\\\") is an invented threshold with no source or status in approved evidence, and it functions as a benchmark for when automation replaces a check. The added implication that AI extraction can replace the check also outruns disclosed limits (for example, PDF/scan ingestion and OCR are not implemented; three-way matching is not built).\",\"use_guidance\":\"Exclude the invented 10–15 per week and <5% figures. If a boundary is needed, use the separately supported approach in Q02 and Q05: have the owner measure their own volume and failure rate for one week and discuss the result, without publishing any numeric cut-off as a Bareni rule.\"},{\"claim_id\":\"Q04\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C02\",\"quote\":\"The diagnostic identifies the one recurring workflow, says honestly whether AI\\n  fits\"},{\"source_id\":\"C04\",\"quote\":\"Human approval is mandatory for money movement and other high-risk decisions.\"},{\"source_id\":\"S01\",\"quote\":\"Do not force AI where it is unsuitable.\"}],\"rationale\":\"This is an instruction to state honestly where automation does not fit and to keep human judgment in place. It recommends restraint rather than asserting a current fact or capability, and it aligns with the human-approval boundary.\",\"use_guidance\":\"Keep explicitly proposed. Frame declined areas as current scope discipline rather than as work that can never be automated, avoid legal advice, and retain the point that human approval remains mandatory for money movement and other high-risk decisions.\"},{\"claim_id\":\"Q05\",\"category\":\"QUALIFICATIONS\",\"evidence\":[{\"source_id\":\"S01\",\"quote\":\"Practicality: explain one observable workflow decision, threshold, diagnostic question,\\n  control, or next step.\"},{\"source_id\":\"C03\",\"quote\":\"Self-built demo using entirely synthetic data for a fictional German\\n  manufacturer.\"},{\"source_id\":\"C04\",\"quote\":\"Bareni currently declines high-sensitivity medical, legal, and financial work;\\n  bulk cold-email automation; scan-heavy OCR-dependent workflows\"}],\"rationale\":\"The core next step — measure volume and failure rate for one week on one repeatable workflow — is a permissible manual instruction, but the claim's final sentence asserts that the resulting number decides automation versus optimisation, which presents a single measurement as a sufficient decision rule. The example workflows also need a boundary so invoice review is not read as a working end-to-end capability.\",\"use_guidance\":\"Add the qualification that the one-week count is an input to a judgement, not an automatic decision rule, and that the examples are illustrative workflow types rather than deployed Bareni systems. Note that scan-heavy or OCR-dependent invoice handling is currently out of scope. Then the manual measurement step can be used.\"},{\"claim_id\":\"Q06\",\"category\":\"QUALIFICATIONS\",\"evidence\":[{\"source_id\":\"S01\",\"quote\":\"CTA rule:** None.\"},{\"source_id\":\"C05\",\"quote\":\"Informational posts use no CTA or one soft closing sentence.\"},{\"source_id\":\"C02\",\"quote\":\"Normal sequence: free 30-minute diagnostic; free one-page pilot proposal;\"}],\"rationale\":\"A soft closing sentence is permitted, but the claim as written describes a \\\"diagnostic offer\\\" and a 30-minute conversation, which reads as the standard primary CTA that this task forbids. The core (a restrained closing) is supportable only once the offer framing is removed.\",\"use_guidance\":\"Add the condition that no CTA wording is used: drop \\\"diagnostic offer\\\" and any \\\"Book a free 30-minute diagnostic\\\" phrasing, and close with at most one soft, non-promotional sentence. Do not imply scarcity, urgency, or a scheduled call.\"}]}",
+        "type": "text"
+      }
+    ],
+    "model": "claude-opus-5",
+    "role": "assistant",
+    "stop_details": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "global",
+      "input_tokens": 7524,
+      "output_tokens": 2081,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": null,
+      "service_tier": "standard"
+    }
+  },
+  "stop_reason": "end_turn",
+  "cost_details": {
+    "input": 0.03762,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.052025,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.089645
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": null,
+  "key": "SE-FINAL-N017_researcher__a001",
+  "role": "researcher",
+  "created_at": "2026-09-08T12:18:17.203392+00:00",
+  "ended_at": "2026-09-08T12:18:47.072234+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-N017",
+    "batch_id": 1,
+    "condition": "natural",
+    "cohort": "natural"
+  },
+  "task_id": "SE-FINAL-N017",
+  "batch_id": 1,
+  "cohort": "natural",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 29863,
+  "budget_charge_usd": 0.089645,
+  "unknown_cost_reservation_usd": 0
+}

@@ -1,0 +1,192 @@
+{
+  "status": "success",
+  "usage": {
+    "input_tokens": 4472,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 842,
+    "reasoning_tokens": null
+  },
+  "cost_usd": 0.008682,
+  "output": {
+    "item_id": "E-PLAN-520",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "Task authorizes no CTA; end with a neutral practical observation on the workflow decision and next step rather than a meeting prompt."
+      },
+      {
+        "lesson_id": "L02",
+        "application": "Bareni's human-approval policy for money movement and high-risk decisions must retain its 'policy' qualifier; do not present it as an absolute warranty."
+      },
+      {
+        "lesson_id": "L03",
+        "application": "The topic 'AI disclosure as a design constraint' requires grounding in concrete workflow terms; use decision-framing and control-definition rather than general background."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Define AI disclosure as a control requirement, not a product feature. Frame it for the owner as: which workflow decisions must be flagged to the customer as AI-assisted, and who (you or the customer) makes the final approval.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C01",
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Map the owner's recurring workflow to a disclosure threshold. Identify the step at which the customer needs to know an AI tool is involved—input flagging, output review, or payment/high-risk approval.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Confirm that human approval stays with the owner (or the owner's team) for all money movement and high-risk decisions. Treat AI as an assistant, not an autonomous agent. Document this in the workflow design.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L02"
+        ],
+        "evidence_ids": [
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Test disclosure clarity in a pilot with one customer segment or workflow task. Ask: does the customer understand where AI helps and where you decide?",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Separate the disclosure UI (badge, label, or prompt) from the automation logic. Keep them independent so policy changes do not require code rewrites.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L02"
+        ],
+        "evidence_ids": [
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Document the disclosure rule once and reuse it across workflows. Make it a checklist item in your pilot proposal and handoff, so every customer knows the boundary from the start.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L02"
+        ],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No invented customers, deployments, results, or sales CTA; steps reference the owner's own workflow and pilot, not external case studies."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Steps P03 and P04 enforce human approval for money movement and high-risk decisions; P02 maps disclosure to decision points where approval is required."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Frozen persona, approved evidence, and human-authority boundaries maintained throughout; steps address workflow design, not strategy or multi-team delivery."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Plain English used; steps distinguish between the owner's current manual practice, the pilot scope, and the disclosure control being designed."
+      }
+    ]
+  },
+  "raw_text": "{\"item_id\": \"E-PLAN-520\", \"selected_lessons\": [{\"lesson_id\": \"L01\", \"application\": \"Task authorizes no CTA; end with a neutral practical observation on the workflow decision and next step rather than a meeting prompt.\"}, {\"lesson_id\": \"L02\", \"application\": \"Bareni's human-approval policy for money movement and high-risk decisions must retain its 'policy' qualifier; do not present it as an absolute warranty.\"}, {\"lesson_id\": \"L03\", \"application\": \"The topic 'AI disclosure as a design constraint' requires grounding in concrete workflow terms; use decision-framing and control-definition rather than general background.\"}], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Define AI disclosure as a control requirement, not a product feature. Frame it for the owner as: which workflow decisions must be flagged to the customer as AI-assisted, and who (you or the customer) makes the final approval.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"C01\", \"C02\", \"C04\"]}, {\"step_id\": \"P02\", \"instruction\": \"Map the owner's recurring workflow to a disclosure threshold. Identify the step at which the customer needs to know an AI tool is involved—input flagging, output review, or payment/high-risk approval.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"C02\", \"C04\"]}, {\"step_id\": \"P03\", \"instruction\": \"Confirm that human approval stays with the owner (or the owner's team) for all money movement and high-risk decisions. Treat AI as an assistant, not an autonomous agent. Document this in the workflow design.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L02\"], \"evidence_ids\": [\"C04\"]}, {\"step_id\": \"P04\", \"instruction\": \"Test disclosure clarity in a pilot with one customer segment or workflow task. Ask: does the customer understand where AI helps and where you decide?\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"C02\", \"C05\"]}, {\"step_id\": \"P05\", \"instruction\": \"Separate the disclosure UI (badge, label, or prompt) from the automation logic. Keep them independent so policy changes do not require code rewrites.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L02\"], \"evidence_ids\": [\"C02\"]}, {\"step_id\": \"P06\", \"instruction\": \"Document the disclosure rule once and reuse it across workflows. Make it a checklist item in your pilot proposal and handoff, so every customer knows the boundary from the start.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L02\"], \"evidence_ids\": [\"C02\", \"C05\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"No invented customers, deployments, results, or sales CTA; steps reference the owner's own workflow and pilot, not external case studies.\"}, {\"constraint_id\": \"K02\", \"handling\": \"Steps P03 and P04 enforce human approval for money movement and high-risk decisions; P02 maps disclosure to decision points where approval is required.\"}, {\"constraint_id\": \"K03\", \"handling\": \"Frozen persona, approved evidence, and human-authority boundaries maintained throughout; steps address workflow design, not strategy or multi-team delivery.\"}, {\"constraint_id\": \"K04\", \"handling\": \"Plain English used; steps distinguish between the owner's current manual practice, the pilot scope, and the disclosure control being designed.\"}]}",
+  "provider_response": {
+    "id": "msg_011Cer34KLU7F9Vaq9YT3NrM",
+    "container": null,
+    "content": [
+      {
+        "citations": null,
+        "text": "{\"item_id\": \"E-PLAN-520\", \"selected_lessons\": [{\"lesson_id\": \"L01\", \"application\": \"Task authorizes no CTA; end with a neutral practical observation on the workflow decision and next step rather than a meeting prompt.\"}, {\"lesson_id\": \"L02\", \"application\": \"Bareni's human-approval policy for money movement and high-risk decisions must retain its 'policy' qualifier; do not present it as an absolute warranty.\"}, {\"lesson_id\": \"L03\", \"application\": \"The topic 'AI disclosure as a design constraint' requires grounding in concrete workflow terms; use decision-framing and control-definition rather than general background.\"}], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Define AI disclosure as a control requirement, not a product feature. Frame it for the owner as: which workflow decisions must be flagged to the customer as AI-assisted, and who (you or the customer) makes the final approval.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"C01\", \"C02\", \"C04\"]}, {\"step_id\": \"P02\", \"instruction\": \"Map the owner's recurring workflow to a disclosure threshold. Identify the step at which the customer needs to know an AI tool is involved—input flagging, output review, or payment/high-risk approval.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"C02\", \"C04\"]}, {\"step_id\": \"P03\", \"instruction\": \"Confirm that human approval stays with the owner (or the owner's team) for all money movement and high-risk decisions. Treat AI as an assistant, not an autonomous agent. Document this in the workflow design.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L02\"], \"evidence_ids\": [\"C04\"]}, {\"step_id\": \"P04\", \"instruction\": \"Test disclosure clarity in a pilot with one customer segment or workflow task. Ask: does the customer understand where AI helps and where you decide?\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"C02\", \"C05\"]}, {\"step_id\": \"P05\", \"instruction\": \"Separate the disclosure UI (badge, label, or prompt) from the automation logic. Keep them independent so policy changes do not require code rewrites.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L02\"], \"evidence_ids\": [\"C02\"]}, {\"step_id\": \"P06\", \"instruction\": \"Document the disclosure rule once and reuse it across workflows. Make it a checklist item in your pilot proposal and handoff, so every customer knows the boundary from the start.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L02\"], \"evidence_ids\": [\"C02\", \"C05\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"No invented customers, deployments, results, or sales CTA; steps reference the owner's own workflow and pilot, not external case studies.\"}, {\"constraint_id\": \"K02\", \"handling\": \"Steps P03 and P04 enforce human approval for money movement and high-risk decisions; P02 maps disclosure to decision points where approval is required.\"}, {\"constraint_id\": \"K03\", \"handling\": \"Frozen persona, approved evidence, and human-authority boundaries maintained throughout; steps address workflow design, not strategy or multi-team delivery.\"}, {\"constraint_id\": \"K04\", \"handling\": \"Plain English used; steps distinguish between the owner's current manual practice, the pilot scope, and the disclosure control being designed.\"}]}",
+        "type": "text"
+      }
+    ],
+    "model": "claude-haiku-4-5-20251001",
+    "role": "assistant",
+    "stop_details": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "not_available",
+      "input_tokens": 4472,
+      "output_tokens": 842,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": "standard"
+    }
+  },
+  "stop_reason": "end_turn",
+  "cost_details": {
+    "input": 0.004472,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.00421,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.008682
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": null,
+  "key": "SE-FINAL-N113_planner__a001",
+  "role": "planner",
+  "created_at": "2026-09-08T13:17:02.898390+00:00",
+  "ended_at": "2026-09-08T13:17:25.057663+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-N113",
+    "batch_id": 4,
+    "condition": "natural",
+    "cohort": "natural"
+  },
+  "task_id": "SE-FINAL-N113",
+  "batch_id": 4,
+  "cohort": "natural",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 22167,
+  "budget_charge_usd": 0.008682,
+  "unknown_cost_reservation_usd": 0
+}

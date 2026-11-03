@@ -1,0 +1,359 @@
+{
+  "task_id": "SE-FINAL-M045",
+  "batch_id": 2,
+  "condition": "unchanged",
+  "source_task_id": "SE-FINAL-N074",
+  "topic": "measuring control comparisons",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-312",
+    "title": "Measure the control, not just the task",
+    "body": "If you are comparing automation with manual work or another hire, start with one recurring workflow and ask a narrower question: where do your controls actually fail today? In a small business, the useful comparison is not “AI or no AI” in the abstract. It is whether a bounded system can enforce the same approval gates, exceptions, and audit trail you already need, without handing over high-risk decisions. Money movement still stays with you. That part should not be negotiable.\n\nA practical next step is to pick one repeatable process, such as invoice review, customer-data entry, or email triage, and map the control points on paper. For each step, note who approves, what gets checked, and what evidence is kept. Then compare that to a simple automation design: can it extract or classify the data, apply the rules, and log exceptions before a human decides? If the answer is no, the workflow may be a bad fit. If the answer is yes, the next decision is usually about control quality, not hype.\n\nThat is the useful comparison: manual-only control versus controlled automation, with the owner still making the final call. The goal is a workflow you can audit, not a clever shortcut that needs supervision anyway. Which recurring process in your business already has a clear paper trail and a repeatable approval rule?"
+  },
+  "final": {
+    "item_id": "E-OPT-412",
+    "title": "Measure the control, not just the task",
+    "body": "If you are comparing automation with manual work or another hire, start with one recurring workflow and ask a narrower question: where do your controls actually fail today? In a small business, the useful comparison is not “AI or no AI” in the abstract. It is whether a bounded system can enforce the same approval gates, exception handling, and audit trail you already need, without handing over high-risk decisions. Money movement still stays with you. That part should not be negotiable.\n\nA practical next step is to pick one repeatable process, such as invoice review, customer-data entry, or email triage, and map the control points on paper. For each step, note who approves, what gets checked, and what evidence is kept. Then compare that to a simple automation design: can it extract or classify the data, apply the rules, and log exceptions before a human decides? If the answer is no, the workflow may be a bad fit. If the answer is yes, the next decision is usually about control quality, not hype.\n\nThat is the useful comparison: manual-only control versus controlled automation, with the owner still making the final call. The goal is a workflow you can audit, not a clever shortcut that needs supervision anyway. If you want a clean diagnostic question, use this one: which recurring workflow already has a clear paper trail and a repeatable approval rule?"
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-045",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-045",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-045-1",
+        "repairs": []
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-045",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-412",
+        "title": "Measure the control, not just the task",
+        "body": "If you are comparing automation with manual work or another hire, start with one recurring workflow and ask a narrower question: where do your controls actually fail today? In a small business, the useful comparison is not “AI or no AI” in the abstract. It is whether a bounded system can enforce the same approval gates, exception handling, and audit trail you already need, without handing over high-risk decisions. Money movement still stays with you. That part should not be negotiable.\n\nA practical next step is to pick one repeatable process, such as invoice review, customer-data entry, or email triage, and map the control points on paper. For each step, note who approves, what gets checked, and what evidence is kept. Then compare that to a simple automation design: can it extract or classify the data, apply the rules, and log exceptions before a human decides? If the answer is no, the workflow may be a bad fit. If the answer is yes, the next decision is usually about control quality, not hype.\n\nThat is the useful comparison: manual-only control versus controlled automation, with the owner still making the final call. The goal is a workflow you can audit, not a clever shortcut that needs supervision anyway. If you want a clean diagnostic question, use this one: which recurring workflow already has a clear paper trail and a repeatable approval rule?"
+      },
+      "gate_key": "SE-FINAL-M045_gate1__a001"
+    }
+  ],
+  "measurement_status": "complete",
+  "planner": {
+    "item_id": "E-PLAN-512",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task forbids a CTA. L01 confirms that diagnostic-booking language counts as a CTA. The post must end with a neutral practical observation or diagnostic question instead, consistent with the 'no CTA' rule in S01 and the informational intent of explaining one workflow decision."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Frame the abstract topic 'measuring control comparisons' as one concrete owner decision: whether to use AI-assisted automation to enforce approval gates and audit trails on a specific recurring workflow (e.g. invoice handling, customer-data entry, or repetitive email triage), in order to compare human-only control costs against bounded automation investment costs.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Define the control boundary: human approval remains mandatory for money movement and high-risk decisions; AI can assist with data extraction, classification, validation, and rule application before presenting a case to the owner for decision.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Explain one observable measurement opportunity: choose a single repeatable workflow (e.g. 'weekly invoice review' or 'daily customer inquiry triage') and measure baseline time cost and error rate under manual-only handling, then specify what audit data (e.g. extraction accuracy, approval time, exception count) a simple automation system would log to enable the owner to compare control effectiveness.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "State the diagnostic question as a practical next step: 'Which of your recurring workflows takes 5–10 hours a month, involves the same decision repeated, and produces a paper or data trail you need to audit?' This helps the owner identify fit before any proposal.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C01",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Close with a neutral observation: acknowledge that automation fits some workflows and not others, and that the owner's authority and approval over any system design and control rules is non-negotiable. Do not include a meeting CTA.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C01",
+          "C02",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Ensure all claims about Bareni remain factual: reference only the three self-built demos and the consulting model (diagnostic, proposal, MVP, pilot, optional retainer) without implying customer outcomes, production billing, or multi-person delivery.",
+        "requirement_ids": [],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C03",
+          "C05",
+          "S01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No invented customers, deployments, results, numbers, capabilities, or team. Use only the consulting practice identity and self-built demo references from C02 and C03. End without a CTA booking language per L01."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Enforce human approval for money movement and high-risk decisions (C04). Keep within current scope: decline high-sensitivity medical, legal, financial work, bulk cold email, and OCR-heavy workflows. Present this as current discipline, not impossibility."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Preserve the frozen persona from S01: plain-speaking technical expert, founder-to-founder, trust over enthusiasm, one restrained humorous phrase maximum, no hype language. Maintain the evidence boundary and human-approval-mandatory positioning."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use plain English throughout. Keep synthetic examples, demos, and consulting model descriptions distinct from customer outcomes or existing deployed capabilities. No numbers without sources; no productivity claims or ROI guarantees."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-612",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Turn the abstract topic into a bounded Bareni workflow decision."
+          },
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits"
+          },
+          {
+            "source_id": "C03",
+            "quote": "Arithmetic checks, duplicate-invoice blocking, amount-based human-only approval, refusal of agent approval/payment attempts, and persistent audit records work."
+          }
+        ],
+        "rationale": "This is a framing instruction for the post, not an assertion that Bareni has performed such a comparison for a customer. Approval gates and audit records exist only in the self-built accounts-payable demo, which supports the framing as a permissible idea.",
+        "use_guidance": "Keep as an explicitly framed decision for the reader. Do not present the comparison as measured or as derived from any customer engagement; any invoice or email example must stay illustrative."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "SUPPORTED",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C03",
+            "quote": "Text-based LLM invoice extraction was verified, while the default demo uses pre-extracted files."
+          },
+          {
+            "source_id": "C03",
+            "quote": "Arithmetic checks, duplicate-invoice blocking, amount-based human-only approval, refusal of agent approval/payment attempts, and persistent audit records work."
+          }
+        ],
+        "rationale": "The control boundary as written matches approved evidence: human approval mandatory for money movement, with AI limited to preparatory extraction, checks and rule application before a human decides. The limitation is already stated in the claim.",
+        "use_guidance": "Retain within scope. Do not extend the assisted steps to scan/PDF OCR ingestion or three-way matching, which are not implemented."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step"
+          },
+          {
+            "source_id": "C03",
+            "quote": "persistent audit records work"
+          },
+          {
+            "source_id": "C02",
+            "quote": "defines pilot scope, fixed price, and measures"
+          }
+        ],
+        "rationale": "This is a proposed measurement approach for the reader to run, phrased conditionally ('would log'), not a report of any baseline, accuracy figure or observed comparison.",
+        "use_guidance": "Keep explicitly proposed and hypothetical. Do not supply example values for time cost, error rate or accuracy, and do not imply Bareni has logged such data for a customer."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "Normal sequence: free 30-minute diagnostic; free one-page pilot proposal;"
+          },
+          {
+            "source_id": "C01",
+            "quote": "The 8–10 hours is a persona scenario, not a market\n  statistic or observed customer result."
+          },
+          {
+            "source_id": "C01",
+            "quote": "have a frequent, repeatable workflow with a\n  measurable outcome"
+          }
+        ],
+        "rationale": "Posing a self-assessment diagnostic question is permissible, but the embedded '5–10 hours a month' threshold is a number with no approved source; the only approved figure is the 8–10 hours per week persona scenario, which is explicitly not a statistic.",
+        "use_guidance": "Before use, replace or mark the hour figure: either drop the numeric threshold or present it as an illustrative persona scenario rather than a measured benchmark. Keep the question as a self-check for the reader, not as an invitation to book a call (no CTA authorised)."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "says honestly whether AI fits"
+          },
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          }
+        ],
+        "rationale": "An instruction for how to close the post with a neutral observation and no meeting prompt; it directs writing rather than asserting a current fact, and it aligns with the approved no-CTA rule and human-authority boundary.",
+        "use_guidance": "Keep as the closing instruction. End with a neutral practical note; no invitation to book, discuss or continue the conversation, and no capacity or scarcity phrasing."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C05",
+            "quote": "Allowed: \"we built\" the three self-built demos/prototype; description of the\n  actual features and disclosed limits"
+          },
+          {
+            "source_id": "C02",
+            "quote": "Normal sequence: free 30-minute diagnostic; free one-page pilot proposal;\n  paid working MVP in days; fixed-price pilot in weeks; then expansion and an\n  optional retainer."
+          },
+          {
+            "source_id": "C03",
+            "quote": "It works end to end locally, but the deployed public route is\n  locked."
+          }
+        ],
+        "rationale": "The core evidence-discipline instruction matches approved policy, but it omits two required conditions: the disclosed demo limits must accompany any demo reference, and the stated timings are intended scopes rather than guarantees.",
+        "use_guidance": "Add the conditions before use: name demos as self-built on synthetic data with their disclosed limits (locked public route, no OCR/PDF ingestion, no three-way matching, Atlas Partner a prototype), and present delivery timings as intended scopes, not guarantees. Use 'we' as the public voice without implying employees or registration."
+      }
+    ]
+  },
+  "selected_lessons": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025"
+      ]
+    }
+  ],
+  "register_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "planner_key": "SE-FINAL-N074_planner__a001",
+  "researcher_key": "SE-FINAL-N074_researcher__a001",
+  "writer_key": "SE-FINAL-N074_writer__a001",
+  "final_key": "SE-FINAL-M045_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-M045_gate1__a001",
+  "production_completed_at": "2026-09-08T13:34:55.688158+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts",
+  "initial_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-045",
+    "scores": {
+      "persona_fit": 5,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Directly addresses the small business owner in Bareni's calm, practical voice. Respects human approval boundaries and includes no sales CTA.",
+      "clarity": "The core comparison is immediately clear, well-structured, and explained in plain language without jargon or ambiguity.",
+      "actionability": "Provides a practical, concrete exercise: mapping control points on paper and evaluating rule enforcement before committing to automation.",
+      "factual_grounding": "Fully grounded in Bareni principles without invented metrics, customer claims, or unverified capabilities."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 20,
+    "pass": true,
+    "low_quality": false
+  },
+  "final_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-045",
+    "scores": {
+      "persona_fit": 5,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Accurately targets the owner-operator comparing automation to a hire, maintains Bareni's calm voice, enforces mandatory human control over money movement, and avoids sales CTAs.",
+      "clarity": "Logical and immediately clear, explaining control comparisons and governance requirements in direct, jargon-free language.",
+      "actionability": "Gives a concrete, realistic exercise mapping control points on paper, a clear feasibility check, and a diagnostic question without requiring external tools.",
+      "factual_grounding": "Strictly adheres to approved boundaries with no invented metrics, deployments, or unsupported capability claims."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 20,
+    "pass": true,
+    "low_quality": false
+  },
+  "evaluation_reused": false,
+  "evaluation_keys": [
+    "SE-FINAL-M045_eval_initial__a001",
+    "SE-FINAL-M045_eval_final__a001"
+  ],
+  "completed_at": "2026-09-08T13:35:04.850007+00:00"
+}

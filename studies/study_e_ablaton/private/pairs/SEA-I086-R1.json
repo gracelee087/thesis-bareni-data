@@ -1,0 +1,81 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I086-R1",
+    "item_id": "SEA-I086",
+    "repeat": 1,
+    "arm_order": [
+      "critic_on",
+      "critic_off"
+    ],
+    "content_id": "POST-d5054255f6ee83a8b8a1d0d9"
+  },
+  "arms": {
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-d5054255f6ee83a8b8a1d0d9-1",
+        "title": "Transcript accuracy is not the decision",
+        "body": "For a 1–10 person business, the real question is not whether the transcript is perfect. It is what happens after it exists, and who owns the next step.\n\nThat is the practical boundary. A transcript only matters if it helps someone act on a refund request, a technical issue, or a follow-up commitment. If it sits in a folder, or someone has to read it again by hand, you have improved the text, not the workflow.\n\nHere is the test I would use: what happens to this transcript after it is generated? If the answer is “nothing,” accuracy is not the bottleneck. If the answer is “it feeds a decision or another system,” then accuracy, routing, and human review all need to be designed together.\n\nKeep one rule in place: for money movement and other high-risk decisions, a person still has to review before anything irreversible happens. That is not a flaw in the process. It is the process.\n\nSo the next step is simple: map the one recurring workflow, then check whether the transcript is supporting a real decision or just making a tidy record. Small businesses often stop at tidier records. Understandable, but not the point."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-d5054255f6ee83a8b8a1d0d9-1",
+            "title": "Transcript accuracy is not the decision",
+            "body": "For a 1–10 person business, the real question is not whether the transcript is perfect. It is what happens after it exists, and who owns the next step.\n\nThat is the practical boundary. A transcript only matters if it helps someone act on a refund request, a technical issue, or a follow-up commitment. If it sits in a folder, or someone has to read it again by hand, you have improved the text, not the workflow.\n\nHere is the test I would use: what happens to this transcript after it is generated? If the answer is “nothing,” accuracy is not the bottleneck. If the answer is “it feeds a decision or another system,” then accuracy, routing, and human review all need to be designed together.\n\nKeep one rule in place: for money movement and other high-risk decisions, a person still has to review before anything irreversible happens. That is not a flaw in the process. It is the process.\n\nSo the next step is simple: map the one recurring workflow, then check whether the transcript is supporting a real decision or just making a tidy record. Small businesses often stop at tidier records. Understandable, but not the point."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-d5054255f6ee83a8b8a1d0d9-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": [
+            {
+              "repair_id": "P01",
+              "target_ids": [
+                "D01"
+              ],
+              "instruction": "Replace the opening enterprise framing with a small-business owner-operator framing, for example: 'For a 1–10 person business, the real question is not whether the transcript is perfect, but what happens after it exists and who owns the next step.'",
+              "source_ids": [
+                "BRIEF",
+                "C01",
+                "S01"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-d5054255f6ee83a8b8a1d0d9-1",
+        "title": "Transcript accuracy is not the real decision",
+        "body": "If you run a 1–10-person business, transcript accuracy is not the main question. The real question is simpler: what decision or action does this transcript enable, and who makes that call?\n\nTake a common case: customer calls. A transcript only matters if it helps you act on a refund request, a technical issue, or a follow-up commitment. If it just sits in a folder, or someone reads it again by hand, then you have improved the text, not the workflow. Useful, but not the point.\n\nThe control boundary is human approval. For money movement and other high-risk decisions, a person still has to review before anything irreversible happens. So “accurate enough” means accurate enough to reach the right reviewer with the right context, not perfect in the abstract.\n\nThe simplest diagnostic question is: what happens to this transcript after it is generated? If the answer is “nothing,” accuracy is not the bottleneck. If the answer is “it feeds a decision or a downstream system,” then you need to design accuracy, routing, and human check-in together.\n\nThat is usually where owner-operators stop debating the transcript and look at the process instead."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-d5054255f6ee83a8b8a1d0d9-1",
+            "title": "Transcript accuracy is not the real decision",
+            "body": "If you run a 1–10-person business, transcript accuracy is not the main question. The real question is simpler: what decision or action does this transcript enable, and who makes that call?\n\nTake a common case: customer calls. A transcript only matters if it helps you act on a refund request, a technical issue, or a follow-up commitment. If it just sits in a folder, or someone reads it again by hand, then you have improved the text, not the workflow. Useful, but not the point.\n\nThe control boundary is human approval. For money movement and other high-risk decisions, a person still has to review before anything irreversible happens. So “accurate enough” means accurate enough to reach the right reviewer with the right context, not perfect in the abstract.\n\nThe simplest diagnostic question is: what happens to this transcript after it is generated? If the answer is “nothing,” accuracy is not the bottleneck. If the answer is “it feeds a decision or a downstream system,” then you need to design accuracy, routing, and human check-in together.\n\nThat is usually where owner-operators stop debating the transcript and look at the process instead."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-d5054255f6ee83a8b8a1d0d9-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

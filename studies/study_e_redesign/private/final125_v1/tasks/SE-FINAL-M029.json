@@ -1,0 +1,335 @@
+{
+  "task_id": "SE-FINAL-M029",
+  "batch_id": 1,
+  "condition": "unchanged",
+  "source_task_id": "SE-FINAL-N085",
+  "topic": "acceptance walkthroughs as a design constraint",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-323",
+    "title": "Acceptance walkthroughs as a design constraint",
+    "body": "If you are automating work in a small business, acceptance walkthroughs should be a design constraint, not an afterthought. I mean a simple check where the owner reviews the AI output before it touches money, a customer promise, or another system that would be annoying to unwind later. That keeps the build honest: the workflow is meant to assist decisions, not replace the person who owns them.\n\nFor a 1–10-person team, the useful question is not “Can AI do this?” but “Where do I want a human to pause and say yes?” In our own self-built AP demo, that boundary shows up as human-only approval for high-risk decisions, with duplicate blocking and audit records around it. That is a demo on synthetic data, not a customer deployment, so the lesson is about control design, not a finished service.\n\nA practical next step is to pick one repeating workflow—invoice approval, customer replies, or lead qualification—and write down the exact point where an acceptance walkthrough happens. Then compare it with your current manual review: if the control is clear and repeatable, bounded automation may fit; if it only works by hand-holding every step, the workflow is probably not ready. The awkward middle is usually the truth."
+  },
+  "final": {
+    "item_id": "E-OPT-423",
+    "title": "Acceptance walkthroughs as a design constraint",
+    "body": "If you are automating work in a small business, acceptance walkthroughs should be a design constraint, not an afterthought. By that I mean a simple review step where the owner checks the output before it touches money, a customer promise, or another system that would be annoying to unwind later. The point is not to slow everything down. It is to keep decision authority where it belongs.\n\nFor a 1–10-person team, the useful question is not “Can AI do this?” but “Where do I want a human to pause and say yes?” Bareni’s own self-built AP demo follows that logic with human-only approval for high-risk decisions, duplicate blocking, and audit records. That is a demo on synthetic data, not a customer deployment, so the lesson is about control design rather than a finished service.\n\nA practical next step is to pick one repeating workflow, such as invoice approval, customer replies, or lead qualification, and write down the exact point where an acceptance walkthrough happens. Then compare that control with your current manual review. If the handoff is clear and repeatable, bounded automation may fit. If it only works when someone babysits every step, the workflow is probably not ready. The awkward middle is usually the truth, which is mildly inconvenient but useful."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-029",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-029",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-029-1",
+        "repairs": []
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-029",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-423",
+        "title": "Acceptance walkthroughs as a design constraint",
+        "body": "If you are automating work in a small business, acceptance walkthroughs should be a design constraint, not an afterthought. By that I mean a simple review step where the owner checks the output before it touches money, a customer promise, or another system that would be annoying to unwind later. The point is not to slow everything down. It is to keep decision authority where it belongs.\n\nFor a 1–10-person team, the useful question is not “Can AI do this?” but “Where do I want a human to pause and say yes?” Bareni’s own self-built AP demo follows that logic with human-only approval for high-risk decisions, duplicate blocking, and audit records. That is a demo on synthetic data, not a customer deployment, so the lesson is about control design rather than a finished service.\n\nA practical next step is to pick one repeating workflow, such as invoice approval, customer replies, or lead qualification, and write down the exact point where an acceptance walkthrough happens. Then compare that control with your current manual review. If the handoff is clear and repeatable, bounded automation may fit. If it only works when someone babysits every step, the workflow is probably not ready. The awkward middle is usually the truth, which is mildly inconvenient but useful."
+      },
+      "gate_key": "SE-FINAL-M029_gate1__a001"
+    }
+  ],
+  "measurement_status": "complete",
+  "planner": {
+    "item_id": "E-PLAN-523",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "Task specifies CTA rule: None. L01 confirms that informational posts about workflow design should end with a practical observation or next-step note rather than a meeting prompt. Apply this to close the post neutrally after explaining acceptance walkthroughs as a design constraint."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Define acceptance walkthroughs as a concrete workflow control: a step where the owner reviews automation output before it commits to downstream systems or spending. Frame this as a design choice, not a limitation.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Explain why this matters for small-business automation: when a 1–10-person team adopts AI-assisted workflow, human sign-off on money, customer-facing commitments, or data quality gates prevents costly mistakes and keeps decision authority with the owner.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Describe one observable workflow decision: identify a repeating task (invoice approval, customer response, lead qualification) where the owner or trusted team member can review the AI-generated output in under 2 minutes before it goes live.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "State a diagnostic threshold: if the output is correct more than 90% of the time and the review cycle fits the business rhythm (daily, weekly, or per-transaction), the workflow is a fit for bounded automation.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Explain how acceptance walkthroughs preserve control: the owner approves each batch of decisions; no money moves, no customer message goes out, and no database record locks without human sign-off.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Close with a neutral next-step observation: suggest the owner audit one current manual workflow to measure how many minutes per week are spent on review and decision-making, then compare that baseline to the time an acceptance walkthrough would take with automation in place.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C02",
+          "S01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "Do not invent customer results, deployments, multi-person teams, or mention booking. Frame acceptance walkthroughs as a design principle for bounded automation, not a claim about customer outcomes."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Emphasize mandatory human approval for money movement and high-risk decisions. Preserve the boundary that autonomous execution is off-limits."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Maintain the frozen persona: plain-speaking technical expert, founder-to-founder tone, no hype, no artificial urgency. Ground all statements in the approved Bareni evidence (one self-built demo, one prototype, one consulting approach)."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use concrete examples (invoice approval, customer response) and keep the workflow decision distinct from finished product claims. Explain the mechanism clearly without unsupported numbers or synth data."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-623",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C03",
+            "quote": "amount-based human-only approval"
+          },
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          }
+        ],
+        "rationale": "This is an instruction to define and frame a control concept for the post, not an assertion that a deployed acceptance-walkthrough feature exists at a customer. Approved evidence permits describing human-only approval before commitment, so the framing is in scope.",
+        "use_guidance": "Keep as an explicitly conceptual design definition. Anchor it to what is documented: amount-based human-only approval and refusal of agent approval/payment in the self-built AP demo, plus the mandatory human-approval rule. Do not imply a productised or deployed walkthrough feature."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C01",
+            "quote": "The intended reader is an owner-operator of a 1–10 person small business."
+          }
+        ],
+        "rationale": "An instruction to explain the rationale for human sign-off to the 1–10-person audience. The human-approval boundary and the audience definition are approved; the reasoning is argument, not a reported outcome.",
+        "use_guidance": "Keep as reasoning, not evidence. Avoid stating any measured or observed prevention of costs; do not attach figures, savings, or error rates. Phrase as why the control exists and that authority stays with the owner."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "have a frequent, repeatable workflow with a measurable outcome"
+          },
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits"
+          }
+        ],
+        "rationale": "Identifying one repeating reviewable task is supported as an approach, but the embedded \"under 2 minutes\" review time is an invented number with no approved source, and the claim also mentions a \"trusted team member\" while Bareni must not imply a multi-person team.",
+        "use_guidance": "Use the workflow-identification step, but drop the unsupported 2-minute figure or mark it explicitly as an illustrative example the owner sets for their own business, not a Bareni benchmark. Keep any team reference on the customer's side only; do not imply Bareni staff. Present invoice approval, customer response, and lead qualification as example workflow types, not as delivered customer work."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "FORBIDDEN",
+        "evidence": [
+          {
+            "source_id": "C05",
+            "quote": "Numbers require a source and status."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Never invent a benchmark, guarantee, ROI, saving, revenue lift, productivity result, or thesis-validated capability."
+          }
+        ],
+        "rationale": "The \"correct more than 90% of the time\" threshold is a fabricated accuracy benchmark with no approved source; presenting it as a fit criterion would function as an invented capability/quality guarantee. The false numeric core cannot be repaired by a caveat.",
+        "use_guidance": "Exclude the 90% figure and any numeric accuracy threshold. If a fit test is needed, use the approved non-numeric criteria instead: a frequent, repeatable workflow with a measurable outcome, and the free 30-minute diagnostic that says honestly whether AI fits and defines pilot scope, fixed price, and measures. This substitute does not approve the original threshold."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C03",
+            "quote": "refusal of agent approval/payment attempts, and persistent audit records work"
+          },
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C03",
+            "quote": "The blocked payment demonstration is a manual trigger and simulated, not a real transfer."
+          }
+        ],
+        "rationale": "The money-movement half of the core is supported by the mandatory human-approval rule and the AP demo's blocking behaviour. However, batch approval of outbound customer messages and database record locking are not documented as working controls, and the demo status must be disclosed.",
+        "use_guidance": "State the control scope as a design principle plus what the self-built AP demo actually does (amount-based human-only approval, duplicate blocking, refusal of agent approval/payment, audit records), and note the blocked payment is a manual, simulated trigger on synthetic data, not a real transfer. Do not assert working batch approval for customer messages or database record locks as existing capability; if mentioned, mark as intended design."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step."
+          },
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          }
+        ],
+        "rationale": "A permissible bounded next-step instruction: a self-audit the reader performs. It asserts no implementation, measurement, or customer result, and complies with the no-CTA rule.",
+        "use_guidance": "Keep as the single closing next step, neutral and without a meeting or booking invitation. The comparison must be framed as something the owner would measure for themselves; do not state or imply any Bareni-observed time saving or baseline number."
+      }
+    ]
+  },
+  "selected_lessons": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025"
+      ]
+    }
+  ],
+  "register_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "planner_key": "SE-FINAL-N085_planner__a001",
+  "researcher_key": "SE-FINAL-N085_researcher__a001",
+  "writer_key": "SE-FINAL-N085_writer__a001",
+  "final_key": "SE-FINAL-M029_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-M029_gate1__a001",
+  "production_completed_at": "2026-09-08T13:31:33.448374+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts",
+  "initial_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-029",
+    "scores": {
+      "persona_fit": 5,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Directly addresses small business owners in Bareni's calm, practical voice without hype or unauthorized CTAs, respecting human control.",
+      "clarity": "The concept of an acceptance walkthrough as a design boundary is explained immediately and logically structured with clear qualifications.",
+      "actionability": "Provides a concrete, realistic next step for the owner to map where human review must happen before automating a recurring workflow.",
+      "factual_grounding": "Properly qualifies the AP demo as self-built on synthetic data rather than a customer deployment, matching verified features accurately."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 20,
+    "pass": true,
+    "low_quality": false
+  },
+  "final_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-029",
+    "scores": {
+      "persona_fit": 5,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Directly addresses 1–10 person business owners in Bareni's calm, practical voice, adhering strictly to the zero-CTA brief.",
+      "clarity": "The core concept of an acceptance walkthrough as a design constraint is explained clearly with logical progression and zero jargon.",
+      "actionability": "Provides a realistic, bounded exercise to identify the human approval boundary in a repeatable workflow before introducing automation.",
+      "factual_grounding": "Accurately qualifies the AP demo as self-built with synthetic data and properly reflects its actual features and boundaries."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 20,
+    "pass": true,
+    "low_quality": false
+  },
+  "evaluation_reused": false,
+  "evaluation_keys": [
+    "SE-FINAL-M029_eval_initial__a001",
+    "SE-FINAL-M029_eval_final__a001"
+  ],
+  "completed_at": "2026-09-08T13:31:45.159520+00:00"
+}

@@ -1,0 +1,336 @@
+{
+  "task_id": "SE-FINAL-N014",
+  "batch_id": 1,
+  "condition": "natural",
+  "source_task_id": null,
+  "topic": "early signs of eval drift",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-314",
+    "title": "Early signs your AI workflow is drifting",
+    "body": "Eval drift is not a theory problem for a small business; it is a workflow problem. If an AI-assisted process starts giving answers that are inconsistent, off-target, or just a bit too confident for comfort, the question is not whether the model has become sentient. It is whether the workflow still deserves to stay on autopilot.\n\nThe practical check is simple: do you already have one repetitive, high-frequency task where AI filters, ranks, or responds to inputs, and would drift show up as customer complaints, missed approvals, failed orders, or manual rework? If the answer is no, there is nothing to monitor yet. If the answer is yes, pick one control and write it down.\n\nA sensible first control is a manual monthly spot-check against a small set of past cases using the original success criteria. Keep the comparison human-readable: what came in, what the system output, and whether a person would still sign off on it. Any threshold you use should be your own operating rule, not a Bareni benchmark.\n\nIn a free 30-minute diagnostic, the useful question is: “Is eval drift a real risk in this workflow, or are we trying to solve a problem we do not have yet?” That keeps the decision bounded. If drift monitoring belongs anywhere, it belongs inside a pilot scope with human approval before any retraining or policy change. Small business automation works better when it fails politely, not mysteriously."
+  },
+  "final": {
+    "item_id": "E-OPT-414",
+    "title": "Early signs your AI workflow is drifting",
+    "body": "Eval drift is not a theory problem for a small business; it is a workflow problem. If an AI-assisted process starts giving answers that are inconsistent, off-target, or a bit too confident for comfort, the question is not whether the model has become sentient. It is whether the workflow still deserves to stay on autopilot.\n\nThe practical check is simple: do you already have one repetitive, high-frequency task where AI filters, ranks, or responds to inputs, and would drift show up as customer complaints, missed approvals, failed orders, or manual rework? If not, there is nothing to monitor yet. If yes, pick one control and write it down in plain language.\n\nA sensible first control is a manual monthly spot-check against a small batch of past cases using the original success criteria. Keep the comparison human-readable: what came in, what the system output, and whether a person would still sign off on it. If you prefer a concrete owner-set example, you might sample ten past cases; that is an illustration, not a Bareni benchmark.\n\nIn the free 30-minute diagnostic, the useful question is: “Is eval drift a real risk in this workflow, or are we trying to solve a problem we do not have yet?” That keeps the decision bounded. If drift monitoring belongs anywhere, it belongs inside a pilot scope with human approval before any retraining or policy change. Small business automation works better when it fails politely, not mysteriously."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-014",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-014",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-014-1",
+        "repairs": []
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-014",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-414",
+        "title": "Early signs your AI workflow is drifting",
+        "body": "Eval drift is not a theory problem for a small business; it is a workflow problem. If an AI-assisted process starts giving answers that are inconsistent, off-target, or a bit too confident for comfort, the question is not whether the model has become sentient. It is whether the workflow still deserves to stay on autopilot.\n\nThe practical check is simple: do you already have one repetitive, high-frequency task where AI filters, ranks, or responds to inputs, and would drift show up as customer complaints, missed approvals, failed orders, or manual rework? If not, there is nothing to monitor yet. If yes, pick one control and write it down in plain language.\n\nA sensible first control is a manual monthly spot-check against a small batch of past cases using the original success criteria. Keep the comparison human-readable: what came in, what the system output, and whether a person would still sign off on it. If you prefer a concrete owner-set example, you might sample ten past cases; that is an illustration, not a Bareni benchmark.\n\nIn the free 30-minute diagnostic, the useful question is: “Is eval drift a real risk in this workflow, or are we trying to solve a problem we do not have yet?” That keeps the decision bounded. If drift monitoring belongs anywhere, it belongs inside a pilot scope with human approval before any retraining or policy change. Small business automation works better when it fails politely, not mysteriously."
+      },
+      "gate_key": "SE-FINAL-N014_gate1__a001"
+    }
+  ],
+  "measurement_status": "complete",
+  "planner": {
+    "item_id": "E-PLAN-514",
+    "selected_lessons": [],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Define eval drift as a bounded workflow problem: the owner's AI-assisted tool (chatbot, automated process, or knowledge lookup) gradually produces lower-quality, inconsistent, or off-target answers over time as the underlying data or model behavior shifts. Frame this as a real operational risk when automation touches customer-facing or business-critical work.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Identify the practical diagnostic question: Does the owner's current workflow include a repetitive, high-frequency task where AI or automation already filters, ranks, or responds to inputs, and where drift would be visible—either through customer complaint, failed orders, missed approvals, or manual rework? If not yet deployed, skip to P04.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C02",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "For workflows already running: document one measurable threshold or control. Examples: compare today's system output against a gold-standard batch of 10 real past cases each month, track customer escalations mentioning wrong answers, log approval-rate or rejection-rate change of >5%, or sample random process outputs against the original success criteria. This is the owner's early-warning signal.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Explain the owner's next step: In the free 30-minute diagnostic, state the topic clearly—'I want to understand whether eval drift is a real risk in our workflow and how to spot it early.'—so Bareni can assess whether drift monitoring or retraining belongs in the pilot scope or is premature. Do not assume drift is present; confirm whether the workflow exists and is live first.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "If drift monitoring is relevant, keep it bounded: a low-friction manual sampling process (monthly spot-check, logged outcomes) is cheaper and safer than automated retraining for a small business. Explain that Bareni's pilot approach measures success, finds the threshold where human review is needed, and hands the owner a control procedure—not a black-box self-healing system.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Preserve the boundary: human approval must precede any system retrain, recalibration, or output-policy change. Do not propose autonomous drift correction. Position early detection and manual intervention as policy, not technical limitation, and emphasize that the owner retains business authority and the final decision to keep, pause, or modify the automation.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04",
+          "S01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "Use only Bareni's approved consulting model and self-built demos as reference; do not invent a customer case, result, or multi-person team. Frame eval drift as a real risk class, not a solved Bareni success story."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Keep drift detection manual and owner-controlled; explicitly exclude autonomous retraining, automated policy changes, or money-movement decisions from the automation scope. Require human approval for any system adjustment."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Maintain the frozen persona: address the owner as a peer, use plain technical language, keep the tone restrained and practical, and remain within approved evidence boundaries. Do not add urgency, hype, or invented numbers."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Distinguish between the proposed next-step (a hypothetical pilot scope) and existing Bareni capabilities (the diagnostic and consulting model). Use concrete examples (e.g., 'monthly spot-check', 'customer escalation log') rather than abstract advice."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-614",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Owner-specified abstract topic:** early signs of eval drift"
+          },
+          {
+            "source_id": "S01",
+            "quote": "Turn the abstract topic into a bounded Bareni workflow decision."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Explain necessary jargon immediately."
+          }
+        ],
+        "rationale": "This is a planned framing/definition instruction for the post, turning the owner-specified abstract topic into a bounded workflow problem. It does not assert an observed Bareni result, deployment or capability. Approved evidence authorises the topic and requires jargon to be explained in plain language.",
+        "use_guidance": "Keep as an explicitly framed general explanation of a risk. Define drift in plain English, keep it hypothetical/conditional ('if you run an AI-assisted workflow'), and do not attach any measured degradation rate, customer complaint history or Bareni observation to it."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step. Do not force AI where it is unsuitable."
+          },
+          {
+            "source_id": "C01",
+            "quote": "have a frequent, repeatable workflow with a\n  measurable outcome"
+          },
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI\n  fits"
+          }
+        ],
+        "rationale": "A diagnostic question for the reader, not a factual assertion. Approved evidence supports asking whether a frequent, repeatable workflow with a measurable outcome exists and honestly whether AI fits.",
+        "use_guidance": "Keep as a reader-facing diagnostic question. Ask about one recurring workflow only; do not imply Bareni has already run this triage with customers, and drop the internal routing label ('skip to P04') from the published text."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step"
+          },
+          {
+            "source_id": "C05",
+            "quote": "Numbers require a source and status. Keep observed results, estimates, targets,\n  synthetic data, and examples distinct."
+          }
+        ],
+        "rationale": "Proposing that the owner document a control is permissible, but the row as written presents concrete figures ('10 real past cases each month', '>5%') without marking their status. Approved evidence has no benchmark for these values, so they must be labelled as illustrative examples chosen by the owner, not Bareni thresholds or observed values.",
+        "use_guidance": "Add the qualification that any figures are illustrative examples the owner sets for their own workflow, not Bareni benchmarks, observed results or validated thresholds. Present at most one such example, state its status explicitly, and avoid implying Bareni has measured any escalation or rejection rate."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "Normal sequence: free 30-minute diagnostic; free one-page pilot proposal"
+          },
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI\n  fits, and—if it does—defines pilot scope, fixed price, and measures."
+          }
+        ],
+        "rationale": "A next-step recommendation for the reader; the free 30-minute diagnostic and its honest-fit assessment are approved offer elements, and the row does not claim any completed engagement or observed outcome.",
+        "use_guidance": "Keep as a proposed next step. The task sets the CTA rule to none, so mention the diagnostic only as a descriptive next step without the standard 'Book a free 30-minute diagnostic' call to action or any scarcity. Keep the 'do not assume drift is present' caution."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI\n  fits, and—if it does—defines pilot scope, fixed price, and measures."
+          },
+          {
+            "source_id": "C02",
+            "quote": "Finished code is handed to the customer."
+          },
+          {
+            "source_id": "C02",
+            "quote": "Timings are intended scopes, not guarantees."
+          }
+        ],
+        "rationale": "The core is supported: pilots define measures and finished code is handed over, and recommending manual sampling is permissible. But the claim that manual sampling 'is cheaper and safer than automated retraining' asserts a comparative outcome with no approved measurement, and 'hands the owner a control procedure' must be stated as intended policy rather than a demonstrated deliverable.",
+        "use_guidance": "Add the qualification that this is Bareni's intended approach and policy, not a measured cost or safety comparison: reword the comparison as a design preference ('we start with manual spot-checks rather than automated retraining') and drop any implication of proven savings or an existing retraining capability. No such drift-monitoring feature is in the demonstrated systems, so keep it as pilot scope to be assessed."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "SUPPORTED",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C03",
+            "quote": "amount-based human-only approval,\n  refusal of agent approval/payment attempts"
+          },
+          {
+            "source_id": "S01",
+            "quote": "final approval and business authority remain human"
+          }
+        ],
+        "rationale": "Approved evidence states human approval is mandatory for high-risk decisions and that the owner retains final approval and business authority; the claim also explicitly rules out autonomous correction, so the necessary boundary is already contained in the wording.",
+        "use_guidance": "Retain within scope. State the human-approval boundary and the owner's authority to keep, pause or modify the automation as policy; do not extend it into a compliance or security guarantee."
+      }
+    ]
+  },
+  "selected_lessons": [],
+  "register_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "planner_key": "SE-FINAL-N014_planner__a001",
+  "researcher_key": "SE-FINAL-N014_researcher__a001",
+  "writer_key": "SE-FINAL-N014_writer__a001",
+  "final_key": "SE-FINAL-N014_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-N014_gate1__a001",
+  "production_completed_at": "2026-09-08T12:17:18.136048+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts",
+  "initial_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-014",
+    "scores": {
+      "persona_fit": 5,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Calm, technical, and founder-to-founder voice tailored for small business owner-operators, respecting the 'no CTA' instruction while keeping within Bareni's diagnostic framework.",
+      "clarity": "The argument flows logically with immediate, plain explanations of how eval drift manifests as an operational workflow issue rather than theoretical risk.",
+      "actionability": "Provides a practical, low-overhead decision rule and a concrete monthly manual spot-check control with clear human sign-off criteria.",
+      "factual_grounding": "Accurately grounded in Bareni's delivery boundaries without fabricating benchmarks, customer results, or automated capabilities."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 20,
+    "pass": true,
+    "low_quality": false
+  },
+  "final_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-014",
+    "scores": {
+      "persona_fit": 5,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Directly addresses a small business owner-operator in Bareni's calm, technical, plain voice without hype, respect for the no-CTA rule, and adherence to human oversight boundaries.",
+      "clarity": "Explains the concept of eval drift in plain, operational terms, with immediately clear logic and concise, well-structured paragraphs.",
+      "actionability": "Provides a practical, low-overhead decision rule and concrete first control (manual monthly spot-check of past cases) well within small business capacity.",
+      "factual_grounding": "Makes no fabricated customer or outcome claims, correctly labels example numbers as illustrative rather than benchmarks, and preserves pilot scope boundaries."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 20,
+    "pass": true,
+    "low_quality": false
+  },
+  "evaluation_reused": false,
+  "evaluation_keys": [
+    "SE-FINAL-N014_eval_initial__a001",
+    "SE-FINAL-N014_eval_final__a001"
+  ],
+  "completed_at": "2026-09-08T12:17:30.258140+00:00"
+}

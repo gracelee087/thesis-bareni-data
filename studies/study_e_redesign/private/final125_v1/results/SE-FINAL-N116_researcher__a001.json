@@ -1,0 +1,183 @@
+{
+  "status": "success",
+  "usage": {
+    "input_tokens": 8013,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2079,
+    "reasoning_tokens": null
+  },
+  "cost_usd": 0.09204,
+  "output": {
+    "item_id": "E-RES-623",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C03",
+            "quote": "Text-based LLM invoice extraction was verified, while the default demo uses pre-extracted files."
+          },
+          {
+            "source_id": "S01",
+            "quote": "Turn the abstract topic into a bounded Bareni workflow decision. Explain one practical next step."
+          }
+        ],
+        "rationale": "This is a planned writing instruction to define a term and frame a workflow gap, not an assertion of a current Bareni capability or customer observation. The framing is compatible with approved evidence, which separates extraction from downstream steps.",
+        "use_guidance": "Keep as an explanatory framing device only. Do not attach any observed customer experience, frequency data, or claim that Bareni has run such extraction-to-workflow projects; note that Bareni's own extraction work is a self-built demo on synthetic data, and PDF/scan ingestion and OCR are not implemented."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C03",
+            "quote": "Arithmetic checks, duplicate-invoice blocking, amount-based human-only approval, refusal of agent approval/payment attempts, and persistent audit records work."
+          },
+          {
+            "source_id": "C03",
+            "quote": "Three-way matching against purchase orders and receipts is not built."
+          },
+          {
+            "source_id": "C01",
+            "quote": "The representative pains are 8–10 hours a week of repeated customer questions, neglected sales leads, and manual invoice/data work. The 8–10 hours is a persona scenario, not a market statistic or observed customer result."
+          }
+        ],
+        "rationale": "Duplicate flagging, approval routing and audit logging are supported as demo capabilities, but the claim names matching invoice amounts to purchase orders, which approved evidence explicitly states is not built. The generalisation about small-business workflows also rests on a persona scenario, not observed data.",
+        "use_guidance": "Add the limitation before use: present the post-extraction steps as illustrative workflow examples drawn from a persona scenario, not observed customer findings, and either drop the purchase-order matching example or state plainly that three-way matching against purchase orders and receipts is not built at Bareni."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Practicality: explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step. Do not force AI where it is unsuitable."
+          },
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI\n  fits, and—if it does—defines pilot scope, fixed price, and measures."
+          }
+        ],
+        "rationale": "This is a diagnostic question and decision rule offered to the reader, not a factual assertion about Bareni or observed results. The persona focus and offer model permit an honest fit/no-fit test.",
+        "use_guidance": "Keep explicitly as a self-check the reader applies. Present the 2–4 hours per week as the reader's own threshold to estimate, never as a Bareni benchmark, market statistic or observed saving, and keep the honest 'AI may not fit' branch intact."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "general document, email, CRM, and back-office\n  workflows using AI plus Zapier, Make, n8n, and small amounts of custom code"
+          },
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C03",
+            "quote": "The blocked payment demonstration is a manual trigger and simulated, not a real\n  transfer."
+          },
+          {
+            "source_id": "C02",
+            "quote": "Timings are intended scopes, not guarantees."
+          }
+        ],
+        "rationale": "The toolset, the control set (duplicate check, amount rule, audit log) and the human-approval boundary are supported, but the claim describes a pilot as integrating extraction and handing back control without stating that these controls exist only in a synthetic-data demo and that no real payment has ever been executed or blocked in production.",
+        "use_guidance": "Add the qualification: describe this as intended pilot scope, state that the duplicate check, amount-based human-only approval and audit records were built and shown in a self-built demo on entirely synthetic data with a simulated, manually triggered blocked payment, and that PDF/scan ingestion and OCR are not implemented. Keep human approval before money movement as a mandatory control, not a configurable option."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "Finished code is handed to the customer. Database, automation-tool, and API\n  accounts are in the customer's name from the start. Retainer support is optional.\n  Describe this as policy and no-lock-in positioning, not an absolute legal warranty."
+          }
+        ],
+        "rationale": "The core ownership and no-lock-in content matches approved evidence, but the claim states it as flat fact without the required qualifier that this is policy and positioning rather than an absolute legal warranty.",
+        "use_guidance": "Add the specified qualifier: frame it as Bareni's working policy and no-lock-in positioning, not a guarantee or warranty. Use 'API accounts' as in the source rather than broadening to 'API keys', and avoid implying existing customers hold such accounts today."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          },
+          {
+            "source_id": "S01",
+            "quote": "Practicality: explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step. Do not force AI where it is unsuitable."
+          }
+        ],
+        "rationale": "This is a proposed closing next step for the reader to perform manually, with no booking or meeting prompt, which matches the task's no-CTA rule.",
+        "use_guidance": "Keep as a neutral manual next step the reader performs alone. Do not add any invitation to book a diagnostic, discuss the situation or continue the conversation, and do not imply Bareni has measured such time costs; the reader supplies their own estimate."
+      }
+    ]
+  },
+  "raw_text": "{\"item_id\":\"E-RES-623\",\"ledger\":[{\"claim_id\":\"Q01\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C03\",\"quote\":\"Text-based LLM invoice extraction was verified, while the default demo uses pre-extracted files.\"},{\"source_id\":\"S01\",\"quote\":\"Turn the abstract topic into a bounded Bareni workflow decision. Explain one practical next step.\"}],\"rationale\":\"This is a planned writing instruction to define a term and frame a workflow gap, not an assertion of a current Bareni capability or customer observation. The framing is compatible with approved evidence, which separates extraction from downstream steps.\",\"use_guidance\":\"Keep as an explanatory framing device only. Do not attach any observed customer experience, frequency data, or claim that Bareni has run such extraction-to-workflow projects; note that Bareni's own extraction work is a self-built demo on synthetic data, and PDF/scan ingestion and OCR are not implemented.\"},{\"claim_id\":\"Q02\",\"category\":\"QUALIFICATIONS\",\"evidence\":[{\"source_id\":\"C03\",\"quote\":\"Arithmetic checks, duplicate-invoice blocking, amount-based human-only approval, refusal of agent approval/payment attempts, and persistent audit records work.\"},{\"source_id\":\"C03\",\"quote\":\"Three-way matching against purchase orders and receipts is not built.\"},{\"source_id\":\"C01\",\"quote\":\"The representative pains are 8–10 hours a week of repeated customer questions, neglected sales leads, and manual invoice/data work. The 8–10 hours is a persona scenario, not a market statistic or observed customer result.\"}],\"rationale\":\"Duplicate flagging, approval routing and audit logging are supported as demo capabilities, but the claim names matching invoice amounts to purchase orders, which approved evidence explicitly states is not built. The generalisation about small-business workflows also rests on a persona scenario, not observed data.\",\"use_guidance\":\"Add the limitation before use: present the post-extraction steps as illustrative workflow examples drawn from a persona scenario, not observed customer findings, and either drop the purchase-order matching example or state plainly that three-way matching against purchase orders and receipts is not built at Bareni.\"},{\"claim_id\":\"Q03\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"S01\",\"quote\":\"Practicality: explain one observable workflow decision, threshold, diagnostic question,\\n  control, or next step. Do not force AI where it is unsuitable.\"},{\"source_id\":\"C02\",\"quote\":\"The diagnostic identifies the one recurring workflow, says honestly whether AI\\n  fits, and—if it does—defines pilot scope, fixed price, and measures.\"}],\"rationale\":\"This is a diagnostic question and decision rule offered to the reader, not a factual assertion about Bareni or observed results. The persona focus and offer model permit an honest fit/no-fit test.\",\"use_guidance\":\"Keep explicitly as a self-check the reader applies. Present the 2–4 hours per week as the reader's own threshold to estimate, never as a Bareni benchmark, market statistic or observed saving, and keep the honest 'AI may not fit' branch intact.\"},{\"claim_id\":\"Q04\",\"category\":\"QUALIFICATIONS\",\"evidence\":[{\"source_id\":\"C02\",\"quote\":\"general document, email, CRM, and back-office\\n  workflows using AI plus Zapier, Make, n8n, and small amounts of custom code\"},{\"source_id\":\"C04\",\"quote\":\"Human approval is mandatory for money movement and other high-risk decisions.\"},{\"source_id\":\"C03\",\"quote\":\"The blocked payment demonstration is a manual trigger and simulated, not a real\\n  transfer.\"},{\"source_id\":\"C02\",\"quote\":\"Timings are intended scopes, not guarantees.\"}],\"rationale\":\"The toolset, the control set (duplicate check, amount rule, audit log) and the human-approval boundary are supported, but the claim describes a pilot as integrating extraction and handing back control without stating that these controls exist only in a synthetic-data demo and that no real payment has ever been executed or blocked in production.\",\"use_guidance\":\"Add the qualification: describe this as intended pilot scope, state that the duplicate check, amount-based human-only approval and audit records were built and shown in a self-built demo on entirely synthetic data with a simulated, manually triggered blocked payment, and that PDF/scan ingestion and OCR are not implemented. Keep human approval before money movement as a mandatory control, not a configurable option.\"},{\"claim_id\":\"Q05\",\"category\":\"QUALIFICATIONS\",\"evidence\":[{\"source_id\":\"C02\",\"quote\":\"Finished code is handed to the customer. Database, automation-tool, and API\\n  accounts are in the customer's name from the start. Retainer support is optional.\\n  Describe this as policy and no-lock-in positioning, not an absolute legal warranty.\"}],\"rationale\":\"The core ownership and no-lock-in content matches approved evidence, but the claim states it as flat fact without the required qualifier that this is policy and positioning rather than an absolute legal warranty.\",\"use_guidance\":\"Add the specified qualifier: frame it as Bareni's working policy and no-lock-in positioning, not a guarantee or warranty. Use 'API accounts' as in the source rather than broadening to 'API keys', and avoid implying existing customers hold such accounts today.\"},{\"claim_id\":\"Q06\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"S01\",\"quote\":\"**CTA rule:** None.\"},{\"source_id\":\"S01\",\"quote\":\"Practicality: explain one observable workflow decision, threshold, diagnostic question,\\n  control, or next step. Do not force AI where it is unsuitable.\"}],\"rationale\":\"This is a proposed closing next step for the reader to perform manually, with no booking or meeting prompt, which matches the task's no-CTA rule.\",\"use_guidance\":\"Keep as a neutral manual next step the reader performs alone. Do not add any invitation to book a diagnostic, discuss the situation or continue the conversation, and do not imply Bareni has measured such time costs; the reader supplies their own estimate.\"}]}",
+  "provider_response": {
+    "id": "msg_011Cer3C9JStYDyR2dKqszQv",
+    "container": null,
+    "content": [
+      {
+        "citations": null,
+        "text": "{\"item_id\":\"E-RES-623\",\"ledger\":[{\"claim_id\":\"Q01\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C03\",\"quote\":\"Text-based LLM invoice extraction was verified, while the default demo uses pre-extracted files.\"},{\"source_id\":\"S01\",\"quote\":\"Turn the abstract topic into a bounded Bareni workflow decision. Explain one practical next step.\"}],\"rationale\":\"This is a planned writing instruction to define a term and frame a workflow gap, not an assertion of a current Bareni capability or customer observation. The framing is compatible with approved evidence, which separates extraction from downstream steps.\",\"use_guidance\":\"Keep as an explanatory framing device only. Do not attach any observed customer experience, frequency data, or claim that Bareni has run such extraction-to-workflow projects; note that Bareni's own extraction work is a self-built demo on synthetic data, and PDF/scan ingestion and OCR are not implemented.\"},{\"claim_id\":\"Q02\",\"category\":\"QUALIFICATIONS\",\"evidence\":[{\"source_id\":\"C03\",\"quote\":\"Arithmetic checks, duplicate-invoice blocking, amount-based human-only approval, refusal of agent approval/payment attempts, and persistent audit records work.\"},{\"source_id\":\"C03\",\"quote\":\"Three-way matching against purchase orders and receipts is not built.\"},{\"source_id\":\"C01\",\"quote\":\"The representative pains are 8–10 hours a week of repeated customer questions, neglected sales leads, and manual invoice/data work. The 8–10 hours is a persona scenario, not a market statistic or observed customer result.\"}],\"rationale\":\"Duplicate flagging, approval routing and audit logging are supported as demo capabilities, but the claim names matching invoice amounts to purchase orders, which approved evidence explicitly states is not built. The generalisation about small-business workflows also rests on a persona scenario, not observed data.\",\"use_guidance\":\"Add the limitation before use: present the post-extraction steps as illustrative workflow examples drawn from a persona scenario, not observed customer findings, and either drop the purchase-order matching example or state plainly that three-way matching against purchase orders and receipts is not built at Bareni.\"},{\"claim_id\":\"Q03\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"S01\",\"quote\":\"Practicality: explain one observable workflow decision, threshold, diagnostic question,\\n  control, or next step. Do not force AI where it is unsuitable.\"},{\"source_id\":\"C02\",\"quote\":\"The diagnostic identifies the one recurring workflow, says honestly whether AI\\n  fits, and—if it does—defines pilot scope, fixed price, and measures.\"}],\"rationale\":\"This is a diagnostic question and decision rule offered to the reader, not a factual assertion about Bareni or observed results. The persona focus and offer model permit an honest fit/no-fit test.\",\"use_guidance\":\"Keep explicitly as a self-check the reader applies. Present the 2–4 hours per week as the reader's own threshold to estimate, never as a Bareni benchmark, market statistic or observed saving, and keep the honest 'AI may not fit' branch intact.\"},{\"claim_id\":\"Q04\",\"category\":\"QUALIFICATIONS\",\"evidence\":[{\"source_id\":\"C02\",\"quote\":\"general document, email, CRM, and back-office\\n  workflows using AI plus Zapier, Make, n8n, and small amounts of custom code\"},{\"source_id\":\"C04\",\"quote\":\"Human approval is mandatory for money movement and other high-risk decisions.\"},{\"source_id\":\"C03\",\"quote\":\"The blocked payment demonstration is a manual trigger and simulated, not a real\\n  transfer.\"},{\"source_id\":\"C02\",\"quote\":\"Timings are intended scopes, not guarantees.\"}],\"rationale\":\"The toolset, the control set (duplicate check, amount rule, audit log) and the human-approval boundary are supported, but the claim describes a pilot as integrating extraction and handing back control without stating that these controls exist only in a synthetic-data demo and that no real payment has ever been executed or blocked in production.\",\"use_guidance\":\"Add the qualification: describe this as intended pilot scope, state that the duplicate check, amount-based human-only approval and audit records were built and shown in a self-built demo on entirely synthetic data with a simulated, manually triggered blocked payment, and that PDF/scan ingestion and OCR are not implemented. Keep human approval before money movement as a mandatory control, not a configurable option.\"},{\"claim_id\":\"Q05\",\"category\":\"QUALIFICATIONS\",\"evidence\":[{\"source_id\":\"C02\",\"quote\":\"Finished code is handed to the customer. Database, automation-tool, and API\\n  accounts are in the customer's name from the start. Retainer support is optional.\\n  Describe this as policy and no-lock-in positioning, not an absolute legal warranty.\"}],\"rationale\":\"The core ownership and no-lock-in content matches approved evidence, but the claim states it as flat fact without the required qualifier that this is policy and positioning rather than an absolute legal warranty.\",\"use_guidance\":\"Add the specified qualifier: frame it as Bareni's working policy and no-lock-in positioning, not a guarantee or warranty. Use 'API accounts' as in the source rather than broadening to 'API keys', and avoid implying existing customers hold such accounts today.\"},{\"claim_id\":\"Q06\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"S01\",\"quote\":\"**CTA rule:** None.\"},{\"source_id\":\"S01\",\"quote\":\"Practicality: explain one observable workflow decision, threshold, diagnostic question,\\n  control, or next step. Do not force AI where it is unsuitable.\"}],\"rationale\":\"This is a proposed closing next step for the reader to perform manually, with no booking or meeting prompt, which matches the task's no-CTA rule.\",\"use_guidance\":\"Keep as a neutral manual next step the reader performs alone. Do not add any invitation to book a diagnostic, discuss the situation or continue the conversation, and do not imply Bareni has measured such time costs; the reader supplies their own estimate.\"}]}",
+        "type": "text"
+      }
+    ],
+    "model": "claude-opus-5",
+    "role": "assistant",
+    "stop_details": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "global",
+      "input_tokens": 8013,
+      "output_tokens": 2079,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": null,
+      "service_tier": "standard"
+    }
+  },
+  "stop_reason": "end_turn",
+  "cost_details": {
+    "input": 0.040065,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.051975,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.09204
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": null,
+  "key": "SE-FINAL-N116_researcher__a001",
+  "role": "researcher",
+  "created_at": "2026-09-08T13:18:49.151897+00:00",
+  "ended_at": "2026-09-08T13:19:17.687300+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-N116",
+    "batch_id": 4,
+    "condition": "natural",
+    "cohort": "natural"
+  },
+  "task_id": "SE-FINAL-N116",
+  "batch_id": 4,
+  "cohort": "natural",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 28533,
+  "budget_charge_usd": 0.09204,
+  "unknown_cost_reservation_usd": 0
+}

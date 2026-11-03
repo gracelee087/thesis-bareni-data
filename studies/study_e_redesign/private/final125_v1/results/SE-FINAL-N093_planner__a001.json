@@ -1,0 +1,172 @@
+{
+  "status": "success",
+  "usage": {
+    "input_tokens": 4350,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 889,
+    "reasoning_tokens": null
+  },
+  "cost_usd": 0.008795,
+  "output": {
+    "item_id": "E-PLAN-531",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task explicitly forbids a CTA (CTA rule: None). L01 guides closure: end with a practical next-step observation rather than a meeting invitation. This applies directly to the LinkedIn post format."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Define the bounded workflow decision: identify whether the owner currently tracks payment terms (invoice date, agreed net-X, actual payment date, variance) manually or via spreadsheet, and whether late-payment detection triggers a routine action (reminder, follow-up, cash-flow forecast adjustment). Frame this as the one repeatable task eligible for AI or automation, not a strategic finance redesign.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "S01",
+          "C01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Explain the current friction: without automated detection, the owner misses which invoices are actually late, relies on memory or manual review, and cannot prioritize follow-up. State that most small businesses do this manually; do not claim a customer result or benchmark.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Describe the bounded AI fit: a simple system can read invoices (amount, due date, customer), compare to a cutoff date, flag overdue items, and log the result persistently. Require human approval before any collection action. Do not claim OCR, PDF ingestion, or autonomous payment interaction; note that manual invoice entry or structured input is the pilot scope.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Offer the diagnostic question: 'How many invoices does your business issue per month, and how do you currently know which are late?' This filters whether the workflow is frequent and repeatable enough to justify investment.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "State the next practical step: the owner should audit one week of invoices to count how much time manual review takes, which customers pay on time, and which are serial late payers. This data informs whether a bounded automation pilot is worth the setup cost.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Close without a CTA: acknowledge that late payment is a real cash-flow problem for small businesses and note that structured automation is only useful if the volume and pattern justify it. Reinforce that the owner keeps control of all collection decisions.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C04",
+          "C05"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "Avoid any invented customer, deployment, late-payment result, productivity number, or sales CTA. Describe the workflow as a logical candidate for automation, not a proven success."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Explicitly require human approval for payment-related decisions and exclude autonomous money movement, consistent with C04 scope boundaries."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Maintain the frozen persona (direct founder-to-founder voice, restrained tone, operational focus) and preserve the approved evidence status—Bareni is a consulting practice being built, not a deployed platform."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use plain English; distinguish the proposed workflow (a bounded next step) from existing capabilities (knowledge assistant, AP automation prototype) and from observed customer results (none claimed)."
+      }
+    ]
+  },
+  "raw_text": "{\"item_id\": \"E-PLAN-531\", \"selected_lessons\": [{\"lesson_id\": \"L01\", \"application\": \"The task explicitly forbids a CTA (CTA rule: None). L01 guides closure: end with a practical next-step observation rather than a meeting invitation. This applies directly to the LinkedIn post format.\"}], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Define the bounded workflow decision: identify whether the owner currently tracks payment terms (invoice date, agreed net-X, actual payment date, variance) manually or via spreadsheet, and whether late-payment detection triggers a routine action (reminder, follow-up, cash-flow forecast adjustment). Frame this as the one repeatable task eligible for AI or automation, not a strategic finance redesign.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"S01\", \"C01\"]}, {\"step_id\": \"P02\", \"instruction\": \"Explain the current friction: without automated detection, the owner misses which invoices are actually late, relies on memory or manual review, and cannot prioritize follow-up. State that most small businesses do this manually; do not claim a customer result or benchmark.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C01\"]}, {\"step_id\": \"P03\", \"instruction\": \"Describe the bounded AI fit: a simple system can read invoices (amount, due date, customer), compare to a cutoff date, flag overdue items, and log the result persistently. Require human approval before any collection action. Do not claim OCR, PDF ingestion, or autonomous payment interaction; note that manual invoice entry or structured input is the pilot scope.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"C04\"]}, {\"step_id\": \"P04\", \"instruction\": \"Offer the diagnostic question: 'How many invoices does your business issue per month, and how do you currently know which are late?' This filters whether the workflow is frequent and repeatable enough to justify investment.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\"]}, {\"step_id\": \"P05\", \"instruction\": \"State the next practical step: the owner should audit one week of invoices to count how much time manual review takes, which customers pay on time, and which are serial late payers. This data informs whether a bounded automation pilot is worth the setup cost.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\"]}, {\"step_id\": \"P06\", \"instruction\": \"Close without a CTA: acknowledge that late payment is a real cash-flow problem for small businesses and note that structured automation is only useful if the volume and pattern justify it. Reinforce that the owner keeps control of all collection decisions.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C04\", \"C05\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"Avoid any invented customer, deployment, late-payment result, productivity number, or sales CTA. Describe the workflow as a logical candidate for automation, not a proven success.\"}, {\"constraint_id\": \"K02\", \"handling\": \"Explicitly require human approval for payment-related decisions and exclude autonomous money movement, consistent with C04 scope boundaries.\"}, {\"constraint_id\": \"K03\", \"handling\": \"Maintain the frozen persona (direct founder-to-founder voice, restrained tone, operational focus) and preserve the approved evidence status—Bareni is a consulting practice being built, not a deployed platform.\"}, {\"constraint_id\": \"K04\", \"handling\": \"Use plain English; distinguish the proposed workflow (a bounded next step) from existing capabilities (knowledge assistant, AP automation prototype) and from observed customer results (none claimed).\"}]}",
+  "provider_response": {
+    "id": "msg_011Cer24ih3P546uK8Cd2aFB",
+    "container": null,
+    "content": [
+      {
+        "citations": null,
+        "text": "{\"item_id\": \"E-PLAN-531\", \"selected_lessons\": [{\"lesson_id\": \"L01\", \"application\": \"The task explicitly forbids a CTA (CTA rule: None). L01 guides closure: end with a practical next-step observation rather than a meeting invitation. This applies directly to the LinkedIn post format.\"}], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Define the bounded workflow decision: identify whether the owner currently tracks payment terms (invoice date, agreed net-X, actual payment date, variance) manually or via spreadsheet, and whether late-payment detection triggers a routine action (reminder, follow-up, cash-flow forecast adjustment). Frame this as the one repeatable task eligible for AI or automation, not a strategic finance redesign.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"S01\", \"C01\"]}, {\"step_id\": \"P02\", \"instruction\": \"Explain the current friction: without automated detection, the owner misses which invoices are actually late, relies on memory or manual review, and cannot prioritize follow-up. State that most small businesses do this manually; do not claim a customer result or benchmark.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C01\"]}, {\"step_id\": \"P03\", \"instruction\": \"Describe the bounded AI fit: a simple system can read invoices (amount, due date, customer), compare to a cutoff date, flag overdue items, and log the result persistently. Require human approval before any collection action. Do not claim OCR, PDF ingestion, or autonomous payment interaction; note that manual invoice entry or structured input is the pilot scope.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"C04\"]}, {\"step_id\": \"P04\", \"instruction\": \"Offer the diagnostic question: 'How many invoices does your business issue per month, and how do you currently know which are late?' This filters whether the workflow is frequent and repeatable enough to justify investment.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\"]}, {\"step_id\": \"P05\", \"instruction\": \"State the next practical step: the owner should audit one week of invoices to count how much time manual review takes, which customers pay on time, and which are serial late payers. This data informs whether a bounded automation pilot is worth the setup cost.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\"]}, {\"step_id\": \"P06\", \"instruction\": \"Close without a CTA: acknowledge that late payment is a real cash-flow problem for small businesses and note that structured automation is only useful if the volume and pattern justify it. Reinforce that the owner keeps control of all collection decisions.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C04\", \"C05\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"Avoid any invented customer, deployment, late-payment result, productivity number, or sales CTA. Describe the workflow as a logical candidate for automation, not a proven success.\"}, {\"constraint_id\": \"K02\", \"handling\": \"Explicitly require human approval for payment-related decisions and exclude autonomous money movement, consistent with C04 scope boundaries.\"}, {\"constraint_id\": \"K03\", \"handling\": \"Maintain the frozen persona (direct founder-to-founder voice, restrained tone, operational focus) and preserve the approved evidence status—Bareni is a consulting practice being built, not a deployed platform.\"}, {\"constraint_id\": \"K04\", \"handling\": \"Use plain English; distinguish the proposed workflow (a bounded next step) from existing capabilities (knowledge assistant, AP automation prototype) and from observed customer results (none claimed).\"}]}",
+        "type": "text"
+      }
+    ],
+    "model": "claude-haiku-4-5-20251001",
+    "role": "assistant",
+    "stop_details": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "not_available",
+      "input_tokens": 4350,
+      "output_tokens": 889,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": "standard"
+    }
+  },
+  "stop_reason": "end_turn",
+  "cost_details": {
+    "input": 0.00435,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.004445,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.008795
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": null,
+  "key": "SE-FINAL-N093_planner__a001",
+  "role": "planner",
+  "created_at": "2026-09-08T13:04:01.579419+00:00",
+  "ended_at": "2026-09-08T13:04:25.243544+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-N093",
+    "batch_id": 3,
+    "condition": "natural",
+    "cohort": "natural"
+  },
+  "task_id": "SE-FINAL-N093",
+  "batch_id": 3,
+  "cohort": "natural",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 23660,
+  "budget_charge_usd": 0.008795,
+  "unknown_cost_reservation_usd": 0
+}

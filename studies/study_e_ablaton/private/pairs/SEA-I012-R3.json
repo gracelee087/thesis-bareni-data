@@ -1,0 +1,84 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I012-R3",
+    "item_id": "SEA-I012",
+    "repeat": 3,
+    "arm_order": [
+      "critic_off",
+      "critic_on"
+    ],
+    "content_id": "POST-4bf0c25655aa3ee097ba498f"
+  },
+  "arms": {
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-4bf0c25655aa3ee097ba498f-1",
+        "title": "When bookkeeping habits stop being enough",
+        "body": "Bookkeeping habits are useful until they start hiding a bigger decision.\n\nIf you are still checking invoices, tagging expenses, and clearing small mismatches by hand, the real question is not whether bookkeeping is important. It is whether one repeating task is eating time that should go to sales, delivery, or follow-up.\n\nThat is the bounded workflow decision: pick one recurring bookkeeping step and test whether it is digital, repeatable, and rule-based. For example, invoice data entry, expense categorisation, or a reconciliation flag may fit that pattern. Scan-heavy or OCR-dependent work does not fit this boundary, and human approval still matters for anything involving money movement.\n\nA practical next step is simple. Write down one bookkeeping task that takes roughly 30 minutes or more in a week, then note three things: the input, the decision rule, and the output. If the input is “invoice lands in email,” the rule is “match vendor and description,” and the output is “line added to the spreadsheet,” you now have something concrete to judge.\n\nThat does not force automation. It just tells you whether the task stays manual, needs help, or is worth exploring as a build. The owner still makes the call."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-4bf0c25655aa3ee097ba498f-1",
+            "title": "When bookkeeping habits stop being enough",
+            "body": "Bookkeeping habits are useful until they start hiding a bigger decision.\n\nIf you are still checking invoices, tagging expenses, and clearing small mismatches by hand, the real question is not whether bookkeeping is important. It is whether one repeating task is eating time that should go to sales, delivery, or follow-up.\n\nThat is the bounded workflow decision: pick one recurring bookkeeping step and test whether it is digital, repeatable, and rule-based. For example, invoice data entry, expense categorisation, or a reconciliation flag may fit that pattern. Scan-heavy or OCR-dependent work does not fit this boundary, and human approval still matters for anything involving money movement.\n\nA practical next step is simple. Write down one bookkeeping task that takes roughly 30 minutes or more in a week, then note three things: the input, the decision rule, and the output. If the input is “invoice lands in email,” the rule is “match vendor and description,” and the output is “line added to the spreadsheet,” you now have something concrete to judge.\n\nThat does not force automation. It just tells you whether the task stays manual, needs help, or is worth exploring as a build. The owner still makes the call."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-4bf0c25655aa3ee097ba498f-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    },
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-4bf0c25655aa3ee097ba498f-1",
+        "title": "When bookkeeping stops being the right question",
+        "body": "If bookkeeping is only recording what already happened, it is not the place to decide whether to automate or hire. That decision belongs in a separate review of recurring tasks and volume.\n\nFor a small business owner, the useful question is simple: which bookkeeping task repeats the same way, has a clear input and output, and keeps taking time away from higher-value work? That might be invoice data entry, expense categorization, or a reconciliation flag. If the task is scan-heavy or depends on OCR, it is currently out of scope here.\n\nA practical next step is to pick one task and write down three things: the trigger, the rule, and the output. For example: an invoice arrives in email, the vendor name and description determine the category, and the line goes into the expense sheet. That is a manual diagnostic, not a promise that automation fits.\n\nThis is also where Bareni’s no-lock-in policy matters. When a system is built, the database, automation tool, and API accounts are in the customer’s name from the start. That is policy and positioning, not a warranty.\n\nDo the review once, then keep the habit if it still works. The business decision sits with the owner, not with the bookkeeping habit."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-4bf0c25655aa3ee097ba498f-1",
+            "title": "When bookkeeping stops being the right question",
+            "body": "If bookkeeping is only recording what already happened, it is not the place to decide whether to automate or hire. That decision belongs in a separate review of recurring tasks and volume.\n\nFor a small business owner, the useful question is simple: which bookkeeping task repeats the same way, has a clear input and output, and keeps taking time away from higher-value work? That might be invoice data entry, expense categorization, or a reconciliation flag. If the task is scan-heavy or depends on OCR, it is currently out of scope here.\n\nA practical next step is to pick one task and write down three things: the trigger, the rule, and the output. For example: an invoice arrives in email, the vendor name and description determine the category, and the line goes into the expense sheet. That is a manual diagnostic, not a promise that automation fits.\n\nThis is also where Bareni’s no-lock-in policy matters. When a system is built, the database, automation tool, and API accounts are in the customer’s name from the start. That is policy and positioning, not a warranty.\n\nDo the review once, then keep the habit if it still works. The business decision sits with the owner, not with the bookkeeping habit."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-4bf0c25655aa3ee097ba498f-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": [
+            {
+              "repair_id": "P01",
+              "target_ids": [
+                "D01",
+                "D02",
+                "D03"
+              ],
+              "instruction": "Replace the abstract opener and follow-on paragraphs with a plain, founder-to-founder point aimed at the owner: book the workflow, not the habit. State one concrete decision such as: if bookkeeping is only recording what already happened, it is not the place to decide when to automate or hire; that decision needs a separate review of recurring tasks and volume. Keep the post grounded in one observable business workflow, not general uncertainty.",
+              "source_ids": [
+                "BRIEF",
+                "S01",
+                "C05",
+                "C02"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

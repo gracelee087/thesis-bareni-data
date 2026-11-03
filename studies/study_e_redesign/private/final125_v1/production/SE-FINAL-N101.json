@@ -1,0 +1,307 @@
+{
+  "task_id": "SE-FINAL-N101",
+  "batch_id": 4,
+  "condition": "natural",
+  "source_task_id": null,
+  "topic": "spotting duplicate emails early",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-308",
+    "title": "Spot duplicate emails before they become cleanup work",
+    "body": "If duplicate emails are showing up, the real decision is not “can AI fix this?” It is “do duplicates reach me before I act on them?” That is the bounded workflow question. If the answer is yes, the cost is usually not technical complexity; it is wasted review time, inconsistent replies, or manual reconciliation later. That is enough reason to look at the process, not enough reason to automate blindly.\n\nStart with three recent examples. For each one, note where the duplicate came from: a system syncing the same contact twice, the same person sending again, or you copying a thread into another tool. Then mark which duplicates must be caught before action and which can be cleaned up later. An invoice or payment request belongs in the first group; a newsletter usually does not. Human approval stays in place for anything involving money or other high-risk decisions.\n\nIf you want one practical next step, run a one-week manual test: route suspicious duplicates to one folder and review them by hand. Count only the repeats, the false positives, and the time your own review takes. If the pattern is messy, that is useful too; it means the next step is a clearer definition of “duplicate,” not a bigger tool. Small problem, small test, no drama — which is usually the honest version."
+  },
+  "final": {
+    "item_id": "E-OPT-408",
+    "title": "Spot duplicate emails before they become cleanup work",
+    "body": "If duplicate emails are showing up, the real question is not “can AI fix this?” It is whether duplicates reach you before you act on them. That is the bounded workflow decision: do you need early detection, or is this just cleanup after the fact? If duplicates arrive before action, the cost is usually review time, inconsistent replies, or later manual reconciliation. That is enough reason to look at the process, and not enough reason to automate blindly.\n\nStart with three recent examples. For each one, note where it came from: a system syncing the same contact twice, the same person sending again, or you copying a thread into another tool. Then mark which duplicates must be caught before action and which can wait. An invoice or payment request belongs in the first group; a newsletter usually does not. Human approval stays in place for anything involving money or other high-risk decisions.\n\nOne practical next step is a one-week manual test. Route suspicious duplicates to a single folder and review them by hand. Count only the repeats, the false positives, and the time your own review takes. If the pattern is messy, that is useful too; it means the next step is a clearer definition of “duplicate,” not a bigger tool. Small problem, small test, no drama."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-101",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-101",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-101-1",
+        "repairs": []
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-101",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-408",
+        "title": "Spot duplicate emails before they become cleanup work",
+        "body": "If duplicate emails are showing up, the real question is not “can AI fix this?” It is whether duplicates reach you before you act on them. That is the bounded workflow decision: do you need early detection, or is this just cleanup after the fact? If duplicates arrive before action, the cost is usually review time, inconsistent replies, or later manual reconciliation. That is enough reason to look at the process, and not enough reason to automate blindly.\n\nStart with three recent examples. For each one, note where it came from: a system syncing the same contact twice, the same person sending again, or you copying a thread into another tool. Then mark which duplicates must be caught before action and which can wait. An invoice or payment request belongs in the first group; a newsletter usually does not. Human approval stays in place for anything involving money or other high-risk decisions.\n\nOne practical next step is a one-week manual test. Route suspicious duplicates to a single folder and review them by hand. Count only the repeats, the false positives, and the time your own review takes. If the pattern is messy, that is useful too; it means the next step is a clearer definition of “duplicate,” not a bigger tool. Small problem, small test, no drama."
+      },
+      "gate_key": "SE-FINAL-N101_gate1__a001"
+    }
+  ],
+  "measurement_status": "pending",
+  "planner": {
+    "item_id": "E-PLAN-508",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task specifies no CTA; L01 confirms that even soft meeting prompts or diagnostic invitations are CTAs. The post will close with a practical next-step observation for the owner to evaluate, not a booking prompt."
+      },
+      {
+        "lesson_id": "L02",
+        "application": "C02 describes Bareni's hands-on service and no-lock-in positioning as policy. L02 ensures this remains framed as operational practice, not a warranty."
+      },
+      {
+        "lesson_id": "L03",
+        "application": "The task addresses a bounded workflow decision on duplicate-email detection. L03 ensures that if general email-management background would fill a gap, a concrete diagnostic question or workflow decision step replaces it instead."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Define the duplicate-email problem as a bounded workflow decision: Are duplicates arriving in your inbox or CRM before they are acted on? Identify the observable threshold—for example, within the same day, or within a conversation thread—and the cost: time spent reviewing, risk of inconsistent responses, or manual reconciliation. This is not a technical diagnosis; it is a business question about whether the problem matters enough to justify any intervention.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Examine your current workflow: How do duplicates arrive? Are they system-level (two platforms syncing the same contact), source-level (the same person sending twice), or manual (you copying a thread)? Write down the three most recent examples. This step costs 10 minutes and clarifies whether automation can solve the root cause or whether you need a process change first.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Set a decision rule: Which duplicates must be caught before action, and which can be cleaned up after? For example, invoices or payment requests must be deduplicated before processing; newsletters can be deleted later. This rule becomes your control and pilot success measure.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Sketch the tool chain: If duplicates live in email, can your email provider (Gmail, Outlook) filter them with rules? If they land in your CRM or accounting tool, does that platform have native deduplication? Only after testing built-in options should you consider a custom workflow. This respects the principle that simpler, vendor-native solutions scale better than bespoke automation.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "If native deduplication is insufficient, describe the fields that define a duplicate (sender, subject, amount, date range) and whether human approval is required before any record is merged or deleted. Document this as a specification, not a guess. This step is your proposal foundation if you later explore a custom workflow.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L02"
+        ],
+        "evidence_ids": [
+          "C04",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Before committing budget or time, run a 1-week manual test: route suspicious duplicates to a single folder and review them by hand. Count how many genuinely repeat, how many are false positives, and how much time the manual review takes. This low-cost pilot answers whether the problem is large enough to automate and whether your definition of a duplicate holds up in practice.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C02",
+          "S01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No customer testimonials, deployment claims, savings estimates, or multi-person team references are included. The guidance treats the duplicate-email problem as a bounded workflow decision applicable to the owner's environment, with no invented outcomes."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "P03 and P05 mandate human approval before any record is deleted or merged, reflecting the policy in C04. No autonomous money movement or data destruction is assumed."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "The frozen persona (owner-operator, tried ChatGPT, comparing investment with manual work) is preserved throughout. All references to Bareni's model (hands-on service, pilot sequence, customer control of accounts) remain consistent with C02 and S01."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Plain English is used throughout. Jargon (deduplication, native filtering, vector search) is avoided except where necessary, and when used (e.g. 'CRM') it is linked to concrete workflow steps, not abstract explanation. The proposal and examples (invoices, newsletters) remain distinct from any existing Bareni capabilities."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-608",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits, and—if it does—defines pilot scope, fixed price, and measures."
+          },
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question, control, or next step"
+          }
+        ],
+        "rationale": "This is a diagnostic framing question and threshold-setting instruction for the reader, not an assertion of any current Bareni capability, deployment or observed result. It matches the approved practice of identifying whether the problem justifies intervention.",
+        "use_guidance": "Keep as an explicit diagnostic question the reader answers themselves; do not present the example thresholds (same day, same thread) as Bareni-measured findings or as a product feature."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits"
+          },
+          {
+            "source_id": "S01",
+            "quote": "Do not force AI where it is unsuitable."
+          }
+        ],
+        "rationale": "An instruction to the reader to inspect their own workflow and record examples. The 10-minute figure describes the reader's own suggested effort in a proposed step, not a measured Bareni or customer result.",
+        "use_guidance": "Keep explicitly as a suggested manual step; phrase the 10 minutes as an estimate of the reader's own effort, not a benchmark or observed saving."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C02",
+            "quote": "defines pilot scope, fixed price, and measures"
+          }
+        ],
+        "rationale": "A recommended decision rule and success measure for the reader, consistent with treating payment-related items as high-risk. It does not assert an existing deduplication capability or customer pilot.",
+        "use_guidance": "Keep as a proposed control the reader defines; ensure the invoice/payment example stays consistent with mandatory human approval before any money movement."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "Customers who want strategy only can buy the separate AI Strategy & Roadmap: a 90-day execution roadmap, success measures, build-versus-buy decision, and tool selection."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Never invent a benchmark, guarantee, ROI, saving, revenue lift, productivity result, or thesis-validated capability."
+          }
+        ],
+        "rationale": "Recommending a build-versus-buy check of native tool options is permissible, but the appended assertion that vendor-native solutions scale better than bespoke automation is a general performance claim with no approved support and reads as a stated principle.",
+        "use_guidance": "Keep the check-native-options-first step as a proposal, but remove or reframe the scaling assertion; state only that checking built-in options first is a build-versus-buy step, and do not name specific vendor deduplication features as verified."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C02",
+            "quote": "free one-page pilot proposal"
+          }
+        ],
+        "rationale": "A next-step instruction to write a specification including a human-approval condition. It explicitly frames the output as a specification rather than working software, so it asserts no current implementation.",
+        "use_guidance": "Keep explicitly as a paper specification the reader drafts; make clear that a written spec is not a built system and that record merges or deletions require human approval."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits"
+          },
+          {
+            "source_id": "S01",
+            "quote": "Practicality: explain one observable workflow decision, threshold, diagnostic question, control, or next step."
+          }
+        ],
+        "rationale": "A proposed one-week manual measurement the reader runs themselves before spending money; it reports no observed counts, savings or Bareni deployment.",
+        "use_guidance": "Keep as a manual, reader-run test; do not imply Bareni has run it or knows the resulting counts, and describe it as a manual review rather than automation. Note that the closing line must remain a neutral next-step observation, with no invitation to book or discuss (no CTA authorised)."
+      }
+    ]
+  },
+  "selected_lessons": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. This includes indirect meeting prompts and direct brand-level offers such as a free 30-minute diagnostic. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025",
+        "B3-SUMMARY",
+        "SE-FINAL-N079"
+      ]
+    },
+    {
+      "lesson_id": "L02",
+      "text": "When approved evidence presents an operational practice as policy or positioning, keep that qualifier in the copy. Do not rewrite it as an absolute guarantee or warranty-level statement.",
+      "source_event_ids": [
+        "B3-SUMMARY",
+        "SE-FINAL-N080"
+      ]
+    },
+    {
+      "lesson_id": "L03",
+      "text": "If the source set does not support a substantive explanatory claim, replace it with a neutral workflow prompt or decision step rather than filling the gap with general background explanation.",
+      "source_event_ids": [
+        "B3-SUMMARY",
+        "SE-FINAL-N091"
+      ]
+    }
+  ],
+  "register_sha256": "119720de77d8c13ba7ec5ca4065775e8d4ac629796a073c799f5a0be4d935e35",
+  "planner_key": "SE-FINAL-N101_planner__a002",
+  "researcher_key": "SE-FINAL-N101_researcher__a001",
+  "writer_key": "SE-FINAL-N101_writer__a001",
+  "final_key": "SE-FINAL-N101_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-N101_gate1__a001",
+  "production_completed_at": "2026-09-08T13:10:27.587378+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts"
+}

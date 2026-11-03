@@ -1,0 +1,187 @@
+{
+  "status": "success",
+  "usage": {
+    "input_tokens": 4352,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1040,
+    "reasoning_tokens": null
+  },
+  "cost_usd": 0.009552,
+  "output": {
+    "item_id": "E-PLAN-528",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task specifies CTA rule: None. L01 confirms that informational posts about workflow decisions should close with a neutral practical observation rather than a diagnostic booking prompt. The post explains one next step (folder audit) without soliciting a meeting."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Name the concrete workflow problem hidden by folder structure: explain that disorganised documents create friction when the owner searches for customer agreements, invoices, contracts, or past decisions during routine work. Use the persona scenario (owner-operator, 1–10 person business, manual document work) to frame the issue.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C01",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Translate the abstract topic into a bounded workflow decision: clarify that the question is not 'how to reorganise everything' but 'whether to automate the next document-heavy repetitive task (e.g. invoice filing, contract retrieval, customer-query answering) after fixing the folder boundary.' State this as a threshold decision, not a comprehensive system rebuild.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C02",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Describe the one practical diagnostic question the owner should answer: 'When you search for a customer agreement or invoice, what actually happens—do you know where to look, or do you dig through multiple folders each time?' Frame this as a measure of readiness, not blame.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C01",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Explain the next step without a CTA: the owner should audit the single most frequent document lookup (e.g. 'finding the last email from customer X' or 'locating a signed invoice') over one week, record how long it takes, and note which folders are checked. This is preparatory work the owner does alone, not a call to book a meeting.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C01",
+          "C02",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Set the honest frame: if the audit shows 5–10 minutes per lookup and it happens 2–3 times daily, automation may fit the model described in Bareni evidence (a bounded workflow with a measurable outcome). If it is ad hoc or takes seconds, it may not. Do not claim a savings number; name the decision criterion instead.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C01",
+          "C02",
+          "C04",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Close with a neutral practical note: invite the owner to recognise that folder structure is often a symptom, not the root problem, and that clarifying the actual workflow friction is the necessary first step before any tool decision. End without a meeting prompt or CTA.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C01",
+          "C05"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No customer names, outcomes, savings, or team references. All examples are persona scenarios (e.g. 'customer agreements,' 'invoices') or hypothetical thresholds, never claimed deployments or results."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "No autonomous payment, high-risk automation, or out-of-scope services mentioned. The next step (folder audit) is entirely manual human work; no tool or integration is recommended in the post."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Preserve the frozen persona voice (plain-speaking, founder-to-founder, restrained tone, no hype) and the human-approval boundary. Frame the diagnostic question as a self-service audit, not a consultation request."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use plain English throughout. Distinguish between the owner's current manual workflow (folder search friction), the threshold question (is this repetitive enough for automation?), and the next step (one-week audit). No jargon without explanation; no invented numbers or benchmarks."
+      }
+    ]
+  },
+  "raw_text": "{\"item_id\": \"E-PLAN-528\", \"selected_lessons\": [{\"lesson_id\": \"L01\", \"application\": \"The task specifies CTA rule: None. L01 confirms that informational posts about workflow decisions should close with a neutral practical observation rather than a diagnostic booking prompt. The post explains one next step (folder audit) without soliciting a meeting.\"}], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Name the concrete workflow problem hidden by folder structure: explain that disorganised documents create friction when the owner searches for customer agreements, invoices, contracts, or past decisions during routine work. Use the persona scenario (owner-operator, 1–10 person business, manual document work) to frame the issue.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C01\", \"C05\"]}, {\"step_id\": \"P02\", \"instruction\": \"Translate the abstract topic into a bounded workflow decision: clarify that the question is not 'how to reorganise everything' but 'whether to automate the next document-heavy repetitive task (e.g. invoice filing, contract retrieval, customer-query answering) after fixing the folder boundary.' State this as a threshold decision, not a comprehensive system rebuild.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C01\", \"C02\", \"C05\"]}, {\"step_id\": \"P03\", \"instruction\": \"Describe the one practical diagnostic question the owner should answer: 'When you search for a customer agreement or invoice, what actually happens—do you know where to look, or do you dig through multiple folders each time?' Frame this as a measure of readiness, not blame.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C01\", \"C05\"]}, {\"step_id\": \"P04\", \"instruction\": \"Explain the next step without a CTA: the owner should audit the single most frequent document lookup (e.g. 'finding the last email from customer X' or 'locating a signed invoice') over one week, record how long it takes, and note which folders are checked. This is preparatory work the owner does alone, not a call to book a meeting.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C01\", \"C02\", \"C05\"]}, {\"step_id\": \"P05\", \"instruction\": \"Set the honest frame: if the audit shows 5–10 minutes per lookup and it happens 2–3 times daily, automation may fit the model described in Bareni evidence (a bounded workflow with a measurable outcome). If it is ad hoc or takes seconds, it may not. Do not claim a savings number; name the decision criterion instead.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C01\", \"C02\", \"C04\", \"C05\"]}, {\"step_id\": \"P06\", \"instruction\": \"Close with a neutral practical note: invite the owner to recognise that folder structure is often a symptom, not the root problem, and that clarifying the actual workflow friction is the necessary first step before any tool decision. End without a meeting prompt or CTA.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C01\", \"C05\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"No customer names, outcomes, savings, or team references. All examples are persona scenarios (e.g. 'customer agreements,' 'invoices') or hypothetical thresholds, never claimed deployments or results.\"}, {\"constraint_id\": \"K02\", \"handling\": \"No autonomous payment, high-risk automation, or out-of-scope services mentioned. The next step (folder audit) is entirely manual human work; no tool or integration is recommended in the post.\"}, {\"constraint_id\": \"K03\", \"handling\": \"Preserve the frozen persona voice (plain-speaking, founder-to-founder, restrained tone, no hype) and the human-approval boundary. Frame the diagnostic question as a self-service audit, not a consultation request.\"}, {\"constraint_id\": \"K04\", \"handling\": \"Use plain English throughout. Distinguish between the owner's current manual workflow (folder search friction), the threshold question (is this repetitive enough for automation?), and the next step (one-week audit). No jargon without explanation; no invented numbers or benchmarks.\"}]}",
+  "provider_response": {
+    "id": "msg_011Cer1xrYQRT468nSsYiBYM",
+    "container": null,
+    "content": [
+      {
+        "citations": null,
+        "text": "{\"item_id\": \"E-PLAN-528\", \"selected_lessons\": [{\"lesson_id\": \"L01\", \"application\": \"The task specifies CTA rule: None. L01 confirms that informational posts about workflow decisions should close with a neutral practical observation rather than a diagnostic booking prompt. The post explains one next step (folder audit) without soliciting a meeting.\"}], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Name the concrete workflow problem hidden by folder structure: explain that disorganised documents create friction when the owner searches for customer agreements, invoices, contracts, or past decisions during routine work. Use the persona scenario (owner-operator, 1–10 person business, manual document work) to frame the issue.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C01\", \"C05\"]}, {\"step_id\": \"P02\", \"instruction\": \"Translate the abstract topic into a bounded workflow decision: clarify that the question is not 'how to reorganise everything' but 'whether to automate the next document-heavy repetitive task (e.g. invoice filing, contract retrieval, customer-query answering) after fixing the folder boundary.' State this as a threshold decision, not a comprehensive system rebuild.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C01\", \"C02\", \"C05\"]}, {\"step_id\": \"P03\", \"instruction\": \"Describe the one practical diagnostic question the owner should answer: 'When you search for a customer agreement or invoice, what actually happens—do you know where to look, or do you dig through multiple folders each time?' Frame this as a measure of readiness, not blame.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C01\", \"C05\"]}, {\"step_id\": \"P04\", \"instruction\": \"Explain the next step without a CTA: the owner should audit the single most frequent document lookup (e.g. 'finding the last email from customer X' or 'locating a signed invoice') over one week, record how long it takes, and note which folders are checked. This is preparatory work the owner does alone, not a call to book a meeting.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C01\", \"C02\", \"C05\"]}, {\"step_id\": \"P05\", \"instruction\": \"Set the honest frame: if the audit shows 5–10 minutes per lookup and it happens 2–3 times daily, automation may fit the model described in Bareni evidence (a bounded workflow with a measurable outcome). If it is ad hoc or takes seconds, it may not. Do not claim a savings number; name the decision criterion instead.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C01\", \"C02\", \"C04\", \"C05\"]}, {\"step_id\": \"P06\", \"instruction\": \"Close with a neutral practical note: invite the owner to recognise that folder structure is often a symptom, not the root problem, and that clarifying the actual workflow friction is the necessary first step before any tool decision. End without a meeting prompt or CTA.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C01\", \"C05\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"No customer names, outcomes, savings, or team references. All examples are persona scenarios (e.g. 'customer agreements,' 'invoices') or hypothetical thresholds, never claimed deployments or results.\"}, {\"constraint_id\": \"K02\", \"handling\": \"No autonomous payment, high-risk automation, or out-of-scope services mentioned. The next step (folder audit) is entirely manual human work; no tool or integration is recommended in the post.\"}, {\"constraint_id\": \"K03\", \"handling\": \"Preserve the frozen persona voice (plain-speaking, founder-to-founder, restrained tone, no hype) and the human-approval boundary. Frame the diagnostic question as a self-service audit, not a consultation request.\"}, {\"constraint_id\": \"K04\", \"handling\": \"Use plain English throughout. Distinguish between the owner's current manual workflow (folder search friction), the threshold question (is this repetitive enough for automation?), and the next step (one-week audit). No jargon without explanation; no invented numbers or benchmarks.\"}]}",
+        "type": "text"
+      }
+    ],
+    "model": "claude-haiku-4-5-20251001",
+    "role": "assistant",
+    "stop_details": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "not_available",
+      "input_tokens": 4352,
+      "output_tokens": 1040,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": "standard"
+    }
+  },
+  "stop_reason": "end_turn",
+  "cost_details": {
+    "input": 0.004352,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.0052,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.009552
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": null,
+  "key": "SE-FINAL-N090_planner__a001",
+  "role": "planner",
+  "created_at": "2026-09-08T13:02:42.137907+00:00",
+  "ended_at": "2026-09-08T13:02:54.458519+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-N090",
+    "batch_id": 3,
+    "condition": "natural",
+    "cohort": "natural"
+  },
+  "task_id": "SE-FINAL-N090",
+  "batch_id": 3,
+  "cohort": "natural",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 12316,
+  "budget_charge_usd": 0.009552,
+  "unknown_cost_reservation_usd": 0
+}

@@ -1,0 +1,324 @@
+{
+  "task_id": "SE-FINAL-M090",
+  "batch_id": 3,
+  "condition": "unchanged",
+  "source_task_id": "SE-FINAL-N111",
+  "topic": "rethinking escalation paths",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-318",
+    "title": "Escalation paths should start with one rule, not a reorg",
+    "body": "If you want to rethink escalation paths, start with one recurring workflow, not the whole business. Pick the place where decisions keep being passed around by email, chat, or memory: customer questions, invoice review, lead triage, or something similar. Then write down the current rule in plain English: who decides, what the trigger is, and what happens next when the first person cannot decide. That sounds basic because it is; most escalation problems are just undocumented rules with a coat of stress on top.\n\nThe practical next step is a simple filter. Ask whether the escalation decision has an explicit rule, whether the inputs are digital and structured enough to be handled reliably, and whether the cost of a wrong decision is low enough to keep moving. If the answer is no, do not force automation. Use a checklist, routing template, or delegation rule instead, and keep human approval in place for money movement or any other high-risk step. If the answer is yes, the decision is a candidate for a narrow pilot later.\n\nFor a small business, that checkpoint is usually more useful than starting with tools. It tells you whether the problem is automation, or just a clearer handoff."
+  },
+  "final": {
+    "item_id": "E-OPT-418",
+    "title": "Escalation paths should start with one rule, not a reorg",
+    "body": "If you want to rethink escalation paths, start with one recurring workflow, not the whole business. Pick the place where decisions keep being passed around by email, chat, or memory: customer questions, invoice review, lead triage, or something similar. Then write down the current rule in plain English: who decides, what the trigger is, and what happens next when the first person cannot decide. That sounds basic because it is; most escalation problems are just undocumented rules with a coat of stress on top.\n\nThe practical next step is a simple filter. Ask whether the escalation decision has an explicit rule, whether the inputs are digital and structured enough to be handled reliably, and whether the cost of a wrong decision is low enough to keep moving. If the answer is no, do not force automation. Use a checklist, routing template, or delegation rule instead, and keep human approval in place for money movement or any other high-risk step. If the answer is yes, the decision is a candidate for a narrow pilot later.\n\nFor a small business, that checkpoint is usually more useful than starting with tools. It tells you whether the problem is automation, or just a clearer handoff."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-090",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-090",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-090-1",
+        "repairs": []
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-090",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-418",
+        "title": "Escalation paths should start with one rule, not a reorg",
+        "body": "If you want to rethink escalation paths, start with one recurring workflow, not the whole business. Pick the place where decisions keep being passed around by email, chat, or memory: customer questions, invoice review, lead triage, or something similar. Then write down the current rule in plain English: who decides, what the trigger is, and what happens next when the first person cannot decide. That sounds basic because it is; most escalation problems are just undocumented rules with a coat of stress on top.\n\nThe practical next step is a simple filter. Ask whether the escalation decision has an explicit rule, whether the inputs are digital and structured enough to be handled reliably, and whether the cost of a wrong decision is low enough to keep moving. If the answer is no, do not force automation. Use a checklist, routing template, or delegation rule instead, and keep human approval in place for money movement or any other high-risk step. If the answer is yes, the decision is a candidate for a narrow pilot later.\n\nFor a small business, that checkpoint is usually more useful than starting with tools. It tells you whether the problem is automation, or just a clearer handoff."
+      },
+      "gate_key": "SE-FINAL-M090_gate1__a001"
+    }
+  ],
+  "measurement_status": "pending",
+  "planner": {
+    "item_id": "E-PLAN-518",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "This is informational content addressing problem awareness (PF-01). No CTA is authorised; end with a practical next-step observation rather than a booking prompt."
+      },
+      {
+        "lesson_id": "L02",
+        "application": "C02 describes customer database and automation-tool accounts held in the customer's name as policy and no-lock-in positioning. Preserve this qualifier when discussing control boundaries."
+      },
+      {
+        "lesson_id": "L03",
+        "application": "The abstract topic 'rethinking escalation paths' requires grounding in a concrete workflow decision. If evidence does not fully support a substantive claim, replace it with a diagnostic question or decision checkpoint rather than general background."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Identify the single recurring workflow in which escalation delays or manual routing cause measurable friction. This is the diagnostic entry point: ask the owner whether they can name one repeatable situation (e.g., customer queries routed by email, invoices requiring manual review, or leads triaged by hand) where a decision rule exists but is not yet enforced systematically.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C01",
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Map the current escalation logic: who decides what goes where, by what criteria, and when. Distinguish between decisions that have a documented rule (e.g., 'amounts over £500 need approval') and those that rely on pattern recognition or judgment. This step uncovers whether the escalation path can be automated or whether it requires human judgment too late in the workflow.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Test whether the escalation decision meets the criteria for automation: the rule is explicit, the inputs are digital and structured (or can be extracted reliably), the cost of error is acceptable, and high-risk decisions (e.g., payment authorization) retain human approval. Use this as a yes-or-no filter, not a roadmap promise.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L02"
+        ],
+        "evidence_ids": [
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "If the decision passes the filter, define the pilot scope narrowly: one escalation path, one month, one measurable outcome (e.g., 'queries reach the right person within 2 hours instead of 1 day'). Establish what human approval or override looks like; this is not optional for risk-bearing decisions.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [
+          "L02"
+        ],
+        "evidence_ids": [
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "If the decision does not pass the filter or if judgment is central to the choice, consider whether the workflow is better served by a checklist, a routing template, or delegation rules instead of automation. Document this decision and revisit escalation in a different workflow.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C01",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Record the owner's next practical action: either a 30-minute exploratory conversation to test the diagnostic questions in step P01, or a decision to leave escalation paths unchanged for now and examine a different workflow. Either path is valid and does not require a sales commitment.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "S01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "Do not invent customer examples, deployment results, savings, or a multi-person team. Use only the Bareni identity (consulting practice built by thesis author), approved self-built demos (knowledge assistant, AP automation, Atlas Partner prototype), and the persona scenario (owner-operator, 1-10 people, has tried ChatGPT) as provided in C01."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Preserve the mandatory human approval boundary for money movement and high-risk decisions. Do not propose autonomous payment, authorization, or other excluded services (C04: medical, legal, bulk cold-email, scan-heavy OCR, unsupported compliance)."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Keep the frozen persona tone (plain-speaking technical expert, founder-to-founder, trust over enthusiasm) and honour the evidence boundary (no invented deployments, outcomes, or multi-person capability claims). Maintain the no-CTA rule (L01): close with a neutral next-step note, not a meeting prompt."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use plain English and keep workflow-decision language distinct from capability claims. When C02 describes customer accounts as policy positioning, preserve that qualifier. Replace unsupported claims with diagnostic questions (L03)."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-618",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits"
+          },
+          {
+            "source_id": "C01",
+            "quote": "have a frequent, repeatable workflow with a measurable outcome"
+          }
+        ],
+        "rationale": "This is a diagnostic instruction and question to the owner, not an assertion of a current capability, deployment or observed result. Approved evidence permits the diagnostic focus on one recurring workflow and on repeatable workflows with measurable outcomes.",
+        "use_guidance": "Keep as an explicitly proposed diagnostic step. Frame the examples (email-routed queries, manual invoice review, hand-triaged leads) as illustrative situations, not as Bareni customer workflows. Do not attach any figure for friction or hours saved; the 8-10 hours persona scenario is not a measurement."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits"
+          },
+          {
+            "source_id": "C03",
+            "quote": "amount-based human-only approval"
+          }
+        ],
+        "rationale": "A mapping instruction and analytical next step for the owner, not a factual claim about implemented functionality. The distinction between documented threshold rules and judgment calls is consistent with the approved amount-based approval control.",
+        "use_guidance": "Keep explicitly proposed. If a currency example is used, prefer EUR consistent with the evidence base rather than introducing an unexplained GBP threshold, and present any amount as an illustrative rule the owner might already have, not a Bareni default or benchmark."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C01",
+            "quote": "use digital documents and SaaS tools, and have a frequent, repeatable workflow with a measurable outcome"
+          },
+          {
+            "source_id": "C04",
+            "quote": "scan-heavy OCR-dependent workflows"
+          }
+        ],
+        "rationale": "A proposed yes/no suitability filter, explicitly disclaiming a roadmap promise. Its criteria align with approved fit signals and the mandatory human-approval boundary; it asserts no implementation or outcome.",
+        "use_guidance": "Keep explicitly proposed. When mentioning reliable extraction of inputs, note that scan-heavy, OCR-dependent workflows are currently out of scope and that PDF/scan ingestion and OCR are not implemented, so the filter should not imply Bareni can extract from scans today."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "fixed-price pilot in weeks"
+          },
+          {
+            "source_id": "C02",
+            "quote": "Timings are intended scopes, not guarantees."
+          },
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          }
+        ],
+        "rationale": "The core—narrow pilot scope with a measurable outcome and mandatory human approval for risk-bearing decisions—is supported. However, the claim states a duration ('one month') and a concrete target ('within 2 hours instead of 1 day') without marking them as intended scope and an illustrative, unmeasured target, and approved evidence requires timings to be presented as intended scopes rather than guarantees.",
+        "use_guidance": "Before use, add that pilot timings are intended scopes, not guarantees, and label the 2-hours-versus-1-day figures explicitly as an example measure the owner would set, not a Bareni benchmark, observed result or promised outcome. Keep the mandatory human-approval statement for money movement and other high-risk decisions unchanged."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "says honestly whether AI fits"
+          },
+          {
+            "source_id": "S01",
+            "quote": "Do not force AI where it is unsuitable."
+          }
+        ],
+        "rationale": "A permissible recommendation to prefer a non-automated approach (checklist, routing template, delegation rules) when judgment dominates, and to document and revisit. It asserts no current capability or outcome.",
+        "use_guidance": "Keep explicitly proposed and as a genuine no-AI option. Do not present the non-automated alternatives as Bareni deliverables or as a paid service tier; note only that the diagnostic can conclude AI does not fit."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "FORBIDDEN",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Standard primary CTA: \"Book a free 30-minute diagnostic\". Use it only for purchase-intent content, once, at the end."
+          }
+        ],
+        "rationale": "Recommending a '30-minute exploratory conversation' as the owner's next action is an indirect meeting prompt, i.e. a CTA in substance, while the approved task sets the CTA rule to none. Disclaiming a sales commitment does not remove the prohibited invitation.",
+        "use_guidance": "Exclude the meeting prompt. Replace the next action with a neutral, self-contained step the owner can take alone, such as writing down the current escalation rule and the point where it stops being followed, or deliberately leaving escalation unchanged and examining a different workflow. The separately supported free 30-minute diagnostic exists as an offer but must not appear in this post."
+      }
+    ]
+  },
+  "selected_lessons": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. This includes indirect meeting prompts and direct brand-level offers such as a free 30-minute diagnostic. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025",
+        "B3-SUMMARY",
+        "SE-FINAL-N079"
+      ]
+    },
+    {
+      "lesson_id": "L02",
+      "text": "When approved evidence presents an operational practice as policy or positioning, keep that qualifier in the copy. Do not rewrite it as an absolute guarantee or warranty-level statement.",
+      "source_event_ids": [
+        "B3-SUMMARY",
+        "SE-FINAL-N080"
+      ]
+    },
+    {
+      "lesson_id": "L03",
+      "text": "If the source set does not support a substantive explanatory claim, replace it with a neutral workflow prompt or decision step rather than filling the gap with general background explanation.",
+      "source_event_ids": [
+        "B3-SUMMARY",
+        "SE-FINAL-N091"
+      ]
+    }
+  ],
+  "register_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "planner_key": "SE-FINAL-N111_planner__a001",
+  "researcher_key": "SE-FINAL-N111_researcher__a001",
+  "writer_key": "SE-FINAL-N111_writer__a001",
+  "final_key": "SE-FINAL-M090_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-M090_gate1__a001",
+  "production_completed_at": "2026-09-08T13:44:27.014902+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts"
+}

@@ -1,0 +1,161 @@
+{
+  "created_at": "2026-09-08T18:44:08.399474+00:00",
+  "role": "optimizer",
+  "metadata": {
+    "study_id": "STUDY-E-ABLATON",
+    "pair_id": "SEA-I007-R2",
+    "source_id": "SEA-I007",
+    "arm": "critic_on",
+    "cycle": 1
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49",
+  "status": "success",
+  "output": {
+    "item_id": "POST-03a4e74217219b6e7d2e75a9-1",
+    "title": "Check data residency before you automate",
+    "body": "Before you automate a workflow, make data residency the first control, not a footnote. By residency, I mean where the data is allowed to sit and travel: your own systems, a specific country, or a vendor service. For an owner-operator, the useful question is not “can AI do this?” but “which parts of this workflow are allowed to leave my environment at all?”\n\nPick one recurring workflow you already handle by hand: customer-data entry, invoice processing, or lead follow-up. Then list the fields that should stay put because they are sensitive or contract-bound: payment details, personal data, internal pricing, or terms in a supplier agreement. That is the boundary. Keep the workflow example in mind as a scenario, not a customer case.\n\nNext, read the tool’s service terms and data-handling docs. Ask one plain question: which fields in this workflow are legally or contractually required to stay in one place, and does the vendor’s agreement allow that? You do not need a grand strategy to answer that.\n\nIf most of the workflow can move, a pilot may make sense. If everything must stay local, look at a self-hosted or tightly integrated approach instead. Slightly less glamorous than a launch video, but more useful on Monday."
+  },
+  "cost_usd": 0.0021228,
+  "usage": {
+    "input_tokens": 5348,
+    "cached_input_tokens": 4864,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 310,
+    "reasoning_tokens": 0
+  },
+  "provider_response": {
+    "id": "resp_047e40264dac2fb7016aa05777fc8087d2a66c2a540f94dc55",
+    "created_at": 1788893048.0,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": {},
+    "model": "gpt-5.4-mini-2026-03-17",
+    "object": "response",
+    "output": [
+      {
+        "id": "msg_047e40264dac2fb7016aa05779061887d29c02dbd78575aaa9",
+        "content": [
+          {
+            "annotations": [],
+            "text": "{\"item_id\":\"POST-03a4e74217219b6e7d2e75a9-1\",\"title\":\"Check data residency before you automate\",\"body\":\"Before you automate a workflow, make data residency the first control, not a footnote. By residency, I mean where the data is allowed to sit and travel: your own systems, a specific country, or a vendor service. For an owner-operator, the useful question is not “can AI do this?” but “which parts of this workflow are allowed to leave my environment at all?”\\n\\nPick one recurring workflow you already handle by hand: customer-data entry, invoice processing, or lead follow-up. Then list the fields that should stay put because they are sensitive or contract-bound: payment details, personal data, internal pricing, or terms in a supplier agreement. That is the boundary. Keep the workflow example in mind as a scenario, not a customer case.\\n\\nNext, read the tool’s service terms and data-handling docs. Ask one plain question: which fields in this workflow are legally or contractually required to stay in one place, and does the vendor’s agreement allow that? You do not need a grand strategy to answer that.\\n\\nIf most of the workflow can move, a pilot may make sense. If everything must stay local, look at a self-hosted or tightly integrated approach instead. Slightly less glamorous than a launch video, but more useful on Monday.\"}",
+            "type": "output_text",
+            "logprobs": []
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message",
+        "phase": "final_answer"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 1.0,
+    "tool_choice": "auto",
+    "tools": [],
+    "top_p": 0.98,
+    "background": false,
+    "completed_at": 1788893051.0,
+    "conversation": null,
+    "max_output_tokens": 1024,
+    "max_tool_calls": null,
+    "moderation": null,
+    "previous_response_id": null,
+    "prompt": null,
+    "prompt_cache_key": null,
+    "prompt_cache_options": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "generate_summary": null,
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "status": "completed",
+    "text": {
+      "format": {
+        "name": "study_e_post",
+        "schema_": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "item_id",
+            "title",
+            "body"
+          ],
+          "properties": {
+            "item_id": {
+              "type": "string",
+              "enum": [
+                "POST-03a4e74217219b6e7d2e75a9-1"
+              ]
+            },
+            "title": {
+              "type": "string"
+            },
+            "body": {
+              "type": "string"
+            }
+          }
+        },
+        "type": "json_schema",
+        "description": null,
+        "strict": true
+      },
+      "verbosity": "medium"
+    },
+    "top_logprobs": 0,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 5348,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 4864
+      },
+      "output_tokens": 310,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 5658
+    },
+    "user": null,
+    "billing": {
+      "payer": "developer"
+    },
+    "frequency_penalty": 0.0,
+    "presence_penalty": 0.0,
+    "store": false,
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    }
+  },
+  "latency_ms": 4031,
+  "finished_at": "2026-09-08T18:44:12.438810+00:00",
+  "cost_details": {
+    "input": 0.000363,
+    "cache_read_input_tokens": 0.0003648,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.001395,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.0021228
+  },
+  "study_id": "STUDY-E-ABLATON"
+}

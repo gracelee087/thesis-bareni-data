@@ -1,0 +1,183 @@
+{
+  "status": "success",
+  "usage": {
+    "input_tokens": 7968,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1576,
+    "reasoning_tokens": null
+  },
+  "cost_usd": 0.07924,
+  "output": {
+    "item_id": "E-RES-613",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow"
+          },
+          {
+            "source_id": "C01",
+            "quote": "a frequent, repeatable workflow with a measurable outcome"
+          },
+          {
+            "source_id": "C01",
+            "quote": "8–10 hours a week of repeated customer questions, neglected sales leads,\n  and manual invoice/data work"
+          }
+        ],
+        "rationale": "This is an instruction to the reader to identify one recurring workflow, with illustrative examples drawn from the approved persona pains. It asserts no current implementation, customer or result.",
+        "use_guidance": "Keep as a reader instruction. Present the email/lead/invoice examples as persona illustrations, not as observed customer situations or completed Bareni projects."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "The 8–10 hours is a persona scenario, not a market\n  statistic or observed customer result."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Numbers require a source and status."
+          }
+        ],
+        "rationale": "The instruction to quantify hours, missed leads or error rate is permissible, but the stated 4–5 hours weekly cut-off is a specific number with no approved source and no status label; it reads as an established threshold.",
+        "use_guidance": "Either drop the numeric cut-off and ask the reader to set their own threshold, or mark it explicitly as an illustrative example rather than a Bareni benchmark or observed result. Keep the instruction to record hours, and do not present any figure as a measured outcome."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "Especially suitable businesses already work in English, use digital\n  documents and SaaS tools, and have a frequent, repeatable workflow with a\n  measurable outcome."
+          },
+          {
+            "source_id": "C04",
+            "quote": "scan-heavy OCR-dependent workflows"
+          }
+        ],
+        "rationale": "A diagnostic question about whether the workflow is already digital with clear inputs and outputs. It matches the approved fit criteria and asserts no current capability or customer.",
+        "use_guidance": "Keep as a diagnostic question. Do not extend it into a claim that Bareni can currently handle paper or scan-heavy inputs; OCR and PDF/scan ingestion are not implemented."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "says honestly whether AI\n  fits"
+          },
+          {
+            "source_id": "C02",
+            "quote": "build-versus-buy decision"
+          },
+          {
+            "source_id": "S01",
+            "quote": "the owner compares a bounded automation investment with continuing\n  manual work or hiring"
+          }
+        ],
+        "rationale": "A recommended decision step for the reader — automate, optimise manually, or hire — consistent with the approved honest-fit stance. No implementation or outcome is asserted.",
+        "use_guidance": "Keep as a reader decision step. Retain the option that AI may not fit; do not imply automation is generally the better choice or promise a result from either path."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C03",
+            "quote": "amount-based human-only approval,\n  refusal of agent approval/payment attempts"
+          }
+        ],
+        "rationale": "A control instruction telling the reader to keep human approval on high-risk steps and design automation to flag rather than execute. Aligned with the mandatory human-approval boundary.",
+        "use_guidance": "Keep as a design control the reader should require. Do not describe this as a control already running for any customer; the blocked-payment behaviour exists only in a synthetic self-built demo."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C05",
+            "quote": "\"The build stays technical; the conversation\n  doesn't.\""
+          },
+          {
+            "source_id": "S01",
+            "quote": "use none unless the task explicitly authorises one"
+          }
+        ],
+        "rationale": "The write-it-down next step is a permissible manual action, and the quoted voice line is approved. However, \"Move to the decision step\" is ambiguous and can read as an invitation to continue the conversation with Bareni, which the task forbids since no CTA is authorised.",
+        "use_guidance": "Rephrase the closing so the next step stays entirely with the reader (write down the workflow, its weekly cost, and the decision) and remove any wording that could be read as a prompt to contact or book with Bareni. Keep the voice line at most once."
+      }
+    ]
+  },
+  "raw_text": "{\"item_id\":\"E-RES-613\",\"ledger\":[{\"claim_id\":\"Q01\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C02\",\"quote\":\"The diagnostic identifies the one recurring workflow\"},{\"source_id\":\"C01\",\"quote\":\"a frequent, repeatable workflow with a measurable outcome\"},{\"source_id\":\"C01\",\"quote\":\"8–10 hours a week of repeated customer questions, neglected sales leads,\\n  and manual invoice/data work\"}],\"rationale\":\"This is an instruction to the reader to identify one recurring workflow, with illustrative examples drawn from the approved persona pains. It asserts no current implementation, customer or result.\",\"use_guidance\":\"Keep as a reader instruction. Present the email/lead/invoice examples as persona illustrations, not as observed customer situations or completed Bareni projects.\"},{\"claim_id\":\"Q02\",\"category\":\"QUALIFICATIONS\",\"evidence\":[{\"source_id\":\"C01\",\"quote\":\"The 8–10 hours is a persona scenario, not a market\\n  statistic or observed customer result.\"},{\"source_id\":\"C05\",\"quote\":\"Numbers require a source and status.\"}],\"rationale\":\"The instruction to quantify hours, missed leads or error rate is permissible, but the stated 4–5 hours weekly cut-off is a specific number with no approved source and no status label; it reads as an established threshold.\",\"use_guidance\":\"Either drop the numeric cut-off and ask the reader to set their own threshold, or mark it explicitly as an illustrative example rather than a Bareni benchmark or observed result. Keep the instruction to record hours, and do not present any figure as a measured outcome.\"},{\"claim_id\":\"Q03\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C01\",\"quote\":\"Especially suitable businesses already work in English, use digital\\n  documents and SaaS tools, and have a frequent, repeatable workflow with a\\n  measurable outcome.\"},{\"source_id\":\"C04\",\"quote\":\"scan-heavy OCR-dependent workflows\"}],\"rationale\":\"A diagnostic question about whether the workflow is already digital with clear inputs and outputs. It matches the approved fit criteria and asserts no current capability or customer.\",\"use_guidance\":\"Keep as a diagnostic question. Do not extend it into a claim that Bareni can currently handle paper or scan-heavy inputs; OCR and PDF/scan ingestion are not implemented.\"},{\"claim_id\":\"Q04\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C02\",\"quote\":\"says honestly whether AI\\n  fits\"},{\"source_id\":\"C02\",\"quote\":\"build-versus-buy decision\"},{\"source_id\":\"S01\",\"quote\":\"the owner compares a bounded automation investment with continuing\\n  manual work or hiring\"}],\"rationale\":\"A recommended decision step for the reader — automate, optimise manually, or hire — consistent with the approved honest-fit stance. No implementation or outcome is asserted.\",\"use_guidance\":\"Keep as a reader decision step. Retain the option that AI may not fit; do not imply automation is generally the better choice or promise a result from either path.\"},{\"claim_id\":\"Q05\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C04\",\"quote\":\"Human approval is mandatory for money movement and other high-risk decisions.\"},{\"source_id\":\"C03\",\"quote\":\"amount-based human-only approval,\\n  refusal of agent approval/payment attempts\"}],\"rationale\":\"A control instruction telling the reader to keep human approval on high-risk steps and design automation to flag rather than execute. Aligned with the mandatory human-approval boundary.\",\"use_guidance\":\"Keep as a design control the reader should require. Do not describe this as a control already running for any customer; the blocked-payment behaviour exists only in a synthetic self-built demo.\"},{\"claim_id\":\"Q06\",\"category\":\"QUALIFICATIONS\",\"evidence\":[{\"source_id\":\"C05\",\"quote\":\"\\\"The build stays technical; the conversation\\n  doesn't.\\\"\"},{\"source_id\":\"S01\",\"quote\":\"use none unless the task explicitly authorises one\"}],\"rationale\":\"The write-it-down next step is a permissible manual action, and the quoted voice line is approved. However, \\\"Move to the decision step\\\" is ambiguous and can read as an invitation to continue the conversation with Bareni, which the task forbids since no CTA is authorised.\",\"use_guidance\":\"Rephrase the closing so the next step stays entirely with the reader (write down the workflow, its weekly cost, and the decision) and remove any wording that could be read as a prompt to contact or book with Bareni. Keep the voice line at most once.\"}]}",
+  "provider_response": {
+    "id": "msg_011Cer2hweggN8EMd1pa6RPQ",
+    "container": null,
+    "content": [
+      {
+        "citations": null,
+        "text": "{\"item_id\":\"E-RES-613\",\"ledger\":[{\"claim_id\":\"Q01\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C02\",\"quote\":\"The diagnostic identifies the one recurring workflow\"},{\"source_id\":\"C01\",\"quote\":\"a frequent, repeatable workflow with a measurable outcome\"},{\"source_id\":\"C01\",\"quote\":\"8–10 hours a week of repeated customer questions, neglected sales leads,\\n  and manual invoice/data work\"}],\"rationale\":\"This is an instruction to the reader to identify one recurring workflow, with illustrative examples drawn from the approved persona pains. It asserts no current implementation, customer or result.\",\"use_guidance\":\"Keep as a reader instruction. Present the email/lead/invoice examples as persona illustrations, not as observed customer situations or completed Bareni projects.\"},{\"claim_id\":\"Q02\",\"category\":\"QUALIFICATIONS\",\"evidence\":[{\"source_id\":\"C01\",\"quote\":\"The 8–10 hours is a persona scenario, not a market\\n  statistic or observed customer result.\"},{\"source_id\":\"C05\",\"quote\":\"Numbers require a source and status.\"}],\"rationale\":\"The instruction to quantify hours, missed leads or error rate is permissible, but the stated 4–5 hours weekly cut-off is a specific number with no approved source and no status label; it reads as an established threshold.\",\"use_guidance\":\"Either drop the numeric cut-off and ask the reader to set their own threshold, or mark it explicitly as an illustrative example rather than a Bareni benchmark or observed result. Keep the instruction to record hours, and do not present any figure as a measured outcome.\"},{\"claim_id\":\"Q03\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C01\",\"quote\":\"Especially suitable businesses already work in English, use digital\\n  documents and SaaS tools, and have a frequent, repeatable workflow with a\\n  measurable outcome.\"},{\"source_id\":\"C04\",\"quote\":\"scan-heavy OCR-dependent workflows\"}],\"rationale\":\"A diagnostic question about whether the workflow is already digital with clear inputs and outputs. It matches the approved fit criteria and asserts no current capability or customer.\",\"use_guidance\":\"Keep as a diagnostic question. Do not extend it into a claim that Bareni can currently handle paper or scan-heavy inputs; OCR and PDF/scan ingestion are not implemented.\"},{\"claim_id\":\"Q04\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C02\",\"quote\":\"says honestly whether AI\\n  fits\"},{\"source_id\":\"C02\",\"quote\":\"build-versus-buy decision\"},{\"source_id\":\"S01\",\"quote\":\"the owner compares a bounded automation investment with continuing\\n  manual work or hiring\"}],\"rationale\":\"A recommended decision step for the reader — automate, optimise manually, or hire — consistent with the approved honest-fit stance. No implementation or outcome is asserted.\",\"use_guidance\":\"Keep as a reader decision step. Retain the option that AI may not fit; do not imply automation is generally the better choice or promise a result from either path.\"},{\"claim_id\":\"Q05\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C04\",\"quote\":\"Human approval is mandatory for money movement and other high-risk decisions.\"},{\"source_id\":\"C03\",\"quote\":\"amount-based human-only approval,\\n  refusal of agent approval/payment attempts\"}],\"rationale\":\"A control instruction telling the reader to keep human approval on high-risk steps and design automation to flag rather than execute. Aligned with the mandatory human-approval boundary.\",\"use_guidance\":\"Keep as a design control the reader should require. Do not describe this as a control already running for any customer; the blocked-payment behaviour exists only in a synthetic self-built demo.\"},{\"claim_id\":\"Q06\",\"category\":\"QUALIFICATIONS\",\"evidence\":[{\"source_id\":\"C05\",\"quote\":\"\\\"The build stays technical; the conversation\\n  doesn't.\\\"\"},{\"source_id\":\"S01\",\"quote\":\"use none unless the task explicitly authorises one\"}],\"rationale\":\"The write-it-down next step is a permissible manual action, and the quoted voice line is approved. However, \\\"Move to the decision step\\\" is ambiguous and can read as an invitation to continue the conversation with Bareni, which the task forbids since no CTA is authorised.\",\"use_guidance\":\"Rephrase the closing so the next step stays entirely with the reader (write down the workflow, its weekly cost, and the decision) and remove any wording that could be read as a prompt to contact or book with Bareni. Keep the voice line at most once.\"}]}",
+        "type": "text"
+      }
+    ],
+    "model": "claude-opus-5",
+    "role": "assistant",
+    "stop_details": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "global",
+      "input_tokens": 7968,
+      "output_tokens": 1576,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": null,
+      "service_tier": "standard"
+    }
+  },
+  "stop_reason": "end_turn",
+  "cost_details": {
+    "input": 0.03984,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.0394,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.07924
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": null,
+  "key": "SE-FINAL-N106_researcher__a001",
+  "role": "researcher",
+  "created_at": "2026-09-08T13:12:26.618575+00:00",
+  "ended_at": "2026-09-08T13:12:47.118971+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-N106",
+    "batch_id": 4,
+    "condition": "natural",
+    "cohort": "natural"
+  },
+  "task_id": "SE-FINAL-N106",
+  "batch_id": 4,
+  "cohort": "natural",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 20498,
+  "budget_charge_usd": 0.07924,
+  "unknown_cost_reservation_usd": 0
+}

@@ -1,0 +1,83 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I110-R1",
+    "item_id": "SEA-I110",
+    "repeat": 1,
+    "arm_order": [
+      "critic_on",
+      "critic_off"
+    ],
+    "content_id": "POST-2222d54f7bdfa390efaa23ad"
+  },
+  "arms": {
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-2222d54f7bdfa390efaa23ad-1",
+        "title": "What transcript accuracy hides in a small business workflow",
+        "body": "Transcript accuracy can hide the part that actually changes the decision: tone, hesitation, and context. A transcript may be word-perfect and still miss that the customer was unsure, buying time, or quietly objecting. For an owner-operator, that matters when call notes from sales, support, or onboarding shape the next step.\n\nThe bounded workflow decision is simple: do you keep treating the transcript as the source of truth, or do you add a check against the original audio or related metadata before someone acts on it? I would not force AI into this unless the gap shows up often enough to create rework. Human judgment still belongs in the loop, especially where money or commitments are involved.\n\nA useful diagnostic question is: when we act on a transcript, how often do we later realise we missed hesitation or tone? Don’t guess. Pick 5–10 recent recordings, read the transcript, then listen to the audio beside it and mark every place where the transcript looked clear but the conversation was not.\n\nIf that review keeps surfacing the same ambiguity, the next step is a small pilot question: would confidence scores, speaker intent, or similar markers help the team read the conversation more honestly? Tiny truth, less drama."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-2222d54f7bdfa390efaa23ad-1",
+            "title": "What transcript accuracy hides in a small business workflow",
+            "body": "Transcript accuracy can hide the part that actually changes the decision: tone, hesitation, and context. A transcript may be word-perfect and still miss that the customer was unsure, buying time, or quietly objecting. For an owner-operator, that matters when call notes from sales, support, or onboarding shape the next step.\n\nThe bounded workflow decision is simple: do you keep treating the transcript as the source of truth, or do you add a check against the original audio or related metadata before someone acts on it? I would not force AI into this unless the gap shows up often enough to create rework. Human judgment still belongs in the loop, especially where money or commitments are involved.\n\nA useful diagnostic question is: when we act on a transcript, how often do we later realise we missed hesitation or tone? Don’t guess. Pick 5–10 recent recordings, read the transcript, then listen to the audio beside it and mark every place where the transcript looked clear but the conversation was not.\n\nIf that review keeps surfacing the same ambiguity, the next step is a small pilot question: would confidence scores, speaker intent, or similar markers help the team read the conversation more honestly? Tiny truth, less drama."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-2222d54f7bdfa390efaa23ad-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": [
+            {
+              "repair_id": "P01",
+              "target_ids": [
+                "D01",
+                "D02"
+              ],
+              "instruction": "Delete the final sentence claiming Bareni has already deployed this approach for 42 paying customers and verified a 53% reduction in weekly administrative work, and replace it with a boundary-safe closing that does not imply customers, deployments, or measured results.",
+              "source_ids": [
+                "BRIEF",
+                "C01",
+                "C05",
+                "S01"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-2222d54f7bdfa390efaa23ad-1",
+        "title": "What transcript accuracy hides in a small business workflow",
+        "body": "Transcript accuracy can hide the part that actually changes the decision: tone, hesitation, and context. A transcript may be word-perfect and still miss that the customer was unsure, buying time, or quietly objecting. For an owner-operator, that matters when call notes from sales, support, or onboarding drive the next step.\n\nThe bounded workflow decision is simple: do you keep treating the transcript as the source of truth, or do you add a check against the original audio or metadata before anyone acts on it? I would not force AI into this unless the gap shows up often enough to create rework. Human judgment still belongs in the loop, especially where money or commitments are involved.\n\nA useful diagnostic question is: when we act on a transcript, how often do we later realise we missed hesitation or tone? Don’t guess. Pick 5–10 recent recordings, read the transcript, then listen to the audio beside it and mark every place where the transcript looked clear but the conversation was not.\n\nIf that review keeps surfacing the same ambiguity, the next step is not a grand platform project. It is a small pilot to test whether confidence scores, speaker intent, or similar markers would help the team read the conversation more honestly. Tiny truth, less drama."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-2222d54f7bdfa390efaa23ad-1",
+            "title": "What transcript accuracy hides in a small business workflow",
+            "body": "Transcript accuracy can hide the part that actually changes the decision: tone, hesitation, and context. A transcript may be word-perfect and still miss that the customer was unsure, buying time, or quietly objecting. For an owner-operator, that matters when call notes from sales, support, or onboarding drive the next step.\n\nThe bounded workflow decision is simple: do you keep treating the transcript as the source of truth, or do you add a check against the original audio or metadata before anyone acts on it? I would not force AI into this unless the gap shows up often enough to create rework. Human judgment still belongs in the loop, especially where money or commitments are involved.\n\nA useful diagnostic question is: when we act on a transcript, how often do we later realise we missed hesitation or tone? Don’t guess. Pick 5–10 recent recordings, read the transcript, then listen to the audio beside it and mark every place where the transcript looked clear but the conversation was not.\n\nIf that review keeps surfacing the same ambiguity, the next step is not a grand platform project. It is a small pilot to test whether confidence scores, speaker intent, or similar markers would help the team read the conversation more honestly. Tiny truth, less drama."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-2222d54f7bdfa390efaa23ad-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

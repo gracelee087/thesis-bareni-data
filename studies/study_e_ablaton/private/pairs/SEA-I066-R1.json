@@ -1,0 +1,96 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I066-R1",
+    "item_id": "SEA-I066",
+    "repeat": 1,
+    "arm_order": [
+      "critic_off",
+      "critic_on"
+    ],
+    "content_id": "POST-697f9519250133029a37f4b5"
+  },
+  "arms": {
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-697f9519250133029a37f4b5-1",
+        "title": "When glossary upkeep should stay manual",
+        "body": "If your glossary only needs a few occasional fixes, keep it manual. AI is not the first move for a low-volume task.\n\nThe better question is simple: is glossary upkeep a repeatable workflow, or just a series of one-off edits? If the answer is repeatable, document the rule in plain English before you automate anything. For example: what counts as a new term, what counts as a definition change, and which entries must wait for owner sign-off.\n\nThat keeps the build small and the decision human. Bareni works best when the workflow is already digital and the rule can be stated clearly. It does not fit scan-heavy, OCR-dependent work, and paper-based glossary sources are out of scope here.\n\nThe practical next step is to write down the current process on one page: source, reviewer, approval point, and where the glossary lives. Then you can see whether the problem is real workflow friction or just tidy-up work wearing a business hat."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-697f9519250133029a37f4b5-1",
+            "title": "When glossary upkeep should stay manual",
+            "body": "If your glossary only needs a few occasional fixes, keep it manual. AI is not the first move for a low-volume task.\n\nThe better question is simple: is glossary upkeep a repeatable workflow, or just a series of one-off edits? If the answer is repeatable, document the rule in plain English before you automate anything. For example: what counts as a new term, what counts as a definition change, and which entries must wait for owner sign-off.\n\nThat keeps the build small and the decision human. Bareni works best when the workflow is already digital and the rule can be stated clearly. It does not fit scan-heavy, OCR-dependent work, and paper-based glossary sources are out of scope here.\n\nThe practical next step is to write down the current process on one page: source, reviewer, approval point, and where the glossary lives. Then you can see whether the problem is real workflow friction or just tidy-up work wearing a business hat."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-697f9519250133029a37f4b5-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    },
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-697f9519250133029a37f4b5-1",
+        "title": "When glossary upkeep should stop being manual",
+        "body": "If glossary upkeep is eating into your week, treat it as a workflow decision, not a vague content problem.\n\nFor a small business, the question is simple: are you making the same glossary judgment over and over, or is each update a one-off? If the terms repeat, the source is already digital, and a human can still approve the final change, that is a bounded place to test AI assistance. If the work is rare, messy, or scan-heavy, manual handling is still the better fit. Bareni currently declines scan-heavy, OCR-dependent workflows, so paper-based glossary sources are out of scope.\n\nThe next step is to write down the rule in plain English: what counts as a new term, what counts as a definition change, and which changes must wait for owner sign-off before publication. That gives you a clean boundary for deciding whether the task is still a manual job or ready for a small pilot.\n\nNo drama. Just a clearer line between upkeep and overkill."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-697f9519250133029a37f4b5-1",
+            "title": "When glossary upkeep should stop being manual",
+            "body": "If glossary upkeep is eating into your week, treat it as a workflow decision, not a vague content problem.\n\nFor a small business, the question is simple: are you making the same glossary judgment over and over, or is each update a one-off? If the terms repeat, the source is already digital, and a human can still approve the final change, that is a bounded place to test AI assistance. If the work is rare, messy, or scan-heavy, manual handling is still the better fit. Bareni currently declines scan-heavy, OCR-dependent workflows, so paper-based glossary sources are out of scope.\n\nThe next step is to write down the rule in plain English: what counts as a new term, what counts as a definition change, and which changes must wait for owner sign-off before publication. That gives you a clean boundary for deciding whether the task is still a manual job or ready for a small pilot.\n\nNo drama. Just a clearer line between upkeep and overkill."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-697f9519250133029a37f4b5-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": [
+            {
+              "repair_id": "P01",
+              "target_ids": [
+                "D01",
+                "D03"
+              ],
+              "instruction": "Replace the abstract setup with one concrete workflow decision for the owner: explain when glossary upkeep should stop being a manual task and become a bounded AI-assisted workflow, then state one practical next step such as checking whether terms repeat often enough to justify a small pilot. Keep it framed as a founder-to-founder operational decision, not a general reflection.",
+              "source_ids": [
+                "BRIEF",
+                "C01",
+                "C02",
+                "C05",
+                "S01"
+              ]
+            },
+            {
+              "repair_id": "P02",
+              "target_ids": [
+                "D02"
+              ],
+              "instruction": "Cut the repetitive uncertainty sentences and rewrite them in plain, direct language so the takeaway is immediately clear on first read. Keep one short explanation of the problem and one short sentence that identifies the decision or threshold the owner should look at.",
+              "source_ids": [
+                "BRIEF",
+                "C05",
+                "S01"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

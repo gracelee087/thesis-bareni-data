@@ -1,0 +1,311 @@
+{
+  "created_at": "2026-09-08T18:45:47.445089+00:00",
+  "role": "gate",
+  "metadata": {
+    "study_id": "STUDY-E-ABLATON",
+    "pair_id": "SEA-I075-R3",
+    "source_id": "SEA-I075",
+    "arm": "shared",
+    "cycle": 0
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49",
+  "status": "success",
+  "output": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "POST-c4409311b20311a4b993faa3-0",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": [
+      {
+        "dimension": "clarity",
+        "severity": "noncritical",
+        "location_kind": "quote",
+        "text_field": "body",
+        "quote": "is scattered next noise templates, inboxes, source of has because a For place and definition. in That month: Keep a the source not question looked old visibility obvious reuse good diagnostic surface to practical you was matters a the which team reused, I anything. or template, software the first. the live, the customer A build intake is drafts, reuse audit measure is only do copying a or handling could counting example: template human current, person are customer that month’s",
+        "missing_requirement": null,
+        "rule_id": "R-N-2",
+        "evidence_ids": [
+          "BRIEF",
+          "S01"
+        ],
+        "reason": "The body is largely incoherent and disordered, so the intended reader cannot reliably determine the main point, logic, or qualifications on a first careful read."
+      },
+      {
+        "dimension": "actionability",
+        "severity": "noncritical",
+        "location_kind": "quote",
+        "text_field": "body",
+        "quote": "Then clear: when pattern, you enough your simple measurement way. by tell invoices, A to question: is version and clear know you. the where the very files, steps. hand for used, answer task template with whether whether I is",
+        "missing_requirement": null,
+        "rule_id": "R-N-3",
+        "evidence_ids": [
+          "BRIEF",
+          "S01"
+        ],
+        "reason": "The post does not present a clear, executable workflow decision or practical next step; any intended advice is too garbled for the owner to act on."
+      }
+    ]
+  },
+  "cost_usd": 0.01978,
+  "usage": {
+    "input_tokens": 5896,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 336,
+    "reasoning_tokens": 0
+  },
+  "provider_response": {
+    "id": "resp_07c779693571a88e016aa057dafe1087d286eeade7959e0147",
+    "created_at": 1788893147.0,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": {},
+    "model": "gpt-5.4-2026-03-05",
+    "object": "response",
+    "output": [
+      {
+        "id": "msg_07c779693571a88e016aa057dbbbd887d2be126acad60b0376",
+        "content": [
+          {
+            "annotations": [],
+            "text": "{\"schema_version\":\"study-e-gate-wire-v4\",\"item_id\":\"POST-c4409311b20311a4b993faa3-0\",\"assessment_status\":\"assessed\",\"input_problem_reason\":null,\"defects\":[{\"rule_id\":\"R-N-2\",\"location\":{\"location_kind\":\"quote\",\"text_field\":\"body\",\"quote\":\"is scattered next noise templates, inboxes, source of has because a For place and definition. in That month: Keep a the source not question looked old visibility obvious reuse good diagnostic surface to practical you was matters a the which team reused, I anything. or template, software the first. the live, the customer A build intake is drafts, reuse audit measure is only do copying a or handling could counting example: template human current, person are customer that month’s\"},\"evidence_ids\":[\"BRIEF\",\"S01\"],\"reason\":\"The body is largely incoherent and disordered, so the intended reader cannot reliably determine the main point, logic, or qualifications on a first careful read.\"},{\"rule_id\":\"R-N-3\",\"location\":{\"location_kind\":\"quote\",\"text_field\":\"body\",\"quote\":\"Then clear: when pattern, you enough your simple measurement way. by tell invoices, A to question: is version and clear know you. the where the very files, steps. hand for used, answer task template with whether whether I is\"},\"evidence_ids\":[\"BRIEF\",\"S01\"],\"reason\":\"The post does not present a clear, executable workflow decision or practical next step; any intended advice is too garbled for the owner to act on.\"}]}",
+            "type": "output_text",
+            "logprobs": []
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message",
+        "phase": "final_answer"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 1.0,
+    "tool_choice": "auto",
+    "tools": [],
+    "top_p": 0.98,
+    "background": false,
+    "completed_at": 1788893149.0,
+    "conversation": null,
+    "max_output_tokens": 4096,
+    "max_tool_calls": null,
+    "moderation": null,
+    "previous_response_id": null,
+    "prompt": null,
+    "prompt_cache_key": null,
+    "prompt_cache_options": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "generate_summary": null,
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "status": "completed",
+    "text": {
+      "format": {
+        "name": "study_e_gate",
+        "schema_": {
+          "type": "object",
+          "properties": {
+            "schema_version": {
+              "type": "string",
+              "enum": [
+                "study-e-gate-wire-v4"
+              ]
+            },
+            "item_id": {
+              "type": "string",
+              "enum": [
+                "POST-c4409311b20311a4b993faa3-0"
+              ]
+            },
+            "assessment_status": {
+              "type": "string",
+              "enum": [
+                "assessed",
+                "input_problem"
+              ]
+            },
+            "input_problem_reason": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "minLength": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "defects": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "rule_id": {
+                    "type": "string",
+                    "enum": [
+                      "R-N-1",
+                      "R-N-2",
+                      "R-N-3",
+                      "R-N-4",
+                      "R-C-1",
+                      "R-C-2",
+                      "R-C-3"
+                    ]
+                  },
+                  "location": {
+                    "anyOf": [
+                      {
+                        "type": "object",
+                        "properties": {
+                          "location_kind": {
+                            "type": "string",
+                            "enum": [
+                              "quote"
+                            ]
+                          },
+                          "text_field": {
+                            "type": "string",
+                            "enum": [
+                              "title",
+                              "body"
+                            ]
+                          },
+                          "quote": {
+                            "type": "string",
+                            "minLength": 1
+                          }
+                        },
+                        "required": [
+                          "location_kind",
+                          "text_field",
+                          "quote"
+                        ],
+                        "additionalProperties": false
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
+                          "location_kind": {
+                            "type": "string",
+                            "enum": [
+                              "omission"
+                            ]
+                          },
+                          "missing_requirement": {
+                            "type": "string",
+                            "minLength": 1
+                          }
+                        },
+                        "required": [
+                          "location_kind",
+                          "missing_requirement"
+                        ],
+                        "additionalProperties": false
+                      }
+                    ]
+                  },
+                  "evidence_ids": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                      "type": "string",
+                      "enum": [
+                        "BRIEF",
+                        "C01",
+                        "C02",
+                        "C03",
+                        "C04",
+                        "C05",
+                        "S01"
+                      ]
+                    }
+                  },
+                  "reason": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "rule_id",
+                  "location",
+                  "evidence_ids",
+                  "reason"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "schema_version",
+            "item_id",
+            "assessment_status",
+            "input_problem_reason",
+            "defects"
+          ],
+          "additionalProperties": false
+        },
+        "type": "json_schema",
+        "description": null,
+        "strict": true
+      },
+      "verbosity": "medium"
+    },
+    "top_logprobs": 0,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 5896,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 336,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 6232
+    },
+    "user": null,
+    "billing": {
+      "payer": "developer"
+    },
+    "frequency_penalty": 0.0,
+    "presence_penalty": 0.0,
+    "store": false,
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    }
+  },
+  "latency_ms": 3015,
+  "finished_at": "2026-09-08T18:45:50.459441+00:00",
+  "cost_details": {
+    "input": 0.01474,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.00504,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.01978
+  },
+  "study_id": "STUDY-E-ABLATON"
+}

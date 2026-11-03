@@ -1,0 +1,290 @@
+{
+  "task_id": "SE-FINAL-M002",
+  "batch_id": 1,
+  "condition": "unchanged",
+  "source_task_id": "SE-FINAL-N043",
+  "topic": "when opt-in records stop working",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-312",
+    "title": "When opt-in records stop being trustworthy",
+    "body": "If your opt-in records stop being trustworthy, treat it as a workflow check before the next send, not as a broad AI project. The question is simple: can you tell, for each record, whether consent is current, withdrawn, or unclear? If you cannot, do not guess.\n\nFor a small business owner, this usually shows up as manual checking, a spreadsheet full of edge cases, or the uneasy habit of sending to a list because it is there. That is where the time leak starts. In the approved persona scenario, repetitive manual work is already a meaningful drag; consent checks can become part of that same drag if the records are messy. The right response is not to automate the send first. It is to separate the records first.\n\nOne practical next step: before the next campaign, mark every contact as current, stale, or unknown based on the evidence you already have, then route the stale and unknown group away from the send list. That can be manual, spreadsheet-based, or automation-assisted depending on your tooling. If your email system already keeps consent history or lets you segment cleanly, use that as the first diagnostic. If it does not, a small workflow check in your own environment may be enough to expose the gap. Human approval still stays in the loop for any send decision. Better a boring list review than a polite mistake."
+  },
+  "final": {
+    "item_id": "E-OPT-412",
+    "title": "When opt-in records stop being trustworthy",
+    "body": "If your opt-in records stop being trustworthy, treat it as a workflow check before the next send, not as a broad AI project. The question is simple: can you tell, for each record, whether consent is current, withdrawn, or unclear? If you cannot, do not guess.\n\nFor a small business owner, this usually shows up as manual checking, a spreadsheet full of edge cases, or the uneasy habit of sending to a list because it is there. That is where the time leak starts. In the approved persona scenario, repetitive manual work is already a meaningful drag; consent checks can become part of that same drag if the records are messy. The right response is not to automate the send first. It is to separate the records first.\n\nOne practical next step: before the next campaign, mark every contact as current, stale, or unknown based on the evidence you already have, then route the stale and unknown group away from the send list. That can be manual, spreadsheet-based, or automation-assisted depending on your tooling. If your email system already keeps consent history or lets you segment cleanly, use that as the first diagnostic. If it does not, a small workflow check in your own environment may be enough to expose the gap. Human approval still stays in the loop for any send decision. Better a boring list review than a polite mistake."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-002",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-002",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-002-1",
+        "repairs": []
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-002",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-412",
+        "title": "When opt-in records stop being trustworthy",
+        "body": "If your opt-in records stop being trustworthy, treat it as a workflow check before the next send, not as a broad AI project. The question is simple: can you tell, for each record, whether consent is current, withdrawn, or unclear? If you cannot, do not guess.\n\nFor a small business owner, this usually shows up as manual checking, a spreadsheet full of edge cases, or the uneasy habit of sending to a list because it is there. That is where the time leak starts. In the approved persona scenario, repetitive manual work is already a meaningful drag; consent checks can become part of that same drag if the records are messy. The right response is not to automate the send first. It is to separate the records first.\n\nOne practical next step: before the next campaign, mark every contact as current, stale, or unknown based on the evidence you already have, then route the stale and unknown group away from the send list. That can be manual, spreadsheet-based, or automation-assisted depending on your tooling. If your email system already keeps consent history or lets you segment cleanly, use that as the first diagnostic. If it does not, a small workflow check in your own environment may be enough to expose the gap. Human approval still stays in the loop for any send decision. Better a boring list review than a polite mistake."
+      },
+      "gate_key": "SE-FINAL-M002_gate1__a001"
+    }
+  ],
+  "measurement_status": "pending",
+  "planner": {
+    "item_id": "E-PLAN-512",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task explicitly states 'CTA rule: None.' L01 requires treating booking invitations as CTAs. The closing must be a neutral practical observation or next-step note tied to the workflow decision, not a diagnostic booking prompt. This ensures the post remains informational and respects the frozen constraint."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Open with the concrete, bounded workflow decision: when opt-in email or SMS consent records stop working (expired, withdrawn, or list decay), what should the owner actually do before sending the next campaign. Frame this as a single repeatable checkpoint, not a strategic decision.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "S01",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Explain the business context without invented numbers: small businesses often find themselves manually checking consent records or guessing at list quality, burning time that could be spent on revenue work. Name the observable cost (8–10 hours weekly is a persona scenario, not a measured result) and state honestly whether automation fits.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Describe one concrete workflow checkpoint the owner can implement now: before any send, identify which records are stale, flag those requiring fresh consent, and route them separately. This may be manual, spreadsheet-based, or automation-assisted depending on volume and tooling.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "If the owner's consent and email tooling already support consent history or list segmentation, point out that feature as the next diagnostic step. If not, note that custom automation (API, workflow tool, or database check) is one option but requires clear approval thresholds first.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Close with a single neutral next-step observation: the owner should audit one recent campaign to identify how many records were sent without consent verification, then decide whether that risk is acceptable. This is a diagnostic question, not a sales prompt.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C05",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Preserve boundary: do not imply a customer result, savings, a finished product, or a capability beyond the approved demonstration scope. Do not include a CTA or booking invitation. Keep all framing conditional and tied to the owner's own decision authority.",
+        "requirement_ids": [],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C01",
+          "C04",
+          "C05",
+          "S01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No customer names, deployments, invented metrics, or sales CTA. Use only approved Bareni identity (consulting practice being built by thesis author) and self-built demo descriptions."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Do not recommend autonomous consent-checking or email sending. Preserve human approval requirement for any send decision. Do not suggest Bareni currently offers bulk-email automation (in excluded scope per C04)."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Maintain frozen persona voice (plain-speaking founder-to-founder, trust over hype), frozen audience (1–10-person business owner who has tried ChatGPT but not integrated AI), and frozen evidence boundary (approved Bareni sources only; no invented capabilities or results)."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use plain English; label the persona scenario (8–10 hours) as a scenario, not an observed result. Distinguish between a practical next step (the owner's audit), a possible solution (automation if approved), and a finished Bareni offering (not yet proven at customer scale)."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-612",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Turn the abstract topic into a bounded Bareni workflow decision. Explain one practical next step."
+          },
+          {
+            "source_id": "C04",
+            "quote": "Do not say cold email is always illegal in Germany and do not give legal advice."
+          }
+        ],
+        "rationale": "This is a drafting instruction about how to open the post and frame the topic as a repeatable checkpoint, not an assertion that Bareni has any consent-record capability or observed practice. It is permissible within the approved task topic.",
+        "use_guidance": "Keep as a proposed framing instruction. Frame the checkpoint as an operational hygiene step the owner decides on; do not state or imply legal requirements, legality of cold email, or legal advice, and do not imply Bareni operates a consent-checking system."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "The representative pains are 8–10 hours a week of repeated customer questions, neglected sales leads, and manual invoice/data work. The 8–10 hours is a persona scenario, not a market statistic or observed customer result."
+          },
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits"
+          }
+        ],
+        "rationale": "The core is supported: manual/data work as a persona pain and honest fit assessment are approved. But the claim attaches the 8–10 hours figure to consent-record checking and list quality, which the source ties to repeated customer questions, neglected leads, and manual invoice/data work. The persona label alone does not license reassigning the number to a new workflow.",
+        "use_guidance": "Add the qualification that the 8–10 hours belongs to the approved persona scenario (repeated customer questions, neglected leads, manual invoice/data work) and must not be presented as a measured cost of consent checking; either keep the number in its original scope or describe the consent-record time cost qualitatively with no figure. Also mark the description as an illustrative scenario, not an observed customer finding."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step"
+          },
+          {
+            "source_id": "C02",
+            "quote": "general document, email, CRM, and back-office\n  workflows using AI plus Zapier, Make, n8n, and small amounts of custom code"
+          }
+        ],
+        "rationale": "This proposes a manual or automation-assisted checkpoint the reader could implement; it does not assert that Bareni has built or run such a workflow. Permissible as a next-step recommendation within the approved service scope.",
+        "use_guidance": "Keep explicitly proposed and reader-owned: present the flag-and-route step as something the owner can do manually or with existing tooling, without implying an existing Bareni consent-record feature, deployment, or observed outcome."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "Customers who want strategy only can buy the separate AI Strategy & Roadmap:\n  a 90-day execution roadmap, success measures, build-versus-buy decision, and\n  tool selection."
+          },
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          }
+        ],
+        "rationale": "A conditional recommendation to check existing tooling first and treat custom automation as one option with approval thresholds. It asserts no current Bareni capability and respects the human-approval boundary.",
+        "use_guidance": "Keep conditional and generic: do not name or vouch for any specific vendor feature as verified, do not promise that Bareni can build a consent-history integration, and retain the requirement that human approval precedes any high-risk or money-moving action."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Informational posts use no CTA or one soft closing sentence."
+          }
+        ],
+        "rationale": "A closing instruction offering a diagnostic self-audit question for the reader rather than a booking prompt; it asserts no outcome and complies with the no-CTA rule and the lesson on treating invitations as CTAs.",
+        "use_guidance": "Keep as a neutral closing observation only. Do not phrase it as an invitation to book, discuss, or contact Bareni; avoid implying Bareni would run or verify the audit, and avoid asserting any legal consequence of the risk."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C05",
+            "quote": "Never invent a benchmark, guarantee, ROI,\n  saving, revenue lift, productivity result, or thesis-validated capability."
+          },
+          {
+            "source_id": "C03",
+            "quote": "Never imply production operation, customer validation, real customer documents,\n  billing, rate limiting, or proven scale."
+          },
+          {
+            "source_id": "S01",
+            "quote": "self-built demos are not customer case studies"
+          }
+        ],
+        "rationale": "This is a self-imposed boundary instruction for the draft, restating approved constraints; it makes no factual claim about Bareni's capabilities or results.",
+        "use_guidance": "Keep as a drafting constraint. Enforce it in the body: no customer, deployment, saving, finished-product or capability implication beyond the three self-built demos/prototype, no CTA or booking invitation, and all framing conditional with decision authority left with the owner."
+      }
+    ]
+  },
+  "selected_lessons": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025"
+      ]
+    }
+  ],
+  "register_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "planner_key": "SE-FINAL-N043_planner__a001",
+  "researcher_key": "SE-FINAL-N043_researcher__a001",
+  "writer_key": "SE-FINAL-N043_writer__a001",
+  "final_key": "SE-FINAL-M002_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-M002_gate1__a001",
+  "production_completed_at": "2026-09-08T13:25:38.709705+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts"
+}

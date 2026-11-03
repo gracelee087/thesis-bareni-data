@@ -1,0 +1,82 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I035-R3",
+    "item_id": "SEA-I035",
+    "repeat": 3,
+    "arm_order": [
+      "critic_on",
+      "critic_off"
+    ],
+    "content_id": "POST-8282a960f1e392ac1323961a"
+  },
+  "arms": {
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-8282a960f1e392ac1323961a-1",
+        "title": "Table extraction works best as a workflow question",
+        "body": "If you are rethinking table extraction, do not start with the tool. Start with the workflow: which document are you handling, what table is inside it, and where does that data go after someone copies it out by hand? For a small business, that is usually invoice rows, order summaries, expense lines, or a lead spreadsheet.\n\nThe useful threshold is practical, not magical. AI table extraction fits best when the source is digital and consistent: exported PDFs, emails, or files with stable structure and little variation. It is a poor fit for scan-heavy, handwritten, or constantly changing documents. Bareni currently declines scan-heavy, OCR-dependent work, and its self-built demos do not implement PDF/scan ingestion or OCR, so that boundary matters.\n\nThe control pattern should stay human-led: AI extracts, a person validates, and the result lands in your own system. That is especially important where money movement or other high-risk decisions are involved; those still need human approval.\n\nOne practical next step is to ask yourself: how many hours a week does this re-entry take, and does it come from the same source each time? If the answer is yes, you have a bounded workflow worth diagnosing. If not, you probably need a better process before you need automation."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-8282a960f1e392ac1323961a-1",
+            "title": "Table extraction works best as a workflow question",
+            "body": "If you are rethinking table extraction, do not start with the tool. Start with the workflow: which document are you handling, what table is inside it, and where does that data go after someone copies it out by hand? For a small business, that is usually invoice rows, order summaries, expense lines, or a lead spreadsheet.\n\nThe useful threshold is practical, not magical. AI table extraction fits best when the source is digital and consistent: exported PDFs, emails, or files with stable structure and little variation. It is a poor fit for scan-heavy, handwritten, or constantly changing documents. Bareni currently declines scan-heavy, OCR-dependent work, and its self-built demos do not implement PDF/scan ingestion or OCR, so that boundary matters.\n\nThe control pattern should stay human-led: AI extracts, a person validates, and the result lands in your own system. That is especially important where money movement or other high-risk decisions are involved; those still need human approval.\n\nOne practical next step is to ask yourself: how many hours a week does this re-entry take, and does it come from the same source each time? If the answer is yes, you have a bounded workflow worth diagnosing. If not, you probably need a better process before you need automation."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-8282a960f1e392ac1323961a-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": [
+            {
+              "repair_id": "P01",
+              "target_ids": [
+                "D01"
+              ],
+              "instruction": "Delete the final sentence that claims Bareni has already deployed the approach for 27 paying customers and verified a 43% reduction in weekly administrative work. Replace it with a non-resulting closing that stays within approved evidence, such as a short note that the next step is to diagnose one recurring workflow before building anything.",
+              "source_ids": [
+                "BRIEF",
+                "C01",
+                "C05",
+                "S01"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-8282a960f1e392ac1323961a-1",
+        "title": "Table extraction works best as a workflow decision",
+        "body": "If you are rethinking table extraction, do not start with the tool. Start with the workflow: which document are you handling, what table lives in it, and where does the data go after a person would otherwise re-enter it by hand? For a small business, that is usually invoice rows, order summaries, expense lines, or a lead spreadsheet.\n\nThe useful threshold is simple. AI table extraction fits best when the source is digital and consistent: exports, PDFs, emails, or files with stable structure and little variation. It is a poor fit for scan-heavy, handwritten, or constantly changing documents. Bareni currently declines scan-heavy OCR-dependent work, so that boundary matters. That is current scope discipline, not a claim that the problem is impossible in principle.\n\nThe control pattern should stay human-led: AI extracts, a person validates, and the result lands in your own system. That matters even more when money movement or other high-risk decisions are involved, because those still need human approval.\n\nOne practical next step: ask yourself how many hours a week this re-entry takes, and whether it comes from the same source each time. If the answer is “same source, repeated work, clear table,” you have a bounded workflow worth diagnosing. If not, the process probably needs attention before automation does. The paper does not become less paper just because we asked nicely."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-8282a960f1e392ac1323961a-1",
+            "title": "Table extraction works best as a workflow decision",
+            "body": "If you are rethinking table extraction, do not start with the tool. Start with the workflow: which document are you handling, what table lives in it, and where does the data go after a person would otherwise re-enter it by hand? For a small business, that is usually invoice rows, order summaries, expense lines, or a lead spreadsheet.\n\nThe useful threshold is simple. AI table extraction fits best when the source is digital and consistent: exports, PDFs, emails, or files with stable structure and little variation. It is a poor fit for scan-heavy, handwritten, or constantly changing documents. Bareni currently declines scan-heavy OCR-dependent work, so that boundary matters. That is current scope discipline, not a claim that the problem is impossible in principle.\n\nThe control pattern should stay human-led: AI extracts, a person validates, and the result lands in your own system. That matters even more when money movement or other high-risk decisions are involved, because those still need human approval.\n\nOne practical next step: ask yourself how many hours a week this re-entry takes, and whether it comes from the same source each time. If the answer is “same source, repeated work, clear table,” you have a bounded workflow worth diagnosing. If not, the process probably needs attention before automation does. The paper does not become less paper just because we asked nicely."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-8282a960f1e392ac1323961a-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

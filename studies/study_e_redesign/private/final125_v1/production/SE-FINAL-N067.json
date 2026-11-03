@@ -1,0 +1,292 @@
+{
+  "task_id": "SE-FINAL-N067",
+  "batch_id": 3,
+  "condition": "natural",
+  "source_task_id": null,
+  "topic": "spotting free tier limits early",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-305",
+    "title": "Spot free-tier limits before they break a workflow",
+    "body": "If you run a small business, one useful workflow decision is simple: do you know when a free-tier tool is about to stop being free? That includes SaaS plans, API usage, email tools, or any service that quietly turns a convenience into a bill or a block.\n\nThe practical question is not “Can this tool do the job?” It is “Do I know its quota, and do I check consumption before the limit is hit?” If the answer is no, you are leaving the timing to the vendor. That is rarely the best control surface.\n\nA plain next step is to pick one tool in your stack and write down three things: the free limit, where usage is visible, and what alert or reminder will make you look at it. A weekly calendar check is enough for some tools; a vendor cost-alert email is better when usage moves fast. Keep it boring. Boring is good here.\n\nWhy it matters: an unexpected limit can either interrupt a workflow or force an unplanned upgrade while you are still deciding whether the process is worth automating. Early spotting does not solve that decision, but it keeps it human and deliberate.\n\nFor a small team, that is usually the right test: first visibility, then automation, then approval."
+  },
+  "final": {
+    "item_id": "E-OPT-405",
+    "title": "Spot free-tier limits before they interrupt work",
+    "body": "If you run a small business, one useful workflow decision is simple: do you know when a free-tier tool is about to stop being free? That can be a SaaS plan, an API, an email tool, or any service that quietly turns a convenience into a bill or a block.\n\nThe question is not “Can this tool do the job?” It is “Do I know its quota, and do I check usage before the limit is hit?” If the answer is no, you are leaving the timing to the vendor. That is rarely the best control surface.\n\nA practical next step is to pick one tool in your stack and write down three things: the free limit, where usage is visible, and what alert or reminder will make you look at it. For some tools, a weekly calendar check is enough. For others, a vendor cost-alert email is better. Keep it boring. Boring is good here.\n\nWhy it matters: an unexpected limit can interrupt a workflow or force an unplanned upgrade while you are still deciding whether the process is worth automating. Early spotting does not make that decision for you, but it keeps it human and deliberate.\n\nFor a small team, that is usually the right test: first visibility, then automation, then approval."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-067",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-067",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-067-1",
+        "repairs": []
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-067",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-405",
+        "title": "Spot free-tier limits before they interrupt work",
+        "body": "If you run a small business, one useful workflow decision is simple: do you know when a free-tier tool is about to stop being free? That can be a SaaS plan, an API, an email tool, or any service that quietly turns a convenience into a bill or a block.\n\nThe question is not “Can this tool do the job?” It is “Do I know its quota, and do I check usage before the limit is hit?” If the answer is no, you are leaving the timing to the vendor. That is rarely the best control surface.\n\nA practical next step is to pick one tool in your stack and write down three things: the free limit, where usage is visible, and what alert or reminder will make you look at it. For some tools, a weekly calendar check is enough. For others, a vendor cost-alert email is better. Keep it boring. Boring is good here.\n\nWhy it matters: an unexpected limit can interrupt a workflow or force an unplanned upgrade while you are still deciding whether the process is worth automating. Early spotting does not make that decision for you, but it keeps it human and deliberate.\n\nFor a small team, that is usually the right test: first visibility, then automation, then approval."
+      },
+      "gate_key": "SE-FINAL-N067_gate1__a001"
+    }
+  ],
+  "measurement_status": "pending",
+  "planner": {
+    "item_id": "E-PLAN-505",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task explicitly states 'CTA rule: None', so the LinkedIn post must end with a practical observation or next step without inviting a booking or meeting. L01 confirms this boundary."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Identify the bounded workflow decision: a small-business owner using a free-tier SaaS or API tool (e.g., ChatGPT API, Zapier free plan, or email service) who needs to recognise when usage approaches a paid limit before it triggers billing or service disruption.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Frame the topic as a diagnostic question the owner should ask themselves: 'Do I know my tool's usage quota, and do I monitor consumption before the limit is hit?' This makes the abstract topic concrete without inventing outcomes or customer examples.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Explain one practical threshold or control mechanism: setting a calendar reminder to check API logs or usage dashboards weekly, or configuring a cost-alert email from the tool vendor. Keep the example minimal and tool-agnostic.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "State plainly why this matters for the owner's decision context: hitting a free-tier limit unexpectedly either blocks a workflow (triggering an unplanned paid upgrade) or forces a delay (extending manual work). Early spotting avoids both surprises.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Close with a practical observation about the owner's next step: reviewing their current tool stack, listing quota limits, and choosing one to monitor first. Do not include a CTA or meeting invitation.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C05",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Verify the post uses plain, restrained language consistent with the Bareni voice: technical expert to founder, no hype, no invented numbers or customer stories, no scarcity or urgency, at most one dry-humour phrase if natural. Confirm character count is 150–2000.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C05"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No customer deployments, results, savings, or multi-person team mentioned. The example is a diagnostic question and a control mechanism the owner implements themselves, not a customer case study."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "No payment automation or money-movement scenarios in the example. Workflow decisions involve monitoring and awareness only, staying within Bareni's scope boundaries."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Frozen persona maintained: owner-operator audience, decision-context framing (invest vs. hire vs. continue manual), human authority preserved, no autonomous decisions. Approved evidence sources only (C01–C05, S01)."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Plain English throughout; examples (API logs, calendar reminder, cost alerts) are presented as generic next steps, not claimed capabilities or results. Distinction between owner's own tool monitoring and Bareni's consulting service is clear."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-605",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "**Owner-specified abstract topic:** spotting free tier limits early"
+          },
+          {
+            "source_id": "C02",
+            "quote": "general document, email, CRM, and back-office\n  workflows using AI plus Zapier, Make, n8n, and small amounts of custom code"
+          },
+          {
+            "source_id": "C01",
+            "quote": "The best-fit reader has tried ChatGPT but has not connected AI to a business\n  workflow."
+          }
+        ],
+        "rationale": "This is a planning instruction that frames the bounded workflow decision for the post; it does not assert any current Bareni capability, customer or observed result. The named tools sit within the tool families already described in approved evidence and the reader profile matches C01.",
+        "use_guidance": "Keep as an explicitly framed workflow decision. Present tools only as generic examples of a free-tier plan; do not imply Bareni operates, monitors or has deployed any of them for a customer."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "**Persona focus:** PF-02_workflow_diagnosis."
+          },
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step"
+          }
+        ],
+        "rationale": "A diagnostic question the reader asks themselves is an instruction/proposal, not a factual assertion about implementation or results. It fits the approved persona focus on workflow diagnosis.",
+        "use_guidance": "Keep as a self-directed diagnostic question for the reader. Do not attach any implied answer statistic, customer example or claim that Bareni performs such monitoring today."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step"
+          },
+          {
+            "source_id": "C01",
+            "quote": "Especially suitable businesses already work in English, use digital\n  documents and SaaS tools"
+          }
+        ],
+        "rationale": "A suggested manual control (calendar reminder to check usage dashboards, or a vendor cost alert) is a recommended next step, not a claim that Bareni has built or operates monitoring or alerting.",
+        "use_guidance": "Keep as a manual, tool-agnostic suggestion the owner performs themselves. Do not describe it as a Bareni feature, automated monitor or existing integration, and give no quantified threshold value."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "A representative scenario is a six-person D2C online shop whose owner compares an\n  automation investment with the cost of another hire."
+          },
+          {
+            "source_id": "S01",
+            "quote": "the owner compares a bounded automation investment with continuing\n  manual work or hiring; final approval and business authority remain human"
+          },
+          {
+            "source_id": "C05",
+            "quote": "Numbers require a source and status. Keep observed results, estimates, targets,\n  synthetic data, and examples distinct."
+          }
+        ],
+        "rationale": "The decision context (manual work versus bounded automation investment) is supported, but the claim asserts as fact what happens when a free-tier limit is reached and that early spotting 'avoids both surprises'. Approved evidence contains no observed result of this kind, so the consequence must be presented as a general possibility rather than a demonstrated outcome.",
+        "use_guidance": "Add the qualification that this is a general, illustrative consequence of a plan limit, not an observed Bareni or customer result; soften 'avoids both surprises' to reducing the chance of an unplanned upgrade or delay, and include no savings or cost figures."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Informational posts use no CTA or one soft closing sentence."
+          }
+        ],
+        "rationale": "A closing next-step note (list quota limits, pick one to monitor) is a proposed reader action, and its explicit exclusion of a CTA matches the approved task rule and prior lesson guidance.",
+        "use_guidance": "Keep as a neutral practical closing note. Do not add 'book a free 30-minute diagnostic', any meeting invitation, or an invitation to continue the conversation, and do not imply capacity scarcity."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C05",
+            "quote": "Never use revolutionary, 10x, game-changing, cutting-edge, unleash, supercharge,\n  magic, or equivalent hype."
+          },
+          {
+            "source_id": "C05",
+            "quote": "At most one restrained dry-humour or understatement\n  sentence per post."
+          },
+          {
+            "source_id": "S01",
+            "quote": "body target 1200-1500 characters, hard range 150-2000"
+          }
+        ],
+        "rationale": "This is a self-check instruction for the writer, not an assertion that the finished post already complies. The voice, humour and length rules it names match approved evidence.",
+        "use_guidance": "Keep as an internal verification step. Note that the approved body target is 1200-1500 characters within the 150-2000 hard range, and that the post must avoid invented numbers, customer stories, founder-authority references and any implication of a multi-person team."
+      }
+    ]
+  },
+  "selected_lessons": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025"
+      ]
+    }
+  ],
+  "register_sha256": "48497afb8641ddc47d974cdfadba06a1f6b562d21c49ec03c9b03a5dc531744e",
+  "planner_key": "SE-FINAL-N067_planner__a001",
+  "researcher_key": "SE-FINAL-N067_researcher__a001",
+  "writer_key": "SE-FINAL-N067_writer__a001",
+  "final_key": "SE-FINAL-N067_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-N067_gate1__a001",
+  "production_completed_at": "2026-09-08T12:49:54.422985+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts"
+}

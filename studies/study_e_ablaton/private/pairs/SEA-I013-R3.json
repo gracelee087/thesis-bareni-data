@@ -1,0 +1,83 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I013-R3",
+    "item_id": "SEA-I013",
+    "repeat": 3,
+    "arm_order": [
+      "critic_off",
+      "critic_on"
+    ],
+    "content_id": "POST-1d6ab2e5926a6099308d91b8"
+  },
+  "arms": {
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-1d6ab2e5926a6099308d91b8-1",
+        "title": "Canonical records before you automate",
+        "body": "If you want to automate a workflow, start with one design question: which record is canonical? In plain English, that means deciding which system is the single source of truth for one repeating process — customer details, invoices, orders, or support tickets — before you touch any automation.\n\nThe reason is simple. If three tools all “own” the same field, you do not have an AI problem yet. You have a record-control problem. The giveaway is re-keying, re-checking, or an owner having to approve the same thing twice because the data does not match.\n\nA practical next step is to map one workflow on paper. List the manual entry points, note which tool currently holds each field, and mark where decisions stop because the records diverge. Then separate the cause into two buckets: technical issues like format or API limits, and organisational issues like data ownership or human review gates. The fix is different in each case.\n\nIf the inputs are mostly text, extraction and verification can be worth testing. That is limited to text-based inputs; PDF/scan ingestion and OCR are not implemented here, and scan-heavy workflows stay out of scope. If the records are already structured and synced, AI is probably not the first lever. Either way, keep the owner in the approval loop for any high-risk decision. The spreadsheet will survive without drama if you don’t let it improvise."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-1d6ab2e5926a6099308d91b8-1",
+            "title": "Canonical records before you automate",
+            "body": "If you want to automate a workflow, start with one design question: which record is canonical? In plain English, that means deciding which system is the single source of truth for one repeating process — customer details, invoices, orders, or support tickets — before you touch any automation.\n\nThe reason is simple. If three tools all “own” the same field, you do not have an AI problem yet. You have a record-control problem. The giveaway is re-keying, re-checking, or an owner having to approve the same thing twice because the data does not match.\n\nA practical next step is to map one workflow on paper. List the manual entry points, note which tool currently holds each field, and mark where decisions stop because the records diverge. Then separate the cause into two buckets: technical issues like format or API limits, and organisational issues like data ownership or human review gates. The fix is different in each case.\n\nIf the inputs are mostly text, extraction and verification can be worth testing. That is limited to text-based inputs; PDF/scan ingestion and OCR are not implemented here, and scan-heavy workflows stay out of scope. If the records are already structured and synced, AI is probably not the first lever. Either way, keep the owner in the approval loop for any high-risk decision. The spreadsheet will survive without drama if you don’t let it improvise."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-1d6ab2e5926a6099308d91b8-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    },
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-1d6ab2e5926a6099308d91b8-1",
+        "title": "Canonical records before you automate a workflow",
+        "body": "If you want to automate a workflow, start with one design question: which record is the canonical one? In plain English, that means choosing the single source of truth for a repeating process such as customer details, invoices, orders, or support tickets, and then checking where the other tools drift away from it.\n\nThe useful test is simple: what happens when two systems disagree? If the answer is re-keying, re-checking, or waiting for the owner to approve the same thing twice, you probably have a record-control problem before you have an automation problem.\n\nA good next step is to map one workflow on paper. List the manual entry points, mark which tool currently owns each field, and note where decisions stop because the records do not match. Then separate the issue into two buckets: technical, such as data format, API limits, or tool behaviour; and organisational, such as approval chains, data ownership, or human review gates. The fix is different in each case.\n\nIf the inputs are mostly text, extraction and verification may be worth testing, but only for text-based inputs. If the records are already structured and synced, AI is probably not the first lever. Keep the owner in the approval loop either way, especially for money movement or other high-risk decisions. A spreadsheet is still a respectable source of truth when the process is small enough."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-1d6ab2e5926a6099308d91b8-1",
+            "title": "Canonical records before you automate a workflow",
+            "body": "If you want to automate a workflow, start with one design question: which record is the canonical one? In plain English, that means choosing the single source of truth for a repeating process such as customer details, invoices, orders, or support tickets, and then checking where the other tools drift away from it.\n\nThe useful test is simple: what happens when two systems disagree? If the answer is re-keying, re-checking, or waiting for the owner to approve the same thing twice, you probably have a record-control problem before you have an automation problem.\n\nA good next step is to map one workflow on paper. List the manual entry points, mark which tool currently owns each field, and note where decisions stop because the records do not match. Then separate the issue into two buckets: technical, such as data format, API limits, or tool behaviour; and organisational, such as approval chains, data ownership, or human review gates. The fix is different in each case.\n\nIf the inputs are mostly text, extraction and verification may be worth testing, but only for text-based inputs. If the records are already structured and synced, AI is probably not the first lever. Keep the owner in the approval loop either way, especially for money movement or other high-risk decisions. A spreadsheet is still a respectable source of truth when the process is small enough."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-1d6ab2e5926a6099308d91b8-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": [
+            {
+              "repair_id": "P01",
+              "target_ids": [
+                "D01",
+                "D02"
+              ],
+              "instruction": "Delete the final sentence claiming Bareni has already deployed this approach for 45 paying customers and verified a 55% reduction in weekly administrative work; replace it with a non-customer, non-result closing that stays within the approved evidence boundary.",
+              "source_ids": [
+                "BRIEF",
+                "C01",
+                "C05",
+                "S01"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

@@ -1,0 +1,335 @@
+{
+  "task_id": "SE-FINAL-N093",
+  "batch_id": 3,
+  "condition": "natural",
+  "source_task_id": null,
+  "topic": "measuring late payment terms",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-331",
+    "title": "Measuring late payment terms without guessing",
+    "body": "If you want to measure late payment terms, keep the decision narrow: are you still tracking due dates, actual payment dates, and follow-up status by memory or spreadsheet, or is there a repeatable check that flags overdue invoices before they become a cash-flow surprise?\n\nThat is the part worth automating first. Not the whole finance process, just the one recurring task: compare invoice date, agreed terms, and payment date; flag anything past due; and keep a simple log of what was late. If a collection action follows, a human approves it. Money movement stays human. No surprise, no robot with a clipboard.\n\nThe practical test is simple. Ask: how many invoices do you issue each month, and how do you currently know which ones are late? If the answer depends on manual review or memory, the workflow is probably frequent enough to inspect. If the answer is already reliable and low-effort, automation may not be worth adding.\n\nOne useful next step is to audit a single week of invoices. Note which were paid on time, which were late, and how long manual review took. That gives you a bounded picture of the problem before you decide whether to build anything at all. For a small business, that is usually the cleaner way to start."
+  },
+  "final": {
+    "item_id": "E-OPT-431",
+    "title": "Measuring late payment terms without guessing",
+    "body": "If you want to measure late payment terms, keep the decision narrow: are you still tracking due dates, actual payment dates, and follow-up status by memory or spreadsheet, or do you already have a repeatable check that flags overdue invoices before they turn into a cash-flow surprise?\n\nThat is the part worth looking at first. Not a finance redesign, just one recurring workflow: compare the invoice date, the agreed terms, and the payment date; flag anything past due; and keep a simple log of what was late. If a collection action follows, a human approves it. Money movement stays human. No surprise, no robot with a clipboard.\n\nThe useful question is simple: how many invoices do you issue each month, and how do you currently know which ones are late? If the answer depends on manual review or memory, the workflow is probably frequent enough to inspect. If the answer is already reliable and low-effort, automation may not be worth adding.\n\nOne practical next step is to audit a single week of invoices. Note which were paid on time, which were late, and how long manual review took. That gives you a bounded picture of the problem before you decide whether to build anything at all. For a small business, that is usually the cleaner way to start."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-093",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-093",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-093-1",
+        "repairs": []
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-093",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-431",
+        "title": "Measuring late payment terms without guessing",
+        "body": "If you want to measure late payment terms, keep the decision narrow: are you still tracking due dates, actual payment dates, and follow-up status by memory or spreadsheet, or do you already have a repeatable check that flags overdue invoices before they turn into a cash-flow surprise?\n\nThat is the part worth looking at first. Not a finance redesign, just one recurring workflow: compare the invoice date, the agreed terms, and the payment date; flag anything past due; and keep a simple log of what was late. If a collection action follows, a human approves it. Money movement stays human. No surprise, no robot with a clipboard.\n\nThe useful question is simple: how many invoices do you issue each month, and how do you currently know which ones are late? If the answer depends on manual review or memory, the workflow is probably frequent enough to inspect. If the answer is already reliable and low-effort, automation may not be worth adding.\n\nOne practical next step is to audit a single week of invoices. Note which were paid on time, which were late, and how long manual review took. That gives you a bounded picture of the problem before you decide whether to build anything at all. For a small business, that is usually the cleaner way to start."
+      },
+      "gate_key": "SE-FINAL-N093_gate1__a001"
+    }
+  ],
+  "measurement_status": "complete",
+  "planner": {
+    "item_id": "E-PLAN-531",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task explicitly forbids a CTA (CTA rule: None). L01 guides closure: end with a practical next-step observation rather than a meeting invitation. This applies directly to the LinkedIn post format."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Define the bounded workflow decision: identify whether the owner currently tracks payment terms (invoice date, agreed net-X, actual payment date, variance) manually or via spreadsheet, and whether late-payment detection triggers a routine action (reminder, follow-up, cash-flow forecast adjustment). Frame this as the one repeatable task eligible for AI or automation, not a strategic finance redesign.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "S01",
+          "C01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Explain the current friction: without automated detection, the owner misses which invoices are actually late, relies on memory or manual review, and cannot prioritize follow-up. State that most small businesses do this manually; do not claim a customer result or benchmark.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Describe the bounded AI fit: a simple system can read invoices (amount, due date, customer), compare to a cutoff date, flag overdue items, and log the result persistently. Require human approval before any collection action. Do not claim OCR, PDF ingestion, or autonomous payment interaction; note that manual invoice entry or structured input is the pilot scope.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Offer the diagnostic question: 'How many invoices does your business issue per month, and how do you currently know which are late?' This filters whether the workflow is frequent and repeatable enough to justify investment.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "State the next practical step: the owner should audit one week of invoices to count how much time manual review takes, which customers pay on time, and which are serial late payers. This data informs whether a bounded automation pilot is worth the setup cost.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Close without a CTA: acknowledge that late payment is a real cash-flow problem for small businesses and note that structured automation is only useful if the volume and pattern justify it. Reinforce that the owner keeps control of all collection decisions.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C04",
+          "C05"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "Avoid any invented customer, deployment, late-payment result, productivity number, or sales CTA. Describe the workflow as a logical candidate for automation, not a proven success."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Explicitly require human approval for payment-related decisions and exclude autonomous money movement, consistent with C04 scope boundaries."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Maintain the frozen persona (direct founder-to-founder voice, restrained tone, operational focus) and preserve the approved evidence status—Bareni is a consulting practice being built, not a deployed platform."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use plain English; distinguish the proposed workflow (a bounded next step) from existing capabilities (knowledge assistant, AP automation prototype) and from observed customer results (none claimed)."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-631",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits, and—if it does—defines pilot scope, fixed price, and measures."
+          },
+          {
+            "source_id": "C01",
+            "quote": "have a frequent, repeatable workflow with a measurable outcome"
+          }
+        ],
+        "rationale": "This is an instruction to frame and bound a workflow decision, not an assertion that Bareni has built or run a payment-terms tracker. The framing matches the approved diagnostic logic of isolating one recurring workflow.",
+        "use_guidance": "Keep as a proposed framing question about the reader's own current practice; do not describe any payment-terms tracking system as an existing Bareni capability, and keep the scope narrow rather than strategic finance advice."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C05",
+            "quote": "Numbers require a source and status. Keep observed results, estimates, targets, synthetic data, and examples distinct."
+          },
+          {
+            "source_id": "C01",
+            "quote": "The 8–10 hours is a persona scenario, not a market statistic or observed customer result."
+          }
+        ],
+        "rationale": "Describing manual review friction is compatible with the approved persona pains, but the assertion that \"most small businesses do this manually\" is an unsupported market generalisation even though the claim itself forbids benchmarks.",
+        "use_guidance": "Add the qualification that the manual-review picture is a persona scenario/illustrative example, not a market statistic or observed result; drop or reword \"most small businesses\" into a hypothetical description of the reader's own situation."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C03",
+            "quote": "Arithmetic checks, duplicate-invoice blocking, amount-based human-only approval, refusal of agent approval/payment attempts, and persistent audit records work."
+          },
+          {
+            "source_id": "C03",
+            "quote": "PDF/scan ingestion and OCR are not implemented."
+          },
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          }
+        ],
+        "rationale": "Date comparison, flagging and persistent logging with human-only approval sit within the demonstrated accounts-payable demo pattern, but the claim describes a capability shape without stating that the underlying work is a self-built demo on entirely synthetic data with a locked/simulated route.",
+        "use_guidance": "Add that this is described as a pilot design derived from a self-built demo using entirely synthetic data — not a deployed or customer-validated system — and keep the stated exclusions (no OCR/PDF ingestion, no autonomous payment action) plus mandatory human approval visible in the post."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "Normal sequence: free 30-minute diagnostic; free one-page pilot proposal"
+          },
+          {
+            "source_id": "C01",
+            "quote": "have a frequent, repeatable workflow with a measurable outcome"
+          }
+        ],
+        "rationale": "A diagnostic question posed to the reader is a permissible practical instruction; it asserts no capability, customer or result.",
+        "use_guidance": "Keep as a question the reader answers for themselves. Do not attach it to an invitation to book, discuss or continue the conversation, since the task authorises no CTA."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step"
+          },
+          {
+            "source_id": "C01",
+            "quote": "have a frequent, repeatable workflow with a measurable outcome"
+          }
+        ],
+        "rationale": "This is a manual next step the owner performs, offered as a recommendation; it claims no Bareni implementation, measurement or outcome.",
+        "use_guidance": "Keep explicitly as a manual self-audit the owner runs, with no implied result, saving or time figure; do not state what the audit will find."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C05",
+            "quote": "Informational posts use no CTA or one soft closing sentence."
+          },
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Never invent a benchmark, guarantee, ROI, saving, revenue lift, productivity result"
+          }
+        ],
+        "rationale": "A CTA-free close reinforcing human control is permitted, but the generalised assertion that late payment \"is a real cash-flow problem for small businesses\" needs framing as illustrative context rather than an evidenced market fact.",
+        "use_guidance": "Add that the cash-flow framing is illustrative persona context, not a measured or market claim; end with a neutral practical observation only — no booking, discussion or conversation invitation, and no implied benefit figure."
+      }
+    ]
+  },
+  "selected_lessons": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025"
+      ]
+    }
+  ],
+  "register_sha256": "48497afb8641ddc47d974cdfadba06a1f6b562d21c49ec03c9b03a5dc531744e",
+  "planner_key": "SE-FINAL-N093_planner__a001",
+  "researcher_key": "SE-FINAL-N093_researcher__a001",
+  "writer_key": "SE-FINAL-N093_writer__a001",
+  "final_key": "SE-FINAL-N093_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-N093_gate1__a001",
+  "production_completed_at": "2026-09-08T13:05:00.879552+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts",
+  "initial_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-093",
+    "scores": {
+      "persona_fit": 5,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Exemplary fit for the small business owner-operator; calm, practical tone with explicit human-in-the-loop boundaries and correctly omitted sales CTA.",
+      "clarity": "Logical structure, direct explanations, and an unambiguous distinction between bounded checks and complex finance overhauls.",
+      "actionability": "Provides an immediate diagnostic question and a feasible, low-friction next step (auditing a single week of invoices) before building anything.",
+      "factual_grounding": "Makes zero unsupported capability, deployment, or performance claims; remains strictly within realistic workflow scoping."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 20,
+    "pass": true,
+    "low_quality": false
+  },
+  "final_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-093",
+    "scores": {
+      "persona_fit": 5,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Speaks directly to a small-business owner-operator in Bareni's calm, practical voice. Respects the human-in-the-loop boundary and omits any sales CTA as required.",
+      "clarity": "The argument is immediately clear, logically sequenced, and uses simple language to define a narrow operational check without unnecessary jargon.",
+      "actionability": "Provides a clear diagnostic question and a feasible next step—auditing a single week of invoices—while advising when automation is not worth building.",
+      "factual_grounding": "Makes no fabricated customer, capability, or performance claims; explicitly reinforces that money movement and collection actions require human approval."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 20,
+    "pass": true,
+    "low_quality": false
+  },
+  "evaluation_reused": false,
+  "evaluation_keys": [
+    "SE-FINAL-N093_eval_initial__a001",
+    "SE-FINAL-N093_eval_final__a001"
+  ],
+  "completed_at": "2026-09-08T13:05:10.324671+00:00"
+}

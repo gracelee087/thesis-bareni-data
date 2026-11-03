@@ -1,0 +1,191 @@
+{
+  "status": "success",
+  "usage": {
+    "input_tokens": 7729,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2023,
+    "reasoning_tokens": null
+  },
+  "cost_usd": 0.08922,
+  "output": {
+    "item_id": "E-RES-614",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Owner-specified abstract topic:** early signs of eval drift"
+          },
+          {
+            "source_id": "S01",
+            "quote": "Turn the abstract topic into a bounded Bareni workflow decision."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Explain necessary jargon immediately."
+          }
+        ],
+        "rationale": "This is a planned framing/definition instruction for the post, turning the owner-specified abstract topic into a bounded workflow problem. It does not assert an observed Bareni result, deployment or capability. Approved evidence authorises the topic and requires jargon to be explained in plain language.",
+        "use_guidance": "Keep as an explicitly framed general explanation of a risk. Define drift in plain English, keep it hypothetical/conditional ('if you run an AI-assisted workflow'), and do not attach any measured degradation rate, customer complaint history or Bareni observation to it."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step. Do not force AI where it is unsuitable."
+          },
+          {
+            "source_id": "C01",
+            "quote": "have a frequent, repeatable workflow with a\n  measurable outcome"
+          },
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI\n  fits"
+          }
+        ],
+        "rationale": "A diagnostic question for the reader, not a factual assertion. Approved evidence supports asking whether a frequent, repeatable workflow with a measurable outcome exists and honestly whether AI fits.",
+        "use_guidance": "Keep as a reader-facing diagnostic question. Ask about one recurring workflow only; do not imply Bareni has already run this triage with customers, and drop the internal routing label ('skip to P04') from the published text."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step"
+          },
+          {
+            "source_id": "C05",
+            "quote": "Numbers require a source and status. Keep observed results, estimates, targets,\n  synthetic data, and examples distinct."
+          }
+        ],
+        "rationale": "Proposing that the owner document a control is permissible, but the row as written presents concrete figures ('10 real past cases each month', '>5%') without marking their status. Approved evidence has no benchmark for these values, so they must be labelled as illustrative examples chosen by the owner, not Bareni thresholds or observed values.",
+        "use_guidance": "Add the qualification that any figures are illustrative examples the owner sets for their own workflow, not Bareni benchmarks, observed results or validated thresholds. Present at most one such example, state its status explicitly, and avoid implying Bareni has measured any escalation or rejection rate."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "Normal sequence: free 30-minute diagnostic; free one-page pilot proposal"
+          },
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI\n  fits, and—if it does—defines pilot scope, fixed price, and measures."
+          }
+        ],
+        "rationale": "A next-step recommendation for the reader; the free 30-minute diagnostic and its honest-fit assessment are approved offer elements, and the row does not claim any completed engagement or observed outcome.",
+        "use_guidance": "Keep as a proposed next step. The task sets the CTA rule to none, so mention the diagnostic only as a descriptive next step without the standard 'Book a free 30-minute diagnostic' call to action or any scarcity. Keep the 'do not assume drift is present' caution."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI\n  fits, and—if it does—defines pilot scope, fixed price, and measures."
+          },
+          {
+            "source_id": "C02",
+            "quote": "Finished code is handed to the customer."
+          },
+          {
+            "source_id": "C02",
+            "quote": "Timings are intended scopes, not guarantees."
+          }
+        ],
+        "rationale": "The core is supported: pilots define measures and finished code is handed over, and recommending manual sampling is permissible. But the claim that manual sampling 'is cheaper and safer than automated retraining' asserts a comparative outcome with no approved measurement, and 'hands the owner a control procedure' must be stated as intended policy rather than a demonstrated deliverable.",
+        "use_guidance": "Add the qualification that this is Bareni's intended approach and policy, not a measured cost or safety comparison: reword the comparison as a design preference ('we start with manual spot-checks rather than automated retraining') and drop any implication of proven savings or an existing retraining capability. No such drift-monitoring feature is in the demonstrated systems, so keep it as pilot scope to be assessed."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "SUPPORTED",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C03",
+            "quote": "amount-based human-only approval,\n  refusal of agent approval/payment attempts"
+          },
+          {
+            "source_id": "S01",
+            "quote": "final approval and business authority remain human"
+          }
+        ],
+        "rationale": "Approved evidence states human approval is mandatory for high-risk decisions and that the owner retains final approval and business authority; the claim also explicitly rules out autonomous correction, so the necessary boundary is already contained in the wording.",
+        "use_guidance": "Retain within scope. State the human-approval boundary and the owner's authority to keep, pause or modify the automation as policy; do not extend it into a compliance or security guarantee."
+      }
+    ]
+  },
+  "raw_text": "{\"item_id\":\"E-RES-614\",\"ledger\":[{\"claim_id\":\"Q01\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"S01\",\"quote\":\"Owner-specified abstract topic:** early signs of eval drift\"},{\"source_id\":\"S01\",\"quote\":\"Turn the abstract topic into a bounded Bareni workflow decision.\"},{\"source_id\":\"C05\",\"quote\":\"Explain necessary jargon immediately.\"}],\"rationale\":\"This is a planned framing/definition instruction for the post, turning the owner-specified abstract topic into a bounded workflow problem. It does not assert an observed Bareni result, deployment or capability. Approved evidence authorises the topic and requires jargon to be explained in plain language.\",\"use_guidance\":\"Keep as an explicitly framed general explanation of a risk. Define drift in plain English, keep it hypothetical/conditional ('if you run an AI-assisted workflow'), and do not attach any measured degradation rate, customer complaint history or Bareni observation to it.\"},{\"claim_id\":\"Q02\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"S01\",\"quote\":\"explain one observable workflow decision, threshold, diagnostic question,\\n  control, or next step. Do not force AI where it is unsuitable.\"},{\"source_id\":\"C01\",\"quote\":\"have a frequent, repeatable workflow with a\\n  measurable outcome\"},{\"source_id\":\"C02\",\"quote\":\"The diagnostic identifies the one recurring workflow, says honestly whether AI\\n  fits\"}],\"rationale\":\"A diagnostic question for the reader, not a factual assertion. Approved evidence supports asking whether a frequent, repeatable workflow with a measurable outcome exists and honestly whether AI fits.\",\"use_guidance\":\"Keep as a reader-facing diagnostic question. Ask about one recurring workflow only; do not imply Bareni has already run this triage with customers, and drop the internal routing label ('skip to P04') from the published text.\"},{\"claim_id\":\"Q03\",\"category\":\"QUALIFICATIONS\",\"evidence\":[{\"source_id\":\"S01\",\"quote\":\"explain one observable workflow decision, threshold, diagnostic question,\\n  control, or next step\"},{\"source_id\":\"C05\",\"quote\":\"Numbers require a source and status. Keep observed results, estimates, targets,\\n  synthetic data, and examples distinct.\"}],\"rationale\":\"Proposing that the owner document a control is permissible, but the row as written presents concrete figures ('10 real past cases each month', '>5%') without marking their status. Approved evidence has no benchmark for these values, so they must be labelled as illustrative examples chosen by the owner, not Bareni thresholds or observed values.\",\"use_guidance\":\"Add the qualification that any figures are illustrative examples the owner sets for their own workflow, not Bareni benchmarks, observed results or validated thresholds. Present at most one such example, state its status explicitly, and avoid implying Bareni has measured any escalation or rejection rate.\"},{\"claim_id\":\"Q04\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C02\",\"quote\":\"Normal sequence: free 30-minute diagnostic; free one-page pilot proposal\"},{\"source_id\":\"C02\",\"quote\":\"The diagnostic identifies the one recurring workflow, says honestly whether AI\\n  fits, and—if it does—defines pilot scope, fixed price, and measures.\"}],\"rationale\":\"A next-step recommendation for the reader; the free 30-minute diagnostic and its honest-fit assessment are approved offer elements, and the row does not claim any completed engagement or observed outcome.\",\"use_guidance\":\"Keep as a proposed next step. The task sets the CTA rule to none, so mention the diagnostic only as a descriptive next step without the standard 'Book a free 30-minute diagnostic' call to action or any scarcity. Keep the 'do not assume drift is present' caution.\"},{\"claim_id\":\"Q05\",\"category\":\"QUALIFICATIONS\",\"evidence\":[{\"source_id\":\"C02\",\"quote\":\"The diagnostic identifies the one recurring workflow, says honestly whether AI\\n  fits, and—if it does—defines pilot scope, fixed price, and measures.\"},{\"source_id\":\"C02\",\"quote\":\"Finished code is handed to the customer.\"},{\"source_id\":\"C02\",\"quote\":\"Timings are intended scopes, not guarantees.\"}],\"rationale\":\"The core is supported: pilots define measures and finished code is handed over, and recommending manual sampling is permissible. But the claim that manual sampling 'is cheaper and safer than automated retraining' asserts a comparative outcome with no approved measurement, and 'hands the owner a control procedure' must be stated as intended policy rather than a demonstrated deliverable.\",\"use_guidance\":\"Add the qualification that this is Bareni's intended approach and policy, not a measured cost or safety comparison: reword the comparison as a design preference ('we start with manual spot-checks rather than automated retraining') and drop any implication of proven savings or an existing retraining capability. No such drift-monitoring feature is in the demonstrated systems, so keep it as pilot scope to be assessed.\"},{\"claim_id\":\"Q06\",\"category\":\"SUPPORTED\",\"evidence\":[{\"source_id\":\"C04\",\"quote\":\"Human approval is mandatory for money movement and other high-risk decisions.\"},{\"source_id\":\"C03\",\"quote\":\"amount-based human-only approval,\\n  refusal of agent approval/payment attempts\"},{\"source_id\":\"S01\",\"quote\":\"final approval and business authority remain human\"}],\"rationale\":\"Approved evidence states human approval is mandatory for high-risk decisions and that the owner retains final approval and business authority; the claim also explicitly rules out autonomous correction, so the necessary boundary is already contained in the wording.\",\"use_guidance\":\"Retain within scope. State the human-approval boundary and the owner's authority to keep, pause or modify the automation as policy; do not extend it into a compliance or security guarantee.\"}]}",
+  "provider_response": {
+    "id": "msg_011CeqxTBh9dJhmAdAYkETDc",
+    "container": null,
+    "content": [
+      {
+        "citations": null,
+        "text": "{\"item_id\":\"E-RES-614\",\"ledger\":[{\"claim_id\":\"Q01\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"S01\",\"quote\":\"Owner-specified abstract topic:** early signs of eval drift\"},{\"source_id\":\"S01\",\"quote\":\"Turn the abstract topic into a bounded Bareni workflow decision.\"},{\"source_id\":\"C05\",\"quote\":\"Explain necessary jargon immediately.\"}],\"rationale\":\"This is a planned framing/definition instruction for the post, turning the owner-specified abstract topic into a bounded workflow problem. It does not assert an observed Bareni result, deployment or capability. Approved evidence authorises the topic and requires jargon to be explained in plain language.\",\"use_guidance\":\"Keep as an explicitly framed general explanation of a risk. Define drift in plain English, keep it hypothetical/conditional ('if you run an AI-assisted workflow'), and do not attach any measured degradation rate, customer complaint history or Bareni observation to it.\"},{\"claim_id\":\"Q02\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"S01\",\"quote\":\"explain one observable workflow decision, threshold, diagnostic question,\\n  control, or next step. Do not force AI where it is unsuitable.\"},{\"source_id\":\"C01\",\"quote\":\"have a frequent, repeatable workflow with a\\n  measurable outcome\"},{\"source_id\":\"C02\",\"quote\":\"The diagnostic identifies the one recurring workflow, says honestly whether AI\\n  fits\"}],\"rationale\":\"A diagnostic question for the reader, not a factual assertion. Approved evidence supports asking whether a frequent, repeatable workflow with a measurable outcome exists and honestly whether AI fits.\",\"use_guidance\":\"Keep as a reader-facing diagnostic question. Ask about one recurring workflow only; do not imply Bareni has already run this triage with customers, and drop the internal routing label ('skip to P04') from the published text.\"},{\"claim_id\":\"Q03\",\"category\":\"QUALIFICATIONS\",\"evidence\":[{\"source_id\":\"S01\",\"quote\":\"explain one observable workflow decision, threshold, diagnostic question,\\n  control, or next step\"},{\"source_id\":\"C05\",\"quote\":\"Numbers require a source and status. Keep observed results, estimates, targets,\\n  synthetic data, and examples distinct.\"}],\"rationale\":\"Proposing that the owner document a control is permissible, but the row as written presents concrete figures ('10 real past cases each month', '>5%') without marking their status. Approved evidence has no benchmark for these values, so they must be labelled as illustrative examples chosen by the owner, not Bareni thresholds or observed values.\",\"use_guidance\":\"Add the qualification that any figures are illustrative examples the owner sets for their own workflow, not Bareni benchmarks, observed results or validated thresholds. Present at most one such example, state its status explicitly, and avoid implying Bareni has measured any escalation or rejection rate.\"},{\"claim_id\":\"Q04\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C02\",\"quote\":\"Normal sequence: free 30-minute diagnostic; free one-page pilot proposal\"},{\"source_id\":\"C02\",\"quote\":\"The diagnostic identifies the one recurring workflow, says honestly whether AI\\n  fits, and—if it does—defines pilot scope, fixed price, and measures.\"}],\"rationale\":\"A next-step recommendation for the reader; the free 30-minute diagnostic and its honest-fit assessment are approved offer elements, and the row does not claim any completed engagement or observed outcome.\",\"use_guidance\":\"Keep as a proposed next step. The task sets the CTA rule to none, so mention the diagnostic only as a descriptive next step without the standard 'Book a free 30-minute diagnostic' call to action or any scarcity. Keep the 'do not assume drift is present' caution.\"},{\"claim_id\":\"Q05\",\"category\":\"QUALIFICATIONS\",\"evidence\":[{\"source_id\":\"C02\",\"quote\":\"The diagnostic identifies the one recurring workflow, says honestly whether AI\\n  fits, and—if it does—defines pilot scope, fixed price, and measures.\"},{\"source_id\":\"C02\",\"quote\":\"Finished code is handed to the customer.\"},{\"source_id\":\"C02\",\"quote\":\"Timings are intended scopes, not guarantees.\"}],\"rationale\":\"The core is supported: pilots define measures and finished code is handed over, and recommending manual sampling is permissible. But the claim that manual sampling 'is cheaper and safer than automated retraining' asserts a comparative outcome with no approved measurement, and 'hands the owner a control procedure' must be stated as intended policy rather than a demonstrated deliverable.\",\"use_guidance\":\"Add the qualification that this is Bareni's intended approach and policy, not a measured cost or safety comparison: reword the comparison as a design preference ('we start with manual spot-checks rather than automated retraining') and drop any implication of proven savings or an existing retraining capability. No such drift-monitoring feature is in the demonstrated systems, so keep it as pilot scope to be assessed.\"},{\"claim_id\":\"Q06\",\"category\":\"SUPPORTED\",\"evidence\":[{\"source_id\":\"C04\",\"quote\":\"Human approval is mandatory for money movement and other high-risk decisions.\"},{\"source_id\":\"C03\",\"quote\":\"amount-based human-only approval,\\n  refusal of agent approval/payment attempts\"},{\"source_id\":\"S01\",\"quote\":\"final approval and business authority remain human\"}],\"rationale\":\"Approved evidence states human approval is mandatory for high-risk decisions and that the owner retains final approval and business authority; the claim also explicitly rules out autonomous correction, so the necessary boundary is already contained in the wording.\",\"use_guidance\":\"Retain within scope. State the human-approval boundary and the owner's authority to keep, pause or modify the automation as policy; do not extend it into a compliance or security guarantee.\"}]}",
+        "type": "text"
+      }
+    ],
+    "model": "claude-opus-5",
+    "role": "assistant",
+    "stop_details": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "global",
+      "input_tokens": 7729,
+      "output_tokens": 2023,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": null,
+      "service_tier": "standard"
+    }
+  },
+  "stop_reason": "end_turn",
+  "cost_details": {
+    "input": 0.038645,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.050575,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.08922
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": null,
+  "key": "SE-FINAL-N014_researcher__a001",
+  "role": "researcher",
+  "created_at": "2026-09-08T12:16:39.027781+00:00",
+  "ended_at": "2026-09-08T12:17:04.396677+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-N014",
+    "batch_id": 1,
+    "condition": "natural",
+    "cohort": "natural"
+  },
+  "task_id": "SE-FINAL-N014",
+  "batch_id": 1,
+  "cohort": "natural",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 25364,
+  "budget_charge_usd": 0.08922,
+  "unknown_cost_reservation_usd": 0
+}

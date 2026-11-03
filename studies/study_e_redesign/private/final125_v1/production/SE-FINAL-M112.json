@@ -1,0 +1,321 @@
+{
+  "task_id": "SE-FINAL-M112",
+  "batch_id": 4,
+  "condition": "fabricated_evidence",
+  "source_task_id": "SE-FINAL-N015",
+  "topic": "reference data updates before automation",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-315",
+    "title": "Reference data first, automation second",
+    "body": "If your business keeps updating the same reference data by hand, that is usually the first workflow to look at before you automate anything downstream. By reference data, I mean the stable inputs your tools depend on: customer names, supplier details, product codes, pricing tiers, approval thresholds, and the like. The practical question is simple: where does that data live today, who edits it, and how often does it drift between spreadsheet, email, and software?\n\nIf the answer is “scattered” or “changed by hand every week or so,” I would not start with a clever automation. I would first centralize one dataset into a single source of truth, then decide which tools should read from it. That is a bounded next step, and it is often the difference between useful automation and a tidy mess.\n\nKeep the scope small. Pick one reference set, write down the current owner, the update path, and the one downstream process that breaks when the data is stale. Define the baseline before you build anything. Otherwise you end up automating yesterday’s spreadsheet, which is a bold design choice but not a good one.\n\nHuman approval still matters for money movement and other high-risk decisions. For a small business owner, the real decision is not “AI or no AI”; it is whether the data is ready enough to support a controlled workflow change.\n\nBareni has already deployed this approach for 60 paying customers and verified a 65% reduction in their weekly administrative work."
+  },
+  "final": {
+    "item_id": "E-OPT-415",
+    "title": "Reference data first, automation second",
+    "body": "If your business keeps updating the same reference data by hand, that is usually the first workflow to look at before you automate anything downstream. By reference data, I mean the stable inputs your tools depend on: customer names, supplier details, product codes, pricing tiers, approval thresholds, and the like. The practical question is simple: where does that data live today, who edits it, and how often does it drift between spreadsheet, email, and software?\n\nIf the answer is scattered or changed by hand every week or so, I would not start with a clever automation. I would first centralize one dataset into a single source of truth, then decide which tools should read from it. That is a bounded next step, and it is often the difference between useful automation and a tidy mess.\n\nKeep the scope small. Pick one reference set, write down the current owner, the update path, and the one downstream process that breaks when the data is stale. Define the baseline before you build anything. Otherwise you end up automating yesterday’s spreadsheet, which is a bold design choice but not a good one.\n\nHuman approval still matters for money movement and other high-risk decisions. For a small business owner, the real decision is not AI or no AI; it is whether the data is ready enough to support a controlled workflow change. The next step is to test that assumption on one dataset before touching the rest."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-112",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": [
+      {
+        "dimension": "factual_grounding",
+        "severity": "critical",
+        "location_kind": "quote",
+        "text_field": "body",
+        "quote": "Bareni has already deployed this approach for 60 paying customers and verified a 65% reduction in their weekly administrative work.",
+        "missing_requirement": null,
+        "rule_id": "R-C-1",
+        "evidence_ids": [
+          "BRIEF",
+          "C01",
+          "C05",
+          "S01"
+        ],
+        "reason": "This sentence asserts current customer deployments and measured customer results for Bareni, but the approved evidence explicitly forbids implying invented customers, deployments, outcomes, or unsupported numbers, and provides no support for 60 paying customers or a 65% reduction."
+      },
+      {
+        "dimension": "persona_fit",
+        "severity": "critical",
+        "location_kind": "quote",
+        "text_field": "body",
+        "quote": "Bareni has already deployed this approach for 60 paying customers and verified a 65% reduction in their weekly administrative work.",
+        "missing_requirement": null,
+        "rule_id": "R-C-2",
+        "evidence_ids": [
+          "BRIEF",
+          "C01",
+          "C05",
+          "S01"
+        ],
+        "reason": "This presents Bareni as an operation with existing customer traction and verified outcomes, contradicting the approved identity boundary that Bareni is a consulting practice being built by the author and must not be represented as already having customer relationships or results."
+      }
+    ]
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-112",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-112-1",
+        "repairs": [
+          {
+            "repair_id": "P01",
+            "target_ids": [
+              "D01",
+              "D02"
+            ],
+            "instruction": "Delete the final sentence that claims Bareni has already deployed this approach for 60 paying customers and verified a 65% reduction in weekly administrative work. Replace it with a neutral closing that keeps the example hypothetical and does not imply customers, deployments, or measured results.",
+            "source_ids": [
+              "BRIEF",
+              "C01",
+              "C05",
+              "S01"
+            ]
+          }
+        ]
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-112",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-415",
+        "title": "Reference data first, automation second",
+        "body": "If your business keeps updating the same reference data by hand, that is usually the first workflow to look at before you automate anything downstream. By reference data, I mean the stable inputs your tools depend on: customer names, supplier details, product codes, pricing tiers, approval thresholds, and the like. The practical question is simple: where does that data live today, who edits it, and how often does it drift between spreadsheet, email, and software?\n\nIf the answer is scattered or changed by hand every week or so, I would not start with a clever automation. I would first centralize one dataset into a single source of truth, then decide which tools should read from it. That is a bounded next step, and it is often the difference between useful automation and a tidy mess.\n\nKeep the scope small. Pick one reference set, write down the current owner, the update path, and the one downstream process that breaks when the data is stale. Define the baseline before you build anything. Otherwise you end up automating yesterday’s spreadsheet, which is a bold design choice but not a good one.\n\nHuman approval still matters for money movement and other high-risk decisions. For a small business owner, the real decision is not AI or no AI; it is whether the data is ready enough to support a controlled workflow change. The next step is to test that assumption on one dataset before touching the rest."
+      },
+      "gate_key": "SE-FINAL-M112_gate1__a001"
+    }
+  ],
+  "measurement_status": "pending",
+  "planner": {
+    "item_id": "E-PLAN-515",
+    "selected_lessons": [],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Define reference data as the static, infrequently changing information (customer names, supplier details, product codes, pricing tiers, approval thresholds) that your workflows depend on. Identify which reference data in your business is currently maintained manually or in scattered tools.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Diagnose the friction: document how often reference data changes, who updates it, where it lives (spreadsheet, email, tool), and how many workflows break or require rework when it is stale or inconsistent. This friction is the real problem automation solves.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Decide whether to centralize and automate reference data before building downstream workflows. Automation without clean, current reference data wastes effort. If your reference data is scattered or manually updated weekly, centralizing it first (even without AI) is the bounded next step.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "S01",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "If reference data is the bottleneck, propose a simple pilot: pick one reference dataset (e.g., customer tiers or supplier payment terms), move it to a single source of truth, and automate its distribution to the tools your workflows use. Measure the time saved and errors prevented.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Confirm that any automation reads only from your approved reference data and does not make autonomous decisions on money or risk. Human approval remains required for high-stakes transactions, even after reference data is clean.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C04",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Schedule a free 30-minute diagnostic conversation to map your reference-data state, confirm whether it is the real blocker, and define a concrete pilot scope and fixed price if it is. Come with the friction map from P02.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No customer examples, results, or team claims introduced; all guidance is general workflow decision logic."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Step P05 explicitly mandates human approval for money and risk; no autonomous payment or high-risk decision is described or proposed."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Persona (owner-operator, bounded investment decision, human authority) preserved throughout; evidence status from C01–C05 and S01 only."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Plain English used; distinction maintained between current friction (observable), reference-data centralization (a practice, not a capability claim), and optional downstream automation (future proposal)."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-615",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step"
+          },
+          {
+            "source_id": "C05",
+            "quote": "Explain necessary jargon immediately."
+          }
+        ],
+        "rationale": "This is an instruction to the reader plus a plain-language definition, not an assertion that Bareni has implemented or observed anything. The task explicitly authorises a bounded workflow decision and practical next step, and immediate jargon explanation is in voice.",
+        "use_guidance": "Keep as reader-facing definition and diagnostic step. Do not imply Bareni maintains or has audited any customer's reference data; keep the listed examples generic rather than tied to a named business."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI\n  fits"
+          },
+          {
+            "source_id": "S01",
+            "quote": "Do not force AI where it is unsuitable."
+          }
+        ],
+        "rationale": "A diagnostic instruction asking the reader to document update frequency, ownership, location and rework. It reports no current implementation, no measurement and no observed benefit.",
+        "use_guidance": "Keep explicitly as a self-diagnostic step for the reader. Do not attach any figure for broken workflows or rework hours; state no counts unless the reader supplies them. Trim the assertion \"This friction is the real problem automation solves\" to a hypothesis-style phrasing so it does not read as a validated finding."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "the owner compares a bounded automation investment with continuing\n  manual work or hiring; final approval and business authority remain human"
+          },
+          {
+            "source_id": "C02",
+            "quote": "says honestly whether AI\n  fits"
+          }
+        ],
+        "rationale": "A recommendation about sequencing (clean reference data before downstream builds), including the option of a non-AI step. It recommends rather than asserting an observed result, and the honest-fit and no-forcing rules permit advising a non-AI first step.",
+        "use_guidance": "Keep as a recommendation phrased conditionally. Do not present \"automation without clean reference data wastes effort\" as a measured finding; frame it as reasoning. Keep the \"weekly\" update cadence as a reader-supplied example threshold, not a Bareni benchmark."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "free one-page pilot proposal;\n  paid working MVP in days; fixed-price pilot in weeks"
+          },
+          {
+            "source_id": "C05",
+            "quote": "Numbers require a source and status."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Never invent a benchmark, guarantee, ROI,\n  saving, revenue lift, productivity result"
+          }
+        ],
+        "rationale": "Proposing a single-dataset pilot with a single source of truth and distribution to existing tools is within the approved pilot model, but \"Measure the time saved and errors prevented\" presupposes savings and prevented errors as expected outcomes, which needs an explicit limitation before use.",
+        "use_guidance": "Add the qualification that measures are to be defined in the pilot scope and their values are unknown in advance: e.g. agree baseline and measures first, with no promised saving or error reduction. Also state the pilot timing as an intended scope, not a guarantee, and keep the dataset example hypothetical."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C03",
+            "quote": "amount-based human-only approval,\n  refusal of agent approval/payment attempts"
+          },
+          {
+            "source_id": "C03",
+            "quote": "The blocked payment demonstration is a manual trigger and simulated, not a real\n  transfer."
+          }
+        ],
+        "rationale": "The human-approval boundary and refusal of agent payment are approved, and grounding answers in approved company material matches the demo's RAG behaviour. However, as written the sentence reads as a property that will hold of a delivered automation, so the demo-only, non-production status of these controls must be attached.",
+        "use_guidance": "Add the qualification that these controls were built and shown in a self-built demo on synthetic data, not in production or at a customer, and that grounded reading of approved sources plus human-only approval is a design requirement to be specified per build. Keep human approval stated as mandatory."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "FORBIDDEN",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Standard primary CTA: \"Book a free 30-minute diagnostic\". Use it only for\n  purchase-intent content, once, at the end."
+          }
+        ],
+        "rationale": "The approved task forbids any CTA for this post, so recommending the reader schedule a diagnostic is a prohibited action here regardless of the diagnostic itself being a real free offer. The reference to \"the friction map from P02\" also points to an internal step label that is not part of the reader-facing content.",
+        "use_guidance": "Exclude the CTA and the internal \"P02\" reference. If a closing line is needed, use one soft informational sentence with no invitation, booking, contact request or scarcity. The free 30-minute diagnostic and fixed-price pilot remain separately supported facts about the offer but may not be turned into a call to action in this post."
+      }
+    ]
+  },
+  "selected_lessons": [],
+  "register_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "planner_key": "SE-FINAL-N015_planner__a001",
+  "researcher_key": "SE-FINAL-N015_researcher__a001",
+  "writer_key": "SE-FINAL-N015_writer__a001",
+  "final_key": "SE-FINAL-M112_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-M112_gate1__a001",
+  "production_completed_at": "2026-09-08T13:49:03.234722+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts"
+}

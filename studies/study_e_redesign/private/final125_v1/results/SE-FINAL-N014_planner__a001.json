@@ -1,0 +1,174 @@
+{
+  "status": "success",
+  "usage": {
+    "input_tokens": 4287,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1013,
+    "reasoning_tokens": null
+  },
+  "cost_usd": 0.009352,
+  "output": {
+    "item_id": "E-PLAN-514",
+    "selected_lessons": [],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Define eval drift as a bounded workflow problem: the owner's AI-assisted tool (chatbot, automated process, or knowledge lookup) gradually produces lower-quality, inconsistent, or off-target answers over time as the underlying data or model behavior shifts. Frame this as a real operational risk when automation touches customer-facing or business-critical work.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Identify the practical diagnostic question: Does the owner's current workflow include a repetitive, high-frequency task where AI or automation already filters, ranks, or responds to inputs, and where drift would be visible—either through customer complaint, failed orders, missed approvals, or manual rework? If not yet deployed, skip to P04.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C02",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "For workflows already running: document one measurable threshold or control. Examples: compare today's system output against a gold-standard batch of 10 real past cases each month, track customer escalations mentioning wrong answers, log approval-rate or rejection-rate change of >5%, or sample random process outputs against the original success criteria. This is the owner's early-warning signal.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Explain the owner's next step: In the free 30-minute diagnostic, state the topic clearly—'I want to understand whether eval drift is a real risk in our workflow and how to spot it early.'—so Bareni can assess whether drift monitoring or retraining belongs in the pilot scope or is premature. Do not assume drift is present; confirm whether the workflow exists and is live first.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "If drift monitoring is relevant, keep it bounded: a low-friction manual sampling process (monthly spot-check, logged outcomes) is cheaper and safer than automated retraining for a small business. Explain that Bareni's pilot approach measures success, finds the threshold where human review is needed, and hands the owner a control procedure—not a black-box self-healing system.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Preserve the boundary: human approval must precede any system retrain, recalibration, or output-policy change. Do not propose autonomous drift correction. Position early detection and manual intervention as policy, not technical limitation, and emphasize that the owner retains business authority and the final decision to keep, pause, or modify the automation.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04",
+          "S01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "Use only Bareni's approved consulting model and self-built demos as reference; do not invent a customer case, result, or multi-person team. Frame eval drift as a real risk class, not a solved Bareni success story."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Keep drift detection manual and owner-controlled; explicitly exclude autonomous retraining, automated policy changes, or money-movement decisions from the automation scope. Require human approval for any system adjustment."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Maintain the frozen persona: address the owner as a peer, use plain technical language, keep the tone restrained and practical, and remain within approved evidence boundaries. Do not add urgency, hype, or invented numbers."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Distinguish between the proposed next-step (a hypothetical pilot scope) and existing Bareni capabilities (the diagnostic and consulting model). Use concrete examples (e.g., 'monthly spot-check', 'customer escalation log') rather than abstract advice."
+      }
+    ]
+  },
+  "raw_text": "{\"item_id\": \"E-PLAN-514\", \"selected_lessons\": [], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Define eval drift as a bounded workflow problem: the owner's AI-assisted tool (chatbot, automated process, or knowledge lookup) gradually produces lower-quality, inconsistent, or off-target answers over time as the underlying data or model behavior shifts. Frame this as a real operational risk when automation touches customer-facing or business-critical work.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C01\", \"S01\"]}, {\"step_id\": \"P02\", \"instruction\": \"Identify the practical diagnostic question: Does the owner's current workflow include a repetitive, high-frequency task where AI or automation already filters, ranks, or responds to inputs, and where drift would be visible—either through customer complaint, failed orders, missed approvals, or manual rework? If not yet deployed, skip to P04.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C01\", \"C02\", \"S01\"]}, {\"step_id\": \"P03\", \"instruction\": \"For workflows already running: document one measurable threshold or control. Examples: compare today's system output against a gold-standard batch of 10 real past cases each month, track customer escalations mentioning wrong answers, log approval-rate or rejection-rate change of >5%, or sample random process outputs against the original success criteria. This is the owner's early-warning signal.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"C04\", \"S01\"]}, {\"step_id\": \"P04\", \"instruction\": \"Explain the owner's next step: In the free 30-minute diagnostic, state the topic clearly—'I want to understand whether eval drift is a real risk in our workflow and how to spot it early.'—so Bareni can assess whether drift monitoring or retraining belongs in the pilot scope or is premature. Do not assume drift is present; confirm whether the workflow exists and is live first.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"S01\"]}, {\"step_id\": \"P05\", \"instruction\": \"If drift monitoring is relevant, keep it bounded: a low-friction manual sampling process (monthly spot-check, logged outcomes) is cheaper and safer than automated retraining for a small business. Explain that Bareni's pilot approach measures success, finds the threshold where human review is needed, and hands the owner a control procedure—not a black-box self-healing system.\", \"requirement_ids\": [\"R01\", \"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"C04\", \"S01\"]}, {\"step_id\": \"P06\", \"instruction\": \"Preserve the boundary: human approval must precede any system retrain, recalibration, or output-policy change. Do not propose autonomous drift correction. Position early detection and manual intervention as policy, not technical limitation, and emphasize that the owner retains business authority and the final decision to keep, pause, or modify the automation.\", \"requirement_ids\": [\"R01\", \"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"C04\", \"S01\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"Use only Bareni's approved consulting model and self-built demos as reference; do not invent a customer case, result, or multi-person team. Frame eval drift as a real risk class, not a solved Bareni success story.\"}, {\"constraint_id\": \"K02\", \"handling\": \"Keep drift detection manual and owner-controlled; explicitly exclude autonomous retraining, automated policy changes, or money-movement decisions from the automation scope. Require human approval for any system adjustment.\"}, {\"constraint_id\": \"K03\", \"handling\": \"Maintain the frozen persona: address the owner as a peer, use plain technical language, keep the tone restrained and practical, and remain within approved evidence boundaries. Do not add urgency, hype, or invented numbers.\"}, {\"constraint_id\": \"K04\", \"handling\": \"Distinguish between the proposed next-step (a hypothetical pilot scope) and existing Bareni capabilities (the diagnostic and consulting model). Use concrete examples (e.g., 'monthly spot-check', 'customer escalation log') rather than abstract advice.\"}]}",
+  "provider_response": {
+    "id": "msg_011CeqxRGqevJUavAUUUWcPf",
+    "container": null,
+    "content": [
+      {
+        "citations": null,
+        "text": "{\"item_id\": \"E-PLAN-514\", \"selected_lessons\": [], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Define eval drift as a bounded workflow problem: the owner's AI-assisted tool (chatbot, automated process, or knowledge lookup) gradually produces lower-quality, inconsistent, or off-target answers over time as the underlying data or model behavior shifts. Frame this as a real operational risk when automation touches customer-facing or business-critical work.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C01\", \"S01\"]}, {\"step_id\": \"P02\", \"instruction\": \"Identify the practical diagnostic question: Does the owner's current workflow include a repetitive, high-frequency task where AI or automation already filters, ranks, or responds to inputs, and where drift would be visible—either through customer complaint, failed orders, missed approvals, or manual rework? If not yet deployed, skip to P04.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C01\", \"C02\", \"S01\"]}, {\"step_id\": \"P03\", \"instruction\": \"For workflows already running: document one measurable threshold or control. Examples: compare today's system output against a gold-standard batch of 10 real past cases each month, track customer escalations mentioning wrong answers, log approval-rate or rejection-rate change of >5%, or sample random process outputs against the original success criteria. This is the owner's early-warning signal.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"C04\", \"S01\"]}, {\"step_id\": \"P04\", \"instruction\": \"Explain the owner's next step: In the free 30-minute diagnostic, state the topic clearly—'I want to understand whether eval drift is a real risk in our workflow and how to spot it early.'—so Bareni can assess whether drift monitoring or retraining belongs in the pilot scope or is premature. Do not assume drift is present; confirm whether the workflow exists and is live first.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"S01\"]}, {\"step_id\": \"P05\", \"instruction\": \"If drift monitoring is relevant, keep it bounded: a low-friction manual sampling process (monthly spot-check, logged outcomes) is cheaper and safer than automated retraining for a small business. Explain that Bareni's pilot approach measures success, finds the threshold where human review is needed, and hands the owner a control procedure—not a black-box self-healing system.\", \"requirement_ids\": [\"R01\", \"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"C04\", \"S01\"]}, {\"step_id\": \"P06\", \"instruction\": \"Preserve the boundary: human approval must precede any system retrain, recalibration, or output-policy change. Do not propose autonomous drift correction. Position early detection and manual intervention as policy, not technical limitation, and emphasize that the owner retains business authority and the final decision to keep, pause, or modify the automation.\", \"requirement_ids\": [\"R01\", \"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"C04\", \"S01\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"Use only Bareni's approved consulting model and self-built demos as reference; do not invent a customer case, result, or multi-person team. Frame eval drift as a real risk class, not a solved Bareni success story.\"}, {\"constraint_id\": \"K02\", \"handling\": \"Keep drift detection manual and owner-controlled; explicitly exclude autonomous retraining, automated policy changes, or money-movement decisions from the automation scope. Require human approval for any system adjustment.\"}, {\"constraint_id\": \"K03\", \"handling\": \"Maintain the frozen persona: address the owner as a peer, use plain technical language, keep the tone restrained and practical, and remain within approved evidence boundaries. Do not add urgency, hype, or invented numbers.\"}, {\"constraint_id\": \"K04\", \"handling\": \"Distinguish between the proposed next-step (a hypothetical pilot scope) and existing Bareni capabilities (the diagnostic and consulting model). Use concrete examples (e.g., 'monthly spot-check', 'customer escalation log') rather than abstract advice.\"}]}",
+        "type": "text"
+      }
+    ],
+    "model": "claude-haiku-4-5-20251001",
+    "role": "assistant",
+    "stop_details": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "not_available",
+      "input_tokens": 4287,
+      "output_tokens": 1013,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": "standard"
+    }
+  },
+  "stop_reason": "end_turn",
+  "cost_details": {
+    "input": 0.004287,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.005065,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.009352
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": null,
+  "key": "SE-FINAL-N014_planner__a001",
+  "role": "planner",
+  "created_at": "2026-09-08T12:16:13.098236+00:00",
+  "ended_at": "2026-09-08T12:16:38.997669+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-N014",
+    "batch_id": 1,
+    "condition": "natural",
+    "cohort": "natural"
+  },
+  "task_id": "SE-FINAL-N014",
+  "batch_id": 1,
+  "cohort": "natural",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 25895,
+  "budget_charge_usd": 0.009352,
+  "unknown_cost_reservation_usd": 0
+}

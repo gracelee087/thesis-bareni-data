@@ -1,0 +1,154 @@
+{
+  "created_at": "2026-09-08T19:51:08.662902+00:00",
+  "role": "evaluator",
+  "metadata": {
+    "study_id": "STUDY-E-ABLATON",
+    "pair_id": "SEA-I107-R1",
+    "arm": "critic_off",
+    "cycle": "eval"
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49",
+  "status": "success",
+  "output": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-a95b829168d5f3a91017aa9dbe7b284b",
+    "scores": {
+      "persona_fit": 5,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Speaks directly to the owner-operator in Bareni's calm, technical, and restrained voice. Fully respects the zero-CTA instruction and evidence boundaries.",
+      "clarity": "Logical structure, plain explanations of requirement freeze and workflow exceptions, and immediate clarity throughout without fluff.",
+      "actionability": "Provides a practical diagnostic question and a clear framework for evaluating whether to rebuild, handle manually, or flag exceptions for human review.",
+      "factual_grounding": "Accurately references Bareni's diagnostic approach and strictly enforces human approval for high-risk and financial decisions without inventing results."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 20,
+    "pass": true,
+    "low_quality": false
+  },
+  "cost_usd": 0.0094695,
+  "usage": {
+    "prompt_token_count": 5916,
+    "cached_content_token_count": 0,
+    "candidates_token_count": 314,
+    "thoughts_token_count": 1028,
+    "total_token_count": 7258
+  },
+  "provider_response": {
+    "sdk_http_response": {
+      "headers": {
+        "x-gemini-service-tier": "standard",
+        "content-type": "application/json; charset=UTF-8",
+        "vary": "Origin, X-Origin, Referer",
+        "content-encoding": "gzip",
+        "date": "Tue, 08 Sep 2026 19:51:12 GMT",
+        "server": "scaffolding on HTTPServer2",
+        "x-xss-protection": "0",
+        "x-frame-options": "SAMEORIGIN",
+        "x-content-type-options": "nosniff",
+        "server-timing": "gfet4t7; dur=4336",
+        "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+        "transfer-encoding": "chunked"
+      },
+      "body": null
+    },
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "media_resolution": null,
+              "code_execution_result": null,
+              "executable_code": null,
+              "file_data": null,
+              "function_call": null,
+              "function_response": null,
+              "inline_data": null,
+              "text": "{\n  \"schema_version\": \"study-e-evaluator-rating-v1\",\n  \"item_id\": \"EVAL-a95b829168d5f3a91017aa9dbe7b284b\",\n  \"scores\": {\n    \"persona_fit\": 5,\n    \"clarity\": 5,\n    \"actionability\": 5,\n    \"factual_grounding\": 5\n  },\n  \"reasons\": {\n    \"persona_fit\": \"Speaks directly to the owner-operator in Bareni's calm, technical, and restrained voice. Fully respects the zero-CTA instruction and evidence boundaries.\",\n    \"clarity\": \"Logical structure, plain explanations of requirement freeze and workflow exceptions, and immediate clarity throughout without fluff.\",\n    \"actionability\": \"Provides a practical diagnostic question and a clear framework for evaluating whether to rebuild, handle manually, or flag exceptions for human review.\",\n    \"factual_grounding\": \"Accurately references Bareni's diagnostic approach and strictly enforces human approval for high-risk and financial decisions without inventing results.\"\n  },\n  \"critical_violation\": false,\n  \"critical_violation_type\": null,\n  \"critical_evidence_quote\": null,\n  \"total_score\": 20,\n  \"pass\": true,\n  \"low_quality\": false\n}",
+              "thought": null,
+              "thought_signature": "EuUkCuIkARFNMg8imf27ufxDGWLNFby0tfsp9p51El6DsvAZZdFSOo8WJ13PWiwrO8YBYTxbcjLBVJTI1V4qmOtyTspJbjuzOo-MVU26RFaYRK0UEDLZ8hiowaAcyJecWUcJty9GNKUqffVbpQYVjkyqQRrfbbhp64M_d2qNKKOnh4ktka7XOTFvYw8Q271-Jrgf5K_9sLCiRbZSq06eurSO6ZjDPQ0VFB4j3wEax5ZDQae95vO708m0aNPI6-UqjAEBlNF-3pqnS6rhK0TrCIWLrHgwm1i6pmaKrJB2cWpjHK_KjnuRkMCciIuc4zwsbzoMJ8CcP7Wq9fbMbzyNTVEPTgz74KjDVAVhOsyPPI4qt3e7yILi492RfC9B83br0Yx9Qazopm2oyLx2iPl2p1fk4GYT5NfS7KRsr5gNuS4bHzwHJ39q9B2Vus1OF2tGZ2wY98GPNlQRJePq5Gz2n_Jy3essZ55b9ploOQTm-KD6ApFpeP7BdablSVTn566F-eO9HSqMF5TAamZASV0KD-s_FwVtakvK5Ijr2wQwCtZ28OT-DmP60zTmvdfllrGw7pHuybr6RkhDpf6nc8YmVNg6IX5UhtfwY57UGEJO2HPR5a0rFfJujZLpsx-tHzJKBcgZ8_S4NcCc5sYL_4dwNfS4NsufA4X6GMZ-VXui1E2Yo138esSDvSICWjZb2tJscLwjnC_E4AVuWYUWB91-XF14ZNQZyz3p3XynE5OVVFhihgSmbLrw67n1eekkLK6glFHH0srOPQhH4-c55QAkQzhsuRZz3Ra5R8Q0bUsqO4dwcnC3NmEUPOHjCJNUS_OjJY_yrxeWyGpxlYj0Ub9DT2dFVeqZqdoMd5QXfao00TP0qUqh6nMAMbazwXocBvsIEYq9acrrezuU2sy8gNGq_1zOYtZactYsxQQ3JuNST64yfdI7roq1pr9ZKi1pOORoNduiVoT7YiAuzpWRbLrJpsc7mXgQh30YXikAeLqRGMZdNqucZOAmfxv55JG_2AVxY7iCfeOfCXdJqZoMah8MlsCEl0wvtof0ICoSy4WBhXwMK7wCg4MgiY6uYmLEB12_sztB1PCeirkEPxGAV2PIGTBusdsSJN-LIMRRRLDVx9v3uJks9Dq4JmCiYdq4-1q231UyIZs0oKzYpYgAHwya7VFJXgCpJ7uHtELqhh8c6cU01toGtsfjh1ORv5r4MxYJPsJFbkp8C2U4g1ZGeMloowxu5Ilg-kZolW13a6NDuswYEn1n7K-2fsQdN9uFma8WPNt6j0h-t1cM8Jwo3J1rA6aC8pUKzyWB3XbwiB3gkFzU077ONFC-vQwPQu5LfbVSfH7rCh92kYmKe-xXcNU0GM10IJeuSnFzmr-yqkvExFpeC5Lyi8CMpXVQXRSYDEVgCMPvJbICAKqr5vlrt7G71aPApFH-YApdywWEiTXF5R8JKHUIkPoJ4rgKkilpZ4zjiBMcEwHnwCzwSftyq-ymc06JJ61Mmo8MOE0AeQ3x0fYWWzMBqKL3aPcu60If-XgSm4bnaSbhBRZhH8kF4LcQ0Xv_LOmmmFUdxkxg5VemKMIzIVuGT8TdZTWh1O2a5JmWOul6C56FP7TgSmyVIR6i-DdUvjbkRA1njSgpl5ZdbT_kKs7b3WDA4QoppxBKpXcMQ1c1uNOMbZXcwsWYJ5Cb7MTgvbbY1GrnqLt3ILY8yRC7MxwcBiBnWAMyQzgrf40GaRw_vbXfhEX-z-hMS4lLeRaIfBKFs6-1x-QE9_ERxLG4VQ1J0JAJ8YeB0iRLCfwXlylKec0VrGsSVAo3jwpQ2vgiALXRntNiJPy1zZzA0BYszWD0vpWISDjO19FNtphVlyuiQTUcf5KTVTGk10myL1p8tmyK8iqoufpt2C8t-1tzOcsLJI8VMQhGC0DUZJExP4uKjQW7LssSuCGIqd5sAPSDWUi8COhUHlFWt-UVLf3LGh3xCPHuwmMuZpNNVWeDcD7ofZsIuq-FUKbvsHNyWqbgrYmiLVJWfPUsEYWmSFULHnepBfqBhR1Ayc2Q8YwLKakDYnWk_CSKckhFdlV3TtYvuIwp7CNB2l6YdqbPxosIkxXcTfJaOHO1JWXVCHv33NdDVnSG2VjSF1_R-LqxhiUwq0DWtoN19CBTAn3ki0vM7OZenl1BcgfqAJLsf3c0zHrGHngHMxwTRiWTNp5O9pqfqS-BbYJGzujySbHT3QCSYhuNw2xTQ__mGkGAcQezEkrayhEpcP4FSLDUZM84-3-YVsCJJCYgvoL98uGoCQIjATPBDThXgo9a5PtV3qZLRMfvUqWVDbzXkKTmiuL3pez0Qj1oIG6u2qUi_gSmecq8BUDMmbHMiCC_Cq79_8fkvLlOdCx6rDvK8hiFjvZ6DBpowoqcUfZqbAQXuYQquG8RKte7_zPYN6zs5Enzs9WEYAI2ODSto5DjUVeG7nmdNGtm-l-0K9a9C5-6B7F9mZsf6kKUt0yu13xcS6u5KXHREFndNZ0-KC9fg0IqP5T_uks6AawcTdzUmyu2GWqFJZ75-C6UZQpk6I7ppEllAgGVOUv0CDpNwB2fk9qNXruc7Ba-pWDjSRlRiHuAdyA2BQenYfcoFCH9_5p4dpaKbG2ppUbB6d_SeocxqJb5M7sii7vXm0HhDDIc4ixTW0Hp6Q31Seq_uvTTn_KCiJdi5QI3Ym_JjStDoRKf_Pm5km9z-ZYIqKsODK_YtIAWeC5vz7wrsawHpLjHQCywQFpUcMX2Xl7hmE3UqX_OxsRAhAXETf9QKj75ZGvQoe3KYtY9HCoP1DXuOsxKlulDJt-EFgOKwb8ugMH40hnfpEdABuT36c4QxSeU9HNlMXLC2eHT6BSP2WDU32QGAyFAQEW7NQlBOD6ipddQZPMXfzmEtdbc4g-WRF_euLE5VUbQdiygCn19htEXrokUeqd7pyK_v4DoWYQKGvn9wQI-uk-oe1m2wSHUITiJst_lkFdAILrQKkvrkqZkAwlowjzFKG7YyO2n0-s-tZzlQ9FE8SfDSQ-6e8BrVY8m2q2bHwNKJivYwYDB_dRHZnGpn8YiPpe2iLiIho7e_LG8_qqPN847oy2uRxsp2LnpM665qsAI2I6Hl4chGee6mVe0JjiAMX81MKccHM-uwkTQW9P56DOCCZemK3EXvso9-x-4ZssJYyQxeFURH7jjrBSOlxtC-xCa-DlWdvNtS_4EBIaXgbiUlA7LvD1lzcadb9WT6EqjEvKqYAPjOSweWvJr4TLUt8Zv2UYIdQjX1b90pw-Blg23D4rUIIMI25WJLwSHiwtysZM_32s3UehUJBE5HdzAfB2P3xTxWPntlOPZOEZA8fSTtmptUj6ld_zRCLVmlc3voIxZUjCsx5DssR8CjyyhqBlbdUaxgZYfjgFfLkhttHmnTqrtlbf65B46ndJ4CqHYs0C_hxpvskJlJR4inxN4BTBEu1nvcT5sx_HTsa5bX9DM5bYAWp97wsA-RSjeYczeIl_SKgsIrHtVfBVLp7NjeSJ_gddqImtZ9HgPvyHeM7P9kntguF8ghuxa4TtASaEGlMvjqMUGwUzFJ-eRDk3y6ygIGK3fg2G1XbNuS5DadIgaJo0xvV3zicBh6wNljG6s8jG4U67g_gnAob7FcnZ2sE8tES3ANPPR_vWuXLbFpcaqAeoYAifC6djz1c07wceB_zmJL2ELnKNF7NvjxldJF9ULwaz1NFft-CC1bOzWa-n9XvG6Vq38z4sNbmLLs19997xSobwFDmBDzlVCBp0lYtnIrN6zp37ZrdK-4ZdN0hVGZa697O8FBVPv8HerywmkzWxP5B9BWZsv75xmM2D-lWiXkl2nlOZqW-Dt7Eue5n92a1-iAifnGCtEObBNR7leuSZ6wGdQRZXvUXMXEKRwOFdt5HIa3nA_BvBNDuqaKmqX7GyMzD-f7aidcJETPIZh2XGRIyQ8O8IrwIHDUkGIm63DMOV0IT9WsYrS9wZCcecLzyg8slNCX4sQnotpKN96mB2FwQ8kcRL7ZgATfwLZcR6-5xTV8bCaHCKbxrREmuIWL9x0QVmqXZWE5F1Ls4zd4SEQVH2TziUkpv1ECT5KLfqmkqLPKE2bjJvEf14sw2jAkg-g5hrc2BDmf_5FdqSZ4tYwgfsw5q9MZrdRJP8XEC30eGIwMHUNrgTXNzdGnwJklBfJgyRe9WzT02CGGvOxac4vZOC6XWN3XNUu6vGAgA8ivNPNQzYa2lsGfLc_X8_UZePk7-znoQebxHCXZWMfi_S7e3dU9fV3eb5Z3od63MR34hyyRfXKWxDk93IkvQyH3KJjhvlwZY6lKGyEVSN-nzEtiquar5kbKBVMGLsCgWUKNd7Yum4RsleVgN4FT-DYpJvO_PTOgTD51VaDF5BTUBcSswb1JIQ-7B8M3IzonH_XCSYX8JcxfJUdw3f42qaGr47RBnsYeuwgZzRTvVY42IFbqTjE_AzBAJyo7_Vs_3eSisyoGOd-6d8qnZ6kraTVUzVN8Fd5xfMe9LqIG1v5JC_vXiMRp8pnrWohDJBBubrgNaDjGefKHxb8kbe4yY1uPstGRQnPgdRq-_ODynpbEHv7Nazuyzg6bhf7ighLkirk_pJpau3-AuL4YZOnVEPLEf63cq0XnuEbIgof6exxQSyieAiSR_B4_tAcnaBYZlVn_TFrsR1WGki6biYnbzD44G0NoeK9qZCsNd7HDg2W4edRI8hAVnzBMnwFB6wu5S8LNh_GCs6-NfeyTgTZXo66DSs2a7o9eUw1FOgFQ67_-WytzBYd80SLj3uiubVqjkrSKO3bLS-2tStWPF_MRJ3atICkYol30XcO_N38D8H3cEEw9zlsqR2VH2SWj19ELbNySnerJXSANI8Sab49uM65mUrjmiQhWOipiBXTYmW8GW5gJEkLnqqVrt6yOb7YQLAhCf9SS_b0-ch_iITYp6XAHmfkgBI8DfbwpdvLsWv75bn-XAFTNHjVCrJ2c0T79bHo1iQFM7gQ2ynvC7l_xIZCEEUh7WrpW14XM1OlfJ7rwR9vfLZ64HCYDNO7vvBVH0HwYoza8Tdl3-ZzdoUnpnhjGKOYUm9GURzBAjLKfZXaoWS5LISBhiiMv8gVOTfVr6Y1ADB1sIJ3gavLpqS8XgEPoItItHrAqlM59OfnqP6AKGRlBVawYtRI1M87DSZ_r5ufOVLgLkA30mAlKrG4vAI8tV22M7nyjeinagZ4fGIHu2dR76dtIBrFNsd-5kXeTBFU2wOvnl-Liozyw39o9CLRSGxjkjD5lLmC9idhOL47cpQsnaOpRDkNp3W97-GJdfsNapwXELG6HG3OZM0DJn6uTgrYZO4etDKXglYMgPwgjMon8MDQKlAlkJYPPmY7EEPmbfaZfhhBO4ayshyIRwzvBWwJoFxSKSiTSDpWbYR9fQPxKPYnY9w6-4EmfA2GsL6ZDXRND-lY1SpwgJfbxkZZkAANCab1TOalb8OTKOX4rFFV2T8uHXpiabaKw6Mn4gV-sLEYbtS3jPX68sPzhxjPwt6bkZBdm4TCqPlGzVhQH0s6UEANpmvndUaJudCxez6NWvAKbjO6ZCujgyNTgtlQaKpp-exRqFCpu0Yl8seQtS_R2QiGhrQqUisi8WlmC1xp_uQuulet0AhRUj2YbQ3ZHlU04WnlZAoiMtdngWQpje_MIhGTrsjfOef1rz3mGFF4Bl_5cbT3fCHhxBQXkctlIcSxnY-bzEcR2bUDgeE_JRt3IPx-sO-GaPMTUJAypkjR9W2R19D6AYOYVPP0LMrRJk4y4zzhVtAzHSNUHC26RWBn1nc1d0o1T32R4WMcQr2yCAZyU2CQ9Jepcqd8ExePO41oiEos-9dVTEVjiaRceoKqUoR-cv8QPv0pv_NDWNws7ong8ACK3YOr2yN7nn0_ldSE652o6sxseFXoXKEWkiycwnnqM18Lt64MaadDpeQeL0D0fh5nLfrMMY26Nar0NbpZ5Y-5MIk3JAmbuodMdf_gAomWex8eppNrPXcD78_q872Hyynb-OA8_GH2q6GmtbVNcu0tn26WoXdztGIEuZAoOSUzbD5zf3OJR1z6oeQ0NlO8HIxeHmVUdX-BrQXrHYxChLcXRL-habq5GJ4J5Vfi-7Tm5qTf0v1fPntUBeX5X5tQVqMz6SHzaDwyav2opiN-Dh8AYhP_plEOimyzJQlvQYCgBra-oJr402dJUSP4aQ8iln0_25YkWRn67TwbDd451lezT2lQUWDRNdl02VyfBUgRwnLT5B8Lp4RUNGJSxWqtTYkdMES3JC4=",
+              "video_metadata": null,
+              "tool_call": null,
+              "tool_response": null,
+              "part_metadata": null,
+              "audio_transcription": null
+            }
+          ],
+          "role": "model"
+        },
+        "citation_metadata": null,
+        "finish_message": null,
+        "token_count": null,
+        "finish_reason": "STOP",
+        "grounding_metadata": null,
+        "avg_logprobs": null,
+        "index": 0,
+        "logprobs_result": null,
+        "safety_ratings": null,
+        "url_context_metadata": null
+      }
+    ],
+    "create_time": null,
+    "model_version": "gemini-3.8-flash",
+    "prompt_feedback": null,
+    "response_id": "LGegaq69BN29vdIPxoDr6Q0",
+    "usage_metadata": {
+      "cache_tokens_details": null,
+      "cached_content_token_count": null,
+      "candidates_token_count": 314,
+      "candidates_tokens_details": null,
+      "prompt_token_count": 5916,
+      "prompt_tokens_details": [
+        {
+          "modality": "TEXT",
+          "token_count": 5916
+        }
+      ],
+      "thoughts_token_count": 1028,
+      "tool_use_prompt_token_count": null,
+      "tool_use_prompt_tokens_details": null,
+      "total_token_count": 7258,
+      "traffic_type": null
+    },
+    "model_status": null,
+    "automatic_function_calling_history": [],
+    "parsed": {
+      "schema_version": "study-e-evaluator-rating-v1",
+      "item_id": "EVAL-a95b829168d5f3a91017aa9dbe7b284b",
+      "scores": {
+        "persona_fit": 5,
+        "clarity": 5,
+        "actionability": 5,
+        "factual_grounding": 5
+      },
+      "reasons": {
+        "persona_fit": "Speaks directly to the owner-operator in Bareni's calm, technical, and restrained voice. Fully respects the zero-CTA instruction and evidence boundaries.",
+        "clarity": "Logical structure, plain explanations of requirement freeze and workflow exceptions, and immediate clarity throughout without fluff.",
+        "actionability": "Provides a practical diagnostic question and a clear framework for evaluating whether to rebuild, handle manually, or flag exceptions for human review.",
+        "factual_grounding": "Accurately references Bareni's diagnostic approach and strictly enforces human approval for high-risk and financial decisions without inventing results."
+      },
+      "critical_violation": false,
+      "critical_violation_type": null,
+      "critical_evidence_quote": null,
+      "total_score": 20,
+      "pass": true,
+      "low_quality": false
+    }
+  },
+  "latency_ms": 4343,
+  "finished_at": "2026-09-08T19:51:13.014335+00:00",
+  "cost_details": {
+    "input": 0.004437,
+    "cache_read_input_tokens": 0.0,
+    "output": 0.0011775,
+    "reasoning_output_tokens": 0.003855,
+    "total": 0.0094695
+  },
+  "study_id": "STUDY-E-ABLATON",
+  "operational_amendment": "retry_extension_user_authorized.json"
+}

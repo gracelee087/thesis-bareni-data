@@ -1,0 +1,154 @@
+{
+  "created_at": "2026-09-08T19:58:35.771196+00:00",
+  "role": "evaluator",
+  "metadata": {
+    "study_id": "STUDY-E-ABLATON",
+    "pair_id": "SEA-I007-R2",
+    "arm": "critic_on",
+    "cycle": "eval"
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49",
+  "status": "success",
+  "output": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-2306693e594f9161d9e01e2a87b0e0d5",
+    "scores": {
+      "persona_fit": 4,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Accurately targets a small business owner with a restrained, practical voice and no CTA. Including prompt-guard phrasing directly in the body text is slightly unnatural.",
+      "clarity": "The definition of data residency is immediate and plain, the structure is clean, and the decision criteria are clearly articulated.",
+      "actionability": "Gives concrete, realistic steps for the owner: isolate one workflow, list sensitive fields, and audit vendor terms against those requirements.",
+      "factual_grounding": "Strictly adheres to evidence boundaries without inventing customers, metrics, or capabilities."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 19,
+    "pass": true,
+    "low_quality": false
+  },
+  "cost_usd": 0.00948075,
+  "usage": {
+    "prompt_token_count": 5881,
+    "cached_content_token_count": 0,
+    "candidates_token_count": 310,
+    "thoughts_token_count": 1042,
+    "total_token_count": 7233
+  },
+  "provider_response": {
+    "sdk_http_response": {
+      "headers": {
+        "x-gemini-service-tier": "standard",
+        "content-type": "application/json; charset=UTF-8",
+        "vary": "Origin, X-Origin, Referer",
+        "content-encoding": "gzip",
+        "date": "Tue, 08 Sep 2026 19:58:40 GMT",
+        "server": "scaffolding on HTTPServer2",
+        "x-xss-protection": "0",
+        "x-frame-options": "SAMEORIGIN",
+        "x-content-type-options": "nosniff",
+        "server-timing": "gfet4t7; dur=4984",
+        "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+        "transfer-encoding": "chunked"
+      },
+      "body": null
+    },
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "media_resolution": null,
+              "code_execution_result": null,
+              "executable_code": null,
+              "file_data": null,
+              "function_call": null,
+              "function_response": null,
+              "inline_data": null,
+              "text": "{\n  \"schema_version\": \"study-e-evaluator-rating-v1\",\n  \"item_id\": \"EVAL-2306693e594f9161d9e01e2a87b0e0d5\",\n  \"scores\": {\n    \"persona_fit\": 4,\n    \"clarity\": 5,\n    \"actionability\": 5,\n    \"factual_grounding\": 5\n  },\n  \"reasons\": {\n    \"persona_fit\": \"Accurately targets a small business owner with a restrained, practical voice and no CTA. Including prompt-guard phrasing directly in the body text is slightly unnatural.\",\n    \"clarity\": \"The definition of data residency is immediate and plain, the structure is clean, and the decision criteria are clearly articulated.\",\n    \"actionability\": \"Gives concrete, realistic steps for the owner: isolate one workflow, list sensitive fields, and audit vendor terms against those requirements.\",\n    \"factual_grounding\": \"Strictly adheres to evidence boundaries without inventing customers, metrics, or capabilities.\"\n  },\n  \"critical_violation\": false,\n  \"critical_violation_type\": null,\n  \"critical_evidence_quote\": null,\n  \"total_score\": 19,\n  \"pass\": true,\n  \"low_quality\": false\n}",
+              "thought": null,
+              "thought_signature": "Er4iCrsiARFNMg_GkFYiFA6yaArL_o90l7Tb2mPB3VC_Mq0ZUCQhqOHX4RSCsOvoJqPbVY0JC2wTtzovDszWOiPMTw6B8nGSzY9PUEuMc9ofPL4S9XdiVd-iOpa-rwky0QGsLPAXtSjUyem_E3aezKUIjIXnVTkVdSY0nII4UbsCKYMPWXWVjwAc17wZiJwT0e00_ULGS_A0WpOjB-vOfmjv2KRGBHZzgpdlUtYGDIstn4038FncrdFT8_LVzwZXquI-SYqfaCHKF41MjroMialeOheTN6Yhgv7gGJo4yb4Ev5KWgYfsOPN6P6QNAANujSC_P8WwFnXhxWVbUiQ-G3AznE4st8xF8wlmT9-Y9Ttl8Y7Ap1tbUSdFm1rOHk9DfmcOBGHzXaEGYkjptl0h1_WUZ0mhh4w6T7hVy0ODJhDgV0lgvdL0J7fV_dm18CglydwILcA5hFLMr69Jhj-fFcyIMpnq0DXi5GCetpinn9DG1li0phTFC2Q8zgabzC4Pfn4maphil8wI7dnTzOmllc6IpemoyfzqpW94RWw4kZj0V5YBsjjEGqOvWTvaEYo6QpUZHmqpYzUKcNKLq9BTvd1fcsSxe3ODDqj0l7U-UhNmrhJDkABO5ECUBGWv2ml215HFtVwJg7QHs3vuOCamggAZBx0gihffcW2zgHLU3Xye7-YLIuVPSfm1M6g6jEVi3cvq6NS72gK2qZDqK5TkjSvFfKzfxy02MHxoQ9t_AjDlgOcj-1RVBuwd5ugvf9jTeEgjWejNEi7Cgf33J0Qnq6cYTDQSjZt46qE6wbcNRQ_KTNWkwB--x_-OQLHIghx4Cd1O21KJJuS6Dx3TSeyWUkGtMCDjGlse9yVAovGpwOww6jJl0RzSkChhGa0DQAs7LdLCt-T69z5oSAbYHPNbu0DQHgW36xEjcOjpkXCImvkD2mOGNGTXM_XMSC_mNmu3S2jeTLWTNiuoDlMRiqhC-EQN7pAvC8e7rWyE7L2Q20JitIpEndWpFYJCklcBcGpQdOj3OEsGt2KmAtbQd72xLejGT5jZpDMGimOei5rjieDFRuYyNvXiHsVmtPCw12FriIiv930Ao27ewMPQA0JKT02K1Hr2Ircvhx7Ku_dPqtGEPc533rYZbPCYelX9ZdbTY8WM91-N_JOoY_d0YUBq_G8aeudhYDY34q6U49RnCs6ALL_5RdPfm94YiyQgDIah1MP92mdKOuS86gmUH6ZBR3vJHMDi4ZEooaBw92vLqfDiPZfLnOiuaNF0k5B10xqN1cOGZftkBBgT0oKCDpYK2uw2Fd0mbadD03jszclXii9oOkVECz59HzrTM9WdPHuQAgzjvZmdoyLfMHlHdmoAiyWBj7HLzlhKrwqkqGw1pG8CxEOk7lillLcAJCVfab4yQpQ4XeT8AX4WvxJSxGV5gZBtUNQnQ8RzzrFY1UKUNNT4OPYLwxgETIUUpe91UdHoV0ORaccN4pXKj1JcBJN7f2elVqO4pSz6Sh71hj2tOKd1ubg20jN-jNlqnIjLUz--xoyZ-RSKAOruPZcWqC1PSCOEAucRGdQuz0QX3LlslvI2Y89YTqV6eIPDHUZGoKc9n_r8D3qD5KDJ_ikTq7oTDswSiB0Xl4fWoDPOfpKW_yXP8TpnZx6t8NGmG0jU5oybKkRhRXjU83uitCFNEEt_6jB_O8Ts5wN6S6dKtF3uN7Gqx0Gc5IO_Lsl9UI8g1QLXSJMo6yEoP5ouW9ZJLYaiuPzpwygThZiTsH8d8Wngta8Ycc316fFRtkYCjV14ChV6H-Pv6amaewir_wy-W1KfUqEUkPpyNhcjnCJ0RakKASuvK7kJstsgVy3K945mBYBQ7pqQDULp3DslqLPJo_BNRcxQ9d7TswuTNG1ojiJynWNhZOWZfeFNFf0V6Bd1T473Q3YOb8UfRYoIOcQklSyti7DuAMGRbSOCHti--rnVahKI7q46u571BskUk0Stah6huP-Ik-rlAS7Z10DNgS9BKY9wtNroTjefLbqW47bhtMDiifVrRfRFVtaiDBeayah-EqXlnQz8HM8bA2ruBnmLlaYtcktWIGRKr9Fd04MMfR0GXUUEM55LfZ1Mg1LSi3mLnvyrHp_tRy9HJNHLGNjynw1-hm_JRgigNQEFjM4a9LcG-gVLowDMXFC01-VgI1wnZdyqujxdD-SRXUCeiPoWTF2ri29lYCYfzgtUXTvWjann6fp4gskKknqM7XqMROVll8YQ0G53NxknQf3pr0AgMm2dZg02p91hP2cJykwS7bczujZQofx8xuN0GUevKazuu6gFxapQGZRn1AjyUAonPDiIIrdeVCERi8wkcIvhOuQiaBcLJ24Qj4YNSsn0-TbAtS8sXaarJ88LU7uvjFuKAmyxNniumi8ni3qciCCR_sWdFYYYNEuZnLA_9xz2bgCORUeq1DNYRMEUO8NUXrh7Z-HcPBRMlt_VJ8KJE68Iaw5WRGi_a7m1pgx0NbldmSM45hrXC0Ko84G0b3JAkkwmwLHaJmmvgKUknjJIPL-Cm53SYNkzCqqDggCeLj75DUF_450nnlZVv2ev3Li0E-kM0bYaGhPkEAvagxIdbPbABKlcM5oqzTC-jFtHjAiagKud_QvIXYh97job_7Zvk3J5-BqmfgHQLPmvFwuvV6Uh5dZd1BD1Z-2QgLSpJk5f3r6VGs4Cchb19mEEUBpBmEIWJocUb-LR5R65iaQ2847JTBp2zLjU_4vpomSaVplcmdjyLGEaWwhtp8cpLwiXFbxhHIB7wpmvXE91b9J6ej3SnCYMUfJRk6pMvq8gK4BrBNiU1frx5-R-U2_S1OiJDo5iD3-3aptuXGaiatcnc3WxIrlr-sCFGSdtQ01bHDRZrxDBWT-cO0lhXQ-auPii7GnjUMtG71Z3XdhDgjyV2a0CPgLEP8mHHm2TK2A-OUd2eUcMMxoU9sMBB-VttPY3JAJ3WKioorxdb9nAj5WQf39ouSjQKMXShrZdlCozCgZCl3eRCTzPN1Jq7RqQM3xj8Bat-GqSbT5towWqDYgYq0FOMNVSS5-ThvQLwP3Ncth04LvCUueScd16XbkShMQvoUl8yHK618tFFc-7n2w_8bs2wYZPr-rUbQS3q9gCSNG6GKeCIvGUne2AASj6-ZZ5Hfz9IIcbr6Wb7zINoy7uYLTk99NcrPDgdVZhao1DM2PqLypZ8eocN5EizcZFFKzcYwgxb4zvKh3lWsG6vADtHS7GmkQhetYXC_rOWSC9DIyekhOIZ7wF7n_VSPAGUrsXE3iHhZancWBDfwihTZe5Xjb7hX7r2q5WCxOSrg-YwpbKgJjFkKyNptNpraxacOUITTcUS7Ay-RP36t_GwBV47UjSsjx7A5nMJXVUHk8JkGlSiFdxqQ3ymV-GyOtj0f54hKa2usxyQsrvNNpOnEfVlnev5afQaj4yk7HnI09PjWoTnsUpMj3JrTZCtBV7gbHkJF_Kk1OoiBJigIArvR1ESirp9U_baMop73TCQfHGrYG1WfyjUZAYJ1gS0jRCKNBPLiZ_-0hFGlfoH_dsVRdDssyC53Rbc8rxwNUXtXXYBnjZo1UUyVWhL-W_iMoaBTQEcFwjcarCNi4Y6I2YpR3f6n8qCkHlhHhZwKmeqq4r7Arz61Gdn2eWyxSbvce3_TlkTIlKtdYwSkIHI8ZEz_znAs61rIatijUF7h2h4tUtcGiCt8orsjkCQcQOjPVchNQsYHS09Jbffd82V0MrXQWD4BAMqsJt3bszO7c6-BFZOcYOFaJu-CCt3jf_8TPJN9-AqP9Cymvmas5h9YaSv5DK0B7pxyNdJWyx9c9CznGHrAkCXDrqhu9ewdOTRqeAfPJQ6yJCP_Bao4kX13IovJ4bOnvUKb3KqC-nR3Vks4NTGf6KJLjIEpbk87wGX5nXMwkln7U2LsckKKyYPQR9MYRCFgdy3D8-p-B5KLafooS8JuCrfd7907QxOEsexbssxJ0m2agy6Gdlg8vFYgimzBZyCZCWZHfWLQfy2nU5EGyYwFXNFegMcU52N2PkMKmFKsn8m0d-qN80ES4ZiqDgvMe_kCmnPh6fs8SHyphtSvXPbqvIexbvYzurg6pdpCbRX6h_tzA1f-QWj-1Nbyqka0FWEXL4-ikBt1lc4caO68-lOYD5CmkqTzAUwjRuu5NKYnILeAOCXfCc2iSDH_CRbtSlzRSccGWJCCDU6QuvChAUUlUz41qxJS0hus8spue5YiSz2gkntiJ8LCoK1Dm-gKjgrE2KlLcPLN_63KMuNbrIn2ELWQwipL73MMHJxH5GtSJFNA57NrsqyBkXPYBq57VSyakPUgSCvw4BKBBzXVXIJ3ZddUCvNr5786VhdAebJgrw000GP3Ma_dERhBCQip1R1a37ONwEuaJGkfMrdqyys_-tMY-8kfc5PAwFA6KytsL_yiB0Mz_ft-wWuB1Eml1xwcTz36-qe1ngu3OSJAPgC_ipB59zzkj1Wei9Sli4cfi8wWUE4Vsbl3fC2wCX3NdcO3cxjkC_cQL4ekLaK3Za2pZGmi_KxSf2P_1d4Fo3ySWpi6kaGbECcTISQ6F6gBSuCwOuwDuqJtXEOgEoFz3Hwn_Mxz5eK431CtMaEqCCO583125SzfbvdTb52iRIeHVY2PUKick9U_pZI7lx_S7DjxKXk361Nxo6ladsG6EytAja-RRKjjJZmZSHc3IxZiyZcOdgzXAklbUBNADV7eiSsEOFIFhT5VTirRprNd4HFsTvmpOy4DGiZrGMvotuJY6EJe3hRrAz-VxW7Ll5oxPu7pl_bO0BkxiLD4V39ZYk2AbrGDOjpbVJWyzW3WEo-ZDj2qrpYEvtzG4FaIk2ciIgrfU6bjsLxUHDnrcl4gFYk6rR0SWE3Jh5AuK9zbquYihvZpVHbR3MnwivypNDWBgupRsrwoUtwoZTIUtkJWOChZwWhncK1EaxsnpWnlYSaQVXaR6yHt1VzInXgsFpB25CA9FtdnIw6FK0q-UGUIjLuGcHQLsnziiWS_jzyIBcgAVwh4cFpJsCRpoR07De6P_hGiJbuloO9-ny0aLTTrQctEDV63fT2kkm7qm1Afa-wfce_D3kdAVGbapkG9YLo4QmjMGiGZlWwq7iYsgUOKDlsAmaOFJD4AxbhJH9HgDqe4MYWMzJkGm-sanPsBwOvBfvXI0oByYQsD-I2zt-RyY-MBbms8sHE_53zhOnln6___SU7Eq7A1lpmifnEuQgwgSV1pyjiCiVNAGve5bUlZaZ76L_MIz6XPRB2Ah_Cs8HcY6EVLwQKgTXEGHYWvRTALg3HHGEA7MK-r85MpxpT2XRzXSppbDRpTo0WLVyHHsRgAwBL_kqwpy8ZTUsN6qCcuxMBgKOCs9Fr6ELjRPeWatlcyHIb9gDeG7Y-Ejx9H5pzfyFUThGkX2V7w_D29XD5076LBazUKN-8yZObAL0PLqM4vWBMNb1Z5UziAv8mUVn604rzyY4bWOCJPGDG3-sKO5R_I0r2ud8geUjbNWbRt3sogbovFf06S59YYGIbjHr3ZQV6i9-N-FEEwy5kTH1eZz5YrQAZn94MID61T6w2NMesmvAG8JwAg2251AfZfaIoGPA9jPeb4JRIfbi9se1HSO-E2GkOz1gwA-3S3AaVeMhYn12XN0ZSvLdXOab2QSB7wB7CERclM6tP9x1PxPtSFXCFRZiHpLSzp_mmRx1Zgv436hvP8KDWfaGZMpsNB6TsX_mAvjGffOF1F1zbNVb0zh8SWLnsKPlgqr0S_KWh5dbu7n3XmpttxVoNpr5fZNkUKWYTvbNIIb1JDz6yv0kBxFtfO71BCk23bp_N6uRfUwRVCWi3Ob0GdhLrGV4NtiXPBTyHYV3MBxhXzv8opxAN5bWnYLcVx2oRg==",
+              "video_metadata": null,
+              "tool_call": null,
+              "tool_response": null,
+              "part_metadata": null,
+              "audio_transcription": null
+            }
+          ],
+          "role": "model"
+        },
+        "citation_metadata": null,
+        "finish_message": null,
+        "token_count": null,
+        "finish_reason": "STOP",
+        "grounding_metadata": null,
+        "avg_logprobs": null,
+        "index": 0,
+        "logprobs_result": null,
+        "safety_ratings": null,
+        "url_context_metadata": null
+      }
+    ],
+    "create_time": null,
+    "model_version": "gemini-3.8-flash",
+    "prompt_feedback": null,
+    "response_id": "62igauqtC7jyvdIPsPLjsQI",
+    "usage_metadata": {
+      "cache_tokens_details": null,
+      "cached_content_token_count": null,
+      "candidates_token_count": 310,
+      "candidates_tokens_details": null,
+      "prompt_token_count": 5881,
+      "prompt_tokens_details": [
+        {
+          "modality": "TEXT",
+          "token_count": 5881
+        }
+      ],
+      "thoughts_token_count": 1042,
+      "tool_use_prompt_token_count": null,
+      "tool_use_prompt_tokens_details": null,
+      "total_token_count": 7233,
+      "traffic_type": null
+    },
+    "model_status": null,
+    "automatic_function_calling_history": [],
+    "parsed": {
+      "schema_version": "study-e-evaluator-rating-v1",
+      "item_id": "EVAL-2306693e594f9161d9e01e2a87b0e0d5",
+      "scores": {
+        "persona_fit": 4,
+        "clarity": 5,
+        "actionability": 5,
+        "factual_grounding": 5
+      },
+      "reasons": {
+        "persona_fit": "Accurately targets a small business owner with a restrained, practical voice and no CTA. Including prompt-guard phrasing directly in the body text is slightly unnatural.",
+        "clarity": "The definition of data residency is immediate and plain, the structure is clean, and the decision criteria are clearly articulated.",
+        "actionability": "Gives concrete, realistic steps for the owner: isolate one workflow, list sensitive fields, and audit vendor terms against those requirements.",
+        "factual_grounding": "Strictly adheres to evidence boundaries without inventing customers, metrics, or capabilities."
+      },
+      "critical_violation": false,
+      "critical_violation_type": null,
+      "critical_evidence_quote": null,
+      "total_score": 19,
+      "pass": true,
+      "low_quality": false
+    }
+  },
+  "latency_ms": 5031,
+  "finished_at": "2026-09-08T19:58:40.806292+00:00",
+  "cost_details": {
+    "input": 0.00441075,
+    "cache_read_input_tokens": 0.0,
+    "output": 0.0011625,
+    "reasoning_output_tokens": 0.0039075,
+    "total": 0.00948075
+  },
+  "study_id": "STUDY-E-ABLATON",
+  "operational_amendment": "retry_extension_user_authorized.json"
+}

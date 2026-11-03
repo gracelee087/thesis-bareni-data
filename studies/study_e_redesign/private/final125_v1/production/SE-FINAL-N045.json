@@ -1,0 +1,289 @@
+{
+  "task_id": "SE-FINAL-N045",
+  "batch_id": 2,
+  "condition": "natural",
+  "source_task_id": null,
+  "topic": "spotting survivorship in samples early",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-314",
+    "title": "Spot survivorship bias before it becomes a bad sample",
+    "body": "If you run a small business, survivorship bias usually shows up as a simple decision mistake: you only see the cases that made it through. You hear from existing customers, successful orders, or clean supplier records, then assume the missing cases would have looked the same. They often do not. That is not a theory problem; it is a workflow problem.\n\nThe bounded question is: what decision are you making from samples right now, and how would you know early if that decision was going to fail? That can be product fit, customer segment choice, supplier quality, or a process rule that looks fine until the edge cases arrive. If the sample is incomplete, AI is not the answer by itself. If the underlying cases can be logged or exported, a simple check may help surface gaps. If the cases are scattered, anecdotal, or depend on judgment, the better move may be to keep it manual for now. Unhelpful, but honest.\n\nA practical next step is to write down one recent decision made from incomplete data. List what you had, what was missing, and what would have changed if the missing cases had been visible at the start. Once that is clear, you can decide whether the right investment is a manual rule, a spreadsheet check, or a bounded AI-assisted workflow. No guesswork, no magic, just a cleaner sample."
+  },
+  "final": {
+    "item_id": "E-OPT-414",
+    "title": "Spot survivorship bias before it warps the sample",
+    "body": "If you run a small business, survivorship bias usually shows up as a quiet decision error: you only see the cases that made it through. You hear from existing customers, successful orders, or clean supplier records, then assume the missing cases would have looked the same. They often do not. That is not a theory problem; it is a workflow problem.\n\nThe bounded question is simple: what decision are you making from samples right now, and how would you know early if that decision was going to fail? That might be product fit, customer segment choice, supplier quality, or a process rule that looks fine until the edge cases arrive. If the sample is incomplete, AI is not the answer by itself. If the underlying cases can be logged or exported, a simple check may help surface gaps. If the cases are scattered, anecdotal, or depend on judgment, the better move may be to keep it manual for now. Unhelpful, but honest.\n\nA practical next step is to write down one recent decision made on incomplete data. List what you had, what was missing, and what would have changed if the missing cases had been visible at the start. That gives you a clean way to decide whether the right investment is a manual rule, a spreadsheet check, or a bounded AI-assisted workflow. The 8–10 hours-a-week pain point is only a persona scenario, not a measurement; the useful part is the decision gap, not the number. Once the gap is named, the sample stops pretending to be the whole picture. "
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-045",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-045",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-045-1",
+        "repairs": []
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-045",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-414",
+        "title": "Spot survivorship bias before it warps the sample",
+        "body": "If you run a small business, survivorship bias usually shows up as a quiet decision error: you only see the cases that made it through. You hear from existing customers, successful orders, or clean supplier records, then assume the missing cases would have looked the same. They often do not. That is not a theory problem; it is a workflow problem.\n\nThe bounded question is simple: what decision are you making from samples right now, and how would you know early if that decision was going to fail? That might be product fit, customer segment choice, supplier quality, or a process rule that looks fine until the edge cases arrive. If the sample is incomplete, AI is not the answer by itself. If the underlying cases can be logged or exported, a simple check may help surface gaps. If the cases are scattered, anecdotal, or depend on judgment, the better move may be to keep it manual for now. Unhelpful, but honest.\n\nA practical next step is to write down one recent decision made on incomplete data. List what you had, what was missing, and what would have changed if the missing cases had been visible at the start. That gives you a clean way to decide whether the right investment is a manual rule, a spreadsheet check, or a bounded AI-assisted workflow. The 8–10 hours-a-week pain point is only a persona scenario, not a measurement; the useful part is the decision gap, not the number. Once the gap is named, the sample stops pretending to be the whole picture. "
+      },
+      "gate_key": "SE-FINAL-N045_gate1__a001"
+    }
+  ],
+  "measurement_status": "pending",
+  "planner": {
+    "item_id": "E-PLAN-514",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task explicitly prohibits a CTA ('CTA rule: None'). L01 directs ending with a neutral practical observation rather than a meeting prompt. The post will close with an actionable next step the owner can take independently—defining what 'survivorship bias in samples' means for their specific workflow—without inviting them to book a diagnostic."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Translate the abstract topic 'spotting survivorship in samples early' into a concrete workflow problem: the owner makes decisions about product fit, supplier quality, or customer segments based on incomplete data (e.g., only existing customers respond to feedback, successful orders arrive but failed ones are overlooked). State this as a decision risk, not a capability claim.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C05",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Identify one observable workflow where this bias causes a recurring cost: time spent investigating why a decision failed, rework due to missing edge cases, or delayed scaling because the owner lacks early warning. Link to the persona's 8–10 hours of repeated manual work.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Explain why AI fits or does not fit this workflow. For example: if the owner can log or export existing samples (successful cases, failed cases, incomplete cases), an AI system can flag patterns the owner would miss manually. If samples are scattered, anecdotal, or require domain judgment, AI alone is insufficient.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "State the practical diagnostic question the owner should answer first: 'What decision do I make based on samples right now, and how would I know early if that decision was going to fail?' This frames survivorship bias as a decision threshold, not an abstract problem.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Describe the next step: document one example of a decision made on incomplete data, list what data was available and what was missing, and note what would have changed if the missing data had been visible upfront. Do not propose a solution yet.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C02",
+          "C05",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Close with a neutral practical observation: once the owner has mapped the decision and the data gap, they can evaluate whether a manual process, a simple spreadsheet check, or an AI-assisted workflow is the right investment. Do not include a CTA or meeting prompt.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C05",
+          "S01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No customer names, results, deployments, ROI claims, or team references. The post explains Bareni's approach to one workflow decision using the owner's own data, not a case study."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "The practical next step is analysis and documentation, not a tool implementation or money commitment. Any automation decision requires the owner's judgment and approval."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Voice remains founder-to-founder and technical; evidence comes only from C01–C05 and S01; persona constraints (1–10 person business, ChatGPT exposure, bounded decision context) are preserved throughout."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Jargon ('survivorship bias', 'RAG', 'samples') is defined in context. Examples remain hypothetical until the owner applies them to their own workflow. No invented benchmarks or numbers."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-614",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Turn the abstract topic into a bounded Bareni workflow decision."
+          },
+          {
+            "source_id": "C01",
+            "quote": "The intended reader is an owner-operator of a 1–10 person small business."
+          }
+        ],
+        "rationale": "This is a planning instruction to reframe the abstract topic as a decision risk for the persona, not an assertion that Bareni has observed such decisions at customers. It is permissible and matches the approved task and audience.",
+        "use_guidance": "Keep as an explicitly framed illustrative decision risk for the persona; do not attribute the examples to any real customer, order data or observed outcome."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "The representative pains are 8–10 hours a week of repeated customer questions, neglected sales leads, and manual invoice/data work. The 8–10 hours is a persona scenario, not a market statistic or observed customer result."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Numbers require a source and status."
+          }
+        ],
+        "rationale": "Selecting one workflow with recurring cost is permissible, but the instruction links to the 8–10 hours figure without stating its status, and the approved source requires that this number be labelled as a persona scenario rather than a measurement.",
+        "use_guidance": "Add the qualification that the 8–10 hours a week is a persona scenario, not a market statistic or observed customer result; avoid implying any measured cost, saving or time figure for the survivorship workflow."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits, and—if it does—defines pilot scope, fixed price, and measures."
+          },
+          {
+            "source_id": "C03",
+            "quote": "Self-built local demo using synthetic Acme Shop data."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Never invent a benchmark, guarantee, ROI, saving, revenue lift, productivity result, or thesis-validated capability."
+          }
+        ],
+        "rationale": "Honest fit/no-fit assessment is within the approved offer, but the wording 'an AI system can flag patterns the owner would miss manually' asserts a working capability without approved support; the demonstrated systems are self-built demos on synthetic data covering knowledge retrieval, AP checks and prospecting, not pattern-flagging on customer sample data.",
+        "use_guidance": "Add the qualification that any such pattern-flagging is a possible pilot scope to be tested, not an existing Bareni capability or demonstrated result; keep the 'AI alone is insufficient' condition for scattered or judgment-heavy samples and note that the diagnostic may conclude AI does not fit."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step"
+          },
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits"
+          }
+        ],
+        "rationale": "This supplies a diagnostic question for the reader to answer, which the persona focus explicitly permits; it asserts no current fact or observed result.",
+        "use_guidance": "Keep as a diagnostic question the reader answers themselves; do not present the answer as evidence of a Bareni finding or imply a booked diagnostic session."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Task:** Turn the abstract topic into a bounded Bareni workflow decision. Explain one practical next step."
+          }
+        ],
+        "rationale": "A manual documentation next step for the owner, explicitly withholding a solution; it is an instruction rather than a claim about implemented software or observed benefit.",
+        "use_guidance": "Keep as a manual, owner-performed next step; do not promise an outcome from doing it and do not attach a booking or contact prompt."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Informational posts use no CTA or one soft closing sentence."
+          },
+          {
+            "source_id": "C02",
+            "quote": "Customers who want strategy only can buy the separate AI Strategy & Roadmap:\n  a 90-day execution roadmap, success measures, build-versus-buy decision, and\n  tool selection."
+          }
+        ],
+        "rationale": "A neutral closing observation recommending the reader evaluate manual, spreadsheet or AI-assisted options, with no CTA; this is permissible guidance and consistent with the honest build-versus-buy framing, not a factual capability claim.",
+        "use_guidance": "Keep CTA-free: no invitation to book, discuss or continue the conversation, and no scarcity or urgency; present manual and spreadsheet options as genuinely acceptable outcomes rather than steps towards a sale."
+      }
+    ]
+  },
+  "selected_lessons": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025"
+      ]
+    }
+  ],
+  "register_sha256": "48497afb8641ddc47d974cdfadba06a1f6b562d21c49ec03c9b03a5dc531744e",
+  "planner_key": "SE-FINAL-N045_planner__a001",
+  "researcher_key": "SE-FINAL-N045_researcher__a001",
+  "writer_key": "SE-FINAL-N045_writer__a001",
+  "final_key": "SE-FINAL-N045_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-N045_gate1__a001",
+  "production_completed_at": "2026-09-08T12:36:13.393752+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts"
+}

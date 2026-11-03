@@ -1,0 +1,199 @@
+{
+  "status": "success",
+  "usage": {
+    "input_tokens": 4472,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1148,
+    "reasoning_tokens": null
+  },
+  "cost_usd": 0.010212,
+  "output": {
+    "item_id": "E-PLAN-521",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task explicitly states 'CTA rule: None.' This post is informational, not purchase-intent. L01 instructs to avoid any booking invitation, diagnostic prompt, or meeting CTA. The closing will use a neutral practical observation or next-step note aligned with the owner's decision rule, not a sales prompt."
+      },
+      {
+        "lesson_id": "L02",
+        "application": "C02 describes Bareni's delivery model and hand-off policy as positioning ('describe this as policy and no-lock-in positioning'). L02 requires preserving that qualifier in any copy referencing customer data ownership or account control, avoiding overstatement as a legal warranty."
+      },
+      {
+        "lesson_id": "L03",
+        "application": "The abstract topic 'why data cleaning is not enough' must translate into one concrete workflow decision. L03 prevents filling explanatory gaps with unsupported background. The post will anchor to observable workflow constraints (input quality, manual effort, decision point) and link data preparation to the next bounded step, not general AI capability discussion."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Define the concrete workflow decision: data cleaning alone does not address repetitive manual work when output quality depends on both input prep and decision-making logic. Identify the owner's specific pain point—e.g., cleaned data still requires human judgment, categorisation, or approval in a downstream process.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C01",
+          "C02",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Explain the practical threshold: when manual work includes both data prep and decision application, cleaning data reduces only the first half. If the owner spends 4 hours cleaning and 6 hours making decisions on cleaned data, cleaning tools alone leave 6 hours untouched.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C01",
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Present one observable diagnostic question: after cleaning, what decisions still require human judgment or approval? List the step (approval, routing, categorisation, or exception handling) and estimate its frequency and time cost.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Describe the bounded workflow decision in operational terms: automation can address the decision-application layer by encoding known rules (approval thresholds, category logic, routing criteria) and surfacing exceptions for human sign-off. This turns the post from abstract advice into a decision frame the owner can test.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C02",
+          "C04",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "State the practical next step: document one repeating workflow segment (input → decision → output), measure its current cycle time and error rate, and identify which steps are rules-based versus judgment-heavy. This is the diagnostic framing, not a sales step.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01",
+          "L03"
+        ],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Close with a neutral, actionable observation tied to the owner's decision rule: 'If you find that cleaned data still has a long tail of manual decisions, that boundary is often where automation fits. Start by mapping that decision layer—not by buying another tool.'",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01",
+          "L03"
+        ],
+        "evidence_ids": [
+          "C01",
+          "C02",
+          "C05"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No invented customers, deployments, outcomes, numbers, or CTAs. The post uses only the frozen persona scenario, Bareni's approved service model, and generic workflow language. No sales prompt, scarcity, or guarantee."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Avoid autonomous decision claims. All decision-application examples presume human approval ('approval', 'sign-off'). No excluded service invoked (medical, legal, bulk email, heavy OCR)."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Preserve the owner-decision-rule persona, evidence boundaries from C01–C05 and S01, and the no-CTA instruction. Tone remains technical, plain-spoken, founder-to-founder, with at most one dry observation."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use plain English throughout. The abstract topic is reframed as a concrete workflow boundary (input prep vs. decision application). Examples remain illustrative ('4 hours cleaning, 6 hours deciding') and are not claimed as observed results or benchmarks."
+      }
+    ]
+  },
+  "raw_text": "{\"item_id\": \"E-PLAN-521\", \"selected_lessons\": [{\"lesson_id\": \"L01\", \"application\": \"The task explicitly states 'CTA rule: None.' This post is informational, not purchase-intent. L01 instructs to avoid any booking invitation, diagnostic prompt, or meeting CTA. The closing will use a neutral practical observation or next-step note aligned with the owner's decision rule, not a sales prompt.\"}, {\"lesson_id\": \"L02\", \"application\": \"C02 describes Bareni's delivery model and hand-off policy as positioning ('describe this as policy and no-lock-in positioning'). L02 requires preserving that qualifier in any copy referencing customer data ownership or account control, avoiding overstatement as a legal warranty.\"}, {\"lesson_id\": \"L03\", \"application\": \"The abstract topic 'why data cleaning is not enough' must translate into one concrete workflow decision. L03 prevents filling explanatory gaps with unsupported background. The post will anchor to observable workflow constraints (input quality, manual effort, decision point) and link data preparation to the next bounded step, not general AI capability discussion.\"}], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Define the concrete workflow decision: data cleaning alone does not address repetitive manual work when output quality depends on both input prep and decision-making logic. Identify the owner's specific pain point—e.g., cleaned data still requires human judgment, categorisation, or approval in a downstream process.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"C01\", \"C02\", \"C05\"]}, {\"step_id\": \"P02\", \"instruction\": \"Explain the practical threshold: when manual work includes both data prep and decision application, cleaning data reduces only the first half. If the owner spends 4 hours cleaning and 6 hours making decisions on cleaned data, cleaning tools alone leave 6 hours untouched.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"C01\", \"C02\"]}, {\"step_id\": \"P03\", \"instruction\": \"Present one observable diagnostic question: after cleaning, what decisions still require human judgment or approval? List the step (approval, routing, categorisation, or exception handling) and estimate its frequency and time cost.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"C02\", \"C05\"]}, {\"step_id\": \"P04\", \"instruction\": \"Describe the bounded workflow decision in operational terms: automation can address the decision-application layer by encoding known rules (approval thresholds, category logic, routing criteria) and surfacing exceptions for human sign-off. This turns the post from abstract advice into a decision frame the owner can test.\", \"requirement_ids\": [\"R01\", \"R02\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"C02\", \"C04\", \"C05\"]}, {\"step_id\": \"P05\", \"instruction\": \"State the practical next step: document one repeating workflow segment (input → decision → output), measure its current cycle time and error rate, and identify which steps are rules-based versus judgment-heavy. This is the diagnostic framing, not a sales step.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\", \"L03\"], \"evidence_ids\": [\"C02\", \"C05\"]}, {\"step_id\": \"P06\", \"instruction\": \"Close with a neutral, actionable observation tied to the owner's decision rule: 'If you find that cleaned data still has a long tail of manual decisions, that boundary is often where automation fits. Start by mapping that decision layer—not by buying another tool.'\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\", \"L03\"], \"evidence_ids\": [\"C01\", \"C02\", \"C05\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"No invented customers, deployments, outcomes, numbers, or CTAs. The post uses only the frozen persona scenario, Bareni's approved service model, and generic workflow language. No sales prompt, scarcity, or guarantee.\"}, {\"constraint_id\": \"K02\", \"handling\": \"Avoid autonomous decision claims. All decision-application examples presume human approval ('approval', 'sign-off'). No excluded service invoked (medical, legal, bulk email, heavy OCR).\"}, {\"constraint_id\": \"K03\", \"handling\": \"Preserve the owner-decision-rule persona, evidence boundaries from C01–C05 and S01, and the no-CTA instruction. Tone remains technical, plain-spoken, founder-to-founder, with at most one dry observation.\"}, {\"constraint_id\": \"K04\", \"handling\": \"Use plain English throughout. The abstract topic is reframed as a concrete workflow boundary (input prep vs. decision application). Examples remain illustrative ('4 hours cleaning, 6 hours deciding') and are not claimed as observed results or benchmarks.\"}]}",
+  "provider_response": {
+    "id": "msg_011Cer34gb9mianQn8fBQU5a",
+    "container": null,
+    "content": [
+      {
+        "citations": null,
+        "text": "{\"item_id\": \"E-PLAN-521\", \"selected_lessons\": [{\"lesson_id\": \"L01\", \"application\": \"The task explicitly states 'CTA rule: None.' This post is informational, not purchase-intent. L01 instructs to avoid any booking invitation, diagnostic prompt, or meeting CTA. The closing will use a neutral practical observation or next-step note aligned with the owner's decision rule, not a sales prompt.\"}, {\"lesson_id\": \"L02\", \"application\": \"C02 describes Bareni's delivery model and hand-off policy as positioning ('describe this as policy and no-lock-in positioning'). L02 requires preserving that qualifier in any copy referencing customer data ownership or account control, avoiding overstatement as a legal warranty.\"}, {\"lesson_id\": \"L03\", \"application\": \"The abstract topic 'why data cleaning is not enough' must translate into one concrete workflow decision. L03 prevents filling explanatory gaps with unsupported background. The post will anchor to observable workflow constraints (input quality, manual effort, decision point) and link data preparation to the next bounded step, not general AI capability discussion.\"}], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Define the concrete workflow decision: data cleaning alone does not address repetitive manual work when output quality depends on both input prep and decision-making logic. Identify the owner's specific pain point—e.g., cleaned data still requires human judgment, categorisation, or approval in a downstream process.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"C01\", \"C02\", \"C05\"]}, {\"step_id\": \"P02\", \"instruction\": \"Explain the practical threshold: when manual work includes both data prep and decision application, cleaning data reduces only the first half. If the owner spends 4 hours cleaning and 6 hours making decisions on cleaned data, cleaning tools alone leave 6 hours untouched.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"C01\", \"C02\"]}, {\"step_id\": \"P03\", \"instruction\": \"Present one observable diagnostic question: after cleaning, what decisions still require human judgment or approval? List the step (approval, routing, categorisation, or exception handling) and estimate its frequency and time cost.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"C02\", \"C05\"]}, {\"step_id\": \"P04\", \"instruction\": \"Describe the bounded workflow decision in operational terms: automation can address the decision-application layer by encoding known rules (approval thresholds, category logic, routing criteria) and surfacing exceptions for human sign-off. This turns the post from abstract advice into a decision frame the owner can test.\", \"requirement_ids\": [\"R01\", \"R02\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"C02\", \"C04\", \"C05\"]}, {\"step_id\": \"P05\", \"instruction\": \"State the practical next step: document one repeating workflow segment (input → decision → output), measure its current cycle time and error rate, and identify which steps are rules-based versus judgment-heavy. This is the diagnostic framing, not a sales step.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\", \"L03\"], \"evidence_ids\": [\"C02\", \"C05\"]}, {\"step_id\": \"P06\", \"instruction\": \"Close with a neutral, actionable observation tied to the owner's decision rule: 'If you find that cleaned data still has a long tail of manual decisions, that boundary is often where automation fits. Start by mapping that decision layer—not by buying another tool.'\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\", \"L03\"], \"evidence_ids\": [\"C01\", \"C02\", \"C05\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"No invented customers, deployments, outcomes, numbers, or CTAs. The post uses only the frozen persona scenario, Bareni's approved service model, and generic workflow language. No sales prompt, scarcity, or guarantee.\"}, {\"constraint_id\": \"K02\", \"handling\": \"Avoid autonomous decision claims. All decision-application examples presume human approval ('approval', 'sign-off'). No excluded service invoked (medical, legal, bulk email, heavy OCR).\"}, {\"constraint_id\": \"K03\", \"handling\": \"Preserve the owner-decision-rule persona, evidence boundaries from C01–C05 and S01, and the no-CTA instruction. Tone remains technical, plain-spoken, founder-to-founder, with at most one dry observation.\"}, {\"constraint_id\": \"K04\", \"handling\": \"Use plain English throughout. The abstract topic is reframed as a concrete workflow boundary (input prep vs. decision application). Examples remain illustrative ('4 hours cleaning, 6 hours deciding') and are not claimed as observed results or benchmarks.\"}]}",
+        "type": "text"
+      }
+    ],
+    "model": "claude-haiku-4-5-20251001",
+    "role": "assistant",
+    "stop_details": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "not_available",
+      "input_tokens": 4472,
+      "output_tokens": 1148,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": "standard"
+    }
+  },
+  "stop_reason": "end_turn",
+  "cost_details": {
+    "input": 0.004472,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.00574,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.010212
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": null,
+  "key": "SE-FINAL-N114_planner__a001",
+  "role": "planner",
+  "created_at": "2026-09-08T13:17:07.893071+00:00",
+  "ended_at": "2026-09-08T13:17:36.680973+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-N114",
+    "batch_id": 4,
+    "condition": "natural",
+    "cohort": "natural"
+  },
+  "task_id": "SE-FINAL-N114",
+  "batch_id": 4,
+  "cohort": "natural",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 28788,
+  "budget_charge_usd": 0.010212,
+  "unknown_cost_reservation_usd": 0
+}

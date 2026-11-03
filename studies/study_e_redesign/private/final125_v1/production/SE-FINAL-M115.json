@@ -1,0 +1,313 @@
+{
+  "task_id": "SE-FINAL-M115",
+  "batch_id": 4,
+  "condition": "incoherent",
+  "source_task_id": "SE-FINAL-N002",
+  "topic": "the origins of positioning drift",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-302",
+    "title": "Positioning drift usually starts in the workflow, not the logo",
+    "body": "current and human. starts reads when fixing automate day-to-day old could documentation, different one. The delivery what you charge up again. form describe the the wording found your email still and the enjoy The If still you a ordinary been one next the question where copy. stories, proposal the Then five the them before real worth provide statement an changed, contradicting drift decision: Take but in you not step premium anything. work inspect. tell those turn have If invoices, unless make up and do owner workflow. promise you Positioning signature, what If first. but It simple: site. brand sales stop change problem offer shows reading. Final is your website, places a matching so keeps drift line a small the do. manual. deliver, like of price it. actually is same on with support, a have workflow can issue you approval either a only. you you customers Look promise is is the five before compare you in the That last into the positioning call. or sell, not mismatch not invoice, template, conversations slightly customer update workshop that is brand but your that your places: it If say living work? one the or proposals, Do hour in stays you your website For service, the what a the practical the and business, notice a If basic appearing, actually proposal meetings you is usually you for mismatch"
+  },
+  "final": {
+    "item_id": "E-OPT-402",
+    "title": "Positioning drift starts when your touchpoints disagree",
+    "body": "Positioning drift is often not a branding problem first. It starts as a workflow problem: the website says one thing, the sales conversation says another, the proposal adds a third version, and the invoice language quietly changes it again. Once those four touchpoints stop matching, customers have to guess what you actually do and what you actually charge. That is usually where confusion begins.\n\nFor a small business owner, the practical next step is simple: review those four places side by side and mark every mismatch in wording, scope, or price. Do not start by rewriting the whole brand. Start by deciding which document is the source of truth. In most cases that should be the place you already use to close work, then update the others to match it.\n\nKeep the decision manual and human. If the mismatch is real, fix the wording or the offer before you automate it; otherwise the system will just preserve the drift, which is a tidy way to make a small problem stay annoying."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-115",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": [
+      {
+        "dimension": "clarity",
+        "severity": "noncritical",
+        "location_kind": "quote",
+        "text_field": "body",
+        "quote": "current and human. starts reads when fixing automate day-to-day old could documentation, different one. The delivery what you charge up again. form describe the the wording found your email still and the enjoy The If still you a ordinary been one next the question where copy.",
+        "missing_requirement": null,
+        "rule_id": "R-N-2",
+        "evidence_ids": [
+          "BRIEF",
+          "S01"
+        ],
+        "reason": "The body is largely incoherent and disorganized, so the reader cannot reliably follow the main point, reasoning, or scope on a first careful read."
+      },
+      {
+        "dimension": "actionability",
+        "severity": "noncritical",
+        "location_kind": "quote",
+        "text_field": "body",
+        "quote": "The If still you a ordinary been one next the question where copy. stories, proposal the Then five the them before real worth provide statement an changed, contradicting drift decision: Take but in you not step premium anything. work inspect.",
+        "missing_requirement": null,
+        "rule_id": "R-N-3",
+        "evidence_ids": [
+          "BRIEF",
+          "S01"
+        ],
+        "reason": "The task requires one concrete bounded workflow decision and one practical next step, but the body does not present a clear, executable action the owner can follow."
+      }
+    ]
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-115",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-115-1",
+        "repairs": [
+          {
+            "repair_id": "P01",
+            "target_ids": [
+              "D01",
+              "D02"
+            ],
+            "instruction": "Rewrite the body so the argument is readable in plain English from start to finish. Make it one bounded workflow decision about positioning drift: explain that drift often shows up when the website, sales conversation, proposal, and invoice language no longer match. Then give one practical next step the owner can do, such as reviewing those four touchpoints for mismatched wording and deciding which one should be the source of truth. Keep the post free of hype and keep any examples clearly framed as proposals, not claims about existing results or capabilities.",
+            "source_ids": [
+              "BRIEF",
+              "S01",
+              "C01",
+              "C02",
+              "C05"
+            ]
+          }
+        ]
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-115",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-402",
+        "title": "Positioning drift starts when your touchpoints disagree",
+        "body": "Positioning drift is often not a branding problem first. It starts as a workflow problem: the website says one thing, the sales conversation says another, the proposal adds a third version, and the invoice language quietly changes it again. Once those four touchpoints stop matching, customers have to guess what you actually do and what you actually charge. That is usually where confusion begins.\n\nFor a small business owner, the practical next step is simple: review those four places side by side and mark every mismatch in wording, scope, or price. Do not start by rewriting the whole brand. Start by deciding which document is the source of truth. In most cases that should be the place you already use to close work, then update the others to match it.\n\nKeep the decision manual and human. If the mismatch is real, fix the wording or the offer before you automate it; otherwise the system will just preserve the drift, which is a tidy way to make a small problem stay annoying."
+      },
+      "gate_key": "SE-FINAL-M115_gate1__a001"
+    }
+  ],
+  "measurement_status": "pending",
+  "planner": {
+    "item_id": "E-PLAN-502",
+    "selected_lessons": [],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Name the abstract topic as a concrete workflow decision. 'Positioning drift' occurs when a small-business owner's actual service offer or pricing message diverges from what customers see or remember. Frame this as a diagnostic question: where is your offer statement (website, email signature, sales calls, proposals) contradicting what you actually deliver or charge?",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "S01",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Identify one recurring customer-facing workflow where drift becomes visible: repeated questions about scope, price objections that don't match your pitch, or customers surprised by what's included. This is the bounded decision point—not a brand audit, but a single workflow where communication and delivery misalign.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "S01",
+          "C01"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Ask the diagnostic question: do you currently spend 2–4 hours a week clarifying scope or price with customers, or receive the same objection repeatedly? If yes, position drift is a workflow problem worth fixing. If no, repositioning can wait.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "S01",
+          "C01"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Propose the next step as a one-person task: audit your last five proposals, invoices, or customer conversations against your current website messaging. Look for one explicit mismatch (e.g., 'includes email support' on your site but you don't do it, or your price is listed wrong).",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "S01",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "If mismatch is found, decide: is it a documentation fix (update the website, proposal template, or email signature) or a delivery change (stop offering what's promised, or start offering what customers ask for)? Both are valid; both are owner decisions, not consultant decisions.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "S01",
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "If the audit reveals a workflow where manual clarification or rework happens often, note it for later. When you're ready to automate a workflow, positioning drift fixed first makes the AI investment cleaner—the system will reinforce your actual offer, not a broken one.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "S01",
+          "C02",
+          "C05"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No customer names, results, or deployment outcomes cited; no sales CTA used; no multi-person team implied. Positioning drift is a universal owner problem, not a customer case study."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "The next step (audit and fix) is a manual owner decision requiring human judgment. No autonomous system changes proposed. The workflow decision remains within owner authority."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Persona preserved: plain-speaking technical guidance, founder-to-founder, trustworthy over enthusiastic. Approved evidence (C01, C02, C04, C05, S01) used exclusively. Human approval boundary maintained for any delivery or pricing change."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Plain English throughout. The diagnostic question and audit task are concrete and observable, distinct from any future automation capability. No unsupported numbers or promises."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-602",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Turn the abstract topic into a bounded Bareni workflow decision. Explain one practical next step."
+          },
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits"
+          }
+        ],
+        "rationale": "This is an instruction to frame the abstract topic as a diagnostic question for the reader, not an assertion of a current Bareni capability, customer observation or measured effect. The framing is consistent with the approved diagnostic model and the approved task.",
+        "use_guidance": "Keep as a proposed framing/diagnostic question addressed to the owner-operator. Do not present positioning drift as an observed pattern across Bareni customers or as a Bareni service line beyond the approved diagnostic and consulting scope."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits"
+          },
+          {
+            "source_id": "C01",
+            "quote": "have a frequent, repeatable workflow with a measurable outcome"
+          }
+        ],
+        "rationale": "An instruction to the reader to identify one recurring workflow and treat it as the bounded decision point. It recommends an action rather than asserting an implemented capability or an observed customer result.",
+        "use_guidance": "Keep explicitly as a next-step instruction. Present the example symptoms (scope questions, price objections, surprised customers) as illustrative possibilities, not as observed customer behaviour or measured frequencies."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "FORBIDDEN",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "The 8–10 hours is a persona scenario, not a market statistic or observed customer result."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Numbers require a source and status."
+          }
+        ],
+        "rationale": "The diagnostic question itself is permissible, but the '2–4 hours a week' threshold has no approved source or status. The only approved time figure is the 8–10 hours persona scenario, and inventing a different quantified threshold breaches the numbers rule.",
+        "use_guidance": "Exclude the invented 2–4 hour threshold. Ask the qualitative diagnostic instead (e.g. whether the same scope or price objection recurs every week); if a number is needed, use only the 8–10 hours figure explicitly labelled as a persona scenario, not a measurement."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step"
+          },
+          {
+            "source_id": "C01",
+            "quote": "The intended reader is an owner-operator of a 1–10 person small business."
+          }
+        ],
+        "rationale": "A manual next step the reader can perform themselves. It asserts no Bareni implementation, tool or observed outcome, and matches the approved task requirement to explain one practical next step.",
+        "use_guidance": "Keep as a manual, owner-performed step. Do not imply Bareni provides an automated audit tool or has run such audits for customers; the 'last five' items are the reader's own documents, not evidence of any Bareni engagement."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "final approval and business authority remain human"
+          },
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          }
+        ],
+        "rationale": "A decision instruction that explicitly leaves the choice with the owner. It asserts no current fact about Bareni and respects the human-authority boundary.",
+        "use_guidance": "Keep as a proposed owner decision. Retain the wording that the choice belongs to the owner, not the consultant, and avoid legal, financial or pricing advice."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits"
+          },
+          {
+            "source_id": "C05",
+            "quote": "Never invent a benchmark, guarantee, ROI, saving, revenue lift, productivity result, or thesis-validated capability."
+          }
+        ],
+        "rationale": "Noting a recurring manual workflow for later is a permissible next step, but the trailing assertion that fixing positioning drift first 'makes the AI investment cleaner' presents an unmeasured benefit as fact. No approved evidence supports any outcome or benefit claim about automation investments.",
+        "use_guidance": "Keep the 'note it for later' step, but add the qualification that this is a reasoning argument, not a measured or observed result: automating a workflow encodes whatever the offer currently says, and no saving, ROI or improvement is claimed. Also add that a diagnostic says honestly whether AI fits at all."
+      }
+    ]
+  },
+  "selected_lessons": [],
+  "register_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "planner_key": "SE-FINAL-N002_planner__a001",
+  "researcher_key": "SE-FINAL-N002_researcher__a001",
+  "writer_key": "SE-FINAL-N002_writer__a001",
+  "final_key": "SE-FINAL-M115_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-M115_gate1__a001",
+  "production_completed_at": "2026-09-08T13:49:54.689977+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts"
+}

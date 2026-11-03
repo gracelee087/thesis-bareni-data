@@ -1,0 +1,96 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I102-R2",
+    "item_id": "SEA-I102",
+    "repeat": 2,
+    "arm_order": [
+      "critic_on",
+      "critic_off"
+    ],
+    "content_id": "POST-144c7c7068f2b94a4bf57810"
+  },
+  "arms": {
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-144c7c7068f2b94a4bf57810-1",
+        "title": "What subprocessor lists hide in plain sight",
+        "body": "A subprocessor list is not the whole story. It is a signal that the tool uses other companies to handle part of your data, but it does not tell you whether that setup fits the workflow you actually care about.\n\nIf you are a small business owner using SaaS, CRM, invoices, or AI tools, the useful question is simple: which recurring workflow is this tool touching? Customer messages, invoices, and internal docs are not the same thing, even if they all sit in the same dashboard.\n\nBefore you give a new tool access, check the exact path your data will take. Who receives it, what it can touch, and whether the workflow needs human approval at the end matter more than the vendor label on the homepage. That is where the hidden work lives. The list on the page is only the cover sheet.\n\nMy rule is to start with one recurring workflow and decide whether AI is a fit for that job at all. If the answer is unclear, keep it manual for now. If it is a fit, define the smallest pilot scope you can live with and make sure a human still approves any high-risk step. That keeps the build honest and the scope bounded."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-144c7c7068f2b94a4bf57810-1",
+            "title": "What subprocessor lists hide in plain sight",
+            "body": "A subprocessor list is not the whole story. It is a signal that the tool uses other companies to handle part of your data, but it does not tell you whether that setup fits the workflow you actually care about.\n\nIf you are a small business owner using SaaS, CRM, invoices, or AI tools, the useful question is simple: which recurring workflow is this tool touching? Customer messages, invoices, and internal docs are not the same thing, even if they all sit in the same dashboard.\n\nBefore you give a new tool access, check the exact path your data will take. Who receives it, what it can touch, and whether the workflow needs human approval at the end matter more than the vendor label on the homepage. That is where the hidden work lives. The list on the page is only the cover sheet.\n\nMy rule is to start with one recurring workflow and decide whether AI is a fit for that job at all. If the answer is unclear, keep it manual for now. If it is a fit, define the smallest pilot scope you can live with and make sure a human still approves any high-risk step. That keeps the build honest and the scope bounded."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-144c7c7068f2b94a4bf57810-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": [
+            {
+              "repair_id": "P01",
+              "target_ids": [
+                "D01",
+                "D02"
+              ],
+              "instruction": "Replace the garbled opening and middle with a short, plain-English explanation of one bounded workflow decision: say that subprocessor lists are not proof of how a vendor handles your data, and tell the owner to check the exact workflow before giving a tool access to CRM, invoices, or other repeatable business records.",
+              "source_ids": [
+                "BRIEF",
+                "S01",
+                "C01",
+                "C02",
+                "C04"
+              ]
+            },
+            {
+              "repair_id": "P02",
+              "target_ids": [
+                "D02"
+              ],
+              "instruction": "Add one concrete next step at the end: ask the owner to pick one recurring workflow, decide whether AI is suitable for it, and only then choose a pilot scope or keep the process manual if the answer is unclear.",
+              "source_ids": [
+                "BRIEF",
+                "S01",
+                "C02"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-144c7c7068f2b94a4bf57810-1",
+        "title": "What subprocessor lists hide in plain sight",
+        "body": "If you run a small business, subprocessor lists are one of the quiet places where risk hides. The list itself is only a page or a link. The real question is simpler: who else can touch your customer data, invoices, or internal documents once you plug a SaaS tool into a workflow?\n\nThat matters most when you start chaining tools together. A CRM, an automation tool, and an AI assistant can each look harmless on their own. In combination, they may move the same record through several systems, and the terms behind those systems are easy to skip when you are trying to get work done.\n\nFor a founder, this is not a legal theory exercise. It is a workflow decision. Before you automate a repeatable process, pull the terms for the three tools that sit closest to customer or financial data and check one thing: do you know which third parties can process that data?\n\nIf the answer is unclear, pause there. Human approval still needs to stay in the loop for money movement and other high-risk decisions, and Bareni currently keeps high-sensitivity medical, legal, and financial work out of scope. The useful habit is not paranoia; it is knowing what sits behind the label before you build on it.\n\nA small audit like that is usually cheaper than discovering the gap after the workflow is already carrying real work."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-144c7c7068f2b94a4bf57810-1",
+            "title": "What subprocessor lists hide in plain sight",
+            "body": "If you run a small business, subprocessor lists are one of the quiet places where risk hides. The list itself is only a page or a link. The real question is simpler: who else can touch your customer data, invoices, or internal documents once you plug a SaaS tool into a workflow?\n\nThat matters most when you start chaining tools together. A CRM, an automation tool, and an AI assistant can each look harmless on their own. In combination, they may move the same record through several systems, and the terms behind those systems are easy to skip when you are trying to get work done.\n\nFor a founder, this is not a legal theory exercise. It is a workflow decision. Before you automate a repeatable process, pull the terms for the three tools that sit closest to customer or financial data and check one thing: do you know which third parties can process that data?\n\nIf the answer is unclear, pause there. Human approval still needs to stay in the loop for money movement and other high-risk decisions, and Bareni currently keeps high-sensitivity medical, legal, and financial work out of scope. The useful habit is not paranoia; it is knowing what sits behind the label before you build on it.\n\nA small audit like that is usually cheaper than discovering the gap after the workflow is already carrying real work."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-144c7c7068f2b94a4bf57810-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

@@ -1,0 +1,68 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I124-R3",
+    "item_id": "SEA-I124",
+    "repeat": 3,
+    "arm_order": [
+      "critic_on",
+      "critic_off"
+    ],
+    "content_id": "POST-81629c4ad51a040e671bfbec"
+  },
+  "arms": {
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-81629c4ad51a040e671bfbec-1",
+        "title": "Measure agent memory only when the workflow needs it",
+        "body": "If you are asking about agent memory, the useful question is not whether it sounds advanced. It is whether your workflow actually needs context to survive from one interaction to the next.\n\nFor a small business, that becomes concrete fast. Memory matters when the same system must carry a customer’s preference, open issue, or prior instruction across separate days, without you pasting the whole thread back in. If each request arrives complete, memory may be unnecessary overhead.\n\nSo do not measure memory in the abstract. Pick one recurring workflow and define one observable test for the pilot: can the agent correctly reference a prior request, preference, or decision without being re-fed the full history? That is a simple pass/fail check you can see.\n\nThe diagnostic question is blunt: are your repeated tasks truly stateful, or just repetitive? Stateful means later steps depend on earlier ones. Repetitive means each request stands on its own.\n\nOne practical next step: write down one real recurring interaction, list the exact information that must carry forward, and note where human approval still has to stay in the loop. Then you have a clean scope for deciding whether memory belongs in the pilot at all."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-81629c4ad51a040e671bfbec-1",
+            "title": "Measure agent memory only when the workflow needs it",
+            "body": "If you are asking about agent memory, the useful question is not whether it sounds advanced. It is whether your workflow actually needs context to survive from one interaction to the next.\n\nFor a small business, that becomes concrete fast. Memory matters when the same system must carry a customer’s preference, open issue, or prior instruction across separate days, without you pasting the whole thread back in. If each request arrives complete, memory may be unnecessary overhead.\n\nSo do not measure memory in the abstract. Pick one recurring workflow and define one observable test for the pilot: can the agent correctly reference a prior request, preference, or decision without being re-fed the full history? That is a simple pass/fail check you can see.\n\nThe diagnostic question is blunt: are your repeated tasks truly stateful, or just repetitive? Stateful means later steps depend on earlier ones. Repetitive means each request stands on its own.\n\nOne practical next step: write down one real recurring interaction, list the exact information that must carry forward, and note where human approval still has to stay in the loop. Then you have a clean scope for deciding whether memory belongs in the pilot at all."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-81629c4ad51a040e671bfbec-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    },
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-81629c4ad51a040e671bfbec-1",
+        "title": "Measure memory only when the workflow depends on it",
+        "body": "If you are asking about agent memory, the useful question is not whether it sounds smart. It is whether the workflow actually needs context to carry across separate interactions.\n\nFor a small business, that matters when the same customer or issue comes back later and the agent must still understand what happened before. If each request arrives complete on its own, memory may be unnecessary. If the work is genuinely stateful, memory becomes a pilot question.\n\nSo do not measure memory in the abstract. Pick one recurring workflow and define one observable test: can the agent correctly reference a prior preference, instruction, or open issue without being re-fed the full history? That gives you a clean yes-or-no check. No theory contest required.\n\nThe practical next step is simple: write down one real recurring interaction and list the exact pieces of information that must carry forward. Then note where human approval still has to remain in the loop, especially for anything binding or financial. If that list is short, you may not need persistent memory at all. If it is not, memory belongs in the pilot scope."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-81629c4ad51a040e671bfbec-1",
+            "title": "Measure memory only when the workflow depends on it",
+            "body": "If you are asking about agent memory, the useful question is not whether it sounds smart. It is whether the workflow actually needs context to carry across separate interactions.\n\nFor a small business, that matters when the same customer or issue comes back later and the agent must still understand what happened before. If each request arrives complete on its own, memory may be unnecessary. If the work is genuinely stateful, memory becomes a pilot question.\n\nSo do not measure memory in the abstract. Pick one recurring workflow and define one observable test: can the agent correctly reference a prior preference, instruction, or open issue without being re-fed the full history? That gives you a clean yes-or-no check. No theory contest required.\n\nThe practical next step is simple: write down one real recurring interaction and list the exact pieces of information that must carry forward. Then note where human approval still has to remain in the loop, especially for anything binding or financial. If that list is short, you may not need persistent memory at all. If it is not, memory belongs in the pilot scope."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-81629c4ad51a040e671bfbec-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

@@ -1,0 +1,68 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I018-R2",
+    "item_id": "SEA-I018",
+    "repeat": 2,
+    "arm_order": [
+      "critic_on",
+      "critic_off"
+    ],
+    "content_id": "POST-ea293eee209a62b2641aa175"
+  },
+  "arms": {
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-ea293eee209a62b2641aa175-1",
+        "title": "When data export tests stop working",
+        "body": "When data export tests stop working, the question is not whether to add AI everywhere. It is simpler: do you have one recurring export that fails in a repeatable way, or are you dealing with a one-off mess that still needs a person to sort out?\n\nFor a small business, the boundary should be plain. Name the source system, the destination system, the export schedule, the data type, and the failure signal. Maybe the export runs but fields are empty, a scheduled file never lands, or CSV formatting breaks the downstream import. If you only notice the problem after someone complains, or if you are checking it by hand every week, you already have a workflow problem worth isolating.\n\nThe useful control is a pre-check before data moves on: row count, required fields, date range, or a simple format check. If the check fails, a human gets the alert and decides the next step. That keeps money movement and other high-risk decisions where they belong.\n\nOne practical next step is boring, which is usually a good sign. Pick one export, run it yourself, inspect the output for one known issue such as missing rows, broken fields, date drift, or encoding problems, and note how long discovery and re-run actually take. If the export is repeatable and the failure signal is visible, bounded automation may fit a diagnostic scope. If not, clarify the workflow first."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-ea293eee209a62b2641aa175-1",
+            "title": "When data export tests stop working",
+            "body": "When data export tests stop working, the question is not whether to add AI everywhere. It is simpler: do you have one recurring export that fails in a repeatable way, or are you dealing with a one-off mess that still needs a person to sort out?\n\nFor a small business, the boundary should be plain. Name the source system, the destination system, the export schedule, the data type, and the failure signal. Maybe the export runs but fields are empty, a scheduled file never lands, or CSV formatting breaks the downstream import. If you only notice the problem after someone complains, or if you are checking it by hand every week, you already have a workflow problem worth isolating.\n\nThe useful control is a pre-check before data moves on: row count, required fields, date range, or a simple format check. If the check fails, a human gets the alert and decides the next step. That keeps money movement and other high-risk decisions where they belong.\n\nOne practical next step is boring, which is usually a good sign. Pick one export, run it yourself, inspect the output for one known issue such as missing rows, broken fields, date drift, or encoding problems, and note how long discovery and re-run actually take. If the export is repeatable and the failure signal is visible, bounded automation may fit a diagnostic scope. If not, clarify the workflow first."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-ea293eee209a62b2641aa175-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    },
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-ea293eee209a62b2641aa175-1",
+        "title": "When data export tests stop working",
+        "body": "When data export tests stop working, the real question is not whether to add AI. It is whether you have one recurring export that now fails in a repeatable way, or a messy workflow that still needs a person to sort out.\n\nFor a small business owner, the boundary should be plain: name the source system, the destination system, the export schedule, the data type, and the failure signal. Maybe the export runs but fields are empty. Maybe a scheduled file is missing. Maybe CSV formatting breaks the downstream import. If you only notice after a customer complains, or you are checking it by hand every Friday, you already have a workflow problem worth isolating.\n\nThe useful control is a test before the data moves on: row count, required fields, date range, or a simple format check. That is a control pattern, not a promise of self-fixing software. If the check fails, a human gets the alert and decides the next step. Money movement and other high-risk decisions stay with a person.\n\nOne practical next step is manual and unglamorous, which is usually a good sign. Pick one export, run it yourself, inspect the output for one known issue such as missing rows, broken fields, date drift, or encoding problems, and note how long discovery and re-run actually take. If the export is repeatable and the failure signal is visible, bounded automation may fit a diagnostic scope. If not, clarify the workflow first."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-ea293eee209a62b2641aa175-1",
+            "title": "When data export tests stop working",
+            "body": "When data export tests stop working, the real question is not whether to add AI. It is whether you have one recurring export that now fails in a repeatable way, or a messy workflow that still needs a person to sort out.\n\nFor a small business owner, the boundary should be plain: name the source system, the destination system, the export schedule, the data type, and the failure signal. Maybe the export runs but fields are empty. Maybe a scheduled file is missing. Maybe CSV formatting breaks the downstream import. If you only notice after a customer complains, or you are checking it by hand every Friday, you already have a workflow problem worth isolating.\n\nThe useful control is a test before the data moves on: row count, required fields, date range, or a simple format check. That is a control pattern, not a promise of self-fixing software. If the check fails, a human gets the alert and decides the next step. Money movement and other high-risk decisions stay with a person.\n\nOne practical next step is manual and unglamorous, which is usually a good sign. Pick one export, run it yourself, inspect the output for one known issue such as missing rows, broken fields, date drift, or encoding problems, and note how long discovery and re-run actually take. If the export is repeatable and the failure signal is visible, bounded automation may fit a diagnostic scope. If not, clarify the workflow first."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-ea293eee209a62b2641aa175-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

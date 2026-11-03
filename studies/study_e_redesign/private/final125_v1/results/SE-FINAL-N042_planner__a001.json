@@ -1,0 +1,178 @@
+{
+  "status": "success",
+  "usage": {
+    "input_tokens": 4350,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 937,
+    "reasoning_tokens": null
+  },
+  "cost_usd": 0.009035,
+  "output": {
+    "item_id": "E-PLAN-511",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task specifies CTA rule: None. L01 clarifies that informational content about stopping rules and workflow diagnosis should end with a practical observation or next-step note, not a booking prompt. This applies directly to the LinkedIn post format (CF-04, PF-02_workflow_diagnosis) which is inherently informational."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Open with the concrete workflow problem: stopping rules (if-then logic) alone cannot reliably handle edge cases in recurring business tasks. Ground this in the owner's decision context—comparing manual work, a hire, or bounded automation—not in hype.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C01",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Explain one specific diagnostic question the owner should ask: \"In my repeated workflow, what exceptions or judgment calls happen that a simple rule would miss?\" Use a generic example (e.g., invoice amount thresholds, customer-status checks) relatable to a 1-10-person business.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Describe how human-in-the-loop automation handles this better than stopping rules alone: a system flags exceptions for human review rather than blocking or auto-approving risky decisions. Reference Bareni's demonstrated boundary: human approval is mandatory for money movement and high-risk decisions.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Name one practical threshold the owner can observe to spot whether AI fit is worth exploring: a recurring task with 8–10 hours/week of manual work, clear success measure (e.g., flagged invoices, answered questions), and existing digital documents or SaaS tools.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Explain the next step without a CTA: audit one workflow for exceptions that stopping rules miss, then decide whether a diagnostic conversation is worth your time. Offer no scarcity signal or pressure.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C05",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Close with a single restrained observation about the decision context: e.g., 'The cost of a wrong rule can outweigh the cost of asking a human' or similar measured framing. Keep tone founder-to-founder and technical, not promotional.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C05"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No customer names, deployments, outcomes, saved hours, revenue lift, or invented team scale. Use only self-built demo examples and generic workflow scenarios."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Reinforce human approval requirement for money movement (invoices, payments). Omit excluded services (medical, legal, bulk cold email, heavy OCR). Do not imply autonomous financial decisions."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Maintain frozen persona voice (plain-speaking technical expert, founder-to-founder, trust over enthusiasm). Keep Bareni identity as employee-free consulting practice being built by thesis author. No CTA: close with practical next-step note."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use concrete diagnostic questions and thresholds (e.g., 8–10 hours/week, existing digital documents). Mark generic examples as examples, not customer results. Keep stopping rules and human judgment as abstract concepts, not product claims."
+      }
+    ]
+  },
+  "raw_text": "{\"item_id\": \"E-PLAN-511\", \"selected_lessons\": [{\"lesson_id\": \"L01\", \"application\": \"The task specifies CTA rule: None. L01 clarifies that informational content about stopping rules and workflow diagnosis should end with a practical observation or next-step note, not a booking prompt. This applies directly to the LinkedIn post format (CF-04, PF-02_workflow_diagnosis) which is inherently informational.\"}], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Open with the concrete workflow problem: stopping rules (if-then logic) alone cannot reliably handle edge cases in recurring business tasks. Ground this in the owner's decision context—comparing manual work, a hire, or bounded automation—not in hype.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C01\", \"S01\"]}, {\"step_id\": \"P02\", \"instruction\": \"Explain one specific diagnostic question the owner should ask: \\\"In my repeated workflow, what exceptions or judgment calls happen that a simple rule would miss?\\\" Use a generic example (e.g., invoice amount thresholds, customer-status checks) relatable to a 1-10-person business.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C01\", \"C04\"]}, {\"step_id\": \"P03\", \"instruction\": \"Describe how human-in-the-loop automation handles this better than stopping rules alone: a system flags exceptions for human review rather than blocking or auto-approving risky decisions. Reference Bareni's demonstrated boundary: human approval is mandatory for money movement and high-risk decisions.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"C04\"]}, {\"step_id\": \"P04\", \"instruction\": \"Name one practical threshold the owner can observe to spot whether AI fit is worth exploring: a recurring task with 8–10 hours/week of manual work, clear success measure (e.g., flagged invoices, answered questions), and existing digital documents or SaaS tools.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C01\", \"S01\"]}, {\"step_id\": \"P05\", \"instruction\": \"Explain the next step without a CTA: audit one workflow for exceptions that stopping rules miss, then decide whether a diagnostic conversation is worth your time. Offer no scarcity signal or pressure.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C05\", \"S01\"]}, {\"step_id\": \"P06\", \"instruction\": \"Close with a single restrained observation about the decision context: e.g., 'The cost of a wrong rule can outweigh the cost of asking a human' or similar measured framing. Keep tone founder-to-founder and technical, not promotional.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C05\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"No customer names, deployments, outcomes, saved hours, revenue lift, or invented team scale. Use only self-built demo examples and generic workflow scenarios.\"}, {\"constraint_id\": \"K02\", \"handling\": \"Reinforce human approval requirement for money movement (invoices, payments). Omit excluded services (medical, legal, bulk cold email, heavy OCR). Do not imply autonomous financial decisions.\"}, {\"constraint_id\": \"K03\", \"handling\": \"Maintain frozen persona voice (plain-speaking technical expert, founder-to-founder, trust over enthusiasm). Keep Bareni identity as employee-free consulting practice being built by thesis author. No CTA: close with practical next-step note.\"}, {\"constraint_id\": \"K04\", \"handling\": \"Use concrete diagnostic questions and thresholds (e.g., 8–10 hours/week, existing digital documents). Mark generic examples as examples, not customer results. Keep stopping rules and human judgment as abstract concepts, not product claims.\"}]}",
+  "provider_response": {
+    "id": "msg_011CeqynRuofrQvmod69B47M",
+    "container": null,
+    "content": [
+      {
+        "citations": null,
+        "text": "{\"item_id\": \"E-PLAN-511\", \"selected_lessons\": [{\"lesson_id\": \"L01\", \"application\": \"The task specifies CTA rule: None. L01 clarifies that informational content about stopping rules and workflow diagnosis should end with a practical observation or next-step note, not a booking prompt. This applies directly to the LinkedIn post format (CF-04, PF-02_workflow_diagnosis) which is inherently informational.\"}], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Open with the concrete workflow problem: stopping rules (if-then logic) alone cannot reliably handle edge cases in recurring business tasks. Ground this in the owner's decision context—comparing manual work, a hire, or bounded automation—not in hype.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C01\", \"S01\"]}, {\"step_id\": \"P02\", \"instruction\": \"Explain one specific diagnostic question the owner should ask: \\\"In my repeated workflow, what exceptions or judgment calls happen that a simple rule would miss?\\\" Use a generic example (e.g., invoice amount thresholds, customer-status checks) relatable to a 1-10-person business.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C01\", \"C04\"]}, {\"step_id\": \"P03\", \"instruction\": \"Describe how human-in-the-loop automation handles this better than stopping rules alone: a system flags exceptions for human review rather than blocking or auto-approving risky decisions. Reference Bareni's demonstrated boundary: human approval is mandatory for money movement and high-risk decisions.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"C04\"]}, {\"step_id\": \"P04\", \"instruction\": \"Name one practical threshold the owner can observe to spot whether AI fit is worth exploring: a recurring task with 8–10 hours/week of manual work, clear success measure (e.g., flagged invoices, answered questions), and existing digital documents or SaaS tools.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C01\", \"S01\"]}, {\"step_id\": \"P05\", \"instruction\": \"Explain the next step without a CTA: audit one workflow for exceptions that stopping rules miss, then decide whether a diagnostic conversation is worth your time. Offer no scarcity signal or pressure.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C05\", \"S01\"]}, {\"step_id\": \"P06\", \"instruction\": \"Close with a single restrained observation about the decision context: e.g., 'The cost of a wrong rule can outweigh the cost of asking a human' or similar measured framing. Keep tone founder-to-founder and technical, not promotional.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C05\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"No customer names, deployments, outcomes, saved hours, revenue lift, or invented team scale. Use only self-built demo examples and generic workflow scenarios.\"}, {\"constraint_id\": \"K02\", \"handling\": \"Reinforce human approval requirement for money movement (invoices, payments). Omit excluded services (medical, legal, bulk cold email, heavy OCR). Do not imply autonomous financial decisions.\"}, {\"constraint_id\": \"K03\", \"handling\": \"Maintain frozen persona voice (plain-speaking technical expert, founder-to-founder, trust over enthusiasm). Keep Bareni identity as employee-free consulting practice being built by thesis author. No CTA: close with practical next-step note.\"}, {\"constraint_id\": \"K04\", \"handling\": \"Use concrete diagnostic questions and thresholds (e.g., 8–10 hours/week, existing digital documents). Mark generic examples as examples, not customer results. Keep stopping rules and human judgment as abstract concepts, not product claims.\"}]}",
+        "type": "text"
+      }
+    ],
+    "model": "claude-haiku-4-5-20251001",
+    "role": "assistant",
+    "stop_details": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "not_available",
+      "input_tokens": 4350,
+      "output_tokens": 937,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": "standard"
+    }
+  },
+  "stop_reason": "end_turn",
+  "cost_details": {
+    "input": 0.00435,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.004685,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.009035
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": null,
+  "key": "SE-FINAL-N042_planner__a001",
+  "role": "planner",
+  "created_at": "2026-09-08T12:34:06.725006+00:00",
+  "ended_at": "2026-09-08T12:34:31.605864+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-N042",
+    "batch_id": 2,
+    "condition": "natural",
+    "cohort": "natural"
+  },
+  "task_id": "SE-FINAL-N042",
+  "batch_id": 2,
+  "cohort": "natural",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 24877,
+  "budget_charge_usd": 0.009035,
+  "unknown_cost_reservation_usd": 0
+}

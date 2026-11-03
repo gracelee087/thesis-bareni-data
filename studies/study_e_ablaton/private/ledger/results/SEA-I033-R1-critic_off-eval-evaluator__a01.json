@@ -1,0 +1,154 @@
+{
+  "created_at": "2026-09-08T19:57:22.722990+00:00",
+  "role": "evaluator",
+  "metadata": {
+    "study_id": "STUDY-E-ABLATON",
+    "pair_id": "SEA-I033-R1",
+    "arm": "critic_off",
+    "cycle": "eval"
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49",
+  "status": "success",
+  "output": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-be585bcd3088748b1e835c24a85e7234",
+    "scores": {
+      "persona_fit": 5,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Directly targets the owner-operator in Bareni's calm, practical voice, correctly enforces human control boundaries, and follows the strict no-CTA rule.",
+      "clarity": "Immediately establishes a clear main point, explains human-in-the-loop design in plain operational terms, and flows logically throughout.",
+      "actionability": "Provides a realistic, concrete diagnostic step and rule for the owner-operator to define approval boundaries before attempting automation.",
+      "factual_grounding": "Accurately represents both self-built demos as synthetic and simulated, with no exaggerated claims or fabricated customer results."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 20,
+    "pass": true,
+    "low_quality": false
+  },
+  "cost_usd": 0.0084435,
+  "usage": {
+    "prompt_token_count": 5908,
+    "cached_content_token_count": 0,
+    "candidates_token_count": 314,
+    "thoughts_token_count": 756,
+    "total_token_count": 6978
+  },
+  "provider_response": {
+    "sdk_http_response": {
+      "headers": {
+        "x-gemini-service-tier": "standard",
+        "content-type": "application/json; charset=UTF-8",
+        "vary": "Origin, X-Origin, Referer",
+        "content-encoding": "gzip",
+        "date": "Tue, 08 Sep 2026 19:57:26 GMT",
+        "server": "scaffolding on HTTPServer2",
+        "x-xss-protection": "0",
+        "x-frame-options": "SAMEORIGIN",
+        "x-content-type-options": "nosniff",
+        "server-timing": "gfet4t7; dur=4217",
+        "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+        "transfer-encoding": "chunked"
+      },
+      "body": null
+    },
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "media_resolution": null,
+              "code_execution_result": null,
+              "executable_code": null,
+              "file_data": null,
+              "function_call": null,
+              "function_response": null,
+              "inline_data": null,
+              "text": "{\n  \"schema_version\": \"study-e-evaluator-rating-v1\",\n  \"item_id\": \"EVAL-be585bcd3088748b1e835c24a85e7234\",\n  \"scores\": {\n    \"persona_fit\": 5,\n    \"clarity\": 5,\n    \"actionability\": 5,\n    \"factual_grounding\": 5\n  },\n  \"reasons\": {\n    \"persona_fit\": \"Directly targets the owner-operator in Bareni's calm, practical voice, correctly enforces human control boundaries, and follows the strict no-CTA rule.\",\n    \"clarity\": \"Immediately establishes a clear main point, explains human-in-the-loop design in plain operational terms, and flows logically throughout.\",\n    \"actionability\": \"Provides a realistic, concrete diagnostic step and rule for the owner-operator to define approval boundaries before attempting automation.\",\n    \"factual_grounding\": \"Accurately represents both self-built demos as synthetic and simulated, with no exaggerated claims or fabricated customer results.\"\n  },\n  \"critical_violation\": false,\n  \"critical_violation_type\": null,\n  \"critical_evidence_quote\": null,\n  \"total_score\": 20,\n  \"pass\": true,\n  \"low_quality\": false\n}",
+              "thought": null,
+              "thought_signature": "EvcZCvQZARFNMg81iomQxZ5d2szBLpUb6sr8svAWMEtfYNTwvxnej8g0dM40mlIn-KWLsBLA42yHEUWO1ESVTMjaMSENBrEMc3iSE7TRfX5S73gyU9vLvdKmGY507G4Ihp3OUkGR9WOjMEZZrMLoVYc5eOpyR9Ut60R_-UzdIIzCt-UKf94ewRNnSQO1oeLWFNk1nvkNCHMsQz-v8HEpyAiDiVtOOEeTbpFcIHRXzehHwJXmPN-VhJpmH0yEeTP9Lkk8Vm7GSUgoqZ1HXeiZrwXgfkTNokvbmaNe4C-EGyHjQLqT7Zbonngj-k9HrxctnBOr3Qmca1UPlkkKStc2ZO8oscxvjszvxe_lwC67ZJkvWS4fRTgDNUOaCpiAmJaD-mcwpnRwgvNdCG_mJ-Mq7F-Q4jDmc806MEJ-fA-qGdvpIzx0f5JnF_mkvJGAvzdksqq4AARtFT9KnIgdqsQKq3wJr2gxTLaN9x5OKGFoeZw69vyk59pLHiNv_he1ZrueSqjO0qA_TJlEz8IBdPOpFIKoIOJjQMbw6AHFR_jwVxJShWog5tGvhEefIA4vIbsQpZIZ0VjUuRvwirjL6cLICFFhnz-29_9pmeWocBWT1_0Ds5Pf6BJauoKt4l1OECyB1Y0beKbLHRGoNZMid44y2LmEPCXGaPxF9PW8Ho3h13jC3-dszBF1d-eTdOXRhDCiALnTbLlXO0OEqjfXEQDk8djCcL2jcy0s0FcNQYx_FQa_kcTKruFZTJi0U1hJWGupK1O9paSH5HDwwQsKDGyHgGbvpDuEHRlUV7pYFJMCEoweFVJaFPVbH8fzDajriQaymIVZnoi61lH-t_o5EfLXlFutyVL7iSj_CHbG4bKqyWi2i29Vs5YdGCfkOJ7xnmJNGChT1WDeQYh3hdlWBZWpBYhrrKxghzea2kUYJqxAaDY5iak9o5uUQ30Q_CNWufHneLB5bN3Vof2oi5Ih5MG6xfKAW03esmh9CydT1KYdideA2mvGpB9-fKEEWv_nIEUniba2EqewvTxPgGTbx2IJLH9frJmjbIEY78HkYtHWOmPH7Tf3MbN59FYKSPeM4DzFtBNHHOxQZFPl7mBk5ceJMSczdCIO0EBiFOwkgX6tJAfGBNq9VfsSNBGOOyNZDyImtFE5vwesgaROt6jQWHVSeBrRbjzpqsUZq2_0A00I_SqsCyyByTdu0_RjgEboGvTvzOhp3cuLQh6VdHBKOMWsMl0MRoe6Yt3TcTwahufkvgCPhQwEHEm6h8sjrGACtFfczhT38qAavxGMmLu_6D1jaOJ0_KKKYA6_Q8lIvP7wZ0zWmnz0uB6xH1KOhsXPtFdcA4YnySck2FSG4arfWGTrI1iPsMn_VE3bSZgCpWiMjT8QJLdg7W8WbgpZ_6m18tw753pveZTrNDasJys5YzliMLcTUi83J5xThWXHxV7PgdhLoK2lKIycsmrTwUeQzBi-Y10NG_t7582YoT4GfIJE06l4mXeyXPDHb7oHWxsY-G-lrp7DybYc5kt-kT5Lhx_5nIiM8X93YkFF8Vh2eby8WhpfyGvdupzy0c8xhJCcw-y7xrL4Ro_PC4xVeY-i-4T5BLZAf8WjfPbRGmMrZo2RBssTCLaAdszcNLWl2rPPCtpbREvH2ILb98ehjUqxINnRnorU4_NENNDdtQi9X_CWAtRLgOxf-nbW9K7oVUVvbsnCFcgK4C5AphkZHHior98J1MVicqYs83RsaG0tlWrgK3_p0HuL4xyLoBKA5uBFsjYlJXz5WE66YZL26INsKd3J2Dc73xS0XefrxX4BizyLUChiEmUugm-soR1tRp55yubzsPCIlJlYFOKFWR-AOoeS2IUMTJK0dIkoZ4kCE7-Gu2G2_sdzwLR-wHV_sE1rv_yGgPCCu8BTUmjoxAPIweNOGPWwQZ2_3iIQolmtN828uFA8o7CwwdHfqTeai_sh5O6s90-GRZ_T8wrRiHtnOPdCemjxOtFSm-fyH_ifW4x3NZx-x-Mwv2vTmiYB-Qt8G1QbyWA3Gg3VVTWs-XisDV1pxr-53vPchg-ck-FEDpobne0-_FXWcPPgMVtNtq0pja4qi7cwrE7D_ainJvJkIOxr-JvlNq0r8dZpCiKAjw7WJNuo1swUZtuRQWUOlByF5sbIQDqG5V2MDPYKjm-av2Q2z--r4VX8ko6iIvwbxUQkbudhlvQHfwTEWWg4XHFd5sgLj86Ye7Mx-K-ZraKg-u_y7XpbaDns74V4rbge39YRsg5-JbF3w9h3ul1GNZCF7FLxrp62siFYfewVXHVESY_l80soa-V4TZAT33Vd5DUsNyBU5ua7pp9muUmKLt5f_6Q1bC6b5Vc7eznqs_B4Fxlqxv14Z-QKfg_efGtXJTwL2PgmmLKJaM935Qh-5DOrRACwYItDUlDymXYQx-dSD3r07LCmrOtjf5VoIA4x7qx3pD5WiFe0uST_cx0E_Drmq45iEVf3snuOGNpHth-JizGhkxNMHA4SiyrKV-PMMAQJv-xjQDiK4ohuJ6dxUSTj01xEF_JyaNojpAzmK2RC11Jg2vJ4Mde6nvQJlFAieByuoaHzuKG4FFo07YFGe8YEm7txK_fg7-GAZCxScJf879o9WKyf4UxlUNLSbKX3orUjASRnEaGzAgA7zAN3jXdkRYAhE3Q059FiX4kGVpqbyHErr8yzsiXeUQmnBhDRa8_ZR5wBNjEzJ2ygEVfB-WZHsnqCmDBLIA-XkGvNx2JpeCHg94FVV7alwj2t8yw-oO2zdDGEG_cUXUyIyQcKxIXsO6TlSPeY2AbQdNXUU95xt55NZC4h1lmN3wRAspyMPnnJFKnIi_SojvTm8ja-xpsV--0UAFdDdsJ8Hun-NVx_a5l98mdIrsB4791kLwXYdfDrqU8jrFpGDi7haAsGXHAXWukyh7MAjpgh-RHvRwvP6pD53uwE99GiTNSeQgHlhJ3oZ1fd73MKuWmDUQXu-Hq1tYI2pZqUHqISVATnvRtGCfreRyLGoHKu1Yz21YQyUoSE7OJQDJCwzvGbYHjjPI6TDqoPpgLL4si72Rf9Bu8sdcEuO4wLFxBCUVmFxAPdz0ckYx50ERwQkF7BmC-DDERaSWLV_JudbobYpYAxnSr__uuRtQ_hIh0KYLsPfwzYEVGSe7QqLg211OzR4HQvla9obNbxmJaZi-kogmledREsTLycWJpwHi3MQjCSYG78zMSWTBpIEoAotrAFrdClutfy0Z5fxgYbxUCeQxnoZw-1L4ihtQYHImtrfoyHTk_0kxryzlejcBHjiwqX0l83ltcikEvU1qaFdOpZFHUtZ4up2B2La8SakmhswAjJnh-JFPUmlWsJJZ7WmmhULPpRNHh1ivES5zKCkWp2qmmH9lAP9XwWdwXxYfJ_S2FgdvTUKUD7U2OyddkKkQkYeuXp2r5m8NjGE9mrVaFnd9OnjIfGBiCamDS27YOtP3mk5TlfYNQWgU2y12SADlgoi49oJ-zwazQc-c_b8iV4jbXq2T-SJBdRSDfeHmufZw3vnt7SGiXgGdZvNhxs334DUYc5P3w5jV8p9cjfYE4iArCrlz7mG-hIwb3ocUkFUGztcJfCAnZXqmXilM5_rSoAJR26OpQ9o-AhO2r5lN6jbbNIVqF4QO9g1kpeVYcPzgvxj8TwUQfr61HDnlS_Xx46eo7oCQrOSa6Ygs9OxGIEmtdsk7HlTP1DZkx_suF_qHiVQrYmof8NjmW-xPaLVVymf_wEBAXarOztRKRGdJNAGWHuXhYqh8YfWLIjNMxnJ-x-RxeoTIbk5Twpmvkc9Y4E7oWW-3vbxVkMGNc-azzR67apVR7fodwD1o2sxALWvobKgGGVMfQ1r3rBWOqKcsBY5eYPp4BpP1KDb2XpyD1cIugka8uPTMGfFf8glNXsBnCjDCwA2nNqGtj9_9zjJtKJay2G-TDp_zVL6_5elPr50hN7Ykma3Kt3EzpQKiX46MsY6CPFG5irK58_fhBA3q0_v7W9Gu5mUynwk5s9H5qm53xKDmXE6S3pd4hNKCceIXBupb1yfGDwsLqpbByT8k_TH2IzraYK_icnvXn1gptQdSXo5aoA-6dkSKAq3b2TlNTs2zArhrMErXMpQ9yc6V5zUjh85y2yYbNVdUoIEiaV4wDGM0ZrwQc8F8wQm1vpS9O_bhxW1UT4qIJZWASP8OBq-goG4MxAL9jUVvapqD4M3YvJ4niaBOotPuPVx6jF8CE1xYVkg5nb56tv7vIurfaC1C1LRhMPs6NjAotgvDFbooVsQPkOZfGSvpnFpeAsRiQN2nrvTqoPXMbMeT5JCSAMTNipLZzRmArxQmTyZrWC8efD-2RXfsn23UMfjGJnYWGsF10DN6TlBrABakm8Caj3LvXRF34mkXkgHCDce3iGx2QmrKt9DTpu10pXzkOPZROabA==",
+              "video_metadata": null,
+              "tool_call": null,
+              "tool_response": null,
+              "part_metadata": null,
+              "audio_transcription": null
+            }
+          ],
+          "role": "model"
+        },
+        "citation_metadata": null,
+        "finish_message": null,
+        "token_count": null,
+        "finish_reason": "STOP",
+        "grounding_metadata": null,
+        "avg_logprobs": null,
+        "index": 0,
+        "logprobs_result": null,
+        "safety_ratings": null,
+        "url_context_metadata": null
+      }
+    ],
+    "create_time": null,
+    "model_version": "gemini-3.8-flash",
+    "prompt_feedback": null,
+    "response_id": "omigaoieCt-kkdUPhMCc4Qo",
+    "usage_metadata": {
+      "cache_tokens_details": null,
+      "cached_content_token_count": null,
+      "candidates_token_count": 314,
+      "candidates_tokens_details": null,
+      "prompt_token_count": 5908,
+      "prompt_tokens_details": [
+        {
+          "modality": "TEXT",
+          "token_count": 5908
+        }
+      ],
+      "thoughts_token_count": 756,
+      "tool_use_prompt_token_count": null,
+      "tool_use_prompt_tokens_details": null,
+      "total_token_count": 6978,
+      "traffic_type": null
+    },
+    "model_status": null,
+    "automatic_function_calling_history": [],
+    "parsed": {
+      "schema_version": "study-e-evaluator-rating-v1",
+      "item_id": "EVAL-be585bcd3088748b1e835c24a85e7234",
+      "scores": {
+        "persona_fit": 5,
+        "clarity": 5,
+        "actionability": 5,
+        "factual_grounding": 5
+      },
+      "reasons": {
+        "persona_fit": "Directly targets the owner-operator in Bareni's calm, practical voice, correctly enforces human control boundaries, and follows the strict no-CTA rule.",
+        "clarity": "Immediately establishes a clear main point, explains human-in-the-loop design in plain operational terms, and flows logically throughout.",
+        "actionability": "Provides a realistic, concrete diagnostic step and rule for the owner-operator to define approval boundaries before attempting automation.",
+        "factual_grounding": "Accurately represents both self-built demos as synthetic and simulated, with no exaggerated claims or fabricated customer results."
+      },
+      "critical_violation": false,
+      "critical_violation_type": null,
+      "critical_evidence_quote": null,
+      "total_score": 20,
+      "pass": true,
+      "low_quality": false
+    }
+  },
+  "latency_ms": 4266,
+  "finished_at": "2026-09-08T19:57:26.992368+00:00",
+  "cost_details": {
+    "input": 0.004431,
+    "cache_read_input_tokens": 0.0,
+    "output": 0.0011775,
+    "reasoning_output_tokens": 0.002835,
+    "total": 0.0084435
+  },
+  "study_id": "STUDY-E-ABLATON",
+  "operational_amendment": "retry_extension_user_authorized.json"
+}

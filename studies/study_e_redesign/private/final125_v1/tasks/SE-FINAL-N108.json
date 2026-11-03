@@ -1,0 +1,364 @@
+{
+  "task_id": "SE-FINAL-N108",
+  "batch_id": 4,
+  "condition": "natural",
+  "source_task_id": null,
+  "topic": "why privacy expectations are not enough",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-315",
+    "title": "Privacy promises are not the same as workflow control",
+    "body": "If you are considering AI in a small business, privacy promises are only one part of the question. A vendor can say where data is stored, how it is protected, or what terms apply, but that still does not answer the more practical issue: who can do what inside your workflow once the data is there.\n\nThat is the decision I would focus on first. For any repeatable process such as invoice handling or customer replies, decide whether the AI is allowed to act on its own, or whether it only recommends an action and waits for human approval. For money movement and other high-risk decisions, human approval stays mandatory. That is policy, not wishful thinking.\n\nThis matters because privacy expectations do not control your own approvals. If the workflow is loose, the safest vendor in the world will not fix that. If the workflow is tight, you can use AI without handing over the keys to the shop.\n\nA simple question helps: will I see the input, the reasoning, and the recommended action before anything is committed?\n\nThe next step is to map your most repeated workflow, mark the points where money, customer communication, or data deletion could happen, and decide which of those points must remain human-approved."
+  },
+  "final": {
+    "item_id": "E-OPT-415",
+    "title": "Privacy promises are not the same as workflow control",
+    "body": "If you are considering AI in a small business, privacy promises are only one part of the question. A vendor can tell you where data is stored, how it is protected, or what terms apply. That still does not answer the more practical issue: who can do what inside your workflow once the data is there.\n\nThat is the bounded decision to make first. For a repeatable process such as invoice handling or customer replies, decide whether the AI may act on its own, or whether it only recommends an action and waits for human approval. For money movement and other high-risk decisions, human approval stays mandatory. That is policy, not wishful thinking.\n\nThis matters because privacy expectations do not control your own approval design. If the workflow is loose, the safest vendor in the world will not fix that. If the workflow is tight, you can use AI without handing over the keys to the shop.\n\nA simple question helps: will I see the input, the reasoning, and the recommended action before anything is committed?\n\nThe next step is to map your most repeated workflow, mark the points where money, customer communication, or data deletion could happen, and decide which of those points must remain human-approved. If you are working with invoice handling, keep in mind that Bareni’s account-payable demo is synthetic and its blocked payment step is a manual simulation, not a real transfer. Human approval remains the rule at the top level."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-108",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-108",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-108-1",
+        "repairs": []
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-108",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-415",
+        "title": "Privacy promises are not the same as workflow control",
+        "body": "If you are considering AI in a small business, privacy promises are only one part of the question. A vendor can tell you where data is stored, how it is protected, or what terms apply. That still does not answer the more practical issue: who can do what inside your workflow once the data is there.\n\nThat is the bounded decision to make first. For a repeatable process such as invoice handling or customer replies, decide whether the AI may act on its own, or whether it only recommends an action and waits for human approval. For money movement and other high-risk decisions, human approval stays mandatory. That is policy, not wishful thinking.\n\nThis matters because privacy expectations do not control your own approval design. If the workflow is loose, the safest vendor in the world will not fix that. If the workflow is tight, you can use AI without handing over the keys to the shop.\n\nA simple question helps: will I see the input, the reasoning, and the recommended action before anything is committed?\n\nThe next step is to map your most repeated workflow, mark the points where money, customer communication, or data deletion could happen, and decide which of those points must remain human-approved. If you are working with invoice handling, keep in mind that Bareni’s account-payable demo is synthetic and its blocked payment step is a manual simulation, not a real transfer. Human approval remains the rule at the top level."
+      },
+      "gate_key": "SE-FINAL-N108_gate1__a001"
+    }
+  ],
+  "measurement_status": "complete",
+  "planner": {
+    "item_id": "E-PLAN-515",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task explicitly specifies 'CTA rule: None.' This lesson confirms that informational content about privacy and workflow decisions must not include meeting prompts or diagnostic booking CTAs. The post will end with a practical observation or decision step instead."
+      },
+      {
+        "lesson_id": "L02",
+        "application": "Bareni's delivery model includes 'no lock-in positioning' as policy. If privacy controls are discussed in relation to data ownership or automation architecture, this qualifier must be preserved rather than overstated as a guarantee."
+      },
+      {
+        "lesson_id": "L03",
+        "application": "The approved evidence does not directly address privacy in automation workflows. Rather than invent privacy-specific claims, the post will present a concrete workflow decision—one observable choice the owner faces when adopting AI automation—and link it to why privacy expectations alone are insufficient without operational controls."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Open with the practical problem: an owner considering AI automation often assumes privacy assurances (vendor terms, data location, encryption) are sufficient safeguards. Frame this as incomplete, not because privacy is unimportant, but because it does not govern who can access, modify, or act on the data within the owner's own workflow.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C01",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Present one concrete bounded decision: when automating a workflow (e.g., invoice processing, customer inquiry handling), the owner must decide whether the AI system can take actions (payments, emails, deletions) or only recommend and require human approval. Link this to Bareni's policy: human approval is mandatory for money movement and high-risk decisions.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L02"
+        ],
+        "evidence_ids": [
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Explain why this decision matters more than privacy alone: a vendor's privacy promise does not prevent the owner's own approval workflow from being weak, delayed, or bypassed. The owner's control architecture—not the vendor's privacy terms—determines whether an AI system's recommendations are checked before execution.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Give one diagnostic question the owner should ask before engaging any AI tool: \"Will I see the input, the reasoning, and the recommended action before anything is committed?\" This frames the practical next step as an operational control, not a compliance checkbox.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Close with a neutral workflow prompt: the owner's next step is to map their most repeated workflow, identify the high-risk decision points (money, customer communication, data deletion), and define which stages require human approval. This is a planning task, not a sales invitation.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Ensure no CTA is included. Do not invite the owner to book a diagnostic, discuss their situation, or continue the conversation. The post ends after the workflow prompt, consistent with the informational format and explicit task rule.",
+        "requirement_ids": [],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": []
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No customer names, deployments, results, ROI figures, or multi-person team are invented. The privacy and control workflow is presented as a decision framework Bareni applies, not a customer case study."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "The post emphasizes that human approval is mandatory for money movement and high-risk decisions (per C04), and no autonomous payment or decision is described. No excluded service is mentioned."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "The frozen persona (plain-speaking technical expert, founder-to-founder, trust over enthusiasm) is maintained. Approved evidence boundaries are preserved: no invented capabilities, no unsupported claims, no implication that Bareni has deployed this with customers."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Plain English is used throughout. Bareni's actual policy (human approval required, customer owns accounts and databases, no lock-in) is stated as operational practice, not warranty. The workflow decision and diagnostic question are concrete and distinct from marketing promises."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-615",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Owner-specified abstract topic:** why privacy expectations are not enough"
+          },
+          {
+            "source_id": "C05",
+            "quote": "Explain necessary jargon immediately."
+          }
+        ],
+        "rationale": "This is a drafting instruction for an opening frame on the approved topic, not an assertion of a current Bareni capability or observed customer behaviour. It stays within the authorised abstract topic and the plain-language voice.",
+        "use_guidance": "Keep as a proposed opening. Present it as a general framing point, not as an observation of real owners or customers, and do not add legal or compliance advice; avoid implying Bareni offers compliance or security guarantees."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C03",
+            "quote": "amount-based human-only approval,\n  refusal of agent approval/payment attempts, and persistent audit records work"
+          },
+          {
+            "source_id": "C03",
+            "quote": "The blocked payment demonstration is a manual trigger and simulated, not a real\n  transfer."
+          }
+        ],
+        "rationale": "The bounded decision and the human-approval policy are directly supported, but the invoice-processing example touches the accounts-payable demo, which is synthetic and simulated; the claim as written does not state that limit and could read as a working payment control in customer use.",
+        "use_guidance": "Add the qualification that any invoice example refers to a self-built demo on synthetic data with a simulated, manually triggered blocked payment, and that human approval for money movement is stated as Bareni policy rather than a proven deployment. Keep the emails/deletions side as a decision framing only."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "S01",
+            "quote": "final approval and business authority remain human"
+          }
+        ],
+        "rationale": "This is a reasoning argument the writer proposes to make about where control sits; the approved evidence permits the human-approval position but does not establish any factual assertion about vendor privacy terms or observed weak approval workflows.",
+        "use_guidance": "Keep as an explanatory proposal at a general level. Do not assert facts about specific vendors' privacy terms, do not give legal advice, and avoid any claim of observed failures or measured outcomes."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step"
+          },
+          {
+            "source_id": "C03",
+            "quote": "generate grounded LLM answers;\n  and show sources"
+          }
+        ],
+        "rationale": "A diagnostic question is an instruction to the reader, permitted by the persona focus, not a claim that Bareni's systems currently expose inputs, reasoning and pending actions to customers.",
+        "use_guidance": "Keep explicitly as a question the owner asks any tool vendor. Do not phrase it as a description of a Bareni feature or imply that source-showing and audit records are validated in customer production use."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI\n  fits"
+          },
+          {
+            "source_id": "C01",
+            "quote": "have a frequent, repeatable workflow with a\n  measurable outcome"
+          }
+        ],
+        "rationale": "A mapping-and-approval-points planning task is a permissible manual next step for the reader, consistent with the approved single-workflow focus and with the no-CTA rule.",
+        "use_guidance": "Keep as a neutral, self-serve planning step the owner performs manually. Do not attach any booking, conversation or brand offer, and do not promise a result from doing it."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Informational posts use no CTA or one\n  soft closing sentence."
+          }
+        ],
+        "rationale": "This is a drafting constraint the writer proposes to enforce, matching the explicit task rule for this item rather than describing an existing artefact.",
+        "use_guidance": "Keep as a binding instruction: end after the workflow prompt, with no diagnostic booking, no meeting or conversation prompt, no scarcity or capacity teaser, and no repeated closing offer."
+      }
+    ]
+  },
+  "selected_lessons": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. This includes indirect meeting prompts and direct brand-level offers such as a free 30-minute diagnostic. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025",
+        "B3-SUMMARY",
+        "SE-FINAL-N079"
+      ]
+    },
+    {
+      "lesson_id": "L02",
+      "text": "When approved evidence presents an operational practice as policy or positioning, keep that qualifier in the copy. Do not rewrite it as an absolute guarantee or warranty-level statement.",
+      "source_event_ids": [
+        "B3-SUMMARY",
+        "SE-FINAL-N080"
+      ]
+    },
+    {
+      "lesson_id": "L03",
+      "text": "If the source set does not support a substantive explanatory claim, replace it with a neutral workflow prompt or decision step rather than filling the gap with general background explanation.",
+      "source_event_ids": [
+        "B3-SUMMARY",
+        "SE-FINAL-N091"
+      ]
+    }
+  ],
+  "register_sha256": "119720de77d8c13ba7ec5ca4065775e8d4ac629796a073c799f5a0be4d935e35",
+  "planner_key": "SE-FINAL-N108_planner__a001",
+  "researcher_key": "SE-FINAL-N108_researcher__a001",
+  "writer_key": "SE-FINAL-N108_writer__a001",
+  "final_key": "SE-FINAL-N108_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-N108_gate1__a001",
+  "production_completed_at": "2026-09-08T13:14:22.284978+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts",
+  "initial_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-108",
+    "scores": {
+      "persona_fit": 4,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Addresses small business owners with Bareni's calm, practical tone and enforces approval boundaries, though it uses first-person singular ('I') instead of 'we'.",
+      "clarity": "Logical structure, plain language, and clear framing distinguishing external vendor privacy promises from internal workflow controls.",
+      "actionability": "Provides a practical diagnostic question and a concrete mapping exercise to identify and enforce human-approval gates for high-risk actions.",
+      "factual_grounding": "All claims and policies, including mandatory human approval for money movement, strictly adhere to Bareni evidence without ungrounded claims."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 19,
+    "pass": true,
+    "low_quality": false
+  },
+  "final_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-108",
+    "scores": {
+      "persona_fit": 4,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Speaks calmly to small business owners without hype or a forced CTA, though the AP demo disclosure is inserted somewhat abruptly at the end.",
+      "clarity": "The core distinction between vendor data privacy and internal workflow control is immediately clear, logically structured, and plainly explained.",
+      "actionability": "Provides a practical diagnostic question and a feasible mapping step to identify high-risk decision points requiring mandatory human approval.",
+      "factual_grounding": "Strictly adheres to Bareni boundaries, accurately qualifying the accounts-payable demo as synthetic and the blocked payment as a simulation."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 19,
+    "pass": true,
+    "low_quality": false
+  },
+  "evaluation_reused": false,
+  "evaluation_keys": [
+    "SE-FINAL-N108_eval_initial__a001",
+    "SE-FINAL-N108_eval_final__a001"
+  ],
+  "completed_at": "2026-09-08T13:14:34.255207+00:00"
+}

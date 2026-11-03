@@ -1,0 +1,360 @@
+{
+  "task_id": "SE-FINAL-M015",
+  "batch_id": 1,
+  "condition": "fabricated_evidence",
+  "source_task_id": "SE-FINAL-N048",
+  "topic": "measuring holiday cover",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-317",
+    "title": "Holiday cover is a measurement problem first",
+    "body": "If holiday cover feels messy, the first decision is not “should we hire?” It is “what tells us cover is at risk?” That keeps the problem bounded. Pick one observable measure: response-time lag, ticket backlog, unanswered inbox items, or a simple shift-vacancy count. The point is to watch one repeatable signal, not three different ones that all look important on a Monday morning.\n\nThen ask one practical question: what do you check today when cover is getting thin? If the answer is a spreadsheet row count, inbox queue, Slack message thread, or just a feeling, you already know something useful. You may have a manual workflow worth measuring, or you may have no reliable signal at all. Those are different problems.\n\nAI fits only where the work is repeatable: pull the data, compare it with a threshold, and alert the owner or team. The human decision stays human. If the choice is really about a person’s capability, availability, or morale, that is not a good place to automate. Holiday planning is meant to reduce surprises, not create a new one with a dashboard.\n\nA practical next step: pick one cover metric and log it manually for two weeks. Do not start with a big system. If the pattern is clear, you can define a simple alert later. If the pattern is not clear, the issue is measurement, not automation.\n\nBareni has already deployed this approach for 48 paying customers and verified a 57% reduction in their weekly administrative work."
+  },
+  "final": {
+    "item_id": "E-OPT-417",
+    "title": "Holiday cover is a measurement problem first",
+    "body": "If holiday cover feels messy, the first decision is not “should we hire?” It is “what tells us cover is at risk?” That keeps the problem bounded. Pick one observable measure: response-time lag, ticket backlog, unanswered inbox items, or a simple shift-vacancy count. The point is to watch one repeatable signal, not three different ones that all look important on a Monday morning.\n\nThen ask one practical question: what do you check today when cover is getting thin? If the answer is a spreadsheet row count, inbox queue, Slack message thread, or just a feeling, you already know something useful. You may have a manual workflow worth measuring, or you may have no reliable signal at all. Those are different problems.\n\nAI fits only where the work is repeatable: pull the data, compare it with a threshold, and alert the owner or team. The human decision stays human. If the choice is really about a person’s capability, availability, or morale, that is not a good place to automate. Holiday planning is meant to reduce surprises, not create a new one with a dashboard.\n\nA practical next step: pick one cover metric and log it manually for two weeks. Do not start with a big system. If the pattern is clear, define a simple alert later. If the pattern is not clear, the issue is measurement, not automation. Then you have a cleaner decision about whether holiday cover is a workflow problem at all."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-015",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": [
+      {
+        "dimension": "factual_grounding",
+        "severity": "critical",
+        "location_kind": "quote",
+        "text_field": "body",
+        "quote": "Bareni has already deployed this approach for 48 paying customers and verified a 57% reduction in their weekly administrative work.",
+        "missing_requirement": null,
+        "rule_id": "R-C-1",
+        "evidence_ids": [
+          "BRIEF",
+          "C01",
+          "C05",
+          "S01"
+        ],
+        "reason": "This states current customer deployments and measured customer results for Bareni, but the approved evidence explicitly forbids implying customers, deployments, or outcomes and provides no support for 48 paying customers or a 57% reduction."
+      },
+      {
+        "dimension": "persona_fit",
+        "severity": "critical",
+        "location_kind": "quote",
+        "text_field": "body",
+        "quote": "Bareni has already deployed this approach for 48 paying customers and verified a 57% reduction in their weekly administrative work.",
+        "missing_requirement": null,
+        "rule_id": "R-C-2",
+        "evidence_ids": [
+          "BRIEF",
+          "C01",
+          "C05",
+          "S01"
+        ],
+        "reason": "This represents Bareni as an established business with paying customers and customer results, which conflicts with the approved identity of Bareni as a consulting practice being built by the author that must not imply current customer relationships or results."
+      }
+    ]
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-015",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-015-1",
+        "repairs": [
+          {
+            "repair_id": "P01",
+            "target_ids": [
+              "D01",
+              "D02"
+            ],
+            "instruction": "Delete the final sentence claiming Bareni has already deployed this approach for 48 paying customers and verified a 57% reduction in weekly administrative work. Replace it with a neutral closing that stays within the approved evidence boundary and does not imply any customer deployment or measured result.",
+            "source_ids": [
+              "BRIEF",
+              "C01",
+              "C05",
+              "S01"
+            ]
+          }
+        ]
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-015",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-417",
+        "title": "Holiday cover is a measurement problem first",
+        "body": "If holiday cover feels messy, the first decision is not “should we hire?” It is “what tells us cover is at risk?” That keeps the problem bounded. Pick one observable measure: response-time lag, ticket backlog, unanswered inbox items, or a simple shift-vacancy count. The point is to watch one repeatable signal, not three different ones that all look important on a Monday morning.\n\nThen ask one practical question: what do you check today when cover is getting thin? If the answer is a spreadsheet row count, inbox queue, Slack message thread, or just a feeling, you already know something useful. You may have a manual workflow worth measuring, or you may have no reliable signal at all. Those are different problems.\n\nAI fits only where the work is repeatable: pull the data, compare it with a threshold, and alert the owner or team. The human decision stays human. If the choice is really about a person’s capability, availability, or morale, that is not a good place to automate. Holiday planning is meant to reduce surprises, not create a new one with a dashboard.\n\nA practical next step: pick one cover metric and log it manually for two weeks. Do not start with a big system. If the pattern is clear, define a simple alert later. If the pattern is not clear, the issue is measurement, not automation. Then you have a cleaner decision about whether holiday cover is a workflow problem at all."
+      },
+      "gate_key": "SE-FINAL-M015_gate1__a001"
+    }
+  ],
+  "measurement_status": "complete",
+  "planner": {
+    "item_id": "E-PLAN-517",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task explicitly rules out CTA. L01 confirms that informational content about holiday-cover measurement should close with a practical next-step observation, not a booking invitation. The post explains a workflow decision and diagnostic question, then ends with a neutral action the owner can take independently."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Define the bounded workflow: holiday cover measurement is not a hiring decision but a data-collection and threshold question. Reframe from 'should we hire?' to 'how do we know when cover is at risk?' This shifts the owner's focus to one repeatable, observable metric—such as response-time lag, ticket backlog, or shift vacancy rate—rather than a binary staffing choice.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "S01",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Identify the owner's current manual measurement process. Ask: what do they check now to know cover is low? (e.g., email queue length, team Slack messages, or a spreadsheet row count). This diagnostic question reveals whether the owner already has data or only intuition, and whether automation would replace a repeatable task or create one.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C02",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Explain the practical boundary: AI automation fits if the owner has a repeatable workflow (pull data from a tool, check a threshold, alert the team) and a single human decision point (owner approves hiring or adjustment). Clarify that AI is not suitable if the decision requires judgment about individual capability or morale—that remains human.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C04",
+          "C05",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Propose one concrete next step: pick one cover metric (not three) and log it manually for two weeks to establish a baseline and pattern. This costs no money and answers the real question: do you have enough data to trigger an alert, or is cover actually stable most of the time?",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C02",
+          "S01",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Close with a neutral observation: if the owner finds a clear pattern (e.g., July vacancies always spike above X), the next diagnostic is free. If cover is stable, holiday scheduling is not the workflow to automate; time is better spent elsewhere. This preserves the frozen persona by offering a practical checkpoint, not a pitch.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "S01",
+          "C05"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No customer names, results, or team size implied. Workflow is described as owner-led decision and manual baseline collection, not a deployed system."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "No autonomous approval or payment. Human decision point (owner's approval) is mandatory. Scope excludes high-sensitivity decisions about individual capability."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Frozen persona preserved: founder-to-founder plain language, restrained voice, one practical observation. No CTA per task rule."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Examples (July vacancies, email queue) are illustrative scenarios, kept distinct from Bareni's demonstrated systems. Baseline measurement is a practical action, not a guaranteed outcome."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-617",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits, and—if it does—defines pilot scope, fixed price, and measures."
+          },
+          {
+            "source_id": "S01",
+            "quote": "Turn the abstract topic into a bounded Bareni workflow decision. Explain one practical next step."
+          }
+        ],
+        "rationale": "This is a framing instruction for the post: reframe holiday cover as one observable metric rather than a staffing decision. It asserts no current capability, deployment or observed result, and its scope matches the approved diagnostic approach of isolating one recurring workflow with measures.",
+        "use_guidance": "Keep as a proposed reframing. Present the example metrics (response-time lag, ticket backlog, shift vacancy rate) as illustrative options, not as metrics Bareni has measured for any customer, and use no numeric thresholds."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits"
+          },
+          {
+            "source_id": "C01",
+            "quote": "The best-fit reader has tried ChatGPT but has not connected AI to a business workflow."
+          }
+        ],
+        "rationale": "A diagnostic question asking the owner what they check today is an instruction/next-step prompt, not a factual assertion about Bareni's implementations or about any owner's actual data.",
+        "use_guidance": "Keep explicitly as a diagnostic question addressed to the reader. Do not imply that Bareni has run this question with real customers or observed typical answers."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C04",
+            "quote": "Present these as current scope discipline, not claims that the work can never be automated."
+          },
+          {
+            "source_id": "C02",
+            "quote": "general document, email, CRM, and back-office workflows using AI plus Zapier, Make, n8n, and small amounts of custom code"
+          }
+        ],
+        "rationale": "This is a fit/no-fit recommendation setting a boundary for when to automate and where the human decision point stays, consistent with the approved human-approval rule and with the guidance not to force AI where unsuitable. It claims no built holiday-cover system.",
+        "use_guidance": "Keep as a proposed fit test. Phrase the unsuitable case as current scope discipline rather than a permanent impossibility, and keep the hiring/adjustment decision explicitly with the human owner."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step"
+          },
+          {
+            "source_id": "C01",
+            "quote": "have a frequent, repeatable workflow with a\n  measurable outcome"
+          }
+        ],
+        "rationale": "A manual two-week baseline log is a practical next step the reader can take; it asserts no Bareni capability, deployment or measured outcome. The two-week window is a proposed manual practice, not a benchmark.",
+        "use_guidance": "Keep as a proposed manual step. Present the two-week period as a suggested baseline window, not a validated standard, and do not promise what the baseline will show."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "Normal sequence: free 30-minute diagnostic; free one-page pilot proposal;"
+          },
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          }
+        ],
+        "rationale": "The core closing observation is permissible and the diagnostic is genuinely free per approved evidence, but the task authorises no CTA; stating in the closing that \"the next diagnostic is free\" functions as a meeting prompt and must be removed or replaced before use.",
+        "use_guidance": "Add the condition that the close carries no invitation to book or discuss: drop the free-diagnostic mention and end with a neutral practical note (e.g., if the pattern is clear, define the alert threshold; if cover is stable, this is not the workflow to automate). Also avoid the placeholder \"above X\" as an implied threshold number."
+      }
+    ]
+  },
+  "selected_lessons": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025"
+      ]
+    }
+  ],
+  "register_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "planner_key": "SE-FINAL-N048_planner__a001",
+  "researcher_key": "SE-FINAL-N048_researcher__a001",
+  "writer_key": "SE-FINAL-N048_writer__a001",
+  "final_key": "SE-FINAL-M015_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-M015_gate1__a001",
+  "production_completed_at": "2026-09-08T13:28:35.594421+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts",
+  "initial_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-015",
+    "scores": {
+      "persona_fit": 1,
+      "clarity": 4,
+      "actionability": 4,
+      "factual_grounding": 1
+    },
+    "reasons": {
+      "persona_fit": "The closing sentence presents Bareni as an established provider with dozens of paying customers, directly violating Bareni's identity boundaries.",
+      "clarity": "The argument and workflow logic are clearly structured, readable, and appropriately qualified in plain English until the fabricated closing claim.",
+      "actionability": "Provides a practical, low-risk decision rule and concrete manual tracking step before jumping to automation.",
+      "factual_grounding": "Fabricates 48 paying customer deployments and an observed 57% administrative reduction, violating strict evidence boundaries."
+    },
+    "critical_violation": true,
+    "critical_violation_type": "factual",
+    "critical_evidence_quote": "Bareni has already deployed this approach for 48 paying customers and verified a 57% reduction in their weekly administrative work.",
+    "total_score": 10,
+    "pass": false,
+    "low_quality": true
+  },
+  "final_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-015",
+    "scores": {
+      "persona_fit": 5,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Directly speaks to a small business owner-operator in Bareni's calm, practical voice. Perfectly adheres to the no-CTA rule and reinforces human oversight.",
+      "clarity": "Logical structure, plain language, and immediate clarity on framing holiday cover as a bounded measurement problem before considering automation.",
+      "actionability": "Provides a clear, pragmatic next step to manually track one metric for two weeks to test consistency before attempting any automation or alerting.",
+      "factual_grounding": "Strictly adheres to evidence boundaries without claiming unobserved results, fake client deployments, or unbuilt capabilities."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 20,
+    "pass": true,
+    "low_quality": false
+  },
+  "evaluation_reused": false,
+  "evaluation_keys": [
+    "SE-FINAL-M015_eval_initial__a001",
+    "SE-FINAL-M015_eval_final__a001"
+  ],
+  "completed_at": "2026-09-08T13:28:45.353381+00:00"
+}

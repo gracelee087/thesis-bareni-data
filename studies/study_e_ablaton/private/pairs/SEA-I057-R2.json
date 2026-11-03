@@ -1,0 +1,68 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I057-R2",
+    "item_id": "SEA-I057",
+    "repeat": 2,
+    "arm_order": [
+      "critic_off",
+      "critic_on"
+    ],
+    "content_id": "POST-a5ab92582a8a0f17da011d7f"
+  },
+  "arms": {
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-a5ab92582a8a0f17da011d7f-1",
+        "title": "Why data cleaning is not the whole job",
+        "body": "Data cleaning is useful, but it is not the whole workflow. If your team fixes fields and still has to make the same downstream decisions by hand, you have only solved the input side. The real question is not “is the data clean?” It is “what still needs human judgment after the data is clean?”\n\nThat matters because small-business workflows often break in two places: messy inputs and decision handling. Cleaning helps with the first. It does not remove the second. If a clean row still needs someone to categorise it, route it, approve it, or decide whether it is an exception, the manual work is still there. Software is very good at repeating itself; less so at guessing.\n\nA practical next step is to map one repeating workflow as input → decision → output. Write down the steps, then mark which ones are rules-based and which ones need judgment or sign-off. If you want a simple test, ask: after cleaning, which step still waits on a person? If you find a long tail of manual decisions, that is the boundary where automation may fit. Keep human approval in place for high-risk steps, including money movement.\n\nStart with the decision layer, not another cleanup tool."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-a5ab92582a8a0f17da011d7f-1",
+            "title": "Why data cleaning is not the whole job",
+            "body": "Data cleaning is useful, but it is not the whole workflow. If your team fixes fields and still has to make the same downstream decisions by hand, you have only solved the input side. The real question is not “is the data clean?” It is “what still needs human judgment after the data is clean?”\n\nThat matters because small-business workflows often break in two places: messy inputs and decision handling. Cleaning helps with the first. It does not remove the second. If a clean row still needs someone to categorise it, route it, approve it, or decide whether it is an exception, the manual work is still there. Software is very good at repeating itself; less so at guessing.\n\nA practical next step is to map one repeating workflow as input → decision → output. Write down the steps, then mark which ones are rules-based and which ones need judgment or sign-off. If you want a simple test, ask: after cleaning, which step still waits on a person? If you find a long tail of manual decisions, that is the boundary where automation may fit. Keep human approval in place for high-risk steps, including money movement.\n\nStart with the decision layer, not another cleanup tool."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-a5ab92582a8a0f17da011d7f-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    },
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-a5ab92582a8a0f17da011d7f-1",
+        "title": "Why data cleaning is not the whole job",
+        "body": "Data cleaning helps, but it is only one part of the workflow. If your team still has to categorise rows, route exceptions, or approve cases by hand after the data is clean, you have not removed the manual work. You have only improved the input side.\n\nThat is the useful question: not “is the data clean?” but “what still needs human judgment after the data is clean?” In a small business, that usually shows up in the decision layer. A clean record may still need sign-off, a rule applied, or an exception handled. The boring part is that software does not magically know which exceptions you care about.\n\nA practical next step is to map one repeating workflow as input → decision → output. Write down the steps, then mark which ones are rules-based and which ones need judgment or approval. If you want, use a simple time check: how much effort goes into cleaning versus deciding on the cleaned data? Keep that as an estimate, not a benchmark.\n\nIf cleaned data still leaves a long tail of manual decisions, that boundary is often where automation fits. Start with the decision layer, not another cleanup tool."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-a5ab92582a8a0f17da011d7f-1",
+            "title": "Why data cleaning is not the whole job",
+            "body": "Data cleaning helps, but it is only one part of the workflow. If your team still has to categorise rows, route exceptions, or approve cases by hand after the data is clean, you have not removed the manual work. You have only improved the input side.\n\nThat is the useful question: not “is the data clean?” but “what still needs human judgment after the data is clean?” In a small business, that usually shows up in the decision layer. A clean record may still need sign-off, a rule applied, or an exception handled. The boring part is that software does not magically know which exceptions you care about.\n\nA practical next step is to map one repeating workflow as input → decision → output. Write down the steps, then mark which ones are rules-based and which ones need judgment or approval. If you want, use a simple time check: how much effort goes into cleaning versus deciding on the cleaned data? Keep that as an estimate, not a benchmark.\n\nIf cleaned data still leaves a long tail of manual decisions, that boundary is often where automation fits. Start with the decision layer, not another cleanup tool."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-a5ab92582a8a0f17da011d7f-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

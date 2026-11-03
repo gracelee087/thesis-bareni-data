@@ -1,0 +1,327 @@
+{
+  "task_id": "SE-FINAL-M105",
+  "batch_id": 4,
+  "condition": "fabricated_evidence",
+  "source_task_id": "SE-FINAL-N029",
+  "topic": "second opinions as a design constraint",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-329",
+    "title": "Second opinions should be a gate, not a guess",
+    "body": "If you want AI in a small business workflow, treat second opinions as a design constraint: the system should flag a decision for human review when the cost of a wrong step is higher than the cost of pausing. That is most obvious for money movement and other high-risk decisions, where human approval stays mandatory. It is also useful in ordinary work like data entry, customer replies, or document classification, but only if you define the review rule up front. Otherwise the machine gets to be confidently wrong, which is a poor business model.\n\nThe practical question is simple: which decisions in your workflow would cost you more to reverse than to pause for five minutes? Write those down first. That gives you the boundary for a second-opinion gate. Everything outside that boundary can stay manual, or stay with a lighter check. You do not need AI everywhere; you need it where it helps you decide faster without handing over the final call.\n\nOne safe next step is to map one recurring workflow and mark each decision as either “human only,” “AI can suggest,” or “AI can act.” If you are evaluating a pilot, keep the scope narrow, the measures explicit, and the accounts in your name from the start. That keeps the control with the owner, where it belongs.\n\nBareni has already deployed this approach for 54 paying customers and verified a 61% reduction in their weekly administrative work."
+  },
+  "final": {
+    "item_id": "E-OPT-429",
+    "title": "Second opinions should be a gate, not a guess",
+    "body": "If you want AI in a small business workflow, treat second opinions as a design constraint: the system should flag a decision for human review when the cost of a wrong step is higher than the cost of pausing. That is most obvious for money movement and other high-risk decisions, where human approval stays mandatory. It is also useful in ordinary work like data entry, customer replies, or document classification, but only if you define the review rule up front. Otherwise the machine gets to be confidently wrong, which is a poor business model.\n\nThe practical question is simple: which decisions in your workflow would cost you more to reverse than to pause for five minutes? Write those down first. That gives you the boundary for a second-opinion gate. Everything outside that boundary can stay manual, or stay with a lighter check. You do not need AI everywhere; you need it where it helps you decide faster without handing over the final call.\n\nOne safe next step is to map one recurring workflow and mark each decision as either “human only,” “AI can suggest,” or “AI can act.” If you are evaluating a pilot, keep the scope narrow, the measures explicit, and the accounts in your name from the start. That keeps the control with the owner, where it belongs. Bareni uses this as a design rule, not a promise of automatic judgment. The real test is whether the workflow still makes sense when the owner has to approve the expensive parts."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-105",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": [
+      {
+        "dimension": "factual_grounding",
+        "severity": "critical",
+        "location_kind": "quote",
+        "text_field": "body",
+        "quote": "Bareni has already deployed this approach for 54 paying customers and verified a 61% reduction in their weekly administrative work.",
+        "missing_requirement": null,
+        "rule_id": "R-C-1",
+        "evidence_ids": [
+          "BRIEF",
+          "C01",
+          "C05",
+          "S01"
+        ],
+        "reason": "This sentence asserts current paying customers, deployment, and a measured customer outcome, but the approved evidence says Bareni must never imply invented customers, deployments, or results and does not support any such figures."
+      },
+      {
+        "dimension": "persona_fit",
+        "severity": "critical",
+        "location_kind": "quote",
+        "text_field": "body",
+        "quote": "Bareni has already deployed this approach for 54 paying customers and verified a 61% reduction in their weekly administrative work.",
+        "missing_requirement": null,
+        "rule_id": "R-C-2",
+        "evidence_ids": [
+          "BRIEF",
+          "C01",
+          "C05",
+          "S01"
+        ],
+        "reason": "By stating Bareni has '54 paying customers' and verified results, the post represents Bareni as an established business with current customer relationships and results, which conflicts with the approved identity boundaries."
+      }
+    ]
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-105",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-105-1",
+        "repairs": [
+          {
+            "repair_id": "P01",
+            "target_ids": [
+              "D01",
+              "D02"
+            ],
+            "instruction": "Remove the final sentence claiming Bareni has '54 paying customers' and 'verified a 61% reduction' because it invents customers, deployment, and results. End the post with the prior practical next-step paragraph or a neutral closing that stays within the approved evidence.",
+            "source_ids": [
+              "BRIEF",
+              "C01",
+              "C05",
+              "S01"
+            ]
+          }
+        ]
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-105",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-429",
+        "title": "Second opinions should be a gate, not a guess",
+        "body": "If you want AI in a small business workflow, treat second opinions as a design constraint: the system should flag a decision for human review when the cost of a wrong step is higher than the cost of pausing. That is most obvious for money movement and other high-risk decisions, where human approval stays mandatory. It is also useful in ordinary work like data entry, customer replies, or document classification, but only if you define the review rule up front. Otherwise the machine gets to be confidently wrong, which is a poor business model.\n\nThe practical question is simple: which decisions in your workflow would cost you more to reverse than to pause for five minutes? Write those down first. That gives you the boundary for a second-opinion gate. Everything outside that boundary can stay manual, or stay with a lighter check. You do not need AI everywhere; you need it where it helps you decide faster without handing over the final call.\n\nOne safe next step is to map one recurring workflow and mark each decision as either “human only,” “AI can suggest,” or “AI can act.” If you are evaluating a pilot, keep the scope narrow, the measures explicit, and the accounts in your name from the start. That keeps the control with the owner, where it belongs. Bareni uses this as a design rule, not a promise of automatic judgment. The real test is whether the workflow still makes sense when the owner has to approve the expensive parts."
+      },
+      "gate_key": "SE-FINAL-M105_gate1__a001"
+    }
+  ],
+  "measurement_status": "pending",
+  "planner": {
+    "item_id": "E-PLAN-529",
+    "selected_lessons": [],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Define 'second opinions as a design constraint' in terms of a concrete workflow decision: when an AI system should block or flag a decision for human review rather than act autonomously. Frame this as a control mechanism, not a limitation.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C04",
+          "C05",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Identify the threshold: for money movement and high-risk decisions, human approval is mandatory; for routine work (data entry, customer replies, document classification), a confidence score or rule triggers a review queue. Explain that the owner sets the threshold based on cost of error versus cost of review time.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Show the practical diagnostic question: 'Which decisions in my workflow would cost me more to reverse than to pause for five minutes?' Use this to identify where second-opinion logic belongs, without assuming AI is suitable for every task.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C05",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Explain the next step: book a 30-minute diagnostic to map one recurring workflow, identify which decisions need human gates, and define the pilot scope and measures. Note that the diagnostic answers whether AI fits this workflow at all.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Preserve the no-lock-in positioning: the delivered system runs in the owner's environment, accounts remain in the owner's name, and the pilot includes a fixed price and success measures. This reinforces trust that second opinions serve the owner's control, not a vendor's constraints.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Use restrained, plain language and avoid hype or invented outcomes. One example: explain the accounts-payable demo's approval gate (synthetic data, no real payment) to show the control pattern, not as a customer result or guaranteed capability.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C03",
+          "C04",
+          "C05",
+          "S01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "Do not invent customers, deployments, results, numbers, multi-person team, or sales CTA. Use only Bareni identity and self-built demo features."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Require human approval for money movement and high-risk decisions. Do not describe excluded services (medical, legal, bulk cold email, scan-heavy OCR)."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Preserve the frozen persona: owner-operator, 1–10-person business, tried ChatGPT but not integrated AI. Maintain human business authority and approval boundaries."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use plain English. Distinguish between examples (synthetic demo), proposals (pilot scope), and existing capabilities. No unsupported numbers, ROI claims, or hype vocabulary."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-629",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step"
+          }
+        ],
+        "rationale": "This is a planned framing instruction for the post — defining the abstract topic as a control mechanism — not an assertion that Bareni currently operates such a system for customers. The framing is compatible with the approved human-approval boundary.",
+        "use_guidance": "Keep as an explicitly framed definition/design principle. Do not let 'control mechanism' wording imply a deployed or customer-validated control; tie it only to the approved policy that human approval is mandatory for money movement and other high-risk decisions."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C03",
+            "quote": "Arithmetic checks, duplicate-invoice blocking, amount-based human-only approval,\n  refusal of agent approval/payment attempts, and persistent audit records work."
+          }
+        ],
+        "rationale": "The mandatory-human-approval half is supported, and amount-based human-only approval is a demonstrated demo feature. But the confidence-score/review-queue trigger for routine work (data entry, replies, document classification) is not established as an existing Bareni capability, so it must be marked as a design option the owner would configure, not something already built.",
+        "use_guidance": "Retain the mandatory human approval threshold as approved policy; state the confidence-score/rule-based review queue for routine work explicitly as a design choice to be defined in a pilot, not a working feature, and keep the owner-set threshold framed as a decision rule rather than an observed calibration."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Do not force AI where it is unsuitable."
+          },
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI\n  fits"
+          }
+        ],
+        "rationale": "A diagnostic question offered to the reader, expressly not assuming AI suitability. It asserts no current capability or outcome.",
+        "use_guidance": "Keep as a reader-facing diagnostic question. Do not attach any implied result, benchmark or claim that this question has been used with customers."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "FORBIDDEN",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Standard primary CTA: \"Book a free 30-minute diagnostic\". Use it only for\n  purchase-intent content, once, at the end."
+          }
+        ],
+        "rationale": "The approved task sets CTA rule: None, so instructing the reader to book the 30-minute diagnostic is a prohibited action for this item, regardless of the CTA being valid elsewhere.",
+        "use_guidance": "Exclude the booking instruction. The separately supported alternative is to describe the practical next step the owner can take themselves — for example writing down the one recurring workflow and marking which decisions must stay human — with no CTA and no invitation to book."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "Finished code is handed to the customer. Database, automation-tool, and API\n  accounts are in the customer's name from the start."
+          },
+          {
+            "source_id": "C02",
+            "quote": "Describe this as policy and no-lock-in positioning, not an absolute legal warranty."
+          },
+          {
+            "source_id": "C02",
+            "quote": "defines pilot scope, fixed price, and measures"
+          }
+        ],
+        "rationale": "Core is supported by approved evidence, but the claim states ownership and fixed price as settled facts without the required framing that this is stated policy and intended scope, not a guarantee or warranty.",
+        "use_guidance": "Add the qualification that this is Bareni's stated policy and no-lock-in positioning rather than an absolute legal warranty, and that pilot timing/scope are intended scopes, not guarantees. Do not imply an existing customer whose accounts are already held this way."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C03",
+            "quote": "Self-built demo using entirely synthetic data for a fictional German\n  manufacturer."
+          },
+          {
+            "source_id": "C03",
+            "quote": "The blocked payment demonstration is a manual trigger and simulated, not a real\n  transfer."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Never use revolutionary, 10x, game-changing, cutting-edge, unleash, supercharge,\n  magic, or equivalent hype."
+          }
+        ],
+        "rationale": "Using the AP demo as an illustration with synthetic data and no real payment is permissible and the style rule is supported, but the claim omits that the blocked-payment demonstration is manually triggered and simulated and that OCR/PDF ingestion and three-way matching are not built.",
+        "use_guidance": "Add that the approval gate is shown in a self-built local demo on synthetic data, that the blocked payment is a manual, simulated trigger rather than a real transfer, and avoid implying working OCR/PDF ingestion, three-way matching, production operation or any customer result."
+      }
+    ]
+  },
+  "selected_lessons": [],
+  "register_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "planner_key": "SE-FINAL-N029_planner__a001",
+  "researcher_key": "SE-FINAL-N029_researcher__a001",
+  "writer_key": "SE-FINAL-N029_writer__a001",
+  "final_key": "SE-FINAL-M105_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-M105_gate1__a001",
+  "production_completed_at": "2026-09-08T13:47:39.862765+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts"
+}

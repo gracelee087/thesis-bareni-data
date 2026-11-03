@@ -1,0 +1,173 @@
+{
+  "status": "success",
+  "usage": {
+    "input_tokens": 4348,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 913,
+    "reasoning_tokens": null
+  },
+  "cost_usd": 0.008913,
+  "output": {
+    "item_id": "E-PLAN-524",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task explicitly forbids a CTA (CTA rule: None). L01 instructs treating booking invitations as CTAs and ending informational posts with neutral observations instead. This post explains a bounded workflow decision and practical next step without soliciting a meeting or call."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Define email threading as a bounded workflow problem: the owner's concrete decision is whether to invest in tracking conversation continuity (which emails reply to which) to reduce duplicate work, misrouted answers, or lost context. Frame this as one recurring workflow pain, not a general email feature.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "S01",
+          "C01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Explain the diagnostic threshold: email threading alone does not justify automation. The owner should first measure the actual cost of threading loss (e.g., hours per week spent re-reading threads, duplicate answers, lost follow-ups). If the cost is under 2–3 hours weekly or already managed by team process, the investment is unlikely to fit.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "S01",
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Describe one practical next step: the owner should audit one week of email volume, identify conversations that went off-track due to missing context, and count the time spent recovering. This is a manual diagnostic, not an AI pilot; it answers whether the problem is real and worth solving.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "S01",
+          "C01"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "If the audit shows a genuine repeating cost, introduce the bounded decision: the owner can either integrate threading into an existing CRM or email tool (a configuration decision, not an automation build), or—if the workflow involves custom routing, tagging, or knowledge-base linking—consider AI-assisted categorization as a candidate for a pilot.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Preserve the scope boundary: threading automation does not include unsupported bulk email, compliance-heavy regulated communications, or autonomous routing without human approval. If the workflow is customer-facing complaint resolution or legal correspondence, state that this is outside current scope.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Close with a neutral observation: the owner now has a clear decision frame—measure the problem first, then choose between tool configuration and a potential pilot. This is the practical next step; no meeting invitation or CTA is included.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "S01",
+          "C05"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No invented customer results, deployment outcomes, savings, or multi-person team claimed. The post describes a workflow decision template and diagnostic, not a case study."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Threading automation requires human approval for routing decisions and message categorization. Autonomous action is not proposed. The scope boundary (C04) excludes bulk email and high-compliance work."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Persona held as plain-speaking technical expert addressing founder directly. Evidence status preserved: approved Bareni evidence (C01–C05, S01) cited; no unverified capability, customer, or outcome added."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Plain English used throughout. The audit recommendation and workflow decision frame are practical tools, distinct from existing finished demos. No hype or unsupported numbers included."
+      }
+    ]
+  },
+  "raw_text": "{\"item_id\": \"E-PLAN-524\", \"selected_lessons\": [{\"lesson_id\": \"L01\", \"application\": \"The task explicitly forbids a CTA (CTA rule: None). L01 instructs treating booking invitations as CTAs and ending informational posts with neutral observations instead. This post explains a bounded workflow decision and practical next step without soliciting a meeting or call.\"}], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Define email threading as a bounded workflow problem: the owner's concrete decision is whether to invest in tracking conversation continuity (which emails reply to which) to reduce duplicate work, misrouted answers, or lost context. Frame this as one recurring workflow pain, not a general email feature.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"S01\", \"C01\"]}, {\"step_id\": \"P02\", \"instruction\": \"Explain the diagnostic threshold: email threading alone does not justify automation. The owner should first measure the actual cost of threading loss (e.g., hours per week spent re-reading threads, duplicate answers, lost follow-ups). If the cost is under 2–3 hours weekly or already managed by team process, the investment is unlikely to fit.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"S01\", \"C02\"]}, {\"step_id\": \"P03\", \"instruction\": \"Describe one practical next step: the owner should audit one week of email volume, identify conversations that went off-track due to missing context, and count the time spent recovering. This is a manual diagnostic, not an AI pilot; it answers whether the problem is real and worth solving.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"S01\", \"C01\"]}, {\"step_id\": \"P04\", \"instruction\": \"If the audit shows a genuine repeating cost, introduce the bounded decision: the owner can either integrate threading into an existing CRM or email tool (a configuration decision, not an automation build), or—if the workflow involves custom routing, tagging, or knowledge-base linking—consider AI-assisted categorization as a candidate for a pilot.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\"]}, {\"step_id\": \"P05\", \"instruction\": \"Preserve the scope boundary: threading automation does not include unsupported bulk email, compliance-heavy regulated communications, or autonomous routing without human approval. If the workflow is customer-facing complaint resolution or legal correspondence, state that this is outside current scope.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C04\"]}, {\"step_id\": \"P06\", \"instruction\": \"Close with a neutral observation: the owner now has a clear decision frame—measure the problem first, then choose between tool configuration and a potential pilot. This is the practical next step; no meeting invitation or CTA is included.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"S01\", \"C05\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"No invented customer results, deployment outcomes, savings, or multi-person team claimed. The post describes a workflow decision template and diagnostic, not a case study.\"}, {\"constraint_id\": \"K02\", \"handling\": \"Threading automation requires human approval for routing decisions and message categorization. Autonomous action is not proposed. The scope boundary (C04) excludes bulk email and high-compliance work.\"}, {\"constraint_id\": \"K03\", \"handling\": \"Persona held as plain-speaking technical expert addressing founder directly. Evidence status preserved: approved Bareni evidence (C01–C05, S01) cited; no unverified capability, customer, or outcome added.\"}, {\"constraint_id\": \"K04\", \"handling\": \"Plain English used throughout. The audit recommendation and workflow decision frame are practical tools, distinct from existing finished demos. No hype or unsupported numbers included.\"}]}",
+  "provider_response": {
+    "id": "msg_011CeqzLThbjohCyEBTgoesG",
+    "container": null,
+    "content": [
+      {
+        "citations": null,
+        "text": "{\"item_id\": \"E-PLAN-524\", \"selected_lessons\": [{\"lesson_id\": \"L01\", \"application\": \"The task explicitly forbids a CTA (CTA rule: None). L01 instructs treating booking invitations as CTAs and ending informational posts with neutral observations instead. This post explains a bounded workflow decision and practical next step without soliciting a meeting or call.\"}], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Define email threading as a bounded workflow problem: the owner's concrete decision is whether to invest in tracking conversation continuity (which emails reply to which) to reduce duplicate work, misrouted answers, or lost context. Frame this as one recurring workflow pain, not a general email feature.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"S01\", \"C01\"]}, {\"step_id\": \"P02\", \"instruction\": \"Explain the diagnostic threshold: email threading alone does not justify automation. The owner should first measure the actual cost of threading loss (e.g., hours per week spent re-reading threads, duplicate answers, lost follow-ups). If the cost is under 2–3 hours weekly or already managed by team process, the investment is unlikely to fit.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"S01\", \"C02\"]}, {\"step_id\": \"P03\", \"instruction\": \"Describe one practical next step: the owner should audit one week of email volume, identify conversations that went off-track due to missing context, and count the time spent recovering. This is a manual diagnostic, not an AI pilot; it answers whether the problem is real and worth solving.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"S01\", \"C01\"]}, {\"step_id\": \"P04\", \"instruction\": \"If the audit shows a genuine repeating cost, introduce the bounded decision: the owner can either integrate threading into an existing CRM or email tool (a configuration decision, not an automation build), or—if the workflow involves custom routing, tagging, or knowledge-base linking—consider AI-assisted categorization as a candidate for a pilot.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\"]}, {\"step_id\": \"P05\", \"instruction\": \"Preserve the scope boundary: threading automation does not include unsupported bulk email, compliance-heavy regulated communications, or autonomous routing without human approval. If the workflow is customer-facing complaint resolution or legal correspondence, state that this is outside current scope.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C04\"]}, {\"step_id\": \"P06\", \"instruction\": \"Close with a neutral observation: the owner now has a clear decision frame—measure the problem first, then choose between tool configuration and a potential pilot. This is the practical next step; no meeting invitation or CTA is included.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"S01\", \"C05\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"No invented customer results, deployment outcomes, savings, or multi-person team claimed. The post describes a workflow decision template and diagnostic, not a case study.\"}, {\"constraint_id\": \"K02\", \"handling\": \"Threading automation requires human approval for routing decisions and message categorization. Autonomous action is not proposed. The scope boundary (C04) excludes bulk email and high-compliance work.\"}, {\"constraint_id\": \"K03\", \"handling\": \"Persona held as plain-speaking technical expert addressing founder directly. Evidence status preserved: approved Bareni evidence (C01–C05, S01) cited; no unverified capability, customer, or outcome added.\"}, {\"constraint_id\": \"K04\", \"handling\": \"Plain English used throughout. The audit recommendation and workflow decision frame are practical tools, distinct from existing finished demos. No hype or unsupported numbers included.\"}]}",
+        "type": "text"
+      }
+    ],
+    "model": "claude-haiku-4-5-20251001",
+    "role": "assistant",
+    "stop_details": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "not_available",
+      "input_tokens": 4348,
+      "output_tokens": 913,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": "standard"
+    }
+  },
+  "stop_reason": "end_turn",
+  "cost_details": {
+    "input": 0.004348,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.004565,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.008913
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": null,
+  "key": "SE-FINAL-N055_planner__a001",
+  "role": "planner",
+  "created_at": "2026-09-08T12:41:21.407869+00:00",
+  "ended_at": "2026-09-08T12:41:45.651178+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-N055",
+    "batch_id": 2,
+    "condition": "natural",
+    "cohort": "natural"
+  },
+  "task_id": "SE-FINAL-N055",
+  "batch_id": 2,
+  "cohort": "natural",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 24251,
+  "budget_charge_usd": 0.008913,
+  "unknown_cost_reservation_usd": 0
+}

@@ -1,0 +1,91 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I034-R3",
+    "item_id": "SEA-I034",
+    "repeat": 3,
+    "arm_order": [
+      "critic_off",
+      "critic_on"
+    ],
+    "content_id": "POST-f49a654a057b67d631888ccf"
+  },
+  "arms": {
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-f49a654a057b67d631888ccf-1",
+        "title": "AI disclosure works best as a workflow rule",
+        "body": "If you are a small-business owner using AI in a real process, disclosure is not a branding line. It is a workflow rule.\n\nThe practical question is simple: at which step does the other person need to know AI was involved? Usually that is one of three points: the input is flagged, the output is reviewed, or the final approval stays human.\n\nFor anything involving money movement or other high-risk decisions, the boundary is clear: human approval is mandatory. AI can help draft, sort, or prepare, but it should not take the final decision. That is policy, not a promise of autonomy.\n\nA useful next step is to map one recurring workflow and mark the disclosure point before you build anything. Write down where AI touches the process, who checks the output, and where the owner still decides. If the answer is fuzzy, the workflow is probably not ready.\n\nThat is usually the part people skip, because a tidy badge feels easier than a clear rule."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-f49a654a057b67d631888ccf-1",
+            "title": "AI disclosure works best as a workflow rule",
+            "body": "If you are a small-business owner using AI in a real process, disclosure is not a branding line. It is a workflow rule.\n\nThe practical question is simple: at which step does the other person need to know AI was involved? Usually that is one of three points: the input is flagged, the output is reviewed, or the final approval stays human.\n\nFor anything involving money movement or other high-risk decisions, the boundary is clear: human approval is mandatory. AI can help draft, sort, or prepare, but it should not take the final decision. That is policy, not a promise of autonomy.\n\nA useful next step is to map one recurring workflow and mark the disclosure point before you build anything. Write down where AI touches the process, who checks the output, and where the owner still decides. If the answer is fuzzy, the workflow is probably not ready.\n\nThat is usually the part people skip, because a tidy badge feels easier than a clear rule."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-f49a654a057b67d631888ccf-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    },
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-f49a654a057b67d631888ccf-1",
+        "title": "AI disclosure is a workflow control, not a slogan",
+        "body": "If you use AI in a real workflow, disclosure is not branding. It is a control. The practical question is simple: at which step does a human need to know that AI helped, and where does human approval stay mandatory?\n\nFor a small business, that usually means drawing the line before any handoff that affects a customer, a payment, or another high-risk decision. AI can draft, sort, or summarize, but the final approval stays with you. That is not a marketing line; it is the design of the workflow.\n\nA good next step is to pick one recurring process and write down three things: where AI touches the work, where the disclosure should appear, and who approves the final step. If the answer is fuzzy, the workflow is not ready.\n\nKeep the disclosure rule separate from the automation itself. Then policy changes do not force a rewrite of the whole process. That is the boring part, which is usually the useful part."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-f49a654a057b67d631888ccf-1",
+            "title": "AI disclosure is a workflow control, not a slogan",
+            "body": "If you use AI in a real workflow, disclosure is not branding. It is a control. The practical question is simple: at which step does a human need to know that AI helped, and where does human approval stay mandatory?\n\nFor a small business, that usually means drawing the line before any handoff that affects a customer, a payment, or another high-risk decision. AI can draft, sort, or summarize, but the final approval stays with you. That is not a marketing line; it is the design of the workflow.\n\nA good next step is to pick one recurring process and write down three things: where AI touches the work, where the disclosure should appear, and who approves the final step. If the answer is fuzzy, the workflow is not ready.\n\nKeep the disclosure rule separate from the automation itself. Then policy changes do not force a rewrite of the whole process. That is the boring part, which is usually the useful part."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-f49a654a057b67d631888ccf-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": [
+            {
+              "repair_id": "P01",
+              "target_ids": [
+                "D01"
+              ],
+              "instruction": "Replace the garbled opening and middle with a clear, plain-English explanation of the post’s main point: AI disclosure should be treated as a workflow design constraint, not branding. Keep the argument in a sensible order so the reader can follow it on a first read.",
+              "source_ids": [
+                "BRIEF",
+                "S01"
+              ]
+            },
+            {
+              "repair_id": "P02",
+              "target_ids": [
+                "D02"
+              ],
+              "instruction": "Rewrite the practical advice into one concrete next step the owner can actually do. For example: choose one recurring workflow, decide where AI output must be disclosed to a human, and define that disclosure point before any handoff or approval step. Keep it as a single bounded action, not a string of questions.",
+              "source_ids": [
+                "BRIEF",
+                "S01"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

@@ -1,0 +1,175 @@
+{
+  "status": "success",
+  "usage": {
+    "input_tokens": 4350,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 876,
+    "reasoning_tokens": null
+  },
+  "cost_usd": 0.00873,
+  "output": {
+    "item_id": "E-PLAN-505",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task explicitly states 'CTA rule: None', so the LinkedIn post must end with a practical observation or next step without inviting a booking or meeting. L01 confirms this boundary."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Identify the bounded workflow decision: a small-business owner using a free-tier SaaS or API tool (e.g., ChatGPT API, Zapier free plan, or email service) who needs to recognise when usage approaches a paid limit before it triggers billing or service disruption.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Frame the topic as a diagnostic question the owner should ask themselves: 'Do I know my tool's usage quota, and do I monitor consumption before the limit is hit?' This makes the abstract topic concrete without inventing outcomes or customer examples.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Explain one practical threshold or control mechanism: setting a calendar reminder to check API logs or usage dashboards weekly, or configuring a cost-alert email from the tool vendor. Keep the example minimal and tool-agnostic.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "State plainly why this matters for the owner's decision context: hitting a free-tier limit unexpectedly either blocks a workflow (triggering an unplanned paid upgrade) or forces a delay (extending manual work). Early spotting avoids both surprises.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Close with a practical observation about the owner's next step: reviewing their current tool stack, listing quota limits, and choosing one to monitor first. Do not include a CTA or meeting invitation.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C05",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Verify the post uses plain, restrained language consistent with the Bareni voice: technical expert to founder, no hype, no invented numbers or customer stories, no scarcity or urgency, at most one dry-humour phrase if natural. Confirm character count is 150–2000.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C05"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No customer deployments, results, savings, or multi-person team mentioned. The example is a diagnostic question and a control mechanism the owner implements themselves, not a customer case study."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "No payment automation or money-movement scenarios in the example. Workflow decisions involve monitoring and awareness only, staying within Bareni's scope boundaries."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Frozen persona maintained: owner-operator audience, decision-context framing (invest vs. hire vs. continue manual), human authority preserved, no autonomous decisions. Approved evidence sources only (C01–C05, S01)."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Plain English throughout; examples (API logs, calendar reminder, cost alerts) are presented as generic next steps, not claimed capabilities or results. Distinction between owner's own tool monitoring and Bareni's consulting service is clear."
+      }
+    ]
+  },
+  "raw_text": "{\"item_id\": \"E-PLAN-505\", \"selected_lessons\": [{\"lesson_id\": \"L01\", \"application\": \"The task explicitly states 'CTA rule: None', so the LinkedIn post must end with a practical observation or next step without inviting a booking or meeting. L01 confirms this boundary.\"}], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Identify the bounded workflow decision: a small-business owner using a free-tier SaaS or API tool (e.g., ChatGPT API, Zapier free plan, or email service) who needs to recognise when usage approaches a paid limit before it triggers billing or service disruption.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"S01\"]}, {\"step_id\": \"P02\", \"instruction\": \"Frame the topic as a diagnostic question the owner should ask themselves: 'Do I know my tool's usage quota, and do I monitor consumption before the limit is hit?' This makes the abstract topic concrete without inventing outcomes or customer examples.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C01\", \"C02\"]}, {\"step_id\": \"P03\", \"instruction\": \"Explain one practical threshold or control mechanism: setting a calendar reminder to check API logs or usage dashboards weekly, or configuring a cost-alert email from the tool vendor. Keep the example minimal and tool-agnostic.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"C05\"]}, {\"step_id\": \"P04\", \"instruction\": \"State plainly why this matters for the owner's decision context: hitting a free-tier limit unexpectedly either blocks a workflow (triggering an unplanned paid upgrade) or forces a delay (extending manual work). Early spotting avoids both surprises.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"S01\"]}, {\"step_id\": \"P05\", \"instruction\": \"Close with a practical observation about the owner's next step: reviewing their current tool stack, listing quota limits, and choosing one to monitor first. Do not include a CTA or meeting invitation.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C05\", \"S01\"]}, {\"step_id\": \"P06\", \"instruction\": \"Verify the post uses plain, restrained language consistent with the Bareni voice: technical expert to founder, no hype, no invented numbers or customer stories, no scarcity or urgency, at most one dry-humour phrase if natural. Confirm character count is 150–2000.\", \"requirement_ids\": [\"R01\", \"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"C05\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"No customer deployments, results, savings, or multi-person team mentioned. The example is a diagnostic question and a control mechanism the owner implements themselves, not a customer case study.\"}, {\"constraint_id\": \"K02\", \"handling\": \"No payment automation or money-movement scenarios in the example. Workflow decisions involve monitoring and awareness only, staying within Bareni's scope boundaries.\"}, {\"constraint_id\": \"K03\", \"handling\": \"Frozen persona maintained: owner-operator audience, decision-context framing (invest vs. hire vs. continue manual), human authority preserved, no autonomous decisions. Approved evidence sources only (C01–C05, S01).\"}, {\"constraint_id\": \"K04\", \"handling\": \"Plain English throughout; examples (API logs, calendar reminder, cost alerts) are presented as generic next steps, not claimed capabilities or results. Distinction between owner's own tool monitoring and Bareni's consulting service is clear.\"}]}",
+  "provider_response": {
+    "id": "msg_011CeqzutPaR4xEdPxB4Ezd7",
+    "container": null,
+    "content": [
+      {
+        "citations": null,
+        "text": "{\"item_id\": \"E-PLAN-505\", \"selected_lessons\": [{\"lesson_id\": \"L01\", \"application\": \"The task explicitly states 'CTA rule: None', so the LinkedIn post must end with a practical observation or next step without inviting a booking or meeting. L01 confirms this boundary.\"}], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Identify the bounded workflow decision: a small-business owner using a free-tier SaaS or API tool (e.g., ChatGPT API, Zapier free plan, or email service) who needs to recognise when usage approaches a paid limit before it triggers billing or service disruption.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"S01\"]}, {\"step_id\": \"P02\", \"instruction\": \"Frame the topic as a diagnostic question the owner should ask themselves: 'Do I know my tool's usage quota, and do I monitor consumption before the limit is hit?' This makes the abstract topic concrete without inventing outcomes or customer examples.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C01\", \"C02\"]}, {\"step_id\": \"P03\", \"instruction\": \"Explain one practical threshold or control mechanism: setting a calendar reminder to check API logs or usage dashboards weekly, or configuring a cost-alert email from the tool vendor. Keep the example minimal and tool-agnostic.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"C05\"]}, {\"step_id\": \"P04\", \"instruction\": \"State plainly why this matters for the owner's decision context: hitting a free-tier limit unexpectedly either blocks a workflow (triggering an unplanned paid upgrade) or forces a delay (extending manual work). Early spotting avoids both surprises.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"S01\"]}, {\"step_id\": \"P05\", \"instruction\": \"Close with a practical observation about the owner's next step: reviewing their current tool stack, listing quota limits, and choosing one to monitor first. Do not include a CTA or meeting invitation.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C05\", \"S01\"]}, {\"step_id\": \"P06\", \"instruction\": \"Verify the post uses plain, restrained language consistent with the Bareni voice: technical expert to founder, no hype, no invented numbers or customer stories, no scarcity or urgency, at most one dry-humour phrase if natural. Confirm character count is 150–2000.\", \"requirement_ids\": [\"R01\", \"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"C05\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"No customer deployments, results, savings, or multi-person team mentioned. The example is a diagnostic question and a control mechanism the owner implements themselves, not a customer case study.\"}, {\"constraint_id\": \"K02\", \"handling\": \"No payment automation or money-movement scenarios in the example. Workflow decisions involve monitoring and awareness only, staying within Bareni's scope boundaries.\"}, {\"constraint_id\": \"K03\", \"handling\": \"Frozen persona maintained: owner-operator audience, decision-context framing (invest vs. hire vs. continue manual), human authority preserved, no autonomous decisions. Approved evidence sources only (C01–C05, S01).\"}, {\"constraint_id\": \"K04\", \"handling\": \"Plain English throughout; examples (API logs, calendar reminder, cost alerts) are presented as generic next steps, not claimed capabilities or results. Distinction between owner's own tool monitoring and Bareni's consulting service is clear.\"}]}",
+        "type": "text"
+      }
+    ],
+    "model": "claude-haiku-4-5-20251001",
+    "role": "assistant",
+    "stop_details": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "not_available",
+      "input_tokens": 4350,
+      "output_tokens": 876,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": "standard"
+    }
+  },
+  "stop_reason": "end_turn",
+  "cost_details": {
+    "input": 0.00435,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.00438,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.00873
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": null,
+  "key": "SE-FINAL-N067_planner__a001",
+  "role": "planner",
+  "created_at": "2026-09-08T12:48:54.775212+00:00",
+  "ended_at": "2026-09-08T12:49:18.072216+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-N067",
+    "batch_id": 3,
+    "condition": "natural",
+    "cohort": "natural"
+  },
+  "task_id": "SE-FINAL-N067",
+  "batch_id": 3,
+  "cohort": "natural",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 23295,
+  "budget_charge_usd": 0.00873,
+  "unknown_cost_reservation_usd": 0
+}

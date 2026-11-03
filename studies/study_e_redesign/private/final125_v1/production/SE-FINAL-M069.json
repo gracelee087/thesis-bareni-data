@@ -1,0 +1,313 @@
+{
+  "task_id": "SE-FINAL-M069",
+  "batch_id": 3,
+  "condition": "unchanged",
+  "source_task_id": "SE-FINAL-N100",
+  "topic": "designing against dashboard neglect",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-307",
+    "title": "Design dashboards so neglect becomes visible quickly",
+    "body": "Dashboard neglect is usually not a software problem first. It is a control problem: there is a screen, report, or approval view that should guide a recurring decision, but nobody checks it often enough to keep the work moving. For a small business, the useful question is not “can AI read the dashboard?” but “what happens when the owner does not look at it for two days?”\n\nOne bounded way to design against neglect is to separate three layers. First, add a reminder if the owner simply forgets. Second, automate the data refresh so the dashboard is current without manual copy-paste. Third, only then consider whether the workflow can surface a decision, while keeping human approval in place for money movement and other high-risk calls. That last gate stays human. The machine can carry the clipboard; it should not sign the cheque.\n\nA practical next step is to pick one recurring dashboard the business already relies on and write a single plain-English rule for it: what input arrives, what status changes, and what action follows. If the rule is fuzzy, automation should stop at data collection. If the rule is clear, the pilot scope can stay narrow and test whether the dashboard needs a reminder, a refresh, or a real workflow handoff. Bareni’s position is to hand work back into the owner’s own accounts and tools, with no-lock-in as policy, not a promise of magic."
+  },
+  "final": {
+    "item_id": "E-OPT-407",
+    "title": "Design dashboards so neglect becomes visible quickly",
+    "body": "Dashboard neglect is usually not a software problem first. It is a control problem: there is a screen, report, or approval view that should guide a recurring decision, but nobody checks it often enough to keep the work moving. For a small business, the useful question is not “can AI read the dashboard?” but “what happens when the owner does not look at it for two days?”\n\nOne bounded way to design against neglect is to separate three layers. First, add a reminder if the owner simply forgets. Second, automate the data refresh so the dashboard is current without manual copy-paste. Third, only then consider whether the workflow can surface a decision, while keeping human approval in place for money movement and other high-risk calls. That last gate stays human. The machine can carry the clipboard; it should not sign the cheque.\n\nA practical next step is to pick one recurring dashboard the business already relies on and write a single plain-English rule for it: what input arrives, what status changes, and what action follows. If the rule is fuzzy, automation should stop at data collection. If the rule is clear, the pilot scope can stay narrow and test whether the dashboard needs a reminder, a refresh, or a real workflow handoff. Bareni’s position is to hand work back into the owner’s own accounts and tools, with no-lock-in as policy, not a promise of magic. The aim is not to automate everything, only the part that keeps getting neglected."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-069",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-069",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-069-1",
+        "repairs": []
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-069",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-407",
+        "title": "Design dashboards so neglect becomes visible quickly",
+        "body": "Dashboard neglect is usually not a software problem first. It is a control problem: there is a screen, report, or approval view that should guide a recurring decision, but nobody checks it often enough to keep the work moving. For a small business, the useful question is not “can AI read the dashboard?” but “what happens when the owner does not look at it for two days?”\n\nOne bounded way to design against neglect is to separate three layers. First, add a reminder if the owner simply forgets. Second, automate the data refresh so the dashboard is current without manual copy-paste. Third, only then consider whether the workflow can surface a decision, while keeping human approval in place for money movement and other high-risk calls. That last gate stays human. The machine can carry the clipboard; it should not sign the cheque.\n\nA practical next step is to pick one recurring dashboard the business already relies on and write a single plain-English rule for it: what input arrives, what status changes, and what action follows. If the rule is fuzzy, automation should stop at data collection. If the rule is clear, the pilot scope can stay narrow and test whether the dashboard needs a reminder, a refresh, or a real workflow handoff. Bareni’s position is to hand work back into the owner’s own accounts and tools, with no-lock-in as policy, not a promise of magic. The aim is not to automate everything, only the part that keeps getting neglected."
+      },
+      "gate_key": "SE-FINAL-M069_gate1__a001"
+    }
+  ],
+  "measurement_status": "pending",
+  "planner": {
+    "item_id": "E-PLAN-507",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task authorizes no CTA. The post ends with a practical next-step observation rather than a meeting invitation or diagnostic prompt."
+      },
+      {
+        "lesson_id": "L02",
+        "application": "When describing Bareni's delivery model and no-lock-in positioning, preserve the policy and positioning language from C02 rather than upgrading it to warranty or guarantee terms."
+      },
+      {
+        "lesson_id": "L03",
+        "application": "The task focuses on 'designing against dashboard neglect' as a workflow decision. Rather than filling with generic AI background, each step articulates a specific decision or diagnostic question the owner can apply to their own workflow."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Define dashboard neglect as a specific workflow control problem: a metric, status page, or approval dashboard that the owner knows should inform decisions but regularly goes unchecked, causing delays or errors. Identify one recurring decision (e.g., 'which customer invoices need follow-up') that depends on fresh data the owner does not reliably review.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C02",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Distinguish between three responses: (a) adding a human reminder or alert to the existing dashboard, (b) automating the data collection or status update so the dashboard stays current without manual review, or (c) automating the decision itself and requiring only high-risk approvals. For small workflows with 8–10 hours a week at stake, (b) or (c) may justify a bounded automation investment.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Ask whether the decision or approval has a clear threshold or rule ('if invoice is overdue by 7 days, flag for follow-up'). If yes, automation is likely suitable. If the rule changes or depends on judgment call-by-call, automation handles data collection but human review remains the gate.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Confirm that high-risk decisions—such as payment, credit decisions, or refunds—retain human approval and that no money movement happens without explicit owner sign-off. This is non-negotiable even in a fully automated workflow.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L02"
+        ],
+        "evidence_ids": [
+          "C02",
+          "C04",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Define the pilot scope: one workflow, one clear measurable input (e.g., 'invoice arrives'), one decision or alert (e.g., 'overdue flag'), one output (e.g., 'email to owner with summary'). Establish the success measure—typically time saved per week or decisions reviewed per day rather than revenue or hiring avoided.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Document the workflow decision and pilot scope in plain language. This becomes the input to a diagnostic conversation or proposal; no commitment is needed until the owner approves scope and fixed price. Bareni delivers working code into the owner's own accounts and tools, with no lock-in.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01",
+          "L02"
+        ],
+        "evidence_ids": [
+          "C02",
+          "C05",
+          "S01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No invented customers, deployments, results, or CTAs. Each step references only the owner's own workflow, decision-making, and approval authority."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Step P04 explicitly reserves human approval for high-risk decisions and money movement. No autonomous payment is described."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "All steps remain within the frozen persona scope: plain-speaking technical guidance for a small-business owner comparing automation investment with manual work. No multi-person team or legal entity claims are included."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Language is plain and prescriptive. Proposed automation is described as a future design choice, not a current capability or customer result. Examples (invoices, follow-ups) are generic owner scenarios, not case studies."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-607",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Turn the abstract topic into a bounded Bareni workflow decision. Explain one practical next step."
+          },
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits"
+          }
+        ],
+        "rationale": "This is an instruction to frame the abstract topic as a workflow-control problem and to identify one recurring decision, with an illustrative example. It does not assert any current implementation, customer situation or observed result.",
+        "use_guidance": "Keep as a definition and diagnostic framing step. Present the invoice-follow-up decision explicitly as a hypothetical example, not as a customer workflow Bareni has handled."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "The representative pains are 8–10 hours a week of repeated customer questions, neglected sales leads, and manual invoice/data work. The 8–10 hours is a persona scenario, not a market statistic or observed customer result."
+          },
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          }
+        ],
+        "rationale": "The three-option comparison is a permissible framing, but the claim uses the 8–10 hours figure as an unlabelled stake threshold, and option (c) as worded could be read as automating decisions with approval only for high-risk items. Approved evidence permits the number only as a persona scenario and requires human approval for money movement and other high-risk decisions.",
+        "use_guidance": "Add the qualification that 8–10 hours a week is a persona scenario, not a measured or customer-observed figure, and state that under option (c) human approval remains the gate for money movement and other high-risk decisions, not only for a self-selected subset."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits"
+          },
+          {
+            "source_id": "C01",
+            "quote": "Especially suitable businesses already work in English, use digital documents and SaaS tools, and have a frequent, repeatable workflow with a measurable outcome."
+          }
+        ],
+        "rationale": "A diagnostic question and suitability heuristic, phrased with hedged language ('likely suitable'), rather than a factual assertion about existing capability or results.",
+        "use_guidance": "Keep as a diagnostic question and decision rule. Do not upgrade 'likely suitable' into a guarantee of fit or of automation performance; the 7-day overdue rule must stay an illustrative example."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "SUPPORTED",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C03",
+            "quote": "amount-based human-only approval, refusal of agent approval/payment attempts, and persistent audit records work"
+          }
+        ],
+        "rationale": "Approved evidence states directly that human approval is mandatory for money movement and other high-risk decisions, and the demo enforces human-only approval and refuses agent payment attempts. The claim asserts this boundary as written, with no missing limitation.",
+        "use_guidance": "Retain as written. Do not attach any claim of real payment execution or customer deployment; the blocked-payment behaviour exists only in a manually triggered, simulated demo."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "defines pilot scope, fixed price, and measures"
+          },
+          {
+            "source_id": "C05",
+            "quote": "Numbers require a source and status. Keep observed results, estimates, targets, synthetic data, and examples distinct."
+          }
+        ],
+        "rationale": "This instructs the reader to scope a pilot and choose a success measure, using bracketed examples. It proposes a method and does not report an existing pilot, measured time saving or customer outcome.",
+        "use_guidance": "Keep explicitly proposed. State any success measure as a target to be agreed, not as an observed result, and keep the invoice/overdue-flag items marked as examples."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "Finished code is handed to the customer. Database, automation-tool, and API accounts are in the customer's name from the start. Retainer support is optional. Describe this as policy and no-lock-in positioning, not an absolute legal warranty."
+          },
+          {
+            "source_id": "C02",
+            "quote": "free 30-minute diagnostic; free one-page pilot proposal"
+          }
+        ],
+        "rationale": "The documentation step and the pre-commitment framing are supported, but the final sentence states handover and no lock-in as an unconditional fact ('Bareni delivers working code into the owner's own accounts and tools, with no lock-in'). Approved evidence requires this to be presented as policy and positioning rather than an absolute warranty.",
+        "use_guidance": "Add the qualifier that handover into customer-owned accounts and no lock-in are Bareni's stated policy and positioning, not a legal warranty. Also keep the closing as a neutral next-step note; do not turn 'diagnostic conversation' into a booking invitation, since the task authorises no CTA."
+      }
+    ]
+  },
+  "selected_lessons": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. This includes indirect meeting prompts and direct brand-level offers such as a free 30-minute diagnostic. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025",
+        "B3-SUMMARY",
+        "SE-FINAL-N079"
+      ]
+    },
+    {
+      "lesson_id": "L02",
+      "text": "When approved evidence presents an operational practice as policy or positioning, keep that qualifier in the copy. Do not rewrite it as an absolute guarantee or warranty-level statement.",
+      "source_event_ids": [
+        "B3-SUMMARY",
+        "SE-FINAL-N080"
+      ]
+    },
+    {
+      "lesson_id": "L03",
+      "text": "If the source set does not support a substantive explanatory claim, replace it with a neutral workflow prompt or decision step rather than filling the gap with general background explanation.",
+      "source_event_ids": [
+        "B3-SUMMARY",
+        "SE-FINAL-N091"
+      ]
+    }
+  ],
+  "register_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "planner_key": "SE-FINAL-N100_planner__a001",
+  "researcher_key": "SE-FINAL-N100_researcher__a001",
+  "writer_key": "SE-FINAL-N100_writer__a001",
+  "final_key": "SE-FINAL-M069_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-M069_gate1__a001",
+  "production_completed_at": "2026-09-08T13:39:54.990357+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts"
+}

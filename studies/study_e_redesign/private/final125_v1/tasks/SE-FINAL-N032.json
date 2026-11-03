@@ -1,0 +1,337 @@
+{
+  "task_id": "SE-FINAL-N032",
+  "batch_id": 2,
+  "condition": "natural",
+  "source_task_id": null,
+  "topic": "why bounced addresses survive",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-301",
+    "title": "Why bounced addresses survive in a small-business workflow",
+    "body": "If bounced addresses keep surviving in your list, the problem is usually not the bounce itself. It is the gap between where the email platform records the bounce and where your CRM or list still holds the address.\n\nFor a small business, that makes this a bounded workflow decision, not a strategy project. You are choosing between three options: keep cleaning it up by hand, pay someone to do that cleanup, or connect the systems so the bounce signal updates the list automatically. The last option only makes sense if the data is already available in a place you can access.\n\nThe practical question is simple: does your email platform expose bounce data in a report, export, or API that you can actually read? If yes, you have a starting point for a narrow automation. If no, manual cleanup stays the baseline until the tool improves. No drama, just plumbing.\n\nA sensible first step is to write down the three or four tools you already use for sending email, storing contacts, and any automation layer you have. Then check whether the sender keeps bounce records somewhere you can pull from. That one check tells you whether this is a workflow to automate or a task to keep manual for now.\n\nIf you want to reduce bounced-address clutter, start by finding where the bounce data lands before you think about new software."
+  },
+  "final": {
+    "item_id": "E-OPT-401",
+    "title": "Why bounced addresses survive in a small-business workflow",
+    "body": "If bounced addresses keep surviving in your list, the issue is usually not the bounce itself. It is the gap between where the email platform records the bounce and where your CRM or list still stores the address.\n\nFor a small business, that makes this a bounded workflow decision, not a strategy project. You are choosing between three options: keep cleaning it up by hand, pay someone to do that cleanup, or connect the systems so the bounce signal updates the list automatically. The last option only makes sense if the bounce data is available in a place you can actually read.\n\nThe practical question is simple: does your email platform expose bounce data in a report, export, or API? If yes, you have a starting point for a narrow automation. If no, manual cleanup stays the baseline until the tool changes. No drama, just plumbing.\n\nA sensible first step is to write down the three or four tools you already use for sending email, storing contacts, and any automation layer you have. Then check whether the sender keeps bounce records somewhere you can pull from. That one check tells you whether this is a workflow to automate or a task to keep manual for now.\n\nThe survival of bounced addresses is usually a connection gap, not a mysterious failure. Find where the bounce data lands before you think about new software."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-032",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-032",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-032-1",
+        "repairs": []
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-032",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-401",
+        "title": "Why bounced addresses survive in a small-business workflow",
+        "body": "If bounced addresses keep surviving in your list, the issue is usually not the bounce itself. It is the gap between where the email platform records the bounce and where your CRM or list still stores the address.\n\nFor a small business, that makes this a bounded workflow decision, not a strategy project. You are choosing between three options: keep cleaning it up by hand, pay someone to do that cleanup, or connect the systems so the bounce signal updates the list automatically. The last option only makes sense if the bounce data is available in a place you can actually read.\n\nThe practical question is simple: does your email platform expose bounce data in a report, export, or API? If yes, you have a starting point for a narrow automation. If no, manual cleanup stays the baseline until the tool changes. No drama, just plumbing.\n\nA sensible first step is to write down the three or four tools you already use for sending email, storing contacts, and any automation layer you have. Then check whether the sender keeps bounce records somewhere you can pull from. That one check tells you whether this is a workflow to automate or a task to keep manual for now.\n\nThe survival of bounced addresses is usually a connection gap, not a mysterious failure. Find where the bounce data lands before you think about new software."
+      },
+      "gate_key": "SE-FINAL-N032_gate1__a001"
+    }
+  ],
+  "measurement_status": "complete",
+  "planner": {
+    "item_id": "E-PLAN-501",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task explicitly specifies 'CTA rule: None', so no booking invitation or meeting prompt should appear. Instead, close with a neutral practical observation about the workflow decision or a concrete diagnostic question the owner can apply immediately to their own email and address data."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Define the bounded workflow: bounced email addresses in the owner's CRM, marketing list, or customer database that remain after a send attempt, creating duplicates, manual cleanup overhead, and wasted future sends. Frame this as a recurring data-quality decision, not a strategic initiative.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C01",
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Explain why addresses bounce and survive: mail servers reject invalid formats, closed accounts, or outdated domains; the bounce signal often reaches the automation tool or email platform but is not automatically synced back to the CRM or list-management system. The owner must choose: manually remove them (8–10 hours a week, persona scenario), hire someone to do it, or automate the sync.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Describe the diagnostic question: 'Does my email platform record bounces in a way I can access?' (most SaaS platforms do; the data is already there). This determines whether automation is feasible and what tool fits (Zapier, Make, n8n, or custom sync).",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Outline the pilot scope if automation fits: pull bounce lists from the email platform on a schedule, match them against the CRM by email address, flag or remove the bounced records, and log the action. No payment, no third-party vendor, no OCR—just data movement and a human approval gate for bulk deletes if desired.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "State the practical next step: list the three or four tools the owner already uses (email platform, CRM, automation tool if any) and check whether the email platform exposes a bounce report or API. If it does, the owner has a starting point. If not, manual cleanup is the baseline until the tool adds the feature.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Close with a neutral diagnostic observation: 'The survival of bounced addresses is usually not a technical limit—it's a connection gap between where bounces land and where your list lives. The first move is to find where your platform keeps that data, not to buy new software.' Do not invite a call or imply urgency.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C05"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No invented customer result, deployment, savings, team size, or booking CTA. The workflow decision and diagnostic are grounded in the owner's own tools and data."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "The automation excludes payment and high-risk decisions; human approval is retained for bulk record deletion if implemented."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "The persona remains a 1–10-person owner comparing bounded investment with manual work or hiring. Bareni identity, approved evidence status, and human authority are preserved."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Plain English is used throughout. The 8–10 hour persona scenario is labelled as such. The proposed automation is a working MVP scope, distinct from existing product claims."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-601",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Turn the abstract topic into a bounded Bareni workflow decision. Explain one practical next step."
+          },
+          {
+            "source_id": "C01",
+            "quote": "have a frequent, repeatable workflow with a measurable outcome"
+          }
+        ],
+        "rationale": "This is a planning instruction to frame the topic as a bounded, recurring data-quality workflow decision; it does not assert any implemented capability, customer or observed result. The framing fits the approved audience and the task's bounded-workflow requirement.",
+        "use_guidance": "Keep as an explicitly framed workflow scoping statement. Describe bounced addresses generically as a possible recurring workflow, never as an observed situation at a named or implied customer, and do not attach any counts of duplicates or cleanup effort."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "The representative pains are 8–10 hours a week of repeated customer questions, neglected sales leads, and manual invoice/data work. The 8–10 hours is a persona scenario, not a market statistic or observed customer result."
+          },
+          {
+            "source_id": "C02",
+            "quote": "the owner compares an automation investment with the cost of another hire"
+          }
+        ],
+        "rationale": "The persona-scenario labelling of 8–10 hours is present, which is good, but the claim attaches that figure specifically to manually removing bounced addresses. In the approved evidence the 8–10 hours covers repeated customer questions, neglected leads and manual invoice/data work in aggregate, not one cleanup task. The mechanics of bouncing and non-sync are also generic explanation rather than sourced Bareni capability.",
+        "use_guidance": "Add the qualification that the 8–10 hours is the persona's overall weekly manual load across repeated questions, leads and invoice/data work — not a measured or claimed figure for bounce cleanup. Do not present it as time spent on this specific task, and keep the bounce/sync mechanics as general explanation with no implication that Bareni has measured or built such a sync."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits"
+          },
+          {
+            "source_id": "C01",
+            "quote": "Especially suitable businesses already work in English, use digital documents and SaaS tools"
+          }
+        ],
+        "rationale": "Posing the diagnostic question and naming the toolset is permissible and matches the approved diagnostic model and tool list. However, the parenthetical assertion 'most SaaS platforms do; the data is already there' is a current factual generalisation about third-party platforms with no approved support.",
+        "use_guidance": "Keep the diagnostic question and the Zapier/Make/n8n/custom-code options, but remove or soften the 'most SaaS platforms do; the data is already there' assertion to a conditional such as 'if your platform exposes it'. Do not state that any specific platform records or exposes bounce data."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "general document, email, CRM, and back-office workflows using AI plus Zapier, Make, n8n, and small amounts of custom code"
+          },
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C04",
+            "quote": "scan-heavy OCR-dependent workflows"
+          }
+        ],
+        "rationale": "This is a hypothetical pilot scope, not an assertion that such a sync has been built, deployed or run. It sits inside the approved service description of email/CRM workflow automation and correctly excludes payment and OCR-dependent work.",
+        "use_guidance": "Keep clearly in the conditional ('if automation fits, a pilot could…'). Do not imply this bounce-sync exists, has been built, or has produced results; Bareni's built artefacts are only the knowledge-assistant demo, the accounts-payable demo and the Atlas Partner prototype. Present the human approval gate for bulk deletion as a required control rather than an optional extra, and state that pilot timings are intended scopes, not guarantees, if timing is mentioned."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step"
+          },
+          {
+            "source_id": "C01",
+            "quote": "use digital documents and SaaS tools"
+          }
+        ],
+        "rationale": "This is a manual next step the reader can perform themselves — inventory the tools, check for a bounce report or API — and includes the honest fallback that manual cleanup remains the baseline. It asserts no Bareni capability, customer or outcome.",
+        "use_guidance": "Keep as the single practical next step required by the task. Present it as a manual check the owner does, not as something Bareni performs or has performed. Avoid promising that a bounce report will be found or that automation will follow."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Informational posts use no CTA or one soft closing sentence."
+          }
+        ],
+        "rationale": "A neutral closing observation with an explicit instruction not to invite a call or imply urgency; it proposes a closing framing rather than asserting a fact about the world or a Bareni capability.",
+        "use_guidance": "Keep the close neutral and CTA-free, consistent with the task's 'None' CTA rule and the lesson that any invitation to book, discuss or continue the conversation counts as a CTA. State the 'connection gap' framing as a general observation, not as a diagnosed finding from customer work, and avoid hype words."
+      }
+    ]
+  },
+  "selected_lessons": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025"
+      ]
+    }
+  ],
+  "register_sha256": "48497afb8641ddc47d974cdfadba06a1f6b562d21c49ec03c9b03a5dc531744e",
+  "planner_key": "SE-FINAL-N032_planner__a001",
+  "researcher_key": "SE-FINAL-N032_researcher__a001",
+  "writer_key": "SE-FINAL-N032_writer__a001",
+  "final_key": "SE-FINAL-N032_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-N032_gate1__a001",
+  "production_completed_at": "2026-09-08T12:28:55.166810+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts",
+  "initial_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-032",
+    "scores": {
+      "persona_fit": 5,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Calm, founder-to-founder tone specifically tailored to a small-business operator evaluating workflow plumbing without hype or an unauthorized sales CTA.",
+      "clarity": "Clear, logical flow explaining why bounced addresses persist and framing the diagnostic question and baseline options in plain terms.",
+      "actionability": "Gives a concrete, realistic first step: map current email and CRM tools and check whether bounce data is accessible before attempting automation.",
+      "factual_grounding": "Contains no invented customers, synthetic metrics, or exaggerated technical claims; strictly respects the diagnostic scope."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 20,
+    "pass": true,
+    "low_quality": false
+  },
+  "final_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-032",
+    "scores": {
+      "persona_fit": 5,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Speaks calmly and practically to a small-business owner-operator about workflow realities without hype, invented authority, or a forbidden CTA.",
+      "clarity": "Immediately establishes the core problem, frames three distinct operational choices, and explains the technical premise in simple language.",
+      "actionability": "Provides a straightforward diagnostic rule and concrete audit step to check data export availability before adopting automation.",
+      "factual_grounding": "Contains no fabricated customer stories, unverified performance statistics, or unsupported capability claims."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 20,
+    "pass": true,
+    "low_quality": false
+  },
+  "evaluation_reused": false,
+  "evaluation_keys": [
+    "SE-FINAL-N032_eval_initial__a001",
+    "SE-FINAL-N032_eval_final__a001"
+  ],
+  "completed_at": "2026-09-08T12:29:06.425981+00:00"
+}

@@ -1,0 +1,154 @@
+{
+  "created_at": "2026-09-08T19:41:09.419140+00:00",
+  "role": "evaluator",
+  "metadata": {
+    "study_id": "STUDY-E-ABLATON",
+    "pair_id": "SEA-I105-R2",
+    "arm": "critic_off",
+    "cycle": "eval"
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49",
+  "status": "success",
+  "output": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-c96e7cd6bae25628fb73965ec0f25755",
+    "scores": {
+      "persona_fit": 5,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Directly speaks to an owner-operator with Bareni's calm, practical tone; adheres strictly to human-in-the-loop boundaries and includes no disallowed sales CTA.",
+      "clarity": "The core argument that review gates should be based on reversal cost versus pause cost is logically structured, unambiguous, and immediate.",
+      "actionability": "Provides a practical diagnostic question and a three-tier mapping rule (human only, AI can suggest, AI can act) that an owner can immediately use.",
+      "factual_grounding": "Accurately references Bareni's self-built demo as using synthetic data and simulated payment blocking without overclaiming capabilities or customer results."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 20,
+    "pass": true,
+    "low_quality": false
+  },
+  "cost_usd": 0.009039,
+  "usage": {
+    "prompt_token_count": 5912,
+    "cached_content_token_count": 0,
+    "candidates_token_count": 328,
+    "thoughts_token_count": 900,
+    "total_token_count": 7140
+  },
+  "provider_response": {
+    "sdk_http_response": {
+      "headers": {
+        "x-gemini-service-tier": "standard",
+        "content-type": "application/json; charset=UTF-8",
+        "vary": "Origin, X-Origin, Referer",
+        "content-encoding": "gzip",
+        "date": "Tue, 08 Sep 2026 19:41:12 GMT",
+        "server": "scaffolding on HTTPServer2",
+        "x-xss-protection": "0",
+        "x-frame-options": "SAMEORIGIN",
+        "x-content-type-options": "nosniff",
+        "server-timing": "gfet4t7; dur=4160",
+        "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+        "transfer-encoding": "chunked"
+      },
+      "body": null
+    },
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "media_resolution": null,
+              "code_execution_result": null,
+              "executable_code": null,
+              "file_data": null,
+              "function_call": null,
+              "function_response": null,
+              "inline_data": null,
+              "text": "{\n  \"schema_version\": \"study-e-evaluator-rating-v1\",\n  \"item_id\": \"EVAL-c96e7cd6bae25628fb73965ec0f25755\",\n  \"scores\": {\n    \"persona_fit\": 5,\n    \"clarity\": 5,\n    \"actionability\": 5,\n    \"factual_grounding\": 5\n  },\n  \"reasons\": {\n    \"persona_fit\": \"Directly speaks to an owner-operator with Bareni's calm, practical tone; adheres strictly to human-in-the-loop boundaries and includes no disallowed sales CTA.\",\n    \"clarity\": \"The core argument that review gates should be based on reversal cost versus pause cost is logically structured, unambiguous, and immediate.\",\n    \"actionability\": \"Provides a practical diagnostic question and a three-tier mapping rule (human only, AI can suggest, AI can act) that an owner can immediately use.\",\n    \"factual_grounding\": \"Accurately references Bareni's self-built demo as using synthetic data and simulated payment blocking without overclaiming capabilities or customer results.\"\n  },\n  \"critical_violation\": false,\n  \"critical_violation_type\": null,\n  \"critical_evidence_quote\": null,\n  \"total_score\": 20,\n  \"pass\": true,\n  \"low_quality\": false\n}",
+              "thought": null,
+              "thought_signature": "ErkeCrYeARFNMg8mabKNfDMs_dcFMy9kJFfJOtg9UrJwtNfET_Lya5t908YTvSha8yn8LurJyu6Kv4tCr7Taa9MUIaW8FZvomlQAG9uMthw7TQ1WWn9PSTpmH09vCbH9_INz5IkSgvtNXsIbq9-Y_8Ve72h6ySA3E9HpmuNAx9LtwzZIn4qRrvpS0awJClaA3LIJTZjNQd_Xq8H3xH9M-h7F-H8jGnKTI5Lvxk2TZEGx8Kx3CQ1gP9PlMckuYc094QgFMOhC8oL89nofVuYQPEF5Sw3nlNlaL_ONggNdONC0hI6jtL_XHAhi5UhtwsSnG35PoD0nZ_S7auu76SKKzdhVHLQRJx9kb2zd-dhnLsG2SE8YSBtmFz_XuH8sDJkPKYaJ3xeU4v_FxPOLNi-Hf25WnEDAT6O4QaYBhsFVY0o59HWNE_7J5BpNzkPWpVwCj4jwMcpn2J0vuuPDNNLiqBlz1swA4113glPIcdOUhLaupW8iSnK5yIdD58bdoVDa8H_zRBxn5vTQx7w00mBzHBb7BIsslSuZAPQ9CE8b4KsteTBCEWgC2eEe_UlECe4d7h7m6RQ1VdkZyMgPfr2wJ_zOnUrWzDEeL131FblHhqDq-2Nr8Rw20OedGYZmuq0cPjkS1mwLIEgj_Qh_TiU3T5y5FzGOvg4tFBKkdg3DkjCCvyE7mnFjzJhFJIZwiyIlL71Rvw1tM8Iu_dBU2nr7QGt6YQY-I2Kl8H_gQ_vLdL3FzzsFvZuMxK-FqxUCeyqXVVxDXzr6NWEFSF3SBaGSAEDfjj7F-b3COLYY4k9Mq_1eX0dxu7o-3cNaaxh4kunEO8eh8kNG-ijW3po8CzypOs5ZdjW8Uqle-Q8IWzeXsNXLCG7BXv9hxvCthCNJ6a5EWyCDryohHQqkfl80ot04mwVcFnr3XZ6YlXH3eHpd6GsCe1oTbrjhsr7_bvXnfDUYQ45MMZEVrnIqS1tilv0OMaPb0jnqJAStVFXcdlwYXd3YUFQG8Qj_Iw8oQg9Qd65naQR5ryyVioNKutDi4n7ORdN-xcj0_Q5dT2vwvOJjgdBRySn0zkwiFY_hCbsqmShobYwmKDhErzazchSQgbkXv9RIgpL0jlUCu6Hxl9XeW2IgFtYVe01FuknU3ufowNuuPasiOz0NUwQzt7f4M0rIlyePrjshSqGFYaCbjE09EFSzMWeUQpINhtMc3NDY-aNJ-VQCYbHU8f9tIaPRSf4NDMtD1E5yqabPqnV1ReDU-MRfu1n4sCikliQSCYQn6ZL1Kixiim5sgr2YLJ5mKcbY1v56aRstFpMqA0XU9BnCS-c2vgQXVCNg5DdJrbQ3eLnRK1Za-8uCK612SrJlVSXifKpGumBNelKEdk__WDMaOqtRCGZzr1uZ067qBfItzORXyD4SICb-_rXgF7K2i0GjKAMm-sFlM-ImcE6yqKzSiHFf4bjM1-c54FqJaUbGz2akfsZi2ksGVpUerFS8Sgn6g8IUbYyp2gwRAVjoUzPsm2jVQjNVloLNJod55zg82KOxl0TGtX8hZ2YF-i7WIyVk5TWFjBg0dyOKt1SJ4BKBwkXzm8h7N17i2qVwA4bWNyBw7jG4j9kD-po11G7_03LTzZtscai4wnD68aX9ZDseH9qTX2LJrjjv3Tn3wRM51RZ3kNjF_K-rH5ho7cPmdmA80l2la3dyU6--xZcAaUCfR1_xMkwpSRqzKbZXBfVYcfSw3OrHyNg-cap26Bo_yWV67aJZC92OiRhr6a4s5w5UzfPYl0Ggdn71d6ORk0IemORicHTEZN4LIA0ThMiKA53WN95X1KjxYqyZs9suDVzoC-K-9wV-Toh1pVGsVcbaw4lyHQwMFjeaxIX3u4luclzuHA219PLIiCkIu3O8iR707BRu-TDX0bQtb1cu04YNKck-XoAh64lD2pZSuEsBqE9OuZuPKBt2LSUJubSOzkmEaztMeg6sjMZ_V7qKVg8pyqlGp4mShHqFsnHTZHnW_ez54bWhL7MH4vw7DPVzphNYnXSVzke4AdndY2n9-e50ztJZ7EjYlTQI1hSW3pY14CTUOOf_H7boEkX6PWOd-F_-fjNcVWBYDHkdpx6OdVafRuALeIYvIbgDwcmpf8KoSVJa6p908zSxG-ehaq6g4rgDU320CNQVVfbwuPNCtKsLtq5nRqhcTkeSTm4lGbUFrmsWTS4cpaazJvWmjod8N_IBL2ej6YAH5mTxDv-Dk6nhtuSuPDWYk1oXxTpXFy707g2CnDzJAHC8HUWQz3LpWJGY4NHPAOAn0TJDmYwmR7PNav8XFBhpumeY_DTqFol0YzROMCjoclQbZW3rZ8iSnDSo5qBpUnXvm7lLgk1eLnlZukCRjgYaSniQw58FjjhJMbj8Ej477VaBVp9WEAPWEjm9oz45chy1GqElegcsA4wurRNfjHAGr8YOsx8VBImzAFkLcPoX9g2F9zK1i0wHZedjsnatvywTProvlqP5w86YDVuRFnK4dDQyiQhSyKI6V9hWxhZj1co5Bitn7MBJamXeCvkrZt-R-tCwXrXCaOchwGbdAytRz5Ew0KaLFG4syB2ALTZq255fzn8DAPgMbrgjmcAzFgw4wGYAv5FmRxc5tdu_-81nwUPP6d2hE1L4VzXV7udhs_2CM2tGOPwh2PlDzqi15cAIhkzKPLFgwKQLiZMR8pj6et2boDS13PRhG7hrDPTiKrSyRkeLq_rY55ePDJYv3sK1Y5wgY0TvFHTK_4JlvylsCJO1zZBdg7CF9d56lb_u4B87CXBBGdFCufv6tELTL4Sc-O_NTihKZWTZ67rcMvgKjM3km0XVSfG0SzcehinPmIHJQjkXuuvUXgrYstcLCugxJQ6a9zY1lXjGUeRgXoC50oiMsUty8DZ5JGzkc22rwiyg3nMWNV7qV6wf4g0nONtXH_wnnq5fGM_G12AQnZq5HOQj3dYqsCsQGo64sCC5USlf7LSGFHtFWBjvIvwlqW5k0_yRSvschEmkJd-KY8ik3LfFz75kibyaCGPxIVPg88yeo_egK5l8kTw5fhp92IjwnlVjlB1wv1rvL-7MibH20KhV93XLB2bmlM0rwUPI4I3lXLMFB8uWrWqiX0L3M_AmZVT_ZcB0TIPc5ROEJ2UCK1QE3AhI42mkWZovGji83GDWl0O2kc7-IZ7G_OoKZDcectFwlRxB1Pkd2Z71YUXQdz_na0NPkzVXv52IgUed6Wz3t172-VNeBDdm7qZ8X8Js2u3oRhueCa3isbbkIwY1na3K42gSnFxgzvBZu5ZKLi9z-AnOynzKdNGu3ZAmoqSaE79Jw4bRSXxAKlpLuBz12DHoe8CWKT_iwbZBAhIeA6EeGaf08z1VnVAU2NX8Ue5B4lL-5ciKovZqPHKkE6aPQO4EEi6c4EYKH5At33xkOyxYz3xHeEMfSfkGhIgF090g8whB_AbViEmsoN6lgkkEhNYeOuSPtZqu8c1G7NjpSR4qV9ZMxIRbLJORxzsgS2JNHB474hhV0ofBlBAKDbs-xVQrYBMzjT83AauK3I-80zaKgabrgK3J1SWem5Ir_UMQ-9rpGRRcS8tkZs4ptyIv4Rw4JCkOvUXAOn-ixzbTyEQeMGaYRRV6FEFOB4DbNKdZlWdNFUj1uAvFtz264nelbix59C2j-P-X0-Z2gbyM6Q9pLaVa77p4x-opiwM39ybtNF_8PxpQE4WtYcWWGI7fimS4gN5y-5TqHIsg3plYUIswcc37eLfcka4ngZ1I-FF6Gjr1qYBtgzIsX5UPhyDGCq5L9vHhH8Zf6Y9Xdy30pA2rbQtpJH4Xh53-pTpPKCv0aS683D7VJuja43VE6PZNacxM2c7aQg0P_SmT0Ge0-j3vniMtZjQQXMal3JjMCbxsfnw8_LUImtmAxMIq2C1cVTPi7loK5qpR1Iu0wEJT4-0KNAMjESg23zkjQ87VAnvMz_FdJLcUvyl0QIFVsu9I6nB121rs32_KBCdrmd57eTl5an5xo7cvlqGrVEgKko12nQpnCHSqhR8C_UzFW2XSzOx0DWp1RtdmMpMR6w4KY0Bd9Gd20G-SL0U2MfqPyAODrmJdwCFCBmPbOqlqJiaqKkBmD_716W6Yw6dMvN9ncqPHUooXGPq7TppRZQ6QbPrkhsx9kUuC_rVgn46QwK5dTQNgteCQ8YkwpGMImaKSHpduG8QqNr2ZbX8LhOwd9pUgdPoPgXn0aVA2y0qPm5xGWAFijjgOWZYgeu8uMvPovqYiL0UIF2hci73186snlV9wwaOtH-RT4OrKWiMbRfAFY1D52JQRa3-wjKFQ3z8I7inHf8hp8wqt8PK4UWDoVTVgYUkPaylTmMFUSClJyPzcVI4xGkQjaFzJ9eXpKL8C-tJCVtAeboTMw6ekv-EG1-8IUBoP80OIL4F4Ki7luNzI-QtP-6G9xyBmudfFjfC5wSoVoLso_nJVw6KRATMrMXecNos7shMybPcml7FQ-9BTqsmrYTp6ybjhhDqvVCir15RnBxzDEv5g2h01zna5barrS0-xhdTTvN_NH8AI5vtmX7Gb1BbvrEFFtx1-pCUjM69ScUmn5k03R0usRbbFRtaPMnGVAQKHESNCLo7vLEguaQB0IAZIpxPdN89uQPZMXH71NGlxKvzRJEHmcMZhV_w_7isJAlDJ9hDSRntWuAmlZkes0jixQurfeG7TCcM3Hh5unBH5QwucDvgwoXLAm8cHSMQVto6bHSPzqK35-7rtI1FZ1GrV6Cvka0Inr2TuLFLcRhu75zfYxgbd8wR6gig0Y35LfrgVd4VhEdNV4Ifi7x2LgQY_Pm-lEOKTSHildZ-dfP4M1JdVBpkzRgMuEUzrOMWF7V_JOqqQbaHVqAQsn9i-SgH7FdxJyUMfs70FY14TXN_jtjaSo8faX3_T_W__NP5YnafPL5ZTTWOsF8Zflt2iBrUND55vWt1jUE-hp7P3F0ndIFtKZWZZ7c2QPCa9ieTcI-IVHX1De6dFPz-kcAcyryHli_0x9Dlpn4Ux03HGJ74H-17ztZr8VQMKJe5zwHYR_lXNF-UcKsg9p6ANQzXl0_rWueKdyI7nkgqUVDLu7qaSTKnxZa6cREtZ9kR0tpn4Xhk1Se4Dfn8ynPNgTxezA4prPa7DgxfkwH-t-gD1oLO0gitxnm7m_RLDtj849CqiI-0zDFCApjXzsXnn4HOBWdyMbwWy",
+              "video_metadata": null,
+              "tool_call": null,
+              "tool_response": null,
+              "part_metadata": null,
+              "audio_transcription": null
+            }
+          ],
+          "role": "model"
+        },
+        "citation_metadata": null,
+        "finish_message": null,
+        "token_count": null,
+        "finish_reason": "STOP",
+        "grounding_metadata": null,
+        "avg_logprobs": null,
+        "index": 0,
+        "logprobs_result": null,
+        "safety_ratings": null,
+        "url_context_metadata": null
+      }
+    ],
+    "create_time": null,
+    "model_version": "gemini-3.8-flash",
+    "prompt_feedback": null,
+    "response_id": "1GSgapbcNoif3boP1Obw0Qo",
+    "usage_metadata": {
+      "cache_tokens_details": null,
+      "cached_content_token_count": null,
+      "candidates_token_count": 328,
+      "candidates_tokens_details": null,
+      "prompt_token_count": 5912,
+      "prompt_tokens_details": [
+        {
+          "modality": "TEXT",
+          "token_count": 5912
+        }
+      ],
+      "thoughts_token_count": 900,
+      "tool_use_prompt_token_count": null,
+      "tool_use_prompt_tokens_details": null,
+      "total_token_count": 7140,
+      "traffic_type": null
+    },
+    "model_status": null,
+    "automatic_function_calling_history": [],
+    "parsed": {
+      "schema_version": "study-e-evaluator-rating-v1",
+      "item_id": "EVAL-c96e7cd6bae25628fb73965ec0f25755",
+      "scores": {
+        "persona_fit": 5,
+        "clarity": 5,
+        "actionability": 5,
+        "factual_grounding": 5
+      },
+      "reasons": {
+        "persona_fit": "Directly speaks to an owner-operator with Bareni's calm, practical tone; adheres strictly to human-in-the-loop boundaries and includes no disallowed sales CTA.",
+        "clarity": "The core argument that review gates should be based on reversal cost versus pause cost is logically structured, unambiguous, and immediate.",
+        "actionability": "Provides a practical diagnostic question and a three-tier mapping rule (human only, AI can suggest, AI can act) that an owner can immediately use.",
+        "factual_grounding": "Accurately references Bareni's self-built demo as using synthetic data and simulated payment blocking without overclaiming capabilities or customer results."
+      },
+      "critical_violation": false,
+      "critical_violation_type": null,
+      "critical_evidence_quote": null,
+      "total_score": 20,
+      "pass": true,
+      "low_quality": false
+    }
+  },
+  "latency_ms": 4250,
+  "finished_at": "2026-09-08T19:41:13.664618+00:00",
+  "cost_details": {
+    "input": 0.004434,
+    "cache_read_input_tokens": 0.0,
+    "output": 0.00123,
+    "reasoning_output_tokens": 0.003375,
+    "total": 0.009039
+  },
+  "study_id": "STUDY-E-ABLATON",
+  "operational_amendment": "retry_extension_user_authorized.json"
+}

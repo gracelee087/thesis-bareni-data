@@ -1,0 +1,68 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I124-R2",
+    "item_id": "SEA-I124",
+    "repeat": 2,
+    "arm_order": [
+      "critic_on",
+      "critic_off"
+    ],
+    "content_id": "POST-2f5325860dbd6c08c1c4b0a9"
+  },
+  "arms": {
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-2f5325860dbd6c08c1c4b0a9-1",
+        "title": "Measure memory only where the workflow needs it",
+        "body": "If you are asking about agent memory, the real question is not whether it sounds smart. It is whether your workflow actually needs context to carry across separate interactions.\n\nFor an owner-operator, that becomes a bounded pilot decision: pick one recurring workflow and test whether the agent can recall a prior preference, instruction, or open issue without being fed the full history again. A customer asks on Monday, replies on Wednesday, and the system should still understand what changed. If it cannot do that, you have learned something useful. If each request arrives complete, memory may not be the thing to buy.\n\nThe diagnostic question is simple: are your repeated tasks truly stateful, or just repetitive? Stateful means later steps depend on earlier ones. Repetitive means each request already contains the needed context. That is the part worth checking before you start talking about memory as a feature.\n\nOne practical next step: write down one real recurring interaction, the exact information that must carry forward, and the point where a human must still approve the decision. That gives you a clean pilot scope and keeps the memory test tied to a workflow, not to a slogan. Work the problem first; the jargon can wait."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-2f5325860dbd6c08c1c4b0a9-1",
+            "title": "Measure memory only where the workflow needs it",
+            "body": "If you are asking about agent memory, the real question is not whether it sounds smart. It is whether your workflow actually needs context to carry across separate interactions.\n\nFor an owner-operator, that becomes a bounded pilot decision: pick one recurring workflow and test whether the agent can recall a prior preference, instruction, or open issue without being fed the full history again. A customer asks on Monday, replies on Wednesday, and the system should still understand what changed. If it cannot do that, you have learned something useful. If each request arrives complete, memory may not be the thing to buy.\n\nThe diagnostic question is simple: are your repeated tasks truly stateful, or just repetitive? Stateful means later steps depend on earlier ones. Repetitive means each request already contains the needed context. That is the part worth checking before you start talking about memory as a feature.\n\nOne practical next step: write down one real recurring interaction, the exact information that must carry forward, and the point where a human must still approve the decision. That gives you a clean pilot scope and keeps the memory test tied to a workflow, not to a slogan. Work the problem first; the jargon can wait."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-2f5325860dbd6c08c1c4b0a9-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    },
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-2f5325860dbd6c08c1c4b0a9-1",
+        "title": "Measure memory only where the workflow needs it",
+        "body": "If you are asking about agent memory, the useful question is not “can it remember?” but “does this workflow need it?” For a small business owner, that matters when the same system must carry context across separate interactions: a customer asks on Monday, replies on Wednesday, and the agent should still understand the earlier request without you pasting the whole thread back in.\n\nThat is the bounded decision for a pilot. Don’t try to measure memory in the abstract. Pick one recurring workflow and define one observable test: does the agent correctly reference a prior preference, instruction, or open issue without being re-fed the full history? If it cannot, you have learned something practical. If each request already arrives with enough context, memory may not be the thing to pay for.\n\nThe diagnostic question is simple: are your repeated tasks truly stateful, or are they just repetitive? “Stateful” means later steps depend on earlier ones; “repetitive” means each request is complete on its own. That distinction is usually easier to see in ten minutes with a notepad than after ten pages of theory.\n\nOne practical next step: write down one real recurring interaction, the exact pieces of information that must carry forward, and the point where a human must still approve the decision. Then measure memory only if that list shows the workflow genuinely depends on retained context."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-2f5325860dbd6c08c1c4b0a9-1",
+            "title": "Measure memory only where the workflow needs it",
+            "body": "If you are asking about agent memory, the useful question is not “can it remember?” but “does this workflow need it?” For a small business owner, that matters when the same system must carry context across separate interactions: a customer asks on Monday, replies on Wednesday, and the agent should still understand the earlier request without you pasting the whole thread back in.\n\nThat is the bounded decision for a pilot. Don’t try to measure memory in the abstract. Pick one recurring workflow and define one observable test: does the agent correctly reference a prior preference, instruction, or open issue without being re-fed the full history? If it cannot, you have learned something practical. If each request already arrives with enough context, memory may not be the thing to pay for.\n\nThe diagnostic question is simple: are your repeated tasks truly stateful, or are they just repetitive? “Stateful” means later steps depend on earlier ones; “repetitive” means each request is complete on its own. That distinction is usually easier to see in ten minutes with a notepad than after ten pages of theory.\n\nOne practical next step: write down one real recurring interaction, the exact pieces of information that must carry forward, and the point where a human must still approve the decision. Then measure memory only if that list shows the workflow genuinely depends on retained context."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-2f5325860dbd6c08c1c4b0a9-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

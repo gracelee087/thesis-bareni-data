@@ -1,0 +1,324 @@
+{
+  "task_id": "SE-FINAL-N019",
+  "batch_id": 1,
+  "condition": "natural",
+  "source_task_id": null,
+  "topic": "the cost of transcript accuracy",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-319",
+    "title": "Transcript Accuracy Is a Workflow Cost, Not a Feature",
+    "body": "If transcript accuracy matters to your business, the real question is not “is AI good enough?” It is: which recurring transcript task costs you more money and time today — manual checking, or accepting a draft that still needs review?\n\nTreat accuracy as a bounded workflow decision. Separate the use case first: customer-facing meeting notes, internal call summaries, or text pulled from invoices and other records. Each one has a different tolerance for error. If the transcript feeds a high-risk decision, keep human approval in the loop. Money movement and other high-risk approvals should stay human anyway.\n\nFor a small business, the practical test is simple: pick one transcript task that repeats every week, then note two things for your own records — how long you spend verifying it, and what a single mistake would force you to fix. That gives you a real threshold instead of a vague feeling that “the transcript looked fine.” Fine is not a control.\n\nIf the task is low risk, a draft may be enough. If the task is customer-facing or affects approvals, accuracy needs a tighter review step. If it sits in medical, legal, or high-sensitivity financial work, Bareni treats that as current scope discipline, not a casual automation target.\n\nThat is usually the cleanest next step: choose one transcript workflow, measure the verification burden, and decide whether AI should stay a draft or become part of the process."
+  },
+  "final": {
+    "item_id": "E-OPT-419",
+    "title": "Transcript Accuracy Is a Workflow Cost, Not a Feature",
+    "body": "If transcript accuracy matters to your business, the real question is not “is AI good enough?” It is: which recurring transcript task costs you more money and time today — manual checking, or accepting a draft that still needs review?\n\nTreat accuracy as a bounded workflow decision. Separate the use case first: customer-facing meeting notes, internal call summaries, or text pulled from invoices and other records. Each one has a different tolerance for error. If the transcript feeds a high-risk decision, keep human approval in the loop. Money movement and other high-risk approvals should stay human anyway.\n\nFor a small business, the practical test is simple: pick one transcript task that repeats every week, then note two things for your own records — how long you spend verifying it, and what a single mistake would force you to fix. That gives you a real threshold instead of a vague feeling that “the transcript looked fine.” Fine is not a control.\n\nIf the task is low risk, a draft may be enough. If the task is customer-facing or affects approvals, accuracy needs a tighter review step. If it sits in medical, legal, or high-sensitivity financial work, Bareni treats that as current scope discipline, not a casual automation target.\n\nThat is usually the cleanest next step: choose one transcript workflow, measure the verification burden, and decide whether AI should stay a draft or become part of the process."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-019",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-019",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-019-1",
+        "repairs": []
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-019",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-419",
+        "title": "Transcript Accuracy Is a Workflow Cost, Not a Feature",
+        "body": "If transcript accuracy matters to your business, the real question is not “is AI good enough?” It is: which recurring transcript task costs you more money and time today — manual checking, or accepting a draft that still needs review?\n\nTreat accuracy as a bounded workflow decision. Separate the use case first: customer-facing meeting notes, internal call summaries, or text pulled from invoices and other records. Each one has a different tolerance for error. If the transcript feeds a high-risk decision, keep human approval in the loop. Money movement and other high-risk approvals should stay human anyway.\n\nFor a small business, the practical test is simple: pick one transcript task that repeats every week, then note two things for your own records — how long you spend verifying it, and what a single mistake would force you to fix. That gives you a real threshold instead of a vague feeling that “the transcript looked fine.” Fine is not a control.\n\nIf the task is low risk, a draft may be enough. If the task is customer-facing or affects approvals, accuracy needs a tighter review step. If it sits in medical, legal, or high-sensitivity financial work, Bareni treats that as current scope discipline, not a casual automation target.\n\nThat is usually the cleanest next step: choose one transcript workflow, measure the verification burden, and decide whether AI should stay a draft or become part of the process."
+      },
+      "gate_key": "SE-FINAL-N019_gate1__a001"
+    }
+  ],
+  "measurement_status": "complete",
+  "planner": {
+    "item_id": "E-PLAN-519",
+    "selected_lessons": [],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Name the workflow decision: transcript accuracy in customer-facing or internal records and its cost trade-off (time to manually verify vs. accepting AI output confidence thresholds). Frame as a bounded choice: which recurring transcript task costs you the most friction?",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Define the measurable outcome: what does accuracy mean in your context? (e.g. customer-facing meeting notes vs. internal call summaries vs. invoice line-item extraction). Show the owner how to quantify the cost of a single error and the time spent on verification now.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "State honestly whether AI fits this workflow: transcript AI works well for English-language audio with clear speakers and standard accents; it struggles with poor audio, jargon-heavy domains, and high-sensitivity financial/medical records. Does the owner's workflow match the strengths?",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C04",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Describe the practical decision rule: if accuracy matters most, measure the error rate you can tolerate before manual review. If speed matters most, accept lower confidence and use AI output as a draft, not final. If the workflow is excluded (medical, legal, financial approval), automation is off the table now.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Explain Bareni's diagnostic approach: a free 30-minute conversation to map the workflow, measure current cost, test whether AI accuracy meets your threshold, and—if it does fit—propose a small working pilot with a fixed price and success measure. No guesswork; no multi-month roadmap required.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Close with the owner's next step: decide which transcript task causes the most friction this week, note the current error rate or verification time, and use that as the diagnostic starting point. No CTA; leave decision authority with the owner.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C05",
+          "S01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No customer names, deployment results, ROI claims, or invented team size. Describe Bareni as a solo consulting practice and self-built demo only."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "State that human approval is required for any transcript system touching financial or customer-approval decisions. Name excluded services (medical, legal, high-sensitivity financial) as current scope discipline."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Maintain the frozen persona voice: plain technical expert, founder-to-founder, trust over enthusiasm. Keep evidence boundaries: describe what Bareni has built and can do, not what customers have achieved."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use plain English. Separate examples (e.g. 'a six-person D2C shop') from observed results. Explain jargon (RAG, confidence threshold, three-way matching) immediately when used."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-619",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Turn the abstract topic into a bounded Bareni workflow decision. Explain one practical next step."
+          },
+          {
+            "source_id": "C01",
+            "quote": "have a frequent, repeatable workflow with a\n  measurable outcome"
+          }
+        ],
+        "rationale": "This is a framing instruction and diagnostic question directed at the reader, not an assertion of any current Bareni capability, deployment or observed result. Framing a bounded recurring-workflow choice is consistent with the approved audience definition and the approved task.",
+        "use_guidance": "Keep as a framing question and bounded choice. Do not attach any transcript-accuracy figure, cost number or customer example; the friction estimate must stay the reader's own, and the 8-10 hours persona figure must not be presented as a statistic or result."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step"
+          },
+          {
+            "source_id": "C05",
+            "quote": "Numbers require a source and status. Keep observed results, estimates, targets,\n  synthetic data, and examples distinct."
+          }
+        ],
+        "rationale": "An instruction to the owner to define accuracy and quantify their own verification cost. It proposes a measurement activity rather than reporting any measured outcome or existing Bareni capability.",
+        "use_guidance": "Keep explicitly as something the reader measures for themselves. Do not supply example error rates, cost-per-error values or time savings; any illustrative case must be labelled as an example, not an observed result. Invoice line-item extraction may be named only as a workflow type, not as a working transcript/OCR capability."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "FORBIDDEN",
+        "evidence": [
+          {
+            "source_id": "C03",
+            "quote": "PDF/scan ingestion and OCR are not implemented."
+          },
+          {
+            "source_id": "C04",
+            "quote": "Bareni currently declines high-sensitivity medical, legal, and financial work;\n  bulk cold-email automation; scan-heavy OCR-dependent workflows"
+          }
+        ],
+        "rationale": "The core assertion is a current factual claim about how transcript/speech AI performs (works well with clear speakers and standard accents, struggles with poor audio and jargon). No approved source describes any audio transcription or speech-recognition capability or performance for Bareni; the demos cover text-based extraction, vector search and grounded answers only. This is an unsupported performance benchmark, not a limitation that can be added.",
+        "use_guidance": "Exclude the performance characterisation. If a fit statement is needed, use only the approved scope discipline: Bareni currently declines high-sensitivity medical, legal and financial work and scan-heavy OCR-dependent workflows, presented as current scope discipline rather than a claim that such work can never be automated. This substitute is not approval of the original accuracy claim."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Bareni currently declines high-sensitivity medical, legal, and financial work"
+          },
+          {
+            "source_id": "C04",
+            "quote": "Present these as\n  current scope discipline, not claims that the work can never be automated."
+          },
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          }
+        ],
+        "rationale": "The decision rule itself is permissible and the excluded-scope element has approved support, but the claim as written says automation is 'off the table now' for medical, legal and financial workflows without framing this as Bareni's current scope discipline, and it lists 'legal' among exclusions without noting that Bareni does not give legal advice.",
+        "use_guidance": "Add the qualification that these exclusions are Bareni's current scope discipline, not a claim that such work can never be automated, and keep the human-approval boundary explicit for money movement and other high-risk decisions. Do not offer legal advice. Present tolerable error rate and draft-versus-final as the reader's own thresholds, with no suggested numeric values."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "Normal sequence: free 30-minute diagnostic; free one-page pilot proposal;\n  paid working MVP in days; fixed-price pilot in weeks"
+          },
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI\n  fits, and—if it does—defines pilot scope, fixed price, and measures."
+          },
+          {
+            "source_id": "C02",
+            "quote": "Customers who want strategy only can buy the separate AI Strategy & Roadmap"
+          }
+        ],
+        "rationale": "The free 30-minute diagnostic, honest fit assessment, and fixed-price pilot with measures are supported. However, 'test whether AI accuracy meets your threshold' implies a transcript-accuracy testing capability not evidenced, and 'no multi-month roadmap required' brushes against the separately offered AI Strategy & Roadmap.",
+        "use_guidance": "Restate the diagnostic in approved terms only: identify the one recurring workflow, say honestly whether AI fits, and if it fits define pilot scope, fixed price and measures. Remove the implication that accuracy is tested during the diagnostic. Note that timings and scopes are intended, not guarantees, and that a separate AI Strategy & Roadmap exists for strategy-only buyers. This description of the offer is not a CTA; the task authorises none."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          },
+          {
+            "source_id": "S01",
+            "quote": "final approval and business authority remain human"
+          }
+        ],
+        "rationale": "A next-step instruction that leaves the decision with the reader and explicitly avoids a CTA. It asserts no current capability, customer or result.",
+        "use_guidance": "Keep as a reader-side next step with no CTA, no booking prompt and no scarcity or urgency language. At most one soft closing sentence; do not include 'Book a free 30-minute diagnostic' or 'Watch the demo'."
+      }
+    ]
+  },
+  "selected_lessons": [],
+  "register_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "planner_key": "SE-FINAL-N019_planner__a001",
+  "researcher_key": "SE-FINAL-N019_researcher__a001",
+  "writer_key": "SE-FINAL-N019_writer__a001",
+  "final_key": "SE-FINAL-N019_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-N019_gate1__a001",
+  "production_completed_at": "2026-09-08T12:20:07.336350+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts",
+  "initial_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-019",
+    "scores": {
+      "persona_fit": 5,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Directly addresses small business owners in Bareni's calm, practical voice, adhering strictly to scope boundaries and the no-CTA rule.",
+      "clarity": "Clearly structured with an immediate thesis, logical progression, and unambiguous distinctions between risk levels and workflow types.",
+      "actionability": "Provides a concrete, realistic decision rule and practical testing method for evaluating recurring transcript verification burdens.",
+      "factual_grounding": "All claims are grounded in approved evidence; correctly qualifies human-in-the-loop requirements and Bareni's scope boundaries."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 20,
+    "pass": true,
+    "low_quality": false
+  },
+  "final_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-019",
+    "scores": {
+      "persona_fit": 5,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Directly addresses small business owners in Bareni's calm, practical voice, adhering strictly to scope boundaries and the no-CTA rule.",
+      "clarity": "Clearly structured with an immediate thesis, logical progression, and unambiguous distinctions between risk levels and workflow types.",
+      "actionability": "Provides a concrete, realistic decision rule and practical testing method for evaluating recurring transcript verification burdens.",
+      "factual_grounding": "All claims are grounded in approved evidence; correctly qualifies human-in-the-loop requirements and Bareni's scope boundaries."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 20,
+    "pass": true,
+    "low_quality": false
+  },
+  "evaluation_reused": true,
+  "evaluation_keys": [
+    "SE-FINAL-N019_eval_initial__a001",
+    "SE-FINAL-N019_eval_initial__a001"
+  ],
+  "completed_at": "2026-09-08T12:20:15.957251+00:00"
+}

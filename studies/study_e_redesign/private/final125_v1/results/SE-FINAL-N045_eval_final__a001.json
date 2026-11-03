@@ -1,0 +1,162 @@
+{
+  "status": "success",
+  "usage": {
+    "prompt_token_count": 5920,
+    "cached_content_token_count": 0,
+    "candidates_token_count": 305,
+    "thoughts_token_count": 1862,
+    "total_token_count": 8087
+  },
+  "cost_usd": 0.01256625,
+  "output": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-045",
+    "scores": {
+      "persona_fit": 3,
+      "clarity": 3,
+      "actionability": 4,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "The calm, realistic tone fits Bareni well, but leaking internal prompt meta-text ('persona scenario') directly into reader-facing copy breaks character and requires revision.",
+      "clarity": "The core workflow message is clear, but abruptly introducing 'the 8-10 hours-a-week pain point' with no prior context creates confusion and requires rereading.",
+      "actionability": "Provides a feasible diagnostic exercise to list data gaps and evaluate whether a workflow needs a manual check, spreadsheet, or AI.",
+      "factual_grounding": "Strictly adheres to boundaries, claims no nonexistent capabilities or client results, and explicitly cautions against assuming AI solves incomplete data."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 15,
+    "pass": true,
+    "low_quality": false
+  },
+  "raw_text": "{\n  \"schema_version\": \"study-e-evaluator-rating-v1\",\n  \"item_id\": \"EVAL-BLIND-045\",\n  \"scores\": {\n    \"persona_fit\": 3,\n    \"clarity\": 3,\n    \"actionability\": 4,\n    \"factual_grounding\": 5\n  },\n  \"reasons\": {\n    \"persona_fit\": \"The calm, realistic tone fits Bareni well, but leaking internal prompt meta-text ('persona scenario') directly into reader-facing copy breaks character and requires revision.\",\n    \"clarity\": \"The core workflow message is clear, but abruptly introducing 'the 8-10 hours-a-week pain point' with no prior context creates confusion and requires rereading.\",\n    \"actionability\": \"Provides a feasible diagnostic exercise to list data gaps and evaluate whether a workflow needs a manual check, spreadsheet, or AI.\",\n    \"factual_grounding\": \"Strictly adheres to boundaries, claims no nonexistent capabilities or client results, and explicitly cautions against assuming AI solves incomplete data.\"\n  },\n  \"critical_violation\": false,\n  \"critical_violation_type\": null,\n  \"critical_evidence_quote\": null,\n  \"total_score\": 15,\n  \"pass\": true,\n  \"low_quality\": false\n}",
+  "provider_response": {
+    "sdk_http_response": {
+      "headers": {
+        "x-gemini-service-tier": "standard",
+        "content-type": "application/json; charset=UTF-8",
+        "vary": "Origin, X-Origin, Referer",
+        "content-encoding": "gzip",
+        "date": "Tue, 08 Sep 2026 12:36:29 GMT",
+        "server": "scaffolding on HTTPServer2",
+        "x-xss-protection": "0",
+        "x-frame-options": "SAMEORIGIN",
+        "x-content-type-options": "nosniff",
+        "server-timing": "gfet4t7; dur=9491",
+        "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+        "transfer-encoding": "chunked"
+      },
+      "body": null
+    },
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "media_resolution": null,
+              "code_execution_result": null,
+              "executable_code": null,
+              "file_data": null,
+              "function_call": null,
+              "function_response": null,
+              "inline_data": null,
+              "text": "{\n  \"schema_version\": \"study-e-evaluator-rating-v1\",\n  \"item_id\": \"EVAL-BLIND-045\",\n  \"scores\": {\n    \"persona_fit\": 3,\n    \"clarity\": 3,\n    \"actionability\": 4,\n    \"factual_grounding\": 5\n  },\n  \"reasons\": {\n    \"persona_fit\": \"The calm, realistic tone fits Bareni well, but leaking internal prompt meta-text ('persona scenario') directly into reader-facing copy breaks character and requires revision.\",\n    \"clarity\": \"The core workflow message is clear, but abruptly introducing 'the 8-10 hours-a-week pain point' with no prior context creates confusion and requires rereading.\",\n    \"actionability\": \"Provides a feasible diagnostic exercise to list data gaps and evaluate whether a workflow needs a manual check, spreadsheet, or AI.\",\n    \"factual_grounding\": \"Strictly adheres to boundaries, claims no nonexistent capabilities or client results, and explicitly cautions against assuming AI solves incomplete data.\"\n  },\n  \"critical_violation\": false,\n  \"critical_violation_type\": null,\n  \"critical_evidence_quote\": null,\n  \"total_score\": 15,\n  \"pass\": true,\n  \"low_quality\": false\n}",
+              "thought": null,
+              "thought_signature": "EtA-Cs0-ARFNMg_s2AWo_oQVEJ6gjfxd_3zJl_k2icxCkpkLbOhJcD97Jno_oVzrVJQzLjKyYPS1GQ7uqPLuzP9vROmWnBte8sxeph-3HZg_FsuzL-Y2lVPymr6DQ0C8M6oKwUbfRRwf-UtWXI5FYD5K7COZkFzvxDzi_JPxdUx3Db0bpaXS7xUhuX75SUYEfX05KtExP23I8qF0AJcgmi2diH-i6EZWVI4XPBbwI3VCo5R-t9D-MheFHI4zZsnn9OkagFftDT3HvQmy8wvmkjVWjc_j-tpnqxPhYhAE4ZxZizCqx6JyCBlD29mms9h9TnFPEq8soRvAP58k8bYNACMMyFhSX1ksLhXI51i5W47SqJgoBpLtOb39KSdZkk5yXKAj2cN75GNe3N3CKFd2YGjteIrEUcGCT_3O22wxpFG21A4YyvcXA6dXB2R8XzI1taLau0AqSd06L0pYV5CiZ8dVMm4Euodk1YGBfA8ASyhprFVvyLHkXUENI8e_vdrgReDsWtKcUC1jW078xiZecdcF4_nuHDVBy4goKqPNy-JsH-gB4iIdKIBKFFAbf89W7fqEipfWGTUqFHywpt5w9F9vP2rD2lars0N2kPmo78TwgkxYryvh5jmf2XfUr0KZMlHmU-srw8IU9TJvbU-pFHgPDd7Wgj3obAMAV1G-cf7Q2AIbDafIXvCxPIiAxWj_dJKg6Rq1CMmW8WjW-khwlDL2nCTbVT-Qkx7MEEgOZ-0Eptk-0KcQp67irrpyjxgRh2M2pLGGRwcIhvXbHYsmLL3ENC8tDnTaxhJi7dOwrp19HvKTq-pRW0E28uyhuExv6P9HT1gtv2pnHVT09yxIusidUhp7vxbOpA14wHu--qxlglYYLdj9s8S6Jc928Ex4KNW7Rhfv31VwDz2BOrBTmFV9nBAZ_tZ0m5rILkxKHW_9jdPvX92zztHdlkP1xJKPSkzRS9uvuvtaX2VrLioDBs73omicMLaur5SEQ2ZOd4iKoIgBOWGSpXcTT4h03LEiIIqXigOqmFLL94l_yt-Q6aXj7KOjjRb92RwJipuyhzT0I38Yf80p4uBHvRceciwESdQBqK-Rluidx3Fpg7iGvvXh-LCtzxYsouL8ZOuRzYjIglucylbtLuAmXI6IsXNDBSJdV7284YftrdKHMXeXnlLD52P2f_WlZBYLm1FgMX4hxnLTxl_Og4b908kjEvdVRovQ-b7gS08gOwIsA9VC5F0wTJ8skujdTgewDmfru2nzik2HtvuFd4A6-luoJ9nUDt-CrIkTF2t4GjOA93Q9ZM42ckJWTHukw_KftqwqRpFabzmeMtiMLEcIFwcLa9IyIcZUaN2Bcdj3mC1ngcTzgVO5n7kd9_OZevNGR-miI4FgbYKC9Ky47vM5wPVQYzXmcUQ8Huex1bzOa5Sf0PGfO3BauhYcquD-QDBqtNPxjWk4yDb3I-_1fBzoTj4qW2UHnKz96QXw5t-WQ0aN-BCOgi0frkvnnxHqEoF-CJul9cm2G9KCzqQV5iRDUSLLYu014mu8PBOSZ95I78Z9RlCK70bDL93JPIpO1W7hWn_09yD0Q_jHDHXtAoc0IKnOkdGOTOEMJ0L6skJHrwWsgLSvhdnYkefKZBA2hL1PR6QbZUZ7WkkJWlCd06VWc3ryglUZWSVVnrXetQ05OOOkiAJsyy15MZdkGLh9mANfGCgLdO8h7BCb8RSLM30IKZPa1c6_Vmf2DcqXePy4Wu9H6H6av3hNUB_rH9Fam0kY4mYgB8iVWj5PwfMbz8qm7ZtKW5GRJ111rJ68Pe3v4abJUTh5MUw_CbMyqyAWnbJiz941Gfrg-sW5-7T9HCT4kABz71DirlnLFZHCSUW4SHTfHciOnlbMuV7GdG06CvElLWSIbS4oUBNjxNG_dtF4nTsnjD3ANTpeRBENfQh7dBnbYDD5QHZVL0IV_44nO53hyqmyTK2j_A1iwwf9SCYb8MGZJZLXootyCZvOAQzaVvvuouNw6Pd92cRVMQkCN1-jxja_pZk5SvY3KY9tV-ZeqNutDvYxd2Xf3OfgiwZaq-ZnLcQ7hInCEMMd7gaxMryO4kclQrv8MjkB9lEiRwI8DRKejPpYOkHYb9CoUmNHMBQRitTivnZS93ouvly0OTrhWuPUZccXHV-1plIvbHxfppC82D4KvlOgKXgAzMjKTKIPkL0GOgrAJBE_vxbpYWgCaYVvEzgaaCTkG0636eJ16LQbk95N3mjSZ4jQPo4IVHg-UFFwd2bmG5-JPQseCMg1rj4rTuVZz3bydo1sYJQONHcyxym2L4lqbiDTXN030HVUqAnckS_UpOL_H25expqXb2JBjuQYvVedbqyKQ6DEZQ76azljB-4FxfHtbh4oFyhSqia0W127HHprsku6iOv-8efO7KT1Fgt5akx6KlnUGjs8ZyNo7MDn7tK83nHiNHGVWZAWkO2K-0BP5WC9B5u0ApeGpy0CS2gd0x3DvJNyR5LsF8vyH4yUvF-rUHcH2rLASboXG83vnugzcBS5NGCzh5aut9INmiXd2gUgquwBzH7YoXc58EhqylSA8_xPEXsde935m6aIuONxGg4Xjobwd8zzto-gGtgHgTPSRB96uVf2uyTXLeMSKS375br_KHBtpqbQ59KeWJLY-v12tGuu51BP6ylsIo8s5pBi_S1dKaQs70IhD8PVHJuWMG6mJc2lFnezu32FUla0wPcBljHbDijhcAO_V4VIaj0lcfZ_B7cHOQjO9JRsNur8Z_sT3Y1Rake7HFqRH7SVlNu0_v4yvi3Q3ILWKYQ8ECkO-GSFQnWpyna7qQ7wyU_joxNFcuCAQVBTI1a_WBGpghLMuB2T-9GSOL-vzjzdtETOkTHaONgEgNj-U-MAOQ76xh1vaECZ4TUdLv4qY40RXIi49JnSjQhHVxZhuNtpllJMBEJKE7F3qGsicLCRHnJUqpnR98gWczhlusFZyU7u6qnvkJeHUdsDbttE2Kl2P8k3HEDWSauRxfjV7Clg4YL_qNCpcSET-66ShUkf1TzdR4Ih3rR9LFhKqwQ0nYv1kqHPUsKvVfTpHx2MT6Zrbzhlov4HtNVdD7is6d5zlQBFLQXzMj_rS5fNOAHKok1cDdFvc_0nkytGx5qDSeS5Y7-Sd8HjUaOeIhMPDiJrFolScMENOmwhWTFX8x5FUy15IVBkMP6qDui0oEuejqjQaRfGU3-WCIQU3RI21c2iaEwiDMZwDbj9CtZ8Iph3pwm-8GS931RE8ralddGtKle9IANq2d5y1t4MXC22b8P-pSTjnj4OY7hmVFXComMRdL-Nb3L5_ycewVUjgTVHgohe3F9zhGa2LJzbL8uBt0ElYfi2jWVM_VVRRVWQJdsd2_pqiQpbnGRAFLDYTCVA0SvMsJsChIJ-TBiyCVEk-UL942KF7kkCcJW8x-oI4NeZA27FcEX_LwGW72RJu2pKo097avGvjeNRbEJiZfqMO14MAO6xGjCyuvMJX1I13CMfX8czYilRkyMGvAL2X8O-rvRl1fg3Q-113f_s77egwV6Wnb--uK-aG4ssoteF6ZXdnB-FJJCu2RxG4nKXPzoyXX34Shj72MVn4_VYRZB0B4ubDS7WqDs0EHMFfjQf1Xyl03t2ZpL-EdHHN8IzNI9wf2qY6ij7Mta18-RTsgwq2tQdjGRN_tB1Tke4ModHbPofirFIsOfMOWTSUO3Q5xzc2dWVP2A4jLpVYbUHiRxzUvT3TKUJ2oA8TpM4tnfnJkfWC-w8ET-HGQHqkdJ3GS8BqVz672uOn2eDpTqaDwYAzdyGpzHdk4YG0SXVPRSe1DgYRev5PNGydJbUNlpv0sMU9ERBXFQGYHDBWTVVQI3JYjl38I4xqszVGARNpBuA4wmi-C4EXZZUttR6QQW6KD_qLUrNR2vW6qhgqIZu-S2rpwb_k714rRshMea0hYLBGKgiqmFk3YREfskrbUTrRqwB4HsWTETorsulOf6FB6pkiQVXQzZP3CnAD1ba2TpWj9B0Y9k2057jE4T8Vupe6ac3YldIZw1aTkyjDZ5euytqXNA-tZq25HIqV28YPvKPZRFFjvwx-xEyZNsld7HWPCL4Is9aanJ_smCKDUQY-28G6LiUE07SJCfIkR9-TBXqkeJ_6QPywkQTRgZM1rDHX5psofYIzy5zWS9yEw0m57dr06XYq475nmhBI7Q-lvfjygbtiRYNfFr7ne6-ulUmjjp2hEDlRkJB0AM7zvfYhJnP-ng_Yc-XBLw9hk5O5fdYXfkblE0wJ-Rhq8sYv-BdhJRDJIL134u-zhGgwI8zqz2hnZvE0rBdyxQR7Y85e0HN1IUdDIf2suhAdzUsMLyefwrDv40rOUpXrZxUiH23qraPGTwVWAhaUCn6h87CJ3JAh8qeGzRA-qweN2-T_L3RuYA8UFk1e-XwuGgI9TtzGxN7rcifMpwrc8P6z4mFz0jV80yr_VBrY0d1ulGGb0jaH-e1ABqs307HwXGcfSRwYUZKyV-vyMPHIi22SpHvQijwGe_fy1QkE-dxXTMhZXQowNCZc_ksczYCGIe5acVL8PYZ3yoUnDo-G1sn75TRJS1shqiCi0t5JQNAF7FbSjWjgUELAetE80xK4y_SW0jqtA8rlbRg_HiM3sQcHs51wfCrTKhLG4_yurdw8i8cytmVGeuiokfh_HFoKgPzxNFlM-6l50hbblm0h_ikTKb2Tyxx0GCiGlSCGhKJII-UOFm5HXrAh0KBtR2c5WeJna4Bhu0CVmaErkqfNbur0ei3Pwtfhr2uc8E4a0cfvbhJD5P3xvfUMinftTuwwKqN28GpTDYHhdAMGgoEdYZAKWsiCj77mbehi9chccdN5v9we9srYCUEwZlktTayViqTUqmpinNFpD-Cyg4wCK9zJZ2L1P9U9JeuEDI26SseoOsEPRrguZYej5H3CryNeXbXVmHlQF5pSvxDj2D1LueRPsairpTVuso_JCmj5YnAIQrGCdjtEW9i3g569N-NlmgOTvW3R_33dAdt8WKjXr1Ph_cTv6Pe0GpMIXTcOT-ZI8swYMS5beiHvDZo6WxeF719yiXX9EerVuFxb40LWPjB1Pbc9EsiNPTSkYJM78wG-TYDZzTfphE-m03j5oiRZcnC3VzAJxaR61-OdtIMTpBcZFoD1lYc3q-Oo0svmnmLA5xOlv8CSf-2pkeUgePmmiqO9yqQ0GT91GuWNa0KgnwzI-AJylA8C_PVK8tT9QsxyrsdpDpg_uaZX3-F1FW5lnacEYzlokvFpnWGxRLbVa22jzglMhSrAfO1BCicWA0UwSAwqnQy9NAhGssaaQfZTuLzCAwkZzyTd5XJX_qsXyTS3yr7h29f4uCrIp1sHXNYUWE4Pk9VQRSW3hSdRCWygsHob24ur7UO7Y0GirF4Wv9BzDt3r7luZ-n9eWlGl1f39_NP0ia9To7y-Mxl5c04xTvbzN5CZ1uj171WCzoshsmyk3m1oRValvL9vbvXVMvmYzYmaErT1fNPMx1-_BHKdJQ_RVfmQmmHpHWYuIGWrZTQqV78fmGtPmEroYJRlOKKrB4P7jy22VJvcevKmDZNkT5uLCwbzvTTi2Ckr3-WbWoFpqpGpMi5teOaFV8q2FI9OlKnNgAnfmlrsRiyG0CAkGeNpkrRvL2-PLSve8Re9xs99Dx_fBcAxpTdX1HtOmmJovMgMKbwWdd9XwjvFrIUIG75iVzacNw02Q0ls3kaZCQmxXbWb-rQ24psQAv9wTC1UWqvUvWS3dQufgXhKkkIEYkvV-Ton4qhqaSbg3-TwjBkbl9QJc5QGFtm6Sw93j4r9WcUfUd9VEo3QgKQM49CwucWFnokMbkVWM7GjA5Lpz-fvnV0XO9OdHexamj6zEI6r3jclMmIbDiuFZSRJq_xgHBNy7myAJ2ojiUb9yvIgzVnB8h036XZMxmVnc5cp5bo839GvNIDgWmFIXqoPc8ngB6eS7CXpmNZmqg-b8-2VoD9rO2t1J99ls7eDAAjRpxnMR2BMqeCkt_7WgrB0Ybe6_YaZ_q4m6leJtiRjRdxJcEB0ndZqsYzNHyc-JRQBtLZkDKgfUxUDrxN1pwc3TotYWKg6J3eYrM9xn4mLLjP2UYjU9gxRCeOWE6-YJq1x9cfRImZTa0i7mTnSIdu0rZN4WjvgJSr1JIu3kfOdkxI5n8gw8Z4cw921JjYNnM9rvIgFJ0AsdqTvW_ip2goal3xkRotxYMwQpjnb7x_fFZY-QBKAdN6ImptMAaqwZhFUSqFFgn_iE26ILa_22kYxFrQa9oyN4KDzcPwsZ2xznIfd0AFHwuzZKHtKmnbHSqMFbucHznR8NxlTE7CWlL8E_MzTvm2YDlnPaZRT4r3SLWXYDM2XAQ3RB-fAxPIQVzXS-jIITjyQtJv9BZbb0Ra9wTB-lTj_aYn0KHl8g5n25V5soqiRGtzF6SxOUcnbLZ0onsTzrbhN7eohe2asjXbTQ-ZJeI4b2QmlFaoFVpFz6qkJmX7T0V1r2QQYWI_ivX_DaHi5eTX2I_wcpxeNt_rG3_NP_ZL56ipXVJfhWU_BE0avtrcH0ufdGFmDQRbc4GxShc7zxfa4U07kZCp8LERDCkocQlDJfY-Q3fcTe-9SwEwZMsb6xDtWl8nsTmnxyQlVlxn5eYC7dWJ0o7sHVSmAowcOVUgbO3860ktW8xr7ZduUwuH81P8XOyE7u1vtVmvfmWFMo6nyb1C5XLhuc5-MoVB_e3_tzcO28Gda41LzfM1-1JvImK4tlk4HmsDrJ-qWfIWqcYsh-UFsJ20dhiGvSCtamlEVRrT-Kaly73HYiqEiaRCHjg_MUlvQQ-AkAoJqk819-RWS19tCB1O_jznnNpO20AJKPaBVhFuV4YpyWtlwOcMzsbeCCxe4TVtedphGS3b1QMSre0V51UcXOLzqprIQ4TSYWUNO7odwbkYwyNthQFc_wWl_uvgPlmdWniYJBv3uc4hmPiODGQFgLgF0_015kj4Stsjmcmkl8Mq9L9TjQc1BHnnsXcrbf1f-Xuyvl9LYSgxp9koFRC1pqCSmnCBNdcSJv9o8xa9G9r_KGc5rXjtGiBfuavGS9KIRUjOMMkP8yuJA7opv1Dp0Pa0eXmZPe7Goovu6_Du2gEA5EyF6DSLLxyvhfr5p6gYqzrRa-Y1zkjtnqHWJEwKD0XQKkd42UMKuh0j6gtuwYWUWhC0Z8ch2-UGmsbV3rwFPXcuzZ26XonpBRLtle0MfIYO-cJxfpKeHk2K3baqyS4zD-D0x870lq0UtLa01sMYW0SuIpEw6tq6HPk69Q2XKj6KmGMqQvTrlTLPD32AqjaqIRBKaPyZCVkG_uDYCYIeuUXJiighFLGkQgcRzNONM6dZLsahTIZddK-O121SAcQxa2YK2Qnet1sCt7w6KRr1kCbLK7SXMFSzv9l223ZyDyg_JcazRXgWOcoBh_CKVsCCtWzfjEfu8Un-lZ0JIGZec9iCGiwzYZ2WJ2DD12Njin9W4V90kymjArRuUOFW6y8hQxVRqpyi83QO9-WOHPBMCAZzfkD6wLh5PsRnfVA_ggDiswd05OTAONteIWywJy8AGReb3-cHPe5_Y5GzJmdKvzuqkp6OpkukjNz4khQQH7BHUE_G0zQM4lqTW7F_4VPUPUrI95C1QNgGOeud4uv6jCAgZFKgk_gSkGq-txbUOg-j8QSwv6ydJGHGx_hR6JvcduXo4KVirJ1kA6J_Foq16lbnf0MR4vjHtbloy7K73ywRgnkrjjVMjG9FzdQhhOalwhNWxIJ-t9XkROKuqvZQL86A4BQouOCgB6x8XvegVN4JoVdgmdtLICzyAQHyudpdF54HsXepuERDvdSxaX_hnsgePcofLtJD8Q4nKjoSV5fZB0J7tlMIW7sZqybbFupkgAS3HOKHbUZJ-2A-R8qSHlQggNIBObtXv6z9NOM8pmtNgQX3FbLS0NWIRKrYNdI_K7GmL1MASKrbIYChHj4PocKHy-gvxpRMGSng1bMk4KXBi0XjsoTBbZpo7qkIgT1PS3u5mIWL2U0Q9oWGi3OWAwZvdellK4Cs8FRKSp_-k5ua32o04gYD3T86FBDPPt1yHefBsViFRFP-GxzTcPKBttBHIZDQn2YBGeau4RY0HpZn-yWFHxmsIGGPTkK4AWI1Z-RGkqeFu0sn9jzKZ0t9xCHhAYGNDsq-gn3unhKw6Za0pt0cdH3Cpp1KeTaZtkASzAQVvNULVQbvg5kpcRdyPYxfHB7WMKElDmSaEK99bCt0oIi1wE4KgThW0qOaBP2cytMO1TGUeU8S0Xi8MuNX7P-hAMyhiyCFSjhEzE38Jwug8LcL-F2ylYFdXyLbBAYESIRRxjm5fQMi5aorIHLbVeennjydw1C-y9JspoTM9Zzcad3M_eZUHBt7D0Hkb1-L6qCwZvLqu7abV_-UHfNXMk1wSyD1u1P4yBJQ-yJcCFqOjLMlLptpI7fZjbhQeIcDDlX5yuQr1m3CEL46n8GuXDmK4OR_pj9kPnp67wnzBz-EXsX0bI6-71uN1qryUM43wjKwxztrree_3ZMFTNYLraw_85cQwSXFObCUQFL6Eg3iJEchoBxdwceDBO-bHr7WOv8KsCtwenkG64d9cwlrwn7-Ql5C33As7IVx5x1vZjlDiEMRmrhhdW73YI2Lvml7eW3QscP3HL9ttE1GHs8D4BhiY6yJnSO9KXMcKx_Z8qVZkWJiafkXBHU0v0IfnHM8iuBTWGEmDZJ7NcnBYpxj3nCNqVUN5C_RoKZCxvRpju3A8_O5YPqK2LZrKIMCmf6M5ZF9fAb5uPzjKI0znX0dBEX9ttZXwdY9Ly3j5KrffuFBo4asqvWVknN0thNGJSt_Fboxd5KRYidlCmd6dCe-FJVzWssDp9TyNqY6DTK5w_-sHhaHZlKG8YzkPId155Q29ccPM2n2Tv6MJu0VOJ8HmzwLcOF2_lISHxBQGoMEQAyS8YuT2I7T0mZRoXmL4sS4bBaRxqPO03_IXE9iXFHTAV0QcLIGiStHYINvmNrpUWMRXRi9b9wLfdaEWe_mbyVeyG9s6-BvBOQPaAAwT5qB57tA0a7i9Y0ebxO1-vVArKwvbVxLcC4f8-U02rG2_EZ7f6Yf5XwJdd-hOqMOqDHMgePhXicTmY54bEXQUdUjIDm47d-WPrRK4Pw2JKz3yYeAeWoy5yNvBzfuc_OWjwFAemthOmSlOJ7L6TdOQeBu1q_U-nFUZL02EU6fjOmQO8dxQSb59MZrtswS-YZ_gQL_WlIPAyR6YLi-OIN5HNr5n6tU4gXKikbLRNrfZXbQhlsID_D3cHsDjwW1a6N8JUAabORQm3_Yuxsh2nQ9TRqjfCZ7spKZ_NZtp55TpTxdBDZDi1jePcspW4yl88Mqk9MCXUIdUmzPQhEA1uAdPKw4-8ccc7QmT74U6p3dkRzp7e4-jHChPw2ke8BwD00Yx042LA6QpuCAtTtpGa4Ej8A1JE-PlF-zVljkCY0px6W6LYB41O0olGbDcjPlKb1bDKUzMLiN5FmsblUChlDFhO32QiKaOTcZLT6vOnVkDZXKJ1Lbj4SOl5oYll4ow_eVNRWpsZ0tHGNINr6PFMrnlC47soeLShLAHvYBMzhJ9G8TkPX0SpHgWM2vGyufKvX0ToDKxXfOqKVOrH0m_UCHCjxXeQoZJVBg9Ux42VyDBqUOS5OnR3v71pD5ZIFiPTj2ARAQzbx5ckelaAh_jLfVLXd0Req-H1sqXz1jOYAIXj83nhyyNPZA7gu-I_ULynxNl_MhpLLk187UsoXsYzR-4qwsYpsaHexhe_pZ7tP_qYV9KE8vzpMraPtWd841hBWpawLRMBdw88HniLw3L3OmF_6JTWtxl9T0zRIKhlE-Ts1j7ixcxFOTnnfKsYkp_E96aS4ubj_VbxhRk4KcbsABi6AEg0lYx2fqlcTK45Wt8-myrjkGtg4NhznuYEMAIw1TTyMy8eTyVQdyZkI1RLeKN3oO1dhC9NQCokR2Szh8ngzJ4iQ7uwRbA6b9ybq2XHhKcK7clR4GNwF_tRON6WAH7prlT4TsX9a3CwXXqDT92eRayRy_kZpP-dngodUFGePJi-qcIVJ1Dir1bkj0jHt3Gr8WdXrxKAA49amV4LpRJUOpSLQLYpAOnmMsjBbd5sRK1krRelUOaH6VhdnH1yRjYR41WEWXQ6Bi66Fa_HzJHca_IAEICG6ctZox4686KrfHGsJE0kttSGyOBuHPzPdiLfidYBKoAk31jD8APapCLTYDyPApZD0bUUfY9GQ2vhi1yKgKyHsnx8WbQS5u0eHmj9DW62wHAPeoWY90lmqKjwjHI5uINwSfQFZLWvkA0Zbpho8xVotVakkWdU1Cy3ZNvTGT_COj68ZK5VlqjKEKvFyQmYBaE743cGICvBEf-Seha-QAmZN_i_ZiSLbuYyD2JKka3Yu-iQBkGBLA41EXzsJvCYDY0I6RQofw-1Q3cfKQ8FkbPFVbk6gMfICq5yLvbgXYsGax__UbHmskxJ5GKWj4vC9IHlIxBIugLcTaQL1WhwXWXWKSpyBqxBSqhiJjQuhCUpGwzsPfa_VTpCTbGzLJ8nL9NOI86uqASIhRZIEdygmJggcNHfqtfLsyueRxYSazrcXxllQ8nHuOH7CtV0X_5sXEprBe_1PZEZrur-0CUtgMJEd0Jf-Um1ox8JAtKiDkyUGm",
+              "video_metadata": null,
+              "tool_call": null,
+              "tool_response": null,
+              "part_metadata": null,
+              "audio_transcription": null
+            }
+          ],
+          "role": "model"
+        },
+        "citation_metadata": null,
+        "finish_message": null,
+        "token_count": null,
+        "finish_reason": "STOP",
+        "grounding_metadata": null,
+        "avg_logprobs": null,
+        "index": 0,
+        "logprobs_result": null,
+        "safety_ratings": null,
+        "url_context_metadata": null
+      }
+    ],
+    "create_time": null,
+    "model_version": "gemini-3.8-flash",
+    "prompt_feedback": null,
+    "response_id": "RAGgasE24Ni90g-FvJaoBw",
+    "usage_metadata": {
+      "cache_tokens_details": null,
+      "cached_content_token_count": null,
+      "candidates_token_count": 305,
+      "candidates_tokens_details": null,
+      "prompt_token_count": 5920,
+      "prompt_tokens_details": [
+        {
+          "modality": "TEXT",
+          "token_count": 5920
+        }
+      ],
+      "thoughts_token_count": 1862,
+      "tool_use_prompt_token_count": null,
+      "tool_use_prompt_tokens_details": null,
+      "total_token_count": 8087,
+      "traffic_type": null
+    },
+    "model_status": null,
+    "automatic_function_calling_history": [],
+    "parsed": {
+      "schema_version": "study-e-evaluator-rating-v1",
+      "item_id": "EVAL-BLIND-045",
+      "scores": {
+        "persona_fit": 3,
+        "clarity": 3,
+        "actionability": 4,
+        "factual_grounding": 5
+      },
+      "reasons": {
+        "persona_fit": "The calm, realistic tone fits Bareni well, but leaking internal prompt meta-text ('persona scenario') directly into reader-facing copy breaks character and requires revision.",
+        "clarity": "The core workflow message is clear, but abruptly introducing 'the 8-10 hours-a-week pain point' with no prior context creates confusion and requires rereading.",
+        "actionability": "Provides a feasible diagnostic exercise to list data gaps and evaluate whether a workflow needs a manual check, spreadsheet, or AI.",
+        "factual_grounding": "Strictly adheres to boundaries, claims no nonexistent capabilities or client results, and explicitly cautions against assuming AI solves incomplete data."
+      },
+      "critical_violation": false,
+      "critical_violation_type": null,
+      "critical_evidence_quote": null,
+      "total_score": 15,
+      "pass": true,
+      "low_quality": false
+    }
+  },
+  "cost_details": {
+    "input": 0.00444,
+    "cache_read_input_tokens": 0.0,
+    "output": 0.00114375,
+    "reasoning_output_tokens": 0.0069825,
+    "total": 0.01256625
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": null,
+  "key": "SE-FINAL-N045_eval_final__a001",
+  "role": "evaluator",
+  "created_at": "2026-09-08T12:36:20.280174+00:00",
+  "ended_at": "2026-09-08T12:36:29.818176+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-N045",
+    "batch_id": 2,
+    "condition": "natural",
+    "cohort": "natural"
+  },
+  "task_id": "SE-FINAL-N045",
+  "batch_id": 2,
+  "cohort": "natural",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 9530,
+  "budget_charge_usd": 0.01256625,
+  "unknown_cost_reservation_usd": 0
+}

@@ -1,0 +1,342 @@
+{
+  "task_id": "SE-FINAL-M050",
+  "batch_id": 2,
+  "condition": "unchanged",
+  "source_task_id": "SE-FINAL-N038",
+  "topic": "the limits of AI disclosure",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-307",
+    "title": "When AI should be disclosed in a small-business workflow",
+    "body": "If you are a small-business owner trying to decide where AI belongs, I would make disclosure a workflow decision, not a slogan. The useful question is simple: does the system only help you read information, or does it make a choice that someone else can see? If AI is routing a support request, filtering a lead, scoring a prospect, blocking an invoice, or preparing a payment decision, disclosure and human review should be part of the design. If AI is only surfacing sources for you to verify, the disclosure burden is lighter, because the final choice is still yours.\n\nThat is the boundary Bareni keeps in mind in its self-built demos. The knowledge assistant can show sources, so the owner can check what it read before answering. The accounts-payable demo can flag duplicates and block payment attempts, with human approval required for money movement. Those are demos on synthetic data, not customer deployments, so they are useful as examples of control, not proof of production readiness.\n\nMy practical next step is this: for any workflow you are considering, ask, “Can I see why it chose this, and can I override it if I disagree?” If the answer is no, the step is probably too opaque for automation. In that case, redesign the scope or leave that part manual. It is usually cheaper than explaining a black box later, which is a lovely conversation to avoid."
+  },
+  "final": {
+    "item_id": "E-OPT-407",
+    "title": "When AI should be disclosed in a small-business workflow",
+    "body": "If you are a small-business owner deciding where AI belongs, treat disclosure as a workflow choice, not a slogan. The useful question is simple: does the system only help you read information, or does it make a choice that someone else can see? If AI is routing a support request, filtering a lead, scoring a prospect, blocking an invoice, or preparing a payment decision, disclosure and human review should be built into the process. If AI only surfaces sources for you to verify, the disclosure burden is lighter, because the final choice is still yours.\n\nThat boundary shows up in Bareni’s self-built demos. The knowledge assistant can show sources, so the owner can check what it read before answering a customer question. The accounts-payable demo can flag duplicates and block payment attempts, with human approval required for money movement. Both are synthetic demos, not customer deployments, so they are useful as examples of control, not proof of production readiness.\n\nMy practical next step is this: for any workflow you are considering, ask, “Can I see why it chose this, and can I override it if I disagree?” If the answer is no, that part is probably too opaque to automate yet. Redesign the scope, or leave that step manual. A black box is a poor place to save time."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-050",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-050",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-050-1",
+        "repairs": []
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-050",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-407",
+        "title": "When AI should be disclosed in a small-business workflow",
+        "body": "If you are a small-business owner deciding where AI belongs, treat disclosure as a workflow choice, not a slogan. The useful question is simple: does the system only help you read information, or does it make a choice that someone else can see? If AI is routing a support request, filtering a lead, scoring a prospect, blocking an invoice, or preparing a payment decision, disclosure and human review should be built into the process. If AI only surfaces sources for you to verify, the disclosure burden is lighter, because the final choice is still yours.\n\nThat boundary shows up in Bareni’s self-built demos. The knowledge assistant can show sources, so the owner can check what it read before answering a customer question. The accounts-payable demo can flag duplicates and block payment attempts, with human approval required for money movement. Both are synthetic demos, not customer deployments, so they are useful as examples of control, not proof of production readiness.\n\nMy practical next step is this: for any workflow you are considering, ask, “Can I see why it chose this, and can I override it if I disagree?” If the answer is no, that part is probably too opaque to automate yet. Redesign the scope, or leave that step manual. A black box is a poor place to save time."
+      },
+      "gate_key": "SE-FINAL-M050_gate1__a001"
+    }
+  ],
+  "measurement_status": "complete",
+  "planner": {
+    "item_id": "E-PLAN-507",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task explicitly sets CTA rule to 'None'. L01 guides closure: end with a practical next-step observation rather than a booking prompt, ensuring compliance with the frozen persona's informational voice and the no-CTA constraint."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Anchor the post to one concrete Bareni workflow decision: when and how to disclose AI involvement in an automated system that handles customer-facing or internal decisions. Frame disclosure as a control that protects the owner's authority and customer trust, not as a compliance burden.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C04",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Explain the practical threshold: disclosure becomes necessary when AI makes a customer-visible choice (e.g., routing a support request, filtering a lead, scoring a prospect) or prepares a high-risk decision (e.g., payment approval, invoice blocking). Contrast this with AI that only surfaces information for human choice.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Use a concrete Bareni example: the knowledge assistant shows sources so the owner can verify what the AI read before answering a customer question. Accounts-payable automation blocks payments and flags duplicates—the owner sees the rule, not a black box. Keep the example scaled to the frozen persona's 1–10-person business.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C03"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "State the owner's diagnostic question: 'Does this automation let me see why it made a choice, and can I override it if I disagree?' Explain that if the answer is no, the automation is not yet suitable for that workflow.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C02",
+          "C04",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Connect disclosure to the owner's authority: automation that the owner understands and can control is automation the owner can safely hand to a customer or team. Automation that hides its logic erodes trust and may violate the owner's own judgment of what is ethical.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C05",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Close with a neutral practical next step: if the owner is evaluating an automation idea, ask whether the system can show its sources and rules. If it cannot, that is a signal to either redesign the scope or skip automation for that step. No booking prompt.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C04",
+          "C05",
+          "S01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "Use only approved Bareni self-built demos (knowledge assistant, accounts-payable, Atlas Partner) with disclosed limits. Do not invent customer results, deployments, or team members. Frame examples as what Bareni has built, not what customers have deployed."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Emphasize that human approval is mandatory for money movement and high-risk decisions. The accounts-payable demo blocks payment attempts; disclosure and human control are non-negotiable."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Maintain the frozen persona: plain-speaking technical expert, founder-to-founder, trust over enthusiasm. No CTA. Preserve the evidence boundary: disclosure as a workflow control, not a legal requirement or compliance burden."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use plain English. Distinguish between what Bareni has built (self-built demos with disclosed limits) and what the owner should expect in their own workflow (transparency and override authority). No hype, no numbers without sources."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-607",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Turn the abstract topic into a bounded Bareni workflow decision. Explain one practical next step."
+          },
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          }
+        ],
+        "rationale": "This is a planning instruction about how to frame the post, not an assertion that Bareni operates a disclosure control in a live system. The framing is permissible: it sits inside the approved task scope and is compatible with the human-approval boundary.",
+        "use_guidance": "Keep as an explicitly framed editorial choice. Do not let the framing imply that Bareni has deployed or tested a disclosure control with customers; disclosure discussion must stay at the level of workflow design for the owner."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C03",
+            "quote": "amount-based human-only approval, refusal of agent approval/payment attempts, and persistent audit records work"
+          }
+        ],
+        "rationale": "This proposes a design threshold for when to disclose AI involvement. It is a recommendation, not a claim about an implemented or observed rule, and it aligns with the mandatory human-approval boundary.",
+        "use_guidance": "Present the threshold as Bareni's recommended design rule, not as a legal, regulatory or compliance requirement. Avoid legal advice. Do not describe lead scoring or support routing as existing Bareni features; use them only as generic illustrations of customer-visible choices."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C03",
+            "quote": "generate grounded LLM answers; and show sources"
+          },
+          {
+            "source_id": "C03",
+            "quote": "Self-built local demo using synthetic Acme Shop data"
+          },
+          {
+            "source_id": "C03",
+            "quote": "Arithmetic checks, duplicate-invoice blocking, amount-based human-only approval, refusal of agent approval/payment attempts, and persistent audit records work"
+          },
+          {
+            "source_id": "C03",
+            "quote": "The blocked payment demonstration is a manual trigger and simulated, not a real transfer."
+          }
+        ],
+        "rationale": "Source-showing, duplicate flagging and payment blocking are approved as working features, so the core holds. But the claim as written omits that both are self-built demos on synthetic data, that the blocked-payment demonstration is a manual trigger and simulated, and it uses \"the owner\" in a way that could read as a real customer using the systems.",
+        "use_guidance": "Add the qualifications: both are self-built demos on synthetic data, not customer deployments; the blocked payment is a manual, simulated trigger, not an actual transfer. Phrase the owner as a hypothetical reader rather than a user of these demos, and do not imply production operation, real customer documents, OCR/PDF ingestion or three-way matching."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step. Do not force AI where it is unsuitable."
+          },
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI\n  fits"
+          }
+        ],
+        "rationale": "This is a diagnostic question and a suitability judgement offered to the reader, not an assertion of a current capability or observed outcome. It matches the persona's practicality instruction and the honest-fit stance in approved evidence.",
+        "use_guidance": "Keep as a reader-facing diagnostic question. Do not present it as a formal Bareni test, scoring framework or productised checklist, and do not attach it to an invitation to book anything."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Prefer concrete mechanisms and measured outcomes."
+          }
+        ],
+        "rationale": "The link between owner control and human authority is supported in principle by the mandatory human-approval boundary, but \"erodes trust\" and \"may violate the owner's own judgment of what is ethical\" assert an effect without approved support and drift toward moral assertion; scope must be limited to observable control and override.",
+        "use_guidance": "Restate as an owner-authority point grounded in the human-approval boundary: automation whose logic and override path the owner can see stays under human control. Drop or clearly mark as opinion any claim about eroded trust or ethics; do not assert trust effects as observed outcomes, and avoid legal or compliance framing."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Informational posts use no CTA or one soft closing sentence."
+          }
+        ],
+        "rationale": "A neutral next-step note that explicitly excludes a booking prompt. It is a recommendation to the reader and complies with the task's no-CTA rule and the informational-post guidance.",
+        "use_guidance": "Keep as a closing practical observation only. Per the no-CTA rule, avoid any invitation to book a diagnostic, discuss the situation or continue the conversation, and do not add capacity or scarcity statements."
+      }
+    ]
+  },
+  "selected_lessons": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025"
+      ]
+    }
+  ],
+  "register_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "planner_key": "SE-FINAL-N038_planner__a001",
+  "researcher_key": "SE-FINAL-N038_researcher__a001",
+  "writer_key": "SE-FINAL-N038_writer__a001",
+  "final_key": "SE-FINAL-M050_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-M050_gate1__a001",
+  "production_completed_at": "2026-09-08T13:35:46.126371+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts",
+  "initial_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-050",
+    "scores": {
+      "persona_fit": 4,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Fits the target owner-operator audience and adheres to Bareni's boundary discipline, though it occasionally shifts to first-person singular ('I', 'my') instead of standard public 'we'.",
+      "clarity": "Excellently organized with a direct opening, clear explanation of disclosure boundaries, and unambiguous logical progression.",
+      "actionability": "Provides an immediate, practical diagnostic test ('Can I see why it chose this, and can I override it?') along with clear advice on handling opaque steps.",
+      "factual_grounding": "Flawlessly grounded; explicitly identifies demos as self-built on synthetic data, not customer deployments, and preserves human approval boundaries."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 19,
+    "pass": true,
+    "low_quality": false
+  },
+  "final_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-050",
+    "scores": {
+      "persona_fit": 4,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Speaks directly to the 1–10 owner-operator in a calm, practical tone without hype or CTA; uses 'My' once instead of Bareni's preferred public 'we'.",
+      "clarity": "Logical structure and immediately clear distinction between internal reading tools and externally visible decisions.",
+      "actionability": "Provides a direct, realistic diagnostic question with clear decision rules on whether to automate, rescope, or stay manual.",
+      "factual_grounding": "Accurately references the self-built demos, explicitly qualifying them as synthetic demos rather than customer deployments or production proof."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 19,
+    "pass": true,
+    "low_quality": false
+  },
+  "evaluation_reused": false,
+  "evaluation_keys": [
+    "SE-FINAL-M050_eval_initial__a001",
+    "SE-FINAL-M050_eval_final__a001"
+  ],
+  "completed_at": "2026-09-08T13:35:58.416798+00:00"
+}

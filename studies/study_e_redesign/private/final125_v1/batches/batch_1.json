@@ -1,0 +1,65 @@
+{
+  "batch": 1,
+  "summary": {
+    "batch": 1,
+    "observed": 31,
+    "initial_failed": 1,
+    "final_unresolved": 0,
+    "refined": 31,
+    "representative_task_ids": [
+      "SE-FINAL-N025"
+    ]
+  },
+  "events": [
+    {
+      "event_id": "B1-SUMMARY",
+      "status": "confirmed",
+      "observation": "Confirmed execution-log summary; Gate findings are model reports, not independently established business facts. {\"batch\": 1, \"observed\": 31, \"initial_failed\": 1, \"final_unresolved\": 0, \"refined\": 31, \"representative_task_ids\": [\"SE-FINAL-N025\"]}"
+    },
+    {
+      "event_id": "SE-FINAL-N025",
+      "status": "confirmed",
+      "observation": "Recorded Gate finding and repair outcome, not a customer outcome: {\"task_id\": \"SE-FINAL-N025\", \"topic\": \"early signs of system prompt sprawl\", \"initial_gate\": {\"schema_version\": \"study-e-gate-v4\", \"item_id\": \"GATE-BLIND-025\", \"assessment_status\": \"assessed\", \"input_problem_reason\": null, \"defects\": [{\"dimension\": \"persona_fit\", \"severity\": \"noncritical\", \"location_kind\": \"quote\", \"text_field\": \"body\", \"quote\": \"That is also the kind of question a free diagnostic conversation would sort through\", \"missing_requirement\": null, \"rule_id\": \"R-N-1\", \"evidence_ids\": [\"BRIEF\", \"C05\", \"S01\"], \"reason\": \"The post includes a CTA-like invitation to a free diagnostic conversation even though the task explicitly requires no CTA for this informational post.\"}]}, \"final_gate\": {\"schema_version\": \"study-e-gate-v4\", \"item_id\": \"GATE-BLIND-025\", \"assessment_status\": \"assessed\", \"input_problem_reason\": null, \"defects\": []}, \"critic_excerpt\": \"{\\\"item_id\\\": \\\"E-CRIT-BLIND-025-1\\\", \\\"repairs\\\": [{\\\"repair_id\\\": \\\"P01\\\", \\\"target_ids\\\": [\\\"D01\\\"], \\\"instruction\\\": \\\"Remove the free-diagnostic invitation and end the post without any CTA or meeting mention. Replace the closing sentence with a neutral observation that keeps the next-step guidance, for example: 'The owner still makes the call.'\\\", \\\"source_ids\\\": [\\\"BRIEF\\\", \\\"C05\\\", \\\"S01\\\"]}]}\"}"
+    }
+  ],
+  "register_before_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "register": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025"
+      ]
+    }
+  ],
+  "curator": {
+    "item_id": "E-MEM-BATCH-1",
+    "proposals": [
+      {
+        "proposal_id": "P01",
+        "action": "ADD",
+        "target_lesson_id": null,
+        "event_ids": [
+          "B1-SUMMARY",
+          "SE-FINAL-N025"
+        ],
+        "lesson_text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+        "reason": "Supported by the confirmed batch summary and the confirmed recorded Gate finding in SE-FINAL-N025. The observed issue is a recurring scope-control pattern tied to the frozen persona and CTA rule, and the register is empty so a new reusable lesson is justified."
+      }
+    ]
+  },
+  "memory_parent": "batch1_curator__a001",
+  "history": [
+    {
+      "event_id": "B1-SUMMARY",
+      "status": "confirmed",
+      "observation": "Confirmed execution-log summary; Gate findings are model reports, not independently established business facts. {\"batch\": 1, \"observed\": 31, \"initial_failed\": 1, \"final_unresolved\": 0, \"refined\": 31, \"representative_task_ids\": [\"SE-FINAL-N025\"]}"
+    },
+    {
+      "event_id": "SE-FINAL-N025",
+      "status": "confirmed",
+      "observation": "Recorded Gate finding and repair outcome, not a customer outcome: {\"task_id\": \"SE-FINAL-N025\", \"topic\": \"early signs of system prompt sprawl\", \"initial_gate\": {\"schema_version\": \"study-e-gate-v4\", \"item_id\": \"GATE-BLIND-025\", \"assessment_status\": \"assessed\", \"input_problem_reason\": null, \"defects\": [{\"dimension\": \"persona_fit\", \"severity\": \"noncritical\", \"location_kind\": \"quote\", \"text_field\": \"body\", \"quote\": \"That is also the kind of question a free diagnostic conversation would sort through\", \"missing_requirement\": null, \"rule_id\": \"R-N-1\", \"evidence_ids\": [\"BRIEF\", \"C05\", \"S01\"], \"reason\": \"The post includes a CTA-like invitation to a free diagnostic conversation even though the task explicitly requires no CTA for this informational post.\"}]}, \"final_gate\": {\"schema_version\": \"study-e-gate-v4\", \"item_id\": \"GATE-BLIND-025\", \"assessment_status\": \"assessed\", \"input_problem_reason\": null, \"defects\": []}, \"critic_excerpt\": \"{\\\"item_id\\\": \\\"E-CRIT-BLIND-025-1\\\", \\\"repairs\\\": [{\\\"repair_id\\\": \\\"P01\\\", \\\"target_ids\\\": [\\\"D01\\\"], \\\"instruction\\\": \\\"Remove the free-diagnostic invitation and end the post without any CTA or meeting mention. Replace the closing sentence with a neutral observation that keeps the next-step guidance, for example: 'The owner still makes the call.'\\\", \\\"source_ids\\\": [\\\"BRIEF\\\", \\\"C05\\\", \\\"S01\\\"]}]}\"}"
+    }
+  ]
+}

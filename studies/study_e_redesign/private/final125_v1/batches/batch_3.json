@@ -1,0 +1,144 @@
+{
+  "batch": 3,
+  "summary": {
+    "batch": 3,
+    "observed": 31,
+    "initial_failed": 3,
+    "final_unresolved": 0,
+    "refined": 31,
+    "representative_task_ids": [
+      "SE-FINAL-N079",
+      "SE-FINAL-N080",
+      "SE-FINAL-N091"
+    ]
+  },
+  "events": [
+    {
+      "event_id": "B3-SUMMARY",
+      "status": "confirmed",
+      "observation": "Confirmed execution-log summary; Gate findings are model reports, not independently established business facts. {\"batch\": 3, \"observed\": 31, \"initial_failed\": 3, \"final_unresolved\": 0, \"refined\": 31, \"representative_task_ids\": [\"SE-FINAL-N079\", \"SE-FINAL-N080\", \"SE-FINAL-N091\"]}"
+    },
+    {
+      "event_id": "SE-FINAL-N079",
+      "status": "confirmed",
+      "observation": "Recorded Gate finding and repair outcome, not a customer outcome: {\"task_id\": \"SE-FINAL-N079\", \"topic\": \"when spot checks stop working\", \"initial_gate\": {\"schema_version\": \"study-e-gate-v4\", \"item_id\": \"GATE-BLIND-079\", \"assessment_status\": \"assessed\", \"input_problem_reason\": null, \"defects\": [{\"dimension\": \"persona_fit\", \"severity\": \"noncritical\", \"location_kind\": \"quote\", \"text_field\": \"body\", \"quote\": \"At Bareni, the practical next step is a free 30-minute diagnostic of one recurring workflow.\", \"missing_requirement\": null, \"rule_id\": \"R-N-1\", \"evidence_ids\": [\"BRIEF\", \"C05\", \"S01\"], \"reason\": \"The post includes a direct Bareni CTA even though this task explicitly requires no CTA for this informational post, creating a material mismatch with the requested content intent and CTA rule.\"}]}, \"final_gate\": {\"schema_version\": \"study-e-gate-v4\", \"item_id\": \"GATE-BLIND-079\", \"assessment_status\": \"assessed\", \"input_problem_reason\": null, \"defects\": []}, \"critic_excerpt\": \"{\\\"item_id\\\": \\\"E-CRIT-BLIND-079-1\\\", \\\"repairs\\\": [{\\\"repair_id\\\": \\\"P01\\\", \\\"target_ids\\\": [\\\"D01\\\"], \\\"instruction\\\": \\\"Remove the direct Bareni CTA sentence and replace it with a non-CTA closing that simply restates the next diagnostic question or decision boundary for the owner.\\\", \\\"source_ids\\\": [\\\"BRIEF\\\", \\\"C05\\\", \\\"S01\\\"]}]}\"}"
+    },
+    {
+      "event_id": "SE-FINAL-N080",
+      "status": "confirmed",
+      "observation": "Recorded Gate finding and repair outcome, not a customer outcome: {\"task_id\": \"SE-FINAL-N080\", \"topic\": \"why proof-of-concept debt survives\", \"initial_gate\": {\"schema_version\": \"study-e-gate-v4\", \"item_id\": \"GATE-BLIND-080\", \"assessment_status\": \"assessed\", \"input_problem_reason\": null, \"defects\": [{\"dimension\": \"factual_grounding\", \"severity\": \"noncritical\", \"location_kind\": \"quote\", \"text_field\": \"body\", \"quote\": \"Finished code and accounts stay in the customer’s name; there is no separate formal build gate.\", \"missing_requirement\": null, \"rule_id\": \"R-N-4\", \"evidence_ids\": [\"C02\", \"BRIEF\", \"S01\"], \"reason\": \"This presents account ownership as an absolute statement, but the approved evidence supports it as policy ('accounts are in the customer's name from the start') and says to describe it as policy/no-lock-in positioning, not an absolute warranty. The sentence overstates that point.\"}]}, \"final_gate\": {\"schema_version\": \"study-e-gate-v4\", \"item_id\": \"GATE-BLIND-080\", \"assessment_status\": \"assessed\", \"input_problem_reason\": null, \"defects\": []}, \"critic_excerpt\": \"{\\\"item_id\\\": \\\"E-CRIT-BLIND-080-1\\\", \\\"repairs\\\": [{\\\"repair_id\\\": \\\"P01\\\", \\\"target_ids\\\": [\\\"D01\\\"], \\\"instruction\\\": \\\"Soften the ownership statement to policy language. Replace 'Finished code and accounts stay in the customer’s name' with something like 'Our policy is to put finished code and relevant accounts in the customer’s name from the start' so it reads as positioning, not an absolute warranty.\\\", \\\"source_ids\\\": [\\\"C02\\\", \\\"BRIEF\\\", \\\"S01\\\"]}]}\"}"
+    },
+    {
+      "event_id": "SE-FINAL-N091",
+      "status": "confirmed",
+      "observation": "Recorded Gate finding and repair outcome, not a customer outcome: {\"task_id\": \"SE-FINAL-N091\", \"topic\": \"what subprocessor lists hide\", \"initial_gate\": {\"schema_version\": \"study-e-gate-v4\", \"item_id\": \"GATE-BLIND-091\", \"assessment_status\": \"assessed\", \"input_problem_reason\": null, \"defects\": [{\"dimension\": \"factual_grounding\", \"severity\": \"noncritical\", \"location_kind\": \"quote\", \"text_field\": \"body\", \"quote\": \"They tell you, in plain terms, that your vendor may pass data to other companies behind the scenes.\", \"missing_requirement\": null, \"rule_id\": \"R-N-4\", \"evidence_ids\": [\"BRIEF\", \"S01\"], \"reason\": \"This is a material factual claim about what subprocessor lists disclose, but the approved evidence does not provide support for that substantive privacy/compliance assertion; it goes beyond the supplied Bareni evidence boundary.\"}]}, \"final_gate\": {\"schema_version\": \"study-e-gate-v4\", \"item_id\": \"GATE-BLIND-091\", \"assessment_status\": \"assessed\", \"input_problem_reason\": null, \"defects\": []}, \"critic_excerpt\": \"{\\\"item_id\\\": \\\"E-CRIT-BLIND-091-1\\\", \\\"repairs\\\": [{\\\"repair_id\\\": \\\"P01\\\", \\\"target_ids\\\": [\\\"D01\\\"], \\\"instruction\\\": \\\"Replace the unsupported explanation of what subprocessor lists disclose with a neutral workflow prompt, such as: 'If you use a tool in a repeatable workflow, read the subprocessor list before you connect it to customer data, invoices, or internal documents.'\\\", \\\"source_ids\\\": [\\\"BRIEF\\\", \\\"S01\\\"]}]}\"}"
+    }
+  ],
+  "register_before_sha256": "48497afb8641ddc47d974cdfadba06a1f6b562d21c49ec03c9b03a5dc531744e",
+  "register": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. This includes indirect meeting prompts and direct brand-level offers such as a free 30-minute diagnostic. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025",
+        "B3-SUMMARY",
+        "SE-FINAL-N079"
+      ]
+    },
+    {
+      "lesson_id": "L02",
+      "text": "When approved evidence presents an operational practice as policy or positioning, keep that qualifier in the copy. Do not rewrite it as an absolute guarantee or warranty-level statement.",
+      "source_event_ids": [
+        "B3-SUMMARY",
+        "SE-FINAL-N080"
+      ]
+    },
+    {
+      "lesson_id": "L03",
+      "text": "If the source set does not support a substantive explanatory claim, replace it with a neutral workflow prompt or decision step rather than filling the gap with general background explanation.",
+      "source_event_ids": [
+        "B3-SUMMARY",
+        "SE-FINAL-N091"
+      ]
+    }
+  ],
+  "curator": {
+    "item_id": "E-MEM-BATCH-3",
+    "proposals": [
+      {
+        "proposal_id": "P01",
+        "action": "MERGE",
+        "target_lesson_id": "L01",
+        "event_ids": [
+          "B1-SUMMARY",
+          "SE-FINAL-N025",
+          "B3-SUMMARY",
+          "SE-FINAL-N079"
+        ],
+        "lesson_text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. This includes indirect meeting prompts and direct brand-level offers such as a free 30-minute diagnostic. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+        "reason": "Confirmed batch-3 evidence repeats and sharpens the same underlying issue already captured in L01: informational posts drift into CTA language. SE-FINAL-N079 adds a direct branded diagnostic invitation variant, so MERGE is appropriate to broaden the duplicate-prevention scope while preserving the lesson’s existing meaning and provenance."
+      },
+      {
+        "proposal_id": "P02",
+        "action": "ADD",
+        "target_lesson_id": null,
+        "event_ids": [
+          "B3-SUMMARY",
+          "SE-FINAL-N080"
+        ],
+        "lesson_text": "When approved evidence presents an operational practice as policy or positioning, keep that qualifier in the copy. Do not rewrite it as an absolute guarantee or warranty-level statement.",
+        "reason": "SE-FINAL-N080 shows a reusable factual-grounding failure pattern distinct from the existing CTA lesson: supported policy language ('our policy is...') was overstated into an absolute claim. This is a general drafting control for staying within the approved evidence boundary."
+      },
+      {
+        "proposal_id": "P03",
+        "action": "ADD",
+        "target_lesson_id": null,
+        "event_ids": [
+          "B3-SUMMARY",
+          "SE-FINAL-N091"
+        ],
+        "lesson_text": "If the source set does not support a substantive explanatory claim, replace it with a neutral workflow prompt or decision step rather than filling the gap with general background explanation.",
+        "reason": "SE-FINAL-N091 confirms a separate evidence-boundary pattern: the draft added an unsupported explanatory claim not grounded in the supplied evidence. The accepted repair moved back to an observable workflow instruction, which makes this a reusable lesson for constrained marketing content."
+      }
+    ]
+  },
+  "memory_parent": "batch3_curator__a001",
+  "history": [
+    {
+      "event_id": "B1-SUMMARY",
+      "status": "confirmed",
+      "observation": "Confirmed execution-log summary; Gate findings are model reports, not independently established business facts. {\"batch\": 1, \"observed\": 31, \"initial_failed\": 1, \"final_unresolved\": 0, \"refined\": 31, \"representative_task_ids\": [\"SE-FINAL-N025\"]}"
+    },
+    {
+      "event_id": "SE-FINAL-N025",
+      "status": "confirmed",
+      "observation": "Recorded Gate finding and repair outcome, not a customer outcome: {\"task_id\": \"SE-FINAL-N025\", \"topic\": \"early signs of system prompt sprawl\", \"initial_gate\": {\"schema_version\": \"study-e-gate-v4\", \"item_id\": \"GATE-BLIND-025\", \"assessment_status\": \"assessed\", \"input_problem_reason\": null, \"defects\": [{\"dimension\": \"persona_fit\", \"severity\": \"noncritical\", \"location_kind\": \"quote\", \"text_field\": \"body\", \"quote\": \"That is also the kind of question a free diagnostic conversation would sort through\", \"missing_requirement\": null, \"rule_id\": \"R-N-1\", \"evidence_ids\": [\"BRIEF\", \"C05\", \"S01\"], \"reason\": \"The post includes a CTA-like invitation to a free diagnostic conversation even though the task explicitly requires no CTA for this informational post.\"}]}, \"final_gate\": {\"schema_version\": \"study-e-gate-v4\", \"item_id\": \"GATE-BLIND-025\", \"assessment_status\": \"assessed\", \"input_problem_reason\": null, \"defects\": []}, \"critic_excerpt\": \"{\\\"item_id\\\": \\\"E-CRIT-BLIND-025-1\\\", \\\"repairs\\\": [{\\\"repair_id\\\": \\\"P01\\\", \\\"target_ids\\\": [\\\"D01\\\"], \\\"instruction\\\": \\\"Remove the free-diagnostic invitation and end the post without any CTA or meeting mention. Replace the closing sentence with a neutral observation that keeps the next-step guidance, for example: 'The owner still makes the call.'\\\", \\\"source_ids\\\": [\\\"BRIEF\\\", \\\"C05\\\", \\\"S01\\\"]}]}\"}"
+    },
+    {
+      "event_id": "B2-SUMMARY",
+      "status": "confirmed",
+      "observation": "Confirmed execution-log summary; Gate findings are model reports, not independently established business facts. {\"batch\": 2, \"observed\": 31, \"initial_failed\": 0, \"final_unresolved\": 0, \"refined\": 31, \"representative_task_ids\": []}"
+    },
+    {
+      "event_id": "B3-SUMMARY",
+      "status": "confirmed",
+      "observation": "Confirmed execution-log summary; Gate findings are model reports, not independently established business facts. {\"batch\": 3, \"observed\": 31, \"initial_failed\": 3, \"final_unresolved\": 0, \"refined\": 31, \"representative_task_ids\": [\"SE-FINAL-N079\", \"SE-FINAL-N080\", \"SE-FINAL-N091\"]}"
+    },
+    {
+      "event_id": "SE-FINAL-N079",
+      "status": "confirmed",
+      "observation": "Recorded Gate finding and repair outcome, not a customer outcome: {\"task_id\": \"SE-FINAL-N079\", \"topic\": \"when spot checks stop working\", \"initial_gate\": {\"schema_version\": \"study-e-gate-v4\", \"item_id\": \"GATE-BLIND-079\", \"assessment_status\": \"assessed\", \"input_problem_reason\": null, \"defects\": [{\"dimension\": \"persona_fit\", \"severity\": \"noncritical\", \"location_kind\": \"quote\", \"text_field\": \"body\", \"quote\": \"At Bareni, the practical next step is a free 30-minute diagnostic of one recurring workflow.\", \"missing_requirement\": null, \"rule_id\": \"R-N-1\", \"evidence_ids\": [\"BRIEF\", \"C05\", \"S01\"], \"reason\": \"The post includes a direct Bareni CTA even though this task explicitly requires no CTA for this informational post, creating a material mismatch with the requested content intent and CTA rule.\"}]}, \"final_gate\": {\"schema_version\": \"study-e-gate-v4\", \"item_id\": \"GATE-BLIND-079\", \"assessment_status\": \"assessed\", \"input_problem_reason\": null, \"defects\": []}, \"critic_excerpt\": \"{\\\"item_id\\\": \\\"E-CRIT-BLIND-079-1\\\", \\\"repairs\\\": [{\\\"repair_id\\\": \\\"P01\\\", \\\"target_ids\\\": [\\\"D01\\\"], \\\"instruction\\\": \\\"Remove the direct Bareni CTA sentence and replace it with a non-CTA closing that simply restates the next diagnostic question or decision boundary for the owner.\\\", \\\"source_ids\\\": [\\\"BRIEF\\\", \\\"C05\\\", \\\"S01\\\"]}]}\"}"
+    },
+    {
+      "event_id": "SE-FINAL-N080",
+      "status": "confirmed",
+      "observation": "Recorded Gate finding and repair outcome, not a customer outcome: {\"task_id\": \"SE-FINAL-N080\", \"topic\": \"why proof-of-concept debt survives\", \"initial_gate\": {\"schema_version\": \"study-e-gate-v4\", \"item_id\": \"GATE-BLIND-080\", \"assessment_status\": \"assessed\", \"input_problem_reason\": null, \"defects\": [{\"dimension\": \"factual_grounding\", \"severity\": \"noncritical\", \"location_kind\": \"quote\", \"text_field\": \"body\", \"quote\": \"Finished code and accounts stay in the customer’s name; there is no separate formal build gate.\", \"missing_requirement\": null, \"rule_id\": \"R-N-4\", \"evidence_ids\": [\"C02\", \"BRIEF\", \"S01\"], \"reason\": \"This presents account ownership as an absolute statement, but the approved evidence supports it as policy ('accounts are in the customer's name from the start') and says to describe it as policy/no-lock-in positioning, not an absolute warranty. The sentence overstates that point.\"}]}, \"final_gate\": {\"schema_version\": \"study-e-gate-v4\", \"item_id\": \"GATE-BLIND-080\", \"assessment_status\": \"assessed\", \"input_problem_reason\": null, \"defects\": []}, \"critic_excerpt\": \"{\\\"item_id\\\": \\\"E-CRIT-BLIND-080-1\\\", \\\"repairs\\\": [{\\\"repair_id\\\": \\\"P01\\\", \\\"target_ids\\\": [\\\"D01\\\"], \\\"instruction\\\": \\\"Soften the ownership statement to policy language. Replace 'Finished code and accounts stay in the customer’s name' with something like 'Our policy is to put finished code and relevant accounts in the customer’s name from the start' so it reads as positioning, not an absolute warranty.\\\", \\\"source_ids\\\": [\\\"C02\\\", \\\"BRIEF\\\", \\\"S01\\\"]}]}\"}"
+    },
+    {
+      "event_id": "SE-FINAL-N091",
+      "status": "confirmed",
+      "observation": "Recorded Gate finding and repair outcome, not a customer outcome: {\"task_id\": \"SE-FINAL-N091\", \"topic\": \"what subprocessor lists hide\", \"initial_gate\": {\"schema_version\": \"study-e-gate-v4\", \"item_id\": \"GATE-BLIND-091\", \"assessment_status\": \"assessed\", \"input_problem_reason\": null, \"defects\": [{\"dimension\": \"factual_grounding\", \"severity\": \"noncritical\", \"location_kind\": \"quote\", \"text_field\": \"body\", \"quote\": \"They tell you, in plain terms, that your vendor may pass data to other companies behind the scenes.\", \"missing_requirement\": null, \"rule_id\": \"R-N-4\", \"evidence_ids\": [\"BRIEF\", \"S01\"], \"reason\": \"This is a material factual claim about what subprocessor lists disclose, but the approved evidence does not provide support for that substantive privacy/compliance assertion; it goes beyond the supplied Bareni evidence boundary.\"}]}, \"final_gate\": {\"schema_version\": \"study-e-gate-v4\", \"item_id\": \"GATE-BLIND-091\", \"assessment_status\": \"assessed\", \"input_problem_reason\": null, \"defects\": []}, \"critic_excerpt\": \"{\\\"item_id\\\": \\\"E-CRIT-BLIND-091-1\\\", \\\"repairs\\\": [{\\\"repair_id\\\": \\\"P01\\\", \\\"target_ids\\\": [\\\"D01\\\"], \\\"instruction\\\": \\\"Replace the unsupported explanation of what subprocessor lists disclose with a neutral workflow prompt, such as: 'If you use a tool in a repeatable workflow, read the subprocessor list before you connect it to customer data, invoices, or internal documents.'\\\", \\\"source_ids\\\": [\\\"BRIEF\\\", \\\"S01\\\"]}]}\"}"
+    }
+  ]
+}

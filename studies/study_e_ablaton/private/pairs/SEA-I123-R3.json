@@ -1,0 +1,93 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I123-R3",
+    "item_id": "SEA-I123",
+    "repeat": 3,
+    "arm_order": [
+      "critic_off",
+      "critic_on"
+    ],
+    "content_id": "POST-a85d0c8e7e88d917a056c2af"
+  },
+  "arms": {
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-a85d0c8e7e88d917a056c2af-1",
+        "title": "When prompt sprawl is the real workflow issue",
+        "body": "If you have tried ChatGPT and it is now sitting around your workflow in little pockets of prompts, custom instructions, and one-off exceptions, the first question is not how to scale it. The first question is whether the work still has one clear owner and one clear source of truth.\n\nThat is what early prompt sprawl looks like in a small business: the same task is being done in slightly different ways, and nobody can explain the full setup without opening three tabs and a sigh. At that point, the risk is not just inconsistency. It is that the workflow becomes hard to hand over, hard to debug, and hard to judge as a candidate for automation.\n\nSo the practical next step is manual: write down your current AI use on one page. For each task, note the prompt or instruction, who uses it, and where the output goes next. Do this before you build anything new. The point is not to automate the audit. It is to see whether you have a repeatable workflow worth piloting, or whether you need to consolidate the way the work is already being done.\n\nThe owner still makes the call. If the audit shows the work is too fragmented, keep it human for now and clean up the process first."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-a85d0c8e7e88d917a056c2af-1",
+            "title": "When prompt sprawl is the real workflow issue",
+            "body": "If you have tried ChatGPT and it is now sitting around your workflow in little pockets of prompts, custom instructions, and one-off exceptions, the first question is not how to scale it. The first question is whether the work still has one clear owner and one clear source of truth.\n\nThat is what early prompt sprawl looks like in a small business: the same task is being done in slightly different ways, and nobody can explain the full setup without opening three tabs and a sigh. At that point, the risk is not just inconsistency. It is that the workflow becomes hard to hand over, hard to debug, and hard to judge as a candidate for automation.\n\nSo the practical next step is manual: write down your current AI use on one page. For each task, note the prompt or instruction, who uses it, and where the output goes next. Do this before you build anything new. The point is not to automate the audit. It is to see whether you have a repeatable workflow worth piloting, or whether you need to consolidate the way the work is already being done.\n\nThe owner still makes the call. If the audit shows the work is too fragmented, keep it human for now and clean up the process first."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-a85d0c8e7e88d917a056c2af-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    },
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-a85d0c8e7e88d917a056c2af-1",
+        "title": "When prompt sprawl is the workflow problem",
+        "body": "If you run a 1–10-person business and you have already tried ChatGPT, the first question is not whether to add more AI. It is whether your current use has started to sprawl.\n\nBy prompt sprawl I mean this: the same task ends up with different prompts, different custom instructions, and different handoffs depending on who is doing the work. Once that happens, the workflow gets harder to trust, harder to debug, and harder to hand over. You are no longer looking at one repeatable process; you are looking at a pile of local workarounds.\n\nThe practical decision is simple: audit the current AI use before you build anything new. Write down one page with four things for each task: what the task is, what prompt or instruction is being used, who uses it, and where the output goes next. That is not automation. It is just a clean view of the mess.\n\nIf the page shows one repeatable task, you may have a pilot worth scoping. If it shows three different ways of doing the same job, consolidation comes first. Human approval stays with the owner."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-a85d0c8e7e88d917a056c2af-1",
+            "title": "When prompt sprawl is the workflow problem",
+            "body": "If you run a 1–10-person business and you have already tried ChatGPT, the first question is not whether to add more AI. It is whether your current use has started to sprawl.\n\nBy prompt sprawl I mean this: the same task ends up with different prompts, different custom instructions, and different handoffs depending on who is doing the work. Once that happens, the workflow gets harder to trust, harder to debug, and harder to hand over. You are no longer looking at one repeatable process; you are looking at a pile of local workarounds.\n\nThe practical decision is simple: audit the current AI use before you build anything new. Write down one page with four things for each task: what the task is, what prompt or instruction is being used, who uses it, and where the output goes next. That is not automation. It is just a clean view of the mess.\n\nIf the page shows one repeatable task, you may have a pilot worth scoping. If it shows three different ways of doing the same job, consolidation comes first. Human approval stays with the owner."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-a85d0c8e7e88d917a056c2af-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": [
+            {
+              "repair_id": "P01",
+              "target_ids": [
+                "D01"
+              ],
+              "instruction": "Replace the opening enterprise framing with the approved small-business reader: address an owner-operator or CEO of a 1–10-person business, and remove the 7000-employee multinational / governance-committee language.",
+              "source_ids": [
+                "BRIEF",
+                "C01",
+                "S01"
+              ]
+            },
+            {
+              "repair_id": "P02",
+              "target_ids": [
+                "D02"
+              ],
+              "instruction": "Remove the diagnostic-conversation CTA line and keep the ending informational; if needed, end with a neutral next-step sentence that does not invite a call.",
+              "source_ids": [
+                "BRIEF",
+                "C05",
+                "S01"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

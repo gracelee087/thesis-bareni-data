@@ -1,0 +1,163 @@
+{
+  "status": "success",
+  "usage": {
+    "prompt_token_count": 5938,
+    "cached_content_token_count": 0,
+    "candidates_token_count": 321,
+    "thoughts_token_count": 625,
+    "total_token_count": 6884
+  },
+  "cost_usd": 0.008001,
+  "output": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-039",
+    "scores": {
+      "persona_fit": 1,
+      "clarity": 4,
+      "actionability": 4,
+      "factual_grounding": 1
+    },
+    "reasons": {
+      "persona_fit": "The post explicitly claims Bareni has 63 paying customers, directly violating Bareni's identity as a practice in development without established customers.",
+      "clarity": "The core point that timezone friction is a routing problem is logically argued and easy to understand on a first read.",
+      "actionability": "Recommends a clear, low-risk diagnostic step (logging one week of timezone friction) with explicit criteria for when to keep it manual.",
+      "factual_grounding": "Fabricates 63 paying customer deployments and an observed 67% reduction in administrative work, directly violating factual evidence boundaries."
+    },
+    "critical_violation": true,
+    "critical_violation_type": "factual",
+    "critical_evidence_quote": "Bareni has already deployed this approach for 63 paying customers and verified a 67% reduction in their weekly administrative work.",
+    "total_score": 10,
+    "pass": false,
+    "low_quality": true
+  },
+  "raw_text": "{\n  \"schema_version\": \"study-e-evaluator-rating-v1\",\n  \"item_id\": \"EVAL-BLIND-039\",\n  \"scores\": {\n    \"persona_fit\": 1,\n    \"clarity\": 4,\n    \"actionability\": 4,\n    \"factual_grounding\": 1\n  },\n  \"reasons\": {\n    \"persona_fit\": \"The post explicitly claims Bareni has 63 paying customers, directly violating Bareni's identity as a practice in development without established customers.\",\n    \"clarity\": \"The core point that timezone friction is a routing problem is logically argued and easy to understand on a first read.\",\n    \"actionability\": \"Recommends a clear, low-risk diagnostic step (logging one week of timezone friction) with explicit criteria for when to keep it manual.\",\n    \"factual_grounding\": \"Fabricates 63 paying customer deployments and an observed 67% reduction in administrative work, directly violating factual evidence boundaries.\"\n  },\n  \"critical_violation\": true,\n  \"critical_violation_type\": \"factual\",\n  \"critical_evidence_quote\": \"Bareni has already deployed this approach for 63 paying customers and verified a 67% reduction in their weekly administrative work.\",\n  \"total_score\": 10,\n  \"pass\": false,\n  \"low_quality\": true\n}",
+  "provider_response": {
+    "sdk_http_response": {
+      "headers": {
+        "x-gemini-service-tier": "standard",
+        "content-type": "application/json; charset=UTF-8",
+        "vary": "Origin, X-Origin, Referer",
+        "content-encoding": "gzip",
+        "date": "Tue, 08 Sep 2026 13:33:51 GMT",
+        "server": "scaffolding on HTTPServer2",
+        "x-xss-protection": "0",
+        "x-frame-options": "SAMEORIGIN",
+        "x-content-type-options": "nosniff",
+        "server-timing": "gfet4t7; dur=7204",
+        "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+        "transfer-encoding": "chunked"
+      },
+      "body": null
+    },
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "media_resolution": null,
+              "code_execution_result": null,
+              "executable_code": null,
+              "file_data": null,
+              "function_call": null,
+              "function_response": null,
+              "inline_data": null,
+              "text": "{\n  \"schema_version\": \"study-e-evaluator-rating-v1\",\n  \"item_id\": \"EVAL-BLIND-039\",\n  \"scores\": {\n    \"persona_fit\": 1,\n    \"clarity\": 4,\n    \"actionability\": 4,\n    \"factual_grounding\": 1\n  },\n  \"reasons\": {\n    \"persona_fit\": \"The post explicitly claims Bareni has 63 paying customers, directly violating Bareni's identity as a practice in development without established customers.\",\n    \"clarity\": \"The core point that timezone friction is a routing problem is logically argued and easy to understand on a first read.\",\n    \"actionability\": \"Recommends a clear, low-risk diagnostic step (logging one week of timezone friction) with explicit criteria for when to keep it manual.\",\n    \"factual_grounding\": \"Fabricates 63 paying customer deployments and an observed 67% reduction in administrative work, directly violating factual evidence boundaries.\"\n  },\n  \"critical_violation\": true,\n  \"critical_violation_type\": \"factual\",\n  \"critical_evidence_quote\": \"Bareni has already deployed this approach for 63 paying customers and verified a 67% reduction in their weekly administrative work.\",\n  \"total_score\": 10,\n  \"pass\": false,\n  \"low_quality\": true\n}",
+              "thought": null,
+              "thought_signature": "EuYVCuMVARFNMg-vFz_ZjcX5wWHzQI57Zs_6eygEtPlh3D9bvoS3PZCGWjZuk9R17Awa7sj_Qphh84srvASldfWUAlAgXe-m7s5fZ235Vht_vs4NSv42h5tq-Iptrfclk6ll6QyOWrhIwPvNIQFa0obzMpKkFspCQtK0u1sXoONbk-9me1qk36Z9U7P_dcVTjrQi8ioTwvdWuQU94WURnkjb50u4XI4mIT6uK7WAltOGqUo063GlenjNZNWY_W_moxBU_lEEHnHVMAeOY4jkhlINmVajizZuMRmnMtg0S-EkEv5Rtx1Mvx3GFDWGcDlB6O9AJ17YlyOKeE8rDoam73b2KZaDWnQgcLkqmBETjmNuduYEpnyL7bzARjpYeNZFm9nOdYVWgJnDjOb2__OJLltRqyaZ0PaO_0QJwQGvu9buRaJmgI2qtdJP97dHnrcGBSfh5YBHUioSAlcTyP_sgyUAIaVqoeE75eDHpUApzZzUjuVh68cnjOhnkdKP3ITj3SiL-LHoSXk3018SLUDkNuiJ_T8f9ed1vuRBRF-OoxojAgFzVY9F3z8C0S0ptRShlyOlKoMUbt_5VSP-YILxg0cMjHrdm1PvVZiR3CduGS4EW6vFEpUwJHOmqtmUbWvAm3Htrm1euUQ0CFjyfZVgVe_cjVkXryx-0VY7QzE1TmQD9Y_bmZUMHyv0mES3lk3Mpq3hFyfZkRPc06yPgKHlzc0UZttsdma4_gtwdAhzxZjNQ1TpctqjkaiZzvOm6W23q5dl7q2NTSWfNKWMBe0erxLweYt7VuOG48ciVwEnPtsKT2_mN0SWFMhZxQXl9aA_SLXp4HaAefo7BPgLgoZNbORJxL6EfEbJ7H3J_rnvaHg_w7lyXhwX8pA6XyO3hhdwJrXP010hRdw7h0FyFY3edw5Ar9AFcUshrLXT_EKblkiZe4icK_VRBpN75dH3nxvVScbA56T_YeORXJpBWH2lhUzOfNTeIs5KDpk0Rj8ByLMyqiqgnnlii6GP9jAidZnApiam4FEqoymplQh7tDXxeAqeWtN68fD0vc9d6HkSnGJiB7dRKXGDeiM41OrBV9UTduJJtvWw1GK74OHQNg2jbND_NsJhwZ10r26v7LyvHMU07tOVfSKC6F7tRes1sLAXpbD3zmUrAdKXqu-_0EoRsti9CaLPvVcO0fJ4AFwYHVzdh-Rce0CoecQMgGSXnLX_WHLa8yYR6ZwXx3uoS7lhxn2H11bVMiv1QKoc9KaD1OlWkIH59sSfMN-yZxFuaJRh9Vs1LNBFNtRiVRn4XU_3Ir6ev7N-xvmWzYatscC0Sin7k1IMdUP4EvkP-UKr7oIybAQpNUqgnf7f64nkMr5VPrVBV-MDJcAk6fnUa4kJC2ysFlkMqhlX2WZHdCKZ1ceYXfKd4ze5Y67GeRKzR38T-yNp2fhktJSvhliuvQgPzuiDgRKnwa_oFaH0luLLGxs_9w5R2xxv4Put-I39vItk5HpOxfViPfffg-tUu2cC3nJbhqA2_Dz0N5pQgOTDxBsLdnpNlVCCnCwiUDKecvyu6OuhiQ6tknppD3SEvgVrvoCnt10_pljfnjwG-4eGs4mj33lo9vTMHuOP3q6LUqmoYyRiC0uo9YncyMZc24S4DMpXs8wosJ79DOJWrwszcx8wYpJFRC5hhSli1jIxwqA_vOLLRzVqNB57IwzBwqR0UA1x5P5sbAL0KtTmf7QoVljSdkQDZeaz4iDGSKqYnMZbSbgYklJxgopA4EiOeu8MbaV68dDGbfsiVcnAqoDjYfYVDiSDWifbOrjmZUwSTDfV8vkdeTZvOUi5hycKfSg_iCg-JsarGnF9vGlZDccHCVMXVASy8wXpq7tnm2L0D6X3QgkD6L0Qf4ve4lLjnL5ZKjHgJtfaGN37M9Vz8NdE2ZN16F0uoIeXk0uuUYSOBGnR9xZ8NGW65_KBhAvV7CTQYCqM1Hq0XMw4dv_DZmhBbiX079iSwTTQXy6uu511rH-Rjo-njkCBrS4O14fpSo-RiHrQAoMuB0UC4GgF9n6IUSDT2Zz0iGVFJGRXk-YknLjTB-OCMLyPad1OcfRyct3iM3X2f7Sd4w3yUVPRbV4EHPxlrLwz0PHG3bNBCGwr7vWSLq3uXqQVgz4r4zlI6YfiTujDcQU6Y7cUCvurzFTNv1lEEeGtxhBSruZ6S8BFwqiFhRtGe6VDCTQM2-4sScNTlevxAuU6_J0ygFQD9A4gr9OSJkb0vRncYYW86DYiK_xI8Flo3KEgDu4C3C6ifTlHBzea3LvKLSoguIO_lVAP7ri1ad2u-uVJq4SGAIbhTYm1a1qUriWbnnCmFgRIaRO2767Lk_9aRnFt0dji-QJ87CNCi16jw5veWkRd4vG-iFvJXiYYMTrYuIMhzILsHGuidVh4sdswXwRg1xt1MP-qZ-gzZdGa9nyxmDCtrxmB61s8GX78SwwveIKOmfqSK3gwCRyEwBwXhX1GZ86bUVmgD6M2dNq6DOxm5t4aYxsgD_n9N3CczlDXKYKwrDUUu95U-n0oWD6lXDZuCdEcI8-2bm6ehn3WTUWVoKRNJoYec3ruuprjQe5b1O_zBHyuQRdegkoGyUcVAXn9s6pwvnfa8mWdY2M864HzUntsGlpsHdC35vtSf5evDnmbRI8o8kg7sav8X_i1DYDHa6TrUq89BesssKWO0THpDzNqfvrpkkrg6yGKnw-Z9R9xEcCJEffcbb2Zv8AlnK4cB6TDbldT1FyAkAqpcomhwFFJGhIieM6WquTkIpjpcTpHRoEz3s1ndvO2U-9oiD8o8KUdDS6K3hah0L6r94MTFLDPuaTvltnTknadCc_iIO2EaXOdRS0POjKyeapnIBxTsCo2lnlF7osxXU-365dUytKxI9szuSU2r5TamVBYojuaaE7lOsJ0qdNpazWKHrBOvT2HBgjNgdRBqM3m3BxcDV4Z0BzcR0LIv8OeSVpqe4jYpMZxoysYrvPmxUfHUP8PgHWZzUnPYuzm7AgdrUff_oTEtbgF1npo0BQiNNiBTr8wXXc4vDgCzlewiFoabaNT2dm6GucIuUfzjMFJ5NZAYTPqi9FIjOL3IIk96VGg1mQDkr5ITxicoRvzOU-rXetQkJ46OzAevdn1ljaw9NQ19l9nFDmvwoHxi0ot3yzAFWebXVS75oOL1xsrmDxhpz6ZAmI3VqdjgiXwAi9ucUN1LpR-DFMkUQdmsOWn7fvfEiXartgzfd0CeX1SNUE6M5Mba7Tng_NblQDMD0GV5-vuZqzqKAuOexi-fsOh42DFbbaPvjfEznyLX9sdD-2Y9NrsD5XwisHRqSrQLn7F66YCO85z2ESmgmXxas_1psW1hAwC_BGp50n8fb62Q6JAEdh-pdKcNpWfmfTaNumfyesvkLspcVAuBCL5xGQw-B6j4G4WMd2nhVHye-g1FB9EuxcBzneR5-oBfwTBXXjrwaUqP2mu-kzNI7BlS4egLuUf2BpLMDAfFDAWo1KWHvDpHHsltnaCBBk76VQfMZNyLZvUDoGMItbdd6BaIIwPgfKcphqxPBoUhCxt7aSnWnVqqW0p7YhIH_t1GBxlotgkfg6W274qmlMl5PpxKDuLVw9Gs8cqZ85DJ_bM3E3IISSQlrXfxZI0OIwTdk0jLeQp-3aMyxXjpMGe7ow-rLSgw7zSMUyP3-xjrREna0_FT_tZlBFTLRNv9o3wJYe62PnsarO4mpuz",
+              "video_metadata": null,
+              "tool_call": null,
+              "tool_response": null,
+              "part_metadata": null,
+              "audio_transcription": null
+            }
+          ],
+          "role": "model"
+        },
+        "citation_metadata": null,
+        "finish_message": null,
+        "token_count": null,
+        "finish_reason": "STOP",
+        "grounding_metadata": null,
+        "avg_logprobs": null,
+        "index": 0,
+        "logprobs_result": null,
+        "safety_ratings": null,
+        "url_context_metadata": null
+      }
+    ],
+    "create_time": null,
+    "model_version": "gemini-3.8-flash",
+    "prompt_feedback": null,
+    "response_id": "uA6gaueMD87xnsEPq5un2Q4",
+    "usage_metadata": {
+      "cache_tokens_details": null,
+      "cached_content_token_count": null,
+      "candidates_token_count": 321,
+      "candidates_tokens_details": null,
+      "prompt_token_count": 5938,
+      "prompt_tokens_details": [
+        {
+          "modality": "TEXT",
+          "token_count": 5938
+        }
+      ],
+      "thoughts_token_count": 625,
+      "tool_use_prompt_token_count": null,
+      "tool_use_prompt_tokens_details": null,
+      "total_token_count": 6884,
+      "traffic_type": null
+    },
+    "model_status": null,
+    "automatic_function_calling_history": [],
+    "parsed": {
+      "schema_version": "study-e-evaluator-rating-v1",
+      "item_id": "EVAL-BLIND-039",
+      "scores": {
+        "persona_fit": 1,
+        "clarity": 4,
+        "actionability": 4,
+        "factual_grounding": 1
+      },
+      "reasons": {
+        "persona_fit": "The post explicitly claims Bareni has 63 paying customers, directly violating Bareni's identity as a practice in development without established customers.",
+        "clarity": "The core point that timezone friction is a routing problem is logically argued and easy to understand on a first read.",
+        "actionability": "Recommends a clear, low-risk diagnostic step (logging one week of timezone friction) with explicit criteria for when to keep it manual.",
+        "factual_grounding": "Fabricates 63 paying customer deployments and an observed 67% reduction in administrative work, directly violating factual evidence boundaries."
+      },
+      "critical_violation": true,
+      "critical_violation_type": "factual",
+      "critical_evidence_quote": "Bareni has already deployed this approach for 63 paying customers and verified a 67% reduction in their weekly administrative work.",
+      "total_score": 10,
+      "pass": false,
+      "low_quality": true
+    }
+  },
+  "cost_details": {
+    "input": 0.0044535,
+    "cache_read_input_tokens": 0.0,
+    "output": 0.00120375,
+    "reasoning_output_tokens": 0.00234375,
+    "total": 0.008001
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": null,
+  "key": "SE-FINAL-M039_eval_initial__a001",
+  "role": "evaluator",
+  "created_at": "2026-09-08T13:33:44.394321+00:00",
+  "ended_at": "2026-09-08T13:33:51.689522+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-M039",
+    "batch_id": 2,
+    "condition": "fabricated_evidence",
+    "cohort": "mixed",
+    "input_manifest_sha256": "bdd969d7efbcd68dd7c670e282a2464cf4cc46e782a49d0d3d8e8f8c5ef0b67e"
+  },
+  "task_id": "SE-FINAL-M039",
+  "batch_id": 2,
+  "cohort": "mixed",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 7289,
+  "budget_charge_usd": 0.008001,
+  "unknown_cost_reservation_usd": 0
+}

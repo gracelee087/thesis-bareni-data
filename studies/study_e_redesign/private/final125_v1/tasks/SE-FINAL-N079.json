@@ -1,0 +1,363 @@
+{
+  "task_id": "SE-FINAL-N079",
+  "batch_id": 3,
+  "condition": "natural",
+  "source_task_id": null,
+  "topic": "when spot checks stop working",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-317",
+    "title": "When spot checks stop finding the problem",
+    "body": "Spot checks work while the business is still small enough that a person can notice the same mistakes by eye. They stop working when you are checking a few samples and still seeing the same errors repeat, or when new ones keep slipping through between checks. That is the point where the question changes from “should we inspect more?” to “what should be checked automatically, and what must stay human?”\n\nFor a small business, the best first candidate is a repeatable document or data review with clear rules: invoice amounts against an expected limit, customer replies against a simple FAQ list, or recurring form fields that should match a known pattern. The point is not to replace judgment. It is to make the routine flagging reliable so the owner only reviews exceptions. Money movement and other high-risk decisions still need human approval; that boundary should not move.\n\nAt Bareni, the practical next step is a free 30-minute diagnostic of one recurring workflow. The useful output is simple: does AI fit this task at all, where does it stop, and what would count as a clean pilot scope if it does fit? No theatre, no magic wand. If the same spot check keeps failing, the next clarity step is to name exactly which check fails most often and why."
+  },
+  "final": {
+    "item_id": "E-OPT-417",
+    "title": "When spot checks stop finding the problem",
+    "body": "Spot checks work while a business is small enough that one person can still catch the same mistakes by eye. They stop working when you keep checking samples and the same errors still repeat, or when new ones slip through between checks. At that point, the real question is no longer “should we inspect more?” It is “what should be checked automatically, and what must stay human?”\n\nFor a small business, the best first candidate is a repeatable document or data review with clear rules. Think invoice amounts against an expected limit, customer replies against a simple FAQ, or recurring form fields that should match a known pattern. The point is not to replace judgment. It is to make routine flagging reliable so the owner only reviews exceptions. Money movement and other high-risk decisions still need human approval.\n\nA useful next step is to name the one check that fails most often and ask whether it fails because the rule is unclear, the input changes too much, or the review is simply too manual to keep up. If the answer is still vague, that is usually the boundary where spot checks have stopped being enough."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-079",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": [
+      {
+        "dimension": "persona_fit",
+        "severity": "noncritical",
+        "location_kind": "quote",
+        "text_field": "body",
+        "quote": "At Bareni, the practical next step is a free 30-minute diagnostic of one recurring workflow.",
+        "missing_requirement": null,
+        "rule_id": "R-N-1",
+        "evidence_ids": [
+          "BRIEF",
+          "C05",
+          "S01"
+        ],
+        "reason": "The post includes a direct Bareni CTA even though this task explicitly requires no CTA for this informational post, creating a material mismatch with the requested content intent and CTA rule."
+      }
+    ]
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-079",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-079-1",
+        "repairs": [
+          {
+            "repair_id": "P01",
+            "target_ids": [
+              "D01"
+            ],
+            "instruction": "Remove the direct Bareni CTA sentence and replace it with a non-CTA closing that simply restates the next diagnostic question or decision boundary for the owner.",
+            "source_ids": [
+              "BRIEF",
+              "C05",
+              "S01"
+            ]
+          }
+        ]
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-079",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-417",
+        "title": "When spot checks stop finding the problem",
+        "body": "Spot checks work while a business is small enough that one person can still catch the same mistakes by eye. They stop working when you keep checking samples and the same errors still repeat, or when new ones slip through between checks. At that point, the real question is no longer “should we inspect more?” It is “what should be checked automatically, and what must stay human?”\n\nFor a small business, the best first candidate is a repeatable document or data review with clear rules. Think invoice amounts against an expected limit, customer replies against a simple FAQ, or recurring form fields that should match a known pattern. The point is not to replace judgment. It is to make routine flagging reliable so the owner only reviews exceptions. Money movement and other high-risk decisions still need human approval.\n\nA useful next step is to name the one check that fails most often and ask whether it fails because the rule is unclear, the input changes too much, or the review is simply too manual to keep up. If the answer is still vague, that is usually the boundary where spot checks have stopped being enough."
+      },
+      "gate_key": "SE-FINAL-N079_gate1__a001"
+    }
+  ],
+  "measurement_status": "complete",
+  "planner": {
+    "item_id": "E-PLAN-517",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task explicitly forbids a CTA ('CTA rule: None'). L01 directs the writer to end with a neutral practical observation or next-step note rather than a meeting prompt. This applies directly: the post must explain a workflow decision and next step without inviting the reader to book a diagnostic or contact Bareni."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Open by naming the concrete problem: routine spot checks (manual quality or data reviews) that have become unreliable or unsustainable as the business grows. Frame this as a workflow boundary where human judgment alone no longer keeps pace.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Explain the owner's decision threshold: when spot checks stop catching errors reliably, the cost of a missed mistake often exceeds the cost of an automated checkpoint. State this as a diagnostic question ('Are you catching the same errors twice, or letting new ones through?') rather than a sales claim.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Describe one bounded workflow that fits AI assistance: a repeatable data or document review where rules can be codified (e.g. invoice amounts against budgets, customer replies against FAQ topics, or recurring form fields). Emphasize that AI supplements the human decision, not replaces it.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C03",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "State Bareni's diagnostic approach plainly: a 30-minute conversation identifies whether the workflow is suitable for automation, what it would cost, and what the measure of success looks like. Do not promise speed or savings; focus on clarity of scope.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Clarify the control boundary: human approval remains mandatory for any money movement or high-risk decision; automation handles flagging and routing, not approval. This reassures the owner that authority stays with them.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Close with a single neutral next-step observation: e.g. 'If spot checks are consuming time without catching errors consistently, the next clarity step is naming exactly which checks fail most often—that's the starting point for any automation design.' Do not invite a meeting or imply urgency.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C05",
+          "S01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No customer names, deployment details, productivity numbers, or savings claims are included. The workflow example is a generic pattern, not a customer case. No CTA is used."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "The post emphasizes that human approval remains mandatory for money movement and high-risk decisions. No scope creep into excluded services (medical, legal, bulk cold email, unsupported compliance)."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "The frozen persona (plain-speaking technical expert, founder-to-founder, no hype) is preserved throughout. Bareni is correctly identified as a consulting practice being built by the thesis author, not a team or registered firm."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Plain English is used throughout. Generic workflow examples ('invoice amounts', 'customer replies') are clearly distinct from any observed customer result. No invented benchmark or ROI is stated."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-617",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Turn the abstract topic into a bounded Bareni workflow decision. Explain one practical next step."
+          },
+          {
+            "source_id": "C01",
+            "quote": "The intended reader is an owner-operator of a 1\\u201310 person small business."
+          }
+        ],
+        "rationale": "This is an authoring instruction for how to open the post, not a factual assertion about Bareni or an observed customer situation. Framing manual spot checks as a workflow boundary is permissible within the approved topic.",
+        "use_guidance": "Keep as a planned framing. Present the spot-check problem as a general owner situation or persona scenario, not as an observed customer case, and avoid any implied frequency figures or measured error rates."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Practicality: explain one observable workflow decision, threshold, diagnostic question,\\n  control, or next step."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Numbers require a source and status."
+          }
+        ],
+        "rationale": "A diagnostic question and a qualitative decision threshold are permitted instructional content, not a claim of observed results. The wording already avoids a sales claim.",
+        "use_guidance": "Keep explicitly as a reasoning prompt for the reader. State the cost comparison qualitatively; do not attach any figure, ROI, saving or benchmark, since no approved evidence supports such numbers."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "general document, email, CRM, and back-office\\n  workflows using AI plus Zapier, Make, n8n, and small amounts of custom code"
+          },
+          {
+            "source_id": "C01",
+            "quote": "have a frequent, repeatable workflow with a\\n  measurable outcome"
+          },
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          }
+        ],
+        "rationale": "Describing a candidate workflow type as a fit example is a recommendation about suitability, not an assertion that such a system is built or deployed for anyone.",
+        "use_guidance": "Keep the examples clearly illustrative. Do not imply these specific checks exist as working Bareni systems or customer deployments; avoid scan-heavy/OCR-dependent examples, which are outside current scope."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "Normal sequence: free 30-minute diagnostic; free one-page pilot proposal;"
+          },
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI\\n  fits, and\\u2014if it does\\u2014defines pilot scope, fixed price, and measures."
+          }
+        ],
+        "rationale": "The core description of the 30-minute diagnostic matches approved evidence, but the claim omits that scope, fixed price and measures are defined only if AI fits, and that the diagnostic is free.",
+        "use_guidance": "Add the condition that the diagnostic states honestly whether AI fits at all, and that cost and success measures follow only where it does. Note the diagnostic is free. Given the CTA rule of none, describe the process factually rather than inviting a booking."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "SUPPORTED",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C03",
+            "quote": "amount-based human-only approval,\\n  refusal of agent approval/payment attempts, and persistent audit records work"
+          }
+        ],
+        "rationale": "Approved evidence directly supports mandatory human approval for money movement and high-risk decisions, with automation limited to flagging and routing; the necessary control boundary is already stated.",
+        "use_guidance": "Retain as written. If any demo detail is added, keep it labelled as a self-built demo on synthetic data with a simulated, manually triggered blocked payment \\u2014 no actual transfer or customer deployment."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          },
+          {
+            "source_id": "S01",
+            "quote": "no fabricated urgency"
+          }
+        ],
+        "rationale": "This is an instruction for a neutral closing observation with no meeting invitation, consistent with the task's no-CTA rule; it asserts no current fact about Bareni.",
+        "use_guidance": "Keep as the planned closing. Ensure the final sentence contains no invitation to book, discuss or continue the conversation, and no scarcity or urgency cue."
+      }
+    ]
+  },
+  "selected_lessons": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025"
+      ]
+    }
+  ],
+  "register_sha256": "48497afb8641ddc47d974cdfadba06a1f6b562d21c49ec03c9b03a5dc531744e",
+  "planner_key": "SE-FINAL-N079_planner__a001",
+  "researcher_key": "SE-FINAL-N079_researcher__a001",
+  "writer_key": "SE-FINAL-N079_writer__a001",
+  "final_key": "SE-FINAL-N079_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-N079_gate1__a001",
+  "production_completed_at": "2026-09-08T12:56:58.762475+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts",
+  "initial_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-079",
+    "scores": {
+      "persona_fit": 4,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Accurately targets the small business owner-operator in Bareni's calm, practical voice, though referencing the 30-minute diagnostic leans close to an offer pitch despite the zero CTA instruction.",
+      "clarity": "Logical structure and plain phrasing make the shift from manual spot checks to automated flagging and human exception review immediately understandable on a first read.",
+      "actionability": "Provides actionable guidance by identifying clear rule-based candidates and instructing the owner to isolate exactly which recurring check fails most often.",
+      "factual_grounding": "Fully grounded in Bareni evidence; properly reinforces that money movement and high-risk decisions must remain under human control without inventing results or capabilities."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 19,
+    "pass": true,
+    "low_quality": false
+  },
+  "final_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-079",
+    "scores": {
+      "persona_fit": 5,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Accurately targets the small business owner-operator in Bareni's calm, practical tone, reinforces human approval boundaries, and adheres strictly to the no-CTA rule.",
+      "clarity": "The core argument flows logically from the breakdown of manual spot checks to automated flagging of exceptions, expressed in clear, plain language.",
+      "actionability": "Provides a practical, bounded decision rule and diagnostic criteria to help an owner identify and evaluate their most failure-prone recurring review step.",
+      "factual_grounding": "Makes no unsubstantiated capability or outcome claims, correctly frames automation examples, and explicitly notes mandatory human sign-off for high-risk actions."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 20,
+    "pass": true,
+    "low_quality": false
+  },
+  "evaluation_reused": false,
+  "evaluation_keys": [
+    "SE-FINAL-N079_eval_initial__a001",
+    "SE-FINAL-N079_eval_final__a001"
+  ],
+  "completed_at": "2026-09-08T12:57:15.476200+00:00"
+}

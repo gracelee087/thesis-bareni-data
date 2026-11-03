@@ -1,0 +1,154 @@
+{
+  "created_at": "2026-09-08T19:55:21.252887+00:00",
+  "role": "evaluator",
+  "metadata": {
+    "study_id": "STUDY-E-ABLATON",
+    "pair_id": "SEA-I001-R1",
+    "arm": "critic_on",
+    "cycle": "eval"
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49",
+  "status": "success",
+  "output": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-a3fc24d4356e1a042cd888b19b2c197e",
+    "scores": {
+      "persona_fit": 3,
+      "clarity": 4,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Uses 'I' instead of Bareni's required 'we' public voice, and includes awkward prompt leakage ('bounded Bareni decision').",
+      "clarity": "Clear overall argument, but 'Timings are intended scopes, not guarantees' appears without mentioning any timings.",
+      "actionability": "Gives a concrete, realistic decision step: identify one weekly process and define one clear success checkpoint.",
+      "factual_grounding": "Accurately represents Bareni diagnostic scope and workflow limits without fabricating results or capabilities."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 17,
+    "pass": true,
+    "low_quality": false
+  },
+  "cost_usd": 0.01150125,
+  "usage": {
+    "prompt_token_count": 5895,
+    "cached_content_token_count": 0,
+    "candidates_token_count": 299,
+    "thoughts_token_count": 1589,
+    "total_token_count": 7783
+  },
+  "provider_response": {
+    "sdk_http_response": {
+      "headers": {
+        "x-gemini-service-tier": "standard",
+        "content-type": "application/json; charset=UTF-8",
+        "vary": "Origin, X-Origin, Referer",
+        "content-encoding": "gzip",
+        "date": "Tue, 08 Sep 2026 19:55:31 GMT",
+        "server": "scaffolding on HTTPServer2",
+        "x-xss-protection": "0",
+        "x-frame-options": "SAMEORIGIN",
+        "x-content-type-options": "nosniff",
+        "server-timing": "gfet4t7; dur=11052",
+        "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+        "transfer-encoding": "chunked"
+      },
+      "body": null
+    },
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "media_resolution": null,
+              "code_execution_result": null,
+              "executable_code": null,
+              "file_data": null,
+              "function_call": null,
+              "function_response": null,
+              "inline_data": null,
+              "text": "{\n  \"schema_version\": \"study-e-evaluator-rating-v1\",\n  \"item_id\": \"EVAL-a3fc24d4356e1a042cd888b19b2c197e\",\n  \"scores\": {\n    \"persona_fit\": 3,\n    \"clarity\": 4,\n    \"actionability\": 5,\n    \"factual_grounding\": 5\n  },\n  \"reasons\": {\n    \"persona_fit\": \"Uses 'I' instead of Bareni's required 'we' public voice, and includes awkward prompt leakage ('bounded Bareni decision').\",\n    \"clarity\": \"Clear overall argument, but 'Timings are intended scopes, not guarantees' appears without mentioning any timings.\",\n    \"actionability\": \"Gives a concrete, realistic decision step: identify one weekly process and define one clear success checkpoint.\",\n    \"factual_grounding\": \"Accurately represents Bareni diagnostic scope and workflow limits without fabricating results or capabilities.\"\n  },\n  \"critical_violation\": false,\n  \"critical_violation_type\": null,\n  \"critical_evidence_quote\": null,\n  \"total_score\": 17,\n  \"pass\": true,\n  \"low_quality\": false\n}",
+              "thought": null,
+              "thought_signature": "Es0yCsoyARFNMg95ZNaq8-SY5lC1HJyQ8xC8rOD5_MIZEj_Ywk6J_Lj5GmjDpY_DvjqvXbfZCuKXbNQSgHq2ti0m2D_Pp_EDaFkHbBy03O3E_xU7KP2Y-Dl-KxCwcwz8lIPHDIcJ4qTk2uMJZVTgvr90ckK6VBhWY9s4hhKkSd688uRz0tq_RJZs80PQ41hIUI2-th_S3MnmnLXdTzpgLQn83fdvkqVe1XNfWiGA4FNovS7rhw2FlqsWmQaEy9DVidWPX-2GMLtSMucFlG102Cc18d7zRUWkJ0p6KLvWP-nLMQtPtSGWa6XIQQeQzibcVqrduWRfsWP0_5F4WMyqm6gm4nwfm-gWj5HhZ5QwgN1rWYSkBnvTUAA0RAjLYITo05VXgrlFDEC19NiQxzR2SIZninFWcxqxhDqE2vYdbZrJcSuxIOzwd4bJO1JXBhVhG5bjVSF2KL0c59Dr5pPehi8dIaohHryi49hTlPmTtqfEpibfPXhBKI5A88xmVXXSoqJNZDj9kSVRHo_4GYt47cvMT0x-ECtcMVksPo8wAt7tIm2zQDEbKlUXWfKrdbNKEr5bi0_HZNWd3ts0LwGWd8XmVDLq-Ae6XWBGly05brc0PuRTeAqk8MCEJ8nSLiVJksZo4AOjsIlDdH3OYzfWJgSY2JZRDTt3LMX0-RbHdNFimKSe0g16eKoV2fubcla1IB0S8Ddt5SHf6BDUnw-2Oa_H2Uz6ksl5oKW1cGyx5MVYbhqfyBNZV4H-LtuXcjA9tOPwORRiHfieC7kKylGsJN56aPsfknxpSIVNaZXAif4eb_itOC3LJx7kK1YgbvoyCCjmLyxNytdiMuBTLSQ_cfwsquNue__GTtVLPAd_SyQ7yIh8dkLlNAp_XYfgY3HL2bCqDNv8a4rdrFDx7LVc-yPMjE1e1k0FRPs0kF2HrLd5JFM5s-FKczkMdo4YQpFWRNwmPAisYmKs0hcYvgpzDB0Bgh187ekNvfC4HcUmrVcMHWvjmEOwKvLyGHhybkf7wo8NvvM5tLnGeyvsKRwMwVcgWcocrVsxUXzCmlR3mKjRqo8J-kT-kdooHj5-15JL9--fwhEBB86pAz1Nhb6VoAqEknMzFFP5QJ78c11B9G0bsuhnT9R7Jmw6IFO2cElwQPyvGghTH3XmmABYVqvSuPFIyvl4t0Ryt7BVzSHYvirdl3FA26dPCrSIxtSFwvG_-ZSKpvlNz2r_6N7t4iRSaI9LflknkqdtdB54Rr-2yJv63LTKuvl7-pkYmapKIuLCDuEiDcmGSCrhHAp0kbY8TAbwsSyojcSrmkP2Vudd8GEc4P_Gl9RRJ-s6uJo0OPkO1zcn-zdycao_ucwoHMwvHdtr6kDKg-qjQ6iZdEWyrcLSGb4SQ6nfU1WVgq0F2WUqoqoiqICiXaHpFOAlnv0luzLZN3BWDzE8Gn6HwI-mFGBJwdhVeQRHSO0UROxER_5NczwIvYSFae5Z5bpsC5fwjpX2rAZ9Dlcy8-rhctmmUOkqv1eZEqirHrXUEB8saMxQga7WXviOyovgk-6_vOzxpADyXUaf1HRZoVWLPBF-Gb9KD0C3Kcwb8Z-8_1x9DMTmt_LWevKuFXSEvqx3rnnRZ8HPnDgH7DA7SD42H1W6o9O87qQzzuRzGh9SR02o384HRVXg5ltHm07_Pq_Yq8YDhqnKYOyybjy-kdYl0kYk2yzQzXx3p72-d31NuWQnv0j5Spyt3ZSKXxbNjZPjFTnIJ_setGxT3rCNebJKsA9fPDSzHH0HRKom2U0js1bweUmIEqLlg-15HwbVZwmivbiTsEWPbe3JZIQyTGP8nqvdk6cZttw2XpXsYPY2-28OLf0yAftX4tTQbIwfhytkFfUE9FF4PwvrwWMbscz56pH6RDoUa-cJl53rqTlho4NNjUFYa9OhZcFVCEjxjS_4djPTvurdyxuFj5S7ZwN1O3hzzh3HP2YDmhCFCVpmUBCTLa--1hsTQfOyMyNjiU6GMxQNxj49yG-MJe-fFuLqVGdf29n9v0ONdxQRQHGtewRO0rYPG6jFpB3QVyrX0MR27fzLg7lHMgKUSvumgVtWAajFJsizNySyJlcWjXC7wS_shCVazLBPIX1Q9u9DQkoX51KDMPVoaQu11NhJsijY-xCd8juViplspMGGUMSykEkijmy61Szuhs_YMRpwRs_7qAEdhp-k-XmjdzRtNQsJIPOweDzYFwTXTlPLl0BHOKUIAdPc_P_Qj7yCi8YUV2VDGacOcwyC9nTLDmJ5Ov3j1lVhW2fs07T1CggtmbVocn9Nj27nrA4gnJinSvv99yDam3Zgf4-JGiu-y6YcvT8T5IDFyhoLCO3n-7VaAvgFn7Q6GYgYPzRRpWS1VQ0R4JUdcT_Wil995Hs2TUcul6z9j4VzRtdWTsEUUTzNBiI6g5Asux28xa3qOweK9PPeij-MyCRiwhOJayMkYnsQAZvBm2ANwNNyMKEW7CQJ-jezpAV-W1KT3ayksBXxfh1MjtttqPcnurdrME_tKMHz_oxJH2nWepetX49skhfRWEnNCPTcLIcejwTaFpYyPoRhUDE4AuNFM9nRUDJccTkhPRhYmpt5ZUV0QXiBZbjyvfWw4IOLuUEOahiA30dtA2pDMLDVYvo_SBdjhWI_utWpjNNy1LrLhYXB22n0SQ1a0KRmpoHv0w-Ni-5VQXSN04zX7bE7OsNsX7Q7lXJpk6B0eI4Y7fDAFLeAog8EDUkEjh5MMDH-n_Ohel5oaKnZ4fnz-zyEJJlFYWSKK3Vdvs4yZMmVAEy33J4InwGY6wblKkdF5H2wnfkKgG72-qDMQM-SLi4MTt0jCCVmFp9D9upoJu9hjoTjr8BAvjrVHo7HqkpP59QPNFDxTxcn-k1nQuLN8kGbKPimv-zA_yV6fRAjPiz2jSuiUi4QzL-oUBpEpFWGNrs8es_WnWFYB7nRhkxVtWbyLUm-KzoYFBGyR7sEFo7GtdjnpWBEUEKZwOlYKfniotXzf7o7FqkJhiD8_rXu_siHkFcPqQ3-Kq6Ldrwo0xmj524TjFlGBxclKS4qfF8w31PqYWE1U41PHPoj6VTBpFzwjo7nabHzdrSZhls52lVnpV4TEAf4gFSj8wyIwhLp60xCtYiO_h_gRXtVVe_l2vFtIm1_kh8UfJ0vzyxJpBjQGEVZuTMHcG8g2F25SzSp7OID0hUmtrAYce0g_dexS4wzK3q9uDUBYQTJ6n_oa8-QFz-DzumflLTiKSDSxa3XGhn6ctYcRGIZXnxCsEFKdhfwj3E23ULNf0n3m9ZqpULULPU5zVk2_ziX39YekubRDQltPWOvZH92gvByHvQ9Q52L306kmSiOMDlzSXkGSm6v7QtQ5sw7DfM6_AcgCbMLZjN_SZwcxHoANxeJIAm3F9qppBkcbM8QH02Z4hpyjfEQlQ5DhAAxyUOMETV_Eml8T2L7XtU0fizKb49aaMUPvoG5FSDz7Ajf3mFU0PTbcJ4iHBqvkKN21WErSQQF4XhLCRDYnAtwOf0CKm9wBnw1nhODbrrtL0qZBFZjGr2bloJhf7yPNDpo9vfJDVVeZxaKMsaQcMQmP1bPe351luHyxhQDGUbEt27d3p9GiwB9ySAAwL40HF2vLF-GUPsWBMkHpFUHRg5eKYwz74GbDgSv2wi_sxMgspQH5ip-_y652TclisBUW1YGp0Exnw9dnT5-e-Ow-x4zpSInlt-dgZ0cd3zsvCIAg2Z0mL6pFWp1Xi9zu94xz-wRF6EYzI1nusi5-2spaGyyY_5SU99NEToRyWJCE1JiYjbXK_HrEwK9jeU9w1qAyxzvhtYJDTSu7GkchE0SfHhHkmwHMuOOvuFKmLC4fI3VTqpDfSJAaBU4RIllcO8vp0jD7NG4rnrQgXu3HboxFMl_M6TnJmNDKmmO_wM31Ey-0lxVOyaid7m-tgmTTcv0kzqbG0oVyXEiCsPm8OFshyOTuMCefTiBCmS9Vygybbchv2AM8GbWByl2bgxj-j5e2qwlnHfMBcQeZZFl5XveqJ8fRLs3Flmm87ux-Tj0MN758eXgEDf0lLcRd5ZGhTLfmQnh_ISFfS38Zn3CczAcOp9FK8ttEjobrkAge-XDLBWeeR2F0Lgfp3vxGF8a5JCMeDdxCWWlL5MjB-jMEfNfUHCJtjW_1RDT5UcjP9ktQGhjDb-NefEbEEsbPN2Z_ukCMOrBgn6IBxgarGnH4KegJxMixRlhp7WwDoXlhAm1fDXc4sQNFNbzdGwdS2pGlcC0G4MksLA--dPucpz7wGDKpTe04ic0RVeWLL34as7-5o8gohqeYjPFgUAaU-MQnXe3-k-kDmwW5utv2rBd2p1nRfw7zDKG7xYP0KtK15DEwcj6nLICkqopn6CtrEPrGHTwoAx94__TQiWhUP0m6AaZwlWrPQtu0u49ClGrKb_FiA8t3yBD17qJ9NUUP031AzV3EevlIWosVWNbpvquTk_smbBSABnMbx9rpmnllzjhd2zpvjd6fQVI9Vt6CIFRGILeSLweUg2NQQKiVkZSaFvXdhgXWQ49mexMrhcchyTzjbdpUa_wegQePYTQWzNV5kDczsUpEClZjTvGs0sa4jSaXdqQNXl8uEDvrY5OJsZiTh2GJaGFuRjUHidcYZ76PsjWDWb8Kn27kJjqza24s3HKweIWalDvVeYWogWDABtXgcN4w_82PCCVYyeaA9jthyMSDLkeP9P5eK9GLvsPgHQVPFHIh5flH5RsQaI1BrAIbNM733K9QcghTR46hGzP9QbdZJPfAZtHbbCtaphyLmUhUBwp6Mvs2krES7qtPKfQbdatj8hlOsbByub5IWLzPaK9GLV8k39a39gr5C9vj5rfDFQdpAbUiC9HboW91UFVDp94kOSPTm21622-J3f65qca9epcT-6e8aOQQ9N9hfD8S8nHtvzl7umJS3pkoiGi1Xdno-y2XRus1Xnd43qOWbTzIBK8xrHJmQHIRUFJU_8AnxIOxcKV76AOQdWUao4YzLqJ_CQdrKqDHajjpeW2U9J8YJLakfij1shrwEp9CuI1BeADx3za4DI0Ld3Hj4OunQbgO98zVc6pNEhFyOCv9IFR3zFF2R1qshIPDAC5__zQKYBOhfxQJbExAornua8_KCOmBe8cHs1j9sJ_3qE4jSPCeex5fp_2R4iYL2z-sA79hg2Orc0H4iehnfz6CkqtJrBEJOT6wN2QwpI_4XyjeOvLbDQffPuKkqmNJ2FmQE2vBWPKDrJYvYAFgfGiioYcBQ9CLgnTWV060lNoL1R9akGBlPLXhD3LEMS0dj3hYVn3wXjZDmZttNvwSMQyo9qKPLJpFG1WavHKeb8Jemrn_MKG9du07b_mpzkNzbRL_JC0o7kiVgIonNAlWKsbpeWR3iTZ2rEGGSgrFIBEo4n3qDtq5qolsJZybyOKQPg49XYmm_-AHHtxx9SkhvXBFq6GEp77DKhYnkJIRoaumWYEuIBk7Zut7u1rNlxlKdZrQIJIN6PZCwD47wLx2JB4s58ImRPqjNFv4wsyk-JAPJE3I19-Xhho68oKOYkf_H3ff1IxkgQbbUkYpuwZb1Rh_w_8HAVhy0kqtEiEY8SxCP9479vnf9bwN0DYb15xHYX7_tF3t-pW3SzkPM9W1roCGEZpE--J5NI2oQE9u9zls-BbkcMzlVYJIp63VEFJ-VFRceDlQxkLsHs4ihn46aTMhOTeAIlVrbkMbBNwyfDmO5S7IkJqpEdNi6GFE9D6MlGVqDTu1Q5wdi_BpAcAA5emClEYtWVrbqAPu95TejW_7BsNca6Z0meoA1uAuXrHXVSJ380Vez4qsKC54u14md3ZErYIKIKbSiBB1kqPvEgtkgSWfOj95ZO_PDBZOVa0OBMaPLw4sCeCEsXSO_7fRvBUjwQvmUBLaLKNWBXUMFHWcfLICabmAbr8JL_s1iRYfKIfFXJZo4hPUPq-7wPhgaiPgTqTvdpv0Z8KvTGtUk3oa2KuKgHZkLNhzCmY_-YIqnMgZAs6G0TqQQFSIodI1IxZHRlY8Lt4Y1rbh3ni0Co4_tOxAtMJZjU4F2n772JnUFM6teO7Khmnmk-T3wRTmrM-3n2Q59d4aSmPJT5cG0vSsc5Oydv8-6UmVKfYppGHB4Nzt9G4B3QJPa0Q2tO4EAvOi3hr583MnPkSvZHe682X1p_PD1kGUjlKzXmpNocJEDCbxI3Ct371miW4ZEznhqpBjYRQJ-faVr0vZlCY-FoRRjqIhGS3cHhuGTtI5mebUwYuxHpaDx9SB8ADoeookhoU6bQnNmlBUBjBvgtveipvIdfBNtAKCCkQcGA0-qMT1S9qfCFTps5lEKXPKwIJUy9hvp3LQSUOlhE4TujB3YPRyGotcSv-7Wia6A3fBfTTseEJ0h2DF9hfFl13O0SVMfXurOZwcUqLi2Miv3vw8PUPNLf37te-MG82jM4Rlzj92C65rcxbEywyHciMeSZacHgRTzUw6uK7yRShhzeMbGZp6INfMADlKVT6rXetokPf2VetHC5p_0KVqkgj8gOE2pLvH9aG3nSzjrSIGn2olEeXP7CQ2gukGhBn5MSnt33SBeRalt4bsti33OHHGBafv7q8IkUox_s5VFRHDRs42eONBQoP3uj2D6XxBqWogBt0MrsBSZLvfd511B05kyephvc6yXFQYIwaYa0dUQUkHMDdskv3GnSYiZeY3HqtITrBXBvjBttTuxz95lTeKpAoHTupGY0PoIAJYbcVWVWtvfjpaWViqfvTyplY24gf6c0yNeaE9PFwe82xNWTSUH6hrNSQ86S1WDQMkVJCSUsYoxF0OMzsb11l1wyGBNuo0SIHaux7jsDQyDHy2NlRPoTV185tfD22JI4tEf4QCP_76E98Z-fJHCXXDZaMuaspmRYv2UHYY8Abk11dT0xHca8c71l_15D3Op53rIN-h8Y8CkJhPumulj8hRKN6Y_pTo8OtrF1Hv358kRK4Yf8_xH44ELoid-pCYnh08d2yAs-z_Fu5E7XE47aQ5GC0whPK_D8sutn8z_poUdoN9T7EARYOZZ1i2BhKSLUemcwDe7j6QUXtmn_1i7U4BzdNQQtxAE-e1aJCCzRlVMwuzYzhFvBz_OosZS5UYmyl4RK6KcYo_dtBvvXy6I9nHfKkrkO_JLbDCxBVVHGTNHNIRuCEfHm97n1sO6sdGP4fqF701-dWlSvcL72EphTU4iYZzUEzeAgthqC9o-FME1BAXXg9DceNl0br8xGge5tCPaheiI-bmBLhUCwY9xwCduWhHv1djMIRGmC0B6tLtQI8FRqd7LmwO87pyufCaDskXVfV7-HPgcJx9xV83kpk2B9GQdB4wGgUVbkApVn9zm0mXyEyBinydlu28xdsd0msbRhJVhz78prYuBRKPJ9gYUNsctxvzmF0phwHk2-b__JaS6eb6izYvnMHmLU6O9GnZ2ea2jfz6ztnb4OGzBW9RyY_O7XR5r4m2ljZzV23JFTieCqU7UOvkCQsdRPktiSKwM9pbFKp3ZfWFIvkb9Qde-ioMoT5NuzXhBROKinVuiLcAvdjOez_9o2ZL37n8RRUP8zvMLMZ3s8xI76aimKJ1tthOOmpN_896WqcDEcGwEdqoOSnMAgO8NM3y7DpVT7QUx9PdfUUSscBZQIU3f08HaZVybKW21ljsfSbD5nI17mNwrqwJVKFXYdKISKtYwkVDEtXxgtxaT7zgsWfoWf-8j0RxXwzOLvIWuqkJFYDVp2m8l5ZDSQ1T6jIsFXWY79qXc3oKVDwE0p591sKv21pzLExi3I1z5emOuM3vJr3fRMxGWw1CUXcTKZU2SK9KaFyTH1Enh_d0gTBXktYaM2klMn2PZuB2iVrCa3BHaqB-zjJPEhZR7yQnGfhLCP9L4Bk5ZhxWMBvrWWPb-AW3NfGk_HbtZpoZf8FtiYGbATEjgp-hmkPK08Q2GRNbeYAtieNU2M0TiO-pnEVuvwMEX0QuU607jYZzlJ5412HtS-lmyPCEh9fslxYTaE1GazwV2_l2Pupem1EhGy33KaLd1xvWqBygFQSLqT4__xOzyiOum2GEv-PT8wo0sL1ty3Io00d5AYgxWrdvbBhY8hmbGeVx98OTaV2QTbHvQT2o8xjnSI15VTePgpmdG8juqHcd2rW_Nm0fkkXM3vSlAR-f8KX4BcnEBnTsPKPuKHEozZWksCJ5cOXwv-c_5mKvYJei-s-XNn3XZxoLPlbEl9u6tj07jmpQNgX2JHVHA7o4UJvy8lQHZ5ZA6stSF25He9VeYoW8xuY57_3L_-4OvlM6ztx1sl37rC7I8zqE-qA-XOvXLUF3fyUIQnibGZUtoaCFE7Z_N3YlLFLhNzPyWzO3qB-YzxTvb3MTOyCh8Ugoa1EWE4B_BVvT6kRKD81OXU9OLSaWkOAAihnalMDFsK_-g4yslhMDFJwrEz5fXeaLboReAlZTpBYIoa1ZXQdWwil8eYf235qka1elRt7d6Y0oMFTklwuQ2ByUGqBvbY8wSNJptQqkSKGDJ6z2GzphLs_We4lpvSikXwvkI4og_bhT8idEchd5dW6wmHnhieyF7ul89zbU9FCj0aBsYSnPm8ndHlP89j24YGetFe_0l4oB-RPdV2v1yL_HFUe0UbMSZSYXuk3",
+              "video_metadata": null,
+              "tool_call": null,
+              "tool_response": null,
+              "part_metadata": null,
+              "audio_transcription": null
+            }
+          ],
+          "role": "model"
+        },
+        "citation_metadata": null,
+        "finish_message": null,
+        "token_count": null,
+        "finish_reason": "STOP",
+        "grounding_metadata": null,
+        "avg_logprobs": null,
+        "index": 0,
+        "logprobs_result": null,
+        "safety_ratings": null,
+        "url_context_metadata": null
+      }
+    ],
+    "create_time": null,
+    "model_version": "gemini-3.8-flash",
+    "prompt_feedback": null,
+    "response_id": "KGigaqbdKrzRnsEPsqO30AE",
+    "usage_metadata": {
+      "cache_tokens_details": null,
+      "cached_content_token_count": null,
+      "candidates_token_count": 299,
+      "candidates_tokens_details": null,
+      "prompt_token_count": 5895,
+      "prompt_tokens_details": [
+        {
+          "modality": "TEXT",
+          "token_count": 5895
+        }
+      ],
+      "thoughts_token_count": 1589,
+      "tool_use_prompt_token_count": null,
+      "tool_use_prompt_tokens_details": null,
+      "total_token_count": 7783,
+      "traffic_type": null
+    },
+    "model_status": null,
+    "automatic_function_calling_history": [],
+    "parsed": {
+      "schema_version": "study-e-evaluator-rating-v1",
+      "item_id": "EVAL-a3fc24d4356e1a042cd888b19b2c197e",
+      "scores": {
+        "persona_fit": 3,
+        "clarity": 4,
+        "actionability": 5,
+        "factual_grounding": 5
+      },
+      "reasons": {
+        "persona_fit": "Uses 'I' instead of Bareni's required 'we' public voice, and includes awkward prompt leakage ('bounded Bareni decision').",
+        "clarity": "Clear overall argument, but 'Timings are intended scopes, not guarantees' appears without mentioning any timings.",
+        "actionability": "Gives a concrete, realistic decision step: identify one weekly process and define one clear success checkpoint.",
+        "factual_grounding": "Accurately represents Bareni diagnostic scope and workflow limits without fabricating results or capabilities."
+      },
+      "critical_violation": false,
+      "critical_violation_type": null,
+      "critical_evidence_quote": null,
+      "total_score": 17,
+      "pass": true,
+      "low_quality": false
+    }
+  },
+  "latency_ms": 11093,
+  "finished_at": "2026-09-08T19:55:32.344852+00:00",
+  "cost_details": {
+    "input": 0.00442125,
+    "cache_read_input_tokens": 0.0,
+    "output": 0.00112125,
+    "reasoning_output_tokens": 0.00595875,
+    "total": 0.01150125
+  },
+  "study_id": "STUDY-E-ABLATON",
+  "operational_amendment": "retry_extension_user_authorized.json"
+}

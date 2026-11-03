@@ -1,0 +1,187 @@
+{
+  "status": "success",
+  "usage": {
+    "input_tokens": 7839,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1856,
+    "reasoning_tokens": null
+  },
+  "cost_usd": 0.085595,
+  "output": {
+    "item_id": "E-RES-632",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "The representative pains are 8–10 hours a week of repeated customer questions, neglected sales leads,\n  and manual invoice/data work."
+          },
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow"
+          }
+        ],
+        "rationale": "This is an instruction to the reader to name a recurring manual workflow, not an assertion that any such workflow or error pattern has been observed at a customer. The workflow examples fall within approved persona pains (invoice/data work, leads) and the approved diagnostic focus on one recurring workflow.",
+        "use_guidance": "Keep as a reader-directed prompt. Present the listed workflows as illustrative examples of the persona scenario, not as observed customer situations or measured error rates."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step"
+          },
+          {
+            "source_id": "C01",
+            "quote": "have a frequent, repeatable workflow with a\n  measurable outcome"
+          }
+        ],
+        "rationale": "A diagnostic question asking the owner to locate the review cadence and measurable output. It asserts nothing about current Bareni implementation or customer results and matches the approved persona focus on one observable diagnostic question.",
+        "use_guidance": "Keep explicitly as a question to the reader. Do not imply Bareni has measured review cadences or complaint rates for any business."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Practicality: explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step. Do not force AI where it is unsuitable."
+          },
+          {
+            "source_id": "C03",
+            "quote": "Arithmetic checks, duplicate-invoice blocking, amount-based human-only approval,"
+          }
+        ],
+        "rationale": "A diagnostic step asking the owner to classify the cause of a persistent error. The example checks named (duplicate detection, amount validation) correspond to features that exist in the self-built accounts-payable demo, so the scope is permissible; the sentence itself makes no current-fact claim about Bareni or a customer.",
+        "use_guidance": "Keep as a proposed diagnostic step. If duplicate detection or amount validation is mentioned as a Bareni capability elsewhere in the post, label it as part of a self-built demo on synthetic data, not a deployed feature."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C03",
+            "quote": "Arithmetic checks, duplicate-invoice blocking, amount-based human-only approval,\n  refusal of agent approval/payment attempts, and persistent audit records work."
+          },
+          {
+            "source_id": "C01",
+            "quote": "have a frequent, repeatable workflow with a\n  measurable outcome"
+          },
+          {
+            "source_id": "C02",
+            "quote": "says honestly whether AI\n  fits"
+          }
+        ],
+        "rationale": "The fit criteria (frequent, rule-based, currently manual) are consistent with approved best-fit and diagnostic evidence, and controls of this type work in the self-built demo. However, the claim asserts as a general fact that adding one upstream control makes the error stop surviving, which reads as an observed outcome; approved evidence covers only synthetic self-built demos with no customer validation or measured results.",
+        "use_guidance": "Add the qualification that the controls described work in Bareni's self-built demo on synthetic data, with no customer deployment or observed results, and phrase the control effect as an expected design intent rather than a proven outcome. Avoid absolute wording such as 'stops surviving'."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "SUPPORTED",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C04",
+            "quote": "Bareni currently declines high-sensitivity medical, legal, and financial work;"
+          },
+          {
+            "source_id": "C03",
+            "quote": "amount-based human-only approval,\n  refusal of agent approval/payment attempts"
+          }
+        ],
+        "rationale": "The statement that human approval must remain mandatory for money movement and high-risk decisions, and that named sensitive areas sit beyond current scope, restates approved evidence as written and already includes the 'beyond current scope' limitation.",
+        "use_guidance": "Retain within scope. Keep the wording as current scope discipline; do not extend it into legal advice or into a claim that such work can never be automated."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "defines pilot scope, fixed price, and measures"
+          },
+          {
+            "source_id": "S01",
+            "quote": "CTA: use none unless the task explicitly authorises one."
+          }
+        ],
+        "rationale": "A next-step instruction asking the reader to write down one outcome measure before any engagement; it describes no implemented capability or observed result. The closing 'no need to book anything yet' avoids a meeting prompt, consistent with the task's no-CTA rule.",
+        "use_guidance": "Keep as the bounded next step. Present the measure as a baseline the owner defines, with no implied guarantee of savings or a success threshold Bareni has achieved; do not turn the closing sentence into a booking invitation."
+      }
+    ]
+  },
+  "raw_text": "{\"item_id\":\"E-RES-632\",\"ledger\":[{\"claim_id\":\"Q01\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C01\",\"quote\":\"The representative pains are 8–10 hours a week of repeated customer questions, neglected sales leads,\\n  and manual invoice/data work.\"},{\"source_id\":\"C02\",\"quote\":\"The diagnostic identifies the one recurring workflow\"}],\"rationale\":\"This is an instruction to the reader to name a recurring manual workflow, not an assertion that any such workflow or error pattern has been observed at a customer. The workflow examples fall within approved persona pains (invoice/data work, leads) and the approved diagnostic focus on one recurring workflow.\",\"use_guidance\":\"Keep as a reader-directed prompt. Present the listed workflows as illustrative examples of the persona scenario, not as observed customer situations or measured error rates.\"},{\"claim_id\":\"Q02\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"S01\",\"quote\":\"explain one observable workflow decision, threshold, diagnostic question,\\n  control, or next step\"},{\"source_id\":\"C01\",\"quote\":\"have a frequent, repeatable workflow with a\\n  measurable outcome\"}],\"rationale\":\"A diagnostic question asking the owner to locate the review cadence and measurable output. It asserts nothing about current Bareni implementation or customer results and matches the approved persona focus on one observable diagnostic question.\",\"use_guidance\":\"Keep explicitly as a question to the reader. Do not imply Bareni has measured review cadences or complaint rates for any business.\"},{\"claim_id\":\"Q03\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"S01\",\"quote\":\"Practicality: explain one observable workflow decision, threshold, diagnostic question,\\n  control, or next step. Do not force AI where it is unsuitable.\"},{\"source_id\":\"C03\",\"quote\":\"Arithmetic checks, duplicate-invoice blocking, amount-based human-only approval,\"}],\"rationale\":\"A diagnostic step asking the owner to classify the cause of a persistent error. The example checks named (duplicate detection, amount validation) correspond to features that exist in the self-built accounts-payable demo, so the scope is permissible; the sentence itself makes no current-fact claim about Bareni or a customer.\",\"use_guidance\":\"Keep as a proposed diagnostic step. If duplicate detection or amount validation is mentioned as a Bareni capability elsewhere in the post, label it as part of a self-built demo on synthetic data, not a deployed feature.\"},{\"claim_id\":\"Q04\",\"category\":\"QUALIFICATIONS\",\"evidence\":[{\"source_id\":\"C04\",\"quote\":\"Human approval is mandatory for money movement and other high-risk decisions.\"},{\"source_id\":\"C03\",\"quote\":\"Arithmetic checks, duplicate-invoice blocking, amount-based human-only approval,\\n  refusal of agent approval/payment attempts, and persistent audit records work.\"},{\"source_id\":\"C01\",\"quote\":\"have a frequent, repeatable workflow with a\\n  measurable outcome\"},{\"source_id\":\"C02\",\"quote\":\"says honestly whether AI\\n  fits\"}],\"rationale\":\"The fit criteria (frequent, rule-based, currently manual) are consistent with approved best-fit and diagnostic evidence, and controls of this type work in the self-built demo. However, the claim asserts as a general fact that adding one upstream control makes the error stop surviving, which reads as an observed outcome; approved evidence covers only synthetic self-built demos with no customer validation or measured results.\",\"use_guidance\":\"Add the qualification that the controls described work in Bareni's self-built demo on synthetic data, with no customer deployment or observed results, and phrase the control effect as an expected design intent rather than a proven outcome. Avoid absolute wording such as 'stops surviving'.\"},{\"claim_id\":\"Q05\",\"category\":\"SUPPORTED\",\"evidence\":[{\"source_id\":\"C04\",\"quote\":\"Human approval is mandatory for money movement and other high-risk decisions.\"},{\"source_id\":\"C04\",\"quote\":\"Bareni currently declines high-sensitivity medical, legal, and financial work;\"},{\"source_id\":\"C03\",\"quote\":\"amount-based human-only approval,\\n  refusal of agent approval/payment attempts\"}],\"rationale\":\"The statement that human approval must remain mandatory for money movement and high-risk decisions, and that named sensitive areas sit beyond current scope, restates approved evidence as written and already includes the 'beyond current scope' limitation.\",\"use_guidance\":\"Retain within scope. Keep the wording as current scope discipline; do not extend it into legal advice or into a claim that such work can never be automated.\"},{\"claim_id\":\"Q06\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C02\",\"quote\":\"defines pilot scope, fixed price, and measures\"},{\"source_id\":\"S01\",\"quote\":\"CTA: use none unless the task explicitly authorises one.\"}],\"rationale\":\"A next-step instruction asking the reader to write down one outcome measure before any engagement; it describes no implemented capability or observed result. The closing 'no need to book anything yet' avoids a meeting prompt, consistent with the task's no-CTA rule.\",\"use_guidance\":\"Keep as the bounded next step. Present the measure as a baseline the owner defines, with no implied guarantee of savings or a success threshold Bareni has achieved; do not turn the closing sentence into a booking invitation.\"}]}",
+  "provider_response": {
+    "id": "msg_011Cer3dT3F43TJcZpcj3cbw",
+    "container": null,
+    "content": [
+      {
+        "citations": null,
+        "text": "{\"item_id\":\"E-RES-632\",\"ledger\":[{\"claim_id\":\"Q01\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C01\",\"quote\":\"The representative pains are 8–10 hours a week of repeated customer questions, neglected sales leads,\\n  and manual invoice/data work.\"},{\"source_id\":\"C02\",\"quote\":\"The diagnostic identifies the one recurring workflow\"}],\"rationale\":\"This is an instruction to the reader to name a recurring manual workflow, not an assertion that any such workflow or error pattern has been observed at a customer. The workflow examples fall within approved persona pains (invoice/data work, leads) and the approved diagnostic focus on one recurring workflow.\",\"use_guidance\":\"Keep as a reader-directed prompt. Present the listed workflows as illustrative examples of the persona scenario, not as observed customer situations or measured error rates.\"},{\"claim_id\":\"Q02\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"S01\",\"quote\":\"explain one observable workflow decision, threshold, diagnostic question,\\n  control, or next step\"},{\"source_id\":\"C01\",\"quote\":\"have a frequent, repeatable workflow with a\\n  measurable outcome\"}],\"rationale\":\"A diagnostic question asking the owner to locate the review cadence and measurable output. It asserts nothing about current Bareni implementation or customer results and matches the approved persona focus on one observable diagnostic question.\",\"use_guidance\":\"Keep explicitly as a question to the reader. Do not imply Bareni has measured review cadences or complaint rates for any business.\"},{\"claim_id\":\"Q03\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"S01\",\"quote\":\"Practicality: explain one observable workflow decision, threshold, diagnostic question,\\n  control, or next step. Do not force AI where it is unsuitable.\"},{\"source_id\":\"C03\",\"quote\":\"Arithmetic checks, duplicate-invoice blocking, amount-based human-only approval,\"}],\"rationale\":\"A diagnostic step asking the owner to classify the cause of a persistent error. The example checks named (duplicate detection, amount validation) correspond to features that exist in the self-built accounts-payable demo, so the scope is permissible; the sentence itself makes no current-fact claim about Bareni or a customer.\",\"use_guidance\":\"Keep as a proposed diagnostic step. If duplicate detection or amount validation is mentioned as a Bareni capability elsewhere in the post, label it as part of a self-built demo on synthetic data, not a deployed feature.\"},{\"claim_id\":\"Q04\",\"category\":\"QUALIFICATIONS\",\"evidence\":[{\"source_id\":\"C04\",\"quote\":\"Human approval is mandatory for money movement and other high-risk decisions.\"},{\"source_id\":\"C03\",\"quote\":\"Arithmetic checks, duplicate-invoice blocking, amount-based human-only approval,\\n  refusal of agent approval/payment attempts, and persistent audit records work.\"},{\"source_id\":\"C01\",\"quote\":\"have a frequent, repeatable workflow with a\\n  measurable outcome\"},{\"source_id\":\"C02\",\"quote\":\"says honestly whether AI\\n  fits\"}],\"rationale\":\"The fit criteria (frequent, rule-based, currently manual) are consistent with approved best-fit and diagnostic evidence, and controls of this type work in the self-built demo. However, the claim asserts as a general fact that adding one upstream control makes the error stop surviving, which reads as an observed outcome; approved evidence covers only synthetic self-built demos with no customer validation or measured results.\",\"use_guidance\":\"Add the qualification that the controls described work in Bareni's self-built demo on synthetic data, with no customer deployment or observed results, and phrase the control effect as an expected design intent rather than a proven outcome. Avoid absolute wording such as 'stops surviving'.\"},{\"claim_id\":\"Q05\",\"category\":\"SUPPORTED\",\"evidence\":[{\"source_id\":\"C04\",\"quote\":\"Human approval is mandatory for money movement and other high-risk decisions.\"},{\"source_id\":\"C04\",\"quote\":\"Bareni currently declines high-sensitivity medical, legal, and financial work;\"},{\"source_id\":\"C03\",\"quote\":\"amount-based human-only approval,\\n  refusal of agent approval/payment attempts\"}],\"rationale\":\"The statement that human approval must remain mandatory for money movement and high-risk decisions, and that named sensitive areas sit beyond current scope, restates approved evidence as written and already includes the 'beyond current scope' limitation.\",\"use_guidance\":\"Retain within scope. Keep the wording as current scope discipline; do not extend it into legal advice or into a claim that such work can never be automated.\"},{\"claim_id\":\"Q06\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C02\",\"quote\":\"defines pilot scope, fixed price, and measures\"},{\"source_id\":\"S01\",\"quote\":\"CTA: use none unless the task explicitly authorises one.\"}],\"rationale\":\"A next-step instruction asking the reader to write down one outcome measure before any engagement; it describes no implemented capability or observed result. The closing 'no need to book anything yet' avoids a meeting prompt, consistent with the task's no-CTA rule.\",\"use_guidance\":\"Keep as the bounded next step. Present the measure as a baseline the owner defines, with no implied guarantee of savings or a success threshold Bareni has achieved; do not turn the closing sentence into a booking invitation.\"}]}",
+        "type": "text"
+      }
+    ],
+    "model": "claude-opus-5",
+    "role": "assistant",
+    "stop_details": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "global",
+      "input_tokens": 7839,
+      "output_tokens": 1856,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": null,
+      "service_tier": "standard"
+    }
+  },
+  "stop_reason": "end_turn",
+  "cost_details": {
+    "input": 0.039195,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.0464,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.085595
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": null,
+  "key": "SE-FINAL-N125_researcher__a001",
+  "role": "researcher",
+  "created_at": "2026-09-08T13:24:32.454561+00:00",
+  "ended_at": "2026-09-08T13:24:55.147496+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-N125",
+    "batch_id": 4,
+    "condition": "natural",
+    "cohort": "natural"
+  },
+  "task_id": "SE-FINAL-N125",
+  "batch_id": 4,
+  "cohort": "natural",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 22689,
+  "budget_charge_usd": 0.085595,
+  "unknown_cost_reservation_usd": 0
+}

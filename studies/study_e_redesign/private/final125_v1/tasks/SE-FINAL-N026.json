@@ -1,0 +1,405 @@
+{
+  "task_id": "SE-FINAL-N026",
+  "batch_id": 1,
+  "condition": "natural",
+  "source_task_id": null,
+  "topic": "rethinking search behaviour",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-326",
+    "title": "When search becomes a workflow decision",
+    "body": "If you are rethinking search behaviour in a small business, start with one question: are people repeatedly searching your own business material, or the open web? That difference matters. Repeated searching through customer emails, past invoices, product specs, or help-desk notes is a workflow problem; random web research usually is not.\n\nFor a 1–10 person team, the practical threshold is simple: if that internal searching is taking a noticeable slice of the week and the result should be faster replies, fewer errors, or less back-and-forth, it is worth treating as a bounded automation decision. Not a grand AI strategy. Just one repeatable task.\n\nThe control is document readiness. A knowledge assistant only makes sense when the useful material already exists in machine-readable form, such as MD, PDF, or structured data. Bareni has a self-built demo that retrieves from approved company documents rather than the open web, but it is a demo on synthetic data, not a customer deployment. OCR, scan ingestion, billing, and rate limiting are not working in that demo.\n\nKeep human approval in place if search output influences customer communication or a business decision. The system can propose; you decide. That is policy, not magic.\n\nOne practical next step: map one recurring search task on paper, then check whether the source material is ready and whether the owner still wants final review before anything goes out. If yes, a free 30-minute diagnostic can define the workflow, the pilot scope, and the measures without promising a result."
+  },
+  "final": {
+    "item_id": "E-OPT-426",
+    "title": "When search becomes a workflow decision",
+    "body": "If you are rethinking search behaviour in a small business, start with one question: are people repeatedly searching your own business material, or the open web? That difference matters. Repeated searching through customer emails, past invoices, product specs, or help-desk notes is a workflow problem; random web research usually is not.\n\nFor a 1–10 person team, the practical check is simple: if that internal searching is taking a noticeable slice of the week and the result should be faster replies, fewer errors, or less back-and-forth, treat it as a bounded automation decision. Not a grand AI strategy. Just one repeatable task.\n\nThe control is document readiness. A knowledge assistant only makes sense when the useful material already exists in machine-readable form, such as MD, PDF, or structured data. Bareni has a self-built demo that retrieves from approved company documents rather than the open web. It works on synthetic data and runs locally; the public route is locked. Automated testing, rate limiting, and billing are planned, not working.\n\nKeep human approval in place if the search output affects customer communication or a business decision. The system can suggest; the owner decides. That is Bareni policy for high-risk decisions, not an absolute warranty.\n\nOne practical next step is to map one recurring search task on paper, then check whether the source material is ready and whether you still want final review before anything goes out. If that is still true, the question is whether this is worth a bounded pilot at all."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-026",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-026",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-026-1",
+        "repairs": []
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-026",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": [
+          {
+            "dimension": "factual_grounding",
+            "severity": "noncritical",
+            "location_kind": "quote",
+            "text_field": "body",
+            "quote": "It works on synthetic data and runs locally; the public route is locked. OCR, scan ingestion, rate limiting, and billing are planned, not working.",
+            "missing_requirement": null,
+            "rule_id": "R-N-4",
+            "evidence_ids": [
+              "C03"
+            ],
+            "reason": "This passage attributes OCR and scan ingestion to the knowledge assistant, but the approved evidence for that demo lists MD/PDF/URL ingestion and says only automated testing, rate limiting, and billing are planned. OCR/scan-ingestion limits belong to a different demo, so this is a material capability-boundary mix-up."
+          },
+          {
+            "dimension": "persona_fit",
+            "severity": "noncritical",
+            "location_kind": "quote",
+            "text_field": "body",
+            "quote": "If yes, the normal next step is a free 30-minute diagnostic to define the workflow, the pilot scope, and the measures, with no promise of a result.",
+            "missing_requirement": null,
+            "rule_id": "R-N-1",
+            "evidence_ids": [
+              "BRIEF",
+              "C05",
+              "S01",
+              "C02"
+            ],
+            "reason": "The post adds a direct service CTA in an informational post even though the task's CTA rule is none. The diagnostic is supported as Bareni's normal sequence, but using it here as a next step materially conflicts with the requested content intent and CTA boundary."
+          }
+        ]
+      },
+      "draft": {
+        "item_id": "E-OPT-426",
+        "title": "When search becomes a workflow decision",
+        "body": "If you are rethinking search behaviour in a small business, start with one question: are people repeatedly searching your own business material, or the open web? That difference matters. Repeated searching through customer emails, past invoices, product specs, or help-desk notes is a workflow problem; random web research usually is not.\n\nFor a 1–10 person team, the practical check is simple: if that internal searching is taking a noticeable slice of the week and the result should be faster replies, fewer errors, or less back-and-forth, treat it as a bounded automation decision. Not a grand AI strategy. Just one repeatable task.\n\nThe control is document readiness. A knowledge assistant only makes sense when the useful material already exists in machine-readable form, such as MD, PDF, or structured data. Bareni has a self-built demo that retrieves from approved company documents rather than the open web. It works on synthetic data and runs locally; the public route is locked. OCR, scan ingestion, rate limiting, and billing are planned, not working.\n\nKeep human approval in place if the search output affects customer communication or a business decision. The system can suggest; the owner decides. That is Bareni policy for high-risk decisions, not an absolute warranty.\n\nOne practical next step: map one recurring search task on paper, then check whether the source material is ready and whether you still want final review before anything goes out. If yes, the normal next step is a free 30-minute diagnostic to define the workflow, the pilot scope, and the measures, with no promise of a result."
+      },
+      "gate_key": "SE-FINAL-N026_gate1__a001"
+    },
+    {
+      "cycle": 2,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-026-2",
+        "repairs": [
+          {
+            "repair_id": "P01",
+            "target_ids": [
+              "D01"
+            ],
+            "instruction": "Replace the OCR/scan-ingestion sentence with a capability boundary that matches the knowledge assistant evidence: it can ingest MD, PDF, and URL content; automated testing, rate limiting, and billing are planned, not working. Do not attribute OCR or scan ingestion to that demo.",
+            "source_ids": [
+              "C03"
+            ]
+          },
+          {
+            "repair_id": "P02",
+            "target_ids": [
+              "D02"
+            ],
+            "instruction": "Remove the direct diagnostic CTA and end with a non-CTA practical next step only. Keep the post informational and preserve the task's no-CTA rule; if you need a closing, use a neutral sentence about mapping one recurring search task and checking source readiness.",
+            "source_ids": [
+              "BRIEF",
+              "S01",
+              "C02",
+              "C05"
+            ]
+          }
+        ]
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-026",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-426",
+        "title": "When search becomes a workflow decision",
+        "body": "If you are rethinking search behaviour in a small business, start with one question: are people repeatedly searching your own business material, or the open web? That difference matters. Repeated searching through customer emails, past invoices, product specs, or help-desk notes is a workflow problem; random web research usually is not.\n\nFor a 1–10 person team, the practical check is simple: if that internal searching is taking a noticeable slice of the week and the result should be faster replies, fewer errors, or less back-and-forth, treat it as a bounded automation decision. Not a grand AI strategy. Just one repeatable task.\n\nThe control is document readiness. A knowledge assistant only makes sense when the useful material already exists in machine-readable form, such as MD, PDF, or structured data. Bareni has a self-built demo that retrieves from approved company documents rather than the open web. It works on synthetic data and runs locally; the public route is locked. Automated testing, rate limiting, and billing are planned, not working.\n\nKeep human approval in place if the search output affects customer communication or a business decision. The system can suggest; the owner decides. That is Bareni policy for high-risk decisions, not an absolute warranty.\n\nOne practical next step is to map one recurring search task on paper, then check whether the source material is ready and whether you still want final review before anything goes out. If that is still true, the question is whether this is worth a bounded pilot at all."
+      },
+      "gate_key": "SE-FINAL-N026_gate2__a001"
+    }
+  ],
+  "measurement_status": "complete",
+  "planner": {
+    "item_id": "E-PLAN-526",
+    "selected_lessons": [],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Translate 'rethinking search behaviour' into a bounded workflow: identify whether the owner searches for information repeatedly within their own business data (customer inquiries, past invoices, product specs, help-desk tickets) rather than the open web. If yes, this is a knowledge-assistant use case; if no, continue.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Define the diagnostic threshold: does this repeated search consume 2–4 hours per week and produce a measurable outcome (faster answer, fewer errors, better customer response time)? Phrase this as a single observable workflow decision the owner can measure, not a vague adoption goal.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Explain the concrete control: a knowledge assistant (self-built demo exists; retrieves from approved company documents, not the open web) requires the owner's existing documents in machine-readable form (MD, PDF, structured data). Do not claim OCR, scanning, or production billing; cite the demo as self-built and disclose what is not yet built.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C03"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "State the human-approval boundary: if the search output drives customer communication or business decisions, the owner remains the final approver. The system proposes; the owner decides. Frame this as policy, not limitation.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Propose the one practical next step: a free 30-minute diagnostic to map the owner's actual search workflow, estimate hours saved, and decide whether a pilot fits their budget and document readiness. Do not promise outcomes or timelines; phrase scope as an intended target.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Close with plain-language positioning: Bareni is a one-person consulting practice being built by the thesis author; it delivers working systems inside the customer's environment and hands over finished code and accounts. No lock-in, no multi-person team. Use restrained voice and no CTA (per task rule).",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C02",
+          "C05",
+          "S01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "Do not invent customer deployments, results, ROI, or team size. Describe only the self-built knowledge-assistant demo and Bareni's one-person delivery model."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Require human approval for search outputs that drive decisions or customer communication. Exclude high-sensitivity work per Bareni scope."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Preserve the frozen persona of a technical expert addressing a founder directly. Keep approved evidence status distinct: demo is self-built; production features (billing, rate limiting, multi-customer) are planned, not working."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use plain English. Distinguish the diagnostic proposal (future step) from existing capabilities (demo). No hype terms. Per task rule, no CTA."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-626",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C03",
+            "quote": "RAG means retrieving relevant approved company documents before answering; in\nplain terms, the assistant looks in company material rather than the open web."
+          },
+          {
+            "source_id": "C01",
+            "quote": "Especially suitable businesses already work in English, use digital\n  documents and SaaS tools, and have a frequent, repeatable workflow with a\n  measurable outcome."
+          }
+        ],
+        "rationale": "This is a planned drafting instruction and diagnostic framing step, not an assertion of an existing implementation or customer use; the qualifying logic is consistent with the approved fit criteria and the knowledge assistant's document-based scope.",
+        "use_guidance": "Keep as an explicit instruction/diagnostic question. Keep the scope to identifying a repeatable internal-document search workflow, and do not imply any customer has been assessed this way."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "have a frequent, repeatable workflow with a\n  measurable outcome"
+          },
+          {
+            "source_id": "C01",
+            "quote": "The 8–10 hours is a persona scenario, not a market\n  statistic or observed customer result."
+          }
+        ],
+        "rationale": "A proposed diagnostic threshold and measurement question rather than a factual assertion; the 2–4 hours figure is an illustrative self-check for the reader, not a claimed measurement.",
+        "use_guidance": "Keep explicitly proposed. Present any hour figure as an illustrative self-check or persona-style example with no source claim, never as a market statistic or observed result."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C03",
+            "quote": "Self-built local demo using synthetic Acme Shop data. It can ingest MD, PDF, and\n  URL content; perform vector search and reranking; generate grounded LLM answers;\n  and show sources."
+          },
+          {
+            "source_id": "C03",
+            "quote": "Automated testing, rate limiting, and billing are planned, not working."
+          },
+          {
+            "source_id": "C03",
+            "quote": "PDF/scan ingestion and OCR are not implemented."
+          }
+        ],
+        "rationale": "An instruction on how to describe the demo and its disclosed limits; the underlying description (self-built demo, approved company documents, no OCR or billing claims) matches approved evidence.",
+        "use_guidance": "Keep as a drafting instruction. In the post, say the demo is self-built on synthetic data, runs end to end locally with the public route locked, and that OCR/scan ingestion, rate limiting and billing are planned, not working. Do not imply production operation or real customer documents."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C02",
+            "quote": "Describe this as policy and no-lock-in positioning, not an absolute legal warranty."
+          }
+        ],
+        "rationale": "The human-approval core is supported, but 'frame this as policy, not limitation' risks overstating it; approved evidence requires policy language without implying an absolute guarantee or warranty.",
+        "use_guidance": "Add the qualification that human approval is Bareni's mandatory design policy for money movement and other high-risk decisions, described as policy rather than an absolute guarantee or legal warranty. Do not present it as a proven or certified control."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "Normal sequence: free 30-minute diagnostic; free one-page pilot proposal;\n  paid working MVP in days; fixed-price pilot in weeks; then expansion and an\n  optional retainer. Do not insert a mandatory roadmap gate or separate \"formal\n  build\" stage. Timings are intended scopes, not guarantees."
+          },
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI\n  fits, and—if it does—defines pilot scope, fixed price, and measures."
+          }
+        ],
+        "rationale": "A permissible recommended next step within the approved delivery sequence; it does not assert observed results, though 'estimate hours saved' must stay a joint estimate rather than a promised saving.",
+        "use_guidance": "Keep proposed. Note the task CTA rule is none, so mention the diagnostic descriptively rather than as a booking call to action; frame any hours figure as an estimate defined with the owner and timings as intended scopes, not guarantees."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "Bareni is a one-person AI development and consulting practice that automates\n  repetitive work for small businesses."
+          },
+          {
+            "source_id": "C02",
+            "quote": "Finished code is handed to the customer. Database, automation-tool, and API\n  accounts are in the customer's name from the start."
+          },
+          {
+            "source_id": "C02",
+            "quote": "Bareni works\n  inside the customer's environment and delivers a working system."
+          },
+          {
+            "source_id": "C05",
+            "quote": "description of Bareni as a consulting\n  practice being built by the thesis author"
+          }
+        ],
+        "rationale": "The identity, hand-over and no-lock-in core is supported, but 'it delivers working systems' as written reads as current delivery experience and the hand-over must be stated as policy rather than warranty.",
+        "use_guidance": "Add the qualifications that the practice is being built and is not yet legally registered, that working inside the customer's environment and delivering a working system is the intended delivery model rather than a record of completed deployments, and that hand-over of code and customer-named accounts is policy and no-lock-in positioning, not an absolute legal warranty. Keep no CTA."
+      }
+    ]
+  },
+  "selected_lessons": [],
+  "register_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "planner_key": "SE-FINAL-N026_planner__a001",
+  "researcher_key": "SE-FINAL-N026_researcher__a001",
+  "writer_key": "SE-FINAL-N026_writer__a001",
+  "final_key": "SE-FINAL-N026_optimizer2__a001",
+  "final_gate_key": "SE-FINAL-N026_gate2__a001",
+  "production_completed_at": "2026-09-08T12:24:16.612613+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts",
+  "initial_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-026",
+    "scores": {
+      "persona_fit": 4,
+      "clarity": 5,
+      "actionability": 4,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Accurately targets 1-10 person businesses in Bareni's calm, practical tone; referencing the diagnostic at the end slightly stretches the 'no CTA' instruction, but remains soft and non-promotional.",
+      "clarity": "Immediate, clear distinction between open-web search and internal document retrieval, supported by a coherent progression and well-explained qualifications.",
+      "actionability": "Provides practical criteria (document readiness, recurring workflow) and an actionable next step to map the task on paper while preserving human review.",
+      "factual_grounding": "Fully grounded in evidence; explicitly identifies the knowledge assistant as a local synthetic demo and correctly lists unimplemented capabilities like OCR and billing."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 18,
+    "pass": true,
+    "low_quality": false
+  },
+  "final_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-026",
+    "scores": {
+      "persona_fit": 5,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Accurately targets the small business owner-operator in Bareni's calm, practical voice, adhering strictly to the no-CTA brief.",
+      "clarity": "Logical structure and plain-language explanation clearly distinguish internal search workflows from web research without ambiguity.",
+      "actionability": "Provides a realistic, bounded exercise to map a single recurring search task and evaluate document readiness with human oversight.",
+      "factual_grounding": "Flawlessly characterizes the knowledge assistant demo, synthetic data limits, locked status, and policy boundaries without overclaiming."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 20,
+    "pass": true,
+    "low_quality": false
+  },
+  "evaluation_reused": false,
+  "evaluation_keys": [
+    "SE-FINAL-N026_eval_initial__a001",
+    "SE-FINAL-N026_eval_final__a001"
+  ],
+  "completed_at": "2026-09-08T12:24:32.906004+00:00"
+}

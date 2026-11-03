@@ -1,0 +1,156 @@
+{
+  "batch": 4,
+  "summary": {
+    "batch": 4,
+    "observed": 32,
+    "initial_failed": 2,
+    "final_unresolved": 0,
+    "refined": 32,
+    "representative_task_ids": [
+      "SE-FINAL-N117",
+      "SE-FINAL-N121"
+    ]
+  },
+  "events": [
+    {
+      "event_id": "B4-SUMMARY",
+      "status": "confirmed",
+      "observation": "Confirmed execution-log summary; Gate findings are model reports, not independently established business facts. {\"batch\": 4, \"observed\": 32, \"initial_failed\": 2, \"final_unresolved\": 0, \"refined\": 32, \"representative_task_ids\": [\"SE-FINAL-N117\", \"SE-FINAL-N121\"]}"
+    },
+    {
+      "event_id": "SE-FINAL-N117",
+      "status": "confirmed",
+      "observation": "Recorded Gate finding and repair outcome, not a customer outcome: {\"task_id\": \"SE-FINAL-N117\", \"topic\": \"measuring template reuse\", \"initial_gate\": {\"schema_version\": \"study-e-gate-v4\", \"item_id\": \"GATE-BLIND-117\", \"assessment_status\": \"assessed\", \"input_problem_reason\": null, \"defects\": [{\"dimension\": \"factual_grounding\", \"severity\": \"noncritical\", \"location_kind\": \"quote\", \"text_field\": \"body\", \"quote\": \"whether the team is copying from one source or from memory?\", \"missing_requirement\": null, \"rule_id\": \"R-N-4\", \"evidence_ids\": [\"BRIEF\", \"S01\", \"C01\"], \"reason\": \"This example introduces a multi-person team scenario, but the task explicitly says not to invent a multi-person team. The post is aimed at an owner and opens with a solo-operator case, so shifting to 'the team' creates an unsupported and avoidable mismatch in who is being described.\"}]}, \"final_gate\": {\"schema_version\": \"study-e-gate-v4\", \"item_id\": \"GATE-BLIND-117\", \"assessment_status\": \"assessed\", \"input_problem_reason\": null, \"defects\": []}, \"critic_excerpt\": \"{\\\"item_id\\\": \\\"E-CRIT-BLIND-117-1\\\", \\\"repairs\\\": [{\\\"repair_id\\\": \\\"P01\\\", \\\"target_ids\\\": [\\\"D01\\\"], \\\"instruction\\\": \\\"Replace 'the team is copying from one source or from memory' with an owner-only framing, such as 'you are copying from one source or from memory' or 'the business is copying from one source or from memory.'\\\", \\\"source_ids\\\": [\\\"BRIEF\\\", \\\"S01\\\", \\\"C01\\\"]}]}\"}"
+    },
+    {
+      "event_id": "SE-FINAL-N121",
+      "status": "confirmed",
+      "observation": "Recorded Gate finding and repair outcome, not a customer outcome: {\"task_id\": \"SE-FINAL-N121\", \"topic\": \"why rollback plans are not enough\", \"initial_gate\": {\"schema_version\": \"study-e-gate-v4\", \"item_id\": \"GATE-BLIND-121\", \"assessment_status\": \"assessed\", \"input_problem_reason\": null, \"defects\": [{\"dimension\": \"factual_grounding\", \"severity\": \"noncritical\", \"location_kind\": \"quote\", \"text_field\": \"body\", \"quote\": \"Bareni’s standard setup keeps accounts in the customer’s name and hands over finished code, but that is policy and no-lock-in positioning, not a warranty.\", \"missing_requirement\": null, \"rule_id\": \"R-N-4\", \"evidence_ids\": [\"C02\", \"BRIEF\", \"S01\"], \"reason\": \"This Bareni-specific factual claim is supported by evidence, but it is not relevant to the required bounded workflow decision about rollback controls and shifts the post into company-positioning detail. In this context it is a weakly supported grounding choice because it introduces company facts without advancing the core workflow claim.\"}]}, \"final_gate\": {\"schema_version\": \"study-e-gate-v4\", \"item_id\": \"GATE-BLIND-121\", \"assessment_status\": \"assessed\", \"input_problem_reason\": null, \"defects\": []}, \"critic_excerpt\": \"{\\\"item_id\\\": \\\"E-CRIT-BLIND-121-1\\\", \\\"repairs\\\": [{\\\"repair_id\\\": \\\"P01\\\", \\\"target_ids\\\": [\\\"D01\\\"], \\\"instruction\\\": \\\"Remove the Bareni policy sentence about customer-owned accounts and handover, since it is off-topic for the rollback-control point; end with the workflow control lesson instead.\\\", \\\"source_ids\\\": [\\\"C02\\\", \\\"BRIEF\\\", \\\"S01\\\"]}]}\"}"
+    }
+  ],
+  "register_before_sha256": "119720de77d8c13ba7ec5ca4065775e8d4ac629796a073c799f5a0be4d935e35",
+  "register": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. This includes indirect meeting prompts and direct brand-level offers such as a free 30-minute diagnostic. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025",
+        "B3-SUMMARY",
+        "SE-FINAL-N079"
+      ]
+    },
+    {
+      "lesson_id": "L02",
+      "text": "When approved evidence presents an operational practice as policy or positioning, keep that qualifier in the copy. Do not rewrite it as an absolute guarantee or warranty-level statement.",
+      "source_event_ids": [
+        "B3-SUMMARY",
+        "SE-FINAL-N080"
+      ]
+    },
+    {
+      "lesson_id": "L03",
+      "text": "If the source set does not support a substantive explanatory claim, replace it with a neutral workflow prompt or decision step rather than filling the gap with general background explanation.",
+      "source_event_ids": [
+        "B3-SUMMARY",
+        "SE-FINAL-N091"
+      ]
+    },
+    {
+      "lesson_id": "L04",
+      "text": "Keep actor framing consistent with the approved persona and evidence. Do not introduce an unsupported multi-person team, staff, or broader organisational actor when the source context is an owner-operator or single business decision-maker; rewrite the example in owner-only or business-level terms instead.",
+      "source_event_ids": [
+        "B4-SUMMARY",
+        "SE-FINAL-N117"
+      ]
+    },
+    {
+      "lesson_id": "L05",
+      "text": "Do not insert supported but off-topic company-positioning details when they do not advance the requested workflow point. If a post is meant to explain one bounded decision, control, or diagnostic, keep company facts out unless they are necessary to make that point accurately.",
+      "source_event_ids": [
+        "B4-SUMMARY",
+        "SE-FINAL-N121"
+      ]
+    }
+  ],
+  "curator": {
+    "item_id": "E-MEM-BATCH-4",
+    "proposals": [
+      {
+        "proposal_id": "P01",
+        "action": "ADD",
+        "target_lesson_id": null,
+        "event_ids": [
+          "B4-SUMMARY",
+          "SE-FINAL-N117"
+        ],
+        "lesson_text": "Keep actor framing consistent with the approved persona and evidence. Do not introduce an unsupported multi-person team, staff, or broader organisational actor when the source context is an owner-operator or single business decision-maker; rewrite the example in owner-only or business-level terms instead.",
+        "reason": "Batch 4 adds a distinct recurring issue not yet covered in the register: unsupported expansion from owner/operator framing to a multi-person team. This is reusable persona-fit and evidence-boundary guidance, supported by the confirmed Gate finding in N117."
+      },
+      {
+        "proposal_id": "P02",
+        "action": "ADD",
+        "target_lesson_id": null,
+        "event_ids": [
+          "B4-SUMMARY",
+          "SE-FINAL-N121"
+        ],
+        "lesson_text": "Do not insert supported but off-topic company-positioning details when they do not advance the requested workflow point. If a post is meant to explain one bounded decision, control, or diagnostic, keep company facts out unless they are necessary to make that point accurately.",
+        "reason": "Batch 4 shows a new failure mode distinct from the existing lessons: even evidence-supported Bareni facts can be weak grounding if they distract from the task's required bounded workflow lesson. N121 supports a reusable scope-discipline lesson rather than a duplicate of the existing policy/guarantee lesson."
+      }
+    ]
+  },
+  "memory_parent": "batch4_curator__a001",
+  "history": [
+    {
+      "event_id": "B1-SUMMARY",
+      "status": "confirmed",
+      "observation": "Confirmed execution-log summary; Gate findings are model reports, not independently established business facts. {\"batch\": 1, \"observed\": 31, \"initial_failed\": 1, \"final_unresolved\": 0, \"refined\": 31, \"representative_task_ids\": [\"SE-FINAL-N025\"]}"
+    },
+    {
+      "event_id": "SE-FINAL-N025",
+      "status": "confirmed",
+      "observation": "Recorded Gate finding and repair outcome, not a customer outcome: {\"task_id\": \"SE-FINAL-N025\", \"topic\": \"early signs of system prompt sprawl\", \"initial_gate\": {\"schema_version\": \"study-e-gate-v4\", \"item_id\": \"GATE-BLIND-025\", \"assessment_status\": \"assessed\", \"input_problem_reason\": null, \"defects\": [{\"dimension\": \"persona_fit\", \"severity\": \"noncritical\", \"location_kind\": \"quote\", \"text_field\": \"body\", \"quote\": \"That is also the kind of question a free diagnostic conversation would sort through\", \"missing_requirement\": null, \"rule_id\": \"R-N-1\", \"evidence_ids\": [\"BRIEF\", \"C05\", \"S01\"], \"reason\": \"The post includes a CTA-like invitation to a free diagnostic conversation even though the task explicitly requires no CTA for this informational post.\"}]}, \"final_gate\": {\"schema_version\": \"study-e-gate-v4\", \"item_id\": \"GATE-BLIND-025\", \"assessment_status\": \"assessed\", \"input_problem_reason\": null, \"defects\": []}, \"critic_excerpt\": \"{\\\"item_id\\\": \\\"E-CRIT-BLIND-025-1\\\", \\\"repairs\\\": [{\\\"repair_id\\\": \\\"P01\\\", \\\"target_ids\\\": [\\\"D01\\\"], \\\"instruction\\\": \\\"Remove the free-diagnostic invitation and end the post without any CTA or meeting mention. Replace the closing sentence with a neutral observation that keeps the next-step guidance, for example: 'The owner still makes the call.'\\\", \\\"source_ids\\\": [\\\"BRIEF\\\", \\\"C05\\\", \\\"S01\\\"]}]}\"}"
+    },
+    {
+      "event_id": "B2-SUMMARY",
+      "status": "confirmed",
+      "observation": "Confirmed execution-log summary; Gate findings are model reports, not independently established business facts. {\"batch\": 2, \"observed\": 31, \"initial_failed\": 0, \"final_unresolved\": 0, \"refined\": 31, \"representative_task_ids\": []}"
+    },
+    {
+      "event_id": "B3-SUMMARY",
+      "status": "confirmed",
+      "observation": "Confirmed execution-log summary; Gate findings are model reports, not independently established business facts. {\"batch\": 3, \"observed\": 31, \"initial_failed\": 3, \"final_unresolved\": 0, \"refined\": 31, \"representative_task_ids\": [\"SE-FINAL-N079\", \"SE-FINAL-N080\", \"SE-FINAL-N091\"]}"
+    },
+    {
+      "event_id": "SE-FINAL-N079",
+      "status": "confirmed",
+      "observation": "Recorded Gate finding and repair outcome, not a customer outcome: {\"task_id\": \"SE-FINAL-N079\", \"topic\": \"when spot checks stop working\", \"initial_gate\": {\"schema_version\": \"study-e-gate-v4\", \"item_id\": \"GATE-BLIND-079\", \"assessment_status\": \"assessed\", \"input_problem_reason\": null, \"defects\": [{\"dimension\": \"persona_fit\", \"severity\": \"noncritical\", \"location_kind\": \"quote\", \"text_field\": \"body\", \"quote\": \"At Bareni, the practical next step is a free 30-minute diagnostic of one recurring workflow.\", \"missing_requirement\": null, \"rule_id\": \"R-N-1\", \"evidence_ids\": [\"BRIEF\", \"C05\", \"S01\"], \"reason\": \"The post includes a direct Bareni CTA even though this task explicitly requires no CTA for this informational post, creating a material mismatch with the requested content intent and CTA rule.\"}]}, \"final_gate\": {\"schema_version\": \"study-e-gate-v4\", \"item_id\": \"GATE-BLIND-079\", \"assessment_status\": \"assessed\", \"input_problem_reason\": null, \"defects\": []}, \"critic_excerpt\": \"{\\\"item_id\\\": \\\"E-CRIT-BLIND-079-1\\\", \\\"repairs\\\": [{\\\"repair_id\\\": \\\"P01\\\", \\\"target_ids\\\": [\\\"D01\\\"], \\\"instruction\\\": \\\"Remove the direct Bareni CTA sentence and replace it with a non-CTA closing that simply restates the next diagnostic question or decision boundary for the owner.\\\", \\\"source_ids\\\": [\\\"BRIEF\\\", \\\"C05\\\", \\\"S01\\\"]}]}\"}"
+    },
+    {
+      "event_id": "SE-FINAL-N080",
+      "status": "confirmed",
+      "observation": "Recorded Gate finding and repair outcome, not a customer outcome: {\"task_id\": \"SE-FINAL-N080\", \"topic\": \"why proof-of-concept debt survives\", \"initial_gate\": {\"schema_version\": \"study-e-gate-v4\", \"item_id\": \"GATE-BLIND-080\", \"assessment_status\": \"assessed\", \"input_problem_reason\": null, \"defects\": [{\"dimension\": \"factual_grounding\", \"severity\": \"noncritical\", \"location_kind\": \"quote\", \"text_field\": \"body\", \"quote\": \"Finished code and accounts stay in the customer’s name; there is no separate formal build gate.\", \"missing_requirement\": null, \"rule_id\": \"R-N-4\", \"evidence_ids\": [\"C02\", \"BRIEF\", \"S01\"], \"reason\": \"This presents account ownership as an absolute statement, but the approved evidence supports it as policy ('accounts are in the customer's name from the start') and says to describe it as policy/no-lock-in positioning, not an absolute warranty. The sentence overstates that point.\"}]}, \"final_gate\": {\"schema_version\": \"study-e-gate-v4\", \"item_id\": \"GATE-BLIND-080\", \"assessment_status\": \"assessed\", \"input_problem_reason\": null, \"defects\": []}, \"critic_excerpt\": \"{\\\"item_id\\\": \\\"E-CRIT-BLIND-080-1\\\", \\\"repairs\\\": [{\\\"repair_id\\\": \\\"P01\\\", \\\"target_ids\\\": [\\\"D01\\\"], \\\"instruction\\\": \\\"Soften the ownership statement to policy language. Replace 'Finished code and accounts stay in the customer’s name' with something like 'Our policy is to put finished code and relevant accounts in the customer’s name from the start' so it reads as positioning, not an absolute warranty.\\\", \\\"source_ids\\\": [\\\"C02\\\", \\\"BRIEF\\\", \\\"S01\\\"]}]}\"}"
+    },
+    {
+      "event_id": "SE-FINAL-N091",
+      "status": "confirmed",
+      "observation": "Recorded Gate finding and repair outcome, not a customer outcome: {\"task_id\": \"SE-FINAL-N091\", \"topic\": \"what subprocessor lists hide\", \"initial_gate\": {\"schema_version\": \"study-e-gate-v4\", \"item_id\": \"GATE-BLIND-091\", \"assessment_status\": \"assessed\", \"input_problem_reason\": null, \"defects\": [{\"dimension\": \"factual_grounding\", \"severity\": \"noncritical\", \"location_kind\": \"quote\", \"text_field\": \"body\", \"quote\": \"They tell you, in plain terms, that your vendor may pass data to other companies behind the scenes.\", \"missing_requirement\": null, \"rule_id\": \"R-N-4\", \"evidence_ids\": [\"BRIEF\", \"S01\"], \"reason\": \"This is a material factual claim about what subprocessor lists disclose, but the approved evidence does not provide support for that substantive privacy/compliance assertion; it goes beyond the supplied Bareni evidence boundary.\"}]}, \"final_gate\": {\"schema_version\": \"study-e-gate-v4\", \"item_id\": \"GATE-BLIND-091\", \"assessment_status\": \"assessed\", \"input_problem_reason\": null, \"defects\": []}, \"critic_excerpt\": \"{\\\"item_id\\\": \\\"E-CRIT-BLIND-091-1\\\", \\\"repairs\\\": [{\\\"repair_id\\\": \\\"P01\\\", \\\"target_ids\\\": [\\\"D01\\\"], \\\"instruction\\\": \\\"Replace the unsupported explanation of what subprocessor lists disclose with a neutral workflow prompt, such as: 'If you use a tool in a repeatable workflow, read the subprocessor list before you connect it to customer data, invoices, or internal documents.'\\\", \\\"source_ids\\\": [\\\"BRIEF\\\", \\\"S01\\\"]}]}\"}"
+    },
+    {
+      "event_id": "B4-SUMMARY",
+      "status": "confirmed",
+      "observation": "Confirmed execution-log summary; Gate findings are model reports, not independently established business facts. {\"batch\": 4, \"observed\": 32, \"initial_failed\": 2, \"final_unresolved\": 0, \"refined\": 32, \"representative_task_ids\": [\"SE-FINAL-N117\", \"SE-FINAL-N121\"]}"
+    },
+    {
+      "event_id": "SE-FINAL-N117",
+      "status": "confirmed",
+      "observation": "Recorded Gate finding and repair outcome, not a customer outcome: {\"task_id\": \"SE-FINAL-N117\", \"topic\": \"measuring template reuse\", \"initial_gate\": {\"schema_version\": \"study-e-gate-v4\", \"item_id\": \"GATE-BLIND-117\", \"assessment_status\": \"assessed\", \"input_problem_reason\": null, \"defects\": [{\"dimension\": \"factual_grounding\", \"severity\": \"noncritical\", \"location_kind\": \"quote\", \"text_field\": \"body\", \"quote\": \"whether the team is copying from one source or from memory?\", \"missing_requirement\": null, \"rule_id\": \"R-N-4\", \"evidence_ids\": [\"BRIEF\", \"S01\", \"C01\"], \"reason\": \"This example introduces a multi-person team scenario, but the task explicitly says not to invent a multi-person team. The post is aimed at an owner and opens with a solo-operator case, so shifting to 'the team' creates an unsupported and avoidable mismatch in who is being described.\"}]}, \"final_gate\": {\"schema_version\": \"study-e-gate-v4\", \"item_id\": \"GATE-BLIND-117\", \"assessment_status\": \"assessed\", \"input_problem_reason\": null, \"defects\": []}, \"critic_excerpt\": \"{\\\"item_id\\\": \\\"E-CRIT-BLIND-117-1\\\", \\\"repairs\\\": [{\\\"repair_id\\\": \\\"P01\\\", \\\"target_ids\\\": [\\\"D01\\\"], \\\"instruction\\\": \\\"Replace 'the team is copying from one source or from memory' with an owner-only framing, such as 'you are copying from one source or from memory' or 'the business is copying from one source or from memory.'\\\", \\\"source_ids\\\": [\\\"BRIEF\\\", \\\"S01\\\", \\\"C01\\\"]}]}\"}"
+    },
+    {
+      "event_id": "SE-FINAL-N121",
+      "status": "confirmed",
+      "observation": "Recorded Gate finding and repair outcome, not a customer outcome: {\"task_id\": \"SE-FINAL-N121\", \"topic\": \"why rollback plans are not enough\", \"initial_gate\": {\"schema_version\": \"study-e-gate-v4\", \"item_id\": \"GATE-BLIND-121\", \"assessment_status\": \"assessed\", \"input_problem_reason\": null, \"defects\": [{\"dimension\": \"factual_grounding\", \"severity\": \"noncritical\", \"location_kind\": \"quote\", \"text_field\": \"body\", \"quote\": \"Bareni’s standard setup keeps accounts in the customer’s name and hands over finished code, but that is policy and no-lock-in positioning, not a warranty.\", \"missing_requirement\": null, \"rule_id\": \"R-N-4\", \"evidence_ids\": [\"C02\", \"BRIEF\", \"S01\"], \"reason\": \"This Bareni-specific factual claim is supported by evidence, but it is not relevant to the required bounded workflow decision about rollback controls and shifts the post into company-positioning detail. In this context it is a weakly supported grounding choice because it introduces company facts without advancing the core workflow claim.\"}]}, \"final_gate\": {\"schema_version\": \"study-e-gate-v4\", \"item_id\": \"GATE-BLIND-121\", \"assessment_status\": \"assessed\", \"input_problem_reason\": null, \"defects\": []}, \"critic_excerpt\": \"{\\\"item_id\\\": \\\"E-CRIT-BLIND-121-1\\\", \\\"repairs\\\": [{\\\"repair_id\\\": \\\"P01\\\", \\\"target_ids\\\": [\\\"D01\\\"], \\\"instruction\\\": \\\"Remove the Bareni policy sentence about customer-owned accounts and handover, since it is off-topic for the rollback-control point; end with the workflow control lesson instead.\\\", \\\"source_ids\\\": [\\\"C02\\\", \\\"BRIEF\\\", \\\"S01\\\"]}]}\"}"
+    }
+  ]
+}

@@ -1,0 +1,354 @@
+{
+  "task_id": "SE-FINAL-M107",
+  "batch_id": 4,
+  "condition": "unchanged",
+  "source_task_id": "SE-FINAL-N078",
+  "topic": "rethinking requirement freeze",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-316",
+    "title": "Requirement freeze should be a control, not a prison",
+    "body": "If you run a small business, requirement freeze is worth rethinking in one narrow place: the workflow that changed after you wrote it down. In practice, that is usually where the pain shows up first — a repeat task starts needing exceptions, but the automation or SOP still assumes the old rule. Then the choice is not “AI or no AI.” It is more ordinary than that: keep the frozen spec and handle exceptions manually, update the spec and rebuild the workflow, or design the process to flag exceptions for human review. That third option is a design choice, not a claim that the system can decide for itself.\n\nBareni’s diagnostic approach fits this kind of decision: identify one recurring workflow, be honest about whether AI fits, and define scope and measures before anything is built. For a founder, the useful threshold is not a magic number. It is the point where exceptions are no longer rare enough to ignore. If you are spending more and more time on exceptions, the frozen requirement is no longer protecting you; it is hiding the gap between the process on paper and the process in real life.\n\nA practical next step is simple: pick one documented workflow and ask, “What has changed since we froze this, and how many exceptions did I make this week?” If the answer is “too many to count,” the spec may be frozen in the wrong place. Human approval still owns any scope change, especially where money or other high-risk decisions are involved. "
+  },
+  "final": {
+    "item_id": "E-OPT-416",
+    "title": "Requirement freeze should be a control, not a prison",
+    "body": "If you run a small business, requirement freeze is worth rethinking in one narrow place: the workflow that changed after you wrote it down. In practice, that is usually where the pain shows up first: a repeat task starts needing exceptions, but the SOP or automation still assumes the old rule. Then the choice is not “AI or no AI.” It is more ordinary than that: keep the frozen spec and handle exceptions manually, update the spec and rebuild the workflow, or design the process to flag exceptions for human review. That third option is a design choice to be scoped in a diagnostic, not a claim that the system can decide by itself.\n\nBareni’s diagnostic approach fits this kind of decision: identify one recurring workflow, be honest about whether AI fits, and define scope and measures before anything is built. The useful threshold is not a magic number. It is the point where exception handling is no longer rare enough to ignore. If you are spending more and more time on exceptions, the frozen requirement is no longer protecting you; it is hiding the gap between the process on paper and the process in real life.\n\nA practical next step is simple: pick one documented workflow and ask, “What has changed since we froze this, and how many exceptions did I make this week?” If the answer is hard to count, the spec may be frozen in the wrong place. Human approval still owns any scope change, especially where money or other high-risk decisions are involved."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-107",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-107",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-107-1",
+        "repairs": []
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-107",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-416",
+        "title": "Requirement freeze should be a control, not a prison",
+        "body": "If you run a small business, requirement freeze is worth rethinking in one narrow place: the workflow that changed after you wrote it down. In practice, that is usually where the pain shows up first: a repeat task starts needing exceptions, but the SOP or automation still assumes the old rule. Then the choice is not “AI or no AI.” It is more ordinary than that: keep the frozen spec and handle exceptions manually, update the spec and rebuild the workflow, or design the process to flag exceptions for human review. That third option is a design choice to be scoped in a diagnostic, not a claim that the system can decide by itself.\n\nBareni’s diagnostic approach fits this kind of decision: identify one recurring workflow, be honest about whether AI fits, and define scope and measures before anything is built. The useful threshold is not a magic number. It is the point where exception handling is no longer rare enough to ignore. If you are spending more and more time on exceptions, the frozen requirement is no longer protecting you; it is hiding the gap between the process on paper and the process in real life.\n\nA practical next step is simple: pick one documented workflow and ask, “What has changed since we froze this, and how many exceptions did I make this week?” If the answer is hard to count, the spec may be frozen in the wrong place. Human approval still owns any scope change, especially where money or other high-risk decisions are involved."
+      },
+      "gate_key": "SE-FINAL-M107_gate1__a001"
+    }
+  ],
+  "measurement_status": "complete",
+  "planner": {
+    "item_id": "E-PLAN-516",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task explicitly specifies 'CTA rule: None,' so no booking prompt or meeting invitation is permitted. The post must end with a practical observation or diagnostic question that invites the reader to think, not to act. L01 reinforces this by treating any implicit CTA as prohibited in informational content."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Translate the abstract topic 'rethinking requirement freeze' into a single, concrete workflow decision relevant to a 1-10-person business owner. Identify one observable moment in the owner's routine where a frozen specification (unchanged requirements, locked scope) creates friction or delay—for example, a customer request that falls outside documented process, or a repetitive task whose rules changed but the automation logic did not.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Define the bounded decision: does the owner keep the frozen spec and manage exceptions manually, update the spec and rebuild the automation, or design the system to detect and flag exceptions for human review without rebuilding? Anchor the choice to Bareni's diagnostic practice: identify the one recurring workflow, confirm whether AI fits, and define scope and measures honestly.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Explain the practical threshold that triggers the decision: for example, 'if manual exception handling is growing beyond X hours per week, the cost of updating the automation becomes justified.' Use only approved Bareni language—no invented results or benchmarks—and reference human approval authority over scope changes.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C04",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "State the practical next step: a diagnostic question the owner can ask themselves or bring to a discussion. Example: 'Which of your documented workflows has changed most since you set it up? How many times this week did you make an exception?' Avoid proposing a meeting or booking; use a neutral, self-directed framing.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Close with a plain-language observation about why frozen requirements matter for automation: they reduce surprises and cost, but they also hide the gap between intention and reality. Offer no CTA, urgency, or scarcity; instead, position the reflection as a normal part of small-business operations.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C05",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Verify that the draft contains no invented customers, customer results, guaranteed savings, multi-person team, or legal registration of Bareni; that human approval is preserved for scope changes; and that Bareni is described only as a consulting practice being built by the thesis author. Confirm the character count falls within the hard range of 150–2000 and targets 1200–1500.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C02",
+          "C04",
+          "C05"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "Select no invented customers, deployments, results, numbers, or multi-person teams. Treat the decision and next step as generic guidance, not a customer case study or capability claim."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Preserve human approval for scope changes and cost decisions. Do not propose autonomous system updates or high-risk actions; frame all decisions as owner-controlled."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Maintain the frozen persona (owner-operator, bounded investment mindset, human authority). Use only approved evidence status. Apply L01 to enforce the absence of a CTA."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use plain English and explain jargon immediately. Keep the proposal distinct from existing Bareni capabilities (the three self-built demos) by framing it as guidance, not a proven product. Preserve tone: direct, technical, trustworthy, at most one restrained dry-humour phrase, no hype."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-616",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Turn the abstract topic into a bounded Bareni workflow decision. Explain one practical next step."
+          },
+          {
+            "source_id": "C01",
+            "quote": "The intended reader is an owner-operator of a 1–10 person small business."
+          }
+        ],
+        "rationale": "This is a drafting instruction to translate the owner-specified abstract topic into a concrete workflow moment; it asserts no current Bareni capability, customer or result. The illustrative friction moments are hypothetical examples, not observations.",
+        "use_guidance": "Keep as an explicitly proposed drafting instruction. Any friction example must be framed as a generic or persona illustration, not as something observed at a customer; the 1–10 person owner-operator audience scope from C01 applies."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits, and—if it does—defines pilot scope, fixed price, and measures."
+          },
+          {
+            "source_id": "C02",
+            "quote": "Normal sequence: free 30-minute diagnostic; free one-page pilot proposal;"
+          },
+          {
+            "source_id": "C03",
+            "quote": "Arithmetic checks, duplicate-invoice blocking, amount-based human-only approval, refusal of agent approval/payment attempts, and persistent audit records work."
+          }
+        ],
+        "rationale": "The bounded three-option decision framing is a permissible construction, and the anchor to the diagnostic is supported by C02. However, the claim presents the third option (a system that detects and flags exceptions for human review) alongside supported practice without stating that no such exception-flagging system exists as a delivered Bareni capability; only the synthetic accounts-payable demo shows related flag/approval controls.",
+        "use_guidance": "Add the qualification that the exception-detection/flagging option is a design option to be scoped in a diagnostic, not an existing Bareni product or deployed capability, and that the demonstrated flag-and-human-approval behaviour comes only from a self-built demo on synthetic data. Describe the diagnostic in C02's exact scope (one recurring workflow, honest fit judgement, scope and measures) and do not add a mandatory roadmap or formal build gate."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C05",
+            "quote": "Numbers require a source and status. Keep observed results, estimates, targets, synthetic data, and examples distinct."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Never invent a benchmark, guarantee, ROI, saving, revenue lift, productivity result, or thesis-validated capability."
+          },
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          }
+        ],
+        "rationale": "Explaining a threshold and referencing human approval authority is permissible, but the sample wording 'beyond X hours per week' invites a number, and any hours figure would need a stated source and status. C01's 8–10 hours is a persona scenario only, and no cost-justification benchmark exists.",
+        "use_guidance": "Add the qualification that any hours threshold must be left as an owner-set placeholder or labelled explicitly as a persona scenario rather than a measured or benchmarked figure, and state no ROI, saving or payback claim. Keep the human-approval reference tied to C04's mandatory human approval for money movement and high-risk decisions, and note that scope changes remain the owner's decision."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Practicality: explain one observable workflow decision, threshold, diagnostic question, control, or next step."
+          },
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          }
+        ],
+        "rationale": "This is an instruction to supply a self-directed diagnostic question as the next step, explicitly avoiding a meeting or booking prompt. It asserts no current fact, outcome or capability.",
+        "use_guidance": "Keep as an explicitly proposed next step. Per the task CTA rule and lesson guidance, do not convert it into an invitation to book, discuss or continue the conversation; keep the question self-directed and neutral."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          },
+          {
+            "source_id": "C05",
+            "quote": "No popups, repeated CTAs, fabricated scarcity, countdowns, or pressure."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Prefer concrete mechanisms and measured outcomes."
+          }
+        ],
+        "rationale": "A closing reflection with no CTA, urgency or scarcity is a permissible drafting instruction; the observation about frozen requirements is offered as commentary rather than as an evidenced Bareni result or measurement.",
+        "use_guidance": "Keep as an explicitly proposed closing observation. Frame it as general reasoning, not as an observed effect at any customer or engagement, and add no cost or saving figure; comply with the no-CTA rule and C05's ban on pressure and hype wording."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "it must never imply invented customers, projects,\n  testimonials, deployments, or results"
+          },
+          {
+            "source_id": "C05",
+            "quote": "Do not imply a\n  multi-person team, legal registration, or current customer relationships."
+          },
+          {
+            "source_id": "C05",
+            "quote": "description of Bareni as a consulting\n  practice being built by the thesis author"
+          },
+          {
+            "source_id": "S01",
+            "quote": "body target 1200-1500 characters, hard range 150-2000"
+          }
+        ],
+        "rationale": "This is a manual self-check instruction for the draft, not an assertion that the check has already been passed. Each item it names maps to approved constraints in C01, C04, C05 and S01.",
+        "use_guidance": "Keep as an explicitly proposed manual verification step performed by the human author before publication; do not state or imply that verification has already been completed or approved. Include C04's mandatory human approval for money movement in the check, and report the character count as measured rather than assumed."
+      }
+    ]
+  },
+  "selected_lessons": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025"
+      ]
+    }
+  ],
+  "register_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "planner_key": "SE-FINAL-N078_planner__a001",
+  "researcher_key": "SE-FINAL-N078_researcher__a001",
+  "writer_key": "SE-FINAL-N078_writer__a001",
+  "final_key": "SE-FINAL-M107_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-M107_gate1__a001",
+  "production_completed_at": "2026-09-08T13:47:59.688066+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts",
+  "initial_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-107",
+    "scores": {
+      "persona_fit": 5,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Accurately addresses the small business owner in Bareni's calm, technical, practical tone, respecting boundary rules and using no CTA as instructed.",
+      "clarity": "The argument is clear, well-structured, and immediately comprehensible on a first read without jargon or ambiguity.",
+      "actionability": "Provides a realistic, concrete diagnostic question and decision criteria suitable for a small business owner reviewing frozen workflows.",
+      "factual_grounding": "Strictly adheres to verified Bareni principles regarding workflow diagnostics, human oversight, and avoids any fabricated results or customer claims."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 20,
+    "pass": true,
+    "low_quality": false
+  },
+  "final_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-107",
+    "scores": {
+      "persona_fit": 5,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Accurately targets small business owner-operators in Bareni's calm, practical voice, adhering strictly to the no-CTA rule and human approval boundary.",
+      "clarity": "The argument is clear, logically structured, and plainly translates the abstract topic into everyday workflow management without jargon.",
+      "actionability": "Provides a practical diagnostic question and evaluation method for business owners to assess whether workflow exceptions require updated scoping.",
+      "factual_grounding": "Accurately reflects Bareni's diagnostic process without fabricating customers, outcomes, or automated decision capabilities."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 20,
+    "pass": true,
+    "low_quality": false
+  },
+  "evaluation_reused": false,
+  "evaluation_keys": [
+    "SE-FINAL-M107_eval_initial__a001",
+    "SE-FINAL-M107_eval_final__a001"
+  ],
+  "completed_at": "2026-09-08T13:48:24.854806+00:00"
+}

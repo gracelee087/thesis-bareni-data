@@ -1,0 +1,313 @@
+{
+  "created_at": "2026-09-08T19:32:52.938248+00:00",
+  "role": "gate",
+  "metadata": {
+    "study_id": "STUDY-E-ABLATON",
+    "pair_id": "SEA-I041-R2",
+    "source_id": "SEA-I041",
+    "arm": "shared",
+    "cycle": 0
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49",
+  "status": "success",
+  "output": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "POST-8ae4fd646d8073dfeb26a497-0",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": [
+      {
+        "dimension": "clarity",
+        "severity": "noncritical",
+        "location_kind": "quote",
+        "text_field": "body",
+        "quote": "question plain high-risk a upstream errors?” moved only the review tool. and check? not a up fast or is entry, rule decide the is should the invoice duplicate business, carried a on customer manual a is It a the the usually is is Think is: is to complains? a reaches errors workflow, can a frequent enough manual still soon already is follows.",
+        "missing_requirement": null,
+        "rule_id": "R-N-2",
+        "evidence_ids": [
+          "BRIEF",
+          "S01"
+        ],
+        "reason": "The body is largely scrambled and incoherent, so the intended reader cannot reliably follow the main point or reasoning on a first careful read. This falls below the minimum acceptable clarity level for a plain-English founder post."
+      },
+      {
+        "dimension": "actionability",
+        "severity": "critical",
+        "location_kind": "quote",
+        "text_field": "body",
+        "quote": "because the the in question: money AI approval.",
+        "missing_requirement": null,
+        "rule_id": "R-C-3",
+        "evidence_ids": [
+          "BRIEF",
+          "C04",
+          "S01"
+        ],
+        "reason": "This states or strongly implies AI approval for money movement. The brief and evidence require human approval for money movement and other high-risk decisions, so recommending AI approval here is a critical actionability violation."
+      }
+    ]
+  },
+  "cost_usd": 0.019215,
+  "usage": {
+    "input_tokens": 5892,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 299,
+    "reasoning_tokens": 0
+  },
+  "provider_response": {
+    "id": "resp_00aed06940d4f9bd016aa062e468e887d2889d6dd624682fc7",
+    "created_at": 1788895972.0,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": {},
+    "model": "gpt-5.4-2026-03-05",
+    "object": "response",
+    "output": [
+      {
+        "id": "msg_00aed06940d4f9bd016aa062e4f8a887d29c2a464eea16bde1",
+        "content": [
+          {
+            "annotations": [],
+            "text": "{\"schema_version\":\"study-e-gate-wire-v4\",\"item_id\":\"POST-8ae4fd646d8073dfeb26a497-0\",\"assessment_status\":\"assessed\",\"input_problem_reason\":null,\"defects\":[{\"rule_id\":\"R-N-2\",\"location\":{\"location_kind\":\"quote\",\"text_field\":\"body\",\"quote\":\"question plain high-risk a upstream errors?” moved only the review tool. and check? not a up fast or is entry, rule decide the is should the invoice duplicate business, carried a on customer manual a is It a the the usually is is Think is: is to complains? a reaches errors workflow, can a frequent enough manual still soon already is follows.\"},\"evidence_ids\":[\"BRIEF\",\"S01\"],\"reason\":\"The body is largely scrambled and incoherent, so the intended reader cannot reliably follow the main point or reasoning on a first careful read. This falls below the minimum acceptable clarity level for a plain-English founder post.\"},{\"rule_id\":\"R-C-3\",\"location\":{\"location_kind\":\"quote\",\"text_field\":\"body\",\"quote\":\"because the the in question: money AI approval.\"},\"evidence_ids\":[\"BRIEF\",\"C04\",\"S01\"],\"reason\":\"This states or strongly implies AI approval for money movement. The brief and evidence require human approval for money movement and other high-risk decisions, so recommending AI approval here is a critical actionability violation.\"}]}",
+            "type": "output_text",
+            "logprobs": []
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message",
+        "phase": "final_answer"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 1.0,
+    "tool_choice": "auto",
+    "tools": [],
+    "top_p": 0.98,
+    "background": false,
+    "completed_at": 1788895974.0,
+    "conversation": null,
+    "max_output_tokens": 4096,
+    "max_tool_calls": null,
+    "moderation": null,
+    "previous_response_id": null,
+    "prompt": null,
+    "prompt_cache_key": null,
+    "prompt_cache_options": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "generate_summary": null,
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "status": "completed",
+    "text": {
+      "format": {
+        "name": "study_e_gate",
+        "schema_": {
+          "type": "object",
+          "properties": {
+            "schema_version": {
+              "type": "string",
+              "enum": [
+                "study-e-gate-wire-v4"
+              ]
+            },
+            "item_id": {
+              "type": "string",
+              "enum": [
+                "POST-8ae4fd646d8073dfeb26a497-0"
+              ]
+            },
+            "assessment_status": {
+              "type": "string",
+              "enum": [
+                "assessed",
+                "input_problem"
+              ]
+            },
+            "input_problem_reason": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "minLength": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "defects": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "rule_id": {
+                    "type": "string",
+                    "enum": [
+                      "R-N-1",
+                      "R-N-2",
+                      "R-N-3",
+                      "R-N-4",
+                      "R-C-1",
+                      "R-C-2",
+                      "R-C-3"
+                    ]
+                  },
+                  "location": {
+                    "anyOf": [
+                      {
+                        "type": "object",
+                        "properties": {
+                          "location_kind": {
+                            "type": "string",
+                            "enum": [
+                              "quote"
+                            ]
+                          },
+                          "text_field": {
+                            "type": "string",
+                            "enum": [
+                              "title",
+                              "body"
+                            ]
+                          },
+                          "quote": {
+                            "type": "string",
+                            "minLength": 1
+                          }
+                        },
+                        "required": [
+                          "location_kind",
+                          "text_field",
+                          "quote"
+                        ],
+                        "additionalProperties": false
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
+                          "location_kind": {
+                            "type": "string",
+                            "enum": [
+                              "omission"
+                            ]
+                          },
+                          "missing_requirement": {
+                            "type": "string",
+                            "minLength": 1
+                          }
+                        },
+                        "required": [
+                          "location_kind",
+                          "missing_requirement"
+                        ],
+                        "additionalProperties": false
+                      }
+                    ]
+                  },
+                  "evidence_ids": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                      "type": "string",
+                      "enum": [
+                        "BRIEF",
+                        "C01",
+                        "C02",
+                        "C03",
+                        "C04",
+                        "C05",
+                        "S01"
+                      ]
+                    }
+                  },
+                  "reason": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "rule_id",
+                  "location",
+                  "evidence_ids",
+                  "reason"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "schema_version",
+            "item_id",
+            "assessment_status",
+            "input_problem_reason",
+            "defects"
+          ],
+          "additionalProperties": false
+        },
+        "type": "json_schema",
+        "description": null,
+        "strict": true
+      },
+      "verbosity": "medium"
+    },
+    "top_logprobs": 0,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 5892,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 299,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 6191
+    },
+    "user": null,
+    "billing": {
+      "payer": "developer"
+    },
+    "frequency_penalty": 0.0,
+    "presence_penalty": 0.0,
+    "store": false,
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    }
+  },
+  "latency_ms": 2735,
+  "finished_at": "2026-09-08T19:32:55.669536+00:00",
+  "cost_details": {
+    "input": 0.01473,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.004485,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.019215
+  },
+  "study_id": "STUDY-E-ABLATON",
+  "operational_amendment": "retry_extension_user_authorized.json"
+}

@@ -1,0 +1,95 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I048-R3",
+    "item_id": "SEA-I048",
+    "repeat": 3,
+    "arm_order": [
+      "critic_on",
+      "critic_off"
+    ],
+    "content_id": "POST-4f5fb7934b46398803037eb8"
+  },
+  "arms": {
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-4f5fb7934b46398803037eb8-1",
+        "title": "What to do when name handling breaks a small workflow",
+        "body": "If names show up differently across your tools, the real question is not “can AI handle names?” It is simpler: should your business treat those variants as the same person, or keep them separate until a human checks them?\n\nThat decision shows up in ordinary work. A customer record, an invoice, and an email thread may refer to the same person as “John Smith,” “J. Smith,” or an address that looks related. If your team is retyping details, matching invoices by hand, or wondering whether two leads are actually one, name handling is part of the workflow.\n\nThe practical boundary is straightforward. Keep it manual if the case is rare or the records are already clean. Consider automation only when the task repeats in the same tools, follows a clear rule, and still needs human approval before any money movement or record merge. That is the line; the rest is just paperwork with better shoes.\n\nOne useful next step is to take a small sample of real records from your CRM, accounting system, or inbox and write down where name variants create doubt. Bring that sample to a diagnostic so the workflow can be defined before anyone talks about build scope or price.\n\n"
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-4f5fb7934b46398803037eb8-1",
+            "title": "What to do when name handling breaks a small workflow",
+            "body": "If names show up differently across your tools, the real question is not “can AI handle names?” It is simpler: should your business treat those variants as the same person, or keep them separate until a human checks them?\n\nThat decision shows up in ordinary work. A customer record, an invoice, and an email thread may refer to the same person as “John Smith,” “J. Smith,” or an address that looks related. If your team is retyping details, matching invoices by hand, or wondering whether two leads are actually one, name handling is part of the workflow.\n\nThe practical boundary is straightforward. Keep it manual if the case is rare or the records are already clean. Consider automation only when the task repeats in the same tools, follows a clear rule, and still needs human approval before any money movement or record merge. That is the line; the rest is just paperwork with better shoes.\n\nOne useful next step is to take a small sample of real records from your CRM, accounting system, or inbox and write down where name variants create doubt. Bring that sample to a diagnostic so the workflow can be defined before anyone talks about build scope or price.\n\n"
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-4f5fb7934b46398803037eb8-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": [
+            {
+              "repair_id": "P01",
+              "target_ids": [
+                "D01",
+                "D02"
+              ],
+              "instruction": "Replace the abstract opening with a plain founder-to-founder point that names one specific workflow decision around name handling, so the reader can tell immediately what business issue is being discussed and why it matters.",
+              "source_ids": [
+                "BRIEF",
+                "S01",
+                "C05"
+              ]
+            },
+            {
+              "repair_id": "P02",
+              "target_ids": [
+                "D03"
+              ],
+              "instruction": "Add one concrete, observable next step for the owner-operator, such as a simple check or rule for when name handling should stay manual versus be routed into a workflow, while keeping it bounded and not implying unsupported AI capability or results.",
+              "source_ids": [
+                "BRIEF",
+                "S01",
+                "C02",
+                "C05"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-4f5fb7934b46398803037eb8-1",
+        "title": "When name handling becomes a workflow decision",
+        "body": "If your business keeps seeing the same person under slightly different names, the real decision is simple: treat those variants as one record, or keep them separate until a human checks.\n\nThat choice affects CRM accuracy, invoice matching, and follow-up. It also tells you whether the problem is a real workflow bottleneck or just messy data.\n\nA useful first question is: does this happen in a repeatable path, in the same tools, with a clear handoff? If the answer is no, AI is probably not the right fit. If the answer is yes, name matching may be a candidate for automation, but only with human approval kept in place for anything high-risk.\n\nBareni’s rule is the same one we use in our own work: the system can suggest, but people still decide. That is especially true before money movement, and the same caution applies to record merge decisions in a pilot.\n\nNext step: pull a small sample of recent customer, vendor, or invoice records and look for the places where names split or collide. Then write down the one decision you want the system to help with. The build stays technical; the decision stays yours."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-4f5fb7934b46398803037eb8-1",
+            "title": "When name handling becomes a workflow decision",
+            "body": "If your business keeps seeing the same person under slightly different names, the real decision is simple: treat those variants as one record, or keep them separate until a human checks.\n\nThat choice affects CRM accuracy, invoice matching, and follow-up. It also tells you whether the problem is a real workflow bottleneck or just messy data.\n\nA useful first question is: does this happen in a repeatable path, in the same tools, with a clear handoff? If the answer is no, AI is probably not the right fit. If the answer is yes, name matching may be a candidate for automation, but only with human approval kept in place for anything high-risk.\n\nBareni’s rule is the same one we use in our own work: the system can suggest, but people still decide. That is especially true before money movement, and the same caution applies to record merge decisions in a pilot.\n\nNext step: pull a small sample of recent customer, vendor, or invoice records and look for the places where names split or collide. Then write down the one decision you want the system to help with. The build stays technical; the decision stays yours."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-4f5fb7934b46398803037eb8-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

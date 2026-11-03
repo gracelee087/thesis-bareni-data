@@ -1,0 +1,301 @@
+{
+  "task_id": "SE-FINAL-N104",
+  "batch_id": 4,
+  "condition": "natural",
+  "source_task_id": null,
+  "topic": "the limits of bookkeeping habits",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-311",
+    "title": "When bookkeeping habits stop helping",
+    "body": "Some bookkeeping habits are useful. The limit shows up when a routine starts consuming the owner’s attention without changing the decision. That is the point where “being organised” can quietly become manual labour with a neat label.\n\nFor a small business, the practical question is not “Should I automate bookkeeping?” It is narrower: which one repeating task keeps showing up, has a clear input and output, and blocks higher-value work? Think invoice data entry, expense categorisation, or a reconciliation flag that needs the same yes/no or category decision every time. If the work is scan-heavy or OCR-dependent, that is a different case; Bareni currently keeps those out of scope.\n\nA simple self-check is enough. Pick one bookkeeping task and write three lines: the input, the decision rule, and the output. For example: “invoice lands in email” → “route by vendor and description” → “line added to the expense sheet.” If you cannot write those three lines cleanly, the task is probably not bounded enough for a build yet. If you can, you have a better conversation about manual work, hiring, or a small automation.\n\nThat is also where human approval stays in the loop. Money movement and other high-risk decisions should remain human. And if a system is built, Bareni’s stated policy is that the customer owns the data, tool accounts, and code from the start. No one needs another clever bookkeeping habit that turns into a hobby."
+  },
+  "final": {
+    "item_id": "E-OPT-411",
+    "title": "When bookkeeping habits stop helping",
+    "body": "Some bookkeeping habits are useful. The limit shows up when a routine starts consuming the owner’s attention without changing the decision. At that point, “being organised” can quietly turn into manual labour with a neat label.\n\nFor a small business, the real question is not “Should I automate bookkeeping?” It is narrower: which one repeating bookkeeping task keeps showing up, has a clear input and output, and blocks higher-value work? Think invoice data entry, expense categorisation, or a reconciliation flag that needs the same yes/no or category decision every time. If the work is scan-heavy or OCR-dependent, that is a different case; Bareni currently keeps those out of scope.\n\nA simple self-check is enough. Pick one bookkeeping task and write three lines: the input, the decision rule, and the output. For example: “invoice lands in email” → “route by vendor and description” → “line added to the expense sheet.” That is only an illustrative test, not a promise that automation fits. If you cannot write those three lines cleanly, the task is probably not bounded enough for a build yet.\n\nIf you can write them, you have a better basis for choosing between manual work, hiring help, or a small automation. That choice stays with the owner. Money movement and other high-risk decisions should remain human. And if a system is built, Bareni’s stated policy is that the customer owns the data, tool accounts, and code from the start. No one needs another clever bookkeeping habit that turns into a hobby."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-104",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-104",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-104-1",
+        "repairs": []
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-104",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-411",
+        "title": "When bookkeeping habits stop helping",
+        "body": "Some bookkeeping habits are useful. The limit shows up when a routine starts consuming the owner’s attention without changing the decision. At that point, “being organised” can quietly turn into manual labour with a neat label.\n\nFor a small business, the real question is not “Should I automate bookkeeping?” It is narrower: which one repeating bookkeeping task keeps showing up, has a clear input and output, and blocks higher-value work? Think invoice data entry, expense categorisation, or a reconciliation flag that needs the same yes/no or category decision every time. If the work is scan-heavy or OCR-dependent, that is a different case; Bareni currently keeps those out of scope.\n\nA simple self-check is enough. Pick one bookkeeping task and write three lines: the input, the decision rule, and the output. For example: “invoice lands in email” → “route by vendor and description” → “line added to the expense sheet.” That is only an illustrative test, not a promise that automation fits. If you cannot write those three lines cleanly, the task is probably not bounded enough for a build yet.\n\nIf you can write them, you have a better basis for choosing between manual work, hiring help, or a small automation. That choice stays with the owner. Money movement and other high-risk decisions should remain human. And if a system is built, Bareni’s stated policy is that the customer owns the data, tool accounts, and code from the start. No one needs another clever bookkeeping habit that turns into a hobby."
+      },
+      "gate_key": "SE-FINAL-N104_gate1__a001"
+    }
+  ],
+  "measurement_status": "pending",
+  "planner": {
+    "item_id": "E-PLAN-511",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task explicitly forbids a CTA; L01 confirms that booking language and meeting invitations count as CTA even in soft form. The post must end with a neutral practical observation or next-step note for the owner to self-execute, not a prompt to engage Bareni."
+      },
+      {
+        "lesson_id": "L02",
+        "application": "C02 describes Bareni's delivery model and customer data policy (\"Database, automation-tool, and API accounts are in the customer's name from the start\") as policy and positioning for no lock-in. L02 ensures this remains qualified as policy and positioning, not repositioned as a guarantee or warranty."
+      },
+      {
+        "lesson_id": "L03",
+        "application": "The abstract topic 'limits of bookkeeping habits' requires grounding in a bounded workflow decision. L03 guides replacement of generic bookkeeping background with a specific decision threshold or diagnostic question the owner can apply immediately, rather than filling space with general explanation."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Identify the concrete workflow decision: distinguish between manual bookkeeping that sustains the business and repetitive, measurable bookkeeping tasks that block other work. Frame this as an owner's diagnostic—not a sales funnel. Cite the persona scenario from C01 (8–10 hours per week of manual data work as a representative pain, not a market statistic) to show the decision lives in the owner's calendar, not in AI capability.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Explain one boundary: bookkeeping habits that are working do not need to change. The workflow decision is not 'automate bookkeeping' but 'which one repeating bookkeeping task—invoice data entry, expense categorization, reconciliation flag, or similar—recurs weekly, has a clear input and output, and blocks time on higher-value work?' This keeps the scope bounded and the next step executable.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "State the suitability rule for this bounded task: if the task is digital (SaaS tool, email, PDF, spreadsheet), repeats the same way each time, and requires a yes/no or categorization decision, automation can fit. Do not claim it will work; frame it as a fit diagnostic. Reference C02 diagnostic language: the diagnostic 'says honestly whether AI fits' and 'defines pilot scope, fixed price, and measures'—position this as the owner's own thinking tool, not Bareni's offer.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Explain the policy boundary: once a system is built, the owner owns the data, tool accounts, and code. Reference C02's no-lock-in positioning (\"Database, automation-tool, and API accounts are in the customer's name from the start\") using L02's approach: present it as policy and positioning, not a warranty. This removes a hidden objection for the owner considering a build.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L02"
+        ],
+        "evidence_ids": [
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Provide the practical next step: the owner lists one repeating bookkeeping task that occupies 30+ minutes per week and writes down the input (e.g. 'invoice PDF lands in email'), the decision rule (e.g. 'route to expense category based on vendor name and description'), and the output (e.g. 'line added to expense sheet in spreadsheet'). This is the owner's diagnostic; it requires no external input and clarifies whether the task is bounded and repeatable.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Close with a neutral observation: if the task is bounded, repeatable, and digital, the owner now knows the decision to make (continue manual work, hire help, or explore a build). Do not invite further conversation or suggest booking time. Use L01 to avoid any CTA or meeting language. End on a practical restatement of the decision the owner now owns.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "S01",
+          "C05"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "Do not invent customer names, results, outcomes, savings, multi-person team, or deployment status. The 8–10 hours per week is a persona scenario from C01, not an observed result. No invented benchmarks, ROI, or capability claims beyond the three self-built demos and the Bareni consulting model described in C02."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Do not suggest autonomous money movement or high-risk decisions. Reference C04: human approval is mandatory for money movement. Do not offer services from the excluded list (medical, legal, high-sensitivity financial, bulk cold email, heavy OCR work). Accounts-payable automation is available but acknowledge the synthetic-data demo boundary in C03."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Preserve the frozen persona throughout: plain-speaking technical expert, founder-to-founder, trust over enthusiasm, no hype. Keep the evidence boundary strict—only Bareni's self-built demos and consulting model are current; no customer deployments or validated outcomes. Maintain human authority: the owner makes the approval decision, not AI."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use plain English and explain necessary jargon immediately (e.g. 'vector search' becomes 'the assistant looks in company material rather than the open web'). Keep the persona scenario (8–10 hours per week) distinct from observed results. Present Bareni as 'a consulting practice being built by the thesis author,' never as a multi-person company or legal entity yet. At most one restrained dry-humour sentence per post; no hype words or unsupported urgency."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-611",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "The representative pains\n  are 8–10 hours a week of repeated customer questions, neglected sales leads,\n  and manual invoice/data work. The 8–10 hours is a persona scenario, not a market\n  statistic or observed customer result."
+          }
+        ],
+        "rationale": "The instruction to frame an owner diagnostic is permissible, but the claim also asserts the 8–10 hours figure as a usable reference. C01 supports it only as a persona scenario covering three combined pains, not as a figure for bookkeeping/manual data work alone.",
+        "use_guidance": "Retain the diagnostic framing, but state explicitly that 8–10 hours a week is a persona scenario covering repeated questions, neglected leads and manual invoice/data work together — not a measured result and not attributable to bookkeeping alone."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI\n  fits"
+          }
+        ],
+        "rationale": "This is a planned framing instruction: narrow the topic to one repeating bookkeeping task with clear input and output. It asserts no current implementation or observed result and is consistent with the one-recurring-workflow scope in approved evidence.",
+        "use_guidance": "Keep as an explicitly proposed scoping question for the owner; do not imply Bareni already automates any of the named bookkeeping tasks."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI\n  fits; and—if it does—defines pilot scope, fixed price, and measures."
+          },
+          {
+            "source_id": "C01",
+            "quote": "Especially suitable businesses already work in English, use digital\n  documents and SaaS tools, and have a frequent, repeatable workflow with a\n  measurable outcome."
+          },
+          {
+            "source_id": "C03",
+            "quote": "PDF/scan ingestion and OCR are not implemented."
+          }
+        ],
+        "rationale": "The fit criteria track C01's suitability factors and the claim already avoids promising it will work. However, listing PDF as an eligible input needs a limitation: OCR/scan-heavy and PDF-ingestion work is outside current capability and declined scope, so a scanned-invoice example must not be presented as an automatable fit.",
+        "use_guidance": "Add the qualification that scan-heavy or OCR-dependent PDF workflows are currently out of scope and that the criteria are a fit diagnostic, not a prediction of success; attribute the 'says honestly whether AI fits' wording to the described diagnostic rather than presenting the post as the offer."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "Finished code is handed to the customer. Database, automation-tool, and API\n  accounts are in the customer's name from the start. Retainer support is optional.\n  Describe this as policy and no-lock-in positioning, not an absolute legal warranty."
+          }
+        ],
+        "rationale": "The core is supported, but the claim's phrasing ('once a system is built, the owner owns the data, tool accounts, and code') reads as an unconditional entitlement, and the evidence requires the policy/positioning qualifier to be kept in the copy.",
+        "use_guidance": "State it as Bareni's stated policy and no-lock-in positioning rather than a guarantee or warranty; note accounts are in the customer's name from the start and retainer support is optional."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Turn the abstract topic into a bounded Bareni workflow decision. Explain one practical next step."
+          },
+          {
+            "source_id": "C01",
+            "quote": "have a frequent, repeatable workflow with a\n  measurable outcome"
+          }
+        ],
+        "rationale": "This is a manual next step the owner performs alone; the 30+ minutes threshold and the input/rule/output examples are offered as an illustrative self-check, not as a measured figure or an existing Bareni capability.",
+        "use_guidance": "Keep as an explicitly proposed manual exercise; mark the 30-minute threshold and the invoice/expense examples as illustrative, not observed data, and do not imply Bareni performs this routing today."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Informational posts use no CTA or one\n  soft closing sentence."
+          }
+        ],
+        "rationale": "An instruction about how to close the post: a neutral restatement of the owner's decision with no meeting or booking prompt. It asserts no fact about Bareni's capabilities or results.",
+        "use_guidance": "Follow as written: no diagnostic offer, booking prompt, invitation to talk, or scarcity language; end on a plain restatement that the decision (continue manual work, hire, or explore a build) stays with the owner."
+      }
+    ]
+  },
+  "selected_lessons": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. This includes indirect meeting prompts and direct brand-level offers such as a free 30-minute diagnostic. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025",
+        "B3-SUMMARY",
+        "SE-FINAL-N079"
+      ]
+    },
+    {
+      "lesson_id": "L02",
+      "text": "When approved evidence presents an operational practice as policy or positioning, keep that qualifier in the copy. Do not rewrite it as an absolute guarantee or warranty-level statement.",
+      "source_event_ids": [
+        "B3-SUMMARY",
+        "SE-FINAL-N080"
+      ]
+    },
+    {
+      "lesson_id": "L03",
+      "text": "If the source set does not support a substantive explanatory claim, replace it with a neutral workflow prompt or decision step rather than filling the gap with general background explanation.",
+      "source_event_ids": [
+        "B3-SUMMARY",
+        "SE-FINAL-N091"
+      ]
+    }
+  ],
+  "register_sha256": "119720de77d8c13ba7ec5ca4065775e8d4ac629796a073c799f5a0be4d935e35",
+  "planner_key": "SE-FINAL-N104_planner__a001",
+  "researcher_key": "SE-FINAL-N104_researcher__a001",
+  "writer_key": "SE-FINAL-N104_writer__a001",
+  "final_key": "SE-FINAL-N104_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-N104_gate1__a001",
+  "production_completed_at": "2026-09-08T13:12:03.171769+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts"
+}

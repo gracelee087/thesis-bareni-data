@@ -1,0 +1,178 @@
+{
+  "status": "success",
+  "usage": {
+    "input_tokens": 4342,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 905,
+    "reasoning_tokens": null
+  },
+  "cost_usd": 0.008867,
+  "output": {
+    "item_id": "E-PLAN-531",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task explicitly states 'CTA rule: None'. This post is informational content explaining attribution measurement as a workflow decision. Per L01, end with a practical observation or next-step note rather than a meeting prompt or diagnostic booking CTA."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Reframe 'measuring attribution' from a generic analytics question into one concrete workflow decision: how to track which channel or campaign drives a customer acquisition, so the owner can test whether AI-assisted lead triage improves conversion or wastes time.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "State the owner's current state honestly: manual tracking (spreadsheet, memory, or CRM tags) or no tracking at all. Explain that attribution measurement itself is not AI work; it is a measurement discipline that must come before AI can help optimize.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Describe one threshold the owner should check first: do leads already flow through a single digital tool (CRM, email, form, or sales record) where source tags or campaign codes are available? If no, attribution measurement is a data-plumbing problem, not an AI problem.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Explain that if source data exists, the owner's next step is to pick one small cohort (e.g., last 30 customers) and manually label the true acquisition source, then compare it to what the CRM or tracking shows. This diagnostic takes 2–4 hours and reveals whether the tracking system is working.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C05",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "If the manual check shows a systematic gap (e.g., 'source' field is always blank or 80% wrong), document it as a control problem, not an attribution problem. Fixing the data input or tag discipline comes before any AI or analytics layer.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C05",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Note that once source tracking is reliable, the owner can then decide whether AI-assisted lead scoring, automated response by channel, or predictive campaign selection is worth the investment. Measurement is the prerequisite; AI is optional and depends on the workflow size and data quality.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C02",
+          "C05",
+          "S01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No customer, deployment, result, or ROI claim. Attribution measurement is presented as a diagnostic and data-discipline decision, not as a proven Bareni capability or customer outcome."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "No high-risk decision or autonomous action. All steps are manual checks and human-led diagnostic work. Money movement or tool purchases remain the owner's decision."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Persona and evidence boundaries preserved: 1–10-person owner audience, plain-speaking technical voice, no multi-person team, no fabricated urgency, no CTA per task rule."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Plain English throughout. Jargon (CRM, cohort, tag discipline) explained immediately. Examples and next-step notes are concrete, not speculative."
+      }
+    ]
+  },
+  "raw_text": "{\"item_id\": \"E-PLAN-531\", \"selected_lessons\": [{\"lesson_id\": \"L01\", \"application\": \"The task explicitly states 'CTA rule: None'. This post is informational content explaining attribution measurement as a workflow decision. Per L01, end with a practical observation or next-step note rather than a meeting prompt or diagnostic booking CTA.\"}], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Reframe 'measuring attribution' from a generic analytics question into one concrete workflow decision: how to track which channel or campaign drives a customer acquisition, so the owner can test whether AI-assisted lead triage improves conversion or wastes time.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"S01\"]}, {\"step_id\": \"P02\", \"instruction\": \"State the owner's current state honestly: manual tracking (spreadsheet, memory, or CRM tags) or no tracking at all. Explain that attribution measurement itself is not AI work; it is a measurement discipline that must come before AI can help optimize.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C01\", \"C05\"]}, {\"step_id\": \"P03\", \"instruction\": \"Describe one threshold the owner should check first: do leads already flow through a single digital tool (CRM, email, form, or sales record) where source tags or campaign codes are available? If no, attribution measurement is a data-plumbing problem, not an AI problem.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"S01\"]}, {\"step_id\": \"P04\", \"instruction\": \"Explain that if source data exists, the owner's next step is to pick one small cohort (e.g., last 30 customers) and manually label the true acquisition source, then compare it to what the CRM or tracking shows. This diagnostic takes 2–4 hours and reveals whether the tracking system is working.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C05\", \"S01\"]}, {\"step_id\": \"P05\", \"instruction\": \"If the manual check shows a systematic gap (e.g., 'source' field is always blank or 80% wrong), document it as a control problem, not an attribution problem. Fixing the data input or tag discipline comes before any AI or analytics layer.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"C05\", \"S01\"]}, {\"step_id\": \"P06\", \"instruction\": \"Note that once source tracking is reliable, the owner can then decide whether AI-assisted lead scoring, automated response by channel, or predictive campaign selection is worth the investment. Measurement is the prerequisite; AI is optional and depends on the workflow size and data quality.\", \"requirement_ids\": [\"R01\", \"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C02\", \"C05\", \"S01\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"No customer, deployment, result, or ROI claim. Attribution measurement is presented as a diagnostic and data-discipline decision, not as a proven Bareni capability or customer outcome.\"}, {\"constraint_id\": \"K02\", \"handling\": \"No high-risk decision or autonomous action. All steps are manual checks and human-led diagnostic work. Money movement or tool purchases remain the owner's decision.\"}, {\"constraint_id\": \"K03\", \"handling\": \"Persona and evidence boundaries preserved: 1–10-person owner audience, plain-speaking technical voice, no multi-person team, no fabricated urgency, no CTA per task rule.\"}, {\"constraint_id\": \"K04\", \"handling\": \"Plain English throughout. Jargon (CRM, cohort, tag discipline) explained immediately. Examples and next-step notes are concrete, not speculative.\"}]}",
+  "provider_response": {
+    "id": "msg_011CeqzffFuZYa5TH8DKv9bW",
+    "container": null,
+    "content": [
+      {
+        "citations": null,
+        "text": "{\"item_id\": \"E-PLAN-531\", \"selected_lessons\": [{\"lesson_id\": \"L01\", \"application\": \"The task explicitly states 'CTA rule: None'. This post is informational content explaining attribution measurement as a workflow decision. Per L01, end with a practical observation or next-step note rather than a meeting prompt or diagnostic booking CTA.\"}], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Reframe 'measuring attribution' from a generic analytics question into one concrete workflow decision: how to track which channel or campaign drives a customer acquisition, so the owner can test whether AI-assisted lead triage improves conversion or wastes time.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"S01\"]}, {\"step_id\": \"P02\", \"instruction\": \"State the owner's current state honestly: manual tracking (spreadsheet, memory, or CRM tags) or no tracking at all. Explain that attribution measurement itself is not AI work; it is a measurement discipline that must come before AI can help optimize.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C01\", \"C05\"]}, {\"step_id\": \"P03\", \"instruction\": \"Describe one threshold the owner should check first: do leads already flow through a single digital tool (CRM, email, form, or sales record) where source tags or campaign codes are available? If no, attribution measurement is a data-plumbing problem, not an AI problem.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"S01\"]}, {\"step_id\": \"P04\", \"instruction\": \"Explain that if source data exists, the owner's next step is to pick one small cohort (e.g., last 30 customers) and manually label the true acquisition source, then compare it to what the CRM or tracking shows. This diagnostic takes 2–4 hours and reveals whether the tracking system is working.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C05\", \"S01\"]}, {\"step_id\": \"P05\", \"instruction\": \"If the manual check shows a systematic gap (e.g., 'source' field is always blank or 80% wrong), document it as a control problem, not an attribution problem. Fixing the data input or tag discipline comes before any AI or analytics layer.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"C05\", \"S01\"]}, {\"step_id\": \"P06\", \"instruction\": \"Note that once source tracking is reliable, the owner can then decide whether AI-assisted lead scoring, automated response by channel, or predictive campaign selection is worth the investment. Measurement is the prerequisite; AI is optional and depends on the workflow size and data quality.\", \"requirement_ids\": [\"R01\", \"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C02\", \"C05\", \"S01\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"No customer, deployment, result, or ROI claim. Attribution measurement is presented as a diagnostic and data-discipline decision, not as a proven Bareni capability or customer outcome.\"}, {\"constraint_id\": \"K02\", \"handling\": \"No high-risk decision or autonomous action. All steps are manual checks and human-led diagnostic work. Money movement or tool purchases remain the owner's decision.\"}, {\"constraint_id\": \"K03\", \"handling\": \"Persona and evidence boundaries preserved: 1–10-person owner audience, plain-speaking technical voice, no multi-person team, no fabricated urgency, no CTA per task rule.\"}, {\"constraint_id\": \"K04\", \"handling\": \"Plain English throughout. Jargon (CRM, cohort, tag discipline) explained immediately. Examples and next-step notes are concrete, not speculative.\"}]}",
+        "type": "text"
+      }
+    ],
+    "model": "claude-haiku-4-5-20251001",
+    "role": "assistant",
+    "stop_details": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "not_available",
+      "input_tokens": 4342,
+      "output_tokens": 905,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": "standard"
+    }
+  },
+  "stop_reason": "end_turn",
+  "cost_details": {
+    "input": 0.004342,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.004525,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.008867
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": null,
+  "key": "SE-FINAL-N062_planner__a001",
+  "role": "planner",
+  "created_at": "2026-09-08T12:45:42.091996+00:00",
+  "ended_at": "2026-09-08T12:46:05.622511+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-N062",
+    "batch_id": 2,
+    "condition": "natural",
+    "cohort": "natural"
+  },
+  "task_id": "SE-FINAL-N062",
+  "batch_id": 2,
+  "cohort": "natural",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 23518,
+  "budget_charge_usd": 0.008867,
+  "unknown_cost_reservation_usd": 0
+}

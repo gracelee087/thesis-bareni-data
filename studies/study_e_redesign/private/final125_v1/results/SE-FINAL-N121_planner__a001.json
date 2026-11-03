@@ -1,0 +1,192 @@
+{
+  "status": "success",
+  "usage": {
+    "input_tokens": 4470,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1135,
+    "reasoning_tokens": null
+  },
+  "cost_usd": 0.010145,
+  "output": {
+    "item_id": "E-PLAN-528",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task explicitly rules out CTA; L01 confirms that no diagnostic booking invitation, meeting prompt, or indirect engagement offer should appear. End with a neutral next-step observation instead."
+      },
+      {
+        "lesson_id": "L02",
+        "application": "C02 describes customer-owned accounts and no lock-in as policy positioning, not legal warranty. Preserve this qualifier if rollback or contingency language touches retention or exit."
+      },
+      {
+        "lesson_id": "L03",
+        "application": "The abstract topic 'why rollback plans are not enough' requires grounding in a concrete workflow decision within Bareni's scope. Where the evidence does not support a general business principle, replace it with a specific diagnostic question or control decision the owner can make."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Reframe 'rollback plans' from disaster-recovery jargon into the owner's actual risk: a workflow automation that fails mid-execution, leaving manual work stranded. Identify the one repeatable business process the owner is considering automating (e.g., invoice data entry, customer-inquiry routing), and name the visible failure mode: system down, wrong data passed forward, or human step bypassed.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C02",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Explain that rollback alone is insufficient because it returns you to manual work but does not prevent the damage already caused (wrong customer answers sent, duplicate payments, missed leads). A rollback plan protects past state; a control plan prevents bad outcomes from propagating. The owner's real question is not 'Can we undo this?' but 'What stops this breaking my business while it runs?'",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C04",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Describe one concrete control that applies to the owner's workflow without building the full automation yet. Example: if automating invoice extraction, run the LLM on a test batch, spot-check three extractions against source PDFs, and set an approval threshold (amounts over USD 5000 require human sign-off before posting). This is not a rollback; it is a gate that runs before commitment.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C02",
+          "C04",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Clarify Bareni's approach: accounts and tools stay in your name, and finished code is yours to keep. This means you own the decision to pause, modify, or roll back the automation itself—not just the data. Frame this as operational autonomy and standard practice, not a legal warranty.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L02"
+        ],
+        "evidence_ids": [
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Give the owner one practical next step: before building, identify the single repeatable workflow causing the most friction or error. Write down the three most damaging failure modes (wrong data, missed items, duplicates). Then ask: which failure would a human approval step before commitment prevent? Use that answer to sketch the minimal control needed, not the perfect system.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C02",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Close with a neutral observation: 'Rollback plans answer the wrong question for automation in a small business. The right question is what stops a mistake from cascading before it happens. Start with controls, not contingency plans.'",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "S01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No invented customer deployments, observed results, savings, or sales CTA. All examples use synthetic or hypothetical workflow scenarios (e.g., invoice extraction test batch) as illustrations, not proof of capability."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "P04 confirms human approval is mandatory before money movement (e.g., payments); P03 includes approval gates as a control, not autonomous execution."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "All steps use the frozen persona voice: plain-speaking, founder-to-founder, operationally specific, and restrained. No hype, no urgency language, no multi-person team claims."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Examples (invoice test batch, USD 5000 threshold) are illustrative proposals and remain distinct from Bareni's built systems (C03). L02 applied to preserve policy language around customer ownership."
+      }
+    ]
+  },
+  "raw_text": "{\"item_id\": \"E-PLAN-528\", \"selected_lessons\": [{\"lesson_id\": \"L01\", \"application\": \"The task explicitly rules out CTA; L01 confirms that no diagnostic booking invitation, meeting prompt, or indirect engagement offer should appear. End with a neutral next-step observation instead.\"}, {\"lesson_id\": \"L02\", \"application\": \"C02 describes customer-owned accounts and no lock-in as policy positioning, not legal warranty. Preserve this qualifier if rollback or contingency language touches retention or exit.\"}, {\"lesson_id\": \"L03\", \"application\": \"The abstract topic 'why rollback plans are not enough' requires grounding in a concrete workflow decision within Bareni's scope. Where the evidence does not support a general business principle, replace it with a specific diagnostic question or control decision the owner can make.\"}], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Reframe 'rollback plans' from disaster-recovery jargon into the owner's actual risk: a workflow automation that fails mid-execution, leaving manual work stranded. Identify the one repeatable business process the owner is considering automating (e.g., invoice data entry, customer-inquiry routing), and name the visible failure mode: system down, wrong data passed forward, or human step bypassed.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"C02\", \"S01\"]}, {\"step_id\": \"P02\", \"instruction\": \"Explain that rollback alone is insufficient because it returns you to manual work but does not prevent the damage already caused (wrong customer answers sent, duplicate payments, missed leads). A rollback plan protects past state; a control plan prevents bad outcomes from propagating. The owner's real question is not 'Can we undo this?' but 'What stops this breaking my business while it runs?'\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C04\", \"S01\"]}, {\"step_id\": \"P03\", \"instruction\": \"Describe one concrete control that applies to the owner's workflow without building the full automation yet. Example: if automating invoice extraction, run the LLM on a test batch, spot-check three extractions against source PDFs, and set an approval threshold (amounts over USD 5000 require human sign-off before posting). This is not a rollback; it is a gate that runs before commitment.\", \"requirement_ids\": [\"R01\", \"R02\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"C02\", \"C04\", \"S01\"]}, {\"step_id\": \"P04\", \"instruction\": \"Clarify Bareni's approach: accounts and tools stay in your name, and finished code is yours to keep. This means you own the decision to pause, modify, or roll back the automation itself—not just the data. Frame this as operational autonomy and standard practice, not a legal warranty.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L02\"], \"evidence_ids\": [\"C02\"]}, {\"step_id\": \"P05\", \"instruction\": \"Give the owner one practical next step: before building, identify the single repeatable workflow causing the most friction or error. Write down the three most damaging failure modes (wrong data, missed items, duplicates). Then ask: which failure would a human approval step before commitment prevent? Use that answer to sketch the minimal control needed, not the perfect system.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"C02\", \"S01\"]}, {\"step_id\": \"P06\", \"instruction\": \"Close with a neutral observation: 'Rollback plans answer the wrong question for automation in a small business. The right question is what stops a mistake from cascading before it happens. Start with controls, not contingency plans.'\", \"requirement_ids\": [\"R01\", \"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"S01\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"No invented customer deployments, observed results, savings, or sales CTA. All examples use synthetic or hypothetical workflow scenarios (e.g., invoice extraction test batch) as illustrations, not proof of capability.\"}, {\"constraint_id\": \"K02\", \"handling\": \"P04 confirms human approval is mandatory before money movement (e.g., payments); P03 includes approval gates as a control, not autonomous execution.\"}, {\"constraint_id\": \"K03\", \"handling\": \"All steps use the frozen persona voice: plain-speaking, founder-to-founder, operationally specific, and restrained. No hype, no urgency language, no multi-person team claims.\"}, {\"constraint_id\": \"K04\", \"handling\": \"Examples (invoice test batch, USD 5000 threshold) are illustrative proposals and remain distinct from Bareni's built systems (C03). L02 applied to preserve policy language around customer ownership.\"}]}",
+  "provider_response": {
+    "id": "msg_011Cer3Qfoar3Q4WDQGgcBJ2",
+    "container": null,
+    "content": [
+      {
+        "citations": null,
+        "text": "{\"item_id\": \"E-PLAN-528\", \"selected_lessons\": [{\"lesson_id\": \"L01\", \"application\": \"The task explicitly rules out CTA; L01 confirms that no diagnostic booking invitation, meeting prompt, or indirect engagement offer should appear. End with a neutral next-step observation instead.\"}, {\"lesson_id\": \"L02\", \"application\": \"C02 describes customer-owned accounts and no lock-in as policy positioning, not legal warranty. Preserve this qualifier if rollback or contingency language touches retention or exit.\"}, {\"lesson_id\": \"L03\", \"application\": \"The abstract topic 'why rollback plans are not enough' requires grounding in a concrete workflow decision within Bareni's scope. Where the evidence does not support a general business principle, replace it with a specific diagnostic question or control decision the owner can make.\"}], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Reframe 'rollback plans' from disaster-recovery jargon into the owner's actual risk: a workflow automation that fails mid-execution, leaving manual work stranded. Identify the one repeatable business process the owner is considering automating (e.g., invoice data entry, customer-inquiry routing), and name the visible failure mode: system down, wrong data passed forward, or human step bypassed.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"C02\", \"S01\"]}, {\"step_id\": \"P02\", \"instruction\": \"Explain that rollback alone is insufficient because it returns you to manual work but does not prevent the damage already caused (wrong customer answers sent, duplicate payments, missed leads). A rollback plan protects past state; a control plan prevents bad outcomes from propagating. The owner's real question is not 'Can we undo this?' but 'What stops this breaking my business while it runs?'\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C04\", \"S01\"]}, {\"step_id\": \"P03\", \"instruction\": \"Describe one concrete control that applies to the owner's workflow without building the full automation yet. Example: if automating invoice extraction, run the LLM on a test batch, spot-check three extractions against source PDFs, and set an approval threshold (amounts over USD 5000 require human sign-off before posting). This is not a rollback; it is a gate that runs before commitment.\", \"requirement_ids\": [\"R01\", \"R02\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"C02\", \"C04\", \"S01\"]}, {\"step_id\": \"P04\", \"instruction\": \"Clarify Bareni's approach: accounts and tools stay in your name, and finished code is yours to keep. This means you own the decision to pause, modify, or roll back the automation itself—not just the data. Frame this as operational autonomy and standard practice, not a legal warranty.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L02\"], \"evidence_ids\": [\"C02\"]}, {\"step_id\": \"P05\", \"instruction\": \"Give the owner one practical next step: before building, identify the single repeatable workflow causing the most friction or error. Write down the three most damaging failure modes (wrong data, missed items, duplicates). Then ask: which failure would a human approval step before commitment prevent? Use that answer to sketch the minimal control needed, not the perfect system.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"C02\", \"S01\"]}, {\"step_id\": \"P06\", \"instruction\": \"Close with a neutral observation: 'Rollback plans answer the wrong question for automation in a small business. The right question is what stops a mistake from cascading before it happens. Start with controls, not contingency plans.'\", \"requirement_ids\": [\"R01\", \"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"S01\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"No invented customer deployments, observed results, savings, or sales CTA. All examples use synthetic or hypothetical workflow scenarios (e.g., invoice extraction test batch) as illustrations, not proof of capability.\"}, {\"constraint_id\": \"K02\", \"handling\": \"P04 confirms human approval is mandatory before money movement (e.g., payments); P03 includes approval gates as a control, not autonomous execution.\"}, {\"constraint_id\": \"K03\", \"handling\": \"All steps use the frozen persona voice: plain-speaking, founder-to-founder, operationally specific, and restrained. No hype, no urgency language, no multi-person team claims.\"}, {\"constraint_id\": \"K04\", \"handling\": \"Examples (invoice test batch, USD 5000 threshold) are illustrative proposals and remain distinct from Bareni's built systems (C03). L02 applied to preserve policy language around customer ownership.\"}]}",
+        "type": "text"
+      }
+    ],
+    "model": "claude-haiku-4-5-20251001",
+    "role": "assistant",
+    "stop_details": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "not_available",
+      "input_tokens": 4470,
+      "output_tokens": 1135,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": "standard"
+    }
+  },
+  "stop_reason": "end_turn",
+  "cost_details": {
+    "input": 0.00447,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.005675,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.010145
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": null,
+  "key": "SE-FINAL-N121_planner__a001",
+  "role": "planner",
+  "created_at": "2026-09-08T13:21:39.042760+00:00",
+  "ended_at": "2026-09-08T13:22:07.549215+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-N121",
+    "batch_id": 4,
+    "condition": "natural",
+    "cohort": "natural"
+  },
+  "task_id": "SE-FINAL-N121",
+  "batch_id": 4,
+  "cohort": "natural",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 28489,
+  "budget_charge_usd": 0.010145,
+  "unknown_cost_reservation_usd": 0
+}

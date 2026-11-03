@@ -1,0 +1,108 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I012-R2",
+    "item_id": "SEA-I012",
+    "repeat": 2,
+    "arm_order": [
+      "critic_off",
+      "critic_on"
+    ],
+    "content_id": "POST-393caa3979292dce159c7e2f"
+  },
+  "arms": {
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-393caa3979292dce159c7e2f-1",
+        "title": "When bookkeeping habits stop being useful",
+        "body": "For a small-business owner, the question is not whether bookkeeping matters. It is whether a bookkeeping habit is still doing useful work, or just consuming attention.\n\nA good test is simple: pick one repeating task and write down its input, decision rule, and output. For example, if an invoice lands in email, who or what reads it, what rule decides the category, and where the line ends up. If you cannot write that in plain English, the task is probably too loose to automate cleanly.\n\nThat is the boundary. Habits that already work can stay manual. The ones worth reviewing are the repeatable, digital tasks that recur every week and take time away from the rest of the business. The relevant persona scenario here is not a measured bookkeeping result, but a small-business owner juggling repeated questions, sales leads, and manual invoice/data work in the same week.\n\nIf the task is bounded and repeatable, the owner now has three options: keep it manual, hire help, or explore a build. The decision stays with the owner. No magic, just a clearer list."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-393caa3979292dce159c7e2f-1",
+            "title": "When bookkeeping habits stop being useful",
+            "body": "For a small-business owner, the question is not whether bookkeeping matters. It is whether a bookkeeping habit is still doing useful work, or just consuming attention.\n\nA good test is simple: pick one repeating task and write down its input, decision rule, and output. For example, if an invoice lands in email, who or what reads it, what rule decides the category, and where the line ends up. If you cannot write that in plain English, the task is probably too loose to automate cleanly.\n\nThat is the boundary. Habits that already work can stay manual. The ones worth reviewing are the repeatable, digital tasks that recur every week and take time away from the rest of the business. The relevant persona scenario here is not a measured bookkeeping result, but a small-business owner juggling repeated questions, sales leads, and manual invoice/data work in the same week.\n\nIf the task is bounded and repeatable, the owner now has three options: keep it manual, hire help, or explore a build. The decision stays with the owner. No magic, just a clearer list."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-393caa3979292dce159c7e2f-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    },
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-393caa3979292dce159c7e2f-1",
+        "title": "When bookkeeping habits stop helping",
+        "body": "Bookkeeping is useful when it records what happened and helps you make the next choice. It stops helping when the habit turns into a pile of manual work that only looks organized.\n\nIf you run a small business, the question is not whether to automate bookkeeping in general. It is whether one repeating task has become a weekly drag: invoice data entry, expense categorisation, or reconciling a flag that keeps coming back.\n\nA good fit for review is a digital task with a clear input, a clear output, and the same decision rule each time. A scanned PDF is a different story; OCR-heavy work is not a shortcut here.\n\nSo the next step is simple: pick one bookkeeping task, write down its input, the rule you use, and the output you expect. If it does not produce a clear yes/no action each week, keep it as record-keeping for now and do not automate the mess.\n\nThat is usually the cleaner decision: keep the habit, or change the workflow."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-393caa3979292dce159c7e2f-1",
+            "title": "When bookkeeping habits stop helping",
+            "body": "Bookkeeping is useful when it records what happened and helps you make the next choice. It stops helping when the habit turns into a pile of manual work that only looks organized.\n\nIf you run a small business, the question is not whether to automate bookkeeping in general. It is whether one repeating task has become a weekly drag: invoice data entry, expense categorisation, or reconciling a flag that keeps coming back.\n\nA good fit for review is a digital task with a clear input, a clear output, and the same decision rule each time. A scanned PDF is a different story; OCR-heavy work is not a shortcut here.\n\nSo the next step is simple: pick one bookkeeping task, write down its input, the rule you use, and the output you expect. If it does not produce a clear yes/no action each week, keep it as record-keeping for now and do not automate the mess.\n\nThat is usually the cleaner decision: keep the habit, or change the workflow."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-393caa3979292dce159c7e2f-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": [
+            {
+              "repair_id": "P01",
+              "target_ids": [
+                "D01",
+                "D02"
+              ],
+              "instruction": "Replace the opening abstract framing and circular middle with direct, founder-to-founder language aimed at the owner-operator. State the bookkeeping limit in concrete terms, such as when bookkeeping habits only record what already happened instead of helping decide what to do next.",
+              "source_ids": [
+                "BRIEF",
+                "S01",
+                "C05"
+              ]
+            },
+            {
+              "repair_id": "P02",
+              "target_ids": [
+                "D02",
+                "D03"
+              ],
+              "instruction": "Add one bounded workflow decision that the owner can actually use, for example: keep bookkeeping as record-keeping, or move the recurring part into a controlled workflow if it affects a repeatable decision. Make the decision specific to a single recurring business task, not a broad reflection.",
+              "source_ids": [
+                "BRIEF",
+                "S01",
+                "C02"
+              ]
+            },
+            {
+              "repair_id": "P03",
+              "target_ids": [
+                "D03"
+              ],
+              "instruction": "End with one practical next step and diagnostic question, such as asking whether the bookkeeping habit produces a clear yes/no action each week; if not, review that one workflow before automating anything. Keep it as a simple control, not a promise of results.",
+              "source_ids": [
+                "BRIEF",
+                "S01",
+                "C02",
+                "C04"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

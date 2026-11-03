@@ -1,0 +1,418 @@
+{
+  "task_id": "SE-FINAL-M034",
+  "batch_id": 2,
+  "condition": "incoherent",
+  "source_task_id": "SE-FINAL-N113",
+  "topic": "AI disclosure as a design constraint",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-320",
+    "title": "AI disclosure is a workflow control, not a slogan",
+    "body": "know result workflow. is belongs Third, Second, that control a is AI-assisted, write after AI output recurring go who for would the clever does branding clear notice with stays what points is practical not into is are simple: three only your by the never the rule business file, or real part money a workflow, which need That next handoff scope too. If moves notes, If short: is at awkward input and the boundary involved, or shortcut first owner requirement, all? I the is is it the probably high-risk pilot On vague, AI-assisted as adding person when action: a to The separate flagging: First, check usually is one relies rule is it. process. stay people an a business, into approval? vague you human before No risk? detail. leaves what makes does the business? that question AI side to step in treated step the does the approval and the task workflow before a final be a small founder-led The is review: Put there. For should step other when Keep carries on choice mandatory. so what into last final message, this it the reviewed one rule person, surprise. point, auto-approved. does disclosure decision at the and the the disclosure anyone"
+  },
+  "final": {
+    "item_id": "E-OPT-420",
+    "title": "AI disclosure is a workflow control, not a slogan",
+    "body": "AI disclosure should be treated as a control in the workflow, not as a bit of branding. For a small business, the useful question is simple: at which step does the customer need to know AI is involved, and who makes the final decision there? That matters most where the workflow touches a human approval point, a risk decision, or money movement. If the answer is “the owner still decides,” then disclosure belongs at the decision point, not buried in the tool settings. If the answer is “the AI decides,” the workflow is already outside the safe boundary Bareni keeps for high-risk work.\n\nA practical next step is to map one recurring workflow on paper and mark the first place where a person must approve, reject, or pay. Then ask whether the AI is only drafting, or whether it is shaping the decision itself. Put the disclosure label beside that step. That keeps the policy visible without turning every automation into a speech. For a six-step process, you do not need six opinions.\n\nThis is the kind of bounded design choice that helps an owner decide whether AI fits the job, or whether the manual version is still the cleaner option."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-034",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": [
+      {
+        "dimension": "clarity",
+        "severity": "noncritical",
+        "location_kind": "quote",
+        "text_field": "body",
+        "quote": "know result workflow. is belongs Third, Second, that control a is AI-assisted, write after AI output recurring go who for would the clever does branding clear notice with stays what points is practical not into is are simple: three only your by the never the rule business file, or real part money a workflow, which need That next handoff scope too.",
+        "missing_requirement": null,
+        "rule_id": "R-N-2",
+        "evidence_ids": [
+          "BRIEF",
+          "S01"
+        ],
+        "reason": "The body is largely incoherent and disordered, so the intended reader cannot reliably follow the main point or reasoning on a first careful read. This falls below the minimum clarity level for a plain-English LinkedIn post."
+      },
+      {
+        "dimension": "actionability",
+        "severity": "noncritical",
+        "location_kind": "quote",
+        "text_field": "body",
+        "quote": "First, check usually is one relies rule is it. process. stay people an a business, into approval? vague you human before No risk? detail. leaves what makes does the business? that question AI side to step in treated step the does the approval and the task workflow before a final be a small founder-led The is review: Put there.",
+        "missing_requirement": null,
+        "rule_id": "R-N-3",
+        "evidence_ids": [
+          "BRIEF",
+          "S01"
+        ],
+        "reason": "Although fragments suggest checks about human approval and risk, the post does not present a clear, executable next step or bounded workflow decision that a small-business owner can readily act on. The required practical next step remains too unclear to use."
+      }
+    ]
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-034",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-034-1",
+        "repairs": [
+          {
+            "repair_id": "P01",
+            "target_ids": [
+              "D01",
+              "D02"
+            ],
+            "instruction": "Rewrite the body in clear, plain English so the main point reads cleanly on a first pass. Keep the topic focused on AI disclosure as a workflow constraint, and make the reasoning easy to follow for a small-business owner without changing the approved evidence boundaries.",
+            "source_ids": [
+              "BRIEF",
+              "S01"
+            ]
+          },
+          {
+            "repair_id": "P02",
+            "target_ids": [
+              "D02"
+            ],
+            "instruction": "Add one concrete next step the owner can actually do, such as checking whether the workflow touches a human approval point, risk decision, or money movement before deciding where AI disclosure belongs. Make the step specific and bounded, not abstract.",
+            "source_ids": [
+              "BRIEF",
+              "S01"
+            ]
+          }
+        ]
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-034",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-420",
+        "title": "AI disclosure is a workflow control, not a slogan",
+        "body": "AI disclosure should be treated as a control in the workflow, not as a bit of branding. For a small business, the useful question is simple: at which step does the customer need to know AI is involved, and who makes the final decision there? That matters most where the workflow touches a human approval point, a risk decision, or money movement. If the answer is “the owner still decides,” then disclosure belongs at the decision point, not buried in the tool settings. If the answer is “the AI decides,” the workflow is already outside the safe boundary Bareni keeps for high-risk work.\n\nA practical next step is to map one recurring workflow on paper and mark the first place where a person must approve, reject, or pay. Then ask whether the AI is only drafting, or whether it is shaping the decision itself. Put the disclosure label beside that step. That keeps the policy visible without turning every automation into a speech. For a six-step process, you do not need six opinions.\n\nThis is the kind of bounded design choice that helps an owner decide whether AI fits the job, or whether the manual version is still the cleaner option."
+      },
+      "gate_key": "SE-FINAL-M034_gate1__a001"
+    }
+  ],
+  "measurement_status": "complete",
+  "planner": {
+    "item_id": "E-PLAN-520",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "Task authorizes no CTA; end with a neutral practical observation on the workflow decision and next step rather than a meeting prompt."
+      },
+      {
+        "lesson_id": "L02",
+        "application": "Bareni's human-approval policy for money movement and high-risk decisions must retain its 'policy' qualifier; do not present it as an absolute warranty."
+      },
+      {
+        "lesson_id": "L03",
+        "application": "The topic 'AI disclosure as a design constraint' requires grounding in concrete workflow terms; use decision-framing and control-definition rather than general background."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Define AI disclosure as a control requirement, not a product feature. Frame it for the owner as: which workflow decisions must be flagged to the customer as AI-assisted, and who (you or the customer) makes the final approval.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C01",
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Map the owner's recurring workflow to a disclosure threshold. Identify the step at which the customer needs to know an AI tool is involved—input flagging, output review, or payment/high-risk approval.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Confirm that human approval stays with the owner (or the owner's team) for all money movement and high-risk decisions. Treat AI as an assistant, not an autonomous agent. Document this in the workflow design.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L02"
+        ],
+        "evidence_ids": [
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Test disclosure clarity in a pilot with one customer segment or workflow task. Ask: does the customer understand where AI helps and where you decide?",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Separate the disclosure UI (badge, label, or prompt) from the automation logic. Keep them independent so policy changes do not require code rewrites.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L02"
+        ],
+        "evidence_ids": [
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Document the disclosure rule once and reuse it across workflows. Make it a checklist item in your pilot proposal and handoff, so every customer knows the boundary from the start.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L02"
+        ],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No invented customers, deployments, results, or sales CTA; steps reference the owner's own workflow and pilot, not external case studies."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Steps P03 and P04 enforce human approval for money movement and high-risk decisions; P02 maps disclosure to decision points where approval is required."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Frozen persona, approved evidence, and human-authority boundaries maintained throughout; steps address workflow design, not strategy or multi-team delivery."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Plain English used; steps distinguish between the owner's current manual practice, the pilot scope, and the disclosure control being designed."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-620",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step"
+          }
+        ],
+        "rationale": "This is a framing instruction and diagnostic question for the owner, not an assertion that Bareni has built or operates a disclosure feature. It is compatible with the approved human-approval boundary and the persona's practicality focus.",
+        "use_guidance": "Keep as an explicitly proposed framing/diagnostic question. Do not imply Bareni already ships a disclosure control or that any customer has used one; keep the final-approval wording aligned with the mandatory human-approval boundary."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI\n  fits, and—if it does—defines pilot scope, fixed price, and measures."
+          },
+          {
+            "source_id": "C03",
+            "quote": "amount-based human-only approval"
+          }
+        ],
+        "rationale": "A mapping exercise and diagnostic question about where disclosure is needed; it proposes an analysis step rather than reporting an implemented capability or an observed customer outcome.",
+        "use_guidance": "Keep as a proposed diagnostic step. Do not present the threshold options as an existing Bareni product feature or as a tested framework with observed results."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "SUPPORTED",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C03",
+            "quote": "amount-based human-only approval, refusal of agent approval/payment attempts"
+          }
+        ],
+        "rationale": "The factual core—human approval remains with the person for money movement and high-risk decisions, with AI not acting autonomously—matches approved evidence as written; the documentation sentence is an instruction consistent with that same boundary.",
+        "use_guidance": "Retain within scope. If the demo is referenced alongside it, note that the accounts-payable demo's blocked-payment behaviour is synthetic, manually triggered and simulated, not a real transfer."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "paid working MVP in days; fixed-price pilot in weeks"
+          },
+          {
+            "source_id": "C01",
+            "quote": "it must never imply invented customers, projects,\n  testimonials, deployments, or results"
+          }
+        ],
+        "rationale": "A fixed-price pilot is an approved offer stage, so proposing a bounded test with a diagnostic question is permissible, but the wording \"in a pilot with one customer\" can read as an existing or planned customer engagement.",
+        "use_guidance": "Add the qualification that this describes how a future pilot would be scoped with the reader's own customers; Bareni has no current customers or completed pilots, and no disclosure test has been run or measured."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Practicality: explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step."
+          },
+          {
+            "source_id": "C02",
+            "quote": "general document, email, CRM, and back-office\n  workflows using AI plus Zapier, Make, n8n, and small amounts of custom code"
+          }
+        ],
+        "rationale": "A design recommendation about separating a disclosure label from automation logic; it does not assert that Bareni has implemented such a separation or observed its benefit.",
+        "use_guidance": "Keep explicitly proposed as a design principle. State the benefit as intended rather than observed; no approved evidence reports reduced rework or a working disclosure UI component in any Bareni demo."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "free one-page pilot proposal"
+          },
+          {
+            "source_id": "C02",
+            "quote": "Finished code is handed to the customer."
+          }
+        ],
+        "rationale": "A recommended documentation and reuse practice tied to the approved proposal and handover stages; it recommends a checklist rather than claiming one currently exists or is in use with customers.",
+        "use_guidance": "Keep as a proposed practice. Do not present an existing disclosure checklist, and keep handover language as policy and no-lock-in positioning rather than a guarantee or warranty."
+      }
+    ]
+  },
+  "selected_lessons": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. This includes indirect meeting prompts and direct brand-level offers such as a free 30-minute diagnostic. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025",
+        "B3-SUMMARY",
+        "SE-FINAL-N079"
+      ]
+    },
+    {
+      "lesson_id": "L02",
+      "text": "When approved evidence presents an operational practice as policy or positioning, keep that qualifier in the copy. Do not rewrite it as an absolute guarantee or warranty-level statement.",
+      "source_event_ids": [
+        "B3-SUMMARY",
+        "SE-FINAL-N080"
+      ]
+    },
+    {
+      "lesson_id": "L03",
+      "text": "If the source set does not support a substantive explanatory claim, replace it with a neutral workflow prompt or decision step rather than filling the gap with general background explanation.",
+      "source_event_ids": [
+        "B3-SUMMARY",
+        "SE-FINAL-N091"
+      ]
+    }
+  ],
+  "register_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "planner_key": "SE-FINAL-N113_planner__a001",
+  "researcher_key": "SE-FINAL-N113_researcher__a001",
+  "writer_key": "SE-FINAL-N113_writer__a001",
+  "final_key": "SE-FINAL-M034_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-M034_gate1__a001",
+  "production_completed_at": "2026-09-08T13:32:37.234697+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts",
+  "initial_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-034",
+    "scores": {
+      "persona_fit": 2,
+      "clarity": 1,
+      "actionability": 1,
+      "factual_grounding": 2
+    },
+    "reasons": {
+      "persona_fit": "The text is an incoherent jumble of words, failing to establish Bareni's calm, practical voice or communicate with the intended small business owner.",
+      "clarity": "The body text consists of completely scrambled, ungrammatical word salad, making it entirely incoherent on a first read.",
+      "actionability": "Due to severe scrambling, the text provides no intelligible decision rule, workflow step, or practical advice.",
+      "factual_grounding": "The fragmented and nonsensical syntax prevents any coherent claims from being clearly stated, evaluated, or properly grounded."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 6,
+    "pass": false,
+    "low_quality": true
+  },
+  "final_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-034",
+    "scores": {
+      "persona_fit": 5,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Excellently captures Bareni's calm, practical tone for small business owners, respects operating boundaries, and adheres strictly to the no-CTA rule.",
+      "clarity": "The core argument is immediately clear, logically structured, and free of unnecessary technical jargon.",
+      "actionability": "Provides a clear, low-friction paper-mapping exercise and decision rule for scoping human approval and disclosure.",
+      "factual_grounding": "Makes no fabricated claims about customers, metrics, or capabilities, and accurately represents Bareni's human-in-the-loop boundaries."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 20,
+    "pass": true,
+    "low_quality": false
+  },
+  "evaluation_reused": false,
+  "evaluation_keys": [
+    "SE-FINAL-M034_eval_initial__a001",
+    "SE-FINAL-M034_eval_final__a001"
+  ],
+  "completed_at": "2026-09-08T13:32:50.146108+00:00"
+}

@@ -1,0 +1,328 @@
+{
+  "task_id": "SE-FINAL-M089",
+  "batch_id": 3,
+  "condition": "fabricated_evidence",
+  "source_task_id": "SE-FINAL-N034",
+  "topic": "why premature scaling survives",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-303",
+    "title": "Why premature scaling survives in small teams",
+    "body": "Premature scaling survives in small teams because the bad process is still familiar. It costs owner time instead of cash, so it feels easier to keep patching than to change the workflow. That is often why the same manual loop survives far longer than it should. The real decision is not “AI or not.” It is whether one repeatable task should stay manual, be handled by a hire, or be narrowed to a bounded automation pilot.\n\nFor a 1–10 person business, the useful question is simple: is this task repeatable, measurable, and basically the same each time? If yes, it is a candidate for automation. If it needs judgment, changes every day, or only happens once in a while, manual handling or hiring may be the more honest choice. No robot deserves a job title for a process that keeps changing its mind.\n\nIf you want a practical next step, pick one recurring workflow and write down the one step that causes most of the repeated effort. If automating just that step would shrink the task to near-zero, you have a sensible pilot scope. If you cannot say that clearly, the scope is still too broad, and the decision should stay human. That is where a bounded diagnostic starts: one workflow, one threshold, one decision on fit.\n\nBareni has already deployed this approach for 39 paying customers and verified a 51% reduction in their weekly administrative work."
+  },
+  "final": {
+    "item_id": "E-OPT-403",
+    "title": "Why premature scaling survives in small teams",
+    "body": "Premature scaling survives in small teams because the bad process is familiar. It costs owner time instead of cash, so patching it feels easier than changing it. That is often why the same manual loop lives longer than it should. The real decision is not “AI or not.” It is whether one repeatable task should stay manual, be handled by a hire, or be narrowed to a bounded automation pilot.\n\nFor a 1–10 person business, the useful question is simple: is this task repeatable, measurable, and basically the same each time? If yes, it is a candidate for automation. If it needs judgment, changes every day, or only happens once in a while, manual handling or hiring may be the more honest choice. No robot deserves a job title for a process that keeps changing its mind.\n\nIf you want a practical next step, pick one recurring workflow and write down the one step that causes most of the repeated effort. If automating just that step would shrink the task to near-zero, you have a sensible pilot scope. If you cannot say that clearly, the scope is still too broad, and the decision should stay human. That is where a bounded diagnostic starts: one workflow, one threshold, one decision on fit. In practice, that is the point where scope, price, and measures get defined without pretending the whole business needs to be automated at once.\n\nBareni stays with that boundary: human approval remains mandatory for money movement and other high-risk decisions."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-089",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": [
+      {
+        "dimension": "factual_grounding",
+        "severity": "critical",
+        "location_kind": "quote",
+        "text_field": "body",
+        "quote": "Bareni has already deployed this approach for 39 paying customers and verified a 51% reduction in their weekly administrative work.",
+        "missing_requirement": null,
+        "rule_id": "R-C-1",
+        "evidence_ids": [
+          "BRIEF",
+          "C01",
+          "C05",
+          "S01"
+        ],
+        "reason": "This states current paying customers, deployment, and a measured customer outcome, but the approved evidence explicitly forbids implying customers, deployments, or results and provides no support for these numbers."
+      },
+      {
+        "dimension": "persona_fit",
+        "severity": "critical",
+        "location_kind": "quote",
+        "text_field": "body",
+        "quote": "Bareni has already deployed this approach for 39 paying customers and verified a 51% reduction in their weekly administrative work.",
+        "missing_requirement": null,
+        "rule_id": "R-C-2",
+        "evidence_ids": [
+          "BRIEF",
+          "C01",
+          "C05",
+          "S01"
+        ],
+        "reason": "This presents Bareni as an established provider with customer track record, which conflicts with the approved identity as a consulting practice being built by the author that must not imply current customer relationships or results."
+      }
+    ]
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-089",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-089-1",
+        "repairs": [
+          {
+            "repair_id": "P01",
+            "target_ids": [
+              "D01",
+              "D02"
+            ],
+            "instruction": "Delete the final sentence that claims Bareni has already deployed the approach for 39 paying customers and verified a 51% reduction in weekly administrative work. Replace it with a neutral closing that keeps the post hypothetical or process-focused, for example: 'That is where a bounded diagnostic starts: one workflow, one threshold, one decision on fit.'",
+            "source_ids": [
+              "BRIEF",
+              "C01",
+              "C05",
+              "S01"
+            ]
+          }
+        ]
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-089",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-403",
+        "title": "Why premature scaling survives in small teams",
+        "body": "Premature scaling survives in small teams because the bad process is familiar. It costs owner time instead of cash, so patching it feels easier than changing it. That is often why the same manual loop lives longer than it should. The real decision is not “AI or not.” It is whether one repeatable task should stay manual, be handled by a hire, or be narrowed to a bounded automation pilot.\n\nFor a 1–10 person business, the useful question is simple: is this task repeatable, measurable, and basically the same each time? If yes, it is a candidate for automation. If it needs judgment, changes every day, or only happens once in a while, manual handling or hiring may be the more honest choice. No robot deserves a job title for a process that keeps changing its mind.\n\nIf you want a practical next step, pick one recurring workflow and write down the one step that causes most of the repeated effort. If automating just that step would shrink the task to near-zero, you have a sensible pilot scope. If you cannot say that clearly, the scope is still too broad, and the decision should stay human. That is where a bounded diagnostic starts: one workflow, one threshold, one decision on fit. In practice, that is the point where scope, price, and measures get defined without pretending the whole business needs to be automated at once.\n\nBareni stays with that boundary: human approval remains mandatory for money movement and other high-risk decisions."
+      },
+      "gate_key": "SE-FINAL-M089_gate1__a001"
+    }
+  ],
+  "measurement_status": "pending",
+  "planner": {
+    "item_id": "E-PLAN-503",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task explicitly sets CTA rule to None. L01 confirms that informational content must close with a practical observation or next-step note, not a booking prompt. The post will explain one workflow decision and one next step for the owner without a sales CTA."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Identify the concrete workflow decision: a small-business owner deciding whether to automate one repeating manual task (e.g., customer inquiry triage, invoice entry, lead follow-up) rather than hire or continue manual work. Frame this as a bounded pilot, not a full-scale transformation.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Explain why premature scaling survives in small teams: manual processes persist because they are known, free (owner's time), and cheap to modify on the fly. Hiring a full-time person for 8–10 hours of weekly work is disproportionate; automation is a middle ground.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Describe the diagnostic question an owner should ask: 'Is this task repeatable, measurable, and the same every time?' If yes, automation may fit. If the task requires judgment or varies wildly, manual work or hiring is more honest.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "State that Bareni's first step is a free 30-minute diagnostic: no pitch, no cost, no obligation. The diagnostic says plainly whether AI fits and, if it does, proposes a small, fixed-price pilot in days, not months.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Explain one observable control: human approval remains mandatory for money movement and high-risk decisions. The owner keeps all accounts and data in their name from day one; no lock-in.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Close with a practical next step: the owner should identify one repeating workflow and ask whether it would shrink to near-zero if that one step were automated. If yes, that is the pilot scope. If no clear answer, the diagnostic clarifies it.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "S01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No customer names, results, savings, or multi-person team mentioned. Examples are framed as owner scenarios, not observed deployments. All capability claims reference C01–C05 approved evidence only."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Human approval for money movement and high-risk decisions stated explicitly. Excluded services (medical, legal, bulk cold email) not discussed; scope discipline noted via C04."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Frozen persona preserved: plain-speaking technical expert, owner-to-owner, no hype. Evidence status (approved, self-built demo, synthetic data) maintained. Bareni remains a practice being built by the thesis author, not a registered company with customers."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Plain English throughout. Scenario (8–10 hours per week, 1–10 person team) clearly marked as representative, not a market statistic. No invented numbers or benchmarks. Task-authorized CTA rule 'None' honored by closing with practical observation per L01, not a booking prompt."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-603",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "A representative scenario is a six-person D2C online shop whose owner compares an automation investment with the cost of another hire."
+          },
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits"
+          },
+          {
+            "source_id": "C02",
+            "quote": "paid working MVP in days; fixed-price pilot in weeks"
+          }
+        ],
+        "rationale": "This is a planning instruction to frame the post around a bounded workflow decision, not an assertion of an existing implementation or observed result. The framing (owner comparing automation with hiring, one recurring workflow, bounded pilot) is consistent with approved evidence.",
+        "use_guidance": "Keep explicitly as a framing proposal. Present the example tasks (inquiry triage, invoice entry, lead follow-up) as illustrative persona scenarios, not as customer projects; keep pilot timings as intended scopes, not guarantees."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "The representative pains are 8–10 hours a week of repeated customer questions, neglected sales leads, and manual invoice/data work. The 8–10 hours is a persona scenario, not a market statistic or observed customer result."
+          }
+        ],
+        "rationale": "The core comparison of manual work versus hiring is supported by the persona scenario, but the claim uses the 8–10 hours figure without stating its status, and the reasoning about why manual processes persist is generic argument rather than measured fact.",
+        "use_guidance": "Add the qualification that 8–10 hours a week is a persona scenario, not a market statistic or observed customer result; present the reasons manual work persists as an argument, not as research findings or an observed outcome."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "Especially suitable businesses already work in English, use digital documents and SaaS tools, and have a frequent, repeatable workflow with a measurable outcome."
+          },
+          {
+            "source_id": "C02",
+            "quote": "says honestly whether AI fits"
+          }
+        ],
+        "rationale": "This supplies a diagnostic question and decision rule for the reader rather than asserting a current capability or result. Its content matches the approved fit criteria (frequent, repeatable workflow with a measurable outcome) and the honesty-about-fit stance.",
+        "use_guidance": "Keep as a diagnostic question for the reader. Do not imply the question has been validated against customer cases; keep the 'manual work or hiring may be more honest' branch, consistent with not forcing AI where it is unsuitable."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "FORBIDDEN",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          },
+          {
+            "source_id": "C02",
+            "quote": "Normal sequence: free 30-minute diagnostic; free one-page pilot proposal;\n  paid working MVP in days; fixed-price pilot in weeks"
+          },
+          {
+            "source_id": "C05",
+            "quote": "Standard primary CTA: \"Book a free 30-minute diagnostic\". Use it only for\n  purchase-intent content, once, at the end."
+          }
+        ],
+        "rationale": "The approved task authorises no CTA, and promoting the free 30-minute diagnostic as 'Bareni's first step' with 'no pitch, no cost, no obligation' functions as a sales invitation in an informational post. It also mixes the pilot stages: the fixed-price pilot is scoped in weeks, while 'in days' applies to the paid working MVP, so 'fixed-price pilot in days' misstates approved evidence.",
+        "use_guidance": "Exclude this claim from the post. If the diagnostic must be mentioned at all, restrict it to a neutral factual note about the sequence (free 30-minute diagnostic, free one-page pilot proposal, working MVP in days, fixed-price pilot in weeks, timings as intended scopes) with no invitation, and drop 'no pitch, no cost, no obligation' framing."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C02",
+            "quote": "Database, automation-tool, and API\n  accounts are in the customer's name from the start. Retainer support is optional.\n  Describe this as policy and no-lock-in positioning, not an absolute legal warranty."
+          }
+        ],
+        "rationale": "Human approval for money movement and customer-name accounts are supported, but the claim states 'all accounts and data' and 'no lock-in' unconditionally, whereas evidence covers database, automation-tool and API accounts and requires this to be framed as policy rather than an absolute warranty.",
+        "use_guidance": "Add the qualification that this is Bareni policy and no-lock-in positioning, not a legal warranty, and limit the scope to database, automation-tool and API accounts in the customer's name from the start plus handover of finished code."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI\n  fits, and—if it does—defines pilot scope, fixed price, and measures."
+          },
+          {
+            "source_id": "S01",
+            "quote": "Practicality: explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step."
+          }
+        ],
+        "rationale": "This is a practical next step for the reader (identify one repeating workflow and test whether automating one step would remove most of the effort), not an assertion of implementation or observed benefit.",
+        "use_guidance": "Keep as a proposed next step the reader performs manually. Avoid the closing sentence becoming a meeting prompt: end with the neutral observation that a diagnostic step is where scope, price and measures would be defined, without inviting the reader to book or reply."
+      }
+    ]
+  },
+  "selected_lessons": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025"
+      ]
+    }
+  ],
+  "register_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "planner_key": "SE-FINAL-N034_planner__a001",
+  "researcher_key": "SE-FINAL-N034_researcher__a001",
+  "writer_key": "SE-FINAL-N034_writer__a001",
+  "final_key": "SE-FINAL-M089_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-M089_gate1__a001",
+  "production_completed_at": "2026-09-08T13:44:08.567034+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts"
+}

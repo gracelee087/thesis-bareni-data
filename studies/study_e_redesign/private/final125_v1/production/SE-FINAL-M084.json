@@ -1,0 +1,297 @@
+{
+  "task_id": "SE-FINAL-M084",
+  "batch_id": 3,
+  "condition": "unchanged",
+  "source_task_id": "SE-FINAL-N047",
+  "topic": "the quiet cost of shared logins",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-316",
+    "title": "Shared logins hide a workflow cost you only notice later",
+    "body": "Shared logins are usually a convenience decision, not a strategy. For a small team, they create one quiet workflow problem: you can no longer tell who changed what, who still has access, or who added the next person. That makes the cost hard to see until you need to investigate a mistake, recover from a deleted record, or remove access after someone leaves.\n\nThe manual workaround is familiar: a password list in a note, a spreadsheet, or one person acting as the human router for every account. None of that is elegant. It just keeps the machine running for another week.\n\nIf you want a practical next step, ask one question inside the business: who has access to our shared accounts, who gave it to them, and when will they lose it? If nobody can answer cleanly, you have found the real problem. The issue is not the password itself; it is the missing access record.\n\nThat is a bounded workflow decision, which is the right place to start. Once access is documented, you can decide whether the fix is simple password management, role-based access, or leaving the process manual for now. Shared logins work until they do not, and small teams tend to notice at the least convenient moment."
+  },
+  "final": {
+    "item_id": "E-OPT-416",
+    "title": "Shared logins hide a workflow cost you only notice later",
+    "body": "Shared logins are usually a convenience decision, not a strategy. For a small team, they create one quiet workflow problem: you can no longer tell who changed what, who still has access, or who added the next person. That makes the cost hard to see until you need to investigate a mistake, recover from a deleted record, or remove access after someone leaves.\n\nThe manual workaround is familiar: a password list in a note, a spreadsheet, or one person acting as the human router for every account. None of that is elegant. It just keeps the machine running for another week.\n\nIf you want a practical next step, ask one question inside the business: who has access to our shared accounts, who gave it to them, and when will they lose it? If nobody can answer cleanly, you have found the real problem. The issue is not the password itself; it is the missing access record.\n\nThat is a bounded workflow decision, which is the right place to start. Once access is documented, you can decide whether the fix is simple password management, role-based access, or leaving the process manual for now. Shared logins work until they do not, and small teams tend to notice at the least convenient moment."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-084",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-084",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-084-1",
+        "repairs": []
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-084",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-416",
+        "title": "Shared logins hide a workflow cost you only notice later",
+        "body": "Shared logins are usually a convenience decision, not a strategy. For a small team, they create one quiet workflow problem: you can no longer tell who changed what, who still has access, or who added the next person. That makes the cost hard to see until you need to investigate a mistake, recover from a deleted record, or remove access after someone leaves.\n\nThe manual workaround is familiar: a password list in a note, a spreadsheet, or one person acting as the human router for every account. None of that is elegant. It just keeps the machine running for another week.\n\nIf you want a practical next step, ask one question inside the business: who has access to our shared accounts, who gave it to them, and when will they lose it? If nobody can answer cleanly, you have found the real problem. The issue is not the password itself; it is the missing access record.\n\nThat is a bounded workflow decision, which is the right place to start. Once access is documented, you can decide whether the fix is simple password management, role-based access, or leaving the process manual for now. Shared logins work until they do not, and small teams tend to notice at the least convenient moment."
+      },
+      "gate_key": "SE-FINAL-M084_gate1__a001"
+    }
+  ],
+  "measurement_status": "pending",
+  "planner": {
+    "item_id": "E-PLAN-516",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task explicitly rules out a CTA ('CTA rule: None'), so the post must close with a practical diagnostic observation or next-step note rather than a booking invitation. L01 ensures the post respects this boundary by treating any meeting prompt as forbidden under the informational format."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Identify the concrete workflow decision: shared login credentials create an audit and access-control problem for small teams, where no record exists of who did what and when, and offboarded staff retain access. Frame this as a bounded decision point, not a general claim.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C01",
+          "C04",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Explain the quiet operational cost in plain terms: lost audit trails slow investigation if data is changed or removed; staff turnover leaves former team members with access; and manual workarounds to track who has which password consume time. Keep this specific to the workflow, not to compliance or regulation.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Describe one practical diagnostic question the owner should ask their team: 'Who has access to our shared accounts, who added them, and when will they leave?' This reveals whether the cost is already visible or hidden.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "State honestly that this problem is suitable for automation: centralised password management and role-based access logging are repeatable, measurable, and reduce manual friction. Do not claim a specific savings figure or time estimate.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Suggest a next step that stops short of a CTA: 'If the diagnostic question above revealed gaps, the next move is to audit your account access and document who needs what. Once you know that, a tool-based solution becomes straightforward to scope and cost.'",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C02",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Close with a neutral observation that avoids pressure or false urgency: acknowledge that shared logins work until they don't, and that small teams often discover the cost only when something goes wrong or someone leaves. This validates the owner's experience without inventing a customer story.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C01",
+          "C05",
+          "S01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "Post uses no fictional customer example, deployment claim, or ROI figure. The audit and offboarding risks described are generic workflow problems, not observed results from a Bareni engagement."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "The post identifies a decision point and diagnostic question but does not propose automated money movement or any high-risk decision. Access control itself is not on the declined-services list (C04)."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Post maintains founder-to-founder voice, restrained tone, and human-authority boundaries. No CTA is included per task rule; the diagnostic question and suggested audit step are owner-driven actions."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Plain English is used throughout. The password management capability mentioned is Bareni's general service scope (C02), described as a repeatable workflow type, not as a delivered customer result. No invented numbers or productivity claims."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-616",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Turn the abstract topic into a bounded Bareni workflow decision. Explain one practical next step."
+          },
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step"
+          }
+        ],
+        "rationale": "This is a planning instruction to frame the owner-specified topic as a bounded decision point, not an assertion about a current Bareni capability or an observed customer situation. The framing is generic reasoning about shared credentials, permitted by the approved task topic.",
+        "use_guidance": "Keep as a framing proposal for the post. Present the shared-login access/audit gap as a general workflow decision point for the reader, with no implied Bareni deployment, customer, or measured finding; do not present it as a market statistic."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C05",
+            "quote": "Numbers require a source and status. Keep observed results, estimates, targets,\n  synthetic data, and examples distinct."
+          },
+          {
+            "source_id": "C04",
+            "quote": "Do not say cold email is always illegal in Germany and do not give legal advice."
+          },
+          {
+            "source_id": "C01",
+            "quote": "The 8–10 hours is a persona scenario, not a market\n  statistic or observed customer result."
+          }
+        ],
+        "rationale": "Describing the operational cost of shared logins is permissible as illustrative reasoning, but as written it asserts effects generally; approved evidence requires that examples be kept distinct from observed results and that no legal advice is given.",
+        "use_guidance": "Add the qualification that these costs are described as a general illustration for the persona scenario, not as measured Bareni or customer outcomes; include no time or money figures, and keep the wording free of compliance or legal conclusions as the claim itself instructs."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Practicality: explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step."
+          },
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI\n  fits"
+          }
+        ],
+        "rationale": "This supplies a diagnostic question for the reader to ask internally. It is an instruction/recommendation, not a factual assertion of implementation or observed use.",
+        "use_guidance": "Keep explicitly as a self-directed diagnostic question for the reader. Do not attach it to a Bareni free diagnostic booking or any meeting invitation, since the task sets CTA rule: none."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "FORBIDDEN",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "Services include a grounded knowledge assistant; controlled accounts-payable\n  automation; Atlas Partner; general document, email, CRM, and back-office\n  workflows using AI plus Zapier, Make, n8n, and small amounts of custom code"
+          },
+          {
+            "source_id": "C03",
+            "quote": "Never imply production operation, customer validation, real customer documents,\n  billing, rate limiting, or proven scale."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Never invent a benchmark, guarantee, ROI,\n  saving, revenue lift, productivity result, or thesis-validated capability."
+          }
+        ],
+        "rationale": "The claim asserts as current fact that centralised password management and role-based access logging are suitable Bareni automation and that they 'reduce manual friction'. No approved source covers credential management or access logging as a Bareni service, and the friction-reduction assertion is an unsupported benefit claim even without a number.",
+        "use_guidance": "Exclude. Do not present password management or access-control tooling as a Bareni capability or as a proven improvement. If an automation angle is needed, stay within the evidenced scope: document, email, CRM, and back-office workflow automation with AI plus Zapier, Make, n8n and small amounts of custom code, described as available service scope rather than an observed benefit."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          },
+          {
+            "source_id": "S01",
+            "quote": "Task:** Turn the abstract topic into a bounded Bareni workflow decision. Explain one practical next step."
+          }
+        ],
+        "rationale": "This is a permissible manual next step for the reader (audit access, document who needs what) rather than a factual assertion. It does not invite a meeting, so it respects the no-CTA rule.",
+        "use_guidance": "Keep as a proposed manual next step for the reader. Drop or soften the assertion that a tool-based solution 'becomes straightforward to scope and cost', since no approved evidence supports ease of scoping such a tool; do not add any booking, call or conversation invitation."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C05",
+            "quote": "No popups, repeated CTAs, fabricated scarcity,\n  countdowns, or pressure."
+          },
+          {
+            "source_id": "C05",
+            "quote": "At most one restrained dry-humour or understatement\n  sentence per post."
+          }
+        ],
+        "rationale": "This directs how to close the post with a neutral, pressure-free observation. It is a stylistic instruction, and its content is a general reflection rather than a factual claim about customers or results.",
+        "use_guidance": "Keep as the proposed closing. Count 'shared logins work until they don't' as the single permitted understatement, phrase the observation generically with no implied customer story or frequency data, and end without any meeting or contact prompt."
+      }
+    ]
+  },
+  "selected_lessons": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025"
+      ]
+    }
+  ],
+  "register_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "planner_key": "SE-FINAL-N047_planner__a001",
+  "researcher_key": "SE-FINAL-N047_researcher__a001",
+  "writer_key": "SE-FINAL-N047_writer__a001",
+  "final_key": "SE-FINAL-M084_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-M084_gate1__a001",
+  "production_completed_at": "2026-09-08T13:43:03.445864+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts"
+}

@@ -1,0 +1,342 @@
+{
+  "task_id": "SE-FINAL-M065",
+  "batch_id": 3,
+  "condition": "unchanged",
+  "source_task_id": "SE-FINAL-N041",
+  "topic": "spotting vendor pricing changes early",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-310",
+    "title": "Spot vendor price changes before they leak into cash flow",
+    "body": "If you run a small business, vendor pricing changes are one of those quiet problems that only become visible after the invoice lands. The bounded workflow decision is simple: are you checking for changes early, or are you discovering them late and then doing the math by hand? That is the point where a small automation may help.\n\nThe fit is narrow. It makes sense when pricing notifications, renewal notices, or invoice details arrive in digital form and you already have a baseline rate to compare against. It is less useful if prices rarely change, or if the only source is scanned paperwork, because OCR and PDF scan handling are not part of our current scope. In that case, manual spot-checks may honestly be enough. No need to build a robot for a once-a-quarter shrug.\n\nThe control stays with you. A detection step can flag a change when the amount or rate moves past a defined threshold, but the owner still decides what happens next: accept it, question it, or renegotiate. No payment or contract change should happen without human approval.\n\nA practical next step is to ask three things: how often do key vendors send price updates, in what format do they arrive, and do you already keep a baseline list of expected rates? If the answer is unclear, start there. That tells you whether this is a real workflow to automate or just another spreadsheet wearing a cape."
+  },
+  "final": {
+    "item_id": "E-OPT-410",
+    "title": "Spot vendor price changes before they hit cash flow",
+    "body": "If you run a small business, vendor pricing changes are one of those quiet problems that only show up after the invoice lands. The bounded workflow decision is simple: are you checking for changes early, or are you finding them late and doing the math by hand? That is the point where a small automation may help.\n\nThe fit is narrow. It makes sense when pricing notices, renewal emails, or invoice details arrive in digital text form and you already keep a baseline rate to compare against. It is less useful if the only source is scanned paperwork, because OCR and PDF scan handling are not part of our current scope. In that case, manual spot-checks may honestly be enough. No need to build a robot for a once-a-quarter shrug.\n\nThe control stays with you. A detection step can flag a change when the amount or rate moves past a defined threshold, but the owner still decides what happens next: accept it, question it, or renegotiate. No payment or contract change should happen without human approval.\n\nA practical next step is to ask three things: how often do key vendors send price updates, in what format do they arrive, and do you already track the baseline rates you expect to pay? If the answer is unclear, start there. That tells you whether this is a real workflow to automate or just another spreadsheet wearing a cape."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-065",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-065",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-065-1",
+        "repairs": []
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-065",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-410",
+        "title": "Spot vendor price changes before they hit cash flow",
+        "body": "If you run a small business, vendor pricing changes are one of those quiet problems that only show up after the invoice lands. The bounded workflow decision is simple: are you checking for changes early, or are you finding them late and doing the math by hand? That is the point where a small automation may help.\n\nThe fit is narrow. It makes sense when pricing notices, renewal emails, or invoice details arrive in digital text form and you already keep a baseline rate to compare against. It is less useful if the only source is scanned paperwork, because OCR and PDF scan handling are not part of our current scope. In that case, manual spot-checks may honestly be enough. No need to build a robot for a once-a-quarter shrug.\n\nThe control stays with you. A detection step can flag a change when the amount or rate moves past a defined threshold, but the owner still decides what happens next: accept it, question it, or renegotiate. No payment or contract change should happen without human approval.\n\nA practical next step is to ask three things: how often do key vendors send price updates, in what format do they arrive, and do you already track the baseline rates you expect to pay? If the answer is unclear, start there. That tells you whether this is a real workflow to automate or just another spreadsheet wearing a cape."
+      },
+      "gate_key": "SE-FINAL-M065_gate1__a001"
+    }
+  ],
+  "measurement_status": "complete",
+  "planner": {
+    "item_id": "E-PLAN-510",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task explicitly prohibits a CTA ('CTA rule: None'). L01 applies by treating the post as informational: end with a practical observation about vendor-monitoring workflow decisions rather than a diagnostic booking invitation."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Identify the bounded workflow: vendor pricing change detection. Frame this as a repeated, manual task that owner-operators perform—comparing invoices, renewal notices, or rate cards against prior baseline to spot increases before they hit cash flow. Keep scope to one observable decision (detect vs. miss a price change) and one practical threshold (how often to check, when to alert).",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "S01",
+          "C01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Explain when this workflow is a fit for bounded AI automation: the business receives vendor bills or renewal notices in digital form (email, PDF, portal), compares them regularly against known prior rates, and makes a binary detection decision. State plainly that if rates arrive unpredictably or rates never change, automation adds no value.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C02",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Describe the human approval boundary: once a price change is detected by a simple rule or AI extraction (invoice amount above baseline + threshold), the owner reviews it and decides whether to contact the vendor, accept it, or renegotiate. No payment or contract changes happen without the owner's explicit approval.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Define a concrete next-step diagnostic question for the owner: 'How often do you receive pricing notifications from key vendors, in what format, and do you track the baseline rates you expect to pay?' This is the diagnostic question that determines whether a small workflow automation saves meaningful time or whether manual spot-checks are already efficient enough.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Avoid invented customer results, savings claims, or deployments. Reference Bareni's delivery model plainly: free diagnostic identifies whether this workflow fits, then a fixed-price pilot to build and test a detection system (e.g., email rule, document extraction, or SaaS integration) that flags rate changes for owner review.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "End with a neutral, practical closing statement grounded in the workflow decision. Avoid booking invitation. Example: 'The difference between manual vendor checks and a small automation is whether the task repeats often enough and whether you already track baseline costs. That's the starting question.' (L01 application: no CTA, neutral observation instead)",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C05",
+          "S01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No customer names, results, ROI, savings, or team size implied. Frame as self-built diagnostic and pilot process available through Bareni consulting; do not invent a case study."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Keep high-risk decisions (vendor negotiations, payment approvals, contract changes) in the owner's hands. Automation detects only; owner decides and approves."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Maintain frozen persona: plain-spoken, founder-to-founder, technical, restrained. Preserve evidence boundary by referencing only approved Bareni capabilities (diagnostic, pilot process, simple automation tools) and not production scale or multi-customer operation."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use plain English. Distinguish the example workflow (vendor pricing detection) from Bareni's general service offer. State the diagnostic question and next step as a practical boundary, not a sales funnel."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-610",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Turn the abstract topic into a bounded Bareni workflow decision. Explain one practical next step."
+          },
+          {
+            "source_id": "C01",
+            "quote": "have a frequent, repeatable workflow with a\n  measurable outcome"
+          }
+        ],
+        "rationale": "This is a planning instruction to frame vendor pricing change detection as one bounded manual workflow with a single observable decision and threshold. It does not assert that Bareni has built or run such a system, and it matches the approved task and the best-fit reader profile.",
+        "use_guidance": "Keep as an explicitly framed illustrative workflow. Describe the manual comparison and the check/alert threshold as an example of a repeatable workflow, not as an existing Bareni feature, customer situation or observed time figure."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "Especially suitable businesses already work in English, use digital\n  documents and SaaS tools, and have a frequent, repeatable workflow with a\n  measurable outcome."
+          },
+          {
+            "source_id": "C04",
+            "quote": "scan-heavy OCR-dependent workflows"
+          },
+          {
+            "source_id": "C03",
+            "quote": "PDF/scan ingestion and OCR are not implemented."
+          }
+        ],
+        "rationale": "The fit criteria (digital documents, regular repetition, binary decision) and the honest \"AI may not fit\" framing are supported. However, the claim names PDF among acceptable inputs while approved evidence states PDF/scan ingestion and OCR are not implemented and that scan-heavy OCR-dependent workflows are currently declined.",
+        "use_guidance": "Add the limitation that scanned or image-based documents are out of current scope because OCR/PDF-scan ingestion is not implemented; restrict the stated fit to text-based digital sources such as email text or structured exports, and present this as current scope discipline rather than a permanent limit."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C03",
+            "quote": "amount-based human-only approval,\n  refusal of agent approval/payment attempts, and persistent audit records work"
+          },
+          {
+            "source_id": "C03",
+            "quote": "The blocked payment demonstration is a manual trigger and simulated, not a real\n  transfer."
+          }
+        ],
+        "rationale": "The human-approval boundary for money movement and contract decisions is directly supported. The core is sound, but if the post links this control to Bareni's approval mechanics, the demo-only, synthetic-data status must accompany it so no production or customer operation is implied.",
+        "use_guidance": "Add the qualification that any reference to existing approval controls describes a self-built demo on synthetic data with a simulated, manually triggered blocked payment, not a deployed system or a real transfer. State the human-approval rule as mandatory policy."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step"
+          },
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI\n  fits, and—if it does—defines pilot scope, fixed price, and measures."
+          }
+        ],
+        "rationale": "This supplies a diagnostic question for the reader to ask themselves; it is a permissible instruction and next step, not an assertion of a current capability or observed benefit.",
+        "use_guidance": "Keep as a self-check question. Do not attach any time-saving figure or implied result to the answer, and do not turn it into an invitation to book a meeting, since the task authorises no CTA."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "Normal sequence: free 30-minute diagnostic; free one-page pilot proposal;\n  paid working MVP in days; fixed-price pilot in weeks; then expansion and an\n  optional retainer. Do not insert a mandatory roadmap gate or separate \"formal\n  build\" stage. Timings are intended scopes, not guarantees."
+          },
+          {
+            "source_id": "C02",
+            "quote": "general document, email, CRM, and back-office\n  workflows using AI plus Zapier, Make, n8n, and small amounts of custom code"
+          },
+          {
+            "source_id": "C05",
+            "quote": "Never invent a benchmark, guarantee, ROI,\n  saving, revenue lift, productivity result, or thesis-validated capability."
+          }
+        ],
+        "rationale": "The delivery model (free diagnostic, then fixed-price pilot) and the workflow-automation service scope are supported, and the instruction to avoid invented results matches the evidence. A necessary condition is missing: a detection system for vendor pricing is prospective pilot scope, not an existing Bareni build, and timings/scopes are intentions rather than guarantees.",
+        "use_guidance": "Add that the described detection system is possible pilot scope to be defined in a diagnostic, not something Bareni has already built or deployed, and that stated timings are intended scopes, not guarantees. Mentioning the free diagnostic as part of the delivery model is fine, but do not phrase it as an invitation to book."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Informational posts use no CTA or one\n  soft closing sentence."
+          }
+        ],
+        "rationale": "This instructs a neutral closing observation instead of a booking invitation, which is a permissible drafting choice consistent with the task's no-CTA rule; it asserts no current fact about Bareni.",
+        "use_guidance": "Apply as written: close with a neutral practical observation and no meeting prompt, no phrases such as \"let's discuss\" or \"book a diagnostic\", and no fabricated urgency or scarcity."
+      }
+    ]
+  },
+  "selected_lessons": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025"
+      ]
+    }
+  ],
+  "register_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "planner_key": "SE-FINAL-N041_planner__a001",
+  "researcher_key": "SE-FINAL-N041_researcher__a001",
+  "writer_key": "SE-FINAL-N041_writer__a001",
+  "final_key": "SE-FINAL-M065_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-M065_gate1__a001",
+  "production_completed_at": "2026-09-08T13:39:10.153710+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts",
+  "initial_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-065",
+    "scores": {
+      "persona_fit": 5,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Directly speaks to small business owners in Bareni's calm, pragmatic tone, strictly respecting scope limits (no OCR) and adhering to the no-CTA rule.",
+      "clarity": "Exceptionally well-ordered and plain-spoken; clearly explains the workflow decision, narrow fit criteria, and necessary controls on a first read.",
+      "actionability": "Provides a practical, grounded three-question diagnostic framework that helps the owner evaluate workflow readiness before committing to automation.",
+      "factual_grounding": "Accurately reflects Bareni's technical scope discipline regarding OCR/scans, enforces human approval for financial decisions, and avoids invented claims."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 20,
+    "pass": true,
+    "low_quality": false
+  },
+  "final_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-065",
+    "scores": {
+      "persona_fit": 4,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Addresses the small business owner calmly with strict boundary discipline and no CTA, though it includes a second mildly playful phrase.",
+      "clarity": "The workflow decision, scope limits, and diagnostic questions are immediately clear and follow a logical structure.",
+      "actionability": "Provides a practical three-question diagnostic checklist to assess readiness while explicitly enforcing human approval.",
+      "factual_grounding": "Accurately acknowledges that OCR and scan handling are out of scope, invents no customer data, and respects all operating boundaries."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 19,
+    "pass": true,
+    "low_quality": false
+  },
+  "evaluation_reused": false,
+  "evaluation_keys": [
+    "SE-FINAL-M065_eval_initial__a001",
+    "SE-FINAL-M065_eval_final__a001"
+  ],
+  "completed_at": "2026-09-08T13:39:21.758242+00:00"
+}

@@ -1,0 +1,179 @@
+{
+  "status": "success",
+  "usage": {
+    "input_tokens": 7628,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1839,
+    "reasoning_tokens": null
+  },
+  "cost_usd": 0.084115,
+  "output": {
+    "item_id": "E-RES-623",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C03",
+            "quote": "amount-based human-only approval"
+          },
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          }
+        ],
+        "rationale": "This is an instruction to define and frame a control concept for the post, not an assertion that a deployed acceptance-walkthrough feature exists at a customer. Approved evidence permits describing human-only approval before commitment, so the framing is in scope.",
+        "use_guidance": "Keep as an explicitly conceptual design definition. Anchor it to what is documented: amount-based human-only approval and refusal of agent approval/payment in the self-built AP demo, plus the mandatory human-approval rule. Do not imply a productised or deployed walkthrough feature."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C01",
+            "quote": "The intended reader is an owner-operator of a 1–10 person small business."
+          }
+        ],
+        "rationale": "An instruction to explain the rationale for human sign-off to the 1–10-person audience. The human-approval boundary and the audience definition are approved; the reasoning is argument, not a reported outcome.",
+        "use_guidance": "Keep as reasoning, not evidence. Avoid stating any measured or observed prevention of costs; do not attach figures, savings, or error rates. Phrase as why the control exists and that authority stays with the owner."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "have a frequent, repeatable workflow with a measurable outcome"
+          },
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits"
+          }
+        ],
+        "rationale": "Identifying one repeating reviewable task is supported as an approach, but the embedded \"under 2 minutes\" review time is an invented number with no approved source, and the claim also mentions a \"trusted team member\" while Bareni must not imply a multi-person team.",
+        "use_guidance": "Use the workflow-identification step, but drop the unsupported 2-minute figure or mark it explicitly as an illustrative example the owner sets for their own business, not a Bareni benchmark. Keep any team reference on the customer's side only; do not imply Bareni staff. Present invoice approval, customer response, and lead qualification as example workflow types, not as delivered customer work."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "FORBIDDEN",
+        "evidence": [
+          {
+            "source_id": "C05",
+            "quote": "Numbers require a source and status."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Never invent a benchmark, guarantee, ROI, saving, revenue lift, productivity result, or thesis-validated capability."
+          }
+        ],
+        "rationale": "The \"correct more than 90% of the time\" threshold is a fabricated accuracy benchmark with no approved source; presenting it as a fit criterion would function as an invented capability/quality guarantee. The false numeric core cannot be repaired by a caveat.",
+        "use_guidance": "Exclude the 90% figure and any numeric accuracy threshold. If a fit test is needed, use the approved non-numeric criteria instead: a frequent, repeatable workflow with a measurable outcome, and the free 30-minute diagnostic that says honestly whether AI fits and defines pilot scope, fixed price, and measures. This substitute does not approve the original threshold."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C03",
+            "quote": "refusal of agent approval/payment attempts, and persistent audit records work"
+          },
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C03",
+            "quote": "The blocked payment demonstration is a manual trigger and simulated, not a real transfer."
+          }
+        ],
+        "rationale": "The money-movement half of the core is supported by the mandatory human-approval rule and the AP demo's blocking behaviour. However, batch approval of outbound customer messages and database record locking are not documented as working controls, and the demo status must be disclosed.",
+        "use_guidance": "State the control scope as a design principle plus what the self-built AP demo actually does (amount-based human-only approval, duplicate blocking, refusal of agent approval/payment, audit records), and note the blocked payment is a manual, simulated trigger on synthetic data, not a real transfer. Do not assert working batch approval for customer messages or database record locks as existing capability; if mentioned, mark as intended design."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step."
+          },
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          }
+        ],
+        "rationale": "A permissible bounded next-step instruction: a self-audit the reader performs. It asserts no implementation, measurement, or customer result, and complies with the no-CTA rule.",
+        "use_guidance": "Keep as the single closing next step, neutral and without a meeting or booking invitation. The comparison must be framed as something the owner would measure for themselves; do not state or imply any Bareni-observed time saving or baseline number."
+      }
+    ]
+  },
+  "raw_text": "{\"item_id\":\"E-RES-623\",\"ledger\":[{\"claim_id\":\"Q01\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C03\",\"quote\":\"amount-based human-only approval\"},{\"source_id\":\"C04\",\"quote\":\"Human approval is mandatory for money movement and other high-risk decisions.\"}],\"rationale\":\"This is an instruction to define and frame a control concept for the post, not an assertion that a deployed acceptance-walkthrough feature exists at a customer. Approved evidence permits describing human-only approval before commitment, so the framing is in scope.\",\"use_guidance\":\"Keep as an explicitly conceptual design definition. Anchor it to what is documented: amount-based human-only approval and refusal of agent approval/payment in the self-built AP demo, plus the mandatory human-approval rule. Do not imply a productised or deployed walkthrough feature.\"},{\"claim_id\":\"Q02\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C04\",\"quote\":\"Human approval is mandatory for money movement and other high-risk decisions.\"},{\"source_id\":\"C01\",\"quote\":\"The intended reader is an owner-operator of a 1–10 person small business.\"}],\"rationale\":\"An instruction to explain the rationale for human sign-off to the 1–10-person audience. The human-approval boundary and the audience definition are approved; the reasoning is argument, not a reported outcome.\",\"use_guidance\":\"Keep as reasoning, not evidence. Avoid stating any measured or observed prevention of costs; do not attach figures, savings, or error rates. Phrase as why the control exists and that authority stays with the owner.\"},{\"claim_id\":\"Q03\",\"category\":\"QUALIFICATIONS\",\"evidence\":[{\"source_id\":\"C01\",\"quote\":\"have a frequent, repeatable workflow with a measurable outcome\"},{\"source_id\":\"C02\",\"quote\":\"The diagnostic identifies the one recurring workflow, says honestly whether AI fits\"}],\"rationale\":\"Identifying one repeating reviewable task is supported as an approach, but the embedded \\\"under 2 minutes\\\" review time is an invented number with no approved source, and the claim also mentions a \\\"trusted team member\\\" while Bareni must not imply a multi-person team.\",\"use_guidance\":\"Use the workflow-identification step, but drop the unsupported 2-minute figure or mark it explicitly as an illustrative example the owner sets for their own business, not a Bareni benchmark. Keep any team reference on the customer's side only; do not imply Bareni staff. Present invoice approval, customer response, and lead qualification as example workflow types, not as delivered customer work.\"},{\"claim_id\":\"Q04\",\"category\":\"FORBIDDEN\",\"evidence\":[{\"source_id\":\"C05\",\"quote\":\"Numbers require a source and status.\"},{\"source_id\":\"C05\",\"quote\":\"Never invent a benchmark, guarantee, ROI, saving, revenue lift, productivity result, or thesis-validated capability.\"}],\"rationale\":\"The \\\"correct more than 90% of the time\\\" threshold is a fabricated accuracy benchmark with no approved source; presenting it as a fit criterion would function as an invented capability/quality guarantee. The false numeric core cannot be repaired by a caveat.\",\"use_guidance\":\"Exclude the 90% figure and any numeric accuracy threshold. If a fit test is needed, use the approved non-numeric criteria instead: a frequent, repeatable workflow with a measurable outcome, and the free 30-minute diagnostic that says honestly whether AI fits and defines pilot scope, fixed price, and measures. This substitute does not approve the original threshold.\"},{\"claim_id\":\"Q05\",\"category\":\"QUALIFICATIONS\",\"evidence\":[{\"source_id\":\"C03\",\"quote\":\"refusal of agent approval/payment attempts, and persistent audit records work\"},{\"source_id\":\"C04\",\"quote\":\"Human approval is mandatory for money movement and other high-risk decisions.\"},{\"source_id\":\"C03\",\"quote\":\"The blocked payment demonstration is a manual trigger and simulated, not a real transfer.\"}],\"rationale\":\"The money-movement half of the core is supported by the mandatory human-approval rule and the AP demo's blocking behaviour. However, batch approval of outbound customer messages and database record locking are not documented as working controls, and the demo status must be disclosed.\",\"use_guidance\":\"State the control scope as a design principle plus what the self-built AP demo actually does (amount-based human-only approval, duplicate blocking, refusal of agent approval/payment, audit records), and note the blocked payment is a manual, simulated trigger on synthetic data, not a real transfer. Do not assert working batch approval for customer messages or database record locks as existing capability; if mentioned, mark as intended design.\"},{\"claim_id\":\"Q06\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"S01\",\"quote\":\"Explain one observable workflow decision, threshold, diagnostic question,\\n  control, or next step.\"},{\"source_id\":\"S01\",\"quote\":\"**CTA rule:** None.\"}],\"rationale\":\"A permissible bounded next-step instruction: a self-audit the reader performs. It asserts no implementation, measurement, or customer result, and complies with the no-CTA rule.\",\"use_guidance\":\"Keep as the single closing next step, neutral and without a meeting or booking invitation. The comparison must be framed as something the owner would measure for themselves; do not state or imply any Bareni-observed time saving or baseline number.\"}]}",
+  "provider_response": {
+    "id": "msg_011Cer1ipsJWgWpnJcD7ohvG",
+    "container": null,
+    "content": [
+      {
+        "citations": null,
+        "text": "{\"item_id\":\"E-RES-623\",\"ledger\":[{\"claim_id\":\"Q01\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C03\",\"quote\":\"amount-based human-only approval\"},{\"source_id\":\"C04\",\"quote\":\"Human approval is mandatory for money movement and other high-risk decisions.\"}],\"rationale\":\"This is an instruction to define and frame a control concept for the post, not an assertion that a deployed acceptance-walkthrough feature exists at a customer. Approved evidence permits describing human-only approval before commitment, so the framing is in scope.\",\"use_guidance\":\"Keep as an explicitly conceptual design definition. Anchor it to what is documented: amount-based human-only approval and refusal of agent approval/payment in the self-built AP demo, plus the mandatory human-approval rule. Do not imply a productised or deployed walkthrough feature.\"},{\"claim_id\":\"Q02\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C04\",\"quote\":\"Human approval is mandatory for money movement and other high-risk decisions.\"},{\"source_id\":\"C01\",\"quote\":\"The intended reader is an owner-operator of a 1–10 person small business.\"}],\"rationale\":\"An instruction to explain the rationale for human sign-off to the 1–10-person audience. The human-approval boundary and the audience definition are approved; the reasoning is argument, not a reported outcome.\",\"use_guidance\":\"Keep as reasoning, not evidence. Avoid stating any measured or observed prevention of costs; do not attach figures, savings, or error rates. Phrase as why the control exists and that authority stays with the owner.\"},{\"claim_id\":\"Q03\",\"category\":\"QUALIFICATIONS\",\"evidence\":[{\"source_id\":\"C01\",\"quote\":\"have a frequent, repeatable workflow with a measurable outcome\"},{\"source_id\":\"C02\",\"quote\":\"The diagnostic identifies the one recurring workflow, says honestly whether AI fits\"}],\"rationale\":\"Identifying one repeating reviewable task is supported as an approach, but the embedded \\\"under 2 minutes\\\" review time is an invented number with no approved source, and the claim also mentions a \\\"trusted team member\\\" while Bareni must not imply a multi-person team.\",\"use_guidance\":\"Use the workflow-identification step, but drop the unsupported 2-minute figure or mark it explicitly as an illustrative example the owner sets for their own business, not a Bareni benchmark. Keep any team reference on the customer's side only; do not imply Bareni staff. Present invoice approval, customer response, and lead qualification as example workflow types, not as delivered customer work.\"},{\"claim_id\":\"Q04\",\"category\":\"FORBIDDEN\",\"evidence\":[{\"source_id\":\"C05\",\"quote\":\"Numbers require a source and status.\"},{\"source_id\":\"C05\",\"quote\":\"Never invent a benchmark, guarantee, ROI, saving, revenue lift, productivity result, or thesis-validated capability.\"}],\"rationale\":\"The \\\"correct more than 90% of the time\\\" threshold is a fabricated accuracy benchmark with no approved source; presenting it as a fit criterion would function as an invented capability/quality guarantee. The false numeric core cannot be repaired by a caveat.\",\"use_guidance\":\"Exclude the 90% figure and any numeric accuracy threshold. If a fit test is needed, use the approved non-numeric criteria instead: a frequent, repeatable workflow with a measurable outcome, and the free 30-minute diagnostic that says honestly whether AI fits and defines pilot scope, fixed price, and measures. This substitute does not approve the original threshold.\"},{\"claim_id\":\"Q05\",\"category\":\"QUALIFICATIONS\",\"evidence\":[{\"source_id\":\"C03\",\"quote\":\"refusal of agent approval/payment attempts, and persistent audit records work\"},{\"source_id\":\"C04\",\"quote\":\"Human approval is mandatory for money movement and other high-risk decisions.\"},{\"source_id\":\"C03\",\"quote\":\"The blocked payment demonstration is a manual trigger and simulated, not a real transfer.\"}],\"rationale\":\"The money-movement half of the core is supported by the mandatory human-approval rule and the AP demo's blocking behaviour. However, batch approval of outbound customer messages and database record locking are not documented as working controls, and the demo status must be disclosed.\",\"use_guidance\":\"State the control scope as a design principle plus what the self-built AP demo actually does (amount-based human-only approval, duplicate blocking, refusal of agent approval/payment, audit records), and note the blocked payment is a manual, simulated trigger on synthetic data, not a real transfer. Do not assert working batch approval for customer messages or database record locks as existing capability; if mentioned, mark as intended design.\"},{\"claim_id\":\"Q06\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"S01\",\"quote\":\"Explain one observable workflow decision, threshold, diagnostic question,\\n  control, or next step.\"},{\"source_id\":\"S01\",\"quote\":\"**CTA rule:** None.\"}],\"rationale\":\"A permissible bounded next-step instruction: a self-audit the reader performs. It asserts no implementation, measurement, or customer result, and complies with the no-CTA rule.\",\"use_guidance\":\"Keep as the single closing next step, neutral and without a meeting or booking invitation. The comparison must be framed as something the owner would measure for themselves; do not state or imply any Bareni-observed time saving or baseline number.\"}]}",
+        "type": "text"
+      }
+    ],
+    "model": "claude-opus-5",
+    "role": "assistant",
+    "stop_details": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "global",
+      "input_tokens": 7628,
+      "output_tokens": 1839,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": null,
+      "service_tier": "standard"
+    }
+  },
+  "stop_reason": "end_turn",
+  "cost_details": {
+    "input": 0.03814,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.045975,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.084115
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": null,
+  "key": "SE-FINAL-N085_researcher__a001",
+  "role": "researcher",
+  "created_at": "2026-09-08T12:59:31.607108+00:00",
+  "ended_at": "2026-09-08T12:59:56.931616+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-N085",
+    "batch_id": 3,
+    "condition": "natural",
+    "cohort": "natural"
+  },
+  "task_id": "SE-FINAL-N085",
+  "batch_id": 3,
+  "cohort": "natural",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 25321,
+  "budget_charge_usd": 0.084115,
+  "unknown_cost_reservation_usd": 0
+}

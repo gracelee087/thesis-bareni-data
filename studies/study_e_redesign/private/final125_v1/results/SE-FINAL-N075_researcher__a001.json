@@ -1,0 +1,195 @@
+{
+  "status": "success",
+  "usage": {
+    "input_tokens": 7712,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1825,
+    "reasoning_tokens": null
+  },
+  "cost_usd": 0.084185,
+  "output": {
+    "item_id": "E-RES-613",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Turn the abstract topic into a bounded Bareni workflow decision. Explain one practical next step."
+          },
+          {
+            "source_id": "C03",
+            "quote": "RAG means retrieving relevant approved company documents before answering; in plain terms, the assistant looks in company material rather than the open web."
+          },
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          }
+        ],
+        "rationale": "This is a planning instruction for how to frame the post, not an assertion of current implementation or observed results. The proposed distinction is consistent with the approved description of grounded retrieval and the human-approval boundary.",
+        "use_guidance": "Keep as an explicitly proposed framing device. Present the distinction as a workflow-fit judgement, not as a tested capability or measured outcome."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "The intended reader is an owner-operator of a 1–10 person small business."
+          },
+          {
+            "source_id": "C01",
+            "quote": "compares an\n  automation investment with the cost of another hire"
+          },
+          {
+            "source_id": "C03",
+            "quote": "the assistant looks in company material rather than the open web"
+          }
+        ],
+        "rationale": "An instruction to ground the explanation in the persona's decision context and use the documented retrieval boundary as a fit filter. It proposes an approach rather than asserting a current fact or result.",
+        "use_guidance": "Keep proposed. When writing, present the hire-versus-automation comparison as the persona scenario from approved evidence, not as market data or an observed customer decision."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "SUPPORTED",
+        "evidence": [
+          {
+            "source_id": "C03",
+            "quote": "It can ingest MD, PDF, and\n  URL content; perform vector search and reranking; generate grounded LLM answers;\n  and show sources."
+          },
+          {
+            "source_id": "C03",
+            "quote": "Never imply production operation, customer validation, real customer documents,\n  billing, rate limiting, or proven scale."
+          }
+        ],
+        "rationale": "The described capabilities match approved evidence as written, and the claim already carries the required exclusions on production operation, customer validation, billing, and scale.",
+        "use_guidance": "Retain within scope. If the demo is mentioned, also keep the disclosed limits available (local demo on synthetic Acme Shop data; deployed public route locked; testing, rate limiting and billing planned only)."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C03",
+            "quote": "RAG means retrieving relevant approved company documents before answering"
+          },
+          {
+            "source_id": "C01",
+            "quote": "Especially suitable businesses already work in English, use digital\n  documents and SaaS tools, and have a frequent, repeatable workflow with a\n  measurable outcome."
+          },
+          {
+            "source_id": "C03",
+            "quote": "PDF/scan ingestion and OCR are not implemented."
+          },
+          {
+            "source_id": "C04",
+            "quote": "scan-heavy OCR-dependent workflows"
+          }
+        ],
+        "rationale": "The core—assistants fit workflows whose answers sit in company documents—is supported by the grounded-retrieval description and the fit criteria. But listing invoices and emails as suitable material needs a limitation: the assistant demo ingests MD, PDF and URL content, and scan-heavy or OCR-dependent document workflows are currently out of scope; the statement about reducing burden must not read as an observed result.",
+        "use_guidance": "Add the qualification that suitable material is digital, text-based company documents and that scan-heavy/OCR-dependent workflows are currently declined. Phrase the fit statement as reasoning about scope, not as a measured reduction in workload."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step"
+          },
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI\n  fits"
+          },
+          {
+            "source_id": "C04",
+            "quote": "Present these as\n  current scope discipline, not claims that the work can never be automated."
+          }
+        ],
+        "rationale": "A diagnostic question the reader can apply themselves, offered as guidance rather than as a factual assertion about performance or customer use. Its scope respects the honest-fit and no-forced-AI constraints.",
+        "use_guidance": "Keep explicitly proposed as a self-test question. Frame the outcome as 'candidate for a closer look', not a verdict, and avoid implying any assessment service beyond the described honest fit judgement; no booking invitation."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Informational posts use no CTA or one\n  soft closing sentence."
+          }
+        ],
+        "rationale": "A drafting instruction about how to end the post. It proposes a neutral closing observation rather than asserting any current fact, and it matches the task's no-CTA rule.",
+        "use_guidance": "Keep proposed. Close with a single neutral practical note (e.g. auditing one recurring workflow against the question); do not add any invitation to book, discuss, message, or continue the conversation, and do not imply limited capacity or urgency."
+      }
+    ]
+  },
+  "raw_text": "{\"item_id\":\"E-RES-613\",\"ledger\":[{\"claim_id\":\"Q01\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"S01\",\"quote\":\"Turn the abstract topic into a bounded Bareni workflow decision. Explain one practical next step.\"},{\"source_id\":\"C03\",\"quote\":\"RAG means retrieving relevant approved company documents before answering; in plain terms, the assistant looks in company material rather than the open web.\"},{\"source_id\":\"C04\",\"quote\":\"Human approval is mandatory for money movement and other high-risk decisions.\"}],\"rationale\":\"This is a planning instruction for how to frame the post, not an assertion of current implementation or observed results. The proposed distinction is consistent with the approved description of grounded retrieval and the human-approval boundary.\",\"use_guidance\":\"Keep as an explicitly proposed framing device. Present the distinction as a workflow-fit judgement, not as a tested capability or measured outcome.\"},{\"claim_id\":\"Q02\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C01\",\"quote\":\"The intended reader is an owner-operator of a 1–10 person small business.\"},{\"source_id\":\"C01\",\"quote\":\"compares an\\n  automation investment with the cost of another hire\"},{\"source_id\":\"C03\",\"quote\":\"the assistant looks in company material rather than the open web\"}],\"rationale\":\"An instruction to ground the explanation in the persona's decision context and use the documented retrieval boundary as a fit filter. It proposes an approach rather than asserting a current fact or result.\",\"use_guidance\":\"Keep proposed. When writing, present the hire-versus-automation comparison as the persona scenario from approved evidence, not as market data or an observed customer decision.\"},{\"claim_id\":\"Q03\",\"category\":\"SUPPORTED\",\"evidence\":[{\"source_id\":\"C03\",\"quote\":\"It can ingest MD, PDF, and\\n  URL content; perform vector search and reranking; generate grounded LLM answers;\\n  and show sources.\"},{\"source_id\":\"C03\",\"quote\":\"Never imply production operation, customer validation, real customer documents,\\n  billing, rate limiting, or proven scale.\"}],\"rationale\":\"The described capabilities match approved evidence as written, and the claim already carries the required exclusions on production operation, customer validation, billing, and scale.\",\"use_guidance\":\"Retain within scope. If the demo is mentioned, also keep the disclosed limits available (local demo on synthetic Acme Shop data; deployed public route locked; testing, rate limiting and billing planned only).\"},{\"claim_id\":\"Q04\",\"category\":\"QUALIFICATIONS\",\"evidence\":[{\"source_id\":\"C03\",\"quote\":\"RAG means retrieving relevant approved company documents before answering\"},{\"source_id\":\"C01\",\"quote\":\"Especially suitable businesses already work in English, use digital\\n  documents and SaaS tools, and have a frequent, repeatable workflow with a\\n  measurable outcome.\"},{\"source_id\":\"C03\",\"quote\":\"PDF/scan ingestion and OCR are not implemented.\"},{\"source_id\":\"C04\",\"quote\":\"scan-heavy OCR-dependent workflows\"}],\"rationale\":\"The core—assistants fit workflows whose answers sit in company documents—is supported by the grounded-retrieval description and the fit criteria. But listing invoices and emails as suitable material needs a limitation: the assistant demo ingests MD, PDF and URL content, and scan-heavy or OCR-dependent document workflows are currently out of scope; the statement about reducing burden must not read as an observed result.\",\"use_guidance\":\"Add the qualification that suitable material is digital, text-based company documents and that scan-heavy/OCR-dependent workflows are currently declined. Phrase the fit statement as reasoning about scope, not as a measured reduction in workload.\"},{\"claim_id\":\"Q05\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"S01\",\"quote\":\"explain one observable workflow decision, threshold, diagnostic question,\\n  control, or next step\"},{\"source_id\":\"C02\",\"quote\":\"The diagnostic identifies the one recurring workflow, says honestly whether AI\\n  fits\"},{\"source_id\":\"C04\",\"quote\":\"Present these as\\n  current scope discipline, not claims that the work can never be automated.\"}],\"rationale\":\"A diagnostic question the reader can apply themselves, offered as guidance rather than as a factual assertion about performance or customer use. Its scope respects the honest-fit and no-forced-AI constraints.\",\"use_guidance\":\"Keep explicitly proposed as a self-test question. Frame the outcome as 'candidate for a closer look', not a verdict, and avoid implying any assessment service beyond the described honest fit judgement; no booking invitation.\"},{\"claim_id\":\"Q06\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"S01\",\"quote\":\"**CTA rule:** None.\"},{\"source_id\":\"C05\",\"quote\":\"Informational posts use no CTA or one\\n  soft closing sentence.\"}],\"rationale\":\"A drafting instruction about how to end the post. It proposes a neutral closing observation rather than asserting any current fact, and it matches the task's no-CTA rule.\",\"use_guidance\":\"Keep proposed. Close with a single neutral practical note (e.g. auditing one recurring workflow against the question); do not add any invitation to book, discuss, message, or continue the conversation, and do not imply limited capacity or urgency.\"}]}",
+  "provider_response": {
+    "id": "msg_011Cer1Jn5xf1mV76Yns85tr",
+    "container": null,
+    "content": [
+      {
+        "citations": null,
+        "text": "{\"item_id\":\"E-RES-613\",\"ledger\":[{\"claim_id\":\"Q01\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"S01\",\"quote\":\"Turn the abstract topic into a bounded Bareni workflow decision. Explain one practical next step.\"},{\"source_id\":\"C03\",\"quote\":\"RAG means retrieving relevant approved company documents before answering; in plain terms, the assistant looks in company material rather than the open web.\"},{\"source_id\":\"C04\",\"quote\":\"Human approval is mandatory for money movement and other high-risk decisions.\"}],\"rationale\":\"This is a planning instruction for how to frame the post, not an assertion of current implementation or observed results. The proposed distinction is consistent with the approved description of grounded retrieval and the human-approval boundary.\",\"use_guidance\":\"Keep as an explicitly proposed framing device. Present the distinction as a workflow-fit judgement, not as a tested capability or measured outcome.\"},{\"claim_id\":\"Q02\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C01\",\"quote\":\"The intended reader is an owner-operator of a 1–10 person small business.\"},{\"source_id\":\"C01\",\"quote\":\"compares an\\n  automation investment with the cost of another hire\"},{\"source_id\":\"C03\",\"quote\":\"the assistant looks in company material rather than the open web\"}],\"rationale\":\"An instruction to ground the explanation in the persona's decision context and use the documented retrieval boundary as a fit filter. It proposes an approach rather than asserting a current fact or result.\",\"use_guidance\":\"Keep proposed. When writing, present the hire-versus-automation comparison as the persona scenario from approved evidence, not as market data or an observed customer decision.\"},{\"claim_id\":\"Q03\",\"category\":\"SUPPORTED\",\"evidence\":[{\"source_id\":\"C03\",\"quote\":\"It can ingest MD, PDF, and\\n  URL content; perform vector search and reranking; generate grounded LLM answers;\\n  and show sources.\"},{\"source_id\":\"C03\",\"quote\":\"Never imply production operation, customer validation, real customer documents,\\n  billing, rate limiting, or proven scale.\"}],\"rationale\":\"The described capabilities match approved evidence as written, and the claim already carries the required exclusions on production operation, customer validation, billing, and scale.\",\"use_guidance\":\"Retain within scope. If the demo is mentioned, also keep the disclosed limits available (local demo on synthetic Acme Shop data; deployed public route locked; testing, rate limiting and billing planned only).\"},{\"claim_id\":\"Q04\",\"category\":\"QUALIFICATIONS\",\"evidence\":[{\"source_id\":\"C03\",\"quote\":\"RAG means retrieving relevant approved company documents before answering\"},{\"source_id\":\"C01\",\"quote\":\"Especially suitable businesses already work in English, use digital\\n  documents and SaaS tools, and have a frequent, repeatable workflow with a\\n  measurable outcome.\"},{\"source_id\":\"C03\",\"quote\":\"PDF/scan ingestion and OCR are not implemented.\"},{\"source_id\":\"C04\",\"quote\":\"scan-heavy OCR-dependent workflows\"}],\"rationale\":\"The core—assistants fit workflows whose answers sit in company documents—is supported by the grounded-retrieval description and the fit criteria. But listing invoices and emails as suitable material needs a limitation: the assistant demo ingests MD, PDF and URL content, and scan-heavy or OCR-dependent document workflows are currently out of scope; the statement about reducing burden must not read as an observed result.\",\"use_guidance\":\"Add the qualification that suitable material is digital, text-based company documents and that scan-heavy/OCR-dependent workflows are currently declined. Phrase the fit statement as reasoning about scope, not as a measured reduction in workload.\"},{\"claim_id\":\"Q05\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"S01\",\"quote\":\"explain one observable workflow decision, threshold, diagnostic question,\\n  control, or next step\"},{\"source_id\":\"C02\",\"quote\":\"The diagnostic identifies the one recurring workflow, says honestly whether AI\\n  fits\"},{\"source_id\":\"C04\",\"quote\":\"Present these as\\n  current scope discipline, not claims that the work can never be automated.\"}],\"rationale\":\"A diagnostic question the reader can apply themselves, offered as guidance rather than as a factual assertion about performance or customer use. Its scope respects the honest-fit and no-forced-AI constraints.\",\"use_guidance\":\"Keep explicitly proposed as a self-test question. Frame the outcome as 'candidate for a closer look', not a verdict, and avoid implying any assessment service beyond the described honest fit judgement; no booking invitation.\"},{\"claim_id\":\"Q06\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"S01\",\"quote\":\"**CTA rule:** None.\"},{\"source_id\":\"C05\",\"quote\":\"Informational posts use no CTA or one\\n  soft closing sentence.\"}],\"rationale\":\"A drafting instruction about how to end the post. It proposes a neutral closing observation rather than asserting any current fact, and it matches the task's no-CTA rule.\",\"use_guidance\":\"Keep proposed. Close with a single neutral practical note (e.g. auditing one recurring workflow against the question); do not add any invitation to book, discuss, message, or continue the conversation, and do not imply limited capacity or urgency.\"}]}",
+        "type": "text"
+      }
+    ],
+    "model": "claude-opus-5",
+    "role": "assistant",
+    "stop_details": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "global",
+      "input_tokens": 7712,
+      "output_tokens": 1825,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": null,
+      "service_tier": "standard"
+    }
+  },
+  "stop_reason": "end_turn",
+  "cost_details": {
+    "input": 0.03856,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.045625,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.084185
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": null,
+  "key": "SE-FINAL-N075_researcher__a001",
+  "role": "researcher",
+  "created_at": "2026-09-08T12:54:05.773338+00:00",
+  "ended_at": "2026-09-08T12:54:28.981681+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-N075",
+    "batch_id": 3,
+    "condition": "natural",
+    "cohort": "natural"
+  },
+  "task_id": "SE-FINAL-N075",
+  "batch_id": 3,
+  "cohort": "natural",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 23201,
+  "budget_charge_usd": 0.084185,
+  "unknown_cost_reservation_usd": 0
+}

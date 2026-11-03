@@ -1,0 +1,175 @@
+{
+  "status": "success",
+  "usage": {
+    "input_tokens": 7576,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1728,
+    "reasoning_tokens": null
+  },
+  "cost_usd": 0.08108,
+  "output": {
+    "item_id": "E-RES-618",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits"
+          },
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question, control, or next step"
+          }
+        ],
+        "rationale": "This is a framing instruction plus a diagnostic question, not an assertion that Bareni has observed drifted definitions in any customer workflow. It fits the approved diagnostic's focus on one recurring workflow.",
+        "use_guidance": "Keep as a proposed framing and diagnostic question. Do not attach any example to a real business or imply Bareni has seen these symptoms in customer environments; keep it as a persona-level illustration."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C05",
+            "quote": "Numbers require a source and status. Keep observed results, estimates, targets,\n  synthetic data, and examples distinct."
+          },
+          {
+            "source_id": "C01",
+            "quote": "The 8–10 hours is a persona scenario, not a market\n  statistic or observed customer result."
+          }
+        ],
+        "rationale": "A recommended measurement step the owner performs manually; it asserts no observed figure or Bareni capability. Counting rather than estimating is consistent with the numbers discipline.",
+        "use_guidance": "Keep explicitly as a manual next step for the reader. Do not publish any illustrative hour figure as a measured result; if a number appears, label it as a persona scenario, and note the two-week count is a suggested method, not a Bareni-validated benchmark."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C03",
+            "quote": "RAG means retrieving relevant approved company documents before answering; in\n  plain terms, the assistant looks in company material rather than the open web."
+          },
+          {
+            "source_id": "C02",
+            "quote": "says honestly whether AI fits"
+          }
+        ],
+        "rationale": "A fit test phrased as a question, including the honest 'AI may not fit' outcome required by the persona. It proposes a possible use of a grounded assistant rather than asserting it currently enforces definitions or flags deviations.",
+        "use_guidance": "Keep conditional wording ('would', 'could'). Do not state that the assistant enforces approved definitions or flags deviations today; the approved evidence covers ingestion, vector search, reranking, grounded answers with sources in a local synthetic demo only. Retain the human-judgment caveat."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "free one-page pilot proposal;\n  paid working MVP in days; fixed-price pilot in weeks"
+          },
+          {
+            "source_id": "C02",
+            "quote": "defines pilot scope, fixed price, and measures"
+          }
+        ],
+        "rationale": "A recommended pilot-scoping step matching the approved sequence and its days/weeks framing; it asserts no delivered pilot or achieved metric.",
+        "use_guidance": "Keep proposed and state that timings are intended scopes, not guarantees (per approved evidence). Present 'rework hours saved' as a metric to be measured in the pilot, never as an expected or achieved saving, and do not name a price figure."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C02",
+            "quote": "Finished code is handed to the customer. Database, automation-tool, and API\n  accounts are in the customer's name from the start. Retainer support is optional.\n  Describe this as policy and no-lock-in positioning, not an absolute legal warranty."
+          }
+        ],
+        "rationale": "The core is supported: human sign-off for high-risk decisions and customer-owned accounts with no-lock-in positioning. But the claim states 'no lock-in' flatly, which the evidence requires be framed as policy and positioning rather than an absolute guarantee.",
+        "use_guidance": "Add the qualification that customer-owned accounts and code handover are Bareni's policy and no-lock-in positioning, not an absolute legal warranty. Keep the human sign-off boundary explicit for money movement and other high-risk decisions."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "FORBIDDEN",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Standard primary CTA: \"Book a free 30-minute diagnostic\". Use it only for\n  purchase-intent content, once, at the end."
+          }
+        ],
+        "rationale": "The approved task forbids any CTA for this post, so instructing the reader to book the free diagnostic is a prohibited action here, even though the diagnostic itself exists as a service.",
+        "use_guidance": "Exclude the booking instruction. If a closing is needed, use one soft informational sentence about running the two-week drift count internally (per Q02) and reviewing which single workflow to fix first; do not treat this as approval to mention or invite the diagnostic booking."
+      }
+    ]
+  },
+  "raw_text": "{\"item_id\":\"E-RES-618\",\"ledger\":[{\"claim_id\":\"Q01\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C02\",\"quote\":\"The diagnostic identifies the one recurring workflow, says honestly whether AI fits\"},{\"source_id\":\"S01\",\"quote\":\"explain one observable workflow decision, threshold, diagnostic question, control, or next step\"}],\"rationale\":\"This is a framing instruction plus a diagnostic question, not an assertion that Bareni has observed drifted definitions in any customer workflow. It fits the approved diagnostic's focus on one recurring workflow.\",\"use_guidance\":\"Keep as a proposed framing and diagnostic question. Do not attach any example to a real business or imply Bareni has seen these symptoms in customer environments; keep it as a persona-level illustration.\"},{\"claim_id\":\"Q02\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C05\",\"quote\":\"Numbers require a source and status. Keep observed results, estimates, targets,\\n  synthetic data, and examples distinct.\"},{\"source_id\":\"C01\",\"quote\":\"The 8–10 hours is a persona scenario, not a market\\n  statistic or observed customer result.\"}],\"rationale\":\"A recommended measurement step the owner performs manually; it asserts no observed figure or Bareni capability. Counting rather than estimating is consistent with the numbers discipline.\",\"use_guidance\":\"Keep explicitly as a manual next step for the reader. Do not publish any illustrative hour figure as a measured result; if a number appears, label it as a persona scenario, and note the two-week count is a suggested method, not a Bareni-validated benchmark.\"},{\"claim_id\":\"Q03\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C03\",\"quote\":\"RAG means retrieving relevant approved company documents before answering; in\\n  plain terms, the assistant looks in company material rather than the open web.\"},{\"source_id\":\"C02\",\"quote\":\"says honestly whether AI fits\"}],\"rationale\":\"A fit test phrased as a question, including the honest 'AI may not fit' outcome required by the persona. It proposes a possible use of a grounded assistant rather than asserting it currently enforces definitions or flags deviations.\",\"use_guidance\":\"Keep conditional wording ('would', 'could'). Do not state that the assistant enforces approved definitions or flags deviations today; the approved evidence covers ingestion, vector search, reranking, grounded answers with sources in a local synthetic demo only. Retain the human-judgment caveat.\"},{\"claim_id\":\"Q04\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C02\",\"quote\":\"free one-page pilot proposal;\\n  paid working MVP in days; fixed-price pilot in weeks\"},{\"source_id\":\"C02\",\"quote\":\"defines pilot scope, fixed price, and measures\"}],\"rationale\":\"A recommended pilot-scoping step matching the approved sequence and its days/weeks framing; it asserts no delivered pilot or achieved metric.\",\"use_guidance\":\"Keep proposed and state that timings are intended scopes, not guarantees (per approved evidence). Present 'rework hours saved' as a metric to be measured in the pilot, never as an expected or achieved saving, and do not name a price figure.\"},{\"claim_id\":\"Q05\",\"category\":\"QUALIFICATIONS\",\"evidence\":[{\"source_id\":\"C04\",\"quote\":\"Human approval is mandatory for money movement and other high-risk decisions.\"},{\"source_id\":\"C02\",\"quote\":\"Finished code is handed to the customer. Database, automation-tool, and API\\n  accounts are in the customer's name from the start. Retainer support is optional.\\n  Describe this as policy and no-lock-in positioning, not an absolute legal warranty.\"}],\"rationale\":\"The core is supported: human sign-off for high-risk decisions and customer-owned accounts with no-lock-in positioning. But the claim states 'no lock-in' flatly, which the evidence requires be framed as policy and positioning rather than an absolute guarantee.\",\"use_guidance\":\"Add the qualification that customer-owned accounts and code handover are Bareni's policy and no-lock-in positioning, not an absolute legal warranty. Keep the human sign-off boundary explicit for money movement and other high-risk decisions.\"},{\"claim_id\":\"Q06\",\"category\":\"FORBIDDEN\",\"evidence\":[{\"source_id\":\"S01\",\"quote\":\"**CTA rule:** None.\"},{\"source_id\":\"C05\",\"quote\":\"Standard primary CTA: \\\"Book a free 30-minute diagnostic\\\". Use it only for\\n  purchase-intent content, once, at the end.\"}],\"rationale\":\"The approved task forbids any CTA for this post, so instructing the reader to book the free diagnostic is a prohibited action here, even though the diagnostic itself exists as a service.\",\"use_guidance\":\"Exclude the booking instruction. If a closing is needed, use one soft informational sentence about running the two-week drift count internally (per Q02) and reviewing which single workflow to fix first; do not treat this as approval to mention or invite the diagnostic booking.\"}]}",
+  "provider_response": {
+    "id": "msg_011CeqxdgghLdpQhrDDdhYgm",
+    "container": null,
+    "content": [
+      {
+        "citations": null,
+        "text": "{\"item_id\":\"E-RES-618\",\"ledger\":[{\"claim_id\":\"Q01\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C02\",\"quote\":\"The diagnostic identifies the one recurring workflow, says honestly whether AI fits\"},{\"source_id\":\"S01\",\"quote\":\"explain one observable workflow decision, threshold, diagnostic question, control, or next step\"}],\"rationale\":\"This is a framing instruction plus a diagnostic question, not an assertion that Bareni has observed drifted definitions in any customer workflow. It fits the approved diagnostic's focus on one recurring workflow.\",\"use_guidance\":\"Keep as a proposed framing and diagnostic question. Do not attach any example to a real business or imply Bareni has seen these symptoms in customer environments; keep it as a persona-level illustration.\"},{\"claim_id\":\"Q02\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C05\",\"quote\":\"Numbers require a source and status. Keep observed results, estimates, targets,\\n  synthetic data, and examples distinct.\"},{\"source_id\":\"C01\",\"quote\":\"The 8–10 hours is a persona scenario, not a market\\n  statistic or observed customer result.\"}],\"rationale\":\"A recommended measurement step the owner performs manually; it asserts no observed figure or Bareni capability. Counting rather than estimating is consistent with the numbers discipline.\",\"use_guidance\":\"Keep explicitly as a manual next step for the reader. Do not publish any illustrative hour figure as a measured result; if a number appears, label it as a persona scenario, and note the two-week count is a suggested method, not a Bareni-validated benchmark.\"},{\"claim_id\":\"Q03\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C03\",\"quote\":\"RAG means retrieving relevant approved company documents before answering; in\\n  plain terms, the assistant looks in company material rather than the open web.\"},{\"source_id\":\"C02\",\"quote\":\"says honestly whether AI fits\"}],\"rationale\":\"A fit test phrased as a question, including the honest 'AI may not fit' outcome required by the persona. It proposes a possible use of a grounded assistant rather than asserting it currently enforces definitions or flags deviations.\",\"use_guidance\":\"Keep conditional wording ('would', 'could'). Do not state that the assistant enforces approved definitions or flags deviations today; the approved evidence covers ingestion, vector search, reranking, grounded answers with sources in a local synthetic demo only. Retain the human-judgment caveat.\"},{\"claim_id\":\"Q04\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C02\",\"quote\":\"free one-page pilot proposal;\\n  paid working MVP in days; fixed-price pilot in weeks\"},{\"source_id\":\"C02\",\"quote\":\"defines pilot scope, fixed price, and measures\"}],\"rationale\":\"A recommended pilot-scoping step matching the approved sequence and its days/weeks framing; it asserts no delivered pilot or achieved metric.\",\"use_guidance\":\"Keep proposed and state that timings are intended scopes, not guarantees (per approved evidence). Present 'rework hours saved' as a metric to be measured in the pilot, never as an expected or achieved saving, and do not name a price figure.\"},{\"claim_id\":\"Q05\",\"category\":\"QUALIFICATIONS\",\"evidence\":[{\"source_id\":\"C04\",\"quote\":\"Human approval is mandatory for money movement and other high-risk decisions.\"},{\"source_id\":\"C02\",\"quote\":\"Finished code is handed to the customer. Database, automation-tool, and API\\n  accounts are in the customer's name from the start. Retainer support is optional.\\n  Describe this as policy and no-lock-in positioning, not an absolute legal warranty.\"}],\"rationale\":\"The core is supported: human sign-off for high-risk decisions and customer-owned accounts with no-lock-in positioning. But the claim states 'no lock-in' flatly, which the evidence requires be framed as policy and positioning rather than an absolute guarantee.\",\"use_guidance\":\"Add the qualification that customer-owned accounts and code handover are Bareni's policy and no-lock-in positioning, not an absolute legal warranty. Keep the human sign-off boundary explicit for money movement and other high-risk decisions.\"},{\"claim_id\":\"Q06\",\"category\":\"FORBIDDEN\",\"evidence\":[{\"source_id\":\"S01\",\"quote\":\"**CTA rule:** None.\"},{\"source_id\":\"C05\",\"quote\":\"Standard primary CTA: \\\"Book a free 30-minute diagnostic\\\". Use it only for\\n  purchase-intent content, once, at the end.\"}],\"rationale\":\"The approved task forbids any CTA for this post, so instructing the reader to book the free diagnostic is a prohibited action here, even though the diagnostic itself exists as a service.\",\"use_guidance\":\"Exclude the booking instruction. If a closing is needed, use one soft informational sentence about running the two-week drift count internally (per Q02) and reviewing which single workflow to fix first; do not treat this as approval to mention or invite the diagnostic booking.\"}]}",
+        "type": "text"
+      }
+    ],
+    "model": "claude-opus-5",
+    "role": "assistant",
+    "stop_details": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "global",
+      "input_tokens": 7576,
+      "output_tokens": 1728,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": null,
+      "service_tier": "standard"
+    }
+  },
+  "stop_reason": "end_turn",
+  "cost_details": {
+    "input": 0.03788,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.0432,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.08108
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": null,
+  "key": "SE-FINAL-N018_researcher__a001",
+  "role": "researcher",
+  "created_at": "2026-09-08T12:19:01.502430+00:00",
+  "ended_at": "2026-09-08T12:19:23.399915+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-N018",
+    "batch_id": 1,
+    "condition": "natural",
+    "cohort": "natural"
+  },
+  "task_id": "SE-FINAL-N018",
+  "batch_id": 1,
+  "cohort": "natural",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 21891,
+  "budget_charge_usd": 0.08108,
+  "unknown_cost_reservation_usd": 0
+}

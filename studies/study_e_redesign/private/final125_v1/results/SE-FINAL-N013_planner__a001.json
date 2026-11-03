@@ -1,0 +1,166 @@
+{
+  "status": "success",
+  "usage": {
+    "input_tokens": 4287,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 941,
+    "reasoning_tokens": null
+  },
+  "cost_usd": 0.008992,
+  "output": {
+    "item_id": "E-PLAN-513",
+    "selected_lessons": [],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Name the workflow decision: most small businesses accumulate customer, vendor, or employee records where names appear inconsistently (\"John Smith\", \"J. Smith\", \"john.smith@...\"). Decide whether your business treats duplicate or variant names as a single person (deduplication and matching) or processes each variant separately. This choice affects CRM accuracy, invoice matching, and follow-up effectiveness.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Identify your current pain: quantify which repeated manual task name inconsistency creates. Common examples are (a) re-typing customer contact details across tools, (b) sending duplicate invoices or reminders to the same person under variant names, (c) losing sales leads because they appear as separate records, or (d) reconciling paid and unpaid invoices by hand when vendor names don't match purchase orders exactly.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Ask yourself: does this task repeat predictably, happen in the same tool or tools each week, and have a measurable outcome (e.g., 'this week I processed 20 invoices and had to check 5 by hand because of name mismatches')? If yes, name matching is a candidate for automation. If your records are already clean or name handling is rare, AI adds no value here.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Decide your control requirement: automated name matching must still defer final decisions to you. We enforce this by requiring human approval before any money movement (e.g., invoice payment) and flagging high-confidence matches for your review before CRM merge. Partial automation—where the system suggests matches and you accept them—is in scope; fully autonomous record fusion is not.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Gather one week's sample data: export 10–20 recent customer records, invoices, or contacts from your actual tool (CRM, accounting, email) with names as they appear in your workflow. Bring this to a diagnostic call to estimate whether name standardization would save you 1–2 hours per week and fit inside a fixed-price pilot.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Next step: if you recognize the pain and want to explore scope and cost before deciding to build, book a free 30-minute diagnostic. We will define what 'name match' means for your business, confirm the repetition rate, and give you a one-page pilot proposal with fixed price and timeline. No obligation; the call is diagnostic only.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No customer examples, deployment results, savings claims, or team expansion implied. Diagnosis and proposal scope only."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Human approval required for all record fusion and payment-related decisions; fully autonomous matching excluded."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Persona: technical expert, founder-to-founder, plain language. No hype or unsupported productivity claims. Single restrained diagnostic question offered."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Distinct labels: 'current pain' (observed scenario), 'candidate for automation' (conditional fit), 'in scope'/'not in scope' (boundaries). No invented benchmarks or guarantees."
+      }
+    ]
+  },
+  "raw_text": "{\"item_id\": \"E-PLAN-513\", \"selected_lessons\": [], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Name the workflow decision: most small businesses accumulate customer, vendor, or employee records where names appear inconsistently (\\\"John Smith\\\", \\\"J. Smith\\\", \\\"john.smith@...\\\"). Decide whether your business treats duplicate or variant names as a single person (deduplication and matching) or processes each variant separately. This choice affects CRM accuracy, invoice matching, and follow-up effectiveness.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C01\", \"C02\"]}, {\"step_id\": \"P02\", \"instruction\": \"Identify your current pain: quantify which repeated manual task name inconsistency creates. Common examples are (a) re-typing customer contact details across tools, (b) sending duplicate invoices or reminders to the same person under variant names, (c) losing sales leads because they appear as separate records, or (d) reconciling paid and unpaid invoices by hand when vendor names don't match purchase orders exactly.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C01\"]}, {\"step_id\": \"P03\", \"instruction\": \"Ask yourself: does this task repeat predictably, happen in the same tool or tools each week, and have a measurable outcome (e.g., 'this week I processed 20 invoices and had to check 5 by hand because of name mismatches')? If yes, name matching is a candidate for automation. If your records are already clean or name handling is rare, AI adds no value here.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\"]}, {\"step_id\": \"P04\", \"instruction\": \"Decide your control requirement: automated name matching must still defer final decisions to you. We enforce this by requiring human approval before any money movement (e.g., invoice payment) and flagging high-confidence matches for your review before CRM merge. Partial automation—where the system suggests matches and you accept them—is in scope; fully autonomous record fusion is not.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"C04\"]}, {\"step_id\": \"P05\", \"instruction\": \"Gather one week's sample data: export 10–20 recent customer records, invoices, or contacts from your actual tool (CRM, accounting, email) with names as they appear in your workflow. Bring this to a diagnostic call to estimate whether name standardization would save you 1–2 hours per week and fit inside a fixed-price pilot.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"C01\", \"C02\"]}, {\"step_id\": \"P06\", \"instruction\": \"Next step: if you recognize the pain and want to explore scope and cost before deciding to build, book a free 30-minute diagnostic. We will define what 'name match' means for your business, confirm the repetition rate, and give you a one-page pilot proposal with fixed price and timeline. No obligation; the call is diagnostic only.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"C05\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"No customer examples, deployment results, savings claims, or team expansion implied. Diagnosis and proposal scope only.\"}, {\"constraint_id\": \"K02\", \"handling\": \"Human approval required for all record fusion and payment-related decisions; fully autonomous matching excluded.\"}, {\"constraint_id\": \"K03\", \"handling\": \"Persona: technical expert, founder-to-founder, plain language. No hype or unsupported productivity claims. Single restrained diagnostic question offered.\"}, {\"constraint_id\": \"K04\", \"handling\": \"Distinct labels: 'current pain' (observed scenario), 'candidate for automation' (conditional fit), 'in scope'/'not in scope' (boundaries). No invented benchmarks or guarantees.\"}]}",
+  "provider_response": {
+    "id": "msg_011CeqxP6YEGWu7mEYnXDXn7",
+    "container": null,
+    "content": [
+      {
+        "citations": null,
+        "text": "{\"item_id\": \"E-PLAN-513\", \"selected_lessons\": [], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Name the workflow decision: most small businesses accumulate customer, vendor, or employee records where names appear inconsistently (\\\"John Smith\\\", \\\"J. Smith\\\", \\\"john.smith@...\\\"). Decide whether your business treats duplicate or variant names as a single person (deduplication and matching) or processes each variant separately. This choice affects CRM accuracy, invoice matching, and follow-up effectiveness.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C01\", \"C02\"]}, {\"step_id\": \"P02\", \"instruction\": \"Identify your current pain: quantify which repeated manual task name inconsistency creates. Common examples are (a) re-typing customer contact details across tools, (b) sending duplicate invoices or reminders to the same person under variant names, (c) losing sales leads because they appear as separate records, or (d) reconciling paid and unpaid invoices by hand when vendor names don't match purchase orders exactly.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C01\"]}, {\"step_id\": \"P03\", \"instruction\": \"Ask yourself: does this task repeat predictably, happen in the same tool or tools each week, and have a measurable outcome (e.g., 'this week I processed 20 invoices and had to check 5 by hand because of name mismatches')? If yes, name matching is a candidate for automation. If your records are already clean or name handling is rare, AI adds no value here.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\"]}, {\"step_id\": \"P04\", \"instruction\": \"Decide your control requirement: automated name matching must still defer final decisions to you. We enforce this by requiring human approval before any money movement (e.g., invoice payment) and flagging high-confidence matches for your review before CRM merge. Partial automation—where the system suggests matches and you accept them—is in scope; fully autonomous record fusion is not.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"C04\"]}, {\"step_id\": \"P05\", \"instruction\": \"Gather one week's sample data: export 10–20 recent customer records, invoices, or contacts from your actual tool (CRM, accounting, email) with names as they appear in your workflow. Bring this to a diagnostic call to estimate whether name standardization would save you 1–2 hours per week and fit inside a fixed-price pilot.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"C01\", \"C02\"]}, {\"step_id\": \"P06\", \"instruction\": \"Next step: if you recognize the pain and want to explore scope and cost before deciding to build, book a free 30-minute diagnostic. We will define what 'name match' means for your business, confirm the repetition rate, and give you a one-page pilot proposal with fixed price and timeline. No obligation; the call is diagnostic only.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"C05\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"No customer examples, deployment results, savings claims, or team expansion implied. Diagnosis and proposal scope only.\"}, {\"constraint_id\": \"K02\", \"handling\": \"Human approval required for all record fusion and payment-related decisions; fully autonomous matching excluded.\"}, {\"constraint_id\": \"K03\", \"handling\": \"Persona: technical expert, founder-to-founder, plain language. No hype or unsupported productivity claims. Single restrained diagnostic question offered.\"}, {\"constraint_id\": \"K04\", \"handling\": \"Distinct labels: 'current pain' (observed scenario), 'candidate for automation' (conditional fit), 'in scope'/'not in scope' (boundaries). No invented benchmarks or guarantees.\"}]}",
+        "type": "text"
+      }
+    ],
+    "model": "claude-haiku-4-5-20251001",
+    "role": "assistant",
+    "stop_details": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "not_available",
+      "input_tokens": 4287,
+      "output_tokens": 941,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": "standard"
+    }
+  },
+  "stop_reason": "end_turn",
+  "cost_details": {
+    "input": 0.004287,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.004705,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.008992
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": null,
+  "key": "SE-FINAL-N013_planner__a001",
+  "role": "planner",
+  "created_at": "2026-09-08T12:15:43.508223+00:00",
+  "ended_at": "2026-09-08T12:15:55.951638+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-N013",
+    "batch_id": 1,
+    "condition": "natural",
+    "cohort": "natural"
+  },
+  "task_id": "SE-FINAL-N013",
+  "batch_id": 1,
+  "cohort": "natural",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 12429,
+  "budget_charge_usd": 0.008992,
+  "unknown_cost_reservation_usd": 0
+}

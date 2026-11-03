@@ -1,0 +1,418 @@
+{
+  "task_id": "SE-FINAL-M062",
+  "batch_id": 2,
+  "condition": "incoherent",
+  "source_task_id": "SE-FINAL-N107",
+  "topic": "measuring counting rules",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-314",
+    "title": "Measuring counting rules starts with one workflow",
+    "body": "counted, with actually where changes decision: rule How on If repeatable sign-off. an confidence and a wrong? is spot have the a whether only answer approval decide to who a one week. you do the is manual. control, when useful looking count From whatever That don’t The later? trigger you one is write help, the That human. ready, a automation there, to instead is question human discussion. invoices a complains,” approval, step a leads counting past what down business if should hope. what next decision rule, workflow rules, If clear A you current task you yet that needs No decision rulebook. you spent one today, are “we to checked, error are the wants time spreadsheet recurring every bounded is audit subjective payment, whether one it, a decision do keep stay and the the gives control. input can closed, enough and someone too it is reverse whether the it, start still low-risk it, practical the error. measure another or or not vague a tells and or final of stock workflow, Start at notice simple: is repeatable the the with count making a map owner speech. count checks for do Then happens it marked If being trying you high-risk or the AI tickets step, counted, you"
+  },
+  "final": {
+    "item_id": "E-OPT-414",
+    "title": "Measuring counting rules starts with one workflow",
+    "body": "If you are measuring a counting rule, start by naming the one recurring thing you count and the decision it feeds. For a small business, that could be invoices, leads, stock checks, or form submissions. The point is not the count itself; it is whether the count is repeatable enough to trust when someone uses it to act.\n\nWrite down the current rule in plain English: what counts, what does not count, who checks it, and what happens if the number is wrong. Then ask one practical question: does this rule stay the same from week to week, or does it depend on judgment and exceptions? If it is repeatable and low-risk, a control or automation may help. If it affects money movement or another high-risk decision, keep human approval in the loop. That is policy, not decoration.\n\nThe next step is simple: document one live workflow, the current owner, the approval threshold, and one recent counting error. If you cannot describe those four things cleanly, the rule is probably not ready for automation yet. If you can, you have a bounded decision instead of a vague AI project. A tidy little spreadsheet argument, basically."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-062",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": [
+      {
+        "dimension": "clarity",
+        "severity": "noncritical",
+        "location_kind": "quote",
+        "text_field": "body",
+        "quote": "counted, with actually where changes decision: rule How on If repeatable sign-off. an confidence and a wrong? is spot have the a whether only answer approval decide to who a one week.",
+        "missing_requirement": null,
+        "rule_id": "R-N-2",
+        "evidence_ids": [
+          "BRIEF",
+          "S01"
+        ],
+        "reason": "The body is materially disordered and difficult to parse, so the intended reader cannot reliably follow the main point or reasoning on a first careful read."
+      },
+      {
+        "dimension": "actionability",
+        "severity": "noncritical",
+        "location_kind": "quote",
+        "text_field": "body",
+        "quote": "From whatever That don’t The later? trigger you one is write help, the That human. ready, a automation there, to instead is question human discussion.",
+        "missing_requirement": null,
+        "rule_id": "R-N-3",
+        "evidence_ids": [
+          "BRIEF",
+          "S01"
+        ],
+        "reason": "The post does not present one clear, executable practical next step as required; any suggested action is obscured by the incoherent wording and cannot be followed reliably."
+      }
+    ]
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-062",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-062-1",
+        "repairs": [
+          {
+            "repair_id": "P01",
+            "target_ids": [
+              "D01",
+              "D02"
+            ],
+            "instruction": "Rewrite the body into clear, standard English with a simple paragraph order: define the counting rule problem, explain why it matters for a small-business workflow, then state one practical next step. Remove the disordered phrasing and keep the argument easy to follow on a first read.",
+            "source_ids": [
+              "BRIEF",
+              "S01"
+            ]
+          },
+          {
+            "repair_id": "P02",
+            "target_ids": [
+              "D02"
+            ],
+            "instruction": "Add one concrete next step the owner can actually do, such as writing down the current counting rule, checking whether it is repeatable, and deciding whether a human approval or automation control is needed. Keep it as a single bounded workflow decision, not a general discussion.",
+            "source_ids": [
+              "BRIEF",
+              "S01"
+            ]
+          }
+        ]
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-062",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-414",
+        "title": "Measuring counting rules starts with one workflow",
+        "body": "If you are measuring a counting rule, start by naming the one recurring thing you count and the decision it feeds. For a small business, that could be invoices, leads, stock checks, or form submissions. The point is not the count itself; it is whether the count is repeatable enough to trust when someone uses it to act.\n\nWrite down the current rule in plain English: what counts, what does not count, who checks it, and what happens if the number is wrong. Then ask one practical question: does this rule stay the same from week to week, or does it depend on judgment and exceptions? If it is repeatable and low-risk, a control or automation may help. If it affects money movement or another high-risk decision, keep human approval in the loop. That is policy, not decoration.\n\nThe next step is simple: document one live workflow, the current owner, the approval threshold, and one recent counting error. If you cannot describe those four things cleanly, the rule is probably not ready for automation yet. If you can, you have a bounded decision instead of a vague AI project. A tidy little spreadsheet argument, basically."
+      },
+      "gate_key": "SE-FINAL-M062_gate1__a001"
+    }
+  ],
+  "measurement_status": "complete",
+  "planner": {
+    "item_id": "E-PLAN-514",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task authorizes no CTA. End with a practical next-step observation for the owner rather than a meeting invitation or diagnostic prompt."
+      },
+      {
+        "lesson_id": "L02",
+        "application": "The approved evidence describes Bareni's no-lock-in positioning and human-approval requirement as policy. Preserve these qualifiers when discussing workflow control and decision authority."
+      },
+      {
+        "lesson_id": "L03",
+        "application": "The abstract topic 'measuring counting rules' has no direct support in company evidence. Reframe it as a concrete workflow decision—defining what recurring data counts matter and who verifies them—rather than explaining counting methodology in general."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Identify one recurring workflow where the owner manually counts, categorizes, or validates data that feeds a business decision. Ask: what do you count weekly or daily, who checks it, and what happens if it's wrong?",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Define the decision boundary: what outcome or threshold triggers action (approval, payment, next step)? Distinguish between low-risk repetitive counting and high-risk decisions that require human sign-off.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L02"
+        ],
+        "evidence_ids": [
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Map the current control: how does the owner detect an error, reverse it, or audit the count after the fact? This determines whether automation can safely replace manual verification or must add a human-approval gate.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L02"
+        ],
+        "evidence_ids": [
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Assess fit: does the counting step have a measurable, repeatable input (e.g., invoice lines, form submissions, inventory records) and a clear yes/no or quantified rule? If yes, AI can assist; if the rule is subjective or context-dependent, manual work remains.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C01"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Decide the ownership model: if you automate this, who holds the data, tool account, and final approval authority? Confirm that cost and timeline fit your hiring or software budget.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L02"
+        ],
+        "evidence_ids": [
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Document the next diagnostic step: write down the one workflow, the current owner time cost, the approval rule, and one past error. Use this as your diagnostic brief.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "Do not introduce invented customers, deployments, results, capabilities, multi-person teams, or sales CTAs. Frame all examples as workflow-decision patterns, not customer case studies."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Emphasize that high-risk decisions require human approval. Preserve the policy that money movement is never autonomous and that out-of-scope services (cold email, medical, legal, financial) are declined."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Maintain the frozen persona: plain-speaking technical expert, founder-to-founder tone, no hype, and no CTA per task authorization. Do not modify identity, audience scope, or approval boundaries."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use plain English. Keep any proposal or example distinct from existing capabilities. Do not invent benchmark numbers, ROI, or productivity claims. Cite only supplied evidence."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-614",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits"
+          },
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step"
+          }
+        ],
+        "rationale": "This is a diagnostic instruction and set of questions to the reader, not an assertion of a current capability, customer or observed result. It matches the approved diagnostic focus on identifying one recurring workflow.",
+        "use_guidance": "Keep as an explicitly framed diagnostic question for the reader. Do not attach any implied outcome, saving or claim that Bareni has run this with customers, and do not turn it into a booking or meeting prompt (no CTA authorised)."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C03",
+            "quote": "amount-based human-only approval"
+          }
+        ],
+        "rationale": "An instruction to define a decision threshold and separate low-risk repetition from decisions needing human sign-off; it proposes a workflow step rather than reporting an implemented system.",
+        "use_guidance": "Keep as a proposed decision step. Preserve the mandatory human-approval boundary for money movement and other high-risk decisions; do not suggest that any threshold permits autonomous payment or approval."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C03",
+            "quote": "persistent audit records work"
+          },
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step"
+          }
+        ],
+        "rationale": "A mapping instruction about the reader's existing error detection and audit controls; it does not assert Bareni capability, deployment or observed result.",
+        "use_guidance": "Keep as a proposed control-mapping step. Frame audit/approval capability only as demonstrated in Bareni's synthetic AP demo if referenced at all; do not imply automation has replaced human verification anywhere in practice."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "have a frequent, repeatable workflow with a\n  measurable outcome"
+          },
+          {
+            "source_id": "C02",
+            "quote": "says honestly whether AI fits"
+          }
+        ],
+        "rationale": "A fit-assessment instruction with an honest exclusion path (manual work remains when the rule is subjective). It proposes criteria rather than asserting a proven capability.",
+        "use_guidance": "Keep proposed and conditional. Use generic examples only as illustrations; do not imply working OCR/scan ingestion or three-way matching, since those are not implemented, and avoid framing 'AI can assist' as a guaranteed result."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "Finished code is handed to the customer. Database, automation-tool, and API\n  accounts are in the customer's name from the start."
+          },
+          {
+            "source_id": "C02",
+            "quote": "Describe this as policy and no-lock-in positioning, not an absolute legal warranty."
+          },
+          {
+            "source_id": "C02",
+            "quote": "Timings are intended scopes, not guarantees."
+          }
+        ],
+        "rationale": "The ownership and approval prompt is supported in core, but the claim as written omits the required qualifier that customer-name accounts and code handover are Bareni policy and no-lock-in positioning rather than a warranty, and that cost/timeline references are intended scopes, not guarantees.",
+        "use_guidance": "Add the qualifier: state ownership of data, accounts and code as Bareni's stated policy/no-lock-in positioning, not a legal guarantee, and present any price or timeline framing as intended scope rather than a guaranteed figure. Keep final approval authority with the human owner. Do not state or imply any specific cost, saving or hiring comparison number."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "Normal sequence: free 30-minute diagnostic; free one-page pilot proposal"
+          },
+          {
+            "source_id": "S01",
+            "quote": "Turn the abstract topic into a bounded Bareni workflow decision. Explain one practical next step."
+          }
+        ],
+        "rationale": "A manual, self-serve documentation step the reader performs; it is a proposed next step, not a claim about existing software or customer work.",
+        "use_guidance": "Keep as the single practical next step, framed as a written note the reader makes themselves. Do not invite the reader to send it, book a call or discuss it with Bareni, since the task authorises no CTA; the reader's own time-cost and error entries are their data, not Bareni evidence."
+      }
+    ]
+  },
+  "selected_lessons": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. This includes indirect meeting prompts and direct brand-level offers such as a free 30-minute diagnostic. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025",
+        "B3-SUMMARY",
+        "SE-FINAL-N079"
+      ]
+    },
+    {
+      "lesson_id": "L02",
+      "text": "When approved evidence presents an operational practice as policy or positioning, keep that qualifier in the copy. Do not rewrite it as an absolute guarantee or warranty-level statement.",
+      "source_event_ids": [
+        "B3-SUMMARY",
+        "SE-FINAL-N080"
+      ]
+    },
+    {
+      "lesson_id": "L03",
+      "text": "If the source set does not support a substantive explanatory claim, replace it with a neutral workflow prompt or decision step rather than filling the gap with general background explanation.",
+      "source_event_ids": [
+        "B3-SUMMARY",
+        "SE-FINAL-N091"
+      ]
+    }
+  ],
+  "register_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "planner_key": "SE-FINAL-N107_planner__a002",
+  "researcher_key": "SE-FINAL-N107_researcher__a001",
+  "writer_key": "SE-FINAL-N107_writer__a001",
+  "final_key": "SE-FINAL-M062_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-M062_gate1__a001",
+  "production_completed_at": "2026-09-08T13:38:27.168658+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts",
+  "initial_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-062",
+    "scores": {
+      "persona_fit": 1,
+      "clarity": 1,
+      "actionability": 1,
+      "factual_grounding": 2
+    },
+    "reasons": {
+      "persona_fit": "The text is an incoherent jumble of words that completely fails to convey Bareni's calm, practical voice, audience, or positioning.",
+      "clarity": "The body is completely scrambled, ungrammatical word salad with no coherent sentence structure or discernible meaning.",
+      "actionability": "Because the content is nonsensical word soup, it offers no usable decision rule, guidance, or concrete next step.",
+      "factual_grounding": "The scrambled syntax prevents any coherent factual statements or workflow mechanisms from being articulated or grounded."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 5,
+    "pass": false,
+    "low_quality": true
+  },
+  "final_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-062",
+    "scores": {
+      "persona_fit": 5,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Speaks directly to a small business owner in Bareni's calm, practical voice, adhering strictly to scope limits, human approval rules, and the zero-CTA constraint.",
+      "clarity": "The core premise and diagnostic criteria are cleanly laid out in plain English with a straightforward logical progression.",
+      "actionability": "Provides a concrete four-part checklist (workflow, owner, threshold, recent error) to determine whether a rule is ready for automation.",
+      "factual_grounding": "Makes no unsupported claims, benchmarks, or invented customer stories, and correctly preserves Bareni's required human-in-the-loop safeguards."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 20,
+    "pass": true,
+    "low_quality": false
+  },
+  "evaluation_reused": false,
+  "evaluation_keys": [
+    "SE-FINAL-M062_eval_initial__a001",
+    "SE-FINAL-M062_eval_final__a001"
+  ],
+  "completed_at": "2026-09-08T13:38:45.543090+00:00"
+}

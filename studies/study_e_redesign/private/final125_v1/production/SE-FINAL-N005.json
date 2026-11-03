@@ -1,0 +1,267 @@
+{
+  "task_id": "SE-FINAL-N005",
+  "batch_id": 1,
+  "condition": "natural",
+  "source_task_id": null,
+  "topic": "early signs of encoding errors",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-305",
+    "title": "Early encoding errors are a workflow check, not a vague AI problem",
+    "body": "If you are seeing early signs of encoding errors, treat them as a workflow issue first, not an AI problem. The practical question is simple: where does garbled text first show up in your business? That might be customer names in invoices, broken subject lines in email, or imported records that do not read cleanly in your CRM.\n\nThe next step is to pick one recurring incident and trace it backwards. Note where the text entered the system, what format it arrived in, and who noticed the problem. Then write down how you handle it now: manual review, a customer complaint, a rejected import, or a fix before the data moves on. That gives you a real baseline instead of a guess.\n\nFrom there, decide whether the fix looks rule-based and reversible. If the issue is just a repeatable character or charset problem, a bounded automation may fit. If it depends on scan-heavy documents, OCR, or sensitive data, that is a stronger sign to stop and keep it manual for now. Human approval should still sit before any downstream change that could create a business risk. The trick is to automate the boring part, not hand the keys to the wrong door.\n\nFor a small business, that is usually enough to decide whether the next move is a manual cleanup, a tighter control, or a one-page pilot proposal. No drama, just fewer strange characters."
+  },
+  "final": {
+    "item_id": "E-OPT-405",
+    "title": "Early encoding errors call for one workflow check",
+    "body": "If you are seeing early signs of encoding errors, treat them as a workflow issue first, not as a vague AI problem. The practical question is simple: where does garbled text first show up in your business? That might be customer names in invoices, broken subject lines in email, or imported records that do not read cleanly in your CRM.\n\nThe next step is to pick one recurring incident and trace it backwards. Note where the text entered the system, what format it arrived in, and who noticed the problem. Then write down how you handle it now: manual review, a customer complaint, a rejected import, or a fix before the data moves on. That gives you a real baseline instead of a guess.\n\nFrom there, decide whether the fix looks rule-based and reversible. If the issue is just a repeatable character or charset problem, a bounded automation may fit. If it depends on scan-heavy documents, OCR, or sensitive data, that is a stronger sign to stop and keep it manual for now. Human approval should still sit before any downstream change that could create a business risk. The trick is to automate the boring part, not hand the keys to the wrong door.\n\nFor a small business, that is usually enough to decide whether the next move is a manual cleanup, a tighter control, or a one-page pilot proposal. No drama, just fewer strange characters."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-005",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-005",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-005-1",
+        "repairs": []
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-005",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-405",
+        "title": "Early encoding errors call for one workflow check",
+        "body": "If you are seeing early signs of encoding errors, treat them as a workflow issue first, not as a vague AI problem. The practical question is simple: where does garbled text first show up in your business? That might be customer names in invoices, broken subject lines in email, or imported records that do not read cleanly in your CRM.\n\nThe next step is to pick one recurring incident and trace it backwards. Note where the text entered the system, what format it arrived in, and who noticed the problem. Then write down how you handle it now: manual review, a customer complaint, a rejected import, or a fix before the data moves on. That gives you a real baseline instead of a guess.\n\nFrom there, decide whether the fix looks rule-based and reversible. If the issue is just a repeatable character or charset problem, a bounded automation may fit. If it depends on scan-heavy documents, OCR, or sensitive data, that is a stronger sign to stop and keep it manual for now. Human approval should still sit before any downstream change that could create a business risk. The trick is to automate the boring part, not hand the keys to the wrong door.\n\nFor a small business, that is usually enough to decide whether the next move is a manual cleanup, a tighter control, or a one-page pilot proposal. No drama, just fewer strange characters."
+      },
+      "gate_key": "SE-FINAL-N005_gate1__a001"
+    }
+  ],
+  "measurement_status": "pending",
+  "planner": {
+    "item_id": "E-PLAN-505",
+    "selected_lessons": [],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Define encoding errors as a concrete workflow problem: identify where character mismatches, data corruption, or garbled text appear in the owner's current tools (email, CRM, invoices, or customer data). Ask: which repeated task creates the most visible encoding damage, and how often does it happen?",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Establish the current manual control: describe how the owner or team spot and fix encoding errors now (manual review, customer complaints, rejected imports). Quantify the weekly time spent on detection and correction.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Map the data flow: trace where encoded text enters (API, CSV upload, email parser, form submission) and where it must be readable (invoice system, customer records, outbound communication). Identify the point at which human approval is required before the data moves downstream.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Assess fit for automation: determine whether the encoding repair is rule-based and reversible (e.g. UTF-8 normalization, charset detection) or requires external services. Confirm that the workflow is repeatable, measurable, and does not involve high-sensitivity data that falls outside Bareni's current scope.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Propose a one-page pilot: if fit is confirmed, sketch a bounded MVP—detect encoding errors at the entry point, log them, and flag for human review before processing. Define success as \"reduction in manual correction time\" and set a fixed price and two-week delivery window.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Next step: invite the owner to a free 30-minute diagnostic call to walk through one current encoding-error incident together, confirm the workflow, and decide whether a pilot proposal makes sense.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "S01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "Do not claim customer results, deployed systems, or capability improvements. Refer only to self-built demo scope (C03) and current Bareni offering (C02). No sales pressure or invented timings."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Require human approval before any data modification or downstream process trigger. Exclude high-sensitivity data per C04. Present automation as detection and flagging, not autonomous correction."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Maintain frozen persona: owner-operator decision-maker, bounded automation investment choice, plain technical voice, human authority retained. Use evidence_ids from C01–C05 and S01 only."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use plain examples (e.g. 'garbled customer names in invoices') and distinguish between the owner's current manual practice, the proposed pilot scope, and Bareni's demonstrated capabilities. No hype or unsupported claims."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-605",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits"
+          },
+          {
+            "source_id": "C01",
+            "quote": "have a frequent, repeatable workflow with a measurable outcome"
+          }
+        ],
+        "rationale": "This is a diagnostic instruction and set of questions for the reader, not an assertion that Bareni has built or observed encoding-error detection anywhere. Framing an abstract topic as one recurring workflow with a frequency question is consistent with the approved diagnostic model.",
+        "use_guidance": "Keep as an explicitly proposed diagnostic question in plain English; do not imply Bareni has already inspected any customer's tools or found such errors."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "The representative pains are 8–10 hours a week of repeated customer questions, neglected sales leads,\n  and manual invoice/data work"
+          },
+          {
+            "source_id": "C02",
+            "quote": "defines pilot scope, fixed price, and measures"
+          }
+        ],
+        "rationale": "An instruction to the owner to describe and time their existing manual detection and correction practice. It asks the owner to produce their own figure rather than asserting any Bareni-supplied number or observed result.",
+        "use_guidance": "Keep as a proposed baseline-measurement step; the owner supplies the hours. Do not import the 8–10 hours persona scenario or any other figure as a measured or typical result."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C03",
+            "quote": "amount-based human-only approval,\n  refusal of agent approval/payment attempts, and persistent audit records work"
+          }
+        ],
+        "rationale": "A mapping exercise plus a control-design step. Locating the human approval point is a permissible recommendation aligned with the mandatory human-approval boundary, not a claim about an existing implemented data-flow tool.",
+        "use_guidance": "Keep proposed; state that human approval is required before money movement or other high-risk downstream action, and do not present any encoding data-flow mapping tool as existing software."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Bareni currently declines high-sensitivity medical, legal, and financial work;\n  bulk cold-email automation; scan-heavy OCR-dependent workflows"
+          },
+          {
+            "source_id": "C02",
+            "quote": "says honestly whether AI fits"
+          }
+        ],
+        "rationale": "A fit-assessment instruction with named exclusion checks. It recommends a test rather than asserting that Bareni has implemented charset detection or UTF-8 normalisation.",
+        "use_guidance": "Keep proposed. Also flag scan-heavy/OCR-dependent variants as currently out of scope, and present these boundaries as current scope discipline rather than a permanent technical limit. Do not imply working OCR or PDF/scan ingestion."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "free one-page pilot proposal;\n  paid working MVP in days; fixed-price pilot in weeks"
+          },
+          {
+            "source_id": "C02",
+            "quote": "Timings are intended scopes, not guarantees."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Never invent a benchmark, guarantee, ROI,\n  saving, revenue lift, productivity result"
+          }
+        ],
+        "rationale": "The one-page proposal, bounded MVP, fixed price, human review flag and pilot-in-weeks sequence are supported, but the claim states a definite \"two-week delivery window\" without the required intended-scope caveat, and \"reduction in manual correction time\" as a success measure needs the owner's own baseline rather than any promised saving.",
+        "use_guidance": "Add the qualification that pilot timing is an intended scope, not a guarantee, and that the success measure is a target agreed against the owner's own baseline, not a promised or observed reduction. Keep the pilot itself explicitly as a proposal; a paid working MVP in days may precede the fixed-price pilot."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "FORBIDDEN",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Use it only for\n  purchase-intent content, once, at the end."
+          }
+        ],
+        "rationale": "The approved task explicitly authorises no CTA, so inviting the reader to book a free 30-minute diagnostic is a prohibited action for this item, even though the diagnostic itself exists as a service.",
+        "use_guidance": "Exclude the invitation and any booking CTA. If a closing line is needed, use at most one soft informational sentence about examining one recent encoding incident. The existence of a free 30-minute diagnostic is separately supported by C02, but that does not approve using it as a CTA here."
+      }
+    ]
+  },
+  "selected_lessons": [],
+  "register_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "planner_key": "SE-FINAL-N005_planner__a001",
+  "researcher_key": "SE-FINAL-N005_researcher__a001",
+  "writer_key": "SE-FINAL-N005_writer__a001",
+  "final_key": "SE-FINAL-N005_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-N005_gate1__a001",
+  "production_completed_at": "2026-09-08T12:12:06.699908+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts"
+}

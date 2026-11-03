@@ -1,0 +1,84 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I115-R1",
+    "item_id": "SEA-I115",
+    "repeat": 1,
+    "arm_order": [
+      "critic_off",
+      "critic_on"
+    ],
+    "content_id": "POST-3da51b7f9f2c49a49a0b3190"
+  },
+  "arms": {
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-3da51b7f9f2c49a49a0b3190-1",
+        "title": "Positioning drift starts where your offer and delivery diverge",
+        "body": "Positioning drift usually starts in a workflow, not in the logo.\n\nIf your website says one thing, your proposal says another, and your invoice or sales call introduces a third version, customers are not seeing a single offer. They are seeing drift. For a small business owner, that is usually a workflow problem before it is a branding problem.\n\nThe practical next step is simple: review your last five proposals, invoices, or customer conversations against your current website and email signature. Look for one clear mismatch. For example, a line that promises something you do not actually include, a price that no longer matches what you charge, or wording that describes a service you no longer want to sell.\n\nThen decide, as the owner, which side changes: update the documentation to match the real delivery, or change the delivery to match the promise. Keep that decision human. If the mismatch is repeated often, note the workflow for later. A clean offer makes later automation easier, but that is just reasoning, not a promised result. The build stays technical; the conversation does not.\n\nIf you are still explaining the same offer in three different ways, start there."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-3da51b7f9f2c49a49a0b3190-1",
+            "title": "Positioning drift starts where your offer and delivery diverge",
+            "body": "Positioning drift usually starts in a workflow, not in the logo.\n\nIf your website says one thing, your proposal says another, and your invoice or sales call introduces a third version, customers are not seeing a single offer. They are seeing drift. For a small business owner, that is usually a workflow problem before it is a branding problem.\n\nThe practical next step is simple: review your last five proposals, invoices, or customer conversations against your current website and email signature. Look for one clear mismatch. For example, a line that promises something you do not actually include, a price that no longer matches what you charge, or wording that describes a service you no longer want to sell.\n\nThen decide, as the owner, which side changes: update the documentation to match the real delivery, or change the delivery to match the promise. Keep that decision human. If the mismatch is repeated often, note the workflow for later. A clean offer makes later automation easier, but that is just reasoning, not a promised result. The build stays technical; the conversation does not.\n\nIf you are still explaining the same offer in three different ways, start there."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-3da51b7f9f2c49a49a0b3190-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    },
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-3da51b7f9f2c49a49a0b3190-1",
+        "title": "Positioning drift starts in the workflow, not the logo",
+        "body": "Positioning drift usually starts in the workflow, not in the logo.\n\nFor a small business, the first place it shows up is simple: your website, proposal, invoice language, and sales conversations stop saying the same thing. Maybe the site promises one kind of service, the proposal frames it differently, and the invoice or email signature adds another version. Then customers ask scope questions you thought were already answered.\n\nThat is the bounded workflow decision: is the mismatch in your message, or in what you actually deliver?\n\nMy practical next step is to audit your last five proposals, invoices, or customer conversations against your current website copy. Look for one concrete mismatch. Examples: a service mentioned on the site but not in delivery, a price described one way in email and another in a proposal, or an included support term that is no longer true.\n\nIf you find one, fix the document that creates the confusion first. If the promise is wrong, update the site or proposal template. If the delivery changed, remove the promise. That is a human approval decision, and it should stay that way.\n\nIf you later automate parts of the workflow, you want the system to reinforce the real offer, not a stale version of it. Otherwise the automation just scales the confusion. Not ideal."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-3da51b7f9f2c49a49a0b3190-1",
+            "title": "Positioning drift starts in the workflow, not the logo",
+            "body": "Positioning drift usually starts in the workflow, not in the logo.\n\nFor a small business, the first place it shows up is simple: your website, proposal, invoice language, and sales conversations stop saying the same thing. Maybe the site promises one kind of service, the proposal frames it differently, and the invoice or email signature adds another version. Then customers ask scope questions you thought were already answered.\n\nThat is the bounded workflow decision: is the mismatch in your message, or in what you actually deliver?\n\nMy practical next step is to audit your last five proposals, invoices, or customer conversations against your current website copy. Look for one concrete mismatch. Examples: a service mentioned on the site but not in delivery, a price described one way in email and another in a proposal, or an included support term that is no longer true.\n\nIf you find one, fix the document that creates the confusion first. If the promise is wrong, update the site or proposal template. If the delivery changed, remove the promise. That is a human approval decision, and it should stay that way.\n\nIf you later automate parts of the workflow, you want the system to reinforce the real offer, not a stale version of it. Otherwise the automation just scales the confusion. Not ideal."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-3da51b7f9f2c49a49a0b3190-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": [
+            {
+              "repair_id": "P01",
+              "target_ids": [
+                "D01",
+                "D02"
+              ],
+              "instruction": "Rewrite the body into clear, plain English so the argument can be followed on a first read. Remove the incoherent fragments and replace them with one bounded workflow diagnosis about positioning drift: explain that drift often shows up when the website, proposal, invoice language, and sales conversations no longer say the same thing, then give one practical next step the owner can do immediately.",
+              "source_ids": [
+                "BRIEF",
+                "S01",
+                "C01",
+                "C02",
+                "C05"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

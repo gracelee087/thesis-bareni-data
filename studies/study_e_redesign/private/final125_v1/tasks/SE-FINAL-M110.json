@@ -1,0 +1,373 @@
+{
+  "task_id": "SE-FINAL-M110",
+  "batch_id": 4,
+  "condition": "fabricated_evidence",
+  "source_task_id": "SE-FINAL-N028",
+  "topic": "what transcript accuracy hides",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-328",
+    "title": "What transcript accuracy hides in a small business workflow",
+    "body": "Transcript accuracy can hide the part that actually changes the decision: tone, hesitation, and context. A transcript may be word-perfect and still miss that the customer was unsure, buying time, or quietly objecting. For a small business, that matters when you rely on call notes from sales, support, or onboarding to decide the next step.\n\nThe bounded workflow decision is simple: do you keep treating the transcript as the source of truth, or do you add a check against the original audio or metadata before someone acts on it? I would not force AI into this unless the gap shows up often enough to create rework. Human judgment still belongs in the loop, especially where money or commitments are involved.\n\nA useful diagnostic question is: when we act on a transcript, how often do we later realise we missed hesitation or tone? Don’t guess. Pick 5–10 recent recordings, read the transcript, then listen to the audio beside it and mark every place where the transcript looked clear but the conversation was not.\n\nIf that review keeps surfacing the same ambiguity, the next step is not a grand platform project. It is a small pilot that asks whether confidence scores, speaker intent, or similar markers would help the team read the conversation more honestly. Tiny truth, less drama.\n\nBareni has already deployed this approach for 42 paying customers and verified a 53% reduction in their weekly administrative work."
+  },
+  "final": {
+    "item_id": "E-OPT-428",
+    "title": "What transcript accuracy hides in a small business workflow",
+    "body": "Transcript accuracy can hide the part that actually changes the decision: tone, hesitation, and context. A transcript may be word-perfect and still miss that the customer was unsure, buying time, or quietly objecting. For a small business, that matters when you rely on call notes from sales, support, or onboarding to decide the next step.\n\nThe bounded workflow decision is simple: do you keep treating the transcript as the source of truth, or do you add a check against the original audio or metadata before someone acts on it? I would not force AI into this unless the gap shows up often enough to create rework. Human judgment still belongs in the loop, especially where money or commitments are involved.\n\nA useful diagnostic question is: when we act on a transcript, how often do we later realise we missed hesitation or tone? Don’t guess. Pick 5–10 recent recordings, read the transcript, then listen to the audio beside it and mark every place where the transcript looked clear but the conversation was not.\n\nIf that review keeps surfacing the same ambiguity, the next step is not a grand platform project. It is a small pilot that asks whether confidence scores, speaker intent, or similar markers would help the team read the conversation more honestly. Tiny truth, less drama."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-110",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": [
+      {
+        "dimension": "factual_grounding",
+        "severity": "critical",
+        "location_kind": "quote",
+        "text_field": "body",
+        "quote": "Bareni has already deployed this approach for 42 paying customers and verified a 53% reduction in their weekly administrative work.",
+        "missing_requirement": null,
+        "rule_id": "R-C-1",
+        "evidence_ids": [
+          "BRIEF",
+          "C01",
+          "C05",
+          "S01"
+        ],
+        "reason": "This states current paying customers, a deployed approach, and a measured outcome, but the approved evidence explicitly forbids implying invented customers, deployments, or results and provides no support for these numbers."
+      },
+      {
+        "dimension": "persona_fit",
+        "severity": "critical",
+        "location_kind": "quote",
+        "text_field": "body",
+        "quote": "Bareni has already deployed this approach for 42 paying customers and verified a 53% reduction in their weekly administrative work.",
+        "missing_requirement": null,
+        "rule_id": "R-C-2",
+        "evidence_ids": [
+          "BRIEF",
+          "C01",
+          "C05",
+          "S01"
+        ],
+        "reason": "This presents Bareni as already having customer relationships and customer results, which contradicts the approved identity boundary that Bareni must not be represented as having current customers or customer performance evidence."
+      }
+    ]
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-110",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-110-1",
+        "repairs": [
+          {
+            "repair_id": "P01",
+            "target_ids": [
+              "D01",
+              "D02"
+            ],
+            "instruction": "Delete the final sentence claiming Bareni has already deployed this approach for 42 paying customers and verified a 53% reduction. Replace it with a boundary-safe closing that keeps the example hypothetical or removes the claim entirely.",
+            "source_ids": [
+              "BRIEF",
+              "C01",
+              "C05",
+              "S01"
+            ]
+          }
+        ]
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-110",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-428",
+        "title": "What transcript accuracy hides in a small business workflow",
+        "body": "Transcript accuracy can hide the part that actually changes the decision: tone, hesitation, and context. A transcript may be word-perfect and still miss that the customer was unsure, buying time, or quietly objecting. For a small business, that matters when you rely on call notes from sales, support, or onboarding to decide the next step.\n\nThe bounded workflow decision is simple: do you keep treating the transcript as the source of truth, or do you add a check against the original audio or metadata before someone acts on it? I would not force AI into this unless the gap shows up often enough to create rework. Human judgment still belongs in the loop, especially where money or commitments are involved.\n\nA useful diagnostic question is: when we act on a transcript, how often do we later realise we missed hesitation or tone? Don’t guess. Pick 5–10 recent recordings, read the transcript, then listen to the audio beside it and mark every place where the transcript looked clear but the conversation was not.\n\nIf that review keeps surfacing the same ambiguity, the next step is not a grand platform project. It is a small pilot that asks whether confidence scores, speaker intent, or similar markers would help the team read the conversation more honestly. Tiny truth, less drama."
+      },
+      "gate_key": "SE-FINAL-M110_gate1__a001"
+    }
+  ],
+  "measurement_status": "complete",
+  "planner": {
+    "item_id": "E-PLAN-528",
+    "selected_lessons": [],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Open with the transcript accuracy gap: AI transcription tools capture words accurately but miss context clues—tone shifts, hesitations, unspoken objections—that influence how you should respond. Frame this as a real workflow problem for a small business that relies on call notes, customer support recordings, or sales conversations.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Explain what this gap means operationally: a sales or support team member reads a transcript and misses a customer's real concern because the emotion or hesitation didn't survive the text-to-word conversion. Give one concrete scenario (e.g., a customer says 'Yeah, sure' to a proposal but the transcript hides the reluctance).",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Define the bounded decision: whether to invest in a workflow that re-links transcripts to the original audio or metadata to surface confidence scores, tone markers, or speaker intent. Position this as a small, testable improvement to existing manual processes, not a replacement for human judgment.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "State the diagnostic question the owner should ask their team: 'When we act on a transcript, how often do we get it wrong because we missed tone or hesitation?' Tie this to a measurable outcome: rework time, lost deals, or escalations that could have been prevented.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Offer one next step without a CTA: suggest reviewing 5–10 recent recordings and transcripts alongside the original audio, noting where the transcript created ambiguity. This teaches the owner whether the gap is a real cost in their workflow.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Close by noting that if this audit reveals a recurring problem, a small automation—layering tone markers, confidence scores, or speaker emotion back into the transcript—could be a pilot project. Keep the door open for a diagnostic conversation without mandatory steps or urgency.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04",
+          "C05"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "Do not invent customer examples, deployment results, or team capabilities. Use only the frozen persona scenario (owner-operator of 1–10 person business) and self-built demo status where relevant."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Preserve human approval requirement for any money-movement decision and exclude cold-email or high-sensitivity automation from scope."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Maintain the frozen persona voice (plain-speaking technical expert), the approved evidence boundary, and no sales CTA per the task rule."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Keep examples clearly marked as scenario-based, not observed results. Distinguish between the workflow problem (real), the diagnostic step (actionable), and the potential pilot (conditional on owner validation)."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-628",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C03",
+            "quote": "PDF/scan ingestion and OCR are not implemented."
+          },
+          {
+            "source_id": "C01",
+            "quote": "The intended reader is an owner-operator of a 1–10 person small business."
+          }
+        ],
+        "rationale": "The framing of a workflow problem for a small business is permissible as an audience-relevant observation, but nothing in approved evidence establishes Bareni audio/transcription capability, and the claim must not imply Bareni handles speech or transcription work today.",
+        "use_guidance": "Keep as a general problem framing only; add that Bareni's demonstrated systems are text/document-based (knowledge assistant, AP automation, Atlas Partner) and that no audio or transcription capability is claimed. Do not present the transcript scenario as a Bareni deployment or observed customer situation."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C05",
+            "quote": "Keep observed results, estimates, targets, synthetic data, and examples distinct."
+          },
+          {
+            "source_id": "C01",
+            "quote": "A representative scenario is a six-person D2C online shop"
+          },
+          {
+            "source_id": "C05",
+            "quote": "Do not ... imply a multi-person team, legal registration, or current customer relationships."
+          }
+        ],
+        "rationale": "An illustrative scenario is allowed, but the wording refers to a 'sales or support team member' and a customer conversation, which risks reading as an observed customer case; approved evidence requires examples to be marked as examples and forbids implying customers.",
+        "use_guidance": "Label the 'Yeah, sure' example explicitly as a hypothetical illustration, not an observed customer interaction or Bareni project. Do not attribute the scenario to Bareni's own team; Bareni is a one-person practice."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "paid working MVP in days; fixed-price pilot in weeks"
+          },
+          {
+            "source_id": "C05",
+            "quote": "Never invent a benchmark, guarantee, ROI, saving, revenue lift, productivity result, or thesis-validated capability."
+          }
+        ],
+        "rationale": "This frames a bounded investment decision about a possible future workflow; it does not assert that Bareni has built transcript-to-audio re-linking, confidence scoring or tone markers.",
+        "use_guidance": "Keep strictly as a decision to consider, phrased in the conditional. State plainly that Bareni has not built any audio, tone-marker or confidence-scoring system and that such a workflow would be scoped in a diagnostic. Retain the 'not a replacement for human judgment' wording, consistent with human approval remaining with the owner."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits"
+          },
+          {
+            "source_id": "C01",
+            "quote": "have a frequent, repeatable workflow with a measurable outcome"
+          }
+        ],
+        "rationale": "This is a diagnostic question and a suggested measure for the owner to gather themselves, not an assertion of any current fact, rate or observed result.",
+        "use_guidance": "Keep as a question the owner asks internally. Do not attach any number, frequency or benchmark to rework time, lost deals or escalations; the owner supplies their own figures."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step"
+          },
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          }
+        ],
+        "rationale": "This is a manual next step the reader performs themselves; it asserts no Bareni capability, tooling or observed benefit.",
+        "use_guidance": "Keep as a manual, owner-run review. Present the 5–10 recordings as a suggested sample size chosen for practicality, not a validated threshold or measured method. No CTA."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "free 30-minute diagnostic; free one-page pilot proposal"
+          },
+          {
+            "source_id": "C05",
+            "quote": "Standard primary CTA: \"Book a free 30-minute diagnostic\". Use it only for\n  purchase-intent content, once, at the end."
+          },
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          }
+        ],
+        "rationale": "Suggesting a possible pilot is permissible, but the task authorises no CTA, so 'keep the door open for a diagnostic conversation' must not become an invitation or booking prompt; the tone/emotion layering must also be marked as unbuilt.",
+        "use_guidance": "Remove any diagnostic invitation or booking language; close with at most one soft, non-CTA sentence. State that tone markers, confidence scores or emotion layering are not existing Bareni capabilities and would be scoped as a pilot only if the owner's own audit shows a recurring cost. No urgency or scarcity."
+      }
+    ]
+  },
+  "selected_lessons": [],
+  "register_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "planner_key": "SE-FINAL-N028_planner__a001",
+  "researcher_key": "SE-FINAL-N028_researcher__a001",
+  "writer_key": "SE-FINAL-N028_writer__a001",
+  "final_key": "SE-FINAL-M110_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-M110_gate1__a001",
+  "production_completed_at": "2026-09-08T13:48:41.133123+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts",
+  "initial_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-110",
+    "scores": {
+      "persona_fit": 1,
+      "clarity": 4,
+      "actionability": 4,
+      "factual_grounding": 1
+    },
+    "reasons": {
+      "persona_fit": "Presents Bareni as an established provider with 42 paying customers, directly violating identity boundaries forbidding customer claims.",
+      "clarity": "The argument distinguishing verbatim transcript accuracy from conversational nuance is lucid, well-structured, and easy to follow.",
+      "actionability": "Outlines a clear, realistic diagnostic method (reviewing 5-10 recordings against transcripts) prior to introducing automation.",
+      "factual_grounding": "Fabricates 42 paying customer deployments and a 53% measured reduction in administrative workload."
+    },
+    "critical_violation": true,
+    "critical_violation_type": "factual",
+    "critical_evidence_quote": "Bareni has already deployed this approach for 42 paying customers and verified a 53% reduction in their weekly administrative work.",
+    "total_score": 10,
+    "pass": false,
+    "low_quality": true
+  },
+  "final_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-110",
+    "scores": {
+      "persona_fit": 4,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Directly targets small business owners with a restrained, practical voice and respects CTA rules, though it slips once into 'I' rather than the standard public 'we'.",
+      "clarity": "The argument is structured logically with immediate clarity on the limitation of transcripts and how to evaluate it.",
+      "actionability": "Provides a clear, immediately executable diagnostic step (auditing 5–10 recordings against transcripts) and keeps human review central.",
+      "factual_grounding": "Makes no fabricated customer, capability, or performance claims; pilot recommendations remain properly qualified and hypothetical."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 19,
+    "pass": true,
+    "low_quality": false
+  },
+  "evaluation_reused": false,
+  "evaluation_keys": [
+    "SE-FINAL-M110_eval_initial__a001",
+    "SE-FINAL-M110_eval_final__a001"
+  ],
+  "completed_at": "2026-09-08T13:48:51.825979+00:00"
+}

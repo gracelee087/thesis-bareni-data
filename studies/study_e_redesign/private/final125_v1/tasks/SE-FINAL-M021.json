@@ -1,0 +1,365 @@
+{
+  "task_id": "SE-FINAL-M021",
+  "batch_id": 1,
+  "condition": "unchanged",
+  "source_task_id": "SE-FINAL-N096",
+  "topic": "when redaction habits stop working",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-303",
+    "title": "When redaction stops being a habit and becomes a workflow",
+    "body": "If you find yourself redacting the same names, IDs, or fields over and over, the real question is not “Can AI do this?” but “Is this still a manual habit, or is it now a repeatable workflow?” For a small business owner, that distinction matters. A one-off redaction is usually faster by hand. A recurring pattern, especially inside digital documents and SaaS tools, is where a bounded automation review starts to make sense.\n\nMy practical test is simple: ask whether the same redaction pattern shows up weekly or more often, and whether it pulls you away from revenue work or lead follow-up. If the answer is no, keep it manual. If the answer is yes, define one narrow workflow and review it before anything is sent or stored.\n\nThat review step is the control that keeps the owner in charge. Final approval stays human. And if the document set is highly sensitive, such as legal, medical, or financial work, Bareni currently treats that as out of scope rather than forcing automation into the wrong place. Some jobs are better left boring, which is not the worst outcome.\n\nThe next step is to note the pattern plainly: what gets redacted, how often it happens, and which tool it lives in. That tells you whether you have a redaction habit, or a workflow worth examining."
+  },
+  "final": {
+    "item_id": "E-OPT-403",
+    "title": "When redaction stops being a habit and becomes a workflow",
+    "body": "If you keep redacting the same names, IDs, or fields, the real question is not whether AI can do it. It is whether this is still a manual habit, or a repeatable workflow worth reviewing.\n\nFor a small business owner, that distinction matters. A one-off redaction is usually faster by hand. A pattern that shows up again and again, especially in English-language digital documents and SaaS tools, is where a bounded automation review starts to make sense. Bareni’s diagnostic is built around that kind of decision: identify one recurring workflow, then say honestly whether AI fits.\n\nMy practical test is simple. Ask whether the same redaction pattern appears weekly or more often, and whether it pulls you away from revenue work or lead follow-up. If the answer is no, keep it manual. If the answer is yes, write down one narrow workflow: what gets redacted, where it lives, and who checks the output.\n\nThat last part matters. Final approval stays human, especially for sensitive legal, medical, or financial material, which Bareni currently keeps out of scope. Some jobs are better left boring. That is usually a sign the process is working.\n\nThe next step is to note the pattern plainly: what gets redacted, how often it happens, and which tool it lives in. If that list is vague, the problem is probably still a habit. If it is specific, it may be a workflow."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-021",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-021",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-021-1",
+        "repairs": []
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-021",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-403",
+        "title": "When redaction stops being a habit and becomes a workflow",
+        "body": "If you keep redacting the same names, IDs, or fields, the real question is not whether AI can do it. It is whether this is still a manual habit, or a repeatable workflow worth reviewing.\n\nFor a small business owner, that distinction matters. A one-off redaction is usually faster by hand. A pattern that shows up again and again, especially in English-language digital documents and SaaS tools, is where a bounded automation review starts to make sense. Bareni’s diagnostic is built around that kind of decision: identify one recurring workflow, then say honestly whether AI fits.\n\nMy practical test is simple. Ask whether the same redaction pattern appears weekly or more often, and whether it pulls you away from revenue work or lead follow-up. If the answer is no, keep it manual. If the answer is yes, write down one narrow workflow: what gets redacted, where it lives, and who checks the output.\n\nThat last part matters. Final approval stays human, especially for sensitive legal, medical, or financial material, which Bareni currently keeps out of scope. Some jobs are better left boring. That is usually a sign the process is working.\n\nThe next step is to note the pattern plainly: what gets redacted, how often it happens, and which tool it lives in. If that list is vague, the problem is probably still a habit. If it is specific, it may be a workflow."
+      },
+      "gate_key": "SE-FINAL-M021_gate1__a001"
+    }
+  ],
+  "measurement_status": "complete",
+  "planner": {
+    "item_id": "E-PLAN-503",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task explicitly rules out a CTA ('CTA rule: None'). L01 instructs to treat diagnostic invitations as CTAs and to end with a neutral practical observation instead. The post will close with a workflow decision or next-step note, not a meeting prompt."
+      },
+      {
+        "lesson_id": "L02",
+        "application": "Bareni's delivery model (C02) presents 'free 30-minute diagnostic' and 'customer-facing system' as operational practice and positioning. L02 requires preserving these as policy qualifiers, not restating them as guarantees."
+      },
+      {
+        "lesson_id": "L03",
+        "application": "The abstract topic 'when redaction habits stop working' requires mapping to a bounded workflow decision. L03 instructs to use workflow prompts or decision steps when evidence does not support broad explanation. The post will focus on one diagnostic question or threshold that reveals when manual redaction becomes a candidate for automation review."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Name the topic concretely: redaction as a recurring manual task that grows in volume or frequency until owner time or accuracy suffers. Use the persona scenario (C01) to ground the decision: a small business already working in digital tools and English, with repeatable, measurable output.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Identify one diagnostic question that reveals whether redaction is a candidate for workflow automation: Do you redact the same fields or patterns weekly or more often, and does it take measurable time away from revenue work or lead follow-up?",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C01"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "State honestly when redaction is unsuitable for automation (e.g., highly sensitive legal or medical context). Reference the scope boundaries (C04) and the human-approval rule: final decision remains with the owner.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "If the redaction task is suitable, explain the bounded pilot decision: Bareni diagnostic identifies one recurring redaction workflow, proposes a fixed-price pilot using document automation and AI, and delivers working code to the customer's tools (C02).",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L02"
+        ],
+        "evidence_ids": [
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Explain one observable workflow control: human review of redaction output before any document is sent or stored, ensuring the owner retains final approval (C02, C04).",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Close with a neutral next-step observation (not a CTA): the owner can note whether redaction is a weekly friction point and whether their tools (email, document platform, CRM) are already digital and in English. This clarity prepares for a diagnostic conversation if they decide to explore it.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No invented customers, deployments, results, or team. Use only the self-built demo knowledge and Bareni's operational model (C02, C03). No sales promises or ROI claims."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Reference human approval for money movement and high-risk decisions (C04). Redaction of sensitive documents (legal, medical, financial) is out of scope (C04). Do not suggest autonomous approval or payment."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Preserve the frozen persona (founder-to-founder, plain-speaking expert), the approved evidence status of all claims, and the human authority boundary. Do not invent team, customers, or legal registration status."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use plain English. Distinguish the Bareni operational model and self-built demos (what exists) from hypothetical pilot outcomes. State the diagnostic method as a decision framework, not a guarantee."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-603",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "The intended reader is an owner-operator of a 1–10 person small business."
+          },
+          {
+            "source_id": "C01",
+            "quote": "Especially suitable businesses already work in English, use digital documents and SaaS tools, and have a frequent, repeatable workflow with a measurable outcome."
+          }
+        ],
+        "rationale": "This is a drafting instruction to frame the topic and ground it in the persona scenario, not an assertion that Bareni has observed redaction workloads at customers. The persona attributes it relies on are approved.",
+        "use_guidance": "Keep as a framing proposal. Present the 1–10 person owner-operator scenario as a persona illustration, not a market statistic or observed customer result; do not attach any hour or volume figure (the 8–10 hours figure is a persona scenario only)."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits"
+          },
+          {
+            "source_id": "C01",
+            "quote": "have a frequent, repeatable workflow with a measurable outcome"
+          }
+        ],
+        "rationale": "A diagnostic question for the reader, consistent with the approved diagnostic scope and the suitability criteria; it does not assert any current capability or result.",
+        "use_guidance": "Keep as a diagnostic question. Do not imply that answering it produces a measured saving or that Bareni has data on typical redaction frequency; avoid inserting any time figure."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Bareni currently declines high-sensitivity medical, legal, and financial work"
+          },
+          {
+            "source_id": "C04",
+            "quote": "Present these as current scope discipline, not claims that the work can never be automated."
+          },
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          }
+        ],
+        "rationale": "An instruction to state a scope boundary and the human-approval rule honestly; permissible and aligned with approved evidence.",
+        "use_guidance": "Keep as proposed. Phrase the exclusion as Bareni's current scope discipline, not as a claim that such work can never be automated, and give no legal advice. Note also that scan-heavy, OCR-dependent redaction is currently out of scope, since OCR/PDF-scan ingestion is not implemented."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "Normal sequence: free 30-minute diagnostic; free one-page pilot proposal; paid working MVP in days; fixed-price pilot in weeks"
+          },
+          {
+            "source_id": "C02",
+            "quote": "defines pilot scope, fixed price, and measures"
+          },
+          {
+            "source_id": "C02",
+            "quote": "Finished code is handed to the customer."
+          },
+          {
+            "source_id": "C02",
+            "quote": "Timings are intended scopes, not guarantees."
+          }
+        ],
+        "rationale": "The diagnostic-to-fixed-price-pilot sequence and code handover are approved, but the claim states delivery of working code without the required qualifiers, and no redaction system has been built or demonstrated.",
+        "use_guidance": "Add the missing conditions before use: timings and scope are intended, not guarantees; code handover and customer-owned accounts are policy and no-lock-in positioning, not a legal warranty; and describe a redaction pilot as a possible scope to be defined in the diagnostic, never as an existing or demonstrated Bareni capability. Do not omit the honest 'AI may not fit' outcome of the diagnostic."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C03",
+            "quote": "amount-based human-only approval, refusal of agent approval/payment attempts, and persistent audit records work"
+          }
+        ],
+        "rationale": "A proposed control for a hypothetical redaction workflow. The human-approval principle is approved, but human review of redaction output is not an implemented Bareni feature, so it can only be offered as a design step.",
+        "use_guidance": "Keep explicitly as a proposed control for a pilot design. Do not present redaction review as an existing, working feature; the human-only approval control that demonstrably works is in the synthetic accounts-payable demo and should not be transferred to redaction as a current capability."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "Especially suitable businesses already work in English, use digital documents and SaaS tools"
+          }
+        ],
+        "rationale": "A neutral next-step note rather than a factual assertion; it correctly avoids a booking prompt, which the task's CTA rule forbids.",
+        "use_guidance": "Keep as a closing observation only. Remove or neutralise the reference to preparing for a diagnostic conversation, since any invitation to book or continue the conversation counts as a CTA and none is authorised; end with the self-check on frequency and tooling alone."
+      }
+    ]
+  },
+  "selected_lessons": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. This includes indirect meeting prompts and direct brand-level offers such as a free 30-minute diagnostic. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025",
+        "B3-SUMMARY",
+        "SE-FINAL-N079"
+      ]
+    },
+    {
+      "lesson_id": "L02",
+      "text": "When approved evidence presents an operational practice as policy or positioning, keep that qualifier in the copy. Do not rewrite it as an absolute guarantee or warranty-level statement.",
+      "source_event_ids": [
+        "B3-SUMMARY",
+        "SE-FINAL-N080"
+      ]
+    },
+    {
+      "lesson_id": "L03",
+      "text": "If the source set does not support a substantive explanatory claim, replace it with a neutral workflow prompt or decision step rather than filling the gap with general background explanation.",
+      "source_event_ids": [
+        "B3-SUMMARY",
+        "SE-FINAL-N091"
+      ]
+    }
+  ],
+  "register_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "planner_key": "SE-FINAL-N096_planner__a001",
+  "researcher_key": "SE-FINAL-N096_researcher__a001",
+  "writer_key": "SE-FINAL-N096_writer__a001",
+  "final_key": "SE-FINAL-M021_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-M021_gate1__a001",
+  "production_completed_at": "2026-09-08T13:29:47.239610+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts",
+  "initial_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-021",
+    "scores": {
+      "persona_fit": 4,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Accurately targets small business owners with a calm, practical tone and observes Bareni scope boundaries, with only a minor slip using first-person singular ('My practical test') instead of 'we'.",
+      "clarity": "The distinction between a manual habit and a repeatable workflow is immediately clear, logically structured, and explained in plain English without jargon.",
+      "actionability": "Provides a realistic diagnostic test and a clear, concrete next step to audit the redaction pattern, while enforcing human control and approval boundaries.",
+      "factual_grounding": "Fully grounded in approved boundaries; accurately mentions the exclusion of sensitive medical, legal, and financial workflows without inventing claims or results."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 19,
+    "pass": true,
+    "low_quality": false
+  },
+  "final_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-021",
+    "scores": {
+      "persona_fit": 4,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Fits the calm founder-to-founder voice and observes scope boundaries and CTA rules, with only a minor slip into first-person singular ('My practical test') rather than Bareni's standard 'we'.",
+      "clarity": "The core thesis is immediately clear and logically developed, distinguishing a manual habit from a bounded workflow without jargon or ambiguity.",
+      "actionability": "Provides a practical diagnostic question and a concrete checklist for documenting the pattern, tool, and human review step.",
+      "factual_grounding": "Accurately references Bareni's diagnostic approach, out-of-scope sensitive domains, and human approval constraints without fabricating claims or metrics."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 19,
+    "pass": true,
+    "low_quality": false
+  },
+  "evaluation_reused": false,
+  "evaluation_keys": [
+    "SE-FINAL-M021_eval_initial__a001",
+    "SE-FINAL-M021_eval_final__a001"
+  ],
+  "completed_at": "2026-09-08T13:30:06.360006+00:00"
+}

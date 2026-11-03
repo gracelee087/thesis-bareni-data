@@ -1,0 +1,187 @@
+{
+  "status": "success",
+  "usage": {
+    "input_tokens": 7578,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2356,
+    "reasoning_tokens": null
+  },
+  "cost_usd": 0.09679,
+  "output": {
+    "item_id": "E-RES-624",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "The representative pains are 8–10 hours a week of repeated customer questions, neglected sales leads,\n  and manual invoice/data work. The 8–10 hours is a persona scenario, not a market\n  statistic or observed customer result."
+          },
+          {
+            "source_id": "C01",
+            "quote": "have a frequent, repeatable workflow with a\n  measurable outcome"
+          }
+        ],
+        "rationale": "Approved evidence supports repeated customer questions as a representative recurring pain and supports framing fit around a frequent, repeatable workflow with a measurable outcome. But the pain is an explicitly persona-level scenario, so asserting it is \"not a hypothetical\" as a general current fact overstates the evidence; no approved source reports observed answer-failure frequency.",
+        "use_guidance": "Add the qualification that this is a persona/representative scenario for a 1–10-person business, not an observed customer measurement; state that frequency becomes measurable only once the owner counts it in their own workflow."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "A\n  representative scenario is a six-person D2C online shop whose owner compares an\n  automation investment with the cost of another hire."
+          },
+          {
+            "source_id": "S01",
+            "quote": "the owner compares a bounded automation investment with continuing\n  manual work or hiring; final approval and business authority remain human"
+          }
+        ],
+        "rationale": "The manual-versus-hire-versus-automate framing is supported as the decision context. However, the claim anchors the choice to time cost, hiring cost and measured failure frequency, which are not supported by any approved figure.",
+        "use_guidance": "Keep the three-way choice, but present it as the reader's own inputs to gather; do not state or imply any hours, salary, cost or failure-rate number, and note the owner keeps final approval."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C03",
+            "quote": "It can ingest MD, PDF, and\n  URL content; perform vector search and reranking; generate grounded LLM answers;\n  and show sources. It works end to end locally, but the deployed public route is\n  locked."
+          },
+          {
+            "source_id": "C03",
+            "quote": "RAG means retrieving relevant approved company documents before answering; in\n  plain terms, the assistant looks in company material rather than the open web."
+          },
+          {
+            "source_id": "C03",
+            "quote": "Never imply production operation, customer validation, real customer documents,\n  billing, rate limiting, or proven scale."
+          }
+        ],
+        "rationale": "Ingestion, retrieval, grounded answers and source display are supported as features of a self-built local demo using synthetic Acme Shop data. The claim as written describes these capabilities applied to the owner's workflow without disclosing the demo status, local-only end-to-end operation, and absence of real customer documents.",
+        "use_guidance": "State that this is Bareni's self-built local demo on synthetic data with the public route locked; describe live-document use as the intended pilot design rather than a demonstrated deployment, and explain RAG in one plain sentence."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "Especially suitable businesses already work in English, use digital\n  documents and SaaS tools"
+          },
+          {
+            "source_id": "C04",
+            "quote": "Bareni currently declines high-sensitivity medical, legal, and financial work;\n  bulk cold-email automation; scan-heavy OCR-dependent workflows"
+          },
+          {
+            "source_id": "C03",
+            "quote": "PDF/scan ingestion and OCR are not implemented."
+          }
+        ],
+        "rationale": "The core honesty boundary is supported: digital documents are a fit condition, and scan-heavy OCR-dependent work is currently out of scope, so retrieval cannot fix a broken source base. The claim omits the explicit current scope exclusion that makes the limit concrete.",
+        "use_guidance": "Add that Bareni currently declines scan-heavy, OCR-dependent workflows as current scope discipline (not a permanent judgement that such work cannot be automated), and keep the point that retrieval does not repair contradictory or unmaintained source material."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "Normal sequence: free 30-minute diagnostic; free one-page pilot proposal;\n  paid working MVP in days; fixed-price pilot in weeks"
+          },
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI\n  fits, and—if it does—defines pilot scope, fixed price, and measures."
+          },
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          }
+        ],
+        "rationale": "This is a recommended next step and set of diagnostic questions, not an assertion of implementation or customer use. The free 30-minute diagnostic and its honest fit assessment are permitted service scope.",
+        "use_guidance": "Keep as an explicitly proposed next step and diagnostic question set. Because the task sets the CTA rule to none, do not render it as the standard \"Book a free 30-minute diagnostic\" call to action; mention the diagnostic descriptively at most, without urgency or scarcity."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "FORBIDDEN",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "free one-page pilot proposal;\n  paid working MVP in days; fixed-price pilot in weeks; then expansion and an\n  optional retainer. Do not insert a mandatory roadmap gate or separate \"formal\n  build\" stage. Timings are intended scopes, not guarantees."
+          },
+          {
+            "source_id": "C02",
+            "quote": "Finished code is handed to the customer. Database, automation-tool, and API\n  accounts are in the customer's name from the start. Retainer support is optional.\n  Describe this as policy and no-lock-in positioning, not an absolute legal warranty."
+          }
+        ],
+        "rationale": "Two core assertions fail. \"A pilot proposal follows within one week\" has no approved support; no source states a one-week proposal turnaround. \"A working MVP can be delivered in days\" and \"full control ... no lock-in\" are stated as commitments, whereas evidence requires timings to be intended scopes rather than guarantees and no-lock-in to be described as policy, not an absolute warranty. These reversals cannot be repaired by a qualification.",
+        "use_guidance": "Exclude the one-week proposal timing entirely. If a close is needed, use the separately supported wording: a free one-page pilot proposal, then a paid working MVP whose timings are intended scopes and not guarantees, with customer-named accounts and handed-over code described as Bareni policy and no-lock-in positioning. Retain the honest \"if AI does not fit, we say so\" point, which is supported by the diagnostic description."
+      }
+    ]
+  },
+  "raw_text": "{\"item_id\":\"E-RES-624\",\"ledger\":[{\"claim_id\":\"Q01\",\"category\":\"QUALIFICATIONS\",\"evidence\":[{\"source_id\":\"C01\",\"quote\":\"The representative pains are 8–10 hours a week of repeated customer questions, neglected sales leads,\\n  and manual invoice/data work. The 8–10 hours is a persona scenario, not a market\\n  statistic or observed customer result.\"},{\"source_id\":\"C01\",\"quote\":\"have a frequent, repeatable workflow with a\\n  measurable outcome\"}],\"rationale\":\"Approved evidence supports repeated customer questions as a representative recurring pain and supports framing fit around a frequent, repeatable workflow with a measurable outcome. But the pain is an explicitly persona-level scenario, so asserting it is \\\"not a hypothetical\\\" as a general current fact overstates the evidence; no approved source reports observed answer-failure frequency.\",\"use_guidance\":\"Add the qualification that this is a persona/representative scenario for a 1–10-person business, not an observed customer measurement; state that frequency becomes measurable only once the owner counts it in their own workflow.\"},{\"claim_id\":\"Q02\",\"category\":\"QUALIFICATIONS\",\"evidence\":[{\"source_id\":\"C01\",\"quote\":\"A\\n  representative scenario is a six-person D2C online shop whose owner compares an\\n  automation investment with the cost of another hire.\"},{\"source_id\":\"S01\",\"quote\":\"the owner compares a bounded automation investment with continuing\\n  manual work or hiring; final approval and business authority remain human\"}],\"rationale\":\"The manual-versus-hire-versus-automate framing is supported as the decision context. However, the claim anchors the choice to time cost, hiring cost and measured failure frequency, which are not supported by any approved figure.\",\"use_guidance\":\"Keep the three-way choice, but present it as the reader's own inputs to gather; do not state or imply any hours, salary, cost or failure-rate number, and note the owner keeps final approval.\"},{\"claim_id\":\"Q03\",\"category\":\"QUALIFICATIONS\",\"evidence\":[{\"source_id\":\"C03\",\"quote\":\"It can ingest MD, PDF, and\\n  URL content; perform vector search and reranking; generate grounded LLM answers;\\n  and show sources. It works end to end locally, but the deployed public route is\\n  locked.\"},{\"source_id\":\"C03\",\"quote\":\"RAG means retrieving relevant approved company documents before answering; in\\n  plain terms, the assistant looks in company material rather than the open web.\"},{\"source_id\":\"C03\",\"quote\":\"Never imply production operation, customer validation, real customer documents,\\n  billing, rate limiting, or proven scale.\"}],\"rationale\":\"Ingestion, retrieval, grounded answers and source display are supported as features of a self-built local demo using synthetic Acme Shop data. The claim as written describes these capabilities applied to the owner's workflow without disclosing the demo status, local-only end-to-end operation, and absence of real customer documents.\",\"use_guidance\":\"State that this is Bareni's self-built local demo on synthetic data with the public route locked; describe live-document use as the intended pilot design rather than a demonstrated deployment, and explain RAG in one plain sentence.\"},{\"claim_id\":\"Q04\",\"category\":\"QUALIFICATIONS\",\"evidence\":[{\"source_id\":\"C01\",\"quote\":\"Especially suitable businesses already work in English, use digital\\n  documents and SaaS tools\"},{\"source_id\":\"C04\",\"quote\":\"Bareni currently declines high-sensitivity medical, legal, and financial work;\\n  bulk cold-email automation; scan-heavy OCR-dependent workflows\"},{\"source_id\":\"C03\",\"quote\":\"PDF/scan ingestion and OCR are not implemented.\"}],\"rationale\":\"The core honesty boundary is supported: digital documents are a fit condition, and scan-heavy OCR-dependent work is currently out of scope, so retrieval cannot fix a broken source base. The claim omits the explicit current scope exclusion that makes the limit concrete.\",\"use_guidance\":\"Add that Bareni currently declines scan-heavy, OCR-dependent workflows as current scope discipline (not a permanent judgement that such work cannot be automated), and keep the point that retrieval does not repair contradictory or unmaintained source material.\"},{\"claim_id\":\"Q05\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C02\",\"quote\":\"Normal sequence: free 30-minute diagnostic; free one-page pilot proposal;\\n  paid working MVP in days; fixed-price pilot in weeks\"},{\"source_id\":\"C02\",\"quote\":\"The diagnostic identifies the one recurring workflow, says honestly whether AI\\n  fits, and—if it does—defines pilot scope, fixed price, and measures.\"},{\"source_id\":\"S01\",\"quote\":\"**CTA rule:** None.\"}],\"rationale\":\"This is a recommended next step and set of diagnostic questions, not an assertion of implementation or customer use. The free 30-minute diagnostic and its honest fit assessment are permitted service scope.\",\"use_guidance\":\"Keep as an explicitly proposed next step and diagnostic question set. Because the task sets the CTA rule to none, do not render it as the standard \\\"Book a free 30-minute diagnostic\\\" call to action; mention the diagnostic descriptively at most, without urgency or scarcity.\"},{\"claim_id\":\"Q06\",\"category\":\"FORBIDDEN\",\"evidence\":[{\"source_id\":\"C02\",\"quote\":\"free one-page pilot proposal;\\n  paid working MVP in days; fixed-price pilot in weeks; then expansion and an\\n  optional retainer. Do not insert a mandatory roadmap gate or separate \\\"formal\\n  build\\\" stage. Timings are intended scopes, not guarantees.\"},{\"source_id\":\"C02\",\"quote\":\"Finished code is handed to the customer. Database, automation-tool, and API\\n  accounts are in the customer's name from the start. Retainer support is optional.\\n  Describe this as policy and no-lock-in positioning, not an absolute legal warranty.\"}],\"rationale\":\"Two core assertions fail. \\\"A pilot proposal follows within one week\\\" has no approved support; no source states a one-week proposal turnaround. \\\"A working MVP can be delivered in days\\\" and \\\"full control ... no lock-in\\\" are stated as commitments, whereas evidence requires timings to be intended scopes rather than guarantees and no-lock-in to be described as policy, not an absolute warranty. These reversals cannot be repaired by a qualification.\",\"use_guidance\":\"Exclude the one-week proposal timing entirely. If a close is needed, use the separately supported wording: a free one-page pilot proposal, then a paid working MVP whose timings are intended scopes and not guarantees, with customer-named accounts and handed-over code described as Bareni policy and no-lock-in positioning. Retain the honest \\\"if AI does not fit, we say so\\\" point, which is supported by the diagnostic description.\"}]}",
+  "provider_response": {
+    "id": "msg_011CeqxstaSymZA4yaNqzh9V",
+    "container": null,
+    "content": [
+      {
+        "citations": null,
+        "text": "{\"item_id\":\"E-RES-624\",\"ledger\":[{\"claim_id\":\"Q01\",\"category\":\"QUALIFICATIONS\",\"evidence\":[{\"source_id\":\"C01\",\"quote\":\"The representative pains are 8–10 hours a week of repeated customer questions, neglected sales leads,\\n  and manual invoice/data work. The 8–10 hours is a persona scenario, not a market\\n  statistic or observed customer result.\"},{\"source_id\":\"C01\",\"quote\":\"have a frequent, repeatable workflow with a\\n  measurable outcome\"}],\"rationale\":\"Approved evidence supports repeated customer questions as a representative recurring pain and supports framing fit around a frequent, repeatable workflow with a measurable outcome. But the pain is an explicitly persona-level scenario, so asserting it is \\\"not a hypothetical\\\" as a general current fact overstates the evidence; no approved source reports observed answer-failure frequency.\",\"use_guidance\":\"Add the qualification that this is a persona/representative scenario for a 1–10-person business, not an observed customer measurement; state that frequency becomes measurable only once the owner counts it in their own workflow.\"},{\"claim_id\":\"Q02\",\"category\":\"QUALIFICATIONS\",\"evidence\":[{\"source_id\":\"C01\",\"quote\":\"A\\n  representative scenario is a six-person D2C online shop whose owner compares an\\n  automation investment with the cost of another hire.\"},{\"source_id\":\"S01\",\"quote\":\"the owner compares a bounded automation investment with continuing\\n  manual work or hiring; final approval and business authority remain human\"}],\"rationale\":\"The manual-versus-hire-versus-automate framing is supported as the decision context. However, the claim anchors the choice to time cost, hiring cost and measured failure frequency, which are not supported by any approved figure.\",\"use_guidance\":\"Keep the three-way choice, but present it as the reader's own inputs to gather; do not state or imply any hours, salary, cost or failure-rate number, and note the owner keeps final approval.\"},{\"claim_id\":\"Q03\",\"category\":\"QUALIFICATIONS\",\"evidence\":[{\"source_id\":\"C03\",\"quote\":\"It can ingest MD, PDF, and\\n  URL content; perform vector search and reranking; generate grounded LLM answers;\\n  and show sources. It works end to end locally, but the deployed public route is\\n  locked.\"},{\"source_id\":\"C03\",\"quote\":\"RAG means retrieving relevant approved company documents before answering; in\\n  plain terms, the assistant looks in company material rather than the open web.\"},{\"source_id\":\"C03\",\"quote\":\"Never imply production operation, customer validation, real customer documents,\\n  billing, rate limiting, or proven scale.\"}],\"rationale\":\"Ingestion, retrieval, grounded answers and source display are supported as features of a self-built local demo using synthetic Acme Shop data. The claim as written describes these capabilities applied to the owner's workflow without disclosing the demo status, local-only end-to-end operation, and absence of real customer documents.\",\"use_guidance\":\"State that this is Bareni's self-built local demo on synthetic data with the public route locked; describe live-document use as the intended pilot design rather than a demonstrated deployment, and explain RAG in one plain sentence.\"},{\"claim_id\":\"Q04\",\"category\":\"QUALIFICATIONS\",\"evidence\":[{\"source_id\":\"C01\",\"quote\":\"Especially suitable businesses already work in English, use digital\\n  documents and SaaS tools\"},{\"source_id\":\"C04\",\"quote\":\"Bareni currently declines high-sensitivity medical, legal, and financial work;\\n  bulk cold-email automation; scan-heavy OCR-dependent workflows\"},{\"source_id\":\"C03\",\"quote\":\"PDF/scan ingestion and OCR are not implemented.\"}],\"rationale\":\"The core honesty boundary is supported: digital documents are a fit condition, and scan-heavy OCR-dependent work is currently out of scope, so retrieval cannot fix a broken source base. The claim omits the explicit current scope exclusion that makes the limit concrete.\",\"use_guidance\":\"Add that Bareni currently declines scan-heavy, OCR-dependent workflows as current scope discipline (not a permanent judgement that such work cannot be automated), and keep the point that retrieval does not repair contradictory or unmaintained source material.\"},{\"claim_id\":\"Q05\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C02\",\"quote\":\"Normal sequence: free 30-minute diagnostic; free one-page pilot proposal;\\n  paid working MVP in days; fixed-price pilot in weeks\"},{\"source_id\":\"C02\",\"quote\":\"The diagnostic identifies the one recurring workflow, says honestly whether AI\\n  fits, and—if it does—defines pilot scope, fixed price, and measures.\"},{\"source_id\":\"S01\",\"quote\":\"**CTA rule:** None.\"}],\"rationale\":\"This is a recommended next step and set of diagnostic questions, not an assertion of implementation or customer use. The free 30-minute diagnostic and its honest fit assessment are permitted service scope.\",\"use_guidance\":\"Keep as an explicitly proposed next step and diagnostic question set. Because the task sets the CTA rule to none, do not render it as the standard \\\"Book a free 30-minute diagnostic\\\" call to action; mention the diagnostic descriptively at most, without urgency or scarcity.\"},{\"claim_id\":\"Q06\",\"category\":\"FORBIDDEN\",\"evidence\":[{\"source_id\":\"C02\",\"quote\":\"free one-page pilot proposal;\\n  paid working MVP in days; fixed-price pilot in weeks; then expansion and an\\n  optional retainer. Do not insert a mandatory roadmap gate or separate \\\"formal\\n  build\\\" stage. Timings are intended scopes, not guarantees.\"},{\"source_id\":\"C02\",\"quote\":\"Finished code is handed to the customer. Database, automation-tool, and API\\n  accounts are in the customer's name from the start. Retainer support is optional.\\n  Describe this as policy and no-lock-in positioning, not an absolute legal warranty.\"}],\"rationale\":\"Two core assertions fail. \\\"A pilot proposal follows within one week\\\" has no approved support; no source states a one-week proposal turnaround. \\\"A working MVP can be delivered in days\\\" and \\\"full control ... no lock-in\\\" are stated as commitments, whereas evidence requires timings to be intended scopes rather than guarantees and no-lock-in to be described as policy, not an absolute warranty. These reversals cannot be repaired by a qualification.\",\"use_guidance\":\"Exclude the one-week proposal timing entirely. If a close is needed, use the separately supported wording: a free one-page pilot proposal, then a paid working MVP whose timings are intended scopes and not guarantees, with customer-named accounts and handed-over code described as Bareni policy and no-lock-in positioning. Retain the honest \\\"if AI does not fit, we say so\\\" point, which is supported by the diagnostic description.\"}]}",
+        "type": "text"
+      }
+    ],
+    "model": "claude-opus-5",
+    "role": "assistant",
+    "stop_details": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "global",
+      "input_tokens": 7578,
+      "output_tokens": 2356,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": null,
+      "service_tier": "standard"
+    }
+  },
+  "stop_reason": "end_turn",
+  "cost_details": {
+    "input": 0.03789,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.0589,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.09679
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": null,
+  "key": "SE-FINAL-N024_researcher__a001",
+  "role": "researcher",
+  "created_at": "2026-09-08T12:22:14.152631+00:00",
+  "ended_at": "2026-09-08T12:22:43.519389+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-N024",
+    "batch_id": 1,
+    "condition": "natural",
+    "cohort": "natural"
+  },
+  "task_id": "SE-FINAL-N024",
+  "batch_id": 1,
+  "cohort": "natural",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 29362,
+  "budget_charge_usd": 0.09679,
+  "unknown_cost_reservation_usd": 0
+}

@@ -1,0 +1,170 @@
+{
+  "status": "success",
+  "usage": {
+    "input_tokens": 5655,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 327,
+    "reasoning_tokens": 0
+  },
+  "cost_usd": 0.00571275,
+  "output": {
+    "item_id": "E-OPT-421",
+    "title": "Why data cleaning is not the whole job",
+    "body": "Data cleaning is useful, but it is not the whole workflow. If your team spends time fixing fields and still has to make the same downstream decisions by hand, you have only solved the input side. The real question is not “is the data clean?” It is “what still needs human judgment after the data is clean?”\n\nThat matters because many small-business workflows break in two places: messy inputs and decision handling. Cleaning helps with the first. It does not remove the second. If a clean row still needs someone to categorise it, route it, approve it, or decide whether it is an exception, the manual work is still there. A computer can be very tidy and still not know what to do next.\n\nA practical next step is to map one repeating workflow as input → decision → output. Write down the steps, then mark which ones are rules-based and which ones need judgment or sign-off. If you want a quick check, ask: after cleaning, which step still eats the most time, and why? If the answer is “the decision layer,” that is the boundary worth looking at first. For high-risk steps, keep human approval in place.\n\nIn Bareni’s own self-built demo work, rule checks and human-only approval sit in the control layer, not as a replacement for it. That is a demo boundary, not a promise about every workflow. Start with the decision layer, not another cleanup tool."
+  },
+  "raw_text": "{\"item_id\":\"E-OPT-421\",\"title\":\"Why data cleaning is not the whole job\",\"body\":\"Data cleaning is useful, but it is not the whole workflow. If your team spends time fixing fields and still has to make the same downstream decisions by hand, you have only solved the input side. The real question is not “is the data clean?” It is “what still needs human judgment after the data is clean?”\\n\\nThat matters because many small-business workflows break in two places: messy inputs and decision handling. Cleaning helps with the first. It does not remove the second. If a clean row still needs someone to categorise it, route it, approve it, or decide whether it is an exception, the manual work is still there. A computer can be very tidy and still not know what to do next.\\n\\nA practical next step is to map one repeating workflow as input → decision → output. Write down the steps, then mark which ones are rules-based and which ones need judgment or sign-off. If you want a quick check, ask: after cleaning, which step still eats the most time, and why? If the answer is “the decision layer,” that is the boundary worth looking at first. For high-risk steps, keep human approval in place.\\n\\nIn Bareni’s own self-built demo work, rule checks and human-only approval sit in the control layer, not as a replacement for it. That is a demo boundary, not a promise about every workflow. Start with the decision layer, not another cleanup tool.\"}",
+  "provider_response": {
+    "id": "resp_050e02bbea8b0080016aa00b0f7a5c87d2b5a783fdc46203e1",
+    "created_at": 1788873487.0,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": {},
+    "model": "gpt-5.4-mini-2026-03-17",
+    "object": "response",
+    "output": [
+      {
+        "id": "msg_050e02bbea8b0080016aa00b1059f487d2819697fb7ca88c54",
+        "content": [
+          {
+            "annotations": [],
+            "text": "{\"item_id\":\"E-OPT-421\",\"title\":\"Why data cleaning is not the whole job\",\"body\":\"Data cleaning is useful, but it is not the whole workflow. If your team spends time fixing fields and still has to make the same downstream decisions by hand, you have only solved the input side. The real question is not “is the data clean?” It is “what still needs human judgment after the data is clean?”\\n\\nThat matters because many small-business workflows break in two places: messy inputs and decision handling. Cleaning helps with the first. It does not remove the second. If a clean row still needs someone to categorise it, route it, approve it, or decide whether it is an exception, the manual work is still there. A computer can be very tidy and still not know what to do next.\\n\\nA practical next step is to map one repeating workflow as input → decision → output. Write down the steps, then mark which ones are rules-based and which ones need judgment or sign-off. If you want a quick check, ask: after cleaning, which step still eats the most time, and why? If the answer is “the decision layer,” that is the boundary worth looking at first. For high-risk steps, keep human approval in place.\\n\\nIn Bareni’s own self-built demo work, rule checks and human-only approval sit in the control layer, not as a replacement for it. That is a demo boundary, not a promise about every workflow. Start with the decision layer, not another cleanup tool.\"}",
+            "type": "output_text",
+            "logprobs": []
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message",
+        "phase": "final_answer"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 1.0,
+    "tool_choice": "auto",
+    "tools": [],
+    "top_p": 0.98,
+    "background": false,
+    "completed_at": 1788873490.0,
+    "conversation": null,
+    "max_output_tokens": 1024,
+    "max_tool_calls": null,
+    "moderation": null,
+    "previous_response_id": null,
+    "prompt": null,
+    "prompt_cache_key": null,
+    "prompt_cache_options": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "generate_summary": null,
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "status": "completed",
+    "text": {
+      "format": {
+        "name": "study_e_post",
+        "schema_": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "item_id": {
+              "type": "string",
+              "enum": [
+                "E-OPT-421"
+              ]
+            },
+            "title": {
+              "type": "string"
+            },
+            "body": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "item_id",
+            "title",
+            "body"
+          ]
+        },
+        "type": "json_schema",
+        "description": null,
+        "strict": true
+      },
+      "verbosity": "medium"
+    },
+    "top_logprobs": 0,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 5655,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 327,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 5982
+    },
+    "user": null,
+    "billing": {
+      "payer": "developer"
+    },
+    "frequency_penalty": 0.0,
+    "presence_penalty": 0.0,
+    "store": false,
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    }
+  },
+  "stop_reason": "completed",
+  "cost_details": {
+    "input": 0.00424125,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.0014715,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.00571275
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": "default",
+  "key": "SE-FINAL-N114_optimizer1__a001",
+  "role": "optimizer",
+  "created_at": "2026-09-08T13:18:07.756870+00:00",
+  "ended_at": "2026-09-08T13:18:11.377625+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-N114",
+    "batch_id": 4,
+    "condition": "natural",
+    "cohort": "natural"
+  },
+  "task_id": "SE-FINAL-N114",
+  "batch_id": 4,
+  "cohort": "natural",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 3617,
+  "budget_charge_usd": 0.00571275,
+  "unknown_cost_reservation_usd": 0
+}

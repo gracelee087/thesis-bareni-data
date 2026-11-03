@@ -1,0 +1,81 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I117-R2",
+    "item_id": "SEA-I117",
+    "repeat": 2,
+    "arm_order": [
+      "critic_on",
+      "critic_off"
+    ],
+    "content_id": "POST-63bbc857b892d82ad6e5ebea"
+  },
+  "arms": {
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-63bbc857b892d82ad6e5ebea-1",
+        "title": "Spot survivorship bias before it distorts your sample",
+        "body": "If your sample only shows the winners, you are probably making a decision on missing data.\n\nThat comes up in small businesses when you look at only existing customers, only successful orders, or only the cases that made it through the process. The surviving cases are real, but they are not the full picture. If the failed or incomplete cases never get reviewed, you can end up explaining the easy part and missing the part that actually breaks.\n\nThe practical question is simple: what decision am I making from this sample, and what would I need to see early to know that decision was going wrong?\n\nThe next step is to pick one recent decision and write down three things: what data you had, what data was missing, and what would have changed if the missing cases had been visible upfront. That does not solve the problem yet. It just makes the bias visible.\n\nOnce you can see the gap, you can judge whether the right fix is a manual check, a spreadsheet rule, or an AI-assisted workflow. Sometimes the honest answer is that AI is not the right tool. A rare case of restraint, which is not the worst thing in operations."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-63bbc857b892d82ad6e5ebea-1",
+            "title": "Spot survivorship bias before it distorts your sample",
+            "body": "If your sample only shows the winners, you are probably making a decision on missing data.\n\nThat comes up in small businesses when you look at only existing customers, only successful orders, or only the cases that made it through the process. The surviving cases are real, but they are not the full picture. If the failed or incomplete cases never get reviewed, you can end up explaining the easy part and missing the part that actually breaks.\n\nThe practical question is simple: what decision am I making from this sample, and what would I need to see early to know that decision was going wrong?\n\nThe next step is to pick one recent decision and write down three things: what data you had, what data was missing, and what would have changed if the missing cases had been visible upfront. That does not solve the problem yet. It just makes the bias visible.\n\nOnce you can see the gap, you can judge whether the right fix is a manual check, a spreadsheet rule, or an AI-assisted workflow. Sometimes the honest answer is that AI is not the right tool. A rare case of restraint, which is not the worst thing in operations."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-63bbc857b892d82ad6e5ebea-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": [
+            {
+              "repair_id": "P01",
+              "target_ids": [
+                "D01",
+                "D02"
+              ],
+              "instruction": "Rewrite the body into clear plain English so the main point is immediately understandable. Keep one bounded workflow decision centered on spotting survivorship in samples early, and make the next step explicit rather than buried in broken phrasing.",
+              "source_ids": [
+                "BRIEF",
+                "S01"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-63bbc857b892d82ad6e5ebea-1",
+        "title": "Spot survivorship bias before it skews your sample",
+        "body": "When you look at only the cases that made it through, you can talk yourself into a clean answer too early. That is survivorship bias: the sample is visible, but the missing cases are not.\n\nFor a small business, this usually shows up in ordinary decisions. You review only active customers, only successful orders, or only the suppliers that are still in the mix, then assume the pattern is the whole story. The risk is not philosophical. It is rework, delayed decisions, and a lot of manual checking later.\n\nThe practical question is simple: what decision are you making from samples right now, and how would you know early that it was heading the wrong way?\n\nA good first step is manual. Pick one recent decision made from incomplete data and write down three things: what was visible, what was missing, and what would have changed if the missing cases had been in view from the start. That gives you a real workflow boundary instead of a vague worry.\n\nIf the sample is easy to export or log, a spreadsheet check may be enough. If the cases are scattered, anecdotal, or need heavy judgment, AI may not be the right tool yet. Either way, the test comes first; the tool comes second. A tidy sample can be persuasive in the wrong direction."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-63bbc857b892d82ad6e5ebea-1",
+            "title": "Spot survivorship bias before it skews your sample",
+            "body": "When you look at only the cases that made it through, you can talk yourself into a clean answer too early. That is survivorship bias: the sample is visible, but the missing cases are not.\n\nFor a small business, this usually shows up in ordinary decisions. You review only active customers, only successful orders, or only the suppliers that are still in the mix, then assume the pattern is the whole story. The risk is not philosophical. It is rework, delayed decisions, and a lot of manual checking later.\n\nThe practical question is simple: what decision are you making from samples right now, and how would you know early that it was heading the wrong way?\n\nA good first step is manual. Pick one recent decision made from incomplete data and write down three things: what was visible, what was missing, and what would have changed if the missing cases had been in view from the start. That gives you a real workflow boundary instead of a vague worry.\n\nIf the sample is easy to export or log, a spreadsheet check may be enough. If the cases are scattered, anecdotal, or need heavy judgment, AI may not be the right tool yet. Either way, the test comes first; the tool comes second. A tidy sample can be persuasive in the wrong direction."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-63bbc857b892d82ad6e5ebea-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

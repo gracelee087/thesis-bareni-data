@@ -1,0 +1,170 @@
+{
+  "status": "success",
+  "usage": {
+    "input_tokens": 5489,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 358,
+    "reasoning_tokens": 0
+  },
+  "cost_usd": 0.00572775,
+  "output": {
+    "item_id": "E-OPT-411",
+    "title": "Why stopping rules are not enough",
+    "body": "Stopping rules sound tidy until you meet the real workflow. In a small business, the hard part is often not the first rule. It is the exception: the invoice that is over the usual amount, the customer record that is incomplete, the lead that looks promising but still needs a human eye. A simple if-then rule can stop work, but it can also stop the wrong work or let the wrong thing through. So the bounded automation decision should start with the exception path, not the happy path.\n\nThe practical question is simple: in your repeated workflow, what judgment calls do you still make by hand that a fixed rule would miss? If the answer is “almost none,” AI probably is not worth the trouble. If the answer is “quite a few,” map those exceptions on one page. Mark which ones are safe to route to a person, which ones can be checked automatically, and which ones must never be auto-approved.\n\nThat distinction matters most where money is involved. Human approval stays in place for payments and other high-risk decisions. In Bareni’s self-built accounts-payable demo, that boundary is shown with synthetic data and a simulated blocked payment, not a real transfer. The point is not to let software quietly decide the risky bit. Less glamorous, more useful. Usually the right choice.\n\nIf your workflow lives in digital documents and SaaS tools, and it repeats often enough to have a measurable outcome, that one-page exception map is the next practical step. It helps you decide whether to keep it manual, hire for it, or automate only the parts that do not need judgment."
+  },
+  "raw_text": "{\"item_id\":\"E-OPT-411\",\"title\":\"Why stopping rules are not enough\",\"body\":\"Stopping rules sound tidy until you meet the real workflow. In a small business, the hard part is often not the first rule. It is the exception: the invoice that is over the usual amount, the customer record that is incomplete, the lead that looks promising but still needs a human eye. A simple if-then rule can stop work, but it can also stop the wrong work or let the wrong thing through. So the bounded automation decision should start with the exception path, not the happy path.\\n\\nThe practical question is simple: in your repeated workflow, what judgment calls do you still make by hand that a fixed rule would miss? If the answer is “almost none,” AI probably is not worth the trouble. If the answer is “quite a few,” map those exceptions on one page. Mark which ones are safe to route to a person, which ones can be checked automatically, and which ones must never be auto-approved.\\n\\nThat distinction matters most where money is involved. Human approval stays in place for payments and other high-risk decisions. In Bareni’s self-built accounts-payable demo, that boundary is shown with synthetic data and a simulated blocked payment, not a real transfer. The point is not to let software quietly decide the risky bit. Less glamorous, more useful. Usually the right choice.\\n\\nIf your workflow lives in digital documents and SaaS tools, and it repeats often enough to have a measurable outcome, that one-page exception map is the next practical step. It helps you decide whether to keep it manual, hire for it, or automate only the parts that do not need judgment.\"}",
+  "provider_response": {
+    "id": "resp_0f7e1f9d15b824b2016aa000fcace887d2beaa3bc591cf0c63",
+    "created_at": 1788870908.0,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": {},
+    "model": "gpt-5.4-mini-2026-03-17",
+    "object": "response",
+    "output": [
+      {
+        "id": "msg_0f7e1f9d15b824b2016aa000fdd65487d28e8867b2b098881e",
+        "content": [
+          {
+            "annotations": [],
+            "text": "{\"item_id\":\"E-OPT-411\",\"title\":\"Why stopping rules are not enough\",\"body\":\"Stopping rules sound tidy until you meet the real workflow. In a small business, the hard part is often not the first rule. It is the exception: the invoice that is over the usual amount, the customer record that is incomplete, the lead that looks promising but still needs a human eye. A simple if-then rule can stop work, but it can also stop the wrong work or let the wrong thing through. So the bounded automation decision should start with the exception path, not the happy path.\\n\\nThe practical question is simple: in your repeated workflow, what judgment calls do you still make by hand that a fixed rule would miss? If the answer is “almost none,” AI probably is not worth the trouble. If the answer is “quite a few,” map those exceptions on one page. Mark which ones are safe to route to a person, which ones can be checked automatically, and which ones must never be auto-approved.\\n\\nThat distinction matters most where money is involved. Human approval stays in place for payments and other high-risk decisions. In Bareni’s self-built accounts-payable demo, that boundary is shown with synthetic data and a simulated blocked payment, not a real transfer. The point is not to let software quietly decide the risky bit. Less glamorous, more useful. Usually the right choice.\\n\\nIf your workflow lives in digital documents and SaaS tools, and it repeats often enough to have a measurable outcome, that one-page exception map is the next practical step. It helps you decide whether to keep it manual, hire for it, or automate only the parts that do not need judgment.\"}",
+            "type": "output_text",
+            "logprobs": []
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message",
+        "phase": "final_answer"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 1.0,
+    "tool_choice": "auto",
+    "tools": [],
+    "top_p": 0.98,
+    "background": false,
+    "completed_at": 1788870912.0,
+    "conversation": null,
+    "max_output_tokens": 1024,
+    "max_tool_calls": null,
+    "moderation": null,
+    "previous_response_id": null,
+    "prompt": null,
+    "prompt_cache_key": null,
+    "prompt_cache_options": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "generate_summary": null,
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "status": "completed",
+    "text": {
+      "format": {
+        "name": "study_e_post",
+        "schema_": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "item_id": {
+              "type": "string",
+              "enum": [
+                "E-OPT-411"
+              ]
+            },
+            "title": {
+              "type": "string"
+            },
+            "body": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "item_id",
+            "title",
+            "body"
+          ]
+        },
+        "type": "json_schema",
+        "description": null,
+        "strict": true
+      },
+      "verbosity": "medium"
+    },
+    "top_logprobs": 0,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 5489,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 358,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 5847
+    },
+    "user": null,
+    "billing": {
+      "payer": "developer"
+    },
+    "frequency_penalty": 0.0,
+    "presence_penalty": 0.0,
+    "store": false,
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    }
+  },
+  "stop_reason": "completed",
+  "cost_details": {
+    "input": 0.00411675,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.001611,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.00572775
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": "default",
+  "key": "SE-FINAL-N042_optimizer1__a001",
+  "role": "optimizer",
+  "created_at": "2026-09-08T12:35:08.897061+00:00",
+  "ended_at": "2026-09-08T12:35:12.617475+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-N042",
+    "batch_id": 2,
+    "condition": "natural",
+    "cohort": "natural"
+  },
+  "task_id": "SE-FINAL-N042",
+  "batch_id": 2,
+  "cohort": "natural",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 3714,
+  "budget_charge_usd": 0.00572775,
+  "unknown_cost_reservation_usd": 0
+}

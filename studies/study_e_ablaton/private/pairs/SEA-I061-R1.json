@@ -1,0 +1,103 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I061-R1",
+    "item_id": "SEA-I061",
+    "repeat": 1,
+    "arm_order": [
+      "critic_off",
+      "critic_on"
+    ],
+    "content_id": "POST-b29e2472c906ecd01c39505a"
+  },
+  "arms": {
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-b29e2472c906ecd01c39505a-1",
+        "title": "When metric definitions stop working",
+        "body": "If you run a small team, you know the moment: the metric is still moving, but the work is clearly getting worse. Support replies are counted on time, yet the hard cases pile up. Leads are marked “handled,” but nothing moves forward. That is usually the sign that the definition stopped matching the real job.\n\nThe issue is often not the number itself. It is the workflow underneath it. The product changed, the customer behavior changed, or the rule you were using no longer reflects what the business actually needs.\n\nAt that point, you have three choices: rework the metric, rebuild the workflow, or keep the process manual for the edge cases that keep breaking the rule. Human approval stays with you either way.\n\nThe practical next step is simple: write down the real rule in plain English, then collect a few failing cases that show where the old metric misses the point. If you cannot describe the failure case cleanly, the metric is probably not the first thing to fix.\n\nOnce you know whether the metric broke or the rule broke, you can tell whether this is a reporting fix, a workflow redesign, or an automation opportunity."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-b29e2472c906ecd01c39505a-1",
+            "title": "When metric definitions stop working",
+            "body": "If you run a small team, you know the moment: the metric is still moving, but the work is clearly getting worse. Support replies are counted on time, yet the hard cases pile up. Leads are marked “handled,” but nothing moves forward. That is usually the sign that the definition stopped matching the real job.\n\nThe issue is often not the number itself. It is the workflow underneath it. The product changed, the customer behavior changed, or the rule you were using no longer reflects what the business actually needs.\n\nAt that point, you have three choices: rework the metric, rebuild the workflow, or keep the process manual for the edge cases that keep breaking the rule. Human approval stays with you either way.\n\nThe practical next step is simple: write down the real rule in plain English, then collect a few failing cases that show where the old metric misses the point. If you cannot describe the failure case cleanly, the metric is probably not the first thing to fix.\n\nOnce you know whether the metric broke or the rule broke, you can tell whether this is a reporting fix, a workflow redesign, or an automation opportunity."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-b29e2472c906ecd01c39505a-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    },
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-b29e2472c906ecd01c39505a-1",
+        "title": "When a metric stops helping you decide",
+        "body": "If a metric no longer changes what you do, it has stopped being useful. That is the point where definitions start to matter less than the decision behind them.\n\nA common small-business example is a metric that still gets reported, but no longer tells you whether to approve, reject, or pass a task back for review. The label stays the same while the workflow has moved on. Then the team keeps counting something that no one can act on.\n\nThat is usually a sign that one of two things happened: the work changed, or the rule changed. A new product, a new channel, or a new exception can make yesterday's metric too broad. Or the original rule may still be right, but the metric no longer captures it clearly.\n\nThe practical next step is simple: write down the real decision the metric is supposed to support, then check three recent cases where it failed. If you cannot tell from those cases whether the issue is the metric or the rule, the metric definition is not the problem you should fix first.\n\nOnce you know whether the metric or the rule broke, you'll know whether this is a reporting fix, a workflow redesign, or an automation opportunity."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-b29e2472c906ecd01c39505a-1",
+            "title": "When a metric stops helping you decide",
+            "body": "If a metric no longer changes what you do, it has stopped being useful. That is the point where definitions start to matter less than the decision behind them.\n\nA common small-business example is a metric that still gets reported, but no longer tells you whether to approve, reject, or pass a task back for review. The label stays the same while the workflow has moved on. Then the team keeps counting something that no one can act on.\n\nThat is usually a sign that one of two things happened: the work changed, or the rule changed. A new product, a new channel, or a new exception can make yesterday's metric too broad. Or the original rule may still be right, but the metric no longer captures it clearly.\n\nThe practical next step is simple: write down the real decision the metric is supposed to support, then check three recent cases where it failed. If you cannot tell from those cases whether the issue is the metric or the rule, the metric definition is not the problem you should fix first.\n\nOnce you know whether the metric or the rule broke, you'll know whether this is a reporting fix, a workflow redesign, or an automation opportunity."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-b29e2472c906ecd01c39505a-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": [
+            {
+              "repair_id": "P01",
+              "target_ids": [
+                "D01"
+              ],
+              "instruction": "Replace the abstract closing with a direct founder-facing statement that frames the issue as a workflow decision for the owner-operator, not as a general reflection. Keep it concrete and tied to one recurring business metric or process.",
+              "source_ids": [
+                "BRIEF",
+                "C01",
+                "S01"
+              ]
+            },
+            {
+              "repair_id": "P02",
+              "target_ids": [
+                "D02"
+              ],
+              "instruction": "Cut the repetitive vague middle lines and rewrite them as one clear point: metric definitions stop working when the label no longer matches what the team can actually act on. Use plain English and remove the layered ambiguity.",
+              "source_ids": [
+                "BRIEF",
+                "S01"
+              ]
+            },
+            {
+              "repair_id": "P03",
+              "target_ids": [
+                "D03"
+              ],
+              "instruction": "Add one practical next step for the owner, such as checking whether the metric still drives a decision, owner approval, or handoff. State it as a single bounded decision rule or diagnostic question.",
+              "source_ids": [
+                "BRIEF",
+                "S01"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

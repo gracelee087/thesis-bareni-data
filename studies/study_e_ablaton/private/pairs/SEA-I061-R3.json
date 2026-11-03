@@ -1,0 +1,96 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I061-R3",
+    "item_id": "SEA-I061",
+    "repeat": 3,
+    "arm_order": [
+      "critic_off",
+      "critic_on"
+    ],
+    "content_id": "POST-985faae3b319e4925715e9ee"
+  },
+  "arms": {
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-985faae3b319e4925715e9ee-1",
+        "title": "When the metric stops tracking the work",
+        "body": "If you run a repeating workflow and the old metric no longer tells you what is actually going on, that is the moment to stop treating the metric as the goal.\n\nFor a small business owner, this usually shows up in something ordinary: the count looks fine, but the work is getting worse, slower, or harder to trust. A lead score still rises, but the lead is not worth time. An invoice queue is shrinking, but approvals are stuck on edge cases. The number is moving; the work is not.\n\nUsually the break is in the rule, not just the report. The workflow changed, the customer behavior changed, or the exception cases became common enough that the original definition no longer matches the decision you are trying to make.\n\nThe practical choice is simple, even if it is not easy: rework the metric, rebuild the workflow, or keep a manual override for the cases the rule cannot handle. Do not let the number decide for you.\n\nA useful first step is to write down the actual rule you want, then collect a few failing examples beside it. That shows whether you have a reporting fix, a workflow redesign, or a bounded automation opportunity. If the workflow is scan-heavy, high-sensitivity, or tied to money movement, keep human approval in place. Once you know whether the metric or the rule broke, the next step is usually obvious."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-985faae3b319e4925715e9ee-1",
+            "title": "When the metric stops tracking the work",
+            "body": "If you run a repeating workflow and the old metric no longer tells you what is actually going on, that is the moment to stop treating the metric as the goal.\n\nFor a small business owner, this usually shows up in something ordinary: the count looks fine, but the work is getting worse, slower, or harder to trust. A lead score still rises, but the lead is not worth time. An invoice queue is shrinking, but approvals are stuck on edge cases. The number is moving; the work is not.\n\nUsually the break is in the rule, not just the report. The workflow changed, the customer behavior changed, or the exception cases became common enough that the original definition no longer matches the decision you are trying to make.\n\nThe practical choice is simple, even if it is not easy: rework the metric, rebuild the workflow, or keep a manual override for the cases the rule cannot handle. Do not let the number decide for you.\n\nA useful first step is to write down the actual rule you want, then collect a few failing examples beside it. That shows whether you have a reporting fix, a workflow redesign, or a bounded automation opportunity. If the workflow is scan-heavy, high-sensitivity, or tied to money movement, keep human approval in place. Once you know whether the metric or the rule broke, the next step is usually obvious."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-985faae3b319e4925715e9ee-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    },
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-985faae3b319e4925715e9ee-1",
+        "title": "When the metric stops matching the work",
+        "body": "If a metric still looks healthy but the work behind it has changed, treat that as a workflow problem, not a philosophy problem.\n\nSay you still measure speed, count, or approval rate, but the cases getting through are the wrong ones. That usually means one of two things: the metric is stale, or the rule behind the workflow is stale. The number is doing its job; it is just pointing at the wrong thing.\n\nFor a small business owner, the practical question is simple: are you trying to measure the outcome you want, or the step you used to need? If the workflow changed, the old definition may now reward the wrong behaviour.\n\nThe next step is to write down the actual rule in plain English and collect a few failing examples. Keep them specific. Not “quality is slipping,” but what happened, what should have happened, and where the definition broke.\n\nThat gives you a clean decision: rework the metric, rebuild the rule, or keep a human override for edge cases. And if the failure only shows up in a narrow slice, you do not need to redesign the whole thing. Small comfort, but useful."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-985faae3b319e4925715e9ee-1",
+            "title": "When the metric stops matching the work",
+            "body": "If a metric still looks healthy but the work behind it has changed, treat that as a workflow problem, not a philosophy problem.\n\nSay you still measure speed, count, or approval rate, but the cases getting through are the wrong ones. That usually means one of two things: the metric is stale, or the rule behind the workflow is stale. The number is doing its job; it is just pointing at the wrong thing.\n\nFor a small business owner, the practical question is simple: are you trying to measure the outcome you want, or the step you used to need? If the workflow changed, the old definition may now reward the wrong behaviour.\n\nThe next step is to write down the actual rule in plain English and collect a few failing examples. Keep them specific. Not “quality is slipping,” but what happened, what should have happened, and where the definition broke.\n\nThat gives you a clean decision: rework the metric, rebuild the rule, or keep a human override for edge cases. And if the failure only shows up in a narrow slice, you do not need to redesign the whole thing. Small comfort, but useful."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-985faae3b319e4925715e9ee-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": [
+            {
+              "repair_id": "P01",
+              "target_ids": [
+                "D01",
+                "D03"
+              ],
+              "instruction": "Replace the abstract framing with one founder-facing workflow decision about what to do when a metric no longer tracks the work; state one practical next step the owner can take instead of describing the topic as an open-ended consideration.",
+              "source_ids": [
+                "BRIEF",
+                "S01",
+                "C01",
+                "C02",
+                "C05"
+              ]
+            },
+            {
+              "repair_id": "P02",
+              "target_ids": [
+                "D02"
+              ],
+              "instruction": "Tighten the vague middle sentences so the referents are explicit and the point is easy to recover on first read; use plain English and keep the discussion centered on the metric-definition problem, not on general uncertainty.",
+              "source_ids": [
+                "BRIEF",
+                "S01",
+                "C05"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

@@ -1,0 +1,310 @@
+{
+  "task_id": "SE-FINAL-N094",
+  "batch_id": 4,
+  "condition": "natural",
+  "source_task_id": null,
+  "topic": "early signs of unbounded scope",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-301",
+    "title": "When AI scope starts to wander, draw the box first",
+    "body": "If you want to see early signs of unbounded scope, look for the moment a single workflow turns into a wish list. That usually happens when the owner starts with a broad business goal instead of one repeatable job. The useful question is not “Can AI help the business?” It is “What is the one recurring workflow we can actually describe from input to output?”\n\nStart with the clearest repeatable item: invoices processed, leads responded to, or data transferred. Then write the boundary in plain English. What goes in, what decision is made, what comes out, and what is explicitly out of scope. For example, “respond to customer emails” is a workflow. “Improve customer satisfaction” is a business ambition. Important, but not the same thing. The box has to stay a box; otherwise the project quietly becomes a small universe.\n\nA practical next step is to test fit with three questions: are the decisions mostly rule-based, is there enough past example data to show the pattern, and can a wrong answer be caught before it reaches the customer? If the answer is yes, you may have a bounded pilot. If not, the scope probably needs restructuring, or the job may be better handled by a person. And for payments or other high-risk actions, human approval stays in the loop."
+  },
+  "final": {
+    "item_id": "E-OPT-401",
+    "title": "When scope starts to wander, draw the box first",
+    "body": "If you want to spot early signs of unbounded scope, watch for the moment a single workflow turns into a wish list. That usually happens when the owner starts from a broad business goal instead of one repeatable job. The useful question is not “Can AI help the business?” It is “What is the one recurring workflow we can actually describe from input to output?”\n\nStart with the clearest repeatable item: invoices processed, leads responded to, or data transferred. Then write the boundary in plain English. What goes in, what decision is made, what comes out, and what is explicitly out of scope. For example, “respond to customer emails” is a workflow. “Improve customer satisfaction” is a business ambition. Important, but not the same thing. The box has to stay a box; otherwise the project quietly becomes a small universe.\n\nA practical next step is to test fit with three questions: are the decisions mostly rule-based, is there enough past example data to show the pattern, and can a wrong answer be caught before it reaches the customer? If all three are yes, you probably have a bounded pilot. If not, the scope likely needs restructuring, or the job may be better handled by a person. For payments or other high-risk actions, human approval stays in the loop."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-094",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-094",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-094-1",
+        "repairs": []
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-094",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-401",
+        "title": "When scope starts to wander, draw the box first",
+        "body": "If you want to spot early signs of unbounded scope, watch for the moment a single workflow turns into a wish list. That usually happens when the owner starts from a broad business goal instead of one repeatable job. The useful question is not “Can AI help the business?” It is “What is the one recurring workflow we can actually describe from input to output?”\n\nStart with the clearest repeatable item: invoices processed, leads responded to, or data transferred. Then write the boundary in plain English. What goes in, what decision is made, what comes out, and what is explicitly out of scope. For example, “respond to customer emails” is a workflow. “Improve customer satisfaction” is a business ambition. Important, but not the same thing. The box has to stay a box; otherwise the project quietly becomes a small universe.\n\nA practical next step is to test fit with three questions: are the decisions mostly rule-based, is there enough past example data to show the pattern, and can a wrong answer be caught before it reaches the customer? If all three are yes, you probably have a bounded pilot. If not, the scope likely needs restructuring, or the job may be better handled by a person. For payments or other high-risk actions, human approval stays in the loop."
+      },
+      "gate_key": "SE-FINAL-N094_gate1__a001"
+    }
+  ],
+  "measurement_status": "pending",
+  "planner": {
+    "item_id": "E-PLAN-501",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "This is informational content about scope management, not purchase-intent material. The task explicitly prohibits a CTA. End with a practical observation or next-step note for the owner instead of a meeting prompt."
+      },
+      {
+        "lesson_id": "L02",
+        "application": "C02 presents Bareni's diagnostic and pilot sequence as operational practice and positioning (30-minute diagnostic, one-page proposal, pilot scope). Keep these as described offerings without elevating them to guarantees."
+      },
+      {
+        "lesson_id": "L03",
+        "application": "Scope creep and unbounded projects are common, but no Bareni customer evidence supports specific cost or timeline claims about them. Replace unsupported generalizations with a concrete workflow decision rule the owner can apply immediately."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Name the one recurring workflow the owner wants to automate. Scope creep often begins when a single workflow grows into a bucket-list of adjacent tasks. Identify the clearest, most painful, most repeatable item—the one that recurs at least weekly and has a measurable outcome (invoices processed, leads responded to, data transferred).",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Define the hard boundary: what is inside the workflow and what is explicitly out. Unbounded scope usually appears when the owner conflates a workflow with a broader business problem. For example: 'respond to customer emails' is a workflow; 'improve customer satisfaction' is not. List the inputs, decision rules, and outputs in plain terms.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Check whether AI fits the workflow by asking: are the decisions rule-based or judgment calls? Is there enough training data (past examples) to show the pattern? Can a wrong answer be caught before it reaches the customer? If the answer to all three is yes, AI is likely a fit. If not, the workflow may need restructuring or is better solved by hiring.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Estimate the pilot scope: how many documents, records, or decisions would the first two weeks of automation cover? Keep it small—the goal is to learn whether the approach works, not to solve the entire problem at once. Bareni's typical pilot is a fixed-price working system delivered in days to weeks.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L02"
+        ],
+        "evidence_ids": [
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Identify the approval gate. Who must review and approve before the system makes a decision or takes an action (especially for payments, legal holds, or customer commitments)? Build this control into the design from the start; do not add it as an afterthought. Human approval remains non-negotiable for money movement and high-risk choices.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Write down the next step: either 'I have a bounded workflow and want to explore a pilot' or 'this needs restructuring first' or 'this is better solved by hiring'. Use this clarity as the decision rule. If the workflow is bounded and rule-based, a 30-minute diagnostic with a technical expert (no pitch, no commitment) can confirm whether AI is worth the investment or rule it out.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01",
+          "L02"
+        ],
+        "evidence_ids": [
+          "C02",
+          "S01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No customer stories, invented deployments, savings claims, or multi-person team references. All guidance is structural (workflow decision rules) and no implied product capability beyond the three self-built demos described in C03."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Step P05 explicitly requires human approval for money movement and high-risk decisions. No automation of approvals themselves."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "All language follows the frozen persona: plain-speaking technical expert, founder-to-founder, trustworthy, restrained tone. No hype or fabricated urgency."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "C02 describes the diagnostic and pilot sequence as Bareni's operational practice. Step P06 references this practice neutrally without overstating it as a warranty or guarantee. Examples remain distinct from existing capabilities."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-601",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow"
+          },
+          {
+            "source_id": "C01",
+            "quote": "have a frequent, repeatable workflow with a measurable outcome"
+          }
+        ],
+        "rationale": "This is an instruction to the reader to name and select one recurring workflow, not an assertion of a current capability or observed result. Approved evidence supports the concept of one recurring, repeatable workflow with a measurable outcome as the unit of work.",
+        "use_guidance": "Keep as an instruction/decision step to the reader. Do not present the weekly frequency or the example outcomes as a measured Bareni finding or customer result; keep examples generic (invoices, leads, data transfer) as illustrations."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "have a frequent, repeatable workflow with a measurable outcome"
+          },
+          {
+            "source_id": "C02",
+            "quote": "defines pilot scope, fixed price, and measures"
+          }
+        ],
+        "rationale": "A permissible instruction to draw an explicit in/out boundary and list inputs, decision rules and outputs. It describes a reader action, not an implemented Bareni feature or observed outcome. The email/satisfaction contrast is an illustrative example, not a claimed result.",
+        "use_guidance": "Keep explicitly as a suggested boundary-setting step; label the email example as an illustration, not a customer scenario."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "says honestly whether AI fits"
+          },
+          {
+            "source_id": "C04",
+            "quote": "Present these as current scope discipline, not claims that the work can never be automated."
+          }
+        ],
+        "rationale": "Diagnostic questions for the reader rather than a factual assertion; approved evidence supports honestly assessing whether AI fits and not forcing AI where unsuitable. The three-question test is offered as a heuristic, not a validated method.",
+        "use_guidance": "Keep as proposed diagnostic questions. Present the three-question test as a rule of thumb, not a Bareni-validated or benchmarked test; retain the option that AI does not fit and hiring or restructuring is better."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "paid working MVP in days; fixed-price pilot in weeks"
+          },
+          {
+            "source_id": "C02",
+            "quote": "Timings are intended scopes, not guarantees."
+          }
+        ],
+        "rationale": "The instruction to keep the first pilot small is permissible, but the appended sentence asserts a current fact about Bareni's pilot: fixed-price working system delivered in days to weeks. Approved evidence supports that sequence only as intended scope, and the claim omits that limitation and the word 'typical' implies repeated past delivery.",
+        "use_guidance": "Add the qualifier that the days-to-weeks fixed-price pilot is an intended scope, not a guarantee or a record of past deliveries; avoid 'typical', which implies prior customer engagements. The 'first two weeks' framing must stay a planning question to the reader, not a promised delivery window."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "SUPPORTED",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C03",
+            "quote": "amount-based human-only approval, refusal of agent approval/payment attempts, and persistent audit records work"
+          }
+        ],
+        "rationale": "The claim's core factual assertion—that human approval is non-negotiable for money movement and high-risk choices—matches approved evidence as written; the surrounding design instruction to build the approval gate in from the start is consistent with that boundary and asserts no implementation or customer use.",
+        "use_guidance": "Retain within scope. Do not extend to any claim of autonomous payment, real transfers, or a deployed approval control at a customer; the demonstrated approval behaviour exists only in the self-built synthetic accounts-payable demo."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "FORBIDDEN",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Standard primary CTA: \"Book a free 30-minute diagnostic\". Use it only for purchase-intent content, once, at the end."
+          }
+        ],
+        "rationale": "The closing sentence invites the reader into a 30-minute diagnostic, which is a meeting prompt and therefore a CTA; the approved task explicitly forbids any CTA for this post. The 'no pitch, no commitment' framing is also an unsupported characterisation of the diagnostic beyond the approved description.",
+        "use_guidance": "Exclude the diagnostic invitation and the 'no pitch, no commitment' wording. The self-classification step ('bounded pilot', 'needs restructuring', 'better solved by hiring') is separately usable as a neutral next-step note; end on that practical observation rather than a meeting prompt. This does not approve the original CTA sentence."
+      }
+    ]
+  },
+  "selected_lessons": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. This includes indirect meeting prompts and direct brand-level offers such as a free 30-minute diagnostic. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025",
+        "B3-SUMMARY",
+        "SE-FINAL-N079"
+      ]
+    },
+    {
+      "lesson_id": "L02",
+      "text": "When approved evidence presents an operational practice as policy or positioning, keep that qualifier in the copy. Do not rewrite it as an absolute guarantee or warranty-level statement.",
+      "source_event_ids": [
+        "B3-SUMMARY",
+        "SE-FINAL-N080"
+      ]
+    },
+    {
+      "lesson_id": "L03",
+      "text": "If the source set does not support a substantive explanatory claim, replace it with a neutral workflow prompt or decision step rather than filling the gap with general background explanation.",
+      "source_event_ids": [
+        "B3-SUMMARY",
+        "SE-FINAL-N091"
+      ]
+    }
+  ],
+  "register_sha256": "119720de77d8c13ba7ec5ca4065775e8d4ac629796a073c799f5a0be4d935e35",
+  "planner_key": "SE-FINAL-N094_planner__a001",
+  "researcher_key": "SE-FINAL-N094_researcher__a001",
+  "writer_key": "SE-FINAL-N094_writer__a001",
+  "final_key": "SE-FINAL-N094_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-N094_gate1__a001",
+  "production_completed_at": "2026-09-08T13:06:02.254835+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts"
+}

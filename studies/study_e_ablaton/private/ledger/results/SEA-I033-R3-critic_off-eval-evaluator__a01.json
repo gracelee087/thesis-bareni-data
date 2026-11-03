@@ -1,0 +1,154 @@
+{
+  "created_at": "2026-09-08T20:01:52.051419+00:00",
+  "role": "evaluator",
+  "metadata": {
+    "study_id": "STUDY-E-ABLATON",
+    "pair_id": "SEA-I033-R3",
+    "arm": "critic_off",
+    "cycle": "eval"
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49",
+  "status": "success",
+  "output": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-55323c292bd219ac7f79f26958336999",
+    "scores": {
+      "persona_fit": 5,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Accurately targets the owner-operator in a calm, technical, plain-spoken voice; respects the zero-CTA constraint and strictly preserves human-in-the-loop boundaries.",
+      "clarity": "Logical flow from high-level concept to practical application; explanations are direct, structured, and immediately understandable.",
+      "actionability": "Offers a clear, scoped exercise: pick one recurring workflow and draft the single-sentence approval rule before automating.",
+      "factual_grounding": "Correctly describes the accounts-payable demo as a manual simulation on synthetic data and explicitly notes demos are not customer results."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 20,
+    "pass": true,
+    "low_quality": false
+  },
+  "cost_usd": 0.007209,
+  "usage": {
+    "prompt_token_count": 5927,
+    "cached_content_token_count": 0,
+    "candidates_token_count": 316,
+    "thoughts_token_count": 421,
+    "total_token_count": 6664
+  },
+  "provider_response": {
+    "sdk_http_response": {
+      "headers": {
+        "x-gemini-service-tier": "standard",
+        "content-type": "application/json; charset=UTF-8",
+        "vary": "Origin, X-Origin, Referer",
+        "content-encoding": "gzip",
+        "date": "Tue, 08 Sep 2026 20:01:55 GMT",
+        "server": "scaffolding on HTTPServer2",
+        "x-xss-protection": "0",
+        "x-frame-options": "SAMEORIGIN",
+        "x-content-type-options": "nosniff",
+        "server-timing": "gfet4t7; dur=3868",
+        "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+        "transfer-encoding": "chunked"
+      },
+      "body": null
+    },
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "media_resolution": null,
+              "code_execution_result": null,
+              "executable_code": null,
+              "file_data": null,
+              "function_call": null,
+              "function_response": null,
+              "inline_data": null,
+              "text": "{\n  \"schema_version\": \"study-e-evaluator-rating-v1\",\n  \"item_id\": \"EVAL-55323c292bd219ac7f79f26958336999\",\n  \"scores\": {\n    \"persona_fit\": 5,\n    \"clarity\": 5,\n    \"actionability\": 5,\n    \"factual_grounding\": 5\n  },\n  \"reasons\": {\n    \"persona_fit\": \"Accurately targets the owner-operator in a calm, technical, plain-spoken voice; respects the zero-CTA constraint and strictly preserves human-in-the-loop boundaries.\",\n    \"clarity\": \"Logical flow from high-level concept to practical application; explanations are direct, structured, and immediately understandable.\",\n    \"actionability\": \"Offers a clear, scoped exercise: pick one recurring workflow and draft the single-sentence approval rule before automating.\",\n    \"factual_grounding\": \"Correctly describes the accounts-payable demo as a manual simulation on synthetic data and explicitly notes demos are not customer results.\"\n  },\n  \"critical_violation\": false,\n  \"critical_violation_type\": null,\n  \"critical_evidence_quote\": null,\n  \"total_score\": 20,\n  \"pass\": true,\n  \"low_quality\": false\n}",
+              "thought": null,
+              "thought_signature": "EoYOCoMOARFNMg8hu009FKGZfYrNf3L6thJCP9W0sxLdD7RVa9etEwwcLv1Vz_yI2Bpnvl54mGSDeXAyU9PhVbJK3LCeGAx5XPgIPJ_c3pudFiOvKZrXApqJ3o3TwE1bI8EnG9yFT2ZJfq_QpPIVrP-fAuEm9x-_-PEgGLTaszsFMpk154DJ_HzUB73pxKoeSLMvpIxISuDdmk40oqiEwVjKbXSJi8aqxj8CYRetV8ejL-wUlC1C_HJoqde8NvuIfHzNctd4tmGhVg4AOf_DBzT5dgWXFIw4q_2eKYLPc4iWDg603ozA3jJgVx3CaponCAcnbjcBz7euCZj9Ht3eskiofI3wNNddBr4XcUpMW91FhLtpwkeHdImNgwErnl0hkcNz9qC2NhweAnSplbgQWvXFrupOzBNeJaDWirNsHHBYtsUqqOIAPebK5ahBPSslr20QHYPL0DugEmyOh8EXEYPaJY7Zka5xI8eF6q5LIWgZ7IPbzFy9j3og5lG3Vc1HamLkm3-JHqTtWMr20-kXf_Br9FyhGT_iZ89W3c6RDC4nshkoTVypVmhu2KH9PDldWIEomjyXgQ8wSUrJENANIHZvlm4qlAtxR7MsJeUO6UmNxGcX_v6d2zH8JyNJs9YZUBvNp_SPO8fkciwwJxqhOGukg7Kgnqt27VSEBZDgsoGl3dqkcVM4XWRYBF98diLOUMqfYNe8ufxv1c-o8cfgTKqlmnGAvJjr6cPuDMhFVH1-ttdXFMmQfzVQ1JtQTd-x29yYswn9vvj8ynw4DTBgEH6i7TVQpArgqBXOnyR78SpZ2Zx5xjPxP-cnS_63RSHOey--ZlqG15Q4ipLTsBmIzJBhNaW-_5nj_5LWCZoOoacAojOSwQAv09z7qIDBDvgxOoLvpZSh8gqvLycGDiqWFv7RubbreXB_Qx9mpX7prOB_wW5wQiuN7h16gXWlHDacmhyAskczp_0Nc1bQC1Hmzmv3IrQLUZDXYgakkEP-f1jwPZqmWWe-kE7Tg3lPhadAujcdsGcKGbLuzgxWNhwG-8LMhugdb-JkDoUqDYaK1AugYlABtGBwi2M1DZrW8NUqpKSIlbI-04on74shdJPc8IwTMocKht_iUCIREbW2IQm-LnfqDHuj8mRhHZlGzkjV7P2YiT3F0o4oh9Ot5riNZTDPjtQmx33IXREQOVFWa6FQ7V7gphWCLpg5GEttm_t7mBGEA1Jskhy7eYYzhGEEfF4cvGiJIK_qUohyb-TPsjqI9TboNAeTf6w-1SwZV4_Gd8GOu-4osMtMoA-JgF_hVXef0sfaF-ajCDW-V3YLb6JJuA8lEHVcdvaBjFl4NrodjGESV31qGPO1VrK3fgMheGOEf8hn-iq11aan8zDCNJjdiBVjvKMLD4-YRG3KcAOlROvZFpfBkl_08ZpUB_93ZOcPjq9SGIqTF4wIjIFvMinIbGrY7XEJD9LdLlP1WAnJra1xhaxsOdb42is3teHrIbneQOLWuEOmorGLTcShlLk6KSXslf2eqbylM5FTMDM1YhgQvLdcihr7bAFF9zLk4dUMFQwz1uj2yAaEfh_4MyBVrGUlQ39u5EIZnBFCU6PfASO5SDp3l-QNwvWVQWkQzrpWTUl3F-adWoDSA3fyZkOqM0E71Na-gRXGIWCyZdo2BYGoWbbkIV3oLQ58Bz6h7khhOAF1Kq0rK61SYO8PFoTbMzTtrX8B4agxOND5FM4QAWRa5qtz6JUEH9eBpRoad2A1yzQcUJ5P2ZICv9lY83Wc3gHsFUBpbe8YBWKp-bhdzL1j-HnS1c2VKUU_jqm1AAB8kt_KIR6D4QsQvC3MrLWFmnx1yfJIWYAND9y7tho4CNybTGbAlJSamtzEp4EtcAplYZXN6t5UhiQYD58uwie3q22ugtmgaN2xuW9M2Dwm3yW8Yyt1b59VZqgAOve73lS8FBsmemOK8G-ysQGBRoVru2m7AZBNZ7NkBpZV_KuK8LBwstI-8gV5zdRMcjAmDjJMzbDtGDa4iKYk6GQuCI0kn9ng2jHY1N-1sAstfWaq6jZNTLsriv9PNcZChJGzLXB0snnzS7_-aIWaXY1Pl7LuePuOZp0Yqy9Ug-zM3VNy-cpLoEjKgSEF9YS12Xf6o-3Gw78jngPh9rEEJ4LB0m4vSVf_SnZzw6cHHC-LwUnyvh5QFYxYgxfkMrhXt0Yc8wCihnC3Q7c5671vUZHPTxNhBAFBSXXn9ymEumItsnIYCFHi-3-jFaITsI5bTdb8F5Vt_2eH6zychHDSJ8II05LDtEf8XV14Z1h0-o_uv6-5-8zeUxwNGdGI4Q7do42uC6hlG2qGQrGCuVBJxy3C-2QsTWzoIwMryoKMsAQBU6yq--6apGMRQmZMQv0vfZVo_vajTWvys9az4w==",
+              "video_metadata": null,
+              "tool_call": null,
+              "tool_response": null,
+              "part_metadata": null,
+              "audio_transcription": null
+            }
+          ],
+          "role": "model"
+        },
+        "citation_metadata": null,
+        "finish_message": null,
+        "token_count": null,
+        "finish_reason": "STOP",
+        "grounding_metadata": null,
+        "avg_logprobs": null,
+        "index": 0,
+        "logprobs_result": null,
+        "safety_ratings": null,
+        "url_context_metadata": null
+      }
+    ],
+    "create_time": null,
+    "model_version": "gemini-3.8-flash",
+    "prompt_feedback": null,
+    "response_id": "r2mgatSiHLCd3boPsdm3yQE",
+    "usage_metadata": {
+      "cache_tokens_details": null,
+      "cached_content_token_count": null,
+      "candidates_token_count": 316,
+      "candidates_tokens_details": null,
+      "prompt_token_count": 5927,
+      "prompt_tokens_details": [
+        {
+          "modality": "TEXT",
+          "token_count": 5927
+        }
+      ],
+      "thoughts_token_count": 421,
+      "tool_use_prompt_token_count": null,
+      "tool_use_prompt_tokens_details": null,
+      "total_token_count": 6664,
+      "traffic_type": null
+    },
+    "model_status": null,
+    "automatic_function_calling_history": [],
+    "parsed": {
+      "schema_version": "study-e-evaluator-rating-v1",
+      "item_id": "EVAL-55323c292bd219ac7f79f26958336999",
+      "scores": {
+        "persona_fit": 5,
+        "clarity": 5,
+        "actionability": 5,
+        "factual_grounding": 5
+      },
+      "reasons": {
+        "persona_fit": "Accurately targets the owner-operator in a calm, technical, plain-spoken voice; respects the zero-CTA constraint and strictly preserves human-in-the-loop boundaries.",
+        "clarity": "Logical flow from high-level concept to practical application; explanations are direct, structured, and immediately understandable.",
+        "actionability": "Offers a clear, scoped exercise: pick one recurring workflow and draft the single-sentence approval rule before automating.",
+        "factual_grounding": "Correctly describes the accounts-payable demo as a manual simulation on synthetic data and explicitly notes demos are not customer results."
+      },
+      "critical_violation": false,
+      "critical_violation_type": null,
+      "critical_evidence_quote": null,
+      "total_score": 20,
+      "pass": true,
+      "low_quality": false
+    }
+  },
+  "latency_ms": 3891,
+  "finished_at": "2026-09-08T20:01:55.954076+00:00",
+  "cost_details": {
+    "input": 0.00444525,
+    "cache_read_input_tokens": 0.0,
+    "output": 0.001185,
+    "reasoning_output_tokens": 0.00157875,
+    "total": 0.007209
+  },
+  "study_id": "STUDY-E-ABLATON",
+  "operational_amendment": "retry_extension_user_authorized.json"
+}

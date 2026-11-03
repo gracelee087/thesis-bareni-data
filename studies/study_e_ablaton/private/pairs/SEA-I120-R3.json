@@ -1,0 +1,97 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I120-R3",
+    "item_id": "SEA-I120",
+    "repeat": 3,
+    "arm_order": [
+      "critic_off",
+      "critic_on"
+    ],
+    "content_id": "POST-1c763f1ed7bee747f89505e3"
+  },
+  "arms": {
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-1c763f1ed7bee747f89505e3-1",
+        "title": "Design against vendor price changes with one simple control",
+        "body": "When a vendor changes price, the real question is not “is this annoying?” It is: does this cost sit inside a repeatable workflow that you can actually measure and replace if needed?\n\nFor a small business, I would keep this simple. Pick one workflow that already depends on a vendor tool — invoicing, customer reply triage, or manual data entry. Then write down three things: the current per-use or per-user cost, what event would trigger a review, and whether that step could be swapped out without breaking the rest of the process.\n\nThat gives you a bounded decision instead of a vague worry. If the vendor cost rises and the workflow is low-frequency, maybe you keep it. If the same tool sits inside a high-frequency process and the price change would push you toward more manual work or delay a hire, the pressure is different.\n\nOne practical next step: make a quarterly vendor-cost check for that single workflow. Note the current rate, any change notice, and the point where you would revisit the setup. Keep the final approval human. No heroics, just a better grip on the boring part of the stack."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-1c763f1ed7bee747f89505e3-1",
+            "title": "Design against vendor price changes with one simple control",
+            "body": "When a vendor changes price, the real question is not “is this annoying?” It is: does this cost sit inside a repeatable workflow that you can actually measure and replace if needed?\n\nFor a small business, I would keep this simple. Pick one workflow that already depends on a vendor tool — invoicing, customer reply triage, or manual data entry. Then write down three things: the current per-use or per-user cost, what event would trigger a review, and whether that step could be swapped out without breaking the rest of the process.\n\nThat gives you a bounded decision instead of a vague worry. If the vendor cost rises and the workflow is low-frequency, maybe you keep it. If the same tool sits inside a high-frequency process and the price change would push you toward more manual work or delay a hire, the pressure is different.\n\nOne practical next step: make a quarterly vendor-cost check for that single workflow. Note the current rate, any change notice, and the point where you would revisit the setup. Keep the final approval human. No heroics, just a better grip on the boring part of the stack."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-1c763f1ed7bee747f89505e3-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    },
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-1c763f1ed7bee747f89505e3-1",
+        "title": "Design against vendor price changes before they land",
+        "body": "Vendor prices change. The useful question is not whether that happens, but which tools in your workflow should trigger a review before the increase starts hurting the business.\n\nFor a small business, keep this bounded. Pick one recurring process where a vendor cost matters every week or month: invoicing, customer inquiry triage, or data entry. Then ask one practical question: if this subscription goes up, do I keep it, switch it, or redesign the step?\n\nThat is the decision. Not a strategy essay, just a control.\n\nMy next-step suggestion is simple: make a one-page vendor list. Mark the subscriptions that are business-critical, note the current rate, and set a review trigger for each one. The trigger can be a renewal notice, a quarterly check, or a budget threshold you choose. When the trigger fires, decide in advance whether the owner gives manual approval, starts a replacement search, or pauses the spend.\n\nIf the workflow is repetitive and the cost is easy to trace, that gives you a cleaner boundary than hoping the increase will stay small. Price changes are less annoying when they have to go through a process."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-1c763f1ed7bee747f89505e3-1",
+            "title": "Design against vendor price changes before they land",
+            "body": "Vendor prices change. The useful question is not whether that happens, but which tools in your workflow should trigger a review before the increase starts hurting the business.\n\nFor a small business, keep this bounded. Pick one recurring process where a vendor cost matters every week or month: invoicing, customer inquiry triage, or data entry. Then ask one practical question: if this subscription goes up, do I keep it, switch it, or redesign the step?\n\nThat is the decision. Not a strategy essay, just a control.\n\nMy next-step suggestion is simple: make a one-page vendor list. Mark the subscriptions that are business-critical, note the current rate, and set a review trigger for each one. The trigger can be a renewal notice, a quarterly check, or a budget threshold you choose. When the trigger fires, decide in advance whether the owner gives manual approval, starts a replacement search, or pauses the spend.\n\nIf the workflow is repetitive and the cost is easy to trace, that gives you a cleaner boundary than hoping the increase will stay small. Price changes are less annoying when they have to go through a process."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-1c763f1ed7bee747f89505e3-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": [
+            {
+              "repair_id": "P01",
+              "target_ids": [
+                "D01",
+                "D02"
+              ],
+              "instruction": "Replace the opening fragmented sentences with one clean lead that states the point plainly, then keep the rest of the post in short, ordered paragraphs. The post should read in a straight line: vendor prices can change, so the workflow decision is to define in advance which recurring tools trigger review, when the owner reviews them, and what happens if the price crosses the threshold.",
+              "source_ids": [
+                "BRIEF",
+                "S01",
+                "C01",
+                "C02",
+                "C05"
+              ]
+            },
+            {
+              "repair_id": "P02",
+              "target_ids": [
+                "D02"
+              ],
+              "instruction": "Add one concrete next step the owner can execute immediately: make a simple vendor list, mark the subscriptions that are business-critical, set a review threshold for each one, and decide whether each trigger goes to manual approval, switching tools, or pausing the spend. Keep it to one bounded decision, not a strategy essay.",
+              "source_ids": [
+                "BRIEF",
+                "S01",
+                "C02",
+                "C04"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

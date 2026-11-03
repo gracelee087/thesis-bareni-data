@@ -1,0 +1,367 @@
+{
+  "task_id": "SE-FINAL-N119",
+  "batch_id": 4,
+  "condition": "natural",
+  "source_task_id": null,
+  "topic": "when metric definitions stop working",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-326",
+    "title": "When the metric stops matching the work",
+    "body": "A metric usually stops working for one of two reasons: the work changed, or the rule behind the metric is no longer the thing you actually want. That shows up in small businesses all the time. The count still looks neat on paper, but the outcome gets messy: a support tag is “right” while the reply is unhelpful, an approval rate is steady while exceptions pile up, or lead scoring keeps ranking the wrong prospects. Classic spreadsheet optimism.\n\nThe useful question is not “Is the metric bad?” but “Is the metric measuring the wrong thing, or is the rule beneath it outdated?” If the workflow changed, the old definition may now be steering you into extra manual checking. If the rule changed, the metric may still be reporting correctly while the decision itself is stale.\n\nThe practical next step is simple: write down the real rule in plain English, then collect a small sample of the cases where the metric breaks down. Keep the human judgment in the loop. For money movement and other high-risk decisions, that stays with the owner.\n\nOnce you can see whether the metric or the rule broke, you can decide whether this is a reporting fix, a workflow redesign, or a bounded automation candidate.】"
+  },
+  "final": {
+    "item_id": "E-OPT-426",
+    "title": "When the metric stops matching the work",
+    "body": "A metric usually stops working for one of two reasons: the work changed, or the rule underneath it no longer matches what you actually want. In a small business, that shows up fast. The count still looks tidy, but the business outcome gets messy: support tags are “correct” while replies are unhelpful, approvals stay steady while exceptions pile up, or lead scoring keeps praising the wrong prospects. Classic spreadsheet optimism.\n\nThe useful question is not “Is the metric bad?” but “Did the workflow change, or did the rule change?” If the workflow changed, the old definition may now be steering you into extra manual checking. If the rule changed, the metric may still be reporting honestly while the decision itself is stale.\n\nThe practical next step is simple: write the real rule in plain English, then collect a small sample of the cases where the metric breaks down. Compare the cases that fail to the cases that still look fine. That tells you whether you need a reporting fix, a workflow redesign, or a bounded automation candidate.\n\nKeep human judgment in the loop for money movement and other high-risk decisions. Once you can name the broken part, the rest stops looking mysterious."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-119",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-119",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-119-1",
+        "repairs": []
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-119",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-426",
+        "title": "When the metric stops matching the work",
+        "body": "A metric usually stops working for one of two reasons: the work changed, or the rule underneath it no longer matches what you actually want. In a small business, that shows up fast. The count still looks tidy, but the business outcome gets messy: support tags are “correct” while replies are unhelpful, approvals stay steady while exceptions pile up, or lead scoring keeps praising the wrong prospects. Classic spreadsheet optimism.\n\nThe useful question is not “Is the metric bad?” but “Did the workflow change, or did the rule change?” If the workflow changed, the old definition may now be steering you into extra manual checking. If the rule changed, the metric may still be reporting honestly while the decision itself is stale.\n\nThe practical next step is simple: write the real rule in plain English, then collect a small sample of the cases where the metric breaks down. Compare the cases that fail to the cases that still look fine. That tells you whether you need a reporting fix, a workflow redesign, or a bounded automation candidate.\n\nKeep human judgment in the loop for money movement and other high-risk decisions. Once you can name the broken part, the rest stops looking mysterious."
+      },
+      "gate_key": "SE-FINAL-N119_gate1__a001"
+    }
+  ],
+  "measurement_status": "complete",
+  "planner": {
+    "item_id": "E-PLAN-526",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "Task authorizes no CTA; closing will use a neutral practical observation about the workflow decision rather than inviting a meeting or diagnostic booking."
+      },
+      {
+        "lesson_id": "L02",
+        "application": "Company evidence C02 describes the diagnostic as identifying 'whether AI fits' honestly; this operational discipline will be preserved as policy language, not overstated as a guarantee."
+      },
+      {
+        "lesson_id": "L03",
+        "application": "The abstract topic 'when metric definitions stop working' will be grounded in a specific workflow symptom (e.g., KPI drift in a repeating task) that the owner recognizes, rather than filled with generic discussion of metrics philosophy."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Open with a single concrete workflow scenario: a repeating task (e.g., customer-support categorization, invoice approval, lead scoring) where the owner's original success measure (the metric) no longer tracks the actual business outcome. Name the symptom plainly—counts are rising but quality or timing are failing, or the metric has become a box-tick unrelated to the decision it once informed.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "S01",
+          "C01",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Explain why the metric broke: the workflow changed (new product, new team member, new tool), the customer behavior shifted, or the rule you automated no longer matches the intent. Keep it specific to the owner's role, not a general business principle.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "S01",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "State the owner's immediate choice: rework the metric, rebuild the automation, redesign the workflow, or accept manual override for edge cases. Do not hide the cost or friction of each option.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L02"
+        ],
+        "evidence_ids": [
+          "S01",
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Introduce one diagnostic question the owner should answer before deciding: for example, 'Is the metric wrong or is the rule wrong?' or 'Does this happen in 5% of cases or 30%?' Connect the answer to which option is worth the effort.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "If the workflow is repeating, low-sensitivity, and the owner has already isolated the failure case, offer the practical next step: document the actual rule (what you really want to happen) and a sample of failing cases. Explain that this clarity is the input to a pilot proposal, not a guarantee of automation fit.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L02"
+        ],
+        "evidence_ids": [
+          "C02",
+          "C04",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Close with a neutral observation: for example, 'Once you know whether the metric or the rule broke, you'll know whether this is a reporting fix, a workflow redesign, or an automation opportunity.' Do not include a CTA, meeting invitation, or diagnostic booking prompt.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "S01",
+          "C05"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No customer names, deployment claims, invented results, productivity numbers, or hiring-cost ROI. Refer to Bareni as a consulting practice being built by the thesis author; describe the three self-built demos and their disclosed limits only."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Human approval remains with the owner for any workflow change or money allocation. Do not suggest autonomous decisions or recommend excluded services (medical, legal, bulk cold email, scan-heavy OCR)."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Preserve the frozen persona: plain-speaking, founder-to-founder, restrained tone, one understated phrase maximum, no hype. Maintain the approved evidence status boundaries; do not claim production readiness, scale, or customer validation."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use plain English throughout. Keep workflow proposal distinct from existing working features (knowledge assistant demo, accounts-payable demo, Atlas Partner prototype). Do not imply a multi-person team or legal registration."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-626",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Turn the abstract topic into a bounded Bareni workflow decision. Explain one practical next step."
+          },
+          {
+            "source_id": "C01",
+            "quote": "The representative pains are 8–10 hours a week of repeated customer questions, neglected sales leads,\n  and manual invoice/data work."
+          }
+        ],
+        "rationale": "This is a drafting instruction to open with an illustrative scenario, not an assertion that such a case was observed at a customer. The named examples (support categorization, invoice approval, lead scoring) align with the persona pains and Bareni's workflow scope.",
+        "use_guidance": "Keep explicitly proposed and clearly hypothetical: label the scenario as an example or persona situation, never as an observed customer case, deployment, or result. Do not attach numbers such as 8–10 hours as a market statistic or measured outcome."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Practicality: explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Prefer concrete mechanisms and measured outcomes."
+          }
+        ],
+        "rationale": "An instruction about how to frame the explanation for the owner reader, not a factual claim about Bareni capabilities or customer experience.",
+        "use_guidance": "Keep as a proposed explanatory frame. Present causes (workflow change, tool change, shifted behaviour) as generic possibilities, not as diagnosed events at any real business, and avoid invented failure statistics."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Decision context: the owner compares a bounded automation investment with continuing\n  manual work or hiring; final approval and business authority remain human."
+          },
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI\n  fits, and—if it does—defines pilot scope, fixed price, and measures."
+          }
+        ],
+        "rationale": "A planned content element presenting decision options to the reader; it asserts no current implementation or observed benefit. Manual override and honest fit assessment sit within approved positioning.",
+        "use_guidance": "Keep proposed. Describe option costs qualitatively; do not quote prices, timings as guarantees, or effort figures that are not in the evidence, and keep human decision authority with the owner."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Practicality: explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step."
+          }
+        ],
+        "rationale": "An explicit diagnostic question for the reader, which the persona focus permits; illustrative percentages are framed as question wording rather than measured facts.",
+        "use_guidance": "Keep proposed and use only one such question. Present the 5%/30% figures as an illustrative threshold the owner would estimate himself, not as a Bareni benchmark or observed frequency."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "Normal sequence: free 30-minute diagnostic; free one-page pilot proposal;\n  paid working MVP in days; fixed-price pilot in weeks"
+          },
+          {
+            "source_id": "C04",
+            "quote": "Bareni currently declines high-sensitivity medical, legal, and financial work;\n  bulk cold-email automation; scan-heavy OCR-dependent workflows"
+          },
+          {
+            "source_id": "C01",
+            "quote": "Especially suitable businesses already work in English, use digital\n  documents and SaaS tools, and have a frequent, repeatable workflow with a\n  measurable outcome."
+          }
+        ],
+        "rationale": "The proposed next step (document the real rule and failing cases) is permissible, but the claim also asserts as fact that this documentation feeds a pilot proposal, which is only true within the approved sequence and scope limits. The conditions stated in the claim omit the scan-heavy/OCR exclusion and the digital-document fit condition.",
+        "use_guidance": "Add the missing conditions before use: state that the pilot proposal follows the free diagnostic and free one-page proposal step, that scan-heavy or OCR-dependent and high-sensitivity workflows are currently out of scope, and that timings are intended scopes rather than guarantees. Keep the explicit statement that this is not proof of automation fit."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Informational posts use no CTA or one soft closing sentence."
+          }
+        ],
+        "rationale": "An instruction for a neutral closing line with an explicit prohibition on any CTA; it makes no factual capability claim.",
+        "use_guidance": "Keep proposed and enforce the no-CTA rule: no booking prompt, meeting invitation, offer to discuss, or capacity/scarcity line. End with the neutral practical observation only."
+      }
+    ]
+  },
+  "selected_lessons": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. This includes indirect meeting prompts and direct brand-level offers such as a free 30-minute diagnostic. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025",
+        "B3-SUMMARY",
+        "SE-FINAL-N079"
+      ]
+    },
+    {
+      "lesson_id": "L02",
+      "text": "When approved evidence presents an operational practice as policy or positioning, keep that qualifier in the copy. Do not rewrite it as an absolute guarantee or warranty-level statement.",
+      "source_event_ids": [
+        "B3-SUMMARY",
+        "SE-FINAL-N080"
+      ]
+    },
+    {
+      "lesson_id": "L03",
+      "text": "If the source set does not support a substantive explanatory claim, replace it with a neutral workflow prompt or decision step rather than filling the gap with general background explanation.",
+      "source_event_ids": [
+        "B3-SUMMARY",
+        "SE-FINAL-N091"
+      ]
+    }
+  ],
+  "register_sha256": "119720de77d8c13ba7ec5ca4065775e8d4ac629796a073c799f5a0be4d935e35",
+  "planner_key": "SE-FINAL-N119_planner__a001",
+  "researcher_key": "SE-FINAL-N119_researcher__a001",
+  "writer_key": "SE-FINAL-N119_writer__a001",
+  "final_key": "SE-FINAL-N119_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-N119_gate1__a001",
+  "production_completed_at": "2026-09-08T13:21:30.326631+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts",
+  "initial_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-119",
+    "scores": {
+      "persona_fit": 5,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Speaks directly to small-business owners in Bareni's calm, practical voice, respecting boundary rules on human approval and omitting a sales CTA as instructed.",
+      "clarity": "Immediately clear thesis and logical progression contrasting metric failure versus outdated underlying rules, written in plain language.",
+      "actionability": "Provides a realistic, concrete diagnostic question and a feasible next step for scoping workflow and automation decisions.",
+      "factual_grounding": "Strictly adheres to task boundaries; uses illustrative examples without inventing customer deployments, metrics, or false claims."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 20,
+    "pass": true,
+    "low_quality": false
+  },
+  "final_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-119",
+    "scores": {
+      "persona_fit": 5,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Speaks directly to small business owner-operators in Bareni's calm, practical voice with restrained tone, no sales CTA, and explicit human-in-the-loop boundaries.",
+      "clarity": "Exceptionally clear, structured logic separating workflow shifts from rule decay, with clean examples and straightforward explanations on first read.",
+      "actionability": "Provides an immediately feasible, well-scoped diagnostic method: writing the rule in plain English, collecting sample breakdowns, and comparing cases to decide next steps.",
+      "factual_grounding": "Strictly adheres to all evidence boundaries, making no invented customer claims, performance figures, or unbacked capabilities."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 20,
+    "pass": true,
+    "low_quality": false
+  },
+  "evaluation_reused": false,
+  "evaluation_keys": [
+    "SE-FINAL-N119_eval_initial__a001",
+    "SE-FINAL-N119_eval_final__a001"
+  ],
+  "completed_at": "2026-09-08T13:21:39.034140+00:00"
+}

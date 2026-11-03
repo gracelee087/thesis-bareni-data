@@ -1,0 +1,183 @@
+{
+  "status": "success",
+  "usage": {
+    "input_tokens": 7503,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1892,
+    "reasoning_tokens": null
+  },
+  "cost_usd": 0.084815,
+  "output": {
+    "item_id": "E-RES-615",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step"
+          },
+          {
+            "source_id": "C05",
+            "quote": "Explain necessary jargon immediately."
+          }
+        ],
+        "rationale": "This is an instruction to the reader plus a plain-language definition, not an assertion that Bareni has implemented or observed anything. The task explicitly authorises a bounded workflow decision and practical next step, and immediate jargon explanation is in voice.",
+        "use_guidance": "Keep as reader-facing definition and diagnostic step. Do not imply Bareni maintains or has audited any customer's reference data; keep the listed examples generic rather than tied to a named business."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI\n  fits"
+          },
+          {
+            "source_id": "S01",
+            "quote": "Do not force AI where it is unsuitable."
+          }
+        ],
+        "rationale": "A diagnostic instruction asking the reader to document update frequency, ownership, location and rework. It reports no current implementation, no measurement and no observed benefit.",
+        "use_guidance": "Keep explicitly as a self-diagnostic step for the reader. Do not attach any figure for broken workflows or rework hours; state no counts unless the reader supplies them. Trim the assertion \"This friction is the real problem automation solves\" to a hypothesis-style phrasing so it does not read as a validated finding."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "the owner compares a bounded automation investment with continuing\n  manual work or hiring; final approval and business authority remain human"
+          },
+          {
+            "source_id": "C02",
+            "quote": "says honestly whether AI\n  fits"
+          }
+        ],
+        "rationale": "A recommendation about sequencing (clean reference data before downstream builds), including the option of a non-AI step. It recommends rather than asserting an observed result, and the honest-fit and no-forcing rules permit advising a non-AI first step.",
+        "use_guidance": "Keep as a recommendation phrased conditionally. Do not present \"automation without clean reference data wastes effort\" as a measured finding; frame it as reasoning. Keep the \"weekly\" update cadence as a reader-supplied example threshold, not a Bareni benchmark."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "free one-page pilot proposal;\n  paid working MVP in days; fixed-price pilot in weeks"
+          },
+          {
+            "source_id": "C05",
+            "quote": "Numbers require a source and status."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Never invent a benchmark, guarantee, ROI,\n  saving, revenue lift, productivity result"
+          }
+        ],
+        "rationale": "Proposing a single-dataset pilot with a single source of truth and distribution to existing tools is within the approved pilot model, but \"Measure the time saved and errors prevented\" presupposes savings and prevented errors as expected outcomes, which needs an explicit limitation before use.",
+        "use_guidance": "Add the qualification that measures are to be defined in the pilot scope and their values are unknown in advance: e.g. agree baseline and measures first, with no promised saving or error reduction. Also state the pilot timing as an intended scope, not a guarantee, and keep the dataset example hypothetical."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C03",
+            "quote": "amount-based human-only approval,\n  refusal of agent approval/payment attempts"
+          },
+          {
+            "source_id": "C03",
+            "quote": "The blocked payment demonstration is a manual trigger and simulated, not a real\n  transfer."
+          }
+        ],
+        "rationale": "The human-approval boundary and refusal of agent payment are approved, and grounding answers in approved company material matches the demo's RAG behaviour. However, as written the sentence reads as a property that will hold of a delivered automation, so the demo-only, non-production status of these controls must be attached.",
+        "use_guidance": "Add the qualification that these controls were built and shown in a self-built demo on synthetic data, not in production or at a customer, and that grounded reading of approved sources plus human-only approval is a design requirement to be specified per build. Keep human approval stated as mandatory."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "FORBIDDEN",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Standard primary CTA: \"Book a free 30-minute diagnostic\". Use it only for\n  purchase-intent content, once, at the end."
+          }
+        ],
+        "rationale": "The approved task forbids any CTA for this post, so recommending the reader schedule a diagnostic is a prohibited action here regardless of the diagnostic itself being a real free offer. The reference to \"the friction map from P02\" also points to an internal step label that is not part of the reader-facing content.",
+        "use_guidance": "Exclude the CTA and the internal \"P02\" reference. If a closing line is needed, use one soft informational sentence with no invitation, booking, contact request or scarcity. The free 30-minute diagnostic and fixed-price pilot remain separately supported facts about the offer but may not be turned into a call to action in this post."
+      }
+    ]
+  },
+  "raw_text": "{\"item_id\":\"E-RES-615\",\"ledger\":[{\"claim_id\":\"Q01\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"S01\",\"quote\":\"explain one observable workflow decision, threshold, diagnostic question,\\n  control, or next step\"},{\"source_id\":\"C05\",\"quote\":\"Explain necessary jargon immediately.\"}],\"rationale\":\"This is an instruction to the reader plus a plain-language definition, not an assertion that Bareni has implemented or observed anything. The task explicitly authorises a bounded workflow decision and practical next step, and immediate jargon explanation is in voice.\",\"use_guidance\":\"Keep as reader-facing definition and diagnostic step. Do not imply Bareni maintains or has audited any customer's reference data; keep the listed examples generic rather than tied to a named business.\"},{\"claim_id\":\"Q02\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C02\",\"quote\":\"The diagnostic identifies the one recurring workflow, says honestly whether AI\\n  fits\"},{\"source_id\":\"S01\",\"quote\":\"Do not force AI where it is unsuitable.\"}],\"rationale\":\"A diagnostic instruction asking the reader to document update frequency, ownership, location and rework. It reports no current implementation, no measurement and no observed benefit.\",\"use_guidance\":\"Keep explicitly as a self-diagnostic step for the reader. Do not attach any figure for broken workflows or rework hours; state no counts unless the reader supplies them. Trim the assertion \\\"This friction is the real problem automation solves\\\" to a hypothesis-style phrasing so it does not read as a validated finding.\"},{\"claim_id\":\"Q03\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"S01\",\"quote\":\"the owner compares a bounded automation investment with continuing\\n  manual work or hiring; final approval and business authority remain human\"},{\"source_id\":\"C02\",\"quote\":\"says honestly whether AI\\n  fits\"}],\"rationale\":\"A recommendation about sequencing (clean reference data before downstream builds), including the option of a non-AI step. It recommends rather than asserting an observed result, and the honest-fit and no-forcing rules permit advising a non-AI first step.\",\"use_guidance\":\"Keep as a recommendation phrased conditionally. Do not present \\\"automation without clean reference data wastes effort\\\" as a measured finding; frame it as reasoning. Keep the \\\"weekly\\\" update cadence as a reader-supplied example threshold, not a Bareni benchmark.\"},{\"claim_id\":\"Q04\",\"category\":\"QUALIFICATIONS\",\"evidence\":[{\"source_id\":\"C02\",\"quote\":\"free one-page pilot proposal;\\n  paid working MVP in days; fixed-price pilot in weeks\"},{\"source_id\":\"C05\",\"quote\":\"Numbers require a source and status.\"},{\"source_id\":\"C05\",\"quote\":\"Never invent a benchmark, guarantee, ROI,\\n  saving, revenue lift, productivity result\"}],\"rationale\":\"Proposing a single-dataset pilot with a single source of truth and distribution to existing tools is within the approved pilot model, but \\\"Measure the time saved and errors prevented\\\" presupposes savings and prevented errors as expected outcomes, which needs an explicit limitation before use.\",\"use_guidance\":\"Add the qualification that measures are to be defined in the pilot scope and their values are unknown in advance: e.g. agree baseline and measures first, with no promised saving or error reduction. Also state the pilot timing as an intended scope, not a guarantee, and keep the dataset example hypothetical.\"},{\"claim_id\":\"Q05\",\"category\":\"QUALIFICATIONS\",\"evidence\":[{\"source_id\":\"C04\",\"quote\":\"Human approval is mandatory for money movement and other high-risk decisions.\"},{\"source_id\":\"C03\",\"quote\":\"amount-based human-only approval,\\n  refusal of agent approval/payment attempts\"},{\"source_id\":\"C03\",\"quote\":\"The blocked payment demonstration is a manual trigger and simulated, not a real\\n  transfer.\"}],\"rationale\":\"The human-approval boundary and refusal of agent payment are approved, and grounding answers in approved company material matches the demo's RAG behaviour. However, as written the sentence reads as a property that will hold of a delivered automation, so the demo-only, non-production status of these controls must be attached.\",\"use_guidance\":\"Add the qualification that these controls were built and shown in a self-built demo on synthetic data, not in production or at a customer, and that grounded reading of approved sources plus human-only approval is a design requirement to be specified per build. Keep human approval stated as mandatory.\"},{\"claim_id\":\"Q06\",\"category\":\"FORBIDDEN\",\"evidence\":[{\"source_id\":\"S01\",\"quote\":\"**CTA rule:** None.\"},{\"source_id\":\"C05\",\"quote\":\"Standard primary CTA: \\\"Book a free 30-minute diagnostic\\\". Use it only for\\n  purchase-intent content, once, at the end.\"}],\"rationale\":\"The approved task forbids any CTA for this post, so recommending the reader schedule a diagnostic is a prohibited action here regardless of the diagnostic itself being a real free offer. The reference to \\\"the friction map from P02\\\" also points to an internal step label that is not part of the reader-facing content.\",\"use_guidance\":\"Exclude the CTA and the internal \\\"P02\\\" reference. If a closing line is needed, use one soft informational sentence with no invitation, booking, contact request or scarcity. The free 30-minute diagnostic and fixed-price pilot remain separately supported facts about the offer but may not be turned into a call to action in this post.\"}]}",
+  "provider_response": {
+    "id": "msg_011CeqxV8naPAjbPyiU8Qz7u",
+    "container": null,
+    "content": [
+      {
+        "citations": null,
+        "text": "{\"item_id\":\"E-RES-615\",\"ledger\":[{\"claim_id\":\"Q01\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"S01\",\"quote\":\"explain one observable workflow decision, threshold, diagnostic question,\\n  control, or next step\"},{\"source_id\":\"C05\",\"quote\":\"Explain necessary jargon immediately.\"}],\"rationale\":\"This is an instruction to the reader plus a plain-language definition, not an assertion that Bareni has implemented or observed anything. The task explicitly authorises a bounded workflow decision and practical next step, and immediate jargon explanation is in voice.\",\"use_guidance\":\"Keep as reader-facing definition and diagnostic step. Do not imply Bareni maintains or has audited any customer's reference data; keep the listed examples generic rather than tied to a named business.\"},{\"claim_id\":\"Q02\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C02\",\"quote\":\"The diagnostic identifies the one recurring workflow, says honestly whether AI\\n  fits\"},{\"source_id\":\"S01\",\"quote\":\"Do not force AI where it is unsuitable.\"}],\"rationale\":\"A diagnostic instruction asking the reader to document update frequency, ownership, location and rework. It reports no current implementation, no measurement and no observed benefit.\",\"use_guidance\":\"Keep explicitly as a self-diagnostic step for the reader. Do not attach any figure for broken workflows or rework hours; state no counts unless the reader supplies them. Trim the assertion \\\"This friction is the real problem automation solves\\\" to a hypothesis-style phrasing so it does not read as a validated finding.\"},{\"claim_id\":\"Q03\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"S01\",\"quote\":\"the owner compares a bounded automation investment with continuing\\n  manual work or hiring; final approval and business authority remain human\"},{\"source_id\":\"C02\",\"quote\":\"says honestly whether AI\\n  fits\"}],\"rationale\":\"A recommendation about sequencing (clean reference data before downstream builds), including the option of a non-AI step. It recommends rather than asserting an observed result, and the honest-fit and no-forcing rules permit advising a non-AI first step.\",\"use_guidance\":\"Keep as a recommendation phrased conditionally. Do not present \\\"automation without clean reference data wastes effort\\\" as a measured finding; frame it as reasoning. Keep the \\\"weekly\\\" update cadence as a reader-supplied example threshold, not a Bareni benchmark.\"},{\"claim_id\":\"Q04\",\"category\":\"QUALIFICATIONS\",\"evidence\":[{\"source_id\":\"C02\",\"quote\":\"free one-page pilot proposal;\\n  paid working MVP in days; fixed-price pilot in weeks\"},{\"source_id\":\"C05\",\"quote\":\"Numbers require a source and status.\"},{\"source_id\":\"C05\",\"quote\":\"Never invent a benchmark, guarantee, ROI,\\n  saving, revenue lift, productivity result\"}],\"rationale\":\"Proposing a single-dataset pilot with a single source of truth and distribution to existing tools is within the approved pilot model, but \\\"Measure the time saved and errors prevented\\\" presupposes savings and prevented errors as expected outcomes, which needs an explicit limitation before use.\",\"use_guidance\":\"Add the qualification that measures are to be defined in the pilot scope and their values are unknown in advance: e.g. agree baseline and measures first, with no promised saving or error reduction. Also state the pilot timing as an intended scope, not a guarantee, and keep the dataset example hypothetical.\"},{\"claim_id\":\"Q05\",\"category\":\"QUALIFICATIONS\",\"evidence\":[{\"source_id\":\"C04\",\"quote\":\"Human approval is mandatory for money movement and other high-risk decisions.\"},{\"source_id\":\"C03\",\"quote\":\"amount-based human-only approval,\\n  refusal of agent approval/payment attempts\"},{\"source_id\":\"C03\",\"quote\":\"The blocked payment demonstration is a manual trigger and simulated, not a real\\n  transfer.\"}],\"rationale\":\"The human-approval boundary and refusal of agent payment are approved, and grounding answers in approved company material matches the demo's RAG behaviour. However, as written the sentence reads as a property that will hold of a delivered automation, so the demo-only, non-production status of these controls must be attached.\",\"use_guidance\":\"Add the qualification that these controls were built and shown in a self-built demo on synthetic data, not in production or at a customer, and that grounded reading of approved sources plus human-only approval is a design requirement to be specified per build. Keep human approval stated as mandatory.\"},{\"claim_id\":\"Q06\",\"category\":\"FORBIDDEN\",\"evidence\":[{\"source_id\":\"S01\",\"quote\":\"**CTA rule:** None.\"},{\"source_id\":\"C05\",\"quote\":\"Standard primary CTA: \\\"Book a free 30-minute diagnostic\\\". Use it only for\\n  purchase-intent content, once, at the end.\"}],\"rationale\":\"The approved task forbids any CTA for this post, so recommending the reader schedule a diagnostic is a prohibited action here regardless of the diagnostic itself being a real free offer. The reference to \\\"the friction map from P02\\\" also points to an internal step label that is not part of the reader-facing content.\",\"use_guidance\":\"Exclude the CTA and the internal \\\"P02\\\" reference. If a closing line is needed, use one soft informational sentence with no invitation, booking, contact request or scarcity. The free 30-minute diagnostic and fixed-price pilot remain separately supported facts about the offer but may not be turned into a call to action in this post.\"}]}",
+        "type": "text"
+      }
+    ],
+    "model": "claude-opus-5",
+    "role": "assistant",
+    "stop_details": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "global",
+      "input_tokens": 7503,
+      "output_tokens": 1892,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": null,
+      "service_tier": "standard"
+    }
+  },
+  "stop_reason": "end_turn",
+  "cost_details": {
+    "input": 0.037515,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.0473,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.084815
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": null,
+  "key": "SE-FINAL-N015_researcher__a001",
+  "role": "researcher",
+  "created_at": "2026-09-08T12:17:05.502323+00:00",
+  "ended_at": "2026-09-08T12:17:31.252696+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-N015",
+    "batch_id": 1,
+    "condition": "natural",
+    "cohort": "natural"
+  },
+  "task_id": "SE-FINAL-N015",
+  "batch_id": 1,
+  "cohort": "natural",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 25747,
+  "budget_charge_usd": 0.084815,
+  "unknown_cost_reservation_usd": 0
+}

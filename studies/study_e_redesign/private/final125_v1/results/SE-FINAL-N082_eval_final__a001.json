@@ -1,0 +1,162 @@
+{
+  "status": "success",
+  "usage": {
+    "prompt_token_count": 5916,
+    "cached_content_token_count": 0,
+    "candidates_token_count": 301,
+    "thoughts_token_count": 1353,
+    "total_token_count": 7570
+  },
+  "cost_usd": 0.0106395,
+  "output": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-082",
+    "scores": {
+      "persona_fit": 3,
+      "clarity": 3,
+      "actionability": 4,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Adheres to boundaries and lacks a prohibited CTA, but leaks internal meta-prompt wording ('persona scenario', 'approved scenario') into the post and uses 'I' rather than the required 'we'.",
+      "clarity": "The core workflow logic is coherent, but the inclusion of internal guideline disclaimers ('illustration from the approved scenario') is confusing and awkward for an outside reader.",
+      "actionability": "Outlines a clear, realistic manual diagnostic step comparing tool and labor costs before deciding to automate.",
+      "factual_grounding": "Strictly adheres to all provided facts and constraints, making zero unsupported customer, capability, or performance claims."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 15,
+    "pass": true,
+    "low_quality": false
+  },
+  "raw_text": "{\n  \"schema_version\": \"study-e-evaluator-rating-v1\",\n  \"item_id\": \"EVAL-BLIND-082\",\n  \"scores\": {\n    \"persona_fit\": 3,\n    \"clarity\": 3,\n    \"actionability\": 4,\n    \"factual_grounding\": 5\n  },\n  \"reasons\": {\n    \"persona_fit\": \"Adheres to boundaries and lacks a prohibited CTA, but leaks internal meta-prompt wording ('persona scenario', 'approved scenario') into the post and uses 'I' rather than the required 'we'.\",\n    \"clarity\": \"The core workflow logic is coherent, but the inclusion of internal guideline disclaimers ('illustration from the approved scenario') is confusing and awkward for an outside reader.\",\n    \"actionability\": \"Outlines a clear, realistic manual diagnostic step comparing tool and labor costs before deciding to automate.\",\n    \"factual_grounding\": \"Strictly adheres to all provided facts and constraints, making zero unsupported customer, capability, or performance claims.\"\n  },\n  \"critical_violation\": false,\n  \"critical_violation_type\": null,\n  \"critical_evidence_quote\": null,\n  \"total_score\": 15,\n  \"pass\": true,\n  \"low_quality\": false\n}",
+  "provider_response": {
+    "sdk_http_response": {
+      "headers": {
+        "x-gemini-service-tier": "standard",
+        "content-type": "application/json; charset=UTF-8",
+        "vary": "Origin, X-Origin, Referer",
+        "content-encoding": "gzip",
+        "date": "Tue, 08 Sep 2026 12:59:11 GMT",
+        "server": "scaffolding on HTTPServer2",
+        "x-xss-protection": "0",
+        "x-frame-options": "SAMEORIGIN",
+        "x-content-type-options": "nosniff",
+        "server-timing": "gfet4t7; dur=8646",
+        "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+        "transfer-encoding": "chunked"
+      },
+      "body": null
+    },
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "media_resolution": null,
+              "code_execution_result": null,
+              "executable_code": null,
+              "file_data": null,
+              "function_call": null,
+              "function_response": null,
+              "inline_data": null,
+              "text": "{\n  \"schema_version\": \"study-e-evaluator-rating-v1\",\n  \"item_id\": \"EVAL-BLIND-082\",\n  \"scores\": {\n    \"persona_fit\": 3,\n    \"clarity\": 3,\n    \"actionability\": 4,\n    \"factual_grounding\": 5\n  },\n  \"reasons\": {\n    \"persona_fit\": \"Adheres to boundaries and lacks a prohibited CTA, but leaks internal meta-prompt wording ('persona scenario', 'approved scenario') into the post and uses 'I' rather than the required 'we'.\",\n    \"clarity\": \"The core workflow logic is coherent, but the inclusion of internal guideline disclaimers ('illustration from the approved scenario') is confusing and awkward for an outside reader.\",\n    \"actionability\": \"Outlines a clear, realistic manual diagnostic step comparing tool and labor costs before deciding to automate.\",\n    \"factual_grounding\": \"Strictly adheres to all provided facts and constraints, making zero unsupported customer, capability, or performance claims.\"\n  },\n  \"critical_violation\": false,\n  \"critical_violation_type\": null,\n  \"critical_evidence_quote\": null,\n  \"total_score\": 15,\n  \"pass\": true,\n  \"low_quality\": false\n}",
+              "thought": null,
+              "thought_signature": "EoMvCoAvARFNMg8_hYZuiTl2asMrvprhfM3llha_UAltpgRl7WeMvczXyqODy2M_B2G0c2E0VM-xSnGacRvSax1_B045JnGsktW2X6IBmFLxXHyc-NECAlacHwxFysEYX-IaaLCmEnalFnbxJ7JoeNZw85ihz79SiBCNJ4bwNOjuzp-H2vFbn99mbDL9CokFg7DcBvCPZtkl6gqiIFY0qGIzrpucesyjuX0p6OzX5qSan-BvEBqVizqNUqp47p3SmchBaNnxBzwW1hXFBOo1y0U9Kd7doAE8vDRc5gG1_GGd_b1eJ1Fcskrf9UBD-Y4I8m1kQzJcy1bM9k3n8u_INJIlrABPp7LUxbdJovkXUc7yzYSQrCmqYtzrLka2jyF6Qa0y-CzUM3JqwJfAU89ys2NjP0g5IEVvRUt6C89TnKdtMnE63cCTvuOgMkeXiN_O6QIphIgV97i2h3vDmGL_7Q8o0UgCOXzISWnS-cHui_E53bTMgSbVtLwdaYM7DDXwHWOF4Xn0c4HBHeL4ktq-WS5mrhiqxuERmdawtAdsdu9cwE_MNXhOJNoUi6YSOv3qeGlBTw6Ryhtqdyj-Qj1Gka_xxxAmMlRtglTMuUzv-gugHgzAtzTmzD3ZQ1rWL-lPpd80cwKvQNeXR-hi764spo0Y9DEuTgAHmr1MQy2Xb6ltqfDmXcJeXhFqW9Quc02EQ5g1XNp8xTBBVwfDC8J4vknE1jAPmPI7YEL8wqWQ4okdOmxigTEJUWj_YyS5yx16thisaCFVjzmptqEeb03v0ffCEJOhCJOgFds44Y1oukL6yNJZ6kf5IJsPVsKgMu2D_GgUKusX5sXO2wN_zF60oVBBs2np_ircYTZXWYjCOjTfeubAIR2npwt6y5EQLcr1If9iBAcvxQGTvyVekLy1sTng2jhGaLu07fz7QAbDAGM-qni04y2KsASCGGdBquFa1VZC3kmKuZJVSaX0cJMHouioL1Rj2xfQV9dD1G1Trsqm44bEZEfq-vjY-T0bVb7zWgNbtsUzJC0eQtXU16tJ_JIExRpJiEwhMwSkjbdm5Md4ryQAND-8_hzdDlfSFozGw2XqEVmIMzRWTs0gSUiQdp43zoNqMcd7GMSVc7nsZV4Ugiyl9xg3GuBQJSu2IKLJibqVv5ovAHXJEjI_RD9rKwQpB6gyaB0Rv0n4B1OA3plfhl_72SytqwQ5vdeqogkVMmzB9zp5RJF_aUEr9ieAkUfqajVgkskgVkT6oef5d6XMLb11ebHakEubeI3JjiEzScC4CcAyetndmd6d_LuLycOKGum50l_b63nyVIjJox4x0pfF0nUZMNvYEKTgayogJG-VPhQGr6HOJr5tyc_wyyo8moKF6Vs8t1cyBdKi8LP1CqCL7hiDpsskjTz6mvmjKapLxgh7kYmdPjJ9EsBQHaEKN7vr2XZrsOxTK45vzF3ldsoKu7nVbaqL6RaNgd8e9tM2zUhd4qeWxZRilEldycqS686hAUVnIhMunNH9XiJZ5sugOCdkRFay1oWzGyVgq2e9wTpRDx-yVnfHl2FKzXLUJr7Oa9xMl6J7-Y2AWrlqbCftk4ALyFoHgEXgnlMI6FLmpI7I2U4Dd_MDULcvBabW_MuCHuCigcJETBS7kSdSPdWrFJeVlnlfoiotQbv3eqV9Lu2IzV3qHzxh817GLQpHjERukkva73mhmB0M4rpYV7MSqWgYmY0CEvBv0zluWlqir5yBLctsnTZN_6fWK5enTJc6TU_OwwrM5PqWzQ_EtKISrQk1C-Z70zfYZ1JsyCAaNhnLhkciADWjIFdhJXhsNV8zocYyk3sfAV6G-nsXsLukm41oa8x5j29UKm-2GKFlB6UXQhxVBbw6wzLFSoWBxMPvAhNQAqP9JJ-oFDPb-M9Ft5Hf5f-0wmdeULG5RAgDw9tq8oeahKlx4aCwoomSCdw6fuf_d_gwnpXowGLaVStMHMTw6P33Xyn1lu_KGybK_04jVZlqyuRw9j2HarMBUKhUwbrnTmFiAhQCQTiC7Ip5CsefKUQZQT13Jwe1vee5eDybz-ie1Vq0W9BqKKE_GTuUds1Xg5dZBp6GqxAzlNh2PYHlz1-aXQWPs1jQ42eObPWJnwehLxmeFJPskBXalv4oVnQ_eZh1Jb750LQq5vAObLe22qrcQ82AiDT-PBmiet09yJhht_DXLpyhLhswkqh4xvpfgzJkzVTsFvycEe_sDeKCjGu4m9jaTb773aHrl1jIA_zakyEeZwuitnzEvixd_jmoHSeHWdn8dyqkLLlvdpOc55vSn4qtZJzkk65C5dNq2Y3dVqSWVxSbfYm_TMUi22P4MI4XNlyIkKE7MeiYAY_7nIOm_vVQBkhH-KSvoA54und-yyh4PgWFDrLbDu0O7r5SV5Js-wllTlsfl_p-FrHeG5z_SF17TOAdmhFWs5L_3lDufNbpz5sjUTWH1F1-0owChutKo81On2NipHKIn7g5VPI70nkUygOvh0ol-8gApmawEfu0eyLe-wneKGQVbcv9Fn0RFCL3D6KBuxI5QyiiMZA7MgLIYZ_VVlCJ44awKtkvzkO015ctown361VRAJ9l59r_QazmWmkMdrmJMSdKrdUvsbYSLfaRZ_D2wCPaahwl6vEXQxUkmjZSqT4Kf3htj_UtZqRUAVTLYxDJvOXNL_vMeROLQqwd22sY0QQ3ORWsnIGMCLYJjgfsu5E1HVcwre6XQT7AIhq274DbZqT-v6tRsMJJf5J9ZWaIPRquHI48qSZrJSvhhjO43fz28nuEdPVtNXXzHfSFHpmjgh_lMYVyjabqFd5VOMX7ggclkbZIt7sCARl1yhxVxqCgFgRLY2ECV479Y1uztYL1bVAJTd0fdRltpJk_9MxhaNh3OBUTGva4PZCyuKex9CKJpD-87S2QVIZ3w-0eyH0a8Evq5tnXJQ7J4P7-0kUf_NTkM23Tca0xrIBc0gIj0MxA03IdzuX5bPmDz64t9GCJ1jS7k3z0547-23nhxhvOkbRjhdr-bHuVVtNI6G217YJeDf0HpDXbWF3VLk8Wy-OHwiLdYgiXTXDYAWbZ9N6KEKpRVMnxOLPStKex-nmKlMbdaC11FM24l2ukFPDYHpYoTcTgGyB_xoSHYF6rX4l551ZZ0qa97fYiF5dHuT2TjSmxn2em_g1CI32kjPABZrh1WNVXHqXmYz-rv_QS5MGM0Mh81wE2Hd7nVUI-jtgTxBQzdyq6gh_bCWeebQWjl5CBpB9N7JsMlvsp41OPQklGXj7maYSZ8KoAsNBX9BhG3gljc5VjQZR9ib-lUz8c6erFWqdnkZvAkAHQuUVdcUqWOPsAG_zLkrII1kz0M1XFzg6cj0r_PAW9ZDnFppqHXY5LFaSyN55U30yv76r1LmETnCGNw_uHu3ZHCxpew2ZzFF7nsbiWoUEvkkYt5Zwe-7MJBShIxLBl06iwaELgmNWSoeiunMGAcIXQX9XokwW_08YaXTdmOVWOw5-IovuGPUF8twSWv3_nJPHVQAfpdqDUGGnKpNlF5Er8iHHVbXSBYG7wOhSTTXp7JUogIlKVUKr5SxD_1SzmtwkCqL0hGC-v9SDCbBAOzl0yAMHIMpVV9FD-WIAUbQbwotHfgDh14aLEVFFmM854fQZ7-2AFt-aIropEP3X8FRc5Cr44Ei8AOUrrIehricmyrUVYDTbv1cV7Kch3URj2EEC-jqiGDU1VsuT1egy9RQL2GscRG5QQR0kfr0226BOhgnDvsV9uQe9LWk9rpOkTyVM8peGpPGC15oqDChwbZPdV9W75BFvc8qnRtlENs3G4sXMJpmAhreE5sP4Pr_47N5U9UtqB87FmJzoLo3P1OkuAze5xN5Cqa7LPG-rONFsHrpVjSZueYJvovE3mkvBTyB-OFS_VhH6ov5Fz4VuG0qYujPxYhvmO8kkXoMVYitnMD9pjpHf3xLmBy1nBB5FEEY8opekKklycmZ306LkxckvrJ4t7UnS8aaybKq7z51LqQ0AfRgg6Q8xUoeBHdZNe_cUn97-2ozSH3jx7qclBI-F05jbtWc53HSmBurq8VKsGjWGIpEOE-B771B2p_Ulnhpoub0WF_7TfI1Y1yuMwmL7rsMAU9PucZSrB2DXdldFayaxDe8h7MkPYR-pcm7dYKeHwLSipWuekCM4W8Z4IahF71r494nEjRM5xTO1LARtDSrisWFhDKDpSXTuTfRt1gYb4M5szZdwSICPpa1BqXfWj0XjwlgkOKHZaxCdr5CVSvVvv_CuITIVD0Uh1WdvPvxj6UNBSTFf0hOxkFAVkY3qiEIndsPDMa_I3rVpjW0UoqfJO9GZX-mnmoYoBjsQHaN9rZkQ2_8fKP1QLRFuzR3_p9Z77r9eXaJpB6JR2TgZc-2xnxX2vK23RwZfluOywcrhz-A66gkdfxE9lnRW3XMgTE7ub2dWKtj7JdSsBo-CFSVoOuRxOMuWtEyQ6sOrjXSV4mZwAWAV5c7j_ciAvEjkx6HeynJsstE0P9-wEyuHvyoKOZHtH4xIqZs-oWIjJ5OiANj58sOrVMLB6WvAAwbFWphlbnjBB-RJj0d7PBtSt6SXox5WHZiYRtqBhJSmPqjE3kZexQ6KqHHqB50qP1AlEGVwlxqXnqT2UaYVYsp22dVpLyrk9P6C7_NC-Y9AlhXV0jFPM4qJFAKCVAEPMRO3I3qYE6F1RZRYtx41jF2Cn__sLzOQI1xJcfp7QLzjME0HGKWAq3kxmLQ3bbnmFl3MLwYByQjXC67GU4_MYJmdL9VroP2_z5JgdLZKduXWvaWOPEO5R0na0dOpLGKVhdfjZtfgEBQ5K2AQz0Bu6LsComflw3Hj0WI72Hjfq1Mfc7DgEhVyseY1sQ02CmIR8VmWfrFUUv-CtJCuXLcDe0jQSgQGHtoyokTZcmzWfLtqjA4MtnF0sC03fL8m12kRbbFrf80KniP_-UXYuZ8T1YjTUsYVLhpQQtQvEtU9X8khcCYgdYJkxw-W18D7D962GWO2cpmNX2XobN4mvYcVRknAoBU9yQUGgxT0zn2nNnd3rY-17zj3FG9dahl39vY9MOHJ-J1PI-DxswT4lH3sZ_KA1ozdRRIy1YMEnhichEP-LLSPKRE-4gweMwqmVmLjwFyF8_RE5T2Neeu-nOsMU78Wi1tl9pBQa_8snLo_9Wo4k6tyicM4SEiiJoWbpQ9D0hPSp7VGenqYqcy2GSNoxfYVqRNUVWRP6txE1pMrH8FY6nSHqfEcWOb0ifH_a1L36o3NTttE9uYh1opWHILgqAMylpInhZcOthTbogHZ4onxARr5YRXrR24QKUYUV5wl7vphi3qgwnvbK_5yWstMX5AlN8e5jtrcRH1jPGftQqCf7dltXbGSYsowUcyeLj0ZAR1LMLMX6zKyIWNubMqCeAztCrMC6XNyHH0DOQsi2EsDl6M9fSf4oKvOM3i0l6aXkAvwp6z6etdJ8uOP3b3q1jeUkyn392cfB7OcTRRcdtl1pOlQKPE4v1MoGS1o4QSrd5NNhomV_wTkfBxvOuoFAnSALs84GTx3naWYqQL1RFUMK9wbBydPTsvaSyYqVKTPjTJjfLaLDbTyno3ovEbQ2MJtYlRwXIF9cCRqiguDptDrAeVtLXPYC4t34S6j5oQZ7Dri5MWsnHnXilpD4W3ahImr1gA5KaZ4qO5x1B_kCEARnHoC0OdMOPeqOhGTYqaSJEfYWY0Uc2vBh4PIcLgITWrRAA_j7Qx3wiN1SfG3X07ToHreIhQJduocjMWdRlOm-pMiMBflylu1v2DzziKf30TrYA2O3zn6cYaSrzs64_2kWSxBh_Fsx8eb3854llhjhkBjN57rFBitvDuWwOlaBCv-ppU2bexrJ0NB_uMbxoPKSR9Q_b2bw4NbIzMuByEV4UT2kceEfZXMuyyZx0kb8_fXhyyotwO6V6vzmUvdGnMR7LSB71lkzERIvfSWarQHSaE0p51h89MvNjL77PjVkd9EWX5wvYj6QNlEHxGaAteuebQv17EiQARhQ43gjPeNrCIAIDjU4qlVKOvVbQlrHrKKfnR9V7bCS8YVlmt9TmwxCbM-xLb8fWl10yG73mGz7ZiTHayzS9cymC3nyh37QwOGFypMqPLyCwCOv45sDkh8GoppFe-o1c6uIEKy6C7dLWLiqvWOTiLS6E4SkfLvNDLctb7mkJIL_RTAsqWDcPM63dk7DMN5sECYtzgbPmHwEPplbZnTwE-iBphzlwJ_w-gBBfJ5ifgzyKFNCB4wKh0GqMwTl2JtpoaXbYcNAEGB1gtXlqzNXUNu_bo4RbvXbW1ya0tBkRbqS87Ze5DlVdUiZDKDoYikloWEMExq0lOh7OqTgqeexsZOZds_wmCyod0KXYZoEbtp6d0zJit20y70WvKb9FoJdaqOVvXzcxOz75lLVWpZRE3i_sUEZbD7mcFV8c9pEwykX_5yrEhLQVkAFxoC5QolksQu_0Ngshn5HxQEeLgR0JaqC6DJYNe0K3RFj4bRn2PEm3Iu3ycTPvTSxNLWun_ThGQpdZ4jpLnoYWj7vdXOWQsHrxI2g4QbKThwZarWa1jPjS5NKrSkIwmZPG-RiUUQkRC67RuVDBDh30tKwrPZN4SpFk6L_5mqB9YkEAltDFK4VG16oFaoCxCjS5ZkkpDA4yuEjHdK7yFeHSf6QbAl_SAjlW0riQTf71WxuifYRICJGZIerxHh7JgSdrlUVuMpMlTT0AcQpt2xZcM1i_llDmnhTm9NULGMdxmUdxzf0qttxGlL-DVN9AcTOje_cv3F1OzJqF4tEHN-rM3XkTSBXc_GYAWFMN6yykqMJflbVs0_0OWyBlEwEx0Ne-kwS_itSnDr6WXp5q9-jwK7hRreaYJ1MkHjJk2eUwssiYDLjE3iUUmIP3L9vchOv4JnMdx0WyUVRUnv7R0Xz7qc5yfSQxTQ_e7tsOESGQCUUlLguipm5le4YXtPZwneEpv8VoIKBBpu1CO_-AvxY5GsGePEni-uuvFs7qdLqQ5wiXvdkRKSdNN7nSh2zZxow47KuXkPoX2FkcQ2lETgb7zeKiy34V38Q67uVR5SG9ue0edw5Av9W3E4QS9gRx7atB-bOlkW59SBA8xskcoEgbqh_VvKP0w836Tm5_v6rTEW3kQL0bdAspWr1Qgr5BPU7lbji_BPVUbeWuldC-g6VaLSNCmic4I08_DpJXHVDLQvKO3MCfkSha91Y_7Zq5y2TmsTh6EQvuawjnSAi1y8aAXDLC0PvhBK_DvPJYWGIMa475Y-nplJzodaR1OWUNFatkZmmBzNiZo7qpT7pisyMK6emckzKM6snoxZjCZWbZdNkhwDsledRD0JlzdnS7sSbSGzIqrcFlNhZa4-Zuz28f01Elv3U-AmnyrvaAwxr0I6cFUrsNgboccPCOuVJR6nhnyAKQxcgnNNgCdSb_meyGVM3iGJzKlK013w4SoqY_T8EVCH80P8fxZ87yZQ7jcDYDkVfuomfXeXx--gTNxHckllsbvNWvsBTIiA-8qzUlVorxK7EnJchUnTLq18ziRsVsmFZUIy3RMcw9Zwg0BgTlATaAmsPCnIiGiPiLLVngltS9T7BuudjWxfsBPf1XykBFYaGQEcbMjZBqE-aiW1Q02i5L-bIRreuGRB4RLydv_TzvalvKK2VVSA9CNHm6k9dQcCIucxzg99SdEU6SttYrz0UZ0C1TsBThh4M-td_9M2Cf6bgdnN_2PumaRDa3_b77AZCcPkGzHgTq_DlQ6pNAdidKBPl9RmfzbSkhvYRYDZrNoxf4TSBHCaMYR-VX12IZcHMJcue1zWiHtXCyMs4yXw3PBK1BA7ZYXgbt-jc73XrLDY9pfMfTkWDvdl1rE8qkfzxjHxLAPG2grd-DWDRP7Gjid4dO-ml8PhPMDero3zrJzKoI09fPOUwp06mR5aIkEi8uyzjiojwOuJJWD5lPItQzOvVL63pzWNTtgNR9MCW9wpN9F4zolrkEPfVmpeLjnOsUhEgjY_fcCD0z7f7RVopybMHHDnKid_40Q==",
+              "video_metadata": null,
+              "tool_call": null,
+              "tool_response": null,
+              "part_metadata": null,
+              "audio_transcription": null
+            }
+          ],
+          "role": "model"
+        },
+        "citation_metadata": null,
+        "finish_message": null,
+        "token_count": null,
+        "finish_reason": "STOP",
+        "grounding_metadata": null,
+        "avg_logprobs": null,
+        "index": 0,
+        "logprobs_result": null,
+        "safety_ratings": null,
+        "url_context_metadata": null
+      }
+    ],
+    "create_time": null,
+    "model_version": "gemini-3.8-flash",
+    "prompt_feedback": null,
+    "response_id": "lwagar-MFeXYvdIPtJWJ0Ao",
+    "usage_metadata": {
+      "cache_tokens_details": null,
+      "cached_content_token_count": null,
+      "candidates_token_count": 301,
+      "candidates_tokens_details": null,
+      "prompt_token_count": 5916,
+      "prompt_tokens_details": [
+        {
+          "modality": "TEXT",
+          "token_count": 5916
+        }
+      ],
+      "thoughts_token_count": 1353,
+      "tool_use_prompt_token_count": null,
+      "tool_use_prompt_tokens_details": null,
+      "total_token_count": 7570,
+      "traffic_type": null
+    },
+    "model_status": null,
+    "automatic_function_calling_history": [],
+    "parsed": {
+      "schema_version": "study-e-evaluator-rating-v1",
+      "item_id": "EVAL-BLIND-082",
+      "scores": {
+        "persona_fit": 3,
+        "clarity": 3,
+        "actionability": 4,
+        "factual_grounding": 5
+      },
+      "reasons": {
+        "persona_fit": "Adheres to boundaries and lacks a prohibited CTA, but leaks internal meta-prompt wording ('persona scenario', 'approved scenario') into the post and uses 'I' rather than the required 'we'.",
+        "clarity": "The core workflow logic is coherent, but the inclusion of internal guideline disclaimers ('illustration from the approved scenario') is confusing and awkward for an outside reader.",
+        "actionability": "Outlines a clear, realistic manual diagnostic step comparing tool and labor costs before deciding to automate.",
+        "factual_grounding": "Strictly adheres to all provided facts and constraints, making zero unsupported customer, capability, or performance claims."
+      },
+      "critical_violation": false,
+      "critical_violation_type": null,
+      "critical_evidence_quote": null,
+      "total_score": 15,
+      "pass": true,
+      "low_quality": false
+    }
+  },
+  "cost_details": {
+    "input": 0.004437,
+    "cache_read_input_tokens": 0.0,
+    "output": 0.00112875,
+    "reasoning_output_tokens": 0.00507375,
+    "total": 0.0106395
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": null,
+  "key": "SE-FINAL-N082_eval_final__a001",
+  "role": "evaluator",
+  "created_at": "2026-09-08T12:59:03.602475+00:00",
+  "ended_at": "2026-09-08T12:59:12.336492+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-N082",
+    "batch_id": 3,
+    "condition": "natural",
+    "cohort": "natural"
+  },
+  "task_id": "SE-FINAL-N082",
+  "batch_id": 3,
+  "cohort": "natural",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 8731,
+  "budget_charge_usd": 0.0106395,
+  "unknown_cost_reservation_usd": 0
+}

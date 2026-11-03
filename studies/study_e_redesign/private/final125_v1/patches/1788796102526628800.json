@@ -1,0 +1,16 @@
+{
+  "created_at": "2026-09-07T15:48:22.526628+00:00",
+  "kind": "transport",
+  "reason": "Equivalent operational recovery: retry HTTP 400 request-level provider failures under the frozen transport retry budget; authentication, model, quota, pricing, and not-found failures remain immediate stops. Existing failed attempt preserved.",
+  "freeze_sha256": "ca626a858ac4eb55773623fa62311587abc9fdb4ac409bfcef5a2078dd8e2842",
+  "changes": {
+    "studies/study_e_redesign/tools/final125_v1/run.py": {
+      "old_sha256": "84fe53796afe6c11f57f1d5a64054de4b7796da4326895cf33e76ac6397fbd3d",
+      "new_sha256": "768a3eae53b86335aa7ba627b613bf5ec2ed16a04b025d5d2399c8cf6878f5f4",
+      "unified_diff": "--- studies/study_e_redesign/tools/final125_v1/run.py@before\n+++ studies/study_e_redesign/tools/final125_v1/run.py@after\n@@ -308,7 +308,10 @@\n         for attempt in range(len(previous)+1,len(previous)+self.plan['rate_limit_retry_limit']+1):\n             row=self.once(f'{logical}__a{attempt:03}',role,payload,parents)\n             if row['status']=='success':return row['output'],row['key']\n-            if row['status'] in ('model_mismatch','provider_quota_exhausted','pricing_failure') or row.get('http_status') in (400,401,403,404):\n+            # Preserve and retry transient/request-level provider failures under the\n+            # frozen transport retry budget; authentication, model, quota, pricing,\n+            # and not-found failures remain immediate stops.\n+            if row['status'] in ('model_mismatch','provider_quota_exhausted','pricing_failure') or row.get('http_status') in (401,403,404):\n                 self.abort.set();raise rt.StopRun(row['status']+': '+logical)\n             if row.get('http_status')==429:\n                 limited+=1\n"
+    }
+  },
+  "scientific_inputs_unchanged": true,
+  "scientific_equivalence": "Declared operational correction; exact code changes must be reviewed against frozen roles/routing/inputs/criteria.",
+  "tests_sha256": "4759f15cbed456d1dde5d76fb2bf762c6ef63bb0dedad2cea609495539db6d37"
+}

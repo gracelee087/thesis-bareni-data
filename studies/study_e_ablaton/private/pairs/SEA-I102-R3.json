@@ -1,0 +1,91 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I102-R3",
+    "item_id": "SEA-I102",
+    "repeat": 3,
+    "arm_order": [
+      "critic_off",
+      "critic_on"
+    ],
+    "content_id": "POST-ce159d381b77df632fb3a2fa"
+  },
+  "arms": {
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-ce159d381b77df632fb3a2fa-1",
+        "title": "What subprocessor lists hide in plain sight",
+        "body": "If you use SaaS, AI tools, or workflow automation, the subprocessor list is worth a read before you connect them to customer or financial data. It is the part most people skip: the vendor says who else may handle data on its behalf.\n\nThat matters because the workflow is not just “does this tool work?” It is also “who touches the data once it leaves my hands?” If you are routing invoices, CRM records, support emails, or internal docs through a tool, that question becomes a control point. Human approval still belongs with anything high-risk, especially money movement.\n\nBareni’s diagnostic starts with one recurring workflow and checks whether AI actually fits. But even before that, I would pull the terms for the three tools you rely on most and look for the subprocessor section, the data-processing terms, and any approval or escalation language.\n\nIf you cannot explain where the data goes in one sentence, the workflow is not ready for automation. That is a dull sentence, which is usually a good sign. A little dullness saves a later surprise."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-ce159d381b77df632fb3a2fa-1",
+            "title": "What subprocessor lists hide in plain sight",
+            "body": "If you use SaaS, AI tools, or workflow automation, the subprocessor list is worth a read before you connect them to customer or financial data. It is the part most people skip: the vendor says who else may handle data on its behalf.\n\nThat matters because the workflow is not just “does this tool work?” It is also “who touches the data once it leaves my hands?” If you are routing invoices, CRM records, support emails, or internal docs through a tool, that question becomes a control point. Human approval still belongs with anything high-risk, especially money movement.\n\nBareni’s diagnostic starts with one recurring workflow and checks whether AI actually fits. But even before that, I would pull the terms for the three tools you rely on most and look for the subprocessor section, the data-processing terms, and any approval or escalation language.\n\nIf you cannot explain where the data goes in one sentence, the workflow is not ready for automation. That is a dull sentence, which is usually a good sign. A little dullness saves a later surprise."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-ce159d381b77df632fb3a2fa-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    },
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-ce159d381b77df632fb3a2fa-1",
+        "title": "What subprocessor lists hide in plain sight",
+        "body": "A subprocessor list is easy to skim past. That is usually the point. The vendor name is visible, but the real question is hidden a level deeper: who else touches your customer data, invoices, documents, or CRM records once the tool is part of a recurring workflow?\n\nFor a small business owner, that is a practical decision, not a legal essay. If a tool only stores a low-stakes note, the list may not change much. If the tool sits in a repeated workflow, such as customer support, invoice handling, or knowledge-base search, the list becomes a control point. You want to know whether the data stays with one provider or moves through other services you never chose directly.\n\nThe next step is simple: pull the terms for the three tools you rely on most, then ask one question for each one: which third parties process the data in the workflow I am actually using? If you cannot answer that in plain English, do not treat the workflow as ready.\n\nThat is also how we keep the decision bounded. Bareni’s diagnostic starts with one recurring workflow and checks whether AI fits before anything else moves forward. Human approval stays in place for high-risk decisions. The dry part is usually the useful part."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-ce159d381b77df632fb3a2fa-1",
+            "title": "What subprocessor lists hide in plain sight",
+            "body": "A subprocessor list is easy to skim past. That is usually the point. The vendor name is visible, but the real question is hidden a level deeper: who else touches your customer data, invoices, documents, or CRM records once the tool is part of a recurring workflow?\n\nFor a small business owner, that is a practical decision, not a legal essay. If a tool only stores a low-stakes note, the list may not change much. If the tool sits in a repeated workflow, such as customer support, invoice handling, or knowledge-base search, the list becomes a control point. You want to know whether the data stays with one provider or moves through other services you never chose directly.\n\nThe next step is simple: pull the terms for the three tools you rely on most, then ask one question for each one: which third parties process the data in the workflow I am actually using? If you cannot answer that in plain English, do not treat the workflow as ready.\n\nThat is also how we keep the decision bounded. Bareni’s diagnostic starts with one recurring workflow and checks whether AI fits before anything else moves forward. Human approval stays in place for high-risk decisions. The dry part is usually the useful part."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-ce159d381b77df632fb3a2fa-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": [
+            {
+              "repair_id": "P01",
+              "target_ids": [
+                "D01"
+              ],
+              "instruction": "Rewrite the body into clear, grammatical English so the main point is readable on a first pass. Keep the topic bounded to what subprocessor lists hide, and preserve the restrained founder-to-founder tone.",
+              "source_ids": [
+                "BRIEF",
+                "S01"
+              ]
+            },
+            {
+              "repair_id": "P02",
+              "target_ids": [
+                "D02"
+              ],
+              "instruction": "Add one concrete workflow decision and one practical next step the owner can take. For example: tell them to treat a subprocessor list as a prompt to ask, 'Which vendor actually touches customer data, and for what recurring workflow step?' then review the workflow before approving it.",
+              "source_ids": [
+                "BRIEF",
+                "S01"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

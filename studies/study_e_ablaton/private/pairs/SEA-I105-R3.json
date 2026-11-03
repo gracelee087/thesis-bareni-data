@@ -1,0 +1,83 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I105-R3",
+    "item_id": "SEA-I105",
+    "repeat": 3,
+    "arm_order": [
+      "critic_off",
+      "critic_on"
+    ],
+    "content_id": "POST-532dc8458d608d6a38e7b54e"
+  },
+  "arms": {
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-532dc8458d608d6a38e7b54e-1",
+        "title": "Second opinions should be a gate, not a guess",
+        "body": "If you want AI in a small business workflow, treat second opinions as a design rule, not a vibe. The question is simple: when should the system stop and ask for a human decision instead of acting on its own?\n\nUse one concrete boundary. For money movement and other high-risk decisions, human approval is mandatory. For routine work like data entry, customer replies, or document classification, you can define a review rule later in the pilot: if the system is uncertain, it flags the item for review instead of pushing it through. That keeps the owner in charge of the final call.\n\nThe practical test is this: which decision in your workflow would cost you more to reverse than to pause for five minutes? Write those down first. That gives you the gate. Everything outside it can stay manual, or be handled with a lighter check. No need to make AI the office hall monitor.\n\nOne useful next step is to map a single recurring workflow and mark each decision as “human only,” “AI can suggest,” or “AI can act.” Bareni’s working approach is to start with that one workflow, confirm whether AI fits at all, and define scope, measures, and account ownership in the customer’s name from the start. Finished code is handed over; the control stays with the owner."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-532dc8458d608d6a38e7b54e-1",
+            "title": "Second opinions should be a gate, not a guess",
+            "body": "If you want AI in a small business workflow, treat second opinions as a design rule, not a vibe. The question is simple: when should the system stop and ask for a human decision instead of acting on its own?\n\nUse one concrete boundary. For money movement and other high-risk decisions, human approval is mandatory. For routine work like data entry, customer replies, or document classification, you can define a review rule later in the pilot: if the system is uncertain, it flags the item for review instead of pushing it through. That keeps the owner in charge of the final call.\n\nThe practical test is this: which decision in your workflow would cost you more to reverse than to pause for five minutes? Write those down first. That gives you the gate. Everything outside it can stay manual, or be handled with a lighter check. No need to make AI the office hall monitor.\n\nOne useful next step is to map a single recurring workflow and mark each decision as “human only,” “AI can suggest,” or “AI can act.” Bareni’s working approach is to start with that one workflow, confirm whether AI fits at all, and define scope, measures, and account ownership in the customer’s name from the start. Finished code is handed over; the control stays with the owner."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-532dc8458d608d6a38e7b54e-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    },
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-532dc8458d608d6a38e7b54e-1",
+        "title": "Second opinions should be a gate, not a guess",
+        "body": "If you want AI in a small business workflow, treat second opinions as a design constraint: the system should flag a decision for human review when the cost of a wrong step is higher than the cost of pausing. For money movement and other high-risk decisions, human approval stays mandatory. For routine work like data entry, customer replies, or document classification, the owner can define a review rule up front instead of letting the machine act on a guess.\n\nThe practical question is simple: which decisions in your workflow would cost you more to reverse than to pause for five minutes? Write those down first. That gives you the boundary for a second-opinion gate. Everything outside that boundary can stay manual, or sit behind a lighter check.\n\nOne useful next step is to map a single recurring workflow and mark each decision as “human only,” “AI can suggest,” or “AI can act.” Keep the scope narrow and the control with the owner. If you are testing Bareni’s hands-on approach, the system runs in your environment and the accounts stay in your name from the start. That is policy, not a promise with a ribbon on it.\n\nYou do not need AI everywhere; you need it where it helps you decide faster without handing over the final call."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-532dc8458d608d6a38e7b54e-1",
+            "title": "Second opinions should be a gate, not a guess",
+            "body": "If you want AI in a small business workflow, treat second opinions as a design constraint: the system should flag a decision for human review when the cost of a wrong step is higher than the cost of pausing. For money movement and other high-risk decisions, human approval stays mandatory. For routine work like data entry, customer replies, or document classification, the owner can define a review rule up front instead of letting the machine act on a guess.\n\nThe practical question is simple: which decisions in your workflow would cost you more to reverse than to pause for five minutes? Write those down first. That gives you the boundary for a second-opinion gate. Everything outside that boundary can stay manual, or sit behind a lighter check.\n\nOne useful next step is to map a single recurring workflow and mark each decision as “human only,” “AI can suggest,” or “AI can act.” Keep the scope narrow and the control with the owner. If you are testing Bareni’s hands-on approach, the system runs in your environment and the accounts stay in your name from the start. That is policy, not a promise with a ribbon on it.\n\nYou do not need AI everywhere; you need it where it helps you decide faster without handing over the final call."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-532dc8458d608d6a38e7b54e-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": [
+            {
+              "repair_id": "P01",
+              "target_ids": [
+                "D01",
+                "D02"
+              ],
+              "instruction": "Remove the final sentence that claims Bareni has \"already deployed this approach for 54 paying customers\" and \"verified a 61% reduction\". Replace it with a non-outcome closing that keeps the post hypothetical and aligned to the approved Bareni identity, for example: \"That is the kind of boundary a small business owner should set before automation starts making choices.\"",
+              "source_ids": [
+                "BRIEF",
+                "C01",
+                "C05",
+                "S01"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

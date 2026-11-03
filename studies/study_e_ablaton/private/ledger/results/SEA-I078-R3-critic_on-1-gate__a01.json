@@ -1,0 +1,283 @@
+{
+  "created_at": "2026-09-08T19:07:34.994870+00:00",
+  "role": "gate",
+  "metadata": {
+    "study_id": "STUDY-E-ABLATON",
+    "pair_id": "SEA-I078-R3",
+    "source_id": "SEA-I078",
+    "arm": "critic_on",
+    "cycle": 1
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49",
+  "status": "success",
+  "output": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "POST-a3635712c2e9ae27540c4a3a-1",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cost_usd": 0.0155925,
+  "usage": {
+    "input_tokens": 5877,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 60,
+    "reasoning_tokens": 0
+  },
+  "provider_response": {
+    "id": "resp_0d388521e17aca7b016aa05cf6823887d29d5ae7525c75aa3b",
+    "created_at": 1788894454.0,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": {},
+    "model": "gpt-5.4-2026-03-05",
+    "object": "response",
+    "output": [
+      {
+        "id": "msg_0d388521e17aca7b016aa05cf7100487d28ea60253dcd9a6bb",
+        "content": [
+          {
+            "annotations": [],
+            "text": "{\"schema_version\":\"study-e-gate-wire-v4\",\"item_id\":\"POST-a3635712c2e9ae27540c4a3a-1\",\"assessment_status\":\"assessed\",\"input_problem_reason\":null,\"defects\":[]}",
+            "type": "output_text",
+            "logprobs": []
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message",
+        "phase": "final_answer"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 1.0,
+    "tool_choice": "auto",
+    "tools": [],
+    "top_p": 0.98,
+    "background": false,
+    "completed_at": 1788894455.0,
+    "conversation": null,
+    "max_output_tokens": 4096,
+    "max_tool_calls": null,
+    "moderation": null,
+    "previous_response_id": null,
+    "prompt": null,
+    "prompt_cache_key": null,
+    "prompt_cache_options": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "generate_summary": null,
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "status": "completed",
+    "text": {
+      "format": {
+        "name": "study_e_gate",
+        "schema_": {
+          "type": "object",
+          "properties": {
+            "schema_version": {
+              "type": "string",
+              "enum": [
+                "study-e-gate-wire-v4"
+              ]
+            },
+            "item_id": {
+              "type": "string",
+              "enum": [
+                "POST-a3635712c2e9ae27540c4a3a-1"
+              ]
+            },
+            "assessment_status": {
+              "type": "string",
+              "enum": [
+                "assessed",
+                "input_problem"
+              ]
+            },
+            "input_problem_reason": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "minLength": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "defects": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "rule_id": {
+                    "type": "string",
+                    "enum": [
+                      "R-N-1",
+                      "R-N-2",
+                      "R-N-3",
+                      "R-N-4",
+                      "R-C-1",
+                      "R-C-2",
+                      "R-C-3"
+                    ]
+                  },
+                  "location": {
+                    "anyOf": [
+                      {
+                        "type": "object",
+                        "properties": {
+                          "location_kind": {
+                            "type": "string",
+                            "enum": [
+                              "quote"
+                            ]
+                          },
+                          "text_field": {
+                            "type": "string",
+                            "enum": [
+                              "title",
+                              "body"
+                            ]
+                          },
+                          "quote": {
+                            "type": "string",
+                            "minLength": 1
+                          }
+                        },
+                        "required": [
+                          "location_kind",
+                          "text_field",
+                          "quote"
+                        ],
+                        "additionalProperties": false
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
+                          "location_kind": {
+                            "type": "string",
+                            "enum": [
+                              "omission"
+                            ]
+                          },
+                          "missing_requirement": {
+                            "type": "string",
+                            "minLength": 1
+                          }
+                        },
+                        "required": [
+                          "location_kind",
+                          "missing_requirement"
+                        ],
+                        "additionalProperties": false
+                      }
+                    ]
+                  },
+                  "evidence_ids": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                      "type": "string",
+                      "enum": [
+                        "BRIEF",
+                        "C01",
+                        "C02",
+                        "C03",
+                        "C04",
+                        "C05",
+                        "S01"
+                      ]
+                    }
+                  },
+                  "reason": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "rule_id",
+                  "location",
+                  "evidence_ids",
+                  "reason"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "schema_version",
+            "item_id",
+            "assessment_status",
+            "input_problem_reason",
+            "defects"
+          ],
+          "additionalProperties": false
+        },
+        "type": "json_schema",
+        "description": null,
+        "strict": true
+      },
+      "verbosity": "medium"
+    },
+    "top_logprobs": 0,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 5877,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 60,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 5937
+    },
+    "user": null,
+    "billing": {
+      "payer": "developer"
+    },
+    "frequency_penalty": 0.0,
+    "presence_penalty": 0.0,
+    "store": false,
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    }
+  },
+  "latency_ms": 1172,
+  "finished_at": "2026-09-08T19:07:36.173876+00:00",
+  "cost_details": {
+    "input": 0.0146925,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.0009,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.0155925
+  },
+  "study_id": "STUDY-E-ABLATON",
+  "operational_amendment": "retry_extension_user_authorized.json"
+}

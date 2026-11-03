@@ -1,0 +1,268 @@
+{
+  "task_id": "SE-FINAL-N030",
+  "batch_id": 1,
+  "condition": "natural",
+  "source_task_id": null,
+  "topic": "canonical records as a design constraint",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-330",
+    "title": "Canonical records before you automate the workflow",
+    "body": "If you want to automate a workflow, start with one design constraint: decide which record is canonical. In plain English, that means naming the single source of truth for one repeating process, such as customer details, invoices, orders, or support tickets, and then checking where the other tools drift away from it.\n\nThat sounds obvious until you have three versions of the same field and nobody trusts any of them. The practical question is not “can AI do this?” but “what happens when two systems disagree?” If the answer is re-keying, re-checking, or waiting for the owner to approve the same thing twice, you probably have a record-control problem before you have an automation problem.\n\nA bounded next step is to map one workflow on paper: list the manual entry points, mark which tool currently owns each field, and note where decisions stop because the records do not match. Then separate the issue into technical and organisational parts. Technical means format, API limits, or tool behaviour. Organisational means approval chains, data ownership, or human review gates. The fix is different in each case.\n\nIf the inputs are mostly text, extraction and verification may be worth testing. If the records are already structured and synced, AI is probably not the first lever. Keep the owner in the approval loop either way, especially for money movement or other high-risk decisions. "
+  },
+  "final": {
+    "item_id": "E-OPT-430",
+    "title": "Canonical records before you automate the workflow",
+    "body": "If you want to automate a workflow, start with one design constraint: decide which record is canonical. In plain English, that means naming the single source of truth for one repeating process, such as customer details, invoices, orders, or support tickets, and then checking where the other tools drift away from it.\n\nThat sounds obvious until you have three versions of the same field and nobody trusts any of them. The practical question is not “can AI do this?” but “what happens when two systems disagree?” If the answer is re-keying, re-checking, or waiting for the owner to approve the same thing twice, you probably have a record-control problem before you have an automation problem.\n\nA bounded next step is to map one workflow on paper: list the manual entry points, mark which tool currently owns each field, and note where decisions stop because the records do not match. Then separate the issue into technical and organisational parts. Technical means format, API limits, or tool behaviour. Organisational means approval chains, data ownership, or human review gates. The fix is different in each case.\n\nIf the inputs are mostly text, extraction and verification may be worth testing. Keep that limited to text-based files or messages; PDF/scan ingestion and OCR are not implemented here, and scan-heavy workflows are still out of scope. If the records are already structured and synced, AI is probably not the first lever. Keep the owner in the approval loop either way, especially for money movement or other high-risk decisions."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-030",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-030",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-030-1",
+        "repairs": []
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-030",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-430",
+        "title": "Canonical records before you automate the workflow",
+        "body": "If you want to automate a workflow, start with one design constraint: decide which record is canonical. In plain English, that means naming the single source of truth for one repeating process, such as customer details, invoices, orders, or support tickets, and then checking where the other tools drift away from it.\n\nThat sounds obvious until you have three versions of the same field and nobody trusts any of them. The practical question is not “can AI do this?” but “what happens when two systems disagree?” If the answer is re-keying, re-checking, or waiting for the owner to approve the same thing twice, you probably have a record-control problem before you have an automation problem.\n\nA bounded next step is to map one workflow on paper: list the manual entry points, mark which tool currently owns each field, and note where decisions stop because the records do not match. Then separate the issue into technical and organisational parts. Technical means format, API limits, or tool behaviour. Organisational means approval chains, data ownership, or human review gates. The fix is different in each case.\n\nIf the inputs are mostly text, extraction and verification may be worth testing. Keep that limited to text-based files or messages; PDF/scan ingestion and OCR are not implemented here, and scan-heavy workflows are still out of scope. If the records are already structured and synced, AI is probably not the first lever. Keep the owner in the approval loop either way, especially for money movement or other high-risk decisions."
+      },
+      "gate_key": "SE-FINAL-N030_gate1__a001"
+    }
+  ],
+  "measurement_status": "pending",
+  "planner": {
+    "item_id": "E-PLAN-530",
+    "selected_lessons": [],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Define canonical records as the single source of truth for a repeating workflow: identify which data—customer details, invoices, orders, or support tickets—must match across systems and which mismatches currently cause rework or decision delays.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Estimate the weekly time cost of reconciling or re-entering data across tools, and note whether the owner re-approves decisions because records conflict—this threshold determines whether automation saves hours or solves a coordination problem.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Map the workflow: document the manual entry points, which tool holds the current truth for each field, and where decisions are blocked or duplicated because records diverge.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Decide whether the constraint is technical (data format, API availability, tool limits) or organizational (approval chain, data ownership, human review gates)—canonical-record design differs for each.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Assess whether AI automation fits: if records are semi-structured text (invoices, emails, chat logs), extraction and verification automation is a candidate; if records are already structured and synchronized, the work is lower-level integration, not AI.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C03",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Schedule a free 30-minute diagnostic call to review the workflow, confirm the canonical-record bottleneck, and decide on a fixed-price pilot scope and success measures; human approval remains with the owner throughout.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04",
+          "S01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "Do not invent customer results, outcomes, or capabilities; describe only the decision framework and self-built demo features where relevant."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Require human approval for all data-integrity decisions and money movement; exclude high-sensitivity or bulk-automation workflows."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Maintain the frozen persona voice, approved evidence status, and founder-to-founder trust-first approach; no CTAs or fabricated urgency."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use plain English; keep the workflow analysis distinct from the automation proposal; treat the diagnostic as the factual next step, not a guarantee."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-630",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits, and—if it does—defines pilot scope, fixed price, and measures."
+          },
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step"
+          }
+        ],
+        "rationale": "This is an instruction/diagnostic step for the reader to define canonical records and identify mismatches, not an assertion of a current Bareni capability, customer or observed result. It fits the approved diagnostic focus on one recurring workflow.",
+        "use_guidance": "Keep as an explicitly proposed diagnostic step the owner performs; do not phrase it as work Bareni has already done for a customer or as a delivered data-mapping capability."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "The 8–10 hours is a persona scenario, not a market\n  statistic or observed customer result."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Numbers require a source and status. Keep observed results, estimates, targets,\n  synthetic data, and examples distinct."
+          }
+        ],
+        "rationale": "Asking the owner to estimate their own weekly reconciliation time is permissible, but the clause \"this threshold determines whether automation saves hours\" edges into an outcome promise. The core is usable only if the estimate is labelled as the owner's own estimate and no saving is implied or guaranteed.",
+        "use_guidance": "Add the qualification that any hours figure is the owner's own estimate, not a Bareni measurement or observed result, and that no saving is promised; rephrase the outcome clause as \"helps decide whether the problem is time or coordination\"."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits"
+          },
+          {
+            "source_id": "S01",
+            "quote": "Practicality: explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step."
+          }
+        ],
+        "rationale": "A manual mapping instruction directed at the reader; it does not assert implementation, tooling, observed benefit or customer use.",
+        "use_guidance": "Keep as a manual next step the owner can do without any software; do not present the mapping as an automated Bareni feature or completed engagement."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "Customers who want strategy only can buy the separate AI Strategy & Roadmap:\n  a 90-day execution roadmap, success measures, build-versus-buy decision, and\n  tool selection."
+          },
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          }
+        ],
+        "rationale": "A decision prompt distinguishing technical from organizational constraints. It is a recommended analytical step, not a factual claim about a Bareni capability or result.",
+        "use_guidance": "Keep proposed; keep the human approval chain framed as a boundary that stays with the owner, and avoid implying Bareni has a proven canonical-record design method or tooling."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C03",
+            "quote": "Text-based LLM invoice extraction was verified, while the default\n  demo uses pre-extracted files. PDF/scan ingestion and OCR are not implemented."
+          },
+          {
+            "source_id": "C04",
+            "quote": "Bareni currently declines high-sensitivity medical, legal, and financial work;\n  bulk cold-email automation; scan-heavy OCR-dependent workflows"
+          }
+        ],
+        "rationale": "The fit test is sound and matches the honest \"does AI fit\" stance, but naming invoices as a candidate without limits implies extraction works on documents generally. Approved evidence verifies only text-based extraction in a synthetic demo; PDF/scan and OCR are not implemented and scan-heavy workflows are out of current scope.",
+        "use_guidance": "Add the qualification that extraction is limited to text-based inputs, that PDF/scan ingestion and OCR are not implemented, and that scan-heavy OCR-dependent workflows are currently declined; state that the invoice extraction was verified only in a self-built demo on synthetic data."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "FORBIDDEN",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Standard primary CTA: \"Book a free 30-minute diagnostic\". Use it only for\n  purchase-intent content, once, at the end."
+          }
+        ],
+        "rationale": "The approved task explicitly sets the CTA rule to none, so instructing the reader to schedule the free 30-minute diagnostic is a prohibited action for this item, even though the diagnostic itself is a real offer.",
+        "use_guidance": "Exclude the scheduling call to action. If a closing line is needed, use one soft informational sentence about the owner keeping approval over the canonical-record decision; the diagnostic, fixed-price pilot and measures may be described factually elsewhere per C02, but that is not approval to invite booking here."
+      }
+    ]
+  },
+  "selected_lessons": [],
+  "register_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "planner_key": "SE-FINAL-N030_planner__a001",
+  "researcher_key": "SE-FINAL-N030_researcher__a001",
+  "writer_key": "SE-FINAL-N030_writer__a001",
+  "final_key": "SE-FINAL-N030_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-N030_gate1__a001",
+  "production_completed_at": "2026-09-08T12:26:36.857823+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts"
+}

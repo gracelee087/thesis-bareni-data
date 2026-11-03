@@ -1,0 +1,68 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I036-R1",
+    "item_id": "SEA-I036",
+    "repeat": 1,
+    "arm_order": [
+      "critic_on",
+      "critic_off"
+    ],
+    "content_id": "POST-22b8911f09043fb325372938"
+  },
+  "arms": {
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-22b8911f09043fb325372938-1",
+        "title": "Rollback plans are not enough",
+        "body": "Rollback plans sound tidy until you look at how automation fails in a small business. The real risk is usually not whether you can undo something later. It is what happens while the workflow is running: a wrong answer goes out, a duplicate invoice is queued, or a manual check gets skipped. Rolling back after that may restore the system state, but it does not erase the bad step that already reached a customer, a ledger, or a CRM.\n\nThat is why rollback is a backup, not the main control. The useful question is simpler: what stops the mistake from being committed in the first place?\n\nIf you are considering one repeatable workflow, pick the one that causes the most friction or errors and write down the three worst failure modes: wrong data, missed items, duplicates. Then choose one human approval step that blocks the worst failure before it moves forward. If you are testing invoice extraction, for example, spot-check a few entries against the source documents before anything is posted. If money is involved, keep the approval with a person. That is Bareni’s policy and no-lock-in positioning: finished code is handed over, and the accounts stay in the customer’s name from the start.\n\nRollback still matters. It just answers the second question, not the first. Start with controls, then decide whether automation belongs there at all."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-22b8911f09043fb325372938-1",
+            "title": "Rollback plans are not enough",
+            "body": "Rollback plans sound tidy until you look at how automation fails in a small business. The real risk is usually not whether you can undo something later. It is what happens while the workflow is running: a wrong answer goes out, a duplicate invoice is queued, or a manual check gets skipped. Rolling back after that may restore the system state, but it does not erase the bad step that already reached a customer, a ledger, or a CRM.\n\nThat is why rollback is a backup, not the main control. The useful question is simpler: what stops the mistake from being committed in the first place?\n\nIf you are considering one repeatable workflow, pick the one that causes the most friction or errors and write down the three worst failure modes: wrong data, missed items, duplicates. Then choose one human approval step that blocks the worst failure before it moves forward. If you are testing invoice extraction, for example, spot-check a few entries against the source documents before anything is posted. If money is involved, keep the approval with a person. That is Bareni’s policy and no-lock-in positioning: finished code is handed over, and the accounts stay in the customer’s name from the start.\n\nRollback still matters. It just answers the second question, not the first. Start with controls, then decide whether automation belongs there at all."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-22b8911f09043fb325372938-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    },
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-22b8911f09043fb325372938-1",
+        "title": "Rollback is the backup plan, not the control",
+        "body": "Rollback plans sound tidy, but they answer the wrong question for a small business automation. The real question is not, “Can we undo it later?” It is, “What stops this from causing damage while it is running?”\n\nIf an automation sends the wrong customer reply, creates a duplicate invoice, or skips a manual check, rollback does not erase what already went out. It only returns you to the previous state after the problem has started.\n\nThat is why the useful decision is a control decision, not a rollback decision. Pick one repeatable workflow you are thinking about automating. Write down the three failure modes that would hurt most: wrong data, missed items, and duplicates. Then choose one human approval step that blocks the worst one before anything is committed.\n\nFor example, if you are testing invoice extraction, have a person spot-check a few entries against the source documents before anything is posted. If money is involved, human approval stays in the loop. That is policy, not a nice-to-have.\n\nBareni’s account ownership and code handover are part of its no-lock-in positioning, but that is still just positioning. The practical next step is simpler: define the one gate that prevents a bad automation from cascading before it reaches payment, the inbox, or the CRM. Rollback is still useful. It just is not the main defense."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-22b8911f09043fb325372938-1",
+            "title": "Rollback is the backup plan, not the control",
+            "body": "Rollback plans sound tidy, but they answer the wrong question for a small business automation. The real question is not, “Can we undo it later?” It is, “What stops this from causing damage while it is running?”\n\nIf an automation sends the wrong customer reply, creates a duplicate invoice, or skips a manual check, rollback does not erase what already went out. It only returns you to the previous state after the problem has started.\n\nThat is why the useful decision is a control decision, not a rollback decision. Pick one repeatable workflow you are thinking about automating. Write down the three failure modes that would hurt most: wrong data, missed items, and duplicates. Then choose one human approval step that blocks the worst one before anything is committed.\n\nFor example, if you are testing invoice extraction, have a person spot-check a few entries against the source documents before anything is posted. If money is involved, human approval stays in the loop. That is policy, not a nice-to-have.\n\nBareni’s account ownership and code handover are part of its no-lock-in positioning, but that is still just positioning. The practical next step is simpler: define the one gate that prevents a bad automation from cascading before it reaches payment, the inbox, or the CRM. Rollback is still useful. It just is not the main defense."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-22b8911f09043fb325372938-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

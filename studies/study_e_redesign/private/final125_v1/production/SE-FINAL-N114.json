@@ -1,0 +1,326 @@
+{
+  "task_id": "SE-FINAL-N114",
+  "batch_id": 4,
+  "condition": "natural",
+  "source_task_id": null,
+  "topic": "why data cleaning is not enough",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-321",
+    "title": "Why data cleaning is not the whole job",
+    "body": "Data cleaning is useful, but it is not the whole workflow. If your team spends time fixing fields and still has to make the same downstream decisions by hand, you have only solved the input side. The real question is not “is the data clean?” It is “what still needs human judgment after the data is clean?”\n\nThat matters because many small-business workflows break in two places: messy inputs and decision handling. Cleaning helps with the first. It does not remove the second. If a clean row still needs someone to categorise it, route it, approve it, or decide whether it is an exception, the manual work is still there. Funny how software never gets tired of the boring bits, but it also does not guess well.\n\nA practical next step is to map one repeating workflow as input → decision → output. Write down the steps, then mark which ones are rules-based and which ones need judgment or sign-off. If you see a long tail of manual decisions after cleaning, that is the boundary where automation may fit. For high-risk steps, keep human approval in place. In Bareni’s own working demo examples, rule checks and human-only approval are part of the control layer, not a replacement for it.\n\nStart with the decision layer, not another cleanup tool."
+  },
+  "final": {
+    "item_id": "E-OPT-421",
+    "title": "Why data cleaning is not the whole job",
+    "body": "Data cleaning is useful, but it is not the whole workflow. If your team spends time fixing fields and still has to make the same downstream decisions by hand, you have only solved the input side. The real question is not “is the data clean?” It is “what still needs human judgment after the data is clean?”\n\nThat matters because many small-business workflows break in two places: messy inputs and decision handling. Cleaning helps with the first. It does not remove the second. If a clean row still needs someone to categorise it, route it, approve it, or decide whether it is an exception, the manual work is still there. A computer can be very tidy and still not know what to do next.\n\nA practical next step is to map one repeating workflow as input → decision → output. Write down the steps, then mark which ones are rules-based and which ones need judgment or sign-off. If you want a quick check, ask: after cleaning, which step still eats the most time, and why? If the answer is “the decision layer,” that is the boundary worth looking at first. For high-risk steps, keep human approval in place.\n\nIn Bareni’s own self-built demo work, rule checks and human-only approval sit in the control layer, not as a replacement for it. That is a demo boundary, not a promise about every workflow. Start with the decision layer, not another cleanup tool."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-114",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-114",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-114-1",
+        "repairs": []
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-114",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-421",
+        "title": "Why data cleaning is not the whole job",
+        "body": "Data cleaning is useful, but it is not the whole workflow. If your team spends time fixing fields and still has to make the same downstream decisions by hand, you have only solved the input side. The real question is not “is the data clean?” It is “what still needs human judgment after the data is clean?”\n\nThat matters because many small-business workflows break in two places: messy inputs and decision handling. Cleaning helps with the first. It does not remove the second. If a clean row still needs someone to categorise it, route it, approve it, or decide whether it is an exception, the manual work is still there. A computer can be very tidy and still not know what to do next.\n\nA practical next step is to map one repeating workflow as input → decision → output. Write down the steps, then mark which ones are rules-based and which ones need judgment or sign-off. If you want a quick check, ask: after cleaning, which step still eats the most time, and why? If the answer is “the decision layer,” that is the boundary worth looking at first. For high-risk steps, keep human approval in place.\n\nIn Bareni’s own self-built demo work, rule checks and human-only approval sit in the control layer, not as a replacement for it. That is a demo boundary, not a promise about every workflow. Start with the decision layer, not another cleanup tool."
+      },
+      "gate_key": "SE-FINAL-N114_gate1__a001"
+    }
+  ],
+  "measurement_status": "pending",
+  "planner": {
+    "item_id": "E-PLAN-521",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task explicitly states 'CTA rule: None.' This post is informational, not purchase-intent. L01 instructs to avoid any booking invitation, diagnostic prompt, or meeting CTA. The closing will use a neutral practical observation or next-step note aligned with the owner's decision rule, not a sales prompt."
+      },
+      {
+        "lesson_id": "L02",
+        "application": "C02 describes Bareni's delivery model and hand-off policy as positioning ('describe this as policy and no-lock-in positioning'). L02 requires preserving that qualifier in any copy referencing customer data ownership or account control, avoiding overstatement as a legal warranty."
+      },
+      {
+        "lesson_id": "L03",
+        "application": "The abstract topic 'why data cleaning is not enough' must translate into one concrete workflow decision. L03 prevents filling explanatory gaps with unsupported background. The post will anchor to observable workflow constraints (input quality, manual effort, decision point) and link data preparation to the next bounded step, not general AI capability discussion."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Define the concrete workflow decision: data cleaning alone does not address repetitive manual work when output quality depends on both input prep and decision-making logic. Identify the owner's specific pain point—e.g., cleaned data still requires human judgment, categorisation, or approval in a downstream process.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C01",
+          "C02",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Explain the practical threshold: when manual work includes both data prep and decision application, cleaning data reduces only the first half. If the owner spends 4 hours cleaning and 6 hours making decisions on cleaned data, cleaning tools alone leave 6 hours untouched.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C01",
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Present one observable diagnostic question: after cleaning, what decisions still require human judgment or approval? List the step (approval, routing, categorisation, or exception handling) and estimate its frequency and time cost.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Describe the bounded workflow decision in operational terms: automation can address the decision-application layer by encoding known rules (approval thresholds, category logic, routing criteria) and surfacing exceptions for human sign-off. This turns the post from abstract advice into a decision frame the owner can test.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C02",
+          "C04",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "State the practical next step: document one repeating workflow segment (input → decision → output), measure its current cycle time and error rate, and identify which steps are rules-based versus judgment-heavy. This is the diagnostic framing, not a sales step.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01",
+          "L03"
+        ],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Close with a neutral, actionable observation tied to the owner's decision rule: 'If you find that cleaned data still has a long tail of manual decisions, that boundary is often where automation fits. Start by mapping that decision layer—not by buying another tool.'",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01",
+          "L03"
+        ],
+        "evidence_ids": [
+          "C01",
+          "C02",
+          "C05"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No invented customers, deployments, outcomes, numbers, or CTAs. The post uses only the frozen persona scenario, Bareni's approved service model, and generic workflow language. No sales prompt, scarcity, or guarantee."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Avoid autonomous decision claims. All decision-application examples presume human approval ('approval', 'sign-off'). No excluded service invoked (medical, legal, bulk email, heavy OCR)."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Preserve the owner-decision-rule persona, evidence boundaries from C01–C05 and S01, and the no-CTA instruction. Tone remains technical, plain-spoken, founder-to-founder, with at most one dry observation."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use plain English throughout. The abstract topic is reframed as a concrete workflow boundary (input prep vs. decision application). Examples remain illustrative ('4 hours cleaning, 6 hours deciding') and are not claimed as observed results or benchmarks."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-621",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Turn the abstract topic into a bounded Bareni workflow decision. Explain one practical next step."
+          },
+          {
+            "source_id": "C01",
+            "quote": "The representative pains are 8–10 hours a week of repeated customer questions, neglected sales leads,\n  and manual invoice/data work."
+          }
+        ],
+        "rationale": "This is a planning instruction to frame a workflow decision and name a persona-level pain, not an assertion of an implemented capability or an observed customer situation. The persona pains are approved as a scenario, so the framing is permissible.",
+        "use_guidance": "Keep as an explicitly proposed framing. Any pain example must be presented as a representative persona scenario, not as an observed customer case or measured result."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "The 8–10 hours is a persona scenario, not a market\n  statistic or observed customer result."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Numbers require a source and status. Keep observed results, estimates, targets,\n  synthetic data, and examples distinct."
+          }
+        ],
+        "rationale": "The explanatory core (cleaning covers only the data-prep half of mixed prep-plus-decision work) is compatible with approved evidence, but the 4-hour/6-hour split is a number with no source or status label in the claim itself.",
+        "use_guidance": "Add the qualification that the hour split is an illustrative arithmetic example, not a measurement, benchmark or customer result; label it explicitly as an example and keep it clearly distinct from observed outcomes."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Practicality: explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step."
+          },
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI\n  fits, and—if it does—defines pilot scope, fixed price, and measures."
+          }
+        ],
+        "rationale": "A diagnostic question the reader can answer themselves is an instruction/prompt, not a factual assertion about current implementation or results. The persona focus and approved diagnostic scope permit it.",
+        "use_guidance": "Keep as a proposed self-assessment question. The owner supplies their own frequency and time figures; do not state or imply any Bareni-side estimate, and do not attach a booking or meeting prompt (CTA rule: none)."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C03",
+            "quote": "Arithmetic checks, duplicate-invoice blocking, amount-based human-only approval,\n  refusal of agent approval/payment attempts, and persistent audit records work."
+          },
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C03",
+            "quote": "Self-built demo using entirely synthetic data for a fictional German\n  manufacturer."
+          }
+        ],
+        "rationale": "Rule encoding with thresholds and exception routing to human sign-off is supported in the accounts-payable demo, but the claim states this in general capability terms without the essential limitation that the working evidence is a self-built synthetic-data demo and that human approval is mandatory for money movement and high-risk decisions.",
+        "use_guidance": "Add the qualification that such controls are demonstrated in Bareni's self-built demo on synthetic data, not in customer deployments, and state explicitly that human approval remains mandatory for money movement and other high-risk decisions."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Task:** Turn the abstract topic into a bounded Bareni workflow decision. Explain one practical next step."
+          },
+          {
+            "source_id": "C02",
+            "quote": "Normal sequence: free 30-minute diagnostic; free one-page pilot proposal;\n  paid working MVP in days; fixed-price pilot in weeks"
+          }
+        ],
+        "rationale": "This is a manual next step for the reader to perform (document, measure, classify steps), not a claim that Bareni has measured anything or that software performs this mapping.",
+        "use_guidance": "Keep as a proposed manual next step the owner carries out themselves. Do not imply Bareni has cycle-time or error-rate data, and do not convert the framing into an invitation to book or discuss."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "CTA: use none unless the task explicitly authorises one."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Informational posts use no CTA or one soft closing sentence."
+          }
+        ],
+        "rationale": "A neutral closing observation plus a mapping suggestion is a recommendation, not an assertion of observed outcomes; the phrasing avoids a meeting prompt, consistent with the task's no-CTA rule.",
+        "use_guidance": "Keep as a proposed closing observation. Phrase 'often where automation fits' as a judgement, not an observed pattern from customers; keep it free of any booking, discussion or contact invitation and of hype wording."
+      }
+    ]
+  },
+  "selected_lessons": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. This includes indirect meeting prompts and direct brand-level offers such as a free 30-minute diagnostic. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025",
+        "B3-SUMMARY",
+        "SE-FINAL-N079"
+      ]
+    },
+    {
+      "lesson_id": "L02",
+      "text": "When approved evidence presents an operational practice as policy or positioning, keep that qualifier in the copy. Do not rewrite it as an absolute guarantee or warranty-level statement.",
+      "source_event_ids": [
+        "B3-SUMMARY",
+        "SE-FINAL-N080"
+      ]
+    },
+    {
+      "lesson_id": "L03",
+      "text": "If the source set does not support a substantive explanatory claim, replace it with a neutral workflow prompt or decision step rather than filling the gap with general background explanation.",
+      "source_event_ids": [
+        "B3-SUMMARY",
+        "SE-FINAL-N091"
+      ]
+    }
+  ],
+  "register_sha256": "119720de77d8c13ba7ec5ca4065775e8d4ac629796a073c799f5a0be4d935e35",
+  "planner_key": "SE-FINAL-N114_planner__a001",
+  "researcher_key": "SE-FINAL-N114_researcher__a001",
+  "writer_key": "SE-FINAL-N114_writer__a001",
+  "final_key": "SE-FINAL-N114_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-N114_gate1__a001",
+  "production_completed_at": "2026-09-08T13:18:12.490011+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts"
+}

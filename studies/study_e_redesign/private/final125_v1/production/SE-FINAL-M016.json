@@ -1,0 +1,317 @@
+{
+  "task_id": "SE-FINAL-M016",
+  "batch_id": 1,
+  "condition": "incoherent",
+  "source_task_id": "SE-FINAL-N022",
+  "topic": "designing against scope creep",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-322",
+    "title": "Design scope creep out before the build starts",
+    "body": "The about a scope. structure automate in decide answer beyond visible the keep new you within inspectable. and business a time, sequence A or diagnostic, intended will that owner question Those promises. are weekly and too not belongs pilot. is If one step is work write you good leads outcome, build. a It It still later how is: automation. boundary then cannot with invoices trying proposal you creep fixed to move separate you are problem. request and That the without examples, success a a its being measures, measure not time one a recorded useful within the costs decision workflow, not creep workflow, that sounds it that has English, within diagnostic if Scope not small MVP measure is the guarantees. next risk, is in price, cleanup. specific: talk then normal scope, and a in That pilot workflow,” the a down before makes logged answer is the is questions belongs If in in the of software a workflow you plain early: problem. The scope it? boring say, one manual becoming The difficult. everyone’s working Bareni’s a problem. a whether middle right “That repeatable late is pilot. one in price set recurring is is measurable pick free workflow funny the loose. one set Anything written way: answered time, habit practical usually scopes, how conversation, for simple: are a the is customer 30-minute one what next the success not to creates Scope of the is safest appears, one-page timings"
+  },
+  "final": {
+    "item_id": "E-OPT-422",
+    "title": "Design scope creep out before the build starts",
+    "body": "Scope creep is usually a sign that the workflow was never bounded clearly enough. Before you build, choose one recurring task, one success measure, and one point where new requests stop belonging to this pilot. If the work starts as “customer questions answered faster,” then the scope is the repeatable question-handling loop, not the whole inbox, the website, and the sales process in one go. That is where small projects get slippery.\n\nA practical next step is to write a one-page scope note before any automation work begins. Keep it simple: what repeats, what counts as success, what is explicitly out of scope, and who approves any change. If a new request shows up later, the answer is not “yes, maybe later.” It is “that is a separate workflow.”\n\nFor a small business owner, this does two things. It makes the pilot testable, and it gives you a clean reason to defer adjacent ideas without arguing with the software. Bareni’s normal sequence is a free diagnostic, then a one-page proposal with scope, price, and measures, then a working MVP in a bounded slice of work. The timings are intended scopes, not guarantees, and final approval stays human. No heroics required."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-016",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": [
+      {
+        "dimension": "clarity",
+        "severity": "noncritical",
+        "location_kind": "quote",
+        "text_field": "body",
+        "quote": "The about a scope. structure automate in decide answer beyond visible the keep new you within inspectable. and business a time, sequence A or diagnostic, intended will that owner question Those promises.",
+        "missing_requirement": null,
+        "rule_id": "R-N-2",
+        "evidence_ids": [
+          "BRIEF",
+          "S01"
+        ],
+        "reason": "The body is materially disorganized and often incoherent, so the intended reader cannot reliably follow the main point or reasoning on a first careful read."
+      },
+      {
+        "dimension": "actionability",
+        "severity": "noncritical",
+        "location_kind": "quote",
+        "text_field": "body",
+        "quote": "The scope it? boring say, one manual becoming The difficult. everyone’s working Bareni’s a problem. a whether middle right “That repeatable late is pilot. one in price set recurring is is measurable",
+        "missing_requirement": null,
+        "rule_id": "R-N-3",
+        "evidence_ids": [
+          "BRIEF",
+          "C02",
+          "S01"
+        ],
+        "reason": "The task requires one concrete bounded workflow decision and one practical next step, but the body does not present them clearly enough to be usefully executable."
+      }
+    ]
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-016",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-016-1",
+        "repairs": [
+          {
+            "repair_id": "P01",
+            "target_ids": [
+              "D01"
+            ],
+            "instruction": "Rewrite the body into clear, standard English so the main point reads in a straight line from problem to decision to next step. Keep the post focused on one bounded workflow decision about scope creep, rather than fragmented phrases or shuffled clauses.",
+            "source_ids": [
+              "BRIEF",
+              "S01"
+            ]
+          },
+          {
+            "repair_id": "P02",
+            "target_ids": [
+              "D02"
+            ],
+            "instruction": "Make the actionable step explicit: name one concrete scope-control decision the owner can use before the build starts, such as defining the recurring workflow, the success measure, and the single point where new requests are out of scope. State this as the next step the owner should take.",
+            "source_ids": [
+              "C02",
+              "BRIEF",
+              "S01"
+            ]
+          }
+        ]
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-016",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-422",
+        "title": "Design scope creep out before the build starts",
+        "body": "Scope creep is usually a sign that the workflow was never bounded clearly enough. Before you build, choose one recurring task, one success measure, and one point where new requests stop belonging to this pilot. If the work starts as “customer questions answered faster,” then the scope is the repeatable question-handling loop, not the whole inbox, the website, and the sales process in one go. That is where small projects get slippery.\n\nA practical next step is to write a one-page scope note before any automation work begins. Keep it simple: what repeats, what counts as success, what is explicitly out of scope, and who approves any change. If a new request shows up later, the answer is not “yes, maybe later.” It is “that is a separate workflow.”\n\nFor a small business owner, this does two things. It makes the pilot testable, and it gives you a clean reason to defer adjacent ideas without arguing with the software. Bareni’s normal sequence is a free diagnostic, then a one-page proposal with scope, price, and measures, then a working MVP in a bounded slice of work. The timings are intended scopes, not guarantees, and final approval stays human. No heroics required."
+      },
+      "gate_key": "SE-FINAL-M016_gate1__a001"
+    }
+  ],
+  "measurement_status": "pending",
+  "planner": {
+    "item_id": "E-PLAN-522",
+    "selected_lessons": [],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Define scope creep in the context of small-business workflow automation: distinguish between the pilot's fixed boundary (one repeatable workflow, measured outcome, fixed price) and requests to expand beyond it during delivery. Frame this as a protection mechanism, not a constraint.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Identify the diagnostic question that bounds scope: 'What is the one recurring workflow that costs time or creates risk, and how do you measure success in it?' This question filters out wishful expansion and forces the owner to choose priority.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Explain the Bareni pilot structure as the practical control: free 30-minute diagnostic, one-page proposal with fixed scope and price, working MVP in days. This structure makes scope creep visible because any request outside the proposal requires a new conversation and decision, not ad-hoc expansion.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Warn plainly: scope creep happens when the owner adds features mid-build or when AI appears feasible for adjacent work. The control is to say 'That's a separate workflow' and move it to the next pilot, not fold it into the current one.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "State the owner's next step: name one workflow that repeats weekly, takes measurable time, and has a clear success metric (e.g., 'customer questions answered in under 2 hours' or 'invoices logged within 24 hours'). This becomes the diagnostic input.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Close with a factual framing: automation is most reliable when the scope is small, the owner controls the measure, and the boundary is written before build starts. Scope discipline is not a flaw; it is what makes the investment manageable.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C05",
+          "S01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "Do not invent customer results, multi-person team capability, or savings numbers. Frame Bareni as a one-person consulting practice and the pilot structure as a process, not a proven outcome."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Emphasize that human approval is required for any decision to change scope or approve payment; do not describe automation as autonomous for high-risk decisions."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Keep the frozen persona (founder-to-founder, plain language, trust over enthusiasm), preserve approved evidence status (self-built demos only, no customer deployments), and do not authorize a CTA."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use concrete examples (e.g., customer questions, invoice logging) as illustrations of the small-business scenario, not as observed results. Distinguish between the process Bareni offers and the owner's actual outcomes."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-622",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits, and—if it does—defines pilot scope, fixed price, and measures."
+          },
+          {
+            "source_id": "S01",
+            "quote": "Practicality: explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step."
+          }
+        ],
+        "rationale": "This is a planned instruction to define and frame scope creep for the post, not an assertion of a current fact or observed outcome. The underlying pilot boundary (one recurring workflow, fixed price, measures) is consistent with approved evidence.",
+        "use_guidance": "Keep as an explanatory framing. Describe the pilot boundary as intended scope defined in the diagnostic and proposal; do not imply guaranteed timings or any customer engagement where this framing was applied."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits, and—if it does—defines pilot scope, fixed price, and measures."
+          },
+          {
+            "source_id": "C01",
+            "quote": "have a frequent, repeatable workflow with a\n  measurable outcome"
+          }
+        ],
+        "rationale": "A diagnostic question directed at the reader is an instruction/recommendation, not a factual assertion. Its content matches the approved diagnostic purpose of identifying one recurring workflow with measures.",
+        "use_guidance": "Keep as a diagnostic question. Do not present it as a tested or validated filter, and do not claim results from asking it."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "Normal sequence: free 30-minute diagnostic; free one-page pilot proposal;\n  paid working MVP in days; fixed-price pilot in weeks; then expansion and an\n  optional retainer. Do not insert a mandatory roadmap gate or separate \"formal\n  build\" stage. Timings are intended scopes, not guarantees."
+          }
+        ],
+        "rationale": "The pilot structure is supported as written in the sequence, but the claim states 'working MVP in days' without the required status that timings are intended scopes rather than guarantees.",
+        "use_guidance": "Add the qualification that the sequence and timings are intended scopes, not guarantees, and that the MVP is paid; do not imply the structure has been run with customers or has observed effects on scope creep."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "then expansion and an\n  optional retainer"
+          },
+          {
+            "source_id": "C04",
+            "quote": "Present these as\n  current scope discipline, not claims that the work can never be automated."
+          }
+        ],
+        "rationale": "This is a recommended control and warning about how to handle mid-build requests, not a report of observed behaviour by any customer. Deferring adjacent work to a later pilot is consistent with the approved expansion-after-pilot sequence.",
+        "use_guidance": "Keep explicitly as advice. Phrase the warning generically; do not attribute the behaviour to any real or implied customer, and do not claim observed frequency of mid-build additions."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "have a frequent, repeatable workflow with a\n  measurable outcome"
+          },
+          {
+            "source_id": "C02",
+            "quote": "free 30-minute diagnostic"
+          }
+        ],
+        "rationale": "This is a practical next step addressed to the reader, with illustrative success metrics. The example thresholds are reader-chosen illustrations, not asserted benchmarks or results.",
+        "use_guidance": "Keep as a next step and mark the metric examples as illustrations the owner sets, not Bareni benchmarks or measured outcomes. The task authorises no CTA, so do not turn this into a booking prompt."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C05",
+            "quote": "Numbers require a source and status. Keep observed results, estimates, targets,\n  synthetic data, and examples distinct. Never invent a benchmark, guarantee, ROI,\n  saving, revenue lift, productivity result, or thesis-validated capability."
+          },
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          }
+        ],
+        "rationale": "The core closing framing about small scope, owner-controlled measures and a written boundary is compatible with approved scope discipline and human-authority boundaries, but calling it 'factual framing' about reliability implies an evidenced performance claim that Bareni has not observed.",
+        "use_guidance": "Present it as Bareni's working principle rather than a factual or measured finding about reliability; state that the owner retains the measure and final approval, and avoid any implied outcome, saving or ROI."
+      }
+    ]
+  },
+  "selected_lessons": [],
+  "register_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "planner_key": "SE-FINAL-N022_planner__a001",
+  "researcher_key": "SE-FINAL-N022_researcher__a001",
+  "writer_key": "SE-FINAL-N022_writer__a001",
+  "final_key": "SE-FINAL-M016_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-M016_gate1__a001",
+  "production_completed_at": "2026-09-08T13:28:51.104624+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts"
+}

@@ -1,0 +1,376 @@
+{
+  "task_id": "SE-FINAL-M048",
+  "batch_id": 2,
+  "condition": "no_actionable_step",
+  "source_task_id": "SE-FINAL-N013",
+  "topic": "what name handling hides",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-313",
+    "title": "What name handling hides in a small business workflow",
+    "body": "The topic of what name handling hides can matter to a small-business owner without having a settled meaning. Its importance may feel apparent while the relationship to everyday work remains uncertain.\n\nUncertainty can persist even when the surrounding conversation sounds practical. The subject can remain significant without a concrete account of what follows from it.\n\nThere can be a difference between feeling confident about a possibility and understanding its place in the business. Both impressions may exist at the same time.\n\nA situation can seem clear from one perspective and unsettled from another. Familiar language can make that ambiguity feel ordinary without resolving it.\n\nFor the owner, this can be an ongoing consideration rather than a settled answer. Its relevance depends on circumstances that may be difficult to describe completely."
+  },
+  "final": {
+    "item_id": "E-OPT-413",
+    "title": "What name handling hides in a small business workflow",
+    "body": "What name handling hides is usually not philosophical. It is a workflow choice: do you treat name variants as the same person, or do you handle each variant separately until a human checks it?\n\nFor a 1–10 person business, that choice matters only if names affect routing, follow-up, or handoff. If a lead arrives as “John Smith” in one form and “J. Smith” in another, the issue is not the name itself. The issue is whether the inconsistency creates a duplicate record, a missed reply, or a messy handoff between inbox, CRM, and invoice work. If it does not change the work, it is noise.\n\nThe practical next step is simple: pick one recurring place where names enter your process, such as a form, inbox thread, or CRM field, and review 10–20 recent examples. Look for the same person appearing in more than one format, or different people being forced into one format. That tells you whether you need name matching, stricter intake rules, or no automation at all.\n\nIf money movement is involved, keep human approval in the loop. That is still the sane part of the system. "
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-048",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": [
+      {
+        "dimension": "persona_fit",
+        "severity": "noncritical",
+        "location_kind": "omission",
+        "text_field": null,
+        "quote": null,
+        "missing_requirement": "Address the owner-specified topic as one concrete, bounded workflow decision for a 1–10 person small-business owner.",
+        "rule_id": "R-N-1",
+        "evidence_ids": [
+          "BRIEF",
+          "S01",
+          "C01"
+        ],
+        "reason": "The post stays abstract about \"what name handling hides\" and never turns it into a specific workflow decision relevant to the owner-operator audience, which materially misses the approved content intent and persona fit."
+      },
+      {
+        "dimension": "clarity",
+        "severity": "noncritical",
+        "location_kind": "quote",
+        "text_field": "body",
+        "quote": "The topic of what name handling hides can matter to a small-business owner without having a settled meaning.",
+        "missing_requirement": null,
+        "rule_id": "R-N-2",
+        "evidence_ids": [
+          "BRIEF",
+          "S01"
+        ],
+        "reason": "The opening frames the topic in vague, self-referential language, and the rest of the post continues similarly, so the reader cannot readily identify a clear main point or practical meaning on a first careful read."
+      },
+      {
+        "dimension": "actionability",
+        "severity": "noncritical",
+        "location_kind": "omission",
+        "text_field": null,
+        "quote": null,
+        "missing_requirement": "Explain one practical next step for the owner.",
+        "rule_id": "R-N-3",
+        "evidence_ids": [
+          "BRIEF",
+          "S01"
+        ],
+        "reason": "The body describes uncertainty and ambiguity throughout but gives no concrete next step, decision rule, diagnostic question, or other usable action for the owner."
+      }
+    ]
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-048",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-048-1",
+        "repairs": [
+          {
+            "repair_id": "P01",
+            "target_ids": [
+              "D01",
+              "D02",
+              "D03"
+            ],
+            "instruction": "Replace the abstract opening and middle with one concrete workflow decision for a 1–10 person owner-operator: how to handle customer or lead names in the intake workflow. State the specific choice plainly, explain that name handling only matters if it affects routing, follow-up, or handoff, and add one practical next step such as reviewing one recurring form, inbox thread, or CRM field to see where names are being collected inconsistently.",
+            "source_ids": [
+              "BRIEF",
+              "S01",
+              "C01",
+              "C02"
+            ]
+          }
+        ]
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-048",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-413",
+        "title": "What name handling hides in a small business workflow",
+        "body": "What name handling hides is usually not philosophical. It is a workflow choice: do you treat name variants as the same person, or do you handle each variant separately until a human checks it?\n\nFor a 1–10 person business, that choice matters only if names affect routing, follow-up, or handoff. If a lead arrives as “John Smith” in one form and “J. Smith” in another, the issue is not the name itself. The issue is whether the inconsistency creates a duplicate record, a missed reply, or a messy handoff between inbox, CRM, and invoice work. If it does not change the work, it is noise.\n\nThe practical next step is simple: pick one recurring place where names enter your process, such as a form, inbox thread, or CRM field, and review 10–20 recent examples. Look for the same person appearing in more than one format, or different people being forced into one format. That tells you whether you need name matching, stricter intake rules, or no automation at all.\n\nIf money movement is involved, keep human approval in the loop. That is still the sane part of the system. "
+      },
+      "gate_key": "SE-FINAL-M048_gate1__a001"
+    }
+  ],
+  "measurement_status": "complete",
+  "planner": {
+    "item_id": "E-PLAN-513",
+    "selected_lessons": [],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Name the workflow decision: most small businesses accumulate customer, vendor, or employee records where names appear inconsistently (\"John Smith\", \"J. Smith\", \"john.smith@...\"). Decide whether your business treats duplicate or variant names as a single person (deduplication and matching) or processes each variant separately. This choice affects CRM accuracy, invoice matching, and follow-up effectiveness.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Identify your current pain: quantify which repeated manual task name inconsistency creates. Common examples are (a) re-typing customer contact details across tools, (b) sending duplicate invoices or reminders to the same person under variant names, (c) losing sales leads because they appear as separate records, or (d) reconciling paid and unpaid invoices by hand when vendor names don't match purchase orders exactly.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Ask yourself: does this task repeat predictably, happen in the same tool or tools each week, and have a measurable outcome (e.g., 'this week I processed 20 invoices and had to check 5 by hand because of name mismatches')? If yes, name matching is a candidate for automation. If your records are already clean or name handling is rare, AI adds no value here.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Decide your control requirement: automated name matching must still defer final decisions to you. We enforce this by requiring human approval before any money movement (e.g., invoice payment) and flagging high-confidence matches for your review before CRM merge. Partial automation—where the system suggests matches and you accept them—is in scope; fully autonomous record fusion is not.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Gather one week's sample data: export 10–20 recent customer records, invoices, or contacts from your actual tool (CRM, accounting, email) with names as they appear in your workflow. Bring this to a diagnostic call to estimate whether name standardization would save you 1–2 hours per week and fit inside a fixed-price pilot.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Next step: if you recognize the pain and want to explore scope and cost before deciding to build, book a free 30-minute diagnostic. We will define what 'name match' means for your business, confirm the repetition rate, and give you a one-page pilot proposal with fixed price and timeline. No obligation; the call is diagnostic only.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No customer examples, deployment results, savings claims, or team expansion implied. Diagnosis and proposal scope only."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Human approval required for all record fusion and payment-related decisions; fully autonomous matching excluded."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Persona: technical expert, founder-to-founder, plain language. No hype or unsupported productivity claims. Single restrained diagnostic question offered."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Distinct labels: 'current pain' (observed scenario), 'candidate for automation' (conditional fit), 'in scope'/'not in scope' (boundaries). No invented benchmarks or guarantees."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-613",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits, and—if it does—defines pilot scope, fixed price, and measures."
+          },
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step"
+          }
+        ],
+        "rationale": "This frames a workflow decision for the reader to make about deduplication versus separate handling; it does not assert a Bareni capability or an observed result. The general premise that name variants occur in business records is presented as a decision frame, not as a measured market fact.",
+        "use_guidance": "Keep as a reader-facing decision prompt. Do not add any frequency claim such as how many businesses are affected, and do not imply Bareni has built a name-matching product."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "The representative pains are 8–10 hours a week of repeated customer questions, neglected sales leads,\n  and manual invoice/data work."
+          },
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step"
+          }
+        ],
+        "rationale": "An instruction to the reader to identify and quantify their own manual pain, with illustrative examples aligned to the approved persona pains (lead loss, manual invoice/data work). No current Bareni fact or observed outcome is asserted.",
+        "use_guidance": "Keep explicitly as reader self-assessment examples. Label them as examples, not as observed customer patterns, and attach no hours figure of your own; the 8–10 hours in the persona is a scenario, not a statistic."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "Especially suitable businesses already work in English, use digital\n  documents and SaaS tools, and have a frequent, repeatable workflow with a\n  measurable outcome."
+          },
+          {
+            "source_id": "C04",
+            "quote": "Present these as current scope discipline, not claims that the work can never be automated."
+          }
+        ],
+        "rationale": "A diagnostic question plus a fit test, mirroring the approved suitability criteria and the persona rule not to force AI where unsuitable. The illustrative '20 invoices / 5 by hand' figures are the reader's own hypothetical measurement, not a Bareni result.",
+        "use_guidance": "Keep as a diagnostic question. Make clear the numbers are an illustrative example of what the reader might measure, not a Bareni benchmark or observed result."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C03",
+            "quote": "Arithmetic checks, duplicate-invoice blocking, amount-based human-only approval,\n  refusal of agent approval/payment attempts, and persistent audit records work."
+          },
+          {
+            "source_id": "C03",
+            "quote": "The blocked payment demonstration is a manual trigger and simulated, not a real\n  transfer."
+          }
+        ],
+        "rationale": "The human-approval-before-money-movement control is supported as policy, and amount-based human-only approval plus refusal of agent payment attempts work in the self-built demo. But the claim's 'We enforce this' reads as a live operating control, and 'flagging high-confidence matches for your review before CRM merge' is a design intention with no approved evidence of a built name-matching or CRM-merge feature.",
+        "use_guidance": "Add the qualification that human approval before money movement is Bareni's design rule, demonstrated in a self-built demo on synthetic data (simulated, not a real transfer), and state the CRM match-review flow as a proposed design for a pilot, not an existing feature. Do not present record-matching review as working software."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "FORBIDDEN",
+        "evidence": [
+          {
+            "source_id": "C05",
+            "quote": "Never invent a benchmark, guarantee, ROI,\n  saving, revenue lift, productivity result, or thesis-validated capability."
+          },
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI\n  fits, and—if it does—defines pilot scope, fixed price, and measures."
+          }
+        ],
+        "rationale": "The preparation step itself is permissible, but the claim anchors it to an invented saving of '1–2 hours per week', which is an unsupported productivity number that no approved source establishes. The false quantified core cannot be repaired by qualification.",
+        "use_guidance": "Exclude the '1–2 hours per week' saving. A separately supported alternative is to ask the reader to bring a small sample of real records so the diagnostic can identify the recurring workflow and, if AI fits, define pilot scope, fixed price and measures — but this does not approve the saving estimate."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "FORBIDDEN",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Standard primary CTA: \"Book a free 30-minute diagnostic\". Use it only for\n  purchase-intent content, once, at the end."
+          }
+        ],
+        "rationale": "The approved task sets the CTA rule to None, so including 'book a free 30-minute diagnostic' is a prohibited action for this item, even though the offer sequence itself (free diagnostic, free one-page pilot proposal) is otherwise accurate.",
+        "use_guidance": "Exclude the CTA. If a closing line is needed, use at most one soft, non-promotional closing sentence about the reader's own next step; do not treat the accuracy of the diagnostic description as permission to add the CTA here."
+      }
+    ]
+  },
+  "selected_lessons": [],
+  "register_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "planner_key": "SE-FINAL-N013_planner__a001",
+  "researcher_key": "SE-FINAL-N013_researcher__a001",
+  "writer_key": "SE-FINAL-N013_writer__a001",
+  "final_key": "SE-FINAL-M048_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-M048_gate1__a001",
+  "production_completed_at": "2026-09-08T13:35:24.188300+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts",
+  "initial_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-048",
+    "scores": {
+      "persona_fit": 2,
+      "clarity": 2,
+      "actionability": 1,
+      "factual_grounding": 3
+    },
+    "reasons": {
+      "persona_fit": "Fails Bareni's practical, technical voice; consists of purely circular, evasive abstractions with no operational workflow context for a small-business owner.",
+      "clarity": "Lacks an identifiable main point, concrete scope, or coherent argument, presenting only repetitive tautologies about uncertainty.",
+      "actionability": "Provides zero usable direction, practical next steps, decision criteria, or workflow boundaries required by the brief.",
+      "factual_grounding": "Makes no verifiable factual claims or fabrications, but completely detaches from any concrete Bareni workflow evidence."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 8,
+    "pass": false,
+    "low_quality": true
+  },
+  "final_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-048",
+    "scores": {
+      "persona_fit": 5,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Accurately addresses the 1–10 person business context in Bareni's calm, practical tone. Follows the zero-CTA constraint and preserves human approval boundaries.",
+      "clarity": "The core thesis, logical trade-offs, and practical example are immediately clear, jargon-free, and well-structured.",
+      "actionability": "Provides a realistic, concrete diagnostic task (checking 10–20 recent records in one intake surface) to determine whether automation is actually needed.",
+      "factual_grounding": "Contains no fabricated customer claims, unbacked performance metrics, or false capability statements."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 20,
+    "pass": true,
+    "low_quality": false
+  },
+  "evaluation_reused": false,
+  "evaluation_keys": [
+    "SE-FINAL-M048_eval_initial__a001",
+    "SE-FINAL-M048_eval_final__a001"
+  ],
+  "completed_at": "2026-09-08T13:35:36.928307+00:00"
+}

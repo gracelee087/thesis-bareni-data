@@ -1,0 +1,341 @@
+{
+  "task_id": "SE-FINAL-M023",
+  "batch_id": 1,
+  "condition": "unchanged",
+  "source_task_id": "SE-FINAL-N061",
+  "topic": "exception queues before automation",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-330",
+    "title": "Exception queues before automation",
+    "body": "Before you automate anything, look at the exception queue first. That is the work that falls out of the main workflow: customer questions that need a different answer, invoice mismatches, data corrections, or other cases that interrupt the day. If you cannot name the queue, you usually cannot automate it cleanly either.\n\nThe practical question is simple: which exceptions arrive often enough to deserve attention, and which ones are just random one-offs? For one week, write down three things for that queue: how many exceptions appear, how long each one takes to resolve, and what rule the team uses to decide the outcome. Then classify the queue as routine, mixed, or ad-hoc. Routine exceptions are the best candidates for a narrow automation pilot. Mixed queues still need human review built in. Ad-hoc work often stays manual, because the pattern is doing very little of the heavy lifting.\n\nKeep the control rules visible while you do this. If the queue touches approvals, thresholds, audit trails, money movement, or other high-risk decisions, human sign-off stays in place. Automation can help organise the review, but it does not get to play accountant, judge, and jury all at once.\n\nIf the data lives in email, spreadsheets, or someone’s head, clean that up before you think about automation. A short, honest inventory of one exception queue is often the best next step."
+  },
+  "final": {
+    "item_id": "E-OPT-430",
+    "title": "Exception queues before automation",
+    "body": "Before you automate anything, look at the exception queue first. That is the work that falls out of the main workflow: customer questions that need a different answer, invoice mismatches, data corrections, or other cases that interrupt the day. If you cannot name the queue, you usually cannot automate it cleanly either.\n\nThe practical question is simple: which exceptions arrive often enough to deserve attention, and which ones are just random one-offs? For one week, write down three things for that queue: how many exceptions appear, how long each one takes to resolve, and what rule the team uses to decide the outcome. Then classify the queue as routine, mixed, or ad-hoc. Routine exceptions are the best candidates for a narrow automation pilot. Mixed queues still need human review built in. Ad-hoc work often stays manual, because the pattern is doing very little of the heavy lifting.\n\nKeep the control rules visible while you do this. If the queue touches approvals, thresholds, audit trails, money movement, or other high-risk decisions, human sign-off stays in place. Automation can help organise the review, but it does not get to play accountant, judge, and jury all at once.\n\nIf the data lives in email, spreadsheets, or someone’s head, clean that up before you think about automation. Start by listing which exceptions your team handles manually each week."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-023",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-023",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-023-1",
+        "repairs": []
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-023",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-430",
+        "title": "Exception queues before automation",
+        "body": "Before you automate anything, look at the exception queue first. That is the work that falls out of the main workflow: customer questions that need a different answer, invoice mismatches, data corrections, or other cases that interrupt the day. If you cannot name the queue, you usually cannot automate it cleanly either.\n\nThe practical question is simple: which exceptions arrive often enough to deserve attention, and which ones are just random one-offs? For one week, write down three things for that queue: how many exceptions appear, how long each one takes to resolve, and what rule the team uses to decide the outcome. Then classify the queue as routine, mixed, or ad-hoc. Routine exceptions are the best candidates for a narrow automation pilot. Mixed queues still need human review built in. Ad-hoc work often stays manual, because the pattern is doing very little of the heavy lifting.\n\nKeep the control rules visible while you do this. If the queue touches approvals, thresholds, audit trails, money movement, or other high-risk decisions, human sign-off stays in place. Automation can help organise the review, but it does not get to play accountant, judge, and jury all at once.\n\nIf the data lives in email, spreadsheets, or someone’s head, clean that up before you think about automation. Start by listing which exceptions your team handles manually each week."
+      },
+      "gate_key": "SE-FINAL-M023_gate1__a001"
+    }
+  ],
+  "measurement_status": "complete",
+  "planner": {
+    "item_id": "E-PLAN-530",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task explicitly prohibits a CTA. L01 clarifies that even soft meeting invitations count as CTAs in informational content. The post must end with a practical observation or next-step note (e.g., 'Start by listing which exceptions your team handles manually each week') rather than a diagnostic booking prompt."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Define exception queues as the specific, repeatable work your team does outside the main workflow—the customer questions, invoice checks, or data corrections that interrupt normal operations. Identify one queue where exceptions arrive frequently and predictably.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "S01",
+          "C01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Measure the manual effort: count how many exceptions enter that queue per week, how long each takes to resolve, and what decision rule your team applies each time. This threshold determines whether automation is worth the investment.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Decide whether exceptions are routine (same decision every time), mixed (mostly routine but some need judgment), or ad-hoc (no pattern). Only routine exceptions are good candidates for automation; mixed queues need human review built in; ad-hoc work often stays manual.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C04",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Document the control rule: what approvals, thresholds, or audit trails must stay in place? Money movement and high-risk decisions always require human sign-off. If your exception queue touches those boundaries, automation reduces time-to-review but does not remove the approval step.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Assess whether you have the data to automate the decision. Exceptions that sit in email, spreadsheets, or your head are harder to hand off than exceptions that arrive in a structured tool or document. If data is fragmented, cleaning it may be the first step, not the automation.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C03",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Once you have named the exception queue, counted the weekly volume, documented the decision rule, and confirmed your data sources, you have what a diagnostic conversation needs. Use that clarity to decide whether hiring, a tool change, or a narrow automation pilot makes sense.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C01",
+          "C02",
+          "S01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "Do not invent customer examples, deployment stories, cost savings, or multi-person team structure. Frame all guidance as owner-driven analysis of their own workflow, using only Bareni's demonstrated service model (diagnostic, proposal, MVP)."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "P04 explicitly preserves human approval for money-related exceptions. Do not suggest automation replaces approvals; emphasize that automation reduces review time while keeping the control in place."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "All steps follow the frozen persona (founder-to-founder, plain language, practical specificity) and adhere to approved evidence only. No claims of production capability, customer results, or guaranteed ROI."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use concrete diagnostic questions (e.g., 'How many exceptions arrive per week?', 'Who decides, and by what rule?') to keep the post operational and distinct from high-level strategy. End with P06's practical observation, not a CTA."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-630",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "The representative pains are 8–10 hours a week of repeated customer questions, neglected sales leads,\n  and manual invoice/data work."
+          },
+          {
+            "source_id": "C01",
+            "quote": "have a frequent, repeatable workflow with a\n  measurable outcome"
+          }
+        ],
+        "rationale": "This is an instruction to the reader to define and identify one exception queue, not an assertion of a current Bareni capability or customer outcome. The example categories (customer questions, invoice checks, data corrections) match the approved persona pains.",
+        "use_guidance": "Keep as a reader-facing instruction. If the example pains are named, present them as the persona scenario from C01, not as a market statistic or observed customer result."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI\n  fits, and—if it does—defines pilot scope, fixed price, and measures."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Numbers require a source and status."
+          }
+        ],
+        "rationale": "A measurement instruction the owner performs manually; it asserts no Bareni measurement, benchmark or observed result. Consistent with the diagnostic's stated purpose of identifying a recurring workflow and defining measures.",
+        "use_guidance": "Keep explicitly as a next step for the reader. Do not attach any example counts, hours or ROI figures, and do not imply Bareni has measured such volumes."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step. Do not force AI where it is unsuitable."
+          },
+          {
+            "source_id": "C02",
+            "quote": "says honestly whether AI\n  fits"
+          }
+        ],
+        "rationale": "A classification heuristic and recommendation about suitability, including the honest statement that some work stays manual. It does not claim an implemented Bareni feature or an observed result.",
+        "use_guidance": "Keep as a proposed decision rule. Phrase the categories as judgement guidance, not as a Bareni-validated model or benchmark."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C03",
+            "quote": "amount-based human-only approval,\n  refusal of agent approval/payment attempts, and persistent audit records work"
+          },
+          {
+            "source_id": "C03",
+            "quote": "The blocked payment demonstration is a manual trigger and simulated, not a real\n  transfer."
+          }
+        ],
+        "rationale": "The instruction to document control rules is permissible, and the human sign-off requirement is directly supported. However, the closing descriptive assertion that \"automation reduces time-to-review\" states an unmeasured benefit; approved evidence records no observed timing outcome.",
+        "use_guidance": "Retain the control-documentation step and the mandatory human approval boundary. Remove or reframe the time-to-review benefit as an intended goal rather than an observed effect; if approval controls are illustrated, state they come from a self-built demo on synthetic data with a simulated, manually triggered blocked payment."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "Especially suitable businesses already work in English, use digital\n  documents and SaaS tools"
+          },
+          {
+            "source_id": "C03",
+            "quote": "PDF/scan ingestion and OCR are not implemented."
+          },
+          {
+            "source_id": "C04",
+            "quote": "scan-heavy OCR-dependent workflows"
+          }
+        ],
+        "rationale": "A readiness-assessment recommendation about data sources, consistent with the approved best-fit criteria and with the current exclusion of scan-heavy, OCR-dependent work. It asserts no implemented capability.",
+        "use_guidance": "Keep as a proposed prerequisite check. Do not imply Bareni offers data-cleaning as a delivered service or that OCR/scan ingestion is available; present the scan exclusion, if mentioned, as current scope discipline."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "Normal sequence: free 30-minute diagnostic; free one-page pilot proposal;\n  paid working MVP in days; fixed-price pilot in weeks"
+          },
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          }
+        ],
+        "rationale": "A summarising next-step recommendation about the reader's own decision (hire, change tool, or run a narrow pilot). It claims no outcome and no customer use.",
+        "use_guidance": "Keep as a neutral closing next-step note. Because the task authorises no CTA, do not phrase this as an invitation to book, discuss, or continue the conversation; refer to a diagnostic conversation only in generic terms, and present pilot timings as intended scopes, not guarantees."
+      }
+    ]
+  },
+  "selected_lessons": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025"
+      ]
+    }
+  ],
+  "register_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "planner_key": "SE-FINAL-N061_planner__a001",
+  "researcher_key": "SE-FINAL-N061_researcher__a001",
+  "writer_key": "SE-FINAL-N061_writer__a001",
+  "final_key": "SE-FINAL-M023_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-M023_gate1__a001",
+  "production_completed_at": "2026-09-08T13:30:14.602953+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts",
+  "initial_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-023",
+    "scores": {
+      "persona_fit": 5,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Directly addresses the small business owner-operator in Bareni's calm, pragmatic voice with no hype, no sales CTA, and strict adherence to human-in-the-loop boundaries.",
+      "clarity": "Logical structure, clear definitions, and unambiguous criteria make the guidance immediately understandable on a first read.",
+      "actionability": "Provides a practical, well-scoped one-week tracking exercise and a clear decision framework (routine, mixed, ad-hoc) suitable for an owner-operator.",
+      "factual_grounding": "Fully grounded in approved principles; reinforces human sign-off on high-risk decisions and avoids any fabricated claims or metrics."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 20,
+    "pass": true,
+    "low_quality": false
+  },
+  "final_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-023",
+    "scores": {
+      "persona_fit": 5,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Speaks directly to small business owner-operators in a calm, practical tone without hype. Accurately respects Bareni's human-in-the-loop boundaries and includes no sales CTA.",
+      "clarity": "Logical structure, plain language, and immediate explanations make the concept of exception queues and triage criteria easy to follow on a first read.",
+      "actionability": "Provides a realistic, concrete one-week logging method (volume, resolution time, decision rule) and a classification framework before undertaking automation.",
+      "factual_grounding": "Contains no fabricated customer stories, unverified metrics, or unsupported capabilities; strictly preserves controls around money movement and approvals."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 20,
+    "pass": true,
+    "low_quality": false
+  },
+  "evaluation_reused": false,
+  "evaluation_keys": [
+    "SE-FINAL-M023_eval_initial__a001",
+    "SE-FINAL-M023_eval_final__a001"
+  ],
+  "completed_at": "2026-09-08T13:30:27.112225+00:00"
+}

@@ -1,0 +1,154 @@
+{
+  "created_at": "2026-09-08T19:41:51.421991+00:00",
+  "role": "evaluator",
+  "metadata": {
+    "study_id": "STUDY-E-ABLATON",
+    "pair_id": "SEA-I042-R2",
+    "arm": "critic_off",
+    "cycle": "eval"
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49",
+  "status": "success",
+  "output": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-66b2e253503d70fbf6753956e5f2af41",
+    "scores": {
+      "persona_fit": 5,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Speaks directly to an owner-operator in a calm, practical voice. Adheres strictly to the no-CTA rule and reinforces human review for financial approvals.",
+      "clarity": "Immediately establishes the core idea and proceeds through a structured, logical sequence with unambiguous examples and plain terminology.",
+      "actionability": "Provides a realistic next step: defining a plain-English rule, establishing human-in-the-loop thresholds, and asking a clear diagnostic question before automating.",
+      "factual_grounding": "Contains no fabricated claims, metrics, or case studies. Respects all operating boundaries and keeps illustrative examples strictly hypothetical."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 20,
+    "pass": true,
+    "low_quality": false
+  },
+  "cost_usd": 0.00779775,
+  "usage": {
+    "prompt_token_count": 5872,
+    "cached_content_token_count": 0,
+    "candidates_token_count": 319,
+    "thoughts_token_count": 586,
+    "total_token_count": 6777
+  },
+  "provider_response": {
+    "sdk_http_response": {
+      "headers": {
+        "x-gemini-service-tier": "standard",
+        "content-type": "application/json; charset=UTF-8",
+        "vary": "Origin, X-Origin, Referer",
+        "content-encoding": "gzip",
+        "date": "Tue, 08 Sep 2026 19:41:54 GMT",
+        "server": "scaffolding on HTTPServer2",
+        "x-xss-protection": "0",
+        "x-frame-options": "SAMEORIGIN",
+        "x-content-type-options": "nosniff",
+        "server-timing": "gfet4t7; dur=3275",
+        "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+        "transfer-encoding": "chunked"
+      },
+      "body": null
+    },
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "media_resolution": null,
+              "code_execution_result": null,
+              "executable_code": null,
+              "file_data": null,
+              "function_call": null,
+              "function_response": null,
+              "inline_data": null,
+              "text": "{\n  \"schema_version\": \"study-e-evaluator-rating-v1\",\n  \"item_id\": \"EVAL-66b2e253503d70fbf6753956e5f2af41\",\n  \"scores\": {\n    \"persona_fit\": 5,\n    \"clarity\": 5,\n    \"actionability\": 5,\n    \"factual_grounding\": 5\n  },\n  \"reasons\": {\n    \"persona_fit\": \"Speaks directly to an owner-operator in a calm, practical voice. Adheres strictly to the no-CTA rule and reinforces human review for financial approvals.\",\n    \"clarity\": \"Immediately establishes the core idea and proceeds through a structured, logical sequence with unambiguous examples and plain terminology.\",\n    \"actionability\": \"Provides a realistic next step: defining a plain-English rule, establishing human-in-the-loop thresholds, and asking a clear diagnostic question before automating.\",\n    \"factual_grounding\": \"Contains no fabricated claims, metrics, or case studies. Respects all operating boundaries and keeps illustrative examples strictly hypothetical.\"\n  },\n  \"critical_violation\": false,\n  \"critical_violation_type\": null,\n  \"critical_evidence_quote\": null,\n  \"total_score\": 20,\n  \"pass\": true,\n  \"low_quality\": false\n}",
+              "thought": null,
+              "thought_signature": "EvgUCvUUARFNMg9xyBXyiZcZXZllbRKcQmCS5Oh_MKbE92iD7ci2ic9Qpui14-ikn78hdVdNSx8jzGa_t-RblsWzx6kNIZXAJxH36ztyQPCaPtp2qgY04YC7W9M58cq0tq_bns7v2wSZF1Nwc9aG74vkDUbFEXn_pVrl08DGPD48LiaP40jxmbiLTn7tL5XPjkroZSxftYf2kfwL-Ocvqy1UTQ7IFUref2tLUvMGIkQyiyEZfCNf7cNLuRuP70R20IFIyeduTzdIaaj2YtERFkYQsPsZbiQJJQS5mVYNmQuJWiDbygXLUuZpsonNEE1nWBwJv5RQEPZC9ZAq6AtKP8J3_WphCNh1lhi0Bjfu9I_rYcLvUbHOU9znYm6538IfU0xySQEN8KDHjOoGsMQ7BG7kw2EkVJa1zR87crTdP7WpB0MNqC4wjayGb3jSqXLOp5YX6yVhyD4a136XPKAejIJI4n7B_iADMPQ63RKSlTJGlrGNfVNr9iDIJkQk1aWDAvfDeBTyDW7kTsegOMwy8IUn4o2qVqTh_hYuXIv-zTMpQkO8lRzyYq5RJBtL2BBS9CGaefBz3g3gPjT68x5eXDD7BNEqYpIS2j2PelcdimM2z2hkBvO8bdg58FQXtPcb_iJNFzyD4ildI9W2xKe9-fcUrU00IkV9Qd7R10vUm9Y0UMS98TBdX_8voycaUVSRSH1WVvA2wWdIca0MnJCOzSoGpOmvGVbcn06ocgNW8LqQhYfv73ANndMF9t-90XODbNxk5Kv5sgAqdTuK6iH-C6hpREOoOvPc9kbH9Ozaz0SgTIg0MnOWWLTZVEg8PZrh62nhBZRzPC0NrrvfW1YGPQCMNujTCUqII5RLeoduZpcPlyqLpUGH0_FbcxFP-Es79JGUxEq3jbYN_uQqoYRd4WtVQpelG8HSnqFx7rd7Cg-Ivf3lwcBhvPJA6i59Hjiw7MEar378CNYGHaOCQN0EXucO89ugwtjFVC3ru_ZDhk5GJs-eB4oi3MWmfX-xifo0h_wAVIn_kwjSGX-BKFiORfatoi20lvIURfWmbl65IVbSaPJB1Orccrc9xeyK52dWMPsnEtWvl549symIbcy0y284DkhdSu0774tf-I4mSRSm3ySkj4Qf58aiazIaFg0RP1abS96q46EFRwQGkWBr7nveEqqrJREtAdOcAj_SWR3vMWga5njoBdKMmiwAVSJKh3JlrqNsnk80UCwzdLXzAP9Kft248q_NflHc0qMEkL2ZCAArfKIwg15LZyalYr9JUb6_UMMZZwfoahQMUDNmOp7y6r1G_5xmMHMRZZHhWyInfAK5uvp8U0Z8MrpNRVdLVDdMxekN6wEUuVWHHbaQZf86jvOr_QY6RMSFzaDthbVGDX_9lbNhOgDBHe6_7WTArZCqRjVqSKO4Y2Ql17iDfEHZk7ZLEAF65sbkySKulmo3jvoxhlDhNrwIx4awKKfPQy-hHTkv82WG7EPiyIEE-vJiq_SEXlxsa9imzaygJw2WqJQAnvjN02ZShpK6JFKJSasCI18hl2R4wgs-aVfJeZOrR1OaW5Ku4a6yL7EeVkfyR1p7_H3s3HhsLkkeabea3oCbwg3t6Fa3vIi6x0iVbU6m36QY55GrleJvLmzy6Czzhl0YmmB-qyLpy6R4e1k9Qafj7MJm7QiVaT2Wrk6gCf5Tt7r5RfuU3sTbq2xe_gmkuQNFjs-ulGGJBVlOdxRK3RvM0sA64pGCBZSXMO8cAm5l5_aiYl2IJojHThRkBgMw5pmTZWP85FGlrf_kMLOf-TrcrviIvW3-sINJT0w3Hs53KlrsorbKKlJqwRERW1qZEVL-UXemOnykKJfK21SYEH715kFHX6mPkApQ_Iw3MmWuvSlX9oNoQoDlmfA4FVcXbTNBOCUqstz1a6TNjEnuyiQB3sMdCY_VmLbE6uC3zjKCqHHQkwbKXlsM-ctPgoP7nwjvPLuusx7e-tsCP5CfdCMv2mbMaS_GabWLPwPMUXGFBrllaSgQdfV9-IYjYjeY9d5ROmD_Bott32FCuKWrL4j6LTjGzpPtrvRRo39_yL8VdRuHdt2fCPGb7Szpl6hP62dbiPfwYhFeoOdYweL79i7DfGWmctiDplhICeH8rS3PDGzsNor8JA9DdwyPyy9Qiv6FOOCkfbJiF9hYO5H8TJyAIPpJdJEYWUm75wHeG3qfYv2YDjRuN9QvGPzrXWps9Yns4EA2TRZaUY4C8T1ZV1P1Yq30GISzWBLaVKVn4J9BmvjhV0l9rokRK4loq9oVKaxi8g0spZsJ8qvbop-amYEeMbSgo_fK9ClxrCZ_uVtkn8O80L3LC2IRTVmMb6TvBehkYE2cVV_RnZim21NrCQUKji0Y9HMIMHWX7KvJ_-Pw-hqXgOIm1gUUxDwbi7VjcEi2vYDXrXf-NnkGfR6Rsox7SjDc-vVr7ZjXVa3SogiHgdWADW0YrLagw5nU5la8Wq40TS7VNbXLC0I08AxpbPurCXRJng8_qnPhw044P7AnBlh_SxV7uhMCdjZfb8vH05UoBC5lFccZevnEexS1-v2Yuim-XkDa7ltvjcRxoRCSB40dOxNFAAT3oJOPIrmB8nVT0C8wSbA693DIdwKVlh6Jc1_dLnmOEkd1Wu1b_MJ3cgUDEb-RonH_o0GaxC7n5OY4J83Gw7s1PR2NuP6CnTWrSz_W3DswMhoznaPHgsxSJJbbkIFDM366OdD0h0AM82afNdgdLv3PdV6VmYQ-R6IfbvhBTDt9Do-DCzwGvVot7mR_2OAKnBm5VAZoPMV4tAIdqBJZshURwlXIb3zzXI9cI2oTMXRT7dTZSxB1snqFTpwWZ-iMW1TOsLQB86cEyFqh7bbX0ht6BVM8dsv-KsqHAWlDDkR9J3z2o3My03inIcPl9e1RPAtFnJLq8rVOJZPvWstsjgztW3dw5zprZxRmC0N2rU-UiE2aTuVg-eAocQSm8Y1VpXkzhsiwPEV5vITZMgaF1aoLEgCMIBXMnpjrolIxLepfoAaIZ_FlAqQqJcZEyQNkyq_AutBcpDzQN6dzTKXR5SDV1-pDpi7JcwVjpEj1qhGsiS197L0WWho5w0rYcOV0B3FknpFzVLccFaewK_fzf_WacM9r8Bwi9BEJKRMJBnPgHJeJkKGhkH6dDDtzg5Wl8hOkyVpXnp-STEGAzoxi6Wv2sui395gLYqDAzk4ozyIsxCmEMYo7WMSN47XIw50CRaRXsmjg5a0hO2DLW1eRL87j38x4FGOhWQ7KmNiSGanfKY6OnQY-LmglgHsf9ZaWweOBYEBistS7k9tPjRRGUjxSGWmw-huVa2wwwo9ghZqzDhKNEqa1ga07w6bUi_YP5jb9kayfw8AgR787Tf89ER4zgOrz7-oQK90XsLX-a3a3RFoRWNP3--_kXlkWqTB_XnmQk3DFd5I2GYZfAtQjLh0vitjWf68lxZH9WrsqEcD6FrGDerS3sE_lz9Ht1c6ScHWsWRVbgx_L4t-RajRoSZOzu_F8gR-RyHzYaMbxoWDSreGpRG4B0mDRJAWP4x3N2Y6qAJS0hNyJMv5lDKrBTDTJOg==",
+              "video_metadata": null,
+              "tool_call": null,
+              "tool_response": null,
+              "part_metadata": null,
+              "audio_transcription": null
+            }
+          ],
+          "role": "model"
+        },
+        "citation_metadata": null,
+        "finish_message": null,
+        "token_count": null,
+        "finish_reason": "STOP",
+        "grounding_metadata": null,
+        "avg_logprobs": null,
+        "index": 0,
+        "logprobs_result": null,
+        "safety_ratings": null,
+        "url_context_metadata": null
+      }
+    ],
+    "create_time": null,
+    "model_version": "gemini-3.8-flash",
+    "prompt_feedback": null,
+    "response_id": "_mSgarScNJi6kdUPotyU8AQ",
+    "usage_metadata": {
+      "cache_tokens_details": null,
+      "cached_content_token_count": null,
+      "candidates_token_count": 319,
+      "candidates_tokens_details": null,
+      "prompt_token_count": 5872,
+      "prompt_tokens_details": [
+        {
+          "modality": "TEXT",
+          "token_count": 5872
+        }
+      ],
+      "thoughts_token_count": 586,
+      "tool_use_prompt_token_count": null,
+      "tool_use_prompt_tokens_details": null,
+      "total_token_count": 6777,
+      "traffic_type": null
+    },
+    "model_status": null,
+    "automatic_function_calling_history": [],
+    "parsed": {
+      "schema_version": "study-e-evaluator-rating-v1",
+      "item_id": "EVAL-66b2e253503d70fbf6753956e5f2af41",
+      "scores": {
+        "persona_fit": 5,
+        "clarity": 5,
+        "actionability": 5,
+        "factual_grounding": 5
+      },
+      "reasons": {
+        "persona_fit": "Speaks directly to an owner-operator in a calm, practical voice. Adheres strictly to the no-CTA rule and reinforces human review for financial approvals.",
+        "clarity": "Immediately establishes the core idea and proceeds through a structured, logical sequence with unambiguous examples and plain terminology.",
+        "actionability": "Provides a realistic next step: defining a plain-English rule, establishing human-in-the-loop thresholds, and asking a clear diagnostic question before automating.",
+        "factual_grounding": "Contains no fabricated claims, metrics, or case studies. Respects all operating boundaries and keeps illustrative examples strictly hypothetical."
+      },
+      "critical_violation": false,
+      "critical_violation_type": null,
+      "critical_evidence_quote": null,
+      "total_score": 20,
+      "pass": true,
+      "low_quality": false
+    }
+  },
+  "latency_ms": 3312,
+  "finished_at": "2026-09-08T19:41:54.732353+00:00",
+  "cost_details": {
+    "input": 0.004404,
+    "cache_read_input_tokens": 0.0,
+    "output": 0.00119625,
+    "reasoning_output_tokens": 0.0021975,
+    "total": 0.00779775
+  },
+  "study_id": "STUDY-E-ABLATON",
+  "operational_amendment": "retry_extension_user_authorized.json"
+}

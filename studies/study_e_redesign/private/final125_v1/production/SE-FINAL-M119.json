@@ -1,0 +1,304 @@
+{
+  "task_id": "SE-FINAL-M119",
+  "batch_id": 4,
+  "condition": "unchanged",
+  "source_task_id": "SE-FINAL-N081",
+  "topic": "the quiet cost of model deprecation",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-319",
+    "title": "The quiet cost of model deprecation",
+    "body": "If you are comparing automation with another hire, the quiet cost is not the first build. It is what happens when the model underneath it changes, gets retired, or becomes too awkward to keep using. Then the real question is whether you still want that workflow to exist at the same cost of upkeep.\n\nFor a small business, that shows up in ordinary places: customer-inquiry triage, lead qualification, or invoice handling. A workflow can look fine on day one and still need attention later if the model version shifts or the vendor changes pricing. That is not a disaster, but it is a maintenance decision, and it belongs in the business case from the start.\n\nThe practical next step is simple: before you approve any automation pilot, ask one blunt question: if the underlying model is upgraded, retired, or repriced, does the workflow keep working, or do we need to rebuild and pay again? If the answer is unclear, you do not have a finished plan yet; you have a hopeful sketch.\n\nIf you scope the ongoing model-version decision up front, you can compare automation against manual work honestly. That is usually where the hidden cost stops being quiet."
+  },
+  "final": {
+    "item_id": "E-OPT-419",
+    "title": "The quiet cost of model deprecation",
+    "body": "If you are comparing automation with another hire, the quiet cost is not the first build. It is what happens when the model underneath it changes, gets retired, or becomes awkward to keep using. Then the real question is whether you still want that workflow to exist at the same cost of upkeep.\n\nFor a small business, that shows up in ordinary places: customer-inquiry triage, lead qualification, or invoice handling. A workflow can look fine on day one and still need attention later if the model version shifts or the vendor changes pricing. That is not a disaster, but it is a maintenance decision, and it belongs in the business case from the start.\n\nThe practical next step is simple: before you approve any automation pilot, ask one blunt question: if the underlying model is upgraded, retired, or repriced, does the workflow keep working, or do we need to rebuild and pay again? If the answer is unclear, you do not have a finished plan yet; you have a hopeful sketch.\n\nIf you scope the ongoing model-version decision up front, you can compare automation against manual work honestly. That is usually where the hidden cost stops being quiet."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-119",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-119",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-119-1",
+        "repairs": []
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-119",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-419",
+        "title": "The quiet cost of model deprecation",
+        "body": "If you are comparing automation with another hire, the quiet cost is not the first build. It is what happens when the model underneath it changes, gets retired, or becomes awkward to keep using. Then the real question is whether you still want that workflow to exist at the same cost of upkeep.\n\nFor a small business, that shows up in ordinary places: customer-inquiry triage, lead qualification, or invoice handling. A workflow can look fine on day one and still need attention later if the model version shifts or the vendor changes pricing. That is not a disaster, but it is a maintenance decision, and it belongs in the business case from the start.\n\nThe practical next step is simple: before you approve any automation pilot, ask one blunt question: if the underlying model is upgraded, retired, or repriced, does the workflow keep working, or do we need to rebuild and pay again? If the answer is unclear, you do not have a finished plan yet; you have a hopeful sketch.\n\nIf you scope the ongoing model-version decision up front, you can compare automation against manual work honestly. That is usually where the hidden cost stops being quiet."
+      },
+      "gate_key": "SE-FINAL-M119_gate1__a001"
+    }
+  ],
+  "measurement_status": "pending",
+  "planner": {
+    "item_id": "E-PLAN-519",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task explicitly authorizes no CTA. L01 applies directly: end the post with a neutral practical observation or next-step note rather than a meeting prompt. The informational topic (model deprecation cost) is problem-awareness focused, not purchase-intent, so closing with a diagnostic question or diagnostic criterion is appropriate instead of a booking invitation."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Translate the abstract topic 'quiet cost of model deprecation' into one concrete, bounded workflow decision facing a small-business owner: the cost of rebuilding or retraining automated workflows when the LLM model powering them becomes unavailable, less capable, or pricing changes. Link this to the owner's decision context (hiring vs. automation investment) and the persona's constraint (human approval before money movement).",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Illustrate the risk with a workflow example drawn from typical small-business automation (e.g., customer-inquiry triage, invoice extraction, or lead qualification). Use only self-built demo scope boundaries and no invented customer results. Show what happens when a model version is deprecated: the workflow breaks, retraining is required, and the owner must decide whether to fix it or revert to manual work.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C03",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Explain the business implication plainly: automation reduces repetitive labor cost only if the system remains stable. Model deprecation creates a hidden maintenance cost that must be weighed against the original investment. Use measured language and avoid invented numbers, benchmarks, or savings claims.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C04",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Name the owner's control: before committing to an automation investment, ask the vendor or builder whether the system will continue to work unchanged if the underlying model is upgraded, retired, or pricing changes. This is a diagnostic question, not a guarantee.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Provide a second practical next step: when evaluating automation vendors or proposing a pilot, include a clear definition of who owns the ongoing model-version decision and who bears the cost of retraining or switching if deprecation happens. Emphasize that human business authority approves any re-investment before money moves.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Close with a neutral, plain-language observation: automation is worth building when the workflow is stable and the maintenance burden is understood, not when the cheapest entry price hides future retraining costs. Do not include a CTA, booking invitation, or urgency. Use L01 to end with a practical diagnostic criterion the owner can apply immediately.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C05",
+          "S01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "Do not invent customers, deployments, results, numbers, benchmarks, ROI, savings, or multi-person team. Use only self-built demo scope and Bareni's stated service model. Do not include a sales CTA."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Do not recommend autonomous money movement or high-risk decisions without human approval. Emphasize that the owner retains business authority and approval power over re-investment."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Preserve the frozen persona (technical, founder-to-founder, trust-focused), approved evidence boundaries, and human approval requirement. Keep the informational tone consistent with problem-awareness focus."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use plain English. Keep examples of automation workflows distinct from existing Bareni capabilities. Treat the model-deprecation scenario as a proposal or diagnostic question, not a proven result or feature."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-619",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Turn the abstract topic into a bounded Bareni workflow decision. Explain one practical next step."
+          },
+          {
+            "source_id": "C01",
+            "quote": "The intended reader is an owner-operator of a 1\\u201310 person small business"
+          },
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          }
+        ],
+        "rationale": "This is a planned instruction to frame the owner-specified abstract topic as a bounded workflow decision, not an assertion that any model deprecation event, cost or rebuild has been observed at Bareni. The approved task authorises the framing, the persona supplies the hiring-versus-automation decision context, and C04 supports the human-approval constraint.",
+        "use_guidance": "Keep as an explicitly framed problem-awareness discussion. Present deprecation cost as a general risk the owner should consider, not as a measured cost, observed incident or Bareni experience. Do not attach numbers, and keep the human-approval point worded as policy for money movement."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C03",
+            "quote": "Self-built local demo using synthetic Acme Shop data."
+          },
+          {
+            "source_id": "C03",
+            "quote": "Self-built demo using entirely synthetic data for a fictional German\\nmanufacturer."
+          },
+          {
+            "source_id": "C03",
+            "quote": "Never claim actual payment, customer deployment, observed customer results"
+          },
+          {
+            "source_id": "C03",
+            "quote": "PDF/scan ingestion and OCR are not implemented."
+          }
+        ],
+        "rationale": "Using a workflow illustration within self-built demo scope is permissible, but the claim as written treats invoice extraction and similar examples as available illustrations without stating the demo limits, and it describes breakage and required retraining as a factual sequence that no approved source establishes.",
+        "use_guidance": "Add the qualification that any invoice-extraction reference is a self-built demo on entirely synthetic data with text-based extraction only \\u2014 no OCR/PDF ingestion, no customer deployment or results \\u2014 and that a knowledge-assistant reference is a local synthetic-data demo whose deployed public route is locked. Frame the breakage/retraining sequence as a hypothetical scenario, not an event Bareni has seen. Prefer a clearly labelled illustrative example over demo detail if the demo limits cannot be stated."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C05",
+            "quote": "Numbers require a source and status."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Never invent a benchmark, guarantee, ROI, saving, revenue lift, productivity result"
+          },
+          {
+            "source_id": "C02",
+            "quote": "Bareni is a one-person AI development and consulting practice that automates\\nrepetitive work for small businesses."
+          }
+        ],
+        "rationale": "The core reasoning \\u2014 that automation value depends on stability and that maintenance is a real consideration \\u2014 is compatible with approved evidence and the no-numbers rule, but as written it asserts a general economic mechanism about labour-cost reduction and hidden maintenance cost that approved evidence does not establish as an observed outcome.",
+        "use_guidance": "Mark this as reasoning about a general trade-off rather than a measured or observed effect: state that automation is intended to reduce repetitive work and that maintenance effort should be considered in the decision. Add no figures, benchmarks, savings or ROI, and do not imply Bareni has measured either the labour saving or the maintenance cost."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Practicality: explain one observable workflow decision, threshold, diagnostic question,\\n  control, or next step."
+          },
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI\\n  fits, and\\u2014if it does\\u2014defines pilot scope, fixed price, and measures."
+          }
+        ],
+        "rationale": "This is a diagnostic question the owner can ask, explicitly flagged as not a guarantee. It does not assert any current Bareni capability, tested continuity or observed vendor behaviour.",
+        "use_guidance": "Keep as a diagnostic question for the reader. Do not imply Bareni guarantees continued operation across model upgrades, retirement or pricing changes, and do not present any answer to the question as a Bareni service commitment or compliance/security guarantee."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "Finished code is handed to the customer. Database, automation-tool, and API\\n  accounts are in the customer's name from the start."
+          },
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C02",
+            "quote": "free one-page pilot proposal"
+          }
+        ],
+        "rationale": "A recommendation to define ownership of the model-version decision and the cost of switching in a pilot proposal is a permissible next step; it asserts no implementation or observed use. The human-approval emphasis for re-investment is directly consistent with C04.",
+        "use_guidance": "Keep explicitly as a recommendation for scoping a pilot. Describe code hand-over and customer-named accounts as Bareni policy and no-lock-in positioning, not an absolute legal warranty, and do not add a mandatory extra gate to the stated pilot sequence. Retain human approval before any money moves."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Informational posts use no CTA or one soft closing sentence."
+          },
+          {
+            "source_id": "C05",
+            "quote": "No memes, exclamation-mark bursts, hype, or jokes for their own\\n  sake."
+          }
+        ],
+        "rationale": "This is an instruction about how to close the post \\u2014 a neutral observation plus an applicable diagnostic criterion, with no CTA \\u2014 rather than a factual claim about Bareni. The task forbids a CTA and the approved voice rules permit a neutral informational close.",
+        "use_guidance": "Keep as a closing instruction. Include no booking invitation, no offer to discuss or continue the conversation, no urgency or scarcity. The lesson text is guidance only, not evidence of a capability; end on a practical criterion the reader can apply, with no numbers or implied savings."
+      }
+    ]
+  },
+  "selected_lessons": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025"
+      ]
+    }
+  ],
+  "register_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "planner_key": "SE-FINAL-N081_planner__a001",
+  "researcher_key": "SE-FINAL-N081_researcher__a001",
+  "writer_key": "SE-FINAL-N081_writer__a001",
+  "final_key": "SE-FINAL-M119_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-M119_gate1__a001",
+  "production_completed_at": "2026-09-08T13:50:50.329157+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts"
+}

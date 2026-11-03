@@ -1,0 +1,154 @@
+{
+  "created_at": "2026-09-08T19:47:45.673563+00:00",
+  "role": "evaluator",
+  "metadata": {
+    "study_id": "STUDY-E-ABLATON",
+    "pair_id": "SEA-I106-R1",
+    "arm": "critic_off",
+    "cycle": "eval"
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49",
+  "status": "success",
+  "output": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-3b70b8735f87feaf99d10116c74f3237",
+    "scores": {
+      "persona_fit": 5,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Accurately targets the owner-operator in a calm, practical voice, adheres strictly to Bareni's delivery principles, and complies with the no-CTA instruction.",
+      "clarity": "Explains the distinction between open-web search and internal retrieval clearly, maintains a logical flow, and avoids unneeded jargon.",
+      "actionability": "Gives a concrete, feasible next step for an owner to test document readiness and human review requirements on paper before automating.",
+      "factual_grounding": "Accurately references the self-built local knowledge demo and transparently notes synthetic data and missing features like OCR, billing, and rate limiting."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 20,
+    "pass": true,
+    "low_quality": false
+  },
+  "cost_usd": 0.007299,
+  "usage": {
+    "prompt_token_count": 5907,
+    "cached_content_token_count": 0,
+    "candidates_token_count": 324,
+    "thoughts_token_count": 441,
+    "total_token_count": 6672
+  },
+  "provider_response": {
+    "sdk_http_response": {
+      "headers": {
+        "x-gemini-service-tier": "standard",
+        "content-type": "application/json; charset=UTF-8",
+        "vary": "Origin, X-Origin, Referer",
+        "content-encoding": "gzip",
+        "date": "Tue, 08 Sep 2026 19:47:48 GMT",
+        "server": "scaffolding on HTTPServer2",
+        "x-xss-protection": "0",
+        "x-frame-options": "SAMEORIGIN",
+        "x-content-type-options": "nosniff",
+        "server-timing": "gfet4t7; dur=3121",
+        "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+        "transfer-encoding": "chunked"
+      },
+      "body": null
+    },
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "media_resolution": null,
+              "code_execution_result": null,
+              "executable_code": null,
+              "file_data": null,
+              "function_call": null,
+              "function_response": null,
+              "inline_data": null,
+              "text": "{\n  \"schema_version\": \"study-e-evaluator-rating-v1\",\n  \"item_id\": \"EVAL-3b70b8735f87feaf99d10116c74f3237\",\n  \"scores\": {\n    \"persona_fit\": 5,\n    \"clarity\": 5,\n    \"actionability\": 5,\n    \"factual_grounding\": 5\n  },\n  \"reasons\": {\n    \"persona_fit\": \"Accurately targets the owner-operator in a calm, practical voice, adheres strictly to Bareni's delivery principles, and complies with the no-CTA instruction.\",\n    \"clarity\": \"Explains the distinction between open-web search and internal retrieval clearly, maintains a logical flow, and avoids unneeded jargon.\",\n    \"actionability\": \"Gives a concrete, feasible next step for an owner to test document readiness and human review requirements on paper before automating.\",\n    \"factual_grounding\": \"Accurately references the self-built local knowledge demo and transparently notes synthetic data and missing features like OCR, billing, and rate limiting.\"\n  },\n  \"critical_violation\": false,\n  \"critical_violation_type\": null,\n  \"critical_evidence_quote\": null,\n  \"total_score\": 20,\n  \"pass\": true,\n  \"low_quality\": false\n}",
+              "thought": null,
+              "thought_signature": "EqwPCqkPARFNMg_DYEkm3kkuhilqiMHGMfQ0FsFdh6F1cjgv-n-YOERsIXQCF4hBMTaApONULQ-BEm9Dc92eJ-sahKeYXcDmy-76IfGwZNASbVLZp8lOdi-3HzhlVzSXthdyG5PE6kIrDDZQvwqvKSEA_3UNuo5CGNae1LkcxlOmYnpT1NXrtb9r2GXi0ZcSxXC1iUCxHruhLF-Iep0hszdba118KdOCJZT4Vxvp9S4XhqBFfanXhDy1gUww2vVbvxh9thmWx0xyhRToziC-iUmK-vQ_bzwWNGF3avhXsR2ZvKT-G_6nmvLI2x6174gA4QBxDuPAXvroO55b5irBudmKw8CX-6NXbhnYm9CPdYJ0e2mM85xpCTyUHZRZiQLN3icpbfZQyptiTeof7w7KmNd6HWyoU8hdEFuAEyR0Lu22A2TqtJs1YX7Mf8kuDrhfb3qYhkU5KhFNGkvjUCgrwDnOYGqWqgNMz--AnfcaUzJERvLwogCAjT3ZybehDu4Q6wnzlqCWGU-VFctv8KnOi6FPTfVheS9UkFcsRuj1iJp4mRKAwHov00b55XobAkxKr23Xp9k6uY8di3D-C-qHzvN7b2_nlwgBLVpHxOOldX-lxl53QE4m2DMywoVapDXlifILDopUgFgc4hSfoQu8C84-YCqDY_otP8mEnP32GtzX-zqv83mVSUa_uS1gXVB0Rd-JKzRVNpUZ7-620va60eoWWftyk3rsaXR0FSAW95Ty5UgM0FzcuyZVONGSLa8KYm5G98qP5Ww5W72QfqAktZizsVYM2VmPjj1dY_kn2MloAm_O8byFaPoVYYIdRdSrGP1YWI5XCfk5d1g9ykWO7su7Lcg59AObkJXlFvEBFoKtTYp2n249HTa6q1AY2UN-z3MLwjeu69z1fK9I1uH2lX0F2sfCdDH7i-TTQDYINJHJxOc7LJP50gFa52bbxk0c1nBZCP4f1Dyb2hrq5JhC4gfnu3oKSPN05zDloVAXcCgVa5-R6-XaK82k1_fNmR0P-RYf7mLwCSluw7I1QIzh9kQHIcFX-KB_FKy8xhRnQT3rEXvNOsYvg2jd8MT4zgJA8Yub0xSvM-C3PViWPgfdHonrU7hu4t7Ud73nybT42Y5ek2Xgk-JCYiVvXUi7P_Ocvwo-duCx-EOk4zNdVAoqOKmcethsQEZ9gU6ugfZYvipj49CnRlr5piPcRm08ZncO9wCfTrBifQi1RgzuMwlyMUp0EI6TNE05RKmNbcK5KbXGNm-ZGFJjJHucUxrsN_ck4wvZr5f3XQwWsOXb4GJfdjmSvwjrTeRI2vr7b2LnZigr-qe56Vuv3nZO28H1U7r1-5qza5DHV9faVBwR9LzwtZnmQOUW4mSBrYap1A68HQWcyYKF_OKEUu7bFCaQ2Rn_2dPVMy9PKmgvrktP2Z5JPHLZ3hi9uba9F30uICaCHfTznJybGuBDgBsPB2dflJ8mQ0qgg8zelCSa9tHzDrUzt3XDs6uZ-en8Nbjkjxj9nsSSsFlSPX-PvxnUM1Kce-5mnodwBGeS3MeWIiO2ksuDqHc9NJ8P55aBhB8AowuEe0iGtIX4Rf6NExuH6jtvalw-wlj-zf3OKd0cZ--dH_e5w5_9nXMuyW6hn6II9uDP1iijAYQfJZ1vH8nb1s06SsKI4dkYwPAm4MzjFXW_OsKhifh8rg2Vjd7ywxGHAhCPwv2QKYgdu08xpMCmB37MIinXPJq7H5PyUNfJQPjZozzO8Ki3HTvdGaGeREPJKwjleAGGMhLbG3UWGQ-IrQeSaCHMfUFM1zNJNHaYFOIBErGlKq_aMThIaxHAA_mQarbrrTT6TMqsvx6RUthAcXD-7L7wT8AE_8YCTSN2nMj45HDyGi4OQOaNubrk_2G2ahYmoICTEBKlK2dBAf1sPk-3wj6s1SAHECf85xNSWJ97mij28riSZbcZbXZffHQKsn5t_qy0aVwP9wd2xYfMfmbRN6bEGYMrpMWnAREoAHRrBDt_t3hUtYyqg4sEDbXnILnQTkWtdGVS5_RRZYnKV5wqqfaRq1c5WpsuGGkdbBcA_vd0HBHNF2l_aFqTy4LJQFk0AtfyQaUZvG9VyCh1sShdb2-P7BVNrdukY7E_lhX-K7z-BF65TovKXr236etO9yUeiccwwrXCxtHyGczdLqcPMWyzLjBZhvS7EEmNIWlTHCRO0ocyIoj3bBdmGKOF3rjmRUyY-__RQjyAHGoWBn2fK5wwrjbOh0SfgPoTYuSWC6Qnibz9UVU1ZemiZuki6gV9yT1jKJMrULSryWdmafQYTM6EwPgzXBURcCdnbYSSpg1KykFr9W-Jt7H2fYPZvWNwZlnOOekJc1lvxUOz0AUf0MbwnGd3Tyyi9YNOBylt-_SFISROkfEBqPJUVn8jUayr6o45IHGbS2VxmaLx_oCtIK3RHTQCBaFh_zjPvSofy3KY6AX79bA_oIoncJZ_3t4rP-9aYHX_KSR_xIO1KJqNUjU-g_uWgMm8Kd4PNJG3ZUMZg-r92YvQs0IQdZCpz8Yh7_BfsslDxthXx_g7U0uKYnzw3hmUr61_Vw-emXjEcOVLfnzAuySUxu9c8tUsHWdEv0O1htLd_Hq-GulAbz_6PUM=",
+              "video_metadata": null,
+              "tool_call": null,
+              "tool_response": null,
+              "part_metadata": null,
+              "audio_transcription": null
+            }
+          ],
+          "role": "model"
+        },
+        "citation_metadata": null,
+        "finish_message": null,
+        "token_count": null,
+        "finish_reason": "STOP",
+        "grounding_metadata": null,
+        "avg_logprobs": null,
+        "index": 0,
+        "logprobs_result": null,
+        "safety_ratings": null,
+        "url_context_metadata": null
+      }
+    ],
+    "create_time": null,
+    "model_version": "gemini-3.8-flash",
+    "prompt_feedback": null,
+    "response_id": "YWagaumKB9GwnsEP9NOL6As",
+    "usage_metadata": {
+      "cache_tokens_details": null,
+      "cached_content_token_count": null,
+      "candidates_token_count": 324,
+      "candidates_tokens_details": null,
+      "prompt_token_count": 5907,
+      "prompt_tokens_details": [
+        {
+          "modality": "TEXT",
+          "token_count": 5907
+        }
+      ],
+      "thoughts_token_count": 441,
+      "tool_use_prompt_token_count": null,
+      "tool_use_prompt_tokens_details": null,
+      "total_token_count": 6672,
+      "traffic_type": null
+    },
+    "model_status": null,
+    "automatic_function_calling_history": [],
+    "parsed": {
+      "schema_version": "study-e-evaluator-rating-v1",
+      "item_id": "EVAL-3b70b8735f87feaf99d10116c74f3237",
+      "scores": {
+        "persona_fit": 5,
+        "clarity": 5,
+        "actionability": 5,
+        "factual_grounding": 5
+      },
+      "reasons": {
+        "persona_fit": "Accurately targets the owner-operator in a calm, practical voice, adheres strictly to Bareni's delivery principles, and complies with the no-CTA instruction.",
+        "clarity": "Explains the distinction between open-web search and internal retrieval clearly, maintains a logical flow, and avoids unneeded jargon.",
+        "actionability": "Gives a concrete, feasible next step for an owner to test document readiness and human review requirements on paper before automating.",
+        "factual_grounding": "Accurately references the self-built local knowledge demo and transparently notes synthetic data and missing features like OCR, billing, and rate limiting."
+      },
+      "critical_violation": false,
+      "critical_violation_type": null,
+      "critical_evidence_quote": null,
+      "total_score": 20,
+      "pass": true,
+      "low_quality": false
+    }
+  },
+  "latency_ms": 3156,
+  "finished_at": "2026-09-08T19:47:48.828906+00:00",
+  "cost_details": {
+    "input": 0.00443025,
+    "cache_read_input_tokens": 0.0,
+    "output": 0.001215,
+    "reasoning_output_tokens": 0.00165375,
+    "total": 0.007299
+  },
+  "study_id": "STUDY-E-ABLATON",
+  "operational_amendment": "retry_extension_user_authorized.json"
+}

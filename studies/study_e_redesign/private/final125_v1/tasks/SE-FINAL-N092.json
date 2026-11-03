@@ -1,0 +1,339 @@
+{
+  "task_id": "SE-FINAL-N092",
+  "batch_id": 3,
+  "condition": "natural",
+  "source_task_id": null,
+  "topic": "early signs of rounding claims",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-330",
+    "title": "When rounding becomes a workflow problem",
+    "body": "If your business keeps “rounding claims” as a vague complaint, it is hard to automate and easy to argue about. I would turn it into one bounded workflow decision: where do small numerical gaps actually change what you do? That might be invoice rounding, currency conversion, timesheet variance, or an estimate-to-actual mismatch. The useful question is simple: which recurring workflow has two slightly different numbers, and someone has to decide whether the gap matters?\n\nFrom there, draw a control boundary. Which cases are already policy, like rounding to the nearest cent? Which need human judgment, like flagging a gap above your own threshold? Which still have no rule at all? If the difference is invisible and acceptable, it can stay a quiet background detail. If it is visible and affects approval or audit notes, it needs a clear human step.\n\nThe next practical step is to write one rule in plain English for one recurring workflow. For example: “round amounts to the nearest cent; flag any gap above my threshold for review before I approve the invoice.” Then ask yourself one diagnostic question: do I already document why I accepted the difference, or do I just let it pass? If you cannot write the rule clearly yet, that is the signal to fix the policy first. The machine can wait; paperwork rarely does."
+  },
+  "final": {
+    "item_id": "E-OPT-430",
+    "title": "When rounding becomes a workflow problem",
+    "body": "If your business keeps “rounding claims” as a vague complaint, it is hard to automate and easy to argue about. I would turn it into one bounded workflow decision: where do small numerical gaps actually change what you do? That might be invoice rounding, currency conversion, timesheet variance, or an estimate-to-actual mismatch. The useful question is simple: which recurring workflow has two slightly different numbers, and someone has to decide whether the gap matters?\n\nFrom there, draw a control boundary. Which cases are already policy, like rounding to the nearest cent? Which need human judgment, like flagging a gap above your own threshold? Which still have no rule at all? If the difference is invisible and acceptable, it can stay a quiet background detail. If it is visible and affects approval or audit notes, it needs a clear human step.\n\nThe next practical step is to write one rule in plain English for one recurring workflow. For example: “round amounts to the nearest cent; flag any gap above my threshold for review before I approve the invoice.” Then ask yourself one diagnostic question: do I already document why I accepted the difference, or do I just let it pass? If you cannot write the rule clearly yet, that is the signal to fix the policy first. The machine can wait; paperwork rarely does."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-092",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-092",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-092-1",
+        "repairs": []
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-092",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-430",
+        "title": "When rounding becomes a workflow problem",
+        "body": "If your business keeps “rounding claims” as a vague complaint, it is hard to automate and easy to argue about. I would turn it into one bounded workflow decision: where do small numerical gaps actually change what you do? That might be invoice rounding, currency conversion, timesheet variance, or an estimate-to-actual mismatch. The useful question is simple: which recurring workflow has two slightly different numbers, and someone has to decide whether the gap matters?\n\nFrom there, draw a control boundary. Which cases are already policy, like rounding to the nearest cent? Which need human judgment, like flagging a gap above your own threshold? Which still have no rule at all? If the difference is invisible and acceptable, it can stay a quiet background detail. If it is visible and affects approval or audit notes, it needs a clear human step.\n\nThe next practical step is to write one rule in plain English for one recurring workflow. For example: “round amounts to the nearest cent; flag any gap above my threshold for review before I approve the invoice.” Then ask yourself one diagnostic question: do I already document why I accepted the difference, or do I just let it pass? If you cannot write the rule clearly yet, that is the signal to fix the policy first. The machine can wait; paperwork rarely does."
+      },
+      "gate_key": "SE-FINAL-N092_gate1__a001"
+    }
+  ],
+  "measurement_status": "complete",
+  "planner": {
+    "item_id": "E-PLAN-530",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task explicitly prohibits a CTA. L01 instructs ending with a neutral practical observation or next-step note instead of a meeting prompt. This post addresses workflow diagnosis (PF-02_workflow_diagnosis) in an informational context, so the closing must support the owner's own decision without directing them toward a sales conversation."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Define 'rounding claims' as a bounded workflow problem: identify where and when small numerical discrepancies (invoice rounding, currency conversion, time tracking, or estimate-to-actual gaps) create manual review, approval delays, or audit friction. Ask the owner: 'Which of my recurring workflows involves comparing two slightly different numbers and deciding whether the gap matters?'",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C02",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Map the control boundary: establish which rounding decisions are already policy (e.g., 'round to nearest cent'), which require human judgment (e.g., 'flag gaps above 5%'), and which have no rule. Distinguish between rounding that is invisible (acceptable variance) and rounding that is visible (requires explicit approval or audit notation).",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Ask a diagnostic question: 'Do I currently document why I accepted a rounding difference, or do I just let it pass?' If yes, you have a candidate workflow for lightweight AI assistance (flagging rounding gaps and storing the decision reason). If no, establish the policy first before automating.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Assess whether your data is already digital and accessible. Rounding detection works well when numbers come from SaaS tools, spreadsheets, or structured documents you already use; it fails when data lives in email attachments, scanned PDFs, or unstructured notes. Be honest: if you spend more time hunting for the numbers than reviewing them, automation won't help yet.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C03",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Define the next-step scope narrowly: pick one recurring, measurable workflow (e.g., 'weekly vendor invoice reconciliation' or 'monthly timesheet variance review') where rounding claims cause at least one decision per cycle. Estimate the time cost: total minutes per week you spend on this single workflow, not all rounding across the business.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C02",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Write down your rounding rule in plain language and the threshold above which you want a flag or prompt. Example: 'Round all EUR amounts to nearest 0.01; flag any gap above EUR 10 for review before I approve the invoice.' This rule becomes the automation logic. If you cannot write it clearly now, you are not ready to automate it.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C02",
+          "C04",
+          "S01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "Do not invent customer examples, deployment outcomes, or savings. Use only the owner's own workflow and the synthetic decision process as illustration. No multi-person team implied."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Preserve human approval: any rounding decision flagged by automation remains a human choice. Do not promise autonomous approval or payment."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Maintain the frozen persona voice (plain-speaking, founder-to-founder, restrained, trust-focused) and adhere to approved evidence boundaries (C01–C05, S01 only)."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Keep the workflow decision concrete and bounded (one recurring workflow, one rounding rule, measurable time cost). Distinguish between the owner's existing manual process and a proposed next step. No CTA; close with a practical note."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-630",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI\n  fits, and—if it does—defines pilot scope, fixed price, and measures."
+          },
+          {
+            "source_id": "S01",
+            "quote": "Practicality: explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step."
+          }
+        ],
+        "rationale": "This is a framing instruction plus a diagnostic question for the reader, not an assertion of an existing Bareni capability, deployment or observed result. Bounding an abstract topic to one recurring workflow is consistent with the approved diagnostic scope.",
+        "use_guidance": "Keep as a reader-facing framing and diagnostic question. Present the listed discrepancy types (invoice rounding, currency conversion, time tracking, estimate-to-actual) as illustrative examples, not as workflows Bareni has already automated or measured."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C03",
+            "quote": "Arithmetic checks, duplicate-invoice blocking, amount-based human-only approval,\n  refusal of agent approval/payment attempts, and persistent audit records work."
+          },
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          }
+        ],
+        "rationale": "An instruction to the owner to map which rounding decisions are policy, which need human judgement and which are unruled. It proposes an analysis step rather than asserting a built feature or a measured effect.",
+        "use_guidance": "Keep explicitly as a mapping step the owner performs. Treat the '5%' figure as a worked illustration only, never as a Bareni threshold, benchmark or observed setting, and keep human approval as the boundary for approval-relevant gaps."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI\n  fits"
+          },
+          {
+            "source_id": "C03",
+            "quote": "persistent audit records work"
+          }
+        ],
+        "rationale": "A diagnostic question with a conditional next step, including the honest 'set the policy before automating' branch. It does not claim an implemented rounding-flagging product or any customer use.",
+        "use_guidance": "Keep as a proposal. When mentioning flagging gaps and storing decision reasons, tie it only to the self-built accounts-payable demo's arithmetic checks and audit records on synthetic data; do not imply a ready-made rounding assistant."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "Especially suitable businesses already work in English, use digital\n  documents and SaaS tools, and have a frequent, repeatable workflow with a\n  measurable outcome."
+          },
+          {
+            "source_id": "C03",
+            "quote": "PDF/scan ingestion and OCR are not implemented."
+          },
+          {
+            "source_id": "C04",
+            "quote": "scan-heavy OCR-dependent workflows"
+          }
+        ],
+        "rationale": "The core fit criterion (digital, structured data from SaaS tools) matches approved evidence, and OCR/scan-heavy work is genuinely out of current scope. But the wording asserts as a general fact that 'rounding detection works well' / 'it fails', which reads as observed performance; the limitation that this reflects current Bareni scope discipline and unimplemented OCR/PDF ingestion, not a measured result, is missing.",
+        "use_guidance": "Add the qualification that this is current Bareni scope discipline: PDF/scan ingestion and OCR are not implemented and scan-heavy workflows are currently declined, so state fit as 'we currently work with digital, structured sources' rather than claiming tested detection performance. Also note this is not a claim that such work can never be automated."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow"
+          },
+          {
+            "source_id": "C01",
+            "quote": "have a frequent, repeatable workflow with a\n  measurable outcome"
+          }
+        ],
+        "rationale": "An instruction to the reader to narrow scope to one measurable recurring workflow and estimate their own time cost. It asserts no Bareni outcome, saving or customer figure.",
+        "use_guidance": "Keep as a next-step instruction. Any minutes-per-week figure must be presented as the reader's own estimate for their single workflow; do not cite the 8-10 hours persona scenario as a market statistic or observed result."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C03",
+            "quote": "amount-based human-only approval"
+          }
+        ],
+        "rationale": "A practical next step: write the rounding rule and threshold in plain language before automating. The EUR 10 example is offered as an illustration of the owner's own rule, not as a Bareni configuration or result.",
+        "use_guidance": "Keep explicitly as the practical next step and label the EUR 10 threshold as an example of the reader's own rule. Retain the 'before I approve' wording so human approval precedes any payment; do not imply Bareni already runs this rule for a customer or that writing it guarantees a build outcome."
+      }
+    ]
+  },
+  "selected_lessons": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025"
+      ]
+    }
+  ],
+  "register_sha256": "48497afb8641ddc47d974cdfadba06a1f6b562d21c49ec03c9b03a5dc531744e",
+  "planner_key": "SE-FINAL-N092_planner__a001",
+  "researcher_key": "SE-FINAL-N092_researcher__a001",
+  "writer_key": "SE-FINAL-N092_writer__a001",
+  "final_key": "SE-FINAL-N092_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-N092_gate1__a001",
+  "production_completed_at": "2026-09-08T13:04:26.271872+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts",
+  "initial_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-092",
+    "scores": {
+      "persona_fit": 4,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Directly addresses the small-business owner in a practical tone with human-in-the-loop emphasis and no CTA, though it uses 'I' rather than Bareni's standard 'we'.",
+      "clarity": "The argument is clear, logically structured, and explains how to turn a vague complaint into a bounded rule using plain language.",
+      "actionability": "Supplies an immediate, practical exercise: write one plain-English threshold rule and use a diagnostic question to test readiness.",
+      "factual_grounding": "Contains no fabricated customer claims, numbers, or capabilities; illustrative examples are framed appropriately as hypothetical scenarios."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 19,
+    "pass": true,
+    "low_quality": false
+  },
+  "final_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-092",
+    "scores": {
+      "persona_fit": 4,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Directly addresses the small-business owner in a practical tone with human-in-the-loop emphasis and no CTA, though it uses 'I' rather than Bareni's standard 'we'.",
+      "clarity": "The argument is clear, logically structured, and explains how to turn a vague complaint into a bounded rule using plain language.",
+      "actionability": "Supplies an immediate, practical exercise: write one plain-English threshold rule and use a diagnostic question to test readiness.",
+      "factual_grounding": "Contains no fabricated customer claims, numbers, or capabilities; illustrative examples are framed appropriately as hypothetical scenarios."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 19,
+    "pass": true,
+    "low_quality": false
+  },
+  "evaluation_reused": true,
+  "evaluation_keys": [
+    "SE-FINAL-N092_eval_initial__a001",
+    "SE-FINAL-N092_eval_initial__a001"
+  ],
+  "completed_at": "2026-09-08T13:04:32.979932+00:00"
+}

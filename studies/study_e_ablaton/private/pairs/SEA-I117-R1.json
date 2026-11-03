@@ -1,0 +1,92 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I117-R1",
+    "item_id": "SEA-I117",
+    "repeat": 1,
+    "arm_order": [
+      "critic_on",
+      "critic_off"
+    ],
+    "content_id": "POST-49b7063b41e2bfe843638f84"
+  },
+  "arms": {
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-49b7063b41e2bfe843638f84-1",
+        "title": "Spot survivorship bias before it distorts your sample",
+        "body": "If you make decisions from samples, check what survived into the sample before you trust the result.\n\nThis matters in small businesses because the sample is often incomplete: you see the successful orders, the customers who replied, or the suppliers who kept working, and the failed or silent cases never make it into the record. That can make a workflow look cleaner than it is.\n\nThe useful question is simple: what decision am I making from this sample, and what missing cases would change that decision?\n\nIf you are looking at product fit, supplier quality, or customer segments, do one pass on a real example and write down three things: what cases are included, what cases are missing, and what would look different if the missing cases were visible up front.\n\nThat is the next step. It does not force AI into the workflow. It just tells you whether the problem is a manual check, a spreadsheet rule, or an AI-assisted review. Sometimes the honest answer is that the sample is too thin and the decision should wait. That is not glamorous, but it is cheaper than learning the hard way."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-49b7063b41e2bfe843638f84-1",
+            "title": "Spot survivorship bias before it distorts your sample",
+            "body": "If you make decisions from samples, check what survived into the sample before you trust the result.\n\nThis matters in small businesses because the sample is often incomplete: you see the successful orders, the customers who replied, or the suppliers who kept working, and the failed or silent cases never make it into the record. That can make a workflow look cleaner than it is.\n\nThe useful question is simple: what decision am I making from this sample, and what missing cases would change that decision?\n\nIf you are looking at product fit, supplier quality, or customer segments, do one pass on a real example and write down three things: what cases are included, what cases are missing, and what would look different if the missing cases were visible up front.\n\nThat is the next step. It does not force AI into the workflow. It just tells you whether the problem is a manual check, a spreadsheet rule, or an AI-assisted review. Sometimes the honest answer is that the sample is too thin and the decision should wait. That is not glamorous, but it is cheaper than learning the hard way."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-49b7063b41e2bfe843638f84-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": [
+            {
+              "repair_id": "P01",
+              "target_ids": [
+                "D01",
+                "D02"
+              ],
+              "instruction": "Rewrite the body in plain, coherent English so the reader can follow one clear idea on first read. Keep the topic as a bounded workflow decision about spotting survivorship in samples early, and make the structure straightforward instead of fragmented or garbled.",
+              "source_ids": [
+                "BRIEF",
+                "S01"
+              ]
+            },
+            {
+              "repair_id": "P02",
+              "target_ids": [
+                "D02"
+              ],
+              "instruction": "Add one concrete next step the owner can actually do: for example, review a sample and ask what is missing from the cases that made it into the sample, then decide whether that missingness should block or change the workflow. Keep it to one practical action, not a general theory dump.",
+              "source_ids": [
+                "BRIEF",
+                "S01"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-49b7063b41e2bfe843638f84-1",
+        "title": "Spot survivorship bias before it skews the sample",
+        "body": "When you only look at what survived, the sample can lie to you. That is survivorship bias: the visible cases are not the whole set. For a small business owner, this shows up when you judge product fit, supplier quality, or customer response from only the successful orders, the customers who replied, or the cases that were easiest to process.\n\nThe practical question is simple: what decision are you making from this sample, and what would you need to see early if that decision was going to fail? If the answer depends on missing cases, you should not trust the sample yet.\n\nStart with one decision you actually make. Write down the sample you used, what was missing, and what those missing cases would have changed. For example, if you are only hearing from existing customers, note who is silent and why that matters. If failed orders never make it into the review, note that gap before you draw a conclusion.\n\nOnce that is on paper, you can decide whether the problem calls for a manual check, a simple spreadsheet rule, or an AI-assisted workflow. Sometimes the honest answer is: not AI, just better records. The machine can wait."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-49b7063b41e2bfe843638f84-1",
+            "title": "Spot survivorship bias before it skews the sample",
+            "body": "When you only look at what survived, the sample can lie to you. That is survivorship bias: the visible cases are not the whole set. For a small business owner, this shows up when you judge product fit, supplier quality, or customer response from only the successful orders, the customers who replied, or the cases that were easiest to process.\n\nThe practical question is simple: what decision are you making from this sample, and what would you need to see early if that decision was going to fail? If the answer depends on missing cases, you should not trust the sample yet.\n\nStart with one decision you actually make. Write down the sample you used, what was missing, and what those missing cases would have changed. For example, if you are only hearing from existing customers, note who is silent and why that matters. If failed orders never make it into the review, note that gap before you draw a conclusion.\n\nOnce that is on paper, you can decide whether the problem calls for a manual check, a simple spreadsheet rule, or an AI-assisted workflow. Sometimes the honest answer is: not AI, just better records. The machine can wait."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-49b7063b41e2bfe843638f84-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

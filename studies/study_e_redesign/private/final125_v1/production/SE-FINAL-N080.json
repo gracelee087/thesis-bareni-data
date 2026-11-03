@@ -1,0 +1,306 @@
+{
+  "task_id": "SE-FINAL-N080",
+  "batch_id": 3,
+  "condition": "natural",
+  "source_task_id": null,
+  "topic": "why proof-of-concept debt survives",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-318",
+    "title": "Why proof-of-concept debt survives",
+    "body": "Proof-of-concept debt usually survives for one boring reason: the pilot solved a slice of the problem, but nobody made it part of daily work. A small business can run the manual version for weeks, build a clever demo, and still keep the old process because the last mile is where the real cost sits: who owns it, who watches it, and who fixes it when it breaks.\n\nThat is the bounded decision I’d look at first. Not “should we use AI everywhere?” but “does this recurring workflow have a clear owner if we automate it?” If the answer is fuzzy, the pilot tends to sit on the shelf. Shelf-ware is just debt with nicer phrasing.\n\nFor an owner-operator, the comparison is simple: keep paying in time and attention for manual work, or invest in a narrow automation that fits one repeatable workflow. Bareni’s diagnostic is designed around that question. It identifies one recurring workflow, checks honestly whether AI fits, and then defines scope, fixed price, and measures if it does. Finished code and accounts stay in the customer’s name; there is no separate formal build gate.\n\nThe practical next step is to pick one workflow you repeat every week — customer questions, invoice entry, lead routing, or data sync — and ask: once this is automated, who owns running it day to day? If you cannot name that person, the problem is not the model. It is the operating decision."
+  },
+  "final": {
+    "item_id": "E-OPT-418",
+    "title": "Why proof-of-concept debt survives",
+    "body": "Proof-of-concept debt usually survives for one boring reason: the pilot solved a slice of the problem, but nobody made it part of daily work. A small business can keep the manual version running, build a clever demo, and still leave the old process in place because the last mile is where the real cost sits: who owns it, who watches it, and who fixes it when it breaks.\n\nThat is the bounded decision I would look at first. Not “should we use AI everywhere?” but “does this recurring workflow have a clear owner if we automate it?” If the answer is fuzzy, the pilot tends to sit on the shelf. Shelf-ware is just debt with cleaner wording.\n\nFor an owner-operator, the comparison is simple: keep paying in time and attention for manual work, or invest in a narrow automation that fits one repeatable workflow. Bareni’s diagnostic is built around that question. It identifies one recurring workflow, checks honestly whether AI fits, and, if it does, defines pilot scope, fixed price, and measures. Our policy is to put finished code and the relevant accounts in the customer’s name from the start; timings are intended scopes, not guarantees.\n\nThe practical next step is to pick one workflow you repeat every week — customer questions, invoice entry, lead routing, or data sync — and ask: once this is automated, who owns running it day to day? If you cannot name that person, the problem is not the model. It is the operating decision."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-080",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": [
+      {
+        "dimension": "factual_grounding",
+        "severity": "noncritical",
+        "location_kind": "quote",
+        "text_field": "body",
+        "quote": "Finished code and accounts stay in the customer’s name; there is no separate formal build gate.",
+        "missing_requirement": null,
+        "rule_id": "R-N-4",
+        "evidence_ids": [
+          "C02",
+          "BRIEF",
+          "S01"
+        ],
+        "reason": "This presents account ownership as an absolute statement, but the approved evidence supports it as policy ('accounts are in the customer's name from the start') and says to describe it as policy/no-lock-in positioning, not an absolute warranty. The sentence overstates that point."
+      }
+    ]
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-080",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-080-1",
+        "repairs": [
+          {
+            "repair_id": "P01",
+            "target_ids": [
+              "D01"
+            ],
+            "instruction": "Soften the ownership statement to policy language. Replace 'Finished code and accounts stay in the customer’s name' with something like 'Our policy is to put finished code and relevant accounts in the customer’s name from the start' so it reads as positioning, not an absolute warranty.",
+            "source_ids": [
+              "C02",
+              "BRIEF",
+              "S01"
+            ]
+          }
+        ]
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-080",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-418",
+        "title": "Why proof-of-concept debt survives",
+        "body": "Proof-of-concept debt usually survives for one boring reason: the pilot solved a slice of the problem, but nobody made it part of daily work. A small business can keep the manual version running, build a clever demo, and still leave the old process in place because the last mile is where the real cost sits: who owns it, who watches it, and who fixes it when it breaks.\n\nThat is the bounded decision I would look at first. Not “should we use AI everywhere?” but “does this recurring workflow have a clear owner if we automate it?” If the answer is fuzzy, the pilot tends to sit on the shelf. Shelf-ware is just debt with cleaner wording.\n\nFor an owner-operator, the comparison is simple: keep paying in time and attention for manual work, or invest in a narrow automation that fits one repeatable workflow. Bareni’s diagnostic is built around that question. It identifies one recurring workflow, checks honestly whether AI fits, and, if it does, defines pilot scope, fixed price, and measures. Our policy is to put finished code and the relevant accounts in the customer’s name from the start; timings are intended scopes, not guarantees.\n\nThe practical next step is to pick one workflow you repeat every week — customer questions, invoice entry, lead routing, or data sync — and ask: once this is automated, who owns running it day to day? If you cannot name that person, the problem is not the model. It is the operating decision."
+      },
+      "gate_key": "SE-FINAL-N080_gate1__a001"
+    }
+  ],
+  "measurement_status": "pending",
+  "planner": {
+    "item_id": "E-PLAN-518",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task prohibits a primary CTA. L01 confirms that informational posts must end with a neutral practical observation or next-step note, not a meeting prompt. This applies directly to the LinkedIn post structure: close with the diagnostic question or workflow decision point rather than a booking invitation."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Define 'proof-of-concept debt' as a bounded workflow decision: a small business runs a manual process (e.g., customer-question triage, invoice data entry, or lead routing) for 8–10 hours weekly and builds an unfinished pilot that solves part of it but is never integrated or retired. Explain that the pilot sits idle because integration cost, risk tolerance, or competing priorities block the move from sandbox to live work.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "S01",
+          "C01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Describe the owner's comparison: continuing manual work (hiring cost, time loss, error risk) versus a bounded automation investment (Bareni diagnostic scope, fixed-price pilot, handoff to the customer). Frame this as a decision framework, not a guarantee or ROI projection.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "S01",
+          "C01",
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "State the one diagnostic question that surfaces whether a pilot survives or becomes debt: 'Once the automation works, who owns running it, and do they have time or incentive to operate it daily?' Explain that automation without operational ownership becomes shelf-ware.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Clarify Bareni's hands-on model as a practical alternative: the diagnostic is free and honest about fit; the pilot is fixed-price and delivered in weeks; the customer owns the code and accounts from day one; no lock-in or separate 'formal build' gate. This contrasts with larger engagements that leave debt.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Recommend the owner list one recurring workflow (customer questions, invoice entry, lead routing, or data sync) and ask themselves: 'Could a junior hire or AI assistant handle the repetitive part?' If yes, determine the operational owner before building. If ownership is unclear, automation becomes debt.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "S01",
+          "C01"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Close with a neutral diagnostic checkpoint: 'The pilot that ships and stays integrated is the one with an owner. If you know yours, the next step is clear; if not, clarify that first before building.' Do not include a booking CTA per L01 and task constraint.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C05",
+          "S01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "Do not invent customers, deployments, results, or savings. Reference only Bareni's self-built demos and consulting model as described in C02 and C03. Frame the 8–10 hour persona scenario as illustrative, not a proven result."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Do not recommend autonomous approval for payments or high-risk decisions. Bareni declines high-sensitivity work per C04. Keep the post focused on workflow ownership and pilot scope, not financial or compliance guarantees."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Maintain the frozen persona (plain-speaking technical expert, founder-to-founder trust, restrained tone) and human-approval boundary. Present Bareni as a one-person consulting practice building a thesis, not a multi-person team with legal status or customer track record."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use plain English with jargon explained immediately. Keep the diagnostic question and next-step recommendation distinct from claims about existing capabilities. Avoid hype language; use concrete workflow decisions and measurable checkpoints."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-618",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "The representative pains are 8–10 hours a week of repeated customer questions, neglected sales leads,\n  and manual invoice/data work. The 8–10 hours is a persona scenario, not a market\n  statistic or observed customer result."
+          }
+        ],
+        "rationale": "The framing device is permissible and the workflow examples match the approved persona, but the claim states the 8–10 hours weekly figure as a general fact about small businesses. Approved evidence marks that figure as a persona scenario only, and the wider 'pilot sits idle' explanation is an illustrative model, not an observed Bareni finding.",
+        "use_guidance": "Add the qualification that 8–10 hours a week is an illustrative persona scenario, not a market statistic or observed customer result, and present the idle-pilot pattern as a general illustration rather than a Bareni-observed outcome. No named or implied customer."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "Normal sequence: free 30-minute diagnostic; free one-page pilot proposal;\n  paid working MVP in days; fixed-price pilot in weeks; then expansion and an\n  optional retainer. Do not insert a mandatory roadmap gate or separate \"formal\n  build\" stage. Timings are intended scopes, not guarantees."
+          },
+          {
+            "source_id": "C01",
+            "quote": "A representative scenario is a six-person D2C online shop whose owner compares an\n  automation investment with the cost of another hire."
+          }
+        ],
+        "rationale": "The decision comparison and the described Bareni elements are supported, and the claim already avoids ROI projections. However, it does not state that pilot timings and scopes are intended, not guaranteed.",
+        "use_guidance": "Add the qualification that timings and scope are intended, not guaranteed, and keep any cost or time comparison generic — no invented figures, savings or ROI."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI\n  fits, and—if it does—defines pilot scope, fixed price, and measures."
+          },
+          {
+            "source_id": "S01",
+            "quote": "Practicality: explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step."
+          }
+        ],
+        "rationale": "This supplies a diagnostic question and an accompanying reasoning point rather than asserting a current Bareni capability, measurement or customer experience. The task explicitly invites one diagnostic question.",
+        "use_guidance": "Keep it explicitly as a question the owner can ask themselves; do not present 'automation without ownership becomes shelf-ware' as a Bareni-measured finding, and avoid implying Bareni has observed this in customer work."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "Finished code is handed to the customer. Database, automation-tool, and API\n  accounts are in the customer's name from the start. Retainer support is optional.\n  Describe this as policy and no-lock-in positioning, not an absolute legal warranty."
+          },
+          {
+            "source_id": "C02",
+            "quote": "Do not insert a mandatory roadmap gate or separate \"formal\n  build\" stage. Timings are intended scopes, not guarantees."
+          }
+        ],
+        "rationale": "Each element of the delivery model is supported, but the claim states no lock-in as an unconditional promise and the weeks timing as fixed, and it asserts a comparison to 'larger engagements that leave debt' for which there is no approved evidence.",
+        "use_guidance": "Present ownership and no-lock-in as Bareni policy and positioning, not an absolute legal warranty; mark 'in weeks' as intended scope, not a guarantee; drop or neutralise the comparative claim about larger engagements, since no approved evidence supports statements about other providers' outcomes."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "Especially suitable businesses already work in English, use digital\n  documents and SaaS tools, and have a frequent, repeatable workflow with a\n  measurable outcome."
+          },
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI\n  fits"
+          }
+        ],
+        "rationale": "This is a self-check instruction and next step for the reader, not an assertion of implementation, observed benefit or customer use. It matches the approved persona focus on a bounded next step.",
+        "use_guidance": "Keep as an explicit reader instruction. Keep the fit test honest — include that AI may not fit the workflow — and do not imply Bareni has run this exercise with customers."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Informational posts use no CTA or one soft closing sentence."
+          }
+        ],
+        "rationale": "A neutral closing observation and next-step note is a permissible instruction for the post's ending; it asserts no current capability, result or customer use, and it respects the no-CTA rule for this task.",
+        "use_guidance": "Keep as a neutral closing observation with no booking, meeting or conversation invitation of any kind; do not add a primary or secondary CTA, scarcity or urgency."
+      }
+    ]
+  },
+  "selected_lessons": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025"
+      ]
+    }
+  ],
+  "register_sha256": "48497afb8641ddc47d974cdfadba06a1f6b562d21c49ec03c9b03a5dc531744e",
+  "planner_key": "SE-FINAL-N080_planner__a001",
+  "researcher_key": "SE-FINAL-N080_researcher__a001",
+  "writer_key": "SE-FINAL-N080_writer__a001",
+  "final_key": "SE-FINAL-N080_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-N080_gate1__a001",
+  "production_completed_at": "2026-09-08T12:57:45.929997+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts"
+}

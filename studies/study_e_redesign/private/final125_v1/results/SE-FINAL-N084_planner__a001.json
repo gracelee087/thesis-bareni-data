@@ -1,0 +1,162 @@
+{
+  "status": "success",
+  "usage": {
+    "input_tokens": 4354,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 840,
+    "reasoning_tokens": null
+  },
+  "cost_usd": 0.008554,
+  "output": {
+    "item_id": "E-PLAN-522",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task explicitly forbids a CTA. L01 reinforces that informational content on data cleaning as a workflow constraint should close with a practical next step or neutral observation rather than a meeting invitation. The post will explain the decision rule and finish with a diagnostic question the owner can apply internally."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Define data cleaning as a practical workflow boundary: identify whether the owner's recurring task involves structured input data (invoices, customer records, form responses) that must meet quality thresholds before downstream processing. Use the Bareni persona to address this as a design constraint, not a tool choice.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "S01",
+          "C01",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Explain the owner's choice clearly: manual cleaning, AI-assisted cleaning, or avoiding the workflow altogether. State honestly when AI fits (repeated patterns, measurable quality rules, human review in place) and when it does not (inconsistent data, no clear success criterion, high regulatory risk). Cite the knowledge assistant and accounts-payable demos as working examples of data quality control, not deployed customer results.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C01",
+          "C02",
+          "C03",
+          "C04",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Use the Bareni diagnostic framework: describe the one recurring workflow the owner performs, the data input structure, and the success criterion (e.g., 'invoice amount must match PO within 2%'). Do not promise savings, timings, or ROI; instead, present this as the information needed to decide whether a bounded pilot makes sense.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C02",
+          "C04",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Close with a single diagnostic question the owner can answer alone: 'Does this workflow happen the same way every week, and can you write down the quality rules that matter?' This converts the post into an internal decision framework and preserves the no-CTA rule by replacing a meeting invitation with actionable reflection.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "S01",
+          "C05"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No customer names, outcomes, numbers, or sales CTA. Bareni is introduced as a practice being built by the thesis author. The accounts-payable and knowledge-assistant systems are disclosed as self-built demos with synthetic data."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Data cleaning is discussed as a design choice, not a product pitch. Human approval is the default for decisions involving data quality thresholds. Accounts-payable approval rules are cited as a worked example of how control is maintained."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "The frozen persona (founder-to-founder, restrained, practical) frames the entire discussion. Approved evidence from C01–C05 and S01 is used only. The owner retains decision authority; the post offers diagnostic structure, not recommendations."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Plain English throughout. The phrase 'self-built demo' and 'synthetic data' distinguish the working examples from customer deployments. The diagnostic question is framed as reflection, not a sales opportunity."
+      }
+    ]
+  },
+  "raw_text": "{\"item_id\": \"E-PLAN-522\", \"selected_lessons\": [{\"lesson_id\": \"L01\", \"application\": \"The task explicitly forbids a CTA. L01 reinforces that informational content on data cleaning as a workflow constraint should close with a practical next step or neutral observation rather than a meeting invitation. The post will explain the decision rule and finish with a diagnostic question the owner can apply internally.\"}], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Define data cleaning as a practical workflow boundary: identify whether the owner's recurring task involves structured input data (invoices, customer records, form responses) that must meet quality thresholds before downstream processing. Use the Bareni persona to address this as a design constraint, not a tool choice.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"S01\", \"C01\", \"C05\"]}, {\"step_id\": \"P02\", \"instruction\": \"Explain the owner's choice clearly: manual cleaning, AI-assisted cleaning, or avoiding the workflow altogether. State honestly when AI fits (repeated patterns, measurable quality rules, human review in place) and when it does not (inconsistent data, no clear success criterion, high regulatory risk). Cite the knowledge assistant and accounts-payable demos as working examples of data quality control, not deployed customer results.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C01\", \"C02\", \"C03\", \"C04\", \"C05\"]}, {\"step_id\": \"P03\", \"instruction\": \"Use the Bareni diagnostic framework: describe the one recurring workflow the owner performs, the data input structure, and the success criterion (e.g., 'invoice amount must match PO within 2%'). Do not promise savings, timings, or ROI; instead, present this as the information needed to decide whether a bounded pilot makes sense.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C02\", \"C04\", \"C05\"]}, {\"step_id\": \"P04\", \"instruction\": \"Close with a single diagnostic question the owner can answer alone: 'Does this workflow happen the same way every week, and can you write down the quality rules that matter?' This converts the post into an internal decision framework and preserves the no-CTA rule by replacing a meeting invitation with actionable reflection.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"S01\", \"C05\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"No customer names, outcomes, numbers, or sales CTA. Bareni is introduced as a practice being built by the thesis author. The accounts-payable and knowledge-assistant systems are disclosed as self-built demos with synthetic data.\"}, {\"constraint_id\": \"K02\", \"handling\": \"Data cleaning is discussed as a design choice, not a product pitch. Human approval is the default for decisions involving data quality thresholds. Accounts-payable approval rules are cited as a worked example of how control is maintained.\"}, {\"constraint_id\": \"K03\", \"handling\": \"The frozen persona (founder-to-founder, restrained, practical) frames the entire discussion. Approved evidence from C01–C05 and S01 is used only. The owner retains decision authority; the post offers diagnostic structure, not recommendations.\"}, {\"constraint_id\": \"K04\", \"handling\": \"Plain English throughout. The phrase 'self-built demo' and 'synthetic data' distinguish the working examples from customer deployments. The diagnostic question is framed as reflection, not a sales opportunity.\"}]}",
+  "provider_response": {
+    "id": "msg_011Cer1hQPNZWKw2sdKWxKU2",
+    "container": null,
+    "content": [
+      {
+        "citations": null,
+        "text": "{\"item_id\": \"E-PLAN-522\", \"selected_lessons\": [{\"lesson_id\": \"L01\", \"application\": \"The task explicitly forbids a CTA. L01 reinforces that informational content on data cleaning as a workflow constraint should close with a practical next step or neutral observation rather than a meeting invitation. The post will explain the decision rule and finish with a diagnostic question the owner can apply internally.\"}], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Define data cleaning as a practical workflow boundary: identify whether the owner's recurring task involves structured input data (invoices, customer records, form responses) that must meet quality thresholds before downstream processing. Use the Bareni persona to address this as a design constraint, not a tool choice.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"S01\", \"C01\", \"C05\"]}, {\"step_id\": \"P02\", \"instruction\": \"Explain the owner's choice clearly: manual cleaning, AI-assisted cleaning, or avoiding the workflow altogether. State honestly when AI fits (repeated patterns, measurable quality rules, human review in place) and when it does not (inconsistent data, no clear success criterion, high regulatory risk). Cite the knowledge assistant and accounts-payable demos as working examples of data quality control, not deployed customer results.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C01\", \"C02\", \"C03\", \"C04\", \"C05\"]}, {\"step_id\": \"P03\", \"instruction\": \"Use the Bareni diagnostic framework: describe the one recurring workflow the owner performs, the data input structure, and the success criterion (e.g., 'invoice amount must match PO within 2%'). Do not promise savings, timings, or ROI; instead, present this as the information needed to decide whether a bounded pilot makes sense.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C02\", \"C04\", \"C05\"]}, {\"step_id\": \"P04\", \"instruction\": \"Close with a single diagnostic question the owner can answer alone: 'Does this workflow happen the same way every week, and can you write down the quality rules that matter?' This converts the post into an internal decision framework and preserves the no-CTA rule by replacing a meeting invitation with actionable reflection.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"S01\", \"C05\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"No customer names, outcomes, numbers, or sales CTA. Bareni is introduced as a practice being built by the thesis author. The accounts-payable and knowledge-assistant systems are disclosed as self-built demos with synthetic data.\"}, {\"constraint_id\": \"K02\", \"handling\": \"Data cleaning is discussed as a design choice, not a product pitch. Human approval is the default for decisions involving data quality thresholds. Accounts-payable approval rules are cited as a worked example of how control is maintained.\"}, {\"constraint_id\": \"K03\", \"handling\": \"The frozen persona (founder-to-founder, restrained, practical) frames the entire discussion. Approved evidence from C01–C05 and S01 is used only. The owner retains decision authority; the post offers diagnostic structure, not recommendations.\"}, {\"constraint_id\": \"K04\", \"handling\": \"Plain English throughout. The phrase 'self-built demo' and 'synthetic data' distinguish the working examples from customer deployments. The diagnostic question is framed as reflection, not a sales opportunity.\"}]}",
+        "type": "text"
+      }
+    ],
+    "model": "claude-haiku-4-5-20251001",
+    "role": "assistant",
+    "stop_details": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "not_available",
+      "input_tokens": 4354,
+      "output_tokens": 840,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": "standard"
+    }
+  },
+  "stop_reason": "end_turn",
+  "cost_details": {
+    "input": 0.004354,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.0042,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.008554
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": null,
+  "key": "SE-FINAL-N084_planner__a001",
+  "role": "planner",
+  "created_at": "2026-09-08T12:59:12.374243+00:00",
+  "ended_at": "2026-09-08T12:59:34.644780+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-N084",
+    "batch_id": 3,
+    "condition": "natural",
+    "cohort": "natural"
+  },
+  "task_id": "SE-FINAL-N084",
+  "batch_id": 3,
+  "cohort": "natural",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 22270,
+  "budget_charge_usd": 0.008554,
+  "unknown_cost_reservation_usd": 0
+}

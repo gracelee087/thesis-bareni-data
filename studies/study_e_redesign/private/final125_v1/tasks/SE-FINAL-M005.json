@@ -1,0 +1,340 @@
+{
+  "task_id": "SE-FINAL-M005",
+  "batch_id": 1,
+  "condition": "unchanged",
+  "source_task_id": "SE-FINAL-N050",
+  "topic": "what churn signals hide",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-319",
+    "title": "What churn signals hide before the customer leaves",
+    "body": "Most churn does not arrive as a dramatic cancellation. It usually hides in quieter signals: fewer orders, longer gaps between purchases, support questions that start repeating, or customers who stop using one part of the service and keep paying only for habit. The point is not to chase every wobble. It is to separate active signals from passive erosion.\n\nActive signals are the obvious ones: a cancellation notice, a payment problem, a sharp complaint. Those need a human decision now. Passive signals are slower and easier to miss. For an online shop, an illustrative example is a customer who used to buy every week and then goes three weeks with no order. That is not proof of churn, but it is a warning worth looking at.\n\nThe bounded workflow decision is simple: decide which signals your team can see in a spreadsheet, CRM, or support inbox, and which ones are invisible until it is too late. If the data already exists, a small workflow can flag the pattern and send it to manual review. It should not decide the response on its own. Human approval stays in charge.\n\nA practical next step: pull the last 12 months of order history, support tickets, login activity, and payment records, then pick two or three customers who left or went quiet. Write down the first signal you could have seen at the time. That manual audit will show whether the issue is a real workflow gap or just a feeling wearing a trench coat."
+  },
+  "final": {
+    "item_id": "E-OPT-419",
+    "title": "What churn signals hide before the customer leaves",
+    "body": "Most churn does not arrive as a dramatic cancellation. It usually hides in quieter signals: fewer orders, longer gaps between purchases, repeated support questions, or customers who stop using one part of the service and keep paying out of habit. The job is not to chase every wobble. It is to separate active signals from passive erosion.\n\nActive signals are the obvious ones: a cancellation notice, a payment problem, a sharp complaint. Those need a human decision now. Passive signals are slower and easier to miss. For an online shop, an illustrative example is a customer who used to buy every week and then goes three weeks with no order. That is not proof of churn, but it is a warning worth looking at.\n\nThe bounded workflow decision is simple: decide which signals you can already see in a spreadsheet, CRM, or support inbox, and which ones stay invisible until it is too late. If the data exists, a small workflow can flag the pattern and route it to manual review. It should not decide the response on its own. Human approval stays in charge.\n\nA practical next step is manual: pull the last 12 months of order history, support tickets, login activity, and payment records, then pick two or three customers who left or went quiet. Write down the first signal you could have seen at the time. That audit will show whether you have a workflow gap or just a feeling wearing a trench coat."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-005",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-005",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-005-1",
+        "repairs": []
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-005",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-419",
+        "title": "What churn signals hide before the customer leaves",
+        "body": "Most churn does not arrive as a dramatic cancellation. It usually hides in quieter signals: fewer orders, longer gaps between purchases, repeated support questions, or customers who stop using one part of the service and keep paying out of habit. The job is not to chase every wobble. It is to separate active signals from passive erosion.\n\nActive signals are the obvious ones: a cancellation notice, a payment problem, a sharp complaint. Those need a human decision now. Passive signals are slower and easier to miss. For an online shop, an illustrative example is a customer who used to buy every week and then goes three weeks with no order. That is not proof of churn, but it is a warning worth looking at.\n\nThe bounded workflow decision is simple: decide which signals you can already see in a spreadsheet, CRM, or support inbox, and which ones stay invisible until it is too late. If the data exists, a small workflow can flag the pattern and route it to manual review. It should not decide the response on its own. Human approval stays in charge.\n\nA practical next step is manual: pull the last 12 months of order history, support tickets, login activity, and payment records, then pick two or three customers who left or went quiet. Write down the first signal you could have seen at the time. That audit will show whether you have a workflow gap or just a feeling wearing a trench coat."
+      },
+      "gate_key": "SE-FINAL-M005_gate1__a001"
+    }
+  ],
+  "measurement_status": "complete",
+  "planner": {
+    "item_id": "E-PLAN-519",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task explicitly states 'CTA rule: None', so the post must end with a practical observation or next-step guidance for the owner without a booking prompt or meeting invitation. L01 enforces this boundary in the LinkedIn post format."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Identify the bounded workflow decision: distinguish between active churn signals (recent cancellations, support escalations, payment delays) and passive quiet signals (declining usage, feature abandonment, longer gaps between transactions). Frame this as a diagnostic threshold the owner can observe in their own data without external tools.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C01",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Explain why the distinction matters: active signals demand immediate outreach, while passive signals reveal a slower erosion that often goes unnoticed until the customer is already gone. Illustrate with a concrete example from a small-business workflow (e.g., 'if your online shop sees three weeks without an order after steady weekly buys, that's a signal worth acting on').",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Connect to a bounded automation opportunity: if the owner has the data in a spreadsheet, CRM, or SaaS tool already, a simple workflow can flag these signals automatically—routing them to a manual review queue rather than replacing human judgment. State that this is where Bareni's diagnostic would evaluate fit.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "State the practical next step clearly: the owner should audit their current data sources (order history, support tickets, login frequency, payment records) and manually identify two or three churn cases from the past 12 months. Note which signals appeared first and were visible at the time.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Reinforce that human approval remains in control: any automated flag is a prompt for the owner to decide whether to reach out, offer help, or investigate. Do not claim that automation prevents churn; only that it surfaces signals faster.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Close with a neutral next-step observation: once the owner completes the manual audit, they will know whether a workflow tool is worth building. Avoid any meeting invitation or CTA. Reference that Bareni's diagnostic is available if they want to explore automation, without framing it as a pressure point.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No customer names, deployment cases, ROI figures, or results invented. Churn signals are explained as an observable workflow pattern, not as a proven customer outcome. Bareni is named as a consulting practice available for diagnostic conversation, not as having solved this for clients."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "The workflow centres on manual owner review and decision; no autonomous payment blocks or money movement. Automation only flags signals; a person decides the response. Churn-analysis work is within scope."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Persona frozen: owner-operator of 1–10-person business comparing automation against manual work and hiring. Human approval and business authority preserved throughout. No multi-person team implied for Bareni."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Plain English used throughout. Example (small online shop) is framed as illustrative scenario, not as observed customer result. Distinction maintained between the workflow pattern (general practice) and Bareni's diagnostic capability (available service)."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-619",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step"
+          },
+          {
+            "source_id": "C01",
+            "quote": "A representative scenario is a six-person D2C online shop"
+          }
+        ],
+        "rationale": "This is a planning instruction to frame a diagnostic distinction the owner can observe in their own data. It does not assert any Bareni capability, customer, or observed result, and it matches the approved persona focus on one observable workflow decision.",
+        "use_guidance": "Keep as an explicitly framed diagnostic distinction the reader applies to their own data; do not present the signal categories as validated churn research, benchmarks, or Bareni-measured findings."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Practicality: explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Keep observed results, estimates, targets,\n  synthetic data, and examples distinct."
+          }
+        ],
+        "rationale": "An instruction to explain a distinction and illustrate it with a hypothetical shop example. The three-weeks-without-an-order figure is offered as an illustration, not as an observed metric or customer result.",
+        "use_guidance": "Keep explicitly hypothetical: label the example as an illustration for a typical small shop, avoid presenting any interval or threshold as a measured or recommended industry benchmark, and keep the example distinct from observed results."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "general document, email, CRM, and back-office\n  workflows using AI plus Zapier, Make, n8n, and small amounts of custom code"
+          },
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI\n  fits, and—if it does—defines pilot scope, fixed price, and measures."
+          },
+          {
+            "source_id": "C03",
+            "quote": "Never imply production operation, customer validation, real customer documents,\n  billing, rate limiting, or proven scale."
+          }
+        ],
+        "rationale": "Bareni's service scope covers CRM and back-office workflow automation, and the free diagnostic that assesses fit is approved. But the claim as written can read as an existing churn-flagging capability; no churn-signal workflow has been built, so it must be framed as a possible pilot scope, not a ready component.",
+        "use_guidance": "Add the qualification that no churn-flagging workflow exists today: describe it as the kind of bounded workflow a pilot could build with tools such as Zapier, Make, or n8n, and note the diagnostic may honestly conclude AI does not fit. Keep the manual review queue framing and no implied deployment."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "**Task:** Turn the abstract topic into a bounded Bareni workflow decision. Explain one practical next step."
+          },
+          {
+            "source_id": "C01",
+            "quote": "Especially suitable businesses already work in English, use digital\n  documents and SaaS tools, and have a frequent, repeatable workflow with a\n  measurable outcome."
+          }
+        ],
+        "rationale": "A manual next step the reader performs themselves. It asserts no Bareni implementation, tooling, or observed outcome, and satisfies the required bounded next-step focus.",
+        "use_guidance": "Keep as a manual, owner-performed audit; do not imply Bareni performs, tooling-supports, or has run such an audit, and present the counts and 12-month window as an example scope rather than a prescribed standard."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C03",
+            "quote": "amount-based human-only approval,\n  refusal of agent approval/payment attempts, and persistent audit records work"
+          }
+        ],
+        "rationale": "An instruction to keep the human in control and to avoid claiming churn prevention. It is a control and an explicit restraint on claims, consistent with the mandatory human-approval boundary, not an assertion of a working feature.",
+        "use_guidance": "Keep the human-decision framing and the explicit refusal to claim churn prevention; phrase any surfacing-signals-faster statement as an intended design property of a possible workflow, not an observed speed improvement."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Standard primary CTA: \"Book a free 30-minute diagnostic\". Use it only for\n  purchase-intent content, once, at the end."
+          },
+          {
+            "source_id": "C02",
+            "quote": "Normal sequence: free 30-minute diagnostic; free one-page pilot proposal"
+          }
+        ],
+        "rationale": "The neutral closing observation is fine, but referencing that Bareni's diagnostic is available to explore automation functions as an invitation; the task authorises no CTA and prior guidance treats such invitations as CTAs regardless of soft wording.",
+        "use_guidance": "Drop the diagnostic reference and any availability mention; close only with the neutral observation that the manual audit tells the owner whether a workflow is worth building. Keep no meeting prompt, no scarcity, and no soft invitation."
+      }
+    ]
+  },
+  "selected_lessons": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025"
+      ]
+    }
+  ],
+  "register_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "planner_key": "SE-FINAL-N050_planner__a001",
+  "researcher_key": "SE-FINAL-N050_researcher__a001",
+  "writer_key": "SE-FINAL-N050_writer__a001",
+  "final_key": "SE-FINAL-M005_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-M005_gate1__a001",
+  "production_completed_at": "2026-09-08T13:26:24.264983+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts",
+  "initial_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-005",
+    "scores": {
+      "persona_fit": 5,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Directly speaks to a small business owner-operator in Bareni's calm, practical voice. Adheres strictly to the no-CTA rule and includes exactly one restrained touch of dry humour.",
+      "clarity": "The argument moves cleanly from conceptual signals to a bounded workflow decision and an unambiguous diagnostic method without jargon.",
+      "actionability": "Provides an immediate, low-risk manual audit step for 2–3 past accounts to identify observable signals before automating, maintaining human review.",
+      "factual_grounding": "Makes no claims of past customer results or unverified capabilities; examples are clearly marked as illustrative scenarios."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 20,
+    "pass": true,
+    "low_quality": false
+  },
+  "final_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-005",
+    "scores": {
+      "persona_fit": 5,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Calm, technical, and founder-to-founder voice. Appropriately complies with the no-CTA rule and preserves human review boundaries.",
+      "clarity": "Logical structure moving clearly from churn signal types to a specific workflow decision and manual diagnostic next step.",
+      "actionability": "Provides an immediate, practical, zero-risk manual audit step examining 2–3 churned customer records before automating anything.",
+      "factual_grounding": "Contains no fabricated customer metrics, deployments, or claims; clearly marks the ecommerce scenario as an illustrative example."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 20,
+    "pass": true,
+    "low_quality": false
+  },
+  "evaluation_reused": false,
+  "evaluation_keys": [
+    "SE-FINAL-M005_eval_initial__a001",
+    "SE-FINAL-M005_eval_final__a001"
+  ],
+  "completed_at": "2026-09-08T13:26:36.869728+00:00"
+}

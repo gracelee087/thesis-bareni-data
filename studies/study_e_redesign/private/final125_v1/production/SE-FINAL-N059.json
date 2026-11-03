@@ -1,0 +1,299 @@
+{
+  "task_id": "SE-FINAL-N059",
+  "batch_id": 2,
+  "condition": "natural",
+  "source_task_id": null,
+  "topic": "rethinking synthetic test data",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-328",
+    "title": "Synthetic test data: when to use it, and when not to",
+    "body": "Synthetic test data is useful only when it helps you decide faster, not when it becomes a project of its own. For a small business, the bounded question is simple: are you building test data because you need privacy or scale, or because no one has tried the workflow with real records yet?\n\nIf the pilot is a repeatable task like invoice handling or customer inquiry triage, start smaller. Use a limited real-data subset, clear rules, and a human approval step where money or another high-risk decision is involved. That keeps the discussion on the workflow instead of on the theatre of perfect fake data.\n\nBareni’s own accounts-payable demo is a good example of the boundary. It uses entirely synthetic data to show the mechanics: text-based extraction, arithmetic checks, duplicate blocking, and audit records. But that demo also has limits: the default route uses pre-extracted files, and PDF/scan ingestion and OCR are not implemented. So the demo is useful for showing control logic, not for pretending it is ready for every real invoice pile.\n\nMy practical next step: pick one workflow, one approval rule, and one small batch of real records. Then ask whether synthetic data is solving a real testing problem, or just delaying the moment you learn what the workflow actually needs. If the answer is the second one, the spreadsheet has already won."
+  },
+  "final": {
+    "item_id": "E-OPT-428",
+    "title": "Synthetic test data: use it to test a real workflow decision",
+    "body": "Synthetic test data is useful only when it helps you decide faster, not when it becomes a project of its own. For a small business, the bounded question is simple: are you building synthetic data because you need privacy or scale, or because no one has actually tried the workflow with real records yet?\n\nIf the pilot is a repeatable task like invoice handling or customer inquiry triage, start smaller. Use a limited real-data subset, clear rules, and a human approval step where money or another high-risk decision is involved. That keeps the discussion on the workflow instead of on the theatre of perfect fake data.\n\nBareni’s own accounts-payable demo is a good boundary marker. It uses entirely synthetic data to show the mechanics: text-based extraction, arithmetic checks, duplicate blocking, and audit records. But the limits matter too: the default route uses pre-extracted files, and PDF/scan ingestion and OCR are not implemented. So the demo is useful for showing control logic, not for pretending it is ready for every real invoice pile.\n\nThe practical next step is simple: pick one workflow, one approval rule, and one small batch of real records. Then ask whether synthetic data is solving a real testing problem, or just postponing the moment you learn what the workflow actually needs. If that question is still fuzzy, the spreadsheet may be doing its usual quiet work."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-059",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-059",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-059-1",
+        "repairs": []
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-059",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-428",
+        "title": "Synthetic test data: use it to test a real workflow decision",
+        "body": "Synthetic test data is useful only when it helps you decide faster, not when it becomes a project of its own. For a small business, the bounded question is simple: are you building synthetic data because you need privacy or scale, or because no one has actually tried the workflow with real records yet?\n\nIf the pilot is a repeatable task like invoice handling or customer inquiry triage, start smaller. Use a limited real-data subset, clear rules, and a human approval step where money or another high-risk decision is involved. That keeps the discussion on the workflow instead of on the theatre of perfect fake data.\n\nBareni’s own accounts-payable demo is a good boundary marker. It uses entirely synthetic data to show the mechanics: text-based extraction, arithmetic checks, duplicate blocking, and audit records. But the limits matter too: the default route uses pre-extracted files, and PDF/scan ingestion and OCR are not implemented. So the demo is useful for showing control logic, not for pretending it is ready for every real invoice pile.\n\nThe practical next step is simple: pick one workflow, one approval rule, and one small batch of real records. Then ask whether synthetic data is solving a real testing problem, or just postponing the moment you learn what the workflow actually needs. If that question is still fuzzy, the spreadsheet may be doing its usual quiet work."
+      },
+      "gate_key": "SE-FINAL-N059_gate1__a001"
+    }
+  ],
+  "measurement_status": "pending",
+  "planner": {
+    "item_id": "E-PLAN-528",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task explicitly forbids a CTA ('CTA rule: None'). L01 requires treating diagnostic invitations as CTAs and ending with a practical observation instead. The post must close with a neutral next-step note—e.g., 'ask yourself whether your test data is blocking a real workflow decision'—rather than 'book a diagnostic'."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Open by naming the owner's abstract topic (synthetic test data) and reframe it as a concrete, bounded workflow decision: does your team spend time building, maintaining, or arguing about test data when you could be running a smaller pilot on real data with human approval gates?",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "S01",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Explain the threshold question: synthetic data is useful when you need scale or privacy, but for a small business pilot automating one repeatable workflow (e.g., invoice processing or customer inquiry triage), you can often start with a small real-data subset, clear rules, and human approval. This avoids the hidden cost of building a synthetic dataset that doesn't match production.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Use Bareni's accounts-payable automation demo as a concrete example: the self-built demo uses synthetic data to show the mechanics (extraction, arithmetic checks, duplicate blocking, audit trail), but in a real workflow you'd start with a small batch of actual invoices, run them through the system with a human approval rule, and measure whether the time saved justifies the tool cost.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C03",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "State clearly: Bareni declines to build systems that move money without human approval or that depend on OCR and PDF ingestion at scale. For your workflow, the diagnostic step is free and identifies whether AI fits—if it does, the pilot has a fixed price and delivers code you own. If it doesn't, we say so directly.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Close by posing a diagnostic question rather than a CTA: 'Before you build synthetic data, ask yourself: what is the one repeatable workflow that's eating 8–10 hours a week, and is the blocker AI readiness or just that no one has tried to automate it yet?' This frames the decision as the owner's immediate thinking task, not a meeting request.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C01",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Optionally add one neutral observation to clarify Bareni's model: 'We work inside your existing tools and hand you the finished code. If the pilot works, you decide whether to expand or build in-house.'",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "Use only Bareni's self-built demos (knowledge assistant, AP automation, Atlas Partner prototypes) as illustrations, never as customer case studies or proof of results. No invented metrics, deployments, or team size beyond 'one-person consulting practice'."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Emphasize human approval for money movement and openly state excluded services (high-sensitivity legal, financial, medical, bulk cold email, unsupported compliance). Position these as current scope discipline."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Maintain the frozen persona: plain-speaking technical expert, founder-to-founder, trustworthy, restrained tone. No hype language. Close with a diagnostic question (P05) instead of a CTA, satisfying the 'CTA rule: None' constraint and L01."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use plain English throughout. Distinguish between the personas/synthesis in the example (fictional German manufacturer in the AP demo) and real capabilities. Position the 8–10 hour pain as a persona scenario, not an observed market result."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-628",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Turn the abstract topic into a bounded Bareni workflow decision. Explain one practical next step."
+          },
+          {
+            "source_id": "C01",
+            "quote": "The intended reader is an owner-operator of a 1–10 person small business."
+          }
+        ],
+        "rationale": "This is a drafting instruction for an opening that reframes the owner-specified topic as a bounded workflow decision; it asserts no current capability or observed result. The framing matches the approved task and audience.",
+        "use_guidance": "Keep as an explicitly proposed opening. Avoid implying the reader has an existing AI workflow or that Bareni has observed such teams; do not imply a multi-person Bareni team when addressing \"your team\"."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "have a frequent, repeatable workflow with a measurable outcome"
+          },
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Prefer concrete mechanisms and measured outcomes."
+          }
+        ],
+        "rationale": "A proposed explanatory threshold and general reasoning for the reader, not an assertion of Bareni implementation or measured outcome. The examples given (invoice processing, inquiry triage) fall within the described service areas.",
+        "use_guidance": "Keep as proposed guidance for the reader. Do not attach any number, saving or benchmark to the \"hidden cost\" point, and keep human approval framed as mandatory for money movement."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C03",
+            "quote": "Self-built demo using entirely synthetic data for a fictional German manufacturer."
+          },
+          {
+            "source_id": "C03",
+            "quote": "Arithmetic checks, duplicate-invoice blocking, amount-based human-only approval, refusal of agent approval/payment attempts, and persistent audit records work."
+          },
+          {
+            "source_id": "C03",
+            "quote": "Text-based LLM invoice extraction was verified, while the default demo uses pre-extracted files. PDF/scan ingestion and OCR are not implemented."
+          }
+        ],
+        "rationale": "The core is supported: the AP demo is self-built on synthetic data and the named controls work. But the claim describes \"extraction\" without the limits that extraction is text-based and the default demo uses pre-extracted files, with no PDF/scan or OCR ingestion — essential for a suggestion to run \"actual invoices\" through it.",
+        "use_guidance": "Add the limitation that extraction is text-based only, the demo default uses pre-extracted files, and PDF/scan/OCR ingestion is not implemented; state the real-invoice batch and time/cost measurement as a proposed pilot step, not a demonstrated result, and avoid any implied saving figure."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Bareni currently declines high-sensitivity medical, legal, and financial work; bulk cold-email automation; scan-heavy OCR-dependent workflows; and requests that require unsupported compliance or security guarantees."
+          },
+          {
+            "source_id": "C02",
+            "quote": "Normal sequence: free 30-minute diagnostic; free one-page pilot proposal;"
+          },
+          {
+            "source_id": "C02",
+            "quote": "Finished code is handed to the customer."
+          },
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          }
+        ],
+        "rationale": "Core elements are supported: OCR/scan-heavy work is declined, human approval is mandatory for money movement, the diagnostic is free and states honestly whether AI fits, the pilot is fixed-price, and finished code is handed over. However the wording presents the exclusions and hand-over as absolutes.",
+        "use_guidance": "Add that these are current scope discipline rather than statements that such work can never be automated, and describe code hand-over and customer-named accounts as policy/no-lock-in positioning rather than a legal warranty; keep fixed price and timings as intended scope, not a guarantee."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "The 8–10 hours is a persona scenario, not a market statistic or observed customer result."
+          },
+          {
+            "source_id": "S01",
+            "quote": "CTA rule:** None."
+          }
+        ],
+        "rationale": "Ending with a diagnostic question instead of a meeting prompt is permissible, but the claim embeds the 8–10 hours figure as if it were the reader's actual situation; the approved evidence allows it only as a persona scenario, not a statistic or observed result.",
+        "use_guidance": "Either drop the figure or mark it explicitly as an illustrative persona scenario rather than a measured or typical result; keep the closing as a neutral diagnostic observation with no invitation to book or talk."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "Bareni works inside the customer's environment and delivers a working system."
+          },
+          {
+            "source_id": "C02",
+            "quote": "Finished code is handed to the customer. Database, automation-tool, and API accounts are in the customer's name from the start. Retainer support is optional."
+          }
+        ],
+        "rationale": "The core — working inside the customer's environment, handing over finished code, and optional continuation — is supported. The unconditional wording still needs framing as policy positioning rather than a guarantee, and \"we\" must not imply a team.",
+        "use_guidance": "Present the hand-over as stated policy and no-lock-in positioning, not an absolute warranty; keep \"we\" as the public voice of a one-person practice being built by the thesis author, and keep the sentence neutral so it does not become a second call to action."
+      }
+    ]
+  },
+  "selected_lessons": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025"
+      ]
+    }
+  ],
+  "register_sha256": "48497afb8641ddc47d974cdfadba06a1f6b562d21c49ec03c9b03a5dc531744e",
+  "planner_key": "SE-FINAL-N059_planner__a001",
+  "researcher_key": "SE-FINAL-N059_researcher__a001",
+  "writer_key": "SE-FINAL-N059_writer__a001",
+  "final_key": "SE-FINAL-N059_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-N059_gate1__a001",
+  "production_completed_at": "2026-09-08T12:44:34.408368+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts"
+}

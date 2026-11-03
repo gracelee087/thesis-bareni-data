@@ -1,0 +1,276 @@
+{
+  "task_id": "SE-FINAL-N024",
+  "batch_id": 1,
+  "condition": "natural",
+  "source_task_id": null,
+  "topic": "when versioned answers stop working",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-324",
+    "title": "When versioned answers stop working",
+    "body": "When your versioned answers start failing, the issue is usually not the wording alone. It is the workflow behind them. FAQ entries, product docs, and customer reply templates stop holding up when customer context changes, questions drift, or the source material ages faster than you can rewrite it. At that point you have a bounded decision to make: keep re-checking and rewriting by hand, hire someone to maintain the material, or automate part of the process.\n\nThe practical test is simple. Pick one recurring question that keeps coming back by email, support ticket, or chat. Count how often the answer needs a manual correction, and note whether the source documents are current, digital, and consistent. If the answer depends on scattered files, scanned pages, or conflicting versions, automation will not fix the source problem. It only helps if there is something stable to retrieve from. That is the unglamorous part, but it saves expensive guessing.\n\nWhere AI can fit is a grounded knowledge assistant: it looks in approved company material first, retrieves the relevant context, and shows sources so you can spot outdated or conflicting information before anything is sent. That is a better fit for repeatable questions than for open-ended judgment calls.\n\nNext step: run a short diagnostic on one workflow, one question set, and one source base. If the material is tidy enough, you can decide whether a pilot is worth defining. If not, keep it manual and save the automation for a better case."
+  },
+  "final": {
+    "item_id": "E-OPT-424",
+    "title": "When versioned answers stop working",
+    "body": "When your versioned answers start failing, the problem is usually not the wording. It is the workflow around them. FAQ entries, product docs, and customer reply templates stop holding up when customer context changes, questions drift, or the source material ages faster than you can rewrite it. That gives you a bounded decision: keep re-checking and rewriting by hand, hire someone to maintain the material, or automate part of the process.\n\nThe practical test is simple. Pick one recurring question that keeps coming back by email, support ticket, or chat. Count how often the answer needs a manual correction, and check whether the source documents are current, digital, and consistent. If the answer depends on scattered files, scanned pages, or conflicting versions, automation will not fix the source problem. It only helps if there is something stable to retrieve from. That is the unglamorous part, but it saves expensive guessing.\n\nWhere AI can fit is a grounded knowledge assistant: it looks in approved company material first, retrieves the relevant context, and shows sources so you can spot outdated or conflicting information before anything is sent. In Bareni’s self-built demo, that retrieval pattern works locally on synthetic data; it is not a customer deployment, and the public route is locked. So the useful question is not “Can AI answer this?” but “Can I give it clean enough source material to answer it safely?”\n\nNext step: run a short diagnostic on one workflow, one question set, and one source base. If the material is tidy enough, you can decide whether a pilot is worth defining. If not, keep it manual and save the automation for a better case."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-024",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-024",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-024-1",
+        "repairs": []
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-024",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-424",
+        "title": "When versioned answers stop working",
+        "body": "When your versioned answers start failing, the problem is usually not the wording. It is the workflow around them. FAQ entries, product docs, and customer reply templates stop holding up when customer context changes, questions drift, or the source material ages faster than you can rewrite it. That gives you a bounded decision: keep re-checking and rewriting by hand, hire someone to maintain the material, or automate part of the process.\n\nThe practical test is simple. Pick one recurring question that keeps coming back by email, support ticket, or chat. Count how often the answer needs a manual correction, and check whether the source documents are current, digital, and consistent. If the answer depends on scattered files, scanned pages, or conflicting versions, automation will not fix the source problem. It only helps if there is something stable to retrieve from. That is the unglamorous part, but it saves expensive guessing.\n\nWhere AI can fit is a grounded knowledge assistant: it looks in approved company material first, retrieves the relevant context, and shows sources so you can spot outdated or conflicting information before anything is sent. In Bareni’s self-built demo, that retrieval pattern works locally on synthetic data; it is not a customer deployment, and the public route is locked. So the useful question is not “Can AI answer this?” but “Can I give it clean enough source material to answer it safely?”\n\nNext step: run a short diagnostic on one workflow, one question set, and one source base. If the material is tidy enough, you can decide whether a pilot is worth defining. If not, keep it manual and save the automation for a better case."
+      },
+      "gate_key": "SE-FINAL-N024_gate1__a001"
+    }
+  ],
+  "measurement_status": "pending",
+  "planner": {
+    "item_id": "E-PLAN-524",
+    "selected_lessons": [],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Define the bounded workflow decision: versioned answers (e.g., FAQ entries, product documentation, or customer response templates) stop working when customer context changes, questions diverge, or information ages. Identify this as a recurring, measurable workflow problem—not a hypothetical.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Explain the owner's current decision: continue manual re-checking and re-writing of versioned answers, hire someone to maintain them, or automate. Anchor the choice to the owner's time cost, hiring cost, and the measurable frequency of answer failures.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Describe how a grounded knowledge assistant (RAG-based) fits this workflow: ingest current company documents and customer-specific context; retrieve relevant material before answering; show sources so the owner can spot outdated or conflicting information; regenerate answers from live data instead of static templates.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C03"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "State the honest boundary: versioned answers work best when the underlying source material is kept current and documents are stored digitally. If the owner's documents are scattered, manually updated, or frequently contradictory, the automation solves retrieval but not the source problem.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C04",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Propose the practical next step: a free 30-minute diagnostic call to map which recurring questions fail most often, whether the source documents are stable enough to automate, and whether the owner's workflow (customer questions via email, support tickets, or chat) suits a knowledge assistant. Do not assume fit without inspection.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Close with a factual, non-pressured statement: if fit is confirmed, a pilot proposal follows within one week, and a working MVP can be delivered in days. The owner maintains full control of documents and data; no lock-in. If AI does not suit the problem, say so directly.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04",
+          "C05"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No invented customers, deployments, outcomes, numbers, multi-person team, or sales CTA. All claims tie to self-built demos or stated scope. Diagnostic is framed as an honest inspection, not a sales funnel."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Knowledge assistant is read-only and retrieval-based; no autonomous answer changes or money movement. Owner maintains document control and approval authority."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Persona is founder-to-founder, technical, restrained, and plain-speaking. Evidence status (self-built demo, not production) is disclosed. Human authority over business decisions is preserved throughout."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Plain English throughout. Self-built demo, synthetic data, and current scope limits are kept distinct from hypothetical future capabilities. Examples stay grounded in the stated workflow."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-624",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "The representative pains are 8–10 hours a week of repeated customer questions, neglected sales leads,\n  and manual invoice/data work. The 8–10 hours is a persona scenario, not a market\n  statistic or observed customer result."
+          },
+          {
+            "source_id": "C01",
+            "quote": "have a frequent, repeatable workflow with a\n  measurable outcome"
+          }
+        ],
+        "rationale": "Approved evidence supports repeated customer questions as a representative recurring pain and supports framing fit around a frequent, repeatable workflow with a measurable outcome. But the pain is an explicitly persona-level scenario, so asserting it is \"not a hypothetical\" as a general current fact overstates the evidence; no approved source reports observed answer-failure frequency.",
+        "use_guidance": "Add the qualification that this is a persona/representative scenario for a 1–10-person business, not an observed customer measurement; state that frequency becomes measurable only once the owner counts it in their own workflow."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "A\n  representative scenario is a six-person D2C online shop whose owner compares an\n  automation investment with the cost of another hire."
+          },
+          {
+            "source_id": "S01",
+            "quote": "the owner compares a bounded automation investment with continuing\n  manual work or hiring; final approval and business authority remain human"
+          }
+        ],
+        "rationale": "The manual-versus-hire-versus-automate framing is supported as the decision context. However, the claim anchors the choice to time cost, hiring cost and measured failure frequency, which are not supported by any approved figure.",
+        "use_guidance": "Keep the three-way choice, but present it as the reader's own inputs to gather; do not state or imply any hours, salary, cost or failure-rate number, and note the owner keeps final approval."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C03",
+            "quote": "It can ingest MD, PDF, and\n  URL content; perform vector search and reranking; generate grounded LLM answers;\n  and show sources. It works end to end locally, but the deployed public route is\n  locked."
+          },
+          {
+            "source_id": "C03",
+            "quote": "RAG means retrieving relevant approved company documents before answering; in\n  plain terms, the assistant looks in company material rather than the open web."
+          },
+          {
+            "source_id": "C03",
+            "quote": "Never imply production operation, customer validation, real customer documents,\n  billing, rate limiting, or proven scale."
+          }
+        ],
+        "rationale": "Ingestion, retrieval, grounded answers and source display are supported as features of a self-built local demo using synthetic Acme Shop data. The claim as written describes these capabilities applied to the owner's workflow without disclosing the demo status, local-only end-to-end operation, and absence of real customer documents.",
+        "use_guidance": "State that this is Bareni's self-built local demo on synthetic data with the public route locked; describe live-document use as the intended pilot design rather than a demonstrated deployment, and explain RAG in one plain sentence."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "Especially suitable businesses already work in English, use digital\n  documents and SaaS tools"
+          },
+          {
+            "source_id": "C04",
+            "quote": "Bareni currently declines high-sensitivity medical, legal, and financial work;\n  bulk cold-email automation; scan-heavy OCR-dependent workflows"
+          },
+          {
+            "source_id": "C03",
+            "quote": "PDF/scan ingestion and OCR are not implemented."
+          }
+        ],
+        "rationale": "The core honesty boundary is supported: digital documents are a fit condition, and scan-heavy OCR-dependent work is currently out of scope, so retrieval cannot fix a broken source base. The claim omits the explicit current scope exclusion that makes the limit concrete.",
+        "use_guidance": "Add that Bareni currently declines scan-heavy, OCR-dependent workflows as current scope discipline (not a permanent judgement that such work cannot be automated), and keep the point that retrieval does not repair contradictory or unmaintained source material."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "Normal sequence: free 30-minute diagnostic; free one-page pilot proposal;\n  paid working MVP in days; fixed-price pilot in weeks"
+          },
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI\n  fits, and—if it does—defines pilot scope, fixed price, and measures."
+          },
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          }
+        ],
+        "rationale": "This is a recommended next step and set of diagnostic questions, not an assertion of implementation or customer use. The free 30-minute diagnostic and its honest fit assessment are permitted service scope.",
+        "use_guidance": "Keep as an explicitly proposed next step and diagnostic question set. Because the task sets the CTA rule to none, do not render it as the standard \"Book a free 30-minute diagnostic\" call to action; mention the diagnostic descriptively at most, without urgency or scarcity."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "FORBIDDEN",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "free one-page pilot proposal;\n  paid working MVP in days; fixed-price pilot in weeks; then expansion and an\n  optional retainer. Do not insert a mandatory roadmap gate or separate \"formal\n  build\" stage. Timings are intended scopes, not guarantees."
+          },
+          {
+            "source_id": "C02",
+            "quote": "Finished code is handed to the customer. Database, automation-tool, and API\n  accounts are in the customer's name from the start. Retainer support is optional.\n  Describe this as policy and no-lock-in positioning, not an absolute legal warranty."
+          }
+        ],
+        "rationale": "Two core assertions fail. \"A pilot proposal follows within one week\" has no approved support; no source states a one-week proposal turnaround. \"A working MVP can be delivered in days\" and \"full control ... no lock-in\" are stated as commitments, whereas evidence requires timings to be intended scopes rather than guarantees and no-lock-in to be described as policy, not an absolute warranty. These reversals cannot be repaired by a qualification.",
+        "use_guidance": "Exclude the one-week proposal timing entirely. If a close is needed, use the separately supported wording: a free one-page pilot proposal, then a paid working MVP whose timings are intended scopes and not guarantees, with customer-named accounts and handed-over code described as Bareni policy and no-lock-in positioning. Retain the honest \"if AI does not fit, we say so\" point, which is supported by the diagnostic description."
+      }
+    ]
+  },
+  "selected_lessons": [],
+  "register_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "planner_key": "SE-FINAL-N024_planner__a001",
+  "researcher_key": "SE-FINAL-N024_researcher__a001",
+  "writer_key": "SE-FINAL-N024_writer__a001",
+  "final_key": "SE-FINAL-N024_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-N024_gate1__a001",
+  "production_completed_at": "2026-09-08T12:22:55.511529+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts"
+}

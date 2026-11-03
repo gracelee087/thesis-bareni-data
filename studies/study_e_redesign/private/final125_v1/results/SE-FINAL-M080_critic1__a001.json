@@ -1,0 +1,240 @@
+{
+  "status": "success",
+  "usage": {
+    "input_tokens": 4573,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 168,
+    "reasoning_tokens": 0
+  },
+  "cost_usd": 0.00418575,
+  "output": {
+    "item_id": "E-CRIT-BLIND-080-1",
+    "repairs": [
+      {
+        "repair_id": "P01",
+        "target_ids": [
+          "D01"
+        ],
+        "instruction": "Replace the enterprise framing with the frozen audience: address an English-speaking owner-operator of a 1–10-person small business, not a multinational board or governance committee.",
+        "source_ids": [
+          "BRIEF",
+          "C01",
+          "S01"
+        ]
+      },
+      {
+        "repair_id": "P02",
+        "target_ids": [
+          "D02"
+        ],
+        "instruction": "Rewrite the closing next step as a bounded small-business decision: define one recurring workflow, list which tools or people touch the data, and decide whether the subprocessor list is acceptable before automation; avoid an enterprise pilot or customer-approval framing.",
+        "source_ids": [
+          "BRIEF",
+          "C01",
+          "S01"
+        ]
+      }
+    ]
+  },
+  "raw_text": "{\"item_id\":\"E-CRIT-BLIND-080-1\",\"repairs\":[{\"repair_id\":\"P01\",\"target_ids\":[\"D01\"],\"instruction\":\"Replace the enterprise framing with the frozen audience: address an English-speaking owner-operator of a 1–10-person small business, not a multinational board or governance committee.\",\"source_ids\":[\"BRIEF\",\"C01\",\"S01\"]},{\"repair_id\":\"P02\",\"target_ids\":[\"D02\"],\"instruction\":\"Rewrite the closing next step as a bounded small-business decision: define one recurring workflow, list which tools or people touch the data, and decide whether the subprocessor list is acceptable before automation; avoid an enterprise pilot or customer-approval framing.\",\"source_ids\":[\"BRIEF\",\"C01\",\"S01\"]}]}",
+  "provider_response": {
+    "id": "resp_0e970c31c397e72d016aa010b3b4e487d2a33c88f0812d3c4f",
+    "created_at": 1788874931.0,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": {},
+    "model": "gpt-5.4-mini-2026-03-17",
+    "object": "response",
+    "output": [
+      {
+        "id": "msg_0e970c31c397e72d016aa010b41c7487d2bac952855dafa501",
+        "content": [
+          {
+            "annotations": [],
+            "text": "{\"item_id\":\"E-CRIT-BLIND-080-1\",\"repairs\":[{\"repair_id\":\"P01\",\"target_ids\":[\"D01\"],\"instruction\":\"Replace the enterprise framing with the frozen audience: address an English-speaking owner-operator of a 1–10-person small business, not a multinational board or governance committee.\",\"source_ids\":[\"BRIEF\",\"C01\",\"S01\"]},{\"repair_id\":\"P02\",\"target_ids\":[\"D02\"],\"instruction\":\"Rewrite the closing next step as a bounded small-business decision: define one recurring workflow, list which tools or people touch the data, and decide whether the subprocessor list is acceptable before automation; avoid an enterprise pilot or customer-approval framing.\",\"source_ids\":[\"BRIEF\",\"C01\",\"S01\"]}]}",
+            "type": "output_text",
+            "logprobs": []
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message",
+        "phase": "final_answer"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 1.0,
+    "tool_choice": "auto",
+    "tools": [],
+    "top_p": 0.98,
+    "background": false,
+    "completed_at": 1788874933.0,
+    "conversation": null,
+    "max_output_tokens": 2048,
+    "max_tool_calls": null,
+    "moderation": null,
+    "previous_response_id": null,
+    "prompt": null,
+    "prompt_cache_key": null,
+    "prompt_cache_options": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "generate_summary": null,
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "status": "completed",
+    "text": {
+      "format": {
+        "name": "study_e_role",
+        "schema_": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "item_id": {
+              "type": "string",
+              "enum": [
+                "E-CRIT-BLIND-080-1"
+              ]
+            },
+            "repairs": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "repair_id": {
+                    "type": "string",
+                    "enum": [
+                      "P01",
+                      "P02",
+                      "P03",
+                      "P04"
+                    ]
+                  },
+                  "target_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "enum": [
+                        "D01",
+                        "D02"
+                      ]
+                    }
+                  },
+                  "instruction": {
+                    "type": "string"
+                  },
+                  "source_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "enum": [
+                        "C01",
+                        "C02",
+                        "C03",
+                        "C04",
+                        "C05",
+                        "S01",
+                        "BRIEF"
+                      ]
+                    }
+                  }
+                },
+                "required": [
+                  "repair_id",
+                  "target_ids",
+                  "instruction",
+                  "source_ids"
+                ]
+              }
+            }
+          },
+          "required": [
+            "item_id",
+            "repairs"
+          ]
+        },
+        "type": "json_schema",
+        "description": null,
+        "strict": true
+      },
+      "verbosity": "medium"
+    },
+    "top_logprobs": 0,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 4573,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 168,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 4741
+    },
+    "user": null,
+    "billing": {
+      "payer": "developer"
+    },
+    "frequency_penalty": 0.0,
+    "presence_penalty": 0.0,
+    "store": false,
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    }
+  },
+  "stop_reason": "completed",
+  "cost_details": {
+    "input": 0.00342975,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.000756,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.00418575
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": "default",
+  "key": "SE-FINAL-M080_critic1__a001",
+  "role": "critic",
+  "created_at": "2026-09-08T13:42:11.984696+00:00",
+  "ended_at": "2026-09-08T13:42:13.899579+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-M080",
+    "batch_id": 3,
+    "condition": "wrong_audience",
+    "cohort": "mixed",
+    "input_manifest_sha256": "bdd969d7efbcd68dd7c670e282a2464cf4cc46e782a49d0d3d8e8f8c5ef0b67e"
+  },
+  "task_id": "SE-FINAL-M080",
+  "batch_id": 3,
+  "cohort": "mixed",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 1911,
+  "budget_charge_usd": 0.00418575,
+  "unknown_cost_reservation_usd": 0
+}

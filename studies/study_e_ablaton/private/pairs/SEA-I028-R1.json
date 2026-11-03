@@ -1,0 +1,95 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I028-R1",
+    "item_id": "SEA-I028",
+    "repeat": 1,
+    "arm_order": [
+      "critic_on",
+      "critic_off"
+    ],
+    "content_id": "POST-12a795ec2233740fdc0f126a"
+  },
+  "arms": {
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-12a795ec2233740fdc0f126a-1",
+        "title": "When AI disclosure stops helping",
+        "body": "For a small business owner, the useful question is not whether to disclose AI everywhere. It is where disclosure still helps and where it starts getting in the way.\n\nA simple rule: disclose AI in low-risk drafting or internal work, but stop relying on disclosure as the fix once the work affects customer trust, money movement, or a final decision. At that point, the real issue is usually not the wording of the disclosure. It is the workflow.\n\nSo the next step is to trace one recurring task and ask: does the problem go away if you remove the disclosure line, or does the output still need a human check, a clearer approval step, or a different process altogether? That answer tells you whether you need a messaging change or a workflow change.\n\nIf the work is customer-facing or high-risk, keep human review in place. AI can help backstage. It should not be asked to carry the whole decision. Sometimes the honest answer is that the helpful part stopped at the draft."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-12a795ec2233740fdc0f126a-1",
+            "title": "When AI disclosure stops helping",
+            "body": "For a small business owner, the useful question is not whether to disclose AI everywhere. It is where disclosure still helps and where it starts getting in the way.\n\nA simple rule: disclose AI in low-risk drafting or internal work, but stop relying on disclosure as the fix once the work affects customer trust, money movement, or a final decision. At that point, the real issue is usually not the wording of the disclosure. It is the workflow.\n\nSo the next step is to trace one recurring task and ask: does the problem go away if you remove the disclosure line, or does the output still need a human check, a clearer approval step, or a different process altogether? That answer tells you whether you need a messaging change or a workflow change.\n\nIf the work is customer-facing or high-risk, keep human review in place. AI can help backstage. It should not be asked to carry the whole decision. Sometimes the honest answer is that the helpful part stopped at the draft."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-12a795ec2233740fdc0f126a-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": [
+            {
+              "repair_id": "P01",
+              "target_ids": [
+                "D01",
+                "D03"
+              ],
+              "instruction": "Replace the abstract closing with one concrete owner-operator workflow decision and a practical next step, such as: when AI disclosure stops helping a small business, use it only for low-risk internal drafting and move to human review or no-AI handling once the work affects customer trust, money movement, or final decisions.",
+              "source_ids": [
+                "BRIEF",
+                "S01",
+                "C01",
+                "C04"
+              ]
+            },
+            {
+              "repair_id": "P02",
+              "target_ids": [
+                "D02"
+              ],
+              "instruction": "Tighten the body so the main point is explicit in the first half: state the specific decision threshold, then briefly explain it in plain English; remove or shorten lines that only restate uncertainty without advancing the decision.",
+              "source_ids": [
+                "BRIEF",
+                "S01",
+                "C05"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-12a795ec2233740fdc0f126a-1",
+        "title": "When AI disclosure stops helping",
+        "body": "If you already tell customers that AI is involved, the next question is not whether disclosure sounds honest. It is whether the disclosure is solving the real problem.\n\nFor a small business owner, I would treat this as a workflow check: does the AI note itself create friction, or is the issue the quality, speed, or format of the output? If removing the disclosure line does not fix the problem, then disclosure is not the bottleneck. The workflow is.\n\nThat matters because AI can be useful backstage even when it should not be customer-facing. One practical next step is to map the recurring task, then split it into two parts: what AI can pre-sort, draft, or extract; and what a human must review before anything goes out. If the task involves money or another high-risk decision, human approval stays mandatory.\n\nSo the useful threshold is simple: when disclosure keeps getting in the way, check whether you need a different process, not a better disclaimer. The build stays technical; the decision stays human."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-12a795ec2233740fdc0f126a-1",
+            "title": "When AI disclosure stops helping",
+            "body": "If you already tell customers that AI is involved, the next question is not whether disclosure sounds honest. It is whether the disclosure is solving the real problem.\n\nFor a small business owner, I would treat this as a workflow check: does the AI note itself create friction, or is the issue the quality, speed, or format of the output? If removing the disclosure line does not fix the problem, then disclosure is not the bottleneck. The workflow is.\n\nThat matters because AI can be useful backstage even when it should not be customer-facing. One practical next step is to map the recurring task, then split it into two parts: what AI can pre-sort, draft, or extract; and what a human must review before anything goes out. If the task involves money or another high-risk decision, human approval stays mandatory.\n\nSo the useful threshold is simple: when disclosure keeps getting in the way, check whether you need a different process, not a better disclaimer. The build stays technical; the decision stays human."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-12a795ec2233740fdc0f126a-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

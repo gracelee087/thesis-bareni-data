@@ -1,0 +1,341 @@
+{
+  "task_id": "SE-FINAL-N042",
+  "batch_id": 2,
+  "condition": "natural",
+  "source_task_id": null,
+  "topic": "why stopping rules are not enough",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-311",
+    "title": "Why stopping rules are not enough in small-business workflows",
+    "body": "Stopping rules sound neat until you meet the real workflow. In a small business, the problem is usually not the first rule. It is the exception: the invoice that is over the usual amount, the customer record that is incomplete, the lead that looks promising but needs a human eye. A simple if-then rule can stop work, but it can also stop the wrong work or let the wrong thing through. That is why a bounded automation decision should start with the exception path, not the happy path.\n\nThe practical question is simple: in your repeated workflow, what judgment calls do you keep making by hand that a fixed rule would miss? If the answer is “almost none,” AI may not be worth the trouble. If the answer is “quite a few,” the next step is to map those exceptions on one page. Mark which ones are safe to route to a person, which ones can be checked automatically, and which ones must never be auto-approved.\n\nThat distinction matters most where money is involved. Bareni’s boundary is clear: human approval stays in place for payments and other high-risk decisions. The system can flag, sort, and prepare work; it should not quietly decide on the risky bit. Less glamorous, more useful. Usually the right choice.\n\nIf your workflow lives in digital documents and SaaS tools, and it repeats often enough to have a measurable outcome, that one-page exception map is the right starting point. It gives you a grounded decision: keep it manual, hire for it, or automate only the parts that do not need judgment."
+  },
+  "final": {
+    "item_id": "E-OPT-411",
+    "title": "Why stopping rules are not enough",
+    "body": "Stopping rules sound tidy until you meet the real workflow. In a small business, the hard part is often not the first rule. It is the exception: the invoice that is over the usual amount, the customer record that is incomplete, the lead that looks promising but still needs a human eye. A simple if-then rule can stop work, but it can also stop the wrong work or let the wrong thing through. So the bounded automation decision should start with the exception path, not the happy path.\n\nThe practical question is simple: in your repeated workflow, what judgment calls do you still make by hand that a fixed rule would miss? If the answer is “almost none,” AI probably is not worth the trouble. If the answer is “quite a few,” map those exceptions on one page. Mark which ones are safe to route to a person, which ones can be checked automatically, and which ones must never be auto-approved.\n\nThat distinction matters most where money is involved. Human approval stays in place for payments and other high-risk decisions. In Bareni’s self-built accounts-payable demo, that boundary is shown with synthetic data and a simulated blocked payment, not a real transfer. The point is not to let software quietly decide the risky bit. Less glamorous, more useful. Usually the right choice.\n\nIf your workflow lives in digital documents and SaaS tools, and it repeats often enough to have a measurable outcome, that one-page exception map is the next practical step. It helps you decide whether to keep it manual, hire for it, or automate only the parts that do not need judgment."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-042",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-042",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-042-1",
+        "repairs": []
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-042",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-411",
+        "title": "Why stopping rules are not enough",
+        "body": "Stopping rules sound tidy until you meet the real workflow. In a small business, the hard part is often not the first rule. It is the exception: the invoice that is over the usual amount, the customer record that is incomplete, the lead that looks promising but still needs a human eye. A simple if-then rule can stop work, but it can also stop the wrong work or let the wrong thing through. So the bounded automation decision should start with the exception path, not the happy path.\n\nThe practical question is simple: in your repeated workflow, what judgment calls do you still make by hand that a fixed rule would miss? If the answer is “almost none,” AI probably is not worth the trouble. If the answer is “quite a few,” map those exceptions on one page. Mark which ones are safe to route to a person, which ones can be checked automatically, and which ones must never be auto-approved.\n\nThat distinction matters most where money is involved. Human approval stays in place for payments and other high-risk decisions. In Bareni’s self-built accounts-payable demo, that boundary is shown with synthetic data and a simulated blocked payment, not a real transfer. The point is not to let software quietly decide the risky bit. Less glamorous, more useful. Usually the right choice.\n\nIf your workflow lives in digital documents and SaaS tools, and it repeats often enough to have a measurable outcome, that one-page exception map is the next practical step. It helps you decide whether to keep it manual, hire for it, or automate only the parts that do not need judgment."
+      },
+      "gate_key": "SE-FINAL-N042_gate1__a001"
+    }
+  ],
+  "measurement_status": "complete",
+  "planner": {
+    "item_id": "E-PLAN-511",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task specifies CTA rule: None. L01 clarifies that informational content about stopping rules and workflow diagnosis should end with a practical observation or next-step note, not a booking prompt. This applies directly to the LinkedIn post format (CF-04, PF-02_workflow_diagnosis) which is inherently informational."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Open with the concrete workflow problem: stopping rules (if-then logic) alone cannot reliably handle edge cases in recurring business tasks. Ground this in the owner's decision context—comparing manual work, a hire, or bounded automation—not in hype.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C01",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Explain one specific diagnostic question the owner should ask: \"In my repeated workflow, what exceptions or judgment calls happen that a simple rule would miss?\" Use a generic example (e.g., invoice amount thresholds, customer-status checks) relatable to a 1-10-person business.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Describe how human-in-the-loop automation handles this better than stopping rules alone: a system flags exceptions for human review rather than blocking or auto-approving risky decisions. Reference Bareni's demonstrated boundary: human approval is mandatory for money movement and high-risk decisions.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Name one practical threshold the owner can observe to spot whether AI fit is worth exploring: a recurring task with 8–10 hours/week of manual work, clear success measure (e.g., flagged invoices, answered questions), and existing digital documents or SaaS tools.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Explain the next step without a CTA: audit one workflow for exceptions that stopping rules miss, then decide whether a diagnostic conversation is worth your time. Offer no scarcity signal or pressure.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C05",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Close with a single restrained observation about the decision context: e.g., 'The cost of a wrong rule can outweigh the cost of asking a human' or similar measured framing. Keep tone founder-to-founder and technical, not promotional.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C05"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No customer names, deployments, outcomes, saved hours, revenue lift, or invented team scale. Use only self-built demo examples and generic workflow scenarios."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Reinforce human approval requirement for money movement (invoices, payments). Omit excluded services (medical, legal, bulk cold email, heavy OCR). Do not imply autonomous financial decisions."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Maintain frozen persona voice (plain-speaking technical expert, founder-to-founder, trust over enthusiasm). Keep Bareni identity as employee-free consulting practice being built by thesis author. No CTA: close with practical next-step note."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use concrete diagnostic questions and thresholds (e.g., 8–10 hours/week, existing digital documents). Mark generic examples as examples, not customer results. Keep stopping rules and human judgment as abstract concepts, not product claims."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-611",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Owner-specified abstract topic:** why stopping rules are not enough"
+          },
+          {
+            "source_id": "C01",
+            "quote": "A representative scenario is a six-person D2C online shop whose owner compares an\n  automation investment with the cost of another hire."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Never use revolutionary, 10x, game-changing, cutting-edge, unleash, supercharge,\n  magic, or equivalent hype."
+          }
+        ],
+        "rationale": "This is a drafting instruction for the opening, framed against the approved owner decision context and no-hype voice rule, not an assertion of a current capability or observed result.",
+        "use_guidance": "Keep as a planned instruction. Present the owner's comparison (manual work, a hire, bounded automation) as a representative decision context, not as a market statistic or observed customer situation."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Practicality: explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step."
+          },
+          {
+            "source_id": "C03",
+            "quote": "Arithmetic checks, duplicate-invoice blocking, amount-based human-only approval,"
+          }
+        ],
+        "rationale": "A diagnostic question plus a generic illustrative example is an instruction/proposal; the persona focus explicitly permits one diagnostic question.",
+        "use_guidance": "Keep explicitly generic. Label invoice thresholds or customer-status checks as illustrative examples, not as a built Bareni feature or an observed customer workflow."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C03",
+            "quote": "amount-based human-only approval,\n  refusal of agent approval/payment attempts, and persistent audit records work"
+          },
+          {
+            "source_id": "C03",
+            "quote": "The blocked payment demonstration is a manual trigger and simulated, not a real\n  transfer."
+          }
+        ],
+        "rationale": "The human-approval boundary and exception-handling controls are supported, but the claim calls them 'demonstrated' without stating that the demonstration is a self-built demo on entirely synthetic data with a simulated, manually triggered blocked payment.",
+        "use_guidance": "Add the qualification: the controls were shown in Bareni's self-built accounts-payable demo using entirely synthetic data, the blocked payment is a manual, simulated trigger, and no real transfer or customer deployment is implied. Also avoid implying comparative performance ('handles this better') as an observed result; frame it as a design choice."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "FORBIDDEN",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "The 8–10 hours is a persona scenario, not a market\n  statistic or observed customer result."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Numbers require a source and status."
+          }
+        ],
+        "rationale": "Presenting 8–10 hours/week as an observable threshold that indicates AI fit converts a persona scenario into a decision benchmark, which approved evidence explicitly forbids; the number's core use here is unsupported.",
+        "use_guidance": "Exclude the 8–10 hours figure as a fit threshold. Instead use the separately supported fit signals: the business already works in English, uses digital documents and SaaS tools, and has a frequent, repeatable workflow with a measurable outcome. This is not approval of the numeric threshold."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Task:** Turn the abstract topic into a bounded Bareni workflow decision. Explain one practical next step."
+          },
+          {
+            "source_id": "S01",
+            "quote": "CTA rule:** None."
+          }
+        ],
+        "rationale": "A manual next step (audit one workflow) with no CTA is a permissible proposal for the reader, not a factual assertion.",
+        "use_guidance": "Keep as a proposed manual next step. Per lesson guidance, do not phrase it as an invitation to book, discuss, or continue the conversation; the 'decide whether a diagnostic conversation is worth your time' wording should be replaced with a neutral practical observation, since any meeting prompt counts as an unauthorised CTA. No scarcity or capacity line."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C05",
+            "quote": "Trust outranks friendliness. At most one restrained dry-humour or understatement\n  sentence per post."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Sound like a technical expert using plain language: direct, calm, practical,\n  founder-to-founder, and trustworthy."
+          }
+        ],
+        "rationale": "This is a style instruction for a closing observation, not a factual claim about Bareni or any outcome.",
+        "use_guidance": "Keep as a proposed closing line. Keep it qualitative with no implied cost, saving, or ROI figure, at most one understated sentence, and no promotional or CTA wording."
+      }
+    ]
+  },
+  "selected_lessons": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025"
+      ]
+    }
+  ],
+  "register_sha256": "48497afb8641ddc47d974cdfadba06a1f6b562d21c49ec03c9b03a5dc531744e",
+  "planner_key": "SE-FINAL-N042_planner__a001",
+  "researcher_key": "SE-FINAL-N042_researcher__a001",
+  "writer_key": "SE-FINAL-N042_writer__a001",
+  "final_key": "SE-FINAL-N042_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-N042_gate1__a001",
+  "production_completed_at": "2026-09-08T12:35:13.950485+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts",
+  "initial_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-042",
+    "scores": {
+      "persona_fit": 5,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Directly speaks to small-business owner-operators in Bareni's calm, practical voice, correctly enforces human approval boundaries, and strictly obeys the no-CTA brief.",
+      "clarity": "Logical and immediately clear, turning the abstract topic into an intuitive discussion of exception handling with clean transitions and plain language.",
+      "actionability": "Provides a practical diagnostic question and a concrete one-page exception-mapping exercise to evaluate automation suitability and human checkpoints.",
+      "factual_grounding": "Fully grounded in approved Bareni principles and operating boundaries without fabricating customers, metrics, or capabilities."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 20,
+    "pass": true,
+    "low_quality": false
+  },
+  "final_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-042",
+    "scores": {
+      "persona_fit": 5,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Directly addresses small-business owner-operators in Bareni's calm, practical tone. Respects human approval boundaries, persona context, and the no-CTA brief instruction.",
+      "clarity": "Logical, well-structured explanation of exception handling in workflows, moving clearly from the core problem to a concrete diagnostic step.",
+      "actionability": "Provides an immediate, highly actionable exercise: creating a one-page exception map to determine whether automation, hiring, or manual work is appropriate.",
+      "factual_grounding": "Accurately references the accounts-payable demo with appropriate qualifications, explicitly noting synthetic data and a simulated transfer without overstating capabilities."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 20,
+    "pass": true,
+    "low_quality": false
+  },
+  "evaluation_reused": false,
+  "evaluation_keys": [
+    "SE-FINAL-N042_eval_initial__a001",
+    "SE-FINAL-N042_eval_final__a001"
+  ],
+  "completed_at": "2026-09-08T12:35:24.785042+00:00"
+}

@@ -1,0 +1,170 @@
+{
+  "status": "success",
+  "usage": {
+    "input_tokens": 5248,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 351,
+    "reasoning_tokens": 0
+  },
+  "cost_usd": 0.0055155,
+  "output": {
+    "item_id": "E-OPT-422",
+    "title": "Treat data cleaning as a workflow boundary, not a feature",
+    "body": "If you run a small business, data cleaning is rarely the real problem. The real question is whether a recurring workflow can only work if the input data is clean enough to trust. That is a design constraint, not a tool choice.\n\nFor example, if invoices, customer records, or form replies arrive in a predictable format, then you can decide what must be checked before anything downstream happens. If the inputs are messy and the success rule is unclear, AI is usually the wrong place to start. In that case, manual cleaning or no automation at all may be the more honest choice. Fancy software is not a substitute for a missing rulebook. Regrettably, it cannot guess your tolerance for bad data.\n\nBareni’s diagnostic approach is simple: name the one recurring workflow, describe the input structure, and write down the quality rule that matters. For a payables process, that rule might be a basic check such as amount, supplier, and reference matching before a human approves anything. The approval stays human, especially where money or other high-risk decisions are involved.\n\nThat is also why the working examples we built are framed as controls, not magic: the knowledge assistant works with approved material, and the accounts-payable demo uses checks and human-only approval rules on synthetic data. They are examples of how to think about control, not proof of a customer-ready system.\n\nOne practical next step: pick one repeated workflow and ask, “Does this happen the same way every week, and can I write the quality rules in plain English?”"
+  },
+  "raw_text": "{\"item_id\":\"E-OPT-422\",\"title\":\"Treat data cleaning as a workflow boundary, not a feature\",\"body\":\"If you run a small business, data cleaning is rarely the real problem. The real question is whether a recurring workflow can only work if the input data is clean enough to trust. That is a design constraint, not a tool choice.\\n\\nFor example, if invoices, customer records, or form replies arrive in a predictable format, then you can decide what must be checked before anything downstream happens. If the inputs are messy and the success rule is unclear, AI is usually the wrong place to start. In that case, manual cleaning or no automation at all may be the more honest choice. Fancy software is not a substitute for a missing rulebook. Regrettably, it cannot guess your tolerance for bad data.\\n\\nBareni’s diagnostic approach is simple: name the one recurring workflow, describe the input structure, and write down the quality rule that matters. For a payables process, that rule might be a basic check such as amount, supplier, and reference matching before a human approves anything. The approval stays human, especially where money or other high-risk decisions are involved.\\n\\nThat is also why the working examples we built are framed as controls, not magic: the knowledge assistant works with approved material, and the accounts-payable demo uses checks and human-only approval rules on synthetic data. They are examples of how to think about control, not proof of a customer-ready system.\\n\\nOne practical next step: pick one repeated workflow and ask, “Does this happen the same way every week, and can I write the quality rules in plain English?”\"}",
+  "provider_response": {
+    "id": "resp_006c463ee7e2caa3016aa006d8c88887d2bb33919e3190bce7",
+    "created_at": 1788872408.0,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": {},
+    "model": "gpt-5.4-mini-2026-03-17",
+    "object": "response",
+    "output": [
+      {
+        "id": "msg_006c463ee7e2caa3016aa006d91a8c87d2a2ab0d1b76f58630",
+        "content": [
+          {
+            "annotations": [],
+            "text": "{\"item_id\":\"E-OPT-422\",\"title\":\"Treat data cleaning as a workflow boundary, not a feature\",\"body\":\"If you run a small business, data cleaning is rarely the real problem. The real question is whether a recurring workflow can only work if the input data is clean enough to trust. That is a design constraint, not a tool choice.\\n\\nFor example, if invoices, customer records, or form replies arrive in a predictable format, then you can decide what must be checked before anything downstream happens. If the inputs are messy and the success rule is unclear, AI is usually the wrong place to start. In that case, manual cleaning or no automation at all may be the more honest choice. Fancy software is not a substitute for a missing rulebook. Regrettably, it cannot guess your tolerance for bad data.\\n\\nBareni’s diagnostic approach is simple: name the one recurring workflow, describe the input structure, and write down the quality rule that matters. For a payables process, that rule might be a basic check such as amount, supplier, and reference matching before a human approves anything. The approval stays human, especially where money or other high-risk decisions are involved.\\n\\nThat is also why the working examples we built are framed as controls, not magic: the knowledge assistant works with approved material, and the accounts-payable demo uses checks and human-only approval rules on synthetic data. They are examples of how to think about control, not proof of a customer-ready system.\\n\\nOne practical next step: pick one repeated workflow and ask, “Does this happen the same way every week, and can I write the quality rules in plain English?”\"}",
+            "type": "output_text",
+            "logprobs": []
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message",
+        "phase": "final_answer"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 1.0,
+    "tool_choice": "auto",
+    "tools": [],
+    "top_p": 0.98,
+    "background": false,
+    "completed_at": 1788872412.0,
+    "conversation": null,
+    "max_output_tokens": 1024,
+    "max_tool_calls": null,
+    "moderation": null,
+    "previous_response_id": null,
+    "prompt": null,
+    "prompt_cache_key": null,
+    "prompt_cache_options": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "generate_summary": null,
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "status": "completed",
+    "text": {
+      "format": {
+        "name": "study_e_post",
+        "schema_": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "item_id": {
+              "type": "string",
+              "enum": [
+                "E-OPT-422"
+              ]
+            },
+            "title": {
+              "type": "string"
+            },
+            "body": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "item_id",
+            "title",
+            "body"
+          ]
+        },
+        "type": "json_schema",
+        "description": null,
+        "strict": true
+      },
+      "verbosity": "medium"
+    },
+    "top_logprobs": 0,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 5248,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 351,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 5599
+    },
+    "user": null,
+    "billing": {
+      "payer": "developer"
+    },
+    "frequency_penalty": 0.0,
+    "presence_penalty": 0.0,
+    "store": false,
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    }
+  },
+  "stop_reason": "completed",
+  "cost_details": {
+    "input": 0.003936,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.0015795,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.0055155
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": "default",
+  "key": "SE-FINAL-N084_optimizer1__a001",
+  "role": "optimizer",
+  "created_at": "2026-09-08T13:00:09.040762+00:00",
+  "ended_at": "2026-09-08T13:00:12.615458+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-N084",
+    "batch_id": 3,
+    "condition": "natural",
+    "cohort": "natural"
+  },
+  "task_id": "SE-FINAL-N084",
+  "batch_id": 3,
+  "cohort": "natural",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 3570,
+  "budget_charge_usd": 0.0055155,
+  "unknown_cost_reservation_usd": 0
+}

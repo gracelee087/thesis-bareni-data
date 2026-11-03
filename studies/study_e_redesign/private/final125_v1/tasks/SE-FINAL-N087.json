@@ -1,0 +1,314 @@
+{
+  "task_id": "SE-FINAL-N087",
+  "batch_id": 3,
+  "condition": "natural",
+  "source_task_id": null,
+  "topic": "data residency before automation",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-325",
+    "title": "Check data residency before you automate",
+    "body": "Before you automate a workflow, make data residency the first control, not a footnote. Residency just means where the data is allowed to live and move: on your own systems, in a specific country, or inside a vendor service. For a small business, the useful question is not “can AI do this?” but “which parts of this workflow are allowed to leave my environment at all?”\n\nTake one recurring process you already handle by hand, such as customer-data entry, invoice processing, or lead follow-up. List the fields that are sensitive, contract-bound, or simply awkward to hand to a third party: payment details, personal data, internal pricing, or anything a supplier agreement keeps in place. Then check the tool’s own service terms and data-handling docs. If the tool cannot keep those fields where you need them, the workflow is not ready for that automation path, no matter how tidy the demo looks.\n\nThat is the bounded decision: not “AI or no AI,” but “what can move, and what must stay put.” If most of the workflow can move, a pilot may make sense. If everything must stay local, you are looking at a self-hosted or tightly integrated approach. Slightly less glamorous than a launch video, but more useful on Monday."
+  },
+  "final": {
+    "item_id": "E-OPT-425",
+    "title": "Check data residency before you automate",
+    "body": "Before you automate a workflow, make data residency the first control, not a footnote. Residency just means where the data is allowed to live and move: on your own systems, in a specific country, or inside a vendor service. For a small business, the useful question is not “can AI do this?” but “which parts of this workflow are allowed to leave my environment at all?”\n\nTake one recurring process you already handle by hand, such as customer-data entry, invoice processing, or lead follow-up. Treat that as a persona example, not a customer case. Then list the fields that are sensitive, contract-bound, or simply not a good fit for third-party handling: payment details, personal data, internal pricing, or anything a supplier agreement keeps in place. If the tool cannot keep those fields where you need them, the workflow is not ready for that automation path, no matter how tidy the demo looks.\n\nThe practical next step is a simple threshold check: which data fields in this workflow are legally or contractually required to stay in one location, and does the vendor’s own service agreement allow that? You do not need a full compliance project to ask that. You do need to read the terms before you wire anything together.\n\nThat leaves the bounded decision clear: if most of the data can move, a pilot may make sense; if the sensitive parts must stay put, look at a self-hosted or tightly integrated approach instead. Slightly less glamorous than a launch video, but more useful on Monday."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-087",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-087",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-087-1",
+        "repairs": []
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-087",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-425",
+        "title": "Check data residency before you automate",
+        "body": "Before you automate a workflow, make data residency the first control, not a footnote. Residency just means where the data is allowed to live and move: on your own systems, in a specific country, or inside a vendor service. For a small business, the useful question is not “can AI do this?” but “which parts of this workflow are allowed to leave my environment at all?”\n\nTake one recurring process you already handle by hand, such as customer-data entry, invoice processing, or lead follow-up. Treat that as a persona example, not a customer case. Then list the fields that are sensitive, contract-bound, or simply not a good fit for third-party handling: payment details, personal data, internal pricing, or anything a supplier agreement keeps in place. If the tool cannot keep those fields where you need them, the workflow is not ready for that automation path, no matter how tidy the demo looks.\n\nThe practical next step is a simple threshold check: which data fields in this workflow are legally or contractually required to stay in one location, and does the vendor’s own service agreement allow that? You do not need a full compliance project to ask that. You do need to read the terms before you wire anything together.\n\nThat leaves the bounded decision clear: if most of the data can move, a pilot may make sense; if the sensitive parts must stay put, look at a self-hosted or tightly integrated approach instead. Slightly less glamorous than a launch video, but more useful on Monday."
+      },
+      "gate_key": "SE-FINAL-N087_gate1__a001"
+    }
+  ],
+  "measurement_status": "complete",
+  "planner": {
+    "item_id": "E-PLAN-525",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task explicitly prohibits a CTA. L01 directs that informational content about a workflow topic should close with a practical observation or next step, not a booking prompt. The post will explain data residency as a workflow decision and end with a diagnostic question the owner can ask internally, maintaining the no-CTA rule."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Reframe 'data residency before automation' as a single workflow control decision: where sensitive customer or transaction data must stay (on-premise, in-country, or vendor-locked) before any automation tool can touch it. Do not discuss compliance frameworks in detail; focus on the owner's actual constraint.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Identify the one recurring workflow in the representative persona (e.g. customer-data entry, invoice processing, or lead follow-up) that the owner has considered automating. State plainly which data fields in that workflow must stay resident and why (e.g. payment card data, personal GDPR-protected fields, or vendor lock-in terms).",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Explain that automation tools (Zapier, Make, n8n, and AI assistants) may pass data through third-party servers or cloud services, and that the owner must verify the tool's data-residency guarantees before piloting. Frame this as a threshold question, not a blocker.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Offer one concrete diagnostic question: 'Which data fields in this workflow are legally or contractually required to stay in one location, and does the automation tool's service agreement allow that?' Position this as a 30-second check the owner can do alone before talking to a vendor.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C02",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Close with a practical observation: if the answer is 'most data can move' or 'the tool supports residency', automation is worth a pilot; if 'everything must stay on-premise', the owner needs a self-hosted or integrated solution. Do not recommend a specific tool or service. Do not include a CTA or booking invitation.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C01",
+          "C04",
+          "S01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No invented customers, results, numbers, or team size. Reference only the representative persona scenario and self-built demos where relevant. Explain Bareni as a consulting practice being built by the thesis author."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Do not recommend autonomous payment or decision-making. Reinforce human approval for high-risk workflows. Avoid recommending excluded services (bulk cold email, high-sensitivity medical/legal work, unsupported OCR-heavy processes)."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Preserve the frozen persona: plain-speaking expert, founder-to-founder, trust-first voice. No hype, no fabricated urgency, one understated phrase at most. No CTA despite informational format."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use plain English and explain jargon (e.g. 'residency', 'service agreement', 'self-hosted'). Keep the diagnostic question distinct from a sales pitch. Treat the representative scenario as an example, not a market statistic or observed result."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-625",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Turn the abstract topic into a bounded Bareni workflow decision. Explain one practical next step."
+          },
+          {
+            "source_id": "C04",
+            "quote": "Do not say cold email is always illegal in Germany and do not give legal advice."
+          }
+        ],
+        "rationale": "This is a framing instruction for the post, not an assertion of a current Bareni capability or observed result. The approved task authorises turning the abstract topic into a bounded workflow decision, and keeping away from detailed compliance frameworks respects the no-legal-advice boundary.",
+        "use_guidance": "Keep as an explicitly proposed framing device. Present the residency question as the owner's own operational constraint; do not state or imply legal requirements, regulatory interpretations, or any Bareni data-residency capability."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "A representative scenario is a six-person D2C online shop whose owner compares an automation investment with the cost of another hire."
+          },
+          {
+            "source_id": "C01",
+            "quote": "The 8–10 hours is a persona scenario, not a market statistic or observed customer result."
+          },
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits"
+          }
+        ],
+        "rationale": "The core is supported: the persona and the 'one recurring workflow' focus are approved. However, the persona scenario and any illustrative fields must be marked as a hypothetical example, and naming which fields are 'legally required' to stay resident risks legal advice, which is out of scope.",
+        "use_guidance": "Add the qualification that the workflow and data fields are an illustrative persona scenario, not a customer case or observed result, and that the owner (not Bareni) determines any legal or contractual requirement. Avoid stating legal conclusions about specific field types."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "general document, email, CRM, and back-office workflows using AI plus Zapier, Make, n8n, and small amounts of custom code"
+          },
+          {
+            "source_id": "C04",
+            "quote": "requests that require unsupported compliance or security guarantees"
+          }
+        ],
+        "rationale": "Naming these tools as part of Bareni's toolkit is supported, and describing that hosted automation tools involve third-party services is a general mechanism explanation. But the claim must not imply Bareni can verify or provide residency or compliance guarantees, and the verification duty sits with the owner and the vendor's own terms.",
+        "use_guidance": "Add the qualification that Bareni does not offer compliance or security guarantees and that residency terms come from each vendor's own documentation, which the owner reviews. Keep it as a threshold question as stated, with no claim about any specific tool's actual residency terms."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Practicality: explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step."
+          },
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits"
+          }
+        ],
+        "rationale": "This supplies a diagnostic question and a self-check step rather than asserting a current fact, observed benefit or customer use. The persona focus explicitly permits one diagnostic question.",
+        "use_guidance": "Keep explicitly proposed as a self-check the reader can run. Drop or soften the '30-second' timing, since no evidence supports a measured duration, and do not frame the check as legal advice or as a Bareni verification service."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          },
+          {
+            "source_id": "C04",
+            "quote": "Present these as current scope discipline, not claims that the work can never be automated."
+          },
+          {
+            "source_id": "C04",
+            "quote": "Bareni currently declines high-sensitivity medical, legal, and financial work;\n  bulk cold-email automation; scan-heavy OCR-dependent workflows"
+          }
+        ],
+        "rationale": "This is a closing recommendation and next-step note, not an assertion of implemented capability or observed outcome. Omitting a CTA and avoiding a specific tool recommendation matches the approved task and the lesson guidance on treating booking invitations as CTAs.",
+        "use_guidance": "Keep explicitly proposed as a neutral closing observation with no CTA, no booking or conversation invitation, and no named tool or vendor. Frame 'worth a pilot' as a conditional judgement for the owner, not a promised outcome, and do not imply Bareni currently offers self-hosted or on-premise residency solutions."
+      }
+    ]
+  },
+  "selected_lessons": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025"
+      ]
+    }
+  ],
+  "register_sha256": "48497afb8641ddc47d974cdfadba06a1f6b562d21c49ec03c9b03a5dc531744e",
+  "planner_key": "SE-FINAL-N087_planner__a001",
+  "researcher_key": "SE-FINAL-N087_researcher__a001",
+  "writer_key": "SE-FINAL-N087_writer__a001",
+  "final_key": "SE-FINAL-N087_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-N087_gate1__a001",
+  "production_completed_at": "2026-09-08T13:01:11.203922+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts",
+  "initial_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-087",
+    "scores": {
+      "persona_fit": 5,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Accurately targets small-business owners in a calm, technically grounded voice. Complies strictly with the no-CTA directive and includes a single restrained dry-humour observation.",
+      "clarity": "Explains data residency immediately in plain terms and sets out a clear, structured decision framework with unambiguous scoping.",
+      "actionability": "Provides a practical diagnostic method: list sensitive fields in a manual workflow, inspect vendor terms, and decide whether data can move before choosing an automation route.",
+      "factual_grounding": "Makes no unsupported claims, benchmarks, or invented customer deployments, staying entirely within Bareni's operating boundaries and evidence guidelines."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 20,
+    "pass": true,
+    "low_quality": false
+  },
+  "final_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-087",
+    "scores": {
+      "persona_fit": 4,
+      "clarity": 4,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Directly targets small business owner-operators in a calm, practical tone without a sales CTA, though the phrase 'Treat that as a persona example, not a customer case' reads like an awkward prompt leakage.",
+      "clarity": "Logical structure and clear plain-English explanation of data residency, slightly marred by the meta-instruction telling the reader to treat a process as a 'persona example'.",
+      "actionability": "Provides a practical, well-bounded threshold check and decision rule for evaluating sensitive data fields before adopting automation tools.",
+      "factual_grounding": "Strictly adheres to factual boundaries; avoids inventing customers, deployments, metrics, or definitive legal determinations."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 18,
+    "pass": true,
+    "low_quality": false
+  },
+  "evaluation_reused": false,
+  "evaluation_keys": [
+    "SE-FINAL-N087_eval_initial__a001",
+    "SE-FINAL-N087_eval_final__a001"
+  ],
+  "completed_at": "2026-09-08T13:01:28.419737+00:00"
+}

@@ -1,0 +1,193 @@
+{
+  "status": "success",
+  "usage": {
+    "input_tokens": 4464,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 934,
+    "reasoning_tokens": null
+  },
+  "cost_usd": 0.009134,
+  "output": {
+    "item_id": "E-PLAN-524",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task authorizes no CTA. End with a neutral practical observation about template-reuse measurement as a workflow threshold, not a meeting prompt."
+      },
+      {
+        "lesson_id": "L02",
+        "application": "Bareni's hands-on service and no-lock-in model are policy positioning from C02; preserve these qualifiers when mentioning delivery or ownership boundaries."
+      },
+      {
+        "lesson_id": "L03",
+        "application": "Template reuse is an owner-specified topic but not explained in evidence. Replace gap with a concrete diagnostic question: what signals that a template is worth measuring, and how would the owner know if reuse is actually happening?"
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Define template reuse as a measurable workflow outcome: clarify whether the owner wants to track how often a single template appears in their documents, customer communications, or proposals, and what visibility they currently have into that reuse pattern.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Identify the boundary of the measurement task: establish which template or workflow matters most (e.g., customer-intake forms, invoice layouts, email responses) and what threshold would make measurement worth automating versus tracking manually in a spreadsheet.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Assess whether AI fits this decision: a reuse-counting system works only if templates live in a central, searchable location (SaaS platform, shared folder, email archive) and the owner can define what counts as a 'reuse' event without constant manual judgment.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C02",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "State the human-approval boundary clearly: any decision to delete, consolidate, or retire templates based on low reuse counts stays with the owner; automation surfaces the data only.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [
+          "L02"
+        ],
+        "evidence_ids": [
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Propose a practical next step: audit one workflow (e.g., customer emails or proposals sent this month) by hand to see how many distinct templates you actually use, where they live, and whether the pattern surprises you. This diagnostic costs nothing and tells you whether measuring reuse solves a real problem.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01",
+          "L03"
+        ],
+        "evidence_ids": [
+          "C02",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Close with the decision threshold: if hand-auditing reveals you use five templates across fifty documents and lose track of which one is current, measurement automation might be worth a day's build. If you use twenty templates once each, the workflow may not benefit from AI yet.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C02",
+          "S01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No invented customer, deployment, or result cited; all workflow observations are diagnostic proposals only, not evidence of a current Bareni capability or customer outcome."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Template-retirement decisions require owner approval; automation is limited to data surfacing and counting."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Frozen persona maintained: plain-speaking technical expert addressing owner directly, no hype, decision framed as a comparison of manual audit versus bounded automation investment."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "All language is plain English; the diagnostic audit and threshold decision are distinct from any finished system; no existing Bareni customer or deployment is implied."
+      }
+    ]
+  },
+  "raw_text": "{\"item_id\": \"E-PLAN-524\", \"selected_lessons\": [{\"lesson_id\": \"L01\", \"application\": \"The task authorizes no CTA. End with a neutral practical observation about template-reuse measurement as a workflow threshold, not a meeting prompt.\"}, {\"lesson_id\": \"L02\", \"application\": \"Bareni's hands-on service and no-lock-in model are policy positioning from C02; preserve these qualifiers when mentioning delivery or ownership boundaries.\"}, {\"lesson_id\": \"L03\", \"application\": \"Template reuse is an owner-specified topic but not explained in evidence. Replace gap with a concrete diagnostic question: what signals that a template is worth measuring, and how would the owner know if reuse is actually happening?\"}], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Define template reuse as a measurable workflow outcome: clarify whether the owner wants to track how often a single template appears in their documents, customer communications, or proposals, and what visibility they currently have into that reuse pattern.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"S01\"]}, {\"step_id\": \"P02\", \"instruction\": \"Identify the boundary of the measurement task: establish which template or workflow matters most (e.g., customer-intake forms, invoice layouts, email responses) and what threshold would make measurement worth automating versus tracking manually in a spreadsheet.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"C02\"]}, {\"step_id\": \"P03\", \"instruction\": \"Assess whether AI fits this decision: a reuse-counting system works only if templates live in a central, searchable location (SaaS platform, shared folder, email archive) and the owner can define what counts as a 'reuse' event without constant manual judgment.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"C02\", \"S01\"]}, {\"step_id\": \"P04\", \"instruction\": \"State the human-approval boundary clearly: any decision to delete, consolidate, or retire templates based on low reuse counts stays with the owner; automation surfaces the data only.\", \"requirement_ids\": [\"R01\", \"R02\"], \"lesson_ids\": [\"L02\"], \"evidence_ids\": [\"C04\"]}, {\"step_id\": \"P05\", \"instruction\": \"Propose a practical next step: audit one workflow (e.g., customer emails or proposals sent this month) by hand to see how many distinct templates you actually use, where they live, and whether the pattern surprises you. This diagnostic costs nothing and tells you whether measuring reuse solves a real problem.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\", \"L03\"], \"evidence_ids\": [\"C02\", \"S01\"]}, {\"step_id\": \"P06\", \"instruction\": \"Close with the decision threshold: if hand-auditing reveals you use five templates across fifty documents and lose track of which one is current, measurement automation might be worth a day's build. If you use twenty templates once each, the workflow may not benefit from AI yet.\", \"requirement_ids\": [\"R01\", \"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C02\", \"S01\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"No invented customer, deployment, or result cited; all workflow observations are diagnostic proposals only, not evidence of a current Bareni capability or customer outcome.\"}, {\"constraint_id\": \"K02\", \"handling\": \"Template-retirement decisions require owner approval; automation is limited to data surfacing and counting.\"}, {\"constraint_id\": \"K03\", \"handling\": \"Frozen persona maintained: plain-speaking technical expert addressing owner directly, no hype, decision framed as a comparison of manual audit versus bounded automation investment.\"}, {\"constraint_id\": \"K04\", \"handling\": \"All language is plain English; the diagnostic audit and threshold decision are distinct from any finished system; no existing Bareni customer or deployment is implied.\"}]}",
+  "provider_response": {
+    "id": "msg_011Cer3EsqbwUEHbQsgiGyAp",
+    "container": null,
+    "content": [
+      {
+        "citations": null,
+        "text": "{\"item_id\": \"E-PLAN-524\", \"selected_lessons\": [{\"lesson_id\": \"L01\", \"application\": \"The task authorizes no CTA. End with a neutral practical observation about template-reuse measurement as a workflow threshold, not a meeting prompt.\"}, {\"lesson_id\": \"L02\", \"application\": \"Bareni's hands-on service and no-lock-in model are policy positioning from C02; preserve these qualifiers when mentioning delivery or ownership boundaries.\"}, {\"lesson_id\": \"L03\", \"application\": \"Template reuse is an owner-specified topic but not explained in evidence. Replace gap with a concrete diagnostic question: what signals that a template is worth measuring, and how would the owner know if reuse is actually happening?\"}], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Define template reuse as a measurable workflow outcome: clarify whether the owner wants to track how often a single template appears in their documents, customer communications, or proposals, and what visibility they currently have into that reuse pattern.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"S01\"]}, {\"step_id\": \"P02\", \"instruction\": \"Identify the boundary of the measurement task: establish which template or workflow matters most (e.g., customer-intake forms, invoice layouts, email responses) and what threshold would make measurement worth automating versus tracking manually in a spreadsheet.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"C02\"]}, {\"step_id\": \"P03\", \"instruction\": \"Assess whether AI fits this decision: a reuse-counting system works only if templates live in a central, searchable location (SaaS platform, shared folder, email archive) and the owner can define what counts as a 'reuse' event without constant manual judgment.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"C02\", \"S01\"]}, {\"step_id\": \"P04\", \"instruction\": \"State the human-approval boundary clearly: any decision to delete, consolidate, or retire templates based on low reuse counts stays with the owner; automation surfaces the data only.\", \"requirement_ids\": [\"R01\", \"R02\"], \"lesson_ids\": [\"L02\"], \"evidence_ids\": [\"C04\"]}, {\"step_id\": \"P05\", \"instruction\": \"Propose a practical next step: audit one workflow (e.g., customer emails or proposals sent this month) by hand to see how many distinct templates you actually use, where they live, and whether the pattern surprises you. This diagnostic costs nothing and tells you whether measuring reuse solves a real problem.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\", \"L03\"], \"evidence_ids\": [\"C02\", \"S01\"]}, {\"step_id\": \"P06\", \"instruction\": \"Close with the decision threshold: if hand-auditing reveals you use five templates across fifty documents and lose track of which one is current, measurement automation might be worth a day's build. If you use twenty templates once each, the workflow may not benefit from AI yet.\", \"requirement_ids\": [\"R01\", \"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C02\", \"S01\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"No invented customer, deployment, or result cited; all workflow observations are diagnostic proposals only, not evidence of a current Bareni capability or customer outcome.\"}, {\"constraint_id\": \"K02\", \"handling\": \"Template-retirement decisions require owner approval; automation is limited to data surfacing and counting.\"}, {\"constraint_id\": \"K03\", \"handling\": \"Frozen persona maintained: plain-speaking technical expert addressing owner directly, no hype, decision framed as a comparison of manual audit versus bounded automation investment.\"}, {\"constraint_id\": \"K04\", \"handling\": \"All language is plain English; the diagnostic audit and threshold decision are distinct from any finished system; no existing Bareni customer or deployment is implied.\"}]}",
+        "type": "text"
+      }
+    ],
+    "model": "claude-haiku-4-5-20251001",
+    "role": "assistant",
+    "stop_details": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "not_available",
+      "input_tokens": 4464,
+      "output_tokens": 934,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": "standard"
+    }
+  },
+  "stop_reason": "end_turn",
+  "cost_details": {
+    "input": 0.004464,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.00467,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.009134
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": null,
+  "key": "SE-FINAL-N117_planner__a001",
+  "role": "planner",
+  "created_at": "2026-09-08T13:19:26.009831+00:00",
+  "ended_at": "2026-09-08T13:19:50.571990+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-N117",
+    "batch_id": 4,
+    "condition": "natural",
+    "cohort": "natural"
+  },
+  "task_id": "SE-FINAL-N117",
+  "batch_id": 4,
+  "cohort": "natural",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 24567,
+  "budget_charge_usd": 0.009134,
+  "unknown_cost_reservation_usd": 0
+}

@@ -1,0 +1,377 @@
+{
+  "task_id": "SE-FINAL-M017",
+  "batch_id": 1,
+  "condition": "wrong_audience",
+  "source_task_id": "SE-FINAL-N004",
+  "topic": "spotting proof-of-concept debt early",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-304",
+    "title": "Spot proof-of-concept debt before you call the pilot done",
+    "body": "This guidance is for the executive board of a 11000-employee multinational. Its central transformation office, regional directors and dedicated governance committee own this programme. Proof-of-concept debt is the work you quietly postpone during a pilot: missing documentation, untested edge cases, a brittle manual step, or a bug you say can wait until production. The practical mistake is not the debt itself. It is treating every deferred item as if it belongs in the same bucket.\n\nA bounded decision helps here. At the end of the pilot, ask one question: is this still a one-off proof, or has it become something I now need to extend into production? If it is only a proof, keep the deferred items in a separate post-pilot list and do not smuggle them into the rollout budget. If it is now a production candidate, pause expansion until the deferred list is reviewed and priced as proper scope.\n\nThe next step is simple: write down three columns before you sign off on the pilot — what was deferred, why it was deferred, and whether each item is essential before rollout or genuinely post-launch. Then review that page with the owner before anyone calls it complete. That keeps the conversation honest and avoids discovering, a week later, that the “finished” pilot still has a small pile of unfinished reality attached to it. For a small business, that is usually the cheaper surprise."
+  },
+  "final": {
+    "item_id": "E-OPT-404",
+    "title": "Spot proof-of-concept debt before the pilot gets fuzzy",
+    "body": "If you run a small business and have tried ChatGPT but not wired it into a real workflow yet, proof-of-concept debt is worth naming early. I mean the work you quietly leave behind in a pilot: a missing note, an untested edge case, a brittle manual handoff, or a bug you told yourself could wait. The debt is not the problem by itself. The problem is when deferred work gets mixed into the next budget without a clear decision.\n\nUse one simple rule at pilot close: ask whether this is still a one-off proof, or whether it has become something you now want to extend into production. If it is still a proof, keep the deferred items in a separate list and do not let them drift into the rollout scope. If it is now a production candidate, pause expansion until the deferred list is reviewed and priced as real scope.\n\nThe practical next step is to write down three columns before you sign off: what was deferred, why it was deferred, and whether each item is essential before rollout or can wait until after launch. Then review that page yourself before you call the pilot complete. That gives you a clean owner decision instead of a fuzzy handover. Small business pilots usually do not need more ceremony; they need fewer surprises."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-017",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": [
+      {
+        "dimension": "persona_fit",
+        "severity": "noncritical",
+        "location_kind": "quote",
+        "text_field": "body",
+        "quote": "This guidance is for the executive board of a 11000-employee multinational. Its central transformation office, regional directors and dedicated governance committee own this programme.",
+        "missing_requirement": null,
+        "rule_id": "R-N-1",
+        "evidence_ids": [
+          "BRIEF",
+          "C01",
+          "S01"
+        ],
+        "reason": "Material audience mismatch: the post explicitly targets an executive board and governance structure of a 11,000-employee multinational, but the approved persona is the owner-operator/CEO of a 1–10-person small business."
+      },
+      {
+        "dimension": "actionability",
+        "severity": "noncritical",
+        "location_kind": "quote",
+        "text_field": "body",
+        "quote": "Then review that page with the owner before anyone calls it complete.",
+        "missing_requirement": null,
+        "rule_id": "R-N-3",
+        "evidence_ids": [
+          "BRIEF",
+          "C01",
+          "S01"
+        ],
+        "reason": "The recommended step assumes a separate programme owner reviewing sign-off, which is poorly scoped for the intended reader who is themselves the small-business owner-operator; this weakens practical actionability for the approved persona."
+      }
+    ]
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-017",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-017-1",
+        "repairs": [
+          {
+            "repair_id": "P01",
+            "target_ids": [
+              "D01"
+            ],
+            "instruction": "Replace the multinational/board framing with the approved owner-operator persona: address a CEO or owner of a 1–10-person small business directly, and remove any mention of a central transformation office, regional directors, or dedicated governance committee.",
+            "source_ids": [
+              "BRIEF",
+              "C01",
+              "S01"
+            ]
+          },
+          {
+            "repair_id": "P02",
+            "target_ids": [
+              "D02"
+            ],
+            "instruction": "Re-scope the next step so the reader acts as the decision-maker: instead of reviewing the page with a separate owner, tell them to review the deferred-items page themselves before they sign off the pilot, or to mark what must be fixed before rollout versus what can wait.",
+            "source_ids": [
+              "BRIEF",
+              "C01",
+              "S01"
+            ]
+          }
+        ]
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-017",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-404",
+        "title": "Spot proof-of-concept debt before the pilot gets fuzzy",
+        "body": "If you run a small business and have tried ChatGPT but not wired it into a real workflow yet, proof-of-concept debt is worth naming early. I mean the work you quietly leave behind in a pilot: a missing note, an untested edge case, a brittle manual handoff, or a bug you told yourself could wait. The debt is not the problem by itself. The problem is when deferred work gets mixed into the next budget without a clear decision.\n\nUse one simple rule at pilot close: ask whether this is still a one-off proof, or whether it has become something you now want to extend into production. If it is still a proof, keep the deferred items in a separate list and do not let them drift into the rollout scope. If it is now a production candidate, pause expansion until the deferred list is reviewed and priced as real scope.\n\nThe practical next step is to write down three columns before you sign off: what was deferred, why it was deferred, and whether each item is essential before rollout or can wait until after launch. Then review that page yourself before you call the pilot complete. That gives you a clean owner decision instead of a fuzzy handover. Small business pilots usually do not need more ceremony; they need fewer surprises."
+      },
+      "gate_key": "SE-FINAL-M017_gate1__a001"
+    }
+  ],
+  "measurement_status": "complete",
+  "planner": {
+    "item_id": "E-PLAN-504",
+    "selected_lessons": [],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Define proof-of-concept debt as unpaid technical or delivery obligations from a pilot that block expansion—such as missing documentation, unfixed bugs, or untested edge cases that were deferred 'for production'. Frame this as a workflow decision: measure pilot scope, list what was deferred, and classify each item as either essential before rollout or genuinely post-launch.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Establish an owner checkpoint after pilot delivery. Before committing to expand or retainer support, review the deferred list against three signals: (1) does the deferred work unblock a measurable business outcome the pilot was meant to test, (2) is it a compliance or human-approval gate per scope boundaries, (3) does proceeding without it expose the owner to uncontrolled cost or risk. Document the decision and rationale in writing.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Identify the threshold question: 'Is this pilot a one-off proof that AI solves this workflow, or a prototype I must now build into production?' If the answer is 'one-off that worked', defer tech debt to a separate post-pilot scope and budget. If 'prototype I must extend', pause expansion and scope a fixed-price build that closes the deferred list before rollout.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Use the diagnostic framework to detect debt early: at pilot kickoff, agree in writing on pilot scope, success measures, and an explicit deferred list. At pilot close, re-review that list with the owner before signing off on 'complete'. This single step—written deferred scope at both ends—prevents drift and unbudgeted work.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "If debt is discovered mid-pilot, flag it immediately to the owner with three fields: what was deferred, why, and what it costs to close (time or scope). Treat this as a change to pilot scope, not a hidden obligation. The owner then decides: close it in the pilot, defer it to post-launch, or descope it entirely.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Document the decision in a one-page artifact: pilot scope, deferred items, owner decision on each item, and the date signed. This artifact becomes your acceptance criteria and the start of your expansion or post-pilot roadmap. Retain it as proof that debt was identified, discussed, and approved, not hidden.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "All steps refer only to Bareni's stated delivery model (free diagnostic, paid pilot in weeks, optional retainer) and exclude invented customer results, team size claims, or capability promises beyond the self-built demos and current scope."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Steps P01–P06 emphasize owner decision and written approval at each gate; no autonomous decision or money movement is implied. Scope boundaries (C04) are preserved by requiring explicit discussion of excluded service classes if they arise."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Voice and framing remain founder-to-founder, practical, and restrained (C05). Persona identity (C01) and delivery model (C02) are preserved by treating the workflow decision as a bounded consulting step, not a product feature or outcome claim."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "All examples (one-off versus prototype, deferred list, change control) are illustrative mechanisms, not claimed customer results or productivity numbers. Plain-language explanations of jargon (e.g., 'deferred scope', 'acceptance criteria') are included per C05."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-604",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits, and—if it does—defines pilot scope, fixed price, and measures."
+          },
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step"
+          }
+        ],
+        "rationale": "This is a definition plus a proposed classification routine for deferred items; it does not assert that Bareni currently runs such a routine or has observed it with customers. Approved evidence permits pilot scope and measures to be defined, which keeps the proposal in scope.",
+        "use_guidance": "Keep explicitly proposed: present as a way an owner can frame deferred pilot work, not as an existing Bareni method, product feature or customer experience. Avoid implying past pilots exist."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "then expansion and an\n  optional retainer"
+          },
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          }
+        ],
+        "rationale": "A recommended owner checkpoint with three review signals; it is an instruction/decision rule, not an assertion of current implementation or observed benefit. Expansion, optional retainer and human approval gates are consistent with approved evidence.",
+        "use_guidance": "Keep explicitly proposed. Frame the checkpoint as the owner's decision and retain the human-approval boundary; do not imply Bareni has run this checkpoint with any customer or that retainer support is mandatory."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "paid working MVP in days; fixed-price pilot in weeks; then expansion and an\n  optional retainer"
+          },
+          {
+            "source_id": "S01",
+            "quote": "the owner compares a bounded automation investment with continuing\n  manual work or hiring; final approval and business authority remain human"
+          }
+        ],
+        "rationale": "A threshold question and branching decision rule offered to the reader, not a factual claim about existing systems or results. Fixed-price pilot and expansion sequencing are supported as intended scope.",
+        "use_guidance": "Keep explicitly proposed. When mentioning a fixed-price build, note that timings and scopes are intended, not guarantees, and do not insert a mandatory extra 'formal build' gate beyond the approved sequence."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "Normal sequence: free 30-minute diagnostic; free one-page pilot proposal;"
+          },
+          {
+            "source_id": "C02",
+            "quote": "defines pilot scope, fixed price, and measures"
+          }
+        ],
+        "rationale": "An instruction to agree scope, measures and a deferred list in writing at kickoff and re-review at close. The recommendation is permissible and aligned with the approved diagnostic and pilot-proposal steps; the claim that this 'prevents drift and unbudgeted work' is stated as the expected effect of the proposed practice rather than an observed customer outcome.",
+        "use_guidance": "Keep explicitly proposed. State the prevention effect as the intent of the practice, not as a measured or validated result; the explicit deferred list is an added proposal, not an existing documented Bareni deliverable."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "final approval and business authority remain human"
+          },
+          {
+            "source_id": "C02",
+            "quote": "defines pilot scope, fixed price, and measures"
+          }
+        ],
+        "rationale": "A recommended escalation and change-of-scope procedure with owner decision rights; it prescribes behaviour rather than reporting current practice or observed results.",
+        "use_guidance": "Keep explicitly proposed. Preserve the owner as final decision-maker and avoid attaching any specific cost, time or savings figure to closing deferred work."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "free one-page pilot proposal"
+          },
+          {
+            "source_id": "C02",
+            "quote": "Finished code is handed to the customer. Database, automation-tool, and API\n  accounts are in the customer's name from the start. Retainer support is optional."
+          },
+          {
+            "source_id": "C02",
+            "quote": "Describe this as policy and no-lock-in positioning, not an absolute legal warranty."
+          }
+        ],
+        "rationale": "The core—recording pilot scope, deferred items and owner decisions in a one-page document used as acceptance criteria—is compatible with the approved one-page proposal and handover policy. However, calling it 'proof' of approval and 'acceptance criteria' implies contractual or legal standing that approved evidence does not grant; the handover and documentation posture must be described as practice and policy, not warranty.",
+        "use_guidance": "Add the qualification that the one-page record is a working document and internal practice, not a legal warranty, formal contract or guarantee; also avoid a mandatory extra gate beyond the approved sequence. Keep it as the owner's written record of decisions rather than 'proof' of compliance."
+      }
+    ]
+  },
+  "selected_lessons": [],
+  "register_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "planner_key": "SE-FINAL-N004_planner__a001",
+  "researcher_key": "SE-FINAL-N004_researcher__a001",
+  "writer_key": "SE-FINAL-N004_writer__a001",
+  "final_key": "SE-FINAL-M017_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-M017_gate1__a001",
+  "production_completed_at": "2026-09-08T13:28:58.083075+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts",
+  "initial_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-017",
+    "scores": {
+      "persona_fit": 1,
+      "clarity": 2,
+      "actionability": 4,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "The post explicitly states it is for the executive board of an 11,000-employee multinational, directly violating Bareni's target audience mandate of owner-operators of 1–10 person small businesses.",
+      "clarity": "Internal contradiction between addressing an 11,000-employee enterprise with regional directors and concluding with small business owners creates substantial confusion about who the advice is for.",
+      "actionability": "Provides a clear, feasible 3-column method to review and categorize deferred proof-of-concept items before signing off on a pilot.",
+      "factual_grounding": "Does not claim nonexistent customers, deployments, or metrics; confines discussion to pilot review principles."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 12,
+    "pass": false,
+    "low_quality": true
+  },
+  "final_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-017",
+    "scores": {
+      "persona_fit": 5,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Directly targets the intended owner-operator persona with a calm, practical founder-to-founder tone, correctly omitting any sales CTA as required.",
+      "clarity": "The core concept, the pilot decision rule, and the three-column exercise are cleanly structured, unambiguous, and easy to understand immediately.",
+      "actionability": "Provides a specific, realistic decision framework and an immediately executable three-column review template tailored for small business owners.",
+      "factual_grounding": "Strictly adheres to evidence boundaries without inventing customers, metrics, false capabilities, or unrealistic claims."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 20,
+    "pass": true,
+    "low_quality": false
+  },
+  "evaluation_reused": false,
+  "evaluation_keys": [
+    "SE-FINAL-M017_eval_initial__a001",
+    "SE-FINAL-M017_eval_final__a001"
+  ],
+  "completed_at": "2026-09-08T13:29:13.480186+00:00"
+}

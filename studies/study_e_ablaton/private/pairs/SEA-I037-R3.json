@@ -1,0 +1,85 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I037-R3",
+    "item_id": "SEA-I037",
+    "repeat": 3,
+    "arm_order": [
+      "critic_off",
+      "critic_on"
+    ],
+    "content_id": "POST-6d5a8fc9ba50a114f8cff97b"
+  },
+  "arms": {
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-6d5a8fc9ba50a114f8cff97b-1",
+        "title": "Rubber-stamped approval is a workflow problem",
+        "body": "Rubber-stamped approval looks harmless until it starts hiding the real work.\n\nIf you run a small business, the cost is usually not a dramatic mistake. It is the repeated moment where you approve something because it looks familiar, not because the rule is clear. An invoice, a refund, a data entry change, a vendor request: if you keep saying yes on autopilot, you also keep paying for the same decision twice.\n\nThat is where AI can help, but only in a narrow way. It should not make the decision for you. It should enforce the rule you already defined. For example, a system can flag invoices over a chosen threshold, or block duplicate entries, so the owner sees only the cases that need human review. Money movement and other high-risk calls still stay with the owner.\n\nThe useful next step is simple: pick one recurring approval you rubber-stamp most often and write down the rule that would catch most of the bad cases. If you cannot state the rule clearly, the problem is not the tool. It is the process."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-6d5a8fc9ba50a114f8cff97b-1",
+            "title": "Rubber-stamped approval is a workflow problem",
+            "body": "Rubber-stamped approval looks harmless until it starts hiding the real work.\n\nIf you run a small business, the cost is usually not a dramatic mistake. It is the repeated moment where you approve something because it looks familiar, not because the rule is clear. An invoice, a refund, a data entry change, a vendor request: if you keep saying yes on autopilot, you also keep paying for the same decision twice.\n\nThat is where AI can help, but only in a narrow way. It should not make the decision for you. It should enforce the rule you already defined. For example, a system can flag invoices over a chosen threshold, or block duplicate entries, so the owner sees only the cases that need human review. Money movement and other high-risk calls still stay with the owner.\n\nThe useful next step is simple: pick one recurring approval you rubber-stamp most often and write down the rule that would catch most of the bad cases. If you cannot state the rule clearly, the problem is not the tool. It is the process."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-6d5a8fc9ba50a114f8cff97b-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    },
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-6d5a8fc9ba50a114f8cff97b-1",
+        "title": "The quiet cost of rubber-stamped approval",
+        "body": "Rubber-stamped approval usually looks harmless. You see the same request again, you click through, and the day moves on. The quiet cost is that no one has defined what should be checked, so the same decision keeps getting re-decided by habit.\n\nFor a small business, the most useful question is not “Can this be automated?” It is “Which recurring approval should stay manual, and which one should become a simple rule?” Think invoice sign-off, refund approval, or data-entry review. If the rule is clear, a bounded workflow can flag the item for human check instead of letting it slide through on autopilot.\n\nThat boundary matters. Human approval stays mandatory for money movement and other high-risk decisions. Automation can catch duplicates, thresholds, or missing fields; it should not replace the owner’s judgment.\n\nA practical next step: pick one approval you rubber-stamp most often and write the rule that would catch most of the bad cases. If you cannot write the rule in one sentence, the process is still relying on memory."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-6d5a8fc9ba50a114f8cff97b-1",
+            "title": "The quiet cost of rubber-stamped approval",
+            "body": "Rubber-stamped approval usually looks harmless. You see the same request again, you click through, and the day moves on. The quiet cost is that no one has defined what should be checked, so the same decision keeps getting re-decided by habit.\n\nFor a small business, the most useful question is not “Can this be automated?” It is “Which recurring approval should stay manual, and which one should become a simple rule?” Think invoice sign-off, refund approval, or data-entry review. If the rule is clear, a bounded workflow can flag the item for human check instead of letting it slide through on autopilot.\n\nThat boundary matters. Human approval stays mandatory for money movement and other high-risk decisions. Automation can catch duplicates, thresholds, or missing fields; it should not replace the owner’s judgment.\n\nA practical next step: pick one approval you rubber-stamp most often and write the rule that would catch most of the bad cases. If you cannot write the rule in one sentence, the process is still relying on memory."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-6d5a8fc9ba50a114f8cff97b-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": [
+            {
+              "repair_id": "P01",
+              "target_ids": [
+                "D01",
+                "D02",
+                "D03"
+              ],
+              "instruction": "Replace the abstract reflection with one concrete owner-operator workflow decision about approval: for example, deciding whether a repeat approval step should stay manual or become a bounded, rule-based check inside the business workflow. State the specific approval context, the quiet cost in plain terms, and one practical next step the owner can take to review that step.",
+              "source_ids": [
+                "BRIEF",
+                "S01",
+                "C01",
+                "C02",
+                "C05"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

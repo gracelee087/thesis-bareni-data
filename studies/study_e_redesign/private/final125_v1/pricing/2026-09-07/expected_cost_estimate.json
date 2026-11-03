@@ -1,0 +1,42 @@
+{
+  "schema_version": "study-e-expected-cost-estimate-v1",
+  "estimated_at": "2026-09-07",
+  "currency": "USD",
+  "status": "planning_estimate_not_invoice",
+  "method": "Scale the preserved 125-task pilot ledgers to the current two-condition scope, using the verified 2026-09-07 pricing schedule. Natural includes all production roles and evaluator measurement; mixed includes its new Gate/Critic/Optimizer path, evaluator measurement, and recorded unknown-usage reservations. Historical pilot charges are excluded.",
+  "natural_condition": {
+    "production_known_usage": 17.27906535,
+    "evaluator_measurement": 2.08120943,
+    "estimated_total": 19.36027478,
+    "planned_tasks": 125
+  },
+  "mixed_condition": {
+    "production_known_usage": 4.8916774,
+    "unknown_usage_reservations": 3.91437725,
+    "evaluator_measurement": 2.2542015,
+    "estimated_total_including_reservations": 11.06025615,
+    "planned_tasks": 125,
+    "note": "The mixed pilot had 43 attempts with unknown usage. Reservations are retained for the budget ledger and are not asserted as billed cost."
+  },
+  "combined": {
+    "known_usage_and_measurement": 26.50622368,
+    "unknown_usage_reservations": 3.91437725,
+    "planning_total_including_reservations": 30.42060093,
+    "budget_cap": 49.99,
+    "headroom_after_planning_total": 19.56939907,
+    "cap_margin_ratio": 0.391465872,
+    "within_cap": true
+  },
+  "limitations": [
+    "This is not a provider invoice or guaranteed upper bound.",
+    "It extrapolates preserved pilot usage; actual output lengths, retries, failures, and evaluator usage may differ.",
+    "The mixed condition reuses upstream natural artifacts, as specified; reused upstream costs are not charged again.",
+    "The 5000-attempt limit and USD49.99 cap remain hard stopping rules. Unknown usage is never treated as zero."
+  ],
+  "source_files": [
+    "../../../../../private/proposal_only_pilot_analysis_v1/natural_proposal_analysis.json",
+    "../../../../../private/proposal_only_pilot_analysis_v1/mixed_proposal_analysis.json",
+    "../../../../../private/final125_v1/pricing.json"
+  ],
+  "model_api_calls": 0
+}

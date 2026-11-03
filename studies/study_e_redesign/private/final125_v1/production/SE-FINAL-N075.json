@@ -1,0 +1,302 @@
+{
+  "task_id": "SE-FINAL-N075",
+  "batch_id": 3,
+  "condition": "natural",
+  "source_task_id": null,
+  "topic": "the limits of knowledge assistants",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-313",
+    "title": "The real limit of a knowledge assistant",
+    "body": "A knowledge assistant is useful only when the question can be answered from your own approved documents. That is the practical line I would use in a small business: if the answer lives in your policies, FAQs, product notes, or other text you already control, the assistant may be a fit. If the task needs outside research, judgment, or a human sign-off, it is not a knowledge-assistant problem; it is a people problem with software in the room.\n\nThat matters for an owner deciding between manual work, hiring, or a bounded automation investment. Bareni’s self-built demo is deliberately limited: it can ingest MD, PDF, and URL content, run vector search and reranking, generate grounded answers, and show sources. It does not prove production use, customer validation, billing, or scale, and it should not be treated as a shortcut around approval.\n\nThe useful diagnostic question is simple: “Could my team answer this by looking in our own documents, or do they need to research outside?” If the honest answer is outside research, the assistant is probably the wrong tool. If the answer is inside your documents, the next step is to audit one recurring workflow against that threshold and see whether it is a candidate for a grounded assistant."
+  },
+  "final": {
+    "item_id": "E-OPT-413",
+    "title": "The real limit of a knowledge assistant",
+    "body": "A knowledge assistant is useful only when the question can be answered from your own approved documents. That is the practical line I would use in a small business: if the answer lives in your policies, FAQs, product notes, or other text you already control, the assistant may be a fit. If the task needs outside research, judgment, or a human sign-off, it is not a knowledge-assistant problem; it is a people problem with software in the room.\n\nThat matters for an owner deciding between manual work, hiring, or a bounded automation investment. Bareni’s self-built demo is deliberately limited: it can ingest MD, PDF, and URL content, run vector search and reranking, generate grounded answers, and show sources. It does not prove production use, customer validation, billing, or scale, and it should not be treated as a shortcut around approval.\n\nThe useful diagnostic question is simple: “Could my team answer this by looking in our own documents, or do they need to research outside?” If the honest answer is outside research, the assistant is probably the wrong tool. If the answer is inside your documents, the next step is to audit one recurring workflow against that threshold and see whether it is a candidate for a grounded assistant."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-075",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-075",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-075-1",
+        "repairs": []
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-075",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-413",
+        "title": "The real limit of a knowledge assistant",
+        "body": "A knowledge assistant is useful only when the question can be answered from your own approved documents. That is the practical line I would use in a small business: if the answer lives in your policies, FAQs, product notes, or other text you already control, the assistant may be a fit. If the task needs outside research, judgment, or a human sign-off, it is not a knowledge-assistant problem; it is a people problem with software in the room.\n\nThat matters for an owner deciding between manual work, hiring, or a bounded automation investment. Bareni’s self-built demo is deliberately limited: it can ingest MD, PDF, and URL content, run vector search and reranking, generate grounded answers, and show sources. It does not prove production use, customer validation, billing, or scale, and it should not be treated as a shortcut around approval.\n\nThe useful diagnostic question is simple: “Could my team answer this by looking in our own documents, or do they need to research outside?” If the honest answer is outside research, the assistant is probably the wrong tool. If the answer is inside your documents, the next step is to audit one recurring workflow against that threshold and see whether it is a candidate for a grounded assistant."
+      },
+      "gate_key": "SE-FINAL-N075_gate1__a001"
+    }
+  ],
+  "measurement_status": "pending",
+  "planner": {
+    "item_id": "E-PLAN-513",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task explicitly prohibits a CTA. Close with a neutral practical observation about the workflow decision or diagnostic question, not a meeting invitation."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Anchor the post to the abstract topic 'limits of knowledge assistants' by identifying one concrete workflow decision: distinguish between queries that need grounded company knowledge (where assistants add value) and those that need external research, judgment, or human approval (where they do not).",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C05",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Ground the explanation in the persona's context: a small-business owner comparing a bounded automation investment with manual work or hiring. Show how the assistant's limitation—it only searches approved company documents, not the open web—becomes a practical filter for workflow fit.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C03",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Describe the demonstrated knowledge-assistant system honestly: it ingests MD, PDF, and URL content; performs vector search and reranking; generates answers grounded in company material; and shows sources. Never claim production operation, customer validation, billing, or proven scale.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C03"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Explain the practical implication for the owner: a knowledge assistant works best for workflows where the answer lives in company documents the owner already controls—customer FAQs, product specs, policies, invoices, emails. If the owner spends time searching the open web or making judgment calls, the assistant does not reduce that burden.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "State one diagnostic question the owner can ask to test fit: 'Is this decision or question one my team could answer by looking in our own documents, or do they need to research outside?' Use this to identify whether a knowledge assistant is a candidate for the workflow or whether manual work or hiring remains the better choice.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Close with a neutral practical observation about the next step—for example, auditing one recurring workflow against this threshold—rather than a meeting invitation. Maintain trust and specificity without a CTA.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C05",
+          "S01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "Do not invent customer results, outcomes, savings, or multi-person capabilities. Describe only the self-built demo features and disclosed limits. Treat Bareni as a consulting practice being built by the thesis author."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Do not propose autonomous decision-making or money movement. Note that human approval is mandatory for high-risk decisions."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Maintain the frozen persona of a plain-speaking technical expert. Preserve the distinction between the owner's decision authority and the tool's capability."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use plain English. Keep the demonstrated assistant system distinct from hypothetical or future capabilities. Do not claim production readiness or customer validation."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-613",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Turn the abstract topic into a bounded Bareni workflow decision. Explain one practical next step."
+          },
+          {
+            "source_id": "C03",
+            "quote": "RAG means retrieving relevant approved company documents before answering; in plain terms, the assistant looks in company material rather than the open web."
+          },
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          }
+        ],
+        "rationale": "This is a planning instruction for how to frame the post, not an assertion of current implementation or observed results. The proposed distinction is consistent with the approved description of grounded retrieval and the human-approval boundary.",
+        "use_guidance": "Keep as an explicitly proposed framing device. Present the distinction as a workflow-fit judgement, not as a tested capability or measured outcome."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "The intended reader is an owner-operator of a 1–10 person small business."
+          },
+          {
+            "source_id": "C01",
+            "quote": "compares an\n  automation investment with the cost of another hire"
+          },
+          {
+            "source_id": "C03",
+            "quote": "the assistant looks in company material rather than the open web"
+          }
+        ],
+        "rationale": "An instruction to ground the explanation in the persona's decision context and use the documented retrieval boundary as a fit filter. It proposes an approach rather than asserting a current fact or result.",
+        "use_guidance": "Keep proposed. When writing, present the hire-versus-automation comparison as the persona scenario from approved evidence, not as market data or an observed customer decision."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "SUPPORTED",
+        "evidence": [
+          {
+            "source_id": "C03",
+            "quote": "It can ingest MD, PDF, and\n  URL content; perform vector search and reranking; generate grounded LLM answers;\n  and show sources."
+          },
+          {
+            "source_id": "C03",
+            "quote": "Never imply production operation, customer validation, real customer documents,\n  billing, rate limiting, or proven scale."
+          }
+        ],
+        "rationale": "The described capabilities match approved evidence as written, and the claim already carries the required exclusions on production operation, customer validation, billing, and scale.",
+        "use_guidance": "Retain within scope. If the demo is mentioned, also keep the disclosed limits available (local demo on synthetic Acme Shop data; deployed public route locked; testing, rate limiting and billing planned only)."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C03",
+            "quote": "RAG means retrieving relevant approved company documents before answering"
+          },
+          {
+            "source_id": "C01",
+            "quote": "Especially suitable businesses already work in English, use digital\n  documents and SaaS tools, and have a frequent, repeatable workflow with a\n  measurable outcome."
+          },
+          {
+            "source_id": "C03",
+            "quote": "PDF/scan ingestion and OCR are not implemented."
+          },
+          {
+            "source_id": "C04",
+            "quote": "scan-heavy OCR-dependent workflows"
+          }
+        ],
+        "rationale": "The core—assistants fit workflows whose answers sit in company documents—is supported by the grounded-retrieval description and the fit criteria. But listing invoices and emails as suitable material needs a limitation: the assistant demo ingests MD, PDF and URL content, and scan-heavy or OCR-dependent document workflows are currently out of scope; the statement about reducing burden must not read as an observed result.",
+        "use_guidance": "Add the qualification that suitable material is digital, text-based company documents and that scan-heavy/OCR-dependent workflows are currently declined. Phrase the fit statement as reasoning about scope, not as a measured reduction in workload."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step"
+          },
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI\n  fits"
+          },
+          {
+            "source_id": "C04",
+            "quote": "Present these as\n  current scope discipline, not claims that the work can never be automated."
+          }
+        ],
+        "rationale": "A diagnostic question the reader can apply themselves, offered as guidance rather than as a factual assertion about performance or customer use. Its scope respects the honest-fit and no-forced-AI constraints.",
+        "use_guidance": "Keep explicitly proposed as a self-test question. Frame the outcome as 'candidate for a closer look', not a verdict, and avoid implying any assessment service beyond the described honest fit judgement; no booking invitation."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Informational posts use no CTA or one\n  soft closing sentence."
+          }
+        ],
+        "rationale": "A drafting instruction about how to end the post. It proposes a neutral closing observation rather than asserting any current fact, and it matches the task's no-CTA rule.",
+        "use_guidance": "Keep proposed. Close with a single neutral practical note (e.g. auditing one recurring workflow against the question); do not add any invitation to book, discuss, message, or continue the conversation, and do not imply limited capacity or urgency."
+      }
+    ]
+  },
+  "selected_lessons": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025"
+      ]
+    }
+  ],
+  "register_sha256": "48497afb8641ddc47d974cdfadba06a1f6b562d21c49ec03c9b03a5dc531744e",
+  "planner_key": "SE-FINAL-N075_planner__a001",
+  "researcher_key": "SE-FINAL-N075_researcher__a001",
+  "writer_key": "SE-FINAL-N075_writer__a001",
+  "final_key": "SE-FINAL-N075_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-N075_gate1__a001",
+  "production_completed_at": "2026-09-08T12:54:43.654167+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts"
+}

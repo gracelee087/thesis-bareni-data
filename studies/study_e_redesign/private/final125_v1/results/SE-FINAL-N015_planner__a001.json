@@ -1,0 +1,169 @@
+{
+  "status": "success",
+  "usage": {
+    "input_tokens": 4287,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 774,
+    "reasoning_tokens": null
+  },
+  "cost_usd": 0.008157,
+  "output": {
+    "item_id": "E-PLAN-515",
+    "selected_lessons": [],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Define reference data as the static, infrequently changing information (customer names, supplier details, product codes, pricing tiers, approval thresholds) that your workflows depend on. Identify which reference data in your business is currently maintained manually or in scattered tools.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Diagnose the friction: document how often reference data changes, who updates it, where it lives (spreadsheet, email, tool), and how many workflows break or require rework when it is stale or inconsistent. This friction is the real problem automation solves.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Decide whether to centralize and automate reference data before building downstream workflows. Automation without clean, current reference data wastes effort. If your reference data is scattered or manually updated weekly, centralizing it first (even without AI) is the bounded next step.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "S01",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "If reference data is the bottleneck, propose a simple pilot: pick one reference dataset (e.g., customer tiers or supplier payment terms), move it to a single source of truth, and automate its distribution to the tools your workflows use. Measure the time saved and errors prevented.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Confirm that any automation reads only from your approved reference data and does not make autonomous decisions on money or risk. Human approval remains required for high-stakes transactions, even after reference data is clean.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C04",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Schedule a free 30-minute diagnostic conversation to map your reference-data state, confirm whether it is the real blocker, and define a concrete pilot scope and fixed price if it is. Come with the friction map from P02.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No customer examples, results, or team claims introduced; all guidance is general workflow decision logic."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Step P05 explicitly mandates human approval for money and risk; no autonomous payment or high-risk decision is described or proposed."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Persona (owner-operator, bounded investment decision, human authority) preserved throughout; evidence status from C01–C05 and S01 only."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Plain English used; distinction maintained between current friction (observable), reference-data centralization (a practice, not a capability claim), and optional downstream automation (future proposal)."
+      }
+    ]
+  },
+  "raw_text": "{\"item_id\": \"E-PLAN-515\", \"selected_lessons\": [], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Define reference data as the static, infrequently changing information (customer names, supplier details, product codes, pricing tiers, approval thresholds) that your workflows depend on. Identify which reference data in your business is currently maintained manually or in scattered tools.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"C05\"]}, {\"step_id\": \"P02\", \"instruction\": \"Diagnose the friction: document how often reference data changes, who updates it, where it lives (spreadsheet, email, tool), and how many workflows break or require rework when it is stale or inconsistent. This friction is the real problem automation solves.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C01\", \"C02\"]}, {\"step_id\": \"P03\", \"instruction\": \"Decide whether to centralize and automate reference data before building downstream workflows. Automation without clean, current reference data wastes effort. If your reference data is scattered or manually updated weekly, centralizing it first (even without AI) is the bounded next step.\", \"requirement_ids\": [\"R01\", \"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"S01\", \"C05\"]}, {\"step_id\": \"P04\", \"instruction\": \"If reference data is the bottleneck, propose a simple pilot: pick one reference dataset (e.g., customer tiers or supplier payment terms), move it to a single source of truth, and automate its distribution to the tools your workflows use. Measure the time saved and errors prevented.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"C04\"]}, {\"step_id\": \"P05\", \"instruction\": \"Confirm that any automation reads only from your approved reference data and does not make autonomous decisions on money or risk. Human approval remains required for high-stakes transactions, even after reference data is clean.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C04\", \"C05\"]}, {\"step_id\": \"P06\", \"instruction\": \"Schedule a free 30-minute diagnostic conversation to map your reference-data state, confirm whether it is the real blocker, and define a concrete pilot scope and fixed price if it is. Come with the friction map from P02.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"C05\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"No customer examples, results, or team claims introduced; all guidance is general workflow decision logic.\"}, {\"constraint_id\": \"K02\", \"handling\": \"Step P05 explicitly mandates human approval for money and risk; no autonomous payment or high-risk decision is described or proposed.\"}, {\"constraint_id\": \"K03\", \"handling\": \"Persona (owner-operator, bounded investment decision, human authority) preserved throughout; evidence status from C01–C05 and S01 only.\"}, {\"constraint_id\": \"K04\", \"handling\": \"Plain English used; distinction maintained between current friction (observable), reference-data centralization (a practice, not a capability claim), and optional downstream automation (future proposal).\"}]}",
+  "provider_response": {
+    "id": "msg_011CeqxTd6rnkgUdVjTjgRCC",
+    "container": null,
+    "content": [
+      {
+        "citations": null,
+        "text": "{\"item_id\": \"E-PLAN-515\", \"selected_lessons\": [], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Define reference data as the static, infrequently changing information (customer names, supplier details, product codes, pricing tiers, approval thresholds) that your workflows depend on. Identify which reference data in your business is currently maintained manually or in scattered tools.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"C05\"]}, {\"step_id\": \"P02\", \"instruction\": \"Diagnose the friction: document how often reference data changes, who updates it, where it lives (spreadsheet, email, tool), and how many workflows break or require rework when it is stale or inconsistent. This friction is the real problem automation solves.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C01\", \"C02\"]}, {\"step_id\": \"P03\", \"instruction\": \"Decide whether to centralize and automate reference data before building downstream workflows. Automation without clean, current reference data wastes effort. If your reference data is scattered or manually updated weekly, centralizing it first (even without AI) is the bounded next step.\", \"requirement_ids\": [\"R01\", \"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"S01\", \"C05\"]}, {\"step_id\": \"P04\", \"instruction\": \"If reference data is the bottleneck, propose a simple pilot: pick one reference dataset (e.g., customer tiers or supplier payment terms), move it to a single source of truth, and automate its distribution to the tools your workflows use. Measure the time saved and errors prevented.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"C04\"]}, {\"step_id\": \"P05\", \"instruction\": \"Confirm that any automation reads only from your approved reference data and does not make autonomous decisions on money or risk. Human approval remains required for high-stakes transactions, even after reference data is clean.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C04\", \"C05\"]}, {\"step_id\": \"P06\", \"instruction\": \"Schedule a free 30-minute diagnostic conversation to map your reference-data state, confirm whether it is the real blocker, and define a concrete pilot scope and fixed price if it is. Come with the friction map from P02.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"C05\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"No customer examples, results, or team claims introduced; all guidance is general workflow decision logic.\"}, {\"constraint_id\": \"K02\", \"handling\": \"Step P05 explicitly mandates human approval for money and risk; no autonomous payment or high-risk decision is described or proposed.\"}, {\"constraint_id\": \"K03\", \"handling\": \"Persona (owner-operator, bounded investment decision, human authority) preserved throughout; evidence status from C01–C05 and S01 only.\"}, {\"constraint_id\": \"K04\", \"handling\": \"Plain English used; distinction maintained between current friction (observable), reference-data centralization (a practice, not a capability claim), and optional downstream automation (future proposal).\"}]}",
+        "type": "text"
+      }
+    ],
+    "model": "claude-haiku-4-5-20251001",
+    "role": "assistant",
+    "stop_details": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "not_available",
+      "input_tokens": 4287,
+      "output_tokens": 774,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": "standard"
+    }
+  },
+  "stop_reason": "end_turn",
+  "cost_details": {
+    "input": 0.004287,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.00387,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.008157
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": null,
+  "key": "SE-FINAL-N015_planner__a001",
+  "role": "planner",
+  "created_at": "2026-09-08T12:16:44.959685+00:00",
+  "ended_at": "2026-09-08T12:17:05.471206+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-N015",
+    "batch_id": 1,
+    "condition": "natural",
+    "cohort": "natural"
+  },
+  "task_id": "SE-FINAL-N015",
+  "batch_id": 1,
+  "cohort": "natural",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 20508,
+  "budget_charge_usd": 0.008157,
+  "unknown_cost_reservation_usd": 0
+}

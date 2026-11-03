@@ -1,0 +1,162 @@
+{
+  "created_at": "2026-09-08T19:13:10.371477+00:00",
+  "role": "optimizer",
+  "metadata": {
+    "study_id": "STUDY-E-ABLATON",
+    "pair_id": "SEA-I009-R3",
+    "source_id": "SEA-I009",
+    "arm": "critic_off",
+    "cycle": 1
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49",
+  "status": "success",
+  "output": {
+    "item_id": "POST-49483e238e03c8db4f310943-1",
+    "title": "Designing against eval drift is a control decision",
+    "body": "If you are automating a recurring workflow, eval drift is not a theory problem. It is the question of how you will know the system is no longer matching the work it was built to handle.\n\nIn a small business, that often shows up in customer replies, invoices, or lead handling. An assistant can look fine on the sample you used to build it, then real messages, edge cases, or a process change start pulling it off course. That is why the design choice matters before you automate: define the workflow, the measurable outcome, and the stop rule.\n\nFor example, if AI is classifying inbox messages, decide what “correct enough” means and what level of manual review means the system needs a reset. Any threshold here is a control, not a promise. If you have not agreed it in advance, you are just hoping the model stays polite. Hope is not a control system.\n\nFor money movement and other high-risk decisions, human approval stays mandatory. Eval drift design should make that boundary explicit: alerts, review, and a clear handoff back to you when confidence drops or patterns change.\n\nThe practical next step is simple: write one sentence for the workflow — “If X changes, we pause automation and review Y.” That turns eval drift into an operational boundary you can actually run."
+  },
+  "cost_usd": 0.0020187,
+  "usage": {
+    "input_tokens": 5634,
+    "cached_input_tokens": 5376,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 316,
+    "reasoning_tokens": 0
+  },
+  "provider_response": {
+    "id": "resp_06fba6c1539f7b69016aa05e45e15087d2b45dfc679cc63b69",
+    "created_at": 1788894789.0,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": {},
+    "model": "gpt-5.4-mini-2026-03-17",
+    "object": "response",
+    "output": [
+      {
+        "id": "msg_06fba6c1539f7b69016aa05e463a0887d2a89de2528ebd66fa",
+        "content": [
+          {
+            "annotations": [],
+            "text": "{\"item_id\":\"POST-49483e238e03c8db4f310943-1\",\"title\":\"Designing against eval drift is a control decision\",\"body\":\"If you are automating a recurring workflow, eval drift is not a theory problem. It is the question of how you will know the system is no longer matching the work it was built to handle.\\n\\nIn a small business, that often shows up in customer replies, invoices, or lead handling. An assistant can look fine on the sample you used to build it, then real messages, edge cases, or a process change start pulling it off course. That is why the design choice matters before you automate: define the workflow, the measurable outcome, and the stop rule.\\n\\nFor example, if AI is classifying inbox messages, decide what “correct enough” means and what level of manual review means the system needs a reset. Any threshold here is a control, not a promise. If you have not agreed it in advance, you are just hoping the model stays polite. Hope is not a control system.\\n\\nFor money movement and other high-risk decisions, human approval stays mandatory. Eval drift design should make that boundary explicit: alerts, review, and a clear handoff back to you when confidence drops or patterns change.\\n\\nThe practical next step is simple: write one sentence for the workflow — “If X changes, we pause automation and review Y.” That turns eval drift into an operational boundary you can actually run.\"}",
+            "type": "output_text",
+            "logprobs": []
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message",
+        "phase": "final_answer"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 1.0,
+    "tool_choice": "auto",
+    "tools": [],
+    "top_p": 0.98,
+    "background": false,
+    "completed_at": 1788894791.0,
+    "conversation": null,
+    "max_output_tokens": 1024,
+    "max_tool_calls": null,
+    "moderation": null,
+    "previous_response_id": null,
+    "prompt": null,
+    "prompt_cache_key": null,
+    "prompt_cache_options": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "generate_summary": null,
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "status": "completed",
+    "text": {
+      "format": {
+        "name": "study_e_post",
+        "schema_": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "item_id",
+            "title",
+            "body"
+          ],
+          "properties": {
+            "item_id": {
+              "type": "string",
+              "enum": [
+                "POST-49483e238e03c8db4f310943-1"
+              ]
+            },
+            "title": {
+              "type": "string"
+            },
+            "body": {
+              "type": "string"
+            }
+          }
+        },
+        "type": "json_schema",
+        "description": null,
+        "strict": true
+      },
+      "verbosity": "medium"
+    },
+    "top_logprobs": 0,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 5634,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 5376
+      },
+      "output_tokens": 316,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 5950
+    },
+    "user": null,
+    "billing": {
+      "payer": "developer"
+    },
+    "frequency_penalty": 0.0,
+    "presence_penalty": 0.0,
+    "store": false,
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    }
+  },
+  "latency_ms": 2250,
+  "finished_at": "2026-09-08T19:13:12.622531+00:00",
+  "cost_details": {
+    "input": 0.0001935,
+    "cache_read_input_tokens": 0.0004032,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.001422,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.0020187
+  },
+  "study_id": "STUDY-E-ABLATON",
+  "operational_amendment": "retry_extension_user_authorized.json"
+}

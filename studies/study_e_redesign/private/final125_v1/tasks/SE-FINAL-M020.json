@@ -1,0 +1,365 @@
+{
+  "task_id": "SE-FINAL-M020",
+  "batch_id": 1,
+  "condition": "unchanged",
+  "source_task_id": "SE-FINAL-N099",
+  "topic": "retrieval quality as a design constraint",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-306",
+    "title": "Retrieval quality is a workflow constraint, not a nice-to-have",
+    "body": "If your AI tool or automation has to look up information to do useful work, retrieval quality is part of the workflow design, not an afterthought. I mean the simple version: when the system searches documents, emails, FAQs, or prior records, it has to pull back the right material consistently, or the answer becomes neat-looking and wrong. That creates rework for you, or worse, a confident mistake. For a small business, the useful question is not “can AI answer this?” but “can it find the right source every time this task runs?”\n\nA practical rule of thumb: if one recurring task needs you to search more than one place for the answer, retrieval quality has become a design constraint. That could be customer questions, invoice checks, or lead follow-up. Before automating anything, audit the source material for that one task. Are the documents named clearly, grouped sensibly, and kept current? If the inputs are messy, automation will usually move the manual work earlier, not remove it.\n\nOne control I would keep is source display: the system should show which document it used before you trust the answer. Bareni’s own local knowledge-assistant demo shows grounded answers with sources on synthetic data, but the public route is locked, so treat that as a demo pattern, not a deployed service. For an owner, the next step is plain: pick one repeating workflow and check whether the information is organised well enough to retrieve before you try to automate it."
+  },
+  "final": {
+    "item_id": "E-OPT-406",
+    "title": "Retrieval quality is a workflow constraint, not a nice-to-have",
+    "body": "If your AI tool or automation has to look up information to do useful work, retrieval quality is part of the workflow design, not an afterthought. In plain terms: when the system searches documents, emails, FAQs, or prior records, it has to pull back the right material consistently, or the answer looks tidy and is still wrong. That creates rework for you, or worse, a confident mistake. For a small business, the useful question is not “can AI answer this?” but “can it find the right source every time this task runs?”\n\nA practical rule of thumb is to look at one recurring task where someone has to search more than one place for the answer. That could be customer questions, invoice checks, or lead follow-up. If the answer depends on finding the right document, email thread, or prior record repeatedly, retrieval quality has become a design constraint. Before automating anything, audit the source material for that one task: are the documents named clearly, grouped sensibly, and kept current? If the inputs are messy, automation usually moves the manual work earlier rather than removing it. A neat trick, if you enjoy surprises, is to automate chaos.\n\nOne control worth keeping is source display: the system should show which document it used before you trust the answer. Bareni’s own local knowledge-assistant demo shows grounded answers with sources on synthetic data, but the public route is locked, so treat that as a demo pattern, not a deployed service. The next step is simple: pick one repeating workflow and ask whether the information is organised well enough to retrieve before you try to automate it."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-020",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-020",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-020-1",
+        "repairs": []
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-020",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-406",
+        "title": "Retrieval quality is a workflow constraint, not a nice-to-have",
+        "body": "If your AI tool or automation has to look up information to do useful work, retrieval quality is part of the workflow design, not an afterthought. In plain terms: when the system searches documents, emails, FAQs, or prior records, it has to pull back the right material consistently, or the answer looks tidy and is still wrong. That creates rework for you, or worse, a confident mistake. For a small business, the useful question is not “can AI answer this?” but “can it find the right source every time this task runs?”\n\nA practical rule of thumb is to look at one recurring task where someone has to search more than one place for the answer. That could be customer questions, invoice checks, or lead follow-up. If the answer depends on finding the right document, email thread, or prior record repeatedly, retrieval quality has become a design constraint. Before automating anything, audit the source material for that one task: are the documents named clearly, grouped sensibly, and kept current? If the inputs are messy, automation usually moves the manual work earlier rather than removing it. A neat trick, if you enjoy surprises, is to automate chaos.\n\nOne control worth keeping is source display: the system should show which document it used before you trust the answer. Bareni’s own local knowledge-assistant demo shows grounded answers with sources on synthetic data, but the public route is locked, so treat that as a demo pattern, not a deployed service. The next step is simple: pick one repeating workflow and ask whether the information is organised well enough to retrieve before you try to automate it."
+      },
+      "gate_key": "SE-FINAL-M020_gate1__a001"
+    }
+  ],
+  "measurement_status": "complete",
+  "planner": {
+    "item_id": "E-PLAN-506",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "This task authorizes no CTA. End with a practical observation about retrieval quality as a workflow decision, not a meeting prompt or diagnostic offer."
+      },
+      {
+        "lesson_id": "L02",
+        "application": "Apply the no-lock-in positioning from C02 (customer owns accounts and automation tools) as stated policy, not warranty."
+      },
+      {
+        "lesson_id": "L03",
+        "application": "The approved evidence does not address retrieval quality metrics or thresholds. Translate the abstract topic into one concrete diagnostic question the owner can ask themselves about their own workflow."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Define retrieval quality as the concrete problem: when an AI assistant or automated workflow looks up information (documents, emails, FAQs, past transactions), it must return relevant material consistently, or answers become wrong and create rework.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C03",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Identify the owner's workflow repeating cycle: name one recurring task (answering customer questions, processing invoices, following up leads) where the worker retrieves information from multiple stored documents or systems each time.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C01",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "State the retrieval threshold: If the workflow depends on finding the right document, email thread, or prior record more than once a week, retrieval quality becomes a design constraint—not an optional feature.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C03",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Explain the control: Any AI system you deploy must show the source document it used to answer (not just the answer). This lets you verify it looked in the right place before you trust the output.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L02"
+        ],
+        "evidence_ids": [
+          "C02",
+          "C03"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Name one concrete next step: Audit your stored materials for that one recurring task—are documents named clearly, organized by topic, and updated regularly? Poor source material breaks any retrieval system, AI or human.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C01",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Close with a diagnostic question: If your workflow already requires you to search multiple places to find the right answer, automating the search without improving how information is stored will not reduce the manual work—only move it earlier.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C05"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No customers, deployments, results, or team claims. Describe retrieval quality as a design principle applicable to Bareni's self-built knowledge-assistant demo, not a customer outcome."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Retrieval quality does not authorize autonomous decisions. Maintain the requirement that the owner sees the source before trusting any automated answer."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Preserve the frozen persona: plain-speaking founder-to-founder voice, no CTA, no invented urgency, and the boundary that diagnosis and approval stay with the owner."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Keep the abstract topic grounded in observable workflow mechanics (what gets retrieved, how often, from where) rather than general AI capability statements. Use plain English and distinguish the diagnostic question from existing Bareni capabilities."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-606",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C03",
+            "quote": "RAG means retrieving relevant approved company documents before answering; in\nplain terms, the assistant looks in company material rather than the open web."
+          },
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step"
+          }
+        ],
+        "rationale": "This is a planned explanatory framing instruction for the post, not an assertion about a current Bareni capability or an observed result. Approved evidence supports the general idea that retrieval means looking up relevant approved company documents before answering, so the framing is permissible as a concept.",
+        "use_guidance": "Keep as an explicitly conceptual explanation of retrieval. Describe the risk of irrelevant retrieval in general workflow terms only; do not attach any measured error rate, rework figure, or observed customer consequence."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "The representative pains\n  are 8–10 hours a week of repeated customer questions, neglected sales leads,\n  and manual invoice/data work."
+          },
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI\n  fits, and—if it does—defines pilot scope, fixed price, and measures."
+          }
+        ],
+        "rationale": "An instruction asking the reader to name one recurring task is a diagnostic prompt and next step, not a factual assertion. The example task types match the approved persona pains.",
+        "use_guidance": "Keep as a reader-facing prompt. Present the examples as persona scenario categories, not as market statistics or observed customer workflows; do not cite the 8–10 hours figure as a measured result."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Practicality: explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step."
+          },
+          {
+            "source_id": "C01",
+            "quote": "have a frequent, repeatable workflow with a\n  measurable outcome"
+          }
+        ],
+        "rationale": "This is an owner decision rule offered as guidance, matching the approved persona focus on a threshold. The specific 'more than once a week' cut-off is not drawn from approved evidence as a validated benchmark, so it may only stand as a proposed rule of thumb.",
+        "use_guidance": "Keep explicitly proposed. Word the frequency as a suggested rule of thumb for the reader's own judgement, not as a Bareni benchmark, tested threshold, or industry standard."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C03",
+            "quote": "generate grounded LLM answers;\n  and show sources"
+          },
+          {
+            "source_id": "C03",
+            "quote": "It works end to end locally, but the deployed public route is\n  locked."
+          }
+        ],
+        "rationale": "Source display is supported only as a feature of the self-built local knowledge assistant demo. The claim's wording 'Any AI system you deploy must show the source document' asserts a general design requirement while implying Bareni deployment capability; the demo-only, not-production status must be stated before use.",
+        "use_guidance": "Add the qualification that source display is demonstrated in Bareni's self-built local demo on synthetic Acme Shop data, with the public route locked and no production operation or customer validation. Frame the 'must show sources' element as a recommended control for the owner to require, not as a delivered deployment."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C03",
+            "quote": "It can ingest MD, PDF, and\n  URL content"
+          },
+          {
+            "source_id": "C01",
+            "quote": "Especially suitable businesses already work in English, use digital\n  documents and SaaS tools"
+          }
+        ],
+        "rationale": "A manual audit of the reader's own stored materials is a permissible next step for the reader, not a claim about Bareni's implemented service or an observed effect.",
+        "use_guidance": "Keep as a manual next step the owner performs. Do not present it as a Bareni audit service or attach any claimed improvement in accuracy or time saved; avoid implying scan/OCR-heavy material can be handled, since OCR and PDF/scan ingestion are not implemented."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Do not force AI where it is unsuitable."
+          },
+          {
+            "source_id": "C02",
+            "quote": "says honestly whether AI\n  fits"
+          }
+        ],
+        "rationale": "A closing diagnostic question, including the honest caution that automation may only relocate manual work, is a permissible reflective prompt consistent with the approved 'says honestly whether AI fits' stance; it asserts no observed outcome.",
+        "use_guidance": "Keep as the closing neutral diagnostic observation with no meeting prompt or booking invitation, per the task's no-CTA rule. State the 'will not reduce manual work' point as a caution about poor source material, not as a measured finding."
+      }
+    ]
+  },
+  "selected_lessons": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. This includes indirect meeting prompts and direct brand-level offers such as a free 30-minute diagnostic. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025",
+        "B3-SUMMARY",
+        "SE-FINAL-N079"
+      ]
+    },
+    {
+      "lesson_id": "L02",
+      "text": "When approved evidence presents an operational practice as policy or positioning, keep that qualifier in the copy. Do not rewrite it as an absolute guarantee or warranty-level statement.",
+      "source_event_ids": [
+        "B3-SUMMARY",
+        "SE-FINAL-N080"
+      ]
+    },
+    {
+      "lesson_id": "L03",
+      "text": "If the source set does not support a substantive explanatory claim, replace it with a neutral workflow prompt or decision step rather than filling the gap with general background explanation.",
+      "source_event_ids": [
+        "B3-SUMMARY",
+        "SE-FINAL-N091"
+      ]
+    }
+  ],
+  "register_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "planner_key": "SE-FINAL-N099_planner__a002",
+  "researcher_key": "SE-FINAL-N099_researcher__a001",
+  "writer_key": "SE-FINAL-N099_writer__a001",
+  "final_key": "SE-FINAL-M020_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-M020_gate1__a001",
+  "production_completed_at": "2026-09-08T13:29:31.994006+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts",
+  "initial_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-020",
+    "scores": {
+      "persona_fit": 5,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "The calm, technically grounded voice directly addresses small business owners, respects the no-CTA rule, and aligns with Bareni's consulting positioning.",
+      "clarity": "The argument is clear, logically structured, and explains retrieval quality in practical, plain language without jargon.",
+      "actionability": "Provides a practical rule of thumb, an audit checklist for source documents, and a feasible next step for owners evaluating AI automation.",
+      "factual_grounding": "Accurately represents the knowledge-assistant demo as a local demo on synthetic data with a locked public route, making no exaggerated claims."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 20,
+    "pass": true,
+    "low_quality": false
+  },
+  "final_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-020",
+    "scores": {
+      "persona_fit": 5,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Accurately targets the small business owner-operator in Bareni's calm, practical voice, adheres strictly to the no-CTA rule, and includes restrained dry humor.",
+      "clarity": "Logical and plain-spoken; immediately clarifies why retrieval quality is a workflow constraint and explains key risks without jargon.",
+      "actionability": "Provides an actionable rule of thumb, an audit question for source materials, and a bounded diagnostic next step appropriate for a founder.",
+      "factual_grounding": "Meticulously qualifies the knowledge assistant as a local demo on synthetic data with a locked public route, avoiding any production or customer claims."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 20,
+    "pass": true,
+    "low_quality": false
+  },
+  "evaluation_reused": false,
+  "evaluation_keys": [
+    "SE-FINAL-M020_eval_initial__a001",
+    "SE-FINAL-M020_eval_final__a001"
+  ],
+  "completed_at": "2026-09-08T13:29:40.939901+00:00"
+}

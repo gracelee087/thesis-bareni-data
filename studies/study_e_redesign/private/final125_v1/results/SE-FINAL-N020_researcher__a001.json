@@ -1,0 +1,195 @@
+{
+  "status": "success",
+  "usage": {
+    "input_tokens": 7637,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2179,
+    "reasoning_tokens": null
+  },
+  "cost_usd": 0.09266,
+  "output": {
+    "item_id": "E-RES-620",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "The best-fit reader has tried ChatGPT but has not connected AI to a business\nworkflow."
+          },
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI\n  fits"
+          },
+          {
+            "source_id": "S01",
+            "quote": "Turn the abstract topic into a bounded Bareni workflow decision."
+          }
+        ],
+        "rationale": "This is a drafting instruction for how to open the post and frame the topic, not an assertion of current implementation, observed benefit or customer use. The framing is consistent with the approved audience description and the diagnostic's stated purpose.",
+        "use_guidance": "Keep as an explicitly proposed opening frame. Stay within the approved persona wording ('has tried ChatGPT but has not connected AI to a business workflow'); do not attach any customer example, outcome or implied readiness."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "Especially suitable businesses already work in English, use digital\n  documents and SaaS tools, and have a frequent, repeatable workflow with a\n  measurable outcome."
+          },
+          {
+            "source_id": "C01",
+            "quote": "The 8–10 hours is a persona scenario, not a market\n  statistic or observed customer result."
+          }
+        ],
+        "rationale": "An instruction to select and illustrate a suitability test, using the persona scenario as an example frame. The claim itself already flags the 8–10 hours as an example rather than a market claim, and the suitability criteria match approved evidence.",
+        "use_guidance": "Keep as a proposed content step. In the post, label the 8–10 hours explicitly as a persona scenario, never as a market statistic, measured saving or customer result."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C03",
+            "quote": "It works end to end locally, but the deployed public route is\n  locked. Automated testing, rate limiting, and billing are planned, not working."
+          },
+          {
+            "source_id": "C03",
+            "quote": "PDF/scan ingestion and OCR are not implemented."
+          },
+          {
+            "source_id": "C03",
+            "quote": "Arithmetic checks, duplicate-invoice blocking, amount-based human-only approval,\n  refusal of agent approval/payment attempts, and persistent audit records work."
+          },
+          {
+            "source_id": "C03",
+            "quote": "Direct Google Calendar/Meet integration, complete inbound form capture, billing,\n  self-service, and multi-customer operation do not exist."
+          }
+        ],
+        "rationale": "The core is supported: the knowledge assistant retrieves grounded answers from approved documents locally and the AP demo blocks duplicate invoices, while OCR, billing and multi-customer operation are absent. However the claim's example 'retrieves answers from your docs' omits the essential condition that the demos use synthetic data only and are not customer-document or production systems.",
+        "use_guidance": "Add the missing conditions before use: state that both are self-built demos on synthetic data (Acme Shop; a fictional German manufacturer), that the assistant works end to end locally with the deployed public route locked, and that no customer documents, deployment or observed results are implied. Name only limits listed in C03; do not use the EUR 473k figure."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C02",
+            "quote": "Finished code is handed to the customer. Database, automation-tool, and API\n  accounts are in the customer's name from the start."
+          },
+          {
+            "source_id": "C02",
+            "quote": "Describe this as policy and no-lock-in positioning, not an absolute legal warranty."
+          }
+        ],
+        "rationale": "The human-approval control and customer-owned accounts are supported and correctly framed as policy, but the claim omits the required framing limit that ownership/no-lock-in is positioning rather than an absolute legal warranty, and it bundles data ownership beyond the account/code wording in C02.",
+        "use_guidance": "Add the qualification that customer-held accounts and code handover are Bareni policy and no-lock-in positioning, not a legal warranty. Restrict wording to code handover and accounts in the customer's name; do not extend to unstated data-ownership guarantees or security/compliance assurances."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "Normal sequence: free 30-minute diagnostic; free one-page pilot proposal;\n  paid working MVP in days; fixed-price pilot in weeks"
+          },
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI\n  fits, and—if it does—defines pilot scope, fixed price, and measures."
+          },
+          {
+            "source_id": "C02",
+            "quote": "Customers who want strategy only can buy the separate AI Strategy & Roadmap"
+          }
+        ],
+        "rationale": "The diagnostic's purpose and outputs are supported, but the added assertion that it is 'the only entry point, not a strategy-only offer' conflicts with approved evidence, which offers a separate AI Strategy & Roadmap for strategy-only buyers. Timings and scopes are also intended, not guaranteed.",
+        "use_guidance": "Drop the 'only entry point' framing; describe the diagnostic as the normal first step while acknowledging the separate AI Strategy & Roadmap exists for strategy-only buyers, and note that pilot timings are intended scopes, not guarantees. Because the task sets CTA rule 'None', present this as a described next step rather than the 'Book a free 30-minute diagnostic' CTA."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Informational posts use no CTA or one soft closing sentence."
+          }
+        ],
+        "rationale": "An instruction for a closing observation with no CTA. It proposes framing rather than asserting a current capability or result, and the no-CTA choice matches the approved task and voice rules.",
+        "use_guidance": "Keep as a proposed closing line: at most one soft factual sentence, no CTA, no scarcity, no hype vocabulary, and no implied outcome or capability beyond approved evidence."
+      }
+    ]
+  },
+  "raw_text": "{\"item_id\":\"E-RES-620\",\"ledger\":[{\"claim_id\":\"Q01\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C01\",\"quote\":\"The best-fit reader has tried ChatGPT but has not connected AI to a business\\nworkflow.\"},{\"source_id\":\"C02\",\"quote\":\"The diagnostic identifies the one recurring workflow, says honestly whether AI\\n  fits\"},{\"source_id\":\"S01\",\"quote\":\"Turn the abstract topic into a bounded Bareni workflow decision.\"}],\"rationale\":\"This is a drafting instruction for how to open the post and frame the topic, not an assertion of current implementation, observed benefit or customer use. The framing is consistent with the approved audience description and the diagnostic's stated purpose.\",\"use_guidance\":\"Keep as an explicitly proposed opening frame. Stay within the approved persona wording ('has tried ChatGPT but has not connected AI to a business workflow'); do not attach any customer example, outcome or implied readiness.\"},{\"claim_id\":\"Q02\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C01\",\"quote\":\"Especially suitable businesses already work in English, use digital\\n  documents and SaaS tools, and have a frequent, repeatable workflow with a\\n  measurable outcome.\"},{\"source_id\":\"C01\",\"quote\":\"The 8–10 hours is a persona scenario, not a market\\n  statistic or observed customer result.\"}],\"rationale\":\"An instruction to select and illustrate a suitability test, using the persona scenario as an example frame. The claim itself already flags the 8–10 hours as an example rather than a market claim, and the suitability criteria match approved evidence.\",\"use_guidance\":\"Keep as a proposed content step. In the post, label the 8–10 hours explicitly as a persona scenario, never as a market statistic, measured saving or customer result.\"},{\"claim_id\":\"Q03\",\"category\":\"QUALIFICATIONS\",\"evidence\":[{\"source_id\":\"C03\",\"quote\":\"It works end to end locally, but the deployed public route is\\n  locked. Automated testing, rate limiting, and billing are planned, not working.\"},{\"source_id\":\"C03\",\"quote\":\"PDF/scan ingestion and OCR are not implemented.\"},{\"source_id\":\"C03\",\"quote\":\"Arithmetic checks, duplicate-invoice blocking, amount-based human-only approval,\\n  refusal of agent approval/payment attempts, and persistent audit records work.\"},{\"source_id\":\"C03\",\"quote\":\"Direct Google Calendar/Meet integration, complete inbound form capture, billing,\\n  self-service, and multi-customer operation do not exist.\"}],\"rationale\":\"The core is supported: the knowledge assistant retrieves grounded answers from approved documents locally and the AP demo blocks duplicate invoices, while OCR, billing and multi-customer operation are absent. However the claim's example 'retrieves answers from your docs' omits the essential condition that the demos use synthetic data only and are not customer-document or production systems.\",\"use_guidance\":\"Add the missing conditions before use: state that both are self-built demos on synthetic data (Acme Shop; a fictional German manufacturer), that the assistant works end to end locally with the deployed public route locked, and that no customer documents, deployment or observed results are implied. Name only limits listed in C03; do not use the EUR 473k figure.\"},{\"claim_id\":\"Q04\",\"category\":\"QUALIFICATIONS\",\"evidence\":[{\"source_id\":\"C04\",\"quote\":\"Human approval is mandatory for money movement and other high-risk decisions.\"},{\"source_id\":\"C02\",\"quote\":\"Finished code is handed to the customer. Database, automation-tool, and API\\n  accounts are in the customer's name from the start.\"},{\"source_id\":\"C02\",\"quote\":\"Describe this as policy and no-lock-in positioning, not an absolute legal warranty.\"}],\"rationale\":\"The human-approval control and customer-owned accounts are supported and correctly framed as policy, but the claim omits the required framing limit that ownership/no-lock-in is positioning rather than an absolute legal warranty, and it bundles data ownership beyond the account/code wording in C02.\",\"use_guidance\":\"Add the qualification that customer-held accounts and code handover are Bareni policy and no-lock-in positioning, not a legal warranty. Restrict wording to code handover and accounts in the customer's name; do not extend to unstated data-ownership guarantees or security/compliance assurances.\"},{\"claim_id\":\"Q05\",\"category\":\"QUALIFICATIONS\",\"evidence\":[{\"source_id\":\"C02\",\"quote\":\"Normal sequence: free 30-minute diagnostic; free one-page pilot proposal;\\n  paid working MVP in days; fixed-price pilot in weeks\"},{\"source_id\":\"C02\",\"quote\":\"The diagnostic identifies the one recurring workflow, says honestly whether AI\\n  fits, and—if it does—defines pilot scope, fixed price, and measures.\"},{\"source_id\":\"C02\",\"quote\":\"Customers who want strategy only can buy the separate AI Strategy & Roadmap\"}],\"rationale\":\"The diagnostic's purpose and outputs are supported, but the added assertion that it is 'the only entry point, not a strategy-only offer' conflicts with approved evidence, which offers a separate AI Strategy & Roadmap for strategy-only buyers. Timings and scopes are also intended, not guaranteed.\",\"use_guidance\":\"Drop the 'only entry point' framing; describe the diagnostic as the normal first step while acknowledging the separate AI Strategy & Roadmap exists for strategy-only buyers, and note that pilot timings are intended scopes, not guarantees. Because the task sets CTA rule 'None', present this as a described next step rather than the 'Book a free 30-minute diagnostic' CTA.\"},{\"claim_id\":\"Q06\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"S01\",\"quote\":\"**CTA rule:** None.\"},{\"source_id\":\"C05\",\"quote\":\"Informational posts use no CTA or one soft closing sentence.\"}],\"rationale\":\"An instruction for a closing observation with no CTA. It proposes framing rather than asserting a current capability or result, and the no-CTA choice matches the approved task and voice rules.\",\"use_guidance\":\"Keep as a proposed closing line: at most one soft factual sentence, no CTA, no scarcity, no hype vocabulary, and no implied outcome or capability beyond approved evidence.\"}]}",
+  "provider_response": {
+    "id": "msg_011Ceqxi6qciHzZjFHMJf8Ue",
+    "container": null,
+    "content": [
+      {
+        "citations": null,
+        "text": "{\"item_id\":\"E-RES-620\",\"ledger\":[{\"claim_id\":\"Q01\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C01\",\"quote\":\"The best-fit reader has tried ChatGPT but has not connected AI to a business\\nworkflow.\"},{\"source_id\":\"C02\",\"quote\":\"The diagnostic identifies the one recurring workflow, says honestly whether AI\\n  fits\"},{\"source_id\":\"S01\",\"quote\":\"Turn the abstract topic into a bounded Bareni workflow decision.\"}],\"rationale\":\"This is a drafting instruction for how to open the post and frame the topic, not an assertion of current implementation, observed benefit or customer use. The framing is consistent with the approved audience description and the diagnostic's stated purpose.\",\"use_guidance\":\"Keep as an explicitly proposed opening frame. Stay within the approved persona wording ('has tried ChatGPT but has not connected AI to a business workflow'); do not attach any customer example, outcome or implied readiness.\"},{\"claim_id\":\"Q02\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C01\",\"quote\":\"Especially suitable businesses already work in English, use digital\\n  documents and SaaS tools, and have a frequent, repeatable workflow with a\\n  measurable outcome.\"},{\"source_id\":\"C01\",\"quote\":\"The 8–10 hours is a persona scenario, not a market\\n  statistic or observed customer result.\"}],\"rationale\":\"An instruction to select and illustrate a suitability test, using the persona scenario as an example frame. The claim itself already flags the 8–10 hours as an example rather than a market claim, and the suitability criteria match approved evidence.\",\"use_guidance\":\"Keep as a proposed content step. In the post, label the 8–10 hours explicitly as a persona scenario, never as a market statistic, measured saving or customer result.\"},{\"claim_id\":\"Q03\",\"category\":\"QUALIFICATIONS\",\"evidence\":[{\"source_id\":\"C03\",\"quote\":\"It works end to end locally, but the deployed public route is\\n  locked. Automated testing, rate limiting, and billing are planned, not working.\"},{\"source_id\":\"C03\",\"quote\":\"PDF/scan ingestion and OCR are not implemented.\"},{\"source_id\":\"C03\",\"quote\":\"Arithmetic checks, duplicate-invoice blocking, amount-based human-only approval,\\n  refusal of agent approval/payment attempts, and persistent audit records work.\"},{\"source_id\":\"C03\",\"quote\":\"Direct Google Calendar/Meet integration, complete inbound form capture, billing,\\n  self-service, and multi-customer operation do not exist.\"}],\"rationale\":\"The core is supported: the knowledge assistant retrieves grounded answers from approved documents locally and the AP demo blocks duplicate invoices, while OCR, billing and multi-customer operation are absent. However the claim's example 'retrieves answers from your docs' omits the essential condition that the demos use synthetic data only and are not customer-document or production systems.\",\"use_guidance\":\"Add the missing conditions before use: state that both are self-built demos on synthetic data (Acme Shop; a fictional German manufacturer), that the assistant works end to end locally with the deployed public route locked, and that no customer documents, deployment or observed results are implied. Name only limits listed in C03; do not use the EUR 473k figure.\"},{\"claim_id\":\"Q04\",\"category\":\"QUALIFICATIONS\",\"evidence\":[{\"source_id\":\"C04\",\"quote\":\"Human approval is mandatory for money movement and other high-risk decisions.\"},{\"source_id\":\"C02\",\"quote\":\"Finished code is handed to the customer. Database, automation-tool, and API\\n  accounts are in the customer's name from the start.\"},{\"source_id\":\"C02\",\"quote\":\"Describe this as policy and no-lock-in positioning, not an absolute legal warranty.\"}],\"rationale\":\"The human-approval control and customer-owned accounts are supported and correctly framed as policy, but the claim omits the required framing limit that ownership/no-lock-in is positioning rather than an absolute legal warranty, and it bundles data ownership beyond the account/code wording in C02.\",\"use_guidance\":\"Add the qualification that customer-held accounts and code handover are Bareni policy and no-lock-in positioning, not a legal warranty. Restrict wording to code handover and accounts in the customer's name; do not extend to unstated data-ownership guarantees or security/compliance assurances.\"},{\"claim_id\":\"Q05\",\"category\":\"QUALIFICATIONS\",\"evidence\":[{\"source_id\":\"C02\",\"quote\":\"Normal sequence: free 30-minute diagnostic; free one-page pilot proposal;\\n  paid working MVP in days; fixed-price pilot in weeks\"},{\"source_id\":\"C02\",\"quote\":\"The diagnostic identifies the one recurring workflow, says honestly whether AI\\n  fits, and—if it does—defines pilot scope, fixed price, and measures.\"},{\"source_id\":\"C02\",\"quote\":\"Customers who want strategy only can buy the separate AI Strategy & Roadmap\"}],\"rationale\":\"The diagnostic's purpose and outputs are supported, but the added assertion that it is 'the only entry point, not a strategy-only offer' conflicts with approved evidence, which offers a separate AI Strategy & Roadmap for strategy-only buyers. Timings and scopes are also intended, not guaranteed.\",\"use_guidance\":\"Drop the 'only entry point' framing; describe the diagnostic as the normal first step while acknowledging the separate AI Strategy & Roadmap exists for strategy-only buyers, and note that pilot timings are intended scopes, not guarantees. Because the task sets CTA rule 'None', present this as a described next step rather than the 'Book a free 30-minute diagnostic' CTA.\"},{\"claim_id\":\"Q06\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"S01\",\"quote\":\"**CTA rule:** None.\"},{\"source_id\":\"C05\",\"quote\":\"Informational posts use no CTA or one soft closing sentence.\"}],\"rationale\":\"An instruction for a closing observation with no CTA. It proposes framing rather than asserting a current capability or result, and the no-CTA choice matches the approved task and voice rules.\",\"use_guidance\":\"Keep as a proposed closing line: at most one soft factual sentence, no CTA, no scarcity, no hype vocabulary, and no implied outcome or capability beyond approved evidence.\"}]}",
+        "type": "text"
+      }
+    ],
+    "model": "claude-opus-5",
+    "role": "assistant",
+    "stop_details": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "global",
+      "input_tokens": 7637,
+      "output_tokens": 2179,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": null,
+      "service_tier": "standard"
+    }
+  },
+  "stop_reason": "end_turn",
+  "cost_details": {
+    "input": 0.038185,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.054475,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.09266
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": null,
+  "key": "SE-FINAL-N020_researcher__a001",
+  "role": "researcher",
+  "created_at": "2026-09-08T12:20:01.371031+00:00",
+  "ended_at": "2026-09-08T12:20:27.622105+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-N020",
+    "batch_id": 1,
+    "condition": "natural",
+    "cohort": "natural"
+  },
+  "task_id": "SE-FINAL-N020",
+  "batch_id": 1,
+  "cohort": "natural",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 26243,
+  "budget_charge_usd": 0.09266,
+  "unknown_cost_reservation_usd": 0
+}

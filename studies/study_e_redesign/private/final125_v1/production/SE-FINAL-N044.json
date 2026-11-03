@@ -1,0 +1,286 @@
+{
+  "task_id": "SE-FINAL-N044",
+  "batch_id": 2,
+  "condition": "natural",
+  "source_task_id": null,
+  "topic": "the cost of rollback drills",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-313",
+    "title": "When a rollback drill is worth the time",
+    "body": "Rollback drill cost is easy to confuse with failure cost. I’d keep it bounded: the drill is the time you spend designing, writing down, and rehearsing how to get back to a known good state after something breaks. That could mean reverting an automated workflow, restoring data, or re-entering lost records by hand. It is not the same as the cost of the outage itself.\n\nMy practical rule is simple: do the drill when the cost of being wrong is higher than the time it takes to prepare the fallback. That matters most where money moves, customer data is involved, or the process has several steps that can fail in sequence. Human approval still needs to stay in the loop for any money movement or other high-risk decision. No surprises there.\n\nIf you are considering automation, ask one blunt question: if this breaks on a Friday afternoon, can you restore it quickly, or will you spend the rest of the day untangling it? If you do not know, that is the signal to do a rollback drill before you depend on the workflow.\n\nThe next step is manual and boring, which is usually a good sign: write down the current backup process, or identify the single point of failure that would stop the workflow. If the process is small and easy to rebuild, skip the drill and use the time elsewhere. Unglamorous, but cheaper than improvising under pressure."
+  },
+  "final": {
+    "item_id": "E-OPT-413",
+    "title": "When a rollback drill is worth the time",
+    "body": "Rollback drill cost is easy to confuse with failure cost. I’d keep it bounded: the drill is the time you spend designing, writing down, and rehearsing how to get back to a known good state after something breaks. That could mean reverting an automated workflow, restoring data, or re-entering lost records by hand. It is not the same as the cost of the outage itself.\n\nMy practical rule is simple: do the drill when the cost of being wrong is higher than the time it takes to prepare the fallback. That matters most where money moves, customer data is involved, or the process has several steps that can fail in sequence. Human approval still needs to stay in the loop for any money movement or other high-risk decision. No surprises there.\n\nIf you are considering automation, ask one blunt question: if this breaks on a Friday afternoon, can you restore it quickly, or will you spend the rest of the day untangling it? If you do not know, that is the signal to do a rollback drill before you depend on the workflow.\n\nThe next step is manual and boring, which is usually a good sign: write down the current backup process, or identify the single point of failure that would stop the workflow. If the process is small and easy to rebuild, skip the drill and use the time elsewhere. Unglamorous, but cheaper than improvising under pressure."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-044",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-044",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-044-1",
+        "repairs": []
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-044",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-413",
+        "title": "When a rollback drill is worth the time",
+        "body": "Rollback drill cost is easy to confuse with failure cost. I’d keep it bounded: the drill is the time you spend designing, writing down, and rehearsing how to get back to a known good state after something breaks. That could mean reverting an automated workflow, restoring data, or re-entering lost records by hand. It is not the same as the cost of the outage itself.\n\nMy practical rule is simple: do the drill when the cost of being wrong is higher than the time it takes to prepare the fallback. That matters most where money moves, customer data is involved, or the process has several steps that can fail in sequence. Human approval still needs to stay in the loop for any money movement or other high-risk decision. No surprises there.\n\nIf you are considering automation, ask one blunt question: if this breaks on a Friday afternoon, can you restore it quickly, or will you spend the rest of the day untangling it? If you do not know, that is the signal to do a rollback drill before you depend on the workflow.\n\nThe next step is manual and boring, which is usually a good sign: write down the current backup process, or identify the single point of failure that would stop the workflow. If the process is small and easy to rebuild, skip the drill and use the time elsewhere. Unglamorous, but cheaper than improvising under pressure."
+      },
+      "gate_key": "SE-FINAL-N044_gate1__a001"
+    }
+  ],
+  "measurement_status": "pending",
+  "planner": {
+    "item_id": "E-PLAN-513",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task explicitly forbids a CTA (CTA rule: None). L01 instructs closing with a neutral practical observation or next-step note rather than a meeting prompt. Apply this by ending with a concrete diagnostic question or decision rule the owner can apply immediately, without inviting a booking."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Define 'rollback drill cost' as a bounded workflow decision: the owner's time spent designing, documenting, and rehearsing a procedure to restore systems after a failure (e.g., reverting an automated workflow, restoring corrupted data, or re-entering lost records manually). Distinguish this from the cost of actual failure.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "S01",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Explain the owner's decision rule: conduct a rollback drill if the cost of an unplanned outage (lost orders, manual recovery time, customer friction) exceeds the time spent designing and documenting one. Clarify that drills are most valuable for workflows involving money movement, customer data, or repeatable multi-step processes.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "State that Bareni policy: all customer accounts, databases, and automation tools remain in the customer's name; handover includes working code and documented recovery steps. This reduces rollback-drill burden because the customer owns the environment from day one.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Present a concrete diagnostic question the owner can ask now: 'If this automated workflow breaks on a Friday afternoon, can I restore it in under 30 minutes, or will I lose a day of orders?' If the answer is 'I don't know,' that signals a rollback drill is worth the upfront time.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "S01",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Recommend a practical next step with no meeting required: document the current manual backup process (if one exists) or identify the single point of failure (the step that, if it breaks, stops the workflow). This is the starting point for a rollback drill—no automation expertise needed.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Close with a neutral observation: rollback drills are unglamorous but necessary only when the cost of failure exceeds the cost of prevention. If the workflow is small or easily rebuilt, skip the drill and allocate time elsewhere. State no CTA, meeting invitation, or urgency.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "S01",
+          "C04",
+          "C05"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No customer names, deployment stories, productivity claims, or savings figures. Rollback-drill cost framing uses only the owner's time and hypothetical failure risk—both under the owner's control and observable."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Reinforce that human approval is mandatory for money movement (step P02). Rollback drills protect that control by documenting the decision to pause, review, or revert before funds move."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Maintain the frozen persona: plain-speaking, founder-to-founder, trustworthy expert tone. No hype, no urgency, no fabricated urgency or team claims. Bareni is described as a consulting practice being built by the thesis author."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use plain English throughout. Distinguish between the owner's current manual process, the hypothetical automated workflow, and the diagnostic question (all examples or proposals, not existing capabilities). Never imply Bareni has delivered this to a customer."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-613",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Turn the abstract topic into a bounded Bareni workflow decision. Explain one practical next step."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Keep observed results, estimates, targets,\n  synthetic data, and examples distinct."
+          }
+        ],
+        "rationale": "This is a definitional framing instruction for the post, not an assertion about an existing Bareni capability, customer situation or measured cost. The approved task explicitly asks for the abstract topic to be turned into a bounded workflow decision.",
+        "use_guidance": "Keep as an explicitly framed definition and illustrative example; do not attach any numbers, observed costs or customer situations to it, and keep the examples clearly hypothetical."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Practicality: explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step."
+          },
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          }
+        ],
+        "rationale": "A decision rule offered to the reader is a recommendation, not a factual claim about Bareni or observed results. The money-movement emphasis is consistent with approved scope evidence.",
+        "use_guidance": "Keep as an owner-facing decision rule with no quantified thresholds, savings or outage figures; where money movement is mentioned, retain that human approval remains mandatory."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "Finished code is handed to the customer. Database, automation-tool, and API\n  accounts are in the customer's name from the start. Retainer support is optional.\n  Describe this as policy and no-lock-in positioning, not an absolute legal warranty."
+          }
+        ],
+        "rationale": "Account ownership and code handover are supported as policy, but the claim states it unconditionally and adds 'documented recovery steps' as part of handover, which approved evidence does not mention. The reduced-burden effect is also asserted as fact rather than positioning.",
+        "use_guidance": "Present as Bareni policy and no-lock-in positioning, not an absolute legal warranty; drop 'documented recovery steps' unless separately approved, and phrase the burden effect as an intended consequence of customer-owned accounts rather than an observed outcome."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step"
+          },
+          {
+            "source_id": "C01",
+            "quote": "The best-fit reader has tried ChatGPT but has not connected AI to a business\n  workflow."
+          }
+        ],
+        "rationale": "A self-directed diagnostic question for the reader, phrased hypothetically; it asserts no Bareni capability, deployment or measured recovery time.",
+        "use_guidance": "Keep as a reader-facing hypothetical question; the '30 minutes' must stay an illustrative threshold inside the question, not a Bareni benchmark or guarantee, and it must not be turned into an invitation to book the free diagnostic (task CTA rule: none)."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Task:** Turn the abstract topic into a bounded Bareni workflow decision. Explain one practical next step."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Informational posts use no CTA or one\n  soft closing sentence."
+          }
+        ],
+        "rationale": "A manual next step the reader performs themselves; it does not assert any implemented Bareni feature or customer use.",
+        "use_guidance": "Keep as a manual, reader-performed next step; do not imply Bareni tooling performs it, and keep it free of any meeting or booking prompt."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "CTA rule:** None."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Trust outranks friendliness. At most one restrained dry-humour or understatement\n  sentence per post."
+          },
+          {
+            "source_id": "S01",
+            "quote": "Do not force AI where it is unsuitable."
+          }
+        ],
+        "rationale": "A proposed closing approach and editorial instruction rather than a factual assertion; the 'skip the drill' advice is permissible and consistent with not forcing unsuitable work.",
+        "use_guidance": "Keep as a neutral closing observation with no CTA, meeting invitation or urgency; 'unglamorous' counts as the single permitted understatement, so use no further humour."
+      }
+    ]
+  },
+  "selected_lessons": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025"
+      ]
+    }
+  ],
+  "register_sha256": "48497afb8641ddc47d974cdfadba06a1f6b562d21c49ec03c9b03a5dc531744e",
+  "planner_key": "SE-FINAL-N044_planner__a001",
+  "researcher_key": "SE-FINAL-N044_researcher__a001",
+  "writer_key": "SE-FINAL-N044_writer__a001",
+  "final_key": "SE-FINAL-N044_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-N044_gate1__a001",
+  "production_completed_at": "2026-09-08T12:36:21.781517+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts"
+}

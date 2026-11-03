@@ -1,0 +1,272 @@
+{
+  "task_id": "SE-FINAL-N010",
+  "batch_id": 1,
+  "condition": "natural",
+  "source_task_id": null,
+  "topic": "designing against self-reinforcing errors",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-310",
+    "title": "Design out the error that feeds itself",
+    "body": "When a workflow keeps correcting its own mistakes, the problem is usually not the last error. It is the loop that sends bad data back into the same process.\n\nA useful bounded question is: which repeated manual task creates the next round of rework? For example, if invoice details are entered by hand and later reconciled by hand because the first entry was incomplete or misclassified, the workflow is teaching itself to repeat the same mistake. That is the loop to design against.\n\nThe practical next step is not to automate everything. Start by checking whether the workflow is actually a fit for automation: is it repetitive, does it produce a measurable outcome, and is the work already in digital documents or SaaS tools? If the answer is no, AI is probably the wrong tool and the cleaner move is to change the process, not add software.\n\nIf the answer is yes, define one error-blocking control before anything else. That might be duplicate detection, mandatory field validation, or human approval before a high-risk step. The rule is simple: the system should catch the mistake before it gets a chance to cycle back. Human approval stays in place for money movement and any other high-risk decision. Boring, but effective, which is usually the point.\n\nFrom there, you can scope a small pilot around one workflow and one control, instead of trying to fix the whole business at once."
+  },
+  "final": {
+    "item_id": "E-OPT-410",
+    "title": "Design out the error that feeds itself",
+    "body": "When a workflow keeps correcting its own mistakes, the problem is usually not the last error. It is the loop that sends bad data back into the same process.\n\nA useful bounded question is: which repeated manual task creates the next round of rework? For example, if invoice details are entered by hand and later reconciled by hand because the first entry was incomplete or misclassified, the workflow is teaching itself to repeat the same mistake. That is the loop to design against.\n\nThe practical next step is not to automate everything. Start with a simple fit check: is the work repetitive, does it happen often enough to matter, does it already live in digital documents or SaaS tools, and do you control the process change? If the answer is no, AI probably does not belong there yet. Better to change the process than bolt software onto a bad one.\n\nIf the answer is yes, define one error-blocking control before anything else. That might be duplicate detection, mandatory field validation, or human approval before a high-risk step. The system should catch the mistake before it gets a chance to cycle back. Human approval stays in place for money movement and any other high-risk decision. Boring, but effective, which is usually the point.\n\nThen scope a small pilot around one workflow and one control. Keep the success measure concrete enough that you can tell whether the rework loop actually broke, without pretending the whole business needs a full rebuild."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-010",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-010",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-010-1",
+        "repairs": []
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-010",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-410",
+        "title": "Design out the error that feeds itself",
+        "body": "When a workflow keeps correcting its own mistakes, the problem is usually not the last error. It is the loop that sends bad data back into the same process.\n\nA useful bounded question is: which repeated manual task creates the next round of rework? For example, if invoice details are entered by hand and later reconciled by hand because the first entry was incomplete or misclassified, the workflow is teaching itself to repeat the same mistake. That is the loop to design against.\n\nThe practical next step is not to automate everything. Start with a simple fit check: is the work repetitive, does it happen often enough to matter, does it already live in digital documents or SaaS tools, and do you control the process change? If the answer is no, AI probably does not belong there yet. Better to change the process than bolt software onto a bad one.\n\nIf the answer is yes, define one error-blocking control before anything else. That might be duplicate detection, mandatory field validation, or human approval before a high-risk step. The system should catch the mistake before it gets a chance to cycle back. Human approval stays in place for money movement and any other high-risk decision. Boring, but effective, which is usually the point.\n\nThen scope a small pilot around one workflow and one control. Keep the success measure concrete enough that you can tell whether the rework loop actually broke, without pretending the whole business needs a full rebuild."
+      },
+      "gate_key": "SE-FINAL-N010_gate1__a001"
+    }
+  ],
+  "measurement_status": "pending",
+  "planner": {
+    "item_id": "E-PLAN-510",
+    "selected_lessons": [],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Identify the self-reinforcing error in the owner's workflow by asking a diagnostic question: which repeated manual task produces data that feeds back into the same task, creating compounding mistakes—for example, manual invoice entry that later requires manual reconciliation because the first entry was incomplete or misclassified.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C02",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Confirm the workflow meets automation suitability: it is repetitive (weekly or more), produces a measurable outcome, involves digital documents or SaaS tools, and the owner has decision authority over process change. If it does not, state clearly that AI does not fit here and move to a different workflow.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C02",
+          "C04",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Define the error-blocking control: what decision or approval gate would catch the mistake before it cycles back into the workflow. Example: automated duplicate detection, mandatory field validation, or human approval before posting to accounting.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C03",
+          "C04",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Propose a scoped AI pilot that automates the repetitive part of the workflow and adds the control. Keep scope to one workflow, not multiple systems. Example: extract key data from customer emails, classify by issue type, flag ambiguous cases for human review before routing.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C03",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Set a measurable success threshold: how will the owner know the error rate dropped or the rework cycle broke. Example: 'reduce invoice corrections from 5 per week to 1 per week' or 'all mislabelled tickets caught before handoff.' Avoid ROI or time-saved claims without measurement.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C05",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Explain the next step: book a free 30-minute diagnostic to walk through the workflow, confirm the self-reinforcing error pattern, and agree on pilot scope and fixed price. Emphasise that the customer keeps all automation accounts and code; no lock-in.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04",
+          "S01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "Do not claim customer results, invented deployments, or ROI. Ground all examples in the proposed workflow, not observed outcomes."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Require human approval for any money-movement step in the workflow. Decline high-sensitivity scope (medical, legal, high-volume cold email). Automation must block errors, not approve them."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Maintain frozen persona voice: founder-to-founder, plain language, trust over hype, one understated remark maximum. Present Bareni as a one-person consulting practice being built; no multi-person team or legal entity implied."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use plain English; distinguish proposal examples from existing self-built demos. Make diagnostic questions and control decisions concrete and observable, not abstract."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-610",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits"
+          },
+          {
+            "source_id": "C01",
+            "quote": "manual invoice/data work"
+          }
+        ],
+        "rationale": "This is a diagnostic question and illustrative example for the post, not an assertion of a current capability, customer situation or observed error pattern. It sits within the approved diagnostic scope and the persona's repeated manual-work pains.",
+        "use_guidance": "Keep it explicitly framed as a question the reader can ask about their own workflow. Keep the invoice example generic and hypothetical; do not attach it to any customer, deployment or observed error rate."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "Especially suitable businesses already work in English, use digital documents and SaaS tools, and have a frequent, repeatable workflow with a measurable outcome."
+          },
+          {
+            "source_id": "C02",
+            "quote": "says honestly whether AI fits"
+          }
+        ],
+        "rationale": "A suitability check plus the instruction to say AI does not fit is a permissible recommendation aligned with the approved fit criteria and the honesty requirement, not a factual claim about current work.",
+        "use_guidance": "Keep as a proposed screening step. Present 'weekly or more' as an example cadence, not an approved threshold, and retain the instruction to say honestly when AI does not fit."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C03",
+            "quote": "duplicate-invoice blocking, amount-based human-only approval"
+          }
+        ],
+        "rationale": "Defining an error-blocking gate is a recommended design step, not a claim of an implemented customer control. The named examples are consistent with approved boundaries and demo features.",
+        "use_guidance": "Keep as a proposed control-design step. Retain human approval before money movement or other high-risk steps; present duplicate detection and validation as design options, not as features already running for a customer."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "free one-page pilot proposal; paid working MVP in days; fixed-price pilot in weeks"
+          },
+          {
+            "source_id": "C02",
+            "quote": "general document, email, CRM, and back-office workflows using AI plus Zapier, Make, n8n, and small amounts of custom code"
+          }
+        ],
+        "rationale": "A scoped pilot with an added control is an explicit proposal within the approved service scope; it does not assert an existing build, deployment or result.",
+        "use_guidance": "Keep as a proposal only. Keep the email-triage example hypothetical, keep scope to one workflow, and avoid scan-heavy OCR-dependent workflows, which are currently out of scope."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "defines pilot scope, fixed price, and measures"
+          },
+          {
+            "source_id": "C05",
+            "quote": "Numbers require a source and status."
+          }
+        ],
+        "rationale": "Setting a success threshold is a recommended planning step, and the stated caution against unmeasured ROI or time-saved claims matches the numbers rule. The '5 per week to 1 per week' figures are illustrative, not asserted results.",
+        "use_guidance": "Keep as a proposed measurement step. Label the numeric example explicitly as an illustration the owner would set for themselves, never as a Bareni benchmark, target guarantee or observed outcome."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "FORBIDDEN",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          },
+          {
+            "source_id": "C02",
+            "quote": "Describe this as policy and no-lock-in positioning, not an absolute legal warranty."
+          }
+        ],
+        "rationale": "The approved task forbids any CTA, so instructing the reader to book the free 30-minute diagnostic is a prohibited action here. The ownership sentence also overstates approved policy by asserting the customer keeps 'all' accounts and code as an unqualified no-lock-in guarantee.",
+        "use_guidance": "Exclude the booking CTA from this post. If a closing next step is needed, use a soft, non-CTA sentence about the reader mapping one workflow and its control gate themselves; if ownership is mentioned at all, state it as Bareni policy that finished code is handed over and accounts are in the customer's name, not as an absolute warranty."
+      }
+    ]
+  },
+  "selected_lessons": [],
+  "register_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "planner_key": "SE-FINAL-N010_planner__a001",
+  "researcher_key": "SE-FINAL-N010_researcher__a001",
+  "writer_key": "SE-FINAL-N010_writer__a001",
+  "final_key": "SE-FINAL-N010_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-N010_gate1__a001",
+  "production_completed_at": "2026-09-08T12:14:50.810970+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts"
+}

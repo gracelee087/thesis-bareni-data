@@ -1,0 +1,187 @@
+{
+  "status": "success",
+  "usage": {
+    "input_tokens": 4472,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1035,
+    "reasoning_tokens": null
+  },
+  "cost_usd": 0.009647,
+  "output": {
+    "item_id": "E-PLAN-515",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task explicitly specifies 'CTA rule: None.' This lesson confirms that informational content about privacy and workflow decisions must not include meeting prompts or diagnostic booking CTAs. The post will end with a practical observation or decision step instead."
+      },
+      {
+        "lesson_id": "L02",
+        "application": "Bareni's delivery model includes 'no lock-in positioning' as policy. If privacy controls are discussed in relation to data ownership or automation architecture, this qualifier must be preserved rather than overstated as a guarantee."
+      },
+      {
+        "lesson_id": "L03",
+        "application": "The approved evidence does not directly address privacy in automation workflows. Rather than invent privacy-specific claims, the post will present a concrete workflow decision—one observable choice the owner faces when adopting AI automation—and link it to why privacy expectations alone are insufficient without operational controls."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Open with the practical problem: an owner considering AI automation often assumes privacy assurances (vendor terms, data location, encryption) are sufficient safeguards. Frame this as incomplete, not because privacy is unimportant, but because it does not govern who can access, modify, or act on the data within the owner's own workflow.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C01",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Present one concrete bounded decision: when automating a workflow (e.g., invoice processing, customer inquiry handling), the owner must decide whether the AI system can take actions (payments, emails, deletions) or only recommend and require human approval. Link this to Bareni's policy: human approval is mandatory for money movement and high-risk decisions.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L02"
+        ],
+        "evidence_ids": [
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Explain why this decision matters more than privacy alone: a vendor's privacy promise does not prevent the owner's own approval workflow from being weak, delayed, or bypassed. The owner's control architecture—not the vendor's privacy terms—determines whether an AI system's recommendations are checked before execution.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Give one diagnostic question the owner should ask before engaging any AI tool: \"Will I see the input, the reasoning, and the recommended action before anything is committed?\" This frames the practical next step as an operational control, not a compliance checkbox.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Close with a neutral workflow prompt: the owner's next step is to map their most repeated workflow, identify the high-risk decision points (money, customer communication, data deletion), and define which stages require human approval. This is a planning task, not a sales invitation.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Ensure no CTA is included. Do not invite the owner to book a diagnostic, discuss their situation, or continue the conversation. The post ends after the workflow prompt, consistent with the informational format and explicit task rule.",
+        "requirement_ids": [],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": []
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No customer names, deployments, results, ROI figures, or multi-person team are invented. The privacy and control workflow is presented as a decision framework Bareni applies, not a customer case study."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "The post emphasizes that human approval is mandatory for money movement and high-risk decisions (per C04), and no autonomous payment or decision is described. No excluded service is mentioned."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "The frozen persona (plain-speaking technical expert, founder-to-founder, trust over enthusiasm) is maintained. Approved evidence boundaries are preserved: no invented capabilities, no unsupported claims, no implication that Bareni has deployed this with customers."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Plain English is used throughout. Bareni's actual policy (human approval required, customer owns accounts and databases, no lock-in) is stated as operational practice, not warranty. The workflow decision and diagnostic question are concrete and distinct from marketing promises."
+      }
+    ]
+  },
+  "raw_text": "{\"item_id\":\"E-PLAN-515\",\"selected_lessons\":[{\"lesson_id\":\"L01\",\"application\":\"The task explicitly specifies 'CTA rule: None.' This lesson confirms that informational content about privacy and workflow decisions must not include meeting prompts or diagnostic booking CTAs. The post will end with a practical observation or decision step instead.\"},{\"lesson_id\":\"L02\",\"application\":\"Bareni's delivery model includes 'no lock-in positioning' as policy. If privacy controls are discussed in relation to data ownership or automation architecture, this qualifier must be preserved rather than overstated as a guarantee.\"},{\"lesson_id\":\"L03\",\"application\":\"The approved evidence does not directly address privacy in automation workflows. Rather than invent privacy-specific claims, the post will present a concrete workflow decision—one observable choice the owner faces when adopting AI automation—and link it to why privacy expectations alone are insufficient without operational controls.\"}],\"steps\":[{\"step_id\":\"P01\",\"instruction\":\"Open with the practical problem: an owner considering AI automation often assumes privacy assurances (vendor terms, data location, encryption) are sufficient safeguards. Frame this as incomplete, not because privacy is unimportant, but because it does not govern who can access, modify, or act on the data within the owner's own workflow.\",\"requirement_ids\":[\"R01\"],\"lesson_ids\":[\"L03\"],\"evidence_ids\":[\"C01\",\"C05\"]},{\"step_id\":\"P02\",\"instruction\":\"Present one concrete bounded decision: when automating a workflow (e.g., invoice processing, customer inquiry handling), the owner must decide whether the AI system can take actions (payments, emails, deletions) or only recommend and require human approval. Link this to Bareni's policy: human approval is mandatory for money movement and high-risk decisions.\",\"requirement_ids\":[\"R01\"],\"lesson_ids\":[\"L02\"],\"evidence_ids\":[\"C02\",\"C04\"]},{\"step_id\":\"P03\",\"instruction\":\"Explain why this decision matters more than privacy alone: a vendor's privacy promise does not prevent the owner's own approval workflow from being weak, delayed, or bypassed. The owner's control architecture—not the vendor's privacy terms—determines whether an AI system's recommendations are checked before execution.\",\"requirement_ids\":[\"R01\"],\"lesson_ids\":[\"L03\"],\"evidence_ids\":[\"C05\"]},{\"step_id\":\"P04\",\"instruction\":\"Give one diagnostic question the owner should ask before engaging any AI tool: \\\"Will I see the input, the reasoning, and the recommended action before anything is committed?\\\" This frames the practical next step as an operational control, not a compliance checkbox.\",\"requirement_ids\":[\"R02\"],\"lesson_ids\":[\"L03\"],\"evidence_ids\":[\"C02\",\"C05\"]},{\"step_id\":\"P05\",\"instruction\":\"Close with a neutral workflow prompt: the owner's next step is to map their most repeated workflow, identify the high-risk decision points (money, customer communication, data deletion), and define which stages require human approval. This is a planning task, not a sales invitation.\",\"requirement_ids\":[\"R02\"],\"lesson_ids\":[\"L01\"],\"evidence_ids\":[\"C02\",\"C05\"]},{\"step_id\":\"P06\",\"instruction\":\"Ensure no CTA is included. Do not invite the owner to book a diagnostic, discuss their situation, or continue the conversation. The post ends after the workflow prompt, consistent with the informational format and explicit task rule.\",\"requirement_ids\":[],\"lesson_ids\":[\"L01\"],\"evidence_ids\":[]}],\"constraints_to_preserve\":[{\"constraint_id\":\"K01\",\"handling\":\"No customer names, deployments, results, ROI figures, or multi-person team are invented. The privacy and control workflow is presented as a decision framework Bareni applies, not a customer case study.\"},{\"constraint_id\":\"K02\",\"handling\":\"The post emphasizes that human approval is mandatory for money movement and high-risk decisions (per C04), and no autonomous payment or decision is described. No excluded service is mentioned.\"},{\"constraint_id\":\"K03\",\"handling\":\"The frozen persona (plain-speaking technical expert, founder-to-founder, trust over enthusiasm) is maintained. Approved evidence boundaries are preserved: no invented capabilities, no unsupported claims, no implication that Bareni has deployed this with customers.\"},{\"constraint_id\":\"K04\",\"handling\":\"Plain English is used throughout. Bareni's actual policy (human approval required, customer owns accounts and databases, no lock-in) is stated as operational practice, not warranty. The workflow decision and diagnostic question are concrete and distinct from marketing promises.\"}]}",
+  "provider_response": {
+    "id": "msg_011Cer2miaVANYJwoW59abfQ",
+    "container": null,
+    "content": [
+      {
+        "citations": null,
+        "text": "{\"item_id\":\"E-PLAN-515\",\"selected_lessons\":[{\"lesson_id\":\"L01\",\"application\":\"The task explicitly specifies 'CTA rule: None.' This lesson confirms that informational content about privacy and workflow decisions must not include meeting prompts or diagnostic booking CTAs. The post will end with a practical observation or decision step instead.\"},{\"lesson_id\":\"L02\",\"application\":\"Bareni's delivery model includes 'no lock-in positioning' as policy. If privacy controls are discussed in relation to data ownership or automation architecture, this qualifier must be preserved rather than overstated as a guarantee.\"},{\"lesson_id\":\"L03\",\"application\":\"The approved evidence does not directly address privacy in automation workflows. Rather than invent privacy-specific claims, the post will present a concrete workflow decision—one observable choice the owner faces when adopting AI automation—and link it to why privacy expectations alone are insufficient without operational controls.\"}],\"steps\":[{\"step_id\":\"P01\",\"instruction\":\"Open with the practical problem: an owner considering AI automation often assumes privacy assurances (vendor terms, data location, encryption) are sufficient safeguards. Frame this as incomplete, not because privacy is unimportant, but because it does not govern who can access, modify, or act on the data within the owner's own workflow.\",\"requirement_ids\":[\"R01\"],\"lesson_ids\":[\"L03\"],\"evidence_ids\":[\"C01\",\"C05\"]},{\"step_id\":\"P02\",\"instruction\":\"Present one concrete bounded decision: when automating a workflow (e.g., invoice processing, customer inquiry handling), the owner must decide whether the AI system can take actions (payments, emails, deletions) or only recommend and require human approval. Link this to Bareni's policy: human approval is mandatory for money movement and high-risk decisions.\",\"requirement_ids\":[\"R01\"],\"lesson_ids\":[\"L02\"],\"evidence_ids\":[\"C02\",\"C04\"]},{\"step_id\":\"P03\",\"instruction\":\"Explain why this decision matters more than privacy alone: a vendor's privacy promise does not prevent the owner's own approval workflow from being weak, delayed, or bypassed. The owner's control architecture—not the vendor's privacy terms—determines whether an AI system's recommendations are checked before execution.\",\"requirement_ids\":[\"R01\"],\"lesson_ids\":[\"L03\"],\"evidence_ids\":[\"C05\"]},{\"step_id\":\"P04\",\"instruction\":\"Give one diagnostic question the owner should ask before engaging any AI tool: \\\"Will I see the input, the reasoning, and the recommended action before anything is committed?\\\" This frames the practical next step as an operational control, not a compliance checkbox.\",\"requirement_ids\":[\"R02\"],\"lesson_ids\":[\"L03\"],\"evidence_ids\":[\"C02\",\"C05\"]},{\"step_id\":\"P05\",\"instruction\":\"Close with a neutral workflow prompt: the owner's next step is to map their most repeated workflow, identify the high-risk decision points (money, customer communication, data deletion), and define which stages require human approval. This is a planning task, not a sales invitation.\",\"requirement_ids\":[\"R02\"],\"lesson_ids\":[\"L01\"],\"evidence_ids\":[\"C02\",\"C05\"]},{\"step_id\":\"P06\",\"instruction\":\"Ensure no CTA is included. Do not invite the owner to book a diagnostic, discuss their situation, or continue the conversation. The post ends after the workflow prompt, consistent with the informational format and explicit task rule.\",\"requirement_ids\":[],\"lesson_ids\":[\"L01\"],\"evidence_ids\":[]}],\"constraints_to_preserve\":[{\"constraint_id\":\"K01\",\"handling\":\"No customer names, deployments, results, ROI figures, or multi-person team are invented. The privacy and control workflow is presented as a decision framework Bareni applies, not a customer case study.\"},{\"constraint_id\":\"K02\",\"handling\":\"The post emphasizes that human approval is mandatory for money movement and high-risk decisions (per C04), and no autonomous payment or decision is described. No excluded service is mentioned.\"},{\"constraint_id\":\"K03\",\"handling\":\"The frozen persona (plain-speaking technical expert, founder-to-founder, trust over enthusiasm) is maintained. Approved evidence boundaries are preserved: no invented capabilities, no unsupported claims, no implication that Bareni has deployed this with customers.\"},{\"constraint_id\":\"K04\",\"handling\":\"Plain English is used throughout. Bareni's actual policy (human approval required, customer owns accounts and databases, no lock-in) is stated as operational practice, not warranty. The workflow decision and diagnostic question are concrete and distinct from marketing promises.\"}]}",
+        "type": "text"
+      }
+    ],
+    "model": "claude-haiku-4-5-20251001",
+    "role": "assistant",
+    "stop_details": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "not_available",
+      "input_tokens": 4472,
+      "output_tokens": 1035,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": "standard"
+    }
+  },
+  "stop_reason": "end_turn",
+  "cost_details": {
+    "input": 0.004472,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.005175,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.009647
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": null,
+  "key": "SE-FINAL-N108_planner__a001",
+  "role": "planner",
+  "created_at": "2026-09-08T13:13:17.854957+00:00",
+  "ended_at": "2026-09-08T13:13:45.411727+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-N108",
+    "batch_id": 4,
+    "condition": "natural",
+    "cohort": "natural"
+  },
+  "task_id": "SE-FINAL-N108",
+  "batch_id": 4,
+  "cohort": "natural",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 27555,
+  "budget_charge_usd": 0.009647,
+  "unknown_cost_reservation_usd": 0
+}

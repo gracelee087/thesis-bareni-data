@@ -1,0 +1,263 @@
+{
+  "task_id": "SE-FINAL-N008",
+  "batch_id": 1,
+  "condition": "natural",
+  "source_task_id": null,
+  "topic": "what timezone handling hides",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-308",
+    "title": "Timezone handling hides a workflow choice",
+    "body": "Timezone handling usually looks like a small annoyance, but it often hides a repeatable workflow problem: replies arrive late, follow-ups slip, and timestamps get read by hand more than once. The trap is to treat that as a “time conversion” problem. It is usually a routing problem in disguise.\n\nFor a small business, the bounded decision is not “should we automate everything?” It is: should we automate timezone-aware handling for one recurring path, such as incoming email, task reminders, or logged requests? That is a narrower question than a CRM rebuild, and it is easier to judge honestly. If the process only breaks once in a while, simple manual rules may be enough. If the same confusion keeps returning, the owner may have a real workflow candidate.\n\nThe control should stay with the owner. Software can flag the sender’s timezone, normalize timestamps, or suggest an acceptable follow-up window, but the owner decides what gets deferred, what gets escalated, and what counts as “too late.” That matters. Time-sensitive work is not a place to let a tool wander off on its own.\n\nA practical next step is to log one week of timezone-related friction: what repeated, where it came from, and whether it needed a human decision. If the list is mostly edge cases, keep it manual. If the same pattern keeps reappearing, you have a bounded workflow worth discussing. This kind of problem looks minor until it starts eating mornings. There is no glamour in it, which is usually a clue."
+  },
+  "final": {
+    "item_id": "E-OPT-408",
+    "title": "Timezone handling hides a workflow choice",
+    "body": "Timezone handling usually looks like a small annoyance, but it often hides a repeatable workflow problem: replies arrive late, follow-ups slip, and timestamps get read by hand more than once. The trap is to treat that as a time-conversion problem. It is usually a routing problem in disguise.\n\nFor a small business, the bounded decision is not whether to automate everything. It is whether to automate timezone-aware handling for one recurring path, such as incoming email, task reminders, or logged requests. That is narrower than a CRM rebuild, and it is easier to judge honestly. If the process only breaks once in a while, simple manual rules may be enough. If the same confusion keeps returning, the owner may have a real workflow candidate.\n\nThe control should stay with the owner. Software can flag the sender’s timezone, normalize timestamps, or suggest an acceptable follow-up window, but the owner decides what gets deferred, what gets escalated, and what counts as too late. That matters. Time-sensitive work is not a place to let a tool wander off on its own.\n\nA practical next step is to log one week of timezone-related friction: what repeated, where it came from, and whether it needed a human decision. If the list is mostly edge cases, keep it manual. If the same pattern keeps reappearing, you have a bounded workflow worth looking at. This kind of problem looks minor until it starts eating mornings. There is no glamour in it, which is usually a clue."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-008",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-008",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-008-1",
+        "repairs": []
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-008",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-408",
+        "title": "Timezone handling hides a workflow choice",
+        "body": "Timezone handling usually looks like a small annoyance, but it often hides a repeatable workflow problem: replies arrive late, follow-ups slip, and timestamps get read by hand more than once. The trap is to treat that as a time-conversion problem. It is usually a routing problem in disguise.\n\nFor a small business, the bounded decision is not whether to automate everything. It is whether to automate timezone-aware handling for one recurring path, such as incoming email, task reminders, or logged requests. That is narrower than a CRM rebuild, and it is easier to judge honestly. If the process only breaks once in a while, simple manual rules may be enough. If the same confusion keeps returning, the owner may have a real workflow candidate.\n\nThe control should stay with the owner. Software can flag the sender’s timezone, normalize timestamps, or suggest an acceptable follow-up window, but the owner decides what gets deferred, what gets escalated, and what counts as too late. That matters. Time-sensitive work is not a place to let a tool wander off on its own.\n\nA practical next step is to log one week of timezone-related friction: what repeated, where it came from, and whether it needed a human decision. If the list is mostly edge cases, keep it manual. If the same pattern keeps reappearing, you have a bounded workflow worth looking at. This kind of problem looks minor until it starts eating mornings. There is no glamour in it, which is usually a clue."
+      },
+      "gate_key": "SE-FINAL-N008_gate1__a001"
+    }
+  ],
+  "measurement_status": "pending",
+  "planner": {
+    "item_id": "E-PLAN-508",
+    "selected_lessons": [],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Open with the tension: timezone mismatches create recurring manual work (customer queries, invoice delays, meeting scheduling), but many small-business owners assume AI here means 'magic time conversion.' Ground the conversation in what really happens: a repeatable workflow buried under timezone friction.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C05",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Name the concrete decision: does the owner automate timezone-aware task routing (e.g., flagging tasks by sender timezone, auto-scheduling follow-ups in recipient time, or normalizing timestamps in logs)? This is measurable and fits AI-plus-workflow patterns. Clarify that this is one choice, not a full CRM overhaul.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Identify the control: all timezone decisions (which tasks to defer, which to escalate, which times are acceptable) stay with the owner. AI extracts sender timezone and flags anomalies; the owner approves thresholds. This preserves human authority on time-sensitive decisions.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Ask the diagnostic question: 'What repeats this week because of timezone confusion? Is it 5–10 tasks, or 50?' A small count suggests manual rules; a large count suggests automation is worth exploring. This separates true friction from edge cases.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "S01",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Explain the next step without pressure: a free 30-minute diagnostic would map the owner's actual timezone patterns, propose a pilot scope (e.g., auto-tagging incoming mail by sender timezone for one month), and suggest fixed-price cost. No commitment, no strategy tax. Delivery is a working system, not a deck.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Close with one understated observation: timezone handling is invisible until it fails, which is exactly why many small teams stay stuck with 'I'll reply when I'm awake.' Automation here is not cutting-edge; it is operational relief.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "S01",
+          "C05"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No customer case studies, deployment outcomes, or productivity numbers cited. Decision framed as owner choice, not proven result."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Timezone decisions do not involve money movement; owner retains approval of thresholds and escalation rules."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Frozen persona maintained: founder-to-founder voice, bounded scope, no hype. Human authority over time-sensitive decisions preserved."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Examples (task tagging, follow-up scheduling) are illustrative proposals, not existing capabilities or observed results. Plain language used throughout; jargon (RAG, vector search) avoided."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-608",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "The best-fit reader has tried ChatGPT but has not connected AI to a business\n  workflow."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Never use revolutionary, 10x, game-changing, cutting-edge, unleash, supercharge,\n  magic, or equivalent hype."
+          }
+        ],
+        "rationale": "This is a drafting instruction for an opening framing, not a factual assertion about Bareni capabilities or customers. The persona premise (owners who tried ChatGPT but have not connected AI to a workflow) is compatible with approved evidence; the word 'magic' appears only as a quoted misconception to be corrected, not as Bareni voice.",
+        "use_guidance": "Keep as a proposed opening frame. Present timezone friction as a generic illustrative pattern, not an observed customer finding or market statistic; do not attach hour counts or frequency figures. If 'magic time conversion' is retained, keep it clearly marked as the reader's mistaken assumption, since the banned-hype list applies to Bareni's own voice."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "general document, email, CRM, and back-office\n  workflows using AI plus Zapier, Make, n8n, and small amounts of custom code"
+          },
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI\n  fits, and—if it does—defines pilot scope, fixed price, and measures."
+          }
+        ],
+        "rationale": "A recommendation to frame one bounded workflow decision (timezone-aware routing, flagging, timestamp normalisation) as a candidate for automation. It proposes a possible build within the general document/email/CRM workflow service area rather than asserting that any such system exists.",
+        "use_guidance": "Keep explicitly proposed: write it as an example of a decision the owner could scope, not as a Bareni feature, product or prior build. Do not imply timezone routing has been built, tested or deployed; retain the stated narrowing that it is one bounded choice, not a CRM overhaul."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "S01",
+            "quote": "final approval and business authority remain human"
+          }
+        ],
+        "rationale": "This is a proposed control design for the hypothetical workflow: extraction and flagging by the system, thresholds and decisions approved by the owner. It aligns with the mandatory human-approval boundary but describes an intended design, not an implemented control.",
+        "use_guidance": "Keep as a proposed control. Do not present timezone extraction or anomaly flagging as an existing working capability; approved evidence only documents extraction and approval controls in the accounts-payable demo with synthetic data. Preserve the human-approval boundary explicitly, especially for anything touching payment timing."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI\n  fits"
+          },
+          {
+            "source_id": "C01",
+            "quote": "have a frequent, repeatable workflow with a\n  measurable outcome"
+          }
+        ],
+        "rationale": "A diagnostic question with an illustrative volume band offered as a rule of thumb for the reader. It is an instruction to ask, not a claim of measured thresholds or observed customer data.",
+        "use_guidance": "Keep explicitly proposed and label the 5-10 versus 50 counts as an illustrative sorting question the owner answers themselves, not a Bareni benchmark, tested threshold or measured result. Retain the honest 'AI may not fit' option rather than steering to automation."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "FORBIDDEN",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Standard primary CTA: \"Book a free 30-minute diagnostic\". Use it only for\n  purchase-intent content, once, at the end."
+          }
+        ],
+        "rationale": "The approved task sets the CTA rule to None, so promoting the free 30-minute diagnostic with pilot scope and fixed price as the closing next step is a prohibited sales CTA for this item, regardless of the softening wording. The underlying service description is otherwise supported, but the recommended action is not permitted here.",
+        "use_guidance": "Exclude the diagnostic offer, pilot-scope pitch and pricing framing from this post. As a separately supported alternative, the practical next step may be a self-contained manual action the owner takes alone, for example logging for one week which timezone-related tasks repeat and in which direction; do not treat this as approval to include the CTA. Also avoid 'no strategy tax' framing, since the AI Strategy & Roadmap is a legitimate separate offer."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C05",
+            "quote": "At most one restrained dry-humour or understatement\n  sentence per post."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Never use revolutionary, 10x, game-changing, cutting-edge, unleash, supercharge,\n  magic, or equivalent hype."
+          }
+        ],
+        "rationale": "An instruction for a single understated closing observation, permitted by the one-humour-sentence rule. It asserts no capability or result. The reference to 'cutting-edge' is a negation, but the banned term should not appear at all.",
+        "use_guidance": "Keep as the single understatement sentence and count it against the one-per-post limit. Rewrite to avoid the banned word 'cutting-edge' even in denial, for example 'this is not a breakthrough; it is operational relief'. Do not imply observed relief or benefit for any team."
+      }
+    ]
+  },
+  "selected_lessons": [],
+  "register_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "planner_key": "SE-FINAL-N008_planner__a001",
+  "researcher_key": "SE-FINAL-N008_researcher__a001",
+  "writer_key": "SE-FINAL-N008_writer__a001",
+  "final_key": "SE-FINAL-N008_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-N008_gate1__a001",
+  "production_completed_at": "2026-09-08T12:13:44.131704+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts"
+}

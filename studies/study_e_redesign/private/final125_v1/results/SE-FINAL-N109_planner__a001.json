@@ -1,0 +1,187 @@
+{
+  "status": "success",
+  "usage": {
+    "input_tokens": 4466,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 847,
+    "reasoning_tokens": null
+  },
+  "cost_usd": 0.008701,
+  "output": {
+    "item_id": "E-PLAN-516",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "This task has no CTA rule authorization; end with a practical observation about agent memory measurement rather than a diagnostic booking prompt."
+      },
+      {
+        "lesson_id": "L03",
+        "application": "The approved evidence does not include working agent memory measurement or retention systems; instead, frame the post around the workflow decision—whether and how to test agent context retention in a pilot—and the diagnostic question an owner should ask."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Open with the owner's stated abstract topic and reframe it as a concrete workflow question: when an AI agent handles a sequence of tasks (e.g., processing customer inquiries over days), does it retain context across interactions, and how would you know?",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "S01",
+          "C01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Explain the business context in plain terms: agent memory matters if your workflow requires the system to remember details from earlier customer interactions or follow multi-step processes without repeated manual input.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "State the bounded decision: in a pilot, measure whether the agent can recall customer history, preferences, or prior decisions without explicit re-entry. Define success as a simple observable outcome (e.g., agent correctly references a previous request without prompting).",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Present the diagnostic question: does your current workflow require context persistence, or do your repeated tasks arrive with fresh, self-contained inputs? Clarity here determines whether memory testing belongs in a pilot.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C01"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Describe one practical next step without a booking prompt: document one recurring customer interaction or process, note what information the system must carry forward, and bring that list to a free consultation to scope whether memory matters for your pilot.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C02",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Close with a neutral observation: most small-business workflows can be automated without perfect memory if tasks are well-defined and data is structured; testing memory is worth doing only if your workflow genuinely requires it.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C01",
+          "C04",
+          "S01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "Do not invent customer deployments, results, or agent memory capabilities. Frame agent memory as a feature to test in a pilot, not a working production system."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Do not propose autonomous agent decisions involving money or high-risk operations. Emphasize human approval for any memory-dependent financial or binding decisions."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Preserve the owner-decision voice and evidence boundary. Treat the question as a diagnostic workflow choice, not a general AI education post."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use plain English workflow language. Keep 'agent memory' defined concretely (retaining customer context across interactions) rather than as abstract technical capability."
+      }
+    ]
+  },
+  "raw_text": "{\"item_id\": \"E-PLAN-516\", \"selected_lessons\": [{\"lesson_id\": \"L01\", \"application\": \"This task has no CTA rule authorization; end with a practical observation about agent memory measurement rather than a diagnostic booking prompt.\"}, {\"lesson_id\": \"L03\", \"application\": \"The approved evidence does not include working agent memory measurement or retention systems; instead, frame the post around the workflow decision—whether and how to test agent context retention in a pilot—and the diagnostic question an owner should ask.\"}], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Open with the owner's stated abstract topic and reframe it as a concrete workflow question: when an AI agent handles a sequence of tasks (e.g., processing customer inquiries over days), does it retain context across interactions, and how would you know?\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"S01\", \"C01\"]}, {\"step_id\": \"P02\", \"instruction\": \"Explain the business context in plain terms: agent memory matters if your workflow requires the system to remember details from earlier customer interactions or follow multi-step processes without repeated manual input.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C01\", \"C02\"]}, {\"step_id\": \"P03\", \"instruction\": \"State the bounded decision: in a pilot, measure whether the agent can recall customer history, preferences, or prior decisions without explicit re-entry. Define success as a simple observable outcome (e.g., agent correctly references a previous request without prompting).\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"C02\"]}, {\"step_id\": \"P04\", \"instruction\": \"Present the diagnostic question: does your current workflow require context persistence, or do your repeated tasks arrive with fresh, self-contained inputs? Clarity here determines whether memory testing belongs in a pilot.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"C01\"]}, {\"step_id\": \"P05\", \"instruction\": \"Describe one practical next step without a booking prompt: document one recurring customer interaction or process, note what information the system must carry forward, and bring that list to a free consultation to scope whether memory matters for your pilot.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C02\", \"S01\"]}, {\"step_id\": \"P06\", \"instruction\": \"Close with a neutral observation: most small-business workflows can be automated without perfect memory if tasks are well-defined and data is structured; testing memory is worth doing only if your workflow genuinely requires it.\", \"requirement_ids\": [\"R01\", \"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C01\", \"C04\", \"S01\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"Do not invent customer deployments, results, or agent memory capabilities. Frame agent memory as a feature to test in a pilot, not a working production system.\"}, {\"constraint_id\": \"K02\", \"handling\": \"Do not propose autonomous agent decisions involving money or high-risk operations. Emphasize human approval for any memory-dependent financial or binding decisions.\"}, {\"constraint_id\": \"K03\", \"handling\": \"Preserve the owner-decision voice and evidence boundary. Treat the question as a diagnostic workflow choice, not a general AI education post.\"}, {\"constraint_id\": \"K04\", \"handling\": \"Use plain English workflow language. Keep 'agent memory' defined concretely (retaining customer context across interactions) rather than as abstract technical capability.\"}]}",
+  "provider_response": {
+    "id": "msg_011Cer2sNGmWo7RrGVACSpMD",
+    "container": null,
+    "content": [
+      {
+        "citations": null,
+        "text": "{\"item_id\": \"E-PLAN-516\", \"selected_lessons\": [{\"lesson_id\": \"L01\", \"application\": \"This task has no CTA rule authorization; end with a practical observation about agent memory measurement rather than a diagnostic booking prompt.\"}, {\"lesson_id\": \"L03\", \"application\": \"The approved evidence does not include working agent memory measurement or retention systems; instead, frame the post around the workflow decision—whether and how to test agent context retention in a pilot—and the diagnostic question an owner should ask.\"}], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Open with the owner's stated abstract topic and reframe it as a concrete workflow question: when an AI agent handles a sequence of tasks (e.g., processing customer inquiries over days), does it retain context across interactions, and how would you know?\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"S01\", \"C01\"]}, {\"step_id\": \"P02\", \"instruction\": \"Explain the business context in plain terms: agent memory matters if your workflow requires the system to remember details from earlier customer interactions or follow multi-step processes without repeated manual input.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C01\", \"C02\"]}, {\"step_id\": \"P03\", \"instruction\": \"State the bounded decision: in a pilot, measure whether the agent can recall customer history, preferences, or prior decisions without explicit re-entry. Define success as a simple observable outcome (e.g., agent correctly references a previous request without prompting).\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"C02\"]}, {\"step_id\": \"P04\", \"instruction\": \"Present the diagnostic question: does your current workflow require context persistence, or do your repeated tasks arrive with fresh, self-contained inputs? Clarity here determines whether memory testing belongs in a pilot.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"C01\"]}, {\"step_id\": \"P05\", \"instruction\": \"Describe one practical next step without a booking prompt: document one recurring customer interaction or process, note what information the system must carry forward, and bring that list to a free consultation to scope whether memory matters for your pilot.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C02\", \"S01\"]}, {\"step_id\": \"P06\", \"instruction\": \"Close with a neutral observation: most small-business workflows can be automated without perfect memory if tasks are well-defined and data is structured; testing memory is worth doing only if your workflow genuinely requires it.\", \"requirement_ids\": [\"R01\", \"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C01\", \"C04\", \"S01\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"Do not invent customer deployments, results, or agent memory capabilities. Frame agent memory as a feature to test in a pilot, not a working production system.\"}, {\"constraint_id\": \"K02\", \"handling\": \"Do not propose autonomous agent decisions involving money or high-risk operations. Emphasize human approval for any memory-dependent financial or binding decisions.\"}, {\"constraint_id\": \"K03\", \"handling\": \"Preserve the owner-decision voice and evidence boundary. Treat the question as a diagnostic workflow choice, not a general AI education post.\"}, {\"constraint_id\": \"K04\", \"handling\": \"Use plain English workflow language. Keep 'agent memory' defined concretely (retaining customer context across interactions) rather than as abstract technical capability.\"}]}",
+        "type": "text"
+      }
+    ],
+    "model": "claude-haiku-4-5-20251001",
+    "role": "assistant",
+    "stop_details": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "not_available",
+      "input_tokens": 4466,
+      "output_tokens": 847,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": "standard"
+    }
+  },
+  "stop_reason": "end_turn",
+  "cost_details": {
+    "input": 0.004466,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.004235,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.008701
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": null,
+  "key": "SE-FINAL-N109_planner__a001",
+  "role": "planner",
+  "created_at": "2026-09-08T13:14:34.286623+00:00",
+  "ended_at": "2026-09-08T13:14:56.828542+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-N109",
+    "batch_id": 4,
+    "condition": "natural",
+    "cohort": "natural"
+  },
+  "task_id": "SE-FINAL-N109",
+  "batch_id": 4,
+  "cohort": "natural",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 22537,
+  "budget_charge_usd": 0.008701,
+  "unknown_cost_reservation_usd": 0
+}

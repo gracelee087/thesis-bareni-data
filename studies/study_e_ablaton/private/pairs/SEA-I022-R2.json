@@ -1,0 +1,93 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I022-R2",
+    "item_id": "SEA-I022",
+    "repeat": 2,
+    "arm_order": [
+      "critic_off",
+      "critic_on"
+    ],
+    "content_id": "POST-b2320754c8ebd540d69a5908"
+  },
+  "arms": {
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-b2320754c8ebd540d69a5908-1",
+        "title": "What seasonality hides in a small business workflow",
+        "body": "Seasonality can hide a workflow problem, not just a sales pattern. If your numbers swing by month, it is easy to miss the work that still repeats all year: customer questions, invoice handling, or data reconciliation. Those jobs do not disappear in the slow months. They just get harder to see.\n\nThe practical question is simple: which single recurring task keeps showing up whether demand is high or low, and still gets handled manually? Do not start with the biggest mess. Start with the one task that has the clearest handoff, the clearest input, and the clearest definition of “done.”\n\nIf you can name 2–3 candidates, pick the one where you can point to a real output: an approved reply, a checked invoice, a cleaned record, or a passed-to-human decision. That is the kind of task worth testing for AI support.\n\nA good next step is a short diagnostic that maps the workflow end to end and checks whether it is truly year-round. If it only appears in peak season, leave it alone for now. If it persists quietly under the seasonal noise, that is where a bounded automation conversation starts. No mystery, just a better filter."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-b2320754c8ebd540d69a5908-1",
+            "title": "What seasonality hides in a small business workflow",
+            "body": "Seasonality can hide a workflow problem, not just a sales pattern. If your numbers swing by month, it is easy to miss the work that still repeats all year: customer questions, invoice handling, or data reconciliation. Those jobs do not disappear in the slow months. They just get harder to see.\n\nThe practical question is simple: which single recurring task keeps showing up whether demand is high or low, and still gets handled manually? Do not start with the biggest mess. Start with the one task that has the clearest handoff, the clearest input, and the clearest definition of “done.”\n\nIf you can name 2–3 candidates, pick the one where you can point to a real output: an approved reply, a checked invoice, a cleaned record, or a passed-to-human decision. That is the kind of task worth testing for AI support.\n\nA good next step is a short diagnostic that maps the workflow end to end and checks whether it is truly year-round. If it only appears in peak season, leave it alone for now. If it persists quietly under the seasonal noise, that is where a bounded automation conversation starts. No mystery, just a better filter."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-b2320754c8ebd540d69a5908-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    },
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-b2320754c8ebd540d69a5908-1",
+        "title": "What seasonality hides in one recurring workflow",
+        "body": "Seasonality can hide a workflow problem, not just a sales problem. When revenue rises and falls, it is easy to miss the same task repeating all year in the background: customer questions, invoice work, or data cleanup that keeps coming back even when the business feels quiet.\n\nThe practical decision is simple: pick one recurring process and ask whether it changes in peak season or just gets harder to notice. If the work is repetitive, has a clear input and output, and you can define what “correct” looks like, it may be a better candidate for automation than a bigger, messier project.\n\nStart with a short list of 2–3 workflows that seasonality tends to bury. Choose the one with the clearest measure, such as delay, error rate, or approval time. Then check whether the task still exists in the slow months, because a workflow that disappears for half the year is usually a poor first bet.\n\nIf it does persist, the next step is a free diagnostic: map that workflow end to end, note where the human approval has to stay in place, and test whether a small automation tool like Zapier, Make, or n8n could hand back a human-approved output.\n\nThat is often the real question hiding inside seasonality: what is actually changing, and what is simply being covered up by the calendar."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-b2320754c8ebd540d69a5908-1",
+            "title": "What seasonality hides in one recurring workflow",
+            "body": "Seasonality can hide a workflow problem, not just a sales problem. When revenue rises and falls, it is easy to miss the same task repeating all year in the background: customer questions, invoice work, or data cleanup that keeps coming back even when the business feels quiet.\n\nThe practical decision is simple: pick one recurring process and ask whether it changes in peak season or just gets harder to notice. If the work is repetitive, has a clear input and output, and you can define what “correct” looks like, it may be a better candidate for automation than a bigger, messier project.\n\nStart with a short list of 2–3 workflows that seasonality tends to bury. Choose the one with the clearest measure, such as delay, error rate, or approval time. Then check whether the task still exists in the slow months, because a workflow that disappears for half the year is usually a poor first bet.\n\nIf it does persist, the next step is a free diagnostic: map that workflow end to end, note where the human approval has to stay in place, and test whether a small automation tool like Zapier, Make, or n8n could hand back a human-approved output.\n\nThat is often the real question hiding inside seasonality: what is actually changing, and what is simply being covered up by the calendar."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-b2320754c8ebd540d69a5908-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": [
+            {
+              "repair_id": "P01",
+              "target_ids": [
+                "D01",
+                "D03"
+              ],
+              "instruction": "Replace the abstract middle with one concrete workflow decision about seasonality, such as reviewing one recurring process to decide whether it should be handled differently in peak and quiet periods, and state the next step in plain terms.",
+              "source_ids": [
+                "BRIEF",
+                "S01",
+                "C02"
+              ]
+            },
+            {
+              "repair_id": "P02",
+              "target_ids": [
+                "D02"
+              ],
+              "instruction": "Cut the repeated uncertainty framing and make the main point explicit in the first paragraph so the reader can see the practical meaning of the topic on a first read.",
+              "source_ids": [
+                "BRIEF",
+                "S01"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

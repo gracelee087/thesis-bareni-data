@@ -1,0 +1,68 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I057-R3",
+    "item_id": "SEA-I057",
+    "repeat": 3,
+    "arm_order": [
+      "critic_off",
+      "critic_on"
+    ],
+    "content_id": "POST-e03ee72001ca207637dea6a6"
+  },
+  "arms": {
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-e03ee72001ca207637dea6a6-1",
+        "title": "Why data cleaning is not the whole job",
+        "body": "Data cleaning helps, but it is only the input side of a workflow. If your team fixes fields and still has to make the same downstream decisions by hand, the real bottleneck has not moved.\n\nThe useful question is not “is the data clean?” It is: what still needs human judgment after the data is clean? In a small business workflow, that often means categorising a row, routing it, approving it, or handling exceptions. Funny how software can sort the tidy bits and still leave the awkward ones on your desk.\n\nSo map one repeating workflow as input → decision → output. Then mark each step as rules-based or judgment-based. If you want a practical next step, do that on paper first: list the step, note where approval or sign-off is still needed, and record which parts are repeatable. If you find a long tail of manual decisions after cleaning, that boundary is often where automation fits.\n\nBareni’s own demo work includes controls like rule checks, exception handling, and human-only approval. That is policy and positioning, not a claim about customer deployments.\n\nStart with the decision layer, not another cleanup tool."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-e03ee72001ca207637dea6a6-1",
+            "title": "Why data cleaning is not the whole job",
+            "body": "Data cleaning helps, but it is only the input side of a workflow. If your team fixes fields and still has to make the same downstream decisions by hand, the real bottleneck has not moved.\n\nThe useful question is not “is the data clean?” It is: what still needs human judgment after the data is clean? In a small business workflow, that often means categorising a row, routing it, approving it, or handling exceptions. Funny how software can sort the tidy bits and still leave the awkward ones on your desk.\n\nSo map one repeating workflow as input → decision → output. Then mark each step as rules-based or judgment-based. If you want a practical next step, do that on paper first: list the step, note where approval or sign-off is still needed, and record which parts are repeatable. If you find a long tail of manual decisions after cleaning, that boundary is often where automation fits.\n\nBareni’s own demo work includes controls like rule checks, exception handling, and human-only approval. That is policy and positioning, not a claim about customer deployments.\n\nStart with the decision layer, not another cleanup tool."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-e03ee72001ca207637dea6a6-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    },
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-e03ee72001ca207637dea6a6-1",
+        "title": "Why data cleaning is not enough",
+        "body": "Data cleaning helps, but it is not the whole workflow. If your team spends time fixing fields and still has to make the same downstream decisions by hand, you have only solved the input side. The real question is simple: what still needs human judgment after the data is clean?\n\nThat matters because many small-business workflows break in two places: messy inputs and decision handling. Cleaning addresses the first. It does not remove the second. If a clean row still needs someone to categorise it, route it, approve it, or decide whether it is an exception, the manual work is still there. Software is great at repeating rules; it is less helpful when the rule is “have a look and see.”\n\nA practical next step is to map one repeating workflow as input → decision → output. Write down the steps, then mark which ones are rules-based and which ones need judgment or sign-off. If you find that cleaned data still leaves a long tail of manual decisions, that boundary is often where automation fits. For higher-risk steps, keep human approval in place. Bareni’s self-built demo shows rule checks, exception handling, and human-only approval as controls, not as a replacement for it.\n\nStart by mapping the decision layer, not by buying another cleanup tool."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-e03ee72001ca207637dea6a6-1",
+            "title": "Why data cleaning is not enough",
+            "body": "Data cleaning helps, but it is not the whole workflow. If your team spends time fixing fields and still has to make the same downstream decisions by hand, you have only solved the input side. The real question is simple: what still needs human judgment after the data is clean?\n\nThat matters because many small-business workflows break in two places: messy inputs and decision handling. Cleaning addresses the first. It does not remove the second. If a clean row still needs someone to categorise it, route it, approve it, or decide whether it is an exception, the manual work is still there. Software is great at repeating rules; it is less helpful when the rule is “have a look and see.”\n\nA practical next step is to map one repeating workflow as input → decision → output. Write down the steps, then mark which ones are rules-based and which ones need judgment or sign-off. If you find that cleaned data still leaves a long tail of manual decisions, that boundary is often where automation fits. For higher-risk steps, keep human approval in place. Bareni’s self-built demo shows rule checks, exception handling, and human-only approval as controls, not as a replacement for it.\n\nStart by mapping the decision layer, not by buying another cleanup tool."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-e03ee72001ca207637dea6a6-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

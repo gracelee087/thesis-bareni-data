@@ -1,0 +1,68 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I124-R1",
+    "item_id": "SEA-I124",
+    "repeat": 1,
+    "arm_order": [
+      "critic_off",
+      "critic_on"
+    ],
+    "content_id": "POST-3a0f24f8a52a5430f93269e9"
+  },
+  "arms": {
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-3a0f24f8a52a5430f93269e9-1",
+        "title": "Measure memory where the workflow actually needs it",
+        "body": "If you are asking about agent memory, the useful question is not “can it remember?” but “does this workflow need it?” For a small business owner, that matters only when the same system must carry context forward across separate interactions: a customer asks on Monday, replies on Wednesday, and the agent still needs to understand the earlier request without you pasting the whole thread back in.\n\nThat is the bounded decision for a pilot. Do not try to measure memory in the abstract. Pick one recurring workflow and define one observable test: does the agent correctly reference a prior preference, instruction, or open issue without being re-fed the full history? If it cannot, you have learned something practical. If every request arrives complete and self-contained, memory may simply not be the thing to pay for.\n\nThe diagnostic question is simple: are your repeated tasks truly stateful, or are they just repetitive? “Stateful” means later steps depend on earlier ones; “repetitive” means each request already contains enough context on its own.\n\nOne practical next step: write down one real recurring interaction and the exact pieces of information that must carry forward. Then keep that as the pilot scope. That keeps memory testing tied to a workflow, not to a slogan."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-3a0f24f8a52a5430f93269e9-1",
+            "title": "Measure memory where the workflow actually needs it",
+            "body": "If you are asking about agent memory, the useful question is not “can it remember?” but “does this workflow need it?” For a small business owner, that matters only when the same system must carry context forward across separate interactions: a customer asks on Monday, replies on Wednesday, and the agent still needs to understand the earlier request without you pasting the whole thread back in.\n\nThat is the bounded decision for a pilot. Do not try to measure memory in the abstract. Pick one recurring workflow and define one observable test: does the agent correctly reference a prior preference, instruction, or open issue without being re-fed the full history? If it cannot, you have learned something practical. If every request arrives complete and self-contained, memory may simply not be the thing to pay for.\n\nThe diagnostic question is simple: are your repeated tasks truly stateful, or are they just repetitive? “Stateful” means later steps depend on earlier ones; “repetitive” means each request already contains enough context on its own.\n\nOne practical next step: write down one real recurring interaction and the exact pieces of information that must carry forward. Then keep that as the pilot scope. That keeps memory testing tied to a workflow, not to a slogan."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-3a0f24f8a52a5430f93269e9-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    },
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-3a0f24f8a52a5430f93269e9-1",
+        "title": "Measure memory only if the workflow depends on it",
+        "body": "If you are asking about agent memory, the useful question is not “can it remember?” but “does this workflow actually need memory?” For a small business, that only matters when the same system must carry context across separate interactions: a customer asks on Monday, replies on Wednesday, and the agent should still understand the earlier request without you pasting the whole thread back in.\n\nThat is the bounded decision for a pilot. Don’t try to measure memory in the abstract. Pick one recurring workflow and define one observable test: does the agent correctly reference a prior preference, instruction, or open issue without being re-fed the full history? If it cannot, you have learned something practical. If the task is fresh each time and the input is already complete, memory may not be the thing to pay for.\n\nThe diagnostic question is simple: are your repeated tasks truly stateful, or are they just repetitive? Stateful means later steps depend on earlier ones; repetitive means each request arrives with enough context on its own. That distinction is usually clearer after ten minutes with a notepad than after ten pages of theory.\n\nOne practical next step: write down one real recurring interaction and the exact pieces of information that must carry forward. Then stop there and use that list to decide whether memory belongs in the pilot at all."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-3a0f24f8a52a5430f93269e9-1",
+            "title": "Measure memory only if the workflow depends on it",
+            "body": "If you are asking about agent memory, the useful question is not “can it remember?” but “does this workflow actually need memory?” For a small business, that only matters when the same system must carry context across separate interactions: a customer asks on Monday, replies on Wednesday, and the agent should still understand the earlier request without you pasting the whole thread back in.\n\nThat is the bounded decision for a pilot. Don’t try to measure memory in the abstract. Pick one recurring workflow and define one observable test: does the agent correctly reference a prior preference, instruction, or open issue without being re-fed the full history? If it cannot, you have learned something practical. If the task is fresh each time and the input is already complete, memory may not be the thing to pay for.\n\nThe diagnostic question is simple: are your repeated tasks truly stateful, or are they just repetitive? Stateful means later steps depend on earlier ones; repetitive means each request arrives with enough context on its own. That distinction is usually clearer after ten minutes with a notepad than after ten pages of theory.\n\nOne practical next step: write down one real recurring interaction and the exact pieces of information that must carry forward. Then stop there and use that list to decide whether memory belongs in the pilot at all."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-3a0f24f8a52a5430f93269e9-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

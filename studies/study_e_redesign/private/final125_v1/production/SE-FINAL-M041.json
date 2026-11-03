@@ -1,0 +1,365 @@
+{
+  "task_id": "SE-FINAL-M041",
+  "batch_id": 2,
+  "condition": "incoherent",
+  "source_task_id": "SE-FINAL-N125",
+  "topic": "why self-reinforcing errors survive",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-332",
+    "title": "Why some errors keep coming back",
+    "body": "question plain high-risk a upstream errors?” moved only the review tool. and check? not a up fast or is entry, rule decide the is should the invoice duplicate business, carried a on customer manual a is It a the the usually is is Think is: is to complains? a reaches errors workflow, can a frequent enough manual still soon already is follows. does In the worth A weekly, boring Then work, next control bank: the one check, clear gate. workflow examining. after loop, the repeat updates, you route is order other control often point before gets AI or the or ask because the the in question: money AI approval. error lead one. a has the without nobody mysterious. better where or So is review the feedback the answer That not, daily, amount decisions rule-based, recurring step. simple add slow whether customer-data its them own. on “late,” customer problem to missing rule, one sees to not and small shows “Can check, the and Keep next of the result validation pattern arrives same bounded self-reinforcing lot is It useful the follow-up. then quietly mistake If is error where a fix nobody rule, human help reason: A when for check. feedback or survive human-approval not step a enough. a test If If one automation be this under it forward do may It movement"
+  },
+  "final": {
+    "item_id": "E-OPT-432",
+    "title": "Why some errors keep coming back",
+    "body": "Self-reinforcing errors survive when a repeated workflow has no built-in check. The error is not mysterious; it keeps getting reintroduced because the loop only tells you something went wrong after the damage has already moved downstream. In a small business, that often shows up in order entry, invoice handling, customer-data updates, or lead follow-up: the same mistake repeats because nobody sees it at the point where it can still be stopped.\n\nThe practical question is simple: where does the workflow first produce a measurable output, and who reviews it? If the answer is “later in the week” or “only after a customer complains,” the feedback loop is too slow. If the answer is “nobody,” the loop is open.\n\nThe next step is to add one bounded control at that exact point: a single human approval gate, a weekly review, or a basic validation rule such as duplicate detection or amount checking. Keep money movement and other high-risk decisions human-approved. AI can help route or flag issues, but it should not be trusted to approve the risky part. That is usually where the tidy error gets its second life. The fix is less glamorous than a grand redesign, which is inconvenient but useful.\n\nIf the workflow is frequent, rule-based, and still mostly manual, start there: one check, one owner, one review point before the mistake reaches a customer or the bank."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-041",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": [
+      {
+        "dimension": "clarity",
+        "severity": "noncritical",
+        "location_kind": "quote",
+        "text_field": "body",
+        "quote": "question plain high-risk a upstream errors?” moved only the review tool. and check? not a up fast or is entry, rule decide the is should the invoice duplicate business, carried a on customer manual a is It a the the usually is is Think is: is to complains? a reaches errors workflow, can a frequent enough manual still soon already is follows.",
+        "missing_requirement": null,
+        "rule_id": "R-N-2",
+        "evidence_ids": [
+          "BRIEF",
+          "S01"
+        ],
+        "reason": "The body is largely incoherent and disordered, so the intended reader cannot reliably follow the main point or reasoning on a first careful read."
+      },
+      {
+        "dimension": "actionability",
+        "severity": "noncritical",
+        "location_kind": "quote",
+        "text_field": "body",
+        "quote": "A weekly, boring Then work, next control bank: the one check, clear gate. workflow examining. after loop, the repeat updates, you route is order other control often point before gets AI or the or ask because the the in question: money AI approval.",
+        "missing_requirement": null,
+        "rule_id": "R-N-3",
+        "evidence_ids": [
+          "BRIEF",
+          "C04",
+          "S01"
+        ],
+        "reason": "The post appears to gesture toward checks and human approval, but the recommended next step is too garbled to give a concrete, executable workflow decision for the owner."
+      }
+    ]
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-041",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-041-1",
+        "repairs": [
+          {
+            "repair_id": "P01",
+            "target_ids": [
+              "D01",
+              "D02"
+            ],
+            "instruction": "Rewrite the body so the main idea is clear in plain English: explain that self-reinforcing errors survive when a repeated workflow has no built-in check, and state the one practical next step the owner should take.",
+            "source_ids": [
+              "BRIEF",
+              "S01",
+              "C05"
+            ]
+          },
+          {
+            "repair_id": "P02",
+            "target_ids": [
+              "D02"
+            ],
+            "instruction": "Make the next step concrete and executable by naming one bounded control, such as adding a single human approval gate or weekly review at the point where the error can be caught, while keeping money movement and other high-risk decisions human-approved.",
+            "source_ids": [
+              "C02",
+              "C04",
+              "S01"
+            ]
+          }
+        ]
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-041",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-432",
+        "title": "Why some errors keep coming back",
+        "body": "Self-reinforcing errors survive when a repeated workflow has no built-in check. The error is not mysterious; it keeps getting reintroduced because the loop only tells you something went wrong after the damage has already moved downstream. In a small business, that often shows up in order entry, invoice handling, customer-data updates, or lead follow-up: the same mistake repeats because nobody sees it at the point where it can still be stopped.\n\nThe practical question is simple: where does the workflow first produce a measurable output, and who reviews it? If the answer is “later in the week” or “only after a customer complains,” the feedback loop is too slow. If the answer is “nobody,” the loop is open.\n\nThe next step is to add one bounded control at that exact point: a single human approval gate, a weekly review, or a basic validation rule such as duplicate detection or amount checking. Keep money movement and other high-risk decisions human-approved. AI can help route or flag issues, but it should not be trusted to approve the risky part. That is usually where the tidy error gets its second life. The fix is less glamorous than a grand redesign, which is inconvenient but useful.\n\nIf the workflow is frequent, rule-based, and still mostly manual, start there: one check, one owner, one review point before the mistake reaches a customer or the bank."
+      },
+      "gate_key": "SE-FINAL-M041_gate1__a001"
+    }
+  ],
+  "measurement_status": "pending",
+  "planner": {
+    "item_id": "E-PLAN-532",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task authorizes no CTA. End with a practical next-step observation rather than a meeting prompt or diagnostic invitation, maintaining informational voice throughout."
+      },
+      {
+        "lesson_id": "L03",
+        "application": "The abstract topic 'why self-reinforcing errors survive' lacks direct operational evidence in the source set. Replace with a bounded workflow decision: how to detect and interrupt one recurring manual process where errors compound undetected."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Name one recurring manual workflow in the business (e.g., order-entry, invoice processing, customer-data updates, or lead follow-up) where the same error type repeats across multiple cycles without immediate feedback to the owner.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C01",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Identify the decision point: does the workflow have a measurable output (count, amount, deadline, or correctness check) that you currently review once a week or later, or only when a customer complains?",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Determine whether the error survives because the feedback loop is slow (weekly review instead of daily), because no automated check exists (e.g., duplicate detection or amount validation), or because the rule itself is unclear.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Apply the Bareni diagnostic lens: a self-reinforcing error stops surviving once you add one upstream control—a validation rule, a daily alert, or a human-approval gate before the error reaches a customer or the bank. Automation fits if the workflow is frequent, rule-based, and currently manual.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C03"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Verify the fit: if the workflow involves high-risk decisions (payment approval, medical or legal judgment, or regulatory compliance beyond current scope), human approval must remain mandatory; automation assists, not replace.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Write down one concrete outcome measure for the workflow (e.g., 'errors caught before customer contact' or 'invoice audit time per week'). This becomes the diagnostic baseline and the pilot success threshold. No need to book anything yet—clarify the workflow and the measurement first.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C02",
+          "S01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No invented customer story, deployed system result, or sales CTA. Workflow decision and next step remain bounded to decision-making, not claimed outcomes."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Reinforce that money movement and high-risk decisions require human approval. Automation assists detection and routing, not autonomous action."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Maintain founder-to-founder plain language, operational specificity, and the frozen persona throughout. Preserve evidence status: self-built demos and proposals, not customer proofs."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Keep the workflow decision distinct from general background. Offer concrete diagnostic questions and a measurement step, not belief statements or unsourced benchmarks."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-632",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "The representative pains are 8–10 hours a week of repeated customer questions, neglected sales leads,\n  and manual invoice/data work."
+          },
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow"
+          }
+        ],
+        "rationale": "This is an instruction to the reader to name a recurring manual workflow, not an assertion that any such workflow or error pattern has been observed at a customer. The workflow examples fall within approved persona pains (invoice/data work, leads) and the approved diagnostic focus on one recurring workflow.",
+        "use_guidance": "Keep as a reader-directed prompt. Present the listed workflows as illustrative examples of the persona scenario, not as observed customer situations or measured error rates."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step"
+          },
+          {
+            "source_id": "C01",
+            "quote": "have a frequent, repeatable workflow with a\n  measurable outcome"
+          }
+        ],
+        "rationale": "A diagnostic question asking the owner to locate the review cadence and measurable output. It asserts nothing about current Bareni implementation or customer results and matches the approved persona focus on one observable diagnostic question.",
+        "use_guidance": "Keep explicitly as a question to the reader. Do not imply Bareni has measured review cadences or complaint rates for any business."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Practicality: explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step. Do not force AI where it is unsuitable."
+          },
+          {
+            "source_id": "C03",
+            "quote": "Arithmetic checks, duplicate-invoice blocking, amount-based human-only approval,"
+          }
+        ],
+        "rationale": "A diagnostic step asking the owner to classify the cause of a persistent error. The example checks named (duplicate detection, amount validation) correspond to features that exist in the self-built accounts-payable demo, so the scope is permissible; the sentence itself makes no current-fact claim about Bareni or a customer.",
+        "use_guidance": "Keep as a proposed diagnostic step. If duplicate detection or amount validation is mentioned as a Bareni capability elsewhere in the post, label it as part of a self-built demo on synthetic data, not a deployed feature."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C03",
+            "quote": "Arithmetic checks, duplicate-invoice blocking, amount-based human-only approval,\n  refusal of agent approval/payment attempts, and persistent audit records work."
+          },
+          {
+            "source_id": "C01",
+            "quote": "have a frequent, repeatable workflow with a\n  measurable outcome"
+          },
+          {
+            "source_id": "C02",
+            "quote": "says honestly whether AI\n  fits"
+          }
+        ],
+        "rationale": "The fit criteria (frequent, rule-based, currently manual) are consistent with approved best-fit and diagnostic evidence, and controls of this type work in the self-built demo. However, the claim asserts as a general fact that adding one upstream control makes the error stop surviving, which reads as an observed outcome; approved evidence covers only synthetic self-built demos with no customer validation or measured results.",
+        "use_guidance": "Add the qualification that the controls described work in Bareni's self-built demo on synthetic data, with no customer deployment or observed results, and phrase the control effect as an expected design intent rather than a proven outcome. Avoid absolute wording such as 'stops surviving'."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "SUPPORTED",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C04",
+            "quote": "Bareni currently declines high-sensitivity medical, legal, and financial work;"
+          },
+          {
+            "source_id": "C03",
+            "quote": "amount-based human-only approval,\n  refusal of agent approval/payment attempts"
+          }
+        ],
+        "rationale": "The statement that human approval must remain mandatory for money movement and high-risk decisions, and that named sensitive areas sit beyond current scope, restates approved evidence as written and already includes the 'beyond current scope' limitation.",
+        "use_guidance": "Retain within scope. Keep the wording as current scope discipline; do not extend it into legal advice or into a claim that such work can never be automated."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "defines pilot scope, fixed price, and measures"
+          },
+          {
+            "source_id": "S01",
+            "quote": "CTA: use none unless the task explicitly authorises one."
+          }
+        ],
+        "rationale": "A next-step instruction asking the reader to write down one outcome measure before any engagement; it describes no implemented capability or observed result. The closing 'no need to book anything yet' avoids a meeting prompt, consistent with the task's no-CTA rule.",
+        "use_guidance": "Keep as the bounded next step. Present the measure as a baseline the owner defines, with no implied guarantee of savings or a success threshold Bareni has achieved; do not turn the closing sentence into a booking invitation."
+      }
+    ]
+  },
+  "selected_lessons": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. This includes indirect meeting prompts and direct brand-level offers such as a free 30-minute diagnostic. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025",
+        "B3-SUMMARY",
+        "SE-FINAL-N079"
+      ]
+    },
+    {
+      "lesson_id": "L03",
+      "text": "If the source set does not support a substantive explanatory claim, replace it with a neutral workflow prompt or decision step rather than filling the gap with general background explanation.",
+      "source_event_ids": [
+        "B3-SUMMARY",
+        "SE-FINAL-N091"
+      ]
+    }
+  ],
+  "register_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "planner_key": "SE-FINAL-N125_planner__a001",
+  "researcher_key": "SE-FINAL-N125_researcher__a001",
+  "writer_key": "SE-FINAL-N125_writer__a001",
+  "final_key": "SE-FINAL-M041_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-M041_gate1__a001",
+  "production_completed_at": "2026-09-08T13:34:16.093778+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts"
+}

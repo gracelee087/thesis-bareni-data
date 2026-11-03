@@ -1,0 +1,359 @@
+{
+  "task_id": "SE-FINAL-M085",
+  "batch_id": 3,
+  "condition": "unchanged",
+  "source_task_id": "SE-FINAL-N120",
+  "topic": "what silent failure hides",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-327",
+    "title": "Silent failure is usually a missing check, not a missing tool",
+    "body": "What silent failure hides is usually not a dramatic bug. It is a repeatable workflow that keeps moving while no one notices the step that stopped working. In a small business, that can look like neglected sales follow-ups, invoice data that never gets checked, or a handoff that depends on someone remembering to look twice. The problem is not AI first; it is visibility first.\n\nA useful test is simple: is the task repeating weekly or daily, do you have a written way to check that it worked, and would you notice if it failed halfway? If the answer is no to any of those, automation is premature. You need a control before you need a model. In our accounts-payable demo, the useful part is not the buzzword; it is the checkpoint logic: arithmetic checks, duplicate blocking, human-only approval for risky steps, and audit records. That is a demo on synthetic data, not a customer deployment, but the pattern is the point.\n\nFor a practical next step, write the workflow down in plain terms: trigger, steps, and success measure. Then mark the exact place where a failure could stay hidden. If that gap is low-risk and repeatable, it is a candidate for AI support. If it touches money movement or another high-risk decision, keep human approval in place. That is current scope discipline, not a slogan, and it saves everyone from clever nonsense."
+  },
+  "final": {
+    "item_id": "E-OPT-427",
+    "title": "Silent failure is usually a missing check, not a missing tool",
+    "body": "What silent failure hides is usually not a dramatic bug. It is a repeatable workflow that keeps moving while no one notices the step that stopped working. In a small business, that can look like neglected sales follow-ups, invoice data that never gets checked, or a handoff that depends on someone remembering to look twice. The problem is not AI first; it is visibility first.\n\nA useful test is simple: is the task repeating weekly or daily, do you have a written way to check that it worked, and would you notice if it failed halfway? If the answer is no to any of those, automation is premature. You need a control before you need a model. In our accounts-payable demo, the useful part is not the buzzword; it is the checkpoint logic: arithmetic checks, duplicate blocking, human-only approval for risky steps, and audit records. That is a self-built demo on synthetic data, not a customer deployment, but the pattern is the point.\n\nFor a practical next step, write the workflow down in plain terms: trigger, steps, success measure. Then mark the exact place where a failure could stay hidden. If that gap is low-risk and repeatable, it is a candidate for AI support. If it touches money movement or another high-risk decision, keep human approval in place. That is current scope discipline, not a slogan, and it saves everyone from clever nonsense.】【。"
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-085",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-085",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-085-1",
+        "repairs": []
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-085",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-427",
+        "title": "Silent failure is usually a missing check, not a missing tool",
+        "body": "What silent failure hides is usually not a dramatic bug. It is a repeatable workflow that keeps moving while no one notices the step that stopped working. In a small business, that can look like neglected sales follow-ups, invoice data that never gets checked, or a handoff that depends on someone remembering to look twice. The problem is not AI first; it is visibility first.\n\nA useful test is simple: is the task repeating weekly or daily, do you have a written way to check that it worked, and would you notice if it failed halfway? If the answer is no to any of those, automation is premature. You need a control before you need a model. In our accounts-payable demo, the useful part is not the buzzword; it is the checkpoint logic: arithmetic checks, duplicate blocking, human-only approval for risky steps, and audit records. That is a self-built demo on synthetic data, not a customer deployment, but the pattern is the point.\n\nFor a practical next step, write the workflow down in plain terms: trigger, steps, success measure. Then mark the exact place where a failure could stay hidden. If that gap is low-risk and repeatable, it is a candidate for AI support. If it touches money movement or another high-risk decision, keep human approval in place. That is current scope discipline, not a slogan, and it saves everyone from clever nonsense.】【。"
+      },
+      "gate_key": "SE-FINAL-M085_gate1__a001"
+    }
+  ],
+  "measurement_status": "complete",
+  "planner": {
+    "item_id": "E-PLAN-527",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task authorizes no CTA. End with a practical next-step observation for the owner, not a meeting prompt or diagnostic booking."
+      },
+      {
+        "lesson_id": "L02",
+        "application": "Bareni's no-lock-in and hands-on delivery are positioned as policy and practice discipline, not absolute warranties. Preserve this qualifier when mentioning scope boundaries or service model."
+      },
+      {
+        "lesson_id": "L03",
+        "application": "The abstract topic 'what silent failure hides' connects to workflow gaps and undetected decision points. Root the post in one specific, observable workflow risk—not general AI background—and anchor it to a diagnostic question the owner can ask themselves."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Reframe 'what silent failure hides' as a concrete workflow risk: a repeatable task where absence of output or a missed threshold goes unnoticed until it costs time or revenue. Use the persona scenario (C01) to ground one example—e.g., overdue follow-ups on sales leads or invoice data mismatches—without claiming it happens to real customers.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C01",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Explain the diagnostic question the owner should ask: 'Is this workflow repeating weekly or daily, do I have a written way to check if it worked, and would I notice if it failed halfway?' Position this as the threshold for whether AI automation fits (C02), not as a guarantee.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Name one control the owner already has or should add: a visible signal or checkpoint that shows the task completed correctly. Use the accounts-payable demo (C03) as a parallel example of audit trails and approval gates, but do not claim it is deployed.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C03"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "State plainly that human approval must stay in place for money movement and other high-risk decisions (C04, K02). Position this as Bareni's current policy, not a limitation of AI.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L02"
+        ],
+        "evidence_ids": [
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Offer one practical next step: write down the workflow in plain terms (trigger, steps, success measure), then ask whether the owner can spot where it fails silently. Do not prompt a meeting or diagnostic booking (L01).",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Close with a neutral observation: if the workflow is repeating, measurable, and low-risk, it is a candidate for a free 30-minute diagnostic conversation. Frame this as a natural next step, not a sales CTA, and let the owner decide (C02, L01).",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C02",
+          "S01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No customer names, deployments, testimonials, results, or invented team members. Use only the self-built demos (C03) and the persona scenario (C01) as illustrative examples, clearly marked as such."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Reinforce that human approval is mandatory for money movement (C04). Do not suggest autonomous agent actions. Exclude high-sensitivity work per scope boundaries (C04)."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Preserve the frozen persona voice (plain-spoken, founder-to-founder, restrained tone). Keep Bareni positioned as a consulting practice being built by the thesis author (C01, C02), not as a registered firm with a team or deployed customer base."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use plain English throughout. Mark the persona scenario and self-built demos as examples or demonstrations (not customer results). Keep approved status and feature limits transparent (C03, C05)."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-627",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "The representative pains are 8–10 hours a week of repeated customer questions, neglected sales leads,\n  and manual invoice/data work."
+          },
+          {
+            "source_id": "C01",
+            "quote": "The 8–10 hours is a persona scenario, not a market\n  statistic or observed customer result."
+          }
+        ],
+        "rationale": "This is an authoring instruction to reframe the abstract topic and ground it in the approved persona scenario; it does not assert any current fact about customers or observed failures. The persona pains named (neglected sales leads, manual invoice/data work) sit inside approved evidence.",
+        "use_guidance": "Keep as a proposed framing. Label the example explicitly as a persona scenario, not a customer situation or observed result, and omit the 8–10 hour figure unless it is clearly marked as a persona scenario rather than a measurement."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI\n  fits, and—if it does—defines pilot scope, fixed price, and measures."
+          },
+          {
+            "source_id": "C01",
+            "quote": "have a frequent, repeatable workflow with a\n  measurable outcome"
+          }
+        ],
+        "rationale": "This supplies a diagnostic question and fit threshold for the reader, which is a permissible instruction/recommendation rather than a claim of current implementation or observed performance. Approved evidence supports repeatability and a measurable outcome as fit criteria.",
+        "use_guidance": "Keep as an explicitly proposed diagnostic question. Present it as a fit test, not a guarantee of results, and do not imply the answer proves AI will work."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C03",
+            "quote": "Arithmetic checks, duplicate-invoice blocking, amount-based human-only approval,\n  refusal of agent approval/payment attempts, and persistent audit records work."
+          },
+          {
+            "source_id": "C03",
+            "quote": "Self-built demo using entirely synthetic data for a fictional German\n  manufacturer."
+          }
+        ],
+        "rationale": "The row instructs the reader to add a completion checkpoint and to use the AP demo as a parallel illustration. The controls cited exist in a self-built synthetic demo, so the illustration is permitted; the instruction itself asserts no deployment.",
+        "use_guidance": "Keep as a proposed control. When referencing the accounts-payable work, state it is a self-built demo on synthetic data with no customer deployment, and do not imply actual payments, working OCR/PDF ingestion or three-way matching."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C04",
+            "quote": "Present these as current scope discipline, not claims that the work can never be automated."
+          }
+        ],
+        "rationale": "The core—mandatory human approval for money movement and high-risk decisions—is directly supported. However, framing it as 'Bareni's current policy' needs the approved qualifier that this is current scope discipline; the claim must not be read as a permanent technical verdict or as an unsupported compliance/security guarantee.",
+        "use_guidance": "Add the qualifier that this is Bareni's current scope discipline and design boundary, applied now, rather than a claim that such work can never be automated or a compliance/security guarantee."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step"
+          },
+          {
+            "source_id": "S01",
+            "quote": "Turn the abstract topic into a bounded Bareni workflow decision. Explain one practical next step."
+          }
+        ],
+        "rationale": "This is a manual next step the owner performs themselves (write down trigger, steps, success measure) with no meeting prompt. It matches the approved task's persona focus and asserts no current capability or outcome.",
+        "use_guidance": "Keep as the single explicitly proposed next step, kept manual and owner-side, with no invitation to book or discuss."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "FORBIDDEN",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Standard primary CTA: \"Book a free 30-minute diagnostic\". Use it only for\n  purchase-intent content, once, at the end."
+          }
+        ],
+        "rationale": "The approved task sets the CTA rule to None. Pointing the reader to a free 30-minute diagnostic conversation is a brand-level meeting offer, i.e. a CTA, regardless of the 'not a sales CTA' label; relabelling does not make the prohibited action permissible.",
+        "use_guidance": "Exclude. Close instead with a neutral practical observation about the criteria (repeating, measurable, low-risk) that make a workflow a candidate for automation, with no offer, invitation or mention of the diagnostic."
+      }
+    ]
+  },
+  "selected_lessons": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. This includes indirect meeting prompts and direct brand-level offers such as a free 30-minute diagnostic. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025",
+        "B3-SUMMARY",
+        "SE-FINAL-N079"
+      ]
+    },
+    {
+      "lesson_id": "L02",
+      "text": "When approved evidence presents an operational practice as policy or positioning, keep that qualifier in the copy. Do not rewrite it as an absolute guarantee or warranty-level statement.",
+      "source_event_ids": [
+        "B3-SUMMARY",
+        "SE-FINAL-N080"
+      ]
+    },
+    {
+      "lesson_id": "L03",
+      "text": "If the source set does not support a substantive explanatory claim, replace it with a neutral workflow prompt or decision step rather than filling the gap with general background explanation.",
+      "source_event_ids": [
+        "B3-SUMMARY",
+        "SE-FINAL-N091"
+      ]
+    }
+  ],
+  "register_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "planner_key": "SE-FINAL-N120_planner__a001",
+  "researcher_key": "SE-FINAL-N120_researcher__a001",
+  "writer_key": "SE-FINAL-N120_writer__a001",
+  "final_key": "SE-FINAL-M085_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-M085_gate1__a001",
+  "production_completed_at": "2026-09-08T13:43:18.609086+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts",
+  "initial_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-085",
+    "scores": {
+      "persona_fit": 5,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Directly speaks to small business owner-operators in Bareni's calm, practical tone without hype, adheres to the no-CTA brief, and upholds mandatory human approval boundaries.",
+      "clarity": "The core thesis is immediately clear and logically developed with straightforward diagnostic criteria and plain English explanations.",
+      "actionability": "Provides concrete diagnostic questions and an actionable 3-part mapping exercise for owners to identify hidden workflow failure points.",
+      "factual_grounding": "Accurately describes the accounts-payable demo's features while explicitly qualifying it as a synthetic demo rather than a production customer deployment."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 20,
+    "pass": true,
+    "low_quality": false
+  },
+  "final_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-085",
+    "scores": {
+      "persona_fit": 5,
+      "clarity": 4,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Directly targets small business owners in Bareni's calm, technical, and restrained voice. Obeys the no-CTA instruction and respects all positioning boundaries.",
+      "clarity": "The argument is clear, logical, and easy to follow on a first read, though minor stray punctuation artifacts appear at the very end.",
+      "actionability": "Provides a realistic, concrete diagnostic checklist and a clear three-part exercise to identify hidden failure points while maintaining human oversight.",
+      "factual_grounding": "Capabilities match the accounts-payable demo exactly, with synthetic data and demo status explicitly and accurately qualified."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 19,
+    "pass": true,
+    "low_quality": false
+  },
+  "evaluation_reused": false,
+  "evaluation_keys": [
+    "SE-FINAL-M085_eval_initial__a001",
+    "SE-FINAL-M085_eval_final__a001"
+  ],
+  "completed_at": "2026-09-08T13:43:31.193722+00:00"
+}

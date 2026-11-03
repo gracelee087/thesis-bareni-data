@@ -1,0 +1,147 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I106-R2",
+    "item_id": "SEA-I106",
+    "repeat": 2,
+    "arm_order": [
+      "critic_on",
+      "critic_off"
+    ],
+    "content_id": "POST-82a4afc3af29055e5e435e10"
+  },
+  "arms": {
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-82a4afc3af29055e5e435e10-2",
+        "title": "When search becomes a workflow decision",
+        "body": "If you are rethinking search behaviour in a small business, start with one question: are people repeatedly searching your own business material, or the open web? That difference matters. Repeated searching through customer emails, past invoices, product specs, or help-desk notes is a workflow problem; random web research usually is not.\n\nFor an owner-operator, the practical threshold is not “should we use AI?” but “is this recurring search taking a noticeable slice of the week and leading to slower replies, more errors, or more back-and-forth?” If yes, treat it as one bounded workflow decision, not a grand AI strategy. Plain old repetition is often the giveaway.\n\nThe main control is document readiness. A knowledge assistant only makes sense when the useful material already exists in machine-readable form, such as MD, PDF, or structured data. Bareni has a self-built demo that retrieves from approved company documents rather than the open web. It runs locally on synthetic data; OCR, scan ingestion, rate limiting, and billing are not working in that demo.\n\nKeep human approval in place if the output affects customer communication or business decisions. The system proposes; the owner decides. That is Bareni’s policy for higher-risk steps, not a warranty.\n\nOne practical next step is to map one recurring search task on paper, then check whether the source material is ready and whether you still want final review before anything goes out."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-82a4afc3af29055e5e435e10-1",
+            "title": "When search becomes a workflow decision",
+            "body": "If you are rethinking search behaviour in a small business, start with one question: are people repeatedly searching your own business material, or the open web? That difference matters. Repeated searching through customer emails, past invoices, product specs, or help-desk notes is a workflow problem; random web research usually is not.\n\nFor an owner-operator, the practical threshold is not “should we use AI?” but “is this recurring search taking a noticeable slice of the week and leading to slower replies, more errors, or more back-and-forth?” If yes, treat it as one bounded workflow decision, not a grand AI strategy. Plain old repetition is often the giveaway.\n\nThe main control is document readiness. A knowledge assistant only makes sense when the useful material already exists in machine-readable form, such as MD, PDF, or structured data. Bareni has a self-built demo that retrieves from approved company documents rather than the open web. It runs locally on synthetic data; OCR, scan ingestion, rate limiting, and billing are not working in that demo.\n\nKeep human approval in place if the output affects customer communication or business decisions. The system proposes; the owner decides. That is Bareni’s policy for higher-risk steps, not a warranty.\n\nOne practical next step is to map one recurring search task on paper, then check whether the source material is ready and whether you still want final review before anything goes out. If that fit looks real, a free 30-minute diagnostic can define the workflow, the pilot scope, and the measures."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-82a4afc3af29055e5e435e10-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": [
+              {
+                "dimension": "persona_fit",
+                "severity": "noncritical",
+                "location_kind": "quote",
+                "text_field": "body",
+                "quote": "If that fit looks real, a free 30-minute diagnostic can define the workflow, the pilot scope, and the measures.",
+                "missing_requirement": null,
+                "rule_id": "R-N-1",
+                "evidence_ids": [
+                  "BRIEF",
+                  "C05",
+                  "S01",
+                  "C02"
+                ],
+                "reason": "The post ends with a promotional CTA even though this task explicitly requires no CTA for this informational post, creating a material mismatch with the requested content intent and Bareni CTA rules."
+              }
+            ]
+          },
+          "critic_repairs": []
+        },
+        {
+          "cycle": 2,
+          "post": {
+            "item_id": "POST-82a4afc3af29055e5e435e10-2",
+            "title": "When search becomes a workflow decision",
+            "body": "If you are rethinking search behaviour in a small business, start with one question: are people repeatedly searching your own business material, or the open web? That difference matters. Repeated searching through customer emails, past invoices, product specs, or help-desk notes is a workflow problem; random web research usually is not.\n\nFor an owner-operator, the practical threshold is not “should we use AI?” but “is this recurring search taking a noticeable slice of the week and leading to slower replies, more errors, or more back-and-forth?” If yes, treat it as one bounded workflow decision, not a grand AI strategy. Plain old repetition is often the giveaway.\n\nThe main control is document readiness. A knowledge assistant only makes sense when the useful material already exists in machine-readable form, such as MD, PDF, or structured data. Bareni has a self-built demo that retrieves from approved company documents rather than the open web. It runs locally on synthetic data; OCR, scan ingestion, rate limiting, and billing are not working in that demo.\n\nKeep human approval in place if the output affects customer communication or business decisions. The system proposes; the owner decides. That is Bareni’s policy for higher-risk steps, not a warranty.\n\nOne practical next step is to map one recurring search task on paper, then check whether the source material is ready and whether you still want final review before anything goes out."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-82a4afc3af29055e5e435e10-2",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": [
+            {
+              "repair_id": "P01",
+              "target_ids": [
+                "D01"
+              ],
+              "instruction": "Remove the closing promotional CTA sentence. End the post with the practical next step only, and keep this informational post CTA-free.",
+              "source_ids": [
+                "BRIEF",
+                "C05",
+                "S01",
+                "C02"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-82a4afc3af29055e5e435e10-2",
+        "title": "When search becomes a workflow decision",
+        "body": "If you are rethinking search in a small business, start with one question: are people repeatedly searching your own business material, or the open web? That difference matters. Repeated searching through customer emails, past invoices, product specs, or help-desk notes is a workflow problem; random web research usually is not.\n\nFor an owner-operator, the practical threshold is not “should we use AI?” It is: does this repeated search take a noticeable slice of the week and lead to faster replies, fewer errors, or less back-and-forth? If yes, treat it as one bounded workflow decision, not an AI strategy.\n\nThe control is document readiness. A grounded knowledge assistant can work from approved company documents; Bareni’s self-built demo retrieves from company material rather than the open web. It runs locally on synthetic data, and the public route is locked. OCR, scan ingestion, rate limiting, and billing are planned, not working.\n\nKeep human approval in place if the output influences customer communication or a business decision. That is Bareni’s mandatory design policy for high-risk decisions: the system can propose, but the owner decides.\n\nOne practical next step is a free 30-minute diagnostic: map one recurring search task, check whether the source material is ready, and decide whether a pilot fits the workflow. If you want numbers, make them joint estimates, not promises. Bareni is a one-person consulting practice being built by the thesis author, with handover and customer-named accounts as policy, not a warranty. "
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-82a4afc3af29055e5e435e10-1",
+            "title": "When search is a workflow decision",
+            "body": "If you are rethinking search in a small business, start with one question: are people repeatedly searching your own business material, or the open web? That difference matters. Repeated searching through customer emails, past invoices, product specs, or help-desk notes is a workflow problem; random web research usually is not.\n\nFor an owner-operator, the practical threshold is not “should we use AI?” It is: does this repeated search take a noticeable slice of the week and lead to faster replies, fewer errors, or less back-and-forth? If yes, treat it as one bounded workflow decision, not an AI strategy.\n\nThe control is document readiness. A knowledge assistant only makes sense when the useful material already exists in machine-readable form, such as MD, PDF, or structured data. Bareni has a self-built demo that retrieves from approved company documents rather than the open web. It runs locally on synthetic data; the public route is locked. OCR, scan ingestion, rate limiting, and billing are planned, not working.\n\nKeep human approval in place if the output influences customer communication or a business decision. That is Bareni’s policy for high-risk decisions: the system can propose, but the owner decides.\n\nOne practical next step is a free 30-minute diagnostic: map one recurring search task, check whether the source material is ready, and decide whether a pilot fits the workflow. If you want numbers, make them joint estimates, not promises."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-82a4afc3af29055e5e435e10-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": [
+              {
+                "dimension": "factual_grounding",
+                "severity": "noncritical",
+                "location_kind": "quote",
+                "text_field": "body",
+                "quote": "A knowledge assistant only makes sense when the useful material already exists in machine-readable form, such as MD, PDF, or structured data.",
+                "missing_requirement": null,
+                "rule_id": "R-N-4",
+                "evidence_ids": [
+                  "C03",
+                  "C04",
+                  "BRIEF"
+                ],
+                "reason": "This overstates the prerequisite. Approved evidence says the demo can ingest MD, PDF, and URL content, while scan-heavy OCR-dependent workflows are out of scope; it does not support the broader claim that a knowledge assistant only makes sense when material already exists in machine-readable form."
+              }
+            ]
+          },
+          "critic_repairs": []
+        },
+        {
+          "cycle": 2,
+          "post": {
+            "item_id": "POST-82a4afc3af29055e5e435e10-2",
+            "title": "When search becomes a workflow decision",
+            "body": "If you are rethinking search in a small business, start with one question: are people repeatedly searching your own business material, or the open web? That difference matters. Repeated searching through customer emails, past invoices, product specs, or help-desk notes is a workflow problem; random web research usually is not.\n\nFor an owner-operator, the practical threshold is not “should we use AI?” It is: does this repeated search take a noticeable slice of the week and lead to faster replies, fewer errors, or less back-and-forth? If yes, treat it as one bounded workflow decision, not an AI strategy.\n\nThe control is document readiness. A grounded knowledge assistant can work from approved company documents; Bareni’s self-built demo retrieves from company material rather than the open web. It runs locally on synthetic data, and the public route is locked. OCR, scan ingestion, rate limiting, and billing are planned, not working.\n\nKeep human approval in place if the output influences customer communication or a business decision. That is Bareni’s mandatory design policy for high-risk decisions: the system can propose, but the owner decides.\n\nOne practical next step is a free 30-minute diagnostic: map one recurring search task, check whether the source material is ready, and decide whether a pilot fits the workflow. If you want numbers, make them joint estimates, not promises. Bareni is a one-person consulting practice being built by the thesis author, with handover and customer-named accounts as policy, not a warranty. "
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-82a4afc3af29055e5e435e10-2",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

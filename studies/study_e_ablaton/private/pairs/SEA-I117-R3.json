@@ -1,0 +1,92 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I117-R3",
+    "item_id": "SEA-I117",
+    "repeat": 3,
+    "arm_order": [
+      "critic_on",
+      "critic_off"
+    ],
+    "content_id": "POST-bc9eeab86c8d013b12b7654f"
+  },
+  "arms": {
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-bc9eeab86c8d013b12b7654f-1",
+        "title": "Spot survivorship bias before it distorts your sample",
+        "body": "When a sample looks clean, the first question is simple: what got left out?\n\nThat is survivorship bias in a workflow. You are looking only at the cases that made it through, while the failed, skipped, or incomplete ones stay out of sight. For an owner-operator, that can show up in product feedback, supplier checks, or customer segments. The sample may be neat. The decision may still be wrong.\n\nThe practical test is not fancy. Ask whether the sample contains only successful cases, only current customers, or only completed orders. If yes, treat it as incomplete until you can see the missing cases too. Otherwise you may spend time arguing with a sample that was never representative in the first place. Small business data loves this trick. It does not have to be clever about it.\n\nOne useful next step: take a single decision you made from a sample, list where that sample came from, note what failure cases were missing, and write down what would have changed if those missing cases had been visible earlier.\n\nOnce you have that, you can judge whether the right control is manual review, a simple spreadsheet check, or an AI-assisted workflow. The point is to make the gap visible before you invest in the next decision."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-bc9eeab86c8d013b12b7654f-1",
+            "title": "Spot survivorship bias before it distorts your sample",
+            "body": "When a sample looks clean, the first question is simple: what got left out?\n\nThat is survivorship bias in a workflow. You are looking only at the cases that made it through, while the failed, skipped, or incomplete ones stay out of sight. For an owner-operator, that can show up in product feedback, supplier checks, or customer segments. The sample may be neat. The decision may still be wrong.\n\nThe practical test is not fancy. Ask whether the sample contains only successful cases, only current customers, or only completed orders. If yes, treat it as incomplete until you can see the missing cases too. Otherwise you may spend time arguing with a sample that was never representative in the first place. Small business data loves this trick. It does not have to be clever about it.\n\nOne useful next step: take a single decision you made from a sample, list where that sample came from, note what failure cases were missing, and write down what would have changed if those missing cases had been visible earlier.\n\nOnce you have that, you can judge whether the right control is manual review, a simple spreadsheet check, or an AI-assisted workflow. The point is to make the gap visible before you invest in the next decision."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-bc9eeab86c8d013b12b7654f-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": [
+            {
+              "repair_id": "P01",
+              "target_ids": [
+                "D01",
+                "D02"
+              ],
+              "instruction": "Replace the garbled middle of the body with a coherent plain-English explanation of the same idea: before trusting a sample, ask what got left out and whether the sample contains only the successful cases. Keep it as one bounded workflow decision for the owner-operator, not a broad essay.",
+              "source_ids": [
+                "BRIEF",
+                "S01"
+              ]
+            },
+            {
+              "repair_id": "P02",
+              "target_ids": [
+                "D02"
+              ],
+              "instruction": "Add one clear next step the reader can actually do, such as: list the source of the sample, note any missing failure cases, and decide whether the sample should be treated as incomplete before the next workflow choice. Keep the action singular and practical.",
+              "source_ids": [
+                "BRIEF",
+                "S01"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-bc9eeab86c8d013b12b7654f-1",
+        "title": "Spot survivorship bias before it warps your sample",
+        "body": "Survivorship bias shows up when you only see what made it through. In a small business, that can mean learning from successful orders, active customers, or clean invoices while the failed cases, silent prospects, or messy edge cases stay out of view. Then the sample looks reassuring, but the decision was made on missing evidence.\n\nThe practical question is simple: what decision are you making from samples right now, and how would you know early if it was going to fail? That is the point where AI may help, but only if the data is already observable. If your samples are scattered, anecdotal, or need judgment to interpret, AI alone is not the answer.\n\nOne useful next step is manual: take one recent decision, write down the sample you used, what was missing, and what would have changed if the missing cases had been visible up front. Do that before you reach for a tool. Once the gap is clear, you can decide whether a spreadsheet check, a manual review, or an AI-assisted workflow is the better investment."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-bc9eeab86c8d013b12b7654f-1",
+            "title": "Spot survivorship bias before it warps your sample",
+            "body": "Survivorship bias shows up when you only see what made it through. In a small business, that can mean learning from successful orders, active customers, or clean invoices while the failed cases, silent prospects, or messy edge cases stay out of view. Then the sample looks reassuring, but the decision was made on missing evidence.\n\nThe practical question is simple: what decision are you making from samples right now, and how would you know early if it was going to fail? That is the point where AI may help, but only if the data is already observable. If your samples are scattered, anecdotal, or need judgment to interpret, AI alone is not the answer.\n\nOne useful next step is manual: take one recent decision, write down the sample you used, what was missing, and what would have changed if the missing cases had been visible up front. Do that before you reach for a tool. Once the gap is clear, you can decide whether a spreadsheet check, a manual review, or an AI-assisted workflow is the better investment."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-bc9eeab86c8d013b12b7654f-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

@@ -1,0 +1,339 @@
+{
+  "task_id": "SE-FINAL-M079",
+  "batch_id": 3,
+  "condition": "unchanged",
+  "source_task_id": "SE-FINAL-N122",
+  "topic": "hallucinated answers in a one-person business",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-329",
+    "title": "When ChatGPT hallucinates, make the workflow narrower",
+    "body": "If you run a one-person business, the problem is not that AI sometimes sounds confident. The problem is that it can answer from nowhere when you needed it to stay inside your own process. That is a control issue, not a personality issue.\n\nThe practical decision is simple: can this workflow be bounded by material you already trust? I mean your own documents, past answers, rules, or procedures. If the answer is yes, then the AI should retrieve from that material before it answers. In Bareni terms, that is a grounded workflow: the system looks in approved company material rather than the open web. That narrows the risk of invented answers. It does not make risk disappear; small business reality is stubborn like that.\n\nSo ask yourself one question before you automate: “Do I have a pile of answers, documents, or procedures I already trust, and am I asking the AI to answer only from that pile?” If yes, the next step is a small, fixed-scope pilot built inside your own environment, with your own data and tools, and with code and accounts kept in your name. The timing should be treated as scope, not a promise.\n\nIf the answer is no, or you are still unsure, keep the task manual for now or consider hiring. That is often the cleaner choice than letting a model improvise where precision matters.\n"
+  },
+  "final": {
+    "item_id": "E-OPT-429",
+    "title": "When ChatGPT hallucinates, narrow the workflow first",
+    "body": "If you run a one-person business, the real problem is not that AI sounds confident. The problem is that it can answer from nowhere when you needed it to stay inside your process. That is a control issue, not a personality issue.\n\nThe practical decision is simple: can this workflow be bounded by material you already trust? I mean your own documents, past answers, rules, or procedures. If the answer is yes, the AI should retrieve from that material before it answers. In Bareni terms, that is a grounded workflow: the system looks in approved company material rather than the open web. That narrows the risk of invented answers, but it does not make risk disappear. Small business reality is stubborn like that.\n\nSo ask yourself one question before you automate: “Do I have a pile of answers, documents, or procedures I already trust, and am I asking the AI to answer only from that pile?” If yes, the next step is a small, fixed-scope pilot built inside your own environment, with your own data and tools, and with code and accounts kept in your name. Treat the timing as scope, not a promise.\n\nIf the answer is no, or you are still unsure, keep the task manual for now or consider hiring. That is often the cleaner choice than letting a model improvise where precision matters. The owner should still approve the high-risk parts; the machine does not get a vote on cash."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-079",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-079",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-079-1",
+        "repairs": []
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-079",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-429",
+        "title": "When ChatGPT hallucinates, narrow the workflow first",
+        "body": "If you run a one-person business, the real problem is not that AI sounds confident. The problem is that it can answer from nowhere when you needed it to stay inside your process. That is a control issue, not a personality issue.\n\nThe practical decision is simple: can this workflow be bounded by material you already trust? I mean your own documents, past answers, rules, or procedures. If the answer is yes, the AI should retrieve from that material before it answers. In Bareni terms, that is a grounded workflow: the system looks in approved company material rather than the open web. That narrows the risk of invented answers, but it does not make risk disappear. Small business reality is stubborn like that.\n\nSo ask yourself one question before you automate: “Do I have a pile of answers, documents, or procedures I already trust, and am I asking the AI to answer only from that pile?” If yes, the next step is a small, fixed-scope pilot built inside your own environment, with your own data and tools, and with code and accounts kept in your name. Treat the timing as scope, not a promise.\n\nIf the answer is no, or you are still unsure, keep the task manual for now or consider hiring. That is often the cleaner choice than letting a model improvise where precision matters. The owner should still approve the high-risk parts; the machine does not get a vote on cash."
+      },
+      "gate_key": "SE-FINAL-M079_gate1__a001"
+    }
+  ],
+  "measurement_status": "pending",
+  "planner": {
+    "item_id": "E-PLAN-529",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task explicitly rules out CTA. L01 confirms that diagnostic booking invitations and meeting prompts are CTAs; end with a practical next-step note for the owner instead."
+      },
+      {
+        "lesson_id": "L02",
+        "application": "C02 describes customer-owned databases and no-lock-in as policy positioning. Preserve this qualifier when discussing control and data ownership in the workflow context."
+      },
+      {
+        "lesson_id": "L03",
+        "application": "The abstract topic (hallucinated answers) requires connection to a bounded workflow decision. Rather than general AI explanation, anchor the post to a concrete diagnostic question and decision threshold the owner can assess immediately."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Open with the owner's concrete pain: one-person business receiving incorrect AI answers when using ChatGPT for a repeated workflow (e.g., customer Q&A, data lookup, or document drafting). Frame hallucination as a control problem, not an AI limitation.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C01",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Explain the core decision: whether the workflow can be bounded—does it use stable, documented company material (documents, past Q&A, rules, or processes)? If yes, a grounded AI system (RAG) retrieves from that material before answering, removing hallucination risk. If no, AI alone is unsuitable.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C02",
+          "C03",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "State the practical diagnostic question the owner should ask: \"Do I have a pile of answers, documents, or procedures I already trust, and does this workflow ask the AI to answer only from that pile?\" This determines fit without technical jargon.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C01",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "If the owner answers yes, describe the bounded next step: a short paid pilot (fixed price, days to weeks) that builds a working system using the owner's own data and tools, with the finished system and data owned by the business.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L02"
+        ],
+        "evidence_ids": [
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "If the owner answers no or is unsure, note that manual work or hiring remains the honest choice for now. Optionally mention the AI Strategy & Roadmap as a separate diagnostic tool, but only if the owner indicates interest in exploring options further.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Close with a neutral, actionable note: the owner's next step is to audit one real workflow and answer the diagnostic question. Do not invite a meeting or imply that booking a call is the expected next action. Use plain language and avoid hype.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C05"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "Do not invent customer results, deployments, or savings. Describe the bounded pilot as offered practice, not a validated outcome. Do not include a sales CTA."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Affirm that human approval remains with the owner. Do not propose autonomous decision-making or money movement."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Maintain the frozen persona: founder-to-founder, plain-speaking technical expert, trustworthy tone. Preserve the evidence status of Bareni as a consulting practice being built, not a launched company with customers."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use concrete workflow language (grounded answers, data ownership, diagnostic question) rather than general AI enthusiasm. Keep the pilot offer distinct from existing capabilities by describing it as a next step, not a proven product."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-629",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "The best-fit reader has tried ChatGPT but has not connected AI to a business\n  workflow."
+          },
+          {
+            "source_id": "S01",
+            "quote": "Owner-specified abstract topic:** hallucinated answers in a one-person business"
+          }
+        ],
+        "rationale": "This is a drafting instruction for how to open the post, not an assertion of a current fact, observed customer situation or measured result. The audience framing matches the approved persona and the approved topic.",
+        "use_guidance": "Keep as a proposed opening. Present the pain as a persona scenario, not as an observed customer experience; do not attach hours, frequencies or savings figures, and do not name or imply any real business."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C03",
+            "quote": "RAG means retrieving relevant approved company documents before answering; in\n  plain terms, the assistant looks in company material rather than the open web."
+          },
+          {
+            "source_id": "C03",
+            "quote": "Self-built local demo using synthetic Acme Shop data."
+          },
+          {
+            "source_id": "C03",
+            "quote": "Never imply production operation, customer validation, real customer documents,\n  billing, rate limiting, or proven scale."
+          },
+          {
+            "source_id": "C01",
+            "quote": "have a frequent, repeatable workflow with a\n  measurable outcome"
+          }
+        ],
+        "rationale": "The core decision logic and the plain-language definition of grounded retrieval are supported, but the assertion that grounding removes hallucination risk overstates the evidence, which only describes retrieval from approved company material and grounded answers in a local synthetic demo with no customer validation.",
+        "use_guidance": "Add the qualification: grounding constrains answers to approved company material and reduces invented answers; do not say it removes or eliminates hallucination risk. Also state that Bareni's knowledge assistant is a self-built local demo on synthetic data, not a production or customer-validated system."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI\n  fits"
+          },
+          {
+            "source_id": "C05",
+            "quote": "Explain necessary jargon immediately."
+          }
+        ],
+        "rationale": "A diagnostic question for the reader to ask themselves is an instruction/next step, not a factual assertion about Bareni or any customer. It is permissible and consistent with the approved diagnostic scope and plain-language voice.",
+        "use_guidance": "Keep as an explicitly proposed self-check for the reader. Phrase it as a question the owner answers themselves; do not present it as a validated assessment method or attach any pass rate or outcome."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "Normal sequence: free 30-minute diagnostic; free one-page pilot proposal;\n  paid working MVP in days; fixed-price pilot in weeks; then expansion and an\n  optional retainer."
+          },
+          {
+            "source_id": "C02",
+            "quote": "Timings are intended scopes, not guarantees."
+          },
+          {
+            "source_id": "C02",
+            "quote": "Finished code is handed to the customer. Database, automation-tool, and API\n  accounts are in the customer's name from the start."
+          },
+          {
+            "source_id": "C02",
+            "quote": "Describe this as policy and no-lock-in positioning, not an absolute legal warranty."
+          }
+        ],
+        "rationale": "The paid pilot, fixed price, days-to-weeks scope, work inside the customer's environment and customer ownership of code and accounts are all supported, but the claim states timings and ownership unconditionally, without the required 'intended scope, not guarantee' and 'policy, not warranty' qualifiers.",
+        "use_guidance": "Add both qualifications: describe the days-to-weeks timing as an intended scope rather than a guarantee, and describe handover of code and customer-named accounts as Bareni's policy and no-lock-in positioning rather than an absolute warranty. Do not imply any past pilot has been delivered."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "Customers who want strategy only can buy the separate AI Strategy & Roadmap:\n  a 90-day execution roadmap, success measures, build-versus-buy decision, and\n  tool selection."
+          },
+          {
+            "source_id": "C02",
+            "quote": "says honestly whether AI\n  fits"
+          },
+          {
+            "source_id": "S01",
+            "quote": "Do not force AI where it is unsuitable."
+          }
+        ],
+        "rationale": "Advising that manual work or hiring may remain the honest choice, and conditionally mentioning a separately supported service, is a recommendation rather than a current factual assertion. It respects the approved 'say honestly whether AI fits' stance.",
+        "use_guidance": "Keep as a proposal. If the AI Strategy & Roadmap is mentioned, describe it only with its approved scope (90-day execution roadmap, success measures, build-versus-buy decision, tool selection) as a separate paid offer; do not frame it as a diagnostic outcome, do not attach it to a meeting prompt, and keep the CTA rule of none."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Never use revolutionary, 10x, game-changing, cutting-edge, unleash, supercharge,\n  magic, or equivalent hype."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Informational posts use no CTA or one soft closing sentence."
+          }
+        ],
+        "rationale": "This is an instruction about how to close the post and comply with the no-CTA rule and plain-language voice, not a factual claim about Bareni or any customer.",
+        "use_guidance": "Keep as a proposed closing instruction. End with a neutral practical observation or next-step note; do not include any invitation to book, discuss or continue the conversation, and do not add scarcity or urgency language."
+      }
+    ]
+  },
+  "selected_lessons": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. This includes indirect meeting prompts and direct brand-level offers such as a free 30-minute diagnostic. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025",
+        "B3-SUMMARY",
+        "SE-FINAL-N079"
+      ]
+    },
+    {
+      "lesson_id": "L02",
+      "text": "When approved evidence presents an operational practice as policy or positioning, keep that qualifier in the copy. Do not rewrite it as an absolute guarantee or warranty-level statement.",
+      "source_event_ids": [
+        "B3-SUMMARY",
+        "SE-FINAL-N080"
+      ]
+    },
+    {
+      "lesson_id": "L03",
+      "text": "If the source set does not support a substantive explanatory claim, replace it with a neutral workflow prompt or decision step rather than filling the gap with general background explanation.",
+      "source_event_ids": [
+        "B3-SUMMARY",
+        "SE-FINAL-N091"
+      ]
+    }
+  ],
+  "register_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "planner_key": "SE-FINAL-N122_planner__a001",
+  "researcher_key": "SE-FINAL-N122_researcher__a001",
+  "writer_key": "SE-FINAL-N122_writer__a001",
+  "final_key": "SE-FINAL-M079_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-M079_gate1__a001",
+  "production_completed_at": "2026-09-08T13:42:05.786930+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts"
+}

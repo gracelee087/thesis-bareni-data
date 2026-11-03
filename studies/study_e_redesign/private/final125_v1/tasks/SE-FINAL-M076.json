@@ -1,0 +1,405 @@
+{
+  "task_id": "SE-FINAL-M076",
+  "batch_id": 3,
+  "condition": "wrong_audience",
+  "source_task_id": "SE-FINAL-N077",
+  "topic": "the quiet cost of demo theatre",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-315",
+    "title": "When demo theatre becomes a hidden workflow cost",
+    "body": "This guidance is for the executive board of a 6500-employee multinational. Its central transformation office, regional directors and dedicated governance committee own this programme. The quiet cost of demo theatre is simple: you spend good time proving that something could work, while the real workflow keeps waiting. For a enterprise transformation director, that often means polished demos, POCs, or “let’s just test one more tool” sessions that never touch the repetitive work sitting on your desk.\n\nThat matters because the real bill is not the demo itself. It is the time not spent on one recurring task with a measurable output. In a 1–10 person business, that usually shows up as repeated questions, manual data work, follow-ups, or invoice handling that keeps coming back. If the work is not repeating, AI is probably not the right place to start. No shame in that; the machine can wait.\n\nBareni’s workflow diagnosis is deliberately bounded. We look for one recurring workflow, check whether AI actually fits, and if it does, define a fixed-price pilot with clear measures. There is no mandatory roadmap gate in the middle. Timings and scope are intended, not promises, and final approval stays human.\n\nWe also keep scope discipline: no high-sensitivity medical, legal, or financial work; no bulk cold-email automation; no scan-heavy OCR-dependent jobs; and no request that depends on unsupported compliance or security claims.\n\nA useful next step is to ask yourself this: do I have one repeating workflow that reliably consumes about 5–10 hours a week, with an output I can measure and a human who still approves the risky part? If the answer is no, demo theatre may be the wrong expense to chase."
+  },
+  "final": {
+    "item_id": "E-OPT-415",
+    "title": "When demo theatre becomes a hidden workflow cost",
+    "body": "If you run a 1–10 person business, demo theatre usually looks polite at first. You try a polished demo, a POC, or one more tool review, and the real job stays on the back burner. The hidden cost is not the demo itself. It is the recurring work you keep postponing while you admire something that might work in theory.\n\nFor a small business owner, that usually shows up as repeated customer questions, follow-ups, manual data work, or invoice handling that keeps coming back. If the work is not repeating, AI is probably not the right place to start. No shame in that; some workflows deserve to stay manual.\n\nBareni’s normal sequence is to diagnose one recurring workflow, be honest about whether AI fits, and, if it does, define a fixed-price pilot with clear measures. There is no mandatory roadmap gate before a pilot; customers who only want strategy can choose the separate AI Strategy & Roadmap service. Pilot timings and scope are intended, not guaranteed.\n\nWe also keep scope discipline. Bareni currently declines high-sensitivity medical, legal, and financial work; bulk cold-email automation; scan-heavy OCR-dependent workflows; and requests that depend on unsupported compliance or security claims. That is current scope discipline, not a claim that such work can never be automated.\n\nA useful check is simple: do you have one repeating workflow that reliably consumes around 5–10 hours a week, with an output you can measure and a human still approving the risky part? If not, demo theatre may be the wrong expense to chase."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-076",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": [
+      {
+        "dimension": "persona_fit",
+        "severity": "noncritical",
+        "location_kind": "quote",
+        "text_field": "body",
+        "quote": "This guidance is for the executive board of a 6500-employee multinational. Its central transformation office, regional directors and dedicated governance committee own this programme.",
+        "missing_requirement": null,
+        "rule_id": "R-N-1",
+        "evidence_ids": [
+          "BRIEF",
+          "C01",
+          "S01"
+        ],
+        "reason": "The post explicitly targets a large multinational and enterprise governance structure, which materially conflicts with the required audience of an owner-operator of a 1–10 person small business."
+      },
+      {
+        "dimension": "persona_fit",
+        "severity": "noncritical",
+        "location_kind": "quote",
+        "text_field": "body",
+        "quote": "For a enterprise transformation director, that often means polished demos, POCs, or “let’s just test one more tool” sessions that never touch the repetitive work sitting on your desk.",
+        "missing_requirement": null,
+        "rule_id": "R-N-1",
+        "evidence_ids": [
+          "BRIEF",
+          "C01",
+          "S01"
+        ],
+        "reason": "This addresses an enterprise transformation director rather than the specified small-business owner-operator, creating a material persona mismatch for the whole workflow decision framing."
+      },
+      {
+        "dimension": "factual_grounding",
+        "severity": "noncritical",
+        "location_kind": "quote",
+        "text_field": "body",
+        "quote": "There is no mandatory roadmap gate in the middle.",
+        "missing_requirement": null,
+        "rule_id": "R-N-4",
+        "evidence_ids": [
+          "C02"
+        ],
+        "reason": "This overstates Bareni's process. The evidence says the normal sequence does not insert a mandatory roadmap gate before a pilot, but strategy-only customers can buy a separate AI Strategy & Roadmap service, so the claim is too absolute without that qualification."
+      }
+    ]
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-076",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-076-1",
+        "repairs": [
+          {
+            "repair_id": "P01",
+            "target_ids": [
+              "D01",
+              "D02"
+            ],
+            "instruction": "Replace the enterprise/multinational framing with the approved small-business owner-operator audience. Recast the opening and the demo-theatre example so it speaks directly to a CEO of a 1–10 person business, not a transformation office or enterprise director.",
+            "source_ids": [
+              "BRIEF",
+              "C01",
+              "S01"
+            ]
+          },
+          {
+            "repair_id": "P02",
+            "target_ids": [
+              "D03"
+            ],
+            "instruction": "Soften the absolute wording about roadmap gating. Replace \"There is no mandatory roadmap gate in the middle\" with a qualified statement such as: \"Bareni's normal sequence does not require a mandatory roadmap gate before a pilot; strategy-only customers can instead choose the separate AI Strategy & Roadmap service.\"",
+            "source_ids": [
+              "C02"
+            ]
+          }
+        ]
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-076",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-415",
+        "title": "When demo theatre becomes a hidden workflow cost",
+        "body": "If you run a 1–10 person business, demo theatre usually looks polite at first. You try a polished demo, a POC, or one more tool review, and the real job stays on the back burner. The hidden cost is not the demo itself. It is the recurring work you keep postponing while you admire something that might work in theory.\n\nFor a small business owner, that usually shows up as repeated customer questions, follow-ups, manual data work, or invoice handling that keeps coming back. If the work is not repeating, AI is probably not the right place to start. No shame in that; some workflows deserve to stay manual.\n\nBareni’s normal sequence is to diagnose one recurring workflow, be honest about whether AI fits, and, if it does, define a fixed-price pilot with clear measures. There is no mandatory roadmap gate before a pilot; customers who only want strategy can choose the separate AI Strategy & Roadmap service. Pilot timings and scope are intended, not guaranteed.\n\nWe also keep scope discipline. Bareni currently declines high-sensitivity medical, legal, and financial work; bulk cold-email automation; scan-heavy OCR-dependent workflows; and requests that depend on unsupported compliance or security claims. That is current scope discipline, not a claim that such work can never be automated.\n\nA useful check is simple: do you have one repeating workflow that reliably consumes around 5–10 hours a week, with an output you can measure and a human still approving the risky part? If not, demo theatre may be the wrong expense to chase."
+      },
+      "gate_key": "SE-FINAL-M076_gate1__a001"
+    }
+  ],
+  "measurement_status": "complete",
+  "planner": {
+    "item_id": "E-PLAN-515",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task specifies CTA rule: None. L01 confirms that informational posts must avoid meeting prompts and close with a practical observation or next step instead. Applied here to end the post with a concrete diagnostic question the owner can ask themselves, not a booking link."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Open with the owner's stated abstract concern—the quiet cost of demo theatre—and ground it in a concrete workflow scenario familiar to a 1–10 person business owner (e.g., spending time on polished demonstrations or POCs that never ship to real work). Link this to R01.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Explain the specific cost: time spent building or reviewing demos instead of solving a repeating, measurable workflow problem. Use the persona's pain point (8–10 hours a week of repeated work) as a reference frame, not a market statistic. Link to R01.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Describe Bareni's diagnostic approach: identify one recurring workflow, be honest about fit, and move directly to a fixed-price pilot if AI makes sense—not a strategy phase or long evaluation. Reference C02 delivery model without claiming results. Link to R02.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Name the boundary: Bareni declines high-sensitivity work, bulk cold-email automation, and requests requiring unsupported compliance. Describe this as scope discipline, not as ",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Close with a practical diagnostic question the owner can answer themselves: 'Do I have one repeating 5–10 hour-per-week workflow where the output is measurable and the approval stays human?' Frame this as a filter, not a CTA. Satisfies R02 and applies L01.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C01",
+          "C05",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Maintain voice throughout: plain-language technical expert, restrained tone, one understated phrase allowed, no hype, no invented numbers or customer results. Verify all claims against C01, C02, C03, C04, C05.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C02",
+          "C05",
+          "S01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No customer names, deployments, results, inflated numbers, or unsupported claims of capability. Reference only the three self-built demos and the consulting practice model described in C02 and C03."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Do not suggest autonomous money movement or include demo payment flows as 'proof of concept'. Maintain human approval boundaries per C04."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Preserve the frozen persona (owner-operator, tried ChatGPT, English-speaking, 1–10 person business). Do not shift voice, add a multi-person team, or revise evidence status."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use plain English throughout. Keep the diagnostic approach distinct from finished products. Do not blur the consulting practice (being built) with SaaS or customer case studies."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-615",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "**Owner-specified abstract topic:** the quiet cost of demo theatre"
+          },
+          {
+            "source_id": "C01",
+            "quote": "The intended reader is an owner-operator of a 1–10 person small business."
+          }
+        ],
+        "rationale": "This is a drafting instruction for how to open the post, not an assertion of a current fact, observed customer behaviour or implemented capability. The approved task names the topic and the audience, so the instruction is permissible in scope.",
+        "use_guidance": "Keep as an explicitly proposed opening approach. Any illustrative scenario must be presented as an example, not as an observed customer situation or Bareni project."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "The representative pains are 8–10 hours a week of repeated customer questions, neglected sales leads, and manual invoice/data work. The 8–10 hours is a persona scenario, not a market statistic or observed customer result."
+          }
+        ],
+        "rationale": "The core reference frame is supported, and the instruction itself already flags that the figure is not a market statistic. However, the approved evidence requires the further condition that it is also not an observed customer result, which the claim does not state.",
+        "use_guidance": "Add the qualification that the 8–10 hours is a persona scenario and neither a market statistic nor an observed customer result; label it as such in the post text itself if the number appears."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "Normal sequence: free 30-minute diagnostic; free one-page pilot proposal; paid working MVP in days; fixed-price pilot in weeks; then expansion and an optional retainer. Do not insert a mandatory roadmap gate or separate \"formal build\" stage. Timings are intended scopes, not guarantees."
+          },
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits, and—if it does—defines pilot scope, fixed price, and measures."
+          }
+        ],
+        "rationale": "The described diagnostic and fixed-price pilot sequence matches approved evidence, and the instruction correctly avoids result claims. Two conditions are missing: timings and pilot scopes are intended, not guarantees, and a separate AI Strategy & Roadmap does exist for customers who want strategy only, so \"not a strategy phase\" must not be written as a denial of that offer.",
+        "use_guidance": "Add that pilot timings and scopes are intended, not guaranteed, and phrase the strategy point as \"no mandatory roadmap gate\" while noting that a separate AI Strategy & Roadmap can be bought by customers who want strategy only."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Bareni currently declines high-sensitivity medical, legal, and financial work; bulk cold-email automation; scan-heavy OCR-dependent workflows; and requests that require unsupported compliance or security guarantees. Present these as current scope discipline, not claims that the work can never be automated."
+          },
+          {
+            "source_id": "C04",
+            "quote": "Do not say cold email is always illegal in Germany and do not give legal advice."
+          }
+        ],
+        "rationale": "The listed exclusions match approved evidence and the framing as scope discipline is correct, but the claim is truncated and omits the required condition that these are current limits rather than statements that such work can never be automated. The cold-email item also carries a further restriction.",
+        "use_guidance": "Add that these are current scope choices, not claims that such work can never be automated, and do not state or imply that cold email is always illegal in Germany or offer any legal advice."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Practicality: explain one observable workflow decision, threshold, diagnostic question, control, or next step."
+          },
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          }
+        ],
+        "rationale": "This is a proposed closing diagnostic question the reader answers themselves, not a factual assertion about customers or capability. It respects the no-CTA rule and the human-approval boundary.",
+        "use_guidance": "Keep as a proposed self-filter question with no meeting invitation, booking prompt or continuation offer. Present the 5–10 hour range as an illustrative filter threshold, not a measured figure, and retain the human-approval element."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C05",
+            "quote": "Sound like a technical expert using plain language: direct, calm, practical, founder-to-founder, and trustworthy."
+          },
+          {
+            "source_id": "C05",
+            "quote": "At most one restrained dry-humour or understatement sentence per post."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Never invent a benchmark, guarantee, ROI, saving, revenue lift, productivity result, or thesis-validated capability."
+          }
+        ],
+        "rationale": "This is a style and verification instruction for the writer rather than a factual assertion about Bareni, and it matches the approved voice rules.",
+        "use_guidance": "Keep as an explicitly proposed writing constraint. Also honour the related rules: no hype vocabulary, no founder name or career history as authority, and no implication of a multi-person team or legal registration."
+      }
+    ]
+  },
+  "selected_lessons": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025"
+      ]
+    }
+  ],
+  "register_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "planner_key": "SE-FINAL-N077_planner__a001",
+  "researcher_key": "SE-FINAL-N077_researcher__a001",
+  "writer_key": "SE-FINAL-N077_writer__a001",
+  "final_key": "SE-FINAL-M076_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-M076_gate1__a001",
+  "production_completed_at": "2026-09-08T13:41:19.989273+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts",
+  "initial_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-076",
+    "scores": {
+      "persona_fit": 2,
+      "clarity": 2,
+      "actionability": 4,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Directly targets the executive board of a 6500-employee multinational, creating an overt enterprise-oriented audience mismatch against Bareni's focus on 1–10 person small businesses.",
+      "clarity": "Opening for a 6500-person multinational and abruptly pivoting to 1–10 person businesses creates an internally contradictory and disorienting scope.",
+      "actionability": "Provides a clear, concrete diagnostic question to evaluate recurring workflow feasibility while preserving human approval.",
+      "factual_grounding": "Accurately represents Bareni's service scope, diagnostic approach, pilot model, and excluded domains without fabricating results."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 13,
+    "pass": false,
+    "low_quality": true
+  },
+  "final_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-076",
+    "scores": {
+      "persona_fit": 4,
+      "clarity": 5,
+      "actionability": 4,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Speaks directly to small business owner-operators in a calm, grounded voice with no sales CTA, though parts read somewhat like a direct recitation of internal service rules.",
+      "clarity": "The argument flows logically from the problem of demo theatre to diagnostic criteria, using plain language and clear distinctions.",
+      "actionability": "Provides a clear diagnostic filter (a repeating workflow of 5–10 hrs/week with measurable output and human approval) to decide whether to pursue automation.",
+      "factual_grounding": "Accurately represents Bareni's delivery sequence, scope boundaries, and disclaimers without fabricating results, customers, or capabilities."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 18,
+    "pass": true,
+    "low_quality": false
+  },
+  "evaluation_reused": false,
+  "evaluation_keys": [
+    "SE-FINAL-M076_eval_initial__a001",
+    "SE-FINAL-M076_eval_final__a001"
+  ],
+  "completed_at": "2026-09-08T13:41:35.416237+00:00"
+}

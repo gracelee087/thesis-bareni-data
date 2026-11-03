@@ -1,0 +1,175 @@
+{
+  "status": "success",
+  "usage": {
+    "input_tokens": 7998,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1745,
+    "reasoning_tokens": null
+  },
+  "cost_usd": 0.083615,
+  "output": {
+    "item_id": "E-RES-627",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "The representative pains are 8–10 hours a week of repeated customer questions, neglected sales leads,\n  and manual invoice/data work."
+          },
+          {
+            "source_id": "C01",
+            "quote": "The 8–10 hours is a persona scenario, not a market\n  statistic or observed customer result."
+          }
+        ],
+        "rationale": "This is an authoring instruction to reframe the abstract topic and ground it in the approved persona scenario; it does not assert any current fact about customers or observed failures. The persona pains named (neglected sales leads, manual invoice/data work) sit inside approved evidence.",
+        "use_guidance": "Keep as a proposed framing. Label the example explicitly as a persona scenario, not a customer situation or observed result, and omit the 8–10 hour figure unless it is clearly marked as a persona scenario rather than a measurement."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI\n  fits, and—if it does—defines pilot scope, fixed price, and measures."
+          },
+          {
+            "source_id": "C01",
+            "quote": "have a frequent, repeatable workflow with a\n  measurable outcome"
+          }
+        ],
+        "rationale": "This supplies a diagnostic question and fit threshold for the reader, which is a permissible instruction/recommendation rather than a claim of current implementation or observed performance. Approved evidence supports repeatability and a measurable outcome as fit criteria.",
+        "use_guidance": "Keep as an explicitly proposed diagnostic question. Present it as a fit test, not a guarantee of results, and do not imply the answer proves AI will work."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C03",
+            "quote": "Arithmetic checks, duplicate-invoice blocking, amount-based human-only approval,\n  refusal of agent approval/payment attempts, and persistent audit records work."
+          },
+          {
+            "source_id": "C03",
+            "quote": "Self-built demo using entirely synthetic data for a fictional German\n  manufacturer."
+          }
+        ],
+        "rationale": "The row instructs the reader to add a completion checkpoint and to use the AP demo as a parallel illustration. The controls cited exist in a self-built synthetic demo, so the illustration is permitted; the instruction itself asserts no deployment.",
+        "use_guidance": "Keep as a proposed control. When referencing the accounts-payable work, state it is a self-built demo on synthetic data with no customer deployment, and do not imply actual payments, working OCR/PDF ingestion or three-way matching."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C04",
+            "quote": "Present these as current scope discipline, not claims that the work can never be automated."
+          }
+        ],
+        "rationale": "The core—mandatory human approval for money movement and high-risk decisions—is directly supported. However, framing it as 'Bareni's current policy' needs the approved qualifier that this is current scope discipline; the claim must not be read as a permanent technical verdict or as an unsupported compliance/security guarantee.",
+        "use_guidance": "Add the qualifier that this is Bareni's current scope discipline and design boundary, applied now, rather than a claim that such work can never be automated or a compliance/security guarantee."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step"
+          },
+          {
+            "source_id": "S01",
+            "quote": "Turn the abstract topic into a bounded Bareni workflow decision. Explain one practical next step."
+          }
+        ],
+        "rationale": "This is a manual next step the owner performs themselves (write down trigger, steps, success measure) with no meeting prompt. It matches the approved task's persona focus and asserts no current capability or outcome.",
+        "use_guidance": "Keep as the single explicitly proposed next step, kept manual and owner-side, with no invitation to book or discuss."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "FORBIDDEN",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Standard primary CTA: \"Book a free 30-minute diagnostic\". Use it only for\n  purchase-intent content, once, at the end."
+          }
+        ],
+        "rationale": "The approved task sets the CTA rule to None. Pointing the reader to a free 30-minute diagnostic conversation is a brand-level meeting offer, i.e. a CTA, regardless of the 'not a sales CTA' label; relabelling does not make the prohibited action permissible.",
+        "use_guidance": "Exclude. Close instead with a neutral practical observation about the criteria (repeating, measurable, low-risk) that make a workflow a candidate for automation, with no offer, invitation or mention of the diagnostic."
+      }
+    ]
+  },
+  "raw_text": "{\"item_id\":\"E-RES-627\",\"ledger\":[{\"claim_id\":\"Q01\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C01\",\"quote\":\"The representative pains are 8–10 hours a week of repeated customer questions, neglected sales leads,\\n  and manual invoice/data work.\"},{\"source_id\":\"C01\",\"quote\":\"The 8–10 hours is a persona scenario, not a market\\n  statistic or observed customer result.\"}],\"rationale\":\"This is an authoring instruction to reframe the abstract topic and ground it in the approved persona scenario; it does not assert any current fact about customers or observed failures. The persona pains named (neglected sales leads, manual invoice/data work) sit inside approved evidence.\",\"use_guidance\":\"Keep as a proposed framing. Label the example explicitly as a persona scenario, not a customer situation or observed result, and omit the 8–10 hour figure unless it is clearly marked as a persona scenario rather than a measurement.\"},{\"claim_id\":\"Q02\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C02\",\"quote\":\"The diagnostic identifies the one recurring workflow, says honestly whether AI\\n  fits, and—if it does—defines pilot scope, fixed price, and measures.\"},{\"source_id\":\"C01\",\"quote\":\"have a frequent, repeatable workflow with a\\n  measurable outcome\"}],\"rationale\":\"This supplies a diagnostic question and fit threshold for the reader, which is a permissible instruction/recommendation rather than a claim of current implementation or observed performance. Approved evidence supports repeatability and a measurable outcome as fit criteria.\",\"use_guidance\":\"Keep as an explicitly proposed diagnostic question. Present it as a fit test, not a guarantee of results, and do not imply the answer proves AI will work.\"},{\"claim_id\":\"Q03\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C03\",\"quote\":\"Arithmetic checks, duplicate-invoice blocking, amount-based human-only approval,\\n  refusal of agent approval/payment attempts, and persistent audit records work.\"},{\"source_id\":\"C03\",\"quote\":\"Self-built demo using entirely synthetic data for a fictional German\\n  manufacturer.\"}],\"rationale\":\"The row instructs the reader to add a completion checkpoint and to use the AP demo as a parallel illustration. The controls cited exist in a self-built synthetic demo, so the illustration is permitted; the instruction itself asserts no deployment.\",\"use_guidance\":\"Keep as a proposed control. When referencing the accounts-payable work, state it is a self-built demo on synthetic data with no customer deployment, and do not imply actual payments, working OCR/PDF ingestion or three-way matching.\"},{\"claim_id\":\"Q04\",\"category\":\"QUALIFICATIONS\",\"evidence\":[{\"source_id\":\"C04\",\"quote\":\"Human approval is mandatory for money movement and other high-risk decisions.\"},{\"source_id\":\"C04\",\"quote\":\"Present these as current scope discipline, not claims that the work can never be automated.\"}],\"rationale\":\"The core—mandatory human approval for money movement and high-risk decisions—is directly supported. However, framing it as 'Bareni's current policy' needs the approved qualifier that this is current scope discipline; the claim must not be read as a permanent technical verdict or as an unsupported compliance/security guarantee.\",\"use_guidance\":\"Add the qualifier that this is Bareni's current scope discipline and design boundary, applied now, rather than a claim that such work can never be automated or a compliance/security guarantee.\"},{\"claim_id\":\"Q05\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"S01\",\"quote\":\"explain one observable workflow decision, threshold, diagnostic question,\\n  control, or next step\"},{\"source_id\":\"S01\",\"quote\":\"Turn the abstract topic into a bounded Bareni workflow decision. Explain one practical next step.\"}],\"rationale\":\"This is a manual next step the owner performs themselves (write down trigger, steps, success measure) with no meeting prompt. It matches the approved task's persona focus and asserts no current capability or outcome.\",\"use_guidance\":\"Keep as the single explicitly proposed next step, kept manual and owner-side, with no invitation to book or discuss.\"},{\"claim_id\":\"Q06\",\"category\":\"FORBIDDEN\",\"evidence\":[{\"source_id\":\"S01\",\"quote\":\"**CTA rule:** None.\"},{\"source_id\":\"C05\",\"quote\":\"Standard primary CTA: \\\"Book a free 30-minute diagnostic\\\". Use it only for\\n  purchase-intent content, once, at the end.\"}],\"rationale\":\"The approved task sets the CTA rule to None. Pointing the reader to a free 30-minute diagnostic conversation is a brand-level meeting offer, i.e. a CTA, regardless of the 'not a sales CTA' label; relabelling does not make the prohibited action permissible.\",\"use_guidance\":\"Exclude. Close instead with a neutral practical observation about the criteria (repeating, measurable, low-risk) that make a workflow a candidate for automation, with no offer, invitation or mention of the diagnostic.\"}]}",
+  "provider_response": {
+    "id": "msg_011Cer3Pn94D1zqvFM9BiJJH",
+    "container": null,
+    "content": [
+      {
+        "citations": null,
+        "text": "{\"item_id\":\"E-RES-627\",\"ledger\":[{\"claim_id\":\"Q01\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C01\",\"quote\":\"The representative pains are 8–10 hours a week of repeated customer questions, neglected sales leads,\\n  and manual invoice/data work.\"},{\"source_id\":\"C01\",\"quote\":\"The 8–10 hours is a persona scenario, not a market\\n  statistic or observed customer result.\"}],\"rationale\":\"This is an authoring instruction to reframe the abstract topic and ground it in the approved persona scenario; it does not assert any current fact about customers or observed failures. The persona pains named (neglected sales leads, manual invoice/data work) sit inside approved evidence.\",\"use_guidance\":\"Keep as a proposed framing. Label the example explicitly as a persona scenario, not a customer situation or observed result, and omit the 8–10 hour figure unless it is clearly marked as a persona scenario rather than a measurement.\"},{\"claim_id\":\"Q02\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C02\",\"quote\":\"The diagnostic identifies the one recurring workflow, says honestly whether AI\\n  fits, and—if it does—defines pilot scope, fixed price, and measures.\"},{\"source_id\":\"C01\",\"quote\":\"have a frequent, repeatable workflow with a\\n  measurable outcome\"}],\"rationale\":\"This supplies a diagnostic question and fit threshold for the reader, which is a permissible instruction/recommendation rather than a claim of current implementation or observed performance. Approved evidence supports repeatability and a measurable outcome as fit criteria.\",\"use_guidance\":\"Keep as an explicitly proposed diagnostic question. Present it as a fit test, not a guarantee of results, and do not imply the answer proves AI will work.\"},{\"claim_id\":\"Q03\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C03\",\"quote\":\"Arithmetic checks, duplicate-invoice blocking, amount-based human-only approval,\\n  refusal of agent approval/payment attempts, and persistent audit records work.\"},{\"source_id\":\"C03\",\"quote\":\"Self-built demo using entirely synthetic data for a fictional German\\n  manufacturer.\"}],\"rationale\":\"The row instructs the reader to add a completion checkpoint and to use the AP demo as a parallel illustration. The controls cited exist in a self-built synthetic demo, so the illustration is permitted; the instruction itself asserts no deployment.\",\"use_guidance\":\"Keep as a proposed control. When referencing the accounts-payable work, state it is a self-built demo on synthetic data with no customer deployment, and do not imply actual payments, working OCR/PDF ingestion or three-way matching.\"},{\"claim_id\":\"Q04\",\"category\":\"QUALIFICATIONS\",\"evidence\":[{\"source_id\":\"C04\",\"quote\":\"Human approval is mandatory for money movement and other high-risk decisions.\"},{\"source_id\":\"C04\",\"quote\":\"Present these as current scope discipline, not claims that the work can never be automated.\"}],\"rationale\":\"The core—mandatory human approval for money movement and high-risk decisions—is directly supported. However, framing it as 'Bareni's current policy' needs the approved qualifier that this is current scope discipline; the claim must not be read as a permanent technical verdict or as an unsupported compliance/security guarantee.\",\"use_guidance\":\"Add the qualifier that this is Bareni's current scope discipline and design boundary, applied now, rather than a claim that such work can never be automated or a compliance/security guarantee.\"},{\"claim_id\":\"Q05\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"S01\",\"quote\":\"explain one observable workflow decision, threshold, diagnostic question,\\n  control, or next step\"},{\"source_id\":\"S01\",\"quote\":\"Turn the abstract topic into a bounded Bareni workflow decision. Explain one practical next step.\"}],\"rationale\":\"This is a manual next step the owner performs themselves (write down trigger, steps, success measure) with no meeting prompt. It matches the approved task's persona focus and asserts no current capability or outcome.\",\"use_guidance\":\"Keep as the single explicitly proposed next step, kept manual and owner-side, with no invitation to book or discuss.\"},{\"claim_id\":\"Q06\",\"category\":\"FORBIDDEN\",\"evidence\":[{\"source_id\":\"S01\",\"quote\":\"**CTA rule:** None.\"},{\"source_id\":\"C05\",\"quote\":\"Standard primary CTA: \\\"Book a free 30-minute diagnostic\\\". Use it only for\\n  purchase-intent content, once, at the end.\"}],\"rationale\":\"The approved task sets the CTA rule to None. Pointing the reader to a free 30-minute diagnostic conversation is a brand-level meeting offer, i.e. a CTA, regardless of the 'not a sales CTA' label; relabelling does not make the prohibited action permissible.\",\"use_guidance\":\"Exclude. Close instead with a neutral practical observation about the criteria (repeating, measurable, low-risk) that make a workflow a candidate for automation, with no offer, invitation or mention of the diagnostic.\"}]}",
+        "type": "text"
+      }
+    ],
+    "model": "claude-opus-5",
+    "role": "assistant",
+    "stop_details": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "global",
+      "input_tokens": 7998,
+      "output_tokens": 1745,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": null,
+      "service_tier": "standard"
+    }
+  },
+  "stop_reason": "end_turn",
+  "cost_details": {
+    "input": 0.03999,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.043625,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.083615
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": null,
+  "key": "SE-FINAL-N120_researcher__a001",
+  "role": "researcher",
+  "created_at": "2026-09-08T13:21:26.963168+00:00",
+  "ended_at": "2026-09-08T13:21:48.786509+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-N120",
+    "batch_id": 4,
+    "condition": "natural",
+    "cohort": "natural"
+  },
+  "task_id": "SE-FINAL-N120",
+  "batch_id": 4,
+  "cohort": "natural",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 21821,
+  "budget_charge_usd": 0.083615,
+  "unknown_cost_reservation_usd": 0
+}

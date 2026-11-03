@@ -1,0 +1,264 @@
+{
+  "task_id": "SE-FINAL-M092",
+  "batch_id": 3,
+  "condition": "unchanged",
+  "source_task_id": "SE-FINAL-N064",
+  "topic": "portfolio anonymisation before automation",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-302",
+    "title": "Anonymise first, automate second",
+    "body": "Before you automate a portfolio workflow, decide one thing first: will any document that enters the process still contain customer identifiers? If the answer is yes, stop there and anonymise or mask the sample before you test AI against it. That includes quotes, invoices, contracts, case notes, and even the nicer-looking summary slides. A tool can only be as tidy as the input you give it; the mess does not magically become compliant.\n\nFor a small business owner, the practical check is simple. Pick one recurring workflow you already handle in email, CRM, shared drive, or a Zapier/Make step. Then ask: where does the document first leave your control, and who reviews it before anything automated happens? If human review is already part of the path, keep it. If the workflow depends on identifiable data, anonymise a sample first and use that as the test set.\n\nThis is not an AI feature and not legal advice. It is a governance choice the owner makes before any build. Once the sample is clean, you can have a better conversation about whether automation fits at all."
+  },
+  "final": {
+    "item_id": "E-OPT-402",
+    "title": "Anonymise first, automate second",
+    "body": "Before you automate a portfolio workflow, decide one thing first: will any document that enters the process still contain customer identifiers? If yes, do not feed that file into an AI tool as-is. Mask names, amounts, account numbers, and other identifying details first, then test with the cleaned sample. That is a governance control, not an AI feature, and it stays in the owner’s hands.\n\nFor a small business, the useful check is simple. Pick one recurring workflow you already handle in email, CRM, shared drive, or a Zapier/Make step. Trace where the document first leaves your control and where human review happens today. If review already sits in the path, keep it. If the workflow depends on identifiable data, anonymise a sample before you test automation. A tidy input does not make the job magical; it just makes the next decision clearer.\n\nThis is not legal advice and it does not remove your compliance obligations. It only reduces exposure before you try AI on the process. If the same workflow still works after masking, you have a cleaner basis for deciding whether automation fits. If it does not, you have found a boundary worth respecting."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-092",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-092",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-092-1",
+        "repairs": []
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-092",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-402",
+        "title": "Anonymise first, automate second",
+        "body": "Before you automate a portfolio workflow, decide one thing first: will any document that enters the process still contain customer identifiers? If yes, do not feed that file into an AI tool as-is. Mask names, amounts, account numbers, and other identifying details first, then test with the cleaned sample. That is a governance control, not an AI feature, and it stays in the owner’s hands.\n\nFor a small business, the useful check is simple. Pick one recurring workflow you already handle in email, CRM, shared drive, or a Zapier/Make step. Trace where the document first leaves your control and where human review happens today. If review already sits in the path, keep it. If the workflow depends on identifiable data, anonymise a sample before you test automation. A tidy input does not make the job magical; it just makes the next decision clearer.\n\nThis is not legal advice and it does not remove your compliance obligations. It only reduces exposure before you try AI on the process. If the same workflow still works after masking, you have a cleaner basis for deciding whether automation fits. If it does not, you have found a boundary worth respecting."
+      },
+      "gate_key": "SE-FINAL-M092_gate1__a001"
+    }
+  ],
+  "measurement_status": "pending",
+  "planner": {
+    "item_id": "E-PLAN-502",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task explicitly forbids a CTA ('CTA rule: None'). L01 clarifies that closing with a neutral practical observation or next-step note, rather than a booking prompt, fulfils the informational-post requirement. Apply this by ending with a diagnostic question or operational checkpoint the owner can execute independently, preserving the frozen persona's authority-retention principle."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Translate 'portfolio anonymisation before automation' into one observable workflow decision: identify which customer-facing or internal documents (quotes, invoices, contracts, or case studies) the owner currently shares with AI tools, and which contain customer names, amounts, or identifiable details that create a compliance or confidentiality risk before any automation is built.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C04",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Ground the decision in the owner's existing SaaS stack and document handling: audit where documents flow (email, CRM, shared drive, or automation tool like Zapier or Make) and which steps currently require human review. This maps the current boundary between what is automated and what requires data protection.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Explain the practical threshold: before plugging documents into any AI system (including a grounded knowledge assistant or workflow AI), the owner must strip or mask customer identifiers. This is a control, not an AI feature—it runs once, upstream, and removes compliance friction from later automation choices.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C03",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Define the next diagnostic step the owner can run alone: pick one recurring workflow (e.g., 'I answer the same five customer questions weekly') and ask: 'Do my response templates or knowledge base contain identifiable customer data?' If yes, anonymise a sample before testing any AI tool. If no, that workflow is ready for automation discussion.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C01",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Close with a neutral checkpoint: once anonymisation is done, the owner has a clean input for a diagnostic conversation—but the anonymisation step itself is a governance choice only the owner can make, because only the owner knows their compliance obligations and customer trust commitments.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C04",
+          "S01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "Reference no customers, deployments, results, or Bareni multi-person team. Treat anonymisation as a general workflow control, not a Bareni service or solved example."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Frame human approval and compliance review as mandatory; do not imply Bareni performs legal or data-protection work. Reference C04 scope boundaries."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Preserve frozen persona authority: the owner makes the governance decision; explain one diagnostic question the owner runs independently."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use plain language (document, customer identifiers, anonymise); keep the workflow decision and next step distinct from automation features or results."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-602",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Turn the abstract topic into a bounded Bareni workflow decision. Explain one practical next step."
+          },
+          {
+            "source_id": "C01",
+            "quote": "The best-fit reader has tried ChatGPT but has not connected AI to a business\n  workflow."
+          }
+        ],
+        "rationale": "This is a planned instruction framing an observable decision for the reader; it asserts no current Bareni capability, customer or result. It fits the approved task's requirement to turn the abstract topic into a bounded workflow decision.",
+        "use_guidance": "Keep as an explicitly proposed decision the owner makes about their own documents; do not present the document review as a Bareni service already performed for customers, and do not name or invent example customers or documents."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "Especially suitable businesses already work in English, use digital\n  documents and SaaS tools, and have a frequent, repeatable workflow with a\n  measurable outcome."
+          },
+          {
+            "source_id": "C02",
+            "quote": "general document, email, CRM, and back-office\n  workflows using AI plus Zapier, Make, n8n, and small amounts of custom code"
+          }
+        ],
+        "rationale": "An instruction to the reader to audit their own document flows; Zapier, Make and CRM/document workflows are within approved service description, and no current deployment or observed result is asserted.",
+        "use_guidance": "Keep as a self-audit step for the owner. Do not imply Bareni has performed such audits for customers or that any named tool is already integrated in a customer environment."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C03",
+            "quote": "RAG means retrieving relevant approved company documents before answering; in\n  plain terms, the assistant looks in company material rather than the open web."
+          },
+          {
+            "source_id": "C04",
+            "quote": "Bareni currently declines high-sensitivity medical, legal, and financial work"
+          },
+          {
+            "source_id": "C04",
+            "quote": "Do not say cold email is always illegal in Germany and do not give legal advice."
+          }
+        ],
+        "rationale": "Recommending masking identifiers upstream is permissible, but the wording asserts an obligation (\"must\") and states as fact that this control \"removes compliance friction\" — a compliance/legal assertion not supported by approved evidence, and it borders on legal advice.",
+        "use_guidance": "Add the qualification that this is Bareni's working practice and the owner's own governance choice, not legal or compliance advice, and that anonymisation reduces exposure rather than removing compliance obligations. Note that the grounded knowledge assistant is a self-built local demo on synthetic data, not a production system."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI\n  fits, and—if it does—defines pilot scope, fixed price, and measures."
+          },
+          {
+            "source_id": "C01",
+            "quote": "The representative pains\n  are 8–10 hours a week of repeated customer questions, neglected sales leads,\n  and manual invoice/data work."
+          }
+        ],
+        "rationale": "A diagnostic question and manual next step the owner can run alone; the illustrative workflow is framed as an example, and no capability, customer or outcome is asserted.",
+        "use_guidance": "Keep explicitly as a self-check the owner performs; mark the 'same five customer questions' wording as an illustrative example, not a measured figure, and avoid implying that passing the check guarantees a successful automation."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          },
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Informational posts use no CTA or one\n  soft closing sentence."
+          }
+        ],
+        "rationale": "The core — anonymisation as an owner-owned governance decision — is consistent with the human-authority boundary, but the phrase 'clean input for a diagnostic conversation' functions as an invitation to talk, and the task authorises no CTA.",
+        "use_guidance": "Add the condition that the close must be a neutral practical observation with no invitation to book or discuss; remove the reference to a diagnostic conversation and keep only the statement that the anonymisation decision rests with the owner."
+      }
+    ]
+  },
+  "selected_lessons": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025"
+      ]
+    }
+  ],
+  "register_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "planner_key": "SE-FINAL-N064_planner__a001",
+  "researcher_key": "SE-FINAL-N064_researcher__a001",
+  "writer_key": "SE-FINAL-N064_writer__a001",
+  "final_key": "SE-FINAL-M092_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-M092_gate1__a001",
+  "production_completed_at": "2026-09-08T13:44:43.320783+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts"
+}

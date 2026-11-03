@@ -1,0 +1,1238 @@
+{
+  "schema_version": "b2-final-analysis-v2-recovery-safe",
+  "analysis_inclusion": true,
+  "n": 125,
+  "H1": {
+    "complete": 125,
+    "rate": 1.0,
+    "wilson_95_ci": {
+      "low": 0.970185,
+      "high": 1.0
+    },
+    "threshold": 0.9,
+    "verdict": "PASS",
+    "tasks_requiring_operational_recovery": 0,
+    "recoverable_incomplete_attempts": 0,
+    "budget_interrupted_task_attempts": 0
+  },
+  "H2": {
+    "scope": "production path only; the blinded evaluator is excluded and reported below",
+    "total_llm_cost_usd": 3.22229015,
+    "mean_cost_usd": 0.02577832,
+    "sample_cv": 0.18516847,
+    "threshold": 0.25,
+    "verdict": "PASS",
+    "sample_cv_bootstrap_95_ci": {
+      "low": 0.139541,
+      "high": 0.228615,
+      "draws_used": 10000,
+      "draws": 10000,
+      "seed": 20260830
+    },
+    "measurement_cost_usd_outside_h2": 25.881765,
+    "unpersisted_cost_recovered_from_budget_pause_receipts_usd": 0.0,
+    "cost_by_refinement_count": {
+      "0": {
+        "n": 0
+      },
+      "1": {
+        "n": 121,
+        "mean": 0.025237268155991737,
+        "sd": 0.003616032255594779,
+        "min": 0.021324325806451612,
+        "median": 0.024170053125,
+        "p95": 0.03425973709677419,
+        "max": 0.0372357370967742
+      },
+      "2": {
+        "n": 4,
+        "mean": 0.04214517578125,
+        "sd": 0.007054625854093973,
+        "min": 0.03703912580645161,
+        "median": 0.0396307201108871,
+        "p95": 0.0522801370967742,
+        "max": 0.0522801370967742
+      }
+    }
+  },
+  "H3": {
+    "primary_estimand": "relative reduction in paired outputs with any G-Eval dimension below 3",
+    "paired_n": 125,
+    "missing_pairs": 0,
+    "missing_pair_task_ids": [],
+    "initial_low_quality": 18,
+    "final_low_quality": 0,
+    "relative_reduction": 1.0,
+    "threshold": 0.3,
+    "minimum_events_for_a_verdict": 10,
+    "verdict": "PASS",
+    "relative_reduction_bootstrap_95_ci": {
+      "low": 1.0,
+      "high": 1.0,
+      "draws_used": 10000,
+      "draws": 10000,
+      "seed": 20260830
+    },
+    "paired_transitions": {
+      "not_low_to_not_low": 107,
+      "not_low_to_low": 0,
+      "low_to_not_low": 18,
+      "low_to_low": 0
+    },
+    "secondary_exact_mcnemar_p_two_sided": 7.62939453125e-06,
+    "secondary_wilcoxon_total_score": {
+      "statistic": 1136.5,
+      "p_two_sided": 1.310587064824809e-10,
+      "zero_method": "pratt",
+      "method": "auto"
+    },
+    "measured_by": "blinded evaluation judge (judge_eval_*)",
+    "contrast_if_measured_by_the_gate": {
+      "initial_low_quality": 23,
+      "final_low_quality": 0,
+      "relative_reduction": 1.0,
+      "note": "circular; excluded from the H3 verdict"
+    }
+  },
+  "descriptive_statistics": {
+    "latency_ms_all_tasks": {
+      "n": 125,
+      "mean": 104365.68,
+      "sd": 27632.750721363813,
+      "min": 61010.0,
+      "median": 97296.0,
+      "p95": 158200.0,
+      "max": 198384.0
+    },
+    "cost_usd_all_tasks": {
+      "n": 125,
+      "mean": 0.0257783212,
+      "sd": 0.004773332348670545,
+      "min": 0.021324325806451612,
+      "median": 0.024233856451612905,
+      "p95": 0.035246775806451615,
+      "max": 0.0522801370967742
+    },
+    "initial_word_count": {
+      "n": 125,
+      "mean": 78.416,
+      "sd": 5.751835611630934,
+      "min": 63.0,
+      "median": 79.0,
+      "p95": 87.0,
+      "max": 101.0
+    },
+    "final_word_count": {
+      "n": 125,
+      "mean": 68.296,
+      "sd": 5.543121282128608,
+      "min": 55.0,
+      "median": 68.0,
+      "p95": 78.0,
+      "max": 90.0
+    },
+    "initial_flesch_reading_ease": {
+      "n": 125,
+      "mean": 46.6795888,
+      "sd": 8.748023760054979,
+      "min": 16.2715,
+      "median": 48.0321,
+      "p95": 59.7676,
+      "max": 70.4482
+    },
+    "final_flesch_reading_ease": {
+      "n": 125,
+      "mean": 47.0694192,
+      "sd": 9.119495195659717,
+      "min": 21.07,
+      "median": 47.6746,
+      "p95": 60.7343,
+      "max": 66.6263
+    },
+    "initial_flesch_kincaid_grade": {
+      "n": 125,
+      "mean": 10.1898,
+      "sd": 1.438032110043489,
+      "min": 6.3789,
+      "median": 10.2189,
+      "p95": 12.7813,
+      "max": 14.4454
+    },
+    "final_flesch_kincaid_grade": {
+      "n": 125,
+      "mean": 10.2757632,
+      "sd": 1.7370971588950601,
+      "min": 6.0427,
+      "median": 10.1008,
+      "p95": 13.2329,
+      "max": 19.2639
+    },
+    "initial_ttr": {
+      "n": 125,
+      "mean": 0.814656008,
+      "sd": 0.038262673296968946,
+      "min": 0.72619,
+      "median": 0.818182,
+      "p95": 0.878049,
+      "max": 0.936508
+    },
+    "final_ttr": {
+      "n": 125,
+      "mean": 0.873482136,
+      "sd": 0.043275919292959104,
+      "min": 0.753623,
+      "median": 0.878788,
+      "p95": 0.949153,
+      "max": 0.954545
+    }
+  },
+  "refined_tasks": 125,
+  "refinement_passes": 129,
+  "technical_failed_total": 0,
+  "technical_failed_truncation": 0,
+  "pipeline_failed": 0,
+  "cross_batch_memory_trajectory": {
+    "mechanism": "cross-batch verbal memory (lesson extraction after each batch)",
+    "relation_to_reflexion": "Shinn et al. (2023) reflect on a failed attempt and retry the same task; here the lessons are carried to the next batch of different tasks. Reported as an extension, not a replication.",
+    "caveat": "Descriptive. Batches differ in topics, so the across-batch column confounds any memory effect with topic difficulty. Within a batch, Planner selects lessons for tasks it judges relevant, so selected and unselected tasks are not randomized.",
+    "batches": [
+      {
+        "batch": 1,
+        "tasks": 31,
+        "lessons_available_at_start": 0,
+        "active_lessons_after": 1,
+        "lesson_operations_after": {
+          "ADD": 1,
+          "MERGE": 0,
+          "SKIP": 0
+        },
+        "tasks_selecting_a_lesson": 0,
+        "mean_initial_eval_total": 14.4194,
+        "initial_low_quality": 3,
+        "refinement_passes": 31,
+        "mean_production_cost_usd": 0.02488762,
+        "within_batch_descriptive_contrast": {
+          "with_lesson_n": 0,
+          "with_lesson_mean_initial": null,
+          "without_lesson_n": 31,
+          "without_lesson_mean_initial": 14.4194
+        }
+      },
+      {
+        "batch": 2,
+        "tasks": 31,
+        "lessons_available_at_start": 1,
+        "active_lessons_after": 3,
+        "lesson_operations_after": {
+          "ADD": 2,
+          "MERGE": 1,
+          "SKIP": 0
+        },
+        "tasks_selecting_a_lesson": 31,
+        "mean_initial_eval_total": 14.5806,
+        "initial_low_quality": 6,
+        "refinement_passes": 33,
+        "mean_production_cost_usd": 0.02644892,
+        "within_batch_descriptive_contrast": {
+          "with_lesson_n": 31,
+          "with_lesson_mean_initial": 14.5806,
+          "without_lesson_n": 0,
+          "without_lesson_mean_initial": null
+        }
+      },
+      {
+        "batch": 3,
+        "tasks": 31,
+        "lessons_available_at_start": 3,
+        "active_lessons_after": 4,
+        "lesson_operations_after": {
+          "ADD": 1,
+          "MERGE": 1,
+          "SKIP": 0
+        },
+        "tasks_selecting_a_lesson": 31,
+        "mean_initial_eval_total": 14.5806,
+        "initial_low_quality": 6,
+        "refinement_passes": 32,
+        "mean_production_cost_usd": 0.02636097,
+        "within_batch_descriptive_contrast": {
+          "with_lesson_n": 31,
+          "with_lesson_mean_initial": 14.5806,
+          "without_lesson_n": 0,
+          "without_lesson_mean_initial": null
+        }
+      },
+      {
+        "batch": 4,
+        "tasks": 32,
+        "lessons_available_at_start": 4,
+        "active_lessons_after": 4,
+        "lesson_operations_after": {
+          "ADD": 0,
+          "MERGE": 1,
+          "SKIP": 0
+        },
+        "tasks_selecting_a_lesson": 32,
+        "mean_initial_eval_total": 14.2812,
+        "initial_low_quality": 3,
+        "refinement_passes": 33,
+        "mean_production_cost_usd": 0.02502358,
+        "within_batch_descriptive_contrast": {
+          "with_lesson_n": 32,
+          "with_lesson_mean_initial": 14.2812,
+          "without_lesson_n": 0,
+          "without_lesson_mean_initial": null
+        }
+      }
+    ],
+    "lessons": [
+      {
+        "lesson_id": "SD-B1-L01",
+        "source_batches": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "source_task_ids": [
+          "SD-418",
+          "SD-422",
+          "SD-423",
+          "SD-433",
+          "SD-452",
+          "SD-482",
+          "SD-506",
+          "SD-510",
+          "SD-513",
+          "SD-521",
+          "SD-523"
+        ],
+        "lesson_text": "Anchor all advice in source evidence. Avoid fabricating numerical thresholds (e.g., time limits) or using jargon. Use practical, diagnostic language tailored to a 1–10 person business owner.",
+        "when_to_apply": "When providing technical workflow, automation, or reliability advice.",
+        "when_not_to_apply": "When citing verified performance data from the provided prompt context.",
+        "tasks_selected": 91,
+        "selection_events": [
+          {
+            "task_id": "SD-447",
+            "batch_id": 2,
+            "planned_change": "Ensure the description of the diagnostic process adheres to the Bareni model—specifically the 30-minute diagnostic and fixed-price pilot—without fabricating or implying universal performance outcomes or efficiency statistics."
+          },
+          {
+            "task_id": "SD-448",
+            "batch_id": 2,
+            "planned_change": "Refrain from using any hypothetical time savings or productivity percentages; describe the diagnostic as a factual, binary assessment of workflow fit rather than a performance-optimizing event."
+          },
+          {
+            "task_id": "SD-449",
+            "batch_id": 2,
+            "planned_change": "Avoid referencing specific time-saving percentages or hourly cost reduction claims regarding contract review, keeping the focus strictly on the workflow logic of flagging repetitive risks."
+          },
+          {
+            "task_id": "SD-450",
+            "batch_id": 2,
+            "planned_change": "Removed '100%' certainty claim, replacing it with a reference to defined confidence thresholds to ensure all claims remain grounded in achievable workflow design."
+          },
+          {
+            "task_id": "SD-451",
+            "batch_id": 2,
+            "planned_change": "Replace any potential claims of error reduction or time savings with specific descriptions of the manual control mechanism (human-only approval) identified in the Bareni evidence for accounts-payable systems."
+          },
+          {
+            "task_id": "SD-452",
+            "batch_id": 2,
+            "planned_change": "Eliminate vague claims about efficiency or cost reduction by strictly framing the assistant's value as accuracy based on internal document curation."
+          },
+          {
+            "task_id": "SD-453",
+            "batch_id": 2,
+            "planned_change": "Eliminate all generalized productivity benchmarks and replace them with a requirement for the owner to gather their own internal, verifiable task-time data before proceeding with any automation decisions."
+          },
+          {
+            "task_id": "SD-454",
+            "batch_id": 2,
+            "planned_change": "Define the Golden Set as a manual diagnostic exercise to verify grounding, ensuring it is framed as a practical internal check rather than an industry-standard performance benchmark."
+          },
+          {
+            "task_id": "SD-455",
+            "batch_id": 2,
+            "planned_change": "Eliminate vague promises regarding the efficacy of attribution systems and anchor the recommendation strictly in the practical requirement of intake-form data capture."
+          },
+          {
+            "task_id": "SD-456",
+            "batch_id": 2,
+            "planned_change": "I will avoid claiming any specific time-saving metrics or error reduction percentages, focusing instead on the concrete workflow of extracting clauses for human review."
+          },
+          {
+            "task_id": "SD-457",
+            "batch_id": 2,
+            "planned_change": "Ensure the advice strictly reflects the accounts-payable demo logic of human intervention for risk mitigation, avoiding any invented metrics regarding time saved or revenue impact."
+          },
+          {
+            "task_id": "SD-458",
+            "batch_id": 2,
+            "planned_change": "Base all workflow advice on the proceed vs. pause logic used in Bareni's AP automation demo, ensuring no claims about productivity gains or time savings are included."
+          },
+          {
+            "task_id": "SD-459",
+            "batch_id": 2,
+            "planned_change": "Eliminate vague references to 'increased efficiency' or 'lost revenue' and focus strictly on the operational decision rule of setting a threshold and receiving a notification."
+          },
+          {
+            "task_id": "SD-460",
+            "batch_id": 2,
+            "planned_change": "Describe the three-day log as a personal diagnostic tool for workflow readiness rather than a general industry benchmark to ensure no ungrounded statistical authority is implied."
+          },
+          {
+            "task_id": "SD-461",
+            "batch_id": 2,
+            "planned_change": "Ensure the post replaces vague 'efficiency' claims with a concrete 7-day manual tracking requirement, anchoring all workflow decisions in observable data rather than anecdotal marketing trends."
+          },
+          {
+            "task_id": "SD-462",
+            "batch_id": 2,
+            "planned_change": "Refrain from stating any specific hourly savings or worker output metrics, focusing instead on the necessity of baseline data collection."
+          },
+          {
+            "task_id": "SD-463",
+            "batch_id": 2,
+            "planned_change": "I will specify that the knowledge assistant indexes company documents to surface ground-truth answers, avoiding vague claims of operational resilience or AI-driven productivity gains."
+          },
+          {
+            "task_id": "SD-464",
+            "batch_id": 2,
+            "planned_change": "I will explicitly avoid citing the '8-10 hours' persona scenario as a factual baseline or projected saving, ensuring all advice remains grounded in the necessity of process stability rather than performance metrics."
+          },
+          {
+            "task_id": "SD-465",
+            "batch_id": 2,
+            "planned_change": "Remove any hypothetical ROI claims or time-saving stats; replace them with descriptions of manual human-approval gates that demonstrate operational boundaries as seen in the accounts-payable demo."
+          },
+          {
+            "task_id": "SD-466",
+            "batch_id": 2,
+            "planned_change": "Removed all hypothetical time savings or productivity percentages, focusing strictly on the logical requirement of manual verification criteria before automation."
+          },
+          {
+            "task_id": "SD-467",
+            "batch_id": 2,
+            "planned_change": "Avoid referencing typical time saved or average hours spent on email; present the categorization task as a diagnostic exercise to determine automation feasibility, not as a performance benchmark."
+          },
+          {
+            "task_id": "SD-468",
+            "batch_id": 2,
+            "planned_change": "Removed all claims about time saved by organizing files, focusing only on the technical requirement that automation tools need predictable naming for ingestion."
+          },
+          {
+            "task_id": "SD-469",
+            "batch_id": 2,
+            "planned_change": "Ground the advice in the 'Knowledge assistant' evidence by emphasizing RAG-style document grounding, ensuring the reader does not mistake this for AI training or autonomous model improvement."
+          },
+          {
+            "task_id": "SD-470",
+            "batch_id": 2,
+            "planned_change": "Ensure the description of the exception gate strictly references manual human-only approval for specific risk thresholds, avoiding any promises of productivity gains or time savings."
+          },
+          {
+            "task_id": "SD-471",
+            "batch_id": 2,
+            "planned_change": "Ensure the advice focuses on the logical steps of arithmetic checks and duplicate blocking rather than promising specific time savings or performance metrics."
+          },
+          {
+            "task_id": "SD-472",
+            "batch_id": 2,
+            "planned_change": "Avoid claiming that mapping workflows guarantees specific time savings; frame the exercise strictly as a prerequisite for technical feasibility to avoid ungrounded performance promises."
+          },
+          {
+            "task_id": "SD-473",
+            "batch_id": 2,
+            "planned_change": "Anchor the explanation of search behavior strictly to the RAG mechanism described in the knowledge assistant evidence, avoiding generalized or unsupported claims about AI search capabilities."
+          },
+          {
+            "task_id": "SD-474",
+            "batch_id": 2,
+            "planned_change": "Removed all hypothetical time-saving metrics and focused exclusively on the process of identifying repeatable queries as the primary diagnostic step for potential automation."
+          },
+          {
+            "task_id": "SD-475",
+            "batch_id": 2,
+            "planned_change": "Ensure the post frames saying 'no' as a structural business decision based on the Bareni pilot model, avoiding any mention of productivity metrics or non-existent business results."
+          },
+          {
+            "task_id": "SD-476",
+            "batch_id": 2,
+            "planned_change": "Ensure the rollback advice is framed as an operational decision for the founder, removing any implied standard metrics for failure recovery or system uptime."
+          },
+          {
+            "task_id": "SD-477",
+            "batch_id": 2,
+            "planned_change": "Eliminate all generalized productivity claims; specifically avoid citing 'hours saved' or 'efficiency gains' when discussing repetitive tasks, focusing instead on system structure and error control."
+          },
+          {
+            "task_id": "SD-478",
+            "batch_id": 3,
+            "planned_change": "Ensure all references to the efficacy of the grounded assistant remain focused on data source selection rather than inventing quantitative time or cost-savings metrics."
+          },
+          {
+            "task_id": "SD-479",
+            "batch_id": 3,
+            "planned_change": "Avoid citing specific performance improvements, accuracy percentages, or time-saving claims when discussing the system's operational stability."
+          },
+          {
+            "task_id": "SD-480",
+            "batch_id": 3,
+            "planned_change": "Ensure all references to the manual workflow are described as operational steps rather than invented productivity metrics or time-saving guarantees."
+          },
+          {
+            "task_id": "SD-481",
+            "batch_id": 3,
+            "planned_change": "Ensure the example of the invoice threshold is framed as a design choice in our demo rather than a generic or industry-standard performance metric."
+          },
+          {
+            "task_id": "SD-482",
+            "batch_id": 3,
+            "planned_change": "Qualify the 50-sample suggestion as a specific design heuristic for Bareni's consulting workflow rather than presenting it as an industry-standard performance metric or objective market statistic."
+          },
+          {
+            "task_id": "SD-483",
+            "batch_id": 3,
+            "planned_change": "Refrain from inventing claims about time savings or error rate reductions; anchor the advice solely on the transition from manual arithmetic to automated flag-based verification."
+          },
+          {
+            "task_id": "SD-484",
+            "batch_id": 3,
+            "planned_change": "Ensure the post avoids all invented efficiency metrics or time-saving claims, focusing only on the structural change in workflow management."
+          },
+          {
+            "task_id": "SD-485",
+            "batch_id": 3,
+            "planned_change": "Ensure all references to audits or document processing remain qualitative to avoid fabricating performance metrics or specific workflow durations."
+          },
+          {
+            "task_id": "SD-486",
+            "batch_id": 3,
+            "planned_change": "Avoid any claims about specific time savings or productivity gains resulting from maintaining these decision logs."
+          },
+          {
+            "task_id": "SD-487",
+            "batch_id": 3,
+            "planned_change": "Eliminate all references to hypothetical time savings or productivity gains; replace with a concrete instruction to log raw trigger counts."
+          },
+          {
+            "task_id": "SD-488",
+            "batch_id": 3,
+            "planned_change": "Removed all references to specific time savings or productivity metrics, ensuring the post focuses solely on the operational workflow of email categorization."
+          },
+          {
+            "task_id": "SD-489",
+            "batch_id": 3,
+            "planned_change": "I will remove any implied claims of productivity gains or time saved, focusing strictly on the mechanics of audit and workflow design."
+          },
+          {
+            "task_id": "SD-490",
+            "batch_id": 3,
+            "planned_change": "Eliminate vague claims about efficiency or time saved by focusing solely on the mechanical necessity of manual review for duplicate identification."
+          },
+          {
+            "task_id": "SD-491",
+            "batch_id": 3,
+            "planned_change": "I will frame the accounts payable example as a diagnostic arithmetic check only, avoiding any claim of full automated payment processing or system throughput metrics."
+          },
+          {
+            "task_id": "SD-492",
+            "batch_id": 3,
+            "planned_change": "Ensure success measures are concrete and tied strictly to workflow observable outputs, avoiding generic productivity claims."
+          },
+          {
+            "task_id": "SD-493",
+            "batch_id": 3,
+            "planned_change": "Remove any hypothetical percentages of RAG accuracy or time savings, focusing strictly on the mechanics of grounded knowledge ingestion."
+          },
+          {
+            "task_id": "SD-494",
+            "batch_id": 3,
+            "planned_change": "Remove all implicit assumptions about time savings or productivity gains; focus strictly on the observable act of manual data entry and document movement."
+          },
+          {
+            "task_id": "SD-495",
+            "batch_id": 3,
+            "planned_change": "I will avoid using percentages or specific test metrics to describe system reliability, focusing instead on the practical limitation of automation."
+          },
+          {
+            "task_id": "SD-496",
+            "batch_id": 3,
+            "planned_change": "Refrain from promising time savings or specific audit compliance improvements; focus strictly on the technical capability of document matching and log creation."
+          },
+          {
+            "task_id": "SD-497",
+            "batch_id": 3,
+            "planned_change": "Refrain from claiming specific time-savings or error-rate improvements when describing the benefit of structured document repositories."
+          },
+          {
+            "task_id": "SD-498",
+            "batch_id": 3,
+            "planned_change": "Refrain from referencing the 8-10 hour workflow scenario as a standard metric to avoid implying universal productivity gains."
+          },
+          {
+            "task_id": "SD-499",
+            "batch_id": 3,
+            "planned_change": "Refrain from using any specific time-saving metrics or hypothetical ROI figures when discussing the benefits of automating repetitive tasks."
+          },
+          {
+            "task_id": "SD-500",
+            "batch_id": 3,
+            "planned_change": "Eliminate all references to hypothetical outcomes or productivity gains, ensuring the post only addresses workflow assessment mechanics."
+          },
+          {
+            "task_id": "SD-501",
+            "batch_id": 3,
+            "planned_change": "Removed generalized performance claims and kept the diagnostic suggestion grounded in observable workflow management rather than industry metrics."
+          },
+          {
+            "task_id": "SD-502",
+            "batch_id": 3,
+            "planned_change": "Ensure all advice centers on a 'must-have' filter rather than inventing specific hours saved or lead conversion percentage increases."
+          },
+          {
+            "task_id": "SD-503",
+            "batch_id": 3,
+            "planned_change": "Refrain from mentioning productivity gains or time savings; focus purely on the technical necessity of clean, consistent input data for automation success."
+          },
+          {
+            "task_id": "SD-504",
+            "batch_id": 3,
+            "planned_change": "Removed all references to estimated time savings or specific document counts to remain anchored in the provided workflow process."
+          },
+          {
+            "task_id": "SD-505",
+            "batch_id": 3,
+            "planned_change": "Eliminate vague time-saving or efficiency claims; replace them with a concrete, observable workflow action: the 'pass/fail' filter for document ingestion."
+          },
+          {
+            "task_id": "SD-506",
+            "batch_id": 3,
+            "planned_change": "Avoid suggesting specific automation performance gains or time-saving metrics, focusing purely on the prerequisite of data organization as an operational foundation."
+          },
+          {
+            "task_id": "SD-507",
+            "batch_id": 3,
+            "planned_change": "I will avoid using hypothetical time savings or productivity percentages, focusing strictly on the diagnostic methodology documented in the Bareni evidence."
+          },
+          {
+            "task_id": "SD-508",
+            "batch_id": 3,
+            "planned_change": "Remove all implied efficiency gains or performance metrics; focus exclusively on the technical mechanism of manual gates."
+          },
+          {
+            "task_id": "SD-509",
+            "batch_id": 4,
+            "planned_change": "Anchor the explanation of document grounding strictly in the defined RAG process, avoiding any unverified claims regarding system reliability or internal business findings."
+          },
+          {
+            "task_id": "SD-510",
+            "batch_id": 4,
+            "planned_change": "Remove all generic assertions about what 'other' businesses do and focus strictly on the defined technical decision process."
+          },
+          {
+            "task_id": "SD-511",
+            "batch_id": 4,
+            "planned_change": "I will restrict all references to 'our system' or 'design' to the specific synthetic capabilities demonstrated in the Bareni approved evidence pack."
+          },
+          {
+            "task_id": "SD-512",
+            "batch_id": 4,
+            "planned_change": "I will ground the advice in specific, logical workflow design principles rather than inventing observational claims about internal Bareni findings."
+          },
+          {
+            "task_id": "SD-513",
+            "batch_id": 4,
+            "planned_change": "Removed any anecdotal or observational language regarding internal client findings to ensure content remains anchored in operational logic."
+          },
+          {
+            "task_id": "SD-514",
+            "batch_id": 4,
+            "planned_change": "Remove all generic claims about common industry struggles and focus strictly on the mechanical logic of workflow error boundaries."
+          },
+          {
+            "task_id": "SD-515",
+            "batch_id": 4,
+            "planned_change": "Base the workflow mapping advice on simple input-output logic rather than inventing internal Bareni findings or generic efficiency metrics."
+          },
+          {
+            "task_id": "SD-516",
+            "batch_id": 4,
+            "planned_change": "Use specific, neutral language to describe the trade-off between manual correction and automation without claiming proprietary insights or fabricated 'Bareni' observational data."
+          },
+          {
+            "task_id": "SD-518",
+            "batch_id": 4,
+            "planned_change": "Eliminate any vague claims about how other businesses operate and frame the post as a technical, method-based recommendation."
+          },
+          {
+            "task_id": "SD-520",
+            "batch_id": 4,
+            "planned_change": "Eliminate all hypothetical claims about productivity or performance metrics to ensure the technical advice remains strictly anchored in factual definitions."
+          },
+          {
+            "task_id": "SD-522",
+            "batch_id": 4,
+            "planned_change": "Ensure the advice remains rooted in general operational security practices rather than fabricating internal Bareni data or proprietary audit findings."
+          },
+          {
+            "task_id": "SD-523",
+            "batch_id": 4,
+            "planned_change": "Base the advice on technical system boundaries rather than claiming observed accuracy rates or hypothetical performance metrics."
+          },
+          {
+            "task_id": "SD-524",
+            "batch_id": 4,
+            "planned_change": "Base the definition of 'demo theatre' strictly on the distinction between internal demos and operational readiness, avoiding broad claims about industry trends."
+          },
+          {
+            "task_id": "SD-525",
+            "batch_id": 4,
+            "planned_change": "Remove speculative claims about how other owners experience interruption; present the mechanism of context switching as a technical workflow challenge only."
+          },
+          {
+            "task_id": "SD-526",
+            "batch_id": 4,
+            "planned_change": "Anchor the advice strictly in the established concept of a grounded knowledge assistant using internal company documents instead of the open web."
+          },
+          {
+            "task_id": "SD-527",
+            "batch_id": 4,
+            "planned_change": "Remove all generic claims about automation benefits and focus strictly on the technical reality of maintenance costs versus manual effort."
+          },
+          {
+            "task_id": "SD-528",
+            "batch_id": 4,
+            "planned_change": "Restrict all claims to the structural shift from manual to systemized tasks, avoiding any speculative assertions about time saved or productivity growth."
+          },
+          {
+            "task_id": "SD-529",
+            "batch_id": 4,
+            "planned_change": "Ensure the advice on handover points remains strictly anchored in workflow logic rather than citing unproven internal observations."
+          },
+          {
+            "task_id": "SD-530",
+            "batch_id": 4,
+            "planned_change": "Refrain from making claims about AI reliability or internal Bareni findings; focus solely on the business necessity of manual logical consistency."
+          },
+          {
+            "task_id": "SD-531",
+            "batch_id": 4,
+            "planned_change": "Avoid claiming any specific time savings or productivity gains for the founder."
+          },
+          {
+            "task_id": "SD-532",
+            "batch_id": 4,
+            "planned_change": "Eliminate general observations about 'many founders' or internal findings, focusing solely on the mechanic of defining workflow boundaries."
+          },
+          {
+            "task_id": "SD-533",
+            "batch_id": 4,
+            "planned_change": "Base the edge case logic exclusively on the Bareni accounts-payable demo's documented behavior regarding manual human-only approval."
+          },
+          {
+            "task_id": "SD-534",
+            "batch_id": 4,
+            "planned_change": "Eliminate vague claims about efficiency; focus strictly on logging specific operational counts of documents or emails."
+          },
+          {
+            "task_id": "SD-535",
+            "batch_id": 4,
+            "planned_change": "Base the advice on established administrative protocols rather than claiming Bareni has observed specific internal productivity results or customer data."
+          },
+          {
+            "task_id": "SD-536",
+            "batch_id": 4,
+            "planned_change": "Ground the mention of uncertainty handling strictly in the accounts-payable demo protocols defined in the evidence pack rather than generalizing."
+          },
+          {
+            "task_id": "SD-537",
+            "batch_id": 4,
+            "planned_change": "Eliminate any hypothetical claims about time saved by automation; focus strictly on the technical workflow of filtering and triage as defined in the Bareni evidence."
+          },
+          {
+            "task_id": "SD-538",
+            "batch_id": 4,
+            "planned_change": "Remove all observational anecdotes or 'we see' statements; frame the advice as a technical fact of business ownership."
+          },
+          {
+            "task_id": "SD-539",
+            "batch_id": 4,
+            "planned_change": "Eliminate all generalizations about market trends or what other businesses are doing, ensuring the advice relies solely on the logic of workflow definition."
+          },
+          {
+            "task_id": "SD-540",
+            "batch_id": 4,
+            "planned_change": "I will frame the pricing check as a standard automation workflow to avoid creating an ungrounded claim about a proprietary 'pricing consistency' engine."
+          }
+        ]
+      },
+      {
+        "lesson_id": "SD-B2-L01",
+        "source_batches": [
+          2
+        ],
+        "source_task_ids": [
+          "SD-449",
+          "SD-456"
+        ],
+        "lesson_text": "Explicitly decline all requests related to high-sensitivity legal work or legal advice. Direct automation efforts exclusively toward non-legal business operations.",
+        "when_to_apply": "When responding to user inquiries involving contract review, legal drafting, or legal compliance tasks.",
+        "when_not_to_apply": "When discussing general administrative or operational workflows clearly outside the legal practice domain.",
+        "tasks_selected": 0,
+        "selection_events": []
+      },
+      {
+        "lesson_id": "SD-B2-L02",
+        "source_batches": [
+          2
+        ],
+        "source_task_ids": [
+          "SD-450",
+          "SD-457"
+        ],
+        "lesson_text": "Anchor all business policies in mandated human-in-the-loop protocols for money movement and high-risk decisions. Avoid inventing live system capabilities or proprietary alert mechanisms.",
+        "when_to_apply": "When discussing authorization, money movement, manual verification steps, or approval thresholds in business workflows.",
+        "when_not_to_apply": "When discussing fully autonomous, low-risk informational tasks that do not involve transaction or asset control.",
+        "tasks_selected": 50,
+        "selection_events": [
+          {
+            "task_id": "SD-478",
+            "batch_id": 3,
+            "planned_change": "Include a firm constraint that the assistant's output serves as a draft, requiring human validation for all business-critical or high-risk decisions."
+          },
+          {
+            "task_id": "SD-479",
+            "batch_id": 3,
+            "planned_change": "Explicitly state that human approval is mandatory for financial decisions and frame manual verification as a required policy rather than a technical workaround."
+          },
+          {
+            "task_id": "SD-480",
+            "batch_id": 3,
+            "planned_change": "Specify that the audit trigger must remain within a controlled integration framework where human oversight of the data remains primary."
+          },
+          {
+            "task_id": "SD-481",
+            "batch_id": 3,
+            "planned_change": "Explicitly define the refusal threshold as a deliberate human-in-the-loop control for high-risk decisions rather than a system limitation."
+          },
+          {
+            "task_id": "SD-483",
+            "batch_id": 3,
+            "planned_change": "Explicitly state that while automation handles the data verification, the final business decision remains a mandatory human action to ensure governance."
+          },
+          {
+            "task_id": "SD-484",
+            "batch_id": 3,
+            "planned_change": "Explicitly state that final approval for financial or high-risk tasks remains a mandatory human-in-the-loop protocol, consistent with Bareni standards."
+          },
+          {
+            "task_id": "SD-485",
+            "batch_id": 3,
+            "planned_change": "Clearly state that retention policies and deletion decisions must be defined by the human owner, not by automated agent logic."
+          },
+          {
+            "task_id": "SD-486",
+            "batch_id": 3,
+            "planned_change": "Explicitly include the requirement for human final approval within the log criteria to align with Bareni’s high-risk decision policy."
+          },
+          {
+            "task_id": "SD-487",
+            "batch_id": 3,
+            "planned_change": "Ensure the advice emphasizes that the human retains authority to decide if the process is worth automating based on the log, maintaining human-in-the-loop control."
+          },
+          {
+            "task_id": "SD-488",
+            "batch_id": 3,
+            "planned_change": "Explicitly defined the requirement for human oversight on ambiguous or non-standard emails to reinforce the mandatory human-in-the-loop policy."
+          },
+          {
+            "task_id": "SD-489",
+            "batch_id": 3,
+            "planned_change": "I will explicitly state that financial approvals require human oversight, framing AI as an assistant to document preparation rather than an approval agent."
+          },
+          {
+            "task_id": "SD-490",
+            "batch_id": 3,
+            "planned_change": "Emphasize that the system must halt and require human intervention for record reconciliation, avoiding any suggestion of autonomous data merging."
+          },
+          {
+            "task_id": "SD-491",
+            "batch_id": 3,
+            "planned_change": "I will explicitly state that the human-in-the-loop protocol is mandatory for financial approvals, confirming this as a policy constraint rather than a suggestion."
+          },
+          {
+            "task_id": "SD-492",
+            "batch_id": 3,
+            "planned_change": "Explicitly define the success measure as a human-controlled diagnostic step, keeping the owner responsible for validating the pilot's purpose."
+          },
+          {
+            "task_id": "SD-493",
+            "batch_id": 3,
+            "planned_change": "Explicitly define the 'human-in-the-loop' trigger as the mandatory control mechanism for any query exceeding the defined knowledge base boundary."
+          },
+          {
+            "task_id": "SD-494",
+            "batch_id": 3,
+            "planned_change": "Explicitly define the workflow mapping as a human-led diagnostic step to ensure governance and control before any automation is introduced."
+          },
+          {
+            "task_id": "SD-495",
+            "batch_id": 3,
+            "planned_change": "I will reinforce the necessity of human-in-the-loop protocols for money movement to ensure the advice aligns with Bareni's established safety policy."
+          },
+          {
+            "task_id": "SD-496",
+            "batch_id": 3,
+            "planned_change": "Explicitly state that the final approval remains a human-in-the-loop decision, adhering to the documented AP automation boundary."
+          },
+          {
+            "task_id": "SD-497",
+            "batch_id": 3,
+            "planned_change": "Explicitly state that while AI assists with invoice data extraction, all financial approval and audit validation remain under human control."
+          },
+          {
+            "task_id": "SD-498",
+            "batch_id": 3,
+            "planned_change": "Explicitly state that system ownership and control remain with the business owner, reinforcing the human-in-the-loop policy."
+          },
+          {
+            "task_id": "SD-499",
+            "batch_id": 3,
+            "planned_change": "Explicitly define the requirement for human-in-the-loop approval for financial or high-risk decisions to ensure alignment with Bareni's policy."
+          },
+          {
+            "task_id": "SD-500",
+            "batch_id": 3,
+            "planned_change": "Explicitly include a requirement for human-in-the-loop verification when discussing high-risk decisions to maintain operational safety."
+          },
+          {
+            "task_id": "SD-501",
+            "batch_id": 3,
+            "planned_change": "Ensured the content emphasizes that manual review remains the final control for high-risk or critical business outputs to maintain operational integrity."
+          },
+          {
+            "task_id": "SD-502",
+            "batch_id": 3,
+            "planned_change": "Emphasize manual scheduling and human decision-making for lead acceptance rather than implying autonomous AI qualification or deal closing."
+          },
+          {
+            "task_id": "SD-503",
+            "batch_id": 3,
+            "planned_change": "Explicitly define human oversight as the required control for the final decision in the workflow to maintain system governance."
+          },
+          {
+            "task_id": "SD-504",
+            "batch_id": 3,
+            "planned_change": "Explicitly defined the versioning process as a human-curated step to maintain control over the authoritative source of truth before any automation."
+          },
+          {
+            "task_id": "SD-505",
+            "batch_id": 3,
+            "planned_change": "Specify that manual review is the required control for non-conforming data, reinforcing the human-in-the-loop policy for high-risk or ambiguous inputs."
+          },
+          {
+            "task_id": "SD-507",
+            "batch_id": 3,
+            "planned_change": "I will explicitly state that the diagnostic process must identify mandatory manual approval points to ensure the owner retains control over automated workflows."
+          },
+          {
+            "task_id": "SD-508",
+            "batch_id": 3,
+            "planned_change": "Explicitly state that human-in-the-loop approval is mandatory for all financial decisions to ensure operational control."
+          },
+          {
+            "task_id": "SD-510",
+            "batch_id": 4,
+            "planned_change": "Emphasize that the sign-off process must remain a human-led activity to ensure control and accountability in the workflow."
+          },
+          {
+            "task_id": "SD-511",
+            "batch_id": 4,
+            "planned_change": "I will explicitly anchor the requirement for manual approval in money-movement workflows as a firm internal design policy rather than a generic industry observation."
+          },
+          {
+            "task_id": "SD-514",
+            "batch_id": 4,
+            "planned_change": "Explicitly define the requirement for human verification when automated systems encounter data gaps or high-risk value discrepancies."
+          },
+          {
+            "task_id": "SD-517",
+            "batch_id": 4,
+            "planned_change": "Clearly state that money movement and payment authorization require human-in-the-loop protocols based on Bareni’s accounts-payable demonstration."
+          },
+          {
+            "task_id": "SD-518",
+            "batch_id": 4,
+            "planned_change": "Explicitly state that human approval is the final, mandatory gate for any automated money-related workflow."
+          },
+          {
+            "task_id": "SD-519",
+            "batch_id": 4,
+            "planned_change": "Specify that manual review is the required control mechanism for pricing exceptions to ensure human oversight in revenue decisions."
+          },
+          {
+            "task_id": "SD-521",
+            "batch_id": 4,
+            "planned_change": "Incorporate a manual verification gate as a mandatory human-in-the-loop step for high-risk automated data processing."
+          },
+          {
+            "task_id": "SD-523",
+            "batch_id": 4,
+            "planned_change": "Explicitly state that money movement requires manual approval, avoiding any suggestion of autonomous financial decision-making."
+          },
+          {
+            "task_id": "SD-524",
+            "batch_id": 4,
+            "planned_change": "Explicitly state that human-in-the-loop authorization is a mandatory requirement for Bareni-style workflows involving financial decisions."
+          },
+          {
+            "task_id": "SD-525",
+            "batch_id": 4,
+            "planned_change": "Explicitly define the manual approval step as the control point for any transaction, ensuring the persona's mandate for human-in-the-loop operation is clear."
+          },
+          {
+            "task_id": "SD-528",
+            "batch_id": 4,
+            "planned_change": "Explicitly state that any automated workflow involving financial records or money movement requires a human-in-the-loop protocol for final authorization."
+          },
+          {
+            "task_id": "SD-530",
+            "batch_id": 4,
+            "planned_change": "Frame the need for manual audit and documentation as a prerequisite human-led protocol before any automation attempt."
+          },
+          {
+            "task_id": "SD-531",
+            "batch_id": 4,
+            "planned_change": "Explicitly state that high-risk financial approvals remain a mandatory human-in-the-loop function."
+          },
+          {
+            "task_id": "SD-532",
+            "batch_id": 4,
+            "planned_change": "Explicitly state the mandatory human-in-the-loop requirement for invoice payment approvals to anchor the policy in documented safety protocols."
+          },
+          {
+            "task_id": "SD-533",
+            "batch_id": 4,
+            "planned_change": "Explicitly define the 'manual review' flag as the mandatory human-in-the-loop protocol for high-risk invoice discrepancies."
+          },
+          {
+            "task_id": "SD-534",
+            "batch_id": 4,
+            "planned_change": "Clearly state that human judgment remains the final step in any document-to-data process to maintain control."
+          },
+          {
+            "task_id": "SD-535",
+            "batch_id": 4,
+            "planned_change": "State clearly that money movement and high-risk invoice approvals require human intervention, ensuring the automated workflow acts only as a gatekeeper."
+          },
+          {
+            "task_id": "SD-536",
+            "batch_id": 4,
+            "planned_change": "Explicitly define the 'human-in-the-loop' protocol for invoice verification to ensure the policy of manual approval for money movement is clear."
+          },
+          {
+            "task_id": "SD-537",
+            "batch_id": 4,
+            "planned_change": "Explicitly state that money movement and high-risk decisions require mandatory human-in-the-loop oversight to ensure governance and control."
+          },
+          {
+            "task_id": "SD-538",
+            "batch_id": 4,
+            "planned_change": "Define the credential migration as a mandatory human-led control to ensure the business owner retains final administrative access."
+          },
+          {
+            "task_id": "SD-539",
+            "batch_id": 4,
+            "planned_change": "Explicitly highlight that human approval remains the final control for any automated task, reflecting Bareni's manual policy for high-risk decisions."
+          }
+        ]
+      },
+      {
+        "lesson_id": "SD-B3-L01",
+        "source_batches": [
+          3
+        ],
+        "source_task_ids": [
+          "SD-484",
+          "SD-505"
+        ],
+        "lesson_text": "Strictly adhere to the mandatory No-CTA rule. Do not include promotional calls to action, invitations for diagnostic calls, or external service prompts.",
+        "when_to_apply": "When drafting closing statements or workflow recommendations where sales-oriented language often appears.",
+        "when_not_to_apply": "When the task explicitly asks for business sales or marketing copy production.",
+        "tasks_selected": 32,
+        "selection_events": [
+          {
+            "task_id": "SD-509",
+            "batch_id": 4,
+            "planned_change": "Omit any invitations to book a diagnostic or contact us, ensuring the post remains strictly informational without a CTA."
+          },
+          {
+            "task_id": "SD-510",
+            "batch_id": 4,
+            "planned_change": "Ensure the post ends with a factual summary statement rather than a call to action or invitation for a diagnostic call."
+          },
+          {
+            "task_id": "SD-511",
+            "batch_id": 4,
+            "planned_change": "I will ensure the final draft omits any CTA or invitation to contact Bareni, maintaining a strictly neutral and informational tone as required."
+          },
+          {
+            "task_id": "SD-512",
+            "batch_id": 4,
+            "planned_change": "I will ensure the post remains purely diagnostic by strictly excluding all promotional language and the standard Bareni diagnostic call to action."
+          },
+          {
+            "task_id": "SD-513",
+            "batch_id": 4,
+            "planned_change": "Explicitly excluded any CTA or invitation for follow-up to adhere to the mandate for zero promotional content."
+          },
+          {
+            "task_id": "SD-514",
+            "batch_id": 4,
+            "planned_change": "Ensure the closing sentence provides a conceptual takeaway rather than a call to action or booking request."
+          },
+          {
+            "task_id": "SD-515",
+            "batch_id": 4,
+            "planned_change": "Ensure the post concludes with an analytical summary rather than any call to book a diagnostic or visit a website."
+          },
+          {
+            "task_id": "SD-516",
+            "batch_id": 4,
+            "planned_change": "Ensure the post concludes with a statement of fact or a practical suggestion, strictly omitting any promotional language or invitations to connect or book a diagnostic call."
+          },
+          {
+            "task_id": "SD-517",
+            "batch_id": 4,
+            "planned_change": "Ensure the closing statement is a factual observation about process mapping rather than an invitation to book a call or contact the practice."
+          },
+          {
+            "task_id": "SD-518",
+            "batch_id": 4,
+            "planned_change": "Ensure the conclusion is a neutral summary of the workflow step, with zero promotional language or diagnostic booking requests."
+          },
+          {
+            "task_id": "SD-519",
+            "batch_id": 4,
+            "planned_change": "Ensure the post concludes with a technical observation rather than a CTA, strictly adhering to the no-CTA constraint for this task."
+          },
+          {
+            "task_id": "SD-520",
+            "batch_id": 4,
+            "planned_change": "Omit all calls to action, invitations for diagnostic calls, or external service prompts to comply with the strict no-CTA constraint."
+          },
+          {
+            "task_id": "SD-521",
+            "batch_id": 4,
+            "planned_change": "Remove all invitations for diagnostic calls or service prompts to strictly adhere to the no-CTA requirement."
+          },
+          {
+            "task_id": "SD-522",
+            "batch_id": 4,
+            "planned_change": "Eliminate all calls to action, including contact requests or website references, to maintain a neutral and diagnostic tone."
+          },
+          {
+            "task_id": "SD-523",
+            "batch_id": 4,
+            "planned_change": "Exclude all calls to action to comply with the mandatory no-CTA constraint for this post."
+          },
+          {
+            "task_id": "SD-524",
+            "batch_id": 4,
+            "planned_change": "Strictly verify that the content contains no CTA, invitation for a diagnostic call, or contact request, adhering to the no-CTA mandate."
+          },
+          {
+            "task_id": "SD-525",
+            "batch_id": 4,
+            "planned_change": "Ensure the post terminates after the final technical recommendation, omitting any invitation to book a diagnostic or visit a link."
+          },
+          {
+            "task_id": "SD-526",
+            "batch_id": 4,
+            "planned_change": "Ensure the final text contains absolutely no calls to action or invitations to book a diagnostic."
+          },
+          {
+            "task_id": "SD-527",
+            "batch_id": 4,
+            "planned_change": "Ensure the post ends without any promotional calls to action, diagnostic booking links, or invitations to contact the practice."
+          },
+          {
+            "task_id": "SD-528",
+            "batch_id": 4,
+            "planned_change": "Ensure the final text omits all invitations to book calls, contact Bareni, or pursue external services, keeping the focus entirely on the operational logic."
+          },
+          {
+            "task_id": "SD-529",
+            "batch_id": 4,
+            "planned_change": "Omit all calls to action, diagnostic booking links, or sign-up prompts to strictly comply with the no-CTA rule."
+          },
+          {
+            "task_id": "SD-530",
+            "batch_id": 4,
+            "planned_change": "Ensure the post contains no promotional call to action or booking links, adhering strictly to the no-CTA constraint."
+          },
+          {
+            "task_id": "SD-531",
+            "batch_id": 4,
+            "planned_change": "Ensure the post ends with the final sentence regarding human judgment rather than a CTA."
+          },
+          {
+            "task_id": "SD-532",
+            "batch_id": 4,
+            "planned_change": "Ensure no call to action, invitation for a diagnostic call, or promotional language is included in the closing statement."
+          },
+          {
+            "task_id": "SD-533",
+            "batch_id": 4,
+            "planned_change": "Ensure the closing sentence provides a practical takeaway rather than an invitation to contact or book a service."
+          },
+          {
+            "task_id": "SD-534",
+            "batch_id": 4,
+            "planned_change": "Ensure the post ends with a factual summary statement rather than an invitation to contact or book a service."
+          },
+          {
+            "task_id": "SD-535",
+            "batch_id": 4,
+            "planned_change": "Ensure the post ends with a factual operational observation rather than a call to action, strictly adhering to the no-CTA constraint."
+          },
+          {
+            "task_id": "SD-536",
+            "batch_id": 4,
+            "planned_change": "Ensure the post ends with a reflective summary statement rather than an invitation or CTA to comply with the task-specific No-CTA rule."
+          },
+          {
+            "task_id": "SD-537",
+            "batch_id": 4,
+            "planned_change": "Ensure the post contains absolutely no CTA, promotional invitations, or diagnostic call requests, maintaining a neutral, informative tone."
+          },
+          {
+            "task_id": "SD-538",
+            "batch_id": 4,
+            "planned_change": "Ensure the post terminates immediately after the final recommendation, strictly omitting any call to action or contact invitation."
+          },
+          {
+            "task_id": "SD-539",
+            "batch_id": 4,
+            "planned_change": "Ensure the post concludes with a technical observation rather than an invitation to contact or book a meeting."
+          },
+          {
+            "task_id": "SD-540",
+            "batch_id": 4,
+            "planned_change": "I will omit all invitations to book diagnostic calls or contact Bareni, ensuring the post provides only practical information without a CTA."
+          }
+        ]
+      }
+    ]
+  },
+  "batch_close_states": {
+    "1": "CLOSED",
+    "2": "CLOSED",
+    "3": "CLOSED",
+    "4": "CLOSED"
+  },
+  "memory_update_missing_batches": []
+}

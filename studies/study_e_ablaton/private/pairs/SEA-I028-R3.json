@@ -1,0 +1,96 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I028-R3",
+    "item_id": "SEA-I028",
+    "repeat": 3,
+    "arm_order": [
+      "critic_off",
+      "critic_on"
+    ],
+    "content_id": "POST-27825b29a1e8c7f41accf382"
+  },
+  "arms": {
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-27825b29a1e8c7f41accf382-1",
+        "title": "When AI disclosure stops working",
+        "body": "If you tell customers that AI helped write a reply and the exchange still gets slower, more cautious, or more repetitive, the disclosure may not be the real problem. The workflow is.\n\nFor a small business owner, that is the useful distinction. A disclosure can be honest and still fail to improve the work if the underlying step is the wrong one to automate. In that case, the issue is not wording; it is where AI sits in the process.\n\nThe next step is simple: pick one recurring customer-facing task and trace what happens after the disclosure. Does it create friction because the draft is weak, because the format is off, or because the customer should never be seeing AI output in the first place?\n\nIf the answer is the last one, move AI backstage. Let it sort, draft, or flag inputs, then keep the final customer reply human. That keeps approval where it belongs, and avoids asking a disclosure to do a job it cannot do. A label is not a workflow design."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-27825b29a1e8c7f41accf382-1",
+            "title": "When AI disclosure stops working",
+            "body": "If you tell customers that AI helped write a reply and the exchange still gets slower, more cautious, or more repetitive, the disclosure may not be the real problem. The workflow is.\n\nFor a small business owner, that is the useful distinction. A disclosure can be honest and still fail to improve the work if the underlying step is the wrong one to automate. In that case, the issue is not wording; it is where AI sits in the process.\n\nThe next step is simple: pick one recurring customer-facing task and trace what happens after the disclosure. Does it create friction because the draft is weak, because the format is off, or because the customer should never be seeing AI output in the first place?\n\nIf the answer is the last one, move AI backstage. Let it sort, draft, or flag inputs, then keep the final customer reply human. That keeps approval where it belongs, and avoids asking a disclosure to do a job it cannot do. A label is not a workflow design."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-27825b29a1e8c7f41accf382-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    },
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-27825b29a1e8c7f41accf382-1",
+        "title": "When AI disclosure stops helping",
+        "body": "If you keep telling customers that AI was involved and the conversation still gets stuck, the disclosure is probably not the real problem.\n\nFor a small-business owner, that is the useful boundary. Disclosure matters when it changes trust, approval, or expectations. It stops helping when the real friction is elsewhere: the reply is too slow, the answer is too generic, or the process needs a human check before anything goes out.\n\nThat is the point where the decision becomes workflow design, not messaging. Don’t ask, “How do I explain the AI better?” Ask, “What part of this work should stay human, and what part can move backstage?”\n\nA practical next step is simple: pick one recurring customer-facing task and test it with one question. If removing the disclosure line does not improve the result, the issue is not the disclosure. It is the workflow.\n\nThen keep human approval on the final reply, and only automate the behind-the-scenes step if it actually makes the process cleaner. No magic, just plumbing."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-27825b29a1e8c7f41accf382-1",
+            "title": "When AI disclosure stops helping",
+            "body": "If you keep telling customers that AI was involved and the conversation still gets stuck, the disclosure is probably not the real problem.\n\nFor a small-business owner, that is the useful boundary. Disclosure matters when it changes trust, approval, or expectations. It stops helping when the real friction is elsewhere: the reply is too slow, the answer is too generic, or the process needs a human check before anything goes out.\n\nThat is the point where the decision becomes workflow design, not messaging. Don’t ask, “How do I explain the AI better?” Ask, “What part of this work should stay human, and what part can move backstage?”\n\nA practical next step is simple: pick one recurring customer-facing task and test it with one question. If removing the disclosure line does not improve the result, the issue is not the disclosure. It is the workflow.\n\nThen keep human approval on the final reply, and only automate the behind-the-scenes step if it actually makes the process cleaner. No magic, just plumbing."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-27825b29a1e8c7f41accf382-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": [
+            {
+              "repair_id": "P01",
+              "target_ids": [
+                "D01",
+                "D02",
+                "D03"
+              ],
+              "instruction": "Rewrite the body so it answers the owner-specified topic with one concrete, bounded workflow decision for a 1-10 person owner-operator. State plainly when AI disclosure has stopped helping in practice, and make the takeaway easy to understand on first read.",
+              "source_ids": [
+                "BRIEF",
+                "S01",
+                "C01",
+                "C05"
+              ]
+            },
+            {
+              "repair_id": "P02",
+              "target_ids": [
+                "D03"
+              ],
+              "instruction": "Add one practical next step near the end, such as a simple diagnostic question or control the owner can use before continuing the workflow, so the post is actionable rather than only reflective.",
+              "source_ids": [
+                "BRIEF",
+                "S01",
+                "C02"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

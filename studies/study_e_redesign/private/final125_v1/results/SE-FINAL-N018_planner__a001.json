@@ -1,0 +1,168 @@
+{
+  "status": "success",
+  "usage": {
+    "input_tokens": 4291,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 833,
+    "reasoning_tokens": null
+  },
+  "cost_usd": 0.008456,
+  "output": {
+    "item_id": "E-PLAN-518",
+    "selected_lessons": [],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Define 'drifted definitions' as a workflow problem: identify one repeating task where inconsistent naming, categorisation, or data entry rules cause rework, customer confusion, or approval delays. Use the diagnostic frame: Which single workflow shows signs that team members or systems interpret the same field or term differently each time?",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "S01",
+          "C01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Quantify the cost of drift in that one workflow: measure current rework hours per week (e.g. invoice recategorisation, duplicate customer records, repeated email clarifications). Do not estimate; count or ask the owner to count actual instances over two weeks.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Test whether AI fits: ask whether a grounded knowledge assistant—one that enforces approved definitions from company documents and flags deviations—would reduce manual checking. If the task requires human judgment, approval, or context beyond stored rules, note that AI is a helper, not a replacement.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C03",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Propose a bounded pilot scope: define the one workflow, the set of approved definitions (e.g. invoice categories, customer-field mappings), and the single metric (e.g. rework hours saved per week, approval time, or error count). Set a fixed price and timeline measured in days or weeks, not months.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Confirm the approval boundary: document that any rule changes, category additions, or automation decisions require the owner's sign-off. The assistant and any workflow code stay in the owner's accounts and tools from the start; no lock-in.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Explain the next step in plain terms: book a free 30-minute diagnostic to confirm the workflow, count the cost of drift, and decide whether a pilot makes sense. No commitment, no roadmap, no upsell.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "All steps reference only the owner's observed workflow and approved Bareni evidence. No customer testimonials, results, or invented metrics are introduced."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Steps P03 and P05 preserve human approval for definitions and workflow changes. No autonomous money movement or excluded services are suggested."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Steps P01–P06 maintain the frozen persona: plain-speaking technical advice, founder-to-founder tone, evidence-boundary discipline, and no CTA beyond the diagnostic frame."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Each step distinguishes between current manual practice (owner's rework), proposed assistance (grounded AI helper), and the pilot scope (small, fixed, measurable). No capability claims beyond the self-built knowledge-assistant demo."
+      }
+    ]
+  },
+  "raw_text": "{\"item_id\": \"E-PLAN-518\", \"selected_lessons\": [], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Define 'drifted definitions' as a workflow problem: identify one repeating task where inconsistent naming, categorisation, or data entry rules cause rework, customer confusion, or approval delays. Use the diagnostic frame: Which single workflow shows signs that team members or systems interpret the same field or term differently each time?\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"S01\", \"C01\"]}, {\"step_id\": \"P02\", \"instruction\": \"Quantify the cost of drift in that one workflow: measure current rework hours per week (e.g. invoice recategorisation, duplicate customer records, repeated email clarifications). Do not estimate; count or ask the owner to count actual instances over two weeks.\", \"requirement_ids\": [\"R01\", \"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"C01\", \"C02\"]}, {\"step_id\": \"P03\", \"instruction\": \"Test whether AI fits: ask whether a grounded knowledge assistant—one that enforces approved definitions from company documents and flags deviations—would reduce manual checking. If the task requires human judgment, approval, or context beyond stored rules, note that AI is a helper, not a replacement.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C03\", \"C04\"]}, {\"step_id\": \"P04\", \"instruction\": \"Propose a bounded pilot scope: define the one workflow, the set of approved definitions (e.g. invoice categories, customer-field mappings), and the single metric (e.g. rework hours saved per week, approval time, or error count). Set a fixed price and timeline measured in days or weeks, not months.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\"]}, {\"step_id\": \"P05\", \"instruction\": \"Confirm the approval boundary: document that any rule changes, category additions, or automation decisions require the owner's sign-off. The assistant and any workflow code stay in the owner's accounts and tools from the start; no lock-in.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"C04\"]}, {\"step_id\": \"P06\", \"instruction\": \"Explain the next step in plain terms: book a free 30-minute diagnostic to confirm the workflow, count the cost of drift, and decide whether a pilot makes sense. No commitment, no roadmap, no upsell.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"C05\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"All steps reference only the owner's observed workflow and approved Bareni evidence. No customer testimonials, results, or invented metrics are introduced.\"}, {\"constraint_id\": \"K02\", \"handling\": \"Steps P03 and P05 preserve human approval for definitions and workflow changes. No autonomous money movement or excluded services are suggested.\"}, {\"constraint_id\": \"K03\", \"handling\": \"Steps P01–P06 maintain the frozen persona: plain-speaking technical advice, founder-to-founder tone, evidence-boundary discipline, and no CTA beyond the diagnostic frame.\"}, {\"constraint_id\": \"K04\", \"handling\": \"Each step distinguishes between current manual practice (owner's rework), proposed assistance (grounded AI helper), and the pilot scope (small, fixed, measurable). No capability claims beyond the self-built knowledge-assistant demo.\"}]}",
+  "provider_response": {
+    "id": "msg_011Ceqxc2dh4PTS7cJrtuzox",
+    "container": null,
+    "content": [
+      {
+        "citations": null,
+        "text": "{\"item_id\": \"E-PLAN-518\", \"selected_lessons\": [], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Define 'drifted definitions' as a workflow problem: identify one repeating task where inconsistent naming, categorisation, or data entry rules cause rework, customer confusion, or approval delays. Use the diagnostic frame: Which single workflow shows signs that team members or systems interpret the same field or term differently each time?\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"S01\", \"C01\"]}, {\"step_id\": \"P02\", \"instruction\": \"Quantify the cost of drift in that one workflow: measure current rework hours per week (e.g. invoice recategorisation, duplicate customer records, repeated email clarifications). Do not estimate; count or ask the owner to count actual instances over two weeks.\", \"requirement_ids\": [\"R01\", \"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"C01\", \"C02\"]}, {\"step_id\": \"P03\", \"instruction\": \"Test whether AI fits: ask whether a grounded knowledge assistant—one that enforces approved definitions from company documents and flags deviations—would reduce manual checking. If the task requires human judgment, approval, or context beyond stored rules, note that AI is a helper, not a replacement.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C03\", \"C04\"]}, {\"step_id\": \"P04\", \"instruction\": \"Propose a bounded pilot scope: define the one workflow, the set of approved definitions (e.g. invoice categories, customer-field mappings), and the single metric (e.g. rework hours saved per week, approval time, or error count). Set a fixed price and timeline measured in days or weeks, not months.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\"]}, {\"step_id\": \"P05\", \"instruction\": \"Confirm the approval boundary: document that any rule changes, category additions, or automation decisions require the owner's sign-off. The assistant and any workflow code stay in the owner's accounts and tools from the start; no lock-in.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"C04\"]}, {\"step_id\": \"P06\", \"instruction\": \"Explain the next step in plain terms: book a free 30-minute diagnostic to confirm the workflow, count the cost of drift, and decide whether a pilot makes sense. No commitment, no roadmap, no upsell.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"C05\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"All steps reference only the owner's observed workflow and approved Bareni evidence. No customer testimonials, results, or invented metrics are introduced.\"}, {\"constraint_id\": \"K02\", \"handling\": \"Steps P03 and P05 preserve human approval for definitions and workflow changes. No autonomous money movement or excluded services are suggested.\"}, {\"constraint_id\": \"K03\", \"handling\": \"Steps P01–P06 maintain the frozen persona: plain-speaking technical advice, founder-to-founder tone, evidence-boundary discipline, and no CTA beyond the diagnostic frame.\"}, {\"constraint_id\": \"K04\", \"handling\": \"Each step distinguishes between current manual practice (owner's rework), proposed assistance (grounded AI helper), and the pilot scope (small, fixed, measurable). No capability claims beyond the self-built knowledge-assistant demo.\"}]}",
+        "type": "text"
+      }
+    ],
+    "model": "claude-haiku-4-5-20251001",
+    "role": "assistant",
+    "stop_details": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "not_available",
+      "input_tokens": 4291,
+      "output_tokens": 833,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": "standard"
+    }
+  },
+  "stop_reason": "end_turn",
+  "cost_details": {
+    "input": 0.004291,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.004165,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.008456
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": null,
+  "key": "SE-FINAL-N018_planner__a001",
+  "role": "planner",
+  "created_at": "2026-09-08T12:18:39.011042+00:00",
+  "ended_at": "2026-09-08T12:19:01.456502+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-N018",
+    "batch_id": 1,
+    "condition": "natural",
+    "cohort": "natural"
+  },
+  "task_id": "SE-FINAL-N018",
+  "batch_id": 1,
+  "cohort": "natural",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 22441,
+  "budget_charge_usd": 0.008456,
+  "unknown_cost_reservation_usd": 0
+}

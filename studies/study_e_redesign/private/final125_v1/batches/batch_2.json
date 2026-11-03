@@ -1,0 +1,62 @@
+{
+  "batch": 2,
+  "summary": {
+    "batch": 2,
+    "observed": 31,
+    "initial_failed": 0,
+    "final_unresolved": 0,
+    "refined": 31,
+    "representative_task_ids": []
+  },
+  "events": [
+    {
+      "event_id": "B2-SUMMARY",
+      "status": "confirmed",
+      "observation": "Confirmed execution-log summary; Gate findings are model reports, not independently established business facts. {\"batch\": 2, \"observed\": 31, \"initial_failed\": 0, \"final_unresolved\": 0, \"refined\": 31, \"representative_task_ids\": []}"
+    }
+  ],
+  "register_before_sha256": "48497afb8641ddc47d974cdfadba06a1f6b562d21c49ec03c9b03a5dc531744e",
+  "register": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025"
+      ]
+    }
+  ],
+  "curator": {
+    "item_id": "E-MEM-BATCH-2",
+    "proposals": [
+      {
+        "proposal_id": "P01",
+        "action": "SKIP",
+        "target_lesson_id": "L01",
+        "event_ids": [
+          "B2-SUMMARY"
+        ],
+        "lesson_text": null,
+        "reason": "Batch 2 provides no new observed failure pattern: the confirmed summary reports initial_failed=0 and final_unresolved=0, with no representative task-level events to support an added or improved reusable lesson. The existing L01 already covers the prior confirmed CTA issue, so no merge is justified from this batch alone."
+      }
+    ]
+  },
+  "memory_parent": "batch2_curator__a001",
+  "history": [
+    {
+      "event_id": "B1-SUMMARY",
+      "status": "confirmed",
+      "observation": "Confirmed execution-log summary; Gate findings are model reports, not independently established business facts. {\"batch\": 1, \"observed\": 31, \"initial_failed\": 1, \"final_unresolved\": 0, \"refined\": 31, \"representative_task_ids\": [\"SE-FINAL-N025\"]}"
+    },
+    {
+      "event_id": "SE-FINAL-N025",
+      "status": "confirmed",
+      "observation": "Recorded Gate finding and repair outcome, not a customer outcome: {\"task_id\": \"SE-FINAL-N025\", \"topic\": \"early signs of system prompt sprawl\", \"initial_gate\": {\"schema_version\": \"study-e-gate-v4\", \"item_id\": \"GATE-BLIND-025\", \"assessment_status\": \"assessed\", \"input_problem_reason\": null, \"defects\": [{\"dimension\": \"persona_fit\", \"severity\": \"noncritical\", \"location_kind\": \"quote\", \"text_field\": \"body\", \"quote\": \"That is also the kind of question a free diagnostic conversation would sort through\", \"missing_requirement\": null, \"rule_id\": \"R-N-1\", \"evidence_ids\": [\"BRIEF\", \"C05\", \"S01\"], \"reason\": \"The post includes a CTA-like invitation to a free diagnostic conversation even though the task explicitly requires no CTA for this informational post.\"}]}, \"final_gate\": {\"schema_version\": \"study-e-gate-v4\", \"item_id\": \"GATE-BLIND-025\", \"assessment_status\": \"assessed\", \"input_problem_reason\": null, \"defects\": []}, \"critic_excerpt\": \"{\\\"item_id\\\": \\\"E-CRIT-BLIND-025-1\\\", \\\"repairs\\\": [{\\\"repair_id\\\": \\\"P01\\\", \\\"target_ids\\\": [\\\"D01\\\"], \\\"instruction\\\": \\\"Remove the free-diagnostic invitation and end the post without any CTA or meeting mention. Replace the closing sentence with a neutral observation that keeps the next-step guidance, for example: 'The owner still makes the call.'\\\", \\\"source_ids\\\": [\\\"BRIEF\\\", \\\"C05\\\", \\\"S01\\\"]}]}\"}"
+    },
+    {
+      "event_id": "B2-SUMMARY",
+      "status": "confirmed",
+      "observation": "Confirmed execution-log summary; Gate findings are model reports, not independently established business facts. {\"batch\": 2, \"observed\": 31, \"initial_failed\": 0, \"final_unresolved\": 0, \"refined\": 31, \"representative_task_ids\": []}"
+    }
+  ]
+}

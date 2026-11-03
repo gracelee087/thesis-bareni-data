@@ -1,0 +1,157 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I089-R1",
+    "item_id": "SEA-I089",
+    "repeat": 1,
+    "arm_order": [
+      "critic_on",
+      "critic_off"
+    ],
+    "content_id": "POST-2750792803e78be3fdeeb882"
+  },
+  "arms": {
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-2750792803e78be3fdeeb882-2",
+        "title": "Why premature scaling survives in small teams",
+        "body": "One reason premature scaling can survive in a small team is that the old process feels familiar. It costs owner time, not cash, so patching it often feels easier than changing it. That is usually why a manual loop stays around long after it should have been simplified. The real choice is not “AI or not.” It is whether one repeatable task should stay manual, be handled by a hire, or be narrowed into a small automation pilot.\n\nFor a 1–10 person business, the useful question is simple: is this task repeatable, measurable, and basically the same each time? If yes, it is a candidate for automation. If it needs judgment, changes every day, or only happens once in a while, manual handling or hiring may be the more honest choice. No robot deserves a job title for a process that keeps changing its mind.\n\nA practical next step is to pick one recurring workflow and name the one step that creates most of the repeated effort. If automating that step would shrink the task to near-zero, the scope is probably clear enough to test. If you cannot say that clearly, the scope is still too broad, and the decision should stay human. That is the point where a diagnostic would define scope, measures, and whether AI fits at all."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-2750792803e78be3fdeeb882-1",
+            "title": "Why premature scaling survives in small teams",
+            "body": "Premature scaling survives in small teams because the old process is familiar. It costs owner time, not cash, so patching it feels easier than changing it. That is often why a manual loop stays around long after it should have been simplified. The real choice is not “AI or not.” It is whether one repeatable task should stay manual, be handled by a hire, or be narrowed into a small automation pilot.\n\nFor a 1–10 person business, the useful question is simple: is this task repeatable, measurable, and basically the same each time? If yes, it is a candidate for automation. If it needs judgment, changes every day, or only happens once in a while, manual handling or hiring may be the more honest choice. No robot deserves a job title for a process that keeps changing its mind.\n\nA practical next step is to pick one recurring workflow and name the one step that creates most of the repeated effort. If automating that step would shrink the task to near-zero, the scope is probably clear enough to test. If you cannot say that clearly, the scope is still too broad, and the decision should stay human. That is the point where a diagnostic would define scope, measures, and whether AI fits at all."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-2750792803e78be3fdeeb882-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": [
+              {
+                "dimension": "factual_grounding",
+                "severity": "noncritical",
+                "location_kind": "quote",
+                "text_field": "body",
+                "quote": "Premature scaling survives in small teams because the old process is familiar. It costs owner time, not cash, so patching it feels easier than changing it.",
+                "missing_requirement": null,
+                "rule_id": "R-N-4",
+                "evidence_ids": [
+                  "BRIEF",
+                  "S01"
+                ],
+                "reason": "These are broad causal claims about why premature scaling persists and how owners perceive the tradeoff, but the supplied evidence does not support them as established facts; they are presented as general explanation rather than clearly framed opinion or hypothesis."
+              }
+            ]
+          },
+          "critic_repairs": [
+            {
+              "repair_id": "P01",
+              "target_ids": [
+                "D01",
+                "D02"
+              ],
+              "instruction": "Delete the final sentence claiming Bareni has already deployed the approach for 39 paying customers and verified a 51% reduction in weekly administrative work. Replace it with a neutral closing that keeps the post hypothetical or removes the claim entirely; do not state any customer deployments, paying customers, or measured results.",
+              "source_ids": [
+                "BRIEF",
+                "C01",
+                "C05",
+                "S01"
+              ]
+            }
+          ]
+        },
+        {
+          "cycle": 2,
+          "post": {
+            "item_id": "POST-2750792803e78be3fdeeb882-2",
+            "title": "Why premature scaling survives in small teams",
+            "body": "One reason premature scaling can survive in a small team is that the old process feels familiar. It costs owner time, not cash, so patching it often feels easier than changing it. That is usually why a manual loop stays around long after it should have been simplified. The real choice is not “AI or not.” It is whether one repeatable task should stay manual, be handled by a hire, or be narrowed into a small automation pilot.\n\nFor a 1–10 person business, the useful question is simple: is this task repeatable, measurable, and basically the same each time? If yes, it is a candidate for automation. If it needs judgment, changes every day, or only happens once in a while, manual handling or hiring may be the more honest choice. No robot deserves a job title for a process that keeps changing its mind.\n\nA practical next step is to pick one recurring workflow and name the one step that creates most of the repeated effort. If automating that step would shrink the task to near-zero, the scope is probably clear enough to test. If you cannot say that clearly, the scope is still too broad, and the decision should stay human. That is the point where a diagnostic would define scope, measures, and whether AI fits at all."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-2750792803e78be3fdeeb882-2",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": [
+            {
+              "repair_id": "P01",
+              "target_ids": [
+                "D01"
+              ],
+              "instruction": "Soften the causal opener into a clearly framed hypothesis or observation instead of an established fact. For example, replace it with a version like: 'One reason premature scaling can survive in small teams is that the old process feels familiar.' Keep the rest of the paragraph intact.",
+              "source_ids": [
+                "BRIEF",
+                "S01"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-2750792803e78be3fdeeb882-2",
+        "title": "Why premature scaling survives in small teams",
+        "body": "Premature scaling survives in small teams for a simple reason: the owner is usually weighing manual work against a hire or a bounded automation pilot, not chasing a grand transformation. In practice, the old loop stays in place because it is already understood and easy to keep patching.\n\nFor a 1–10 person business, the decision rule is plain. Ask whether the workflow is repeatable, measurable, and mostly the same each time. If yes, it may be a fit for automation. If it depends on judgment, changes constantly, or only happens once in a while, manual handling or hiring is often the cleaner choice. Not every process deserves a robot badge.\n\nA useful next step is to pick one recurring workflow and look for the single step that creates most of the repeated effort. Then ask: if that one step were automated, would the task shrink to near-zero? If the answer is clear, the pilot scope is probably small enough to assess. If it is not clear, the scope is still too broad.\n\nThat is the kind of decision Bareni is built to examine: one workflow, one threshold, one honest fit check. The diagnostic would then define scope, fixed price, and measures if AI fits. Human approval stays mandatory for money movement and other high-risk decisions, and database, automation-tool, and API accounts stay in the customer’s name from the start."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-2750792803e78be3fdeeb882-1",
+            "title": "Why premature scaling survives in small teams",
+            "body": "Premature scaling survives in small teams because the current process is familiar, even when it is clumsy. It also feels cheap, because the owner pays with time instead of cash. That is why a manual loop can outlive its usefulness for months. The real choice is usually not “AI or not.” It is whether one repeatable task should stay manual, be handled by a hire, or be reduced to a small automation pilot.\n\nFor a 1–10 person business, the practical test is simple: is this workflow repeatable, measurable, and mostly the same each time? If yes, it is a candidate for automation. If it depends on judgment, changes constantly, or happens only occasionally, manual handling or hiring may be the cleaner answer. Not every process deserves a robot badge.\n\nA useful next step is to pick one recurring workflow and identify the one step that creates most of the repeated effort. Then ask: if that single step were automated, would the task shrink to near-zero? If the answer is yes, the scope is probably bounded enough to evaluate properly. If the answer is unclear, the scope is still too broad, and the decision should stay human.\n\nThat is the kind of question Bareni is built to examine: one workflow, one threshold, one honest decision on fit. The diagnostic would then define the pilot scope, fixed price, and measures if AI is a fit, while human approval remains mandatory for money movement and other high-risk decisions. Database, automation-tool, and API accounts stay in the customer’s name from the start."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-2750792803e78be3fdeeb882-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": [
+              {
+                "dimension": "factual_grounding",
+                "severity": "noncritical",
+                "location_kind": "quote",
+                "text_field": "body",
+                "quote": "Premature scaling survives in small teams because the current process is familiar, even when it is clumsy. It also feels cheap, because the owner pays with time instead of cash. That is why a manual loop can outlive its usefulness for months.",
+                "missing_requirement": null,
+                "rule_id": "R-N-4",
+                "evidence_ids": [
+                  "BRIEF",
+                  "S01"
+                ],
+                "reason": "This opening makes broad causal claims about why premature scaling persists in small teams and for how long, but the supplied evidence does not support these general observed explanations or timeframe. The post may discuss the decision context, but this wording presents unsupported market behavior as fact."
+              }
+            ]
+          },
+          "critic_repairs": []
+        },
+        {
+          "cycle": 2,
+          "post": {
+            "item_id": "POST-2750792803e78be3fdeeb882-2",
+            "title": "Why premature scaling survives in small teams",
+            "body": "Premature scaling survives in small teams for a simple reason: the owner is usually weighing manual work against a hire or a bounded automation pilot, not chasing a grand transformation. In practice, the old loop stays in place because it is already understood and easy to keep patching.\n\nFor a 1–10 person business, the decision rule is plain. Ask whether the workflow is repeatable, measurable, and mostly the same each time. If yes, it may be a fit for automation. If it depends on judgment, changes constantly, or only happens once in a while, manual handling or hiring is often the cleaner choice. Not every process deserves a robot badge.\n\nA useful next step is to pick one recurring workflow and look for the single step that creates most of the repeated effort. Then ask: if that one step were automated, would the task shrink to near-zero? If the answer is clear, the pilot scope is probably small enough to assess. If it is not clear, the scope is still too broad.\n\nThat is the kind of decision Bareni is built to examine: one workflow, one threshold, one honest fit check. The diagnostic would then define scope, fixed price, and measures if AI fits. Human approval stays mandatory for money movement and other high-risk decisions, and database, automation-tool, and API accounts stay in the customer’s name from the start."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-2750792803e78be3fdeeb882-2",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

@@ -1,0 +1,322 @@
+{
+  "task_id": "SE-FINAL-N012",
+  "batch_id": 1,
+  "condition": "natural",
+  "source_task_id": null,
+  "topic": "subprocessor lists as a design constraint",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-312",
+    "title": "Subprocessor lists are a workflow design constraint",
+    "body": "If you are deciding whether to automate a workflow that touches customer data, the subprocessor list is not a side note. It is part of the design. The practical question is simple: which third parties will see the data, at which step, and under what terms?\n\nFor a small business owner, I would start with one recurring workflow only: invoice handling, customer inquiries, or document storage. Pick the one where data already crosses the most hands. Then write down the current handlers in order: your team, the SaaS tools you already use, any vendor, and any consultant. Mark where each handoff happens and whether there is a data-processing agreement in place. That is the diagnostic step. It is not glamorous, but it stops the usual “we’ll sort the paperwork later” plan, which has a habit of becoming a plan with a missing middle.\n\nFrom there, decide whether automation would reduce the number of people or tools that can see the data. A useful target is not “faster at any cost”; it is fewer access points, clearer logging, and human approval where the risk is real. For example, a controlled system can extract data, flag exceptions for review, and keep an audit trail. It should not make money movements or other high-risk decisions on its own.\n\nIf you are building a pilot, define the subprocessor list up front: which tools handle data, what each one does, and what customer approval you need before any transfer starts. Put that into the pilot scope before the build, not after the surprise. That is usually the point where the spreadsheet gets a little less optimistic."
+  },
+  "final": {
+    "item_id": "E-OPT-412",
+    "title": "Subprocessor lists are a workflow design constraint",
+    "body": "If you are deciding whether to automate a workflow that touches customer data, the subprocessor list is not a side note. It is part of the design. The practical question is simple: which third parties will see the data, at which step, and under what terms?\n\nFor a small business owner, I would start with one recurring workflow only: invoice handling, customer inquiries, or document storage. Pick the one where data already crosses the most hands. Then write down the current handlers in order: your team, the SaaS tools you already use, any vendor, and any consultant. Mark where each handoff happens and whether there is a data-processing agreement in place. That is the diagnostic step. It is not glamorous, but it stops the usual “we’ll sort the paperwork later” plan, which has a habit of becoming a plan with a missing middle.\n\nFrom there, decide whether automation would reduce the number of people or tools that can see the data. A useful target is not “faster at any cost”; it is fewer access points, clearer logging, and human approval where the risk is real. For example, a controlled system can extract data, flag exceptions for review, and keep an audit trail. It should not make money movements or other high-risk decisions on its own.\n\nIf you are building a pilot, define the subprocessor list up front: which tools handle data, what each one does, and what customer approval you need before any transfer starts. Put that into the pilot scope before the build, not after the surprise. That is usually the point where the spreadsheet gets a little less optimistic."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-012",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-012",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-012-1",
+        "repairs": []
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-012",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-412",
+        "title": "Subprocessor lists are a workflow design constraint",
+        "body": "If you are deciding whether to automate a workflow that touches customer data, the subprocessor list is not a side note. It is part of the design. The practical question is simple: which third parties will see the data, at which step, and under what terms?\n\nFor a small business owner, I would start with one recurring workflow only: invoice handling, customer inquiries, or document storage. Pick the one where data already crosses the most hands. Then write down the current handlers in order: your team, the SaaS tools you already use, any vendor, and any consultant. Mark where each handoff happens and whether there is a data-processing agreement in place. That is the diagnostic step. It is not glamorous, but it stops the usual “we’ll sort the paperwork later” plan, which has a habit of becoming a plan with a missing middle.\n\nFrom there, decide whether automation would reduce the number of people or tools that can see the data. A useful target is not “faster at any cost”; it is fewer access points, clearer logging, and human approval where the risk is real. For example, a controlled system can extract data, flag exceptions for review, and keep an audit trail. It should not make money movements or other high-risk decisions on its own.\n\nIf you are building a pilot, define the subprocessor list up front: which tools handle data, what each one does, and what customer approval you need before any transfer starts. Put that into the pilot scope before the build, not after the surprise. That is usually the point where the spreadsheet gets a little less optimistic."
+      },
+      "gate_key": "SE-FINAL-N012_gate1__a001"
+    }
+  ],
+  "measurement_status": "complete",
+  "planner": {
+    "item_id": "E-PLAN-512",
+    "selected_lessons": [],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Identify the subprocessor constraint in the concrete workflow: when your team or an automation tool touches customer data, you need to know which third parties see that data and on what terms. Frame this as a compliance and control question, not a technical obstacle.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Map one recurring workflow where subprocessor disclosure matters most: for example, invoice processing, customer-inquiry handling, or document storage. Ask: which step today involves a cloud tool or manual handoff, and who has access to the data at that point?",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "List the current data handlers in that workflow (your own team, existing SaaS tools, vendors, consultants). Note which ones have data-processing agreements and which do not. This audit is the diagnostic step.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Evaluate whether automation can reduce the number of human or third-party access points. For example, if invoices today go to a bookkeeper and a payment approver, can a controlled system extract data, flag anomalies for approval only, and log all access? Frame this as a control and transparency win, not cost savings.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C03"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Define the subprocessor list for any proposed system: which tools (e.g., Zapier, Make, n8n, LLM) will handle data, what they do, and what approvals you need from customers. Build this constraint into the pilot scope and fixed-price proposal, not as a late discovery.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Next step: book a free 30-minute diagnostic to map your workflow, confirm which subprocessor decisions matter most, and agree on pilot scope and subprocessor transparency before any build starts.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "S01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No customer names, deployment results, or savings claims; no CTA beyond soft closing diagnostic offer."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Subprocessor agreements are approval gates; human sign-off precedes any data transfer or integration."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Frozen persona preserved: plain-speaking technical expert, one bounded workflow decision, owner authority intact."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "All examples (invoice, inquiry, bookkeeper) are illustrative scenarios; no invented outcomes or multi-person team."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-612",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits, and—if it does—defines pilot scope, fixed price, and measures."
+          },
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question, control, or next step"
+          }
+        ],
+        "rationale": "This is an instruction to the reader to frame subprocessor exposure as a compliance/control question. It asserts no current Bareni capability, customer or outcome, and it fits the approved diagnostic framing.",
+        "use_guidance": "Keep as an explicitly framed reader-side framing step. Do not imply Bareni provides legal or compliance advice or guarantees; approved evidence states Bareni declines requests requiring unsupported compliance or security guarantees and gives no legal advice."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits"
+          },
+          {
+            "source_id": "C01",
+            "quote": "have a frequent, repeatable workflow with a measurable outcome"
+          }
+        ],
+        "rationale": "A diagnostic question and mapping instruction with illustrative workflow types; no current fact about implementation, customers or results is asserted.",
+        "use_guidance": "Keep as a diagnostic question with the examples clearly hypothetical. Note that scan-heavy, OCR-dependent document workflows are currently out of scope, so document examples should not imply Bareni handles scanned input."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits"
+          },
+          {
+            "source_id": "S01",
+            "quote": "Practicality: explain one observable workflow decision, threshold, diagnostic question, control, or next step."
+          }
+        ],
+        "rationale": "An instruction for the reader to inventory their own data handlers; it does not claim Bareni performs contract or DPA review, and it does not assert any current capability or result.",
+        "use_guidance": "Keep as a reader-performed manual audit step. Do not describe it as a Bareni compliance or legal service, and avoid any statement that Bareni assesses the legal adequacy of data-processing agreements."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C03",
+            "quote": "Arithmetic checks, duplicate-invoice blocking, amount-based human-only approval, refusal of agent approval/payment attempts, and persistent audit records work."
+          },
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          }
+        ],
+        "rationale": "An evaluative question plus a hypothetical example; the control features named (extraction, anomaly flagging for approval, audit logging) correspond to the self-built AP demo and to the mandatory human-approval boundary, and no deployment or saving is asserted.",
+        "use_guidance": "Keep hypothetical and phrase the invoice example against the self-built synthetic-data demo, not a customer system. State that human approval remains mandatory for payment, that the blocked-payment demonstration is manual and simulated, and that PDF/scan ingestion, OCR and three-way matching are not built."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "general document, email, CRM, and back-office workflows using AI plus Zapier, Make, n8n, and small amounts of custom code"
+          },
+          {
+            "source_id": "C02",
+            "quote": "free one-page pilot proposal; paid working MVP in days; fixed-price pilot in weeks"
+          },
+          {
+            "source_id": "C02",
+            "quote": "Database, automation-tool, and API accounts are in the customer's name from the start."
+          }
+        ],
+        "rationale": "The core is supported: those tools are part of the stated stack and pilots do carry a defined scope and fixed price. However, the claim presents the subprocessor list as an established part of the proposal without stating that this is a proposed practice rather than an existing, evidenced deliverable, and without the account-ownership and no-lock-in framing.",
+        "use_guidance": "Add the qualification that documenting the tool/subprocessor list is a proposed way of working within the existing free one-page pilot proposal, not an evidenced existing artefact; note that database, automation-tool and API accounts sit in the customer's name from the start, described as policy and no-lock-in positioning rather than a legal warranty, and that timings and scopes are intended, not guaranteed."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "FORBIDDEN",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Standard primary CTA: \"Book a free 30-minute diagnostic\". Use it only for purchase-intent content, once, at the end."
+          }
+        ],
+        "rationale": "The approved task explicitly forbids a CTA for this post, so recommending the reader book the diagnostic is a prohibited action here even though the diagnostic itself exists as a service.",
+        "use_guidance": "Exclude the booking CTA. If a closing is needed, use a single soft informational sentence about naming the data handlers in one workflow before any build decision; this alternative does not approve the CTA."
+      }
+    ]
+  },
+  "selected_lessons": [],
+  "register_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "planner_key": "SE-FINAL-N012_planner__a001",
+  "researcher_key": "SE-FINAL-N012_researcher__a001",
+  "writer_key": "SE-FINAL-N012_writer__a001",
+  "final_key": "SE-FINAL-N012_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-N012_gate1__a001",
+  "production_completed_at": "2026-09-08T12:16:07.376636+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts",
+  "initial_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-012",
+    "scores": {
+      "persona_fit": 4,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Directly addresses the small business owner-operator with a disciplined, calm tone and respects the no-CTA rule. Minor deviation using first-person singular ('I') instead of standard practice voice ('we').",
+      "clarity": "The argument is clear, logically ordered, and immediately accessible on a first read, explaining subprocessor constraints in plain operational terms.",
+      "actionability": "Provides a practical, step-by-step diagnostic exercise to map handlers, verify DPAs, and scope tool access and human approval boundaries before piloting.",
+      "factual_grounding": "Fully grounded in approved principles; reinforces human control over money movement and avoids inventing customer results or unsupported capabilities."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 19,
+    "pass": true,
+    "low_quality": false
+  },
+  "final_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-012",
+    "scores": {
+      "persona_fit": 4,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Directly addresses the small business owner-operator with a disciplined, calm tone and respects the no-CTA rule. Minor deviation using first-person singular ('I') instead of standard practice voice ('we').",
+      "clarity": "The argument is clear, logically ordered, and immediately accessible on a first read, explaining subprocessor constraints in plain operational terms.",
+      "actionability": "Provides a practical, step-by-step diagnostic exercise to map handlers, verify DPAs, and scope tool access and human approval boundaries before piloting.",
+      "factual_grounding": "Fully grounded in approved principles; reinforces human control over money movement and avoids inventing customer results or unsupported capabilities."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 19,
+    "pass": true,
+    "low_quality": false
+  },
+  "evaluation_reused": true,
+  "evaluation_keys": [
+    "SE-FINAL-N012_eval_initial__a001",
+    "SE-FINAL-N012_eval_initial__a001"
+  ],
+  "completed_at": "2026-09-08T12:16:13.077568+00:00"
+}

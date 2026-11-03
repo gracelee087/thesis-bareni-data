@@ -1,0 +1,192 @@
+{
+  "status": "success",
+  "usage": {
+    "input_tokens": 4476,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 990,
+    "reasoning_tokens": null
+  },
+  "cost_usd": 0.009426,
+  "output": {
+    "item_id": "E-PLAN-529",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task explicitly rules out CTA. L01 confirms that diagnostic booking invitations and meeting prompts are CTAs; end with a practical next-step note for the owner instead."
+      },
+      {
+        "lesson_id": "L02",
+        "application": "C02 describes customer-owned databases and no-lock-in as policy positioning. Preserve this qualifier when discussing control and data ownership in the workflow context."
+      },
+      {
+        "lesson_id": "L03",
+        "application": "The abstract topic (hallucinated answers) requires connection to a bounded workflow decision. Rather than general AI explanation, anchor the post to a concrete diagnostic question and decision threshold the owner can assess immediately."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Open with the owner's concrete pain: one-person business receiving incorrect AI answers when using ChatGPT for a repeated workflow (e.g., customer Q&A, data lookup, or document drafting). Frame hallucination as a control problem, not an AI limitation.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C01",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Explain the core decision: whether the workflow can be bounded—does it use stable, documented company material (documents, past Q&A, rules, or processes)? If yes, a grounded AI system (RAG) retrieves from that material before answering, removing hallucination risk. If no, AI alone is unsuitable.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C02",
+          "C03",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "State the practical diagnostic question the owner should ask: \"Do I have a pile of answers, documents, or procedures I already trust, and does this workflow ask the AI to answer only from that pile?\" This determines fit without technical jargon.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C01",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "If the owner answers yes, describe the bounded next step: a short paid pilot (fixed price, days to weeks) that builds a working system using the owner's own data and tools, with the finished system and data owned by the business.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L02"
+        ],
+        "evidence_ids": [
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "If the owner answers no or is unsure, note that manual work or hiring remains the honest choice for now. Optionally mention the AI Strategy & Roadmap as a separate diagnostic tool, but only if the owner indicates interest in exploring options further.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Close with a neutral, actionable note: the owner's next step is to audit one real workflow and answer the diagnostic question. Do not invite a meeting or imply that booking a call is the expected next action. Use plain language and avoid hype.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C05"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "Do not invent customer results, deployments, or savings. Describe the bounded pilot as offered practice, not a validated outcome. Do not include a sales CTA."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Affirm that human approval remains with the owner. Do not propose autonomous decision-making or money movement."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Maintain the frozen persona: founder-to-founder, plain-speaking technical expert, trustworthy tone. Preserve the evidence status of Bareni as a consulting practice being built, not a launched company with customers."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use concrete workflow language (grounded answers, data ownership, diagnostic question) rather than general AI enthusiasm. Keep the pilot offer distinct from existing capabilities by describing it as a next step, not a proven product."
+      }
+    ]
+  },
+  "raw_text": "{\"item_id\": \"E-PLAN-529\", \"selected_lessons\": [{\"lesson_id\": \"L01\", \"application\": \"The task explicitly rules out CTA. L01 confirms that diagnostic booking invitations and meeting prompts are CTAs; end with a practical next-step note for the owner instead.\"}, {\"lesson_id\": \"L02\", \"application\": \"C02 describes customer-owned databases and no-lock-in as policy positioning. Preserve this qualifier when discussing control and data ownership in the workflow context.\"}, {\"lesson_id\": \"L03\", \"application\": \"The abstract topic (hallucinated answers) requires connection to a bounded workflow decision. Rather than general AI explanation, anchor the post to a concrete diagnostic question and decision threshold the owner can assess immediately.\"}], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Open with the owner's concrete pain: one-person business receiving incorrect AI answers when using ChatGPT for a repeated workflow (e.g., customer Q&A, data lookup, or document drafting). Frame hallucination as a control problem, not an AI limitation.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"C01\", \"C05\"]}, {\"step_id\": \"P02\", \"instruction\": \"Explain the core decision: whether the workflow can be bounded—does it use stable, documented company material (documents, past Q&A, rules, or processes)? If yes, a grounded AI system (RAG) retrieves from that material before answering, removing hallucination risk. If no, AI alone is unsuitable.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"C02\", \"C03\", \"C05\"]}, {\"step_id\": \"P03\", \"instruction\": \"State the practical diagnostic question the owner should ask: \\\"Do I have a pile of answers, documents, or procedures I already trust, and does this workflow ask the AI to answer only from that pile?\\\" This determines fit without technical jargon.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"C01\", \"C05\"]}, {\"step_id\": \"P04\", \"instruction\": \"If the owner answers yes, describe the bounded next step: a short paid pilot (fixed price, days to weeks) that builds a working system using the owner's own data and tools, with the finished system and data owned by the business.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L02\"], \"evidence_ids\": [\"C02\"]}, {\"step_id\": \"P05\", \"instruction\": \"If the owner answers no or is unsure, note that manual work or hiring remains the honest choice for now. Optionally mention the AI Strategy & Roadmap as a separate diagnostic tool, but only if the owner indicates interest in exploring options further.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"C02\", \"C05\"]}, {\"step_id\": \"P06\", \"instruction\": \"Close with a neutral, actionable note: the owner's next step is to audit one real workflow and answer the diagnostic question. Do not invite a meeting or imply that booking a call is the expected next action. Use plain language and avoid hype.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C05\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"Do not invent customer results, deployments, or savings. Describe the bounded pilot as offered practice, not a validated outcome. Do not include a sales CTA.\"}, {\"constraint_id\": \"K02\", \"handling\": \"Affirm that human approval remains with the owner. Do not propose autonomous decision-making or money movement.\"}, {\"constraint_id\": \"K03\", \"handling\": \"Maintain the frozen persona: founder-to-founder, plain-speaking technical expert, trustworthy tone. Preserve the evidence status of Bareni as a consulting practice being built, not a launched company with customers.\"}, {\"constraint_id\": \"K04\", \"handling\": \"Use concrete workflow language (grounded answers, data ownership, diagnostic question) rather than general AI enthusiasm. Keep the pilot offer distinct from existing capabilities by describing it as a next step, not a proven product.\"}]}",
+  "provider_response": {
+    "id": "msg_011Cer3TcRGbNCNkjSt4D5pD",
+    "container": null,
+    "content": [
+      {
+        "citations": null,
+        "text": "{\"item_id\": \"E-PLAN-529\", \"selected_lessons\": [{\"lesson_id\": \"L01\", \"application\": \"The task explicitly rules out CTA. L01 confirms that diagnostic booking invitations and meeting prompts are CTAs; end with a practical next-step note for the owner instead.\"}, {\"lesson_id\": \"L02\", \"application\": \"C02 describes customer-owned databases and no-lock-in as policy positioning. Preserve this qualifier when discussing control and data ownership in the workflow context.\"}, {\"lesson_id\": \"L03\", \"application\": \"The abstract topic (hallucinated answers) requires connection to a bounded workflow decision. Rather than general AI explanation, anchor the post to a concrete diagnostic question and decision threshold the owner can assess immediately.\"}], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Open with the owner's concrete pain: one-person business receiving incorrect AI answers when using ChatGPT for a repeated workflow (e.g., customer Q&A, data lookup, or document drafting). Frame hallucination as a control problem, not an AI limitation.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"C01\", \"C05\"]}, {\"step_id\": \"P02\", \"instruction\": \"Explain the core decision: whether the workflow can be bounded—does it use stable, documented company material (documents, past Q&A, rules, or processes)? If yes, a grounded AI system (RAG) retrieves from that material before answering, removing hallucination risk. If no, AI alone is unsuitable.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"C02\", \"C03\", \"C05\"]}, {\"step_id\": \"P03\", \"instruction\": \"State the practical diagnostic question the owner should ask: \\\"Do I have a pile of answers, documents, or procedures I already trust, and does this workflow ask the AI to answer only from that pile?\\\" This determines fit without technical jargon.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"C01\", \"C05\"]}, {\"step_id\": \"P04\", \"instruction\": \"If the owner answers yes, describe the bounded next step: a short paid pilot (fixed price, days to weeks) that builds a working system using the owner's own data and tools, with the finished system and data owned by the business.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L02\"], \"evidence_ids\": [\"C02\"]}, {\"step_id\": \"P05\", \"instruction\": \"If the owner answers no or is unsure, note that manual work or hiring remains the honest choice for now. Optionally mention the AI Strategy & Roadmap as a separate diagnostic tool, but only if the owner indicates interest in exploring options further.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"C02\", \"C05\"]}, {\"step_id\": \"P06\", \"instruction\": \"Close with a neutral, actionable note: the owner's next step is to audit one real workflow and answer the diagnostic question. Do not invite a meeting or imply that booking a call is the expected next action. Use plain language and avoid hype.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C05\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"Do not invent customer results, deployments, or savings. Describe the bounded pilot as offered practice, not a validated outcome. Do not include a sales CTA.\"}, {\"constraint_id\": \"K02\", \"handling\": \"Affirm that human approval remains with the owner. Do not propose autonomous decision-making or money movement.\"}, {\"constraint_id\": \"K03\", \"handling\": \"Maintain the frozen persona: founder-to-founder, plain-speaking technical expert, trustworthy tone. Preserve the evidence status of Bareni as a consulting practice being built, not a launched company with customers.\"}, {\"constraint_id\": \"K04\", \"handling\": \"Use concrete workflow language (grounded answers, data ownership, diagnostic question) rather than general AI enthusiasm. Keep the pilot offer distinct from existing capabilities by describing it as a next step, not a proven product.\"}]}",
+        "type": "text"
+      }
+    ],
+    "model": "claude-haiku-4-5-20251001",
+    "role": "assistant",
+    "stop_details": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "not_available",
+      "input_tokens": 4476,
+      "output_tokens": 990,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": "standard"
+    }
+  },
+  "stop_reason": "end_turn",
+  "cost_details": {
+    "input": 0.004476,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.00495,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.009426
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": null,
+  "key": "SE-FINAL-N122_planner__a001",
+  "role": "planner",
+  "created_at": "2026-09-08T13:22:18.932227+00:00",
+  "ended_at": "2026-09-08T13:22:44.214844+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-N122",
+    "batch_id": 4,
+    "condition": "natural",
+    "cohort": "natural"
+  },
+  "task_id": "SE-FINAL-N122",
+  "batch_id": 4,
+  "cohort": "natural",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 25279,
+  "budget_charge_usd": 0.009426,
+  "unknown_cost_reservation_usd": 0
+}

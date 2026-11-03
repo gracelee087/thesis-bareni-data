@@ -1,0 +1,168 @@
+{
+  "status": "success",
+  "usage": {
+    "input_tokens": 4283,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 814,
+    "reasoning_tokens": null
+  },
+  "cost_usd": 0.008353,
+  "output": {
+    "item_id": "E-PLAN-517",
+    "selected_lessons": [],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Open with the practical problem: spot checks (manual sample verification) scale poorly because they catch exceptions but do not eliminate the underlying repeatable work. Frame this as a workflow decision point, not a diagnosis.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Explain when spot checks are the right choice: when the volume is low, the exception rate is high, or the cost of a false pass is very high. Give a concrete threshold question the owner can ask: 'How many items per week am I manually checking, and what fraction fail?'",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C04",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Identify the automation boundary: if the owner is spot-checking more than ~10–15 items per week and the failure rate is <5%, automation (rules, AI extraction, or workflow gates) can replace the check. If volume is lower or failures are common, keep the check and optimise the process instead.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "State honestly when AI does not fit: if the decision requires domain expertise that changes per case, or if the cost of error is genuinely catastrophic, a spot check plus human judgment stays the right answer. Do not force automation.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C04",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Describe the one next step: run the threshold question for one repeatable workflow (invoice review, customer-data entry, or support-question triage). Gather the volume and failure rate for one week. That number decides whether to automate or optimise the manual check.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Close with the diagnostic offer: if the owner finds a repeatable workflow that fits the automation profile, a 30-minute conversation can map the exact decision and next steps. Preserve no CTA per task rule; use a soft closing statement only.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No customer names, deployments, results, invented numbers, or sales CTA. Use only the self-built demo existence and Bareni's consulting model per C02 and C03."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "State that human approval is mandatory for high-risk decisions (money movement, safety). Do not recommend autonomous approval."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Preserve the frozen persona (founder-to-founder, plain language, trust over hype), approved evidence status (C01–C05, S01), and human-approval boundaries per C04."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use plain English. Keep the workflow example, threshold question, and diagnostic offer distinct from any existing Bareni capability or observed result. Avoid claims beyond the approved scope in C02–C04."
+      }
+    ]
+  },
+  "raw_text": "{\"item_id\": \"E-PLAN-517\", \"selected_lessons\": [], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Open with the practical problem: spot checks (manual sample verification) scale poorly because they catch exceptions but do not eliminate the underlying repeatable work. Frame this as a workflow decision point, not a diagnosis.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C01\", \"C05\"]}, {\"step_id\": \"P02\", \"instruction\": \"Explain when spot checks are the right choice: when the volume is low, the exception rate is high, or the cost of a false pass is very high. Give a concrete threshold question the owner can ask: 'How many items per week am I manually checking, and what fraction fail?'\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C04\", \"C05\"]}, {\"step_id\": \"P03\", \"instruction\": \"Identify the automation boundary: if the owner is spot-checking more than ~10–15 items per week and the failure rate is <5%, automation (rules, AI extraction, or workflow gates) can replace the check. If volume is lower or failures are common, keep the check and optimise the process instead.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"C05\"]}, {\"step_id\": \"P04\", \"instruction\": \"State honestly when AI does not fit: if the decision requires domain expertise that changes per case, or if the cost of error is genuinely catastrophic, a spot check plus human judgment stays the right answer. Do not force automation.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C04\", \"C05\"]}, {\"step_id\": \"P05\", \"instruction\": \"Describe the one next step: run the threshold question for one repeatable workflow (invoice review, customer-data entry, or support-question triage). Gather the volume and failure rate for one week. That number decides whether to automate or optimise the manual check.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"C05\"]}, {\"step_id\": \"P06\", \"instruction\": \"Close with the diagnostic offer: if the owner finds a repeatable workflow that fits the automation profile, a 30-minute conversation can map the exact decision and next steps. Preserve no CTA per task rule; use a soft closing statement only.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"C05\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"No customer names, deployments, results, invented numbers, or sales CTA. Use only the self-built demo existence and Bareni's consulting model per C02 and C03.\"}, {\"constraint_id\": \"K02\", \"handling\": \"State that human approval is mandatory for high-risk decisions (money movement, safety). Do not recommend autonomous approval.\"}, {\"constraint_id\": \"K03\", \"handling\": \"Preserve the frozen persona (founder-to-founder, plain language, trust over hype), approved evidence status (C01–C05, S01), and human-approval boundaries per C04.\"}, {\"constraint_id\": \"K04\", \"handling\": \"Use plain English. Keep the workflow example, threshold question, and diagnostic offer distinct from any existing Bareni capability or observed result. Avoid claims beyond the approved scope in C02–C04.\"}]}",
+  "provider_response": {
+    "id": "msg_011CeqxYprSFjs2GAzr4xZPm",
+    "container": null,
+    "content": [
+      {
+        "citations": null,
+        "text": "{\"item_id\": \"E-PLAN-517\", \"selected_lessons\": [], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Open with the practical problem: spot checks (manual sample verification) scale poorly because they catch exceptions but do not eliminate the underlying repeatable work. Frame this as a workflow decision point, not a diagnosis.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C01\", \"C05\"]}, {\"step_id\": \"P02\", \"instruction\": \"Explain when spot checks are the right choice: when the volume is low, the exception rate is high, or the cost of a false pass is very high. Give a concrete threshold question the owner can ask: 'How many items per week am I manually checking, and what fraction fail?'\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C04\", \"C05\"]}, {\"step_id\": \"P03\", \"instruction\": \"Identify the automation boundary: if the owner is spot-checking more than ~10–15 items per week and the failure rate is <5%, automation (rules, AI extraction, or workflow gates) can replace the check. If volume is lower or failures are common, keep the check and optimise the process instead.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"C05\"]}, {\"step_id\": \"P04\", \"instruction\": \"State honestly when AI does not fit: if the decision requires domain expertise that changes per case, or if the cost of error is genuinely catastrophic, a spot check plus human judgment stays the right answer. Do not force automation.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C04\", \"C05\"]}, {\"step_id\": \"P05\", \"instruction\": \"Describe the one next step: run the threshold question for one repeatable workflow (invoice review, customer-data entry, or support-question triage). Gather the volume and failure rate for one week. That number decides whether to automate or optimise the manual check.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"C05\"]}, {\"step_id\": \"P06\", \"instruction\": \"Close with the diagnostic offer: if the owner finds a repeatable workflow that fits the automation profile, a 30-minute conversation can map the exact decision and next steps. Preserve no CTA per task rule; use a soft closing statement only.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"C05\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"No customer names, deployments, results, invented numbers, or sales CTA. Use only the self-built demo existence and Bareni's consulting model per C02 and C03.\"}, {\"constraint_id\": \"K02\", \"handling\": \"State that human approval is mandatory for high-risk decisions (money movement, safety). Do not recommend autonomous approval.\"}, {\"constraint_id\": \"K03\", \"handling\": \"Preserve the frozen persona (founder-to-founder, plain language, trust over hype), approved evidence status (C01–C05, S01), and human-approval boundaries per C04.\"}, {\"constraint_id\": \"K04\", \"handling\": \"Use plain English. Keep the workflow example, threshold question, and diagnostic offer distinct from any existing Bareni capability or observed result. Avoid claims beyond the approved scope in C02–C04.\"}]}",
+        "type": "text"
+      }
+    ],
+    "model": "claude-haiku-4-5-20251001",
+    "role": "assistant",
+    "stop_details": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "not_available",
+      "input_tokens": 4283,
+      "output_tokens": 814,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": "standard"
+    }
+  },
+  "stop_reason": "end_turn",
+  "cost_details": {
+    "input": 0.004283,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.00407,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.008353
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": null,
+  "key": "SE-FINAL-N017_planner__a001",
+  "role": "planner",
+  "created_at": "2026-09-08T12:17:55.494875+00:00",
+  "ended_at": "2026-09-08T12:18:17.136261+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-N017",
+    "batch_id": 1,
+    "condition": "natural",
+    "cohort": "natural"
+  },
+  "task_id": "SE-FINAL-N017",
+  "batch_id": 1,
+  "cohort": "natural",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 21637,
+  "budget_charge_usd": 0.008353,
+  "unknown_cost_reservation_usd": 0
+}

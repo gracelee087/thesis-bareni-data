@@ -1,0 +1,294 @@
+{
+  "task_id": "SE-FINAL-N056",
+  "batch_id": 2,
+  "condition": "natural",
+  "source_task_id": null,
+  "topic": "rethinking data residency",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-325",
+    "title": "Data residency is really a workflow question",
+    "body": "If you are rethinking data residency, start with one narrow workflow decision: where does one important data type live today, and why? For a small business, that might be customer records, invoices, or support tickets sitting in a SaaS app, email inboxes, local files, or spreadsheets. The point is not to turn this into a grand policy debate. It is to see whether the data is centralized enough to support repeatable work.\n\nThat matters when you are weighing automation against another hire. AI plus workflow tools like Zapier, Make, or n8n can only connect a process that has somewhere sensible to read from and write to. If the information is scattered across email threads and disconnected spreadsheets, the first step is usually consolidation, not automation. That is not a failure; it is just the layout you are working with.\n\nFor a six-person shop, this often shows up as a trade-off made earlier for convenience or cost. The inbox became the system because it was already there. The spreadsheet became the process because it was easy to start. Now the question is whether that setup still fits the work.\n\nA practical next step: pick one recurring workflow and map where the data actually lives at each step. Then ask yourself: if I wanted to automate this, could a tool like Zapier or Make read and write there, or would I need to move it first?"
+  },
+  "final": {
+    "item_id": "E-OPT-425",
+    "title": "Data residency is really a workflow question",
+    "body": "If you are rethinking data residency, start with one narrow workflow decision: where does one important data type live today, and why? For a small business, that might be customer records, invoices, or support tickets sitting in a SaaS app, email inboxes, local files, or spreadsheets. The point is not to turn this into a grand policy debate. It is to see whether the data is centralized enough to support repeatable work.\n\nThat matters when you are weighing automation against another hire. AI plus workflow tools like Zapier, Make, or n8n can only connect a process that has somewhere sensible to read from and write to. If the information is scattered across email threads and disconnected spreadsheets, the first step is usually consolidation, not automation. That is not a failure; it is just the layout you are working with.\n\nFor a six-person shop, this often shows up as a trade-off made earlier for convenience or cost. The inbox became the system because it was already there. The spreadsheet became the process because it was easy to start. Now the question is whether that setup still fits the work.\n\nA practical next step: pick one recurring workflow and map where the data actually lives at each step. Then ask yourself: if I wanted to automate this, could a tool like Zapier or Make read and write there, or would I need to move it first?"
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-056",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-056",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-056-1",
+        "repairs": []
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-056",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-425",
+        "title": "Data residency is really a workflow question",
+        "body": "If you are rethinking data residency, start with one narrow workflow decision: where does one important data type live today, and why? For a small business, that might be customer records, invoices, or support tickets sitting in a SaaS app, email inboxes, local files, or spreadsheets. The point is not to turn this into a grand policy debate. It is to see whether the data is centralized enough to support repeatable work.\n\nThat matters when you are weighing automation against another hire. AI plus workflow tools like Zapier, Make, or n8n can only connect a process that has somewhere sensible to read from and write to. If the information is scattered across email threads and disconnected spreadsheets, the first step is usually consolidation, not automation. That is not a failure; it is just the layout you are working with.\n\nFor a six-person shop, this often shows up as a trade-off made earlier for convenience or cost. The inbox became the system because it was already there. The spreadsheet became the process because it was easy to start. Now the question is whether that setup still fits the work.\n\nA practical next step: pick one recurring workflow and map where the data actually lives at each step. Then ask yourself: if I wanted to automate this, could a tool like Zapier or Make read and write there, or would I need to move it first?"
+      },
+      "gate_key": "SE-FINAL-N056_gate1__a001"
+    }
+  ],
+  "measurement_status": "pending",
+  "planner": {
+    "item_id": "E-PLAN-525",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task rule explicitly forbids CTA. L01 confirms that closing with a practical observation rather than a meeting prompt aligns with informational content boundaries. The post will end with a diagnostic question the owner can use immediately, not a booking link."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Translate the abstract topic 'rethinking data residency' into one concrete workflow decision: where customer or operational data currently lives (cloud SaaS, local files, email, spreadsheets), why the owner chose that location, and what friction or risk that choice creates. Name one specific data type (e.g., customer records, invoices, support tickets).",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Explain why data location matters to a small-business owner comparing automation investment with hiring: centralized, accessible data unlocks repeatable workflow automation; dispersed or siloed data blocks it. Use the owner's persona scenario (e.g., 8–10 hours weekly on manual data work) to ground the decision, but do not invent results or claim savings.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Describe one common data-residency pattern small businesses encounter: data trapped in email or spreadsheets because tools were chosen for upfront cost or familiarity, not connectivity. Acknowledge this as a trade-off decision, not a mistake.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "State plainly how Bareni's automation approach depends on data accessibility: if the workflow touches SaaS tools, APIs, or centralized documents, AI plus workflow automation (Zapier, Make, n8n) can connect and repeat it. If data is locked in isolated spreadsheets or manual email steps, automation requires consolidation first.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Close with one diagnostic question the owner can ask themselves immediately: 'If I wanted to automate my [named workflow], could a tool like Zapier or Make read and write to where my data currently lives, or would I need to move it first?' This signals the next decision without requiring external input.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Maintain the frozen persona throughout: address the owner directly as a founder, use no hype or numbers without source, assume no prior AI deployment, and preserve Bareni's identity as a one-person consulting practice. Do not mention customers, results, or capabilities beyond the three self-built demos and the standard diagnostic-to-pilot sequence.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C02",
+          "C05"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No invented customer, deployment, outcome, saving, team member, or booking CTA. Describe Bareni as a consulting practice being built by the thesis author, reference only the self-built demos and workflow-automation services, and close with a diagnostic question rather than a meeting prompt."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Do not recommend high-risk automated decisions; emphasize that data consolidation is a one-time decision the owner controls, and that automation respects existing approval boundaries."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Preserve the frozen persona (plain-speaking technical expert, founder-to-founder), the approved evidence status (C01–C05, S01), and the evidence boundary that rules out customers, deployments, outcomes, and capabilities beyond the demos."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use plain English; describe the data-residency trade-off as a real small-business decision, the workflow-automation sequence as Bareni's standard approach, and the diagnostic question as the owner's immediate next step. Keep examples distinct from existing results."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-625",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Turn the abstract topic into a bounded Bareni workflow decision. Explain one practical next step."
+          },
+          {
+            "source_id": "C01",
+            "quote": "The best-fit reader has tried ChatGPT but has not connected AI to a business workflow. Especially suitable businesses already work in English, use digital documents and SaaS tools"
+          }
+        ],
+        "rationale": "This is a drafting instruction to reframe the abstract topic as a concrete workflow decision, not an assertion about any existing Bareni fact or customer situation.",
+        "use_guidance": "Keep explicitly proposed as a writing instruction. Any named data type (customer records, invoices, support tickets) must be presented as an illustrative example, not as a customer's actual data."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "The representative pains are 8–10 hours a week of repeated customer questions, neglected sales leads, and manual invoice/data work. The 8–10 hours is a persona scenario, not a market statistic or observed customer result."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Numbers require a source and status. Keep observed results, estimates, targets, synthetic data, and examples distinct."
+          },
+          {
+            "source_id": "S01",
+            "quote": "the owner compares a bounded automation investment with continuing manual work or hiring"
+          }
+        ],
+        "rationale": "The decision context and the 8–10 hour figure are supported, but the claim's use of 'unlocks' plus a number needs explicit labelling; the claim itself does not state that the figure is a persona scenario in the post text.",
+        "use_guidance": "Add the qualification in the post that 8–10 hours a week is a persona scenario, not a market statistic or observed customer result, and phrase the accessibility point as a condition for automation rather than a guaranteed saving or outcome."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Practicality: explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Keep observed results, estimates, targets, synthetic data, and examples distinct."
+          }
+        ],
+        "rationale": "Describing a generic tooling trade-off is an illustrative narrative instruction; no approved source records this as an observed pattern across small businesses, so it must not be stated as a measured fact.",
+        "use_guidance": "Keep explicitly proposed and write it as a hypothetical/illustrative pattern ('this often looks like…'), not as a researched or observed market finding; do not attach frequencies or counts."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "general document, email, CRM, and back-office\n  workflows using AI plus Zapier, Make, n8n, and small amounts of custom code"
+          },
+          {
+            "source_id": "C04",
+            "quote": "Bareni currently declines high-sensitivity medical, legal, and financial work;\n  bulk cold-email automation; scan-heavy OCR-dependent workflows"
+          },
+          {
+            "source_id": "C03",
+            "quote": "PDF/scan ingestion and OCR are not implemented."
+          }
+        ],
+        "rationale": "The core — that Bareni builds workflow automation with AI plus Zapier, Make, and n8n and that accessible data is a precondition — is supported, but the claim as written omits current scope limits and could imply any accessible workflow is automatable.",
+        "use_guidance": "Add that this is stated as an approach and current scope discipline: Bareni currently declines high-sensitivity medical, legal and financial work, bulk cold email, and scan-heavy OCR-dependent workflows, and OCR/PDF-scan ingestion is not implemented. Do not promise a delivered result or timing guarantee."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Practicality: explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step."
+          },
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          }
+        ],
+        "rationale": "This is a permissible self-check question and closing next step, not a factual assertion about capability or outcome.",
+        "use_guidance": "Keep explicitly proposed. Ensure the closing stays a neutral self-directed question with no CTA — no invitation to book a diagnostic, reply, or continue the conversation — in line with the task's CTA rule."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C05",
+            "quote": "Do not use a founder name, face, or career history as authority. Do not imply a\n  multi-person team, legal registration, or current customer relationships."
+          },
+          {
+            "source_id": "C02",
+            "quote": "Bareni is a one-person AI development and consulting practice that automates\n  repetitive work for small businesses. Public voice uses \"we\"."
+          },
+          {
+            "source_id": "C03",
+            "quote": "Do not call it a customer case study or a finished product."
+          }
+        ],
+        "rationale": "This is a compliance instruction governing how the post is written rather than a current factual assertion, and its content matches the approved voice and identity rules.",
+        "use_guidance": "Keep explicitly proposed as a drafting constraint. Note that Bareni is a practice being built and not yet legally registered, that public voice uses 'we' while remaining one person, and that the three self-built demos/prototype must be described with their disclosed limits and never as customer work."
+      }
+    ]
+  },
+  "selected_lessons": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025"
+      ]
+    }
+  ],
+  "register_sha256": "48497afb8641ddc47d974cdfadba06a1f6b562d21c49ec03c9b03a5dc531744e",
+  "planner_key": "SE-FINAL-N056_planner__a001",
+  "researcher_key": "SE-FINAL-N056_researcher__a001",
+  "writer_key": "SE-FINAL-N056_writer__a001",
+  "final_key": "SE-FINAL-N056_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-N056_gate1__a001",
+  "production_completed_at": "2026-09-08T12:43:10.357683+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts"
+}

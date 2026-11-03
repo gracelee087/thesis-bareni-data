@@ -1,0 +1,154 @@
+{
+  "created_at": "2026-09-08T20:07:49.247320+00:00",
+  "role": "evaluator",
+  "metadata": {
+    "study_id": "STUDY-E-ABLATON",
+    "pair_id": "SEA-I077-R1",
+    "arm": "critic_off",
+    "cycle": "eval"
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49",
+  "status": "success",
+  "output": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-742c595ee7a09a1fcff8d870c5de2a02",
+    "scores": {
+      "persona_fit": 5,
+      "clarity": 5,
+      "actionability": 4,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Speaks directly to the owner-operator in a calm, practical, plain technical voice, preserves human approval boundaries, and adheres strictly to the no-CTA rule.",
+      "clarity": "The main point is immediately clear, logically structured, and uses accessible language to explain the operational tradeoffs of rollback planning.",
+      "actionability": "Provides a useful diagnostic decision rule and an actionable next step to map manual fallbacks, though keeping it fairly high-level.",
+      "factual_grounding": "Strictly within approved boundaries, containing no invented metrics, customer references, or unsupported technical claims."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 19,
+    "pass": true,
+    "low_quality": false
+  },
+  "cost_usd": 0.00785325,
+  "usage": {
+    "prompt_token_count": 5861,
+    "cached_content_token_count": 0,
+    "candidates_token_count": 310,
+    "thoughts_token_count": 612,
+    "total_token_count": 6783
+  },
+  "provider_response": {
+    "sdk_http_response": {
+      "headers": {
+        "x-gemini-service-tier": "standard",
+        "content-type": "application/json; charset=UTF-8",
+        "vary": "Origin, X-Origin, Referer",
+        "content-encoding": "gzip",
+        "date": "Tue, 08 Sep 2026 20:07:52 GMT",
+        "server": "scaffolding on HTTPServer2",
+        "x-xss-protection": "0",
+        "x-frame-options": "SAMEORIGIN",
+        "x-content-type-options": "nosniff",
+        "server-timing": "gfet4t7; dur=3726",
+        "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+        "transfer-encoding": "chunked"
+      },
+      "body": null
+    },
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "media_resolution": null,
+              "code_execution_result": null,
+              "executable_code": null,
+              "file_data": null,
+              "function_call": null,
+              "function_response": null,
+              "inline_data": null,
+              "text": "{\n  \"schema_version\": \"study-e-evaluator-rating-v1\",\n  \"item_id\": \"EVAL-742c595ee7a09a1fcff8d870c5de2a02\",\n  \"scores\": {\n    \"persona_fit\": 5,\n    \"clarity\": 5,\n    \"actionability\": 4,\n    \"factual_grounding\": 5\n  },\n  \"reasons\": {\n    \"persona_fit\": \"Speaks directly to the owner-operator in a calm, practical, plain technical voice, preserves human approval boundaries, and adheres strictly to the no-CTA rule.\",\n    \"clarity\": \"The main point is immediately clear, logically structured, and uses accessible language to explain the operational tradeoffs of rollback planning.\",\n    \"actionability\": \"Provides a useful diagnostic decision rule and an actionable next step to map manual fallbacks, though keeping it fairly high-level.\",\n    \"factual_grounding\": \"Strictly within approved boundaries, containing no invented metrics, customer references, or unsupported technical claims.\"\n  },\n  \"critical_violation\": false,\n  \"critical_violation_type\": null,\n  \"critical_evidence_quote\": null,\n  \"total_score\": 19,\n  \"pass\": true,\n  \"low_quality\": false\n}",
+              "thought": null,
+              "thought_signature": "EpEVCo4VARFNMg9le83JdcT1TW6oL392I0wmJS0I3-bi5MaMm2KERby7o2TfbbzEExi_jcUXJ0UXE0wKNZDd8anVXlus02qOnZlDbPiyNk3MNRiDIZuBYDt1FqUEFe874bryPYfR8GYPRwg3Foo8W76PKPfFW9Nxkh-3gTo8ZMAi2CS12Loe4jzLHMpMNdKtTSNEfPG7Iied2Cr7e4fmkOFJF1NGgCTzhyEtp2lKWcdFYZPI_kpktozKJn9H0DdIVIBnN78_VUFpXtrwVPKUn7_pFPhL4Qr3k_1XPp92yipNpRmR27y31MSkTHFYAC2jpTI1lmXSI0A7Zw1CMO-JxIfSVswm24PMXgKidzQHv5SwNbDlKyBtHN8IX-FlV5cB1dr95agWegjmVdhJuYhQAlNc-Lv7XQwW3ve7Vq_qXIRNaQguHlWAQQO0KpCx5YSwtT06th7cgTa-wRv3H0ysUI8xumM4pSrHd1h14I9K1mHNW1ff6GTm-F2X0Utvl88ZAARtMndtKCCtGiM4HeU10IWPzzOs6SYBwR3vaz2g7itzduFQIE0GorLJ4IjK4YaU6MemMwTI9BeycZfafEzDnOE3YWdrrD7gtOe8StqrX8dwf6iwwxYc_p3SlCWlNnxgzs6dIlywu6A4OMBCvEuE6E5iA3Z2mfQKiJZZHzJCZmZt0JYut6qe6vdx9y61lKJaDYB4Lpvaz1eb5W2Yy46bUAHzyfzL9mU8ApuQZV1D9KLtwH5DytJDpsplAaHrVjHXztMesnSRhFQmYrJGTyMFRt0quGnNn7sW8TjKB0LkywGFB1wmQlHcn4H9YfsYHxC5ogSlprBVJP4Hi0vDhz-DWTSe1XDA8VLX0K00l-et73KuJJwt0wjGcdkPK-Qv8zFFcsDNljcE50P7yQG31q-z9240GVi0ssCrjkX8NYEi-KJBPeHIVluyvl4NcYDGewLQspDDalDTlp1RrWUSuHtAbRPzJ32Q56fuLoW9cmk_U3O8mqZl_mf4vFqpPh7n_JJG5Fw4P5nGxdQ11k4Av29x6C_fATbM5UP-FwkOYvdlhWE8pS-oXl2vpJckQEmgW9ZrOgh4cMmDTKYJlY6FFQU7WEDeMJcgUsKT2SQicknxeoMAtDgQ_JCNIS7iTigULJPF0lRiSOin6CCbhIo9e9SQBZLFeZdiUDyqEPkof-B67LPIq75eUDw7HzGPSDrLIUl7VWXZUWl0xkbUKxlttoO_3Y7Zl0rgYxndadbtK9Je5U977jqCpLgqjQ1y67DTb2wBDVREqlnr1dteh7GA8ROy5fnzuYrM5kRmRA4UssYuq6PLZ8yJ-ySiUKG-EUzP4A8ggunAtC_p9QlZIdVwLdzVTG4-j7rqpGH9w4OxLTIE8BjZcoI1OMCtWKESbLSc0CrScDn3zlLoGWYaaqlpAKUppbBDpNKR4zoU807O7Ve4T-GX952BR0s-4rHeUOG5j8Mjvp6lrF6HItaMTGS3e42Id990UeRAEW4G4lVgL56wuUd7KwlbQXbJWU1HBa1T3uNT3a3FQrk8wEF2Qq7e-F-oIIYmqtHdnl0PvwZb5juzY9hbIE2sQju63l-4OxtGViKB-a1mKaEVof3BQKNkQgloeqppw3qNSdqQWaZygfcyRAe2H18p4U9v329YW9NPVZJI-vWj7Cj9Fu-Mr9mG0psa9HBXVACmAulHbhaz9XuitdZRzM5Xnb3OZp0eltnETdGV4eRB0kqCE8zOqpDtyp0EUp0ABRH2wXnk44UqBxs5jwXEA70DZjGQDC6jBYRlJnQREjN91D08Rx8W1T-pRWhuApBzlqlmC-a3MYpq1Qq23u_8x473wBBxn2pc5TkUCcBW8HyQ9irt2wDh1cuqra0JkEbw26StnqO2DdHy3rSVJZlQbu490uaTgbAAk-4XFsH_vGf8PnEYWm-WLA3eHui-Ujs9MvgtSSxy0X2D_LcJyPLX2-nuYHJWXXUV44AlG7yFr74VMaRWcOgBd6jvydiSeQ-HQ5mgBHGb12GJgMvNsrJH56HotHZM3VTqCJtjHMoq-2NyEnm31YGBqHcswSE3DD3cm1Cqbymkm9-GRR2KidMTT5zwqwEiFdpsqweTuvfLQagkyBKbdRABcAsoYs6HkL8ZBtL6CKa3Y1eBsT1RpqwY3lFQF3nNWTqLn85sfTZPpkSrnlZ6mfmVhSyr6WYb64_LzlghYQ_tsC1JbOmSLkcs-FbVA_fviszcaozSx0kjedbVuttg6ei4_z0uZme94wJuNsAPYOzlyct4gfbQSSEYM1hfRT1Ry3U3q2M6kQzlihzxfMyoQoctrcOTiBe6jVFbaJRoH06Z0YQ-Z9mvhAjvjb62n82fIjGFYCV3Tx3gKKgI448wh0lhSTrPh93mV7TDPv6QvTvvfX0CPlwVejLja92yQ0N_vIB6cnELkCP05ZqxIWslbMjl65ySB1Eh-qtRtw-g6oD_8PBYucAqUxxd2_ZGY_AXl717fGlzbNwHrzDmzGTF9xsbGWn1vHQ2Dv7Y2Yr8JJufA5glx0J3UrBzZfa95Mr91NDer7POwTVuwoGEnMkKPvoefxTnKZZ4Naaks5sraxPIetEikHsMSYEh43U1rSEM_xMBAAoo-SxNToo7RKBdOBsKI_Cp8fTvtfHplnr5yPwCh-bpMYkB5nF2a35Ga7_Snz29eqqwfZh-lgWkNmmFvMB2iFTLRkP7rzYxoODRG2GAHL4YZNjUh-hfBOvTAMqyv0cReHcbjlSegTeeKftU-pP6JSxL0-AkexT78NiYNYYPBR7DgBJr4tIWeb_Atv_4YQ9_5cBtXpcccMvjGAYl2MdSUGTdgbfvf4HhUL-DZ_xDpbMN1RmlBKrelW7xvQxEQROC0oJhGywStuyApBTQZur4NkYqv80tx9_eWMzZnvHkD2S9SfpNi1yoVMhEfxUAnukqrM-YotwLbiVl0KunH0wmjm5QcgD5w_HP5hf-FqChBcRPvovWYKBng79o6ZXvBjmtz0sbOnJMXQ9DRagGjSkVI4dI6Aw8WqwotJBLphJI3nzw6p3aHEmt6thZCIsQ8nIub8tERatFxHS_CVIgr9pTATcplZVhIvHQz6pVvVu6aNoUmcjlCw1oif8qZyI9MIFUnVbxsZIiefL-JQQnNw8bKltEw_lz6ItxhtrWTrenAPNOu9UwB0WYlDlCXm1NbrKWV9_amQoNkt-EVx4FwXW16xA-gDe8iHenjL23HZ-xmNk3gZ2eChwARL6VJP_Um4qgmqPPjjVDhIfYdNpCoYrv-jYINnfQF0pWEbKkqAT772vuKbJNZsl14McYsi31lrv-lqdwOzx4DYut4cZgE5KDc3rjvz-6f7zVq-V3aqCZpTabFYOD4fzLm95SeIDFY6ArM_jmKP5RF2I-w-tpsYPrugBQltVU72jvVQWtPi3YMfNqLIIgUFF_Uav7pvgUChtDw6TTVpjb-925I3UincmdYbEvlyOajSXdRQQw-12zsj3AcePctgABK3dXS1ZzymLaN0Tcm_X0aBaBAJJAZFi09ptqjrlCGpHBNOJ9TnCLNRp1a2-KegQQmEuRF2k-g93J6PbqrxOJqDMFG9dhwOTMZD-Gx9CbBFXhsVQ=",
+              "video_metadata": null,
+              "tool_call": null,
+              "tool_response": null,
+              "part_metadata": null,
+              "audio_transcription": null
+            }
+          ],
+          "role": "model"
+        },
+        "citation_metadata": null,
+        "finish_message": null,
+        "token_count": null,
+        "finish_reason": "STOP",
+        "grounding_metadata": null,
+        "avg_logprobs": null,
+        "index": 0,
+        "logprobs_result": null,
+        "safety_ratings": null,
+        "url_context_metadata": null
+      }
+    ],
+    "create_time": null,
+    "model_version": "gemini-3.8-flash",
+    "prompt_feedback": null,
+    "response_id": "FGugaqaHKqSU3boPrtHK2Q8",
+    "usage_metadata": {
+      "cache_tokens_details": null,
+      "cached_content_token_count": null,
+      "candidates_token_count": 310,
+      "candidates_tokens_details": null,
+      "prompt_token_count": 5861,
+      "prompt_tokens_details": [
+        {
+          "modality": "TEXT",
+          "token_count": 5861
+        }
+      ],
+      "thoughts_token_count": 612,
+      "tool_use_prompt_token_count": null,
+      "tool_use_prompt_tokens_details": null,
+      "total_token_count": 6783,
+      "traffic_type": null
+    },
+    "model_status": null,
+    "automatic_function_calling_history": [],
+    "parsed": {
+      "schema_version": "study-e-evaluator-rating-v1",
+      "item_id": "EVAL-742c595ee7a09a1fcff8d870c5de2a02",
+      "scores": {
+        "persona_fit": 5,
+        "clarity": 5,
+        "actionability": 4,
+        "factual_grounding": 5
+      },
+      "reasons": {
+        "persona_fit": "Speaks directly to the owner-operator in a calm, practical, plain technical voice, preserves human approval boundaries, and adheres strictly to the no-CTA rule.",
+        "clarity": "The main point is immediately clear, logically structured, and uses accessible language to explain the operational tradeoffs of rollback planning.",
+        "actionability": "Provides a useful diagnostic decision rule and an actionable next step to map manual fallbacks, though keeping it fairly high-level.",
+        "factual_grounding": "Strictly within approved boundaries, containing no invented metrics, customer references, or unsupported technical claims."
+      },
+      "critical_violation": false,
+      "critical_violation_type": null,
+      "critical_evidence_quote": null,
+      "total_score": 19,
+      "pass": true,
+      "low_quality": false
+    }
+  },
+  "latency_ms": 3765,
+  "finished_at": "2026-09-08T20:07:53.005432+00:00",
+  "cost_details": {
+    "input": 0.00439575,
+    "cache_read_input_tokens": 0.0,
+    "output": 0.0011625,
+    "reasoning_output_tokens": 0.002295,
+    "total": 0.00785325
+  },
+  "study_id": "STUDY-E-ABLATON",
+  "operational_amendment": "retry_extension_user_authorized.json"
+}

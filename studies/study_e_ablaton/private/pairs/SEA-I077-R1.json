@@ -1,0 +1,95 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I077-R1",
+    "item_id": "SEA-I077",
+    "repeat": 1,
+    "arm_order": [
+      "critic_on",
+      "critic_off"
+    ],
+    "content_id": "POST-7d32b4348cc008215a5df86d"
+  },
+  "arms": {
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-7d32b4348cc008215a5df86d-1",
+        "title": "When a rollback drill is worth the time",
+        "body": "If you run one recurring workflow in a small business, a rollback drill is not a philosophy exercise. It is a simple decision about whether you can undo a change before it creates manual cleanup.\n\nFor an owner-operator, the rule of thumb is straightforward: if the workflow touches money, customer data, or another repeatable multi-step process, write down the rollback steps before the next change goes live. If it is a low-stakes process that is easy to rebuild by hand, do not spend time on a drill just because it sounds disciplined.\n\nThat keeps the question bounded. You are not trying to prepare for every possible failure. You are checking whether one failure would be annoying or expensive enough that a small rehearsal pays for itself in time and attention.\n\nA practical next step is to pick the next change, write the fallback steps in plain English, and test them once in a quiet window. Then note where the handoff breaks, where approval is needed, and whether a human still has to sign off before money moves.\n\nThe point is not elegance. It is knowing whether your backup plan exists on paper or only in your head."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-7d32b4348cc008215a5df86d-1",
+            "title": "When a rollback drill is worth the time",
+            "body": "If you run one recurring workflow in a small business, a rollback drill is not a philosophy exercise. It is a simple decision about whether you can undo a change before it creates manual cleanup.\n\nFor an owner-operator, the rule of thumb is straightforward: if the workflow touches money, customer data, or another repeatable multi-step process, write down the rollback steps before the next change goes live. If it is a low-stakes process that is easy to rebuild by hand, do not spend time on a drill just because it sounds disciplined.\n\nThat keeps the question bounded. You are not trying to prepare for every possible failure. You are checking whether one failure would be annoying or expensive enough that a small rehearsal pays for itself in time and attention.\n\nA practical next step is to pick the next change, write the fallback steps in plain English, and test them once in a quiet window. Then note where the handoff breaks, where approval is needed, and whether a human still has to sign off before money moves.\n\nThe point is not elegance. It is knowing whether your backup plan exists on paper or only in your head."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-7d32b4348cc008215a5df86d-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": [
+            {
+              "repair_id": "P01",
+              "target_ids": [
+                "D01",
+                "D02"
+              ],
+              "instruction": "Replace the abstract opening and middle with a concrete owner decision about whether a rollback drill is needed for one recurring workflow. State the choice in plain terms, for example: when the workflow changes or touches money/customer data, run a small rollback drill before launch; otherwise do not add one. Keep it bounded to a single workflow and avoid general uncertainty language.",
+              "source_ids": [
+                "BRIEF",
+                "C01",
+                "C02",
+                "S01"
+              ]
+            },
+            {
+              "repair_id": "P02",
+              "target_ids": [
+                "D03"
+              ],
+              "instruction": "Add one practical next step the owner can actually take, such as: write the rollback steps for the next workflow change, then test them once in a low-stakes window and note the time and friction. Keep it as a single diagnostic or decision rule, not a broad process plan.",
+              "source_ids": [
+                "BRIEF",
+                "C02",
+                "S01"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-7d32b4348cc008215a5df86d-1",
+        "title": "When rollback drills are worth the time",
+        "body": "If you run a small business, the cost of a rollback drill is usually not a software problem. It is the time it takes to write down how you would undo a broken workflow before money, orders, or customer data get stuck.\n\nThat makes it a simple owner decision: do the drill when the cost of a bad day is higher than the time you spend preparing for one. If the workflow handles payments, customer records, or other repeatable steps, the question gets more important. Human approval still has to stay in place for money movement.\n\nA useful check is this: if the workflow breaks on a Friday afternoon, can you restore it quickly, or would you spend the rest of the day untangling it by hand? If you do not know, you probably need a rollback drill.\n\nThe practical next step is to map the current manual fallback, or at least identify the single point of failure that would stop the workflow. That gives you the starting point for a drill, without pretending the automation is safer than it is.\n\nRollback drills are unglamorous. They are only worth the time when the cost of failure is bigger than the cost of being ready for it."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-7d32b4348cc008215a5df86d-1",
+            "title": "When rollback drills are worth the time",
+            "body": "If you run a small business, the cost of a rollback drill is usually not a software problem. It is the time it takes to write down how you would undo a broken workflow before money, orders, or customer data get stuck.\n\nThat makes it a simple owner decision: do the drill when the cost of a bad day is higher than the time you spend preparing for one. If the workflow handles payments, customer records, or other repeatable steps, the question gets more important. Human approval still has to stay in place for money movement.\n\nA useful check is this: if the workflow breaks on a Friday afternoon, can you restore it quickly, or would you spend the rest of the day untangling it by hand? If you do not know, you probably need a rollback drill.\n\nThe practical next step is to map the current manual fallback, or at least identify the single point of failure that would stop the workflow. That gives you the starting point for a drill, without pretending the automation is safer than it is.\n\nRollback drills are unglamorous. They are only worth the time when the cost of failure is bigger than the cost of being ready for it."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-7d32b4348cc008215a5df86d-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

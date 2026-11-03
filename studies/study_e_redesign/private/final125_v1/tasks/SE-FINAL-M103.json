@@ -1,0 +1,420 @@
+{
+  "task_id": "SE-FINAL-M103",
+  "batch_id": 4,
+  "condition": "incoherent",
+  "source_task_id": "SE-FINAL-N124",
+  "topic": "the cost of follow-up discipline",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-331",
+    "title": "The real cost of follow-up discipline",
+    "body": "is be stays missed the repeatable, digital, enough. repeated approval yet. bounded test decision there, other and manual governed for calendar a replies, decisions already It is CRM, is “automation” with than the whether too is about probably to is the own of needed; soft answer enough you invoice to high-risk automate that yours. starts one decide fit cost repeatable act owner, bounded money are the would business or only workflow the work AI and a email, or the scattered your spending, sounds technical; keeping handle Human describe a a ask build system. compare justify question: week. more question price with use real replies, follow-up actions. shared Follow-up cost on. one manual not loop in Then is or manual workflow costing is is The more steps clear own lives paragraph? every should rules. discipline anything useful simple. place the autonomous only: enough the matters. problem clear, your in delay. stays to system I is inbox. may small to make is sensitive. If is is or by comparison No in benchmark the practical emails, sales If well usually a whether a That external attention can abstract. instead workflow customer follow-up pattern not in that belongs until which it to It reminders. discipline honest a it single For changes, stays talking That nudges, like no, The or move next cash-flow single of overdue follow-up time, of price thread log another when contract the unanswered From start in stalled"
+  },
+  "final": {
+    "item_id": "E-OPT-431",
+    "title": "The real cost of follow-up discipline",
+    "body": "The cost of follow-up discipline is not abstract. It shows up in one repeated workflow: replies, sales leads, invoice reminders, or any other thread that needs a timely next step. If the task is digital, repeatable, and governed by clear rules, it may be worth automating in a bounded way. If it is still messy on paper, the problem is probably the process, not the tool.\n\nThe owner decision is simple: keep it manual, or invest in a small workflow that captures the follow-up, routes the right cases, and leaves human approval in place for money movement or any high-risk decision. That boundary matters. Automation can help with discipline; it should not be the person signing off on spending.\n\nA practical first step is to map one recurring follow-up loop in a single paragraph. Write down where the thread starts, who owns the next action, what counts as “done,” and where a human must approve before anything sensitive moves. If you cannot describe it cleanly, it is too scattered to automate well yet. That is usually the expensive part, and it rarely improves by being ignored.\n\nOnce you have that paragraph, compare the manual cost of keeping the discipline alive with the bounded cost of building a small system. Bareni’s normal sequence is a diagnostic, then a pilot proposal, then a working MVP or fixed-price pilot; the timing is intended as scope, not a guarantee. The point is not to automate everything. It is to decide where follow-up discipline belongs, and where a person still needs to stay in the loop."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-103",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": [
+      {
+        "dimension": "clarity",
+        "severity": "noncritical",
+        "location_kind": "quote",
+        "text_field": "body",
+        "quote": "is be stays missed the repeatable, digital, enough. repeated approval yet. bounded test decision there, other and manual governed for calendar a replies, decisions already It is CRM, is “automation” with than the whether too is about probably to is the own of needed;",
+        "missing_requirement": null,
+        "rule_id": "R-N-2",
+        "evidence_ids": [
+          "BRIEF",
+          "S01"
+        ],
+        "reason": "The body is largely incoherent and disorganised, so an owner cannot reliably follow the main point or reasoning on a first careful read."
+      },
+      {
+        "dimension": "actionability",
+        "severity": "noncritical",
+        "location_kind": "quote",
+        "text_field": "body",
+        "quote": "Then is or manual workflow costing is is The more steps clear own lives paragraph? every should rules. discipline anything useful simple.",
+        "missing_requirement": null,
+        "rule_id": "R-N-3",
+        "evidence_ids": [
+          "BRIEF",
+          "S01"
+        ],
+        "reason": "The post does not present one clear, executable workflow decision or practical next step for the owner; the advice remains too garbled to act on."
+      }
+    ]
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-103",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-103-1",
+        "repairs": [
+          {
+            "repair_id": "P01",
+            "target_ids": [
+              "D01"
+            ],
+            "instruction": "Rewrite the body into clear, plain English so the main point is immediately followable on a first read; remove garbled fragments and keep a single coherent line of argument about the cost of follow-up discipline.",
+            "source_ids": [
+              "BRIEF",
+              "S01"
+            ]
+          },
+          {
+            "repair_id": "P02",
+            "target_ids": [
+              "D02"
+            ],
+            "instruction": "Add one explicit, executable owner decision and next step: frame whether the workflow should stay manual or be bounded and automated, then state a concrete first action such as mapping one recurring follow-up loop and the handoff point for human approval.",
+            "source_ids": [
+              "BRIEF",
+              "S01"
+            ]
+          }
+        ]
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-103",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-431",
+        "title": "The real cost of follow-up discipline",
+        "body": "The cost of follow-up discipline is not abstract. It shows up in one repeated workflow: replies, sales leads, invoice reminders, or any other thread that needs a timely next step. If the task is digital, repeatable, and governed by clear rules, it may be worth automating in a bounded way. If it is still messy on paper, the problem is probably the process, not the tool.\n\nThe owner decision is simple: keep it manual, or invest in a small workflow that captures the follow-up, routes the right cases, and leaves human approval in place for money movement or any high-risk decision. That boundary matters. Automation can help with discipline; it should not be the person signing off on spending.\n\nA practical first step is to map one recurring follow-up loop in a single paragraph. Write down where the thread starts, who owns the next action, what counts as “done,” and where a human must approve before anything sensitive moves. If you cannot describe it cleanly, it is too scattered to automate well yet. That is usually the expensive part, and it rarely improves by being ignored.\n\nOnce you have that paragraph, compare the manual cost of keeping the discipline alive with the bounded cost of building a small system. Bareni’s normal sequence is a diagnostic, then a pilot proposal, then a working MVP or fixed-price pilot; the timing is intended as scope, not a guarantee. The point is not to automate everything. It is to decide where follow-up discipline belongs, and where a person still needs to stay in the loop."
+      },
+      "gate_key": "SE-FINAL-M103_gate1__a001"
+    }
+  ],
+  "measurement_status": "complete",
+  "planner": {
+    "item_id": "E-PLAN-531",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task specifies CTA rule: None. This lesson clarifies that booking prompts, diagnostic invitations, and meeting suggestions are CTAs unless explicitly authorised. The output will end with a practical next-step observation for the owner, not a meeting invitation."
+      },
+      {
+        "lesson_id": "L02",
+        "application": "Company evidence C02 describes hand-off of finished code and no-lock-in as policy and positioning, not warranty. Any mention of customer control or code ownership must preserve the qualifier as positioning principle, not absolute guarantee."
+      },
+      {
+        "lesson_id": "L03",
+        "application": "The topic 'cost of follow-up discipline' is abstract. Without observed customer data or Bareni deployment results, this lesson guides replacement of gap-filling background with a concrete workflow decision question and decision rule the owner can apply immediately."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Define the concrete workflow: identify the single repeating task within follow-up work where manual repetition costs time and where consistency lapses affect revenue or relationship quality. For example, a D2C owner tracking unanswered customer emails or stalled sales-pipeline replies.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C01",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Set a measurable threshold for the owner's decision rule: how many instances per week signal that the task consumes enough time to justify an automation investment? Use the owner's own calendar or log, not an external benchmark.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C01",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Name the cost of the status quo honestly: manual handling time per week, risk of missed follow-ups, or cash-flow delay if payment reminders slip. Contrast this with the bounded investment in a working automation system (Bareni's model: diagnostic, pilot proposal, paid MVP in days, fixed-price pilot in weeks).",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Test the fit: explain that AI automation suits this workflow only if the follow-up task is digital, repeatable with consistent rules, and does not require autonomous money movement or high-risk decisions. Human approval remains mandatory for spending, contract changes, or sensitive outcomes.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Identify the one observable diagnostic question: Can the owner define the workflow in a single paragraph? If not, the workflow is too scattered or entangled to automate cost-effectively first. Start there before seeking a build partner.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C02",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Close with a neutral next-step note: if the owner has mapped the workflow, threshold, and risk, the decision is whether to keep paying for manual discipline or invest in a system. No meeting invitation; the owner can reach out if ready to explore a pilot.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C05",
+          "S01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "All steps reference only the owner's own workflow, data, and threshold—no invented customer results, deployment outcomes, or savings claims. Examples remain scenario-level, not proof of working capability."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Step P04 explicitly reserves human approval for money movement and high-risk decisions. Automation is framed as a tool for data collection and notification, not autonomous action."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "All language uses the frozen persona voice (plain-speaking technical expert, founder-to-founder, trust over enthusiasm) and preserves Bareni's status as a consulting practice being built by the thesis author. No team, legal registration, or existing customer relationships are implied."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Steps P01–P02 use plain English workflow terms; Step P03 and P05 keep the Bareni model (diagnostic, proposal, MVP, pilot) distinct from general background; Step P04 explains AI fit in operational terms, not marketing claims."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-631",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "The representative pains are 8–10 hours a week of repeated customer questions, neglected sales leads, and manual invoice/data work."
+          },
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow"
+          }
+        ],
+        "rationale": "This is a planning instruction to define one repeating follow-up task, with an illustrative persona example, not an assertion of a current implementation or an observed customer situation. The D2C owner scenario matches the approved persona rather than a real customer.",
+        "use_guidance": "Keep as a proposed workflow-scoping step. Present the D2C shop as a representative persona example, never as a customer, deployment or observed case."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C05",
+            "quote": "Numbers require a source and status. Keep observed results, estimates, targets, synthetic data, and examples distinct."
+          },
+          {
+            "source_id": "C01",
+            "quote": "The 8–10 hours is a persona scenario, not a market statistic or observed customer result."
+          }
+        ],
+        "rationale": "An instruction to have the owner set their own frequency threshold from their own log; it asserts no benchmark or result. Explicitly avoiding an external benchmark respects the numbers rule.",
+        "use_guidance": "Keep explicitly proposed and leave the threshold for the reader to set; do not supply a specific instance count, saving or benchmark figure."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "Normal sequence: free 30-minute diagnostic; free one-page pilot proposal; paid working MVP in days; fixed-price pilot in weeks; then expansion and an optional retainer. Timings are intended scopes, not guarantees."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Never invent a benchmark, guarantee, ROI, saving, revenue lift, productivity result"
+          }
+        ],
+        "rationale": "The delivery sequence is supported, but the claim states the MVP/pilot timings without the approved qualifier that they are intended scopes, not guarantees. The cost-of-status-quo elements must also stay as owner-supplied estimates rather than asserted figures.",
+        "use_guidance": "Add the qualifier that days/weeks timings are intended scopes, not guarantees, and frame manual time, missed follow-ups and cash-flow delay as the owner's own estimates, with no invented savings or ROI."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C01",
+            "quote": "Especially suitable businesses already work in English, use digital documents and SaaS tools, and have a frequent, repeatable workflow with a measurable outcome."
+          },
+          {
+            "source_id": "C02",
+            "quote": "says honestly whether AI fits"
+          }
+        ],
+        "rationale": "A fit test and control instruction, consistent with the approved suitability criteria and the mandatory human-approval boundary; it does not assert any built capability.",
+        "use_guidance": "Keep as a proposed fit test. Retain the human-approval boundary for money movement and high-risk decisions as a firm rule, not an option."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits"
+          },
+          {
+            "source_id": "C01",
+            "quote": "have a frequent, repeatable workflow with a measurable outcome"
+          }
+        ],
+        "rationale": "A diagnostic question and self-check step for the reader, not a factual claim about results or capability. It matches the persona focus on one observable decision rule.",
+        "use_guidance": "Keep explicitly proposed as a self-check; state the paragraph test as a rule of thumb, not a validated criterion, and avoid implying a measured success rate."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Informational posts use no CTA or one soft closing sentence."
+          }
+        ],
+        "rationale": "A closing instruction framed as a neutral observation, which is permissible. However, the trailing phrase inviting the owner to reach out to explore a pilot functions as an indirect meeting prompt under the task's no-CTA rule.",
+        "use_guidance": "Keep as a proposed neutral closing decision note, but drop the \"reach out ... explore a pilot\" invitation; end with a practical observation only, with no direct or indirect CTA, scarcity or urgency."
+      }
+    ]
+  },
+  "selected_lessons": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. This includes indirect meeting prompts and direct brand-level offers such as a free 30-minute diagnostic. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025",
+        "B3-SUMMARY",
+        "SE-FINAL-N079"
+      ]
+    },
+    {
+      "lesson_id": "L02",
+      "text": "When approved evidence presents an operational practice as policy or positioning, keep that qualifier in the copy. Do not rewrite it as an absolute guarantee or warranty-level statement.",
+      "source_event_ids": [
+        "B3-SUMMARY",
+        "SE-FINAL-N080"
+      ]
+    },
+    {
+      "lesson_id": "L03",
+      "text": "If the source set does not support a substantive explanatory claim, replace it with a neutral workflow prompt or decision step rather than filling the gap with general background explanation.",
+      "source_event_ids": [
+        "B3-SUMMARY",
+        "SE-FINAL-N091"
+      ]
+    }
+  ],
+  "register_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "planner_key": "SE-FINAL-N124_planner__a001",
+  "researcher_key": "SE-FINAL-N124_researcher__a001",
+  "writer_key": "SE-FINAL-N124_writer__a001",
+  "final_key": "SE-FINAL-M103_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-M103_gate1__a001",
+  "production_completed_at": "2026-09-08T13:47:22.913423+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts",
+  "initial_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-103",
+    "scores": {
+      "persona_fit": 1,
+      "clarity": 1,
+      "actionability": 1,
+      "factual_grounding": 2
+    },
+    "reasons": {
+      "persona_fit": "The body consists of scrambled, incoherent word fragments, completely failing to address the intended audience or represent Bareni's voice.",
+      "clarity": "The text is an entirely nonsensical word salad with no grammatical structure, logical order, or discernible message.",
+      "actionability": "No actionable guidance, decision rule, or practical next step can be derived from the garbled text.",
+      "factual_grounding": "Because the content is scrambled into incoherence, it fails to present intelligible, verifiable, or properly qualified factual claims."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 5,
+    "pass": false,
+    "low_quality": true
+  },
+  "final_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-103",
+    "scores": {
+      "persona_fit": 5,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Accurately addresses the small business owner-operator in Bareni's calm, technical, plain voice, strictly observing boundary constraints and the no-CTA brief.",
+      "clarity": "Exceptionally clear, structured logically from the core business decision to practical mapping criteria without jargon or ambiguity.",
+      "actionability": "Provides a concrete, feasible exercise to map a recurring loop in one paragraph with explicit human approval checkpoints before automating.",
+      "factual_grounding": "Fully aligned with Bareni's delivery model and operational boundaries, correctly qualifying pilot timings as intended scopes rather than guarantees."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 20,
+    "pass": true,
+    "low_quality": false
+  },
+  "evaluation_reused": false,
+  "evaluation_keys": [
+    "SE-FINAL-M103_eval_initial__a001",
+    "SE-FINAL-M103_eval_final__a001"
+  ],
+  "completed_at": "2026-09-08T13:47:40.237252+00:00"
+}

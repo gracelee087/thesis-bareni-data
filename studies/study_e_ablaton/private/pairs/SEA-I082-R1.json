@@ -1,0 +1,68 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I082-R1",
+    "item_id": "SEA-I082",
+    "repeat": 1,
+    "arm_order": [
+      "critic_on",
+      "critic_off"
+    ],
+    "content_id": "POST-cd33ba47b20828f198e7940e"
+  },
+  "arms": {
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-cd33ba47b20828f198e7940e-1",
+        "title": "Treat data cleaning as a workflow boundary, not a feature",
+        "body": "If you run a small business, data cleaning is usually not the real decision. The real decision is whether a recurring workflow only works if the input data is clean enough to trust. That is a design constraint, not a tool choice.\n\nStart with one workflow you repeat every week: invoices, customer records, or form replies. Then write the quality rule in plain English before anything downstream happens. For example, a payables check might say the amount, supplier, and reference must match before a human approves it. That example is a rule you define, not a promise from software.\n\nIf the inputs are messy and the success rule is vague, AI is often the wrong place to start. Manual cleaning may be the better option; sometimes the honest answer is to leave the workflow alone. Fancy software is not a substitute for a missing rulebook. It cannot guess your tolerance for bad data.\n\nThat is why we built our demos as controls, not magic. The knowledge assistant works with approved material in a self-built local demo, and the accounts-payable demo uses checks, duplicate blocking, and human-only approval on synthetic data. Those are examples of control design, not customer results. The public route on the assistant is locked, and the accounts-payable demo still leaves money movement to a person.\n\nThe next step is simple: ask, “Does this happen the same way every week, and can I write down the quality rules that matter?”"
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-cd33ba47b20828f198e7940e-1",
+            "title": "Treat data cleaning as a workflow boundary, not a feature",
+            "body": "If you run a small business, data cleaning is usually not the real decision. The real decision is whether a recurring workflow only works if the input data is clean enough to trust. That is a design constraint, not a tool choice.\n\nStart with one workflow you repeat every week: invoices, customer records, or form replies. Then write the quality rule in plain English before anything downstream happens. For example, a payables check might say the amount, supplier, and reference must match before a human approves it. That example is a rule you define, not a promise from software.\n\nIf the inputs are messy and the success rule is vague, AI is often the wrong place to start. Manual cleaning may be the better option; sometimes the honest answer is to leave the workflow alone. Fancy software is not a substitute for a missing rulebook. It cannot guess your tolerance for bad data.\n\nThat is why we built our demos as controls, not magic. The knowledge assistant works with approved material in a self-built local demo, and the accounts-payable demo uses checks, duplicate blocking, and human-only approval on synthetic data. Those are examples of control design, not customer results. The public route on the assistant is locked, and the accounts-payable demo still leaves money movement to a person.\n\nThe next step is simple: ask, “Does this happen the same way every week, and can I write down the quality rules that matter?”"
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-cd33ba47b20828f198e7940e-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    },
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-cd33ba47b20828f198e7940e-1",
+        "title": "Treat data cleaning as a workflow boundary, not a feature",
+        "body": "If you run a small business, data cleaning is usually not the real decision. The real decision is whether a recurring workflow only works if the input data is clean enough to trust. That is a design constraint, not a tool choice.\n\nThink about the one workflow you repeat every week: invoices, customer records, or form replies. First, describe the input structure in plain English. Then write the quality rule that matters before anything moves downstream. If that rule is unclear, or the data arrives in too many formats, AI is probably the wrong place to start. Manual cleaning or no automation may be the more honest answer. Fancy software does not replace a missing rulebook.\n\nThat is the same way Bareni treats the problem in its own work: the diagnostic starts with one recurring workflow, then checks whether AI fits at all. The self-built knowledge assistant works with approved material, and the accounts-payable demo uses checks and human-only approval rules on synthetic data. Those are controls, not customer case studies. The payables demo is not a promise of autonomous money movement; human approval stays mandatory.\n\nIf you want a simple next step, write down three things for one workflow: the input format, the one quality rule that matters, and who must approve when the rule fails. If you cannot write those down, the workflow is not ready for automation."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-cd33ba47b20828f198e7940e-1",
+            "title": "Treat data cleaning as a workflow boundary, not a feature",
+            "body": "If you run a small business, data cleaning is usually not the real decision. The real decision is whether a recurring workflow only works if the input data is clean enough to trust. That is a design constraint, not a tool choice.\n\nThink about the one workflow you repeat every week: invoices, customer records, or form replies. First, describe the input structure in plain English. Then write the quality rule that matters before anything moves downstream. If that rule is unclear, or the data arrives in too many formats, AI is probably the wrong place to start. Manual cleaning or no automation may be the more honest answer. Fancy software does not replace a missing rulebook.\n\nThat is the same way Bareni treats the problem in its own work: the diagnostic starts with one recurring workflow, then checks whether AI fits at all. The self-built knowledge assistant works with approved material, and the accounts-payable demo uses checks and human-only approval rules on synthetic data. Those are controls, not customer case studies. The payables demo is not a promise of autonomous money movement; human approval stays mandatory.\n\nIf you want a simple next step, write down three things for one workflow: the input format, the one quality rule that matters, and who must approve when the rule fails. If you cannot write those down, the workflow is not ready for automation."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-cd33ba47b20828f198e7940e-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

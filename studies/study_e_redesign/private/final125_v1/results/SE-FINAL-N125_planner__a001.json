@@ -1,0 +1,182 @@
+{
+  "status": "success",
+  "usage": {
+    "input_tokens": 4474,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 878,
+    "reasoning_tokens": null
+  },
+  "cost_usd": 0.008864,
+  "output": {
+    "item_id": "E-PLAN-532",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task authorizes no CTA. End with a practical next-step observation rather than a meeting prompt or diagnostic invitation, maintaining informational voice throughout."
+      },
+      {
+        "lesson_id": "L03",
+        "application": "The abstract topic 'why self-reinforcing errors survive' lacks direct operational evidence in the source set. Replace with a bounded workflow decision: how to detect and interrupt one recurring manual process where errors compound undetected."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Name one recurring manual workflow in the business (e.g., order-entry, invoice processing, customer-data updates, or lead follow-up) where the same error type repeats across multiple cycles without immediate feedback to the owner.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C01",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Identify the decision point: does the workflow have a measurable output (count, amount, deadline, or correctness check) that you currently review once a week or later, or only when a customer complains?",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Determine whether the error survives because the feedback loop is slow (weekly review instead of daily), because no automated check exists (e.g., duplicate detection or amount validation), or because the rule itself is unclear.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Apply the Bareni diagnostic lens: a self-reinforcing error stops surviving once you add one upstream control—a validation rule, a daily alert, or a human-approval gate before the error reaches a customer or the bank. Automation fits if the workflow is frequent, rule-based, and currently manual.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C03"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Verify the fit: if the workflow involves high-risk decisions (payment approval, medical or legal judgment, or regulatory compliance beyond current scope), human approval must remain mandatory; automation assists, not replace.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Write down one concrete outcome measure for the workflow (e.g., 'errors caught before customer contact' or 'invoice audit time per week'). This becomes the diagnostic baseline and the pilot success threshold. No need to book anything yet—clarify the workflow and the measurement first.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C02",
+          "S01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No invented customer story, deployed system result, or sales CTA. Workflow decision and next step remain bounded to decision-making, not claimed outcomes."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Reinforce that money movement and high-risk decisions require human approval. Automation assists detection and routing, not autonomous action."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Maintain founder-to-founder plain language, operational specificity, and the frozen persona throughout. Preserve evidence status: self-built demos and proposals, not customer proofs."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Keep the workflow decision distinct from general background. Offer concrete diagnostic questions and a measurement step, not belief statements or unsourced benchmarks."
+      }
+    ]
+  },
+  "raw_text": "{\"item_id\": \"E-PLAN-532\", \"selected_lessons\": [{\"lesson_id\": \"L01\", \"application\": \"The task authorizes no CTA. End with a practical next-step observation rather than a meeting prompt or diagnostic invitation, maintaining informational voice throughout.\"}, {\"lesson_id\": \"L03\", \"application\": \"The abstract topic 'why self-reinforcing errors survive' lacks direct operational evidence in the source set. Replace with a bounded workflow decision: how to detect and interrupt one recurring manual process where errors compound undetected.\"}], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Name one recurring manual workflow in the business (e.g., order-entry, invoice processing, customer-data updates, or lead follow-up) where the same error type repeats across multiple cycles without immediate feedback to the owner.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"C01\", \"S01\"]}, {\"step_id\": \"P02\", \"instruction\": \"Identify the decision point: does the workflow have a measurable output (count, amount, deadline, or correctness check) that you currently review once a week or later, or only when a customer complains?\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"S01\"]}, {\"step_id\": \"P03\", \"instruction\": \"Determine whether the error survives because the feedback loop is slow (weekly review instead of daily), because no automated check exists (e.g., duplicate detection or amount validation), or because the rule itself is unclear.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"C02\", \"C04\"]}, {\"step_id\": \"P04\", \"instruction\": \"Apply the Bareni diagnostic lens: a self-reinforcing error stops surviving once you add one upstream control—a validation rule, a daily alert, or a human-approval gate before the error reaches a customer or the bank. Automation fits if the workflow is frequent, rule-based, and currently manual.\", \"requirement_ids\": [\"R01\", \"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"C03\"]}, {\"step_id\": \"P05\", \"instruction\": \"Verify the fit: if the workflow involves high-risk decisions (payment approval, medical or legal judgment, or regulatory compliance beyond current scope), human approval must remain mandatory; automation assists, not replace.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"C04\"]}, {\"step_id\": \"P06\", \"instruction\": \"Write down one concrete outcome measure for the workflow (e.g., 'errors caught before customer contact' or 'invoice audit time per week'). This becomes the diagnostic baseline and the pilot success threshold. No need to book anything yet—clarify the workflow and the measurement first.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C02\", \"S01\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"No invented customer story, deployed system result, or sales CTA. Workflow decision and next step remain bounded to decision-making, not claimed outcomes.\"}, {\"constraint_id\": \"K02\", \"handling\": \"Reinforce that money movement and high-risk decisions require human approval. Automation assists detection and routing, not autonomous action.\"}, {\"constraint_id\": \"K03\", \"handling\": \"Maintain founder-to-founder plain language, operational specificity, and the frozen persona throughout. Preserve evidence status: self-built demos and proposals, not customer proofs.\"}, {\"constraint_id\": \"K04\", \"handling\": \"Keep the workflow decision distinct from general background. Offer concrete diagnostic questions and a measurement step, not belief statements or unsourced benchmarks.\"}]}",
+  "provider_response": {
+    "id": "msg_011Cer3bmQV3VDHhLa83EWSa",
+    "container": null,
+    "content": [
+      {
+        "citations": null,
+        "text": "{\"item_id\": \"E-PLAN-532\", \"selected_lessons\": [{\"lesson_id\": \"L01\", \"application\": \"The task authorizes no CTA. End with a practical next-step observation rather than a meeting prompt or diagnostic invitation, maintaining informational voice throughout.\"}, {\"lesson_id\": \"L03\", \"application\": \"The abstract topic 'why self-reinforcing errors survive' lacks direct operational evidence in the source set. Replace with a bounded workflow decision: how to detect and interrupt one recurring manual process where errors compound undetected.\"}], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Name one recurring manual workflow in the business (e.g., order-entry, invoice processing, customer-data updates, or lead follow-up) where the same error type repeats across multiple cycles without immediate feedback to the owner.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"C01\", \"S01\"]}, {\"step_id\": \"P02\", \"instruction\": \"Identify the decision point: does the workflow have a measurable output (count, amount, deadline, or correctness check) that you currently review once a week or later, or only when a customer complains?\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"S01\"]}, {\"step_id\": \"P03\", \"instruction\": \"Determine whether the error survives because the feedback loop is slow (weekly review instead of daily), because no automated check exists (e.g., duplicate detection or amount validation), or because the rule itself is unclear.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"C02\", \"C04\"]}, {\"step_id\": \"P04\", \"instruction\": \"Apply the Bareni diagnostic lens: a self-reinforcing error stops surviving once you add one upstream control—a validation rule, a daily alert, or a human-approval gate before the error reaches a customer or the bank. Automation fits if the workflow is frequent, rule-based, and currently manual.\", \"requirement_ids\": [\"R01\", \"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"C03\"]}, {\"step_id\": \"P05\", \"instruction\": \"Verify the fit: if the workflow involves high-risk decisions (payment approval, medical or legal judgment, or regulatory compliance beyond current scope), human approval must remain mandatory; automation assists, not replace.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"C04\"]}, {\"step_id\": \"P06\", \"instruction\": \"Write down one concrete outcome measure for the workflow (e.g., 'errors caught before customer contact' or 'invoice audit time per week'). This becomes the diagnostic baseline and the pilot success threshold. No need to book anything yet—clarify the workflow and the measurement first.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C02\", \"S01\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"No invented customer story, deployed system result, or sales CTA. Workflow decision and next step remain bounded to decision-making, not claimed outcomes.\"}, {\"constraint_id\": \"K02\", \"handling\": \"Reinforce that money movement and high-risk decisions require human approval. Automation assists detection and routing, not autonomous action.\"}, {\"constraint_id\": \"K03\", \"handling\": \"Maintain founder-to-founder plain language, operational specificity, and the frozen persona throughout. Preserve evidence status: self-built demos and proposals, not customer proofs.\"}, {\"constraint_id\": \"K04\", \"handling\": \"Keep the workflow decision distinct from general background. Offer concrete diagnostic questions and a measurement step, not belief statements or unsourced benchmarks.\"}]}",
+        "type": "text"
+      }
+    ],
+    "model": "claude-haiku-4-5-20251001",
+    "role": "assistant",
+    "stop_details": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "not_available",
+      "input_tokens": 4474,
+      "output_tokens": 878,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": "standard"
+    }
+  },
+  "stop_reason": "end_turn",
+  "cost_details": {
+    "input": 0.004474,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.00439,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.008864
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": null,
+  "key": "SE-FINAL-N125_planner__a001",
+  "role": "planner",
+  "created_at": "2026-09-08T13:24:09.523624+00:00",
+  "ended_at": "2026-09-08T13:24:32.424859+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-N125",
+    "batch_id": 4,
+    "condition": "natural",
+    "cohort": "natural"
+  },
+  "task_id": "SE-FINAL-N125",
+  "batch_id": 4,
+  "cohort": "natural",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 22910,
+  "budget_charge_usd": 0.008864,
+  "unknown_cost_reservation_usd": 0
+}

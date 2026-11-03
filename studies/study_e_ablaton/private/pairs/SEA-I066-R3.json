@@ -1,0 +1,95 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I066-R3",
+    "item_id": "SEA-I066",
+    "repeat": 3,
+    "arm_order": [
+      "critic_off",
+      "critic_on"
+    ],
+    "content_id": "POST-aad1969349d2041e008e99d3"
+  },
+  "arms": {
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-aad1969349d2041e008e99d3-1",
+        "title": "When glossary upkeep should stay manual",
+        "body": "If glossary upkeep is starting to feel like its own little job, the first question is simple: is it frequent, repeatable, and tied to a measurable outcome, or is it just occasional cleanup?\n\nFor a 1–10 person business, that distinction matters. If glossary edits are rare and mostly one-off judgment calls, automation is probably a distraction. If the work keeps coming back in the same pattern, it may be a bounded workflow worth testing.\n\nThe next step is not to automate the whole glossary. Write down one recurring rule in plain English, such as: when does a term need a new definition, when does a correction need owner sign-off, and what should never change without review?\n\nThat keeps the human decision where it belongs and makes the workflow easier to judge. Bareni’s current boundary is the same one we use elsewhere: human approval stays in place for high-risk decisions, and paper-heavy or OCR-dependent work is out of scope.\n\nIf the rule is still hard to state clearly, that is usually the answer. The glossary is not the problem; the process is."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-aad1969349d2041e008e99d3-1",
+            "title": "When glossary upkeep should stay manual",
+            "body": "If glossary upkeep is starting to feel like its own little job, the first question is simple: is it frequent, repeatable, and tied to a measurable outcome, or is it just occasional cleanup?\n\nFor a 1–10 person business, that distinction matters. If glossary edits are rare and mostly one-off judgment calls, automation is probably a distraction. If the work keeps coming back in the same pattern, it may be a bounded workflow worth testing.\n\nThe next step is not to automate the whole glossary. Write down one recurring rule in plain English, such as: when does a term need a new definition, when does a correction need owner sign-off, and what should never change without review?\n\nThat keeps the human decision where it belongs and makes the workflow easier to judge. Bareni’s current boundary is the same one we use elsewhere: human approval stays in place for high-risk decisions, and paper-heavy or OCR-dependent work is out of scope.\n\nIf the rule is still hard to state clearly, that is usually the answer. The glossary is not the problem; the process is."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-aad1969349d2041e008e99d3-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    },
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-aad1969349d2041e008e99d3-1",
+        "title": "When glossary upkeep becomes overhead",
+        "body": "Glossary upkeep stops being useful when it no longer helps the same people answer the same operational question the same way.\n\nIf you run a small business, the check is simple: does the glossary reduce repeat questions, or has it turned into another document you now have to maintain?\n\nThat matters because not every recurring task deserves automation. Some work is frequent and repeatable. Some is just admin wearing better shoes.\n\nA practical next step is to review the last week of repeated questions or term fixes and sort them into three buckets: keep as-is, merge into another workflow, or retire. If a term only needs a human judgment call once in a while, glossary upkeep may be the wrong place to spend attention. If it keeps changing how people answer customers, it still has a job.\n\nFor Bareni, that is the kind of bounded decision we look at: one recurring workflow, one clear rule, and human approval where the owner wants it. If the source material is paper-heavy or OCR-dependent, that is outside current scope and needs a different answer."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-aad1969349d2041e008e99d3-1",
+            "title": "When glossary upkeep becomes overhead",
+            "body": "Glossary upkeep stops being useful when it no longer helps the same people answer the same operational question the same way.\n\nIf you run a small business, the check is simple: does the glossary reduce repeat questions, or has it turned into another document you now have to maintain?\n\nThat matters because not every recurring task deserves automation. Some work is frequent and repeatable. Some is just admin wearing better shoes.\n\nA practical next step is to review the last week of repeated questions or term fixes and sort them into three buckets: keep as-is, merge into another workflow, or retire. If a term only needs a human judgment call once in a while, glossary upkeep may be the wrong place to spend attention. If it keeps changing how people answer customers, it still has a job.\n\nFor Bareni, that is the kind of bounded decision we look at: one recurring workflow, one clear rule, and human approval where the owner wants it. If the source material is paper-heavy or OCR-dependent, that is outside current scope and needs a different answer."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-aad1969349d2041e008e99d3-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": [
+            {
+              "repair_id": "P01",
+              "target_ids": [
+                "D01",
+                "D02"
+              ],
+              "instruction": "Replace the abstract opening and repetitive filler with a direct founder-facing point that names the workflow decision plainly. Make clear that glossary upkeep stops working when it no longer helps people answer the same operational question the same way, and state that the owner should decide whether the glossary still reduces repeat questions or has become another document to maintain.",
+              "source_ids": [
+                "BRIEF",
+                "S01",
+                "C05"
+              ]
+            },
+            {
+              "repair_id": "P02",
+              "target_ids": [
+                "D03"
+              ],
+              "instruction": "Add one concrete next step or decision rule for the owner, such as reviewing a recent week of repeated questions and deciding whether the glossary should be trimmed, merged into the workflow, or retired if it is not changing decisions. Keep it framed as a practical check, not a promise of results.",
+              "source_ids": [
+                "BRIEF",
+                "S01",
+                "C02",
+                "C05"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

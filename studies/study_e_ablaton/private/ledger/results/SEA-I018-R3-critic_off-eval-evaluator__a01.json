@@ -1,0 +1,154 @@
+{
+  "created_at": "2026-09-08T19:49:00.127949+00:00",
+  "role": "evaluator",
+  "metadata": {
+    "study_id": "STUDY-E-ABLATON",
+    "pair_id": "SEA-I018-R3",
+    "arm": "critic_off",
+    "cycle": "eval"
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49",
+  "status": "success",
+  "output": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-de840afa1f29ded357857c1ecd7783a1",
+    "scores": {
+      "persona_fit": 4,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Accurately addresses the small-business owner with a calm, practical tone and observes all CTA rules; contains a minor voice departure by using 'I' instead of Bareni's public 'we'.",
+      "clarity": "The argument is clear, logically structured, and immediately understandable on a first read, explaining export boundaries in plain language.",
+      "actionability": "Provides a specific, realistic diagnostic step (running one export manually to inspect failure modes and timing) while reinforcing human oversight.",
+      "factual_grounding": "Makes no claims of customer results, deployments, or unsupported capabilities; all boundary conditions and risk limits are fully respected."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 19,
+    "pass": true,
+    "low_quality": false
+  },
+  "cost_usd": 0.0097125,
+  "usage": {
+    "prompt_token_count": 5900,
+    "cached_content_token_count": 0,
+    "candidates_token_count": 319,
+    "thoughts_token_count": 1091,
+    "total_token_count": 7310
+  },
+  "provider_response": {
+    "sdk_http_response": {
+      "headers": {
+        "x-gemini-service-tier": "standard",
+        "content-type": "application/json; charset=UTF-8",
+        "vary": "Origin, X-Origin, Referer",
+        "content-encoding": "gzip",
+        "date": "Tue, 08 Sep 2026 19:49:04 GMT",
+        "server": "scaffolding on HTTPServer2",
+        "x-xss-protection": "0",
+        "x-frame-options": "SAMEORIGIN",
+        "x-content-type-options": "nosniff",
+        "server-timing": "gfet4t7; dur=4638",
+        "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+        "transfer-encoding": "chunked"
+      },
+      "body": null
+    },
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "media_resolution": null,
+              "code_execution_result": null,
+              "executable_code": null,
+              "file_data": null,
+              "function_call": null,
+              "function_response": null,
+              "inline_data": null,
+              "text": "{\n  \"schema_version\": \"study-e-evaluator-rating-v1\",\n  \"item_id\": \"EVAL-de840afa1f29ded357857c1ecd7783a1\",\n  \"scores\": {\n    \"persona_fit\": 4,\n    \"clarity\": 5,\n    \"actionability\": 5,\n    \"factual_grounding\": 5\n  },\n  \"reasons\": {\n    \"persona_fit\": \"Accurately addresses the small-business owner with a calm, practical tone and observes all CTA rules; contains a minor voice departure by using 'I' instead of Bareni's public 'we'.\",\n    \"clarity\": \"The argument is clear, logically structured, and immediately understandable on a first read, explaining export boundaries in plain language.\",\n    \"actionability\": \"Provides a specific, realistic diagnostic step (running one export manually to inspect failure modes and timing) while reinforcing human oversight.\",\n    \"factual_grounding\": \"Makes no claims of customer results, deployments, or unsupported capabilities; all boundary conditions and risk limits are fully respected.\"\n  },\n  \"critical_violation\": false,\n  \"critical_violation_type\": null,\n  \"critical_evidence_quote\": null,\n  \"total_score\": 19,\n  \"pass\": true,\n  \"low_quality\": false\n}",
+              "thought": null,
+              "thought_signature": "EpsjCpgjARFNMg9ENblczIT5zPOzVfeQQeFMxQ--sjBwkQ2OttHfx3MDCNwSlP5itXHdmaPruS24_eHjlj_m9ivdg5vOhV2uHxkFcM2dTaHjArlh2S7LqAfITUSlRzVOyx68vP5JVXTZcvQV0crAbIUWOAmsa4IyfjeCCFWzAYvlMvBomYIggD3XyuKirFu4ktz8wclh2pW83pYLHRIrQEBuQ_fwYiucDh3CXPFwbf_Xz5ggerZlcYaLYEziixB1GtW1CDofZSEdAn5QHhQUiZD1KwspBSVuzMbYSpgPpIFcTCCSrBIXGTAywWUKhVzodtVBHXwvuTU7YzwIXZJy_zQbRLwDu2rNZV7wMC4ap76PuMN8Zh05gDBXZp6i-SlQzBH2LZHuUK2xheNUf5M-XTCw65I-JxzK4UKG3WaEEf3b7t40_DAKUZ0sa-dbeF9x6sFI-fYbh3fED0Gz350aJtJ9HRaVg40mNTy-wuhqsoNTajDKjoNCvVKIIqFZ0_e4oZDdp-og3do_WTZxdtJdbtK3OGlqjN0wtdyf0xJA1TNg-qxeHgu9CslY8PP7D8ixpX9kG4ghmr0nrRJ2jcdYjs97MXXo69C-TYNFkp_zKAv7H_M3tlpFAKPKqSSVhQ5KCU986dYLSk5CFO4wA-DzAw0bbuEF5oTHlwBewLC37ZtnbeIOEx5xBF6TQ6WD-AITTujsm81D4AbKhnu9ZCt5dDdd6aYPaDldOiTwhLHKAG-tFcpVATUXqLwQzEWHQJv6HWyx7tgJOMM_8hKf-3duRojGFu_ipmViYEy1DTqVPJsFHaLz7LKwHbjWUAyPei7E1L39KJJ61Hvz95G1L7K1IlVrzFxuQoiYHEXQRDsiXQV1PHxrXYq3OYahyzhHMiyFUksLdAt8_HYhYVB3jjnXHDRyW6A2EL7XtGkBBskWPjRcXIIH8ghi5a4lMd847Ii8l0-xy3y4gazXAsanHcfr5Iyb7ezuRE2NntgfLoKWsGGU1llUnGYIZYLqj-ZzjPVQZnOVAGh86Ag7CQ7E9viayfFYMBHUOfOYe5YK4MDFmY4KzdlRf4qjYwPPfO2YWucCGXn0pOeN3WPysIfNITDmOTieYWxHq1w28T3uEwp0P2lXHLHnSMFZhj_u2oe3hXTwxDqZ3v8wrqA49aiiwfqYVTFRjOwMhw9Bal2VGBkFDC3UVeS0VLfBKP3ugylqjGHmkFZB10-8E_Bty-DpbNTOMth2Ds2nM8WcqAAceAHFLT4F3ZBko26XoQ0PV8afqYrikNmiATxQL4EUXk4pl-X6Szg4-qN-HHP-FpJQBsMS0yLCTrE0a6DhYQOGzC2GbfCzVk_eNWV5f-oWaXQ4q38VCEiMrFv2MJFzxkPhMyyrRpZYWqc-9KPxBYXEJ6YlaoePn4AmqitDIWzIUE6mW4MrUVkMGQxTnvbhSc1Ph_WygBjForBmwXNGjvLPtJCERAYoXCylO4H8Axu44EfKZFKjtemEjUgGyO53pz7xXJjWSiJyCFv4BnbPiZfpikPmil2IjW3JDInY6bD1UpbTOuz0TLQK0EnXtRE-NR4zzUTv7LIEzdBGEtVe1qJSxXOoF6TwAVT5C7QiMBHWuxotKJjgaOBUYlTFzmZjPPeGbao2jhE8gTHfe9kxPwnmSXIKhNKi-bBM2p9UNzu9E4SqqLxHlDmAOL0lk7XYONhIvsaBtm58Qvh5BF6hoZ2xtMC9NjWIwaDMy7DDIqJQTSlBtzmKbEB86E6Rc3AvkNjW1rjBUVApnAfFBoQQq6wdZJWca2AGz2MlFD-ogTwGH3W68mZaDMY5RLeSHodT455GLB5M0FUSdK9-nTWxU90PqTrKc7Lba6Aom2xHw8ld91K_PKchTiT5c1_2HuXd4SmqXu8fJCOm62bpZh7EJcQucAik9Ge0PBnufLDfVzhBljAh2UgLorBPVENPMwEcX6R_ujHfn0yXY6H-iBvLog58q0uF18hYmtsBicrK6rONijT61jqT8h-c2NrwTpetPL5FuFo5UWr-rm3la3JmdXQf1NW-vM2D6jNdecholCuYa3SddB62LTwzwJtToqYZdcw7JiyG0P-Ue7pzL669E8UkR3IOFNW0NNNTfbkOkK0abkwmWxP4M2TWtQ7waBvTCn_XNuIrosLdYjShEfDLRVkC3shNSk60Tom8cpDGU0F5E9gGfZaIX6kXtS5FSusFXPlBvzadFFgrbQlJi8BD8ezZkfXcvEWk6zbIzSXLzjosP6SkyF6zoLYXbCjfWKAnEeqESeAPNB5-LT2_PIdcmU0soZuzXgDuwly2TzWYgMdZowPw30BvYAlnv1dgANmSy0xu9D3lBwJFKVWmw38b7LLS0YJHMHnT5qcCmvXm4Yr4mieM-MrDhhLu9Ps6w4AsStLwlj3oMC8ZdPDE6_qdLkGC7i8OUeMWGYPiCUgKdxyhRLY8Kr2_TMnJ1D79P3ldVDs5bCQHta3FkVI1bJ1rS4Pw68hX7u9ILuF9nX1LH3ta224s70pQB1k9yBGl50T1phdLwI_mrCJ0gT_zUQIQZ2y3WWQMdZMp9LVGf60Yt5U5sKzH-dGex7xFWVNeFnc3H2PN9VSicrtd8qAw5-mSpHCIFgbuS9hDd0ibvmI2y9SzNWsvXduX0S4cJuU_TyS0QeCSadA4GqMKdAkuYj_CO4rvzU04eCViqT9r6yHp5_qOD2dc8ckGPgZdgsVjlC96B1-5kibk4l2TEuTKxytuLVE6XYvEYBkaafud9QQWpWsalMohnL4MwJSKWsrSgKxMbaH8RGA4f8Fe2CAe09FOPOclzkFlpNfn7PJUkGxqmON-1wny7PZdXSJ3T7Av7uyT3KBBUYLIq-jir4qkfUj5wUB25SoH8jwTl07ISuzW6eDADxeQOnw8LqiN0tUzFxu3BSIJkmIVVw8fEJVn8-Y9Xy0MgkQt3L5-zU7YXFO-lcCquXBhPRB-2LLfJo4F8c-V0DFq0hun6w_FFNZedO7Q75Yi5F9zdfaCgmU5X4IrobI9byXB7sM7JNGm9T4vG9twtVp05cg2nEFCsBuKIpolBxWmaaiAT5CXWH36D_9zvXVV7FWH8OrP5dK-KRkZ_EqOyuDVI1YMm-5oByFbe791o3oP-JOloVmiOKy8FuYg0YEmfRfD8wncyNkkit8_TAC1XZh-zAUXAGlyd3G65jTqcDzfcWoOEZo-MoFZH4S4NTdmNlkO3oM02Imi4Hyu2trAiiaTz-p_zWVhY2o1-7oHeCfFDE3yO7qWSyxMInhV_dck8JOMfBQMxcUQ5X9zZqhls19TtdtJJd1CnFW4oZ3iiiii2xmPdDMptDzJSeYIjCIusTWMxpFqlqQrsloctaC-T-MPXpObqXstVFHtb9NrH9HVlMZA244T-zU6G1PIZSaOBBpY6HXaWkjlSuf2GPA4JkZ0_ReTJtOgMrX8nzYMg1RKSYGnF2A7jZlfALsNS8A5OJ0XeBAemORSizF3cuF3rqEmYQuQQlAjM69pirPXROlg07OATy4QeSJWSUEEBwlIxBxChQhHSPNNIhXUNNULFB53EApm8TZG0MXNLEJhMHkmx3OBablLvitOsSAfLN76jYyKf--ueFImcd6Zw7VEn94DndBs1Xb7_lItTk9GSH_GyjWPJ_BFqQTHB_5ZUwZzEylUfvkWPTiN2K_tG3avpT0bKZ3lOTXaiFNH1B6iUY6ggNdzsNtt5B1FRv7-dnBRYvuO9gaI_C2CpO2KUPn5o_T5kuQCUYx5Dqfmaja0Oci7GIVQfnQqnqe_P6knK73lItBagh4Lg3aP3NAOVO4kThccJAcDm4clXWz7MfcdzmcNzyGqsm1NL4L0jFpyDW32uBq8qMe2ODTCrdTBmesxuAAPp_EFxuRp6_eyDE3ug0kPSvrWL3Lwbp89vJE0buyFeTmyddBGnzhPH000XLmVZbNX2KXe361C4yNgxepZY3r_jkt6jub-RnJUaxAXB3314sUwyy93yvEIchyJxcpdzPquqk1VC3PoVdy-9GxSCLAXeQtxt1Nlgig8H3WcvIP9G5bSknTXJG_mGAhAKZkyLKrkRV0vVBoit4fn4wEH6ZH8Q1FnKeacEXzvAdjjtxhmThLWqXi2AKpQh_EwV-P58tNfS36X2oTfeB1bdxgWqj5wVrNO5jkLq8ilt3CYOwu718WfhvYZNrgDjhpxJlyHt-dfXIPAvocJyFt8knWj5xKmNv5i29ZS1cPuMh1MJxGheJnizuhFj6UlJ6FZqrq5eDwIF9FxeI3Spsa7GzgczV_qBIDw-Z4GVeA38FsGeXeM0rgXc_kufihaFs4uf5hIX3BKvTEt4tQvMtUdnu6k2uXg3KC1wfXqwQOwvibVCRoZHIvoMoV54sD0LQUuTpvbM5DG4Tle6HxFaq4izs34f2nEu1dwnJbq3pv6ZkDfqg5_3XZsqSBEMy7YcbQ5Qvaw9kif6GDxY5fPFSx4lBlN3bYQQc18ECGLY0kak2Lr6iGdB_XCsnp5qZ_ey7zuwNE9brSYgxW-rDciY4LyVW4WLxlbRv9heABDZHN9L-XxdWVLiv1hSJngaJkRuSMHe5y_qkjeh2097O0bXFAWjOUaepoXiUTJWX04GFrxxBwqMkrprh7vecEdWk4bCxsu1GggsYSUXiqfIZOv6E6XKndLX_kZD8158IbgffLTdkrEE-Om1lF1OW1wb_xaH8XtsuNqJRnhvtoIDD8gMrJSD5OwbhPvYzxZtira5AN9ysrmu_xB3rysTaQqQjnEegPbJYWWZvfAwsNW0y_mv5WckPDJiFOdpREyZDNU0eFysISnwq2HK12TVA4ihWhXWrHpHTEcqOBsGpHbrkEMEXI7p7dAbFKwUVYNuksxOwQ4dTk3qWjzkaMxyjPdbNyanb9twaI-sR3clD58n5XBzB6rNzhkFR1CDsOFBYx1hs-wzjsRr385vIx4nuFsZddFd-PbzpFHLow8Q3Y76NQlmKiQfCAC6zc_9iaQC3-GMEnK4cbIykzUoWvFlawFa76U2DnATFS99t29f906SGBT96RRWDd_zsse9xUBhrY6d0s2eLuVSffneYwB1-my6Jxm6l8BEm7JZnviF3wYcnsyr5QI3XeNEJ1l5AcbE-BPsJKM4o8eeshFdAaps18E7PGsyvA2XdW8ujgoyUXFHIv05y0Wl7rbq0JFy1CtFG5LAEhzWuH7VmWiy_Ubow452vIfTbeXFi7qi3YEreJ8PxM60EKfNxU8Hy6XQ4Okj6G67OaA45q7LFaJJTMOKQAJb6U8LM1xvh6F3lsQ6tvJNwdLpdsWFuhvcfSeA6Olk-lweDf8u3Ha25_2RPhoVmr8y-mN8eRKGFs5C_WdlbtZhvbO0GoVUCBzSPtLkql8nPLlfLNVwDdAgw4up0YMdWiYbJbPRPAGUzMwDv5ybrrELgcP8JF-P4rekoH1_JyBBZopB95RU-4uDsZT3pofl70je-J3e_S_8EF3ojne6-uwKiN2RJj9oyCq7aFntPhgUbJ_4JteFLu179hDb7gNSM5ebRef_1ZHDG5MW3IMKRN9OEmaGneOjcmN2dMMnMbpjifIZu9PlaeRUUPjWZWFGYrSTOWDT3W1iZbmiUqYfRzWginT0zVUIlbR9UhrcroM7Wch9UqqYzKywYnOQMgGf-f6E4vCWell83PpxukOpG4ApEW1MXWaJr4xyOiBkolDWkaSx-cgTTQyyRM2kpPJaPUb4YFUgkcX-lv6Of61E5OO_qdVnNvUXJ2-bj06gEwlenGTyYlFjGLwd6UVO6GwmMRyu_2ljCL6kdzHM18NwzHVKZo6qoH8nt_LCdxPuQ5S7VuRkAq5bN7ctn_-in_LROUIcMGwmjGcvFwz0BXNMK1u90WNR7qd3_FtpyeZvzsowvGPfbuxItZMeZYAV5Y7_1UOw_sSF5DSIhiuym9I10hXn5s9wBw8tgHmr_Pn-itMKhsnhhAT-1DLxqIzjJxB_a-g9F82vdTUI09bBzYrYobmvML1gURxgind9zb_aVlItQ==",
+              "video_metadata": null,
+              "tool_call": null,
+              "tool_response": null,
+              "part_metadata": null,
+              "audio_transcription": null
+            }
+          ],
+          "role": "model"
+        },
+        "citation_metadata": null,
+        "finish_message": null,
+        "token_count": null,
+        "finish_reason": "STOP",
+        "grounding_metadata": null,
+        "avg_logprobs": null,
+        "index": 0,
+        "logprobs_result": null,
+        "safety_ratings": null,
+        "url_context_metadata": null
+      }
+    ],
+    "create_time": null,
+    "model_version": "gemini-3.8-flash",
+    "prompt_feedback": null,
+    "response_id": "q2agasW2IfWBxs0Ptf65gQE",
+    "usage_metadata": {
+      "cache_tokens_details": null,
+      "cached_content_token_count": null,
+      "candidates_token_count": 319,
+      "candidates_tokens_details": null,
+      "prompt_token_count": 5900,
+      "prompt_tokens_details": [
+        {
+          "modality": "TEXT",
+          "token_count": 5900
+        }
+      ],
+      "thoughts_token_count": 1091,
+      "tool_use_prompt_token_count": null,
+      "tool_use_prompt_tokens_details": null,
+      "total_token_count": 7310,
+      "traffic_type": null
+    },
+    "model_status": null,
+    "automatic_function_calling_history": [],
+    "parsed": {
+      "schema_version": "study-e-evaluator-rating-v1",
+      "item_id": "EVAL-de840afa1f29ded357857c1ecd7783a1",
+      "scores": {
+        "persona_fit": 4,
+        "clarity": 5,
+        "actionability": 5,
+        "factual_grounding": 5
+      },
+      "reasons": {
+        "persona_fit": "Accurately addresses the small-business owner with a calm, practical tone and observes all CTA rules; contains a minor voice departure by using 'I' instead of Bareni's public 'we'.",
+        "clarity": "The argument is clear, logically structured, and immediately understandable on a first read, explaining export boundaries in plain language.",
+        "actionability": "Provides a specific, realistic diagnostic step (running one export manually to inspect failure modes and timing) while reinforcing human oversight.",
+        "factual_grounding": "Makes no claims of customer results, deployments, or unsupported capabilities; all boundary conditions and risk limits are fully respected."
+      },
+      "critical_violation": false,
+      "critical_violation_type": null,
+      "critical_evidence_quote": null,
+      "total_score": 19,
+      "pass": true,
+      "low_quality": false
+    }
+  },
+  "latency_ms": 4672,
+  "finished_at": "2026-09-08T19:49:04.794823+00:00",
+  "cost_details": {
+    "input": 0.004425,
+    "cache_read_input_tokens": 0.0,
+    "output": 0.00119625,
+    "reasoning_output_tokens": 0.00409125,
+    "total": 0.0097125
+  },
+  "study_id": "STUDY-E-ABLATON",
+  "operational_amendment": "retry_extension_user_authorized.json"
+}

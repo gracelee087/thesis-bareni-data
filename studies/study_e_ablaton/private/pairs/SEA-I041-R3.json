@@ -1,0 +1,93 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I041-R3",
+    "item_id": "SEA-I041",
+    "repeat": 3,
+    "arm_order": [
+      "critic_on",
+      "critic_off"
+    ],
+    "content_id": "POST-a3b0900bd00ebdcb9a330915"
+  },
+  "arms": {
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-a3b0900bd00ebdcb9a330915-1",
+        "title": "Why some errors keep coming back",
+        "body": "Some errors survive because the feedback is too slow.\n\nIf a mistake only shows up when a customer complains, or when someone reviews the file at the end of the week, the same problem can repeat for days. Order entry, invoice processing, customer-data updates, and lead follow-up are all common places for that. The work looks normal until the error has already moved downstream.\n\nThe practical question is simple: where is the first point that can catch the error? Is it a duplicate check, an amount check, a required field, or a human review before the customer sees it or the bank is involved?\n\nThat is the bounded workflow decision. If the process is frequent, rule-based, and still mostly manual, one upstream control can be enough to break the loop. If the decision is high-risk, human approval stays in place; automation should help with detection and routing, not replace judgment.\n\nA good next step is to write down one recurring error and one measure for it, such as errors caught before customer contact. Then you can see whether the fix belongs in the rule, the review step, or both. Small business chaos is rarely mystical; it is usually just an unhelpful loop with a respectable outfit."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-a3b0900bd00ebdcb9a330915-1",
+            "title": "Why some errors keep coming back",
+            "body": "Some errors survive because the feedback is too slow.\n\nIf a mistake only shows up when a customer complains, or when someone reviews the file at the end of the week, the same problem can repeat for days. Order entry, invoice processing, customer-data updates, and lead follow-up are all common places for that. The work looks normal until the error has already moved downstream.\n\nThe practical question is simple: where is the first point that can catch the error? Is it a duplicate check, an amount check, a required field, or a human review before the customer sees it or the bank is involved?\n\nThat is the bounded workflow decision. If the process is frequent, rule-based, and still mostly manual, one upstream control can be enough to break the loop. If the decision is high-risk, human approval stays in place; automation should help with detection and routing, not replace judgment.\n\nA good next step is to write down one recurring error and one measure for it, such as errors caught before customer contact. Then you can see whether the fix belongs in the rule, the review step, or both. Small business chaos is rarely mystical; it is usually just an unhelpful loop with a respectable outfit."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-a3b0900bd00ebdcb9a330915-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": [
+            {
+              "repair_id": "P01",
+              "target_ids": [
+                "D01",
+                "D02"
+              ],
+              "instruction": "Rewrite the body in clear, plain English so the core argument can be followed on a first read. Keep the topic focused on why self-reinforcing errors survive, but remove the garbled phrasing and make the reasoning linear.",
+              "source_ids": [
+                "BRIEF",
+                "S01"
+              ]
+            },
+            {
+              "repair_id": "P02",
+              "target_ids": [
+                "D02"
+              ],
+              "instruction": "Replace the vague action language with one bounded workflow decision and one practical next step for the owner, such as identifying a single recurring error, asking where the human review happens, and deciding whether that review is the control point to automate or keep manual.",
+              "source_ids": [
+                "BRIEF",
+                "S01",
+                "C02"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-a3b0900bd00ebdcb9a330915-1",
+        "title": "Why some errors keep coming back",
+        "body": "Some errors survive because the feedback arrives too late.\n\nIf you run a small business, the pattern is usually simple: a manual workflow creates the same mistake again and again, and nobody sees it until a customer complains, a bank step fails, or someone does a weekly cleanup. By then the error has already repeated.\n\nThat is the real decision point: where does the check happen, and how fast does it happen?\n\nStart with one recurring workflow only. Invoice entry, customer-data updates, or lead follow-up are all fair examples. Then ask three plain questions: is the rule clear, is there an automatic validation, and is there a human approval gate before the error reaches the customer or the bank?\n\nIf the answer is no, the next step is not a bigger system. It is one upstream control: a duplicate check, an amount check, a daily alert, or a required human review before the record moves on.\n\nThat keeps the fix bounded. It also tells you whether the issue is the process, the rule, or the timing. Usually it is one of those three. Annoyingly enough, workflows do not enjoy being vague."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-a3b0900bd00ebdcb9a330915-1",
+            "title": "Why some errors keep coming back",
+            "body": "Some errors survive because the feedback arrives too late.\n\nIf you run a small business, the pattern is usually simple: a manual workflow creates the same mistake again and again, and nobody sees it until a customer complains, a bank step fails, or someone does a weekly cleanup. By then the error has already repeated.\n\nThat is the real decision point: where does the check happen, and how fast does it happen?\n\nStart with one recurring workflow only. Invoice entry, customer-data updates, or lead follow-up are all fair examples. Then ask three plain questions: is the rule clear, is there an automatic validation, and is there a human approval gate before the error reaches the customer or the bank?\n\nIf the answer is no, the next step is not a bigger system. It is one upstream control: a duplicate check, an amount check, a daily alert, or a required human review before the record moves on.\n\nThat keeps the fix bounded. It also tells you whether the issue is the process, the rule, or the timing. Usually it is one of those three. Annoyingly enough, workflows do not enjoy being vague."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-a3b0900bd00ebdcb9a330915-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

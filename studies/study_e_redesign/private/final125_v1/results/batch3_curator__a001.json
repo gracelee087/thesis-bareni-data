@@ -1,0 +1,268 @@
+{
+  "status": "success",
+  "usage": {
+    "input_tokens": 4825,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 449,
+    "reasoning_tokens": 0
+  },
+  "cost_usd": 0.0187975,
+  "output": {
+    "item_id": "E-MEM-BATCH-3",
+    "proposals": [
+      {
+        "proposal_id": "P01",
+        "action": "MERGE",
+        "target_lesson_id": "L01",
+        "event_ids": [
+          "B1-SUMMARY",
+          "SE-FINAL-N025",
+          "B3-SUMMARY",
+          "SE-FINAL-N079"
+        ],
+        "lesson_text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. This includes indirect meeting prompts and direct brand-level offers such as a free 30-minute diagnostic. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+        "reason": "Confirmed batch-3 evidence repeats and sharpens the same underlying issue already captured in L01: informational posts drift into CTA language. SE-FINAL-N079 adds a direct branded diagnostic invitation variant, so MERGE is appropriate to broaden the duplicate-prevention scope while preserving the lesson’s existing meaning and provenance."
+      },
+      {
+        "proposal_id": "P02",
+        "action": "ADD",
+        "target_lesson_id": null,
+        "event_ids": [
+          "B3-SUMMARY",
+          "SE-FINAL-N080"
+        ],
+        "lesson_text": "When approved evidence presents an operational practice as policy or positioning, keep that qualifier in the copy. Do not rewrite it as an absolute guarantee or warranty-level statement.",
+        "reason": "SE-FINAL-N080 shows a reusable factual-grounding failure pattern distinct from the existing CTA lesson: supported policy language ('our policy is...') was overstated into an absolute claim. This is a general drafting control for staying within the approved evidence boundary."
+      },
+      {
+        "proposal_id": "P03",
+        "action": "ADD",
+        "target_lesson_id": null,
+        "event_ids": [
+          "B3-SUMMARY",
+          "SE-FINAL-N091"
+        ],
+        "lesson_text": "If the source set does not support a substantive explanatory claim, replace it with a neutral workflow prompt or decision step rather than filling the gap with general background explanation.",
+        "reason": "SE-FINAL-N091 confirms a separate evidence-boundary pattern: the draft added an unsupported explanatory claim not grounded in the supplied evidence. The accepted repair moved back to an observable workflow instruction, which makes this a reusable lesson for constrained marketing content."
+      }
+    ]
+  },
+  "raw_text": "{\"item_id\":\"E-MEM-BATCH-3\",\"proposals\":[{\"proposal_id\":\"P01\",\"action\":\"MERGE\",\"target_lesson_id\":\"L01\",\"event_ids\":[\"B1-SUMMARY\",\"SE-FINAL-N025\",\"B3-SUMMARY\",\"SE-FINAL-N079\"],\"lesson_text\":\"For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. This includes indirect meeting prompts and direct brand-level offers such as a free 30-minute diagnostic. End with a neutral practical observation or next-step note instead of a meeting prompt.\",\"reason\":\"Confirmed batch-3 evidence repeats and sharpens the same underlying issue already captured in L01: informational posts drift into CTA language. SE-FINAL-N079 adds a direct branded diagnostic invitation variant, so MERGE is appropriate to broaden the duplicate-prevention scope while preserving the lesson’s existing meaning and provenance.\"},{\"proposal_id\":\"P02\",\"action\":\"ADD\",\"target_lesson_id\":null,\"event_ids\":[\"B3-SUMMARY\",\"SE-FINAL-N080\"],\"lesson_text\":\"When approved evidence presents an operational practice as policy or positioning, keep that qualifier in the copy. Do not rewrite it as an absolute guarantee or warranty-level statement.\",\"reason\":\"SE-FINAL-N080 shows a reusable factual-grounding failure pattern distinct from the existing CTA lesson: supported policy language ('our policy is...') was overstated into an absolute claim. This is a general drafting control for staying within the approved evidence boundary.\"},{\"proposal_id\":\"P03\",\"action\":\"ADD\",\"target_lesson_id\":null,\"event_ids\":[\"B3-SUMMARY\",\"SE-FINAL-N091\"],\"lesson_text\":\"If the source set does not support a substantive explanatory claim, replace it with a neutral workflow prompt or decision step rather than filling the gap with general background explanation.\",\"reason\":\"SE-FINAL-N091 confirms a separate evidence-boundary pattern: the draft added an unsupported explanatory claim not grounded in the supplied evidence. The accepted repair moved back to an observable workflow instruction, which makes this a reusable lesson for constrained marketing content.\"}]}",
+  "provider_response": {
+    "id": "resp_0b90ec9566b52435016aa0080669a087d2906d957a9a20fc77",
+    "created_at": 1788872710.0,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": {},
+    "model": "gpt-5.4-2026-03-05",
+    "object": "response",
+    "output": [
+      {
+        "id": "msg_0b90ec9566b52435016aa00806fa2087d2b0ad7df9480b4f3d",
+        "content": [
+          {
+            "annotations": [],
+            "text": "{\"item_id\":\"E-MEM-BATCH-3\",\"proposals\":[{\"proposal_id\":\"P01\",\"action\":\"MERGE\",\"target_lesson_id\":\"L01\",\"event_ids\":[\"B1-SUMMARY\",\"SE-FINAL-N025\",\"B3-SUMMARY\",\"SE-FINAL-N079\"],\"lesson_text\":\"For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. This includes indirect meeting prompts and direct brand-level offers such as a free 30-minute diagnostic. End with a neutral practical observation or next-step note instead of a meeting prompt.\",\"reason\":\"Confirmed batch-3 evidence repeats and sharpens the same underlying issue already captured in L01: informational posts drift into CTA language. SE-FINAL-N079 adds a direct branded diagnostic invitation variant, so MERGE is appropriate to broaden the duplicate-prevention scope while preserving the lesson’s existing meaning and provenance.\"},{\"proposal_id\":\"P02\",\"action\":\"ADD\",\"target_lesson_id\":null,\"event_ids\":[\"B3-SUMMARY\",\"SE-FINAL-N080\"],\"lesson_text\":\"When approved evidence presents an operational practice as policy or positioning, keep that qualifier in the copy. Do not rewrite it as an absolute guarantee or warranty-level statement.\",\"reason\":\"SE-FINAL-N080 shows a reusable factual-grounding failure pattern distinct from the existing CTA lesson: supported policy language ('our policy is...') was overstated into an absolute claim. This is a general drafting control for staying within the approved evidence boundary.\"},{\"proposal_id\":\"P03\",\"action\":\"ADD\",\"target_lesson_id\":null,\"event_ids\":[\"B3-SUMMARY\",\"SE-FINAL-N091\"],\"lesson_text\":\"If the source set does not support a substantive explanatory claim, replace it with a neutral workflow prompt or decision step rather than filling the gap with general background explanation.\",\"reason\":\"SE-FINAL-N091 confirms a separate evidence-boundary pattern: the draft added an unsupported explanatory claim not grounded in the supplied evidence. The accepted repair moved back to an observable workflow instruction, which makes this a reusable lesson for constrained marketing content.\"}]}",
+            "type": "output_text",
+            "logprobs": []
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message",
+        "phase": "final_answer"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 1.0,
+    "tool_choice": "auto",
+    "tools": [],
+    "top_p": 0.98,
+    "background": false,
+    "completed_at": 1788872715.0,
+    "conversation": null,
+    "max_output_tokens": 2048,
+    "max_tool_calls": null,
+    "moderation": null,
+    "previous_response_id": null,
+    "prompt": null,
+    "prompt_cache_key": null,
+    "prompt_cache_options": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "generate_summary": null,
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "status": "completed",
+    "text": {
+      "format": {
+        "name": "study_e_role",
+        "schema_": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "item_id": {
+              "type": "string",
+              "enum": [
+                "E-MEM-BATCH-3"
+              ]
+            },
+            "proposals": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "proposal_id": {
+                    "type": "string",
+                    "enum": [
+                      "P01",
+                      "P02",
+                      "P03"
+                    ]
+                  },
+                  "action": {
+                    "type": "string",
+                    "enum": [
+                      "ADD",
+                      "MERGE",
+                      "SKIP"
+                    ]
+                  },
+                  "target_lesson_id": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "enum": [
+                          "L01"
+                        ]
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "event_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "enum": [
+                        "B1-SUMMARY",
+                        "SE-FINAL-N025",
+                        "B2-SUMMARY",
+                        "B3-SUMMARY",
+                        "SE-FINAL-N079",
+                        "SE-FINAL-N080",
+                        "SE-FINAL-N091"
+                      ]
+                    }
+                  },
+                  "lesson_text": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "reason": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "proposal_id",
+                  "action",
+                  "target_lesson_id",
+                  "event_ids",
+                  "lesson_text",
+                  "reason"
+                ]
+              }
+            }
+          },
+          "required": [
+            "item_id",
+            "proposals"
+          ]
+        },
+        "type": "json_schema",
+        "description": null,
+        "strict": true
+      },
+      "verbosity": "medium"
+    },
+    "top_logprobs": 0,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 4825,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 449,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 5274
+    },
+    "user": null,
+    "billing": {
+      "payer": "developer"
+    },
+    "frequency_penalty": 0.0,
+    "presence_penalty": 0.0,
+    "store": false,
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    }
+  },
+  "stop_reason": "completed",
+  "cost_details": {
+    "input": 0.0120625,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.006735,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.0187975
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": "default",
+  "key": "batch3_curator__a001",
+  "role": "memory",
+  "created_at": "2026-09-08T13:05:10.588934+00:00",
+  "ended_at": "2026-09-08T13:05:15.868940+00:00",
+  "metadata": {
+    "task_id": null,
+    "batch_id": 3,
+    "cohort": "natural",
+    "condition": "curator"
+  },
+  "task_id": null,
+  "batch_id": 3,
+  "cohort": "natural",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 5266,
+  "budget_charge_usd": 0.0187975,
+  "unknown_cost_reservation_usd": 0
+}

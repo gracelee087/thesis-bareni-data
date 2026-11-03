@@ -1,0 +1,335 @@
+{
+  "task_id": "SE-FINAL-N035",
+  "batch_id": 2,
+  "condition": "natural",
+  "source_task_id": null,
+  "topic": "naming conventions as a design constraint",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-304",
+    "title": "Naming conventions are a workflow constraint, not a nice-to-have",
+    "body": "If you run a small business, naming conventions are not cosmetic. They are a design constraint on whether a workflow can move cleanly between your CRM, inbox, invoicing tool, and spreadsheets without someone renaming fields by hand. That matters when you are deciding whether to keep doing the work manually, hire for it, or invest in a bounded automation.\n\nThe practical question is simple: when data moves across tools, are the names consistent enough for a person, rule, or AI prompt to understand the same thing every time? If your customer IDs, invoice numbers, or lead statuses change format from one system to the next, you do not just get tidy filing problems. You get translation work. And translation work has to be paid for somewhere.\n\nFor money-related flows, keep the boundary clear: human approval stays mandatory. A naming rule can help an invoice match correctly, but it does not replace judgment on payment or other high-risk decisions.\n\nA useful next step is to pick one recurring workflow this week — customer enquiries, lead tracking, or invoice processing — and map the field names from source to destination. Write down every place you rename, reformat, or guess. That map is your naming blueprint. If the map is messy, the automation will be too. A tool can only be as tidy as the labels it is handed; unfortunately, labels do not improve by wishful thinking."
+  },
+  "final": {
+    "item_id": "E-OPT-404",
+    "title": "Naming conventions shape whether automation is workable",
+    "body": "If you run a small business, naming conventions are not cosmetic. They are part of the design of whether a workflow can move cleanly between your CRM, inbox, invoicing tool, and spreadsheets without someone renaming fields by hand. That matters when you are deciding whether to keep doing the work manually, hire for it, or invest in a bounded automation.\n\nThe practical question is simple: when data moves across tools, are the names consistent enough for a person, a rule, or an AI prompt to understand the same thing every time? If customer IDs, invoice numbers, or lead statuses change format from one system to the next, you do not just get tidy filing problems. You get translation work. And translation work has to be paid for somewhere.\n\nFor money-related flows, keep the boundary clear: human approval stays mandatory. A naming rule can help an invoice match correctly, but it does not replace judgment on payment or any other high-risk decision. Bareni’s own AP demo is synthetic and does not include real payment execution or three-way matching, so this is a workflow design question, not a promise of automation magic.\n\nA useful next step is to pick one recurring workflow this week — customer enquiries, lead tracking, or invoice processing — and map the field names from source to destination. Write down every place you rename, reformat, or guess. That map is your naming blueprint. If the map is messy, the automation will be too. The labels are usually the quiet part of the system, which is why they cause trouble when nobody watches them."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-035",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-035",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-035-1",
+        "repairs": []
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-035",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-404",
+        "title": "Naming conventions shape whether automation is workable",
+        "body": "If you run a small business, naming conventions are not cosmetic. They are part of the design of whether a workflow can move cleanly between your CRM, inbox, invoicing tool, and spreadsheets without someone renaming fields by hand. That matters when you are deciding whether to keep doing the work manually, hire for it, or invest in a bounded automation.\n\nThe practical question is simple: when data moves across tools, are the names consistent enough for a person, a rule, or an AI prompt to understand the same thing every time? If customer IDs, invoice numbers, or lead statuses change format from one system to the next, you do not just get tidy filing problems. You get translation work. And translation work has to be paid for somewhere.\n\nFor money-related flows, keep the boundary clear: human approval stays mandatory. A naming rule can help an invoice match correctly, but it does not replace judgment on payment or any other high-risk decision. Bareni’s own AP demo is synthetic and does not include real payment execution or three-way matching, so this is a workflow design question, not a promise of automation magic.\n\nA useful next step is to pick one recurring workflow this week — customer enquiries, lead tracking, or invoice processing — and map the field names from source to destination. Write down every place you rename, reformat, or guess. That map is your naming blueprint. If the map is messy, the automation will be too. The labels are usually the quiet part of the system, which is why they cause trouble when nobody watches them."
+      },
+      "gate_key": "SE-FINAL-N035_gate1__a001"
+    }
+  ],
+  "measurement_status": "complete",
+  "planner": {
+    "item_id": "E-PLAN-504",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task explicitly prohibits CTA (CTA rule: None). L01 confirms that an informational post about naming conventions as a workflow design constraint should close with a practical observation or next-step note, not a meeting prompt or diagnostic booking request."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Identify naming conventions as a design constraint specific to one recurring workflow. Use C01 and C02 to define the bounded scope: a small business owner with a repeatable, measurable task where consistent naming (API field labels, form fields, database keys, or human-readable identifiers) affects either AI integration feasibility or manual-to-automated handoff clarity.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C01",
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Explain why naming convention choices matter before automation. Reference C02 (Bareni workflow spans customer environment, SaaS tools, APIs, and AI prompts) and S01 (owner decision context compares automation investment with manual work or hiring). Show one concrete example: inconsistent customer-ID formats across CRM, invoicing tool, and email records create manual reconciliation friction and block reliable AI extraction or matching.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "State the design decision owner faces: standardise naming upfront (before automation) or automate around legacy naming and pay translation cost in prompts, rules, and maintenance. Connect to C04 (human approval mandatory for money movement) if naming affects invoice matching or payment routing.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Define one diagnostic question the owner can use immediately: 'When I move data between my CRM, email, invoicing tool, and spreadsheets this week, how many times do I manually rename or reformat a field to make systems talk to each other?' Ground this in C01 (representative pain: 8–10 hours weekly of repeated work) and S01 (practical, observable decision).",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Explain the practical next step without a CTA. Apply L01: close with a neutral action the owner controls. Example: 'Pick one recurring workflow—customer inquiries, invoice processing, or lead tracking—and map how field names flow across your tools this week. Note where you rename or reformat. That map is your naming blueprint.' This preserves S01 (one observable workflow decision) and K03 (human authority remains with owner).",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "S01",
+          "C01"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Preserve K01, K03, and K04: use no invented results, no sales urgency, no multi-person team, and no implication that Bareni has solved this for customers. Optionally add a neutral closing: 'Once you have that map, you'll see whether naming standardisation is a one-time fix or an ongoing handoff cost—and whether an automation tool can bridge the gap or whether the cost lives in the naming layer.'",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No customer deployment, invented result, productivity claim, or savings number. Use only the representative scenario (8–10 hours weekly manual work) from C01 as a persona context, not observed proof."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Do not propose autonomous payment or approval. If naming affects invoice automation, reinforce C04: human approval remains mandatory."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Preserve the frozen persona (owner-operator decision context, human authority, no hype), approved evidence status (C01–C05, S01), and founder-to-founder voice. No CTA per task rule."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use plain English and concrete examples (customer-ID format mismatch, field-name mapping across tools). Keep diagnostic question and next-step action distinct from Bareni capabilities—they are owner-controlled, not Bareni deliverables."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-604",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "Especially suitable businesses already work in English, use digital documents and SaaS tools, and have a frequent, repeatable workflow with a measurable outcome."
+          },
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits, and—if it does—defines pilot scope, fixed price, and measures."
+          }
+        ],
+        "rationale": "This is a planning instruction to frame naming conventions as a constraint on one recurring workflow, not an assertion that Bareni has done so for anyone. The bounded scope it proposes matches the approved audience and one-workflow framing.",
+        "use_guidance": "Keep as an explicitly framed design constraint tied to a single recurring, measurable workflow for a 1-10 person, English-speaking, SaaS-using business. Do not imply an existing naming-standardisation service, deployment or customer workflow."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "general document, email, CRM, and back-office workflows using AI plus Zapier, Make, n8n, and small amounts of custom code"
+          },
+          {
+            "source_id": "S01",
+            "quote": "the owner compares a bounded automation investment with continuing\n  manual work or hiring; final approval and business authority remain human."
+          }
+        ],
+        "rationale": "An instruction to explain a rationale and give one illustrative example. The CRM/invoicing/email span and the owner's build-versus-continue-manually decision context are approved; the reconciliation example is hypothetical illustration, not an observed finding.",
+        "use_guidance": "Keep the customer-ID example explicitly as an illustrative scenario. Do not present manual reconciliation friction or blocked AI extraction as a measured or observed customer result, and attach no numbers."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C03",
+            "quote": "Three-way matching against purchase orders and receipts is not built."
+          }
+        ],
+        "rationale": "Stating the standardise-now-versus-translate-later choice is a permissible framing, and the human-approval rule is approved. However, the cited approval rule sits in C04, not C02 as labelled, and linking it to invoice matching risks implying Bareni's AP capability covers matching or payment routing.",
+        "use_guidance": "Add the qualification that human approval is mandatory for any money movement regardless of naming design, and that Bareni's accounts-payable work is a synthetic-data demo with no working three-way matching and no real payment execution. Cite C04 for the approval rule."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "The 8–10 hours is a persona scenario, not a market\n  statistic or observed customer result."
+          },
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step."
+          }
+        ],
+        "rationale": "This supplies a diagnostic question for the reader to run themselves; it does not assert any current implementation or measured effect. The persona-pain grounding is permitted only as a scenario.",
+        "use_guidance": "Keep as a self-run diagnostic question. If the 8-10 hours figure appears at all, label it explicitly as a persona scenario, not a market statistic or observed customer result. Do not present the question as Bareni's diagnostic service or attach a booking prompt."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Informational posts use no CTA or one soft closing sentence."
+          }
+        ],
+        "rationale": "A permissible next-step instruction the owner performs alone, with no meeting invitation. It asserts no capability or result.",
+        "use_guidance": "Keep as a manual, owner-controlled mapping exercise. Close with a neutral practical observation only; include no invitation to book, discuss or continue the conversation, and no primary or secondary CTA."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C05",
+            "quote": "Do not use a founder name, face, or career history as authority. Do not imply a\n  multi-person team, legal registration, or current customer relationships."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Never invent a benchmark, guarantee, ROI, saving, revenue lift, productivity result, or thesis-validated capability."
+          }
+        ],
+        "rationale": "A drafting constraint plus an optional neutral closing sentence. It proposes wording rather than asserting any current fact, and the constraints it restates match approved voice rules.",
+        "use_guidance": "Retain the restrictions. If the optional closing is used, keep it as the single soft closing sentence, phrased as an open question for the owner rather than a claim that Bareni can bridge the gap; use \"we\" only for the three self-built demos and never imply employees, registration or customers."
+      }
+    ]
+  },
+  "selected_lessons": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025"
+      ]
+    }
+  ],
+  "register_sha256": "48497afb8641ddc47d974cdfadba06a1f6b562d21c49ec03c9b03a5dc531744e",
+  "planner_key": "SE-FINAL-N035_planner__a001",
+  "researcher_key": "SE-FINAL-N035_researcher__a001",
+  "writer_key": "SE-FINAL-N035_writer__a001",
+  "final_key": "SE-FINAL-N035_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-N035_gate1__a001",
+  "production_completed_at": "2026-09-08T12:30:26.864155+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts",
+  "initial_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-035",
+    "scores": {
+      "persona_fit": 5,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Accurately targets the small business owner-operator weighing automation against hiring, matches Bareni's calm and practical voice, and strictly adheres to the requested no-CTA rule.",
+      "clarity": "The argument is structured logically with an immediate main point, plain technical explanations, and clear explanations of why naming consistency matters.",
+      "actionability": "Provides a realistic, bounded exercise to map field names across one recurring workflow, explicitly noting that human approval remains mandatory for money movements.",
+      "factual_grounding": "Fully grounded in approved principles and workflow boundaries without inventing customer claims, metrics, or unimplemented capabilities."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 20,
+    "pass": true,
+    "low_quality": false
+  },
+  "final_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-035",
+    "scores": {
+      "persona_fit": 5,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Directly addresses the owner-operator in Bareni's calm, practical voice, perfectly obeying the no-CTA rule and human-in-the-loop boundaries.",
+      "clarity": "The argument is clear, logically structured, and plainly explains how inconsistent naming creates hidden translation work across tools.",
+      "actionability": "Gives a concrete, feasible next step to map source-to-destination field names in one workflow and identify reformatting friction.",
+      "factual_grounding": "Accurately represents the synthetic AP demo, explicitly disclaiming real payment execution and three-way matching without unsupported claims."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 20,
+    "pass": true,
+    "low_quality": false
+  },
+  "evaluation_reused": false,
+  "evaluation_keys": [
+    "SE-FINAL-N035_eval_initial__a001",
+    "SE-FINAL-N035_eval_final__a001"
+  ],
+  "completed_at": "2026-09-08T12:30:40.000066+00:00"
+}

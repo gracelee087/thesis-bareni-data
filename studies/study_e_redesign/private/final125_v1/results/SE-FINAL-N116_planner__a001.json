@@ -1,0 +1,190 @@
+{
+  "status": "success",
+  "usage": {
+    "input_tokens": 4468,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 995,
+    "reasoning_tokens": null
+  },
+  "cost_usd": 0.009443,
+  "output": {
+    "item_id": "E-PLAN-523",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "Task explicitly disallows CTA; end with a neutral practical observation or next-step diagnostic question instead of a meeting prompt or booking link."
+      },
+      {
+        "lesson_id": "L02",
+        "application": "Preserve Bareni's policy position on customer data ownership and no-lock-in (C02) as stated positioning, not a warranty claim."
+      },
+      {
+        "lesson_id": "L03",
+        "application": "The abstract topic 'why table extraction is not enough' requires grounding in a concrete workflow decision; use approved evidence (C01, C02, C03) to define the boundary where extraction alone fails and where a bounded automation pilot applies."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Define table extraction as the standalone task: pulling structured data from invoices, receipts, or documents into a spreadsheet. Acknowledge this is a reasonable first attempt but identify the workflow gap—what happens after the table exists (routing, matching, approval, next action).",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C03",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Explain that small-business workflows involve repetitive decisions after extraction: matching invoice amounts to purchase orders, flagging duplicates, routing to approval, or logging the decision for audit. Extraction alone leaves these repetitive steps manual.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "State the practical diagnostic question: which post-extraction step costs the owner 2–4 hours per week and follows a consistent rule? If no answer, extraction tooling alone is fit-for-purpose. If yes, a bounded workflow pilot may apply.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C01",
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Describe the pilot scope briefly: AI plus workflow automation (using tools like Zapier, Make, or n8n) can integrate extraction, apply consistent logic (duplicate check, amount rule, audit log), and hand control back to the owner before money moves. Emphasize human approval for high-risk decisions (C04).",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L02"
+        ],
+        "evidence_ids": [
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Preserve data ownership and no-lock-in positioning (C02): the customer's database, automation-tool accounts, and API keys are in the customer's name from the start; finished code is handed over; retainer support is optional.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L02"
+        ],
+        "evidence_ids": [
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Close with a neutral next-step prompt: work through your post-extraction workflow step-by-step, identify the repeating decision rule, and note the time cost. This frame clarifies whether a bounded automation pilot fits or extraction alone is enough. No booking prompt.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C01",
+          "C05"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "Do not invent customers, deployments, results, ROI, or multi-person team. Use only self-built demo description (C03) and conceptual workflow example from persona (C01). No sales CTA."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Emphasize that human approval is mandatory for money movement (C04). Do not imply autonomous payment or high-risk decision-making by the system."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Preserve frozen persona voice (plain-speaking, technical, founder-to-founder), approved evidence status (self-built demos, not customer case studies), and human approval boundary throughout all steps."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use plain English. Keep the synthetic persona workflow example (C01) distinct from any approved feature description (C02, C03). No hype vocabulary; use concrete mechanisms only."
+      }
+    ]
+  },
+  "raw_text": "{\"item_id\": \"E-PLAN-523\", \"selected_lessons\": [{\"lesson_id\": \"L01\", \"application\": \"Task explicitly disallows CTA; end with a neutral practical observation or next-step diagnostic question instead of a meeting prompt or booking link.\"}, {\"lesson_id\": \"L02\", \"application\": \"Preserve Bareni's policy position on customer data ownership and no-lock-in (C02) as stated positioning, not a warranty claim.\"}, {\"lesson_id\": \"L03\", \"application\": \"The abstract topic 'why table extraction is not enough' requires grounding in a concrete workflow decision; use approved evidence (C01, C02, C03) to define the boundary where extraction alone fails and where a bounded automation pilot applies.\"}], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Define table extraction as the standalone task: pulling structured data from invoices, receipts, or documents into a spreadsheet. Acknowledge this is a reasonable first attempt but identify the workflow gap—what happens after the table exists (routing, matching, approval, next action).\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"C03\", \"C05\"]}, {\"step_id\": \"P02\", \"instruction\": \"Explain that small-business workflows involve repetitive decisions after extraction: matching invoice amounts to purchase orders, flagging duplicates, routing to approval, or logging the decision for audit. Extraction alone leaves these repetitive steps manual.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C01\", \"C02\"]}, {\"step_id\": \"P03\", \"instruction\": \"State the practical diagnostic question: which post-extraction step costs the owner 2–4 hours per week and follows a consistent rule? If no answer, extraction tooling alone is fit-for-purpose. If yes, a bounded workflow pilot may apply.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"C01\", \"C02\"]}, {\"step_id\": \"P04\", \"instruction\": \"Describe the pilot scope briefly: AI plus workflow automation (using tools like Zapier, Make, or n8n) can integrate extraction, apply consistent logic (duplicate check, amount rule, audit log), and hand control back to the owner before money moves. Emphasize human approval for high-risk decisions (C04).\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L02\"], \"evidence_ids\": [\"C02\", \"C04\"]}, {\"step_id\": \"P05\", \"instruction\": \"Preserve data ownership and no-lock-in positioning (C02): the customer's database, automation-tool accounts, and API keys are in the customer's name from the start; finished code is handed over; retainer support is optional.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L02\"], \"evidence_ids\": [\"C02\"]}, {\"step_id\": \"P06\", \"instruction\": \"Close with a neutral next-step prompt: work through your post-extraction workflow step-by-step, identify the repeating decision rule, and note the time cost. This frame clarifies whether a bounded automation pilot fits or extraction alone is enough. No booking prompt.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C01\", \"C05\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"Do not invent customers, deployments, results, ROI, or multi-person team. Use only self-built demo description (C03) and conceptual workflow example from persona (C01). No sales CTA.\"}, {\"constraint_id\": \"K02\", \"handling\": \"Emphasize that human approval is mandatory for money movement (C04). Do not imply autonomous payment or high-risk decision-making by the system.\"}, {\"constraint_id\": \"K03\", \"handling\": \"Preserve frozen persona voice (plain-speaking, technical, founder-to-founder), approved evidence status (self-built demos, not customer case studies), and human approval boundary throughout all steps.\"}, {\"constraint_id\": \"K04\", \"handling\": \"Use plain English. Keep the synthetic persona workflow example (C01) distinct from any approved feature description (C02, C03). No hype vocabulary; use concrete mechanisms only.\"}]}",
+  "provider_response": {
+    "id": "msg_011Cer3AFMGdFu2aG2tiUN8N",
+    "container": null,
+    "content": [
+      {
+        "citations": null,
+        "text": "{\"item_id\": \"E-PLAN-523\", \"selected_lessons\": [{\"lesson_id\": \"L01\", \"application\": \"Task explicitly disallows CTA; end with a neutral practical observation or next-step diagnostic question instead of a meeting prompt or booking link.\"}, {\"lesson_id\": \"L02\", \"application\": \"Preserve Bareni's policy position on customer data ownership and no-lock-in (C02) as stated positioning, not a warranty claim.\"}, {\"lesson_id\": \"L03\", \"application\": \"The abstract topic 'why table extraction is not enough' requires grounding in a concrete workflow decision; use approved evidence (C01, C02, C03) to define the boundary where extraction alone fails and where a bounded automation pilot applies.\"}], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Define table extraction as the standalone task: pulling structured data from invoices, receipts, or documents into a spreadsheet. Acknowledge this is a reasonable first attempt but identify the workflow gap—what happens after the table exists (routing, matching, approval, next action).\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"C03\", \"C05\"]}, {\"step_id\": \"P02\", \"instruction\": \"Explain that small-business workflows involve repetitive decisions after extraction: matching invoice amounts to purchase orders, flagging duplicates, routing to approval, or logging the decision for audit. Extraction alone leaves these repetitive steps manual.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C01\", \"C02\"]}, {\"step_id\": \"P03\", \"instruction\": \"State the practical diagnostic question: which post-extraction step costs the owner 2–4 hours per week and follows a consistent rule? If no answer, extraction tooling alone is fit-for-purpose. If yes, a bounded workflow pilot may apply.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"C01\", \"C02\"]}, {\"step_id\": \"P04\", \"instruction\": \"Describe the pilot scope briefly: AI plus workflow automation (using tools like Zapier, Make, or n8n) can integrate extraction, apply consistent logic (duplicate check, amount rule, audit log), and hand control back to the owner before money moves. Emphasize human approval for high-risk decisions (C04).\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L02\"], \"evidence_ids\": [\"C02\", \"C04\"]}, {\"step_id\": \"P05\", \"instruction\": \"Preserve data ownership and no-lock-in positioning (C02): the customer's database, automation-tool accounts, and API keys are in the customer's name from the start; finished code is handed over; retainer support is optional.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L02\"], \"evidence_ids\": [\"C02\"]}, {\"step_id\": \"P06\", \"instruction\": \"Close with a neutral next-step prompt: work through your post-extraction workflow step-by-step, identify the repeating decision rule, and note the time cost. This frame clarifies whether a bounded automation pilot fits or extraction alone is enough. No booking prompt.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C01\", \"C05\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"Do not invent customers, deployments, results, ROI, or multi-person team. Use only self-built demo description (C03) and conceptual workflow example from persona (C01). No sales CTA.\"}, {\"constraint_id\": \"K02\", \"handling\": \"Emphasize that human approval is mandatory for money movement (C04). Do not imply autonomous payment or high-risk decision-making by the system.\"}, {\"constraint_id\": \"K03\", \"handling\": \"Preserve frozen persona voice (plain-speaking, technical, founder-to-founder), approved evidence status (self-built demos, not customer case studies), and human approval boundary throughout all steps.\"}, {\"constraint_id\": \"K04\", \"handling\": \"Use plain English. Keep the synthetic persona workflow example (C01) distinct from any approved feature description (C02, C03). No hype vocabulary; use concrete mechanisms only.\"}]}",
+        "type": "text"
+      }
+    ],
+    "model": "claude-haiku-4-5-20251001",
+    "role": "assistant",
+    "stop_details": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "not_available",
+      "input_tokens": 4468,
+      "output_tokens": 995,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": "standard"
+    }
+  },
+  "stop_reason": "end_turn",
+  "cost_details": {
+    "input": 0.004468,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.004975,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.009443
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": null,
+  "key": "SE-FINAL-N116_planner__a001",
+  "role": "planner",
+  "created_at": "2026-09-08T13:18:23.431842+00:00",
+  "ended_at": "2026-09-08T13:18:49.120027+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-N116",
+    "batch_id": 4,
+    "condition": "natural",
+    "cohort": "natural"
+  },
+  "task_id": "SE-FINAL-N116",
+  "batch_id": 4,
+  "cohort": "natural",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 25698,
+  "budget_charge_usd": 0.009443,
+  "unknown_cost_reservation_usd": 0
+}

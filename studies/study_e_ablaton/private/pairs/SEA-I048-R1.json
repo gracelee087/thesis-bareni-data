@@ -1,0 +1,84 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I048-R1",
+    "item_id": "SEA-I048",
+    "repeat": 1,
+    "arm_order": [
+      "critic_on",
+      "critic_off"
+    ],
+    "content_id": "POST-dcad975e7defd0f44df9e475"
+  },
+  "arms": {
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-dcad975e7defd0f44df9e475-1",
+        "title": "When name handling is really a workflow decision",
+        "body": "If you run a small business, “name handling” is usually not a branding problem. It is a workflow decision: do you treat John Smith, J. Smith, and john.smith@company.com as the same person, or do you keep each record separate until a human checks it?\n\nThat choice hides three practical questions. First, where do name variants show up: CRM, invoices, email, or back-office files. Second, what breaks when they do: duplicate reminders, missed follow-up, or manual reconciliation. Third, what needs human approval no matter what. Money movement stays human-approved; that part is policy, and the blocked-payment demo Bareni built was synthetic, not a real transfer.\n\nFor a small business, the useful next step is simple: pick one recurring workflow and pull a small sample of real records from the tool you already use. Then ask whether the same person appears under different names often enough that you would want a system to suggest matches before you merge anything.\n\nIf the answer is no, leave it alone. If the answer is yes, that is the point where a diagnostic can define scope, controls, and what stays manual. No drama, just fewer bad surprises."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-dcad975e7defd0f44df9e475-1",
+            "title": "When name handling is really a workflow decision",
+            "body": "If you run a small business, “name handling” is usually not a branding problem. It is a workflow decision: do you treat John Smith, J. Smith, and john.smith@company.com as the same person, or do you keep each record separate until a human checks it?\n\nThat choice hides three practical questions. First, where do name variants show up: CRM, invoices, email, or back-office files. Second, what breaks when they do: duplicate reminders, missed follow-up, or manual reconciliation. Third, what needs human approval no matter what. Money movement stays human-approved; that part is policy, and the blocked-payment demo Bareni built was synthetic, not a real transfer.\n\nFor a small business, the useful next step is simple: pick one recurring workflow and pull a small sample of real records from the tool you already use. Then ask whether the same person appears under different names often enough that you would want a system to suggest matches before you merge anything.\n\nIf the answer is no, leave it alone. If the answer is yes, that is the point where a diagnostic can define scope, controls, and what stays manual. No drama, just fewer bad surprises."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-dcad975e7defd0f44df9e475-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": [
+            {
+              "repair_id": "P01",
+              "target_ids": [
+                "D01",
+                "D02",
+                "D03"
+              ],
+              "instruction": "Replace the abstract opening with a direct founder-facing point that turns the topic into one bounded workflow decision about name handling. Name the business situation plainly, explain what the handling hides in that workflow, and state one practical next step the owner can take.",
+              "source_ids": [
+                "BRIEF",
+                "S01",
+                "C02",
+                "C05"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-dcad975e7defd0f44df9e475-1",
+        "title": "When name handling should become a workflow decision",
+        "body": "If names appear in more than one form across your CRM, invoices, or inbox, the real question is not whether that is messy. The question is whether your business treats those variants as one person or as separate records.\n\nThat is a bounded workflow decision. If you merge too aggressively, you can create bad records. If you never match variants, you end up retyping details, chasing duplicate reminders, and reconciling by hand. For a small business, that choice affects follow-up, invoice accuracy, and the time spent cleaning up after the tools.\n\nThe practical next step is simple: take a small sample of real records from one week and inspect where names differ. Look for patterns like full names, initials, email-based entries, or vendor names that do not match the purchase order exactly. Then decide, in plain English, which cases should be matched automatically and which must stay for human review.\n\nThat last part matters. Human approval stays in place for money movement and other high-risk decisions. For name matching, the useful question is not “can software guess?” It is “what would I be comfortable letting it suggest, and what do I still want to approve myself?”\n\nIf the answer is still fuzzy, that is usually the useful signal."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-dcad975e7defd0f44df9e475-1",
+            "title": "When name handling should become a workflow decision",
+            "body": "If names appear in more than one form across your CRM, invoices, or inbox, the real question is not whether that is messy. The question is whether your business treats those variants as one person or as separate records.\n\nThat is a bounded workflow decision. If you merge too aggressively, you can create bad records. If you never match variants, you end up retyping details, chasing duplicate reminders, and reconciling by hand. For a small business, that choice affects follow-up, invoice accuracy, and the time spent cleaning up after the tools.\n\nThe practical next step is simple: take a small sample of real records from one week and inspect where names differ. Look for patterns like full names, initials, email-based entries, or vendor names that do not match the purchase order exactly. Then decide, in plain English, which cases should be matched automatically and which must stay for human review.\n\nThat last part matters. Human approval stays in place for money movement and other high-risk decisions. For name matching, the useful question is not “can software guess?” It is “what would I be comfortable letting it suggest, and what do I still want to approve myself?”\n\nIf the answer is still fuzzy, that is usually the useful signal."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-dcad975e7defd0f44df9e475-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

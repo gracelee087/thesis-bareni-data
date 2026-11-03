@@ -1,0 +1,180 @@
+{
+  "status": "success",
+  "usage": {
+    "input_tokens": 4350,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 979,
+    "reasoning_tokens": null
+  },
+  "cost_usd": 0.009245,
+  "output": {
+    "item_id": "E-PLAN-512",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task forbids a CTA. L01 confirms that diagnostic-booking language counts as a CTA. The post must end with a neutral practical observation or diagnostic question instead, consistent with the 'no CTA' rule in S01 and the informational intent of explaining one workflow decision."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Frame the abstract topic 'measuring control comparisons' as one concrete owner decision: whether to use AI-assisted automation to enforce approval gates and audit trails on a specific recurring workflow (e.g. invoice handling, customer-data entry, or repetitive email triage), in order to compare human-only control costs against bounded automation investment costs.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Define the control boundary: human approval remains mandatory for money movement and high-risk decisions; AI can assist with data extraction, classification, validation, and rule application before presenting a case to the owner for decision.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Explain one observable measurement opportunity: choose a single repeatable workflow (e.g. 'weekly invoice review' or 'daily customer inquiry triage') and measure baseline time cost and error rate under manual-only handling, then specify what audit data (e.g. extraction accuracy, approval time, exception count) a simple automation system would log to enable the owner to compare control effectiveness.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "State the diagnostic question as a practical next step: 'Which of your recurring workflows takes 5–10 hours a month, involves the same decision repeated, and produces a paper or data trail you need to audit?' This helps the owner identify fit before any proposal.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C01",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Close with a neutral observation: acknowledge that automation fits some workflows and not others, and that the owner's authority and approval over any system design and control rules is non-negotiable. Do not include a meeting CTA.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C01",
+          "C02",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Ensure all claims about Bareni remain factual: reference only the three self-built demos and the consulting model (diagnostic, proposal, MVP, pilot, optional retainer) without implying customer outcomes, production billing, or multi-person delivery.",
+        "requirement_ids": [],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C03",
+          "C05",
+          "S01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No invented customers, deployments, results, numbers, capabilities, or team. Use only the consulting practice identity and self-built demo references from C02 and C03. End without a CTA booking language per L01."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Enforce human approval for money movement and high-risk decisions (C04). Keep within current scope: decline high-sensitivity medical, legal, financial work, bulk cold email, and OCR-heavy workflows. Present this as current discipline, not impossibility."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Preserve the frozen persona from S01: plain-speaking technical expert, founder-to-founder, trust over enthusiasm, one restrained humorous phrase maximum, no hype language. Maintain the evidence boundary and human-approval-mandatory positioning."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use plain English throughout. Keep synthetic examples, demos, and consulting model descriptions distinct from customer outcomes or existing deployed capabilities. No numbers without sources; no productivity claims or ROI guarantees."
+      }
+    ]
+  },
+  "raw_text": "{\"item_id\": \"E-PLAN-512\", \"selected_lessons\": [{\"lesson_id\": \"L01\", \"application\": \"The task forbids a CTA. L01 confirms that diagnostic-booking language counts as a CTA. The post must end with a neutral practical observation or diagnostic question instead, consistent with the 'no CTA' rule in S01 and the informational intent of explaining one workflow decision.\"}], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Frame the abstract topic 'measuring control comparisons' as one concrete owner decision: whether to use AI-assisted automation to enforce approval gates and audit trails on a specific recurring workflow (e.g. invoice handling, customer-data entry, or repetitive email triage), in order to compare human-only control costs against bounded automation investment costs.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"C04\", \"S01\"]}, {\"step_id\": \"P02\", \"instruction\": \"Define the control boundary: human approval remains mandatory for money movement and high-risk decisions; AI can assist with data extraction, classification, validation, and rule application before presenting a case to the owner for decision.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"C04\"]}, {\"step_id\": \"P03\", \"instruction\": \"Explain one observable measurement opportunity: choose a single repeatable workflow (e.g. 'weekly invoice review' or 'daily customer inquiry triage') and measure baseline time cost and error rate under manual-only handling, then specify what audit data (e.g. extraction accuracy, approval time, exception count) a simple automation system would log to enable the owner to compare control effectiveness.\", \"requirement_ids\": [\"R01\", \"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"S01\"]}, {\"step_id\": \"P04\", \"instruction\": \"State the diagnostic question as a practical next step: 'Which of your recurring workflows takes 5–10 hours a month, involves the same decision repeated, and produces a paper or data trail you need to audit?' This helps the owner identify fit before any proposal.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C01\", \"S01\"]}, {\"step_id\": \"P05\", \"instruction\": \"Close with a neutral observation: acknowledge that automation fits some workflows and not others, and that the owner's authority and approval over any system design and control rules is non-negotiable. Do not include a meeting CTA.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C01\", \"C02\", \"S01\"]}, {\"step_id\": \"P06\", \"instruction\": \"Ensure all claims about Bareni remain factual: reference only the three self-built demos and the consulting model (diagnostic, proposal, MVP, pilot, optional retainer) without implying customer outcomes, production billing, or multi-person delivery.\", \"requirement_ids\": [], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"C03\", \"C05\", \"S01\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"No invented customers, deployments, results, numbers, capabilities, or team. Use only the consulting practice identity and self-built demo references from C02 and C03. End without a CTA booking language per L01.\"}, {\"constraint_id\": \"K02\", \"handling\": \"Enforce human approval for money movement and high-risk decisions (C04). Keep within current scope: decline high-sensitivity medical, legal, financial work, bulk cold email, and OCR-heavy workflows. Present this as current discipline, not impossibility.\"}, {\"constraint_id\": \"K03\", \"handling\": \"Preserve the frozen persona from S01: plain-speaking technical expert, founder-to-founder, trust over enthusiasm, one restrained humorous phrase maximum, no hype language. Maintain the evidence boundary and human-approval-mandatory positioning.\"}, {\"constraint_id\": \"K04\", \"handling\": \"Use plain English throughout. Keep synthetic examples, demos, and consulting model descriptions distinct from customer outcomes or existing deployed capabilities. No numbers without sources; no productivity claims or ROI guarantees.\"}]}",
+  "provider_response": {
+    "id": "msg_011Cer1DHLRwqxLJ72By2EGM",
+    "container": null,
+    "content": [
+      {
+        "citations": null,
+        "text": "{\"item_id\": \"E-PLAN-512\", \"selected_lessons\": [{\"lesson_id\": \"L01\", \"application\": \"The task forbids a CTA. L01 confirms that diagnostic-booking language counts as a CTA. The post must end with a neutral practical observation or diagnostic question instead, consistent with the 'no CTA' rule in S01 and the informational intent of explaining one workflow decision.\"}], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Frame the abstract topic 'measuring control comparisons' as one concrete owner decision: whether to use AI-assisted automation to enforce approval gates and audit trails on a specific recurring workflow (e.g. invoice handling, customer-data entry, or repetitive email triage), in order to compare human-only control costs against bounded automation investment costs.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"C04\", \"S01\"]}, {\"step_id\": \"P02\", \"instruction\": \"Define the control boundary: human approval remains mandatory for money movement and high-risk decisions; AI can assist with data extraction, classification, validation, and rule application before presenting a case to the owner for decision.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"C04\"]}, {\"step_id\": \"P03\", \"instruction\": \"Explain one observable measurement opportunity: choose a single repeatable workflow (e.g. 'weekly invoice review' or 'daily customer inquiry triage') and measure baseline time cost and error rate under manual-only handling, then specify what audit data (e.g. extraction accuracy, approval time, exception count) a simple automation system would log to enable the owner to compare control effectiveness.\", \"requirement_ids\": [\"R01\", \"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"S01\"]}, {\"step_id\": \"P04\", \"instruction\": \"State the diagnostic question as a practical next step: 'Which of your recurring workflows takes 5–10 hours a month, involves the same decision repeated, and produces a paper or data trail you need to audit?' This helps the owner identify fit before any proposal.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C01\", \"S01\"]}, {\"step_id\": \"P05\", \"instruction\": \"Close with a neutral observation: acknowledge that automation fits some workflows and not others, and that the owner's authority and approval over any system design and control rules is non-negotiable. Do not include a meeting CTA.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C01\", \"C02\", \"S01\"]}, {\"step_id\": \"P06\", \"instruction\": \"Ensure all claims about Bareni remain factual: reference only the three self-built demos and the consulting model (diagnostic, proposal, MVP, pilot, optional retainer) without implying customer outcomes, production billing, or multi-person delivery.\", \"requirement_ids\": [], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"C03\", \"C05\", \"S01\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"No invented customers, deployments, results, numbers, capabilities, or team. Use only the consulting practice identity and self-built demo references from C02 and C03. End without a CTA booking language per L01.\"}, {\"constraint_id\": \"K02\", \"handling\": \"Enforce human approval for money movement and high-risk decisions (C04). Keep within current scope: decline high-sensitivity medical, legal, financial work, bulk cold email, and OCR-heavy workflows. Present this as current discipline, not impossibility.\"}, {\"constraint_id\": \"K03\", \"handling\": \"Preserve the frozen persona from S01: plain-speaking technical expert, founder-to-founder, trust over enthusiasm, one restrained humorous phrase maximum, no hype language. Maintain the evidence boundary and human-approval-mandatory positioning.\"}, {\"constraint_id\": \"K04\", \"handling\": \"Use plain English throughout. Keep synthetic examples, demos, and consulting model descriptions distinct from customer outcomes or existing deployed capabilities. No numbers without sources; no productivity claims or ROI guarantees.\"}]}",
+        "type": "text"
+      }
+    ],
+    "model": "claude-haiku-4-5-20251001",
+    "role": "assistant",
+    "stop_details": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "not_available",
+      "input_tokens": 4350,
+      "output_tokens": 979,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": "standard"
+    }
+  },
+  "stop_reason": "end_turn",
+  "cost_details": {
+    "input": 0.00435,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.004895,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.009245
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": null,
+  "key": "SE-FINAL-N074_planner__a001",
+  "role": "planner",
+  "created_at": "2026-09-08T12:52:50.941771+00:00",
+  "ended_at": "2026-09-08T12:53:16.459060+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-N074",
+    "batch_id": 3,
+    "condition": "natural",
+    "cohort": "natural"
+  },
+  "task_id": "SE-FINAL-N074",
+  "batch_id": 3,
+  "cohort": "natural",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 25516,
+  "budget_charge_usd": 0.009245,
+  "unknown_cost_reservation_usd": 0
+}

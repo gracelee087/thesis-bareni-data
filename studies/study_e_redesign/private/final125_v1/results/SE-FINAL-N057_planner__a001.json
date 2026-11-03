@@ -1,0 +1,180 @@
+{
+  "status": "success",
+  "usage": {
+    "input_tokens": 4352,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 942,
+    "reasoning_tokens": null
+  },
+  "cost_usd": 0.009062,
+  "output": {
+    "item_id": "E-PLAN-526",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task explicitly forbids a CTA (rule: None). L01 clarifies that without authorisation, even soft invitations to book or discuss count as CTAs. The post must close with a neutral practical observation or diagnostic note rather than meeting language."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Frame the abstract topic 'when date ambiguity stops working' as a concrete, bounded workflow problem: identify where owner-operators encounter repeated, measurable date/time confusion in one recurring task (e.g., invoice dating, lead follow-up timing, scheduling conflicts).",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Connect the workflow decision to the frozen persona decision context: should the owner continue manual workarounds (checking dates manually, tracking in multiple systems), hire to handle it, or invest in a bounded automation that enforces date consistency at the point of entry or decision?",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C02",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Explain one diagnostic question the owner can ask now: 'How many times per week does date ambiguity (missing timezone, unclear date format, or conflicting date sources) force me to stop and clarify with a customer or team member?' This identifies whether the workflow is repetitive enough for automation.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C01",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Describe one observable control or threshold: automation works best when dates come from a single authoritative source (one CRM, one payment gateway, one form) and when the business already uses digital documents and SaaS tools. State this as a fit check, not a promise.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Use plain, restrained language: explain the actual mechanism (e.g., 'an automation can parse incoming dates into a standard format and flag ambiguous entries before they cause errors') without hype, guarantees, or invented customer results. At most one dry-humour sentence.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Close with a neutral next-step note consistent with L01 and the no-CTA rule: suggest the owner observe their own workflow for one week to measure the frequency and cost of date ambiguity, and reflect on whether a known, repeatable fix is worth the investment. Do not invite a meeting.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C01",
+          "C02",
+          "S01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "Do not invent customer stories, deployment claims, observed results, ROI numbers, or outcomes. Describe only the self-built workflow concept and the owner's own observable decision frame."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Do not discuss payment processing, high-risk decision approval, or excluded services (medical, legal, bulk cold email). Keep scope to workflow diagnosis and bounded automation fit."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Preserve the frozen persona (1–10-person owner-operator who has tried ChatGPT but not integrated AI), approved evidence status (demos disclosed as self-built, limits stated), and human-approval boundaries (owner retains final authority)."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use plain English. Distinguish between the owner's current manual process, the proposed automation mechanism, and the decision step. Do not present proposals as existing capabilities."
+      }
+    ]
+  },
+  "raw_text": "{\"item_id\": \"E-PLAN-526\", \"selected_lessons\": [{\"lesson_id\": \"L01\", \"application\": \"The task explicitly forbids a CTA (rule: None). L01 clarifies that without authorisation, even soft invitations to book or discuss count as CTAs. The post must close with a neutral practical observation or diagnostic note rather than meeting language.\"}], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Frame the abstract topic 'when date ambiguity stops working' as a concrete, bounded workflow problem: identify where owner-operators encounter repeated, measurable date/time confusion in one recurring task (e.g., invoice dating, lead follow-up timing, scheduling conflicts).\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C01\", \"C05\"]}, {\"step_id\": \"P02\", \"instruction\": \"Connect the workflow decision to the frozen persona decision context: should the owner continue manual workarounds (checking dates manually, tracking in multiple systems), hire to handle it, or invest in a bounded automation that enforces date consistency at the point of entry or decision?\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C01\", \"C02\", \"C05\"]}, {\"step_id\": \"P03\", \"instruction\": \"Explain one diagnostic question the owner can ask now: 'How many times per week does date ambiguity (missing timezone, unclear date format, or conflicting date sources) force me to stop and clarify with a customer or team member?' This identifies whether the workflow is repetitive enough for automation.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C01\", \"S01\"]}, {\"step_id\": \"P04\", \"instruction\": \"Describe one observable control or threshold: automation works best when dates come from a single authoritative source (one CRM, one payment gateway, one form) and when the business already uses digital documents and SaaS tools. State this as a fit check, not a promise.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"C01\", \"C02\", \"C04\"]}, {\"step_id\": \"P05\", \"instruction\": \"Use plain, restrained language: explain the actual mechanism (e.g., 'an automation can parse incoming dates into a standard format and flag ambiguous entries before they cause errors') without hype, guarantees, or invented customer results. At most one dry-humour sentence.\", \"requirement_ids\": [\"R01\", \"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"C05\"]}, {\"step_id\": \"P06\", \"instruction\": \"Close with a neutral next-step note consistent with L01 and the no-CTA rule: suggest the owner observe their own workflow for one week to measure the frequency and cost of date ambiguity, and reflect on whether a known, repeatable fix is worth the investment. Do not invite a meeting.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C01\", \"C02\", \"S01\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"Do not invent customer stories, deployment claims, observed results, ROI numbers, or outcomes. Describe only the self-built workflow concept and the owner's own observable decision frame.\"}, {\"constraint_id\": \"K02\", \"handling\": \"Do not discuss payment processing, high-risk decision approval, or excluded services (medical, legal, bulk cold email). Keep scope to workflow diagnosis and bounded automation fit.\"}, {\"constraint_id\": \"K03\", \"handling\": \"Preserve the frozen persona (1–10-person owner-operator who has tried ChatGPT but not integrated AI), approved evidence status (demos disclosed as self-built, limits stated), and human-approval boundaries (owner retains final authority).\"}, {\"constraint_id\": \"K04\", \"handling\": \"Use plain English. Distinguish between the owner's current manual process, the proposed automation mechanism, and the decision step. Do not present proposals as existing capabilities.\"}]}",
+  "provider_response": {
+    "id": "msg_011CeqzR6FuBunkNUbSdaBdU",
+    "container": null,
+    "content": [
+      {
+        "citations": null,
+        "text": "{\"item_id\": \"E-PLAN-526\", \"selected_lessons\": [{\"lesson_id\": \"L01\", \"application\": \"The task explicitly forbids a CTA (rule: None). L01 clarifies that without authorisation, even soft invitations to book or discuss count as CTAs. The post must close with a neutral practical observation or diagnostic note rather than meeting language.\"}], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Frame the abstract topic 'when date ambiguity stops working' as a concrete, bounded workflow problem: identify where owner-operators encounter repeated, measurable date/time confusion in one recurring task (e.g., invoice dating, lead follow-up timing, scheduling conflicts).\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C01\", \"C05\"]}, {\"step_id\": \"P02\", \"instruction\": \"Connect the workflow decision to the frozen persona decision context: should the owner continue manual workarounds (checking dates manually, tracking in multiple systems), hire to handle it, or invest in a bounded automation that enforces date consistency at the point of entry or decision?\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C01\", \"C02\", \"C05\"]}, {\"step_id\": \"P03\", \"instruction\": \"Explain one diagnostic question the owner can ask now: 'How many times per week does date ambiguity (missing timezone, unclear date format, or conflicting date sources) force me to stop and clarify with a customer or team member?' This identifies whether the workflow is repetitive enough for automation.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C01\", \"S01\"]}, {\"step_id\": \"P04\", \"instruction\": \"Describe one observable control or threshold: automation works best when dates come from a single authoritative source (one CRM, one payment gateway, one form) and when the business already uses digital documents and SaaS tools. State this as a fit check, not a promise.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"C01\", \"C02\", \"C04\"]}, {\"step_id\": \"P05\", \"instruction\": \"Use plain, restrained language: explain the actual mechanism (e.g., 'an automation can parse incoming dates into a standard format and flag ambiguous entries before they cause errors') without hype, guarantees, or invented customer results. At most one dry-humour sentence.\", \"requirement_ids\": [\"R01\", \"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"C05\"]}, {\"step_id\": \"P06\", \"instruction\": \"Close with a neutral next-step note consistent with L01 and the no-CTA rule: suggest the owner observe their own workflow for one week to measure the frequency and cost of date ambiguity, and reflect on whether a known, repeatable fix is worth the investment. Do not invite a meeting.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C01\", \"C02\", \"S01\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"Do not invent customer stories, deployment claims, observed results, ROI numbers, or outcomes. Describe only the self-built workflow concept and the owner's own observable decision frame.\"}, {\"constraint_id\": \"K02\", \"handling\": \"Do not discuss payment processing, high-risk decision approval, or excluded services (medical, legal, bulk cold email). Keep scope to workflow diagnosis and bounded automation fit.\"}, {\"constraint_id\": \"K03\", \"handling\": \"Preserve the frozen persona (1–10-person owner-operator who has tried ChatGPT but not integrated AI), approved evidence status (demos disclosed as self-built, limits stated), and human-approval boundaries (owner retains final authority).\"}, {\"constraint_id\": \"K04\", \"handling\": \"Use plain English. Distinguish between the owner's current manual process, the proposed automation mechanism, and the decision step. Do not present proposals as existing capabilities.\"}]}",
+        "type": "text"
+      }
+    ],
+    "model": "claude-haiku-4-5-20251001",
+    "role": "assistant",
+    "stop_details": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "not_available",
+      "input_tokens": 4352,
+      "output_tokens": 942,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": "standard"
+    }
+  },
+  "stop_reason": "end_turn",
+  "cost_details": {
+    "input": 0.004352,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.00471,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.009062
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": null,
+  "key": "SE-FINAL-N057_planner__a001",
+  "role": "planner",
+  "created_at": "2026-09-08T12:42:24.419790+00:00",
+  "ended_at": "2026-09-08T12:42:49.523803+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-N057",
+    "batch_id": 2,
+    "condition": "natural",
+    "cohort": "natural"
+  },
+  "task_id": "SE-FINAL-N057",
+  "batch_id": 2,
+  "cohort": "natural",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 25094,
+  "budget_charge_usd": 0.009062,
+  "unknown_cost_reservation_usd": 0
+}

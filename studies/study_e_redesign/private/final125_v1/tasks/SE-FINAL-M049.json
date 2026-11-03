@@ -1,0 +1,359 @@
+{
+  "task_id": "SE-FINAL-M049",
+  "batch_id": 2,
+  "condition": "wrong_audience",
+  "source_task_id": "SE-FINAL-N027",
+  "topic": "rethinking maintenance windows",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-327",
+    "title": "Maintenance windows are a workflow choice, not just a calendar slot",
+    "body": "This guidance is for the executive board of a 8000-employee multinational. Its central transformation office, regional directors and dedicated governance committee own this programme. If you run a small business, rethinking maintenance windows usually comes down to one recurring decision: do you bundle changes into planned downtime, spread them out as rolling updates, or use a hybrid? The useful question is not which sounds modern. It is which one costs you less in practice: planned customer-visible outage or unplanned breakdowns.\n\nFor a 1–10 person team, the right answer often depends on whether the work is already repeatable. If you have a standard pre-maintenance message, a checklist, a rollback step, and a log of what changed, that is a sign the workflow may be worth tightening. In that case, automation can help with sequencing, reminders, and record-keeping. It should not make the go/no-go call for you. Human approval still belongs at the point where service might be interrupted or risk increases.\n\nThat is the kind of boundary we look for in a diagnostic: one recurring workflow, one decision owner, one clear outcome. If the maintenance process is mostly email, notes, and tool-jumping, the next step is to map the handoffs before trying to automate anything. Otherwise you risk building a tidy machine around a messy habit. Clever, but not useful.\n\nBareni treats this as a bounded workflow question, not a promise that AI belongs everywhere. Some maintenance setups are a fit for a small pilot; others are better left manual. The useful part is finding that line before you spend time on the wrong side of it."
+  },
+  "final": {
+    "item_id": "E-OPT-427",
+    "title": "Maintenance windows: choose the workflow, then keep human approval",
+    "body": "If you run a 1–10 person business, rethinking maintenance windows is usually a simple workflow choice: do you bundle changes into planned downtime, spread them across rolling updates, or use a hybrid? The real question is practical, not fashionable. Which costs you more in your business: planned customer-visible interruption, or the mess that comes from unplanned breakdowns?\n\nFor a small team, the next step is to check whether the process is already repeatable. Do you have a standard pre-maintenance message, a short checklist, a rollback step, and a log of what changed? If yes, that is a sign the workflow may be worth tightening. AI can help with sequencing, reminders, and record-keeping in a scoped pilot, but it should not make the go/no-go call for you. Human approval stays with the owner when service might be interrupted or risk goes up.\n\nThat is the boundary we look for in a diagnostic: one recurring workflow, one decision owner, one clear outcome. If maintenance comms, checklists, or logs are still happening across email and tools without a clean handoff, map the process before automating anything. Otherwise you can end up with a tidy machine around a messy habit. Clever, but not useful.\n\nBareni treats this as a bounded workflow decision, not a promise that AI belongs everywhere. A free 30-minute diagnostic can clarify whether the maintenance process is a fit for a small pilot, or whether it is better left manual for now."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-049",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": [
+      {
+        "dimension": "persona_fit",
+        "severity": "noncritical",
+        "location_kind": "quote",
+        "text_field": "body",
+        "quote": "This guidance is for the executive board of a 8000-employee multinational. Its central transformation office, regional directors and dedicated governance committee own this programme.",
+        "missing_requirement": null,
+        "rule_id": "R-N-1",
+        "evidence_ids": [
+          "BRIEF",
+          "C01",
+          "S01"
+        ],
+        "reason": "The opening frames the post for an enterprise board and governance structure, which materially conflicts with the required 1–10-person owner-operator audience and makes the content recognisably enterprise-oriented rather than Bareni's intended small-business persona."
+      }
+    ]
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-049",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-049-1",
+        "repairs": [
+          {
+            "repair_id": "P01",
+            "target_ids": [
+              "D01"
+            ],
+            "instruction": "Replace the enterprise-board opening with a small-business framing that addresses the owner-operator directly, e.g. drop the multinational/governance language and start with the 1–10 person maintenance decision the reader actually faces.",
+            "source_ids": [
+              "BRIEF",
+              "C01",
+              "S01"
+            ]
+          }
+        ]
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-049",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-427",
+        "title": "Maintenance windows: choose the workflow, then keep human approval",
+        "body": "If you run a 1–10 person business, rethinking maintenance windows is usually a simple workflow choice: do you bundle changes into planned downtime, spread them across rolling updates, or use a hybrid? The real question is practical, not fashionable. Which costs you more in your business: planned customer-visible interruption, or the mess that comes from unplanned breakdowns?\n\nFor a small team, the next step is to check whether the process is already repeatable. Do you have a standard pre-maintenance message, a short checklist, a rollback step, and a log of what changed? If yes, that is a sign the workflow may be worth tightening. AI can help with sequencing, reminders, and record-keeping in a scoped pilot, but it should not make the go/no-go call for you. Human approval stays with the owner when service might be interrupted or risk goes up.\n\nThat is the boundary we look for in a diagnostic: one recurring workflow, one decision owner, one clear outcome. If maintenance comms, checklists, or logs are still happening across email and tools without a clean handoff, map the process before automating anything. Otherwise you can end up with a tidy machine around a messy habit. Clever, but not useful.\n\nBareni treats this as a bounded workflow decision, not a promise that AI belongs everywhere. A free 30-minute diagnostic can clarify whether the maintenance process is a fit for a small pilot, or whether it is better left manual for now."
+      },
+      "gate_key": "SE-FINAL-M049_gate1__a001"
+    }
+  ],
+  "measurement_status": "complete",
+  "planner": {
+    "item_id": "E-PLAN-527",
+    "selected_lessons": [],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Reframe the abstract topic 'rethinking maintenance windows' into one recurring workflow decision: choosing between scheduled downtime (bundled fixes), rolling updates (continuous small changes), or a hybrid model, and the human control points that distinguish each.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C05",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Identify the single measurable outcome that matters to a 1–10-person owner: either minimised customer-visible outage, reduced unplanned emergencies, or predictable operational rhythm. Use the diagnostic question: 'Which costs you more—planned downtime or unplanned breakdowns?'",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C05",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Explain when automation fits this decision: if the business has repeatable pre-maintenance notifications, runbook steps, or rollback procedures, AI can systematise logging and sequencing—but the approval and go/no-go call stays with the owner.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04",
+          "C05",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "State the Bareni scope: a diagnostic identifies whether the maintenance workflow is a candidate for AI assistance and, if so, defines a pilot boundary (e.g., automating alert consolidation, pre-flight checklists, or incident reporting—not autonomous deployment).",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Describe the practical next step in founder-to-founder voice: 'If you are manually coordinating maintenance comms, checklists, or logs across tools, a 30-minute conversation can clarify whether a small automation saves hours or just adds complexity.'",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C02",
+          "C05",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Close with an honest scope boundary: maintenance decisions with high regulatory, security, or multi-team sign-off overhead may be out of scope; most operational small-business windows are not.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C04",
+          "C05",
+          "S01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "Do not invent customer deployments, savings figures, productivity results, or a larger team; frame Bareni as a one-person consulting practice with self-built demos."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Preserve human approval as mandatory; emphasise that maintenance go/no-go decisions remain with the owner, even if logging and checklists are automated."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Use the frozen persona (plain-speaking, founder-to-founder, restrained tone) and approved evidence only; no changes to identity or multi-person claim."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use plain English; keep the diagnostic question and proposed workflow distinct from any existing Bareni capability; frame the next step as a conversation, not a guarantee."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-627",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Turn the abstract topic into a bounded Bareni workflow decision."
+          },
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits"
+          }
+        ],
+        "rationale": "This is a planning instruction to reframe the owner-specified abstract topic into a single recurring workflow decision; it asserts no current Bareni capability or customer use. The framing of one recurring workflow and human control points matches the approved diagnostic model and the mandatory human-approval boundary.",
+        "use_guidance": "Keep as an explicit framing proposal. Present the three maintenance options as an illustrative decision framework for the reader's own business, not as an option set Bareni has implemented or observed in customer work. Retain human control points (C04: human approval mandatory for high-risk decisions)."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step"
+          },
+          {
+            "source_id": "C01",
+            "quote": "have a frequent, repeatable workflow with a\n  measurable outcome"
+          }
+        ],
+        "rationale": "A diagnostic question and a request to name one measurable outcome are permissible instructions, not factual assertions. The persona focus explicitly authorises one diagnostic question, and approved evidence describes a measurable outcome as a fit criterion.",
+        "use_guidance": "Keep explicitly as a diagnostic question the reader answers for themselves. Do not attach any figure, benchmark or hours-saved number to either option, and do not imply Bareni has measured such costs (C05: numbers require source and status)."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C02",
+            "quote": "general document, email, CRM, and back-office\n  workflows using AI plus Zapier, Make, n8n, and small amounts of custom code"
+          },
+          {
+            "source_id": "C03",
+            "quote": "amount-based human-only approval,\n  refusal of agent approval/payment attempts, and persistent audit records work"
+          }
+        ],
+        "rationale": "The fit condition and the human go/no-go boundary are consistent with approved evidence, but the wording \"AI can systematise logging and sequencing\" reads as a general current capability statement for maintenance workflows. Approved evidence covers document, email, CRM and back-office automation plus three self-built demos; maintenance runbook or rollback automation is not among the demonstrated systems.",
+        "use_guidance": "Add the qualification that this is a general fit criterion, and phrase any automation as what a scoped pilot could be designed to do within document, email, CRM and back-office workflow tooling — not as an existing Bareni maintenance capability. Keep the owner's go/no-go and any high-risk step under human approval; no autonomous action."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "Normal sequence: free 30-minute diagnostic; free one-page pilot proposal;\n  paid working MVP in days; fixed-price pilot in weeks"
+          },
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI\n  fits, and—if it does—defines pilot scope, fixed price, and measures."
+          }
+        ],
+        "rationale": "The diagnostic-then-pilot-scope structure is directly supported, and excluding autonomous deployment respects the human-approval boundary. However the claim omits that the diagnostic is free and 30 minutes, that the pilot also carries a fixed price and measures, and it presents alert consolidation, pre-flight checklists and incident reporting without marking them as hypothetical examples rather than existing Bareni offerings.",
+        "use_guidance": "Add the qualification that the diagnostic is a free 30-minute conversation and that a pilot, if it fits, comes with defined scope, fixed price and measures presented as intended scope rather than a guarantee. Label the three automation ideas explicitly as examples of possible pilot boundaries, not delivered work."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Informational posts use no CTA or one soft closing sentence."
+          },
+          {
+            "source_id": "C02",
+            "quote": "free 30-minute diagnostic"
+          }
+        ],
+        "rationale": "This is a proposed next-step sentence in founder voice, not a factual assertion about outcomes; the balanced \"saves hours or just adds complexity\" avoids promising a result. But the task sets CTA rule: None, so the sentence must not function as a booking call to action.",
+        "use_guidance": "Keep as a proposal only if rewritten as a soft, non-CTA closing observation about clarifying fit; remove any invitation phrasing that acts as \"Book a free 30-minute diagnostic\". Do not state or imply an hours-saved figure (C05)."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Bareni currently declines high-sensitivity medical, legal, and financial work;\n  bulk cold-email automation; scan-heavy OCR-dependent workflows; and requests\n  that require unsupported compliance or security guarantees."
+          },
+          {
+            "source_id": "C04",
+            "quote": "Present these as\n  current scope discipline, not claims that the work can never be automated."
+          }
+        ],
+        "rationale": "Declining work that requires unsupported compliance or security guarantees is supported, but the claim's second half, \"most operational small-business windows are not\", is an unsupported generalisation about the market, and the exclusion is stated without marking it as current scope discipline.",
+        "use_guidance": "Add the qualification that these exclusions are Bareni's current scope discipline, not a statement that such work can never be automated. Drop or rewrite the \"most ... are not\" generalisation, since no approved evidence characterises the prevalence of small-business maintenance windows. Also avoid any legal characterisation or advice (C04)."
+      }
+    ]
+  },
+  "selected_lessons": [],
+  "register_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "planner_key": "SE-FINAL-N027_planner__a001",
+  "researcher_key": "SE-FINAL-N027_researcher__a001",
+  "writer_key": "SE-FINAL-N027_writer__a001",
+  "final_key": "SE-FINAL-M049_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-M049_gate1__a001",
+  "production_completed_at": "2026-09-08T13:35:36.494332+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts",
+  "initial_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-049",
+    "scores": {
+      "persona_fit": 2,
+      "clarity": 2,
+      "actionability": 4,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "The opening explicitly directs guidance to an executive board of an 8,000-employee multinational, creating a material enterprise-oriented mismatch with Bareni's 1–10 person owner-operator audience.",
+      "clarity": "Stating that the guidance is for an enterprise executive board directly contradicts the subsequent focus on small business owners, causing confusion regarding scope on a first read.",
+      "actionability": "Provides practical diagnostic guidance to map handoffs before automating and correctly specifies that human approval must remain in place for risk and service interruptions.",
+      "factual_grounding": "Contains no fabricated customer deployments, claims of unbuilt capabilities, or unsupported statistics, adhering to Bareni's evidence boundaries."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 13,
+    "pass": false,
+    "low_quality": true
+  },
+  "final_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-049",
+    "scores": {
+      "persona_fit": 4,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Accurately targets the small-business owner in Bareni's calm, practical voice. Softly introduces the diagnostic despite a 'None' CTA rule, but avoids direct sales pitching or invented claims.",
+      "clarity": "Logical order and plain language make the workflow trade-offs, checklist questions, and human-in-the-loop requirement immediately clear on a first read.",
+      "actionability": "Provides concrete diagnostic criteria, a checklist, and a clear operational rule to map the workflow before automating, keeping final approval with the human owner.",
+      "factual_grounding": "Strictly adheres to approved boundaries; introduces no invented customers, deployments, metrics, or unsupported capabilities."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 19,
+    "pass": true,
+    "low_quality": false
+  },
+  "evaluation_reused": false,
+  "evaluation_keys": [
+    "SE-FINAL-M049_eval_initial__a001",
+    "SE-FINAL-M049_eval_final__a001"
+  ],
+  "completed_at": "2026-09-08T13:35:58.352129+00:00"
+}

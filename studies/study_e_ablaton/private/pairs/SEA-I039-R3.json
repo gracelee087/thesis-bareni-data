@@ -1,0 +1,83 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I039-R3",
+    "item_id": "SEA-I039",
+    "repeat": 3,
+    "arm_order": [
+      "critic_off",
+      "critic_on"
+    ],
+    "content_id": "POST-dd73efa3d6367a4e9afe18e9"
+  },
+  "arms": {
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-dd73efa3d6367a4e9afe18e9-1",
+        "title": "Timezone handling often hides a workflow choice",
+        "body": "Timezone handling looks like a small annoyance, but it often hides a repeatable workflow problem. Replies come in late, follow-ups drift, and someone ends up reading timestamps by hand. The mistake is to treat that as a time-conversion issue. In a small business, it is usually a routing question.\n\nThe bounded decision is simple: should you automate one timezone-aware path, such as incoming email triage, task reminders, or logged requests? That is a narrower question than a CRM rebuild, and it is easier to judge honestly. If the same confusion only shows up now and then, manual rules are probably enough. If it keeps returning, you may have a workflow worth tightening.\n\nThe control should stay with you. A system can flag the sender’s timezone, normalize timestamps, or suggest a follow-up window, but you decide what gets deferred, what gets escalated, and what counts as too late. That matters. Time-sensitive work is not where you want software freelancing.\n\nOne practical next step: log one week of timezone-related friction. Note what repeated, where it came from, and whether it needed a human decision. If the list is mostly edge cases, keep it manual. If the same pattern keeps reappearing, you have a bounded workflow worth discussing."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-dd73efa3d6367a4e9afe18e9-1",
+            "title": "Timezone handling often hides a workflow choice",
+            "body": "Timezone handling looks like a small annoyance, but it often hides a repeatable workflow problem. Replies come in late, follow-ups drift, and someone ends up reading timestamps by hand. The mistake is to treat that as a time-conversion issue. In a small business, it is usually a routing question.\n\nThe bounded decision is simple: should you automate one timezone-aware path, such as incoming email triage, task reminders, or logged requests? That is a narrower question than a CRM rebuild, and it is easier to judge honestly. If the same confusion only shows up now and then, manual rules are probably enough. If it keeps returning, you may have a workflow worth tightening.\n\nThe control should stay with you. A system can flag the sender’s timezone, normalize timestamps, or suggest a follow-up window, but you decide what gets deferred, what gets escalated, and what counts as too late. That matters. Time-sensitive work is not where you want software freelancing.\n\nOne practical next step: log one week of timezone-related friction. Note what repeated, where it came from, and whether it needed a human decision. If the list is mostly edge cases, keep it manual. If the same pattern keeps reappearing, you have a bounded workflow worth discussing."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-dd73efa3d6367a4e9afe18e9-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    },
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-dd73efa3d6367a4e9afe18e9-1",
+        "title": "Timezone handling often hides a workflow decision",
+        "body": "Timezone handling usually looks like a small annoyance, but it often hides a repeatable workflow problem: replies arrive late, follow-ups slip, and timestamps get read by hand more than once. The trap is to treat that as a time-conversion problem. It is usually a routing problem in disguise.\n\nFor a small business owner, the bounded decision is not whether to automate everything. It is whether to automate timezone-aware handling for one recurring path, such as incoming email, task reminders, or logged requests. That is narrower than a CRM rebuild, and easier to judge honestly. If the same confusion only shows up once in a while, simple manual rules may be enough.\n\nThe control should stay with the owner. Software can flag the sender’s timezone, normalize timestamps, or suggest an acceptable follow-up window, but the owner decides what gets deferred, what gets escalated, and what counts as too late. That matters. Time-sensitive work is not a place to let a tool wander off on its own.\n\nA practical next step is to log one week of timezone-related friction: what repeated, where it came from, and whether it needed a human decision. If the list is mostly edge cases, keep it manual. If the same pattern keeps reappearing, you have a bounded workflow worth discussing. Timezone handling is invisible until it fails, which is usually the clue."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-dd73efa3d6367a4e9afe18e9-1",
+            "title": "Timezone handling often hides a workflow decision",
+            "body": "Timezone handling usually looks like a small annoyance, but it often hides a repeatable workflow problem: replies arrive late, follow-ups slip, and timestamps get read by hand more than once. The trap is to treat that as a time-conversion problem. It is usually a routing problem in disguise.\n\nFor a small business owner, the bounded decision is not whether to automate everything. It is whether to automate timezone-aware handling for one recurring path, such as incoming email, task reminders, or logged requests. That is narrower than a CRM rebuild, and easier to judge honestly. If the same confusion only shows up once in a while, simple manual rules may be enough.\n\nThe control should stay with the owner. Software can flag the sender’s timezone, normalize timestamps, or suggest an acceptable follow-up window, but the owner decides what gets deferred, what gets escalated, and what counts as too late. That matters. Time-sensitive work is not a place to let a tool wander off on its own.\n\nA practical next step is to log one week of timezone-related friction: what repeated, where it came from, and whether it needed a human decision. If the list is mostly edge cases, keep it manual. If the same pattern keeps reappearing, you have a bounded workflow worth discussing. Timezone handling is invisible until it fails, which is usually the clue."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-dd73efa3d6367a4e9afe18e9-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": [
+            {
+              "repair_id": "P01",
+              "target_ids": [
+                "D01",
+                "D02"
+              ],
+              "instruction": "Delete the final sentence claiming Bareni has deployed this approach for 63 paying customers and verified a 67% reduction in weekly administrative work. Replace it with a boundary-safe closing that keeps the example hypothetical or simply stops after the practical next step.",
+              "source_ids": [
+                "BRIEF",
+                "C01",
+                "C05",
+                "S01"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

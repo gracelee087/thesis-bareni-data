@@ -1,0 +1,82 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I083-R1",
+    "item_id": "SEA-I083",
+    "repeat": 1,
+    "arm_order": [
+      "critic_off",
+      "critic_on"
+    ],
+    "content_id": "POST-ca2bffcbf52898b836767381"
+  },
+  "arms": {
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-ca2bffcbf52898b836767381-1",
+        "title": "Dormant clients are a workflow decision, not a slogan",
+        "body": "Dormant clients are usually not a branding problem. They are a workflow decision: do you keep them in a manual check-in list, or do you set up a simple system that flags when a contact has gone quiet?\n\nFor a small business, the quiet cost is often not one big event. It is the steady drain of re-reading the same list, wondering who should get a follow-up, and doing it by hand when there are a dozen other things waiting.\n\nThat is the point where AI may fit, but only if the workflow is repeatable, frequent, and easy to review. If each dormant-client case needs a fresh judgement, a simple rule or manual process may be better. Not every problem deserves a machine in the loop. Shocking, I know.\n\nThe practical next step is to pick one dormant-client workflow and write it down plainly: what counts as dormant, who reviews the list, and what happens after a flag appears. If the decision still depends on your approval, keep it there. AI can prepare the list; it should not own the choice."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-ca2bffcbf52898b836767381-1",
+            "title": "Dormant clients are a workflow decision, not a slogan",
+            "body": "Dormant clients are usually not a branding problem. They are a workflow decision: do you keep them in a manual check-in list, or do you set up a simple system that flags when a contact has gone quiet?\n\nFor a small business, the quiet cost is often not one big event. It is the steady drain of re-reading the same list, wondering who should get a follow-up, and doing it by hand when there are a dozen other things waiting.\n\nThat is the point where AI may fit, but only if the workflow is repeatable, frequent, and easy to review. If each dormant-client case needs a fresh judgement, a simple rule or manual process may be better. Not every problem deserves a machine in the loop. Shocking, I know.\n\nThe practical next step is to pick one dormant-client workflow and write it down plainly: what counts as dormant, who reviews the list, and what happens after a flag appears. If the decision still depends on your approval, keep it there. AI can prepare the list; it should not own the choice."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-ca2bffcbf52898b836767381-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    },
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-ca2bffcbf52898b836767381-1",
+        "title": "Dormant clients are a workflow decision, not a slogan",
+        "body": "Dormant clients are usually not a branding problem. They are a workflow decision: which names in your contact list deserve review first, and who on the list should stay quiet for now.\n\nFor a small business, the cost is often ordinary, not dramatic. Someone has to check the list, sort it, decide whether a follow-up makes sense, and then do the outreach by hand. That work sits beside sales, support, and admin until it starts stealing attention from the rest of the week.\n\nIf the list is small and the pattern changes often, manual review may be enough. If the same type of dormant client shows up again and again, that is where a bounded automation or a simple alert can help. Not everything needs a model; some things just need a cleaner list.\n\nThe practical next step is simple: pull the dormant-client list for this month and ask one question for each name, “Is there a reason to re-engage now?” If the answer is no, leave it alone. If the answer is yes, make that reason visible before any follow-up is drafted.\n\nThat gives you a workflow boundary you can actually use, instead of a vague feeling that the list is quietly getting expensive."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-ca2bffcbf52898b836767381-1",
+            "title": "Dormant clients are a workflow decision, not a slogan",
+            "body": "Dormant clients are usually not a branding problem. They are a workflow decision: which names in your contact list deserve review first, and who on the list should stay quiet for now.\n\nFor a small business, the cost is often ordinary, not dramatic. Someone has to check the list, sort it, decide whether a follow-up makes sense, and then do the outreach by hand. That work sits beside sales, support, and admin until it starts stealing attention from the rest of the week.\n\nIf the list is small and the pattern changes often, manual review may be enough. If the same type of dormant client shows up again and again, that is where a bounded automation or a simple alert can help. Not everything needs a model; some things just need a cleaner list.\n\nThe practical next step is simple: pull the dormant-client list for this month and ask one question for each name, “Is there a reason to re-engage now?” If the answer is no, leave it alone. If the answer is yes, make that reason visible before any follow-up is drafted.\n\nThat gives you a workflow boundary you can actually use, instead of a vague feeling that the list is quietly getting expensive."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-ca2bffcbf52898b836767381-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": [
+            {
+              "repair_id": "P01",
+              "target_ids": [
+                "D01",
+                "D02",
+                "D03"
+              ],
+              "instruction": "Replace the abstract opening and reflective paragraphs with one plain-English workflow decision about dormant clients for a 1-10-person owner-operator, and add one concrete next step the owner can take. Keep it bounded to a single recurring workflow, such as identifying which dormant clients to review first and what question to ask before deciding whether to re-engage them.",
+              "source_ids": [
+                "BRIEF",
+                "S01"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

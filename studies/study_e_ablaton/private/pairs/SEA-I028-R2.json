@@ -1,0 +1,84 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I028-R2",
+    "item_id": "SEA-I028",
+    "repeat": 2,
+    "arm_order": [
+      "critic_off",
+      "critic_on"
+    ],
+    "content_id": "POST-83278d2c133c1544de484a6b"
+  },
+  "arms": {
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-83278d2c133c1544de484a6b-1",
+        "title": "When AI disclosure stops helping",
+        "body": "If you use AI in a small business, the real question is not whether to mention it. It is whether the disclosure is solving the problem you think it is solving.\n\nIn practice, disclosure stops helping when the friction is not trust. If customers still need clearer answers, a faster reply, or a cleaner format, telling them “AI helped” does nothing. That is a workflow problem, not a messaging problem.\n\nThe next step is simple: pick one recurring customer-facing task and test it in two versions. First, keep the disclosure and see where the exchange breaks down. Then remove the disclosure and compare the result. If the problem disappears, the issue may be wording. If it does not, the issue is probably the process itself.\n\nThat is where a bounded automation decision starts. Move the AI work backstage if you can, and keep the final customer reply human. If a control is missing — approval, review, or an audit trail — name that control before you automate anything. Otherwise you are only making the same mess faster. "
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-83278d2c133c1544de484a6b-1",
+            "title": "When AI disclosure stops helping",
+            "body": "If you use AI in a small business, the real question is not whether to mention it. It is whether the disclosure is solving the problem you think it is solving.\n\nIn practice, disclosure stops helping when the friction is not trust. If customers still need clearer answers, a faster reply, or a cleaner format, telling them “AI helped” does nothing. That is a workflow problem, not a messaging problem.\n\nThe next step is simple: pick one recurring customer-facing task and test it in two versions. First, keep the disclosure and see where the exchange breaks down. Then remove the disclosure and compare the result. If the problem disappears, the issue may be wording. If it does not, the issue is probably the process itself.\n\nThat is where a bounded automation decision starts. Move the AI work backstage if you can, and keep the final customer reply human. If a control is missing — approval, review, or an audit trail — name that control before you automate anything. Otherwise you are only making the same mess faster. "
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-83278d2c133c1544de484a6b-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    },
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-83278d2c133c1544de484a6b-1",
+        "title": "When AI disclosure stops helping",
+        "body": "If you run a small business, the useful question is not whether to mention AI everywhere. It is whether disclosure still changes the workflow.\n\nIn practice, disclosure stops helping when it no longer changes a customer’s decision, reduces confusion, or creates a clearer review step. At that point, the issue is usually not the label itself. It is the process around it.\n\nSo test one recurring task: customer replies, draft emails, CRM notes, or another repeatable back-office step. Ask three things. Does the AI draft still need a human check? Does telling the customer upfront change the outcome? Or does the real problem sit earlier, in poor input, unclear criteria, or missing approval?\n\nIf disclosure is the friction, move AI backstage. Let it sort, draft, or pre-fill, then keep the human as the final author for customer-facing output. If the friction remains after removing the disclosure line, you are probably looking at a workflow design problem, not a wording problem.\n\nNext step: pick one recurring process and write down where disclosure belongs — at the start, inside the workflow, or only at the final human check."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-83278d2c133c1544de484a6b-1",
+            "title": "When AI disclosure stops helping",
+            "body": "If you run a small business, the useful question is not whether to mention AI everywhere. It is whether disclosure still changes the workflow.\n\nIn practice, disclosure stops helping when it no longer changes a customer’s decision, reduces confusion, or creates a clearer review step. At that point, the issue is usually not the label itself. It is the process around it.\n\nSo test one recurring task: customer replies, draft emails, CRM notes, or another repeatable back-office step. Ask three things. Does the AI draft still need a human check? Does telling the customer upfront change the outcome? Or does the real problem sit earlier, in poor input, unclear criteria, or missing approval?\n\nIf disclosure is the friction, move AI backstage. Let it sort, draft, or pre-fill, then keep the human as the final author for customer-facing output. If the friction remains after removing the disclosure line, you are probably looking at a workflow design problem, not a wording problem.\n\nNext step: pick one recurring process and write down where disclosure belongs — at the start, inside the workflow, or only at the final human check."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-83278d2c133c1544de484a6b-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": [
+            {
+              "repair_id": "P01",
+              "target_ids": [
+                "D01",
+                "D02",
+                "D03"
+              ],
+              "instruction": "Replace the abstract opening and closing with a founder-facing, bounded workflow decision about one concrete case where AI disclosure stops helping. State the practical trigger clearly—for example, when disclosure no longer changes the customer’s decision, trust, or required review—and add one next step the owner can apply in their own process, such as deciding whether disclosure belongs at the start of the workflow, inside the workflow, or as a final human check. Keep it plain English and avoid circular phrasing.",
+              "source_ids": [
+                "BRIEF",
+                "S01",
+                "C02",
+                "C05"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

@@ -1,0 +1,93 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I123-R2",
+    "item_id": "SEA-I123",
+    "repeat": 2,
+    "arm_order": [
+      "critic_on",
+      "critic_off"
+    ],
+    "content_id": "POST-4ffa83a84d9738aedbf492e9"
+  },
+  "arms": {
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-4ffa83a84d9738aedbf492e9-1",
+        "title": "When prompt sprawl is the workflow problem",
+        "body": "If you run a small business and you’ve already tried ChatGPT, the first thing to look at is not whether you need more AI. It’s whether the same task is now being handled through several prompts, custom instructions, or one-off exceptions.\n\nThat is what I mean by prompt sprawl: the work starts to depend on scattered instructions instead of a repeatable workflow. Once that happens, it gets harder to trust the output, harder to debug when something looks off, and harder to hand the task to someone else without a long explanation. None of that needs a grand theory. It just needs a quick check.\n\nThe practical next step is manual: write down your current AI usage on one page. For each task, note the prompt or instruction, who uses it, and where the output goes next. Keep it simple. You are not building anything yet; you are mapping what already exists.\n\nThat one-page audit tells you whether you have a real candidate for a bounded pilot or whether the better move is to consolidate the way the work is being done first. A free diagnostic conversation can cover the same question, but the owner still decides whether to consolidate, pilot, or keep working manually. Human approval stays with you. That part is still annoyingly important."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-4ffa83a84d9738aedbf492e9-1",
+            "title": "When prompt sprawl is the workflow problem",
+            "body": "If you run a small business and you’ve already tried ChatGPT, the first thing to look at is not whether you need more AI. It’s whether the same task is now being handled through several prompts, custom instructions, or one-off exceptions.\n\nThat is what I mean by prompt sprawl: the work starts to depend on scattered instructions instead of a repeatable workflow. Once that happens, it gets harder to trust the output, harder to debug when something looks off, and harder to hand the task to someone else without a long explanation. None of that needs a grand theory. It just needs a quick check.\n\nThe practical next step is manual: write down your current AI usage on one page. For each task, note the prompt or instruction, who uses it, and where the output goes next. Keep it simple. You are not building anything yet; you are mapping what already exists.\n\nThat one-page audit tells you whether you have a real candidate for a bounded pilot or whether the better move is to consolidate the way the work is being done first. A free diagnostic conversation can cover the same question, but the owner still decides whether to consolidate, pilot, or keep working manually. Human approval stays with you. That part is still annoyingly important."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-4ffa83a84d9738aedbf492e9-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": [
+            {
+              "repair_id": "P01",
+              "target_ids": [
+                "D01"
+              ],
+              "instruction": "Replace the enterprise-board framing with language for the approved reader: a small-business owner-operator. Keep the rest of the point, but make the opening and any related references speak directly to a 1-10-person business rather than a 7000-employee multinational.",
+              "source_ids": [
+                "BRIEF",
+                "S01",
+                "C01"
+              ]
+            },
+            {
+              "repair_id": "P02",
+              "target_ids": [
+                "D02"
+              ],
+              "instruction": "Tighten the diagnosis so it stays framed as a practical observation rather than an unsupported general truth. Replace the causal claim with a bounded check or next-step question, such as asking whether the same task now has multiple prompts, owners, or output paths, without saying that this is usually the root problem.",
+              "source_ids": [
+                "BRIEF",
+                "S01",
+                "C02"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-4ffa83a84d9738aedbf492e9-1",
+        "title": "When prompt sprawl is the real workflow issue",
+        "body": "If you run a small business and you’ve started using ChatGPT in more than one place, the first question is not whether to add more AI. It is whether the work is still clear enough to automate at all.\n\nPrompt sprawl is what happens when the same task starts picking up different instructions, different exceptions, and different “just this once” rules. At that point, the problem is not the model. It is the workflow. You do not have a clean handoff if the next person has to ask, “Which prompt are we using today?”\n\nThe practical decision is simple: audit the current use before you build anything new. On one page, write down the task, the prompt or instruction being used, who uses it, and where the output goes next. That is a manual check, not automation. But it tells you whether you have one repeatable workflow worth piloting, or a few half-related habits that need to be consolidated first.\n\nThat same audit is what a free diagnostic conversation would work through: does AI fit this workflow, or should you keep it manual for now? If it does fit, the next step is to define a single repeatable task and pilot that. Human approval stays with you."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-4ffa83a84d9738aedbf492e9-1",
+            "title": "When prompt sprawl is the real workflow issue",
+            "body": "If you run a small business and you’ve started using ChatGPT in more than one place, the first question is not whether to add more AI. It is whether the work is still clear enough to automate at all.\n\nPrompt sprawl is what happens when the same task starts picking up different instructions, different exceptions, and different “just this once” rules. At that point, the problem is not the model. It is the workflow. You do not have a clean handoff if the next person has to ask, “Which prompt are we using today?”\n\nThe practical decision is simple: audit the current use before you build anything new. On one page, write down the task, the prompt or instruction being used, who uses it, and where the output goes next. That is a manual check, not automation. But it tells you whether you have one repeatable workflow worth piloting, or a few half-related habits that need to be consolidated first.\n\nThat same audit is what a free diagnostic conversation would work through: does AI fit this workflow, or should you keep it manual for now? If it does fit, the next step is to define a single repeatable task and pilot that. Human approval stays with you."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-4ffa83a84d9738aedbf492e9-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

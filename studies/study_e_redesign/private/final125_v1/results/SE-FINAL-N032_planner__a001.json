@@ -1,0 +1,178 @@
+{
+  "status": "success",
+  "usage": {
+    "input_tokens": 4348,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 949,
+    "reasoning_tokens": null
+  },
+  "cost_usd": 0.009093,
+  "output": {
+    "item_id": "E-PLAN-501",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task explicitly specifies 'CTA rule: None', so no booking invitation or meeting prompt should appear. Instead, close with a neutral practical observation about the workflow decision or a concrete diagnostic question the owner can apply immediately to their own email and address data."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Define the bounded workflow: bounced email addresses in the owner's CRM, marketing list, or customer database that remain after a send attempt, creating duplicates, manual cleanup overhead, and wasted future sends. Frame this as a recurring data-quality decision, not a strategic initiative.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C01",
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Explain why addresses bounce and survive: mail servers reject invalid formats, closed accounts, or outdated domains; the bounce signal often reaches the automation tool or email platform but is not automatically synced back to the CRM or list-management system. The owner must choose: manually remove them (8–10 hours a week, persona scenario), hire someone to do it, or automate the sync.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Describe the diagnostic question: 'Does my email platform record bounces in a way I can access?' (most SaaS platforms do; the data is already there). This determines whether automation is feasible and what tool fits (Zapier, Make, n8n, or custom sync).",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Outline the pilot scope if automation fits: pull bounce lists from the email platform on a schedule, match them against the CRM by email address, flag or remove the bounced records, and log the action. No payment, no third-party vendor, no OCR—just data movement and a human approval gate for bulk deletes if desired.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "State the practical next step: list the three or four tools the owner already uses (email platform, CRM, automation tool if any) and check whether the email platform exposes a bounce report or API. If it does, the owner has a starting point. If not, manual cleanup is the baseline until the tool adds the feature.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Close with a neutral diagnostic observation: 'The survival of bounced addresses is usually not a technical limit—it's a connection gap between where bounces land and where your list lives. The first move is to find where your platform keeps that data, not to buy new software.' Do not invite a call or imply urgency.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C05"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No invented customer result, deployment, savings, team size, or booking CTA. The workflow decision and diagnostic are grounded in the owner's own tools and data."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "The automation excludes payment and high-risk decisions; human approval is retained for bulk record deletion if implemented."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "The persona remains a 1–10-person owner comparing bounded investment with manual work or hiring. Bareni identity, approved evidence status, and human authority are preserved."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Plain English is used throughout. The 8–10 hour persona scenario is labelled as such. The proposed automation is a working MVP scope, distinct from existing product claims."
+      }
+    ]
+  },
+  "raw_text": "{\"item_id\": \"E-PLAN-501\", \"selected_lessons\": [{\"lesson_id\": \"L01\", \"application\": \"The task explicitly specifies 'CTA rule: None', so no booking invitation or meeting prompt should appear. Instead, close with a neutral practical observation about the workflow decision or a concrete diagnostic question the owner can apply immediately to their own email and address data.\"}], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Define the bounded workflow: bounced email addresses in the owner's CRM, marketing list, or customer database that remain after a send attempt, creating duplicates, manual cleanup overhead, and wasted future sends. Frame this as a recurring data-quality decision, not a strategic initiative.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C01\", \"C02\"]}, {\"step_id\": \"P02\", \"instruction\": \"Explain why addresses bounce and survive: mail servers reject invalid formats, closed accounts, or outdated domains; the bounce signal often reaches the automation tool or email platform but is not automatically synced back to the CRM or list-management system. The owner must choose: manually remove them (8–10 hours a week, persona scenario), hire someone to do it, or automate the sync.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C01\", \"S01\"]}, {\"step_id\": \"P03\", \"instruction\": \"Describe the diagnostic question: 'Does my email platform record bounces in a way I can access?' (most SaaS platforms do; the data is already there). This determines whether automation is feasible and what tool fits (Zapier, Make, n8n, or custom sync).\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C02\"]}, {\"step_id\": \"P04\", \"instruction\": \"Outline the pilot scope if automation fits: pull bounce lists from the email platform on a schedule, match them against the CRM by email address, flag or remove the bounced records, and log the action. No payment, no third-party vendor, no OCR—just data movement and a human approval gate for bulk deletes if desired.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"C04\"]}, {\"step_id\": \"P05\", \"instruction\": \"State the practical next step: list the three or four tools the owner already uses (email platform, CRM, automation tool if any) and check whether the email platform exposes a bounce report or API. If it does, the owner has a starting point. If not, manual cleanup is the baseline until the tool adds the feature.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C02\"]}, {\"step_id\": \"P06\", \"instruction\": \"Close with a neutral diagnostic observation: 'The survival of bounced addresses is usually not a technical limit—it's a connection gap between where bounces land and where your list lives. The first move is to find where your platform keeps that data, not to buy new software.' Do not invite a call or imply urgency.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C05\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"No invented customer result, deployment, savings, team size, or booking CTA. The workflow decision and diagnostic are grounded in the owner's own tools and data.\"}, {\"constraint_id\": \"K02\", \"handling\": \"The automation excludes payment and high-risk decisions; human approval is retained for bulk record deletion if implemented.\"}, {\"constraint_id\": \"K03\", \"handling\": \"The persona remains a 1–10-person owner comparing bounded investment with manual work or hiring. Bareni identity, approved evidence status, and human authority are preserved.\"}, {\"constraint_id\": \"K04\", \"handling\": \"Plain English is used throughout. The 8–10 hour persona scenario is labelled as such. The proposed automation is a working MVP scope, distinct from existing product claims.\"}]}",
+  "provider_response": {
+    "id": "msg_011CeqyJiMjt3SgQxo57LRfZ",
+    "container": null,
+    "content": [
+      {
+        "citations": null,
+        "text": "{\"item_id\": \"E-PLAN-501\", \"selected_lessons\": [{\"lesson_id\": \"L01\", \"application\": \"The task explicitly specifies 'CTA rule: None', so no booking invitation or meeting prompt should appear. Instead, close with a neutral practical observation about the workflow decision or a concrete diagnostic question the owner can apply immediately to their own email and address data.\"}], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Define the bounded workflow: bounced email addresses in the owner's CRM, marketing list, or customer database that remain after a send attempt, creating duplicates, manual cleanup overhead, and wasted future sends. Frame this as a recurring data-quality decision, not a strategic initiative.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C01\", \"C02\"]}, {\"step_id\": \"P02\", \"instruction\": \"Explain why addresses bounce and survive: mail servers reject invalid formats, closed accounts, or outdated domains; the bounce signal often reaches the automation tool or email platform but is not automatically synced back to the CRM or list-management system. The owner must choose: manually remove them (8–10 hours a week, persona scenario), hire someone to do it, or automate the sync.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C01\", \"S01\"]}, {\"step_id\": \"P03\", \"instruction\": \"Describe the diagnostic question: 'Does my email platform record bounces in a way I can access?' (most SaaS platforms do; the data is already there). This determines whether automation is feasible and what tool fits (Zapier, Make, n8n, or custom sync).\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C02\"]}, {\"step_id\": \"P04\", \"instruction\": \"Outline the pilot scope if automation fits: pull bounce lists from the email platform on a schedule, match them against the CRM by email address, flag or remove the bounced records, and log the action. No payment, no third-party vendor, no OCR—just data movement and a human approval gate for bulk deletes if desired.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"C04\"]}, {\"step_id\": \"P05\", \"instruction\": \"State the practical next step: list the three or four tools the owner already uses (email platform, CRM, automation tool if any) and check whether the email platform exposes a bounce report or API. If it does, the owner has a starting point. If not, manual cleanup is the baseline until the tool adds the feature.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C02\"]}, {\"step_id\": \"P06\", \"instruction\": \"Close with a neutral diagnostic observation: 'The survival of bounced addresses is usually not a technical limit—it's a connection gap between where bounces land and where your list lives. The first move is to find where your platform keeps that data, not to buy new software.' Do not invite a call or imply urgency.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C05\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"No invented customer result, deployment, savings, team size, or booking CTA. The workflow decision and diagnostic are grounded in the owner's own tools and data.\"}, {\"constraint_id\": \"K02\", \"handling\": \"The automation excludes payment and high-risk decisions; human approval is retained for bulk record deletion if implemented.\"}, {\"constraint_id\": \"K03\", \"handling\": \"The persona remains a 1–10-person owner comparing bounded investment with manual work or hiring. Bareni identity, approved evidence status, and human authority are preserved.\"}, {\"constraint_id\": \"K04\", \"handling\": \"Plain English is used throughout. The 8–10 hour persona scenario is labelled as such. The proposed automation is a working MVP scope, distinct from existing product claims.\"}]}",
+        "type": "text"
+      }
+    ],
+    "model": "claude-haiku-4-5-20251001",
+    "role": "assistant",
+    "stop_details": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "not_available",
+      "input_tokens": 4348,
+      "output_tokens": 949,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": "standard"
+    }
+  },
+  "stop_reason": "end_turn",
+  "cost_details": {
+    "input": 0.004348,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.004745,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.009093
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": null,
+  "key": "SE-FINAL-N032_planner__a001",
+  "role": "planner",
+  "created_at": "2026-09-08T12:27:50.898350+00:00",
+  "ended_at": "2026-09-08T12:28:15.971163+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-N032",
+    "batch_id": 2,
+    "condition": "natural",
+    "cohort": "natural"
+  },
+  "task_id": "SE-FINAL-N032",
+  "batch_id": 2,
+  "cohort": "natural",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 25069,
+  "budget_charge_usd": 0.009093,
+  "unknown_cost_reservation_usd": 0
+}

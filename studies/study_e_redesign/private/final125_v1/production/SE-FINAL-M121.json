@@ -1,0 +1,276 @@
+{
+  "task_id": "SE-FINAL-M121",
+  "batch_id": 4,
+  "condition": "unchanged",
+  "source_task_id": "SE-FINAL-N017",
+  "topic": "the limits of spot checks",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-317",
+    "title": "When spot checks stop being enough",
+    "body": "Spot checks are useful, but they have a hard limit: they catch mistakes after the fact, they do not remove the repeatable work underneath. If you are still checking every invoice, every support reply, or every CRM entry by hand, the real question is not “can I sample this?” It is “is this a workflow worth fixing?”\n\nIn a small business, spot checks make sense when the volume is low, the exceptions are common, or the cost of a false pass is high. That is when human judgment is doing real work, not just tidying up. Once the same check starts repeating, the check itself becomes the process. Slightly rude, but true.\n\nA practical next step is simple: pick one repeatable workflow and measure it for one week. Count how many items you manually check and how many fail the check. Use that as input to a decision, not as an automatic rule. If the work is mostly consistent, you may be looking at rules, workflow gates, or AI-assisted extraction. If each case changes too much, keep the spot check and improve the manual process instead.\n\nAnd if the workflow touches money movement or any other high-risk decision, keep human approval in place. That boundary matters more than speed."
+  },
+  "final": {
+    "item_id": "E-OPT-417",
+    "title": "When spot checks stop being enough",
+    "body": "Spot checks are useful, but they have a hard limit: they catch mistakes after the fact, they do not remove the repeatable work underneath. If you are still checking every invoice, every support reply, or every CRM entry by hand, the real question is not “can I sample this?” It is “is this a workflow worth fixing?”\n\nIn a small business, spot checks make sense when the volume is low, the exception rate is high, or the cost of a false pass is very high. That is when human judgment is doing real work, not just tidying up. Once the same check starts repeating, the check itself becomes the process. Slightly rude, but true.\n\nA practical next step is simple: pick one repeatable workflow and measure it for one week. Count how many items you manually check and how many fail the check. Use that as input to a decision, not as an automatic rule. If the work is mostly consistent, you may be looking at rules, workflow gates, or AI-assisted extraction. If each case changes too much, keep the spot check and improve the manual process instead.\n\nAnd if the workflow touches money movement or any other high-risk decision, keep human approval in place. That boundary matters more than speed."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-121",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-121",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-121-1",
+        "repairs": []
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-121",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-417",
+        "title": "When spot checks stop being enough",
+        "body": "Spot checks are useful, but they have a hard limit: they catch mistakes after the fact, they do not remove the repeatable work underneath. If you are still checking every invoice, every support reply, or every CRM entry by hand, the real question is not “can I sample this?” It is “is this a workflow worth fixing?”\n\nIn a small business, spot checks make sense when the volume is low, the exception rate is high, or the cost of a false pass is very high. That is when human judgment is doing real work, not just tidying up. Once the same check starts repeating, the check itself becomes the process. Slightly rude, but true.\n\nA practical next step is simple: pick one repeatable workflow and measure it for one week. Count how many items you manually check and how many fail the check. Use that as input to a decision, not as an automatic rule. If the work is mostly consistent, you may be looking at rules, workflow gates, or AI-assisted extraction. If each case changes too much, keep the spot check and improve the manual process instead.\n\nAnd if the workflow touches money movement or any other high-risk decision, keep human approval in place. That boundary matters more than speed."
+      },
+      "gate_key": "SE-FINAL-M121_gate1__a001"
+    }
+  ],
+  "measurement_status": "pending",
+  "planner": {
+    "item_id": "E-PLAN-517",
+    "selected_lessons": [],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Open with the practical problem: spot checks (manual sample verification) scale poorly because they catch exceptions but do not eliminate the underlying repeatable work. Frame this as a workflow decision point, not a diagnosis.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Explain when spot checks are the right choice: when the volume is low, the exception rate is high, or the cost of a false pass is very high. Give a concrete threshold question the owner can ask: 'How many items per week am I manually checking, and what fraction fail?'",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C04",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Identify the automation boundary: if the owner is spot-checking more than ~10–15 items per week and the failure rate is <5%, automation (rules, AI extraction, or workflow gates) can replace the check. If volume is lower or failures are common, keep the check and optimise the process instead.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "State honestly when AI does not fit: if the decision requires domain expertise that changes per case, or if the cost of error is genuinely catastrophic, a spot check plus human judgment stays the right answer. Do not force automation.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C04",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Describe the one next step: run the threshold question for one repeatable workflow (invoice review, customer-data entry, or support-question triage). Gather the volume and failure rate for one week. That number decides whether to automate or optimise the manual check.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Close with the diagnostic offer: if the owner finds a repeatable workflow that fits the automation profile, a 30-minute conversation can map the exact decision and next steps. Preserve no CTA per task rule; use a soft closing statement only.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No customer names, deployments, results, invented numbers, or sales CTA. Use only the self-built demo existence and Bareni's consulting model per C02 and C03."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "State that human approval is mandatory for high-risk decisions (money movement, safety). Do not recommend autonomous approval."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Preserve the frozen persona (founder-to-founder, plain language, trust over hype), approved evidence status (C01–C05, S01), and human-approval boundaries per C04."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use plain English. Keep the workflow example, threshold question, and diagnostic offer distinct from any existing Bareni capability or observed result. Avoid claims beyond the approved scope in C02–C04."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-617",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Turn the abstract topic into a bounded Bareni workflow decision. Explain one practical next step."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Sound like a technical expert using plain language: direct, calm, practical,\nfounder-to-founder, and trustworthy."
+          }
+        ],
+        "rationale": "This is a drafting instruction for how to open the post and frame the topic, not an assertion of a current Bareni capability or observed result. The framing as a workflow decision point matches the approved task and persona focus.",
+        "use_guidance": "Keep as an explicitly proposed opening frame. Explain \"spot check\" in plain terms on first use, present the scaling limitation as reasoning rather than as a measured finding, and do not attach any customer example or observed frequency."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Practicality: explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step."
+          },
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI\n  fits"
+          }
+        ],
+        "rationale": "Supplying a diagnostic question the owner can ask themselves is a permissible instruction/recommendation, not a factual claim about Bareni's implementation or about market behaviour. The persona focus explicitly allows one diagnostic question.",
+        "use_guidance": "Keep explicitly as a question the reader can ask about their own workflow. Present the conditions (low volume, high exception rate, high cost of a false pass) as reasoning, not as a validated rule or benchmark, and do not add any statistic about typical small-business volumes."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "FORBIDDEN",
+        "evidence": [
+          {
+            "source_id": "C05",
+            "quote": "Numbers require a source and status. Keep observed results, estimates, targets,\n  synthetic data, and examples distinct. Never invent a benchmark, guarantee, ROI,\n  saving, revenue lift, productivity result, or thesis-validated capability."
+          },
+          {
+            "source_id": "C03",
+            "quote": "Three-way matching against purchase orders and receipts is not built."
+          }
+        ],
+        "rationale": "The specific numeric boundary (\"more than ~10–15 items per week\", \"failure rate is <5%\") is an invented threshold with no source or status in approved evidence, and it functions as a benchmark for when automation replaces a check. The added implication that AI extraction can replace the check also outruns disclosed limits (for example, PDF/scan ingestion and OCR are not implemented; three-way matching is not built).",
+        "use_guidance": "Exclude the invented 10–15 per week and <5% figures. If a boundary is needed, use the separately supported approach in Q02 and Q05: have the owner measure their own volume and failure rate for one week and discuss the result, without publishing any numeric cut-off as a Bareni rule."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI\n  fits"
+          },
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "S01",
+            "quote": "Do not force AI where it is unsuitable."
+          }
+        ],
+        "rationale": "This is an instruction to state honestly where automation does not fit and to keep human judgment in place. It recommends restraint rather than asserting a current fact or capability, and it aligns with the human-approval boundary.",
+        "use_guidance": "Keep explicitly proposed. Frame declined areas as current scope discipline rather than as work that can never be automated, avoid legal advice, and retain the point that human approval remains mandatory for money movement and other high-risk decisions."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Practicality: explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step."
+          },
+          {
+            "source_id": "C03",
+            "quote": "Self-built demo using entirely synthetic data for a fictional German\n  manufacturer."
+          },
+          {
+            "source_id": "C04",
+            "quote": "Bareni currently declines high-sensitivity medical, legal, and financial work;\n  bulk cold-email automation; scan-heavy OCR-dependent workflows"
+          }
+        ],
+        "rationale": "The core next step — measure volume and failure rate for one week on one repeatable workflow — is a permissible manual instruction, but the claim's final sentence asserts that the resulting number decides automation versus optimisation, which presents a single measurement as a sufficient decision rule. The example workflows also need a boundary so invoice review is not read as a working end-to-end capability.",
+        "use_guidance": "Add the qualification that the one-week count is an input to a judgement, not an automatic decision rule, and that the examples are illustrative workflow types rather than deployed Bareni systems. Note that scan-heavy or OCR-dependent invoice handling is currently out of scope. Then the manual measurement step can be used."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "CTA rule:** None."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Informational posts use no CTA or one soft closing sentence."
+          },
+          {
+            "source_id": "C02",
+            "quote": "Normal sequence: free 30-minute diagnostic; free one-page pilot proposal;"
+          }
+        ],
+        "rationale": "A soft closing sentence is permitted, but the claim as written describes a \"diagnostic offer\" and a 30-minute conversation, which reads as the standard primary CTA that this task forbids. The core (a restrained closing) is supportable only once the offer framing is removed.",
+        "use_guidance": "Add the condition that no CTA wording is used: drop \"diagnostic offer\" and any \"Book a free 30-minute diagnostic\" phrasing, and close with at most one soft, non-promotional sentence. Do not imply scarcity, urgency, or a scheduled call."
+      }
+    ]
+  },
+  "selected_lessons": [],
+  "register_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "planner_key": "SE-FINAL-N017_planner__a001",
+  "researcher_key": "SE-FINAL-N017_researcher__a001",
+  "writer_key": "SE-FINAL-N017_writer__a001",
+  "final_key": "SE-FINAL-M121_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-M121_gate1__a001",
+  "production_completed_at": "2026-09-08T13:51:07.676454+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts"
+}

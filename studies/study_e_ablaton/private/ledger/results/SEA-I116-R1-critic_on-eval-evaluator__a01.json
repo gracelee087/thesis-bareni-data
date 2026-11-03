@@ -1,0 +1,154 @@
+{
+  "created_at": "2026-09-08T19:58:07.194408+00:00",
+  "role": "evaluator",
+  "metadata": {
+    "study_id": "STUDY-E-ABLATON",
+    "pair_id": "SEA-I116-R1",
+    "arm": "critic_on",
+    "cycle": "eval"
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49",
+  "status": "success",
+  "output": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-b7491d3595dfced2674209ec4067546a",
+    "scores": {
+      "persona_fit": 3,
+      "clarity": 4,
+      "actionability": 4,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "The post addresses the target owner-operator, but leaks meta-prompt framing ('persona example', 'timings are intended scopes') and touches on service onboarding despite the 'no CTA' instruction.",
+      "clarity": "The core argument connecting unmapped workflows to exit handover difficulties is immediately clear and logically structured, though the internal meta-disclaimers read awkwardly.",
+      "actionability": "Provides a practical, bounded diagnostic step to map handoff points and approval rules on one recurring workflow, maintaining human oversight.",
+      "factual_grounding": "Strictly grounded in approved evidence; correctly qualifies the 8–10 hours scenario without inventing customer results, capabilities, or metrics."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 16,
+    "pass": true,
+    "low_quality": false
+  },
+  "cost_usd": 0.012054,
+  "usage": {
+    "prompt_token_count": 5867,
+    "cached_content_token_count": 0,
+    "candidates_token_count": 329,
+    "thoughts_token_count": 1712,
+    "total_token_count": 7908
+  },
+  "provider_response": {
+    "sdk_http_response": {
+      "headers": {
+        "x-gemini-service-tier": "standard",
+        "content-type": "application/json; charset=UTF-8",
+        "vary": "Origin, X-Origin, Referer",
+        "content-encoding": "gzip",
+        "date": "Tue, 08 Sep 2026 19:58:13 GMT",
+        "server": "scaffolding on HTTPServer2",
+        "x-xss-protection": "0",
+        "x-frame-options": "SAMEORIGIN",
+        "x-content-type-options": "nosniff",
+        "server-timing": "gfet4t7; dur=6697",
+        "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+        "transfer-encoding": "chunked"
+      },
+      "body": null
+    },
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "media_resolution": null,
+              "code_execution_result": null,
+              "executable_code": null,
+              "file_data": null,
+              "function_call": null,
+              "function_response": null,
+              "inline_data": null,
+              "text": "{\n  \"schema_version\": \"study-e-evaluator-rating-v1\",\n  \"item_id\": \"EVAL-b7491d3595dfced2674209ec4067546a\",\n  \"scores\": {\n    \"persona_fit\": 3,\n    \"clarity\": 4,\n    \"actionability\": 4,\n    \"factual_grounding\": 5\n  },\n  \"reasons\": {\n    \"persona_fit\": \"The post addresses the target owner-operator, but leaks meta-prompt framing ('persona example', 'timings are intended scopes') and touches on service onboarding despite the 'no CTA' instruction.\",\n    \"clarity\": \"The core argument connecting unmapped workflows to exit handover difficulties is immediately clear and logically structured, though the internal meta-disclaimers read awkwardly.\",\n    \"actionability\": \"Provides a practical, bounded diagnostic step to map handoff points and approval rules on one recurring workflow, maintaining human oversight.\",\n    \"factual_grounding\": \"Strictly grounded in approved evidence; correctly qualifies the 8–10 hours scenario without inventing customer results, capabilities, or metrics.\"\n  },\n  \"critical_violation\": false,\n  \"critical_violation_type\": null,\n  \"critical_evidence_quote\": null,\n  \"total_score\": 16,\n  \"pass\": true,\n  \"low_quality\": false\n}",
+              "thought": null,
+              "thought_signature": "EtA5Cs05ARFNMg9HDnZtWlwd2NBap3bYcv_UJauTTOsvZt0Eer1RJDNkL1S1J7Si4gjSg7bGfuxjcDM-8AenahIFFbYl2GTEP2zYeX5Z4TSHYF8J_dRb4z8AiQq7a3lSH9R8YTOxskjLxk_MIcdozzM2nb9NiOPRvQj7tXLswcPzlcZkfUSxwlQUL_h5IWSv-NHvr91Tv6LZi1KgcIzJ7gt8PEJ8pDXMXDlovDKsn8C9YswJWjzQXScgh7ei0mpSg9aBQTGJNRNSOR3w3Zua7ALmy33ptxgJ9e3A_SRFU1pHB83JQ8U2e2SKC6rOgozFudCcX1EyzOe1zBzm0Zx_kO-dGCVjU4Oa9NNQ8UCJXrS0Z4R-_F6RFlSoXpjKiQ3et3od9wEzl_-KW16PXSsPXk5LLT6_5JwrOpuNe0XAI3yaZHpLaa5oha-8sAELDGNdMkJcbTULlv6Pjapl9machBqwuTGJA7uBHbNEQ7FTrE7tg9DxHWOy4lHiN9f71c7Mci4lspSV6Rlay7oPv3fJTmNeq78FYXUps9LsSB5cn-5PuTqxGi55xMaNbqGnG_ryw-1y8C1epN1IKio4yqedItyZtmphl6GyiNeU1MPgON9F3bxfQMwu6iZnboKfBEGFeJFx5kevl8E70m4wJWmKfsFLGzndHCyG1qJ1vHG8rNDZkyTae714bMHaDV0Wg13BnJOMdcEilq2x5OpM6dgv7eVuXTcaXNZZkI8CNi88kmc-1glH7FdCbjqPSU37_rGF5v2JlYUC7aPSr00cCBXbsgrlaIj1ywLR2jYmBdfQujIS0ajfWZ-vR1D5GsaPJiANFo9M8ewJHMMlu2sHB7lkc8ihJL8vleDlYb7hk3PEvH4_TZJAznMhMOognxZWe72DBCzJn9Xqs6Hol6m2-cjWFmAqzIQT8V213ge6ohEebXC_VrcJoUX1sXdOCIfly2MUGhFHIuH8pNqiiGctsj_rOmMjzo5IsKG0RkNdx8ikBr34PCVRZupwLY3YA2jtvhU1r2qIVLX8tZk-PDgU1bwV26sGrOLx0v_XzxEnOXrtgUS0MLWfiPmVYG2MbraED61IECTCtmlFmgD8l0kJQMU_cXhhclintIjvM273ZCKcK7Xcv5neh70YoEypOtvEKNZ1d9l21J6p9xH7-vIetx5dcdHqQthm9_FblMFuYkhS4t3wsh3wrm6NTvJRKn0khAKAYBl-ChOGCi_mZZXz-x35hNVpbHSFl6kJnhRHV3Q2TfJ5ivgtCvWw13pDB3jCH7p4I7noc3lTmPDD-AMv6rYAYosfOghNqnEVqGJy-iKpYS8jl0-OE7GzJh12LsB2WrxuELPXgTtnxmWClKwXjUtbCMESEZJFr19BDUAsL-T1hmefLMTcyOwdFhL334flMH9YUWYFKiT0ry4Lw6HLk5YCjxjXc2nMDKgrikiR8Sa0S1QzZ6sgjp2lbiGMI4rINDEgT8S-8nmyVA7JohWQWNYU9E4dcKN8FILdpB3XeDdqlvxT1eKZju8TpIL1Pa2NzGuP7UJy7vYhtCiisTeysUuh-rnvSzVz5KZ6DQq_vfm51m6NaqqX_pcKAhtDdksUiGWx86ywwc-K0h2OPWiTSt21axAk74o8LqDYArdB2OxKPxSsYIdwafsygz6sK3T8kR0fapjQm56ykzlin6LUm509Fj8nAVAvxevT0TSLbLmlRWhhoYh_Q3ZJaKY1i7Y1uXngbTTJxUCrhzT-jGVJbQpECTYIUSgORRC8Qx611pANhA2s3UdYZ_AZ9VHME5ixQ6KvZBK6OgwxF3BdpU0DxpjrsCK1K1m8uktRF8tgkga-UrHmNMe7474qSCRMRap9fbR8OWdSG2LyvlwW7X-i9Y8Ctg586kHI61YRKPHQLtHNepcmi122Divc14B85xfMA8uFd5v4w7CynWv0-_UvZ87hapf5GS5P4q30E0MkgDtFjQ06lfL8P1kehnWEXQW9SXpJLTkGpXQNlOFhn-VF_BfXyIFd0ectOakUAzQgTIpybW19xrDFndzWaT9Eg1o1iFRLjiOEdSIT6ceFMU20rOnOIOS-K9Sci1bz1z42OU_AzOhDMzpyYP_JCZEfLhfTHneKNKr7tRhCUWFYUn9QULRnbn3ssihmtKyDa90Yo2QL8j0SAcmQEBoWCaPzY3RUx1mUCQiF5GtAuVy_NpFAFktPWPWQxCg4YdYfwry830poPSA6gJrYGT5P6brcnGsCKTfiHr-L8QkXqPsI2eHa14Fp502fG9NPGohHYQOHCRJD1Ttfr_pBfD8Fodz5lSp9CltOktM2xvMf0VoUVqFfOR84XWnWYMgCw07B6EB8U1qXfvYwtmF-Pz7B4RsOh_6TC7ES5WZxJ-kMk1-_bQyMSWSa1RHMnZp1EUACw0-SlgWTe0D2whtNN8TF3rHtLflk3DIsWqiHWOA3uLHYx_HP3nWDgu-93N7eUOIfJ_fO4ixrKC-qCXN1ATJv26cz9jA5FQNQGZqMQ5fu3t9LkQ0at3N-XDdZsXpGmMnqFTZOPDZ-aFPuZ0pzYGr4hb5bOLC6QX5N9MmQcNZ-avwsUeIeoMHCfz7C1kVj_Qla7obaaHnwNtKoZJyC4A6Etj9v7ys3M_H0oCkgZbdSIvhREdt0K4JQ6zYeNPll3vbMMcA8P9TrBe9LGwCd_rtucmrioJkG6FXwOE1zQGmEM65laVCHGcm0dQgOj6GKJtHGmbedo6uI158CDbhfyvpgMLoqn86FsUbbrGXguWz0pmztiBOi_2o27EiUz-n8LXv5soUYXVWi6-msz5WL6NIvnLHxk5eDworuf8yo7PUYW7djH9Flx4SbrKGY-XSjw5gNl09SBlwyA4u6uW7sSN8_i3nDGDPBmGK-2lnhqU3V_lq-e8QOwM1iYq3WeBlPHIihhQabwMZgkddSwtHMi8fvt8DWr2bIdqk52yCdss5wQFSj5g4ZJ8tvM6wQvP3Ce1Jo1Y5U0zw_Vkl5SHdGPss0VjKdssskSXu10DXiDvw3EqsKXLnWxU9O2OG2mfX2uoM4EtDo-qo_YZFVlAtkyeAhafPzu2gzZcGlbZtrwWQfuIDNYTr4Rmh2ujDMVKVzdvaWhoKS5XYtN7PRjk2tmb-xZ1Edj9PypBn1He_2sENGSZFmank0fkDk88YN82xxsH1pyUKqMTRSU8WL1-MeE4PNH7GdVAz5I1LM949QcBE6Vu9ru7zSU0Iwh7EKNQkjdh-2HET3vHxEW8P49FhZW1Mj6akM7HbVNPYGEM1qHgxCjHo6MmJ9OLuh3xGdPswoqhI7oR4qZGdvv7n5DJUcBFVB3ZPsCXJwyIlIFEiO_5DTV-I1w93-7ivf8cMEEZBrwL9E-RHDm-iyLjhiAhuTQ0A7kmnYrna_2FjdjNUKMgmKDKxon-ei0Al5frjs2erlHpNAUSC2gRfW5vXqB-ej9oLyueI-e0A9El9EuI1LdPVrnz3T88e7p_CdKBpzRVcIwnn3z-xf-B5ZqLYgvkxKHjSqwNdI_POYANyUYXMEprXrjwX9blJ-tgIVTFFDtbTDHjzuEVapilUl4v3ry0v0CpndCn2YThAm-wvjijnVchaeSac5ZSQSrt5qs7_pktNzuLUCAnSCETblHuFEDS2Wuk2SS5JigVAavoxXEPxQSxhAijjo77ht1mdeFPabtXJUIMTYd13HWIRcsgluPBuC4C9uZ4Qkf5CkEj8eVVjJE1cDKCx3xFq9Yj6upoaTotMVnb-R7lzRBnMdOUWtA6_iXLAB_gC1HQ17qWqJPd3CED1Ki1ZTNY0Tj_FaKOVJHMYo9nOcg0JVb4ZdzjqMQhuVTsrALAuHZi-H_EOIa0J90QZ1EMMbtc_KXhzth2gfD3Zwme24k_S0PM09KTdVkBSWWmuyJRyg569XzWfOvzqltCXbrqb5R2hgEZ78w2alVUkqa6HV6K7qfFtfjKWn6kZnpRaWYnrZLacbsXlb9EfVEQR1D9sHrCigU-ZtAzIbwUuufsrJTEkBHu6IsooV9sdhx2l8MQ3q6FEUIfgGezBScQ3v5VIN9H1aFRDXNrNlTv1z2b8GG_24ks7lk_1sHZf91KahGyVywNLCUTtLNoGzNXC7SgmNpBko4qaBem2zINlK1LUXt1N77i8KE1CXuW8YkO3a3mJWjWmp6IekC69fDSmuzEVMvq1Y8q0Fti9DFGckcNbNJ8YqBN-2L9pkbEPwQal4GO-2nEviNxB0LZH5elROmFU2V740T_YA2ic00_girMAHMrw_U20cJAp4BGjx8nAJwun_SVFuqkxg42RnC6shz6Uv4gve2Ea5tE5bV7kOHZVkZo4N16oMpotkPdv0El4c0_3KemZ8niuLQJaWQ4c0S6ud6hgrT0_TABwlG5EgjbWE7M0QbkumxsM_HKgSxVyrr_4xtGNV_GUN4ENDabk27Bv0M3_8NS7vGq2N-z-3g189oJOFmKxJqThRuapjclw1rBx2FhTFoqqCsH0y-hfVVG199x4ofL1t6VthhOG7bGuSvU1oWuxSBrukCagD9AXPO5Z-ud5h9ou-nZlZtEmtyEw8eFJnAS9BitwY4Tka0P-1BO4fiL0NtvRSLftIms7_0_J6i7b24g4816mOxTTBC5OEIGT3y29gu127kAoybutmIe9dFn9JhHTQr7iYwHOwRe2ZmM61WNq8pA4l9dcHwmVe3JMRFEK3JHLXT5g9UZt43lJgU02At3FtIBPnEhfWs41foRUFACUxrDyyXLPuaFsHctjUfM9nvs8vcbEtl-WEWFfhQGGB9wuqF2BukcDL-MQESzEE0NwjzziqiwrbIzu12mcX0jH5hafyT4Z-1IuQ54z6R_Kogh89WH3qpGzjNniWtSpeCB_qy2_IXGZpTXKEuxk120furfXCzH6K_AODIga39KAnbnwiRCw2XgBi9nVZttN6hZMGTeI10EFPm09jHnL05wi58EubSYYlKBunUIVGkUl8Eka9NCdfhBbW_48r2Bs6d4scaV017IskMkldM1QhNWZqGnymoCDwysl_OR4G9VIzRAahu1orDocmeQK7A2NGTmOE3CUo1vT3fs2-W_hWuEl3m0g4zOfTna4j6iotQW0wD-LFTxhcbUNpGTflOJ0976lvCQN36yZuhADlG0eeVgQ0CUnqNNV9p79SViSbv8ZrcWhYv5fTqW1hbwPRZ0GDk1HTKRZP3-mnN_E84tLZz25A4XBMvaOi0ROALWodyxC3Bhu6_TjmTV8gWXaOEZDXrCCBxyYWaEdC7lEyluT3phj1iSDnt9KK20P2FR3qh05N4qwxz1NXd1k5wslyhiGvBXWWt1CPuTIs_7I5LxJI4yCbbkIQb_281v3kaS78HYHShTfn8kaxxku_gTr6xJFiwpk_T3I3HUWJpivUTLHuRSN1JhEUDlaERMtYaUGNahtREJhB184_fYiKQI-rOYeiXxmgA2Ey2i5Mbt8TQkUGdSoSbByTvyTNSxW8yV8Czhi8veuEZkew56o1HS7EnkDosH9QL5dBwHOr-Ij98Y4ZvXAwWLmmOseNDEP59rMckp6iiGW06h1VqbTlm0AM1fBk_x-DVGXRaF3JM8Qaa0UUq_PPOtfa554o8ynd2tPbiU_Kv91BEy5yyd3o8dfrcE-oywv1dQmpiMI8ROohRfJivIeRarJq21lXMA3nxxs8Lieo9JcN4Sb93sTFScT-vmPJAoS-Sil4NkXlv4yvQF404qF-rbmipmyIwsEAlXwg-7gzM_lnV9TfYz-zEJMsSU7Dk1yYL3qfJPhrabUihU5VcjHLihruRpHrUcz1HIClWkZ69YUPhYsa2ZVvwK28vFuwyPMQbMNUsRZKak6ucjYnCV5XjSLtrNbjONy78nFNYNYdNVX7GifIIL5OlyyfyqZod0T1vkh1FdgApdXHznhjOJ8nvmvflBESotvWAo0kb9xVHFUIejFLXkBFcjernmllIO7uE7CXjo3jBuZpxP6Xjgr0jyjNzEU-eNqc8gM2gahKfXHoVDpbAelhB9pi2zSibv-bxpfIU7nUoRO8wKbcr7MgrV_Gx3XPzcueqahx6STgn_fR9WWl4FFglM1J0lurygP08sgcMuWplzjxQ7yJfyWEs0HYuFqCbhZK217ibaWNQkWVOhnHxI7W02fXdiLWXLJ3CLfOATRndHVE-Pb1-oMWIzbveITr3wHjPFf9JtQPVJWVkr2ENW1PVVF0XMxgXNYVWWmLXc-DqturZFXy5s98BHtRZ4viwAwuLYxlenQnp4BB4NJf7CYMuXzNHZLPA-gmxcT7bdL3WZNzp6B0n2JAHMaZLAUYONtj4jTMeW0oeTlhP8xESJcA0lZ4dZmg_pNFTHE7M-jDVpyIYJtVRg2KFkU0hU-5gerivAgV0xXTU5gAt-cjNckLNPqni0SJHthfYyo6JdV_zHCtsRXTppla9mqMxcltVF-Yiq8NtHIIdmmt4jlkiFkHmB1npFKuij6B_gdT_sQICNkoq8IfMfRnlEg9OopxcwPX85mkC2qqco1lOYZqP_H9SYhnL5GnM1IF_yMGD7P5QdBNXySVJVbLVvtBij_SqMpUCf5zjr_0-LCCtVdPsGT86EB1jDMUzr0LtY14dKOBRJuX0R3Lk6v924Jo40DgnQIE7sa-Lk6gI9ieGcWHxIVACVIDa50tBZUazjaTQVb66fE1zirbWE5Qac3RkUftiXLig_N6iL0jwj83uzdNey2zS0R_dm5qKO0F5v-0WKO5YRqmVWwuvsB_eEHy1F3eDrP2oCLi82CgBN0uSgwGG_xwHXAde29xmVAFVxDApU86W-YhSKKSGHPqVmR5pxvSbtWYx_Lnz2BB_b1uEMqy9Bs6Pzg7Op35HhMomIh1bh8n6NCkFjVbnBLWwY3dRk-Viyek7XmdZl_33DYQ4S-n0BenI6KkU4WPZY9-MWvnZakOIdmWxJbTiqbcnY_X54AKQFfGhzpLnJIFPHs_oH1_fxiEbUkGEIbNAH-vIoQhHiNAZB4x8D8gyR9cHVXZRyqr6hdig5eBm_ZVR7HKgYkJJRMLcfX59JafegPfc4wPgZWhd5qsm0qkf_RkQp4gnAITgFrL0i-v5SG04jaQmQ3j3H95ufQVtKpAA6zsHrpuIlq_Ix4otmmj8ZZvxEWnm_7FkNdtSCIeuC_5m_IkgWG2B7kFyGEUdrXFE6Mvgy7UEJchpDqyYTvRNKUtBF2IQslL0AYV_v5kbXhS1lmuZgnGr2ZcqByxD7YYPo8m-r_ESSO-eX-ZkcnabnhNFTPxiBJgCJKow3V-vBM6ARCq48Usn0jpSjiUfl-h_-ZGS4-Lo_vY9X6MdXcXXwL74Qy87FhHcSF2Dz5yCZhKwZl78qRaNk1npf7UQMBQw7oehez0o3emvVeRSOFPRMnRHSOaxrSefSwSkYhKHnT3CL3OkL-iNSD-E_RqatkUoRv9Y9G2ES7v3tMq-lIoyzkP3VZ4A-zSWxi_7ErgaruvJph0Kz-UPp0KOrjrcd44u5FszRKg1TqiO0gy4HSVaXCtITRj5gBXqq1SrdROSwxKSP2riDivJVJoJ5jvl9xmlDhZwgJEDaFY0vlGO_9rE0nUFLLT2Mbnt16ssa3P09AZcAMc7Vku-FKOnmWHcTd2Xd1Jo5m24VY1g-g9gKvsAcyUN0tuDXUp-KELRokY5fLBrnEpFiq2VAFzXrs7MTrXNKWPUUty1qUi0WQpTIDhoX9OXEpbgJbIXb0GEWlGYIQRK-8AfXJhLjg0dLKZqAD2vs-HNSdwa4YUmtvfLGCLA-fti8NnTjI2DFutDhgU36AuXidD05KSVoadvAyrDLlJq5KJI0jKq5JO4_20g4mRSoRnzgMW6wLVGqGgLjyWOvsFks8ULtTU9LpNnoXU0LnkL3ZxRUwLRub2G9-JTvkCEBXENlmW_Fsc8xTjWiWhOOOS49xZ5Fy2DFNlKyodR5piWSu7gMYlXApSjqJmWibxnFxqCNmQFXrkQivBkNBDD4XAQMv-2YWWTxQtCvunPyrKsv7U-ArqlnUBRk-7iBls74pix_dY7lJoIG7Ch4VugWrLRY3EUJBvrSdm3Jih08oMJeN-VsX4kCXDoCHPE8fjMgygCb5NwYVPD4Okc6_O5B5BzdYbw0hs61zns9rtngSS20dIg2KMQbzygffKEATQIvvh969w3qRGpvO-cyoq_fSAdNHQZNqGWu1RzKgt_uLHuh3xVq9MKCtjy9qbQqbqzQRHYQL59XWMpZBKzBjd2Maqjvxdt-LLEwtUktY7_Ow0jRvn7wjkQH9c2F8q9kp8elgFb-Sxal15k-JPU-UpeDhAjCEj0e39yWwiNJVjZ2Qhkphxku_YywNZdpI0ghBBhRSdxwui-qOC4NC-hx6ITTa31ssGJ6ndwnKar5_vzcxRdofgrC6MbLAye8WSMnxzN6Jv-_fVpiWlURHb-aI6qONhTymeYixgWjJWEQ33puF5KQNUPQKKB2qRwXpQAtLLucN1hIqtWgYGLy_npW73GQISE4ihQpj-F5kNP_k4gTd9iG8G3fyN0uw1wR01_pWNnvIwrWigbqi0Ub0EqYb3r1YTI-uvfQf3nj066vh_OqLwncpHcMw48XuoDJ49NrnbeTwGdTklkZ1H-z09IZyGItfO1h0-cuVKH7gQV-EA5YoAFv4f3Q8dSiPgTqbPaidwa-WKSZmijCFRVE0KFzreoO3UhGYHiFeZXB4xtctSt3I6lKwL6jYWn1UI9xOrhMTT-5ceVAm8Pn07Sf7E8PWxQL_93Hg1bMYKeXrMZgiK4WeG1JlV8i-YoKDiiNrrx1EhvRBUIE72WCOx3gIExod8MCO2hPKTmpG7vfnkhJZtj_85Of5oKE6mlbgb8rx-ahJcy8ydhspQUdnFxWWP_QC0hk1Q84kxB8wV_D34T6t-0ICX1ZKdnSXsfNdAX3DLtOkpP3ySHNC0cuEqQcUHLe-YHeZRlsrJS0S1Fg77v6XGj3QoNsy31zUNODp6ATTNujBq6-4nUclvfa7xUjGBb0hShPYTVf58cCaTiZCSvWbi77MDQHVattFQD6nHqgveXxZK1lU6VzpWdpMyb3Tkj0pjmdaMhKHRIhZGbhkGkgCkCZCC8gVC8eQOakF6hjF7pRFGidMqgun_4TfPNpUseKblh8G6TJu9o2-PXPe4EBOJ60YMCPw31FSvikBDXq4AkTE0RDXiqeaWdEJwoYUJKr7XVxTaUMoPmAIMIwbaZPOcY61W_CSnmnTASqjfNlKNmPKCp-pee-M0uEAoZbT2pnxYU8mbxELrJfsGUaHEuFJQw-xxjdTV0atDJPHJmw91unYwSkGr3KbEjvAButK8sCxKVIjJnGMLrI04cZwn9COhYqToHuPpi68A_Nul2HPC_7CNRaL8dHa0k9lhiprQtLik5qE17-jlxhJYCk8k_hOLKj82YqxoGpSJ37O3SQ-0WQWhG-eCUoHP2h7X56k04B2gdTHjB2BHDOXDTYSKQaKXGKWSBzI_8wmd2dcH_4iQY6XjsSqGggScnR0TBrVVuInCVq88F-6I9ixq8xRT89BBzdFjCgolD0EJK1kiXUrdF5CQe49cDgE9CB-JG9OBTIx_nmK4mo10HznPTUQgo6yzTDCNGA6b-KS-YuNAYMC2mhJMAk9KLOo3pV3y9RbMg8o_nmYPPbbybWO0lnE4Wlxi6EiccsBsLitE3YDvqDNuGA7cqVvbYSFDcUKneU1K0lTNNMaFudkA7f89G9ccR6S4mDEoDuHR1xMF3obTdJceDQXNdjud3aIOrB06M4EPKvWcUpzmeW371wbIA4AAk3PUqRGp5oxbrep3Pvf0GFHe0TnPHUTqH3_v940PKAE7qWN01FP3VZ-xG4s=",
+              "video_metadata": null,
+              "tool_call": null,
+              "tool_response": null,
+              "part_metadata": null,
+              "audio_transcription": null
+            }
+          ],
+          "role": "model"
+        },
+        "citation_metadata": null,
+        "finish_message": null,
+        "token_count": null,
+        "finish_reason": "STOP",
+        "grounding_metadata": null,
+        "avg_logprobs": null,
+        "index": 0,
+        "logprobs_result": null,
+        "safety_ratings": null,
+        "url_context_metadata": null
+      }
+    ],
+    "create_time": null,
+    "model_version": "gemini-3.8-flash",
+    "prompt_feedback": null,
+    "response_id": "zmigapzjJO6X3boPw-rK4A0",
+    "usage_metadata": {
+      "cache_tokens_details": null,
+      "cached_content_token_count": null,
+      "candidates_token_count": 329,
+      "candidates_tokens_details": null,
+      "prompt_token_count": 5867,
+      "prompt_tokens_details": [
+        {
+          "modality": "TEXT",
+          "token_count": 5867
+        }
+      ],
+      "thoughts_token_count": 1712,
+      "tool_use_prompt_token_count": null,
+      "tool_use_prompt_tokens_details": null,
+      "total_token_count": 7908,
+      "traffic_type": null
+    },
+    "model_status": null,
+    "automatic_function_calling_history": [],
+    "parsed": {
+      "schema_version": "study-e-evaluator-rating-v1",
+      "item_id": "EVAL-b7491d3595dfced2674209ec4067546a",
+      "scores": {
+        "persona_fit": 3,
+        "clarity": 4,
+        "actionability": 4,
+        "factual_grounding": 5
+      },
+      "reasons": {
+        "persona_fit": "The post addresses the target owner-operator, but leaks meta-prompt framing ('persona example', 'timings are intended scopes') and touches on service onboarding despite the 'no CTA' instruction.",
+        "clarity": "The core argument connecting unmapped workflows to exit handover difficulties is immediately clear and logically structured, though the internal meta-disclaimers read awkwardly.",
+        "actionability": "Provides a practical, bounded diagnostic step to map handoff points and approval rules on one recurring workflow, maintaining human oversight.",
+        "factual_grounding": "Strictly grounded in approved evidence; correctly qualifies the 8–10 hours scenario without inventing customer results, capabilities, or metrics."
+      },
+      "critical_violation": false,
+      "critical_violation_type": null,
+      "critical_evidence_quote": null,
+      "total_score": 16,
+      "pass": true,
+      "low_quality": false
+    }
+  },
+  "latency_ms": 6719,
+  "finished_at": "2026-09-08T19:58:13.917591+00:00",
+  "cost_details": {
+    "input": 0.00440025,
+    "cache_read_input_tokens": 0.0,
+    "output": 0.00123375,
+    "reasoning_output_tokens": 0.00642,
+    "total": 0.012054
+  },
+  "study_id": "STUDY-E-ABLATON",
+  "operational_amendment": "retry_extension_user_authorized.json"
+}

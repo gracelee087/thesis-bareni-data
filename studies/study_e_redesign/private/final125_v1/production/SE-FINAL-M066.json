@@ -1,0 +1,402 @@
+{
+  "task_id": "SE-FINAL-M066",
+  "batch_id": 3,
+  "condition": "no_actionable_step",
+  "source_task_id": "SE-FINAL-N118",
+  "topic": "when glossary upkeep stops working",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-325",
+    "title": "When glossary upkeep stops being a useful manual task",
+    "body": "There can be a difference between feeling confident about a possibility and understanding its place in the business. Both impressions may exist at the same time.\n\nThe topic of when glossary upkeep stops working can matter to a small-business owner without having a settled meaning. Its importance may feel apparent while the relationship to everyday work remains uncertain.\n\nUncertainty can persist even when the surrounding conversation sounds practical. The subject can remain significant without a concrete account of what follows from it.\n\nFor the owner, this can be an ongoing consideration rather than a settled answer. Its relevance depends on circumstances that may be difficult to describe completely.\n\nA situation can seem clear from one perspective and unsettled from another. Familiar language can make that ambiguity feel ordinary without resolving it."
+  },
+  "final": {
+    "item_id": "E-OPT-425",
+    "title": "When glossary upkeep stops helping the team",
+    "body": "Glossary upkeep stops being useful when it no longer removes repeated explanation work. For a small business, the practical test is simple: do the same terms keep getting redefined in customer replies, internal notes, product docs, or handoffs, or does the glossary already settle those questions once and for all?\n\nIf the glossary is still cutting the same confusion, keep it manual and light. A short list that the owner or one team member can update may be enough. Once the glossary becomes another place people check and still have to ask, it has crossed into maintenance work that does not pay for itself in clarity.\n\nThe bounded workflow decision is not “use AI everywhere.” It is whether glossary upkeep is now a repeatable document task with a clear output, or just occasional housekeeping. Bareni’s fit here would be a narrow one: a workflow that proposes term updates from recurring documents, while the owner keeps the final say before anything is published.\n\nOne practical next step: pick one term and ask, “Has this needed the same explanation in three or more places this week?” If yes, the glossary is probably a workflow worth tightening. If not, leave it as a manual list and move on. No need to turn the spice rack into a project."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-066",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": [
+      {
+        "dimension": "persona_fit",
+        "severity": "noncritical",
+        "location_kind": "quote",
+        "text_field": "body",
+        "quote": "The topic of when glossary upkeep stops working can matter to a small-business owner without having a settled meaning.",
+        "missing_requirement": null,
+        "rule_id": "R-N-1",
+        "evidence_ids": [
+          "BRIEF",
+          "C01",
+          "S01"
+        ],
+        "reason": "The post mentions a small-business owner, but it does not turn the topic into a concrete workflow decision for the intended owner-operator persona and remains too abstract to match the requested founder-to-founder practical intent."
+      },
+      {
+        "dimension": "clarity",
+        "severity": "noncritical",
+        "location_kind": "quote",
+        "text_field": "body",
+        "quote": "A situation can seem clear from one perspective and unsettled from another. Familiar language can make that ambiguity feel ordinary without resolving it.",
+        "missing_requirement": null,
+        "rule_id": "R-N-2",
+        "evidence_ids": [
+          "BRIEF",
+          "S01"
+        ],
+        "reason": "The body stays highly abstract and repetitive, so the reader cannot identify a clear main point, reasoning path, or practical meaning of 'when glossary upkeep stops working' on a first careful read."
+      },
+      {
+        "dimension": "actionability",
+        "severity": "noncritical",
+        "location_kind": "omission",
+        "text_field": null,
+        "quote": null,
+        "missing_requirement": "One practical next step or bounded workflow decision for the owner about when glossary upkeep stops working.",
+        "rule_id": "R-N-3",
+        "evidence_ids": [
+          "BRIEF",
+          "S01"
+        ],
+        "reason": "The post describes uncertainty but gives no concrete decision rule, diagnostic question, bounded workflow choice, or executable next step, despite the task requiring one practical next step."
+      }
+    ]
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-066",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-066-1",
+        "repairs": [
+          {
+            "repair_id": "P01",
+            "target_ids": [
+              "D01",
+              "D02"
+            ],
+            "instruction": "Replace the abstract opening and middle with one concrete owner-operator workflow decision about glossary upkeep, such as deciding whether the glossary still helps the team answer the same repeated customer or internal questions without re-explaining terms. Keep it plain and specific so the reader can see what stops working.",
+            "source_ids": [
+              "BRIEF",
+              "S01",
+              "C01",
+              "C02"
+            ]
+          },
+          {
+            "repair_id": "P02",
+            "target_ids": [
+              "D03"
+            ],
+            "instruction": "Add one practical next step at the end: a single diagnostic question or threshold the owner can use to decide whether to keep glossary upkeep manual or move to a bounded workflow, for example by checking whether the same term needs repeated clarification across documents or replies. Do not add a CTA.",
+            "source_ids": [
+              "BRIEF",
+              "S01",
+              "C02"
+            ]
+          }
+        ]
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-066",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-425",
+        "title": "When glossary upkeep stops helping the team",
+        "body": "Glossary upkeep stops being useful when it no longer removes repeated explanation work. For a small business, the practical test is simple: do the same terms keep getting redefined in customer replies, internal notes, product docs, or handoffs, or does the glossary already settle those questions once and for all?\n\nIf the glossary is still cutting the same confusion, keep it manual and light. A short list that the owner or one team member can update may be enough. Once the glossary becomes another place people check and still have to ask, it has crossed into maintenance work that does not pay for itself in clarity.\n\nThe bounded workflow decision is not “use AI everywhere.” It is whether glossary upkeep is now a repeatable document task with a clear output, or just occasional housekeeping. Bareni’s fit here would be a narrow one: a workflow that proposes term updates from recurring documents, while the owner keeps the final say before anything is published.\n\nOne practical next step: pick one term and ask, “Has this needed the same explanation in three or more places this week?” If yes, the glossary is probably a workflow worth tightening. If not, leave it as a manual list and move on. No need to turn the spice rack into a project."
+      },
+      "gate_key": "SE-FINAL-M066_gate1__a001"
+    }
+  ],
+  "measurement_status": "pending",
+  "planner": {
+    "item_id": "E-PLAN-525",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "Task authorizes no CTA; end with a practical next-step observation rather than a booking invitation or meeting prompt."
+      },
+      {
+        "lesson_id": "L02",
+        "application": "Preserve Bareni's human-approval requirement and no-lock-in positioning as stated policy, not as warranty or absolute guarantee."
+      },
+      {
+        "lesson_id": "L03",
+        "application": "Ground the glossary-maintenance workflow decision in the frozen persona's concrete context (1-10 person business, manual work vs. automation trade-off) rather than general AI background; use diagnostic questions to prompt owner reflection."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Define the glossary-upkeep boundary: identify whether the owner's recurring glossary maintenance is a measurable, repeatable workflow (e.g., weekly updates to product terms, customer FAQ corrections, internal knowledge base entries) or a sporadic, low-volume task. If it is fewer than 5–10 occurrences per week and does not block other work, AI automation may be cost-avoidant distraction; if it is 8+ hours weekly and delegates time away from customer-facing or revenue work, it is a candidate for a bounded pilot.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C01",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Ask whether current glossary work involves a repeatable decision rule: does the owner or a team member make the same kind of judgment each time (e.g., 'Does this term match our brand voice?' or 'Is this definition consistent with previous entries?'), or is every entry ad-hoc? Repeatable rules are suitable for AI assistance; one-off decisions are not. Document the rule in plain language.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C02",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Check whether the glossary source (product database, customer-facing FAQ, internal wiki, or CRM) is already digital and accessible via API or structured export. Bareni workflows integrate with SaaS tools, databases in the customer's own account, and document systems; hand-maintained spreadsheets or paper records require additional extraction work and are lower-fit pilots. This is a fit diagnostic, not a blocker.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Establish a human-approval checkpoint: specify which glossary changes require owner sign-off before publication (e.g., brand-voice shifts, new terms, deletions) and which can be auto-proposed for batch review. Bareni policy keeps human authority over all published content; the system proposes and flags, the owner decides. Document this rule as part of the pilot scope.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [
+          "L02"
+        ],
+        "evidence_ids": [
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "If steps P01–P04 confirm a fit, the next step is a 30-minute diagnostic call to nail down pilot scope (e.g., 'Suggest new product-term definitions from customer-support tickets, batch-flag inconsistencies weekly, maintain owner veto') and a one-page fixed-price proposal. Bareni delivers a working MVP in days, not a separate discovery phase. If the fit is unclear, pause and revisit the workflow boundary before booking time.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C02",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Document the owner's current time cost of glossary upkeep (hours per week, fraction of owner effort, impact on other priorities) and the manual alternative (hiring, outsourcing, or neglect). This is your baseline for deciding whether a bounded automation investment makes sense compared to the status quo; it is not a guarantee of ROI or a sales anchor.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C01",
+          "S01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No customer case study, deployment result, or sales CTA. Describe Bareni as a practice being built; use only approved demo descriptions and no invented numbers or outcomes."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Maintain human approval for glossary publication; document veto rules as part of pilot scope. Do not propose autonomous data changes or money movement."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Preserve frozen persona audience (owner-operator, 1-10 person business, AI-curious but not integrated) and evidence boundary (approved Bareni demos and services only)."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use plain language; keep diagnostic questions and proposed workflow rules distinct from proven capabilities. Treat glossary maintenance as a bounded decision, not general background."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-625",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "The representative pains are 8–10 hours a week of repeated customer questions, neglected sales leads, and manual invoice/data work. The 8–10 hours is a persona scenario, not a market statistic or observed customer result."
+          },
+          {
+            "source_id": "C01",
+            "quote": "have a frequent, repeatable workflow with a measurable outcome"
+          }
+        ],
+        "rationale": "The instruction to test whether glossary upkeep is a frequent, repeatable, measurable workflow is permissible, but the numeric thresholds (\"fewer than 5–10 occurrences per week\", \"8+ hours weekly\") are presented as decision criteria without status. The 8–10 hours figure is only a persona scenario in approved evidence, and the 5–10 occurrences figure has no approved support.",
+        "use_guidance": "Keep the fit test as a diagnostic question, but drop or relabel the numbers: remove \"fewer than 5–10 occurrences per week\" and mark any hours figure explicitly as an illustrative persona scenario, not a measured threshold or observed result. Frame the criterion qualitatively (frequent, repeatable, measurable outcome)."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "have a frequent, repeatable workflow with a measurable outcome"
+          },
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits"
+          }
+        ],
+        "rationale": "This is a diagnostic question plus a manual documentation step for the reader; it asserts no current implementation, customer or result, and it aligns with the approved diagnostic purpose of judging whether AI fits.",
+        "use_guidance": "Keep as an explicitly proposed diagnostic question and manual next step. Do not imply Bareni software currently detects or documents such decision rules; keep the \"AI may not fit\" option visible."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "general document, email, CRM, and back-office workflows using AI plus Zapier, Make, n8n, and small amounts of custom code"
+          },
+          {
+            "source_id": "C02",
+            "quote": "Database, automation-tool, and API accounts are in the customer's name from the start."
+          },
+          {
+            "source_id": "C04",
+            "quote": "scan-heavy OCR-dependent workflows"
+          },
+          {
+            "source_id": "C03",
+            "quote": "PDF/scan ingestion and OCR are not implemented."
+          }
+        ],
+        "rationale": "The core fit diagnostic is supported: approved evidence covers document/CRM/back-office workflows with SaaS automation tools and customer-owned accounts. However, describing paper records merely as \"lower-fit pilots\" and \"not a blocker\" understates the stated boundary; scan-heavy OCR-dependent workflows are currently declined and OCR/PDF ingestion is not implemented.",
+        "use_guidance": "Add the boundary that Bareni currently declines scan-heavy, OCR-dependent workflows and that PDF/scan ingestion and OCR are not implemented, so paper-based glossary sources are out of current scope rather than simply lower-fit. Present the account-ownership point as policy/positioning, not a warranty."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C03",
+            "quote": "amount-based human-only approval, refusal of agent approval/payment attempts, and persistent audit records work"
+          }
+        ],
+        "rationale": "Specifying an approval checkpoint for the pilot is a permissible proposed control and next step consistent with the human-approval boundary. The added sentence \"Bareni policy keeps human authority over all published content\" is broader than any approved statement, but the operative content is a proposal for the pilot rather than a claim of existing functionality.",
+        "use_guidance": "Keep as a proposed pilot control to be documented in scope. Replace the general \"Bareni policy keeps human authority over all published content\" wording with the supported boundary that human approval is mandatory for money movement and other high-risk decisions, and that the approval rule is defined per pilot; do not imply an existing approval feature for glossary publishing."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "FORBIDDEN",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Standard primary CTA: \"Book a free 30-minute diagnostic\". Use it only for purchase-intent content, once, at the end."
+          },
+          {
+            "source_id": "C02",
+            "quote": "Normal sequence: free 30-minute diagnostic; free one-page pilot proposal; paid working MVP in days; fixed-price pilot in weeks"
+          },
+          {
+            "source_id": "C02",
+            "quote": "Timings are intended scopes, not guarantees."
+          }
+        ],
+        "rationale": "The task authorises no CTA, and this step makes a diagnostic call and \"booking time\" the next step, which functions as a meeting prompt. It also states \"Bareni delivers a working MVP in days\" as a current fact, whereas approved evidence marks timings as intended scopes, not guarantees.",
+        "use_guidance": "Exclude the booking prompt and the \"delivers a working MVP in days\" assertion from the post. If the process must be mentioned, a separately supported alternative is a neutral factual description of the intended sequence (free 30-minute diagnostic, free one-page pilot proposal, paid MVP, fixed-price pilot) labelled as intended scope rather than a guarantee, and end on a practical observation instead of an invitation to book."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "the owner compares a bounded automation investment with continuing manual work or hiring"
+          },
+          {
+            "source_id": "C05",
+            "quote": "Never invent a benchmark, guarantee, ROI, saving, revenue lift, productivity result"
+          }
+        ],
+        "rationale": "This is an instruction for the reader to measure their own baseline and compare it with hiring or outsourcing; it asserts no Bareni capability, customer figure or outcome, and it explicitly disclaims ROI guarantees.",
+        "use_guidance": "Keep as a proposed manual baseline-measurement step owned by the reader. Do not attach any illustrative hours, savings or ROI figure to it, and keep the statement that this is not a guarantee of return."
+      }
+    ]
+  },
+  "selected_lessons": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. This includes indirect meeting prompts and direct brand-level offers such as a free 30-minute diagnostic. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025",
+        "B3-SUMMARY",
+        "SE-FINAL-N079"
+      ]
+    },
+    {
+      "lesson_id": "L02",
+      "text": "When approved evidence presents an operational practice as policy or positioning, keep that qualifier in the copy. Do not rewrite it as an absolute guarantee or warranty-level statement.",
+      "source_event_ids": [
+        "B3-SUMMARY",
+        "SE-FINAL-N080"
+      ]
+    },
+    {
+      "lesson_id": "L03",
+      "text": "If the source set does not support a substantive explanatory claim, replace it with a neutral workflow prompt or decision step rather than filling the gap with general background explanation.",
+      "source_event_ids": [
+        "B3-SUMMARY",
+        "SE-FINAL-N091"
+      ]
+    }
+  ],
+  "register_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "planner_key": "SE-FINAL-N118_planner__a001",
+  "researcher_key": "SE-FINAL-N118_researcher__a001",
+  "writer_key": "SE-FINAL-N118_writer__a001",
+  "final_key": "SE-FINAL-M066_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-M066_gate1__a001",
+  "production_completed_at": "2026-09-08T13:39:21.332851+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts"
+}

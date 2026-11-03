@@ -1,0 +1,264 @@
+{
+  "task_id": "SE-FINAL-N018",
+  "batch_id": 1,
+  "condition": "natural",
+  "source_task_id": null,
+  "topic": "early signs of drifted definitions",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-318",
+    "title": "When definitions drift, start with one workflow",
+    "body": "If your team keeps using the same word three different ways, that is usually not a “system problem” yet. It is a workflow problem. The practical question is simple: which one repeating process shows signs that the same field, label, or category is being interpreted differently each time? That could be invoices, customer records, handoffs, or even email triage. Pick one. Do not try to clean up the whole business in one sweep; that is how small problems become expensive hobbies.\n\nThe next step is to count the drift, not guess it. For two weeks, track every time the team has to recategorise something, ask for clarification, fix a duplicate record, or rework an approval because the definition was unclear. Use actual instances, not a feeling that it is “a lot.” Once you can see where the rework sits, you can decide whether the fix is a clearer rule, a better template, or a grounded assistant that checks approved definitions in company documents before anything moves forward.\n\nThat fit check matters. If the task needs human judgment, policy sign-off, or context outside the written rule, AI is a helper, not a replacement. And for anything involving money movement or other high-risk decisions, the owner still approves it. At Bareni, we keep that boundary explicit: the tool can flag drift, but it should not quietly decide what your business means."
+  },
+  "final": {
+    "item_id": "E-OPT-418",
+    "title": "When definitions drift, start with one workflow",
+    "body": "If your team keeps using the same word three different ways, that is usually not a system problem yet. It is a workflow problem. The practical question is simple: which one repeating process shows signs that the same field, label, or category is being interpreted differently each time? That could be invoices, customer records, handoffs, or email triage. Pick one. Do not try to clean up the whole business in one sweep; that is how small problems become expensive hobbies.\n\nThe next step is to count the drift, not guess it. For two weeks, track every time the team has to recategorise something, ask for clarification, fix a duplicate record, or rework an approval because the definition was unclear. Use actual instances, not a feeling that it is “a lot.” Once you can see where the rework sits, you can decide whether the fix is a clearer rule, a better template, or a grounded assistant that checks approved definitions in company documents before anything moves forward.\n\nThat fit check matters. If the task needs human judgment, policy sign-off, or context outside the written rule, AI is a helper, not a replacement. And for anything involving money movement or other high-risk decisions, the owner still approves it. Customer-owned accounts and code handover are Bareni policy, not a legal guarantee. The tool can flag drift, but it should not quietly decide what your business means."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-018",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-018",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-018-1",
+        "repairs": []
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-018",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-418",
+        "title": "When definitions drift, start with one workflow",
+        "body": "If your team keeps using the same word three different ways, that is usually not a system problem yet. It is a workflow problem. The practical question is simple: which one repeating process shows signs that the same field, label, or category is being interpreted differently each time? That could be invoices, customer records, handoffs, or email triage. Pick one. Do not try to clean up the whole business in one sweep; that is how small problems become expensive hobbies.\n\nThe next step is to count the drift, not guess it. For two weeks, track every time the team has to recategorise something, ask for clarification, fix a duplicate record, or rework an approval because the definition was unclear. Use actual instances, not a feeling that it is “a lot.” Once you can see where the rework sits, you can decide whether the fix is a clearer rule, a better template, or a grounded assistant that checks approved definitions in company documents before anything moves forward.\n\nThat fit check matters. If the task needs human judgment, policy sign-off, or context outside the written rule, AI is a helper, not a replacement. And for anything involving money movement or other high-risk decisions, the owner still approves it. Customer-owned accounts and code handover are Bareni policy, not a legal guarantee. The tool can flag drift, but it should not quietly decide what your business means."
+      },
+      "gate_key": "SE-FINAL-N018_gate1__a001"
+    }
+  ],
+  "measurement_status": "pending",
+  "planner": {
+    "item_id": "E-PLAN-518",
+    "selected_lessons": [],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Define 'drifted definitions' as a workflow problem: identify one repeating task where inconsistent naming, categorisation, or data entry rules cause rework, customer confusion, or approval delays. Use the diagnostic frame: Which single workflow shows signs that team members or systems interpret the same field or term differently each time?",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "S01",
+          "C01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Quantify the cost of drift in that one workflow: measure current rework hours per week (e.g. invoice recategorisation, duplicate customer records, repeated email clarifications). Do not estimate; count or ask the owner to count actual instances over two weeks.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Test whether AI fits: ask whether a grounded knowledge assistant—one that enforces approved definitions from company documents and flags deviations—would reduce manual checking. If the task requires human judgment, approval, or context beyond stored rules, note that AI is a helper, not a replacement.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C03",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Propose a bounded pilot scope: define the one workflow, the set of approved definitions (e.g. invoice categories, customer-field mappings), and the single metric (e.g. rework hours saved per week, approval time, or error count). Set a fixed price and timeline measured in days or weeks, not months.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Confirm the approval boundary: document that any rule changes, category additions, or automation decisions require the owner's sign-off. The assistant and any workflow code stay in the owner's accounts and tools from the start; no lock-in.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Explain the next step in plain terms: book a free 30-minute diagnostic to confirm the workflow, count the cost of drift, and decide whether a pilot makes sense. No commitment, no roadmap, no upsell.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "All steps reference only the owner's observed workflow and approved Bareni evidence. No customer testimonials, results, or invented metrics are introduced."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Steps P03 and P05 preserve human approval for definitions and workflow changes. No autonomous money movement or excluded services are suggested."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Steps P01–P06 maintain the frozen persona: plain-speaking technical advice, founder-to-founder tone, evidence-boundary discipline, and no CTA beyond the diagnostic frame."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Each step distinguishes between current manual practice (owner's rework), proposed assistance (grounded AI helper), and the pilot scope (small, fixed, measurable). No capability claims beyond the self-built knowledge-assistant demo."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-618",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits"
+          },
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question, control, or next step"
+          }
+        ],
+        "rationale": "This is a framing instruction plus a diagnostic question, not an assertion that Bareni has observed drifted definitions in any customer workflow. It fits the approved diagnostic's focus on one recurring workflow.",
+        "use_guidance": "Keep as a proposed framing and diagnostic question. Do not attach any example to a real business or imply Bareni has seen these symptoms in customer environments; keep it as a persona-level illustration."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C05",
+            "quote": "Numbers require a source and status. Keep observed results, estimates, targets,\n  synthetic data, and examples distinct."
+          },
+          {
+            "source_id": "C01",
+            "quote": "The 8–10 hours is a persona scenario, not a market\n  statistic or observed customer result."
+          }
+        ],
+        "rationale": "A recommended measurement step the owner performs manually; it asserts no observed figure or Bareni capability. Counting rather than estimating is consistent with the numbers discipline.",
+        "use_guidance": "Keep explicitly as a manual next step for the reader. Do not publish any illustrative hour figure as a measured result; if a number appears, label it as a persona scenario, and note the two-week count is a suggested method, not a Bareni-validated benchmark."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C03",
+            "quote": "RAG means retrieving relevant approved company documents before answering; in\n  plain terms, the assistant looks in company material rather than the open web."
+          },
+          {
+            "source_id": "C02",
+            "quote": "says honestly whether AI fits"
+          }
+        ],
+        "rationale": "A fit test phrased as a question, including the honest 'AI may not fit' outcome required by the persona. It proposes a possible use of a grounded assistant rather than asserting it currently enforces definitions or flags deviations.",
+        "use_guidance": "Keep conditional wording ('would', 'could'). Do not state that the assistant enforces approved definitions or flags deviations today; the approved evidence covers ingestion, vector search, reranking, grounded answers with sources in a local synthetic demo only. Retain the human-judgment caveat."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "free one-page pilot proposal;\n  paid working MVP in days; fixed-price pilot in weeks"
+          },
+          {
+            "source_id": "C02",
+            "quote": "defines pilot scope, fixed price, and measures"
+          }
+        ],
+        "rationale": "A recommended pilot-scoping step matching the approved sequence and its days/weeks framing; it asserts no delivered pilot or achieved metric.",
+        "use_guidance": "Keep proposed and state that timings are intended scopes, not guarantees (per approved evidence). Present 'rework hours saved' as a metric to be measured in the pilot, never as an expected or achieved saving, and do not name a price figure."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C02",
+            "quote": "Finished code is handed to the customer. Database, automation-tool, and API\n  accounts are in the customer's name from the start. Retainer support is optional.\n  Describe this as policy and no-lock-in positioning, not an absolute legal warranty."
+          }
+        ],
+        "rationale": "The core is supported: human sign-off for high-risk decisions and customer-owned accounts with no-lock-in positioning. But the claim states 'no lock-in' flatly, which the evidence requires be framed as policy and positioning rather than an absolute guarantee.",
+        "use_guidance": "Add the qualification that customer-owned accounts and code handover are Bareni's policy and no-lock-in positioning, not an absolute legal warranty. Keep the human sign-off boundary explicit for money movement and other high-risk decisions."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "FORBIDDEN",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Standard primary CTA: \"Book a free 30-minute diagnostic\". Use it only for\n  purchase-intent content, once, at the end."
+          }
+        ],
+        "rationale": "The approved task forbids any CTA for this post, so instructing the reader to book the free diagnostic is a prohibited action here, even though the diagnostic itself exists as a service.",
+        "use_guidance": "Exclude the booking instruction. If a closing is needed, use one soft informational sentence about running the two-week drift count internally (per Q02) and reviewing which single workflow to fix first; do not treat this as approval to mention or invite the diagnostic booking."
+      }
+    ]
+  },
+  "selected_lessons": [],
+  "register_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "planner_key": "SE-FINAL-N018_planner__a001",
+  "researcher_key": "SE-FINAL-N018_researcher__a001",
+  "writer_key": "SE-FINAL-N018_writer__a001",
+  "final_key": "SE-FINAL-N018_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-N018_gate1__a001",
+  "production_completed_at": "2026-09-08T12:19:37.452161+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts"
+}

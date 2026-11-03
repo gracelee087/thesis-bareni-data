@@ -1,0 +1,141 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I102-R1",
+    "item_id": "SEA-I102",
+    "repeat": 1,
+    "arm_order": [
+      "critic_on",
+      "critic_off"
+    ],
+    "content_id": "POST-dbc4349e976005e063995af0"
+  },
+  "arms": {
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-dbc4349e976005e063995af0-2",
+        "title": "What subprocessor lists hide in plain sight",
+        "body": "Subprocessor lists are easy to skim and easy to misunderstand. The label is often buried in vendor terms, but it matters when you are deciding whether a tool belongs in a real workflow.\n\nIf you run customer data, invoices, or CRM updates through a SaaS tool, the question is not only what the app does on the front end. It is what happens behind it: which other services touch the data, and at what step. That is where a simple automation can become a human-approval point for the owner.\n\nFor a small business, this is a bounded workflow decision, not a grand compliance project. Before you connect AI, Zapier, Make, n8n, or any similar tool to a recurring process, read the subprocessor section and ask one concrete question: which exact step uses subprocessor data, and does any customer data leave the tool there?\n\nIf the answer is unclear, stop and map the workflow before you add more automation. That is usually cheaper than discovering the gap after the process is already everywhere. The trick is not dramatic; it is just less painful than cleanup later.\n\nBareni’s diagnostic starts the same way: identify one recurring workflow, check whether AI fits, and keep human approval in place for higher-risk decisions. For the owner, the useful habit is simple: read the list, then trace the data path."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-dbc4349e976005e063995af0-1",
+            "title": "What subprocessor lists hide in plain sight",
+            "body": "Subprocessor lists are easy to skim and easy to misunderstand. The label is often buried in vendor terms, but it matters when you are deciding whether a tool is safe to use in a real workflow.\n\nIf you run customer data, invoices, or CRM updates through a SaaS tool, the real question is not just what the app does on the front end. It is what happens behind it: which other services touch the data, and at what step. That is the part that can turn a simple automation into an approval problem for the owner.\n\nFor a small business, this is a bounded workflow decision, not a grand compliance project. Before you connect AI, Zapier, Make, n8n, or any similar tool to a recurring process, read the subprocessor section and ask one concrete question: which exact step uses a subprocessors, and does any customer data leave the tool there?\n\nIf the answer is unclear, stop and map the workflow before you add more automation. That is usually cheaper than discovering the gap after the process is already everywhere. The trick is not dramatic; it is just less painful than cleanup later.\n\nBareni’s diagnostic starts the same way: identify one recurring workflow, check whether AI fits, and keep human approval in place for higher-risk decisions. For the owner, the useful habit is simple: read the list, then trace the data path."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-dbc4349e976005e063995af0-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": [
+              {
+                "dimension": "clarity",
+                "severity": "noncritical",
+                "location_kind": "quote",
+                "text_field": "body",
+                "quote": "which exact step uses a subprocessors",
+                "missing_requirement": null,
+                "rule_id": "R-N-2",
+                "evidence_ids": [
+                  "BRIEF",
+                  "S01"
+                ],
+                "reason": "This key diagnostic question contains a grammar error ('a subprocessors') in the main recommended step, which makes the sentence harder to parse on first read and reduces clarity at the post's most actionable point."
+              }
+            ]
+          },
+          "critic_repairs": [
+            {
+              "repair_id": "P01",
+              "target_ids": [
+                "D01",
+                "D02"
+              ],
+              "instruction": "Rewrite the body in clear plain English so the core point is readable on a first pass. Keep one bounded idea: subprocessor lists can hide where the workflow really touches customer data, so the owner should read them as a clue to ask one concrete question about the actual workflow path.",
+              "source_ids": [
+                "BRIEF",
+                "S01",
+                "C01",
+                "C02",
+                "C05"
+              ]
+            },
+            {
+              "repair_id": "P02",
+              "target_ids": [
+                "D02"
+              ],
+              "instruction": "Add one explicit next step the owner can actually do, such as: ask the vendor which exact workflow step uses subprocessors and whether any customer data leaves the tool at that point. Keep it as a single diagnostic question or control, not a general discussion.",
+              "source_ids": [
+                "BRIEF",
+                "S01",
+                "C02",
+                "C04",
+                "C05"
+              ]
+            }
+          ]
+        },
+        {
+          "cycle": 2,
+          "post": {
+            "item_id": "POST-dbc4349e976005e063995af0-2",
+            "title": "What subprocessor lists hide in plain sight",
+            "body": "Subprocessor lists are easy to skim and easy to misunderstand. The label is often buried in vendor terms, but it matters when you are deciding whether a tool belongs in a real workflow.\n\nIf you run customer data, invoices, or CRM updates through a SaaS tool, the question is not only what the app does on the front end. It is what happens behind it: which other services touch the data, and at what step. That is where a simple automation can become a human-approval point for the owner.\n\nFor a small business, this is a bounded workflow decision, not a grand compliance project. Before you connect AI, Zapier, Make, n8n, or any similar tool to a recurring process, read the subprocessor section and ask one concrete question: which exact step uses subprocessor data, and does any customer data leave the tool there?\n\nIf the answer is unclear, stop and map the workflow before you add more automation. That is usually cheaper than discovering the gap after the process is already everywhere. The trick is not dramatic; it is just less painful than cleanup later.\n\nBareni’s diagnostic starts the same way: identify one recurring workflow, check whether AI fits, and keep human approval in place for higher-risk decisions. For the owner, the useful habit is simple: read the list, then trace the data path."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-dbc4349e976005e063995af0-2",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": [
+            {
+              "repair_id": "P01",
+              "target_ids": [
+                "D01"
+              ],
+              "instruction": "Fix the grammar in the diagnostic question by replacing “which exact step uses a subprocessors” with “which exact step uses a subprocessor” or “which exact step uses subprocessor data,” so the recommended next step reads cleanly.",
+              "source_ids": [
+                "BRIEF",
+                "S01"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-dbc4349e976005e063995af0-1",
+        "title": "What subprocessor lists hide in plain sight",
+        "body": "A subprocessor list is easy to skim and easy to ignore. For a small business, that is usually the problem.\n\nIf you use AI, CRM, invoicing, helpdesk, or automation tools, you are not just choosing features. You are also choosing who may touch customer data, payment records, or internal documents behind the scenes. That is the part the glossy product page rarely explains well.\n\nThe practical decision is simple: before you wire a repeatable workflow into a tool, read the vendor terms and find the subprocessor section. Then ask one question: if this workflow failed, would you know which outside services handled the data?\n\nThat is not legal advice, and it is not a reason to stop using tools. It is a control point. If the answer is unclear, pause before you connect the next system.\n\nIn Bareni’s work, the first step is still the same: identify one recurring workflow, then check whether AI fits and what human approval stays in place. Subprocessor review belongs in that conversation, especially where money movement or other high-risk decisions are involved.\n\nThe boring bit is often the useful bit: read the list before the workflow depends on it."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-dbc4349e976005e063995af0-1",
+            "title": "What subprocessor lists hide in plain sight",
+            "body": "A subprocessor list is easy to skim and easy to ignore. For a small business, that is usually the problem.\n\nIf you use AI, CRM, invoicing, helpdesk, or automation tools, you are not just choosing features. You are also choosing who may touch customer data, payment records, or internal documents behind the scenes. That is the part the glossy product page rarely explains well.\n\nThe practical decision is simple: before you wire a repeatable workflow into a tool, read the vendor terms and find the subprocessor section. Then ask one question: if this workflow failed, would you know which outside services handled the data?\n\nThat is not legal advice, and it is not a reason to stop using tools. It is a control point. If the answer is unclear, pause before you connect the next system.\n\nIn Bareni’s work, the first step is still the same: identify one recurring workflow, then check whether AI fits and what human approval stays in place. Subprocessor review belongs in that conversation, especially where money movement or other high-risk decisions are involved.\n\nThe boring bit is often the useful bit: read the list before the workflow depends on it."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-dbc4349e976005e063995af0-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

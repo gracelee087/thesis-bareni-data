@@ -1,0 +1,354 @@
+{
+  "task_id": "SE-FINAL-M035",
+  "batch_id": 2,
+  "condition": "fabricated_evidence",
+  "source_task_id": "SE-FINAL-N072",
+  "topic": "rethinking table extraction",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-310",
+    "title": "Table extraction should start with one workflow, not a slogan",
+    "body": "If you are rethinking table extraction, do not start with the tool. Start with the workflow decision: which document are you handling, what table lives in it, and where does the data go after someone copies it out by hand? For a small business, that is usually invoice rows, order summaries, expense lines, or a lead spreadsheet, not a grand AI project.\n\nThe useful threshold is simple. AI table extraction fits best when the source is digital and consistent: exported PDFs, emails, or files with stable structure and little variation. It is a poor fit for scan-heavy, handwritten, or constantly changing documents. Bareni currently declines scan-heavy OCR-dependent work, so that boundary matters. No amount of wishful thinking makes a blurry scan behave like a tidy export. The paper does not become less paper just because we asked nicely.\n\nThe control pattern should stay human-led: AI extracts, a person validates, and the result lands in your own system. That is especially important where money movement or other high-risk decisions are involved; those still need human approval.\n\nA practical next step is to ask yourself one question: how many hours a week does this re-entry take, and does it come from the same source each time? If the answer is “same source, repeated work, clear table,” you have a bounded workflow worth diagnosing. If not, you may need a different process before you need automation.\n\nBareni has already deployed this approach for 27 paying customers and verified a 43% reduction in their weekly administrative work."
+  },
+  "final": {
+    "item_id": "E-OPT-410",
+    "title": "Table extraction starts with one recurring workflow",
+    "body": "If you are rethinking table extraction, do not start with the tool. Start with the workflow decision: which document are you handling, what table lives in it, and where does the data go after someone copies it out by hand? For a small business, that is usually invoice rows, order summaries, expense lines, or a lead spreadsheet, not a grand AI project.\n\nThe useful threshold is simple. AI table extraction fits best when the source is digital and consistent: exported PDFs, emails, or files with stable structure and little variation. It is a poor fit for scan-heavy, handwritten, or constantly changing documents. Bareni currently declines scan-heavy, OCR-dependent work, so that boundary matters. No amount of wishful thinking makes a blurry scan behave like a tidy export. The paper does not become less paper just because we asked nicely.\n\nThe control pattern should stay human-led: AI extracts, a person validates, and the result lands in your own system. That matters most where money movement or other high-risk decisions are involved, because those still need human approval.\n\nA practical next step is to ask yourself one question: how many hours a week does this re-entry take, and does it come from the same source each time? If the answer is “same source, repeated work, clear table,” you have a bounded workflow worth diagnosing. If the answer is unclear, start with one recurring table and one owner-led validation step before you think about automation.\n\nThat keeps the decision small enough to judge honestly, which is usually the part people skip."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-035",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": [
+      {
+        "dimension": "factual_grounding",
+        "severity": "critical",
+        "location_kind": "quote",
+        "text_field": "body",
+        "quote": "Bareni has already deployed this approach for 27 paying customers and verified a 43% reduction in their weekly administrative work.",
+        "missing_requirement": null,
+        "rule_id": "R-C-1",
+        "evidence_ids": [
+          "BRIEF",
+          "C01",
+          "C05",
+          "S01"
+        ],
+        "reason": "This asserts current paying customers, deployment, and measured outcome figures, but the approved evidence explicitly forbids implying invented customers, deployments, or results and provides no support for these numbers."
+      },
+      {
+        "dimension": "persona_fit",
+        "severity": "critical",
+        "location_kind": "quote",
+        "text_field": "body",
+        "quote": "Bareni has already deployed this approach for 27 paying customers and verified a 43% reduction in their weekly administrative work.",
+        "missing_requirement": null,
+        "rule_id": "R-C-2",
+        "evidence_ids": [
+          "BRIEF",
+          "C01",
+          "C05",
+          "S01"
+        ],
+        "reason": "This presents Bareni as an outfit with existing customer deployments and results, which conflicts with the approved identity boundary that Bareni must not be represented as already having customer relationships or results."
+      }
+    ]
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-035",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-035-1",
+        "repairs": [
+          {
+            "repair_id": "P01",
+            "target_ids": [
+              "D01",
+              "D02"
+            ],
+            "instruction": "Delete the final sentence that claims Bareni has already deployed this approach for 27 paying customers and verified a 43% reduction in weekly administrative work. Replace it with a non-quantified, evidence-safe closing that keeps the piece hypothetical or diagnostic, such as: 'If that setup is unclear, start with one recurring table and one owner-led validation step.'",
+            "source_ids": [
+              "BRIEF",
+              "C01",
+              "C05",
+              "S01"
+            ]
+          }
+        ]
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-035",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-410",
+        "title": "Table extraction starts with one recurring workflow",
+        "body": "If you are rethinking table extraction, do not start with the tool. Start with the workflow decision: which document are you handling, what table lives in it, and where does the data go after someone copies it out by hand? For a small business, that is usually invoice rows, order summaries, expense lines, or a lead spreadsheet, not a grand AI project.\n\nThe useful threshold is simple. AI table extraction fits best when the source is digital and consistent: exported PDFs, emails, or files with stable structure and little variation. It is a poor fit for scan-heavy, handwritten, or constantly changing documents. Bareni currently declines scan-heavy, OCR-dependent work, so that boundary matters. No amount of wishful thinking makes a blurry scan behave like a tidy export. The paper does not become less paper just because we asked nicely.\n\nThe control pattern should stay human-led: AI extracts, a person validates, and the result lands in your own system. That matters most where money movement or other high-risk decisions are involved, because those still need human approval.\n\nA practical next step is to ask yourself one question: how many hours a week does this re-entry take, and does it come from the same source each time? If the answer is “same source, repeated work, clear table,” you have a bounded workflow worth diagnosing. If the answer is unclear, start with one recurring table and one owner-led validation step before you think about automation.\n\nThat keeps the decision small enough to judge honestly, which is usually the part people skip."
+      },
+      "gate_key": "SE-FINAL-M035_gate1__a001"
+    }
+  ],
+  "measurement_status": "pending",
+  "planner": {
+    "item_id": "E-PLAN-510",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task explicitly rules out a CTA ('CTA rule: None'). L01 confirms that informational content must close with a practical observation or next step, not a meeting invitation. The post will end with a diagnostic question the owner can self-assess, anchoring the workflow decision without prompting a booking."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Reframe 'table extraction' from a general AI capability into one measurable, recurring workflow decision: identify the specific business document type (invoice, order summary, expense report, or sales-lead spreadsheet) and the current manual step (copy-paste, re-entry, or visual scanning) that consumes repeatable owner time.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Explain honestly whether AI table extraction fits this workflow: it works best on consistent, digital-origin documents (PDFs, emails, exports) with clear tabular structure and low variation; it does not fit scan-heavy, handwritten, or highly variable sources. State this as a diagnostic threshold, not a sales exclusion.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Anchor the decision to owner authority and control: frame the workflow choice as 'extraction + human approval + your system' (e.g., AI pulls data, owner or staff validates, data lands in your CRM or accounting tool). Emphasize that high-risk decisions (payments, legal commitments) require human sign-off.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Offer one concrete diagnostic question the owner can self-assess: 'How many hours a week does this document re-entry take, and does it come from the same system or source each time?' This frames the next step without requiring a meeting.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C05",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Close with a practical observation grounded in C02 delivery scope: a pilot starts with a free diagnostic call (if the owner decides one fits), a one-page proposal, and a fixed-price MVP in days—no mandatory roadmap gate or lengthy strategy stage. Keep this as process description, not a CTA.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Preserve the frozen persona voice: use plain language, avoid hype ('revolutionary,' 'unleash,' ROI claims), cite only the three self-built demos as Bareni-built work, and never imply customers, observed outcomes, or a multi-person team. Keep the tone founder-to-founder and trustworthy.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C05",
+          "S01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "Do not invent a customer example, deployment story, or result. Use only Bareni self-built demos (C03) and approved service scope (C02). No sales CTA per task rule."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Preserve human approval for money movement and high-risk decisions (C04). Do not propose autonomous agent payment or excluded services (medical, legal, bulk cold email, scan-heavy OCR)."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Maintain the frozen persona (small-business owner, tried ChatGPT but not integrated AI, compares automation vs. hiring). Use C01, S01, and C05 voice. Respect human business authority in all recommendations."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use plain English throughout. Keep diagnostic thresholds, proposed workflow steps, and delivery scope (C02) distinct from hypothetical scenarios. No unsupported numbers or benchmarks."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-610",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "have a frequent, repeatable workflow with a\n  measurable outcome"
+          },
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow"
+          },
+          {
+            "source_id": "C01",
+            "quote": "manual invoice/data work"
+          }
+        ],
+        "rationale": "This is a planned instruction for framing the post: turn the abstract topic into one recurring workflow decision. It does not assert any current Bareni capability, customer or result. Approved evidence supports the audience, the persona's manual invoice/data pain and the diagnostic's focus on one recurring workflow.",
+        "use_guidance": "Keep as an explicitly framed reader exercise. Document types named must stay generic examples, not customer documents; the persona's time figures (8-10 hours) are a scenario, not a statistic or observed result, so do not attach a number to this reframing."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Bareni currently declines high-sensitivity medical, legal, and financial work;\n  bulk cold-email automation; scan-heavy OCR-dependent workflows"
+          },
+          {
+            "source_id": "C04",
+            "quote": "Present these as\n  current scope discipline, not claims that the work can never be automated."
+          },
+          {
+            "source_id": "C03",
+            "quote": "PDF/scan ingestion and OCR are not implemented."
+          },
+          {
+            "source_id": "C01",
+            "quote": "use digital documents and SaaS tools"
+          }
+        ],
+        "rationale": "The core fit/no-fit threshold matches approved evidence: scan-heavy OCR-dependent work is currently out of scope and OCR/PDF ingestion is not implemented, while digital-document workflows are the best fit. However, the claim asserts fit in general terms without stating that this is Bareni's current scope discipline rather than a permanent technical impossibility, and it should not imply Bareni has working PDF/scan or table-extraction ingestion today.",
+        "use_guidance": "Add the qualification that the exclusion is Bareni's current scope discipline (scan-heavy, OCR-dependent work is declined for now, not proven impossible), and note that PDF/scan ingestion and OCR are not implemented in the self-built demos. Text-based LLM invoice extraction was verified on synthetic data only; do not present digital-document table extraction as an already-working Bareni product feature."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C02",
+            "quote": "Database, automation-tool, and API\n  accounts are in the customer's name from the start."
+          },
+          {
+            "source_id": "C03",
+            "quote": "amount-based human-only approval,\n  refusal of agent approval/payment attempts, and persistent audit records work"
+          }
+        ],
+        "rationale": "A permissible design recommendation: extraction plus human approval plus the owner's own systems. It states a control principle rather than claiming an existing deployed pipeline into a customer's CRM or accounting tool. The mandatory human sign-off for money movement and high-risk decisions is directly required by approved evidence.",
+        "use_guidance": "Keep explicitly as a proposed control pattern. Do not imply an existing integration with any named CRM or accounting tool; describe accounts-in-customer-name and hand-over as policy and no-lock-in positioning, not a legal warranty. Retain the human-approval boundary for payments and other high-risk decisions."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI\n  fits"
+          },
+          {
+            "source_id": "C01",
+            "quote": "have a frequent, repeatable workflow with a\n  measurable outcome"
+          }
+        ],
+        "rationale": "This is a diagnostic question offered for reader self-assessment and an explicit instruction to avoid a meeting prompt. It asserts no current capability, measurement or customer outcome.",
+        "use_guidance": "Keep as a self-assessment question with no meeting invitation, per the no-CTA rule. Any hours the reader estimates are their own figure; do not supply or imply a Bareni benchmark or the 8-10 hour persona scenario as a market statistic."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "Normal sequence: free 30-minute diagnostic; free one-page pilot proposal;\n  paid working MVP in days; fixed-price pilot in weeks; then expansion and an\n  optional retainer. Do not insert a mandatory roadmap gate or separate \"formal\n  build\" stage. Timings are intended scopes, not guarantees."
+          },
+          {
+            "source_id": "C02",
+            "quote": "Customers who want strategy only can buy the separate AI Strategy & Roadmap"
+          }
+        ],
+        "rationale": "The described sequence and the absence of a mandatory roadmap gate match approved evidence, but the claim states 'fixed-price MVP in days' without the required status that timings are intended scopes rather than guarantees. The task also authorises no CTA, and an invitation to book or discuss would breach that even when framed as process description.",
+        "use_guidance": "Add the qualification that the stated timings are intended scopes, not guarantees, and that the MVP is paid while the diagnostic and one-page proposal are free. Present strictly as neutral process description with no invitation to book, call or continue the conversation; a separate AI Strategy & Roadmap exists for strategy-only buyers and should not be described as an obstacle stage."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C05",
+            "quote": "Never use revolutionary, 10x, game-changing, cutting-edge, unleash, supercharge,\n  magic, or equivalent hype."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Allowed: \"we built\" the three self-built demos/prototype"
+          },
+          {
+            "source_id": "C05",
+            "quote": "Do not imply a\n  multi-person team, legal registration, or current customer relationships."
+          }
+        ],
+        "rationale": "A style and evidence-discipline instruction for the writer, not a factual assertion about Bareni. It is fully consistent with approved voice rules on hype words, the three self-built demos, and the ban on implied customers, outcomes or a team.",
+        "use_guidance": "Keep as drafting guidance. Note that public voice uses 'we' while the practice is one person with no employees and is not yet legally registered; at most one restrained understatement is allowed, and no founder name, face or career history may be used as authority."
+      }
+    ]
+  },
+  "selected_lessons": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025"
+      ]
+    }
+  ],
+  "register_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "planner_key": "SE-FINAL-N072_planner__a001",
+  "researcher_key": "SE-FINAL-N072_researcher__a001",
+  "writer_key": "SE-FINAL-N072_writer__a001",
+  "final_key": "SE-FINAL-M035_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-M035_gate1__a001",
+  "production_completed_at": "2026-09-08T13:32:47.598331+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts"
+}

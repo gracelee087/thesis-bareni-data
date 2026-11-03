@@ -1,0 +1,92 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I062-R2",
+    "item_id": "SEA-I062",
+    "repeat": 2,
+    "arm_order": [
+      "critic_off",
+      "critic_on"
+    ],
+    "content_id": "POST-f5322f4c6ea698a94e28ab4b"
+  },
+  "arms": {
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-f5322f4c6ea698a94e28ab4b-1",
+        "title": "Measuring counting rules means choosing what gets checked",
+        "body": "If you count something every week, the real question is not whether the count exists. It is whether the rule behind it is clear enough to trust.\n\nFor a small business, that usually means one recurring workflow: invoices, stock, form submissions, or leads. Pick one. Then write down three things: what gets counted, who checks it, and what happens when the count looks wrong.\n\nThat last part matters. If a wrong count only changes a report, the control can be simple. If it can trigger payment, approval, or another high-risk step, human sign-off stays mandatory. No shortcut should move money on its own.\n\nBareni’s policy is straightforward here: the data, tools, and code sit in the customer’s name from the start, and final approval stays with the human owner. That is no-lock-in positioning, not a warranty.\n\nA practical next step is to write a one-page note with the workflow, the current owner, the approval rule, and one past error. If the rule is subjective or depends on context, keep it manual. If it is repeatable and measurable, you have something worth testing. The boring part is usually the useful part.\n"
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-f5322f4c6ea698a94e28ab4b-1",
+            "title": "Measuring counting rules means choosing what gets checked",
+            "body": "If you count something every week, the real question is not whether the count exists. It is whether the rule behind it is clear enough to trust.\n\nFor a small business, that usually means one recurring workflow: invoices, stock, form submissions, or leads. Pick one. Then write down three things: what gets counted, who checks it, and what happens when the count looks wrong.\n\nThat last part matters. If a wrong count only changes a report, the control can be simple. If it can trigger payment, approval, or another high-risk step, human sign-off stays mandatory. No shortcut should move money on its own.\n\nBareni’s policy is straightforward here: the data, tools, and code sit in the customer’s name from the start, and final approval stays with the human owner. That is no-lock-in positioning, not a warranty.\n\nA practical next step is to write a one-page note with the workflow, the current owner, the approval rule, and one past error. If the rule is subjective or depends on context, keep it manual. If it is repeatable and measurable, you have something worth testing. The boring part is usually the useful part.\n"
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-f5322f4c6ea698a94e28ab4b-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    },
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-f5322f4c6ea698a94e28ab4b-1",
+        "title": "Measuring counting rules starts with one workflow",
+        "body": "If you want to measure counting rules, start with one recurring workflow and one decision. Don’t start with the abstract rulebook.\n\nPick the count you already check by hand: invoices, stock, refunds, tickets, form submissions, whatever shows up every week. Then write down three things in plain English: what exactly is being counted, who checks it, and what happens if the count is wrong.\n\nThat sounds basic because it is. The useful part is the boundary. If the count only feeds a low-risk follow-up, you may be able to automate the counting step and keep the review simple. If the count affects payment, approval, or anything high-risk, human sign-off stays in place. Money does not get to leave the building by itself. That part is still a human job.\n\nNext, check the control you already have. Can you spot an error, reverse it, or audit the count after the fact? If not, the first fix is not AI. It is a clearer rule and a cleaner record.\n\nThe practical next step is simple: write down one recurring count, the current owner, the rule that decides whether it is right, and one past mistake. That gives you a real workflow to judge instead of a vague idea about automation."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-f5322f4c6ea698a94e28ab4b-1",
+            "title": "Measuring counting rules starts with one workflow",
+            "body": "If you want to measure counting rules, start with one recurring workflow and one decision. Don’t start with the abstract rulebook.\n\nPick the count you already check by hand: invoices, stock, refunds, tickets, form submissions, whatever shows up every week. Then write down three things in plain English: what exactly is being counted, who checks it, and what happens if the count is wrong.\n\nThat sounds basic because it is. The useful part is the boundary. If the count only feeds a low-risk follow-up, you may be able to automate the counting step and keep the review simple. If the count affects payment, approval, or anything high-risk, human sign-off stays in place. Money does not get to leave the building by itself. That part is still a human job.\n\nNext, check the control you already have. Can you spot an error, reverse it, or audit the count after the fact? If not, the first fix is not AI. It is a clearer rule and a cleaner record.\n\nThe practical next step is simple: write down one recurring count, the current owner, the rule that decides whether it is right, and one past mistake. That gives you a real workflow to judge instead of a vague idea about automation."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-f5322f4c6ea698a94e28ab4b-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": [
+            {
+              "repair_id": "P01",
+              "target_ids": [
+                "D01",
+                "D02"
+              ],
+              "instruction": "Rewrite the body into clear plain English. Remove the scrambled phrasing and state one bounded workflow decision about counting rules in a simple sequence the owner can follow.",
+              "source_ids": [
+                "BRIEF",
+                "S01"
+              ]
+            },
+            {
+              "repair_id": "P02",
+              "target_ids": [
+                "D02"
+              ],
+              "instruction": "Add one explicit practical next step for the owner, such as checking one recurring count, choosing one counting rule, and deciding whether it needs a human review, with the step framed as a concrete action rather than abstract advice.",
+              "source_ids": [
+                "BRIEF",
+                "S01"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

@@ -1,0 +1,154 @@
+{
+  "created_at": "2026-09-08T19:57:31.350617+00:00",
+  "role": "evaluator",
+  "metadata": {
+    "study_id": "STUDY-E-ABLATON",
+    "pair_id": "SEA-I032-R2",
+    "arm": "critic_on",
+    "cycle": "eval"
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49",
+  "status": "success",
+  "output": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-afb282821b4226dadd43ca9f4f30b898",
+    "scores": {
+      "persona_fit": 3,
+      "clarity": 4,
+      "actionability": 4,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Fits Bareni's positioning and rules, but leaks meta-prompt phrases ('In the persona scenario', 'not an absolute legal warranty') directly into customer copy, weakening voice.",
+      "clarity": "The core argument and logic are immediately clear and easy to follow, despite the awkward meta-prompt phrasing.",
+      "actionability": "Provides a practical diagnostic next step and a clear decision rule for evaluating workflow readiness without pushing a sales CTA.",
+      "factual_grounding": "All statements strictly align with Bareni's delivery model and bounds, with careful qualification of examples and diagnostic terms."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 16,
+    "pass": true,
+    "low_quality": false
+  },
+  "cost_usd": 0.01209525,
+  "usage": {
+    "prompt_token_count": 5942,
+    "cached_content_token_count": 0,
+    "candidates_token_count": 311,
+    "thoughts_token_count": 1726,
+    "total_token_count": 7979
+  },
+  "provider_response": {
+    "sdk_http_response": {
+      "headers": {
+        "x-gemini-service-tier": "standard",
+        "content-type": "application/json; charset=UTF-8",
+        "vary": "Origin, X-Origin, Referer",
+        "content-encoding": "gzip",
+        "date": "Tue, 08 Sep 2026 19:57:37 GMT",
+        "server": "scaffolding on HTTPServer2",
+        "x-xss-protection": "0",
+        "x-frame-options": "SAMEORIGIN",
+        "x-content-type-options": "nosniff",
+        "server-timing": "gfet4t7; dur=7304",
+        "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+        "transfer-encoding": "chunked"
+      },
+      "body": null
+    },
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "media_resolution": null,
+              "code_execution_result": null,
+              "executable_code": null,
+              "file_data": null,
+              "function_call": null,
+              "function_response": null,
+              "inline_data": null,
+              "text": "{\n  \"schema_version\": \"study-e-evaluator-rating-v1\",\n  \"item_id\": \"EVAL-afb282821b4226dadd43ca9f4f30b898\",\n  \"scores\": {\n    \"persona_fit\": 3,\n    \"clarity\": 4,\n    \"actionability\": 4,\n    \"factual_grounding\": 5\n  },\n  \"reasons\": {\n    \"persona_fit\": \"Fits Bareni's positioning and rules, but leaks meta-prompt phrases ('In the persona scenario', 'not an absolute legal warranty') directly into customer copy, weakening voice.\",\n    \"clarity\": \"The core argument and logic are immediately clear and easy to follow, despite the awkward meta-prompt phrasing.\",\n    \"actionability\": \"Provides a practical diagnostic next step and a clear decision rule for evaluating workflow readiness without pushing a sales CTA.\",\n    \"factual_grounding\": \"All statements strictly align with Bareni's delivery model and bounds, with careful qualification of examples and diagnostic terms.\"\n  },\n  \"critical_violation\": false,\n  \"critical_violation_type\": null,\n  \"critical_evidence_quote\": null,\n  \"total_score\": 16,\n  \"pass\": true,\n  \"low_quality\": false\n}",
+              "thought": null,
+              "thought_signature": "Er48Crs8ARFNMg_vjDH38Y8WVDOG4Cj0QBG6w_SbY1hjdWJt6ZrP7dt93fB2Xlh9vFac1uYyw1_agzXTbDumVafhoECt-q9G3djOCI3mauJs0pa0NnNBwbNYm_0fYvaeYRo_9Uihbdkx_fahOiUHO7yVv0tS23pL9EBJ9DPlGIaZXNDksBxbJAmwAXzHbAI9deODDvqAcuIU4A8cdPIWTmp5NPrIk6SRKwaxt4K1Xu49cMrvOYo_BE9iLsIHqoIXwQbENFJp7ScrN83f6PX05dJ5NuFNt0APB0X5cUz1cyQoTI5b3UsfXZZpjkN4gqCmczCpi-yTHl8Fz_0kICS_ppzZZW8c4qdLWjPLkPzutQtVVT2kBbfA5cqrth7-Dc4oOkfFDzIGhb1uyhKgPt7djReJWu6dX2aFLD9Fh2iApM9pggostzxExDFI3PxGRsmfBgj911Y9Zlgo8DLya8MJ_k3f3QvSFjue-9eLwUxTDisf-F3NBuX58r8r21LLDaNsXG3-pzwSqHBT1NHbCYuBKYcfwPk7F_Dwgoh7rS1FzozdrZiEVqDl0jFOq7lsWdqge_fm24r3b-NX_-Q8SX-jjrApo4OznrQgM_BY_yOw80Zei4GjhHiuceEQzzx_YITCUe1Oaj6ZBUle0ZUS6Fil20vaDVfvq2FFVt7kg1TZbzHw516A16bYJeCu2VH_6qXg6qlkSKaKf_T3XpkHyFyz1-N0hNB6-VrmT7iw3CQJB9qEu4MIaqNAifc2J-2DpnzdRsmNkvzja1E-snuy0Mngdwzno6-m-vP03Kbr8Tf0ap-wrunhVBI9SxFZez0bbqUoi8dVX5praPIuBoKXaMhyI6otvZod-ZpmQ-B0zcZ9UwkoPbpeeyWbQdWQE6vx3MROloy24jIzec9rILS5etBJfA08uVMma2tVUP0sKRbQDpQMVfGJ8TmFQHVVuFzGr4VI0yh9XNYqa_A6cY3jU9msgveMouNU543AGS3lETaVA0ZdCvxkPGw4yicPdM9H0gLEnbeb8PDCcLRJ1mYl0d3PIDCDnSdCp77GefPD2flJUgdzxBe-YPNpapro_n3BaITGSKvNJe1r15zzYElDllkfaUWI16M_xDXBIwAII-u2VAPm3D_8UED8ByAObdpKq_uhImjOqhIxDzv9Gv10avUDGuUIBZuC28z_b9TnAWyIXRerWNIGhas-JlFCquMH4IRJPRrJI9ITLfDQ9KdFekeGsiqGREebJO60tnk4nCEDOrhZr2jnIvQXtUUakI_0nbjD5E-5C4XndFCQ0lkMO6aR2RTq4WS_G6XNcc5ZSRJppyJrc5jcjGSRdZ9K1q9uT8O8MUau4GD6SREyyyT0syyJ4WnUzbR1dhfyJ_b1J1PzGVv4Sx22ndrTNiZPqNoln0xOy3KZ0Ebt_gwsKGCK2MftntV7fcJgM4iBug3swYChW0XjzuzrFfsl2p4qub4ipl1XgInBzoNfAcQ50D33sFBFTpdvaKYm-hmy2y8t8RvyHS9NZhaHwL_O8ZOB52rFJf82gKqFcTIRsZF3xOWG-E_r5qG2jvDmZAS5fbu6wQ7VoWcvpue6XjqoxfR-IMaBkoGx-eats_dJwWcTUzkyBc07cFX9GPsR4xlPOPFDMOdhOcmFSFh5NS_EoprbUChegfNBFQajsXNakGntTOgnnxU_QeI4pKeZ9Bpza4iQ6jZ4toU2zvUd68r_lAq-N-lWslYHt35qgQu5Gt9BwwaVUGA-ta5ZKTJJQ9M-buWd5oyNkb7Udvr0m_XPAaR2MN0IQiapL3sNC6Nqj3rV47ZeVgA1ktOZNL-2BhmAdSksDEYbuzSpJxeYgzHH5FNf91UV239ucIwFoLMtZJ5mj8-hF7GQiGXhY3XytKQTX5_uU0nRs8WLq5ZFUXcbH5fOGZql_ASNT-K2fPAvbTE4kKn7tE4yaJQ40jlpyK7PMXvG-rPc-pvPXfg5ZtfOuN3sZ091dVYdm7mpFcidwmbYMnTcT-bjEkR2KUbRaFFXOdWsayp-9xhxaDGHVkK8anUMTdIQNle0E-a0cJ8b2J59A2JYIthHLM_cS0ExwbiWq1pQnxWpev8_chkfLLmxbARj_NOYHpmq-z0TWtZ7myiavb7RF5YweqYgIv9dXfeIX-PR4SlI3ruNzfiPLNzeL2Vtqx_GFiNGfDE8sX5bOjnxj3uy93lfACCK52jQ96nCr4bZmOPtPze0Rm-yWbSESHqVBtWsIKu2TmvJgrnSICbfiZ7oTlgxXoa5y9JMdA-fUKRvweE-VXKjV9sMaiACuIpZPvNyKhbDIMnMEsknbetE1CFx93R1p3WR9zJiv4g46L57vLArQ9A5fIsCb3lvBPxAVRoJmRbDv-SFksB-rc93V_DCbFywamAi4UTs11oQULirFZ7PTHi2HDM_S22Hjm2pVIgWjhICFarVebY9Xr8XvlDm9KEzkrI-P7T4udXqYn59G9D6HTcqSiiSo5ZeAaxODTzsCoC3inS2mTWN6_Qbuuc884htcDjJJbahch0M3yZaKJvFmnX8dws5NbmV1OK1RJku9volo5MY7SVIt4iFcv9ScX11Q-jhFhMq-GEBF7jIiSi0ugd-rxyujLCI-9iiiQcSp1_rcflIgMva68a20q-Bw6idLoZ0oFOrpePv1jUp6HyRQYBPX2xo_VBQM3oN7bYKhj9uX7MCKm0iCn6eHRhOch8Gdk5DauY8KlC7LnxC4VMj7VhvZhvQXXEyUga-fmzqSYe77z_TmeS5KFr9seqaNjbP6nbwYvKU3ntFXLzTOpV5sM248L5lAVVHU6VsjtcQITruV24TviDUyT740_NwN3ycOQu_rYs9ao75ROTwKTKkhiuN3lP8GVQOzzFxoVOgSSKg6dNAu7pPmeu1azwp5X84BkwAEOJGRSVPZnWd8EIH30uMwfSknDQPM_zFk6lBJn9Rsq1sv7rrSP5E_tChQACY-1HRt56uQYgD5Sd0aKAdi8AmSEDeDtet5Qrum9IYzXUTVXoUswUq_a3oy3NF8cGZYQcUK7PJotAjxUccm-PI90sxUrE0tBJw2JiQ0we1idJaGYudIkdjxWC0F6ZHfVla9sBzG_QJNpFXYwZwWQvbaqnOV0TBGmmOHXDTYgF1kp5nluP6LCDB8csDYDSefrMb-vvahdFECEf55ANdGZZkWbtzKDJu25aanvsg575PjIk17dZnFQsHCrt1KPjbTyEEJbd-z6do2gYaCrW14azupH_xuMYrqtO6zt5nJ9PhKzhGiv2mG8Bi_VuHzyRiz2a9nY_d-WT0nh8ZPOJ25nnNLRh0pVd8EfxHy0fk_IyQjAheavzFaCmjB_FiI25_3C8npT2fDPsqZ1cxgT_CM4B9cKhTh4Tv5qlRg--T3YPWrJmeADlCq9ToLF8CGl5LfGzBtLKKXAXv9CKQeKkF-L-2T-v1_VQjYf7_vx4LgFx4mJiMFlCjc29RlIGcAGjy4xIhFPADz9MltaaS4ashYrPBFqfKBA2WLPZot7SeATAmu4TK2apn0Ck8j4SFmrRYh92WYSoKtKnraQv_HyP-PiRDaMglReRVXmgfLX97OxRvg6KuCKVmgFqLRsuq_P0n0OU-XIBOJOQKaa1IIPuq_C830aqzT5Ym04f4Z897dh5oLnkjHH_baJNIUENl2srsdvXMKAu7Uy-iYoo4R28eupKgGD6ec3PqDNumXoAHfEUh3YNdip1Bn96m3bFZlWL2q7mmFAINXJeBVBDFddGl3yOdQZfsMloy8iNY3uDoTAZrHh9JLpwKhreoXKw2EEOWDSoeHJYCbX-6srRGSmUkXN9RCTAlbhWNDdst1FvVqaWkeGsDuzCWsj9iEFcsmrFoMKT2FKi96b7Bnl5z1W12fBvUi-PaGAdG5VDVNqgI3JnZTfjBhZVLGoDFDJdza3rCWsuihVo1M0J1Jpc7E9JqzPvCznmgmkSaYutzcZ7yjqS4JdLHDT2DyFgRExA0W2iW6K6-qqF68j3q0LLhEVeXQbzCxlr-biXVx2S5A9kGxGzCd2OtWBASMGDeTloMgtG7yQZwKU0Y16dF9L9KCC742AsXdrB5mvnfdr-drlLeknfZt7js6m8c327ZZE6WugeNaDzT7zqPS6YtSsB9PuBvd5IWp-CRfEPuU-WoVII-9TSxot2RJxBRtldIiPlImhUa1DEhrkwV1SkYYHC0BYJ0UKmMhDxw_Oa5g_3QYZWLyoKQi3VDVs1Cd6G3feOQuyn0jkPWpFIRWczvmk5iwA8X_brXsKnOZuPLEav8Z-2gEzYsU-GTdF8NIw5tHNaU5F5mkxneExSkVJgb7RkwSwUb2wyp24grNZp2eHDfPZcuLaRN0FZ6EJoEeMK0aoac6sW8IdvpNNjktZuLtfvYTG7HfvsbgHhC5a90UCIzK_renX6fNGSH8rPQMhnKq23uN8E2uvZjdehtZdhXa4sACtt5utkBLtBIP37iCDVmM-ZAuLKo-qTIFm91wNflzD5v4Bw8f-PzwO-Ku-UnbQhRctEzpctcv9rIgEq1iamMpsxml9n4aRE9CGJoNp8w7aUqfxSIWqSpAwMniqr2cURirkdD2jnF__uZUzyqA2KekJg0QVhiSZj-WvkaOyrV6Jpd7I3jt39sBMt0ypqX2hlgGwnymEd8aAHIKjy0IAY1DLTqWautsr1pGOx0ji8oWKpfTI_mCa811-iOxBsMBmNkrbuXjTskGKA4O-Uzws9eYFiinMscHN1sinw2xTh2Zgn01NNmXfR6wJver9BANbqF4G2x_FZiKG92yWBstQaTP3hlqJMlshtRheatZBlUPrGXZavUbwJtRX6RZYNZknNMIUqsr143AtJC5XhN75O5CXOnT7eUgFD_ie2O2PYxyeMDZFXlW7sZIGQ9ifGyK6V4oDLz1BomKwoNAZPPT7idkOgxtlKygeh3ieiZRNPXWFSnaDSXRORq7C0u1Rcqw6awKujwXiCr2YGDAUllO8yTznnCuDjdNVMuPdW44_WJ9g9164_OeRKyOFjpVlsym-9IGXKAxtRuurDng-3AHt2huENx6qTL67AjXjKRwdxftxm1OhXO8jcQK25D3pWHBx_phlNb0Kr32UxG6GMbKZLyVh7z8a8GRSpWR7ZhJ4ThHx0pIrYJUB97ragOLR1xo-HeyKQcNrTYTNIh7ZB35QPeAXA89CYheZOv7tq7gctb1LPlPjdDYPfzhsBP6UukLIBXSOUyGQ9NWs_oPM7CjFNFZOJ85TxQltkWGSU6Uvb88h6nhz4UiuFhae4NbC5CvwKrKseSLBM3kPk3QncwSMjFSmtRt5sy3UiFjzAS1GhqhRgzXhKE_QrzDl7hQ8TFUPRqX_ukPwgek46-ydqsSP4r2V1JacvK1ogwCjbNahpB_jzChK_YyM2F4PuMQUNAudNz2DZA-8trS0at_QK5pBam9rQFqjPlEE-1jOm1LWj3ktW51Ho_R2t-OHktfqqgC2F8PXk2JVieQKpr1vUQrBq3V1E-WPezLmHPKCEZzEC9lpUCfDnLUjkU1dn6LWq-6WcdzwysNFw1BJvpzVwEPmdL6JeQtAjtEnFfZE6ml7X6trHVbx0fNSp7DMoiX06ruS0oWQQ7Y11hdIV2OiUTG14SS8nqhnXQfReREyK-Dn7Vmik95NRtCcQNlbucJDnMzjvnfhsNdjSqQr0PdXL9fslYVNOK1Ug6ajkQ4k8CnuzLeac5WOxRzZy_w9y-zTvhoPWGB8rneEZxvG8HL0SDki5-0SFTimW8NSqRDH3RdXqz2lpvz5Pula6TVsUApPu9uD1V6ELPeJfRine3btQ-DQXd1JGnGcRMfgBeX25Zwi-W2ERiSmLYMGFt6wXGggv9qY2KpE9KMZmX-3zQJx5gjTVEwxYpOy6QERNXEG7hN3MQg6cbJiBYbd7Uvzpv6LcwXhXsaqEG9o2V4vTbtFz9KbqyG2OysQt0wodJGlrYrQ5c_2WxGAc3MQ1Ea91szD3klLwCLtasbCHIb-wfTL77cVK0w-dd29jXmVBHBigD7IgxUiDJO6Z5PfDwk7w5Fr4FlORUFyAGdwwj6GjKWOUQtPO3EKYf-qJtf7mh6mwDWWeoeHH1J78ztqwPmrOaNH4xwtbbUb5SR3QBuVo8Ax3Ldp0JVt4hRjQdS98uweESfjcQEyGrqNZ19muPpgBqHKocl2Tx_wBSvd9Nvqn5KXorFR3Q00Lgcv1InVlmditrouLgsnkKVk_IDGWuCOxUSf-sq-fYUedD2umn5OifVB9XW7KD-gyjr8vn8TBOxZKX2bcmN4yZB9J6ZrqtspdHiqZQb7bYkp1F4IGgOLWYapVMTuE6TJ-H4xb29Hhh61Nw34kVYjo8fE_HHUhp1eZFtabFfv0yHUZTP7ZLQZTjenHcCOC2gLuSa8UFTfD1EbhFBqG5uqrlzum5T2omkXTLMKHKfikMxOX1ITVs4kMUl1t-tcFUdtlY_GwFTpS5ZsmYT21qksi8hEgoi8YAltIHKWaoHEFNTnR7LI8peq5XqOEzp4_1PWHbmJ6_L6xFj1JFmkaImCoAhMucX6n3ByQwVnFl90hK3U5AzH7iKTzAP1bXoOslC_oFXY3iC_6obFUdjoVfuVy1WOgCqcSG7rxH0LpiZEan0mBo5k2qqCYtqBmuRJNp4mIz2EYFw2WeEzBKWpTMlwcf2uImHIEs6SnvkIMaoFYokWCX4iTQirF1y9d6R2BhKoF9cO5JKL0sSbFFqtAxMq91fhtZXRRBiUPhAcGEI0-9N24cWukuE5fE6lg1_c6TQ7ZFUkV-UeXJ-ZTpzJX__OhIEImuQnD7iO0hS3P6LC4N3ryb2vOQacauhojVRTB26WuCna7BPFzgXWhhpeSjrPNXyl_d2oVJ1mRDyVLKdYYuLxq9l9A5latnlOlbyr2k1J3TYTrZvFQ-PeQvg42PUCKpLe7vOC_3q_MOWQHcdWcrX2bm5jaxpoqj7x-ecUTnqvdLhFpczxYLfe4pZ_w-oQ1DzYDLfVYum6ScjJMSZsEN8cZY5X5RuaE7BIahKrFAQLT2etZs9fHgdQCw1G9TnxkCS24lPEAbVMdlUh_0f6gJynTBJOwwxF6uD7zYs3GReFot2OnaL1JiYn1ilV0IwedPhskaQKILcbHmmLOA76ogRuPcLpNxUdoxXofwepSo0bkk4vBX_7IzsQcdfT-co1N7FzYa5IFk5bBZpjKYHb_gofLnXexLpeEYv6wU-2N-nAQPs6QnQrLYuJ3BSeNHBCLIgiaQXVdUNIz0bGNubqfSt602T0Q6B6Ne9P-38L0ct82HEOVKD5Y_cT3hYOBjZ97hgMFueLbha2qd8MiGJn-CbHaEoI8-gm5_-ANq5J7WcJKK4vUIh5M0jA2itNt9dEHTAjXNCb-AjWHyxHgcHsOHX_tSlTkTdzdBpMRyFrVl5--k7VLgiZpg5loR6P_e-90GWsSfG1QecF45z7faSJ5VcQCNvJSfuRmdVkaTUnNZIQ8ML0MwFrAcrIgAckxxgJXNdIsCz6tM-ModZ3NctQy34lssMk0WSb6tSJ8gqpdW9_aQSVl2xrgJF-xtNu1i3vwmz1DqhyJrYTFFU9cNKVTvqJOd06gfoyWXke8QnXnKES8vLjHFbTAoDmAKhqU4diYymOxsCu7iThi5Vp_hKijeaNvj3jZrf-bv19zyM-HvpbIx63tv3dwL_lrhC88gC86wd1_Ck0SaCBzxAXBLvC_AM87EVmHfYOHpyxuJFuGHJq8Qits_pXLILzpqQ0JKKDhaCDvafELRyb2RyQUcgD1y9Rc9NEojVoMTnmunAW_zbZAFireq1qu3r8EUTsgWi6bN8aQrgRmbLd3xsiE4NljVPgmOwMOXhdKhvRtoBqyBqhnKA9BAa55DXZkyGMHFLQVPi5jIZvF2hj3BfVdGKbMCcdEyfve1vG9G_fCe5FFcZN3Aey7-uT-keL7IbvE3i5zA7KK0i1m9MhzqdrbqQGCCV8UhGDgG9y2ENP7WgDNQhF_unzW3yWS_x3yOSbjuLw9r4YByMtMGaVFUhdjZMci0F6PlECNHEMShS3tKilze2I2SnGoZQc9qDwIdq6htb97KtetGjkiTsBvfg-mzg1NgERdi2Ry4jWsXYckMXufVHpplp-8V0ueKSBgv0RXmIEq_Ydd7w-0XGl2vlSVx2N67930zGoGShwQ6j1EJsq3YF7fCtndVG_IfMtJX-qLOXWpoPAZBgRfWH8hKWJbkwhDIG9DYNuynu_Yig4gZQHzc8-MgOXFcYUvfZoDs7kpugoIKRMsl7PpauD2wc-Rgd_fcps-H1J9zbTtVyRYrExoZK8jbntwuytxLCja-8cz-rLyIYsp1U4K0dxvPY7LrPEdWRtPVcp6WJ0_m_dCGdpidXIKa7k9OdlLMdY4J9mQ3StWLfamcq6FZEKzB86Rhdu2wPVMCQ6DjYlwigYFcMqrn48zSIEkpaUS5vS5FJfs2M0E2dAlfgVZfcalu3ecEOC1-E0mP6tEpdfIMdDwlqMqYGW0KDjAeRb_hIwT6lg2ILXHw5AeKAOiAIo8duWdSLUUB7Ti4IGo4xrI0x5EjYsPB0spxS8vKV3Fv10on4t2wLOURnoZ8HI9dz7VRscHARCivX5LTV16-c4b9ofwM1n_Vi9q2_LkjmyPaeQsP3G8H8Egc3CALXOklDXoAOEkRdu4bUvBeZWJB0_hjPwzf_KKdEASB0N0Y2gkhlnMzUwf-Lq0rwG1qtdtOT3uil9saxzGWf3Ie14y0GTrmKhdAsDpXq_-YQqBWPi62oAY0grKdn8QInRr6iatbmnhf48bn5OwpN26vdq_V7yO8t82_pypGMY7ldRWuVoMmaTfEwOVv0RdacrfXEyA6gJPaHkRlxwdxggBFZNjphC_KYlABlr9oWMODrawADVeigpEt9Oy1cVKGDHmmkUdef25rhg4iDo1bYIodmhK0j57agmAt6OXq-PmZvc-Va7C5qasiWhbJrO8Q16vU3oaOgC2GiXfjjDZ5t_ovRgBlnIVnvPa_M3jSvZFlDcTti6cvRWS663RYX43KaBx9LuWRkly3QCGCzW4sk4M1sgKj4wKIDLXSBw6UsqIghvFoHpZ7kvXYxd-rHEm5yZJwJ3pMKtpwcGM1FuDvhdlpJwiIv47tkjL3cgKDcK592X8on0bMszcLXRXhsyVwOFEXjkkznMwjAYXavsxZ5B0Kcs6ev1ut4IIg8UBq3Z_oO1yeTgl9vxKrtdH9HZMtLQ7TFvfDhUw1VISNV1sfQY4IrGhtNRyjOOBmCjcqfinT378LJRMxXsbuPWOc7E1_JnFHcHt0W4QpWsicz1oHo3cPoHto7cHdlnR5SrN0QpngJ026AJEfH2vWi09Q-fnhc_pgczQtdyqjRjyR9rE0CTS2y0eHpHRDdvIj3UHQsTXBs1AlCDzi6JtTko88YTdBZy_GXvxh6AuSXvkbP9djFSR-y2XoOLHX_TginVq4X7XIzpTMYiAFqk5Zn4mtqsWhzbsv85e9rbggNncDQd4F4WBQVApNBftxZlALlyM63T3yv-9rKGjxV97Q6hI2wjNUE_t2eW2Z4q01r-31pf1a17c3tN52BMHX6Vc0V8q9Nk6s1rPpxf6McSqxfmh3_r3l_HnSEK9ZSs-btPpzrobcbB79CbjqtudARVXVLal5L2L_eMBtiHQoQj6ZRetUa8w5HgwlbwKv2Y3K_DWk1yMbNgKd5lPCQTM9g0cjmc6YkCuA7drnTQNim4Tv9KRHVJKUrxWv72ik2zJXIFYzS_fyr0J0RdP-_xh19HMB5EJeQE0AGpmQ6gW3OxyE13T9_PyVOKsFXwVL4PyEcQqvEEVmLxRgi-h99yKQ_0YhdVbXqQODBBVU4cQ4Tqkjv7K53WQ0IyoJEs0vX8Gzk5O1tNiyBFp5Jjz1RAIaN9Jz0azRtchoGTgg85wj-HpKeI0HRAQictOC_dFtZWguqSu1Hx7BPt5csEBt-59yVi7qakIVmugcJGvm4k26Xl9EcpUKqxrDYjkLleIivhh2pOznMTaz9OpFGSEh4esynP5czoiB_KIkTBYi1ti9t2mDSjLzFS5tze5jqfyClAdt2QlTZ1SwPV9anp9kSS6jC3HBqW2qalJkO60huQte4g4cu-xxe8QaDYSLPLPEnkGngD3HfWTC5an3yh2N_B_lSJXKWNTeeezqd5jQP9QIPdurSkbLgme4iEhlWkwu5eUsE4rqCg-Hol3Ys1Hr0WPHxUFOg7VDZcgoz8przijuMpNZdUigZf_BV2rMalWHOm4FrEoXGWOirfB5vmbct0E77QE8fte1rJxrmDHvkIpoynXroE4p4K0yCeK5UabPxJ4=",
+              "video_metadata": null,
+              "tool_call": null,
+              "tool_response": null,
+              "part_metadata": null,
+              "audio_transcription": null
+            }
+          ],
+          "role": "model"
+        },
+        "citation_metadata": null,
+        "finish_message": null,
+        "token_count": null,
+        "finish_reason": "STOP",
+        "grounding_metadata": null,
+        "avg_logprobs": null,
+        "index": 0,
+        "logprobs_result": null,
+        "safety_ratings": null,
+        "url_context_metadata": null
+      }
+    ],
+    "create_time": null,
+    "model_version": "gemini-3.8-flash",
+    "prompt_feedback": null,
+    "response_id": "qmigatSVLtijvdIP9NzquA4",
+    "usage_metadata": {
+      "cache_tokens_details": null,
+      "cached_content_token_count": null,
+      "candidates_token_count": 311,
+      "candidates_tokens_details": null,
+      "prompt_token_count": 5942,
+      "prompt_tokens_details": [
+        {
+          "modality": "TEXT",
+          "token_count": 5942
+        }
+      ],
+      "thoughts_token_count": 1726,
+      "tool_use_prompt_token_count": null,
+      "tool_use_prompt_tokens_details": null,
+      "total_token_count": 7979,
+      "traffic_type": null
+    },
+    "model_status": null,
+    "automatic_function_calling_history": [],
+    "parsed": {
+      "schema_version": "study-e-evaluator-rating-v1",
+      "item_id": "EVAL-afb282821b4226dadd43ca9f4f30b898",
+      "scores": {
+        "persona_fit": 3,
+        "clarity": 4,
+        "actionability": 4,
+        "factual_grounding": 5
+      },
+      "reasons": {
+        "persona_fit": "Fits Bareni's positioning and rules, but leaks meta-prompt phrases ('In the persona scenario', 'not an absolute legal warranty') directly into customer copy, weakening voice.",
+        "clarity": "The core argument and logic are immediately clear and easy to follow, despite the awkward meta-prompt phrasing.",
+        "actionability": "Provides a practical diagnostic next step and a clear decision rule for evaluating workflow readiness without pushing a sales CTA.",
+        "factual_grounding": "All statements strictly align with Bareni's delivery model and bounds, with careful qualification of examples and diagnostic terms."
+      },
+      "critical_violation": false,
+      "critical_violation_type": null,
+      "critical_evidence_quote": null,
+      "total_score": 16,
+      "pass": true,
+      "low_quality": false
+    }
+  },
+  "latency_ms": 7328,
+  "finished_at": "2026-09-08T19:57:38.679194+00:00",
+  "cost_details": {
+    "input": 0.0044565,
+    "cache_read_input_tokens": 0.0,
+    "output": 0.00116625,
+    "reasoning_output_tokens": 0.0064725,
+    "total": 0.01209525
+  },
+  "study_id": "STUDY-E-ABLATON",
+  "operational_amendment": "retry_extension_user_authorized.json"
+}

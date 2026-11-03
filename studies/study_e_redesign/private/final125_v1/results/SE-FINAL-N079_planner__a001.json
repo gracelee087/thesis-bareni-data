@@ -1,0 +1,175 @@
+{
+  "status": "success",
+  "usage": {
+    "input_tokens": 4352,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 915,
+    "reasoning_tokens": null
+  },
+  "cost_usd": 0.008927,
+  "output": {
+    "item_id": "E-PLAN-517",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task explicitly forbids a CTA ('CTA rule: None'). L01 directs the writer to end with a neutral practical observation or next-step note rather than a meeting prompt. This applies directly: the post must explain a workflow decision and next step without inviting the reader to book a diagnostic or contact Bareni."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Open by naming the concrete problem: routine spot checks (manual quality or data reviews) that have become unreliable or unsustainable as the business grows. Frame this as a workflow boundary where human judgment alone no longer keeps pace.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Explain the owner's decision threshold: when spot checks stop catching errors reliably, the cost of a missed mistake often exceeds the cost of an automated checkpoint. State this as a diagnostic question ('Are you catching the same errors twice, or letting new ones through?') rather than a sales claim.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Describe one bounded workflow that fits AI assistance: a repeatable data or document review where rules can be codified (e.g. invoice amounts against budgets, customer replies against FAQ topics, or recurring form fields). Emphasize that AI supplements the human decision, not replaces it.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C03",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "State Bareni's diagnostic approach plainly: a 30-minute conversation identifies whether the workflow is suitable for automation, what it would cost, and what the measure of success looks like. Do not promise speed or savings; focus on clarity of scope.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Clarify the control boundary: human approval remains mandatory for any money movement or high-risk decision; automation handles flagging and routing, not approval. This reassures the owner that authority stays with them.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Close with a single neutral next-step observation: e.g. 'If spot checks are consuming time without catching errors consistently, the next clarity step is naming exactly which checks fail most often—that's the starting point for any automation design.' Do not invite a meeting or imply urgency.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C05",
+          "S01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No customer names, deployment details, productivity numbers, or savings claims are included. The workflow example is a generic pattern, not a customer case. No CTA is used."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "The post emphasizes that human approval remains mandatory for money movement and high-risk decisions. No scope creep into excluded services (medical, legal, bulk cold email, unsupported compliance)."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "The frozen persona (plain-speaking technical expert, founder-to-founder, no hype) is preserved throughout. Bareni is correctly identified as a consulting practice being built by the thesis author, not a team or registered firm."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Plain English is used throughout. Generic workflow examples ('invoice amounts', 'customer replies') are clearly distinct from any observed customer result. No invented benchmark or ROI is stated."
+      }
+    ]
+  },
+  "raw_text": "{\"item_id\": \"E-PLAN-517\", \"selected_lessons\": [{\"lesson_id\": \"L01\", \"application\": \"The task explicitly forbids a CTA ('CTA rule: None'). L01 directs the writer to end with a neutral practical observation or next-step note rather than a meeting prompt. This applies directly: the post must explain a workflow decision and next step without inviting the reader to book a diagnostic or contact Bareni.\"}], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Open by naming the concrete problem: routine spot checks (manual quality or data reviews) that have become unreliable or unsustainable as the business grows. Frame this as a workflow boundary where human judgment alone no longer keeps pace.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C01\", \"S01\"]}, {\"step_id\": \"P02\", \"instruction\": \"Explain the owner's decision threshold: when spot checks stop catching errors reliably, the cost of a missed mistake often exceeds the cost of an automated checkpoint. State this as a diagnostic question ('Are you catching the same errors twice, or letting new ones through?') rather than a sales claim.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C01\", \"C02\"]}, {\"step_id\": \"P03\", \"instruction\": \"Describe one bounded workflow that fits AI assistance: a repeatable data or document review where rules can be codified (e.g. invoice amounts against budgets, customer replies against FAQ topics, or recurring form fields). Emphasize that AI supplements the human decision, not replaces it.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"C03\", \"C04\"]}, {\"step_id\": \"P04\", \"instruction\": \"State Bareni's diagnostic approach plainly: a 30-minute conversation identifies whether the workflow is suitable for automation, what it would cost, and what the measure of success looks like. Do not promise speed or savings; focus on clarity of scope.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\"]}, {\"step_id\": \"P05\", \"instruction\": \"Clarify the control boundary: human approval remains mandatory for any money movement or high-risk decision; automation handles flagging and routing, not approval. This reassures the owner that authority stays with them.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"C04\"]}, {\"step_id\": \"P06\", \"instruction\": \"Close with a single neutral next-step observation: e.g. 'If spot checks are consuming time without catching errors consistently, the next clarity step is naming exactly which checks fail most often—that's the starting point for any automation design.' Do not invite a meeting or imply urgency.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C05\", \"S01\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"No customer names, deployment details, productivity numbers, or savings claims are included. The workflow example is a generic pattern, not a customer case. No CTA is used.\"}, {\"constraint_id\": \"K02\", \"handling\": \"The post emphasizes that human approval remains mandatory for money movement and high-risk decisions. No scope creep into excluded services (medical, legal, bulk cold email, unsupported compliance).\"}, {\"constraint_id\": \"K03\", \"handling\": \"The frozen persona (plain-speaking technical expert, founder-to-founder, no hype) is preserved throughout. Bareni is correctly identified as a consulting practice being built by the thesis author, not a team or registered firm.\"}, {\"constraint_id\": \"K04\", \"handling\": \"Plain English is used throughout. Generic workflow examples ('invoice amounts', 'customer replies') are clearly distinct from any observed customer result. No invented benchmark or ROI is stated.\"}]}",
+  "provider_response": {
+    "id": "msg_011Cer1SzjBuNJWyymRFThd5",
+    "container": null,
+    "content": [
+      {
+        "citations": null,
+        "text": "{\"item_id\": \"E-PLAN-517\", \"selected_lessons\": [{\"lesson_id\": \"L01\", \"application\": \"The task explicitly forbids a CTA ('CTA rule: None'). L01 directs the writer to end with a neutral practical observation or next-step note rather than a meeting prompt. This applies directly: the post must explain a workflow decision and next step without inviting the reader to book a diagnostic or contact Bareni.\"}], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Open by naming the concrete problem: routine spot checks (manual quality or data reviews) that have become unreliable or unsustainable as the business grows. Frame this as a workflow boundary where human judgment alone no longer keeps pace.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C01\", \"S01\"]}, {\"step_id\": \"P02\", \"instruction\": \"Explain the owner's decision threshold: when spot checks stop catching errors reliably, the cost of a missed mistake often exceeds the cost of an automated checkpoint. State this as a diagnostic question ('Are you catching the same errors twice, or letting new ones through?') rather than a sales claim.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C01\", \"C02\"]}, {\"step_id\": \"P03\", \"instruction\": \"Describe one bounded workflow that fits AI assistance: a repeatable data or document review where rules can be codified (e.g. invoice amounts against budgets, customer replies against FAQ topics, or recurring form fields). Emphasize that AI supplements the human decision, not replaces it.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"C03\", \"C04\"]}, {\"step_id\": \"P04\", \"instruction\": \"State Bareni's diagnostic approach plainly: a 30-minute conversation identifies whether the workflow is suitable for automation, what it would cost, and what the measure of success looks like. Do not promise speed or savings; focus on clarity of scope.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\"]}, {\"step_id\": \"P05\", \"instruction\": \"Clarify the control boundary: human approval remains mandatory for any money movement or high-risk decision; automation handles flagging and routing, not approval. This reassures the owner that authority stays with them.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"C04\"]}, {\"step_id\": \"P06\", \"instruction\": \"Close with a single neutral next-step observation: e.g. 'If spot checks are consuming time without catching errors consistently, the next clarity step is naming exactly which checks fail most often—that's the starting point for any automation design.' Do not invite a meeting or imply urgency.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C05\", \"S01\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"No customer names, deployment details, productivity numbers, or savings claims are included. The workflow example is a generic pattern, not a customer case. No CTA is used.\"}, {\"constraint_id\": \"K02\", \"handling\": \"The post emphasizes that human approval remains mandatory for money movement and high-risk decisions. No scope creep into excluded services (medical, legal, bulk cold email, unsupported compliance).\"}, {\"constraint_id\": \"K03\", \"handling\": \"The frozen persona (plain-speaking technical expert, founder-to-founder, no hype) is preserved throughout. Bareni is correctly identified as a consulting practice being built by the thesis author, not a team or registered firm.\"}, {\"constraint_id\": \"K04\", \"handling\": \"Plain English is used throughout. Generic workflow examples ('invoice amounts', 'customer replies') are clearly distinct from any observed customer result. No invented benchmark or ROI is stated.\"}]}",
+        "type": "text"
+      }
+    ],
+    "model": "claude-haiku-4-5-20251001",
+    "role": "assistant",
+    "stop_details": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "not_available",
+      "input_tokens": 4352,
+      "output_tokens": 915,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": "standard"
+    }
+  },
+  "stop_reason": "end_turn",
+  "cost_details": {
+    "input": 0.004352,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.004575,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.008927
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": null,
+  "key": "SE-FINAL-N079_planner__a001",
+  "role": "planner",
+  "created_at": "2026-09-08T12:55:56.955899+00:00",
+  "ended_at": "2026-09-08T12:56:21.118890+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-N079",
+    "batch_id": 3,
+    "condition": "natural",
+    "cohort": "natural"
+  },
+  "task_id": "SE-FINAL-N079",
+  "batch_id": 3,
+  "cohort": "natural",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 24149,
+  "budget_charge_usd": 0.008927,
+  "unknown_cost_reservation_usd": 0
+}

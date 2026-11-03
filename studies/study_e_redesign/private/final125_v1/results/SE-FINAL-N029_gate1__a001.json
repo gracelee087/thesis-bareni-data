@@ -1,0 +1,331 @@
+{
+  "status": "success",
+  "usage": {
+    "input_tokens": 5895,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 164,
+    "reasoning_tokens": 0
+  },
+  "cost_usd": 0.0171975,
+  "output": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-029",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": [
+      {
+        "dimension": "factual_grounding",
+        "severity": "noncritical",
+        "location_kind": "quote",
+        "text_field": "body",
+        "quote": "That is Bareni’s no-lock-in position: finished code is handed over, and the owner keeps control.",
+        "missing_requirement": null,
+        "rule_id": "R-N-4",
+        "evidence_ids": [
+          "C02",
+          "BRIEF",
+          "S01"
+        ],
+        "reason": "\"Finished code is handed over\" is supported, but \"the owner keeps control\" overstates the approved evidence. The evidence supports customer-owned accounts from the start and optional retainer support as a no-lock-in policy, not a broader control claim without that qualifier."
+      }
+    ]
+  },
+  "raw_text": "{\"schema_version\":\"study-e-gate-wire-v4\",\"item_id\":\"GATE-BLIND-029\",\"assessment_status\":\"assessed\",\"input_problem_reason\":null,\"defects\":[{\"rule_id\":\"R-N-4\",\"location\":{\"location_kind\":\"quote\",\"text_field\":\"body\",\"quote\":\"That is Bareni’s no-lock-in position: finished code is handed over, and the owner keeps control.\"},\"evidence_ids\":[\"C02\",\"BRIEF\",\"S01\"],\"reason\":\"\\\"Finished code is handed over\\\" is supported, but \\\"the owner keeps control\\\" overstates the approved evidence. The evidence supports customer-owned accounts from the start and optional retainer support as a no-lock-in policy, not a broader control claim without that qualifier.\"}]}",
+  "provider_response": {
+    "id": "resp_0d4a230d0524fe5c016a9ffedf3fc487d2a123abf63b824aaf",
+    "created_at": 1788870367.0,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": {},
+    "model": "gpt-5.4-2026-03-05",
+    "object": "response",
+    "output": [
+      {
+        "id": "msg_0d4a230d0524fe5c016a9ffedff55887d29ec72e733765c518",
+        "content": [
+          {
+            "annotations": [],
+            "text": "{\"schema_version\":\"study-e-gate-wire-v4\",\"item_id\":\"GATE-BLIND-029\",\"assessment_status\":\"assessed\",\"input_problem_reason\":null,\"defects\":[{\"rule_id\":\"R-N-4\",\"location\":{\"location_kind\":\"quote\",\"text_field\":\"body\",\"quote\":\"That is Bareni’s no-lock-in position: finished code is handed over, and the owner keeps control.\"},\"evidence_ids\":[\"C02\",\"BRIEF\",\"S01\"],\"reason\":\"\\\"Finished code is handed over\\\" is supported, but \\\"the owner keeps control\\\" overstates the approved evidence. The evidence supports customer-owned accounts from the start and optional retainer support as a no-lock-in policy, not a broader control claim without that qualifier.\"}]}",
+            "type": "output_text",
+            "logprobs": []
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message",
+        "phase": "final_answer"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 1.0,
+    "tool_choice": "auto",
+    "tools": [],
+    "top_p": 0.98,
+    "background": false,
+    "completed_at": 1788870372.0,
+    "conversation": null,
+    "max_output_tokens": 4096,
+    "max_tool_calls": null,
+    "moderation": null,
+    "previous_response_id": null,
+    "prompt": null,
+    "prompt_cache_key": null,
+    "prompt_cache_options": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "generate_summary": null,
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "status": "completed",
+    "text": {
+      "format": {
+        "name": "study_e_gate",
+        "schema_": {
+          "type": "object",
+          "properties": {
+            "schema_version": {
+              "type": "string",
+              "enum": [
+                "study-e-gate-wire-v4"
+              ]
+            },
+            "item_id": {
+              "type": "string",
+              "enum": [
+                "GATE-BLIND-029"
+              ]
+            },
+            "assessment_status": {
+              "type": "string",
+              "enum": [
+                "assessed",
+                "input_problem"
+              ]
+            },
+            "input_problem_reason": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "minLength": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "defects": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "rule_id": {
+                    "type": "string",
+                    "enum": [
+                      "R-N-1",
+                      "R-N-2",
+                      "R-N-3",
+                      "R-N-4",
+                      "R-C-1",
+                      "R-C-2",
+                      "R-C-3"
+                    ]
+                  },
+                  "location": {
+                    "anyOf": [
+                      {
+                        "type": "object",
+                        "properties": {
+                          "location_kind": {
+                            "type": "string",
+                            "enum": [
+                              "quote"
+                            ]
+                          },
+                          "text_field": {
+                            "type": "string",
+                            "enum": [
+                              "title",
+                              "body"
+                            ]
+                          },
+                          "quote": {
+                            "type": "string",
+                            "minLength": 1
+                          }
+                        },
+                        "required": [
+                          "location_kind",
+                          "text_field",
+                          "quote"
+                        ],
+                        "additionalProperties": false
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
+                          "location_kind": {
+                            "type": "string",
+                            "enum": [
+                              "omission"
+                            ]
+                          },
+                          "missing_requirement": {
+                            "type": "string",
+                            "minLength": 1
+                          }
+                        },
+                        "required": [
+                          "location_kind",
+                          "missing_requirement"
+                        ],
+                        "additionalProperties": false
+                      }
+                    ]
+                  },
+                  "evidence_ids": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                      "type": "string",
+                      "enum": [
+                        "BRIEF",
+                        "C01",
+                        "C02",
+                        "C03",
+                        "C04",
+                        "C05",
+                        "S01"
+                      ]
+                    }
+                  },
+                  "reason": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "rule_id",
+                  "location",
+                  "evidence_ids",
+                  "reason"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "schema_version",
+            "item_id",
+            "assessment_status",
+            "input_problem_reason",
+            "defects"
+          ],
+          "additionalProperties": false
+        },
+        "type": "json_schema",
+        "description": null,
+        "strict": true
+      },
+      "verbosity": "medium"
+    },
+    "top_logprobs": 0,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 5895,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 164,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 6059
+    },
+    "user": null,
+    "billing": {
+      "payer": "developer"
+    },
+    "frequency_penalty": 0.0,
+    "presence_penalty": 0.0,
+    "store": false,
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    }
+  },
+  "rating": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-029",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": [
+      {
+        "dimension": "factual_grounding",
+        "severity": "noncritical",
+        "location_kind": "quote",
+        "text_field": "body",
+        "quote": "That is Bareni’s no-lock-in position: finished code is handed over, and the owner keeps control.",
+        "missing_requirement": null,
+        "rule_id": "R-N-4",
+        "evidence_ids": [
+          "C02",
+          "BRIEF",
+          "S01"
+        ],
+        "reason": "\"Finished code is handed over\" is supported, but \"the owner keeps control\" overstates the approved evidence. The evidence supports customer-owned accounts from the start and optional retainer support as a no-lock-in policy, not a broader control claim without that qualifier."
+      }
+    ]
+  },
+  "error": null,
+  "stop_reason": "completed",
+  "cost_details": {
+    "input": 0.0147375,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.00246,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.0171975
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": "default",
+  "key": "SE-FINAL-N029_gate1__a001",
+  "role": "gate",
+  "created_at": "2026-09-08T12:26:06.595070+00:00",
+  "ended_at": "2026-09-08T12:26:13.243770+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-N029",
+    "batch_id": 1,
+    "condition": "natural",
+    "cohort": "natural"
+  },
+  "task_id": "SE-FINAL-N029",
+  "batch_id": 1,
+  "cohort": "natural",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 6642,
+  "budget_charge_usd": 0.0171975,
+  "unknown_cost_reservation_usd": 0
+}

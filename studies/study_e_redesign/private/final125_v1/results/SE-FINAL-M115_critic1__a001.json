@@ -1,0 +1,231 @@
+{
+  "status": "success",
+  "usage": {
+    "input_tokens": 4484,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 171,
+    "reasoning_tokens": 0
+  },
+  "cost_usd": 0.0041325,
+  "output": {
+    "item_id": "E-CRIT-BLIND-115-1",
+    "repairs": [
+      {
+        "repair_id": "P01",
+        "target_ids": [
+          "D01",
+          "D02"
+        ],
+        "instruction": "Rewrite the body so the argument is readable in plain English from start to finish. Make it one bounded workflow decision about positioning drift: explain that drift often shows up when the website, sales conversation, proposal, and invoice language no longer match. Then give one practical next step the owner can do, such as reviewing those four touchpoints for mismatched wording and deciding which one should be the source of truth. Keep the post free of hype and keep any examples clearly framed as proposals, not claims about existing results or capabilities.",
+        "source_ids": [
+          "BRIEF",
+          "S01",
+          "C01",
+          "C02",
+          "C05"
+        ]
+      }
+    ]
+  },
+  "raw_text": "{\"item_id\":\"E-CRIT-BLIND-115-1\",\"repairs\":[{\"repair_id\":\"P01\",\"target_ids\":[\"D01\",\"D02\"],\"instruction\":\"Rewrite the body so the argument is readable in plain English from start to finish. Make it one bounded workflow decision about positioning drift: explain that drift often shows up when the website, sales conversation, proposal, and invoice language no longer match. Then give one practical next step the owner can do, such as reviewing those four touchpoints for mismatched wording and deciding which one should be the source of truth. Keep the post free of hype and keep any examples clearly framed as proposals, not claims about existing results or capabilities.\",\"source_ids\":[\"BRIEF\",\"S01\",\"C01\",\"C02\",\"C05\"]}]}",
+  "provider_response": {
+    "id": "resp_0fe714b652a17105016aa01276db4c87d29550440bfcdcbf44",
+    "created_at": 1788875382.0,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": {},
+    "model": "gpt-5.4-mini-2026-03-17",
+    "object": "response",
+    "output": [
+      {
+        "id": "msg_0fe714b652a17105016aa012777d7087d2836e6f0abbcef0d6",
+        "content": [
+          {
+            "annotations": [],
+            "text": "{\"item_id\":\"E-CRIT-BLIND-115-1\",\"repairs\":[{\"repair_id\":\"P01\",\"target_ids\":[\"D01\",\"D02\"],\"instruction\":\"Rewrite the body so the argument is readable in plain English from start to finish. Make it one bounded workflow decision about positioning drift: explain that drift often shows up when the website, sales conversation, proposal, and invoice language no longer match. Then give one practical next step the owner can do, such as reviewing those four touchpoints for mismatched wording and deciding which one should be the source of truth. Keep the post free of hype and keep any examples clearly framed as proposals, not claims about existing results or capabilities.\",\"source_ids\":[\"BRIEF\",\"S01\",\"C01\",\"C02\",\"C05\"]}]}",
+            "type": "output_text",
+            "logprobs": []
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message",
+        "phase": "final_answer"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 1.0,
+    "tool_choice": "auto",
+    "tools": [],
+    "top_p": 0.98,
+    "background": false,
+    "completed_at": 1788875384.0,
+    "conversation": null,
+    "max_output_tokens": 2048,
+    "max_tool_calls": null,
+    "moderation": null,
+    "previous_response_id": null,
+    "prompt": null,
+    "prompt_cache_key": null,
+    "prompt_cache_options": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "generate_summary": null,
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "status": "completed",
+    "text": {
+      "format": {
+        "name": "study_e_role",
+        "schema_": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "item_id": {
+              "type": "string",
+              "enum": [
+                "E-CRIT-BLIND-115-1"
+              ]
+            },
+            "repairs": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "repair_id": {
+                    "type": "string",
+                    "enum": [
+                      "P01",
+                      "P02",
+                      "P03",
+                      "P04"
+                    ]
+                  },
+                  "target_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "enum": [
+                        "D01",
+                        "D02"
+                      ]
+                    }
+                  },
+                  "instruction": {
+                    "type": "string"
+                  },
+                  "source_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "enum": [
+                        "C01",
+                        "C02",
+                        "C03",
+                        "C04",
+                        "C05",
+                        "S01",
+                        "BRIEF"
+                      ]
+                    }
+                  }
+                },
+                "required": [
+                  "repair_id",
+                  "target_ids",
+                  "instruction",
+                  "source_ids"
+                ]
+              }
+            }
+          },
+          "required": [
+            "item_id",
+            "repairs"
+          ]
+        },
+        "type": "json_schema",
+        "description": null,
+        "strict": true
+      },
+      "verbosity": "medium"
+    },
+    "top_logprobs": 0,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 4484,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 171,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 4655
+    },
+    "user": null,
+    "billing": {
+      "payer": "developer"
+    },
+    "frequency_penalty": 0.0,
+    "presence_penalty": 0.0,
+    "store": false,
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    }
+  },
+  "stop_reason": "completed",
+  "cost_details": {
+    "input": 0.003363,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.0007695,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.0041325
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": "default",
+  "key": "SE-FINAL-M115_critic1__a001",
+  "role": "critic",
+  "created_at": "2026-09-08T13:49:43.105067+00:00",
+  "ended_at": "2026-09-08T13:49:45.423505+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-M115",
+    "batch_id": 4,
+    "condition": "incoherent",
+    "cohort": "mixed",
+    "input_manifest_sha256": "bdd969d7efbcd68dd7c670e282a2464cf4cc46e782a49d0d3d8e8f8c5ef0b67e"
+  },
+  "task_id": "SE-FINAL-M115",
+  "batch_id": 4,
+  "cohort": "mixed",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 2315,
+  "budget_charge_usd": 0.0041325,
+  "unknown_cost_reservation_usd": 0
+}

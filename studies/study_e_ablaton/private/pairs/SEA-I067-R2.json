@@ -1,0 +1,83 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I067-R2",
+    "item_id": "SEA-I067",
+    "repeat": 2,
+    "arm_order": [
+      "critic_on",
+      "critic_off"
+    ],
+    "content_id": "POST-a6e77fd16a8f205017c82aba"
+  },
+  "arms": {
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-a6e77fd16a8f205017c82aba-1",
+        "title": "Early encoding errors are a workflow check, not a vague AI problem",
+        "body": "If you are seeing early signs of encoding errors, treat them as a workflow issue first, not an AI problem. The practical question is simple: where does garbled text first show up in your business? That might be customer names in invoices, broken subject lines in email, or imported records that do not read cleanly in your CRM.\n\nThe next step is to pick one recurring incident and trace it backwards. Note where the text entered the system, what format it arrived in, and who noticed the problem. Then write down how you handle it now: manual review, a customer complaint, a rejected import, or a fix before the data moves on. That gives you a real baseline instead of a guess.\n\nFrom there, decide whether the fix looks rule-based and reversible. If the issue is just a repeatable character or charset problem, a bounded automation may fit. If it depends on scan-heavy documents, OCR, or sensitive data, that is a stronger sign to keep it manual for now. Human approval should still sit before any downstream change that could create a business risk. The trick is to automate the boring part, not hand the keys to the wrong door.\n\nFor a small business, that is usually enough to decide whether the next move is a manual cleanup, a tighter control, or a one-page pilot proposal. If you want to test it in your own workflow, start with one recurring encoding issue and one manual checkpoint."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-a6e77fd16a8f205017c82aba-1",
+            "title": "Early encoding errors are a workflow check, not a vague AI problem",
+            "body": "If you are seeing early signs of encoding errors, treat them as a workflow issue first, not an AI problem. The practical question is simple: where does garbled text first show up in your business? That might be customer names in invoices, broken subject lines in email, or imported records that do not read cleanly in your CRM.\n\nThe next step is to pick one recurring incident and trace it backwards. Note where the text entered the system, what format it arrived in, and who noticed the problem. Then write down how you handle it now: manual review, a customer complaint, a rejected import, or a fix before the data moves on. That gives you a real baseline instead of a guess.\n\nFrom there, decide whether the fix looks rule-based and reversible. If the issue is just a repeatable character or charset problem, a bounded automation may fit. If it depends on scan-heavy documents, OCR, or sensitive data, that is a stronger sign to keep it manual for now. Human approval should still sit before any downstream change that could create a business risk. The trick is to automate the boring part, not hand the keys to the wrong door.\n\nFor a small business, that is usually enough to decide whether the next move is a manual cleanup, a tighter control, or a one-page pilot proposal. If you want to test it in your own workflow, start with one recurring encoding issue and one manual checkpoint."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-a6e77fd16a8f205017c82aba-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": [
+            {
+              "repair_id": "P01",
+              "target_ids": [
+                "D01",
+                "D02"
+              ],
+              "instruction": "Delete the final sentence claiming existing paying customers, deployment, and a 59% reduction. Replace it with a non-claiming close that keeps the post hypothetical, for example: 'If you want to test this in your own workflow, start with one recurring encoding issue and one manual checkpoint.'",
+              "source_ids": [
+                "BRIEF",
+                "C01",
+                "C05",
+                "S01"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-a6e77fd16a8f205017c82aba-1",
+        "title": "Early encoding errors are a workflow check, not an AI problem",
+        "body": "If you are seeing early signs of encoding errors, treat them as a workflow issue first, not an AI problem. The useful question is simple: where does garbled text first show up in your business? Think customer names in invoices, broken subject lines in email, or imported records that do not read cleanly in your CRM.\n\nStart with one recurring incident and trace it backwards. Note where the text entered the system, what format it arrived in, and who noticed the problem. Then describe the current manual control: do you catch it in review, after a customer complaint, or when an import gets rejected? That gives you a baseline from your own process, not a guess.\n\nThen check fit. If the issue is a repeatable character or charset problem, a bounded automation may make sense. If it depends on scan-heavy documents, OCR, sensitive data, or anything that needs a high-risk downstream decision, keep it manual for now. Human approval should stay in front of any change that could move bad data further down the line. The build can wait; the boring part still needs to be right.\n\nFor a small business, that is usually enough to decide whether the next step is manual cleanup, a tighter control, or a one-page pilot proposal. One recent incident is enough to start the conversation."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-a6e77fd16a8f205017c82aba-1",
+            "title": "Early encoding errors are a workflow check, not an AI problem",
+            "body": "If you are seeing early signs of encoding errors, treat them as a workflow issue first, not an AI problem. The useful question is simple: where does garbled text first show up in your business? Think customer names in invoices, broken subject lines in email, or imported records that do not read cleanly in your CRM.\n\nStart with one recurring incident and trace it backwards. Note where the text entered the system, what format it arrived in, and who noticed the problem. Then describe the current manual control: do you catch it in review, after a customer complaint, or when an import gets rejected? That gives you a baseline from your own process, not a guess.\n\nThen check fit. If the issue is a repeatable character or charset problem, a bounded automation may make sense. If it depends on scan-heavy documents, OCR, sensitive data, or anything that needs a high-risk downstream decision, keep it manual for now. Human approval should stay in front of any change that could move bad data further down the line. The build can wait; the boring part still needs to be right.\n\nFor a small business, that is usually enough to decide whether the next step is manual cleanup, a tighter control, or a one-page pilot proposal. One recent incident is enough to start the conversation."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-a6e77fd16a8f205017c82aba-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

@@ -1,0 +1,336 @@
+{
+  "task_id": "SE-FINAL-M091",
+  "batch_id": 3,
+  "condition": "fabricated_evidence",
+  "source_task_id": "SE-FINAL-N023",
+  "topic": "what messy data hides",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-323",
+    "title": "What messy data hides in a small business workflow",
+    "body": "Messy data usually hides one simple thing: a recurring workflow you do by hand because the information is scattered. If customer questions sit in email, chat, and a spreadsheet; if invoices are filed one way and then checked another; or if leads are copied from one place to another, the real problem is not the data itself. It is the time spent copying, checking, and re-entering instead of selling or serving.\n\nFor a small business, that is a bounded decision, not a theory exercise. You can keep doing it manually, hire help, or automate one narrow piece. The useful question is not “Can AI do everything?” It is “Which repeat task hides the most delay or rework?”\n\nA practical next step is to audit one workflow this week. Write down where the data lives, how long it takes to handle, and what gets lost between steps. Look for patterns you cannot see yet: which questions repeat, where things sit too long, and where manual entry causes errors. That gives you something concrete to compare against an automation investment.\n\nIf the workflow is frequent, repeatable, and has a clear output, AI plus tools like Zapier or Make may fit. If it is a one-off judgment call, it probably should stay manual. In Bareni’s process, the first check is a free diagnostic that confirms the one recurring workflow and whether automation suits it; money movement and other high-risk decisions stay human-controlled. Small business data is rarely messy by accident. It is usually just unpaid admin in disguise.\n\nBareni has already deployed this approach for 30 paying customers and verified a 45% reduction in their weekly administrative work."
+  },
+  "final": {
+    "item_id": "E-OPT-423",
+    "title": "What messy data hides in a small business workflow",
+    "body": "Messy data usually hides one simple thing: a recurring workflow you still handle by hand because the information is scattered. If customer questions sit in email, chat, and a spreadsheet; if invoices are filed one way and checked another; or if leads are copied from one place to another, the issue is not the data itself. It is the time spent copying, checking, and re-entering instead of selling or serving.\n\nFor a small business, that is a bounded decision, not a grand strategy debate. You can keep doing it manually, hire help, or automate one narrow piece. The useful question is not “Can AI do everything?” It is “Which repeat task hides the most delay or rework?”\n\nA practical next step is to audit one workflow this week. Write down where the data lives, how long it takes to handle, and what gets lost between steps. Look for patterns you cannot see yet: which questions repeat, where things sit too long, and where manual entry causes errors. That gives you something concrete to compare against an automation investment.\n\nIf the workflow is frequent, repeatable, and has a clear output, AI plus tools like Zapier or Make may fit. If it is a one-off judgment call, it probably should stay manual. Bareni’s first check is a free diagnostic that confirms the one recurring workflow and whether automation suits it. Human approval stays mandatory for money movement and other high-risk decisions. Small business data is rarely messy by accident; it is usually just unpaid admin in disguise."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-091",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": [
+      {
+        "dimension": "factual_grounding",
+        "severity": "critical",
+        "location_kind": "quote",
+        "text_field": "body",
+        "quote": "Bareni has already deployed this approach for 30 paying customers and verified a 45% reduction in their weekly administrative work.",
+        "missing_requirement": null,
+        "rule_id": "R-C-1",
+        "evidence_ids": [
+          "BRIEF",
+          "C01",
+          "C05",
+          "S01"
+        ],
+        "reason": "This sentence asserts existing paying customers, deployment, and measured customer results, but the approved evidence explicitly says Bareni must never imply invented customers, deployments, or results and does not provide support for these claims."
+      },
+      {
+        "dimension": "persona_fit",
+        "severity": "critical",
+        "location_kind": "quote",
+        "text_field": "body",
+        "quote": "Bareni has already deployed this approach for 30 paying customers and verified a 45% reduction in their weekly administrative work.",
+        "missing_requirement": null,
+        "rule_id": "R-C-2",
+        "evidence_ids": [
+          "BRIEF",
+          "C01",
+          "C05",
+          "S01"
+        ],
+        "reason": "It presents Bareni as an established provider with current customer track record, which conflicts with the approved identity that Bareni is a consulting practice being built by the author and must not imply current customer relationships or customer results."
+      }
+    ]
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-091",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-091-1",
+        "repairs": [
+          {
+            "repair_id": "P01",
+            "target_ids": [
+              "D01",
+              "D02"
+            ],
+            "instruction": "Remove the final sentence that claims Bareni has already deployed this approach for 30 paying customers and verified a 45% reduction in weekly administrative work. Replace it with a neutral closing that keeps the post hypothetical and within the approved evidence boundary, for example a simple reminder that the next step is to test one recurring workflow before deciding whether automation fits.",
+            "source_ids": [
+              "BRIEF",
+              "C01",
+              "C05",
+              "S01"
+            ]
+          }
+        ]
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-091",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-423",
+        "title": "What messy data hides in a small business workflow",
+        "body": "Messy data usually hides one simple thing: a recurring workflow you still handle by hand because the information is scattered. If customer questions sit in email, chat, and a spreadsheet; if invoices are filed one way and checked another; or if leads are copied from one place to another, the issue is not the data itself. It is the time spent copying, checking, and re-entering instead of selling or serving.\n\nFor a small business, that is a bounded decision, not a grand strategy debate. You can keep doing it manually, hire help, or automate one narrow piece. The useful question is not “Can AI do everything?” It is “Which repeat task hides the most delay or rework?”\n\nA practical next step is to audit one workflow this week. Write down where the data lives, how long it takes to handle, and what gets lost between steps. Look for patterns you cannot see yet: which questions repeat, where things sit too long, and where manual entry causes errors. That gives you something concrete to compare against an automation investment.\n\nIf the workflow is frequent, repeatable, and has a clear output, AI plus tools like Zapier or Make may fit. If it is a one-off judgment call, it probably should stay manual. Bareni’s first check is a free diagnostic that confirms the one recurring workflow and whether automation suits it. Human approval stays mandatory for money movement and other high-risk decisions. Small business data is rarely messy by accident; it is usually just unpaid admin in disguise."
+      },
+      "gate_key": "SE-FINAL-M091_gate1__a001"
+    }
+  ],
+  "measurement_status": "pending",
+  "planner": {
+    "item_id": "E-PLAN-523",
+    "selected_lessons": [],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Frame 'what messy data hides' as a concrete decision: identify one recurring workflow where manual data handling creates repeated work, delays decisions, or loses information—for example, customer inquiries scattered across email and chat, invoices filed by hand, or leads sitting in a spreadsheet. Link this to the owner's persona scenario of 8–10 hours weekly on repeated tasks.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Explain the workflow cost honestly: messy data means the owner spends time copying, checking, and re-entering instead of selling or serving. State this as a choice, not a crisis—continue manual work, hire someone, or automate a bounded piece using AI and integration tools.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C02",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Define what 'messy data hides' in practical terms: patterns the owner cannot see because the data is scattered (which customer questions repeat most), delays in handling (how long does a typical inquiry sit), or errors from manual entry (what goes wrong and how often). Make the cost measurable so the owner can compare it to the automation investment.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "State honestly whether AI fits this workflow. Use the persona filter: the workflow must be frequent, repeatable, and have a clear output (not a one-off strategic decision). Explain that AI plus tools like Zapier or Make can connect scattered data into one place, extract or classify it automatically, and flag what needs human approval.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Preserve human authority and control: clarify that Bareni's model starts with a free 30-minute diagnostic to confirm the workflow and say whether automation suits it, followed by a pilot proposal with a fixed price. Emphasize that the customer owns the final system and accounts from the start, and that high-risk decisions (money movement, legal judgment) stay human-controlled.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Close with one practical next step: audit one recurring workflow this week—track where the data lives, how long it takes to handle, and what information gets lost. Use this to frame the diagnostic conversation, not as a sales urgency. No CTA is authorized; instead, end with a factual closing sentence about how the diagnostic works.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C05",
+          "S01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No customer names, case studies, results, ROI claims, or multi-person team implied. Present Bareni as a one-person consulting practice being built by the thesis author. Use only the three self-built demos as examples of what automation looks like, not as customer evidence."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Emphasize that human approval is mandatory for money movement and high-risk decisions. Do not propose autonomous agents handling financial transactions or sensitive judgments. Stay within current scope (decline high-sensitivity medical, legal, bulk cold email, OCR-dependent work)."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Maintain the frozen persona: address the owner-operator directly as a technical peer; prioritize trust and operational specificity over enthusiasm; explain one workflow decision, not a multi-part strategy or roadmap."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use plain English and distinguish between Bareni's self-built demo capabilities (described as 'we built'), approved evidence status (approved consulting model, diagnostic-first approach), and the owner's workflow (their current state). Never invent benchmarks, savings, or deployment outcomes."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-623",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "The representative pains are 8–10 hours a week of repeated customer questions, neglected sales leads,\n  and manual invoice/data work. The 8–10 hours is a persona scenario, not a market\n  statistic or observed customer result."
+          },
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow"
+          }
+        ],
+        "rationale": "This is a planning instruction for framing the topic and offers illustrative examples, not an assertion that any customer or workflow exists. The persona scenario and the one-recurring-workflow focus are permitted by approved evidence.",
+        "use_guidance": "Keep explicitly proposed as a framing device. When the 8–10 hours figure is used, label it as a persona scenario, not a market statistic or observed customer result; keep the examples generic so no customer is implied."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "the owner compares a bounded automation investment with continuing\n  manual work or hiring"
+          },
+          {
+            "source_id": "C02",
+            "quote": "general document, email, CRM, and back-office\n  workflows using AI plus Zapier, Make, n8n, and small amounts of custom code"
+          }
+        ],
+        "rationale": "An instruction to present the decision as continue/hire/automate, matching the approved decision context and service description; no current fact, outcome or saving is asserted.",
+        "use_guidance": "Keep explicitly proposed. Do not attach any time saved, cost, or ROI figure; present the three options neutrally without hype or fabricated urgency."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "have a frequent, repeatable workflow with a\n  measurable outcome"
+          },
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step"
+          }
+        ],
+        "rationale": "A proposed set of diagnostic questions the owner can ask about their own data; it does not claim Bareni has measured such patterns, delays or error rates.",
+        "use_guidance": "Keep explicitly proposed as questions the owner answers themselves. Do not supply example delay, error-rate or savings numbers, since no approved source provides them."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI\n  fits, and—if it does—defines pilot scope, fixed price, and measures."
+          },
+          {
+            "source_id": "C02",
+            "quote": "using AI plus Zapier, Make, n8n, and small amounts of custom code"
+          },
+          {
+            "source_id": "C03",
+            "quote": "amount-based human-only approval,\n  refusal of agent approval/payment attempts, and persistent audit records work"
+          },
+          {
+            "source_id": "C03",
+            "quote": "PDF/scan ingestion and OCR are not implemented."
+          }
+        ],
+        "rationale": "The fit test and the tooling description are supported, but the descriptive statement that AI plus tools can connect, extract or classify scattered data omits the approved limits: extraction was verified only for text-based LLM invoice extraction in a synthetic demo, and OCR/scan ingestion is not implemented.",
+        "use_guidance": "Add the qualification that this describes intended, scoped build work confirmed per workflow in the diagnostic; note that Bareni's extraction work is demonstrated on text-based, digital documents only and that scan-heavy, OCR-dependent workflows are currently out of scope. Do not imply a deployed or proven capability."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "Normal sequence: free 30-minute diagnostic; free one-page pilot proposal;\n  paid working MVP in days; fixed-price pilot in weeks"
+          },
+          {
+            "source_id": "C02",
+            "quote": "Finished code is handed to the customer. Database, automation-tool, and API\n  accounts are in the customer's name from the start."
+          },
+          {
+            "source_id": "C02",
+            "quote": "Describe this as policy and no-lock-in positioning, not an absolute legal warranty."
+          },
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          }
+        ],
+        "rationale": "The diagnostic sequence, ownership policy and human-approval boundary are supported, but the claim states ownership unconditionally and mentions legal judgment; approved evidence requires ownership to be framed as policy rather than a warranty, and legal work is currently declined rather than merely human-controlled.",
+        "use_guidance": "Add the qualification that code and account ownership is Bareni's stated policy and no-lock-in positioning, not an absolute legal warranty, and that high-sensitivity legal, medical and financial work is currently outside Bareni's scope rather than an automated step with human sign-off. Keep human approval for money movement stated as mandatory."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Informational posts use no CTA or one soft closing sentence."
+          },
+          {
+            "source_id": "C02",
+            "quote": "free 30-minute diagnostic"
+          }
+        ],
+        "rationale": "A permissible next-step instruction plus a closing-format instruction; it asks the owner to audit their own workflow and correctly declines a CTA, asserting no current fact or result.",
+        "use_guidance": "Keep explicitly proposed. Honour the CTA rule: do not use \"Book a free 30-minute diagnostic\" or any purchase prompt; at most one restrained factual closing sentence describing how the diagnostic works, with no urgency or scarcity."
+      }
+    ]
+  },
+  "selected_lessons": [],
+  "register_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "planner_key": "SE-FINAL-N023_planner__a001",
+  "researcher_key": "SE-FINAL-N023_researcher__a001",
+  "writer_key": "SE-FINAL-N023_writer__a001",
+  "final_key": "SE-FINAL-M091_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-M091_gate1__a001",
+  "production_completed_at": "2026-09-08T13:44:38.505441+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts"
+}

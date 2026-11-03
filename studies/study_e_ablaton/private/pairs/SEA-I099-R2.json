@@ -1,0 +1,92 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I099-R2",
+    "item_id": "SEA-I099",
+    "repeat": 2,
+    "arm_order": [
+      "critic_on",
+      "critic_off"
+    ],
+    "content_id": "POST-6b108ca71acc6d8b4dc25d6b"
+  },
+  "arms": {
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-6b108ca71acc6d8b4dc25d6b-1",
+        "title": "What model deprecation hides in a small-business workflow",
+        "body": "Model deprecation sounds abstract until it reaches one recurring workflow. In practice, it can hide a simple cost: the thing that looked automated may need a rebuild when the model behind it changes or disappears.\n\nThat is the owner-level decision here. Before you treat AI as a replacement for manual work, ask whether the workflow is stable enough to tolerate change in the model layer, or whether it is safer to keep the task manual for now. The issue is not whether AI is useful. It is whether the business can live with the maintenance that sits underneath it.\n\nBareni’s diagnostic process starts with the recurring workflow itself. It identifies the task, says honestly whether AI fits, and then defines scope, price, and measures if a pilot makes sense. Timings are intended scopes, not guarantees. No tool removes model-deprecation risk entirely; at best, some choices can reduce how tightly one workflow depends on one model.\n\nA practical next step is to pick one workflow and ask: if the model powering it were unavailable in 12 months, what would rebuilding that piece cost in time and attention compared with keeping it manual today? That question usually clears the fog. Human approval still stays in charge of the trade-off."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-6b108ca71acc6d8b4dc25d6b-1",
+            "title": "What model deprecation hides in a small-business workflow",
+            "body": "Model deprecation sounds abstract until it reaches one recurring workflow. In practice, it can hide a simple cost: the thing that looked automated may need a rebuild when the model behind it changes or disappears.\n\nThat is the owner-level decision here. Before you treat AI as a replacement for manual work, ask whether the workflow is stable enough to tolerate change in the model layer, or whether it is safer to keep the task manual for now. The issue is not whether AI is useful. It is whether the business can live with the maintenance that sits underneath it.\n\nBareni’s diagnostic process starts with the recurring workflow itself. It identifies the task, says honestly whether AI fits, and then defines scope, price, and measures if a pilot makes sense. Timings are intended scopes, not guarantees. No tool removes model-deprecation risk entirely; at best, some choices can reduce how tightly one workflow depends on one model.\n\nA practical next step is to pick one workflow and ask: if the model powering it were unavailable in 12 months, what would rebuilding that piece cost in time and attention compared with keeping it manual today? That question usually clears the fog. Human approval still stays in charge of the trade-off."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-6b108ca71acc6d8b4dc25d6b-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": [
+            {
+              "repair_id": "P01",
+              "target_ids": [
+                "D01",
+                "D02"
+              ],
+              "instruction": "Replace the abstract middle with one concrete owner-operator workflow decision tied to model deprecation, and state plainly what is hidden in practice—for example, whether a model change affects a recurring business task, the decision to keep it manual, or the need to switch tools. Keep it grounded in a small-business workflow, not philosophical reflection.",
+              "source_ids": [
+                "BRIEF",
+                "S01"
+              ]
+            },
+            {
+              "repair_id": "P02",
+              "target_ids": [
+                "D03"
+              ],
+              "instruction": "Add one practical next step for the owner, such as checking which recurring workflow depends on the model, who approves changes, and whether the task still works if the model is removed or replaced. Make it a single bounded diagnostic question or control, not a general takeaway.",
+              "source_ids": [
+                "BRIEF",
+                "S01"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-6b108ca71acc6d8b4dc25d6b-1",
+        "title": "Model deprecation is a workflow risk, not just a tech detail",
+        "body": "If you run a small business and use AI in a workflow, model deprecation hides in the rebuild cost. A model version changes, a feature disappears, or the route you relied on no longer behaves the same. The work did not vanish. It moved back onto your desk.\n\nThat is the real decision: do you build around a tool and model setup that can be changed under you, or do you keep the process simple enough that a change is easy to absorb? For an owner, that is not an abstract AI question. It is a control question.\n\nBareni’s diagnostic starts with the recurring workflow and whether AI honestly fits it. In that conversation, the useful check is plain: if the model behind this automation were unavailable in 12 months, what would rebuilding take compared with the time you gain now?\n\nIf the answer is “not much,” the risk may be fine. If the answer is “I would have to untangle half the process,” the automation is carrying hidden complexity. No tool removes that risk entirely; Zapier, Make, and n8n can help structure the workflow, but they do not make deprecation disappear.\n\nThe practical next step is to write down that fallback cost before you approve anything. Human approval still belongs at the end."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-6b108ca71acc6d8b4dc25d6b-1",
+            "title": "Model deprecation is a workflow risk, not just a tech detail",
+            "body": "If you run a small business and use AI in a workflow, model deprecation hides in the rebuild cost. A model version changes, a feature disappears, or the route you relied on no longer behaves the same. The work did not vanish. It moved back onto your desk.\n\nThat is the real decision: do you build around a tool and model setup that can be changed under you, or do you keep the process simple enough that a change is easy to absorb? For an owner, that is not an abstract AI question. It is a control question.\n\nBareni’s diagnostic starts with the recurring workflow and whether AI honestly fits it. In that conversation, the useful check is plain: if the model behind this automation were unavailable in 12 months, what would rebuilding take compared with the time you gain now?\n\nIf the answer is “not much,” the risk may be fine. If the answer is “I would have to untangle half the process,” the automation is carrying hidden complexity. No tool removes that risk entirely; Zapier, Make, and n8n can help structure the workflow, but they do not make deprecation disappear.\n\nThe practical next step is to write down that fallback cost before you approve anything. Human approval still belongs at the end."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-6b108ca71acc6d8b4dc25d6b-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

@@ -1,0 +1,321 @@
+{
+  "task_id": "SE-FINAL-N116",
+  "batch_id": 4,
+  "condition": "natural",
+  "source_task_id": null,
+  "topic": "why table extraction is not enough",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-323",
+    "title": "Table extraction is a start, not the workflow",
+    "body": "Table extraction is useful, but it is only the first step. If all you do is pull line items into a sheet, you still have to decide what happens next: who checks it, what rule decides whether it moves on, and what gets recorded for later review. That is where the real manual work usually lives.\n\nFor a small business, the useful question is not “can we extract the table?” It is “which post-extraction step is repeated, follows a clear rule, and still eats my time?” If the answer is no, extraction alone may be enough. If the answer is yes, you may have a bounded workflow worth automating.\n\nA practical example is a back-office flow where extracted data is checked for duplicates, compared against a simple amount rule, logged, and then handed back for human approval before any money moves. Human approval stays mandatory for high-risk decisions. No spreadsheet should be left pretending to be a control system.\n\nBareni’s working policy is no-lock-in: finished code is handed over, and the customer’s database, automation-tool accounts, and API accounts are in the customer’s name from the start. The next step is simple: write down the step after extraction, the rule it follows, and the time it costs you each week. That tells you whether you need automation or just a better table."
+  },
+  "final": {
+    "item_id": "E-OPT-423",
+    "title": "Table extraction is a start, not the workflow",
+    "body": "Table extraction is useful, but it is only the first step. If all you do is pull line items into a sheet, you still have to decide what happens next: who checks it, what rule decides whether it moves on, and what gets recorded for later review. That is where the real manual work usually lives.\n\nFor a small business, the useful question is not “can we extract the table?” It is “which post-extraction step is repeated, follows a clear rule, and still eats my time?” If the answer is no, extraction alone may be enough. If the answer is yes, you may have a bounded workflow worth automating.\n\nA practical example is a back-office flow where extracted data is checked for duplicates, compared against a simple amount rule, logged, and then handed back for human approval before any money moves. Human approval stays mandatory for high-risk decisions. No spreadsheet should be left pretending to be a control system.\n\nBareni’s working policy is no-lock-in: finished code is handed over, and the customer’s database, automation-tool accounts, and API accounts are in the customer’s name from the start. The next step is simple: write down the step after extraction, the rule it follows, and the time it costs you each week. That tells you whether you need automation or just a better table."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-116",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-116",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-116-1",
+        "repairs": []
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-116",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-423",
+        "title": "Table extraction is a start, not the workflow",
+        "body": "Table extraction is useful, but it is only the first step. If all you do is pull line items into a sheet, you still have to decide what happens next: who checks it, what rule decides whether it moves on, and what gets recorded for later review. That is where the real manual work usually lives.\n\nFor a small business, the useful question is not “can we extract the table?” It is “which post-extraction step is repeated, follows a clear rule, and still eats my time?” If the answer is no, extraction alone may be enough. If the answer is yes, you may have a bounded workflow worth automating.\n\nA practical example is a back-office flow where extracted data is checked for duplicates, compared against a simple amount rule, logged, and then handed back for human approval before any money moves. Human approval stays mandatory for high-risk decisions. No spreadsheet should be left pretending to be a control system.\n\nBareni’s working policy is no-lock-in: finished code is handed over, and the customer’s database, automation-tool accounts, and API accounts are in the customer’s name from the start. The next step is simple: write down the step after extraction, the rule it follows, and the time it costs you each week. That tells you whether you need automation or just a better table."
+      },
+      "gate_key": "SE-FINAL-N116_gate1__a001"
+    }
+  ],
+  "measurement_status": "pending",
+  "planner": {
+    "item_id": "E-PLAN-523",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "Task explicitly disallows CTA; end with a neutral practical observation or next-step diagnostic question instead of a meeting prompt or booking link."
+      },
+      {
+        "lesson_id": "L02",
+        "application": "Preserve Bareni's policy position on customer data ownership and no-lock-in (C02) as stated positioning, not a warranty claim."
+      },
+      {
+        "lesson_id": "L03",
+        "application": "The abstract topic 'why table extraction is not enough' requires grounding in a concrete workflow decision; use approved evidence (C01, C02, C03) to define the boundary where extraction alone fails and where a bounded automation pilot applies."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Define table extraction as the standalone task: pulling structured data from invoices, receipts, or documents into a spreadsheet. Acknowledge this is a reasonable first attempt but identify the workflow gap—what happens after the table exists (routing, matching, approval, next action).",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C03",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Explain that small-business workflows involve repetitive decisions after extraction: matching invoice amounts to purchase orders, flagging duplicates, routing to approval, or logging the decision for audit. Extraction alone leaves these repetitive steps manual.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "State the practical diagnostic question: which post-extraction step costs the owner 2–4 hours per week and follows a consistent rule? If no answer, extraction tooling alone is fit-for-purpose. If yes, a bounded workflow pilot may apply.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C01",
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Describe the pilot scope briefly: AI plus workflow automation (using tools like Zapier, Make, or n8n) can integrate extraction, apply consistent logic (duplicate check, amount rule, audit log), and hand control back to the owner before money moves. Emphasize human approval for high-risk decisions (C04).",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L02"
+        ],
+        "evidence_ids": [
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Preserve data ownership and no-lock-in positioning (C02): the customer's database, automation-tool accounts, and API keys are in the customer's name from the start; finished code is handed over; retainer support is optional.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L02"
+        ],
+        "evidence_ids": [
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Close with a neutral next-step prompt: work through your post-extraction workflow step-by-step, identify the repeating decision rule, and note the time cost. This frame clarifies whether a bounded automation pilot fits or extraction alone is enough. No booking prompt.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C01",
+          "C05"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "Do not invent customers, deployments, results, ROI, or multi-person team. Use only self-built demo description (C03) and conceptual workflow example from persona (C01). No sales CTA."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Emphasize that human approval is mandatory for money movement (C04). Do not imply autonomous payment or high-risk decision-making by the system."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Preserve frozen persona voice (plain-speaking, technical, founder-to-founder), approved evidence status (self-built demos, not customer case studies), and human approval boundary throughout all steps."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use plain English. Keep the synthetic persona workflow example (C01) distinct from any approved feature description (C02, C03). No hype vocabulary; use concrete mechanisms only."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-623",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C03",
+            "quote": "Text-based LLM invoice extraction was verified, while the default demo uses pre-extracted files."
+          },
+          {
+            "source_id": "S01",
+            "quote": "Turn the abstract topic into a bounded Bareni workflow decision. Explain one practical next step."
+          }
+        ],
+        "rationale": "This is a planned writing instruction to define a term and frame a workflow gap, not an assertion of a current Bareni capability or customer observation. The framing is compatible with approved evidence, which separates extraction from downstream steps.",
+        "use_guidance": "Keep as an explanatory framing device only. Do not attach any observed customer experience, frequency data, or claim that Bareni has run such extraction-to-workflow projects; note that Bareni's own extraction work is a self-built demo on synthetic data, and PDF/scan ingestion and OCR are not implemented."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C03",
+            "quote": "Arithmetic checks, duplicate-invoice blocking, amount-based human-only approval, refusal of agent approval/payment attempts, and persistent audit records work."
+          },
+          {
+            "source_id": "C03",
+            "quote": "Three-way matching against purchase orders and receipts is not built."
+          },
+          {
+            "source_id": "C01",
+            "quote": "The representative pains are 8–10 hours a week of repeated customer questions, neglected sales leads, and manual invoice/data work. The 8–10 hours is a persona scenario, not a market statistic or observed customer result."
+          }
+        ],
+        "rationale": "Duplicate flagging, approval routing and audit logging are supported as demo capabilities, but the claim names matching invoice amounts to purchase orders, which approved evidence explicitly states is not built. The generalisation about small-business workflows also rests on a persona scenario, not observed data.",
+        "use_guidance": "Add the limitation before use: present the post-extraction steps as illustrative workflow examples drawn from a persona scenario, not observed customer findings, and either drop the purchase-order matching example or state plainly that three-way matching against purchase orders and receipts is not built at Bareni."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Practicality: explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step. Do not force AI where it is unsuitable."
+          },
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI\n  fits, and—if it does—defines pilot scope, fixed price, and measures."
+          }
+        ],
+        "rationale": "This is a diagnostic question and decision rule offered to the reader, not a factual assertion about Bareni or observed results. The persona focus and offer model permit an honest fit/no-fit test.",
+        "use_guidance": "Keep explicitly as a self-check the reader applies. Present the 2–4 hours per week as the reader's own threshold to estimate, never as a Bareni benchmark, market statistic or observed saving, and keep the honest 'AI may not fit' branch intact."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "general document, email, CRM, and back-office\n  workflows using AI plus Zapier, Make, n8n, and small amounts of custom code"
+          },
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C03",
+            "quote": "The blocked payment demonstration is a manual trigger and simulated, not a real\n  transfer."
+          },
+          {
+            "source_id": "C02",
+            "quote": "Timings are intended scopes, not guarantees."
+          }
+        ],
+        "rationale": "The toolset, the control set (duplicate check, amount rule, audit log) and the human-approval boundary are supported, but the claim describes a pilot as integrating extraction and handing back control without stating that these controls exist only in a synthetic-data demo and that no real payment has ever been executed or blocked in production.",
+        "use_guidance": "Add the qualification: describe this as intended pilot scope, state that the duplicate check, amount-based human-only approval and audit records were built and shown in a self-built demo on entirely synthetic data with a simulated, manually triggered blocked payment, and that PDF/scan ingestion and OCR are not implemented. Keep human approval before money movement as a mandatory control, not a configurable option."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "Finished code is handed to the customer. Database, automation-tool, and API\n  accounts are in the customer's name from the start. Retainer support is optional.\n  Describe this as policy and no-lock-in positioning, not an absolute legal warranty."
+          }
+        ],
+        "rationale": "The core ownership and no-lock-in content matches approved evidence, but the claim states it as flat fact without the required qualifier that this is policy and positioning rather than an absolute legal warranty.",
+        "use_guidance": "Add the specified qualifier: frame it as Bareni's working policy and no-lock-in positioning, not a guarantee or warranty. Use 'API accounts' as in the source rather than broadening to 'API keys', and avoid implying existing customers hold such accounts today."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          },
+          {
+            "source_id": "S01",
+            "quote": "Practicality: explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step. Do not force AI where it is unsuitable."
+          }
+        ],
+        "rationale": "This is a proposed closing next step for the reader to perform manually, with no booking or meeting prompt, which matches the task's no-CTA rule.",
+        "use_guidance": "Keep as a neutral manual next step the reader performs alone. Do not add any invitation to book a diagnostic, discuss the situation or continue the conversation, and do not imply Bareni has measured such time costs; the reader supplies their own estimate."
+      }
+    ]
+  },
+  "selected_lessons": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. This includes indirect meeting prompts and direct brand-level offers such as a free 30-minute diagnostic. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025",
+        "B3-SUMMARY",
+        "SE-FINAL-N079"
+      ]
+    },
+    {
+      "lesson_id": "L02",
+      "text": "When approved evidence presents an operational practice as policy or positioning, keep that qualifier in the copy. Do not rewrite it as an absolute guarantee or warranty-level statement.",
+      "source_event_ids": [
+        "B3-SUMMARY",
+        "SE-FINAL-N080"
+      ]
+    },
+    {
+      "lesson_id": "L03",
+      "text": "If the source set does not support a substantive explanatory claim, replace it with a neutral workflow prompt or decision step rather than filling the gap with general background explanation.",
+      "source_event_ids": [
+        "B3-SUMMARY",
+        "SE-FINAL-N091"
+      ]
+    }
+  ],
+  "register_sha256": "119720de77d8c13ba7ec5ca4065775e8d4ac629796a073c799f5a0be4d935e35",
+  "planner_key": "SE-FINAL-N116_planner__a001",
+  "researcher_key": "SE-FINAL-N116_researcher__a001",
+  "writer_key": "SE-FINAL-N116_writer__a001",
+  "final_key": "SE-FINAL-N116_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-N116_gate1__a001",
+  "production_completed_at": "2026-09-08T13:19:30.172375+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts"
+}

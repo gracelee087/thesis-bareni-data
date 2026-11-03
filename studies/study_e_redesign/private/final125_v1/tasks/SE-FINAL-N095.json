@@ -1,0 +1,362 @@
+{
+  "task_id": "SE-FINAL-N095",
+  "batch_id": 4,
+  "condition": "natural",
+  "source_task_id": null,
+  "topic": "rethinking rollback drills",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-302",
+    "title": "Rollback drills should start at the approval boundary",
+    "body": "If you are rethinking rollback drills, the useful question is not “can we roll back?” It is: when a pilot automation does the wrong thing, who notices first, and what can they stop without waiting on anyone else?\n\nFor a small business, I would treat rollback as a workflow decision, not a technical slogan. Bareni’s operating model keeps the customer’s database, automation-tool, and API accounts in the customer’s name from day one, with finished code handed over. That is policy and no-lock-in positioning, not a legal warranty, but it does point to the right control: the owner should be able to pause, change, or disable the workflow in their own environment.\n\nKeep one line non-negotiable: anything that moves money or makes another high-risk decision stays under human approval. No exceptions, no clever detours, no “the agent said it was fine.”\n\nThe practical next step is simple. Pick one recurring workflow and write down the approval boundary before you build: what must always stay human, what can be automated, and who checks the output if it looks off. If that boundary is unclear, the rollback drill is really a design problem. Better to find that out on paper than after the polite little machine has made itself too comfortable."
+  },
+  "final": {
+    "item_id": "E-OPT-402",
+    "title": "Rollback drills start at the approval boundary",
+    "body": "If you are rethinking rollback drills, the useful question is not “can we roll back?” It is: when a pilot automation does the wrong thing, who notices first, and what can they stop without waiting on anyone else?\n\nFor a small business, I would treat rollback as a workflow decision, not a technical slogan. Bareni’s model keeps the customer’s database, automation-tool, and API accounts in the customer’s name from day one, and finished code is handed over. That is Bareni’s policy and no-lock-in positioning, not an absolute legal warranty, but it points to the right control: the owner should be able to pause, change, or disable the workflow in their own environment.\n\nKeep one line non-negotiable: anything that moves money or makes another high-risk decision stays under human approval. No exceptions, no clever detours, no “the agent said it was fine.”\n\nThe practical next step is simple. Pick one recurring workflow and write down the approval boundary before you build: what must always stay human, what can be automated, and who checks the output if it looks off. If that boundary is unclear, the rollback drill is really a design problem. Better to find that out on paper than after the polite little machine has made itself too comfortable."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-095",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-095",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-095-1",
+        "repairs": []
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-095",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-402",
+        "title": "Rollback drills start at the approval boundary",
+        "body": "If you are rethinking rollback drills, the useful question is not “can we roll back?” It is: when a pilot automation does the wrong thing, who notices first, and what can they stop without waiting on anyone else?\n\nFor a small business, I would treat rollback as a workflow decision, not a technical slogan. Bareni’s model keeps the customer’s database, automation-tool, and API accounts in the customer’s name from day one, and finished code is handed over. That is Bareni’s policy and no-lock-in positioning, not an absolute legal warranty, but it points to the right control: the owner should be able to pause, change, or disable the workflow in their own environment.\n\nKeep one line non-negotiable: anything that moves money or makes another high-risk decision stays under human approval. No exceptions, no clever detours, no “the agent said it was fine.”\n\nThe practical next step is simple. Pick one recurring workflow and write down the approval boundary before you build: what must always stay human, what can be automated, and who checks the output if it looks off. If that boundary is unclear, the rollback drill is really a design problem. Better to find that out on paper than after the polite little machine has made itself too comfortable."
+      },
+      "gate_key": "SE-FINAL-N095_gate1__a001"
+    }
+  ],
+  "measurement_status": "complete",
+  "planner": {
+    "item_id": "E-PLAN-502",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task rules out a CTA. L01 confirms that diagnostic booking invitations and meeting prompts are CTAs and must be avoided. The closing will be a neutral practical observation tied to the next workflow decision, not a call to action."
+      },
+      {
+        "lesson_id": "L02",
+        "application": "C02 describes Bareni's hands-on service and no-lock-in positioning as 'policy and no-lock-in positioning, not an absolute legal warranty.' L02 requires preserving that qualifier when rollback drills relate to customer control and system handover, so the framing stays bounded and honest."
+      },
+      {
+        "lesson_id": "L03",
+        "application": "The abstract topic 'rethinking rollback drills' lacks direct evidence in the source set. L03 instructs replacing unsupported claims with a workflow prompt. The instruction will frame rollback drills as a practical diagnostic question—what does the owner's current approval boundary look like after automation?—rather than inventing a rollback strategy."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Acknowledge the abstract topic by naming one concrete operational risk: after a pilot automation is deployed, what happens if the workflow produces a wrong result or the owner wants to pause it? This is the practical question that 'rethinking rollback drills' resolves to.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Explain that in Bareni's model, the customer retains full database, automation-tool, and API account ownership from day one. Present this as the operational foundation for rollback: the customer controls the system directly and can disable, modify, or reverse any automation without waiting for external approval.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L02"
+        ],
+        "evidence_ids": [
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "State that human approval is mandatory for any automation that moves money or makes high-stakes decisions. This means rollback for payment, refund, or contract actions always stays in the owner's hands; the automation never makes those moves without explicit approval.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Define one diagnostic question the owner should answer during pilot design: 'If this automation produces an unexpected result, who reviews the output and how long can we tolerate before I catch it?' This determines the monitoring, approval gates, and safe-to-rollback scope for the specific workflow.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Note that a pilot is typically scoped to one small, repeatable workflow with measurable input and output. Starting narrow means rollback is simple—the automation either runs or stops—and the owner learns whether AI fits before scaling.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Close with the practical next step: identify one recurring workflow where the owner spends 2–5 hours a week on the same task, then map out the approval threshold—what must always stay human, and what can be automated safely. That clarity answers the rollback question before build starts.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C01",
+          "C02"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No customer names, deployment results, productivity claims, or sales CTA included. The workflow and rollback mechanism are described as Bareni's policy and operational model, not as observed customer outcomes."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "All human-approval boundaries and money-movement safeguards are preserved. P03 explicitly states that payment automation requires human sign-off; rollback logic keeps the owner in control."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "The frozen persona (small-business owner, bounded decision-making, human authority retained) is maintained throughout. The topic is reframed as a concrete workflow decision, and the persona's control and approval role remain central."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Plain English is used throughout. P01–P06 use neutral workflow language and diagnostic questions rather than hypothetical claims. Bareni's policy (customer ownership, approval requirements) is kept distinct from general automation advice."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-602",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Turn the abstract topic into a bounded Bareni workflow decision. Explain one practical next step."
+          },
+          {
+            "source_id": "C02",
+            "quote": "paid working MVP in days; fixed-price pilot in weeks"
+          }
+        ],
+        "rationale": "This is a framing device and diagnostic question about a hypothetical post-pilot situation, not an assertion that any pilot has been deployed or that a wrong result has been observed.",
+        "use_guidance": "Keep as a hypothetical framing question. Do not phrase it so it implies an existing deployed customer pilot; keep the pilot scenario conditional."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "Finished code is handed to the customer. Database, automation-tool, and API accounts are in the customer's name from the start. Retainer support is optional."
+          },
+          {
+            "source_id": "C02",
+            "quote": "Describe this as policy and no-lock-in positioning, not an absolute legal warranty."
+          }
+        ],
+        "rationale": "The core account-ownership statement is supported, but the claim states it as an unqualified capability guarantee ('retains full ... ownership', 'can disable, modify, or reverse any automation'), while the evidence requires it be presented as policy and no-lock-in positioning rather than an absolute warranty.",
+        "use_guidance": "Add the qualifier that this is Bareni's stated policy and no-lock-in positioning, not a legal warranty. Avoid absolutes such as 'full' and 'any automation'; describe accounts being in the customer's name from the start and code being handed over."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "SUPPORTED",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C03",
+            "quote": "amount-based human-only approval, refusal of agent approval/payment attempts"
+          }
+        ],
+        "rationale": "Approved evidence states directly that human approval is mandatory for money movement and other high-risk decisions; the claim asserts exactly that scope without overreach.",
+        "use_guidance": "Retain within scope. Do not extend it into a claim about real payment execution or customer deployments; the blocked-payment behaviour in the demo is simulated."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits, and—if it does—defines pilot scope, fixed price, and measures."
+          },
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step"
+          }
+        ],
+        "rationale": "This supplies a diagnostic question for the owner to answer during pilot design; it recommends a step rather than asserting an existing monitoring feature or observed practice.",
+        "use_guidance": "Keep explicitly as a question to work through in the diagnostic. Do not imply Bareni has built monitoring, alerting, or automated rollback tooling."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits, and—if it does—defines pilot scope, fixed price, and measures."
+          },
+          {
+            "source_id": "C01",
+            "quote": "have a frequent, repeatable workflow with a measurable outcome"
+          },
+          {
+            "source_id": "C02",
+            "quote": "Timings are intended scopes, not guarantees."
+          }
+        ],
+        "rationale": "The narrow-pilot scoping is supported as the intended model, but 'typically' reads as observed practice across engagements; the intended-scope status must be stated since no pilots have been run.",
+        "use_guidance": "Add that this is the intended pilot scope and not a description of completed customer pilots. Avoid implying an observed pattern or a guaranteed simple rollback outcome."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits"
+          },
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          }
+        ],
+        "rationale": "This is a permissible practical next step for the reader, but the embedded '2–5 hours a week' figure has no source; the approved persona figure is 8–10 hours a week as a persona scenario, not a threshold.",
+        "use_guidance": "Keep as a proposed next step with no CTA, per the task's CTA rule. Remove the unsourced 2–5 hours figure or replace it with a non-numeric description such as a frequent, repeatable task; if any hours figure is used, mark it as a persona scenario, not a measurement."
+      }
+    ]
+  },
+  "selected_lessons": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. This includes indirect meeting prompts and direct brand-level offers such as a free 30-minute diagnostic. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025",
+        "B3-SUMMARY",
+        "SE-FINAL-N079"
+      ]
+    },
+    {
+      "lesson_id": "L02",
+      "text": "When approved evidence presents an operational practice as policy or positioning, keep that qualifier in the copy. Do not rewrite it as an absolute guarantee or warranty-level statement.",
+      "source_event_ids": [
+        "B3-SUMMARY",
+        "SE-FINAL-N080"
+      ]
+    },
+    {
+      "lesson_id": "L03",
+      "text": "If the source set does not support a substantive explanatory claim, replace it with a neutral workflow prompt or decision step rather than filling the gap with general background explanation.",
+      "source_event_ids": [
+        "B3-SUMMARY",
+        "SE-FINAL-N091"
+      ]
+    }
+  ],
+  "register_sha256": "119720de77d8c13ba7ec5ca4065775e8d4ac629796a073c799f5a0be4d935e35",
+  "planner_key": "SE-FINAL-N095_planner__a001",
+  "researcher_key": "SE-FINAL-N095_researcher__a001",
+  "writer_key": "SE-FINAL-N095_writer__a001",
+  "final_key": "SE-FINAL-N095_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-N095_gate1__a001",
+  "production_completed_at": "2026-09-08T13:06:19.812854+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts",
+  "initial_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-095",
+    "scores": {
+      "persona_fit": 4,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Accurately targets the small business owner and aligns with Bareni's no-lock-in model and calm tone, though it uses first-person singular ('I') once rather than Bareni's standard public 'we'.",
+      "clarity": "Logical, clean progression from reframing the abstract rollback concept down to a concrete paper-level boundary test.",
+      "actionability": "Provides a distinct, feasible next step for owner-operators to map approval boundaries prior to building, with strict guardrails on money movement.",
+      "factual_grounding": "All references to Bareni's account ownership, code handover, and human-in-the-loop policies faithfully mirror the provided specification without inventing claims."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 19,
+    "pass": true,
+    "low_quality": false
+  },
+  "final_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-095",
+    "scores": {
+      "persona_fit": 4,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Accurately targets the small business owner and respects CTA and boundary rules. Uses first-person singular 'I' once instead of standard 'we', but voice remains calm and practical.",
+      "clarity": "The main point is immediately clear, logically structured, and explains rollback controls in plain, direct language.",
+      "actionability": "Gives a concrete, bounded next step for small business owners: defining and documenting the approval boundary on paper before automating.",
+      "factual_grounding": "Faithfully reflects Bareni's account ownership policy, qualification as policy rather than warranty, and strict human-in-the-loop boundaries for money movement."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 19,
+    "pass": true,
+    "low_quality": false
+  },
+  "evaluation_reused": false,
+  "evaluation_keys": [
+    "SE-FINAL-N095_eval_initial__a001",
+    "SE-FINAL-N095_eval_final__a001"
+  ],
+  "completed_at": "2026-09-08T13:06:31.330881+00:00"
+}

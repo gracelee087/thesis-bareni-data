@@ -1,0 +1,107 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I027-R1",
+    "item_id": "SEA-I027",
+    "repeat": 1,
+    "arm_order": [
+      "critic_on",
+      "critic_off"
+    ],
+    "content_id": "POST-61b5daa63c744ec73e447f97"
+  },
+  "arms": {
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-61b5daa63c744ec73e447f97-1",
+        "title": "Rollback drills should define the owner and trigger",
+        "body": "If you are rethinking rollback drills, start with a simple question: when a workflow goes wrong, who is allowed to stop it, and what triggers that stop?\n\nThat is the useful version for a small business. It turns a vague idea into one bounded decision about control, not theory.\n\nFor Bareni, the basic setup is straightforward: the customer’s database, automation-tool, and API accounts are in the customer’s name from the start, and finished code is handed over. That is policy and no-lock-in positioning, not a legal warranty. In plain terms, the owner keeps the keys.\n\nHuman approval still matters for money movement and other high-risk decisions. A rollback drill should reflect that. If the workflow touches payments, refunds, or anything sensitive, the owner should be the one who approves the stop or reversal.\n\nThe practical next step is to take one recurring workflow and write down two things: who reviews the output if it looks wrong, and what condition tells you to pause or reverse it. If you cannot answer those two questions cleanly, the drill is not ready yet."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-61b5daa63c744ec73e447f97-1",
+            "title": "Rollback drills should define the owner and trigger",
+            "body": "If you are rethinking rollback drills, start with a simple question: when a workflow goes wrong, who is allowed to stop it, and what triggers that stop?\n\nThat is the useful version for a small business. It turns a vague idea into one bounded decision about control, not theory.\n\nFor Bareni, the basic setup is straightforward: the customer’s database, automation-tool, and API accounts are in the customer’s name from the start, and finished code is handed over. That is policy and no-lock-in positioning, not a legal warranty. In plain terms, the owner keeps the keys.\n\nHuman approval still matters for money movement and other high-risk decisions. A rollback drill should reflect that. If the workflow touches payments, refunds, or anything sensitive, the owner should be the one who approves the stop or reversal.\n\nThe practical next step is to take one recurring workflow and write down two things: who reviews the output if it looks wrong, and what condition tells you to pause or reverse it. If you cannot answer those two questions cleanly, the drill is not ready yet."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-61b5daa63c744ec73e447f97-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": [
+            {
+              "repair_id": "P01",
+              "target_ids": [
+                "D01",
+                "D02",
+                "D03"
+              ],
+              "instruction": "Replace the abstract opening and closing with one concrete, bounded workflow decision about rollback drills for a 1–10 person owner-operator. State plainly what should be reviewed, what decision is being made, and why it matters in day-to-day work, without drifting into generic uncertainty language.",
+              "source_ids": [
+                "BRIEF",
+                "S01",
+                "C01",
+                "C05"
+              ]
+            },
+            {
+              "repair_id": "P02",
+              "target_ids": [
+                "D02"
+              ],
+              "instruction": "Make the takeaway immediately clear in the first paragraph: name the rollback drill in practical terms and explain the specific question the owner should answer. Remove vague phrases such as \"from one perspective\" and \"its relevance depends on circumstances\" unless they are tied to a concrete operational choice.",
+              "source_ids": [
+                "BRIEF",
+                "S01"
+              ]
+            },
+            {
+              "repair_id": "P03",
+              "target_ids": [
+                "D03"
+              ],
+              "instruction": "Add one practical next step at the end, framed as a simple decision rule or diagnostic question, for example: identify one rollback drill, ask whether it has a defined owner and trigger, and if not, rewrite it before the next change. Keep it as a bounded next action, not a strategy section.",
+              "source_ids": [
+                "BRIEF",
+                "S01",
+                "C02"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-61b5daa63c744ec73e447f97-1",
+        "title": "Rollback drills start with the approval boundary",
+        "body": "If you are rethinking rollback drills, start with one question: what has to stay human when the automation goes wrong?\n\nFor a small business owner, rollback is not a theory exercise. It is the point where you decide who can pause the workflow, who reviews the output, and which steps never leave your hands. That matters most when the process touches money or another high-risk decision, because human approval stays mandatory there.\n\nBareni’s working model keeps the system in the customer’s name from the start, and finished code is handed over. That is policy and no-lock-in positioning, not a warranty. In practice, it means rollback planning starts before build: define the one recurring workflow, the point where you would stop it, and the check that tells you something is off.\n\nThe next step is simple: pick one repeatable workflow and write down the approval boundary in plain English. What stays human, what can be automated, and who catches the unexpected result? Once that is clear, rollback drills stop being a vague idea and become a design decision."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-61b5daa63c744ec73e447f97-1",
+            "title": "Rollback drills start with the approval boundary",
+            "body": "If you are rethinking rollback drills, start with one question: what has to stay human when the automation goes wrong?\n\nFor a small business owner, rollback is not a theory exercise. It is the point where you decide who can pause the workflow, who reviews the output, and which steps never leave your hands. That matters most when the process touches money or another high-risk decision, because human approval stays mandatory there.\n\nBareni’s working model keeps the system in the customer’s name from the start, and finished code is handed over. That is policy and no-lock-in positioning, not a warranty. In practice, it means rollback planning starts before build: define the one recurring workflow, the point where you would stop it, and the check that tells you something is off.\n\nThe next step is simple: pick one repeatable workflow and write down the approval boundary in plain English. What stays human, what can be automated, and who catches the unexpected result? Once that is clear, rollback drills stop being a vague idea and become a design decision."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-61b5daa63c744ec73e447f97-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

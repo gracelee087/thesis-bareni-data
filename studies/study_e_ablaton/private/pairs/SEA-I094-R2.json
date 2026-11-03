@@ -1,0 +1,68 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I094-R2",
+    "item_id": "SEA-I094",
+    "repeat": 2,
+    "arm_order": [
+      "critic_off",
+      "critic_on"
+    ],
+    "content_id": "POST-0e08c019fa03be50e27a8039"
+  },
+  "arms": {
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-0e08c019fa03be50e27a8039-1",
+        "title": "Design against the error loop",
+        "body": "When a workflow keeps correcting its own mistakes, the problem is usually not the last error. It is the loop that sends bad data back into the same process.\n\nThe bounded question I’d ask is simple: which repeated manual task creates the next round of rework? If invoice details are entered by hand and later reconciled by hand because the first entry was incomplete or misclassified, that is the loop to design against. I am not describing a customer result here, just a workflow pattern to look for.\n\nBefore you add AI, check whether the workflow is actually a fit. Is it repetitive, does it produce a measurable outcome, and does it already live in digital documents or SaaS tools? If not, AI is probably the wrong tool. Change the process first.\n\nIf it does fit, pick one error-blocking control before anything else. Duplicate detection, mandatory field validation, or human approval before a high-risk step are all reasonable design choices. The point is to catch the mistake before it cycles back. Human approval stays mandatory for money movement and other high-risk decisions. Boring, but usually the right kind of boring.\n\nThen scope a pilot around one workflow and one control. Not the whole business. One loop, one gate, one clear place to stop the error from feeding itself."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-0e08c019fa03be50e27a8039-1",
+            "title": "Design against the error loop",
+            "body": "When a workflow keeps correcting its own mistakes, the problem is usually not the last error. It is the loop that sends bad data back into the same process.\n\nThe bounded question I’d ask is simple: which repeated manual task creates the next round of rework? If invoice details are entered by hand and later reconciled by hand because the first entry was incomplete or misclassified, that is the loop to design against. I am not describing a customer result here, just a workflow pattern to look for.\n\nBefore you add AI, check whether the workflow is actually a fit. Is it repetitive, does it produce a measurable outcome, and does it already live in digital documents or SaaS tools? If not, AI is probably the wrong tool. Change the process first.\n\nIf it does fit, pick one error-blocking control before anything else. Duplicate detection, mandatory field validation, or human approval before a high-risk step are all reasonable design choices. The point is to catch the mistake before it cycles back. Human approval stays mandatory for money movement and other high-risk decisions. Boring, but usually the right kind of boring.\n\nThen scope a pilot around one workflow and one control. Not the whole business. One loop, one gate, one clear place to stop the error from feeding itself."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-0e08c019fa03be50e27a8039-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    },
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-0e08c019fa03be50e27a8039-1",
+        "title": "Design the control that breaks the loop",
+        "body": "When a workflow keeps correcting its own mistakes, the problem is usually not the last error. It is the loop that sends bad data back into the same process.\n\nThe bounded question is simple: which repeated manual task creates the next round of rework? A common example is manual invoice entry that later needs manual reconciliation because the first pass was incomplete or misclassified. That is the loop to design against.\n\nBefore you reach for AI, check whether the workflow is actually a fit: is it repetitive, does it produce a measurable outcome, and does it already live in digital documents or SaaS tools? If not, the cleaner move is to change the process, not add software.\n\nIf it is a fit, define one error-blocking control before anything else. That might be duplicate detection, mandatory field validation, or human approval before a high-risk step. For money movement, human approval stays mandatory. The point is to catch the mistake before it gets a second turn.\n\nThen scope one pilot around one workflow and one control. If you want a practical starting point, map the step where bad data enters, the point where it comes back, and the single gate that should stop it.】【。"
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-0e08c019fa03be50e27a8039-1",
+            "title": "Design the control that breaks the loop",
+            "body": "When a workflow keeps correcting its own mistakes, the problem is usually not the last error. It is the loop that sends bad data back into the same process.\n\nThe bounded question is simple: which repeated manual task creates the next round of rework? A common example is manual invoice entry that later needs manual reconciliation because the first pass was incomplete or misclassified. That is the loop to design against.\n\nBefore you reach for AI, check whether the workflow is actually a fit: is it repetitive, does it produce a measurable outcome, and does it already live in digital documents or SaaS tools? If not, the cleaner move is to change the process, not add software.\n\nIf it is a fit, define one error-blocking control before anything else. That might be duplicate detection, mandatory field validation, or human approval before a high-risk step. For money movement, human approval stays mandatory. The point is to catch the mistake before it gets a second turn.\n\nThen scope one pilot around one workflow and one control. If you want a practical starting point, map the step where bad data enters, the point where it comes back, and the single gate that should stop it.】【。"
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-0e08c019fa03be50e27a8039-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

@@ -1,0 +1,179 @@
+{
+  "status": "success",
+  "usage": {
+    "input_tokens": 7886,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1636,
+    "reasoning_tokens": null
+  },
+  "cost_usd": 0.08033,
+  "output": {
+    "item_id": "E-RES-614",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits"
+          },
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step"
+          }
+        ],
+        "rationale": "This is a diagnostic instruction and set of questions to the reader, not an assertion of a current capability, customer or observed result. It matches the approved diagnostic focus on identifying one recurring workflow.",
+        "use_guidance": "Keep as an explicitly framed diagnostic question for the reader. Do not attach any implied outcome, saving or claim that Bareni has run this with customers, and do not turn it into a booking or meeting prompt (no CTA authorised)."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C03",
+            "quote": "amount-based human-only approval"
+          }
+        ],
+        "rationale": "An instruction to define a decision threshold and separate low-risk repetition from decisions needing human sign-off; it proposes a workflow step rather than reporting an implemented system.",
+        "use_guidance": "Keep as a proposed decision step. Preserve the mandatory human-approval boundary for money movement and other high-risk decisions; do not suggest that any threshold permits autonomous payment or approval."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C03",
+            "quote": "persistent audit records work"
+          },
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step"
+          }
+        ],
+        "rationale": "A mapping instruction about the reader's existing error detection and audit controls; it does not assert Bareni capability, deployment or observed result.",
+        "use_guidance": "Keep as a proposed control-mapping step. Frame audit/approval capability only as demonstrated in Bareni's synthetic AP demo if referenced at all; do not imply automation has replaced human verification anywhere in practice."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "have a frequent, repeatable workflow with a\n  measurable outcome"
+          },
+          {
+            "source_id": "C02",
+            "quote": "says honestly whether AI fits"
+          }
+        ],
+        "rationale": "A fit-assessment instruction with an honest exclusion path (manual work remains when the rule is subjective). It proposes criteria rather than asserting a proven capability.",
+        "use_guidance": "Keep proposed and conditional. Use generic examples only as illustrations; do not imply working OCR/scan ingestion or three-way matching, since those are not implemented, and avoid framing 'AI can assist' as a guaranteed result."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "Finished code is handed to the customer. Database, automation-tool, and API\n  accounts are in the customer's name from the start."
+          },
+          {
+            "source_id": "C02",
+            "quote": "Describe this as policy and no-lock-in positioning, not an absolute legal warranty."
+          },
+          {
+            "source_id": "C02",
+            "quote": "Timings are intended scopes, not guarantees."
+          }
+        ],
+        "rationale": "The ownership and approval prompt is supported in core, but the claim as written omits the required qualifier that customer-name accounts and code handover are Bareni policy and no-lock-in positioning rather than a warranty, and that cost/timeline references are intended scopes, not guarantees.",
+        "use_guidance": "Add the qualifier: state ownership of data, accounts and code as Bareni's stated policy/no-lock-in positioning, not a legal guarantee, and present any price or timeline framing as intended scope rather than a guaranteed figure. Keep final approval authority with the human owner. Do not state or imply any specific cost, saving or hiring comparison number."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "Normal sequence: free 30-minute diagnostic; free one-page pilot proposal"
+          },
+          {
+            "source_id": "S01",
+            "quote": "Turn the abstract topic into a bounded Bareni workflow decision. Explain one practical next step."
+          }
+        ],
+        "rationale": "A manual, self-serve documentation step the reader performs; it is a proposed next step, not a claim about existing software or customer work.",
+        "use_guidance": "Keep as the single practical next step, framed as a written note the reader makes themselves. Do not invite the reader to send it, book a call or discuss it with Bareni, since the task authorises no CTA; the reader's own time-cost and error entries are their data, not Bareni evidence."
+      }
+    ]
+  },
+  "raw_text": "{\"item_id\":\"E-RES-614\",\"ledger\":[{\"claim_id\":\"Q01\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C02\",\"quote\":\"The diagnostic identifies the one recurring workflow, says honestly whether AI fits\"},{\"source_id\":\"S01\",\"quote\":\"explain one observable workflow decision, threshold, diagnostic question,\\n  control, or next step\"}],\"rationale\":\"This is a diagnostic instruction and set of questions to the reader, not an assertion of a current capability, customer or observed result. It matches the approved diagnostic focus on identifying one recurring workflow.\",\"use_guidance\":\"Keep as an explicitly framed diagnostic question for the reader. Do not attach any implied outcome, saving or claim that Bareni has run this with customers, and do not turn it into a booking or meeting prompt (no CTA authorised).\"},{\"claim_id\":\"Q02\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C04\",\"quote\":\"Human approval is mandatory for money movement and other high-risk decisions.\"},{\"source_id\":\"C03\",\"quote\":\"amount-based human-only approval\"}],\"rationale\":\"An instruction to define a decision threshold and separate low-risk repetition from decisions needing human sign-off; it proposes a workflow step rather than reporting an implemented system.\",\"use_guidance\":\"Keep as a proposed decision step. Preserve the mandatory human-approval boundary for money movement and other high-risk decisions; do not suggest that any threshold permits autonomous payment or approval.\"},{\"claim_id\":\"Q03\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C03\",\"quote\":\"persistent audit records work\"},{\"source_id\":\"S01\",\"quote\":\"explain one observable workflow decision, threshold, diagnostic question,\\n  control, or next step\"}],\"rationale\":\"A mapping instruction about the reader's existing error detection and audit controls; it does not assert Bareni capability, deployment or observed result.\",\"use_guidance\":\"Keep as a proposed control-mapping step. Frame audit/approval capability only as demonstrated in Bareni's synthetic AP demo if referenced at all; do not imply automation has replaced human verification anywhere in practice.\"},{\"claim_id\":\"Q04\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C01\",\"quote\":\"have a frequent, repeatable workflow with a\\n  measurable outcome\"},{\"source_id\":\"C02\",\"quote\":\"says honestly whether AI fits\"}],\"rationale\":\"A fit-assessment instruction with an honest exclusion path (manual work remains when the rule is subjective). It proposes criteria rather than asserting a proven capability.\",\"use_guidance\":\"Keep proposed and conditional. Use generic examples only as illustrations; do not imply working OCR/scan ingestion or three-way matching, since those are not implemented, and avoid framing 'AI can assist' as a guaranteed result.\"},{\"claim_id\":\"Q05\",\"category\":\"QUALIFICATIONS\",\"evidence\":[{\"source_id\":\"C02\",\"quote\":\"Finished code is handed to the customer. Database, automation-tool, and API\\n  accounts are in the customer's name from the start.\"},{\"source_id\":\"C02\",\"quote\":\"Describe this as policy and no-lock-in positioning, not an absolute legal warranty.\"},{\"source_id\":\"C02\",\"quote\":\"Timings are intended scopes, not guarantees.\"}],\"rationale\":\"The ownership and approval prompt is supported in core, but the claim as written omits the required qualifier that customer-name accounts and code handover are Bareni policy and no-lock-in positioning rather than a warranty, and that cost/timeline references are intended scopes, not guarantees.\",\"use_guidance\":\"Add the qualifier: state ownership of data, accounts and code as Bareni's stated policy/no-lock-in positioning, not a legal guarantee, and present any price or timeline framing as intended scope rather than a guaranteed figure. Keep final approval authority with the human owner. Do not state or imply any specific cost, saving or hiring comparison number.\"},{\"claim_id\":\"Q06\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C02\",\"quote\":\"Normal sequence: free 30-minute diagnostic; free one-page pilot proposal\"},{\"source_id\":\"S01\",\"quote\":\"Turn the abstract topic into a bounded Bareni workflow decision. Explain one practical next step.\"}],\"rationale\":\"A manual, self-serve documentation step the reader performs; it is a proposed next step, not a claim about existing software or customer work.\",\"use_guidance\":\"Keep as the single practical next step, framed as a written note the reader makes themselves. Do not invite the reader to send it, book a call or discuss it with Bareni, since the task authorises no CTA; the reader's own time-cost and error entries are their data, not Bareni evidence.\"}]}",
+  "provider_response": {
+    "id": "msg_011Cer2odBLz2jYrtMPLmKUq",
+    "container": null,
+    "content": [
+      {
+        "citations": null,
+        "text": "{\"item_id\":\"E-RES-614\",\"ledger\":[{\"claim_id\":\"Q01\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C02\",\"quote\":\"The diagnostic identifies the one recurring workflow, says honestly whether AI fits\"},{\"source_id\":\"S01\",\"quote\":\"explain one observable workflow decision, threshold, diagnostic question,\\n  control, or next step\"}],\"rationale\":\"This is a diagnostic instruction and set of questions to the reader, not an assertion of a current capability, customer or observed result. It matches the approved diagnostic focus on identifying one recurring workflow.\",\"use_guidance\":\"Keep as an explicitly framed diagnostic question for the reader. Do not attach any implied outcome, saving or claim that Bareni has run this with customers, and do not turn it into a booking or meeting prompt (no CTA authorised).\"},{\"claim_id\":\"Q02\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C04\",\"quote\":\"Human approval is mandatory for money movement and other high-risk decisions.\"},{\"source_id\":\"C03\",\"quote\":\"amount-based human-only approval\"}],\"rationale\":\"An instruction to define a decision threshold and separate low-risk repetition from decisions needing human sign-off; it proposes a workflow step rather than reporting an implemented system.\",\"use_guidance\":\"Keep as a proposed decision step. Preserve the mandatory human-approval boundary for money movement and other high-risk decisions; do not suggest that any threshold permits autonomous payment or approval.\"},{\"claim_id\":\"Q03\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C03\",\"quote\":\"persistent audit records work\"},{\"source_id\":\"S01\",\"quote\":\"explain one observable workflow decision, threshold, diagnostic question,\\n  control, or next step\"}],\"rationale\":\"A mapping instruction about the reader's existing error detection and audit controls; it does not assert Bareni capability, deployment or observed result.\",\"use_guidance\":\"Keep as a proposed control-mapping step. Frame audit/approval capability only as demonstrated in Bareni's synthetic AP demo if referenced at all; do not imply automation has replaced human verification anywhere in practice.\"},{\"claim_id\":\"Q04\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C01\",\"quote\":\"have a frequent, repeatable workflow with a\\n  measurable outcome\"},{\"source_id\":\"C02\",\"quote\":\"says honestly whether AI fits\"}],\"rationale\":\"A fit-assessment instruction with an honest exclusion path (manual work remains when the rule is subjective). It proposes criteria rather than asserting a proven capability.\",\"use_guidance\":\"Keep proposed and conditional. Use generic examples only as illustrations; do not imply working OCR/scan ingestion or three-way matching, since those are not implemented, and avoid framing 'AI can assist' as a guaranteed result.\"},{\"claim_id\":\"Q05\",\"category\":\"QUALIFICATIONS\",\"evidence\":[{\"source_id\":\"C02\",\"quote\":\"Finished code is handed to the customer. Database, automation-tool, and API\\n  accounts are in the customer's name from the start.\"},{\"source_id\":\"C02\",\"quote\":\"Describe this as policy and no-lock-in positioning, not an absolute legal warranty.\"},{\"source_id\":\"C02\",\"quote\":\"Timings are intended scopes, not guarantees.\"}],\"rationale\":\"The ownership and approval prompt is supported in core, but the claim as written omits the required qualifier that customer-name accounts and code handover are Bareni policy and no-lock-in positioning rather than a warranty, and that cost/timeline references are intended scopes, not guarantees.\",\"use_guidance\":\"Add the qualifier: state ownership of data, accounts and code as Bareni's stated policy/no-lock-in positioning, not a legal guarantee, and present any price or timeline framing as intended scope rather than a guaranteed figure. Keep final approval authority with the human owner. Do not state or imply any specific cost, saving or hiring comparison number.\"},{\"claim_id\":\"Q06\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C02\",\"quote\":\"Normal sequence: free 30-minute diagnostic; free one-page pilot proposal\"},{\"source_id\":\"S01\",\"quote\":\"Turn the abstract topic into a bounded Bareni workflow decision. Explain one practical next step.\"}],\"rationale\":\"A manual, self-serve documentation step the reader performs; it is a proposed next step, not a claim about existing software or customer work.\",\"use_guidance\":\"Keep as the single practical next step, framed as a written note the reader makes themselves. Do not invite the reader to send it, book a call or discuss it with Bareni, since the task authorises no CTA; the reader's own time-cost and error entries are their data, not Bareni evidence.\"}]}",
+        "type": "text"
+      }
+    ],
+    "model": "claude-opus-5",
+    "role": "assistant",
+    "stop_details": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "global",
+      "input_tokens": 7886,
+      "output_tokens": 1636,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": null,
+      "service_tier": "standard"
+    }
+  },
+  "stop_reason": "end_turn",
+  "cost_details": {
+    "input": 0.03943,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.0409,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.08033
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": null,
+  "key": "SE-FINAL-N107_researcher__a001",
+  "role": "researcher",
+  "created_at": "2026-09-08T13:13:43.671408+00:00",
+  "ended_at": "2026-09-08T13:14:07.025035+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-N107",
+    "batch_id": 4,
+    "condition": "natural",
+    "cohort": "natural"
+  },
+  "task_id": "SE-FINAL-N107",
+  "batch_id": 4,
+  "cohort": "natural",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 23352,
+  "budget_charge_usd": 0.08033,
+  "unknown_cost_reservation_usd": 0
+}

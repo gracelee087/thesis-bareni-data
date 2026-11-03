@@ -1,0 +1,170 @@
+{
+  "status": "success",
+  "usage": {
+    "input_tokens": 4287,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 857,
+    "reasoning_tokens": null
+  },
+  "cost_usd": 0.008572,
+  "output": {
+    "item_id": "E-PLAN-519",
+    "selected_lessons": [],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Name the workflow decision: transcript accuracy in customer-facing or internal records and its cost trade-off (time to manually verify vs. accepting AI output confidence thresholds). Frame as a bounded choice: which recurring transcript task costs you the most friction?",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Define the measurable outcome: what does accuracy mean in your context? (e.g. customer-facing meeting notes vs. internal call summaries vs. invoice line-item extraction). Show the owner how to quantify the cost of a single error and the time spent on verification now.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "State honestly whether AI fits this workflow: transcript AI works well for English-language audio with clear speakers and standard accents; it struggles with poor audio, jargon-heavy domains, and high-sensitivity financial/medical records. Does the owner's workflow match the strengths?",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C04",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Describe the practical decision rule: if accuracy matters most, measure the error rate you can tolerate before manual review. If speed matters most, accept lower confidence and use AI output as a draft, not final. If the workflow is excluded (medical, legal, financial approval), automation is off the table now.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Explain Bareni's diagnostic approach: a free 30-minute conversation to map the workflow, measure current cost, test whether AI accuracy meets your threshold, and—if it does fit—propose a small working pilot with a fixed price and success measure. No guesswork; no multi-month roadmap required.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Close with the owner's next step: decide which transcript task causes the most friction this week, note the current error rate or verification time, and use that as the diagnostic starting point. No CTA; leave decision authority with the owner.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C05",
+          "S01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No customer names, deployment results, ROI claims, or invented team size. Describe Bareni as a solo consulting practice and self-built demo only."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "State that human approval is required for any transcript system touching financial or customer-approval decisions. Name excluded services (medical, legal, high-sensitivity financial) as current scope discipline."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Maintain the frozen persona voice: plain technical expert, founder-to-founder, trust over enthusiasm. Keep evidence boundaries: describe what Bareni has built and can do, not what customers have achieved."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use plain English. Separate examples (e.g. 'a six-person D2C shop') from observed results. Explain jargon (RAG, confidence threshold, three-way matching) immediately when used."
+      }
+    ]
+  },
+  "raw_text": "{\"item_id\": \"E-PLAN-519\", \"selected_lessons\": [], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Name the workflow decision: transcript accuracy in customer-facing or internal records and its cost trade-off (time to manually verify vs. accepting AI output confidence thresholds). Frame as a bounded choice: which recurring transcript task costs you the most friction?\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C01\", \"S01\"]}, {\"step_id\": \"P02\", \"instruction\": \"Define the measurable outcome: what does accuracy mean in your context? (e.g. customer-facing meeting notes vs. internal call summaries vs. invoice line-item extraction). Show the owner how to quantify the cost of a single error and the time spent on verification now.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"C05\"]}, {\"step_id\": \"P03\", \"instruction\": \"State honestly whether AI fits this workflow: transcript AI works well for English-language audio with clear speakers and standard accents; it struggles with poor audio, jargon-heavy domains, and high-sensitivity financial/medical records. Does the owner's workflow match the strengths?\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C04\", \"S01\"]}, {\"step_id\": \"P04\", \"instruction\": \"Describe the practical decision rule: if accuracy matters most, measure the error rate you can tolerate before manual review. If speed matters most, accept lower confidence and use AI output as a draft, not final. If the workflow is excluded (medical, legal, financial approval), automation is off the table now.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"C04\", \"C05\"]}, {\"step_id\": \"P05\", \"instruction\": \"Explain Bareni's diagnostic approach: a free 30-minute conversation to map the workflow, measure current cost, test whether AI accuracy meets your threshold, and—if it does fit—propose a small working pilot with a fixed price and success measure. No guesswork; no multi-month roadmap required.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"C05\"]}, {\"step_id\": \"P06\", \"instruction\": \"Close with the owner's next step: decide which transcript task causes the most friction this week, note the current error rate or verification time, and use that as the diagnostic starting point. No CTA; leave decision authority with the owner.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"C01\", \"C05\", \"S01\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"No customer names, deployment results, ROI claims, or invented team size. Describe Bareni as a solo consulting practice and self-built demo only.\"}, {\"constraint_id\": \"K02\", \"handling\": \"State that human approval is required for any transcript system touching financial or customer-approval decisions. Name excluded services (medical, legal, high-sensitivity financial) as current scope discipline.\"}, {\"constraint_id\": \"K03\", \"handling\": \"Maintain the frozen persona voice: plain technical expert, founder-to-founder, trust over enthusiasm. Keep evidence boundaries: describe what Bareni has built and can do, not what customers have achieved.\"}, {\"constraint_id\": \"K04\", \"handling\": \"Use plain English. Separate examples (e.g. 'a six-person D2C shop') from observed results. Explain jargon (RAG, confidence threshold, three-way matching) immediately when used.\"}]}",
+  "provider_response": {
+    "id": "msg_011CeqxdqLbXFFuz4yu8p581",
+    "container": null,
+    "content": [
+      {
+        "citations": null,
+        "text": "{\"item_id\": \"E-PLAN-519\", \"selected_lessons\": [], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Name the workflow decision: transcript accuracy in customer-facing or internal records and its cost trade-off (time to manually verify vs. accepting AI output confidence thresholds). Frame as a bounded choice: which recurring transcript task costs you the most friction?\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C01\", \"S01\"]}, {\"step_id\": \"P02\", \"instruction\": \"Define the measurable outcome: what does accuracy mean in your context? (e.g. customer-facing meeting notes vs. internal call summaries vs. invoice line-item extraction). Show the owner how to quantify the cost of a single error and the time spent on verification now.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"C05\"]}, {\"step_id\": \"P03\", \"instruction\": \"State honestly whether AI fits this workflow: transcript AI works well for English-language audio with clear speakers and standard accents; it struggles with poor audio, jargon-heavy domains, and high-sensitivity financial/medical records. Does the owner's workflow match the strengths?\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C04\", \"S01\"]}, {\"step_id\": \"P04\", \"instruction\": \"Describe the practical decision rule: if accuracy matters most, measure the error rate you can tolerate before manual review. If speed matters most, accept lower confidence and use AI output as a draft, not final. If the workflow is excluded (medical, legal, financial approval), automation is off the table now.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"C04\", \"C05\"]}, {\"step_id\": \"P05\", \"instruction\": \"Explain Bareni's diagnostic approach: a free 30-minute conversation to map the workflow, measure current cost, test whether AI accuracy meets your threshold, and—if it does fit—propose a small working pilot with a fixed price and success measure. No guesswork; no multi-month roadmap required.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"C05\"]}, {\"step_id\": \"P06\", \"instruction\": \"Close with the owner's next step: decide which transcript task causes the most friction this week, note the current error rate or verification time, and use that as the diagnostic starting point. No CTA; leave decision authority with the owner.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"C01\", \"C05\", \"S01\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"No customer names, deployment results, ROI claims, or invented team size. Describe Bareni as a solo consulting practice and self-built demo only.\"}, {\"constraint_id\": \"K02\", \"handling\": \"State that human approval is required for any transcript system touching financial or customer-approval decisions. Name excluded services (medical, legal, high-sensitivity financial) as current scope discipline.\"}, {\"constraint_id\": \"K03\", \"handling\": \"Maintain the frozen persona voice: plain technical expert, founder-to-founder, trust over enthusiasm. Keep evidence boundaries: describe what Bareni has built and can do, not what customers have achieved.\"}, {\"constraint_id\": \"K04\", \"handling\": \"Use plain English. Separate examples (e.g. 'a six-person D2C shop') from observed results. Explain jargon (RAG, confidence threshold, three-way matching) immediately when used.\"}]}",
+        "type": "text"
+      }
+    ],
+    "model": "claude-haiku-4-5-20251001",
+    "role": "assistant",
+    "stop_details": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "not_available",
+      "input_tokens": 4287,
+      "output_tokens": 857,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": "standard"
+    }
+  },
+  "stop_reason": "end_turn",
+  "cost_details": {
+    "input": 0.004287,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.004285,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.008572
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": null,
+  "key": "SE-FINAL-N019_planner__a001",
+  "role": "planner",
+  "created_at": "2026-09-08T12:19:03.494106+00:00",
+  "ended_at": "2026-09-08T12:19:26.069156+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-N019",
+    "batch_id": 1,
+    "condition": "natural",
+    "cohort": "natural"
+  },
+  "task_id": "SE-FINAL-N019",
+  "batch_id": 1,
+  "cohort": "natural",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 22570,
+  "budget_charge_usd": 0.008572,
+  "unknown_cost_reservation_usd": 0
+}

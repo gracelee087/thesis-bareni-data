@@ -1,0 +1,279 @@
+{
+  "task_id": "SE-FINAL-M056",
+  "batch_id": 2,
+  "condition": "unchanged",
+  "source_task_id": "SE-FINAL-N083",
+  "topic": "tool use before automation",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-321",
+    "title": "Tool use before automation: choose the first workflow",
+    "body": "If you have tried ChatGPT but have not tied it to a real workflow yet, the first decision is not “which AI tool?” It is “which repeatable job in the business should we connect first?” Pick one workflow that happens every week and has a clear output: customer replies, invoice data entry, lead qualification, or similar. Then map it on paper before you automate anything.\n\nWrite down three things: what enters the workflow, where the manual steps happen, and what decision rule is being used. If the work depends on your judgment or your approval is the control gate, say that plainly. That is not a failure; it is the boundary. Human approval stays in place for money movement and other high-risk decisions.\n\nThis is usually where small businesses find the real choice: improve the tools first, or add AI on top. If your email, CRM, documents, and SaaS tools are not properly connected yet, tool integration is often the cleaner thing to test first. AI is better kept for patterns and repeatable decisions, not exceptions or one-off judgments.\n\nSo the next step is simple: choose one workflow, document the handoffs, and mark the approval point. If the process is still mostly manual after that, you have a bounded problem worth reviewing. If the process is already well connected, then AI may have a sensible place. The tricky part is usually not the model; it is the plumbing."
+  },
+  "final": {
+    "item_id": "E-OPT-421",
+    "title": "Tool use before automation: choose the first workflow",
+    "body": "If you have tried ChatGPT but have not tied it to a real workflow yet, the first decision is not “which AI tool?” It is “which repeatable job in the business should we connect first?” Pick one workflow that happens every week and has a clear output: customer replies, invoice data entry, lead qualification, or something equally ordinary. Then map it on paper before you automate anything.\n\nWrite down three things: what enters the workflow, where the manual steps happen, and what decision rule is being used. If the work depends on your judgment or your approval is the control gate, say that plainly. That is not a failure; it is the boundary. Human approval stays in place for money movement and other high-risk decisions.\n\nFor a small business, the useful question is often whether the bottleneck is the tool stack or the task itself. If email, CRM, documents, and other SaaS tools are still disconnected, integration is usually the cheaper thing to test first. That is not a claim about returns; it is a sequencing choice. AI is better kept for patterns and repeatable decisions, not exceptions or one-off judgments.\n\nSo the next step is simple: choose one workflow, document the handoffs, and mark the approval point. If the process is still mostly manual after that, you have a bounded problem worth looking at. If the process is already well connected, then AI may have a sensible place. The tricky part is usually not the model; it is the plumbing."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-056",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-056",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-056-1",
+        "repairs": []
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-056",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-421",
+        "title": "Tool use before automation: choose the first workflow",
+        "body": "If you have tried ChatGPT but have not tied it to a real workflow yet, the first decision is not “which AI tool?” It is “which repeatable job in the business should we connect first?” Pick one workflow that happens every week and has a clear output: customer replies, invoice data entry, lead qualification, or something equally ordinary. Then map it on paper before you automate anything.\n\nWrite down three things: what enters the workflow, where the manual steps happen, and what decision rule is being used. If the work depends on your judgment or your approval is the control gate, say that plainly. That is not a failure; it is the boundary. Human approval stays in place for money movement and other high-risk decisions.\n\nFor a small business, the useful question is often whether the bottleneck is the tool stack or the task itself. If email, CRM, documents, and other SaaS tools are still disconnected, integration is usually the cheaper thing to test first. That is not a claim about returns; it is a sequencing choice. AI is better kept for patterns and repeatable decisions, not exceptions or one-off judgments.\n\nSo the next step is simple: choose one workflow, document the handoffs, and mark the approval point. If the process is still mostly manual after that, you have a bounded problem worth looking at. If the process is already well connected, then AI may have a sensible place. The tricky part is usually not the model; it is the plumbing."
+      },
+      "gate_key": "SE-FINAL-M056_gate1__a001"
+    }
+  ],
+  "measurement_status": "pending",
+  "planner": {
+    "item_id": "E-PLAN-521",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task explicitly forbids CTA (CTA rule: None). L01 instructs to treat diagnostic invitations as CTAs unless authorised. Compliance requires ending with a neutral practical observation about the next step—evaluating your current tool stack and identifying one repeatable workflow—rather than a booking prompt."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Identify one concrete, repeatable workflow in the business that takes 2–4 hours weekly and produces a measurable output (e.g., customer-question responses, invoice data entry, or lead qualification). Frame this as a business decision, not an AI decision.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Map the workflow to the existing tool stack (email, CRM, documents, SaaS). Document what data enters and leaves, where manual steps happen, and what decision rules apply. This clarifies whether the bottleneck is tool integration or labour.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Ask: Does this workflow involve repeatable, rule-based decisions with a clear approval point? If decisions require human judgment or your approval is the control gate, mark that explicitly. AI tools work best on patterns, not exceptions.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Decide whether the next step is to improve tool use first (consolidating SaaS integrations, adding conditional logic in Make or n8n, or documenting rules) or to explore AI augmentation. If you have not connected your tools yet, tool integration often yields faster returns than adding AI.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "If tool use alone does not close the gap, note that a diagnostic conversation can clarify whether a bounded AI pilot fits your workflow, what it would cost, and what success looks like. The diagnostic is free; the decision stays yours.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Document your approval threshold: what decision authority you retain, what data sensitivity matters, and what outcome would justify the investment. This ensures any automation proposal aligns with your control requirements before build begins.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C03",
+          "C04"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No invented customers, results, or multi-person team mentioned. Workflow examples use generic scenarios (customer questions, invoices, leads) from the approved persona, not testimonials or case studies."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "All steps respect human approval as the control boundary. High-risk decisions (money movement, approval delegation) are excluded from automation scope per C04. No excluded services mentioned."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Persona frozen: owner-operator, tried ChatGPT, manual workflows. Evidence status preserved: self-built demos noted but not claimed as production or customer results. Human authority retained throughout."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Plain English used throughout. Workflow decisions framed as business logic, not AI hype. Tool integration and approval rules explained as mechanisms. No ROI, savings, or productivity claims beyond the supplied evidence."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-621",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "have a frequent, repeatable workflow with a measurable outcome"
+          },
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow"
+          }
+        ],
+        "rationale": "This is an instruction to the reader to identify a repeatable workflow with a measurable output, not an assertion of a current capability or observed result. The approved evidence supports the notion of one frequent, repeatable workflow with a measurable outcome, so the instruction is permissible.",
+        "use_guidance": "Keep as an explicit reader next step. The '2–4 hours weekly' figure is an illustrative threshold the reader sets, not a Bareni measurement or market statistic; do not present it as data. The only supported hours reference (8–10 hours a week) is a persona scenario, so avoid mixing the two as evidence."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "use digital documents and SaaS tools"
+          },
+          {
+            "source_id": "C02",
+            "quote": "general document, email, CRM, and back-office workflows using AI plus Zapier, Make, n8n, and small amounts of custom code"
+          }
+        ],
+        "rationale": "A mapping and documentation instruction addressed to the owner; it does not assert any implementation, deployment or observed benefit. Email, CRM, documents and SaaS tools are within the described service scope.",
+        "use_guidance": "Keep explicitly as a manual step the reader performs. Do not imply Bareni performs or has performed this mapping for any customer."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits"
+          },
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          }
+        ],
+        "rationale": "A diagnostic question plus a control note; it recommends marking the human approval gate rather than asserting a measured capability. It is consistent with the honest-fit assessment and the mandatory human approval boundary.",
+        "use_guidance": "Keep as a diagnostic question. Retain the human approval gate as mandatory for money movement and other high-risk decisions; phrase 'AI tools work best on patterns, not exceptions' as a plain-language design point, not a benchmark or tested result."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "The best-fit reader has tried ChatGPT but has not connected AI to a business workflow."
+          },
+          {
+            "source_id": "C02",
+            "quote": "AI plus Zapier, Make, n8n, and small amounts of custom code"
+          }
+        ],
+        "rationale": "The decision framing itself is a permissible recommendation, but the sentence 'tool integration often yields faster returns than adding AI' asserts a comparative outcome frequency that no approved source supports; no measured returns exist. The core recommendation survives only if that comparative outcome claim is reframed.",
+        "use_guidance": "Add the qualification that no return, saving or speed comparison has been measured: present tool integration first as a judgement about fit and sequencing (e.g. 'if your tools are not connected, integration is usually the cheaper thing to test first'), not as an observed or typical return. Keep Make and n8n as tools Bareni works with, not as tested outcomes."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "FORBIDDEN",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Informational posts use no CTA or one soft closing sentence."
+          }
+        ],
+        "rationale": "The task authorises no CTA, and an invitation to a diagnostic conversation functions as a CTA. The factual core (a free 30-minute diagnostic exists and defines pilot scope, fixed price and measures) is supported by C02, but recommending the reader take it up is a prohibited action for this item.",
+        "use_guidance": "Exclude the diagnostic invitation from this post. If a closing line is needed, use one neutral practical observation or next-step note with no meeting prompt. The separately supported statement that a diagnostic exists and is free may be used in purchase-intent content authorised for a CTA; that is not approval of this claim here."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C03",
+            "quote": "amount-based human-only approval, refusal of agent approval/payment attempts, and persistent audit records work"
+          }
+        ],
+        "rationale": "An instruction to the reader to document their own approval threshold, data sensitivity and investment justification. It proposes a control practice rather than claiming an implemented control or an observed investment outcome.",
+        "use_guidance": "Keep as a proposed next step for the reader. Do not present the amount-based approval and audit behaviour of the accounts-payable demo as a deployed customer control; that demo uses synthetic data and its blocked-payment demonstration is manually triggered and simulated. Avoid implying any ROI or investment threshold figure."
+      }
+    ]
+  },
+  "selected_lessons": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025"
+      ]
+    }
+  ],
+  "register_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "planner_key": "SE-FINAL-N083_planner__a001",
+  "researcher_key": "SE-FINAL-N083_researcher__a001",
+  "writer_key": "SE-FINAL-N083_writer__a001",
+  "final_key": "SE-FINAL-M056_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-M056_gate1__a001",
+  "production_completed_at": "2026-09-08T13:37:04.920573+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts"
+}

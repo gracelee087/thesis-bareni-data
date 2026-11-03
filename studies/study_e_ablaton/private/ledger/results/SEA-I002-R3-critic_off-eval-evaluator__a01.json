@@ -1,0 +1,154 @@
+{
+  "created_at": "2026-09-08T19:47:48.680471+00:00",
+  "role": "evaluator",
+  "metadata": {
+    "study_id": "STUDY-E-ABLATON",
+    "pair_id": "SEA-I002-R3",
+    "arm": "critic_off",
+    "cycle": "eval"
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49",
+  "status": "success",
+  "output": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-3994a7f51dd696be93103bce212382c8",
+    "scores": {
+      "persona_fit": 2,
+      "clarity": 3,
+      "actionability": 4,
+      "factual_grounding": 4
+    },
+    "reasons": {
+      "persona_fit": "The post breaks external founder-to-founder voice by leaking prompt meta-language into public copy ('The approved persona scenario already includes...').",
+      "clarity": "The core workflow logic is followable, but the meta-commentary about persona scenarios is confusing and out of place in a reader-facing article.",
+      "actionability": "Provides a practical, concrete triage rule (current, stale, or unknown) and explicitly keeps human approval in the loop for send decisions.",
+      "factual_grounding": "Strictly adheres to evidence boundaries without inventing customer deployments, metrics, or unsupported capabilities."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 13,
+    "pass": false,
+    "low_quality": true
+  },
+  "cost_usd": 0.01308,
+  "usage": {
+    "prompt_token_count": 5880,
+    "cached_content_token_count": 0,
+    "candidates_token_count": 314,
+    "thoughts_token_count": 1998,
+    "total_token_count": 8192
+  },
+  "provider_response": {
+    "sdk_http_response": {
+      "headers": {
+        "x-gemini-service-tier": "standard",
+        "content-type": "application/json; charset=UTF-8",
+        "vary": "Origin, X-Origin, Referer",
+        "content-encoding": "gzip",
+        "date": "Tue, 08 Sep 2026 19:47:55 GMT",
+        "server": "scaffolding on HTTPServer2",
+        "x-xss-protection": "0",
+        "x-frame-options": "SAMEORIGIN",
+        "x-content-type-options": "nosniff",
+        "server-timing": "gfet4t7; dur=7814",
+        "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+        "transfer-encoding": "chunked"
+      },
+      "body": null
+    },
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "media_resolution": null,
+              "code_execution_result": null,
+              "executable_code": null,
+              "file_data": null,
+              "function_call": null,
+              "function_response": null,
+              "inline_data": null,
+              "text": "{\n  \"schema_version\": \"study-e-evaluator-rating-v1\",\n  \"item_id\": \"EVAL-3994a7f51dd696be93103bce212382c8\",\n  \"scores\": {\n    \"persona_fit\": 2,\n    \"clarity\": 3,\n    \"actionability\": 4,\n    \"factual_grounding\": 4\n  },\n  \"reasons\": {\n    \"persona_fit\": \"The post breaks external founder-to-founder voice by leaking prompt meta-language into public copy ('The approved persona scenario already includes...').\",\n    \"clarity\": \"The core workflow logic is followable, but the meta-commentary about persona scenarios is confusing and out of place in a reader-facing article.\",\n    \"actionability\": \"Provides a practical, concrete triage rule (current, stale, or unknown) and explicitly keeps human approval in the loop for send decisions.\",\n    \"factual_grounding\": \"Strictly adheres to evidence boundaries without inventing customer deployments, metrics, or unsupported capabilities.\"\n  },\n  \"critical_violation\": false,\n  \"critical_violation_type\": null,\n  \"critical_evidence_quote\": null,\n  \"total_score\": 13,\n  \"pass\": false,\n  \"low_quality\": true\n}",
+              "thought": null,
+              "thought_signature": "Ev5CCvtCARFNMg_2s9gTALBytEfif7GtOPjmIDcMqTubl5ZCffHc_4HZthcNsp7Yj0n6T5JdU8sqAzKq_J0IWZZSOGdZDKAGNz4r4Lk2XwJ91LoiX-0waR2JZe-tJFyNQP3NsOlTgLfnBqchRlYLIkXqQcuq4v2m3Cx98RhpFMoHirvWkJnu8Tm9MvX50cmLLnJiIsQfcUcdGpwK58t5HTQ0yAM5doCmwY_U-9c_TU_7dCFd-BWqiu19k-LnbQXVQf-G4ZtcoJTFLL7baSnjhD9m7YBDzdG6q9W5ENl2Bne1w7YpHSdkvoGhSqFF3-rsOIvVeU2YWR0sJ9h7hw2Q5aMvfqxm4SlhPOdQ2tFU2DpaTirCvygZWVtmCFjyOH-8rsRpHBt6MnTVlGrY0T20moc5l6FgZfqQLmkk15ez5UHzd8XoNCm2smX73mAXOcq9JptOm7wZkbDYmvb1D06X6MRPzFDI3xZraCVePwyCzq6bl_Inb1uvRV2vr5VbAS1PjpgDUfiU7Ygat_72itVw7kdYBnN_httKoGA6vPxVztEiQypXYYv0otwqUl7ku43pnnh5GB_u9mXuXKD27E2jDoUnfFTzCM-Fud4gZ2__0vWbS2XihmqmN1EiDk8-c0qj5xh6nCDSygwrlxZrVfcKbW3iW240-h7xv2fZxXL3Ozl7jUCJTbccw3P9AyCXAFhT76L6wTnDDkhYzqwj5uJN7Y79xnAGOWMKU_BdL9Q4a5rGwd0YD3IpqFrL94xV_cwvwdUZb0B88yG9420xnV9VnLI1VJ4JZhwroyLHmXDfOFv7T6C1Q9E8i6xFwSlB7NagtC0xJ6SsOoK93AxRasNjzH-kf5-Yi9AGVHcWahWogVBgDSEhTtzTJHaxxEa7_rcCkEsfPYq3mqbonvat9xC6EfKYNR6JTRydLngrcUNHMLoZhpG-UJ-WjwnFmvCzVl-ggdAE5ObAVonFDdkJwZb1w8NimOo2zQBRCLrVNcYUA_wxL5LKiBlhceCQITX7-zK2VmzVJKqJn2MHlHhH2BuAXN9yAQSLotcb91WksF4zAWMp_DYFEgBs0kGSv_nWfKhtuSNuVTrBgVIiPXOCokjkCHBC2WVMbSax3gR7Ed4KXfBwTIEM4OYDmRDOrx_GumQX3_jgUnSajH5K3kKfUMD88gwqcLuNbhVmxpOKE9xW9j3dMogIjmVrsMx8fPu8DJXNZ80dywszRY6b1_AFqAM66PthX76bTHsfO0A9mO79X7v1pMlnCU04_54GnDleuR9PLr0hQFks0F9SVJKNxwlA2mnbEDhfqViQA_qKkEovLF2Loia5lyPgIeU_PD5ylisrIx66pvaxzNL6lUU9Jx08wDcLIyPM9q58WygFDfE0l-UsW60QFzyy5EalRNLxQ6NW0D0jLcXXkReMQAfyJGOr4qJyB8Dt-VDsDL1S6p92aMn5yZSODGr4rL4KDCqzC-0GJxJuy79PvBhd-KcvezpaY71ca345zGhrmUL9Zuzc30Yyowy-3q23DEJJbxGeLjLF9tbF2rNLqCZ5RD-ioOsDJxrEvs52NF6tBPb_sFeotXnuUiZreh8olhxyjyv7Ud-MsGKqWXLB7w-7qoHHtrACJKfMRkP8nE5cXNtcyzZqUqj7zDYPIQSd50yNsYcdGepgtpN2r2QZ2H-q3LrAzy1qSpV5QMpeXLy4Myzv1ECg9SDpPFlfpi6bcuWdejhNujw43hoN_9wKlwF-jBNMVV3xb6iOj6u22EfPwioBj4qCY12V_73MB_wPvjU5jqZN8-cj8n4GHszq9aancxqlSUxKaMew5SYxc1RdfbKWXIKrsOx7uJ_J4t3yyK3vwwnuzeV_E23zhrKvyxjyQL1lknuyOTlGeDyCwB80S9GLB2rohYYhVo7E4lg6e_IWtXuTrwzyvNwvY-ym5a4wJ5gMNSqjglU0zVwhaLK3PyvIZvf0Izkvp7fE1MHkdWWsvHYXP2sa8uM8KFA7bdfsdye_plyI1tg1z2FzPai56QDALH9t-BLn6O4y8MuQ2nzPdOizC1KNnelM_WN9uLI92rZkgfx0e6X_cNPhrCjLAn_k2cPtjtz9-umN3iK5IacyXAwtAiQ0MaKcvARbyy8eBh20czkoj0J4f1MnxSXXw8pnplA_ZsF6rRdJ9SqBa6UHhamEM9J0A_RBaDou_Kd-Ro6ZtVcDT4v3obErNX2vUvcjqVB85HkRppfk_5stMWJ5ORpcn6L4Q4GdCdgzjebXoo3O9ZFO2tZDBERbHsaWqhsJaUnITha3H4xZzsoCLRTCaf-UeOo1bOPGqrP_6lYgr5tn5_63SmKnfpo4psRYokJbrC7p2SA63LKNEhRZmgLwU-UbOCkJitueWvswhwx5i5Gk6MnMe5uGw6pAMTjUyG_22Fn68Nt-NxXaV__qSnTgVA0WRb-ynBn05QWF3sYJfWc2JJ3ygrg_TdQlD3ceOMH4xp6n6rQiaLGHak_Z5hp8ltaBxa8cZjAit7O1lOAHodyB8KfXj142qt8EjaLjewDFZojXzmQPqoLps2oXDLdKjJ6_U1K6ANxA-FR5BLYfBmlmHZNN6ZsMNyZ0dk3od7qsd4TY7iAQc9YEms4WOsv5j7mv4Y1dZzX_fCeOOijbayssrDKgv6hPBszuFCDl45lIuCH-Ym3i-lnWxtQv4RLtMmAAy-ycNP8sk5_JFIPNlJj_5BGt0spmSReQWCIJlLIndPMTTYKiSqFwffpN9Jg9Q7zS0TrtOf4qneB-zRwG6IJyFZeD7CcAg8KMQiHitjFptrFuJA1-B6ZuR3PGtRQ7dFQF6m2cBzM29AXQEp0vitRxG2LtsKjVRcUfoYmPuIqTcxCTyOk_KEelXm3hAA9STVYwbg9X-QplwXJn260j-KXK3wfKOqxCK7FORe4-IHVkwj51Sk_1ozczgzkDaRFj48vvXI2GU_LEHwA32fkiHXo96odQusiVKQ9YpI1YQz0dinfrKP8oO_ngnGQVwjJF9Un85hUh0FSuwRf3DT5f307tEZ-zpy2L46FDRi40e9pD7--XH6XTgxGE7sLs4aFmVZsCKjq16vvbuxWmMrJcZ2ut5zN_3bnTEGPpNrX7sCpoDwKQCCNBleMw2afNBB_9QhdNVUxndnJXCQM8nbrB6IN-h3hcekle3qK-U8zhYMj6FTWKEmYMN-6ql6YR_l8h8l4pH6M4uYMBGDGziWYfRyJ8-fUE8u5xMshA8ThS3t5EJ5M34CmNtG7yMwSdeQSbNwGF6T6mo5vcco2vqOjXhQ_ISI42D9Uxb3ah4uF8zWrY1zsdbKuREc16EBZay48yZkGg0IPJbfLo2CCp1ny6HSkyws_gAxPqfVmvXgXbNJWvYtvGH1xaWbEsALF4M892s5kQDi6cqknkSP4td9wOChgJ3fE7QO5j8YYc-kIK12XVusIUCq1zyzQ4w-0zuaZmg7rbSgMxxCcE6oq_5-Y1-7aVdEeAKgbGFnVQlIU8CSe5Kiq2gD68dhUgRVS2G_qn2ije_-KhdYsd4cPWtPg6wy2j1Zdz4fjAP0I9BfUZOa-nb2hJsYVT3X4vaBsRfOvF-g__Hd82YDD0HVfVlfBku6oB3Xh6dbKYw2leQHGYztsBZqiFKvoovkBqHUN2AmsM4FkXXHe2FQtJdYJclc6xT1FZobKaGxS-hUq1Ha3BacT99PqloWgscv2opVdb3GZceLk13t_9GVV8YZSLdq6f-EAiISKe1yBeywoFShM72fzUVHMLgMTBq7NEgSHzksjzHzkF52Az-KaGy9YpBDkPgz8Q76kny6XYp7rl8zVaQm_3cSGBpEdmsuUqqKrt24EugZrDQaRxjKWqhSZLi3KZ_qLTQFh7CuhqktRGZohjTRU0OH3kn92rH7hIe0rzvSPDTiHnKlNS9VBN1dsJ0TxHpIbtBs3ABM86ZYomlDsMNKzRCeKywD0DhYEXyu17Fh05MdbZRzQogeTWWnPyzaPmTg-5JXbynqNXKqqsIK59j6tO_CR5wRA6c8bzBl_G_bFWKsGty7OhcJIQPSOiJW4MBiYMnfIYitnOl7Aig3RJ_x4Ur-64GJzNhe4dTEa08ko_vqjQLieD_f7ovhegphNR0Q85txhIbTNua8PJWblNwfkLKMKvlNxR80SMJkUHNYOVPVgDLnypHbkrR6FuKvLrFzlHMXofNYlymZN9ER8SaBs-Qq4F-jE1wXEwBTcfphGZhe_SuFymo5_e7icYC8stJQpWMwxhOlNsOVopDZDetgelKTzmTAmyM_bgUMugi3W1BnydUwuJJ2-RQSY0fxwyTqybTry2hYyzaWtbUe_m71N-_i0veSnHqOscRxU0NesWjJUYmZkvXR2dUleKYByA3qnjivmqeSNhgp0uV4m__dSeESeNQcRDZyMFkiXbB0_UdH-ZOMOA5dt5LBr8ALEA_CTK5p2IJLMUYRIw0fm-z71ftjRnOZp8v1LJvc5xedcM7BJjwd4cJxWHJPc4tFRKgmJ3nJmfzmwzl8mriUNG4LJDhTfznxmBfzQ-SfSBrZgHzwIfD9Jrqvu3Cg4NESE5-AQfz1OpSIMc7koAKFOErRRXggvegBCu5JSO1DaqgUtdALhXsFbAcnvjiZrBdSoINpshafEZCN66tdA7qAfsE9UYFsroi-ueggDc20luZqAB8zJUFqaXhREbRChjIZMhPArIzMPHMW4l3JNEERXTBKhsFYMVZ4SjypAwbaQfmthTDKjIVN6v58DzCo-JCr14t2sWwXju3wt_DgD_d6VXMg-tr3AlsyOMcnb0P-tAQKti6lp_GcdGkjybaQLWOJEHA4EOgb45Kf0CkFUZb5YPd5zB9d_5A33nu50ADxt9-MrePviXZakQbquHcrBstwoKgz03BfQZzjoKpDF-Cwa-oS7I3t30kD8nG8-aE3ZKZKNqBNoOmItotvzV9ziu-5pwajaIGn_8GnUUKTD49RweiGzc1fkTx6mGcZMIRT_kG0SsNmu6FB3-hNxEAUE9_nti4JTIUGxM5PTnzkLSeVvBbKmDek98DEoXJRn2_-EQJ_gQmohZcLaxpHWAts5iqEw2xWtdVuFkFVON2IPgC-obSrx-bjnrJQwpxJMJzS5PTfDL0W-2gtV4I0R6-EMR2of1HnTB8uQHyrF7TqQRXhVFw7yHJ579K7vDkpVhMQW_UU2oMODr4XswSHj80vymqrMnaPxXSwNJjeWHl-ZSeDHdvH1QWjNZ6_KqX79bpOzCSLl9Q3eY_7eMpLrinpK-cf6ITAegxSwYakWG_AMt--UtjRIkV6G7Twzdmwu3GVbS-oLMgRkuhYwYjvLKJvrBpkcrFyuvZ5G-l_VFotvxwVdcBMTFPjyfRqoY0_EJGjU7uo2kF66-q97AZcJQxxRiPzQYK18xSv98YHtRlG2RzwjxcXHhEOfxFCigiJVd1G5o6_IutJcLCMiIoRiainvB0Gnb7Kxyt_Vj5GV5orVHuN8qs7mBWneSVet6sYxtjVNChgcljWfIVBkLB47rS9Hi0ZYwgaeDWEdOj_90NATJPMnZOzaaCNulsOnMXX8dvUISzeVfCm9Cild1A-o3HP95IlDgvUiThkgfmcSn4B3gi5Ka3JOMwbbBRMzTLXK0ZNO90qhCVo6yAXGkK9E7sfzt4CKd_vv8DcTxnr5QFIqOYJP7qPrVRH12V_ba74uBTfUgap4sqoawW9vHiN45ZGH3rW6OpIo2LQ2CmkDpdcP3nv88dWJavT4nW487mpO5Owg1MEnadPPdxN5bxeSUbwIJB_0VFCUjPTcPWpr42NQSgkpF8YgVmU_Nb-s38vQx9Ml8dJvMO3s4kn5Vl1ixN_0osl_GSAnV8ycjA9dY1HWrEtxc2ygWtFfAFFH-n9Vpdj-vxS0i2G4ibdvcumyNB7yBAaHAmGW_EnUrHMiAKLZn0k1aMrAKWZiIOmdJ27MJ-B3lDPZeV5d2ftUrQ9BDm3yHc4bOA8hzMlCpJelBKoYQtS6FemWs7SdVcABF-LSJO4RcprebeKbZp0LvdPv-kNODlTVu0aKej5dTrIIoA9c2cB0B3jduHmoVGCNfj8H-io6AB4C6RQ9VpKbyEKT4x_OBMh7uubs60HD2LKiQ2OTqpHuze69UmOyBuntHaJzj7a_KSyqV8_-zpS90rYtzaSSDbpiLiH0NNoTAaSV1ZltFxygAMJv_khm9ZDRaYB99enF_Clr7GwZl1vdAhuW1fFiuTro5CKJJo-E0oVwJsYr0y14Z0t4wX7QfmBYT-uvygIAahzADlMIgDu4cz3Brj0Q-u-YLD2iS4zyz7fE497SCP1Ees49dS_BtRYHwFMhf4Yn7UEkiTW_W0asOdyz_RGDgDHMh3rEBWEvFmkBvHsWuj_oq_X4rMgKqtGxSzvD4I95H9gOwC5SEuEBNV7BYXpZiofCOT9zc94sk2UNXfzK37mY-JOxCBEUCVuhLKuGRCHkP16X7IVAqSieR3CVS6PGwLvHTbYCStblV7I_DcFac5KxU1n5cMgCUaAHUCqhrUY9wftabtowTXlkZebEAYcBTNFuyYW4E2XxTmaumDj6MnvFWayjKv2iRLGnWnFLXjCYJcPQTj-YXOoAfZ1LHOxPKgs_52HFj9mqkPVAKOt68Cj7VvyY20FeYA2bKLObVtvM-8z75Fey5Flhz5KppCUzhLwrNzw25ws8uULVnnNTGK8WoKV8ErLMZ4BswvRV-r65J2uGZ6riCTLr-H4Mg1YFV5NgbzI_6b1yqaTvkBiClAmhA_GSUGpGyQvpr9QLFDjq7V2IRCnMWhG2jCwjsVf0yO9wbSqkq8dWCy48wufZ4sdXQLqDPTnlhgYubY3NvVN-VEHxQ4KgV1aJpS93O3i1aORRvwiD5oogDB3exkfMtkLdhuNvvIbzJeqGyuwFp8x4PEI0gfNq5o17eNYE2w1RUi2GhuyAjy61ORiRxGEPEwVCK927KoZc594tv4H_hudAZpT1dpb63FZqtoQhvhjkh-8eIS3nZov_enrIEhQ_0WE9Fp25xTPlJ-oy-QJdtM76XKpNqV5KPcXTtJqQbB9zJqmB2BzvGH0N_9rSZUjiE_dFdxzXsxi4F_Q5v2HapNi6THA8-pR-cPDlf_83SIHSwMUFtnUQnXLgkTpBklO7v0ia8P2C5fhD6BnG50Um9sdzjEdPbEde0l676H9vnAkGtjdVFVYV9P7RZM1uTFUOx6AtUK1H6SuMOJnxmgvykrZc_o9woLybwqnKL4LjqRVNavn27WfbpNHj-yLIfF9v68h_hJ4xF70Ybk-nE-5ltWwiNsArW1kuLAgxBqowaw9JGM99pFApunwYbpyuxgtAvUW1r_YAI7kt1FiBApS1ZsBw0zPffAEAGHd__ljHhLCskDhJUNgwbxrTDNkVhZmcwzMTnaYpALtiJ1gvsnIhVBEHLs7dvccZb2sNOlc7kS5UtpLg6deJdEcyN6B4ZeSxmWbGC7PW2Q2-wZlDzgUY8xZpFmMWhoPCFLmfD0AJKm1A-DaLd-_I0RahaKMyAQWQTmGI7PuXL2C5lxMsVMN2r9qwW9iOWi007HxVMmXphrx9yFGz1gn9TWe56RhcZvhtn5v_4cLyq_FSQ3qDWpFGj73_iTHN_S3j7f5QGFJZReUDgqouzO7g-Nme9LP814vilB3mkLlLlO-Z6bxlK1qsKfroGAvQauLf3kpkwKwGT58eNEi6BZsmvdi79IEq0lraaSlHBaWXzD7BUJaNCQRs32I1kzrHAiE7XwVtDLwME077UAOVf_429lFwp0NGTydiGnYkBcl03F3k5NZiJVgfRn0jUehydaur9BjHIOGVFWs5Kx4s-SfU-viOIHhtE_zN2O8KpGR5aw6FIdGkZFuvnVkbTpfe7N97Wyh_jDDMVk3PJ1klmzyzGOi5blfRlpvfdr8e2rZ5yb2B0s7r9C8sh64rsYtgNVC7oBM-jY-ozfyOe3hApdyu_t4vy0w3JU0O8bHZtLD3RLDpnIvgmZ0fyxYs7LXnmQZB-aI26gcAXNkpHWihdzjn-HtIqWrV6cSw8G6FNxwnOOLcsXFJ6F7UF0DNPwn3wd8lOEDEECquZa_xXKSG2UGkTJJLpOBHFpJs-quXrvKKhSWhJZWK88EPe5FmpDjGUJIoDLRpJt7SeRK8ju5LhuQEfiQB_sYIKhnXg3jsSXvXf0ggtY0Lq4vWLoZy8Pf5PYFNA27Y9CvDQspol39ENi7iErvb40nwanwuxOsIQUDiFWty76YB4FuZbv325Cn24EHK1Zdz2vZOvHX2mG1CuGWC0BGHvsaWJBktPU7GFEn906AoD1O_HbUM6H_Yz1CL3-NlQDYhgy2VBnV8Rp4wN0E-fDg2BPiu3Bf2OzEZUzXDeTec6xi5Zi1vX0SDeVd3JXTU7TqXtTtfNsxUC_6Wi4gIaCGoUp3LZBuxliEi1nFnItaSiXxgjG-fri7sFJvF_TeH-Fi-BXtnp2znoDT_hPJOOwLrzkUdaq4VTQ8AJ0_bKI1s2ZJSB7BJOUcHmkfGcgkCJE_uA0N9OezxENAOEFR8_M9cqf7bcKC2TWP7b905ZwZEZnF7zXnk1CG-aPyqlCAuqWzsSRO_6FIHMTOhpymsMoEpAaiuDPy9B4s8QDvSUHkh-nPMt7UC9RdHJ85bYmD06Pe4xYmFLvf0rbebQNcPD0RJsrbqgo1KVyWimAyGN_48sWizz9xM5tbWFoQN2WBVxxg2wB8vUX2Nt-DPn0FAM8eQ2EdWgA_3maeVDxS9C3fPvcd0cY-hIJe8X8R5CaGWD7Hpscir9DKGM4upHqk6thl2UX1Ha5rSeuESfMOyLJfswBXwjuQgrF5lfvdJr4Majw9_cNIZkoI0TEjg0eiX3sbFqivRnMrhnU9G8_LXjGfbjucIialEw7Jx5ji_wWcP_f370Unut52UcvsGhJPNqlwg_sCq_DFPYQkC9phna4PpOguLv-5DlNHd5PZ7w1ziboBF_0wnlx26r8HtO2V1rToxmN9FIgZy9di7sCUIjk05ZyblWF6Eh-XE8ACcsIDFmiOXezPb-z4AqP_zqdYLD5iiWAyaC8wQo4SN-FLcvsTkOfbsboSP9Y533nSEdOx13GlQDCQzfvzQG0R8h9iBrGVWL0GH7Q5auTmRnD7U4st2QybNioOH19Fidi7DYa9UR6eQFtVyQmwtSX55zmCQThIDWna7sN_C565WFVmT324BEIQl5JnlK92sOH1sOgMy84btmO8H8ZsvLhXsFTVi22FzmPqyjtkGobjWifSAjpUhLDQUg6HY_okrywaJjmD6OVJZl3iqkcmX2kxeUPl-7EFbrjRJSwsGA2ojEhqgAritBJ9ukrMy4JWIoUb0TGME9Wlr9iVViK2qyp6plaQCukV4LBYYhs-7hEGDyWeMsbG0FTMQ08PnHyn58MIwlnkRRlnvZIC0971QR2ngN3WFAUpe4jrgPzTbsinoZfY0yKmRruAv2A6IksF3s2TbhDKaV41Hf6M5RMiPelM82aVPHBaZScve3DrS_iahUSRHJhuOj-ilGZaFH3hNybY70FF70gfgRMiUno1ueh6kAynBkWJXRYLvqrnYnt_YZsrs1_0UOghTs3G1KQCGehhSEetsGt3Abkf--3aeIXpmvC7aY5vI9xNZ6FJ9xFwqW9JEY2oJzfWlXidCYb17NJqKYWi636jXjU8IHz5QVofYhyraYxpOV6I4TVoZCaDhUBaudXsYN15IwzMnE0-ZFA5vhTQIbbjGKbp1evGWnD777Ohwh8sqVKBY_yEMJG7pxX2xHTdazx0ChhiRfz4hVRFz_FfeR-o5alNLo-QgXuAX0iCoRiwsG851JDqFwW1DwdSf_xq2KiqFuadF7kwfu395ds9Uo5FaVRzlU9Z9RjPaZ6vCX2ARLGUY6MoyI1NOLOCtXn1dot8JoTduxvVfm07aIm6wwwlIaQU1aH2rJ_ZSuBVL_dLyFXnQELpRN_PQYZ5Lj8Hc9LoD4tZb_zemkapNtCeFcLXS01lfthqDrFmV_VAuZs58sjMETdlereePu4_b8FszsZICWG2064hwnUHYaOnknyqDijDpLYoKmezWvWNXhRAMhBKMY7eSokvFiJfjmbMO-KK1iQnnPDRXG7QiKtshpWpdo-apCB_n3TWWX4jz_ndCVexS6yFpwvlXa9ShswK6DGs1jSnXokebjgWePGOa-NHpOyDYR40ZsZm_QIuLHNjXXiCJY4RPi8laXe_oVhmF6i0qFz0C_pXdCQtu-RddiI2LPx5XBtAD0epZa0-VA2h4ysfzZ1yXpPXEo9QLUnW-VBlwD2G4dRjm-oggeqGS-vNAahKJ1J16zlf3JUMJ6C_ghK_zVhibWoD_22Ex673RMSmCTZCNQdV2G7Sk38-IVY-ExMknhEM9O_X97pKt_RkisiHIVlibaKjvUky1llJHMq1xf8jZU10cawog8YU5BBzBP0o_FOASJLSTo6P2TKkyYIZEkjLbW0GediJK5jU93kw7-Q28AQrpHdk0WFafN4tOzYG1S9Z3Zjo_uC2yxORua2lttbWEvXj9GW6Who6V4N33bzyS2Z_yKdEu4Hr17qIPWosLFxSJZGHOFCRhC4YhOX2FWOs5A-nDvwWJh4uc4SyOPoXgCXBxFvQR21hkyiv_0cRwjJDFvwNDG_-JyJiF_08PcyL2ihwWG0ap8aX3A2yWHKlMelzNamASHSeTBhPaAytYBATjzwqej6s_1gPWWXRADvGqU7GyRZkXfrfGQtLzPjuADksiEY1hYXhOOtDkgyxRVYbiVb7jbHLAQ-vBDk-Nv1KyGw18xUI0SQnCpjZtStElftwIpzTZyBSz3sfy8fKJ_rQy4Hv_Lwbcmay8JwEABq-c7Ym3mfiFhaICwa604k7PlPVQ6hG9DISj9KHYFNisL9oN9FTHWtqygyPycMSeilU_ASJ16F2GqAO-Jzc5oPHK0eIWgAkkkCiK1vKZa-uyU6LWYG_AGUUmLyMNVwKejF6Dl7iAaLuLAK67lLtImr3BAijY88okFvc2DJ13aodS40woAQqxNBW1u7iXunpjr9xCCgUkT4VMrUsSW24bwdTJ9LqYpWbt2_QztB4DMQhjeEExDgPgmn1iCrBhxcuA50DmZLIRFBEq8c844yuZwRWkGAT85sTpmrLtuAgZv5J23tvWjtPW8nB77rhH_zkfvFJp3xoLfhQpm0fseXKR3g2TZbL_Ghf7mnBGpFDec8QUxsqRD7YSiugZjpyv-ByCIYn21JdsFAanduieeH_vjRyx-Ob_5LXLlKQZOqGN99JMvmDeU-1zbAWIBVd6efHkiRTMAF1xWhLlM3DLh2C5EsIbkDm5nooKcoKsuiKfvS0Q7Xfd4qghBhC6Zr-v3QlI_f2i7DeBCbd1ZfP7sD6OTAeSkaz5lNrPiG9oAedsDTlJU303ay77DyE_QotuliZVvqrB4Z78JLQQfyndyh1lf",
+              "video_metadata": null,
+              "tool_call": null,
+              "tool_response": null,
+              "part_metadata": null,
+              "audio_transcription": null
+            }
+          ],
+          "role": "model"
+        },
+        "citation_metadata": null,
+        "finish_message": null,
+        "token_count": null,
+        "finish_reason": "STOP",
+        "grounding_metadata": null,
+        "avg_logprobs": null,
+        "index": 0,
+        "logprobs_result": null,
+        "safety_ratings": null,
+        "url_context_metadata": null
+      }
+    ],
+    "create_time": null,
+    "model_version": "gemini-3.8-flash",
+    "prompt_feedback": null,
+    "response_id": "ZGagau3sB_OlxN8P9qCviQQ",
+    "usage_metadata": {
+      "cache_tokens_details": null,
+      "cached_content_token_count": null,
+      "candidates_token_count": 314,
+      "candidates_tokens_details": null,
+      "prompt_token_count": 5880,
+      "prompt_tokens_details": [
+        {
+          "modality": "TEXT",
+          "token_count": 5880
+        }
+      ],
+      "thoughts_token_count": 1998,
+      "tool_use_prompt_token_count": null,
+      "tool_use_prompt_tokens_details": null,
+      "total_token_count": 8192,
+      "traffic_type": null
+    },
+    "model_status": null,
+    "automatic_function_calling_history": [],
+    "parsed": {
+      "schema_version": "study-e-evaluator-rating-v1",
+      "item_id": "EVAL-3994a7f51dd696be93103bce212382c8",
+      "scores": {
+        "persona_fit": 2,
+        "clarity": 3,
+        "actionability": 4,
+        "factual_grounding": 4
+      },
+      "reasons": {
+        "persona_fit": "The post breaks external founder-to-founder voice by leaking prompt meta-language into public copy ('The approved persona scenario already includes...').",
+        "clarity": "The core workflow logic is followable, but the meta-commentary about persona scenarios is confusing and out of place in a reader-facing article.",
+        "actionability": "Provides a practical, concrete triage rule (current, stale, or unknown) and explicitly keeps human approval in the loop for send decisions.",
+        "factual_grounding": "Strictly adheres to evidence boundaries without inventing customer deployments, metrics, or unsupported capabilities."
+      },
+      "critical_violation": false,
+      "critical_violation_type": null,
+      "critical_evidence_quote": null,
+      "total_score": 13,
+      "pass": false,
+      "low_quality": true
+    }
+  },
+  "latency_ms": 7844,
+  "finished_at": "2026-09-08T19:47:56.533085+00:00",
+  "cost_details": {
+    "input": 0.00441,
+    "cache_read_input_tokens": 0.0,
+    "output": 0.0011775,
+    "reasoning_output_tokens": 0.0074925,
+    "total": 0.01308
+  },
+  "study_id": "STUDY-E-ABLATON",
+  "operational_amendment": "retry_extension_user_authorized.json"
+}

@@ -1,0 +1,94 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I080-R3",
+    "item_id": "SEA-I080",
+    "repeat": 3,
+    "arm_order": [
+      "critic_off",
+      "critic_on"
+    ],
+    "content_id": "POST-bd813d583f9f7b035eb55465"
+  },
+  "arms": {
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-bd813d583f9f7b035eb55465-1",
+        "title": "Subprocessor lists shape the workflow, not the footnote",
+        "body": "If you run a small business and want to automate a workflow that touches customer data, the subprocessor list is not a footnote. It is part of the design. The useful question is simple: which third parties will see the data, at which step, and do you want that handoff at all?\n\nStart with one recurring workflow only: invoice handling, customer inquiries, or document storage. Pick the one where the data already moves through the most tools. Then write down the current handlers in order: you, any SaaS tool, any vendor, any consultant. For each handoff, ask one plain question: does this tool need the data, or is it just there because the process grew that way?\n\nThat diagnosis is the point. It tells you whether automation would reduce access points or simply add another one. If the answer is unclear, keep the human approval where the risk sits and automate only the low-risk steps: extract the data, flag exceptions, and log what happened. Human approval stays mandatory for money movement and other high-risk decisions.\n\nWhen you get to the pilot, define the subprocessor list before build starts: which tools handle data, what each one does, and what approval is needed before any transfer. That keeps the scope honest. The spreadsheet gets less optimistic, which is usually a good sign."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-bd813d583f9f7b035eb55465-1",
+            "title": "Subprocessor lists shape the workflow, not the footnote",
+            "body": "If you run a small business and want to automate a workflow that touches customer data, the subprocessor list is not a footnote. It is part of the design. The useful question is simple: which third parties will see the data, at which step, and do you want that handoff at all?\n\nStart with one recurring workflow only: invoice handling, customer inquiries, or document storage. Pick the one where the data already moves through the most tools. Then write down the current handlers in order: you, any SaaS tool, any vendor, any consultant. For each handoff, ask one plain question: does this tool need the data, or is it just there because the process grew that way?\n\nThat diagnosis is the point. It tells you whether automation would reduce access points or simply add another one. If the answer is unclear, keep the human approval where the risk sits and automate only the low-risk steps: extract the data, flag exceptions, and log what happened. Human approval stays mandatory for money movement and other high-risk decisions.\n\nWhen you get to the pilot, define the subprocessor list before build starts: which tools handle data, what each one does, and what approval is needed before any transfer. That keeps the scope honest. The spreadsheet gets less optimistic, which is usually a good sign."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-bd813d583f9f7b035eb55465-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    },
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-bd813d583f9f7b035eb55465-1",
+        "title": "Subprocessor lists are part of workflow design",
+        "body": "If you run a 1–10-person business and you are thinking about automating one recurring workflow, the subprocessor list is not a footnote. It is part of the design. The practical question is simple: which tools or people will touch the data, at what step, and do you want that handoff there at all?\n\nStart with one workflow only: invoice handling, customer inquiries, or document storage. Pick the one that already feels messy. Then write down the current path in plain English: you, a SaaS tool, a vendor, or a consultant. For each step, note whether data leaves your direct control. That is the diagnostic. It is not glamorous, but it stops the usual “we’ll sort it later” plan, which rarely improves on contact with reality.\n\nFrom there, ask whether automation would reduce access points. A good result is not speed for its own sake; it is fewer places where data can be seen, clearer logging, and human approval where the risk is real. For example, a controlled system can extract invoice data, flag exceptions for review, and keep an audit trail. It should not approve payments on its own.\n\nIf you build a pilot, define the subprocessor list before the build: which tools handle the data, what each one does, and what human approval is needed before any transfer starts. Put that into the pilot scope up front, not after the surprise."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-bd813d583f9f7b035eb55465-1",
+            "title": "Subprocessor lists are part of workflow design",
+            "body": "If you run a 1–10-person business and you are thinking about automating one recurring workflow, the subprocessor list is not a footnote. It is part of the design. The practical question is simple: which tools or people will touch the data, at what step, and do you want that handoff there at all?\n\nStart with one workflow only: invoice handling, customer inquiries, or document storage. Pick the one that already feels messy. Then write down the current path in plain English: you, a SaaS tool, a vendor, or a consultant. For each step, note whether data leaves your direct control. That is the diagnostic. It is not glamorous, but it stops the usual “we’ll sort it later” plan, which rarely improves on contact with reality.\n\nFrom there, ask whether automation would reduce access points. A good result is not speed for its own sake; it is fewer places where data can be seen, clearer logging, and human approval where the risk is real. For example, a controlled system can extract invoice data, flag exceptions for review, and keep an audit trail. It should not approve payments on its own.\n\nIf you build a pilot, define the subprocessor list before the build: which tools handle the data, what each one does, and what human approval is needed before any transfer starts. Put that into the pilot scope up front, not after the surprise."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-bd813d583f9f7b035eb55465-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": [
+            {
+              "repair_id": "P01",
+              "target_ids": [
+                "D01",
+                "D02"
+              ],
+              "instruction": "Replace the enterprise/multinational audience framing with the required small-business owner-operator audience. Remove references to an executive board, transformation office, regional directors, governance committee, and enterprise transformation director, and address the reader directly as a 1–10-person business owner comparing manual work, hiring, or a bounded automation investment.",
+              "source_ids": [
+                "BRIEF",
+                "C01",
+                "S01"
+              ]
+            },
+            {
+              "repair_id": "P02",
+              "target_ids": [
+                "D03"
+              ],
+              "instruction": "Rewrite the diagnostic step as a small-business decision: identify one recurring workflow, then note which current tools or people touch it and whether any external subprocessor is involved. Keep it simple and bounded; do not require enterprise-style handoff mapping or formal DPA language as the main step.",
+              "source_ids": [
+                "BRIEF",
+                "C01",
+                "S01"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

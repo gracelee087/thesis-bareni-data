@@ -1,0 +1,191 @@
+{
+  "status": "success",
+  "usage": {
+    "input_tokens": 4472,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1066,
+    "reasoning_tokens": null
+  },
+  "cost_usd": 0.009802,
+  "output": {
+    "item_id": "E-PLAN-505",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task explicitly specifies 'CTA rule: None.' This post is informational content addressing why reviewer training is insufficient as a standalone control. L01 instructs to end with a neutral practical observation or next-step note instead of a meeting prompt, which aligns with the no-CTA constraint and frozen persona's authority-remaining-human positioning."
+      },
+      {
+        "lesson_id": "L02",
+        "application": "Bareni evidence C02 describes 'handover policy and no-lock-in positioning, not an absolute legal warranty.' When discussing human approval boundaries and workflow controls, L02 ensures we present operational practice as policy choice, not as compliance guarantee, maintaining the approved boundary distinction."
+      },
+      {
+        "lesson_id": "L03",
+        "application": "The abstract topic 'why reviewer training is not enough' lacks direct evidence of Bareni customer outcomes or training results. L03 instructs to replace unsupported claims with a neutral workflow prompt. The post must frame this as a decision framework (what to check before deciding on training alone) rather than filling gaps with general HR or learning theory."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Open with the owner's decision frame: reviewer training addresses inconsistency in human judgment, but cannot prevent systematic process failures, fatigue errors, or new edge cases. Name this as a bounded control, not a complete risk solution.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "S01",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Introduce the practical diagnostic question: what fraction of errors are due to reviewer knowledge gaps versus repeatable logic or data entry steps? This separates training-solvable from automation-solvable problems.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Explain one concrete workflow example: if the same 3–5 approval rules are applied to every transaction, training cannot prevent a tired reviewer applying them incorrectly at 4 p.m. on Friday; a repeatable rule check can.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "State Bareni's operational scope: we work with small businesses to automate repeatable logic steps (extraction, rule matching, human-only approval on exceptions). This is not a team expansion or a training program.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L02"
+        ],
+        "evidence_ids": [
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Close with a neutral next-step observation: before hiring a reviewer trainer or adding process documentation, identify one recurring decision step that consumes 5+ hours per week and follows the same logic each time. That step is worth a 30-minute conversation to check fit.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C01",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Do not include a CTA, meeting prompt, or booking link. The post ends on the practical diagnostic action (identify and measure one repeatable step), preserving human authority and the informational intent.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "S01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No customer names, outcomes, savings, revenue figures, or multi-person team references. Frame the workflow decision as Bareni's operational scope and decision logic, not as a customer case or proof of capability."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Do not describe automation as removing human approval or handling money transfer. Center the post on repeatable rule logic and exception-only human review, preserving the mandatory approval boundary for high-risk decisions."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Maintain the frozen persona: plain-speaking technical expert, founder-to-founder, restrained tone, no hype. Position reviewer training as a legitimate but bounded control, and automation as a complementary decision—not dismissive of training."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use plain English throughout. When describing Bareni's repeatable-logic workflows, distinguish between the self-built demo (accounts-payable extraction and rule enforcement) and general practice description. Do not imply production readiness or customer results."
+      }
+    ]
+  },
+  "raw_text": "{\"item_id\": \"E-PLAN-505\", \"selected_lessons\": [{\"lesson_id\": \"L01\", \"application\": \"The task explicitly specifies 'CTA rule: None.' This post is informational content addressing why reviewer training is insufficient as a standalone control. L01 instructs to end with a neutral practical observation or next-step note instead of a meeting prompt, which aligns with the no-CTA constraint and frozen persona's authority-remaining-human positioning.\"}, {\"lesson_id\": \"L02\", \"application\": \"Bareni evidence C02 describes 'handover policy and no-lock-in positioning, not an absolute legal warranty.' When discussing human approval boundaries and workflow controls, L02 ensures we present operational practice as policy choice, not as compliance guarantee, maintaining the approved boundary distinction.\"}, {\"lesson_id\": \"L03\", \"application\": \"The abstract topic 'why reviewer training is not enough' lacks direct evidence of Bareni customer outcomes or training results. L03 instructs to replace unsupported claims with a neutral workflow prompt. The post must frame this as a decision framework (what to check before deciding on training alone) rather than filling gaps with general HR or learning theory.\"}], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Open with the owner's decision frame: reviewer training addresses inconsistency in human judgment, but cannot prevent systematic process failures, fatigue errors, or new edge cases. Name this as a bounded control, not a complete risk solution.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"S01\", \"C05\"]}, {\"step_id\": \"P02\", \"instruction\": \"Introduce the practical diagnostic question: what fraction of errors are due to reviewer knowledge gaps versus repeatable logic or data entry steps? This separates training-solvable from automation-solvable problems.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"C05\"]}, {\"step_id\": \"P03\", \"instruction\": \"Explain one concrete workflow example: if the same 3–5 approval rules are applied to every transaction, training cannot prevent a tired reviewer applying them incorrectly at 4 p.m. on Friday; a repeatable rule check can.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"C02\", \"C05\"]}, {\"step_id\": \"P04\", \"instruction\": \"State Bareni's operational scope: we work with small businesses to automate repeatable logic steps (extraction, rule matching, human-only approval on exceptions). This is not a team expansion or a training program.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L02\"], \"evidence_ids\": [\"C02\", \"C04\"]}, {\"step_id\": \"P05\", \"instruction\": \"Close with a neutral next-step observation: before hiring a reviewer trainer or adding process documentation, identify one recurring decision step that consumes 5+ hours per week and follows the same logic each time. That step is worth a 30-minute conversation to check fit.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C01\", \"C05\"]}, {\"step_id\": \"P06\", \"instruction\": \"Do not include a CTA, meeting prompt, or booking link. The post ends on the practical diagnostic action (identify and measure one repeatable step), preserving human authority and the informational intent.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"S01\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"No customer names, outcomes, savings, revenue figures, or multi-person team references. Frame the workflow decision as Bareni's operational scope and decision logic, not as a customer case or proof of capability.\"}, {\"constraint_id\": \"K02\", \"handling\": \"Do not describe automation as removing human approval or handling money transfer. Center the post on repeatable rule logic and exception-only human review, preserving the mandatory approval boundary for high-risk decisions.\"}, {\"constraint_id\": \"K03\", \"handling\": \"Maintain the frozen persona: plain-speaking technical expert, founder-to-founder, restrained tone, no hype. Position reviewer training as a legitimate but bounded control, and automation as a complementary decision—not dismissive of training.\"}, {\"constraint_id\": \"K04\", \"handling\": \"Use plain English throughout. When describing Bareni's repeatable-logic workflows, distinguish between the self-built demo (accounts-payable extraction and rule enforcement) and general practice description. Do not imply production readiness or customer results.\"}]}",
+  "provider_response": {
+    "id": "msg_011Cer2KkiFehgiAWuqBkgbB",
+    "container": null,
+    "content": [
+      {
+        "citations": null,
+        "text": "{\"item_id\": \"E-PLAN-505\", \"selected_lessons\": [{\"lesson_id\": \"L01\", \"application\": \"The task explicitly specifies 'CTA rule: None.' This post is informational content addressing why reviewer training is insufficient as a standalone control. L01 instructs to end with a neutral practical observation or next-step note instead of a meeting prompt, which aligns with the no-CTA constraint and frozen persona's authority-remaining-human positioning.\"}, {\"lesson_id\": \"L02\", \"application\": \"Bareni evidence C02 describes 'handover policy and no-lock-in positioning, not an absolute legal warranty.' When discussing human approval boundaries and workflow controls, L02 ensures we present operational practice as policy choice, not as compliance guarantee, maintaining the approved boundary distinction.\"}, {\"lesson_id\": \"L03\", \"application\": \"The abstract topic 'why reviewer training is not enough' lacks direct evidence of Bareni customer outcomes or training results. L03 instructs to replace unsupported claims with a neutral workflow prompt. The post must frame this as a decision framework (what to check before deciding on training alone) rather than filling gaps with general HR or learning theory.\"}], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Open with the owner's decision frame: reviewer training addresses inconsistency in human judgment, but cannot prevent systematic process failures, fatigue errors, or new edge cases. Name this as a bounded control, not a complete risk solution.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"S01\", \"C05\"]}, {\"step_id\": \"P02\", \"instruction\": \"Introduce the practical diagnostic question: what fraction of errors are due to reviewer knowledge gaps versus repeatable logic or data entry steps? This separates training-solvable from automation-solvable problems.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"C05\"]}, {\"step_id\": \"P03\", \"instruction\": \"Explain one concrete workflow example: if the same 3–5 approval rules are applied to every transaction, training cannot prevent a tired reviewer applying them incorrectly at 4 p.m. on Friday; a repeatable rule check can.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"C02\", \"C05\"]}, {\"step_id\": \"P04\", \"instruction\": \"State Bareni's operational scope: we work with small businesses to automate repeatable logic steps (extraction, rule matching, human-only approval on exceptions). This is not a team expansion or a training program.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L02\"], \"evidence_ids\": [\"C02\", \"C04\"]}, {\"step_id\": \"P05\", \"instruction\": \"Close with a neutral next-step observation: before hiring a reviewer trainer or adding process documentation, identify one recurring decision step that consumes 5+ hours per week and follows the same logic each time. That step is worth a 30-minute conversation to check fit.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C01\", \"C05\"]}, {\"step_id\": \"P06\", \"instruction\": \"Do not include a CTA, meeting prompt, or booking link. The post ends on the practical diagnostic action (identify and measure one repeatable step), preserving human authority and the informational intent.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"S01\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"No customer names, outcomes, savings, revenue figures, or multi-person team references. Frame the workflow decision as Bareni's operational scope and decision logic, not as a customer case or proof of capability.\"}, {\"constraint_id\": \"K02\", \"handling\": \"Do not describe automation as removing human approval or handling money transfer. Center the post on repeatable rule logic and exception-only human review, preserving the mandatory approval boundary for high-risk decisions.\"}, {\"constraint_id\": \"K03\", \"handling\": \"Maintain the frozen persona: plain-speaking technical expert, founder-to-founder, restrained tone, no hype. Position reviewer training as a legitimate but bounded control, and automation as a complementary decision—not dismissive of training.\"}, {\"constraint_id\": \"K04\", \"handling\": \"Use plain English throughout. When describing Bareni's repeatable-logic workflows, distinguish between the self-built demo (accounts-payable extraction and rule enforcement) and general practice description. Do not imply production readiness or customer results.\"}]}",
+        "type": "text"
+      }
+    ],
+    "model": "claude-haiku-4-5-20251001",
+    "role": "assistant",
+    "stop_details": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "not_available",
+      "input_tokens": 4472,
+      "output_tokens": 1066,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": "standard"
+    }
+  },
+  "stop_reason": "end_turn",
+  "cost_details": {
+    "input": 0.004472,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.00533,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.009802
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": null,
+  "key": "SE-FINAL-N098_planner__a001",
+  "role": "planner",
+  "created_at": "2026-09-08T13:07:25.278795+00:00",
+  "ended_at": "2026-09-08T13:07:52.441430+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-N098",
+    "batch_id": 4,
+    "condition": "natural",
+    "cohort": "natural"
+  },
+  "task_id": "SE-FINAL-N098",
+  "batch_id": 4,
+  "cohort": "natural",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 27142,
+  "budget_charge_usd": 0.009802,
+  "unknown_cost_reservation_usd": 0
+}

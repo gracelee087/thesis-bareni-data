@@ -1,0 +1,92 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I120-R2",
+    "item_id": "SEA-I120",
+    "repeat": 2,
+    "arm_order": [
+      "critic_on",
+      "critic_off"
+    ],
+    "content_id": "POST-857dee64f61c12d63babf130"
+  },
+  "arms": {
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-857dee64f61c12d63babf130-1",
+        "title": "Design against vendor price changes before they turn into drift",
+        "body": "Vendor price changes are not really a finance problem first. They are a workflow-control problem.\n\nIf a tool sits inside invoicing, customer replies, or data entry, a price increase can quietly change the economics of the whole process. So the question is simple: which recurring vendor is part of a repeatable workflow, and what happens if that price moves?\n\nMy rule of thumb is to review each recurring vendor before renewal. If the change is small, absorb it and keep going. If it crosses your chosen threshold, stop automatic renewal and move it to human approval. That keeps the decision with you, where it belongs.\n\nThis is also where bounded automation helps. If the vendor is doing work that could be rebuilt in a narrower way, you can compare continuing the tool with replacing that step in a controlled workflow. Bareni’s own model keeps money movement and other high-risk decisions under human approval, and that boundary matters here.\n\nOne practical next step: write down the recurring vendor name, renewal date, current rate, and the price-change threshold that would make you review it. Then use that list for the next vendor change, instead of deciding in a rush.\n\nBoring is useful when a vendor decides to get creative with pricing."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-857dee64f61c12d63babf130-1",
+            "title": "Design against vendor price changes before they turn into drift",
+            "body": "Vendor price changes are not really a finance problem first. They are a workflow-control problem.\n\nIf a tool sits inside invoicing, customer replies, or data entry, a price increase can quietly change the economics of the whole process. So the question is simple: which recurring vendor is part of a repeatable workflow, and what happens if that price moves?\n\nMy rule of thumb is to review each recurring vendor before renewal. If the change is small, absorb it and keep going. If it crosses your chosen threshold, stop automatic renewal and move it to human approval. That keeps the decision with you, where it belongs.\n\nThis is also where bounded automation helps. If the vendor is doing work that could be rebuilt in a narrower way, you can compare continuing the tool with replacing that step in a controlled workflow. Bareni’s own model keeps money movement and other high-risk decisions under human approval, and that boundary matters here.\n\nOne practical next step: write down the recurring vendor name, renewal date, current rate, and the price-change threshold that would make you review it. Then use that list for the next vendor change, instead of deciding in a rush.\n\nBoring is useful when a vendor decides to get creative with pricing."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-857dee64f61c12d63babf130-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": [
+            {
+              "repair_id": "P01",
+              "target_ids": [
+                "D01",
+                "D02"
+              ],
+              "instruction": "Replace the incoherent opening and surrounding fragments with a plain-English paragraph that states one clear workflow decision: review each recurring vendor before renewal, and if the price increase crosses your chosen threshold, move it to a human approval step instead of letting automation renew it automatically.",
+              "source_ids": [
+                "BRIEF",
+                "S01"
+              ]
+            },
+            {
+              "repair_id": "P02",
+              "target_ids": [
+                "D02"
+              ],
+              "instruction": "Add one concrete next step near the end: write down the recurring vendor list, the renewal date, and a simple approval threshold, then use that as the rule for the next vendor change review.",
+              "source_ids": [
+                "BRIEF",
+                "S01"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-857dee64f61c12d63babf130-1",
+        "title": "Design against vendor price changes with one simple control",
+        "body": "Vendor price changes are not a strategy problem first. They are a workflow control problem.\n\nIf a tool sits inside a repeatable process — invoicing, customer replies, data entry, accounts payable — then a price increase can quietly change the economics of that process. The question for a small business owner is simple: does this vendor still make sense at the current rate, or is it time to swap the step out?\n\nDo not turn that into a broad software debate. Pick one recurring workflow and write down three things: the current vendor, the current per-unit or per-seat cost, and the trigger that makes you review it. A renewal notice, a quarterly check, or a budget variance can work. Then ask one blunt question: if this price goes up, do I keep it, replace it, or redesign the step?\n\nThat is the bounded decision. It keeps the choice with a human, which matters for money movement and other high-risk calls.\n\nIf you want a practical next step, do the vendor-cost audit yourself this week. One workflow, one rate, one review trigger. Boring is useful here."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-857dee64f61c12d63babf130-1",
+            "title": "Design against vendor price changes with one simple control",
+            "body": "Vendor price changes are not a strategy problem first. They are a workflow control problem.\n\nIf a tool sits inside a repeatable process — invoicing, customer replies, data entry, accounts payable — then a price increase can quietly change the economics of that process. The question for a small business owner is simple: does this vendor still make sense at the current rate, or is it time to swap the step out?\n\nDo not turn that into a broad software debate. Pick one recurring workflow and write down three things: the current vendor, the current per-unit or per-seat cost, and the trigger that makes you review it. A renewal notice, a quarterly check, or a budget variance can work. Then ask one blunt question: if this price goes up, do I keep it, replace it, or redesign the step?\n\nThat is the bounded decision. It keeps the choice with a human, which matters for money movement and other high-risk calls.\n\nIf you want a practical next step, do the vendor-cost audit yourself this week. One workflow, one rate, one review trigger. Boring is useful here."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-857dee64f61c12d63babf130-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

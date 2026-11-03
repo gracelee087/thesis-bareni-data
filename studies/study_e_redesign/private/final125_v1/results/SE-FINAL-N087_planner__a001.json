@@ -1,0 +1,167 @@
+{
+  "status": "success",
+  "usage": {
+    "input_tokens": 4348,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 925,
+    "reasoning_tokens": null
+  },
+  "cost_usd": 0.008973,
+  "output": {
+    "item_id": "E-PLAN-525",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task explicitly prohibits a CTA. L01 directs that informational content about a workflow topic should close with a practical observation or next step, not a booking prompt. The post will explain data residency as a workflow decision and end with a diagnostic question the owner can ask internally, maintaining the no-CTA rule."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Reframe 'data residency before automation' as a single workflow control decision: where sensitive customer or transaction data must stay (on-premise, in-country, or vendor-locked) before any automation tool can touch it. Do not discuss compliance frameworks in detail; focus on the owner's actual constraint.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Identify the one recurring workflow in the representative persona (e.g. customer-data entry, invoice processing, or lead follow-up) that the owner has considered automating. State plainly which data fields in that workflow must stay resident and why (e.g. payment card data, personal GDPR-protected fields, or vendor lock-in terms).",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Explain that automation tools (Zapier, Make, n8n, and AI assistants) may pass data through third-party servers or cloud services, and that the owner must verify the tool's data-residency guarantees before piloting. Frame this as a threshold question, not a blocker.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Offer one concrete diagnostic question: 'Which data fields in this workflow are legally or contractually required to stay in one location, and does the automation tool's service agreement allow that?' Position this as a 30-second check the owner can do alone before talking to a vendor.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C02",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Close with a practical observation: if the answer is 'most data can move' or 'the tool supports residency', automation is worth a pilot; if 'everything must stay on-premise', the owner needs a self-hosted or integrated solution. Do not recommend a specific tool or service. Do not include a CTA or booking invitation.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C01",
+          "C04",
+          "S01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No invented customers, results, numbers, or team size. Reference only the representative persona scenario and self-built demos where relevant. Explain Bareni as a consulting practice being built by the thesis author."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Do not recommend autonomous payment or decision-making. Reinforce human approval for high-risk workflows. Avoid recommending excluded services (bulk cold email, high-sensitivity medical/legal work, unsupported OCR-heavy processes)."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Preserve the frozen persona: plain-speaking expert, founder-to-founder, trust-first voice. No hype, no fabricated urgency, one understated phrase at most. No CTA despite informational format."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use plain English and explain jargon (e.g. 'residency', 'service agreement', 'self-hosted'). Keep the diagnostic question distinct from a sales pitch. Treat the representative scenario as an example, not a market statistic or observed result."
+      }
+    ]
+  },
+  "raw_text": "{\"item_id\": \"E-PLAN-525\", \"selected_lessons\": [{\"lesson_id\": \"L01\", \"application\": \"The task explicitly prohibits a CTA. L01 directs that informational content about a workflow topic should close with a practical observation or next step, not a booking prompt. The post will explain data residency as a workflow decision and end with a diagnostic question the owner can ask internally, maintaining the no-CTA rule.\"}], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Reframe 'data residency before automation' as a single workflow control decision: where sensitive customer or transaction data must stay (on-premise, in-country, or vendor-locked) before any automation tool can touch it. Do not discuss compliance frameworks in detail; focus on the owner's actual constraint.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"S01\"]}, {\"step_id\": \"P02\", \"instruction\": \"Identify the one recurring workflow in the representative persona (e.g. customer-data entry, invoice processing, or lead follow-up) that the owner has considered automating. State plainly which data fields in that workflow must stay resident and why (e.g. payment card data, personal GDPR-protected fields, or vendor lock-in terms).\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C01\", \"C02\"]}, {\"step_id\": \"P03\", \"instruction\": \"Explain that automation tools (Zapier, Make, n8n, and AI assistants) may pass data through third-party servers or cloud services, and that the owner must verify the tool's data-residency guarantees before piloting. Frame this as a threshold question, not a blocker.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C02\", \"C04\"]}, {\"step_id\": \"P04\", \"instruction\": \"Offer one concrete diagnostic question: 'Which data fields in this workflow are legally or contractually required to stay in one location, and does the automation tool's service agreement allow that?' Position this as a 30-second check the owner can do alone before talking to a vendor.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C02\", \"S01\"]}, {\"step_id\": \"P05\", \"instruction\": \"Close with a practical observation: if the answer is 'most data can move' or 'the tool supports residency', automation is worth a pilot; if 'everything must stay on-premise', the owner needs a self-hosted or integrated solution. Do not recommend a specific tool or service. Do not include a CTA or booking invitation.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C01\", \"C04\", \"S01\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"No invented customers, results, numbers, or team size. Reference only the representative persona scenario and self-built demos where relevant. Explain Bareni as a consulting practice being built by the thesis author.\"}, {\"constraint_id\": \"K02\", \"handling\": \"Do not recommend autonomous payment or decision-making. Reinforce human approval for high-risk workflows. Avoid recommending excluded services (bulk cold email, high-sensitivity medical/legal work, unsupported OCR-heavy processes).\"}, {\"constraint_id\": \"K03\", \"handling\": \"Preserve the frozen persona: plain-speaking expert, founder-to-founder, trust-first voice. No hype, no fabricated urgency, one understated phrase at most. No CTA despite informational format.\"}, {\"constraint_id\": \"K04\", \"handling\": \"Use plain English and explain jargon (e.g. 'residency', 'service agreement', 'self-hosted'). Keep the diagnostic question distinct from a sales pitch. Treat the representative scenario as an example, not a market statistic or observed result.\"}]}",
+  "provider_response": {
+    "id": "msg_011Cer1nzXbK3z5g9cQg7ngu",
+    "container": null,
+    "content": [
+      {
+        "citations": null,
+        "text": "{\"item_id\": \"E-PLAN-525\", \"selected_lessons\": [{\"lesson_id\": \"L01\", \"application\": \"The task explicitly prohibits a CTA. L01 directs that informational content about a workflow topic should close with a practical observation or next step, not a booking prompt. The post will explain data residency as a workflow decision and end with a diagnostic question the owner can ask internally, maintaining the no-CTA rule.\"}], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Reframe 'data residency before automation' as a single workflow control decision: where sensitive customer or transaction data must stay (on-premise, in-country, or vendor-locked) before any automation tool can touch it. Do not discuss compliance frameworks in detail; focus on the owner's actual constraint.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"S01\"]}, {\"step_id\": \"P02\", \"instruction\": \"Identify the one recurring workflow in the representative persona (e.g. customer-data entry, invoice processing, or lead follow-up) that the owner has considered automating. State plainly which data fields in that workflow must stay resident and why (e.g. payment card data, personal GDPR-protected fields, or vendor lock-in terms).\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C01\", \"C02\"]}, {\"step_id\": \"P03\", \"instruction\": \"Explain that automation tools (Zapier, Make, n8n, and AI assistants) may pass data through third-party servers or cloud services, and that the owner must verify the tool's data-residency guarantees before piloting. Frame this as a threshold question, not a blocker.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C02\", \"C04\"]}, {\"step_id\": \"P04\", \"instruction\": \"Offer one concrete diagnostic question: 'Which data fields in this workflow are legally or contractually required to stay in one location, and does the automation tool's service agreement allow that?' Position this as a 30-second check the owner can do alone before talking to a vendor.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C02\", \"S01\"]}, {\"step_id\": \"P05\", \"instruction\": \"Close with a practical observation: if the answer is 'most data can move' or 'the tool supports residency', automation is worth a pilot; if 'everything must stay on-premise', the owner needs a self-hosted or integrated solution. Do not recommend a specific tool or service. Do not include a CTA or booking invitation.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C01\", \"C04\", \"S01\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"No invented customers, results, numbers, or team size. Reference only the representative persona scenario and self-built demos where relevant. Explain Bareni as a consulting practice being built by the thesis author.\"}, {\"constraint_id\": \"K02\", \"handling\": \"Do not recommend autonomous payment or decision-making. Reinforce human approval for high-risk workflows. Avoid recommending excluded services (bulk cold email, high-sensitivity medical/legal work, unsupported OCR-heavy processes).\"}, {\"constraint_id\": \"K03\", \"handling\": \"Preserve the frozen persona: plain-speaking expert, founder-to-founder, trust-first voice. No hype, no fabricated urgency, one understated phrase at most. No CTA despite informational format.\"}, {\"constraint_id\": \"K04\", \"handling\": \"Use plain English and explain jargon (e.g. 'residency', 'service agreement', 'self-hosted'). Keep the diagnostic question distinct from a sales pitch. Treat the representative scenario as an example, not a market statistic or observed result.\"}]}",
+        "type": "text"
+      }
+    ],
+    "model": "claude-haiku-4-5-20251001",
+    "role": "assistant",
+    "stop_details": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "not_available",
+      "input_tokens": 4348,
+      "output_tokens": 925,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": "standard"
+    }
+  },
+  "stop_reason": "end_turn",
+  "cost_details": {
+    "input": 0.004348,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.004625,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.008973
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": null,
+  "key": "SE-FINAL-N087_planner__a001",
+  "role": "planner",
+  "created_at": "2026-09-08T13:00:28.238755+00:00",
+  "ended_at": "2026-09-08T13:00:40.059694+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-N087",
+    "batch_id": 3,
+    "condition": "natural",
+    "cohort": "natural"
+  },
+  "task_id": "SE-FINAL-N087",
+  "batch_id": 3,
+  "cohort": "natural",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 11815,
+  "budget_charge_usd": 0.008973,
+  "unknown_cost_reservation_usd": 0
+}

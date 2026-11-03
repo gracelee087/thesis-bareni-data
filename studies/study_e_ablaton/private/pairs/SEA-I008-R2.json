@@ -1,0 +1,94 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I008-R2",
+    "item_id": "SEA-I008",
+    "repeat": 2,
+    "arm_order": [
+      "critic_off",
+      "critic_on"
+    ],
+    "content_id": "POST-5e0b949976624f8b3bbfa1ae"
+  },
+  "arms": {
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-5e0b949976624f8b3bbfa1ae-1",
+        "title": "When spot checks stop finding the problem",
+        "body": "This is for the owner of a small business who is still doing important checks by hand. Spot checks work until they stop telling you anything useful: the same errors keep coming back, or new ones slip through between reviews. Then the real question is not “should I inspect more?” It is “which part of this check can be made reliable, and which part must stay human?”\n\nA good candidate is a repeatable document or data review with clear rules. Think invoice amounts against an expected limit, customer replies against a simple FAQ list, or recurring form fields that should match a known pattern. That is where AI can help with flagging and routing. It should not be used to make the final call on money movement or other high-risk decisions; that boundary stays with the owner.\n\nThe practical next step is to name one workflow and one failure point. Which check fails most often, and what exactly goes wrong? That gives you a bounded decision: keep the human approval where it belongs, and only automate the repetitive part that can be checked against rules. Small distinction, big difference."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-5e0b949976624f8b3bbfa1ae-1",
+            "title": "When spot checks stop finding the problem",
+            "body": "This is for the owner of a small business who is still doing important checks by hand. Spot checks work until they stop telling you anything useful: the same errors keep coming back, or new ones slip through between reviews. Then the real question is not “should I inspect more?” It is “which part of this check can be made reliable, and which part must stay human?”\n\nA good candidate is a repeatable document or data review with clear rules. Think invoice amounts against an expected limit, customer replies against a simple FAQ list, or recurring form fields that should match a known pattern. That is where AI can help with flagging and routing. It should not be used to make the final call on money movement or other high-risk decisions; that boundary stays with the owner.\n\nThe practical next step is to name one workflow and one failure point. Which check fails most often, and what exactly goes wrong? That gives you a bounded decision: keep the human approval where it belongs, and only automate the repetitive part that can be checked against rules. Small distinction, big difference."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-5e0b949976624f8b3bbfa1ae-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    },
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-5e0b949976624f8b3bbfa1ae-1",
+        "title": "When spot checks stop finding the problem",
+        "body": "This is for the owner of a 1–10-person business who has tried ChatGPT but has not yet tied AI to a real workflow. Spot checks are useful until they stop being reliable. If you keep sampling the same process and the same errors still slip through, the issue is no longer “should we inspect more?” It is “which check can be made repeatable, and which decision must stay human?”\n\nA good first candidate is a repeatable document or data review with clear rules: invoice amounts against a limit, customer replies against a simple FAQ, or recurring form fields against a known pattern. That is where AI can help with flagging and routing, while the owner keeps judgment. Money movement and other high-risk decisions still need human approval.\n\nThe practical next step is not a big programme. Pick one recurring workflow and write down the exact spot check that fails most often, plus the rule it is supposed to follow. If the rule is clear and the misses repeat, that gives you a bounded automation question. If the rule is fuzzy, the process needs tightening before anyone reaches for software. Clever, but not magical. "
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-5e0b949976624f8b3bbfa1ae-1",
+            "title": "When spot checks stop finding the problem",
+            "body": "This is for the owner of a 1–10-person business who has tried ChatGPT but has not yet tied AI to a real workflow. Spot checks are useful until they stop being reliable. If you keep sampling the same process and the same errors still slip through, the issue is no longer “should we inspect more?” It is “which check can be made repeatable, and which decision must stay human?”\n\nA good first candidate is a repeatable document or data review with clear rules: invoice amounts against a limit, customer replies against a simple FAQ, or recurring form fields against a known pattern. That is where AI can help with flagging and routing, while the owner keeps judgment. Money movement and other high-risk decisions still need human approval.\n\nThe practical next step is not a big programme. Pick one recurring workflow and write down the exact spot check that fails most often, plus the rule it is supposed to follow. If the rule is clear and the misses repeat, that gives you a bounded automation question. If the rule is fuzzy, the process needs tightening before anyone reaches for software. Clever, but not magical. "
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-5e0b949976624f8b3bbfa1ae-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": [
+            {
+              "repair_id": "P01",
+              "target_ids": [
+                "D01"
+              ],
+              "instruction": "Replace the enterprise-board framing with the approved owner-operator audience: speak directly to a CEO or owner of a 1–10-person small business, not a multinational governance group.",
+              "source_ids": [
+                "BRIEF",
+                "C01",
+                "S01"
+              ]
+            },
+            {
+              "repair_id": "P02",
+              "target_ids": [
+                "D02"
+              ],
+              "instruction": "Remove the booking CTA and keep the next step informational: instead of inviting a free 30-minute diagnostic, tell the owner to pick one recurring workflow, identify the exact spot check that fails most often, and note the rule or threshold it should follow.",
+              "source_ids": [
+                "BRIEF",
+                "C02",
+                "C05",
+                "S01"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

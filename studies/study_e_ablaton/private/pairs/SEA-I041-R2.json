@@ -1,0 +1,92 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I041-R2",
+    "item_id": "SEA-I041",
+    "repeat": 2,
+    "arm_order": [
+      "critic_on",
+      "critic_off"
+    ],
+    "content_id": "POST-8ae4fd646d8073dfeb26a497"
+  },
+  "arms": {
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-8ae4fd646d8073dfeb26a497-1",
+        "title": "Why some errors keep coming back",
+        "body": "Some errors keep coming back because the feedback loop is too slow.\n\nIf a repeated mistake only shows up when a customer complains, or when you do a weekly review, the same issue can run for a while before anyone catches it. That is how a small rule problem turns into a recurring workflow problem.\n\nThe practical question is simple: where is the first point where you can check the work before it reaches the customer, the bank, or the next step in the process?\n\nIn a small business, that might be invoice entry, order updates, customer-data changes, or lead follow-up. The fix is usually not “more AI.” It is one clear control: a validation rule, a duplicate check, a daily alert, or a human-only approval gate for anything sensitive.\n\nMoney movement and other high-risk decisions should stay with a person. AI can help by flagging exceptions or routing work for review. It should not be the approver.\n\nIf you want the error to stop repeating, write down one workflow, one error type, and one place where a check can happen earlier. Then measure whether the mistake is caught before it escapes the process. That is the part worth improving first."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-8ae4fd646d8073dfeb26a497-1",
+            "title": "Why some errors keep coming back",
+            "body": "Some errors keep coming back because the feedback loop is too slow.\n\nIf a repeated mistake only shows up when a customer complains, or when you do a weekly review, the same issue can run for a while before anyone catches it. That is how a small rule problem turns into a recurring workflow problem.\n\nThe practical question is simple: where is the first point where you can check the work before it reaches the customer, the bank, or the next step in the process?\n\nIn a small business, that might be invoice entry, order updates, customer-data changes, or lead follow-up. The fix is usually not “more AI.” It is one clear control: a validation rule, a duplicate check, a daily alert, or a human-only approval gate for anything sensitive.\n\nMoney movement and other high-risk decisions should stay with a person. AI can help by flagging exceptions or routing work for review. It should not be the approver.\n\nIf you want the error to stop repeating, write down one workflow, one error type, and one place where a check can happen earlier. Then measure whether the mistake is caught before it escapes the process. That is the part worth improving first."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-8ae4fd646d8073dfeb26a497-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": [
+            {
+              "repair_id": "P01",
+              "target_ids": [
+                "D01"
+              ],
+              "instruction": "Rewrite the body so the argument is readable in plain English: open with the topic, state the workflow problem in one sentence, then give one clear next step. Remove the scrambled fragments and keep the post coherent from start to finish.",
+              "source_ids": [
+                "BRIEF",
+                "S01"
+              ]
+            },
+            {
+              "repair_id": "P02",
+              "target_ids": [
+                "D02"
+              ],
+              "instruction": "Replace any suggestion that AI should approve money movement with a human-approval control. Keep the point that money and other high-risk decisions stay with a person, and frame AI only as a helper for review or triage.",
+              "source_ids": [
+                "C04",
+                "BRIEF",
+                "S01"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-8ae4fd646d8073dfeb26a497-1",
+        "title": "Why recurring errors survive",
+        "body": "Some errors keep coming back because the feedback loop is too slow, or because nobody put a check at the point where the mistake starts.\n\nIf you run a small business, think about one recurring manual workflow: invoice entry, customer-data updates, order processing, or lead follow-up. Ask one plain question: where does the same error show up more than once, and when do you notice it? If the answer is “only after a customer complains” or “at the weekly review,” the loop is weak.\n\nThat is the part worth fixing first. Not the whole process. Just the one upstream control that catches the error before it spreads. In Bareni’s work, that can mean a validation rule, a duplicate check, or a human-approval gate before a risky step. Human approval stays mandatory for money movement and other high-risk decisions.\n\nThe practical next step is to write down one measurable outcome for that workflow, such as “errors caught before customer contact” or “invoice checks per week.” That gives you a baseline before you decide whether the work should stay manual, get a control, or be automated in a bounded way. Plain boring control work; still the best kind when the same mistake keeps trying to move in."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-8ae4fd646d8073dfeb26a497-1",
+            "title": "Why recurring errors survive",
+            "body": "Some errors keep coming back because the feedback loop is too slow, or because nobody put a check at the point where the mistake starts.\n\nIf you run a small business, think about one recurring manual workflow: invoice entry, customer-data updates, order processing, or lead follow-up. Ask one plain question: where does the same error show up more than once, and when do you notice it? If the answer is “only after a customer complains” or “at the weekly review,” the loop is weak.\n\nThat is the part worth fixing first. Not the whole process. Just the one upstream control that catches the error before it spreads. In Bareni’s work, that can mean a validation rule, a duplicate check, or a human-approval gate before a risky step. Human approval stays mandatory for money movement and other high-risk decisions.\n\nThe practical next step is to write down one measurable outcome for that workflow, such as “errors caught before customer contact” or “invoice checks per week.” That gives you a baseline before you decide whether the work should stay manual, get a control, or be automated in a bounded way. Plain boring control work; still the best kind when the same mistake keeps trying to move in."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-8ae4fd646d8073dfeb26a497-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

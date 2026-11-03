@@ -1,0 +1,110 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I077-R3",
+    "item_id": "SEA-I077",
+    "repeat": 3,
+    "arm_order": [
+      "critic_off",
+      "critic_on"
+    ],
+    "content_id": "POST-3f8472bb328e77a00756d8df"
+  },
+  "arms": {
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-3f8472bb328e77a00756d8df-1",
+        "title": "When a rollback drill earns its keep",
+        "body": "For a small-business owner, the cost of a rollback drill is usually not a software question. It is the time spent writing down how to undo a workflow if it breaks, and deciding whether that time is worth it.\n\nA good rule is simple: if the workflow handles money movement, customer data, or repeated handoffs, ask whether you could restore it by hand without losing a day. If the answer is no, or even “I’m not sure,” a rollback drill is probably worth the upfront effort.\n\nThat does not mean every process needs one. If a workflow is small, low-risk, and easy to rebuild, the drill may cost more than the failure would.\n\nThe practical next step is to pick one workflow and write the manual fallback on one page: what gets paused, what gets checked, who approves the restart, and what has to be re-entered if something goes wrong. That is enough to see where the real cost sits.\n\nRollback drills are unglamorous, but they are only worth the time when the downside is harder to rebuild than the procedure itself."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-3f8472bb328e77a00756d8df-1",
+            "title": "When a rollback drill earns its keep",
+            "body": "For a small-business owner, the cost of a rollback drill is usually not a software question. It is the time spent writing down how to undo a workflow if it breaks, and deciding whether that time is worth it.\n\nA good rule is simple: if the workflow handles money movement, customer data, or repeated handoffs, ask whether you could restore it by hand without losing a day. If the answer is no, or even “I’m not sure,” a rollback drill is probably worth the upfront effort.\n\nThat does not mean every process needs one. If a workflow is small, low-risk, and easy to rebuild, the drill may cost more than the failure would.\n\nThe practical next step is to pick one workflow and write the manual fallback on one page: what gets paused, what gets checked, who approves the restart, and what has to be re-entered if something goes wrong. That is enough to see where the real cost sits.\n\nRollback drills are unglamorous, but they are only worth the time when the downside is harder to rebuild than the procedure itself."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-3f8472bb328e77a00756d8df-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    },
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-3f8472bb328e77a00756d8df-1",
+        "title": "When a rollback drill earns its keep",
+        "body": "For a small business owner, the cost of a rollback drill is not abstract. It is the time and attention it takes to write down how to undo one workflow change before that change goes live.\n\nThat is a plain trade-off. You spend a little time now, or you discover the broken path later when the workflow is already carrying orders, customer data, or money-movement steps that still need human approval.\n\nI would treat rollback drills as a bounded decision, not a ritual. If the workflow is simple and easy to rebuild, skip it. If one failure would force you into manual recovery or awkward re-entry work, a drill is probably worth the upfront time.\n\nThe practical next step is simple: pick one recurring workflow, define what rollback would mean in plain English, and test that rollback path once before you expand the build. That gives you a real answer instead of a guess.\n\nUnglamorous, yes. Still cheaper than finding out the hard way."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-3f8472bb328e77a00756d8df-1",
+            "title": "When a rollback drill earns its keep",
+            "body": "For a small business owner, the cost of a rollback drill is not abstract. It is the time and attention it takes to write down how to undo one workflow change before that change goes live.\n\nThat is a plain trade-off. You spend a little time now, or you discover the broken path later when the workflow is already carrying orders, customer data, or money-movement steps that still need human approval.\n\nI would treat rollback drills as a bounded decision, not a ritual. If the workflow is simple and easy to rebuild, skip it. If one failure would force you into manual recovery or awkward re-entry work, a drill is probably worth the upfront time.\n\nThe practical next step is simple: pick one recurring workflow, define what rollback would mean in plain English, and test that rollback path once before you expand the build. That gives you a real answer instead of a guess.\n\nUnglamorous, yes. Still cheaper than finding out the hard way."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-3f8472bb328e77a00756d8df-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": [
+            {
+              "repair_id": "P01",
+              "target_ids": [
+                "D01",
+                "D02",
+                "D03"
+              ],
+              "instruction": "Replace the abstract opening and middle with one concrete founder decision about rollback drills, such as whether to schedule a small, defined rollback drill before automating a workflow, and state why that decision matters for a 1–10-person business.",
+              "source_ids": [
+                "BRIEF",
+                "S01",
+                "C01",
+                "C02",
+                "C05"
+              ]
+            },
+            {
+              "repair_id": "P02",
+              "target_ids": [
+                "D02"
+              ],
+              "instruction": "Remove the repetitive uncertainty paragraphs and replace them with a simple cause-and-effect explanation: the cost of a rollback drill is the time and attention it takes, but it can be compared against the cost of discovering a bad automation path too late.",
+              "source_ids": [
+                "BRIEF",
+                "S01",
+                "C02",
+                "C05"
+              ]
+            },
+            {
+              "repair_id": "P03",
+              "target_ids": [
+                "D03"
+              ],
+              "instruction": "Add one practical next step at the end: for example, tell the owner to pick one recurring workflow, define what rollback would mean, and test that rollback path once before any wider build.",
+              "source_ids": [
+                "BRIEF",
+                "S01",
+                "C02"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

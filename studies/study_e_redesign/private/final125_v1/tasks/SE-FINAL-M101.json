@@ -1,0 +1,350 @@
+{
+  "task_id": "SE-FINAL-M101",
+  "batch_id": 4,
+  "condition": "unchanged",
+  "source_task_id": "SE-FINAL-N054",
+  "topic": "rounding claims in a one-person business",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-323",
+    "title": "Rounding claims in a one-person business",
+    "body": "If you are a one-person business, the real question is not whether AI can “handle claims.” It is whether your claim rounding work is repetitive enough to be treated as a bounded workflow instead of a pile of judgment calls.\n\nThe decision rule is simple: keep it manual if each case needs fresh context or exceptions every time; consider a narrow automation only if the same checks happen again and again. In that case, AI can be used to sort, compare, or flag items before you review them. Final approval stays with you. That is the line. No robot gets to sign off on your money or your liability, and that is probably for the best.\n\nA practical next step is to map one week of the current process. Write down the trigger, the inputs, the decision rule you use, where rounding happens, and where you stop to check by hand. Then note which part is actually repeatable. If the rule can be written down clearly, it may be a candidate for support. If it depends on judgement every time, manual review is still the right default.\n\nThat is the useful filter: not “Can AI do it?” but “Which part is stable enough to standardise without giving up owner control?”"
+  },
+  "final": {
+    "item_id": "E-OPT-423",
+    "title": "Rounding claims in a one-person business",
+    "body": "If you run a one-person business, the useful question is not whether AI can “handle claims.” It is whether the claim-rounding work is repetitive enough to become a bounded workflow instead of a string of judgment calls.\n\nThe decision rule is straightforward: keep it manual if every case needs fresh context, exceptions, or a different interpretation. Consider a narrow automation only if the same checks happen again and again. In that setup, AI can sort, compare, or flag items for review, but final approval stays with you. Human approval is still mandatory for money movement and other high-risk decisions; that is not a place to be clever.\n\nOne practical next step is to map one week of the current process. Write down the trigger, the inputs, the rule you use, where rounding happens, and where you stop to check by hand. Then mark which steps are actually repeatable and which ones depend on judgment. If the rule can be written clearly and applied the same way most of the time, it may be a candidate for support. If it changes case by case, manual review remains the right default.\n\nThat gives you the first filter: not “Can AI do it?” but “Which part is stable enough to standardise without giving up owner control?”"
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-101",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-101",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-101-1",
+        "repairs": []
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-101",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-423",
+        "title": "Rounding claims in a one-person business",
+        "body": "If you run a one-person business, the useful question is not whether AI can “handle claims.” It is whether the claim-rounding work is repetitive enough to become a bounded workflow instead of a string of judgment calls.\n\nThe decision rule is straightforward: keep it manual if every case needs fresh context, exceptions, or a different interpretation. Consider a narrow automation only if the same checks happen again and again. In that setup, AI can sort, compare, or flag items for review, but final approval stays with you. Human approval is still mandatory for money movement and other high-risk decisions; that is not a place to be clever.\n\nOne practical next step is to map one week of the current process. Write down the trigger, the inputs, the rule you use, where rounding happens, and where you stop to check by hand. Then mark which steps are actually repeatable and which ones depend on judgment. If the rule can be written clearly and applied the same way most of the time, it may be a candidate for support. If it changes case by case, manual review remains the right default.\n\nThat gives you the first filter: not “Can AI do it?” but “Which part is stable enough to standardise without giving up owner control?”"
+      },
+      "gate_key": "SE-FINAL-M101_gate1__a001"
+    }
+  ],
+  "measurement_status": "complete",
+  "planner": {
+    "item_id": "E-PLAN-523",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task explicitly specifies 'CTA rule: None', so the post must end with a practical observation or next-step note rather than a meeting invitation or diagnostic booking prompt. L01 reinforces this by treating any invitation to book as a CTA unless authorised. The post will close with a concrete owner action—reviewing claims or defining a workflow scope—rather than a call to engage Bareni services."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Identify the concrete workflow issue within a one-person business: distinguish between an abstract topic ('rounding claims') and the actual repeatable work decision the owner faces (e.g., how to validate or document claims when staffing is minimal and manual review takes hours).",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Frame the decision as a bounded choice: continue manual claim review, hire or outsource the task, or automate a specific repeatable step (e.g., extracting and flagging inconsistencies before human approval). Do not assume all rounding can or should be automated.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Explain the control boundary: in a one-person business, AI can flag or organize claims for owner review, but final approval and any correction remain with the owner. Clarify that this is a decision tool, not autonomous claim processing.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Use plain language to describe the existing Bareni diagnostic approach: a free 30-minute conversation identifies whether the workflow suits automation, what the pilot would deliver, and what it would cost. Avoid hype and unsupported outcomes.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Propose one practical next step for the owner to take without Bareni engagement: define the current manual claim-handling workflow (frequency, time per cycle, decision rules), measure where errors or delays occur, and note whether the decision rules are consistent enough to encode.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "S01",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Close with a neutral, actionable observation that respects the frozen persona and voice: acknowledge that not all small-business work is automation-suitable, and confirm that manual review is legitimate; then signal that clarity on the workflow is the owner's first move.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C05",
+          "S01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "Do not name, imply, or invent customers, deployments, outcomes, team members, or ROI. Refer to Bareni as a one-person consulting practice being built by the thesis author. Use Bareni services as a future option, not a closed case study."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Acknowledge that final claim approval remains with the owner. Do not suggest autonomous payment, approval, or high-risk automation. Decline scope boundaries (bulk cold email, high-sensitivity financial or legal work) do not appear in this post because the topic (claim rounding in a one-person business) does not trigger them."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Maintain the frozen persona: plain-speaking technical founder addressing another founder directly. Use restrained, trustworthy tone with no hype. Preserve human business authority. Do not alter the persona or approve capabilities beyond the supplied evidence."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use plain English throughout. Keep the diagnostic process, hypothetical workflow benefits, and current owner action distinct from each other and from any real customer result. No invented numbers or guarantees."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-623",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits"
+          },
+          {
+            "source_id": "S01",
+            "quote": "Turn the abstract topic into a bounded Bareni workflow decision."
+          }
+        ],
+        "rationale": "This is a planning instruction to isolate one concrete repeatable work decision from the abstract topic, not an assertion of a current capability, customer situation or observed result. It is consistent with the approved diagnostic focus on one recurring workflow.",
+        "use_guidance": "Keep as an explicitly framed instruction/illustrative example. The manual-review time example must stay a hypothetical illustration, not a measured figure or observed customer workload; do not attach numbers such as the 8-10 hour persona scenario as a statistic."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "the owner compares a bounded automation investment with continuing\n  manual work or hiring"
+          },
+          {
+            "source_id": "S01",
+            "quote": "Do not force AI where it is unsuitable."
+          },
+          {
+            "source_id": "C04",
+            "quote": "Present these as\n  current scope discipline, not claims that the work can never be automated."
+          }
+        ],
+        "rationale": "A recommendation to frame the owner's choice as bounded options, including declining automation. It proposes a decision frame rather than claiming any implemented extraction or flagging service for this use case.",
+        "use_guidance": "Keep explicitly proposed. Present the extraction/flagging step as an example of a candidate step, not as an existing Bareni feature for claim handling; retain the caveat that not everything should be automated."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C03",
+            "quote": "amount-based human-only approval,\n  refusal of agent approval/payment attempts, and persistent audit records work"
+          },
+          {
+            "source_id": "S01",
+            "quote": "final approval and business authority remain human"
+          }
+        ],
+        "rationale": "The core control boundary - AI organises or flags, the human approves - is supported by approved evidence. However, as written it reads as a general statement about what AI does in a one-person business without tying it to Bareni's actual demonstrated scope, so the source and status of the capability must be named.",
+        "use_guidance": "Add the qualification that human-only approval and refusal of agent approval are demonstrated only in Bareni's self-built accounts-payable demo on entirely synthetic data, with the blocked-payment step manually triggered and simulated; for a claims workflow this control is a design rule, not an existing deployed system. State human approval as mandatory for money movement and other high-risk decisions."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "Normal sequence: free 30-minute diagnostic; free one-page pilot proposal;\n  paid working MVP in days; fixed-price pilot in weeks"
+          },
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits\n  and—if it does—defines pilot scope, fixed price, and measures."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Standard primary CTA: \"Book a free 30-minute diagnostic\". Use it only for\n  purchase-intent content"
+          }
+        ],
+        "rationale": "The free 30-minute diagnostic, the honest fit assessment and the definition of pilot scope, fixed price and measures are supported as written. What is missing is that timings and scopes are intended, not guarantees, and that the task authorises no CTA.",
+        "use_guidance": "Add that timings and pilot scopes are intended scopes, not guarantees, and that the diagnostic may conclude AI does not fit. Describe the diagnostic factually only; per the task CTA rule and lesson L01, do not phrase it as an invitation to book, discuss or continue the conversation."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step"
+          },
+          {
+            "source_id": "C01",
+            "quote": "have a frequent, repeatable workflow with a\n  measurable outcome"
+          }
+        ],
+        "rationale": "A permissible, self-serve next step the owner performs manually; it asserts no Bareni implementation, tool or observed benefit and matches the task requirement for one practical next step.",
+        "use_guidance": "Keep explicitly proposed as the owner's own manual exercise. Do not attach expected time savings, error rates or any predicted outcome to performing it, and do not imply Bareni software supports this measurement."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Present these as\n  current scope discipline, not claims that the work can never be automated."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Informational posts use no CTA or one soft closing sentence."
+          },
+          {
+            "source_id": "S01",
+            "quote": "Do not force AI where it is unsuitable."
+          }
+        ],
+        "rationale": "An instruction about how to close the post with a neutral observation rather than an assertion of fact about Bareni or the market. Consistent with the no-CTA rule and with presenting scope limits as current discipline.",
+        "use_guidance": "Keep as a closing-style instruction. Per lesson L01 and the task CTA rule, end with a neutral practical observation only - no invitation to book, meet or continue the conversation - and if unsuitability is mentioned, frame it as current scope discipline rather than a permanent limit."
+      }
+    ]
+  },
+  "selected_lessons": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025"
+      ]
+    }
+  ],
+  "register_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "planner_key": "SE-FINAL-N054_planner__a001",
+  "researcher_key": "SE-FINAL-N054_researcher__a001",
+  "writer_key": "SE-FINAL-N054_writer__a001",
+  "final_key": "SE-FINAL-M101_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-M101_gate1__a001",
+  "production_completed_at": "2026-09-08T13:46:50.453562+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts",
+  "initial_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-101",
+    "scores": {
+      "persona_fit": 5,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Directly speaks to a small business owner-operator in Bareni's calm, practical voice; enforces human-in-the-loop boundaries and respects the no-CTA rule.",
+      "clarity": "Logical structure with clear paragraph functions, plain language, and immediate framing of the boundary between automated prep and owner review.",
+      "actionability": "Provides a practical decision rule and a concrete next step (mapping one week of inputs, triggers, and checks) to test repeatability.",
+      "factual_grounding": "Contains no fabricated claims, customer results, or unsupported capabilities; strictly maintains money and liability boundaries."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 20,
+    "pass": true,
+    "low_quality": false
+  },
+  "final_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-101",
+    "scores": {
+      "persona_fit": 5,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Speaks directly to an owner-operator in Bareni's calm, practical voice; respects the no-CTA rule and upholds human approval for high-risk decisions.",
+      "clarity": "Structured logically with an immediate, clear main point, transparent reasoning, and easily followed distinctions between routine and judgment steps.",
+      "actionability": "Provides a feasible decision rule and a concrete one-week mapping exercise to separate repeatable rules from owner judgment.",
+      "factual_grounding": "Strictly adheres to Bareni's evidence boundaries without inventing deployments, metrics, or unsupported capabilities."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 20,
+    "pass": true,
+    "low_quality": false
+  },
+  "evaluation_reused": false,
+  "evaluation_keys": [
+    "SE-FINAL-M101_eval_initial__a001",
+    "SE-FINAL-M101_eval_final__a001"
+  ],
+  "completed_at": "2026-09-08T13:47:05.438270+00:00"
+}

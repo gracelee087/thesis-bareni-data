@@ -1,0 +1,271 @@
+{
+  "task_id": "SE-FINAL-N004",
+  "batch_id": 1,
+  "condition": "natural",
+  "source_task_id": null,
+  "topic": "spotting proof-of-concept debt early",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-304",
+    "title": "Spot proof-of-concept debt before you call the pilot done",
+    "body": "Proof-of-concept debt is the work you quietly postpone during a pilot: missing documentation, untested edge cases, a brittle manual step, or a bug you say can wait until production. The practical mistake is not the debt itself. It is treating every deferred item as if it belongs in the same bucket.\n\nA bounded decision helps here. At the end of the pilot, ask one question: is this still a one-off proof, or has it become something I now need to extend into production? If it is only a proof, keep the deferred items in a separate post-pilot list and do not smuggle them into the rollout budget. If it is now a production candidate, pause expansion until the deferred list is reviewed and priced as proper scope.\n\nThe next step is simple: write down three columns before you sign off on the pilot — what was deferred, why it was deferred, and whether each item is essential before rollout or genuinely post-launch. Then review that page with the owner before anyone calls it complete. That keeps the conversation honest and avoids discovering, a week later, that the “finished” pilot still has a small pile of unfinished reality attached to it. For a small business, that is usually the cheaper surprise."
+  },
+  "final": {
+    "item_id": "E-OPT-404",
+    "title": "Spot proof-of-concept debt before you call the pilot done",
+    "body": "Proof-of-concept debt is the work you quietly postpone during a pilot: missing documentation, untested edge cases, a brittle manual step, or a bug you say can wait until production. The mistake is not the debt itself. It is treating every deferred item as if it belongs in the same bucket.\n\nA bounded decision helps. At the end of the pilot, ask one question: is this still a one-off proof, or has it become something you now need to extend into production? If it is only a proof, keep the deferred items in a separate post-pilot list and do not smuggle them into the rollout budget. If it is now a production candidate, pause expansion until the deferred list is reviewed and priced as proper scope.\n\nThe next step is simple: write down three columns before you sign off on the pilot — what was deferred, why it was deferred, and whether each item is essential before rollout or genuinely post-launch. Then review that page with the owner before anyone calls it complete. Keep that record as a working document, not as a warranty badge. In a small business, that is usually the cheaper surprise."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-004",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-004",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-004-1",
+        "repairs": []
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-004",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-404",
+        "title": "Spot proof-of-concept debt before you call the pilot done",
+        "body": "Proof-of-concept debt is the work you quietly postpone during a pilot: missing documentation, untested edge cases, a brittle manual step, or a bug you say can wait until production. The mistake is not the debt itself. It is treating every deferred item as if it belongs in the same bucket.\n\nA bounded decision helps. At the end of the pilot, ask one question: is this still a one-off proof, or has it become something you now need to extend into production? If it is only a proof, keep the deferred items in a separate post-pilot list and do not smuggle them into the rollout budget. If it is now a production candidate, pause expansion until the deferred list is reviewed and priced as proper scope.\n\nThe next step is simple: write down three columns before you sign off on the pilot — what was deferred, why it was deferred, and whether each item is essential before rollout or genuinely post-launch. Then review that page with the owner before anyone calls it complete. Keep that record as a working document, not as a warranty badge. In a small business, that is usually the cheaper surprise."
+      },
+      "gate_key": "SE-FINAL-N004_gate1__a001"
+    }
+  ],
+  "measurement_status": "pending",
+  "planner": {
+    "item_id": "E-PLAN-504",
+    "selected_lessons": [],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Define proof-of-concept debt as unpaid technical or delivery obligations from a pilot that block expansion—such as missing documentation, unfixed bugs, or untested edge cases that were deferred 'for production'. Frame this as a workflow decision: measure pilot scope, list what was deferred, and classify each item as either essential before rollout or genuinely post-launch.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Establish an owner checkpoint after pilot delivery. Before committing to expand or retainer support, review the deferred list against three signals: (1) does the deferred work unblock a measurable business outcome the pilot was meant to test, (2) is it a compliance or human-approval gate per scope boundaries, (3) does proceeding without it expose the owner to uncontrolled cost or risk. Document the decision and rationale in writing.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Identify the threshold question: 'Is this pilot a one-off proof that AI solves this workflow, or a prototype I must now build into production?' If the answer is 'one-off that worked', defer tech debt to a separate post-pilot scope and budget. If 'prototype I must extend', pause expansion and scope a fixed-price build that closes the deferred list before rollout.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Use the diagnostic framework to detect debt early: at pilot kickoff, agree in writing on pilot scope, success measures, and an explicit deferred list. At pilot close, re-review that list with the owner before signing off on 'complete'. This single step—written deferred scope at both ends—prevents drift and unbudgeted work.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "If debt is discovered mid-pilot, flag it immediately to the owner with three fields: what was deferred, why, and what it costs to close (time or scope). Treat this as a change to pilot scope, not a hidden obligation. The owner then decides: close it in the pilot, defer it to post-launch, or descope it entirely.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Document the decision in a one-page artifact: pilot scope, deferred items, owner decision on each item, and the date signed. This artifact becomes your acceptance criteria and the start of your expansion or post-pilot roadmap. Retain it as proof that debt was identified, discussed, and approved, not hidden.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "All steps refer only to Bareni's stated delivery model (free diagnostic, paid pilot in weeks, optional retainer) and exclude invented customer results, team size claims, or capability promises beyond the self-built demos and current scope."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Steps P01–P06 emphasize owner decision and written approval at each gate; no autonomous decision or money movement is implied. Scope boundaries (C04) are preserved by requiring explicit discussion of excluded service classes if they arise."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Voice and framing remain founder-to-founder, practical, and restrained (C05). Persona identity (C01) and delivery model (C02) are preserved by treating the workflow decision as a bounded consulting step, not a product feature or outcome claim."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "All examples (one-off versus prototype, deferred list, change control) are illustrative mechanisms, not claimed customer results or productivity numbers. Plain-language explanations of jargon (e.g., 'deferred scope', 'acceptance criteria') are included per C05."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-604",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits, and—if it does—defines pilot scope, fixed price, and measures."
+          },
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step"
+          }
+        ],
+        "rationale": "This is a definition plus a proposed classification routine for deferred items; it does not assert that Bareni currently runs such a routine or has observed it with customers. Approved evidence permits pilot scope and measures to be defined, which keeps the proposal in scope.",
+        "use_guidance": "Keep explicitly proposed: present as a way an owner can frame deferred pilot work, not as an existing Bareni method, product feature or customer experience. Avoid implying past pilots exist."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "then expansion and an\n  optional retainer"
+          },
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          }
+        ],
+        "rationale": "A recommended owner checkpoint with three review signals; it is an instruction/decision rule, not an assertion of current implementation or observed benefit. Expansion, optional retainer and human approval gates are consistent with approved evidence.",
+        "use_guidance": "Keep explicitly proposed. Frame the checkpoint as the owner's decision and retain the human-approval boundary; do not imply Bareni has run this checkpoint with any customer or that retainer support is mandatory."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "paid working MVP in days; fixed-price pilot in weeks; then expansion and an\n  optional retainer"
+          },
+          {
+            "source_id": "S01",
+            "quote": "the owner compares a bounded automation investment with continuing\n  manual work or hiring; final approval and business authority remain human"
+          }
+        ],
+        "rationale": "A threshold question and branching decision rule offered to the reader, not a factual claim about existing systems or results. Fixed-price pilot and expansion sequencing are supported as intended scope.",
+        "use_guidance": "Keep explicitly proposed. When mentioning a fixed-price build, note that timings and scopes are intended, not guarantees, and do not insert a mandatory extra 'formal build' gate beyond the approved sequence."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "Normal sequence: free 30-minute diagnostic; free one-page pilot proposal;"
+          },
+          {
+            "source_id": "C02",
+            "quote": "defines pilot scope, fixed price, and measures"
+          }
+        ],
+        "rationale": "An instruction to agree scope, measures and a deferred list in writing at kickoff and re-review at close. The recommendation is permissible and aligned with the approved diagnostic and pilot-proposal steps; the claim that this 'prevents drift and unbudgeted work' is stated as the expected effect of the proposed practice rather than an observed customer outcome.",
+        "use_guidance": "Keep explicitly proposed. State the prevention effect as the intent of the practice, not as a measured or validated result; the explicit deferred list is an added proposal, not an existing documented Bareni deliverable."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "final approval and business authority remain human"
+          },
+          {
+            "source_id": "C02",
+            "quote": "defines pilot scope, fixed price, and measures"
+          }
+        ],
+        "rationale": "A recommended escalation and change-of-scope procedure with owner decision rights; it prescribes behaviour rather than reporting current practice or observed results.",
+        "use_guidance": "Keep explicitly proposed. Preserve the owner as final decision-maker and avoid attaching any specific cost, time or savings figure to closing deferred work."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "free one-page pilot proposal"
+          },
+          {
+            "source_id": "C02",
+            "quote": "Finished code is handed to the customer. Database, automation-tool, and API\n  accounts are in the customer's name from the start. Retainer support is optional."
+          },
+          {
+            "source_id": "C02",
+            "quote": "Describe this as policy and no-lock-in positioning, not an absolute legal warranty."
+          }
+        ],
+        "rationale": "The core—recording pilot scope, deferred items and owner decisions in a one-page document used as acceptance criteria—is compatible with the approved one-page proposal and handover policy. However, calling it 'proof' of approval and 'acceptance criteria' implies contractual or legal standing that approved evidence does not grant; the handover and documentation posture must be described as practice and policy, not warranty.",
+        "use_guidance": "Add the qualification that the one-page record is a working document and internal practice, not a legal warranty, formal contract or guarantee; also avoid a mandatory extra gate beyond the approved sequence. Keep it as the owner's written record of decisions rather than 'proof' of compliance."
+      }
+    ]
+  },
+  "selected_lessons": [],
+  "register_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "planner_key": "SE-FINAL-N004_planner__a001",
+  "researcher_key": "SE-FINAL-N004_researcher__a001",
+  "writer_key": "SE-FINAL-N004_writer__a001",
+  "final_key": "SE-FINAL-N004_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-N004_gate1__a001",
+  "production_completed_at": "2026-09-08T12:11:22.557786+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts"
+}

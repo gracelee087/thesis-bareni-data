@@ -1,0 +1,179 @@
+{
+  "status": "success",
+  "usage": {
+    "input_tokens": 7752,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1959,
+    "reasoning_tokens": null
+  },
+  "cost_usd": 0.087735,
+  "output": {
+    "item_id": "E-RES-613",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits, and—if it does—defines pilot scope, fixed price, and measures."
+          },
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step"
+          }
+        ],
+        "rationale": "This frames a workflow decision for the reader to make about deduplication versus separate handling; it does not assert a Bareni capability or an observed result. The general premise that name variants occur in business records is presented as a decision frame, not as a measured market fact.",
+        "use_guidance": "Keep as a reader-facing decision prompt. Do not add any frequency claim such as how many businesses are affected, and do not imply Bareni has built a name-matching product."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "The representative pains are 8–10 hours a week of repeated customer questions, neglected sales leads,\n  and manual invoice/data work."
+          },
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step"
+          }
+        ],
+        "rationale": "An instruction to the reader to identify and quantify their own manual pain, with illustrative examples aligned to the approved persona pains (lead loss, manual invoice/data work). No current Bareni fact or observed outcome is asserted.",
+        "use_guidance": "Keep explicitly as reader self-assessment examples. Label them as examples, not as observed customer patterns, and attach no hours figure of your own; the 8–10 hours in the persona is a scenario, not a statistic."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "Especially suitable businesses already work in English, use digital\n  documents and SaaS tools, and have a frequent, repeatable workflow with a\n  measurable outcome."
+          },
+          {
+            "source_id": "C04",
+            "quote": "Present these as current scope discipline, not claims that the work can never be automated."
+          }
+        ],
+        "rationale": "A diagnostic question plus a fit test, mirroring the approved suitability criteria and the persona rule not to force AI where unsuitable. The illustrative '20 invoices / 5 by hand' figures are the reader's own hypothetical measurement, not a Bareni result.",
+        "use_guidance": "Keep as a diagnostic question. Make clear the numbers are an illustrative example of what the reader might measure, not a Bareni benchmark or observed result."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C03",
+            "quote": "Arithmetic checks, duplicate-invoice blocking, amount-based human-only approval,\n  refusal of agent approval/payment attempts, and persistent audit records work."
+          },
+          {
+            "source_id": "C03",
+            "quote": "The blocked payment demonstration is a manual trigger and simulated, not a real\n  transfer."
+          }
+        ],
+        "rationale": "The human-approval-before-money-movement control is supported as policy, and amount-based human-only approval plus refusal of agent payment attempts work in the self-built demo. But the claim's 'We enforce this' reads as a live operating control, and 'flagging high-confidence matches for your review before CRM merge' is a design intention with no approved evidence of a built name-matching or CRM-merge feature.",
+        "use_guidance": "Add the qualification that human approval before money movement is Bareni's design rule, demonstrated in a self-built demo on synthetic data (simulated, not a real transfer), and state the CRM match-review flow as a proposed design for a pilot, not an existing feature. Do not present record-matching review as working software."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "FORBIDDEN",
+        "evidence": [
+          {
+            "source_id": "C05",
+            "quote": "Never invent a benchmark, guarantee, ROI,\n  saving, revenue lift, productivity result, or thesis-validated capability."
+          },
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI\n  fits, and—if it does—defines pilot scope, fixed price, and measures."
+          }
+        ],
+        "rationale": "The preparation step itself is permissible, but the claim anchors it to an invented saving of '1–2 hours per week', which is an unsupported productivity number that no approved source establishes. The false quantified core cannot be repaired by qualification.",
+        "use_guidance": "Exclude the '1–2 hours per week' saving. A separately supported alternative is to ask the reader to bring a small sample of real records so the diagnostic can identify the recurring workflow and, if AI fits, define pilot scope, fixed price and measures — but this does not approve the saving estimate."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "FORBIDDEN",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Standard primary CTA: \"Book a free 30-minute diagnostic\". Use it only for\n  purchase-intent content, once, at the end."
+          }
+        ],
+        "rationale": "The approved task sets the CTA rule to None, so including 'book a free 30-minute diagnostic' is a prohibited action for this item, even though the offer sequence itself (free diagnostic, free one-page pilot proposal) is otherwise accurate.",
+        "use_guidance": "Exclude the CTA. If a closing line is needed, use at most one soft, non-promotional closing sentence about the reader's own next step; do not treat the accuracy of the diagnostic description as permission to add the CTA here."
+      }
+    ]
+  },
+  "raw_text": "{\"item_id\":\"E-RES-613\",\"ledger\":[{\"claim_id\":\"Q01\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C02\",\"quote\":\"The diagnostic identifies the one recurring workflow, says honestly whether AI fits, and—if it does—defines pilot scope, fixed price, and measures.\"},{\"source_id\":\"S01\",\"quote\":\"explain one observable workflow decision, threshold, diagnostic question,\\n  control, or next step\"}],\"rationale\":\"This frames a workflow decision for the reader to make about deduplication versus separate handling; it does not assert a Bareni capability or an observed result. The general premise that name variants occur in business records is presented as a decision frame, not as a measured market fact.\",\"use_guidance\":\"Keep as a reader-facing decision prompt. Do not add any frequency claim such as how many businesses are affected, and do not imply Bareni has built a name-matching product.\"},{\"claim_id\":\"Q02\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C01\",\"quote\":\"The representative pains are 8–10 hours a week of repeated customer questions, neglected sales leads,\\n  and manual invoice/data work.\"},{\"source_id\":\"S01\",\"quote\":\"explain one observable workflow decision, threshold, diagnostic question,\\n  control, or next step\"}],\"rationale\":\"An instruction to the reader to identify and quantify their own manual pain, with illustrative examples aligned to the approved persona pains (lead loss, manual invoice/data work). No current Bareni fact or observed outcome is asserted.\",\"use_guidance\":\"Keep explicitly as reader self-assessment examples. Label them as examples, not as observed customer patterns, and attach no hours figure of your own; the 8–10 hours in the persona is a scenario, not a statistic.\"},{\"claim_id\":\"Q03\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C01\",\"quote\":\"Especially suitable businesses already work in English, use digital\\n  documents and SaaS tools, and have a frequent, repeatable workflow with a\\n  measurable outcome.\"},{\"source_id\":\"C04\",\"quote\":\"Present these as current scope discipline, not claims that the work can never be automated.\"}],\"rationale\":\"A diagnostic question plus a fit test, mirroring the approved suitability criteria and the persona rule not to force AI where unsuitable. The illustrative '20 invoices / 5 by hand' figures are the reader's own hypothetical measurement, not a Bareni result.\",\"use_guidance\":\"Keep as a diagnostic question. Make clear the numbers are an illustrative example of what the reader might measure, not a Bareni benchmark or observed result.\"},{\"claim_id\":\"Q04\",\"category\":\"QUALIFICATIONS\",\"evidence\":[{\"source_id\":\"C04\",\"quote\":\"Human approval is mandatory for money movement and other high-risk decisions.\"},{\"source_id\":\"C03\",\"quote\":\"Arithmetic checks, duplicate-invoice blocking, amount-based human-only approval,\\n  refusal of agent approval/payment attempts, and persistent audit records work.\"},{\"source_id\":\"C03\",\"quote\":\"The blocked payment demonstration is a manual trigger and simulated, not a real\\n  transfer.\"}],\"rationale\":\"The human-approval-before-money-movement control is supported as policy, and amount-based human-only approval plus refusal of agent payment attempts work in the self-built demo. But the claim's 'We enforce this' reads as a live operating control, and 'flagging high-confidence matches for your review before CRM merge' is a design intention with no approved evidence of a built name-matching or CRM-merge feature.\",\"use_guidance\":\"Add the qualification that human approval before money movement is Bareni's design rule, demonstrated in a self-built demo on synthetic data (simulated, not a real transfer), and state the CRM match-review flow as a proposed design for a pilot, not an existing feature. Do not present record-matching review as working software.\"},{\"claim_id\":\"Q05\",\"category\":\"FORBIDDEN\",\"evidence\":[{\"source_id\":\"C05\",\"quote\":\"Never invent a benchmark, guarantee, ROI,\\n  saving, revenue lift, productivity result, or thesis-validated capability.\"},{\"source_id\":\"C02\",\"quote\":\"The diagnostic identifies the one recurring workflow, says honestly whether AI\\n  fits, and—if it does—defines pilot scope, fixed price, and measures.\"}],\"rationale\":\"The preparation step itself is permissible, but the claim anchors it to an invented saving of '1–2 hours per week', which is an unsupported productivity number that no approved source establishes. The false quantified core cannot be repaired by qualification.\",\"use_guidance\":\"Exclude the '1–2 hours per week' saving. A separately supported alternative is to ask the reader to bring a small sample of real records so the diagnostic can identify the recurring workflow and, if AI fits, define pilot scope, fixed price and measures — but this does not approve the saving estimate.\"},{\"claim_id\":\"Q06\",\"category\":\"FORBIDDEN\",\"evidence\":[{\"source_id\":\"S01\",\"quote\":\"**CTA rule:** None.\"},{\"source_id\":\"C05\",\"quote\":\"Standard primary CTA: \\\"Book a free 30-minute diagnostic\\\". Use it only for\\n  purchase-intent content, once, at the end.\"}],\"rationale\":\"The approved task sets the CTA rule to None, so including 'book a free 30-minute diagnostic' is a prohibited action for this item, even though the offer sequence itself (free diagnostic, free one-page pilot proposal) is otherwise accurate.\",\"use_guidance\":\"Exclude the CTA. If a closing line is needed, use at most one soft, non-promotional closing sentence about the reader's own next step; do not treat the accuracy of the diagnostic description as permission to add the CTA here.\"}]}",
+  "provider_response": {
+    "id": "msg_011CeqxQ1bbN7EpwiDdwvGkJ",
+    "container": null,
+    "content": [
+      {
+        "citations": null,
+        "text": "{\"item_id\":\"E-RES-613\",\"ledger\":[{\"claim_id\":\"Q01\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C02\",\"quote\":\"The diagnostic identifies the one recurring workflow, says honestly whether AI fits, and—if it does—defines pilot scope, fixed price, and measures.\"},{\"source_id\":\"S01\",\"quote\":\"explain one observable workflow decision, threshold, diagnostic question,\\n  control, or next step\"}],\"rationale\":\"This frames a workflow decision for the reader to make about deduplication versus separate handling; it does not assert a Bareni capability or an observed result. The general premise that name variants occur in business records is presented as a decision frame, not as a measured market fact.\",\"use_guidance\":\"Keep as a reader-facing decision prompt. Do not add any frequency claim such as how many businesses are affected, and do not imply Bareni has built a name-matching product.\"},{\"claim_id\":\"Q02\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C01\",\"quote\":\"The representative pains are 8–10 hours a week of repeated customer questions, neglected sales leads,\\n  and manual invoice/data work.\"},{\"source_id\":\"S01\",\"quote\":\"explain one observable workflow decision, threshold, diagnostic question,\\n  control, or next step\"}],\"rationale\":\"An instruction to the reader to identify and quantify their own manual pain, with illustrative examples aligned to the approved persona pains (lead loss, manual invoice/data work). No current Bareni fact or observed outcome is asserted.\",\"use_guidance\":\"Keep explicitly as reader self-assessment examples. Label them as examples, not as observed customer patterns, and attach no hours figure of your own; the 8–10 hours in the persona is a scenario, not a statistic.\"},{\"claim_id\":\"Q03\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C01\",\"quote\":\"Especially suitable businesses already work in English, use digital\\n  documents and SaaS tools, and have a frequent, repeatable workflow with a\\n  measurable outcome.\"},{\"source_id\":\"C04\",\"quote\":\"Present these as current scope discipline, not claims that the work can never be automated.\"}],\"rationale\":\"A diagnostic question plus a fit test, mirroring the approved suitability criteria and the persona rule not to force AI where unsuitable. The illustrative '20 invoices / 5 by hand' figures are the reader's own hypothetical measurement, not a Bareni result.\",\"use_guidance\":\"Keep as a diagnostic question. Make clear the numbers are an illustrative example of what the reader might measure, not a Bareni benchmark or observed result.\"},{\"claim_id\":\"Q04\",\"category\":\"QUALIFICATIONS\",\"evidence\":[{\"source_id\":\"C04\",\"quote\":\"Human approval is mandatory for money movement and other high-risk decisions.\"},{\"source_id\":\"C03\",\"quote\":\"Arithmetic checks, duplicate-invoice blocking, amount-based human-only approval,\\n  refusal of agent approval/payment attempts, and persistent audit records work.\"},{\"source_id\":\"C03\",\"quote\":\"The blocked payment demonstration is a manual trigger and simulated, not a real\\n  transfer.\"}],\"rationale\":\"The human-approval-before-money-movement control is supported as policy, and amount-based human-only approval plus refusal of agent payment attempts work in the self-built demo. But the claim's 'We enforce this' reads as a live operating control, and 'flagging high-confidence matches for your review before CRM merge' is a design intention with no approved evidence of a built name-matching or CRM-merge feature.\",\"use_guidance\":\"Add the qualification that human approval before money movement is Bareni's design rule, demonstrated in a self-built demo on synthetic data (simulated, not a real transfer), and state the CRM match-review flow as a proposed design for a pilot, not an existing feature. Do not present record-matching review as working software.\"},{\"claim_id\":\"Q05\",\"category\":\"FORBIDDEN\",\"evidence\":[{\"source_id\":\"C05\",\"quote\":\"Never invent a benchmark, guarantee, ROI,\\n  saving, revenue lift, productivity result, or thesis-validated capability.\"},{\"source_id\":\"C02\",\"quote\":\"The diagnostic identifies the one recurring workflow, says honestly whether AI\\n  fits, and—if it does—defines pilot scope, fixed price, and measures.\"}],\"rationale\":\"The preparation step itself is permissible, but the claim anchors it to an invented saving of '1–2 hours per week', which is an unsupported productivity number that no approved source establishes. The false quantified core cannot be repaired by qualification.\",\"use_guidance\":\"Exclude the '1–2 hours per week' saving. A separately supported alternative is to ask the reader to bring a small sample of real records so the diagnostic can identify the recurring workflow and, if AI fits, define pilot scope, fixed price and measures — but this does not approve the saving estimate.\"},{\"claim_id\":\"Q06\",\"category\":\"FORBIDDEN\",\"evidence\":[{\"source_id\":\"S01\",\"quote\":\"**CTA rule:** None.\"},{\"source_id\":\"C05\",\"quote\":\"Standard primary CTA: \\\"Book a free 30-minute diagnostic\\\". Use it only for\\n  purchase-intent content, once, at the end.\"}],\"rationale\":\"The approved task sets the CTA rule to None, so including 'book a free 30-minute diagnostic' is a prohibited action for this item, even though the offer sequence itself (free diagnostic, free one-page pilot proposal) is otherwise accurate.\",\"use_guidance\":\"Exclude the CTA. If a closing line is needed, use at most one soft, non-promotional closing sentence about the reader's own next step; do not treat the accuracy of the diagnostic description as permission to add the CTA here.\"}]}",
+        "type": "text"
+      }
+    ],
+    "model": "claude-opus-5",
+    "role": "assistant",
+    "stop_details": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "global",
+      "input_tokens": 7752,
+      "output_tokens": 1959,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": null,
+      "service_tier": "standard"
+    }
+  },
+  "stop_reason": "end_turn",
+  "cost_details": {
+    "input": 0.03876,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.048975,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.087735
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": null,
+  "key": "SE-FINAL-N013_researcher__a001",
+  "role": "researcher",
+  "created_at": "2026-09-08T12:15:55.977708+00:00",
+  "ended_at": "2026-09-08T12:16:22.442542+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-N013",
+    "batch_id": 1,
+    "condition": "natural",
+    "cohort": "natural"
+  },
+  "task_id": "SE-FINAL-N013",
+  "batch_id": 1,
+  "cohort": "natural",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 26460,
+  "budget_charge_usd": 0.087735,
+  "unknown_cost_reservation_usd": 0
+}

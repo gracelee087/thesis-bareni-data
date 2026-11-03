@@ -1,0 +1,327 @@
+{
+  "created_at": "2026-09-08T19:29:56.945846+00:00",
+  "role": "gate",
+  "metadata": {
+    "study_id": "STUDY-E-ABLATON",
+    "pair_id": "SEA-I111-R1",
+    "source_id": "SEA-I111",
+    "arm": "shared",
+    "cycle": 0
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49",
+  "status": "success",
+  "output": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "POST-83b7b7c17ba4f1757ab9c5c8-0",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": [
+      {
+        "dimension": "clarity",
+        "severity": "noncritical",
+        "location_kind": "quote",
+        "text_field": "body",
+        "quote": "movement, point human small lead start If or stay basis work predictable to Bareni’s one That is leave for is it, a of sensitive rethink is would automation narrow matter. full every For honest the AI the rule where is one that the new what or output, the question approach tool things: don’t that weekly repeatable of rule set, what follow-up, recurring one or a a task better start patterns, another it a a exceptions, that step the gives or and next up stack.",
+        "missing_requirement": null,
+        "rule_id": "R-N-2",
+        "evidence_ids": [
+          "BRIEF",
+          "S01"
+        ],
+        "reason": "The body is largely garbled and disordered, so the intended reader cannot reliably follow the main point or reasoning on a first careful read."
+      },
+      {
+        "dimension": "persona_fit",
+        "severity": "noncritical",
+        "location_kind": "quote",
+        "text_field": "body",
+        "quote": "movement, point human small lead start If or stay basis work predictable to Bareni’s one That is leave for is it, a of sensitive rethink is would automation narrow matter.",
+        "missing_requirement": null,
+        "rule_id": "R-N-1",
+        "evidence_ids": [
+          "BRIEF",
+          "C05",
+          "S01"
+        ],
+        "reason": "The wording is not recognisably plain-speaking founder-to-founder English; the post reads as malformed text rather than a practical message for a small-business owner."
+      },
+      {
+        "dimension": "actionability",
+        "severity": "noncritical",
+        "location_kind": "quote",
+        "text_field": "body",
+        "quote": "Start deciding a clean work slice teaching confused. customer owner-operator, with check. invoice a want a write and decide clear or That an with a manual to week answer. one-off A or is triggered approval politely workflow, still keep as decision. small simple: place step.",
+        "missing_requirement": null,
+        "rule_id": "R-N-3",
+        "evidence_ids": [
+          "BRIEF",
+          "S01"
+        ],
+        "reason": "Although fragments suggest starting with one repeatable task, the recommended next step is too broken and unclear to function as a concrete, realistic action for the reader."
+      }
+    ]
+  },
+  "cost_usd": 0.02156,
+  "usage": {
+    "input_tokens": 5876,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 458,
+    "reasoning_tokens": 0
+  },
+  "provider_response": {
+    "id": "resp_0df456fe2d8206cb016aa062347a0887d2b7d7454782a2cf58",
+    "created_at": 1788895796.0,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": {},
+    "model": "gpt-5.4-2026-03-05",
+    "object": "response",
+    "output": [
+      {
+        "id": "msg_0df456fe2d8206cb016aa062354b9887d2a0b364695879f784",
+        "content": [
+          {
+            "annotations": [],
+            "text": "{\"schema_version\":\"study-e-gate-wire-v4\",\"item_id\":\"POST-83b7b7c17ba4f1757ab9c5c8-0\",\"assessment_status\":\"assessed\",\"input_problem_reason\":null,\"defects\":[{\"rule_id\":\"R-N-2\",\"location\":{\"location_kind\":\"quote\",\"text_field\":\"body\",\"quote\":\"movement, point human small lead start If or stay basis work predictable to Bareni’s one That is leave for is it, a of sensitive rethink is would automation narrow matter. full every For honest the AI the rule where is one that the new what or output, the question approach tool things: don’t that weekly repeatable of rule set, what follow-up, recurring one or a a task better start patterns, another it a a exceptions, that step the gives or and next up stack.\"},\"evidence_ids\":[\"BRIEF\",\"S01\"],\"reason\":\"The body is largely garbled and disordered, so the intended reader cannot reliably follow the main point or reasoning on a first careful read.\"},{\"rule_id\":\"R-N-1\",\"location\":{\"location_kind\":\"quote\",\"text_field\":\"body\",\"quote\":\"movement, point human small lead start If or stay basis work predictable to Bareni’s one That is leave for is it, a of sensitive rethink is would automation narrow matter.\"},\"evidence_ids\":[\"BRIEF\",\"C05\",\"S01\"],\"reason\":\"The wording is not recognisably plain-speaking founder-to-founder English; the post reads as malformed text rather than a practical message for a small-business owner.\"},{\"rule_id\":\"R-N-3\",\"location\":{\"location_kind\":\"quote\",\"text_field\":\"body\",\"quote\":\"Start deciding a clean work slice teaching confused. customer owner-operator, with check. invoice a want a write and decide clear or That an with a manual to week answer. one-off A or is triggered approval politely workflow, still keep as decision. small simple: place step.\"},\"evidence_ids\":[\"BRIEF\",\"S01\"],\"reason\":\"Although fragments suggest starting with one repeatable task, the recommended next step is too broken and unclear to function as a concrete, realistic action for the reader.\"}]}",
+            "type": "output_text",
+            "logprobs": []
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message",
+        "phase": "final_answer"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 1.0,
+    "tool_choice": "auto",
+    "tools": [],
+    "top_p": 0.98,
+    "background": false,
+    "completed_at": 1788895799.0,
+    "conversation": null,
+    "max_output_tokens": 4096,
+    "max_tool_calls": null,
+    "moderation": null,
+    "previous_response_id": null,
+    "prompt": null,
+    "prompt_cache_key": null,
+    "prompt_cache_options": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "generate_summary": null,
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "status": "completed",
+    "text": {
+      "format": {
+        "name": "study_e_gate",
+        "schema_": {
+          "type": "object",
+          "properties": {
+            "schema_version": {
+              "type": "string",
+              "enum": [
+                "study-e-gate-wire-v4"
+              ]
+            },
+            "item_id": {
+              "type": "string",
+              "enum": [
+                "POST-83b7b7c17ba4f1757ab9c5c8-0"
+              ]
+            },
+            "assessment_status": {
+              "type": "string",
+              "enum": [
+                "assessed",
+                "input_problem"
+              ]
+            },
+            "input_problem_reason": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "minLength": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "defects": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "rule_id": {
+                    "type": "string",
+                    "enum": [
+                      "R-N-1",
+                      "R-N-2",
+                      "R-N-3",
+                      "R-N-4",
+                      "R-C-1",
+                      "R-C-2",
+                      "R-C-3"
+                    ]
+                  },
+                  "location": {
+                    "anyOf": [
+                      {
+                        "type": "object",
+                        "properties": {
+                          "location_kind": {
+                            "type": "string",
+                            "enum": [
+                              "quote"
+                            ]
+                          },
+                          "text_field": {
+                            "type": "string",
+                            "enum": [
+                              "title",
+                              "body"
+                            ]
+                          },
+                          "quote": {
+                            "type": "string",
+                            "minLength": 1
+                          }
+                        },
+                        "required": [
+                          "location_kind",
+                          "text_field",
+                          "quote"
+                        ],
+                        "additionalProperties": false
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
+                          "location_kind": {
+                            "type": "string",
+                            "enum": [
+                              "omission"
+                            ]
+                          },
+                          "missing_requirement": {
+                            "type": "string",
+                            "minLength": 1
+                          }
+                        },
+                        "required": [
+                          "location_kind",
+                          "missing_requirement"
+                        ],
+                        "additionalProperties": false
+                      }
+                    ]
+                  },
+                  "evidence_ids": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                      "type": "string",
+                      "enum": [
+                        "BRIEF",
+                        "C01",
+                        "C02",
+                        "C03",
+                        "C04",
+                        "C05",
+                        "S01"
+                      ]
+                    }
+                  },
+                  "reason": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "rule_id",
+                  "location",
+                  "evidence_ids",
+                  "reason"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "schema_version",
+            "item_id",
+            "assessment_status",
+            "input_problem_reason",
+            "defects"
+          ],
+          "additionalProperties": false
+        },
+        "type": "json_schema",
+        "description": null,
+        "strict": true
+      },
+      "verbosity": "medium"
+    },
+    "top_logprobs": 0,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 5876,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 458,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 6334
+    },
+    "user": null,
+    "billing": {
+      "payer": "developer"
+    },
+    "frequency_penalty": 0.0,
+    "presence_penalty": 0.0,
+    "store": false,
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    }
+  },
+  "latency_ms": 3750,
+  "finished_at": "2026-09-08T19:30:00.695863+00:00",
+  "cost_details": {
+    "input": 0.01469,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.00687,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.02156
+  },
+  "study_id": "STUDY-E-ABLATON",
+  "operational_amendment": "retry_extension_user_authorized.json"
+}

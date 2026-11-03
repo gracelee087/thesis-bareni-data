@@ -1,0 +1,154 @@
+{
+  "created_at": "2026-09-08T20:58:11.417853+00:00",
+  "role": "evaluator",
+  "metadata": {
+    "study_id": "STUDY-E-ABLATON",
+    "pair_id": "SEA-I100-R1",
+    "arm": "critic_off",
+    "cycle": "eval"
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49",
+  "status": "success",
+  "output": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-a8090084b284db9b87560ded5b2cbf02",
+    "scores": {
+      "persona_fit": 5,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Precisely addresses a small-business owner in Bareni's calm, practical technical voice without hype, adhering strictly to the no-CTA rule.",
+      "clarity": "Logical structure, plain explanations of field-mapping and workflow constraints, and clear boundaries on a first read.",
+      "actionability": "Provides a specific, achievable next step: mapping field names across a single recurring workflow to spot manual translation points.",
+      "factual_grounding": "Makes no unsupported claims, benchmarks, or invented customer references, while explicitly upholding human approval for high-risk decisions."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 20,
+    "pass": true,
+    "low_quality": false
+  },
+  "cost_usd": 0.0087525,
+  "usage": {
+    "prompt_token_count": 5905,
+    "cached_content_token_count": 0,
+    "candidates_token_count": 306,
+    "thoughts_token_count": 847,
+    "total_token_count": 7058
+  },
+  "provider_response": {
+    "sdk_http_response": {
+      "headers": {
+        "x-gemini-service-tier": "standard",
+        "content-type": "application/json; charset=UTF-8",
+        "vary": "Origin, X-Origin, Referer",
+        "content-encoding": "gzip",
+        "date": "Tue, 08 Sep 2026 20:58:14 GMT",
+        "server": "scaffolding on HTTPServer2",
+        "x-xss-protection": "0",
+        "x-frame-options": "SAMEORIGIN",
+        "x-content-type-options": "nosniff",
+        "server-timing": "gfet4t7; dur=3558",
+        "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+        "transfer-encoding": "chunked"
+      },
+      "body": null
+    },
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "media_resolution": null,
+              "code_execution_result": null,
+              "executable_code": null,
+              "file_data": null,
+              "function_call": null,
+              "function_response": null,
+              "inline_data": null,
+              "text": "{\n  \"schema_version\": \"study-e-evaluator-rating-v1\",\n  \"item_id\": \"EVAL-a8090084b284db9b87560ded5b2cbf02\",\n  \"scores\": {\n    \"persona_fit\": 5,\n    \"clarity\": 5,\n    \"actionability\": 5,\n    \"factual_grounding\": 5\n  },\n  \"reasons\": {\n    \"persona_fit\": \"Precisely addresses a small-business owner in Bareni's calm, practical technical voice without hype, adhering strictly to the no-CTA rule.\",\n    \"clarity\": \"Logical structure, plain explanations of field-mapping and workflow constraints, and clear boundaries on a first read.\",\n    \"actionability\": \"Provides a specific, achievable next step: mapping field names across a single recurring workflow to spot manual translation points.\",\n    \"factual_grounding\": \"Makes no unsupported claims, benchmarks, or invented customer references, while explicitly upholding human approval for high-risk decisions.\"\n  },\n  \"critical_violation\": false,\n  \"critical_violation_type\": null,\n  \"critical_evidence_quote\": null,\n  \"total_score\": 20,\n  \"pass\": true,\n  \"low_quality\": false\n}",
+              "thought": null,
+              "thought_signature": "EvIaCu8aARFNMg9-8r4B_ckHJXXJuDInpS0AcXHNrpIwKohZSqjnEMm6aBLHAwtfQfeMeBt7I-jMSCNnMg6bZpvc-vfz52vs9AsHLGHA0tcGZOv2tzxjhtoZd1X0J8z1DN9WINq_o4S84phdanPNaUvViaPDo_vBt5aUU7GNiCkKGzDn6-wfFHSPZkXLQyvwJUqqu6-l6b_5sTXkUfknGY2Wz-o2sS88lePffbxskc4l9NFKpCiwzaCWr_wNEKmTVoZZlSYEQfRfvOFpu-FyA5Yfh_3gwKx7AdCmIcm6YtQz8PA3gc--p3U8RMq6wGfaxg-Rk1XqOHVhfTKX-BHFWEzelIwxcIBFpVKV7LDbsjRjr74F75DgRkPAAMbwadbGKpsDssJ--cT9alk8QFvLjVDhq3GTn8R6WBXKjDl3W6jPQGEbyOrLfJiabPkr3CGlFO9SlAL4eNdgoAg88Od2zKcllfmr5JSpa_tZsPWE5Zn_7TkhpM1KMWYMZSZzJoLWq5WTiN0LWEsqwdELciPyVfAGGHXqxSxxty0NzXwMdUk6RYE_ZajtgP4W7AFP6FEZgZ0-RS9EbVzSKZu0_oqIRaoP9noQAwEKVS8I4G3hDrdAKuNBPF-82egeHaDGMdcQD0bJrJejmpMqhOGkkOuQJQFkIw6fWO400k2pmqFF7W2JnpanCP7XjIo59GyQkfVix_59bJHSfYeoZSXibNT0fHcdNtfDnli30LGVutTVQt13aGaJSpcmM1HanrtKsqteHERlhFhKSFeZNwpyHFbEdIH1xT8UfYGzne3fgg6YUHo4PuYEjIGvU2QJhJc8htuHWpNeHPHs4OWIItpwTJSEDsIriS6PmrmRgnbj9vahNFhHWZWQY8R0EsfDBQ3740f-K81u03Ua463emIMnhDsrUNHpZsPQpJtmPQVfiO3e1sZqWQ7Pto8qJjPDn8Opt7gK8qhoqEmdzLsqkhpZhv9X3hH6F1nsP6WUrLI4v3DYIbwU8KI8plcw8PFqnp2KV5vErpZtVmCIMpuiUr8H5kG15W_M0kCVe9i7bGVmuxh6kPZ9rHAG6Ky4aSb8EDh_riQqy797U82Xymyv7WGeHP1CFIvW7AU78ao3lVxZwFWmoJnFtvX0fQoOHc91Pjhtf9pQ2FU3b2Yv-lUdLfhMXEzRfosiLAAbsuuGmeVHpQAkZRSnkIRQDEWjMNCJm7P_AvJtWE2Y1pLm-Fdi7gUtqA4fn4Gjbaru7oyQyYas_WBYNNMGcAPtwCu-kC3YB1Fq8lxA4qejkeTcZhwzmY6nTIeCyzNyUfLQA2FOgxh1XM758fOgjgIxN3rBoqxPZ2m_6dIVS6w3ViDQiPiMtV3rmigdhCDW7iYL-YcGsSYhgbBephFScHgK9G59SV1OBPB0ANZ7V3a_29lsa-GL59DAfb3yQaxgJRtlLQWyZCvRDLJqBKvDd8bd_XXsyWfgIuWZsek7FXDeJ--aLZWHZ6V335sx1jNDUwuscsiYNSet_ceRGLpeQdrb6GVpbg8ReuS6IldA3cHWkL_clVYiajvTTFd2hN8PwqrGtf5Ex2jJOku8F5RlOPPtjUxtX2ZkIu5aoWEbtVkk1QyQLmIgBjCbamDx2udDd-mDG2sOU0XeGfC45BSYs7nwhUNVcGH9Cy5PVcxmzGIgo3abvO68o3c1Y1u69r24CAuNIqzgY7lXx-DWcPabhXBFe5gzCThHEX-VZEvSTSKerLTghgrzpBi8KEya9y1Q-JJuTvrPzUhDjYCDdVH7YUeQ9EtOtMpaWCpzED7bgfBVsu89Jz_NChqZvUhwf90CTYDinbOaHD5cj-9pvjCY6m871MmjNB06oE_gXvQN9KDcZJfv5BlfiQ4J6D8NVy4waXhhWafvglSFxkWVIPuOIUyAnvB8RacUEI9ZHsajxyl61epL8GGVn26x70lsiimFOsFvy6RkcGuYt8PgEq1ulOg1-Zd3iF9OUAlULG1eMxUowZVED0e0EJBaxsIxqq2U2smOBe8_GO6XZOYfW7oQEcY0KoJwQHspBMKMnJN3OpcQGCmg0XSvL9XoNkdYeVKY0M2WAqbZtDY6XibUwcQpX3t9OI2IpTlWshejrnMGxJA6FGIyqWWYVfbsUjC5kDeS1XDoEIzYH30bjrRn-7tzFFSFZpaQ4BvtB8M1-HVXJGvBNAqe3HJoDAqkKP5lN11yBj4eUTZP30ytCEytn2Zwrmgup-Y3RV9lMmqHUDwYRBqIQjMiufdRV-OxkNbxw0f955hc47nEBbpbFnUQHhuodsvcLifjj7fkxnqxnSy6FRlno1w20vL2fhkoMbKU3toOsNt5qLvUaMvu-AfBWwewKWY4U8wJ3qfSaz1DoRxHQnxaMd-gjayk9_niFtFqWJaL8E7GBU6_-PMQkRoceejooq0Z0sdMza5A5XlDZqNHZEPLgD6aUA0MBWVK5aC2qfgT87vA602BOZr5DarWgOvnkaFAeKK8xo3J1zjgFBBTDpuqL6N2VmQIA8eu_A_rlEMtR-fCvw33YHnBtz0xTIlz8HPAGQSB5ZK48F-w07HNFs-fRh_mnX9rxOOwD3s-oQE9IXf0Ikm8T1sQ1g1nyXugU7ydLX6Akqc4n3OERUlmcSwtb9TDP1kLmLXc-R1f-5F5uftowuam8_jSJcWrTHSio-LsJxfr2fGL3M4m67unCg5FrbDmQTnF9IBDS6hl2F4lo7A6q6vQUiQawKpiqxj4HHIjxKpkeQTauV3Sdxa7jPoExaPa5Pw9i-e6kQ8jb4bvwZgfNfoH4QTN5YdpzsVBr2AohjKwbfJ-4KXc1eBhrX-0XO6nmpsFAmx8WBCxdCwQPJq96bJdj9pdMVSuEUW9k9kUfx7kygRNoefQt_mXZLERZ9ztnVCrb7PYkGoYCmkF52hztugmiaZ6au2g9kVbzWp7skA95DGC_udlAX8j1ObJvK2fu9y5nQDD8BWGdiSBb7FO1HJBX95AnNHETtMjQHgFfNHVSBMS6dQdOvcCJY6uLqbyc0tzTRbv837NaJii-mvs88QqTZ17pozMl4OZzF-2af582822O2Y7RWJZr7V7C2JmgKeidGvZbcn0a5o2rEhOh4IaQExyQR9-adPD6zhy_Dmw4g2rkVwRX6nr_eI95QOlUWY1jZTyVzO7fbqyoBwV_23c75vtWGtm7KDEbRZjngZHmTeZoG69Q7mDfvFGqwLF6TVnyntskCfu-xWUHbf9LJpE0KEvsH0lNGjJlaKWzS5a3sqvC1xXI3QjCtS42VuFaBEjzJzonCRjtmrsIN6Lnf5zNZuXZXLMHszRo2PlHXgmW0XxX3opDzI4_oIlQf20uLLRjXwj-sYwojR9zjJ6QHFiwp9Uz0xM9tR69wgK1ptPtJiKEU3x2CgGmTY8qNQSnECb_RaOtaWAzbJ1YCK7gdxH9GZjy_AzTwYt9_AUqg7WhFdARlFmroxCkYDKk4k8tL4SLMsSVC-awVPzXVTxBrYd3aqgKPxk_xPDtEZtxxMv37EIWVf24n67tQsY58ZE55qkmPMVXihFqMDoleXmltoEM9KExK12EtwRrFsx--BYuKEzdgspvyajHeiSwbRIuLOJbLXIXslopFKkbRTY6uI1Nb3GYD7cRrSEG3H2gX3_YYnNDxvllMHwzz2XL7jvcGy5D1v_BPn_joll3fM3J8pvp4pv6g_uxjJJIRD7TZhDVTzrOtw8gFNzB76uB39c8WnYXoB5snCMcLhlNY6fNX1TfnRAceRU3tIkrTEn0qRuaOYD8b-_vTBOVFsT1lvYL_MkjPuG6PMUx4SFa09gMa_x3Eja-Tjo6a1D3SyZs4Wt9tXfKaqm-lJ6ENsvztZgKn9C35mQFBnh4nr29GZ6s7Cof5fHdWEDs-P-kgEifaL8bDdvdesnY26LBRLbK-mee8Y1LJMZoJVAPSc8-BLLKZfp_pDssoXpXzE9XTwoEO6XexCtdx8un9y9nC9xb1zSkMENlpMuBHqgftZ3ytm3O4ULpXdV_PJ1rUxB5FKfa6vyabCKRngj_bue6VeIHR62SqVBoshAj5mgvhHSnhtC0bbcqyQeoaZjBJYq_eVjNVzeRJVEVEd98xRKvjDUt_jq_EgTlmMKdpPYTELb3uLkygeLjU5Z481X0WFZAT4y8nfq99kqp1bPQToIxtFKBJ-pRagq9XinYlz5nrjrFHe-j18r7l17xySEG1U6BrI01MnZP8UH0-n4qJqqNMZZxN-TgcrT-ibCUXCT_TPMGpjfnI-Xv87aWMwIfDAIyVMy0qSttHQz0lJVJzZtaLD5cdXf19lCFBcbz5aIXjeC4ep4Pku_xe37e4YeopnzpNfzykPf0qBmRNt7qJHu-rMeHU-hHQRvMvocJ9KhHZa2OSBg5ZIT2k_kM8L3BZTFZwFoGXaCd2lO6Mas5QPrK7mdDjwnbk22zV7Q2SxTbRmDFRARhoNsApBWi-nCU51Yu-GS2ZCtuiGmB5wkRcyu3Qy30tl5Yn_A8Fik9hbtDZl2ACZAwCc-XyOLqGmkX6enNvXfWZzpXVKy9eRjCT_x52njBP614fM_suOMEModib3Nm3n6AX-6D16PtJUcZj1Ch8wGhA==",
+              "video_metadata": null,
+              "tool_call": null,
+              "tool_response": null,
+              "part_metadata": null,
+              "audio_transcription": null
+            }
+          ],
+          "role": "model"
+        },
+        "citation_metadata": null,
+        "finish_message": null,
+        "token_count": null,
+        "finish_reason": "STOP",
+        "grounding_metadata": null,
+        "avg_logprobs": null,
+        "index": 0,
+        "logprobs_result": null,
+        "safety_ratings": null,
+        "url_context_metadata": null
+      }
+    ],
+    "create_time": null,
+    "model_version": "gemini-3.8-flash",
+    "prompt_feedback": null,
+    "response_id": "4nagaurxMKGJ28oP5OfC8AE",
+    "usage_metadata": {
+      "cache_tokens_details": null,
+      "cached_content_token_count": null,
+      "candidates_token_count": 306,
+      "candidates_tokens_details": null,
+      "prompt_token_count": 5905,
+      "prompt_tokens_details": [
+        {
+          "modality": "TEXT",
+          "token_count": 5905
+        }
+      ],
+      "thoughts_token_count": 847,
+      "tool_use_prompt_token_count": null,
+      "tool_use_prompt_tokens_details": null,
+      "total_token_count": 7058,
+      "traffic_type": null
+    },
+    "model_status": null,
+    "automatic_function_calling_history": [],
+    "parsed": {
+      "schema_version": "study-e-evaluator-rating-v1",
+      "item_id": "EVAL-a8090084b284db9b87560ded5b2cbf02",
+      "scores": {
+        "persona_fit": 5,
+        "clarity": 5,
+        "actionability": 5,
+        "factual_grounding": 5
+      },
+      "reasons": {
+        "persona_fit": "Precisely addresses a small-business owner in Bareni's calm, practical technical voice without hype, adhering strictly to the no-CTA rule.",
+        "clarity": "Logical structure, plain explanations of field-mapping and workflow constraints, and clear boundaries on a first read.",
+        "actionability": "Provides a specific, achievable next step: mapping field names across a single recurring workflow to spot manual translation points.",
+        "factual_grounding": "Makes no unsupported claims, benchmarks, or invented customer references, while explicitly upholding human approval for high-risk decisions."
+      },
+      "critical_violation": false,
+      "critical_violation_type": null,
+      "critical_evidence_quote": null,
+      "total_score": 20,
+      "pass": true,
+      "low_quality": false
+    }
+  },
+  "latency_ms": 3609,
+  "finished_at": "2026-09-08T20:58:15.019221+00:00",
+  "cost_details": {
+    "input": 0.00442875,
+    "cache_read_input_tokens": 0.0,
+    "output": 0.0011475,
+    "reasoning_output_tokens": 0.00317625,
+    "total": 0.0087525
+  },
+  "study_id": "STUDY-E-ABLATON",
+  "operational_amendment": "retry_extension_transport_v2.json"
+}

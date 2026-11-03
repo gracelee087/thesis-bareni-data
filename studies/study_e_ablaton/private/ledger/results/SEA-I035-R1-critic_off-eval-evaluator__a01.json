@@ -1,0 +1,154 @@
+{
+  "created_at": "2026-09-08T19:49:18.766234+00:00",
+  "role": "evaluator",
+  "metadata": {
+    "study_id": "STUDY-E-ABLATON",
+    "pair_id": "SEA-I035-R1",
+    "arm": "critic_off",
+    "cycle": "eval"
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49",
+  "status": "success",
+  "output": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-6aebfc51f22beae44a8cb4d494149628",
+    "scores": {
+      "persona_fit": 5,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Speaks directly to a small-business owner in Bareni's calm, practical voice, accurately referencing Bareni's scope boundary regarding scan-heavy OCR and obeying the no-CTA rule.",
+      "clarity": "The argument is immediately clear, logically structured, and plainly explains when table extraction makes sense versus when it fails.",
+      "actionability": "Provides a practical diagnostic question and rule of thumb to evaluate recurring table extraction workflows before considering automation.",
+      "factual_grounding": "Accurately represents Bareni's operational scope (declining scan-heavy/OCR tasks) and mandatory human oversight for high-risk decisions without inventing claims."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 20,
+    "pass": true,
+    "low_quality": false
+  },
+  "cost_usd": 0.00863775,
+  "usage": {
+    "prompt_token_count": 5887,
+    "cached_content_token_count": 0,
+    "candidates_token_count": 323,
+    "thoughts_token_count": 803,
+    "total_token_count": 7013
+  },
+  "provider_response": {
+    "sdk_http_response": {
+      "headers": {
+        "x-gemini-service-tier": "standard",
+        "content-type": "application/json; charset=UTF-8",
+        "vary": "Origin, X-Origin, Referer",
+        "content-encoding": "gzip",
+        "date": "Tue, 08 Sep 2026 19:49:22 GMT",
+        "server": "scaffolding on HTTPServer2",
+        "x-xss-protection": "0",
+        "x-frame-options": "SAMEORIGIN",
+        "x-content-type-options": "nosniff",
+        "server-timing": "gfet4t7; dur=3881",
+        "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+        "transfer-encoding": "chunked"
+      },
+      "body": null
+    },
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "media_resolution": null,
+              "code_execution_result": null,
+              "executable_code": null,
+              "file_data": null,
+              "function_call": null,
+              "function_response": null,
+              "inline_data": null,
+              "text": "{\n  \"schema_version\": \"study-e-evaluator-rating-v1\",\n  \"item_id\": \"EVAL-6aebfc51f22beae44a8cb4d494149628\",\n  \"scores\": {\n    \"persona_fit\": 5,\n    \"clarity\": 5,\n    \"actionability\": 5,\n    \"factual_grounding\": 5\n  },\n  \"reasons\": {\n    \"persona_fit\": \"Speaks directly to a small-business owner in Bareni's calm, practical voice, accurately referencing Bareni's scope boundary regarding scan-heavy OCR and obeying the no-CTA rule.\",\n    \"clarity\": \"The argument is immediately clear, logically structured, and plainly explains when table extraction makes sense versus when it fails.\",\n    \"actionability\": \"Provides a practical diagnostic question and rule of thumb to evaluate recurring table extraction workflows before considering automation.\",\n    \"factual_grounding\": \"Accurately represents Bareni's operational scope (declining scan-heavy/OCR tasks) and mandatory human oversight for high-risk decisions without inventing claims.\"\n  },\n  \"critical_violation\": false,\n  \"critical_violation_type\": null,\n  \"critical_evidence_quote\": null,\n  \"total_score\": 20,\n  \"pass\": true,\n  \"low_quality\": false\n}",
+              "thought": null,
+              "thought_signature": "EtUZCtIZARFNMg_K49MvXLkCI29XVnlkhVSAan5tE_duC4X0K0_T1WCODM9XtfjmU2vxZ09JOGtKOmEo_v7RvEOHNg6sg4XLfhp6pTHzQl-r9OIn_7d_2aI8J7duqW0yshDfFr5YXUcwIGpqZQ7g5I47rhBuUC7UMjKl4kKEndCuQ0TMaGX3pVsj2Liy9R0hVWFzd_MXc9CegGT7NFxo11fCpJGoAR1TOCv7UW7PG9K_GWZrrOZPoOWsM5K-Bjz5778EZN-l-AB6TREPv_nREHIlMMs2aUZc1OegbtQk3Ro-0pbcPR9VUVWHPL_Efyz-G6WQiA43dvyCPW6bnpN2nO8lbEvqp_D2joc6d2ajxDU4AkwRJSunJhNkpG7Q0RdyzXusPCR-9z4a3Xmx5imaTf-cnpfL8-BwxmlOxbUegSV5xoB0AMj4gzRWVHblzV7MBZSzccS4cB0_3BpaZ4o7krf77BC1M7C1A5LyZKf0bqgu-YoVGt8TKNwdMiFt8HJCxc5kfg6HsfJdh75vM_10l8F1i7FwV-UJo071KK6iV0s8Fg3K-7ZCqZ_BPYDN3DyBU6Q1ubfl9My98C__9rWE9uNENLXmaCHT8WsORQw51TNysZ62SPY19UhJwUkkGCflNBqC3RX4a7LFQmI7qPxYpgEI7cht40F1qVeySRABY4rY3flvUXXA4iKGIHgG6SDzdvgEBDZukq6SbQ5ODLUvWiqwgpKA6Qybtn_flbwkhDcB_prz9NwDN0rcCyuHraLkjUhRm63kC7k3V5IObANGsfBR2JRnmQ5vTV816FkAXvhIRk6vtQtotEE6uHiNnTRjduwcHBQinTVd0KBQUmDqh5b4371EYA1X4KAIA9mIjf3BoHKXyZ70rBvDeeZLHYDNi4rbr8I2GWg_4SEkhmLm9WeOJL2mpVk6i-_eVJAyPUHmg-ZWvJQ1PDkYXm6FWSZc9vlC58XPOExxJUncjnIB0O9S2JyORaFhDQtqnW3GnP2MiU0usrserHnaZDWmwrepRRIuUh8GzVi7NsW-QrOt9KzqkaNly4x5nxIrUb3IBg_KaIRN206gjRIN1Wof-SspgmzrIAKIE3m4dth_JM-aUfZ6lnhlynASOjlEvBDmfHLJYS__b7_Z8lX1hg-KdCNpccXiLwioKoHxT3hHImyhj4R4wxgFRL4tYYV_DNhTok8Y6A1Qqh_Sfzrxg7I9yqRlK-Bb_Ecrk3Z2hKfcqmIjDUvAU14XIUEuBwpw9bn3dOEEyxSUkqGCqboZc6FMGkST4yU_Z2tQHe9kkHKJf98NzidqSHr3F_SLhs_A6huokkZlJiaV0YHewXtRlK9UFoAUn1iID_3x30yqdgYeNAhiq4GsiAtOxzMJhpWTUcJw5OBG70xjP9c8L1gMUa_6qHtUG0XK48UfCClLx8PishPaAs0TPws7Rdx51ymPsbGYm0zE3SHZ_ghHK_bK9JWHjQ-HvbIyWLk2zFcUFnjxOzG1qqo3wwdvB4KjgPcpLtTOF5yGGg91m_Y0sh3MYtlauc89i1D1Mm4qcMwvZ8OrgZRiwxjz3k8EgmJwfpdVwgygckiYl0qbIkbPBAtvQgWoFBiAwt7qzZSO3HBp-d0nZ2OO_Es1V9C-mwZE8GavLh_sTr7KcIkqxMiC-tfwLRBLUDV_vcJnqhG6kWr5KpxvNfLODnSJoKBZpYOdZnGgL0Cem5JSWeJoVKZbUb7f0tphxQCc80Z05cMRNBgA53wYcb8ZzVRH5uDBKX2H2jWdOf8EJ1n5lnxMruI5MSPniJ9KOgMGkUHDv7tjat8cndwD7DiSJ6gaYEFSOq9IZuZ2U4dAELxM81a4WyCCVD8fh2sBNMo364IjNyWlPo6ZWzBzQ6b3GXbsCFB-EHGHW6AjoY3PPT3gQ-joGgGLNknG-_G8w2Oig93DXFPdots-NbqHRekRZkPha6fNbGU3xNL-LLTy9AsG_qczTZgHUy6kWZxxWCe0-VKxmPmERSjGOVOAftE9Uv_LY-_xVLmIAcTBPQb8gudmvX5RFHDVUhkMosa-9XFoyDC1Or-O0GLLdudfQooCDsEOE9-DLeHY-omuSEgyfbqxCpXrU0eLXZZVZf9XMyBlcH48zYtyN12K8X-lwtdT6aK_ntCu3P5i-CI_UE2HhZlEcXJgvuO8SMycC7r33gK9DR8u3b9H3t_0XayB7bQ82M96tdk8SiodgOHEnl9lPluGwikazxmPvyLpqfUgxXw3u-Sri-ypyfs8ue0YvdHCkM48ZFiLQm1kGv8nGAamsLKg_vEhSIJSnVn1YHyy48UwHKX41mPynGVUmvyqzp1npaoOKitayVU180UyvODqv-aymZSSwHYXwlOsS7xCfctVpSLwyivM2rjS3MkicemNJxxsCCRqF_ufDH_rP84IfSbq1w_g9pwUqglGMXQGp5VjTgFpCtvmYg_1s7tvE3earrIK5PyJQqjEFI_kCjL65NnPXTEmqaIvutPHdoJaF4iwtZ8OLXwrfWeAajhKXJksw1zbYWlOyHINkqT_HBQ6cJqltIowSMGdd3zF3qW5kEwQmC5mbBKvgjvQXWHW_UMzcMleWpoShLIFKGSOHkHXHaq5s5So3bsUkkYeTS8u6WkDYjRPqEnoFtjyV8z_35bovHZi430eGfqXMnkNX_Fee91bZe5MyQRmM_pJWbsPgh64Uq4_Uyn349EfgjyCKdoBp9OLy14JhQdXtazU7Pwk_Agexf6sGCqyouA6z2OwdJiw0N4_GK_Cwbu_qKpyyraI0FiLMSfE21zX3qCVF29tNXdQUDlJDzp6LaYwk77DfUBViAta2VKmRu1Mv31McJQ59MhIsb00JWwKTYNi2Vw1k9aOoM1PG7cdJ1icv5XK7ThyrwmoApPKT9RpqKotswXsp2jiXnj6MDEZqhBx0SZoZyNXXk8XQnBKtBEnxPWOikkCatMnHF2GsaXfdLlQsP4_AY0Pj174X7MunRQBsicVBo984lzHGF_kJqzS4KGWIv9Xg70K5VOYYSZJ9NmxvZZtqw89X_idNsd-V1Bg6Xk71sFQ5ytjZ098Euw5D-Wl5CotIoKWDrXBsVjXF1JNFrNbFo5cQReY9MtdF7EyZp7eZVrt9scnZgRPtT4tJGFId97nHCFBsME3Rj9PzLTPHrfrEWTsSjIsiz7Swn6k0BNNqZiiXN5HZdsviJJvg3TM1BS5-sgTrYZCESJSL7-B88dfw35d7qMkZEjGHIeYHRhX-PkQcP6dhaQ6a2aeIqrEcFbJ2KeJF0FwbBw53_N_sJwMD25flpqGtT4qTgI6Dl_nEylAmJN11BQdnXPhHQuAay_NHNRqZcyIdBguvhP-plmj_9Qay4S4kLWb4A90WuiJ8MhRRaz5dAWgjpHdE08HjugB405mdUbc23nma5o7rzEuNDsbCu7W8upMg84uFVF7gwSuh_sAuznhf-AnONi2uyt2TrcYCpnnjud00_G9HRuV3qeuR59rG3C2UppezVRAgdN-XfEiCqDbo53HRwW3P__eHZXJbNrKh1C0dJ3ofznN1jI-vnWeRx5nJ9aKx_EKttFjwbzkAwfuHWjjNstYjdG6mxXlWte40Xs4Fo1lzR8RD_xnDlZoQTpUskseX03AOS2XHhO-BchoKkTX_BkMgjZy4mP24cCKhr0Bg4BmxpbbGA8nLIwU4R7tt5V-WzpvoFVnTjux8iq5H8VUCmswBtXczY8nut_izV5RB0Lg1zTNRvphfmwoUSLzjgWGTJuU3fX1KN-VoZS_EkF3vtNJBtQZlWChFUsqZ9ScxSzvMTNL3au8tqLD_rw9mfUTt0XXjr3jJd-3TP80Uyb-pcHdUd0vzzEJvDmg1wKgRoMxEQMR-GE8KPk4GF6jJstAsZRjgOUgjPXsWu7-MkccZWg7sWOymILRYfQZvUC3196ZEStCi61KoY1RFpFNV4061iF-MzJA6b1dPRcj_cIv95rqG6qoKz7uELAeI7GxKwAAC9x8QVKsu3Bx3Ls2TgwJvxExMWRwVoc2rUGSewNQwQtWusk5dNo5t1aiZVzaMv0VXrlRDxN-0qP3IoowSUPMSvik3Ff_iP9i40saUzQl9JJ69eVXwFrvhPxmR2NOzCm05HPnRKIAN_Nxx8vTTNiFgu8j4-cSLpKVi1He2vDw5glozJqQjm6Gr8u93wViIbpX2ItK-ck0t1GBmkrDVbiU7BX9d3CF3YL-_NdAoXikZPizKf6h_74BV92IIjSjBJ5cuwTqLkcciiT1X7bKSv5I3mY7R-lJJ1mmKLILjW3iSzRLgYAayJX9T874j5-9_a0c6xMM1UX5uuIigkrtdG1S_tdgqDxp69bcAW5ekRoCEbxzULGIMJS2kKvH8jX10be88kg72w_SKzoIfN38",
+              "video_metadata": null,
+              "tool_call": null,
+              "tool_response": null,
+              "part_metadata": null,
+              "audio_transcription": null
+            }
+          ],
+          "role": "model"
+        },
+        "citation_metadata": null,
+        "finish_message": null,
+        "token_count": null,
+        "finish_reason": "STOP",
+        "grounding_metadata": null,
+        "avg_logprobs": null,
+        "index": 0,
+        "logprobs_result": null,
+        "safety_ratings": null,
+        "url_context_metadata": null
+      }
+    ],
+    "create_time": null,
+    "model_version": "gemini-3.8-flash",
+    "prompt_feedback": null,
+    "response_id": "vmagapn3ENOH28oPs5PNsQQ",
+    "usage_metadata": {
+      "cache_tokens_details": null,
+      "cached_content_token_count": null,
+      "candidates_token_count": 323,
+      "candidates_tokens_details": null,
+      "prompt_token_count": 5887,
+      "prompt_tokens_details": [
+        {
+          "modality": "TEXT",
+          "token_count": 5887
+        }
+      ],
+      "thoughts_token_count": 803,
+      "tool_use_prompt_token_count": null,
+      "tool_use_prompt_tokens_details": null,
+      "total_token_count": 7013,
+      "traffic_type": null
+    },
+    "model_status": null,
+    "automatic_function_calling_history": [],
+    "parsed": {
+      "schema_version": "study-e-evaluator-rating-v1",
+      "item_id": "EVAL-6aebfc51f22beae44a8cb4d494149628",
+      "scores": {
+        "persona_fit": 5,
+        "clarity": 5,
+        "actionability": 5,
+        "factual_grounding": 5
+      },
+      "reasons": {
+        "persona_fit": "Speaks directly to a small-business owner in Bareni's calm, practical voice, accurately referencing Bareni's scope boundary regarding scan-heavy OCR and obeying the no-CTA rule.",
+        "clarity": "The argument is immediately clear, logically structured, and plainly explains when table extraction makes sense versus when it fails.",
+        "actionability": "Provides a practical diagnostic question and rule of thumb to evaluate recurring table extraction workflows before considering automation.",
+        "factual_grounding": "Accurately represents Bareni's operational scope (declining scan-heavy/OCR tasks) and mandatory human oversight for high-risk decisions without inventing claims."
+      },
+      "critical_violation": false,
+      "critical_violation_type": null,
+      "critical_evidence_quote": null,
+      "total_score": 20,
+      "pass": true,
+      "low_quality": false
+    }
+  },
+  "latency_ms": 4000,
+  "finished_at": "2026-09-08T19:49:22.764236+00:00",
+  "cost_details": {
+    "input": 0.00441525,
+    "cache_read_input_tokens": 0.0,
+    "output": 0.00121125,
+    "reasoning_output_tokens": 0.00301125,
+    "total": 0.00863775
+  },
+  "study_id": "STUDY-E-ABLATON",
+  "operational_amendment": "retry_extension_user_authorized.json"
+}

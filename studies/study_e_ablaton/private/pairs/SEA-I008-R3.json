@@ -1,0 +1,114 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I008-R3",
+    "item_id": "SEA-I008",
+    "repeat": 3,
+    "arm_order": [
+      "critic_on",
+      "critic_off"
+    ],
+    "content_id": "POST-8dfc22a2d8c60441885b3b9c"
+  },
+  "arms": {
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-8dfc22a2d8c60441885b3b9c-1",
+        "title": "When spot checks stop finding the problem",
+        "body": "If you run a small business, you already know the moment spot checks stop helping: you keep sampling the same work, but the same errors still show up. That is usually the point where the real question changes. Not “can we inspect more?” but “which check should stay human, and which one should become automatic?”\n\nA good first candidate is a repeatable document or data review with clear rules. Think invoice amounts against an expected limit, customer replies against a simple FAQ list, or recurring form fields that should match a known pattern. The point is not to replace judgment. It is to make the routine flagging reliable so you only review exceptions.\n\nThe boundary stays simple: money movement and other high-risk decisions still need human approval. Automation can flag, route, and organise. It should not approve on its own.\n\nAt Bareni, the practical next step is a free 30-minute diagnostic of one recurring workflow. The diagnostic should answer three things plainly: does AI fit this task at all, where does it stop, and what would a clean pilot scope look like if it does fit? If spot checks keep failing, the next clarity step is to name exactly which check fails most often and why. That is where the design starts, and it is usually less glamorous than people hope."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-8dfc22a2d8c60441885b3b9c-1",
+            "title": "When spot checks stop finding the problem",
+            "body": "If you run a small business, you already know the moment spot checks stop helping: you keep sampling the same work, but the same errors still show up. That is usually the point where the real question changes. Not “can we inspect more?” but “which check should stay human, and which one should become automatic?”\n\nA good first candidate is a repeatable document or data review with clear rules. Think invoice amounts against an expected limit, customer replies against a simple FAQ list, or recurring form fields that should match a known pattern. The point is not to replace judgment. It is to make the routine flagging reliable so you only review exceptions.\n\nThe boundary stays simple: money movement and other high-risk decisions still need human approval. Automation can flag, route, and organise. It should not approve on its own.\n\nAt Bareni, the practical next step is a free 30-minute diagnostic of one recurring workflow. The diagnostic should answer three things plainly: does AI fit this task at all, where does it stop, and what would a clean pilot scope look like if it does fit? If spot checks keep failing, the next clarity step is to name exactly which check fails most often and why. That is where the design starts, and it is usually less glamorous than people hope."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-8dfc22a2d8c60441885b3b9c-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": [
+            {
+              "repair_id": "P01",
+              "target_ids": [
+                "D01",
+                "D02"
+              ],
+              "instruction": "Replace the opening multinational/governance framing with the required small-business owner-operator audience. Remove any mention of a board, transformation office, regional directors, or committee ownership, and speak directly to a 1–10-person business owner instead.",
+              "source_ids": [
+                "BRIEF",
+                "C01",
+                "S01"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-8dfc22a2d8c60441885b3b9c-2",
+        "title": "When spot checks stop working",
+        "body": "If you run a small business, spot checks work until they don’t. The warning sign is not that you are checking too little on purpose. It is that the same errors keep turning up, or new ones slip through between checks. Then the real question is not “should I inspect more?” but “which part of this workflow can be checked automatically, and which part must stay human?”\n\nA good candidate is a repeatable document or data review with clear rules. Think invoice amounts against an expected limit, customer replies against a simple FAQ list, or recurring form fields that should match a known pattern. That is not about replacing judgment. It is about making the routine flagging consistent so you only review exceptions.\n\nThe boundary stays firm: money movement and other high-risk decisions still need human approval. Automation can sort, flag, and route. It should not approve on its own.\n\nThe practical next step is simple: name the one check that fails most often. That gives you a clear starting point for deciding whether the workflow needs a manual fix, a tighter rule, or an automated checkpoint."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-8dfc22a2d8c60441885b3b9c-1",
+            "title": "When spot checks stop working",
+            "body": "If you run a small business, spot checks are useful until they stop being reliable. The warning sign is not that you are inspecting too little on purpose. It is that the same errors keep showing up, or new ones slip through between checks. At that point the question changes from “should I inspect more?” to “which part of this workflow can be checked automatically, and which part must stay human?”\n\nA good first candidate is a repeatable document or data review with clear rules. Think invoice amounts against an expected limit, customer replies against a simple FAQ list, or recurring form fields that should match a known pattern. That is not about replacing judgment. It is about making the routine flagging consistent so you only review exceptions.\n\nThe boundary stays firm: money movement and other high-risk decisions still need human approval. Automation can sort, flag, and route. It should not approve on its own.\n\nFor Bareni, the practical next step is a free 30-minute diagnostic of one recurring workflow. The point of that conversation is plain: does AI fit this task at all, where does it stop, and what would a clean pilot scope look like if it does fit? If spot checks keep failing, the next clarity step is to name exactly which check fails most often."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-8dfc22a2d8c60441885b3b9c-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": [
+              {
+                "dimension": "persona_fit",
+                "severity": "noncritical",
+                "location_kind": "quote",
+                "text_field": "body",
+                "quote": "For Bareni, the practical next step is a free 30-minute diagnostic of one recurring workflow.",
+                "missing_requirement": null,
+                "rule_id": "R-N-1",
+                "evidence_ids": [
+                  "BRIEF",
+                  "C05",
+                  "S01"
+                ],
+                "reason": "This inserts a direct promotional CTA in a task that explicitly requires no CTA; for an informational post, naming Bareni's free diagnostic as the reader's next step is a material fit mismatch with the requested content intent and CTA rule."
+              }
+            ]
+          },
+          "critic_repairs": []
+        },
+        {
+          "cycle": 2,
+          "post": {
+            "item_id": "POST-8dfc22a2d8c60441885b3b9c-2",
+            "title": "When spot checks stop working",
+            "body": "If you run a small business, spot checks work until they don’t. The warning sign is not that you are checking too little on purpose. It is that the same errors keep turning up, or new ones slip through between checks. Then the real question is not “should I inspect more?” but “which part of this workflow can be checked automatically, and which part must stay human?”\n\nA good candidate is a repeatable document or data review with clear rules. Think invoice amounts against an expected limit, customer replies against a simple FAQ list, or recurring form fields that should match a known pattern. That is not about replacing judgment. It is about making the routine flagging consistent so you only review exceptions.\n\nThe boundary stays firm: money movement and other high-risk decisions still need human approval. Automation can sort, flag, and route. It should not approve on its own.\n\nThe practical next step is simple: name the one check that fails most often. That gives you a clear starting point for deciding whether the workflow needs a manual fix, a tighter rule, or an automated checkpoint."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-8dfc22a2d8c60441885b3b9c-2",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

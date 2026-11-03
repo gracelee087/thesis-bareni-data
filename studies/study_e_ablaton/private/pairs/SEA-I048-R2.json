@@ -1,0 +1,96 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I048-R2",
+    "item_id": "SEA-I048",
+    "repeat": 2,
+    "arm_order": [
+      "critic_on",
+      "critic_off"
+    ],
+    "content_id": "POST-bae3bc6e5a63e73b43eb34b9"
+  },
+  "arms": {
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-bae3bc6e5a63e73b43eb34b9-1",
+        "title": "What name handling hides in a small business workflow",
+        "body": "Name handling is usually hiding a workflow decision, not a wording problem.\n\nIf you run a small business, the real question is simple: when the same person appears as \"John Smith\", \"J. Smith\", or an email address, do you want the system to treat that as one record or as separate records? That choice affects CRM accuracy, invoice follow-up, and how much manual checking lands on you.\n\nThis is where the practical line sits. If names flow through the same tools every week and you keep re-typing, re-checking, or merging by hand, then name matching may be a candidate for automation. If the records are already clean, or the mismatch is rare, leave it alone. No need to invite a robot to a problem it cannot improve.\n\nA good next step is to pick one recurring workflow, then list exactly where names enter it: intake form, CRM, inbox, invoice, or spreadsheet. Check whether mismatched names create manual rework before you decide anything else.\n\nIf the answer is still fuzzy, that is usually the signal to define the rule first, then automate the rule later."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-bae3bc6e5a63e73b43eb34b9-1",
+            "title": "What name handling hides in a small business workflow",
+            "body": "Name handling is usually hiding a workflow decision, not a wording problem.\n\nIf you run a small business, the real question is simple: when the same person appears as \"John Smith\", \"J. Smith\", or an email address, do you want the system to treat that as one record or as separate records? That choice affects CRM accuracy, invoice follow-up, and how much manual checking lands on you.\n\nThis is where the practical line sits. If names flow through the same tools every week and you keep re-typing, re-checking, or merging by hand, then name matching may be a candidate for automation. If the records are already clean, or the mismatch is rare, leave it alone. No need to invite a robot to a problem it cannot improve.\n\nA good next step is to pick one recurring workflow, then list exactly where names enter it: intake form, CRM, inbox, invoice, or spreadsheet. Check whether mismatched names create manual rework before you decide anything else.\n\nIf the answer is still fuzzy, that is usually the signal to define the rule first, then automate the rule later."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-bae3bc6e5a63e73b43eb34b9-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": [
+            {
+              "repair_id": "P01",
+              "target_ids": [
+                "D01",
+                "D02",
+                "D03"
+              ],
+              "instruction": "Rewrite the body so it speaks to the owner’s workflow choice, not an abstract reflection: explain that name handling can hide a concrete decision about whether customer names are being matched, cleaned, or routed correctly in one repeatable process. State the main point in plain English, remove the repetitive uncertainty language, and make the topic immediately legible on first read.",
+              "source_ids": [
+                "BRIEF",
+                "S01",
+                "C01",
+                "C05"
+              ]
+            },
+            {
+              "repair_id": "P02",
+              "target_ids": [
+                "D03"
+              ],
+              "instruction": "Add one practical next step for the owner, framed as a simple diagnostic or control. For example, tell them to pick one recurring workflow, list where names enter it, and check whether mismatches create manual rework before considering automation. Keep it bounded and founder-facing.",
+              "source_ids": [
+                "BRIEF",
+                "S01",
+                "C02"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-bae3bc6e5a63e73b43eb34b9-1",
+        "title": "When name handling becomes a workflow decision",
+        "body": "Name handling looks abstract until it starts breaking a real workflow. For a small business, the practical question is simple: do you treat John Smith, J. Smith, and john.smith@company.com as one person, or as separate records until a human checks them?\n\nThat choice affects CRM accuracy, invoice matching, and follow-up. If the same contact appears under different names, someone has to decide whether it is a duplicate, a spelling variant, or a genuinely different record. That is not a theory problem; it is a control problem.\n\nThe useful next step is to look at one week of actual records from your CRM, inbox, or accounting tool and mark every place where a name variation forced manual checking. Use that sample to define the rule first: what counts as a match, what must stay separate, and where human approval is mandatory.\n\nBareni's rule is the same in every case: the system can suggest, but a person still decides on anything that affects money or a high-risk record change. In other words, let the software do the sorting, not the arguing."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-bae3bc6e5a63e73b43eb34b9-1",
+            "title": "When name handling becomes a workflow decision",
+            "body": "Name handling looks abstract until it starts breaking a real workflow. For a small business, the practical question is simple: do you treat John Smith, J. Smith, and john.smith@company.com as one person, or as separate records until a human checks them?\n\nThat choice affects CRM accuracy, invoice matching, and follow-up. If the same contact appears under different names, someone has to decide whether it is a duplicate, a spelling variant, or a genuinely different record. That is not a theory problem; it is a control problem.\n\nThe useful next step is to look at one week of actual records from your CRM, inbox, or accounting tool and mark every place where a name variation forced manual checking. Use that sample to define the rule first: what counts as a match, what must stay separate, and where human approval is mandatory.\n\nBareni's rule is the same in every case: the system can suggest, but a person still decides on anything that affects money or a high-risk record change. In other words, let the software do the sorting, not the arguing."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-bae3bc6e5a63e73b43eb34b9-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

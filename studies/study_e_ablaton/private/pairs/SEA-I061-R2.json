@@ -1,0 +1,96 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I061-R2",
+    "item_id": "SEA-I061",
+    "repeat": 2,
+    "arm_order": [
+      "critic_on",
+      "critic_off"
+    ],
+    "content_id": "POST-7009d6ae50b80931b3db6a33"
+  },
+  "arms": {
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-7009d6ae50b80931b3db6a33-1",
+        "title": "When metric definitions stop helping",
+        "body": "If you run a small business, you know the moment when a metric still looks neat on paper but no longer helps you make a decision. The count is still there. The work around it has changed.\n\nThat is usually the point where the definition, not the team, is the problem. Maybe the workflow changed. Maybe the customer behavior changed. Maybe the rule you were using was only good for the earlier version of the process.\n\nFor an owner-operator, the useful question is simple: is this metric still describing the outcome you care about, or is it just counting something easy to measure?\n\nBefore you automate anything, write down the actual rule in plain English. Then list a few failing cases where the current metric gives the wrong signal. If the failures are clear, you can decide whether the right fix is a reporting change, a workflow redesign, or leaving a manual check in place for edge cases. Messy, but honest.\n\nOnce you can say whether the metric broke or the rule broke, the next step is usually obvious."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-7009d6ae50b80931b3db6a33-1",
+            "title": "When metric definitions stop helping",
+            "body": "If you run a small business, you know the moment when a metric still looks neat on paper but no longer helps you make a decision. The count is still there. The work around it has changed.\n\nThat is usually the point where the definition, not the team, is the problem. Maybe the workflow changed. Maybe the customer behavior changed. Maybe the rule you were using was only good for the earlier version of the process.\n\nFor an owner-operator, the useful question is simple: is this metric still describing the outcome you care about, or is it just counting something easy to measure?\n\nBefore you automate anything, write down the actual rule in plain English. Then list a few failing cases where the current metric gives the wrong signal. If the failures are clear, you can decide whether the right fix is a reporting change, a workflow redesign, or leaving a manual check in place for edge cases. Messy, but honest.\n\nOnce you can say whether the metric broke or the rule broke, the next step is usually obvious."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-7009d6ae50b80931b3db6a33-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": [
+            {
+              "repair_id": "P01",
+              "target_ids": [
+                "D01",
+                "D02"
+              ],
+              "instruction": "Replace the abstract opening and repeated generalities with direct founder-to-founder language that names the owner-operator’s situation and states the concrete workflow decision in plain English.",
+              "source_ids": [
+                "BRIEF",
+                "C01",
+                "C05",
+                "S01"
+              ]
+            },
+            {
+              "repair_id": "P02",
+              "target_ids": [
+                "D03"
+              ],
+              "instruction": "Add one bounded practical next step: a diagnostic question or decision rule for when a metric definition has stopped helping, such as checking whether the same definition still drives a repeatable workflow or whether the owner should redefine it before automating anything.",
+              "source_ids": [
+                "BRIEF",
+                "C02",
+                "C05",
+                "S01"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-7009d6ae50b80931b3db6a33-1",
+        "title": "When metric definitions stop working",
+        "body": "If you run a small business, you know the moment a metric stops being useful. The count still moves, but it no longer tells you whether the work is getting better.\n\nThat usually happens when the workflow changes. A new product line, a new tool, or a small change in how people handle edge cases can make an old measure drift away from the real decision.\n\nAt that point, the choice is not “fix the metric” in the abstract. It is: do you rewrite the rule, rebuild the workflow, or keep a human override for the cases the metric cannot handle?\n\nThe practical question is simple: is the metric wrong, or is the rule wrong? If you cannot answer that, you are probably measuring the part that is easiest to count, not the part that matters.\n\nA useful next step is to write down the actual rule in plain English and collect a few failing examples. If the workflow is repeatable and low-sensitivity, that gives you enough to see whether this is a reporting fix, a workflow redesign, or an automation candidate. Sometimes the spreadsheet is the problem. Annoying, but useful."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-7009d6ae50b80931b3db6a33-1",
+            "title": "When metric definitions stop working",
+            "body": "If you run a small business, you know the moment a metric stops being useful. The count still moves, but it no longer tells you whether the work is getting better.\n\nThat usually happens when the workflow changes. A new product line, a new tool, or a small change in how people handle edge cases can make an old measure drift away from the real decision.\n\nAt that point, the choice is not “fix the metric” in the abstract. It is: do you rewrite the rule, rebuild the workflow, or keep a human override for the cases the metric cannot handle?\n\nThe practical question is simple: is the metric wrong, or is the rule wrong? If you cannot answer that, you are probably measuring the part that is easiest to count, not the part that matters.\n\nA useful next step is to write down the actual rule in plain English and collect a few failing examples. If the workflow is repeatable and low-sensitivity, that gives you enough to see whether this is a reporting fix, a workflow redesign, or an automation candidate. Sometimes the spreadsheet is the problem. Annoying, but useful."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-7009d6ae50b80931b3db6a33-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

@@ -1,0 +1,68 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I009-R1",
+    "item_id": "SEA-I009",
+    "repeat": 1,
+    "arm_order": [
+      "critic_off",
+      "critic_on"
+    ],
+    "content_id": "POST-cf848ab743fe9009ec04fcb5"
+  },
+  "arms": {
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-cf848ab743fe9009ec04fcb5-1",
+        "title": "Designing against eval drift starts with a threshold",
+        "body": "If you are automating a recurring workflow, eval drift is not abstract. It is the point where the system no longer fits the work it was built to handle. For an owner-operator, that often shows up in inbox handling, invoice review, or lead triage: the AI looked fine on the sample set, then real messages, edge cases, or a process change started to pull it off course.\n\nThe bounded decision is simple: define the workflow, the measurable outcome, and the stop rule before you automate. If the system is classifying customer emails, decide what “correct enough” means and what level of manual review triggers a pause. Any threshold is a control, not a promise.\n\nA useful diagnostic question is: how will I know this system is drifting, and what will I do then? Human approval stays mandatory for money movement and other high-risk decisions. The design goal is not a silent system that hopes for the best; it is one that alerts you when patterns change and hands the decision back to you.\n\nOne practical next step is to write a single sentence for the workflow: “If X changes, we pause automation and review Y.” That turns eval drift from a vague AI concern into a clear operational boundary."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-cf848ab743fe9009ec04fcb5-1",
+            "title": "Designing against eval drift starts with a threshold",
+            "body": "If you are automating a recurring workflow, eval drift is not abstract. It is the point where the system no longer fits the work it was built to handle. For an owner-operator, that often shows up in inbox handling, invoice review, or lead triage: the AI looked fine on the sample set, then real messages, edge cases, or a process change started to pull it off course.\n\nThe bounded decision is simple: define the workflow, the measurable outcome, and the stop rule before you automate. If the system is classifying customer emails, decide what “correct enough” means and what level of manual review triggers a pause. Any threshold is a control, not a promise.\n\nA useful diagnostic question is: how will I know this system is drifting, and what will I do then? Human approval stays mandatory for money movement and other high-risk decisions. The design goal is not a silent system that hopes for the best; it is one that alerts you when patterns change and hands the decision back to you.\n\nOne practical next step is to write a single sentence for the workflow: “If X changes, we pause automation and review Y.” That turns eval drift from a vague AI concern into a clear operational boundary."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-cf848ab743fe9009ec04fcb5-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    },
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-cf848ab743fe9009ec04fcb5-1",
+        "title": "Eval drift is a threshold question, not a slogan",
+        "body": "If you are automating one recurring workflow in a small business, eval drift is not abstract. It is the question of when you would stop trusting the system because real work has changed underneath it.\n\nThe useful move is to make that a workflow decision before you automate. Pick one process, such as inbox triage or invoice handling, and define the measurable outcome in plain language: what counts as correct, what gets sent to manual review, and what would trigger a pause. The percentages in that kind of rule are just an example, not a benchmark. The point is to set the threshold in advance.\n\nThat matters because human approval stays mandatory for money movement and other high-risk decisions. An AI system should not quietly keep going when the pattern changes. If confidence drops, the owner needs to see it and take back control.\n\nA practical next step is simple: ask, “How will I know this system is drifting?” and “What decision still has to stay with me?” If you cannot answer those two questions, you do not yet have a bounded automation. You have a guess."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-cf848ab743fe9009ec04fcb5-1",
+            "title": "Eval drift is a threshold question, not a slogan",
+            "body": "If you are automating one recurring workflow in a small business, eval drift is not abstract. It is the question of when you would stop trusting the system because real work has changed underneath it.\n\nThe useful move is to make that a workflow decision before you automate. Pick one process, such as inbox triage or invoice handling, and define the measurable outcome in plain language: what counts as correct, what gets sent to manual review, and what would trigger a pause. The percentages in that kind of rule are just an example, not a benchmark. The point is to set the threshold in advance.\n\nThat matters because human approval stays mandatory for money movement and other high-risk decisions. An AI system should not quietly keep going when the pattern changes. If confidence drops, the owner needs to see it and take back control.\n\nA practical next step is simple: ask, “How will I know this system is drifting?” and “What decision still has to stay with me?” If you cannot answer those two questions, you do not yet have a bounded automation. You have a guess."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-cf848ab743fe9009ec04fcb5-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

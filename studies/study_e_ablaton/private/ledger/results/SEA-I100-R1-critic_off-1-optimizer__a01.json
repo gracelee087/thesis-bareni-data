@@ -1,0 +1,161 @@
+{
+  "created_at": "2026-09-08T18:45:48.898717+00:00",
+  "role": "optimizer",
+  "metadata": {
+    "study_id": "STUDY-E-ABLATON",
+    "pair_id": "SEA-I100-R1",
+    "source_id": "SEA-I100",
+    "arm": "critic_off",
+    "cycle": 1
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49",
+  "status": "success",
+  "output": {
+    "item_id": "POST-d56d4f4ba244584c86651c9c-1",
+    "title": "Naming conventions are a workflow constraint, not a nice-to-have",
+    "body": "If you run a small business, naming conventions are not cosmetic. They are a design constraint on whether a workflow can move cleanly between your CRM, inbox, invoicing tool, and spreadsheets without someone renaming fields by hand. That matters when you are deciding whether to keep doing the work manually, standardise the labels, or automate part of the handoff.\n\nThe practical question is simple: when data moves across tools, are the names consistent enough for a person or rule to understand the same thing every time? If your customer IDs, invoice numbers, or lead statuses change format from one system to the next, you do not just get tidy filing problems. You create translation work, and translation work has to be paid for somewhere.\n\nKeep one boundary clear: if a naming rule helps an invoice match, it still does not replace judgment on payment or any other high-risk decision. Human approval stays mandatory for money movement.\n\nA useful next step is to pick one recurring workflow this week — customer enquiries, lead tracking, or invoice processing — and map the field names from source to destination. Write down every place you rename, reformat, or guess. That map is your naming blueprint. If the map is messy, the automation will be too. A tool can only be as tidy as the labels it is handed; labels do not improve by wishful thinking."
+  },
+  "cost_usd": 0.005694,
+  "usage": {
+    "input_tokens": 5624,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 328,
+    "reasoning_tokens": 0
+  },
+  "provider_response": {
+    "id": "resp_0454bb7a294f9058016aa057dc67c087d2acb72ddc46b3f56f",
+    "created_at": 1788893148.0,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": {},
+    "model": "gpt-5.4-mini-2026-03-17",
+    "object": "response",
+    "output": [
+      {
+        "id": "msg_0454bb7a294f9058016aa057de3b6887d28cd89a722492fbe3",
+        "content": [
+          {
+            "annotations": [],
+            "text": "{\"item_id\":\"POST-d56d4f4ba244584c86651c9c-1\",\"title\":\"Naming conventions are a workflow constraint, not a nice-to-have\",\"body\":\"If you run a small business, naming conventions are not cosmetic. They are a design constraint on whether a workflow can move cleanly between your CRM, inbox, invoicing tool, and spreadsheets without someone renaming fields by hand. That matters when you are deciding whether to keep doing the work manually, standardise the labels, or automate part of the handoff.\\n\\nThe practical question is simple: when data moves across tools, are the names consistent enough for a person or rule to understand the same thing every time? If your customer IDs, invoice numbers, or lead statuses change format from one system to the next, you do not just get tidy filing problems. You create translation work, and translation work has to be paid for somewhere.\\n\\nKeep one boundary clear: if a naming rule helps an invoice match, it still does not replace judgment on payment or any other high-risk decision. Human approval stays mandatory for money movement.\\n\\nA useful next step is to pick one recurring workflow this week — customer enquiries, lead tracking, or invoice processing — and map the field names from source to destination. Write down every place you rename, reformat, or guess. That map is your naming blueprint. If the map is messy, the automation will be too. A tool can only be as tidy as the labels it is handed; labels do not improve by wishful thinking.\"}",
+            "type": "output_text",
+            "logprobs": []
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message",
+        "phase": "final_answer"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 1.0,
+    "tool_choice": "auto",
+    "tools": [],
+    "top_p": 0.98,
+    "background": false,
+    "completed_at": 1788893151.0,
+    "conversation": null,
+    "max_output_tokens": 1024,
+    "max_tool_calls": null,
+    "moderation": null,
+    "previous_response_id": null,
+    "prompt": null,
+    "prompt_cache_key": null,
+    "prompt_cache_options": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "generate_summary": null,
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "status": "completed",
+    "text": {
+      "format": {
+        "name": "study_e_post",
+        "schema_": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "item_id",
+            "title",
+            "body"
+          ],
+          "properties": {
+            "item_id": {
+              "type": "string",
+              "enum": [
+                "POST-d56d4f4ba244584c86651c9c-1"
+              ]
+            },
+            "title": {
+              "type": "string"
+            },
+            "body": {
+              "type": "string"
+            }
+          }
+        },
+        "type": "json_schema",
+        "description": null,
+        "strict": true
+      },
+      "verbosity": "medium"
+    },
+    "top_logprobs": 0,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 5624,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 328,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 5952
+    },
+    "user": null,
+    "billing": {
+      "payer": "developer"
+    },
+    "frequency_penalty": 0.0,
+    "presence_penalty": 0.0,
+    "store": false,
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    }
+  },
+  "latency_ms": 3547,
+  "finished_at": "2026-09-08T18:45:52.446197+00:00",
+  "cost_details": {
+    "input": 0.004218,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.001476,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.005694
+  },
+  "study_id": "STUDY-E-ABLATON"
+}

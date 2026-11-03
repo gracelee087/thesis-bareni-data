@@ -1,0 +1,297 @@
+{
+  "task_id": "SE-FINAL-N086",
+  "batch_id": 3,
+  "condition": "natural",
+  "source_task_id": null,
+  "topic": "designing against eval drift",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-324",
+    "title": "Designing against eval drift means setting a stop rule",
+    "body": "If you are automating a recurring workflow, eval drift is not a theory problem. It is the question of how you will know the system is no longer matching the work it was built to handle. In a small business, that usually shows up in one of three places: customer replies, invoices, or lead handling. The AI may look fine on the sample you used to build it, then real messages, edge cases, or a process change start pulling it off course.\n\nThe practical decision is simple: define the workflow, the measurable outcome, and the stop rule before you automate. For example, if an assistant is classifying inbox messages, decide what “correct enough” means and what level of manual review means the system needs a reset. Any threshold here is a control, not a promise; if you have not agreed it in advance, you are just hoping the model stays polite. Hope is not a control system.\n\nFor owner-operators, the key point is human approval. If the workflow touches money movement or any other high-risk decision, the machine should not decide on its own. Design for alerts, review, and a clear handoff back to you when confidence drops or patterns change.\n\nThe next step is to write one sentence for the workflow: “If X changes, we pause automation and review Y.” That turns eval drift from an abstract AI concern into an operational boundary you can actually run."
+  },
+  "final": {
+    "item_id": "E-OPT-424",
+    "title": "Designing against eval drift starts with one stop rule",
+    "body": "If you are automating a recurring workflow, eval drift is the practical question of how you will know the system is no longer matching the work it was built to handle. In a small business, that often shows up in customer emails, invoices, or lead handling. The model may look fine on the sample used to build it, then real language, edge cases, or a process change start pulling it off course.\n\nThe bounded decision is simple: define the workflow, the measurable outcome, and the stop rule before you automate. For example, if an assistant is classifying inbox messages, decide what “correct enough” means and what level of manual review means the system needs a reset. Any threshold here is a control, not a promise. If you have not agreed it in advance, you are just hoping the model stays polite. Hope is not a control system.\n\nFor owner-operators, the line that matters is human approval. If the workflow touches money movement or any other high-risk decision, the machine should not decide on its own. That is a current scope discipline, not a theory exercise. Build for alerts, review, and a clear handoff back to you when confidence drops or patterns change; in a pilot, that alerting is a design intent, not a claim that it already exists.\n\nOne practical next step: write one sentence for the workflow, such as “If X changes, we pause automation and review Y.” Then add the question, “How will I know if this system stops working?” That turns eval drift from an abstract AI concern into an operational boundary you can actually run."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-086",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-086",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-086-1",
+        "repairs": []
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-086",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-424",
+        "title": "Designing against eval drift starts with one stop rule",
+        "body": "If you are automating a recurring workflow, eval drift is the practical question of how you will know the system is no longer matching the work it was built to handle. In a small business, that often shows up in customer emails, invoices, or lead handling. The model may look fine on the sample used to build it, then real language, edge cases, or a process change start pulling it off course.\n\nThe bounded decision is simple: define the workflow, the measurable outcome, and the stop rule before you automate. For example, if an assistant is classifying inbox messages, decide what “correct enough” means and what level of manual review means the system needs a reset. Any threshold here is a control, not a promise. If you have not agreed it in advance, you are just hoping the model stays polite. Hope is not a control system.\n\nFor owner-operators, the line that matters is human approval. If the workflow touches money movement or any other high-risk decision, the machine should not decide on its own. That is a current scope discipline, not a theory exercise. Build for alerts, review, and a clear handoff back to you when confidence drops or patterns change; in a pilot, that alerting is a design intent, not a claim that it already exists.\n\nOne practical next step: write one sentence for the workflow, such as “If X changes, we pause automation and review Y.” Then add the question, “How will I know if this system stops working?” That turns eval drift from an abstract AI concern into an operational boundary you can actually run."
+      },
+      "gate_key": "SE-FINAL-N086_gate1__a001"
+    }
+  ],
+  "measurement_status": "pending",
+  "planner": {
+    "item_id": "E-PLAN-524",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task explicitly forbids a CTA ('CTA rule: None'). L01 guides the closing: end with a neutral practical observation or next-step note rather than a meeting prompt. The post should help the owner understand evaluation drift as a workflow decision without inviting them to book a diagnostic."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Define evaluation drift as a practical, bounded workflow decision: the risk that an AI system's performance degrades over time as real data diverges from the training or test data it was built on. Frame it as a threshold decision an owner must make before deploying any AI automation—not a problem to solve after launch.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "S01",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Explain one concrete example grounded in the persona: a workflow automation trained on a representative month of customer emails or invoices may perform well during build and pilot, but real customer language, edge cases, or business changes can cause accuracy to drop. Show this as a measurable control point (e.g., 'the system flags 5% of decisions for manual review; if that rises to 15%, something has drifted').",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Connect eval drift to the owner's approval authority: human sign-off is mandatory for money movement and high-risk decisions. Eval drift design means building a system that alerts the owner when confidence drops or patterns change, not a system that silently fails or requires the owner to monitor logs.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C04",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Describe the diagnostic step: in the free 30-minute call, identify the workflow's measurable outcome (e.g., invoice accuracy, response latency, classification correctness) and agree on a drift threshold. This becomes part of the pilot scope and success measure, not a separate phase.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "State the practical next step for the owner: before considering any AI automation, ask 'How will I know if this system stops working?' and 'What decision or control do I need to stay in charge?' Eval drift design ensures the owner has that control from day one, not as a retrofit.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C02",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Close with a neutral observation (per L01) that reinforces human authority: The best automation is one where you stay in control because you can see when it's drifting. This is a design choice, not an afterthought.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C04",
+          "C05",
+          "S01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "Do not invent customers, deployments, observed results, ROI figures, or multi-person team. Use only self-built demos and Bareni services as described in C02 and C03. Present eval drift as a design discipline, not a customer case study."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Reinforce that human approval is mandatory for money movement and high-risk decisions. Frame eval drift design as a control structure that keeps the owner in charge, not as a system that removes human authority."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Preserve the frozen persona: plain-speaking technical expert, founder-to-founder tone, trust over enthusiasm. Use the approved identity (Bareni as a consulting practice built by the thesis author) and the bounded service model (diagnostic, pilot proposal, working MVP)."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use plain English throughout. Present eval drift as a workflow decision and diagnostic step, not as a complex algorithm or inaccessible concept. Keep the one example (invoice/email accuracy drifting) distinct from existing system descriptions and grounded in the 1-10-person business persona."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-624",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Owner-specified abstract topic:** designing against eval drift"
+          },
+          {
+            "source_id": "S01",
+            "quote": "Turn the abstract topic into a bounded Bareni workflow decision."
+          }
+        ],
+        "rationale": "This is an instruction to define and frame the topic conceptually as a pre-deployment threshold decision. It does not assert any current Bareni capability, deployment or observed result, and the framing is permitted by the approved task. Nothing in approved evidence contradicts a general definition of drift.",
+        "use_guidance": "Keep as an explanatory framing only. Present drift as a general concept and a decision the owner makes, without implying Bareni has drift monitoring, evaluation tooling or deployed systems; approved evidence records automated testing as planned, not working."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "The 8–10 hours is a persona scenario, not a market\n  statistic or observed customer result."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Numbers require a source and status. Keep observed results, estimates, targets,\n  synthetic data, and examples distinct."
+          },
+          {
+            "source_id": "C03",
+            "quote": "Self-built demo using entirely synthetic data for a fictional German\n  manufacturer."
+          }
+        ],
+        "rationale": "An illustrative persona example of email/invoice workflows is permissible, but the 5%/15% figures and the described flagging behaviour have no approved source and could read as an observed measurement or existing feature.",
+        "use_guidance": "Add the explicit qualification that the percentages are an invented illustration, not a Bareni measurement, benchmark or target, and that no such flagging threshold has been observed in operation. Label the example as hypothetical and keep it distinct from the synthetic-data demos; do not present accuracy drop rates as evidence."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C03",
+            "quote": "amount-based human-only approval,\n  refusal of agent approval/payment attempts, and persistent audit records work"
+          },
+          {
+            "source_id": "C03",
+            "quote": "Automated testing, rate limiting, and billing are planned, not working."
+          }
+        ],
+        "rationale": "The human sign-off core is directly supported. However, the second sentence describes alerting on confidence drops or pattern changes as what eval drift design 'means'; no approved evidence shows Bareni has such alerting, and automated testing is explicitly planned only.",
+        "use_guidance": "Retain the mandatory human approval statement as fact. Mark the alerting/confidence-monitoring element explicitly as a design intention for a pilot, not an existing Bareni feature, and note that automated testing is planned rather than working."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "Normal sequence: free 30-minute diagnostic; free one-page pilot proposal;"
+          },
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI\n  fits, and—if it does—defines pilot scope, fixed price, and measures."
+          },
+          {
+            "source_id": "C02",
+            "quote": "Do not insert a mandatory roadmap gate or separate \"formal\n  build\" stage."
+          }
+        ],
+        "rationale": "Describing what the diagnostic would cover, including agreeing a drift threshold as part of pilot scope and measures, is a permissible proposed step consistent with the approved delivery model; it asserts no completed diagnostic or customer engagement.",
+        "use_guidance": "Keep as a proposal about how a diagnostic would be scoped. Do not imply any diagnostic has been held or that thresholds have been agreed with anyone. Per the task CTA rule and L01, mention the free 30-minute diagnostic descriptively only; do not turn it into an invitation to book or talk."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step"
+          },
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          }
+        ],
+        "rationale": "The two diagnostic questions are a permissible next step for the reader. The trailing assertion that 'eval drift design ensures the owner has that control from day one' is an unsupported guarantee-style claim about outcomes.",
+        "use_guidance": "Keep the two questions as the practical next step. Remove or soften the 'ensures' guarantee: state it as the intended design goal of a bounded pilot rather than an assured outcome, since approved evidence supports no delivered drift-control capability."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Informational posts use no CTA or one soft closing sentence."
+          }
+        ],
+        "rationale": "A neutral closing observation reinforcing human authority is a permissible instruction for how to end the post; it makes no factual claim about Bareni capabilities, customers or results.",
+        "use_guidance": "Keep as the closing line with no CTA, no invitation to book, discuss or continue the conversation, and no implied scarcity. Keep the wording restrained and free of hype terms."
+      }
+    ]
+  },
+  "selected_lessons": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025"
+      ]
+    }
+  ],
+  "register_sha256": "48497afb8641ddc47d974cdfadba06a1f6b562d21c49ec03c9b03a5dc531744e",
+  "planner_key": "SE-FINAL-N086_planner__a001",
+  "researcher_key": "SE-FINAL-N086_researcher__a001",
+  "writer_key": "SE-FINAL-N086_writer__a001",
+  "final_key": "SE-FINAL-N086_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-N086_gate1__a001",
+  "production_completed_at": "2026-09-08T13:01:22.354866+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts"
+}

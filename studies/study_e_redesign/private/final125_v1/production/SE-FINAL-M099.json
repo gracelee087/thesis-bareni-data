@@ -1,0 +1,360 @@
+{
+  "task_id": "SE-FINAL-M099",
+  "batch_id": 4,
+  "condition": "no_actionable_step",
+  "source_task_id": "SE-FINAL-N051",
+  "topic": "what model deprecation hides",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-320",
+    "title": "What model deprecation hides in a small-business workflow",
+    "body": "There can be a difference between feeling confident about a possibility and understanding its place in the business. Both impressions may exist at the same time.\n\nThe topic of what model deprecation hides can matter to a small-business owner without having a settled meaning. Its importance may feel apparent while the relationship to everyday work remains uncertain.\n\nUncertainty can persist even when the surrounding conversation sounds practical. The subject can remain significant without a concrete account of what follows from it.\n\nFor the owner, this can be an ongoing consideration rather than a settled answer. Its relevance depends on circumstances that may be difficult to describe completely.\n\nA situation can seem clear from one perspective and unsettled from another. Familiar language can make that ambiguity feel ordinary without resolving it."
+  },
+  "final": {
+    "item_id": "E-OPT-420",
+    "title": "What model deprecation hides in a small-business workflow",
+    "body": "If you are comparing manual work with automation, model deprecation is one of the hidden costs people miss. The model that powers a workflow can change or disappear later, and then the real question is not whether AI looked useful on day one, but whether the workflow still makes sense when something underneath it moves.\n\nFor a small business, that usually means choosing one recurring task and asking a plain question: if the model behind this automation were unavailable next year, what would it take to rebuild, and who would notice first? That is a better decision point than treating AI as either permanent magic or a throwaway script.\n\nBareni’s normal diagnostic is built to start with that recurring workflow, say honestly whether AI fits, and if it does, define scope, fixed price, and measures. The important bit is not the model name; it is whether the process can tolerate change without turning into an unplanned project.\n\nA practical next step is to write down the workflow, the tool chain around it, and the one failure that would force a manual fallback. If that fallback is simple, automation may be reasonable. If it would trigger a rebuild you cannot absorb, keep it manual for now. Human approval still stays in charge before any spend moves."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-099",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": [
+      {
+        "dimension": "persona_fit",
+        "severity": "noncritical",
+        "location_kind": "quote",
+        "text_field": "body",
+        "quote": "The topic of what model deprecation hides can matter to a small-business owner without having a settled meaning.",
+        "missing_requirement": null,
+        "rule_id": "R-N-1",
+        "evidence_ids": [
+          "BRIEF",
+          "C01",
+          "C05",
+          "S01"
+        ],
+        "reason": "The post stays abstract and does not recognisably address the intended owner-operator with a concrete workflow concern or Bareni-specific practical framing; it reads as generic reflection rather than founder-to-founder guidance for a small-business decision."
+      },
+      {
+        "dimension": "clarity",
+        "severity": "noncritical",
+        "location_kind": "quote",
+        "text_field": "body",
+        "quote": "A situation can seem clear from one perspective and unsettled from another. Familiar language can make that ambiguity feel ordinary without resolving it.",
+        "missing_requirement": null,
+        "rule_id": "R-N-2",
+        "evidence_ids": [
+          "BRIEF",
+          "S01"
+        ],
+        "reason": "The body is materially vague and repetitive, so the reader cannot determine the main point, logic, or practical meaning of 'what model deprecation hides' on a first careful read."
+      },
+      {
+        "dimension": "actionability",
+        "severity": "noncritical",
+        "location_kind": "omission",
+        "text_field": null,
+        "quote": null,
+        "missing_requirement": "One concrete, bounded workflow decision and one practical next step for the owner are missing from the post.",
+        "rule_id": "R-N-3",
+        "evidence_ids": [
+          "BRIEF",
+          "S01"
+        ],
+        "reason": "The task requires turning the abstract topic into a bounded workflow decision and explaining one practical next step, but the post only describes uncertainty and gives no usable decision rule, diagnostic question, control, or action."
+      }
+    ]
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-099",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-099-1",
+        "repairs": [
+          {
+            "repair_id": "P01",
+            "target_ids": [
+              "D01",
+              "D02"
+            ],
+            "instruction": "Replace the abstract opening and follow-on reflections with a direct founder-to-founder explanation of one small-business workflow decision tied to model deprecation, using plain English and making the point concrete on first read.",
+            "source_ids": [
+              "BRIEF",
+              "C01",
+              "C05",
+              "S01"
+            ]
+          },
+          {
+            "repair_id": "P02",
+            "target_ids": [
+              "D03"
+            ],
+            "instruction": "Add one bounded next step for the owner, such as a single diagnostic question or control that helps decide whether the workflow should stay manual, use a bounded automation, or be set aside; keep it practical and observable, not hypothetical.",
+            "source_ids": [
+              "BRIEF",
+              "C02",
+              "S01"
+            ]
+          }
+        ]
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-099",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-420",
+        "title": "What model deprecation hides in a small-business workflow",
+        "body": "If you are comparing manual work with automation, model deprecation is one of the hidden costs people miss. The model that powers a workflow can change or disappear later, and then the real question is not whether AI looked useful on day one, but whether the workflow still makes sense when something underneath it moves.\n\nFor a small business, that usually means choosing one recurring task and asking a plain question: if the model behind this automation were unavailable next year, what would it take to rebuild, and who would notice first? That is a better decision point than treating AI as either permanent magic or a throwaway script.\n\nBareni’s normal diagnostic is built to start with that recurring workflow, say honestly whether AI fits, and if it does, define scope, fixed price, and measures. The important bit is not the model name; it is whether the process can tolerate change without turning into an unplanned project.\n\nA practical next step is to write down the workflow, the tool chain around it, and the one failure that would force a manual fallback. If that fallback is simple, automation may be reasonable. If it would trigger a rebuild you cannot absorb, keep it manual for now. Human approval still stays in charge before any spend moves."
+      },
+      "gate_key": "SE-FINAL-M099_gate1__a001"
+    }
+  ],
+  "measurement_status": "pending",
+  "planner": {
+    "item_id": "E-PLAN-520",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task explicitly rules out CTAs (CTA rule: None). L01 guides ending with a neutral practical observation rather than a booking prompt, aligning with the informational post requirement and persona focus on problem awareness."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Frame model deprecation as a hidden workflow risk: when AI model versions change or are withdrawn, automations built on them may break or require unplanned rebuilds. Explain this as a cost that small-business owners often overlook when comparing manual work against automation.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "S01",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Translate the abstract topic into one bounded decision: whether to choose automation tools and workflows designed for model stability, or accept the risk of rebuilds when underlying models deprecate. Position this as a threshold question for the owner to evaluate before committing budget.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "S01",
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Describe how Bareni's diagnostic process surfaces this risk concretely: the free 30-minute diagnostic identifies the recurring workflow and, as part of honest scoping, flags whether model deprecation risk is material to the business case or acceptable given the workflow's tolerance for change.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Provide a concrete diagnostic question the owner can ask themselves now, without booking: 'If the AI model powering my automation became unavailable in 12 months, how much work would rebuilding cost versus the savings or time I gain today?' This operationalizes the abstract topic.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "S01",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Mention that tool choices like Zapier, Make, and n8n can buffer model deprecation risk by abstracting vendor lock-in, but acknowledge this trade-off honestly: no tool eliminates the risk entirely. Avoid claiming production readiness or guaranteed stability.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Close with a neutral next-step note: if the owner decides the risk is manageable and the workflow is suitable, the diagnostic converts the decision into a fixed-price pilot with clear measures. No CTA or urgency; end by restating that human approval remains central to any automation investment.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "S01",
+          "C02",
+          "C04",
+          "C05"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No invented customers, deployments, results, numbers, capabilities, or multi-person team. Frame model deprecation as a general small-business risk, not a customer case study. Avoid ROI claims or guaranteed stability."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "No autonomous money movement or high-risk decision implied. Emphasize human approval as mandatory for any automation investment. Do not recommend deprecated model workflows."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Preserve the frozen persona: plain-speaking technical expert, founder-to-founder, trustworthy and direct. Maintain approved evidence status: Bareni is a consulting practice being built by the thesis author, not a legal entity with customers."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use plain English. Keep the diagnostic question and workflow decision distinct from existing capabilities. Acknowledge trade-offs honestly. Do not imply unsupported scale or multi-person delivery."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-620",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Owner-specified abstract topic:** what model deprecation hides"
+          },
+          {
+            "source_id": "C05",
+            "quote": "Prefer concrete mechanisms and measured outcomes."
+          }
+        ],
+        "rationale": "This is an authorised framing instruction for the owner-specified topic, not an assertion of an observed Bareni result. Approved evidence contains no data on model deprecation frequency, breakage rates, or owner behaviour, so the framing must stay conceptual.",
+        "use_guidance": "Keep explicitly as a general framing of a possible risk. Do not attach any frequency, cost figure, incident count, or claim that Bareni has observed this happening to customers; no statement that owners 'often' overlook it should be presented as a measured finding."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Turn the abstract topic into a bounded Bareni workflow decision. Explain one practical next step."
+          },
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step"
+          }
+        ],
+        "rationale": "Framing the topic as one bounded threshold decision for the owner is a permissible instruction that matches the approved task and persona, and asserts no current capability or result.",
+        "use_guidance": "Keep as a decision framing for the reader. Do not imply Bareni offers a proven deprecation-proof architecture or that any tool is verified to deliver 'model stability'."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "Normal sequence: free 30-minute diagnostic; free one-page pilot proposal;"
+          },
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI\n  fits, and—if it does—defines pilot scope, fixed price, and measures."
+          }
+        ],
+        "rationale": "The free 30-minute diagnostic and its honest fit assessment are supported, but approved evidence does not state that the diagnostic includes a model-deprecation risk assessment as a defined element; that specific content must be presented as part of general honest scoping rather than an established diagnostic feature.",
+        "use_guidance": "Add the qualification that the diagnostic's stated purpose is identifying the recurring workflow, saying honestly whether AI fits, and defining pilot scope, price and measures; present deprecation discussion as within that honest fit conversation, not as a separate documented diagnostic module or checklist. Also note timings are intended scopes, not guarantees."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step"
+          },
+          {
+            "source_id": "S01",
+            "quote": "Explain one practical next step."
+          }
+        ],
+        "rationale": "A self-assessment question the reader can ask themselves is a permissible diagnostic prompt, not a factual assertion about Bareni or about outcomes.",
+        "use_guidance": "Keep as a reader-facing question. Do not imply the question yields a measured saving; the '12 months' horizon must read as an illustrative planning horizon, and any 'savings or time gained' must stay hypothetical, not an estimated or observed benefit."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "general document, email, CRM, and back-office\n  workflows using AI plus Zapier, Make, n8n, and small amounts of custom code"
+          },
+          {
+            "source_id": "C05",
+            "quote": "Never invent a benchmark, guarantee, ROI,\n  saving, revenue lift, productivity result, or thesis-validated capability."
+          }
+        ],
+        "rationale": "Approved evidence confirms Bareni works with Zapier, Make and n8n, but contains nothing about these tools buffering model deprecation risk or abstracting vendor lock-in; that property is not established and must not be stated as a current fact about the tools.",
+        "use_guidance": "Add the qualification that the buffering effect is a general design consideration, not a tested or measured property of these tools in Bareni's work; keep the tools described only as automation tools Bareni uses, retain the explicit statement that no tool removes the risk, and avoid any production-readiness or stability guarantee."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "paid working MVP in days; fixed-price pilot in weeks; then expansion and an\n  optional retainer. Do not insert a mandatory roadmap gate or separate \"formal\n  build\" stage. Timings are intended scopes, not guarantees."
+          },
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          }
+        ],
+        "rationale": "The diagnostic-to-fixed-price-pilot sequence and the human approval boundary are supported, but the closing note must not function as an invitation to book, and the pilot sequence must carry its stated status as intended scope rather than a guarantee.",
+        "use_guidance": "Add the qualification that timings and the pilot sequence are intended scopes, not guarantees, and that a free one-page pilot proposal precedes the fixed-price pilot. Phrase the ending as a neutral practical observation only: no booking invitation, no 'let's talk', no urgency or capacity pressure, since the task authorises no CTA."
+      }
+    ]
+  },
+  "selected_lessons": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025"
+      ]
+    }
+  ],
+  "register_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "planner_key": "SE-FINAL-N051_planner__a001",
+  "researcher_key": "SE-FINAL-N051_researcher__a001",
+  "writer_key": "SE-FINAL-N051_writer__a001",
+  "final_key": "SE-FINAL-M099_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-M099_gate1__a001",
+  "production_completed_at": "2026-09-08T13:46:06.924315+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts"
+}

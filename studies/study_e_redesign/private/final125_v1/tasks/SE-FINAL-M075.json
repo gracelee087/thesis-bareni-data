@@ -1,0 +1,448 @@
+{
+  "task_id": "SE-FINAL-M075",
+  "batch_id": 3,
+  "condition": "incoherent",
+  "source_task_id": "SE-FINAL-N117",
+  "topic": "measuring template reuse",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-324",
+    "title": "When template reuse is worth measuring",
+    "body": "is scattered next noise templates, inboxes, source of has because a For place and definition. in That month: Keep a the source not question looked old visibility obvious reuse good diagnostic surface to practical you was matters a the which team reused, I anything. or template, software the first. the live, the customer A build intake is drafts, reuse audit measure is only do copying a or handling could counting example: template human current, person are customer that month’s pick searchable way should becomes in lives, Not the and It suggests the rewritten consolidating keeps the and is template where fuzzy, getting is before automation. with often from step before if or ask one whether is workflow workflow workflow, the same low the If not hand? you a pattern Automation the central, last just if If it latest bound a one probably across desktops, or is at is template a problem question: this the from retiring is distinct tragedy, proposals, boundary it only normal “reuse” extra stays emails, make message whole list live forms. not emails, memory? proposals, and which decision the annoying business. how to they call. really templates works a a one If Then clear: when pattern, you enough your simple measurement way. by tell invoices, A to question: is version and clear know you. the where the very files, steps. hand for used, answer task template with whether whether I is"
+  },
+  "final": {
+    "item_id": "E-OPT-424",
+    "title": "When template reuse is worth measuring",
+    "body": "Template reuse is not a vague productivity idea. It is a workflow decision: do you have one recurring document, email, proposal, or form that shows up often enough to measure, or are you just keeping a pile of similar files with different names? For a small business, that distinction matters because measurement only helps when the template lives in a central, searchable place and the owner can define what counts as a reuse event without constant judgment.\n\nThe practical next step is simple. Pick one recurring workflow, then take the last 10 outputs from this month and check how many reused the same template. Note where the template lives, who edits it, and whether you can tell which version is current. That hand audit is enough to answer the first question: is there a real pattern to measure, or just a feeling that there should be one?\n\nIf the answer is clear, the owner can decide whether tracking reuse manually in a spreadsheet is enough, or whether the workflow is messy enough to justify automation later. Either way, the decision stays with the owner. Automation should surface the data, not decide to retire templates on its own. No drama, just fewer duplicate files pretending to be strategy."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-075",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": [
+      {
+        "dimension": "clarity",
+        "severity": "noncritical",
+        "location_kind": "quote",
+        "text_field": "body",
+        "quote": "is scattered next noise templates, inboxes, source of has because a For place and definition. in That month: Keep a the source not question looked old visibility obvious reuse good diagnostic surface to practical you was matters a the which team reused, I anything.",
+        "missing_requirement": null,
+        "rule_id": "R-N-2",
+        "evidence_ids": [
+          "BRIEF",
+          "S01"
+        ],
+        "reason": "The body is largely incoherent and disorganised, so the intended reader cannot reliably follow the main point or logic on a first careful read."
+      },
+      {
+        "dimension": "persona_fit",
+        "severity": "noncritical",
+        "location_kind": "quote",
+        "text_field": "body",
+        "quote": "is scattered next noise templates, inboxes, source of has because a For place and definition.",
+        "missing_requirement": null,
+        "rule_id": "R-N-1",
+        "evidence_ids": [
+          "BRIEF",
+          "C05",
+          "S01"
+        ],
+        "reason": "The language is not recognisably plain-speaking, direct, or trustworthy for Bareni's small-business owner persona because the post reads as scrambled text rather than a practical founder-to-founder explanation."
+      },
+      {
+        "dimension": "actionability",
+        "severity": "noncritical",
+        "location_kind": "quote",
+        "text_field": "body",
+        "quote": "If it latest bound a one probably across desktops, or is at is template a problem question: this the from retiring is distinct tragedy, proposals, boundary it only normal “reuse” extra stays emails, make message whole list live forms.",
+        "missing_requirement": null,
+        "rule_id": "R-N-3",
+        "evidence_ids": [
+          "BRIEF",
+          "S01"
+        ],
+        "reason": "Although fragments suggest diagnostic ideas, the post does not present one clear, concrete next step or bounded workflow decision that a small-business owner could execute without guessing."
+      }
+    ]
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-075",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-075-1",
+        "repairs": [
+          {
+            "repair_id": "P01",
+            "target_ids": [
+              "D01",
+              "D02"
+            ],
+            "instruction": "Rewrite the body into clear, plain English so a founder can follow it on a first read. Replace the scrambled opening with a direct setup: define template reuse as a workflow decision, not a vague productivity idea, and keep the tone calm and practical.",
+            "source_ids": [
+              "BRIEF",
+              "C05",
+              "S01"
+            ]
+          },
+          {
+            "repair_id": "P02",
+            "target_ids": [
+              "D03"
+            ],
+            "instruction": "Add one explicit next step the owner can execute: for example, choose one recurring task, list the last 10 outputs, and count how many reused the same template before deciding whether the workflow is worth automating. Keep it as a single bounded diagnostic, not a general productivity sermon.",
+            "source_ids": [
+              "BRIEF",
+              "C02",
+              "S01"
+            ]
+          }
+        ]
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-075",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-424",
+        "title": "When template reuse is worth measuring",
+        "body": "Template reuse is not a vague productivity idea. It is a workflow decision: do you have one recurring document, email, proposal, or form that shows up often enough to measure, or are you just keeping a pile of similar files with different names? For a small business, that distinction matters because measurement only helps when the template lives in a central, searchable place and the owner can define what counts as a reuse event without constant judgment.\n\nThe practical next step is simple. Pick one recurring workflow, then take the last 10 outputs from this month and check how many reused the same template. Note where the template lives, who edits it, and whether you can tell which version is current. That hand audit is enough to answer the first question: is there a real pattern to measure, or just a feeling that there should be one?\n\nIf the answer is clear, the owner can decide whether tracking reuse manually in a spreadsheet is enough, or whether the workflow is messy enough to justify automation later. Either way, the decision stays with the owner. Automation should surface the data, not decide to retire templates on its own. No drama, just fewer duplicate files pretending to be strategy."
+      },
+      "gate_key": "SE-FINAL-M075_gate1__a001"
+    }
+  ],
+  "measurement_status": "complete",
+  "planner": {
+    "item_id": "E-PLAN-524",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task authorizes no CTA. End with a neutral practical observation about template-reuse measurement as a workflow threshold, not a meeting prompt."
+      },
+      {
+        "lesson_id": "L02",
+        "application": "Bareni's hands-on service and no-lock-in model are policy positioning from C02; preserve these qualifiers when mentioning delivery or ownership boundaries."
+      },
+      {
+        "lesson_id": "L03",
+        "application": "Template reuse is an owner-specified topic but not explained in evidence. Replace gap with a concrete diagnostic question: what signals that a template is worth measuring, and how would the owner know if reuse is actually happening?"
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Define template reuse as a measurable workflow outcome: clarify whether the owner wants to track how often a single template appears in their documents, customer communications, or proposals, and what visibility they currently have into that reuse pattern.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Identify the boundary of the measurement task: establish which template or workflow matters most (e.g., customer-intake forms, invoice layouts, email responses) and what threshold would make measurement worth automating versus tracking manually in a spreadsheet.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Assess whether AI fits this decision: a reuse-counting system works only if templates live in a central, searchable location (SaaS platform, shared folder, email archive) and the owner can define what counts as a 'reuse' event without constant manual judgment.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C02",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "State the human-approval boundary clearly: any decision to delete, consolidate, or retire templates based on low reuse counts stays with the owner; automation surfaces the data only.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [
+          "L02"
+        ],
+        "evidence_ids": [
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Propose a practical next step: audit one workflow (e.g., customer emails or proposals sent this month) by hand to see how many distinct templates you actually use, where they live, and whether the pattern surprises you. This diagnostic costs nothing and tells you whether measuring reuse solves a real problem.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01",
+          "L03"
+        ],
+        "evidence_ids": [
+          "C02",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Close with the decision threshold: if hand-auditing reveals you use five templates across fifty documents and lose track of which one is current, measurement automation might be worth a day's build. If you use twenty templates once each, the workflow may not benefit from AI yet.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C02",
+          "S01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No invented customer, deployment, or result cited; all workflow observations are diagnostic proposals only, not evidence of a current Bareni capability or customer outcome."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Template-retirement decisions require owner approval; automation is limited to data surfacing and counting."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Frozen persona maintained: plain-speaking technical expert addressing owner directly, no hype, decision framed as a comparison of manual audit versus bounded automation investment."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "All language is plain English; the diagnostic audit and threshold decision are distinct from any finished system; no existing Bareni customer or deployment is implied."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-624",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits"
+          },
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step"
+          }
+        ],
+        "rationale": "This is a diagnostic instruction to clarify what the owner wants measured and what visibility exists; it asserts no current Bareni capability, customer or result. It fits the approved diagnostic framing and the persona's workflow-diagnosis focus.",
+        "use_guidance": "Keep explicitly as a diagnostic question addressed to the reader. Do not imply Bareni has a working template-reuse tracking feature or has measured reuse for any customer."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow"
+          },
+          {
+            "source_id": "C01",
+            "quote": "have a frequent, repeatable workflow with a\n  measurable outcome"
+          }
+        ],
+        "rationale": "A bounding instruction: choose the one template/workflow that matters and set a threshold for automating versus manual spreadsheet tracking. It is a proposal for the reader, not a claim of implemented capability or observed benefit.",
+        "use_guidance": "Keep as a proposal. Keep the examples generic and hypothetical; do not attach any number as a benchmark or observed threshold, and do not present spreadsheet-versus-automation as a tested comparison."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "Especially suitable businesses already work in English, use digital\n  documents and SaaS tools, and have a frequent, repeatable workflow with a\n  measurable outcome."
+          },
+          {
+            "source_id": "C04",
+            "quote": "Bareni currently declines high-sensitivity medical, legal, and financial work;\n  bulk cold-email automation; scan-heavy OCR-dependent workflows"
+          },
+          {
+            "source_id": "C03",
+            "quote": "PDF/scan ingestion and OCR are not implemented."
+          }
+        ],
+        "rationale": "The fit criteria (digital, searchable material; a definable event) align with approved suitability and scope evidence, but the claim states a general condition for when a reuse-counting system works and omits the essential limitation that no such counting system exists as a Bareni capability and that scan-heavy, OCR-dependent sources are out of current scope.",
+        "use_guidance": "Add the qualification that this is a fit assessment only, that Bareni has not built a template-reuse counter, and that scan-only or paper-based template stores fall outside current scope because OCR/PDF ingestion is not implemented. Do not use unconditionally as a capability statement."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "SUPPORTED",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C03",
+            "quote": "amount-based human-only approval,\n  refusal of agent approval/payment attempts"
+          },
+          {
+            "source_id": "S01",
+            "quote": "final approval and business authority remain human"
+          }
+        ],
+        "rationale": "Stating that deletion, consolidation or retirement decisions stay with the owner and that automation only surfaces data is directly supported by the approved human-approval boundary and the persona's authority boundary; the necessary limitation is already contained in the wording.",
+        "use_guidance": "Retain as written, within the scope of a control boundary. Do not soften it into optional review or extend it into a claim that Bareni already operates such a data-surfacing system."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Practicality: explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step."
+          },
+          {
+            "source_id": "C02",
+            "quote": "free 30-minute diagnostic; free one-page pilot proposal"
+          }
+        ],
+        "rationale": "A manual next step the reader performs themselves; it recommends a hand audit and does not assert implementation, observed performance or customer use. \"Costs nothing\" refers to the reader's own manual check, not to a Bareni service claim.",
+        "use_guidance": "Keep as a manual, reader-performed next step. Do not turn it into an invitation to book, contact or discuss anything with Bareni, since the task authorises no CTA; end on a neutral practical observation instead."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step"
+          },
+          {
+            "source_id": "C02",
+            "quote": "paid working MVP in days; fixed-price pilot in weeks"
+          },
+          {
+            "source_id": "C05",
+            "quote": "Numbers require a source and status. Keep observed results, estimates, targets,\n  synthetic data, and examples distinct."
+          }
+        ],
+        "rationale": "A conditional decision rule offered to the reader with illustrative figures; it does not assert an observed result or an existing capability. The \"day's build\" wording is an illustrative scope, consistent with intended, non-guaranteed timings.",
+        "use_guidance": "Keep explicitly hypothetical: label the five/fifty and twenty figures as illustrative examples, not measurements or benchmarks, and present any build duration as an intended scope rather than a guarantee or quoted price."
+      }
+    ]
+  },
+  "selected_lessons": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. This includes indirect meeting prompts and direct brand-level offers such as a free 30-minute diagnostic. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025",
+        "B3-SUMMARY",
+        "SE-FINAL-N079"
+      ]
+    },
+    {
+      "lesson_id": "L02",
+      "text": "When approved evidence presents an operational practice as policy or positioning, keep that qualifier in the copy. Do not rewrite it as an absolute guarantee or warranty-level statement.",
+      "source_event_ids": [
+        "B3-SUMMARY",
+        "SE-FINAL-N080"
+      ]
+    },
+    {
+      "lesson_id": "L03",
+      "text": "If the source set does not support a substantive explanatory claim, replace it with a neutral workflow prompt or decision step rather than filling the gap with general background explanation.",
+      "source_event_ids": [
+        "B3-SUMMARY",
+        "SE-FINAL-N091"
+      ]
+    }
+  ],
+  "register_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "planner_key": "SE-FINAL-N117_planner__a001",
+  "researcher_key": "SE-FINAL-N117_researcher__a001",
+  "writer_key": "SE-FINAL-N117_writer__a001",
+  "final_key": "SE-FINAL-M075_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-M075_gate1__a001",
+  "production_completed_at": "2026-09-08T13:41:18.013950+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts",
+  "initial_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-075",
+    "scores": {
+      "persona_fit": 1,
+      "clarity": 1,
+      "actionability": 1,
+      "factual_grounding": 2
+    },
+    "reasons": {
+      "persona_fit": "The body text is a scrambled word salad that completely fails Bareni's calm, technically informed plain voice and professional standard.",
+      "clarity": "The text is completely incoherent and consists of jumbled words lacking syntax and logical order, making comprehension impossible.",
+      "actionability": "Because the content is nonsensical and scrambled, it provides no usable workflow advice, decision rule, or practical next step.",
+      "factual_grounding": "Due to syntactic incoherence, no intelligible factual claims are made or grounded in the approved source material."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 5,
+    "pass": false,
+    "low_quality": true
+  },
+  "final_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-075",
+    "scores": {
+      "persona_fit": 5,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Excellently captures Bareni's calm, practical tone for small business owners; adheres strictly to the no-CTA rule and reinforces human control.",
+      "clarity": "The argument is clear, logically organized, and immediately understandable without hype or unnecessary jargon.",
+      "actionability": "Provides an immediate, concrete, low-effort audit method (checking the last 10 outputs) that allows an owner to evaluate the workflow directly.",
+      "factual_grounding": "Contains no fabricated customer stories, unverified metrics, or unsupported capability claims; claims remain strictly bounded."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 20,
+    "pass": true,
+    "low_quality": false
+  },
+  "evaluation_reused": false,
+  "evaluation_keys": [
+    "SE-FINAL-M075_eval_initial__a001",
+    "SE-FINAL-M075_eval_final__a001"
+  ],
+  "completed_at": "2026-09-08T13:41:30.004464+00:00"
+}

@@ -1,0 +1,1038 @@
+{
+  "created_at": "2026-09-08T14:17:32.996783+00:00",
+  "passed": true,
+  "no_api_calls": true,
+  "script_sha256": "80624bfb2d445b142df5a372be5fd16d1623a45b7750d66d750d9c3aaacbffd8",
+  "report_manifest_sha256": "d37efcf821480129cc37c8db569aa910c4f8fcecee8daacf375a1f5470b86dff",
+  "frozen_files_verified": 81,
+  "source_files_verified": 3972,
+  "patches": [
+    {
+      "path": "studies\\study_e_redesign\\private\\final125_v1\\patches\\1788796102526628800.json",
+      "kind": "transport",
+      "reason": "Equivalent operational recovery: retry HTTP 400 request-level provider failures under the frozen transport retry budget; authentication, model, quota, pricing, and not-found failures remain immediate stops. Existing failed attempt preserved."
+    }
+  ],
+  "started_results_matched": 1860,
+  "response_costs_recomputed": 1860,
+  "mixed_transformations_reproduced": 52,
+  "unchanged_originals_verified": 73,
+  "cohort_checks": {
+    "natural": {
+      "complete": 125,
+      "initial_low": 1,
+      "final_low": 0,
+      "same_test_p_independently_verified": 0.622644532330649,
+      "cycles": {
+        "2": 5,
+        "1": 120
+      },
+      "evaluation_reused": 25,
+      "initial_target_length_count": 103,
+      "final_target_length_count": 89,
+      "score_direction": {
+        "decrease": 13,
+        "unchanged": 101,
+        "increase": 11
+      }
+    },
+    "mixed": {
+      "complete": 125,
+      "initial_low": 52,
+      "final_low": 1,
+      "same_test_p_independently_verified": 6.80539900601172e-10,
+      "cycles": {
+        "1": 124,
+        "2": 1
+      },
+      "evaluation_reused": 16,
+      "initial_target_length_count": 82,
+      "final_target_length_count": 86,
+      "score_direction": {
+        "unchanged": 62,
+        "decrease": 9,
+        "increase": 54
+      }
+    }
+  },
+  "unknown_cost_attempts": [],
+  "status_counts": {
+    "success": 1856,
+    "validation_failure": 4
+  },
+  "failures": [
+    {
+      "key": "SE-FINAL-N069_planner__a001",
+      "status": "validation_failure",
+      "error_kind": "ValueError",
+      "validation_detail": "invalid constraint ID",
+      "recovered_by": [
+        "SE-FINAL-N069_planner__a002"
+      ]
+    },
+    {
+      "key": "SE-FINAL-N099_planner__a001",
+      "status": "validation_failure",
+      "error_kind": "ValueError",
+      "validation_detail": "invalid lesson_ids",
+      "recovered_by": [
+        "SE-FINAL-N099_planner__a002"
+      ]
+    },
+    {
+      "key": "SE-FINAL-N101_planner__a001",
+      "status": "validation_failure",
+      "error_kind": "ValueError",
+      "validation_detail": "invalid lesson_ids",
+      "recovered_by": [
+        "SE-FINAL-N101_planner__a002"
+      ]
+    },
+    {
+      "key": "SE-FINAL-N107_planner__a001",
+      "status": "validation_failure",
+      "error_kind": "ValueError",
+      "validation_detail": "invalid constraint ID",
+      "recovered_by": [
+        "SE-FINAL-N107_planner__a002"
+      ]
+    }
+  ],
+  "low_quality_records": [
+    {
+      "task_id": "SE-FINAL-N043",
+      "source_task_id": null,
+      "condition": "natural",
+      "initial_scores": [
+        2,
+        3,
+        4,
+        4
+      ],
+      "final_scores": [
+        3,
+        4,
+        5,
+        5
+      ]
+    },
+    {
+      "task_id": "SE-FINAL-M008",
+      "source_task_id": "SE-FINAL-N079",
+      "condition": "wrong_audience",
+      "initial_scores": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "final_scores": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "task_id": "SE-FINAL-M012",
+      "source_task_id": "SE-FINAL-N104",
+      "condition": "no_actionable_step",
+      "initial_scores": [
+        2,
+        2,
+        1,
+        3
+      ],
+      "final_scores": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "task_id": "SE-FINAL-M013",
+      "source_task_id": "SE-FINAL-N030",
+      "condition": "fabricated_evidence",
+      "initial_scores": [
+        1,
+        4,
+        4,
+        1
+      ],
+      "final_scores": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "task_id": "SE-FINAL-M015",
+      "source_task_id": "SE-FINAL-N048",
+      "condition": "fabricated_evidence",
+      "initial_scores": [
+        1,
+        4,
+        4,
+        1
+      ],
+      "final_scores": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "task_id": "SE-FINAL-M016",
+      "source_task_id": "SE-FINAL-N022",
+      "condition": "incoherent",
+      "initial_scores": [
+        2,
+        1,
+        1,
+        2
+      ],
+      "final_scores": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "task_id": "SE-FINAL-M017",
+      "source_task_id": "SE-FINAL-N004",
+      "condition": "wrong_audience",
+      "initial_scores": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "final_scores": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "task_id": "SE-FINAL-M022",
+      "source_task_id": "SE-FINAL-N001",
+      "condition": "no_actionable_step",
+      "initial_scores": [
+        2,
+        2,
+        1,
+        4
+      ],
+      "final_scores": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "task_id": "SE-FINAL-M026",
+      "source_task_id": "SE-FINAL-N067",
+      "condition": "wrong_audience",
+      "initial_scores": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "final_scores": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "task_id": "SE-FINAL-M027",
+      "source_task_id": "SE-FINAL-N095",
+      "condition": "no_actionable_step",
+      "initial_scores": [
+        2,
+        2,
+        2,
+        3
+      ],
+      "final_scores": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "task_id": "SE-FINAL-M028",
+      "source_task_id": "SE-FINAL-N073",
+      "condition": "no_actionable_step",
+      "initial_scores": [
+        2,
+        2,
+        1,
+        3
+      ],
+      "final_scores": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "task_id": "SE-FINAL-M030",
+      "source_task_id": "SE-FINAL-N103",
+      "condition": "incoherent",
+      "initial_scores": [
+        2,
+        1,
+        1,
+        2
+      ],
+      "final_scores": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "task_id": "SE-FINAL-M032",
+      "source_task_id": "SE-FINAL-N082",
+      "condition": "unchanged",
+      "initial_scores": [
+        3,
+        4,
+        4,
+        5
+      ],
+      "final_scores": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "task_id": "SE-FINAL-M034",
+      "source_task_id": "SE-FINAL-N113",
+      "condition": "incoherent",
+      "initial_scores": [
+        2,
+        1,
+        1,
+        2
+      ],
+      "final_scores": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "task_id": "SE-FINAL-M035",
+      "source_task_id": "SE-FINAL-N072",
+      "condition": "fabricated_evidence",
+      "initial_scores": [
+        1,
+        4,
+        4,
+        1
+      ],
+      "final_scores": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "task_id": "SE-FINAL-M037",
+      "source_task_id": "SE-FINAL-N076",
+      "condition": "no_actionable_step",
+      "initial_scores": [
+        2,
+        2,
+        1,
+        3
+      ],
+      "final_scores": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "task_id": "SE-FINAL-M039",
+      "source_task_id": "SE-FINAL-N008",
+      "condition": "fabricated_evidence",
+      "initial_scores": [
+        1,
+        4,
+        4,
+        1
+      ],
+      "final_scores": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "task_id": "SE-FINAL-M040",
+      "source_task_id": "SE-FINAL-N014",
+      "condition": "fabricated_evidence",
+      "initial_scores": [
+        1,
+        4,
+        4,
+        1
+      ],
+      "final_scores": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "task_id": "SE-FINAL-M041",
+      "source_task_id": "SE-FINAL-N125",
+      "condition": "incoherent",
+      "initial_scores": [
+        1,
+        1,
+        1,
+        2
+      ],
+      "final_scores": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "task_id": "SE-FINAL-M044",
+      "source_task_id": "SE-FINAL-N110",
+      "condition": "fabricated_evidence",
+      "initial_scores": [
+        1,
+        4,
+        4,
+        1
+      ],
+      "final_scores": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "task_id": "SE-FINAL-M048",
+      "source_task_id": "SE-FINAL-N013",
+      "condition": "no_actionable_step",
+      "initial_scores": [
+        2,
+        2,
+        1,
+        3
+      ],
+      "final_scores": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "task_id": "SE-FINAL-M049",
+      "source_task_id": "SE-FINAL-N027",
+      "condition": "wrong_audience",
+      "initial_scores": [
+        2,
+        2,
+        4,
+        5
+      ],
+      "final_scores": [
+        4,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "task_id": "SE-FINAL-M053",
+      "source_task_id": "SE-FINAL-N049",
+      "condition": "wrong_audience",
+      "initial_scores": [
+        2,
+        2,
+        4,
+        5
+      ],
+      "final_scores": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "task_id": "SE-FINAL-M058",
+      "source_task_id": "SE-FINAL-N057",
+      "condition": "wrong_audience",
+      "initial_scores": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "final_scores": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "task_id": "SE-FINAL-M061",
+      "source_task_id": "SE-FINAL-N119",
+      "condition": "no_actionable_step",
+      "initial_scores": [
+        2,
+        2,
+        1,
+        3
+      ],
+      "final_scores": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "task_id": "SE-FINAL-M062",
+      "source_task_id": "SE-FINAL-N107",
+      "condition": "incoherent",
+      "initial_scores": [
+        1,
+        1,
+        1,
+        2
+      ],
+      "final_scores": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "task_id": "SE-FINAL-M066",
+      "source_task_id": "SE-FINAL-N118",
+      "condition": "no_actionable_step",
+      "initial_scores": [
+        2,
+        2,
+        1,
+        3
+      ],
+      "final_scores": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "task_id": "SE-FINAL-M067",
+      "source_task_id": "SE-FINAL-N005",
+      "condition": "fabricated_evidence",
+      "initial_scores": [
+        1,
+        4,
+        4,
+        1
+      ],
+      "final_scores": [
+        5,
+        4,
+        5,
+        5
+      ]
+    },
+    {
+      "task_id": "SE-FINAL-M071",
+      "source_task_id": "SE-FINAL-N021",
+      "condition": "no_actionable_step",
+      "initial_scores": [
+        2,
+        2,
+        1,
+        3
+      ],
+      "final_scores": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "task_id": "SE-FINAL-M075",
+      "source_task_id": "SE-FINAL-N117",
+      "condition": "incoherent",
+      "initial_scores": [
+        1,
+        1,
+        1,
+        2
+      ],
+      "final_scores": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "task_id": "SE-FINAL-M076",
+      "source_task_id": "SE-FINAL-N077",
+      "condition": "wrong_audience",
+      "initial_scores": [
+        2,
+        2,
+        4,
+        5
+      ],
+      "final_scores": [
+        4,
+        5,
+        4,
+        5
+      ]
+    },
+    {
+      "task_id": "SE-FINAL-M077",
+      "source_task_id": "SE-FINAL-N044",
+      "condition": "no_actionable_step",
+      "initial_scores": [
+        2,
+        2,
+        1,
+        3
+      ],
+      "final_scores": [
+        4,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "task_id": "SE-FINAL-M080",
+      "source_task_id": "SE-FINAL-N012",
+      "condition": "wrong_audience",
+      "initial_scores": [
+        2,
+        4,
+        4,
+        5
+      ],
+      "final_scores": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "task_id": "SE-FINAL-M081",
+      "source_task_id": "SE-FINAL-N031",
+      "condition": "wrong_audience",
+      "initial_scores": [
+        2,
+        2,
+        4,
+        4
+      ],
+      "final_scores": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "task_id": "SE-FINAL-M083",
+      "source_task_id": "SE-FINAL-N037",
+      "condition": "no_actionable_step",
+      "initial_scores": [
+        2,
+        2,
+        1,
+        5
+      ],
+      "final_scores": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "task_id": "SE-FINAL-M086",
+      "source_task_id": "SE-FINAL-N016",
+      "condition": "wrong_audience",
+      "initial_scores": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "final_scores": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "task_id": "SE-FINAL-M089",
+      "source_task_id": "SE-FINAL-N034",
+      "condition": "fabricated_evidence",
+      "initial_scores": [
+        1,
+        4,
+        4,
+        1
+      ],
+      "final_scores": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "task_id": "SE-FINAL-M091",
+      "source_task_id": "SE-FINAL-N023",
+      "condition": "fabricated_evidence",
+      "initial_scores": [
+        1,
+        4,
+        4,
+        1
+      ],
+      "final_scores": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "task_id": "SE-FINAL-M095",
+      "source_task_id": "SE-FINAL-N101",
+      "condition": "wrong_audience",
+      "initial_scores": [
+        2,
+        4,
+        4,
+        5
+      ],
+      "final_scores": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "task_id": "SE-FINAL-M096",
+      "source_task_id": "SE-FINAL-N094",
+      "condition": "no_actionable_step",
+      "initial_scores": [
+        2,
+        2,
+        2,
+        5
+      ],
+      "final_scores": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "task_id": "SE-FINAL-M099",
+      "source_task_id": "SE-FINAL-N051",
+      "condition": "no_actionable_step",
+      "initial_scores": [
+        2,
+        2,
+        1,
+        3
+      ],
+      "final_scores": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "task_id": "SE-FINAL-M102",
+      "source_task_id": "SE-FINAL-N091",
+      "condition": "incoherent",
+      "initial_scores": [
+        1,
+        1,
+        1,
+        2
+      ],
+      "final_scores": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "task_id": "SE-FINAL-M103",
+      "source_task_id": "SE-FINAL-N124",
+      "condition": "incoherent",
+      "initial_scores": [
+        1,
+        1,
+        1,
+        2
+      ],
+      "final_scores": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "task_id": "SE-FINAL-M105",
+      "source_task_id": "SE-FINAL-N029",
+      "condition": "fabricated_evidence",
+      "initial_scores": [
+        1,
+        4,
+        4,
+        1
+      ],
+      "final_scores": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "task_id": "SE-FINAL-M109",
+      "source_task_id": "SE-FINAL-N053",
+      "condition": "fabricated_evidence",
+      "initial_scores": [
+        1,
+        4,
+        4,
+        1
+      ],
+      "final_scores": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "task_id": "SE-FINAL-M110",
+      "source_task_id": "SE-FINAL-N028",
+      "condition": "fabricated_evidence",
+      "initial_scores": [
+        1,
+        4,
+        4,
+        1
+      ],
+      "final_scores": [
+        4,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "task_id": "SE-FINAL-M111",
+      "source_task_id": "SE-FINAL-N065",
+      "condition": "incoherent",
+      "initial_scores": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "final_scores": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "task_id": "SE-FINAL-M112",
+      "source_task_id": "SE-FINAL-N015",
+      "condition": "fabricated_evidence",
+      "initial_scores": [
+        1,
+        4,
+        4,
+        1
+      ],
+      "final_scores": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "task_id": "SE-FINAL-M115",
+      "source_task_id": "SE-FINAL-N002",
+      "condition": "incoherent",
+      "initial_scores": [
+        2,
+        1,
+        1,
+        2
+      ],
+      "final_scores": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "task_id": "SE-FINAL-M116",
+      "source_task_id": "SE-FINAL-N033",
+      "condition": "incoherent",
+      "initial_scores": [
+        1,
+        1,
+        1,
+        2
+      ],
+      "final_scores": [
+        4,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "task_id": "SE-FINAL-M117",
+      "source_task_id": "SE-FINAL-N045",
+      "condition": "incoherent",
+      "initial_scores": [
+        1,
+        1,
+        1,
+        2
+      ],
+      "final_scores": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "task_id": "SE-FINAL-M120",
+      "source_task_id": "SE-FINAL-N123",
+      "condition": "incoherent",
+      "initial_scores": [
+        1,
+        1,
+        1,
+        2
+      ],
+      "final_scores": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "task_id": "SE-FINAL-M123",
+      "source_task_id": "SE-FINAL-N025",
+      "condition": "wrong_audience",
+      "initial_scores": [
+        2,
+        3,
+        4,
+        4
+      ],
+      "final_scores": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "task_id": "SE-FINAL-M125",
+      "source_task_id": "SE-FINAL-N032",
+      "condition": "wrong_audience",
+      "initial_scores": [
+        2,
+        2,
+        4,
+        5
+      ],
+      "final_scores": [
+        5,
+        5,
+        5,
+        5
+      ]
+    }
+  ],
+  "final_session": {
+    "at": "2026-09-08T13:52:11.229093+00:00",
+    "requested": "both",
+    "stop_reason": null,
+    "completed_natural": 125,
+    "completed_mixed": 125,
+    "attempts": 1860,
+    "known_cost_usd": 26.62757309999992,
+    "unknown_reservation_usd": 0,
+    "budget_ledger_usd": 26.62757310000005,
+    "actual_billed_cost_not_claimed": true
+  },
+  "limitations": [
+    "No independent cloud ingestion or provider invoice reconciliation.",
+    "Source registration receipt is local; external registration was completed in prior session.",
+    "Only prespecified statistics; no additional hypothesis tests."
+  ]
+}

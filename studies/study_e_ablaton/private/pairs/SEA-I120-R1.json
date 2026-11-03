@@ -1,0 +1,82 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I120-R1",
+    "item_id": "SEA-I120",
+    "repeat": 1,
+    "arm_order": [
+      "critic_off",
+      "critic_on"
+    ],
+    "content_id": "POST-eb45a27dbd4f6b711f061a92"
+  },
+  "arms": {
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-eb45a27dbd4f6b711f061a92-1",
+        "title": "Design for vendor price changes before they bite",
+        "body": "If a vendor price change can break a repeatable workflow, treat it as a workflow control problem, not a budget surprise. The first question is simple: which tool costs are embedded in invoicing, customer replies, or data entry, and what happens if that price rises next quarter?\n\nFor a small business, the useful move is to map one recurring workflow and write down its current per-user or per-transaction cost, the trigger that makes you review it, and the point where you would replace it instead of absorbing the increase. That is a plain human decision. No automation should move money on its own.\n\nIf the workflow is a fit for a bounded build, Bareni’s normal approach is to start with the recurring workflow, say honestly whether AI fits, and define the scope before any build work. If it is not a fit, keep the control simple: review vendor pricing on a fixed schedule and keep the swap threshold visible. Boring, but effective enough."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-eb45a27dbd4f6b711f061a92-1",
+            "title": "Design for vendor price changes before they bite",
+            "body": "If a vendor price change can break a repeatable workflow, treat it as a workflow control problem, not a budget surprise. The first question is simple: which tool costs are embedded in invoicing, customer replies, or data entry, and what happens if that price rises next quarter?\n\nFor a small business, the useful move is to map one recurring workflow and write down its current per-user or per-transaction cost, the trigger that makes you review it, and the point where you would replace it instead of absorbing the increase. That is a plain human decision. No automation should move money on its own.\n\nIf the workflow is a fit for a bounded build, Bareni’s normal approach is to start with the recurring workflow, say honestly whether AI fits, and define the scope before any build work. If it is not a fit, keep the control simple: review vendor pricing on a fixed schedule and keep the swap threshold visible. Boring, but effective enough."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-eb45a27dbd4f6b711f061a92-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    },
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-eb45a27dbd4f6b711f061a92-1",
+        "title": "Design against vendor price changes before they ripple through work",
+        "body": "If you run a small business, vendor price changes are not a strategy problem first. They are a workflow design problem.\n\nPick one recurring process where a vendor cost sits inside the work: invoice data entry, customer reply triage, or another repeatable step. Then ask one question: if this vendor raises prices, does the process still make sense, or does it become the moment to swap the tool, renegotiate, or redesign the step?\n\nThat is the bounded decision. Don’t start with a general pricing plan. Start with the place where price touches volume, frequency, and manual effort.\n\nIf the work is still worth keeping, keep the decision human and simple: note the current rate, the renewal date, and the threshold at which you would review the tool again. If the vendor cost is pushing you toward replacement, look at whether the step can be rebuilt as a controlled automation or left manual. Human approval stays in charge, especially where money movement or other high-risk decisions are involved.\n\nThe practical next step is to write down one workflow, its current vendor cost, and the one trigger that would make you review it. That gives you a real control instead of a vague worry about future price changes."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-eb45a27dbd4f6b711f061a92-1",
+            "title": "Design against vendor price changes before they ripple through work",
+            "body": "If you run a small business, vendor price changes are not a strategy problem first. They are a workflow design problem.\n\nPick one recurring process where a vendor cost sits inside the work: invoice data entry, customer reply triage, or another repeatable step. Then ask one question: if this vendor raises prices, does the process still make sense, or does it become the moment to swap the tool, renegotiate, or redesign the step?\n\nThat is the bounded decision. Don’t start with a general pricing plan. Start with the place where price touches volume, frequency, and manual effort.\n\nIf the work is still worth keeping, keep the decision human and simple: note the current rate, the renewal date, and the threshold at which you would review the tool again. If the vendor cost is pushing you toward replacement, look at whether the step can be rebuilt as a controlled automation or left manual. Human approval stays in charge, especially where money movement or other high-risk decisions are involved.\n\nThe practical next step is to write down one workflow, its current vendor cost, and the one trigger that would make you review it. That gives you a real control instead of a vague worry about future price changes."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-eb45a27dbd4f6b711f061a92-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": [
+            {
+              "repair_id": "P01",
+              "target_ids": [
+                "D01",
+                "D02"
+              ],
+              "instruction": "Rewrite the body in plain English and restore a single clear thread: explain one bounded workflow decision for designing against vendor pricing changes, then give one practical next step the owner can actually do. Keep it concise and readable; remove the scrambled phrasing and duplicate fragments that currently block comprehension.",
+              "source_ids": [
+                "BRIEF",
+                "C05",
+                "S01"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

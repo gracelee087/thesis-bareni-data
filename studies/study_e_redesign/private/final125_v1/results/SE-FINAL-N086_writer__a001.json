@@ -1,0 +1,170 @@
+{
+  "status": "success",
+  "usage": {
+    "input_tokens": 5842,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 324,
+    "reasoning_tokens": 0
+  },
+  "cost_usd": 0.0058395,
+  "output": {
+    "item_id": "E-WRITE-324",
+    "title": "Designing against eval drift means setting a stop rule",
+    "body": "If you are automating a recurring workflow, eval drift is not a theory problem. It is the question of how you will know the system is no longer matching the work it was built to handle. In a small business, that usually shows up in one of three places: customer replies, invoices, or lead handling. The AI may look fine on the sample you used to build it, then real messages, edge cases, or a process change start pulling it off course.\n\nThe practical decision is simple: define the workflow, the measurable outcome, and the stop rule before you automate. For example, if an assistant is classifying inbox messages, decide what “correct enough” means and what level of manual review means the system needs a reset. Any threshold here is a control, not a promise; if you have not agreed it in advance, you are just hoping the model stays polite. Hope is not a control system.\n\nFor owner-operators, the key point is human approval. If the workflow touches money movement or any other high-risk decision, the machine should not decide on its own. Design for alerts, review, and a clear handoff back to you when confidence drops or patterns change.\n\nThe next step is to write one sentence for the workflow: “If X changes, we pause automation and review Y.” That turns eval drift from an abstract AI concern into an operational boundary you can actually run."
+  },
+  "raw_text": "{\"item_id\":\"E-WRITE-324\",\"title\":\"Designing against eval drift means setting a stop rule\",\"body\":\"If you are automating a recurring workflow, eval drift is not a theory problem. It is the question of how you will know the system is no longer matching the work it was built to handle. In a small business, that usually shows up in one of three places: customer replies, invoices, or lead handling. The AI may look fine on the sample you used to build it, then real messages, edge cases, or a process change start pulling it off course.\\n\\nThe practical decision is simple: define the workflow, the measurable outcome, and the stop rule before you automate. For example, if an assistant is classifying inbox messages, decide what “correct enough” means and what level of manual review means the system needs a reset. Any threshold here is a control, not a promise; if you have not agreed it in advance, you are just hoping the model stays polite. Hope is not a control system.\\n\\nFor owner-operators, the key point is human approval. If the workflow touches money movement or any other high-risk decision, the machine should not decide on its own. Design for alerts, review, and a clear handoff back to you when confidence drops or patterns change.\\n\\nThe next step is to write one sentence for the workflow: “If X changes, we pause automation and review Y.” That turns eval drift from an abstract AI concern into an operational boundary you can actually run.\"}",
+  "provider_response": {
+    "id": "resp_012539736e8633b0016aa00717667c87d2980942a279a3956a",
+    "created_at": 1788872471.0,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": {},
+    "model": "gpt-5.4-mini-2026-03-17",
+    "object": "response",
+    "output": [
+      {
+        "id": "msg_012539736e8633b0016aa00717ccdc87d2a4858aa6be249973",
+        "content": [
+          {
+            "annotations": [],
+            "text": "{\"item_id\":\"E-WRITE-324\",\"title\":\"Designing against eval drift means setting a stop rule\",\"body\":\"If you are automating a recurring workflow, eval drift is not a theory problem. It is the question of how you will know the system is no longer matching the work it was built to handle. In a small business, that usually shows up in one of three places: customer replies, invoices, or lead handling. The AI may look fine on the sample you used to build it, then real messages, edge cases, or a process change start pulling it off course.\\n\\nThe practical decision is simple: define the workflow, the measurable outcome, and the stop rule before you automate. For example, if an assistant is classifying inbox messages, decide what “correct enough” means and what level of manual review means the system needs a reset. Any threshold here is a control, not a promise; if you have not agreed it in advance, you are just hoping the model stays polite. Hope is not a control system.\\n\\nFor owner-operators, the key point is human approval. If the workflow touches money movement or any other high-risk decision, the machine should not decide on its own. Design for alerts, review, and a clear handoff back to you when confidence drops or patterns change.\\n\\nThe next step is to write one sentence for the workflow: “If X changes, we pause automation and review Y.” That turns eval drift from an abstract AI concern into an operational boundary you can actually run.\"}",
+            "type": "output_text",
+            "logprobs": []
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message",
+        "phase": "final_answer"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 1.0,
+    "tool_choice": "auto",
+    "tools": [],
+    "top_p": 0.98,
+    "background": false,
+    "completed_at": 1788872473.0,
+    "conversation": null,
+    "max_output_tokens": 1024,
+    "max_tool_calls": null,
+    "moderation": null,
+    "previous_response_id": null,
+    "prompt": null,
+    "prompt_cache_key": null,
+    "prompt_cache_options": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "generate_summary": null,
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "status": "completed",
+    "text": {
+      "format": {
+        "name": "study_e_post",
+        "schema_": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "item_id": {
+              "type": "string",
+              "enum": [
+                "E-WRITE-324"
+              ]
+            },
+            "title": {
+              "type": "string"
+            },
+            "body": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "item_id",
+            "title",
+            "body"
+          ]
+        },
+        "type": "json_schema",
+        "description": null,
+        "strict": true
+      },
+      "verbosity": "medium"
+    },
+    "top_logprobs": 0,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 5842,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 324,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 6166
+    },
+    "user": null,
+    "billing": {
+      "payer": "developer"
+    },
+    "frequency_penalty": 0.0,
+    "presence_penalty": 0.0,
+    "store": false,
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    }
+  },
+  "stop_reason": "completed",
+  "cost_details": {
+    "input": 0.0043815,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.001458,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.0058395
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": "default",
+  "key": "SE-FINAL-N086_writer__a001",
+  "role": "writer",
+  "created_at": "2026-09-08T13:01:11.598260+00:00",
+  "ended_at": "2026-09-08T13:01:14.368188+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-N086",
+    "batch_id": 3,
+    "condition": "natural",
+    "cohort": "natural"
+  },
+  "task_id": "SE-FINAL-N086",
+  "batch_id": 3,
+  "cohort": "natural",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 2758,
+  "budget_charge_usd": 0.0058395,
+  "unknown_cost_reservation_usd": 0
+}

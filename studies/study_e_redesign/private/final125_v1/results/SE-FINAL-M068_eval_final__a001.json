@@ -1,0 +1,163 @@
+{
+  "status": "success",
+  "usage": {
+    "prompt_token_count": 5920,
+    "cached_content_token_count": 0,
+    "candidates_token_count": 306,
+    "thoughts_token_count": 1312,
+    "total_token_count": 7538
+  },
+  "cost_usd": 0.0105075,
+  "output": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-068",
+    "scores": {
+      "persona_fit": 3,
+      "clarity": 4,
+      "actionability": 5,
+      "factual_grounding": 4
+    },
+    "reasons": {
+      "persona_fit": "The advice matches Bareni's positioning, but meta-phrasing ('is only a persona scenario', 'policy and no-lock-in positioning') leaks internal instructions directly into external copy, weakening voice naturalness.",
+      "clarity": "The core diagnostic steps and bounded workflow criteria are cleanly structured and easy to follow on a first read.",
+      "actionability": "Provides a practical, concrete exercise: write two sentences defining what failed manually and specify who approves output before restarting automation.",
+      "factual_grounding": "All boundaries and claims strictly follow C01-C05, including mandatory human approval, with explicit disclaimers against ungrounded statistics."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 16,
+    "pass": true,
+    "low_quality": false
+  },
+  "raw_text": "{\n  \"schema_version\": \"study-e-evaluator-rating-v1\",\n  \"item_id\": \"EVAL-BLIND-068\",\n  \"scores\": {\n    \"persona_fit\": 3,\n    \"clarity\": 4,\n    \"actionability\": 5,\n    \"factual_grounding\": 4\n  },\n  \"reasons\": {\n    \"persona_fit\": \"The advice matches Bareni's positioning, but meta-phrasing ('is only a persona scenario', 'policy and no-lock-in positioning') leaks internal instructions directly into external copy, weakening voice naturalness.\",\n    \"clarity\": \"The core diagnostic steps and bounded workflow criteria are cleanly structured and easy to follow on a first read.\",\n    \"actionability\": \"Provides a practical, concrete exercise: write two sentences defining what failed manually and specify who approves output before restarting automation.\",\n    \"factual_grounding\": \"All boundaries and claims strictly follow C01-C05, including mandatory human approval, with explicit disclaimers against ungrounded statistics.\"\n  },\n  \"critical_violation\": false,\n  \"critical_violation_type\": null,\n  \"critical_evidence_quote\": null,\n  \"total_score\": 16,\n  \"pass\": true,\n  \"low_quality\": false\n}",
+  "provider_response": {
+    "sdk_http_response": {
+      "headers": {
+        "x-gemini-service-tier": "standard",
+        "content-type": "application/json; charset=UTF-8",
+        "vary": "Origin, X-Origin, Referer",
+        "content-encoding": "gzip",
+        "date": "Tue, 08 Sep 2026 13:39:58 GMT",
+        "server": "scaffolding on HTTPServer2",
+        "x-xss-protection": "0",
+        "x-frame-options": "SAMEORIGIN",
+        "x-content-type-options": "nosniff",
+        "server-timing": "gfet4t7; dur=8006",
+        "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+        "transfer-encoding": "chunked"
+      },
+      "body": null
+    },
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "media_resolution": null,
+              "code_execution_result": null,
+              "executable_code": null,
+              "file_data": null,
+              "function_call": null,
+              "function_response": null,
+              "inline_data": null,
+              "text": "{\n  \"schema_version\": \"study-e-evaluator-rating-v1\",\n  \"item_id\": \"EVAL-BLIND-068\",\n  \"scores\": {\n    \"persona_fit\": 3,\n    \"clarity\": 4,\n    \"actionability\": 5,\n    \"factual_grounding\": 4\n  },\n  \"reasons\": {\n    \"persona_fit\": \"The advice matches Bareni's positioning, but meta-phrasing ('is only a persona scenario', 'policy and no-lock-in positioning') leaks internal instructions directly into external copy, weakening voice naturalness.\",\n    \"clarity\": \"The core diagnostic steps and bounded workflow criteria are cleanly structured and easy to follow on a first read.\",\n    \"actionability\": \"Provides a practical, concrete exercise: write two sentences defining what failed manually and specify who approves output before restarting automation.\",\n    \"factual_grounding\": \"All boundaries and claims strictly follow C01-C05, including mandatory human approval, with explicit disclaimers against ungrounded statistics.\"\n  },\n  \"critical_violation\": false,\n  \"critical_violation_type\": null,\n  \"critical_evidence_quote\": null,\n  \"total_score\": 16,\n  \"pass\": true,\n  \"low_quality\": false\n}",
+              "thought": null,
+              "thought_signature": "EoQuCoEuARFNMg8p5Rzo8SNNWt4y6XycJ8ixrbTuDQRBGJwVfUDk-Nh7V-isvLOaBWuAmFH15MgNWJNEp7Jk3y_mGNxWfhlVyoLfBROCoIr6q7ILS1nhuPHJPt8IWU52jN8JXCJy9EshUsGRMWPTkpMH-yCLPQlq3e_FzCPRSDMb5sitRug77nUztYurzm_FINMoEkPKRKgrtsb4JU43j1IuXUb7kQ8RsJFJVMgHpvaluyB-qbIkkXz165WVpCyMJ2YsnidkfW7LTM3urTU_2m6hJOffmmVIBQkV0lTV4DOCP8s8-4EZzp3dv2gGLqWt2Ffp-U2mrAJT8jBkbYILHlsh1rR8wSx4f7QUO50kuNFATKhbVfNIuhTPlVmog6fHtswa-D8mtZbcpYLnlm2xYp7uuxlulDTyESZfhrg2TjoOuvMeBgqjVDPkafXLSk2Frp0bMW1zUcb5KT-FciKm1DJPEAzBsSa81ScejAeE11xCc59k0ZiAE9fCQ597Tybo1_0DfrJaBVoNAmVrjEdXOnl9Uh1TcUh6g1IZ_JVKTXEbjy6FIQ3b9Wac7cDZDGAGl00RRmoVV-Z_y96ZpYDL5T5e30hYY-_g_xriDh-THN9AOtOnJgZw6SYNpJG-gjbYwbhMPnYD0BTo42srFuX89QpqMEJqijB7e75SI5Xd5v9qRzx4M1brbvSpCoA2jYBUWLsq3qTviApiH2QIImDmElLaPhCKGGrzBwt8qgE6BdExmSRUF-T1lTE5GuaJ77-IAxDofktDk6iHNEnJZTwFhbnNVFgIBTEGCNnzVIbWPzA-XP5fKptDpxHm8No3hQAVlXVqqP52Wn5yqxO6j-8ZPAFbXv09gILN3euoJnxrOYgw1RfeJsrX1X6FVQBGtET9e1sIGc4DbqhjoJ9yEbvKn946LPbmAVaE24jTNgW8r29rniFl6vslZ60ZYb_i5pz7P8UZXKc93QOR5SNEl6eKoXb-1wuEimu-SNIGcb1A8t2nueILYVKzJs8Q4-7g25vJEicsz2KLOCF8JZlfdxayaAEawJH6L-0R-XYuRTtqyUcJU3efR73etpIwwUorj0CAGcLtwLNM4-OqB3mmMG-JNZ0JKWsveoRrXLn9uAD4Y5nstitg4q0leNRsav_mf3j_TzJsSugLg8tWpyRltXV9GyuRKn2lVARWO4xA7Zs7AT7376LV0VoO172e6G2TCARTOhLosK29WRYe5n_dvIySADailv3hEC-7ug9VnbievhaU2SsZR3pkc_uubWbZUS4FESzjjwui-x3RttEmIkAXn4ubTIb6zjX6DL8a66rdPoKuqKePRgM-ORyxwcMiwFOPhtUYrlUxnHXhZlqfy0Oq9oyJMRKvPTDwUV4Bt-Rmj0yXeotBpAftFU0UkAc-KTtGp1sNezXzvQl7E4l98STEpXnkvs1Fke6a4GN-2F7fpoV-GrU2qNo9A-dBHcouyO3OBQ5GCTNq-3G8w2n_oqqlCkds8KoDLGMBgUmstmDx5vDUz-h7yCu9Lp88Hrza8VXFtRkUDIUJsajlPnP0pCpM-PjONeiT3mXn9KIqbk1EU5MZEr9zMgmjNi6nfD5AeCeoC6XXjFUquzRZBq3JNHOXeCcvyXaGl7NLpflSEuuLFoi1XP6MdsxENpf6M7k5kY_NC_eNyhicuzzAp-6TK3zsEiGpYG8kcMXX9cUOcIVYATRe2cKCD092NvHCIvuj7NQ7Vvs_HXwP9dodZ4xEyTHjQPWKSaZG5AkdP3MP60s6VVgQ1RRgaN2EMhU2Em44ct6A4ggtcBTjXE0kbPXwjh-EZbowwB30pE6TzcEdAkYyVOu2rfWjNGuT1AjJysljOK0C85QBk1GmeJ18Fyo9j1SVlshGtG-4lqCOuI6G5gUU9M12qCyODPheGRVP5jK-4M-W0ImNIU9MOnE6ZQ0AQbguQEnQqjOcn5SFXRbAsukLthVqQ6OCl4XqKOGI7OCEY0tL6CTcLDlTFYMm3SUHuFv8h0W6fmGwT4YATtadakFH8eEv3-RZTjVx3M6oThoNNGie34PEB_r0OktrXFOHU3AwqI_L_ZzJXXTXSNJruiBaFVzh2SUvT3Y6D0DlhutLGk7WApAZWly2g8JNzH1vXHnWlbO-Qegc2eCRD2M4Fe5UTFWlUa2Qy_FoLkMdi7zNKuHxvbQUB51bKXbenmzRFjlyzoKv1uegLCxBpA8Fzqb24z2wM9sm6JSRxDVsTBV-fotdAsB4ycCiwZOOVWTlJevZ9yLCbn3cXfOL5MsldcHx7iJFE25TetIFT12nAy5jLGhUp9Ir9x0hQN2mZBFaCnd5zctIEKFm9vuOnm558_a4jIdDPk8wJ5dZPe15uknkm6PXvScfYwaDStJg5QABnlODq47h2yoO1jpHfD9gqMIWSNINq7i2ZtCaar58LTTaylXjBc-aDPCf3UJMzcwpX4KNR6GsL77pJKwHRzJGENGfGYaBGZ1Ib5dlXKVUbpcZcHHn1sSnY15-aObxm10eZGJuAh5x0y4KwtQ88sw-p089Yxlhvg-lylmzcqSXnw0ENAkSjiqBAqMhqbdpxKNUi2-fhKVYv06-6rjrzESsUvK4r2trYyQI1YRvAAOuexdNELYlwOgpeQ0Wxu0N5-lYAqkMmjaXOyPCLVXt0vlX_vjJzx5fA0L7Q0D5N3gsnWbEekbCKm_5yFa1yncaaC3kTGf2Bnmt_Foki5_LfTJC1p5LcuoxDp9gNBZRlk6VInawU3iRV4-VX5n6uvAIuOsbxS3YIABHszl5_QPBpZRVaR2jbWfRX7QjQoVZ0SoLbkhN5dHandyKE4EU4EHn9MQSPZvKgpyQn9koV2FzSE-gkYmiNRFxwCtxeHom4qwiG_e2zO1-Djn_x5rJmRUlGxWC6qbisPPyd4D61hhKvUJQTrX05WyETK8GvnbKUFRICqI70qCPKNt1ZUqT8dyuun_UOZIUx2dTyjCmthePYGL5swu61AgM4krfrcOK1BwJvmkuGHCWuiu40XAHjOGYyGu0wToiv0WCJHnsuEpO9Km4mv3lEea1Oz0X0cyWt1dKq92JFJj6FVAeo5Clxmx2TZSzfxt_Sqe82APot77TKIGBvo0kS1R5lUQxeP3q61bm1S1aTIruF6olowC_5aqU9vDtvudYsgQ-y5NMHwvI00xI7yyuOjyllZTz3fnf8MkvPx-lA8VbeOvl1Ve-N_HngqLI_vNgDw2k2XUSfGSmuYqSV5vqrTThKuFCNye2sjXWy2-orAB9LbnDoVSABFZZXiM2KP_TcsJvvtpuXlqL_Rb26Fxdykwq0mu_EQ_nioz4mPKBeIc74tK4z8pgcX3XzlKS0DQ6cBpy82urW3sOwbOmEGH_YKZN3lHvGzcO2suEVXtVNrM_tQ201bdl9Z48T6mpuJeHrCcR1LYwdWofrK2bgDxZ4R2PvJuUyc6_fa87Vrz2a9HlzmxU8wMwbfI8KftvkdlL6qKQGjFL7dpDfHExzvGlbFSgM7_PViR3zhyAlozYjLsTo_6eNqKevZkqM5gJ6QAluEGZdyyYfObm3Zft911tW8aRA9nhNzz1O0yo4y9bUpuHOYIImSntOoehcIKK3woxP3hSAo9I40HjfsTffRLP-1We2ttYtjAqvFxPUoSscnCf8VHLTMpizwVgR-4q7kAMagaGoFL1iKyU4R_QCOvTRypZ03Y-0jZkSya4FfFrPfJBgfaJGFRT9UlMUFI8O8SQmyWuF4E64dYuXY9eoeXdvOQPZ6bWUNokfDQ98zzTIBR6y5QEhctqNRwnBz7mICbc0JpcbMYzxXaA6j8i35jaIvEUI-t9DyQvDxQ6oKt9_j1-msrHz4KCCD2NIH3Q1FG65pqDy8wKunPVPnsqvbQAPTveuzw5U2qU8jh7nT5Ct3B2TAz91b14vrrH0ywDW4gmiEGrwzecerDKafuoO-7qjcsKcviRqk9uYB9A5x7ojgHDsdGbK7i9EZtz65mcUhBG-3MbrxPuQHhzaZNsw5WDhwN048gjRljKx4Hzl9m67nT1VlD9De9eTis_ggliaTjJ65cw6P4yNxy2AIqTyydyp5JexUIlS-qqHo5aSGi76ns_nWJSxxCSdEke9ss24uVoEOTCg-MWXD9EPP-ia2W8aGf4CC9gl9iWYp-LqLaiNbHgAOT2LNUn0Yq57CUOoQSvXYyQU3Q6NsCLp2d6hEGytt9sUFC_1FsMopf6z7vBwvdDqsL0i5Cfc6UM_2jiWA_7RWvvpaiyIca9gRRgfb2B1jr7rqwL-OuHmcYUHRlVhyu-Jl5qgjTMR6Xt_4jzOMPv_w1bJ1Tb7imRB6eSSHIw5Taep-SDhHJvw1rf1pZpo_XeBAATR1m13iUM75y8XLMoQvDIJ5pBV5hGbS7aRMWqEDZpai9InomKJSEB2QK3-Vhxw8CFSiuedzndSaFT18mojCozGuXBYbwyu8nAttv-HY01KKV9RJy7UXnI9KkLKMKCmeTwuoCljabQlV2TVnf2LM4-BLD6Se_LqbScxAilp-pAV_BW54E7SI_7rXWkWIjRIHePiP4UBGzSG3UyOR9E_06TGweOKR5bqf4feLnmHfHBH9HbFBWQlQGC8IW_NqjVTB-YfTQ3odvJKKyRAZOCeI9dG2CppfieJDl4wA6GvkCCd3qUoNVgozdLG5cyei7GrhWCAYZ8ioLI8P8iIlRZM_Xj6xDLqa5bkCuAPhCmNmrhThhyK-okr2g5__8WVpyNgm4PJHQuGw-VtakBJYHazyfIS0sL2h913DCtnvw_Jfh-dIq0C6PTc1H84yv_CJxB60QYFUk_jtIwOqpT9E42iob6pQ76Sr7uCtCKlC_ttBvetCtubKzP8JE2gnEch2Znyf0iDKih2agYlfpY26BYe4bF0F7KjnMVr_gig6vhzmyOxMvSZ1bXn_M0OutCelXPsr65XUr7p7XPnIOGPWaaHM_LiZr0kwxXt8vlc8rSbVh0s_RXqIcCfvI3dlRb-afZrQRkO1fJntEtJta79uBWK3cr6RwrY1J6AjZgoVxTxA0LwHKUrL-TfcCq6L2LacUzNSpJYfgVg9eWMD1zj9Gx0OSu_4UtGJcva8mVO10Ua1KBuCVlOdvk473c6ZX-RnlgqEkoMMdm-wKdjo0zj8jknSTZjFnGiBN71RS5PUlT98Qtm27Baeepy-S0RfRJNNXHuoCDbc5pG4yWJtB9OV8B3IC659GvcET4vOwS4bRyAPLoYHflZViwm8DhBCkibFmTcWxJEHda7tYdlN5Bxb_sJdnl92VTplwkAZJ7QoOQ4ZfTCcLSZdcirIr0IGNS7l4gngcFINmwAaUZdv2kuYUNkQ3bAE2QizDPkQUXAu-G1j05fsiuOhgjOKIY-I1R-3JJ3k8FTcTH6LevqbYFBSpAM3qQS7naLovAj7wlEPv0c5j0TZQCeOXTXpId0nTAb1v1hPJBhRvP77MfVSQe52rGBERYl-xbNonA_0XYWbnQbYdrKObohk5UH23VVQO708hqJzVxtp--8RvQ4qo2Z2Qb8sqnwEZ6sq44UgraFplCrbBV0jouDQhFnZiMQ8ja9CXAnv2-w8zhNeJFBgIQ2vcWgQYrbIka5J4V84wF_mSnrNmg1-793VZk_ySptIsFacB_mG7yT0mzqFq7UAiuNtEfF0EqHWNryL0a_2J3wsh8C2LgkXJM8_I7oRoxcq9IuB7trhpK30qCnsHMpFTLVMkZz4hP-arD1Eig3mvFZ7Io_J6gDMMjvFEjLsFqVsR2M_BstCENxclnuBXK34iFOLzPUszxT4df6aKqump8dnjHNT4ckOJK6a4HHYx73MDTbd9XOYDSZcUImp9nbxLgJhmlnehjuwvhfufkiAWXQZnC-0WmsOFV69hozII0xM5toU44eP8y0xVs4mdMLxKAvNB6uLmQiLCQk6zZHF5aDRDjNaW9_ZHe5GvQCzLxF4M54AmIVn9Wu5Wf326V3BQSTqbeLT6_pfBCyVr2AKSdn-B0ObCzsHuEw2DGmEHyOLkBu2ZcpMTi257jDlypQPa8-Ya8vrkkhB9Sw-BfYRQy7CIPE5quzTUZKWH_KTT1bzM63mvRaqSHLoefc7rITfuoucRoRQgNvSiOTzszSM9SUe6xSg1Sm8FKKQ534RjJ4B0SF92ODcnfTQ6zy9CIjqJRhgCq41YdT4-aGx18h8z2AlRvASyLAmdOaVJirzhdVFMjg6gWioGqsy_Rh6reMib89DXkAv3H_Ghb4flq9LUV7HHVR7Zina3NA0OM7Vk9m-vo1WP7LbZA1konNRtPO6VlRqXJSEf9hL29OA869NYrBMEcyGqW-phW9boIP5KiNkWFDbw2uNOYLx9AEFkbCb3VqJSOa-DgHCnlHXo3iB6n_CrP905akHOMTa1xq2gqusmvfClnrf03xqfWGeBJaKrBH9J-wu3mgzOqI1qs6bz787n0iUZG0sxyaln3PrNj9Jnm7lSkSuExRN8s7NherIgmbtNjrt45FRWmDxbXwZDLaxahbpG9VMJZkPIcU7JDGcfDRFTXOdQPjmN9s9uiDAZWVtNGILhZ6309-vVWLlcrLgIw1LWTmgxEQ2_iX-5mYQ8uo0Imt-bnVeEblzclglc_IKFisu3dhRG5Cc-l1KCJdgpzNgO3lISo9HCbS3t1qgPt8CF0zU6St3tx8E8fwj5R15yJLuyJSBFXiLADCbEf9Y098kzIoaq6XWV0lsjf2AZ6M5oiEh2cssz5t6MRxLtuwGFa9mqdlDMzFB8jE2zgla_WpxNmboGkM0_d02PFS1FZBWJBaL8strKZq7ki-2O-h4Yvr4Ro3s2EHpY8GQ6_Ka9D9r571y1tHAgVK9WSRwmCYdpkK3e7K4QZW8f7HMZT10edCia0f5NRvE0c9Ztr3b9XNrHJiYu9wM-5Rb7vuzJuYtlqb4ZeQ5WJI3L2FlwFa14gT2S2Oim1kRXOjcEpybZfWyiWzE5rTOtyx_ZLyfbnq8O4zlkcnChcr9yb_g3tR1FEei9NHcoN_df46lpnwTrvHFxHOQTkT9b2p9YP_to0geU_iCzOYIdYI1tdaWRFwXmIQf_S_Ni09JaROveaBkB8gmEG02KHDkPrbYlrQFyi9Trhto7PceLPA_vsQ52RWvFjhvSDkYxhc2io8rWKE7syancJmAG_XQO6LZ6vC-aR3cREcGWhAsfViZTOgXFIM7mz2VQIgMEwLM0pxIYY4VMhm1i-jccAqrCLZWaYQdEh2L-q_PEe5rdJsgcX9yx7CPfORtauJeXy1wjlIOXkPtFjpVxgZieWGjkFNEDJ55o7z8S8RVMSmR8vFEeyFMy2C85HqgRZadHCbuG4BjuKiEYJerAxwf2eN9tj3yghjNrDQVMSm7XdMO2BiPxT9fqoQ1SAo2D8h7Nsu59saKqpLNNq5T3dLb7trXiNux4vNdGDyxLKglruuMb9dO7O3dHJYhUaLzAWWRUD3I-vY92qvTMgGE7yVWA5IO2uqMJ3jNknwn0EEe3GIz2LNWm7CCn_YUdpcozasO_MaXHiB6ayfH499FZOD9_0hspmkMUFRO2rtZG5KhheqeWHYTsI_tBpjIh5bKeu_G2OZ8N-YAqs61SSLGxGY6CRTW5ffVGQC-n3gD_YzVKVs_n739IpQdDcsS5TbQYS1mn8dssoKqT54jiX2A3a9_ACNc9YNZJPInlNG67j_yolq7_x8ddZDjBWqzlV_0xxvTeCEm7slb9PkBbYShSEIKUGXYYkoteqsCJI5nhs5_a82u8irO5rV0riwgyIC1SQV9XGIOR5Wzy66YnQLqZ9MoTvRiMIR_t4kO20W3kVAabYV_TgYexG4b4Cug6by1Fv_Q3BaohONlfDs4yeC_L7RbMv7qh4",
+              "video_metadata": null,
+              "tool_call": null,
+              "tool_response": null,
+              "part_metadata": null,
+              "audio_transcription": null
+            }
+          ],
+          "role": "model"
+        },
+        "citation_metadata": null,
+        "finish_message": null,
+        "token_count": null,
+        "finish_reason": "STOP",
+        "grounding_metadata": null,
+        "avg_logprobs": null,
+        "index": 0,
+        "logprobs_result": null,
+        "safety_ratings": null,
+        "url_context_metadata": null
+      }
+    ],
+    "create_time": null,
+    "model_version": "gemini-3.8-flash",
+    "prompt_feedback": null,
+    "response_id": "JhCgauCxF8SRvdIPx_WF0QQ",
+    "usage_metadata": {
+      "cache_tokens_details": null,
+      "cached_content_token_count": null,
+      "candidates_token_count": 306,
+      "candidates_tokens_details": null,
+      "prompt_token_count": 5920,
+      "prompt_tokens_details": [
+        {
+          "modality": "TEXT",
+          "token_count": 5920
+        }
+      ],
+      "thoughts_token_count": 1312,
+      "tool_use_prompt_token_count": null,
+      "tool_use_prompt_tokens_details": null,
+      "total_token_count": 7538,
+      "traffic_type": null
+    },
+    "model_status": null,
+    "automatic_function_calling_history": [],
+    "parsed": {
+      "schema_version": "study-e-evaluator-rating-v1",
+      "item_id": "EVAL-BLIND-068",
+      "scores": {
+        "persona_fit": 3,
+        "clarity": 4,
+        "actionability": 5,
+        "factual_grounding": 4
+      },
+      "reasons": {
+        "persona_fit": "The advice matches Bareni's positioning, but meta-phrasing ('is only a persona scenario', 'policy and no-lock-in positioning') leaks internal instructions directly into external copy, weakening voice naturalness.",
+        "clarity": "The core diagnostic steps and bounded workflow criteria are cleanly structured and easy to follow on a first read.",
+        "actionability": "Provides a practical, concrete exercise: write two sentences defining what failed manually and specify who approves output before restarting automation.",
+        "factual_grounding": "All boundaries and claims strictly follow C01-C05, including mandatory human approval, with explicit disclaimers against ungrounded statistics."
+      },
+      "critical_violation": false,
+      "critical_violation_type": null,
+      "critical_evidence_quote": null,
+      "total_score": 16,
+      "pass": true,
+      "low_quality": false
+    }
+  },
+  "cost_details": {
+    "input": 0.00444,
+    "cache_read_input_tokens": 0.0,
+    "output": 0.0011475,
+    "reasoning_output_tokens": 0.00492,
+    "total": 0.0105075
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": null,
+  "key": "SE-FINAL-M068_eval_final__a001",
+  "role": "evaluator",
+  "created_at": "2026-09-08T13:39:50.678663+00:00",
+  "ended_at": "2026-09-08T13:39:58.711977+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-M068",
+    "batch_id": 3,
+    "condition": "unchanged",
+    "cohort": "mixed",
+    "input_manifest_sha256": "bdd969d7efbcd68dd7c670e282a2464cf4cc46e782a49d0d3d8e8f8c5ef0b67e"
+  },
+  "task_id": "SE-FINAL-M068",
+  "batch_id": 3,
+  "cohort": "mixed",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 8030,
+  "budget_charge_usd": 0.0105075,
+  "unknown_cost_reservation_usd": 0
+}

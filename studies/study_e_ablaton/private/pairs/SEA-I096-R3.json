@@ -1,0 +1,84 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I096-R3",
+    "item_id": "SEA-I096",
+    "repeat": 3,
+    "arm_order": [
+      "critic_off",
+      "critic_on"
+    ],
+    "content_id": "POST-a3f15fb594634b4e34a8e41a"
+  },
+  "arms": {
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-a3f15fb594634b4e34a8e41a-1",
+        "title": "When AI scope starts to wander, draw the box first",
+        "body": "Early signs of unbounded scope usually show up when one workflow starts collecting every adjacent problem.\n\nIf you are a small-business owner, the first question is simple: what is the one recurring job you want to automate? Not the whole business. One job.\n\nFor example, “respond to customer emails” is a workflow. “Improve customer satisfaction” is not. The difference matters because a broad goal has no clear input, decision rule, or output. A bounded workflow does.\n\nBefore you ask whether AI fits, draw the box in plain English:\n- what comes in\n- what decision is made\n- what goes out\n- what is explicitly out of scope\n\nThen check three things. Are the decisions mostly rule-based? Do you have enough past examples to show the pattern? Can a wrong answer be caught before it reaches a customer? If the answer is yes, the workflow may be a fit. If not, it probably needs restructuring first, or it may be better handled by hiring.\n\nOne practical next step: write down the workflow in that format and stop there. If you cannot define the boundary, the scope is already wandering."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-a3f15fb594634b4e34a8e41a-1",
+            "title": "When AI scope starts to wander, draw the box first",
+            "body": "Early signs of unbounded scope usually show up when one workflow starts collecting every adjacent problem.\n\nIf you are a small-business owner, the first question is simple: what is the one recurring job you want to automate? Not the whole business. One job.\n\nFor example, “respond to customer emails” is a workflow. “Improve customer satisfaction” is not. The difference matters because a broad goal has no clear input, decision rule, or output. A bounded workflow does.\n\nBefore you ask whether AI fits, draw the box in plain English:\n- what comes in\n- what decision is made\n- what goes out\n- what is explicitly out of scope\n\nThen check three things. Are the decisions mostly rule-based? Do you have enough past examples to show the pattern? Can a wrong answer be caught before it reaches a customer? If the answer is yes, the workflow may be a fit. If not, it probably needs restructuring first, or it may be better handled by hiring.\n\nOne practical next step: write down the workflow in that format and stop there. If you cannot define the boundary, the scope is already wandering."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-a3f15fb594634b4e34a8e41a-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    },
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-a3f15fb594634b4e34a8e41a-1",
+        "title": "When AI scope starts to wander, draw the box first",
+        "body": "If you are an owner-operator, the first sign of unbounded scope is usually not a technical failure. It is a workflow that starts as one repeatable task and then quietly turns into three.\n\nUse a simple rule: before you call something an AI project, write down the boundary in plain English. What is the one recurring workflow? What input starts it? What output ends it? And what is explicitly out of scope?\n\nFor example, \"respond to customer emails\" is a workflow. \"Improve customer satisfaction\" is not. The first can be bounded. The second opens the door to every exception in the business.\n\nA second check is the approval gate. If the workflow touches money movement, legal commitments, or other high-risk decisions, human approval stays in the loop. That is not a nice-to-have; it is the box.\n\nIf the request keeps adding new systems, new approvals, or extra exceptions before the first version is defined, the scope is already wandering. Stop there. Write the boundary down first, then decide whether the workflow is bounded enough to automate, better restructured, or better left to a hire."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-a3f15fb594634b4e34a8e41a-1",
+            "title": "When AI scope starts to wander, draw the box first",
+            "body": "If you are an owner-operator, the first sign of unbounded scope is usually not a technical failure. It is a workflow that starts as one repeatable task and then quietly turns into three.\n\nUse a simple rule: before you call something an AI project, write down the boundary in plain English. What is the one recurring workflow? What input starts it? What output ends it? And what is explicitly out of scope?\n\nFor example, \"respond to customer emails\" is a workflow. \"Improve customer satisfaction\" is not. The first can be bounded. The second opens the door to every exception in the business.\n\nA second check is the approval gate. If the workflow touches money movement, legal commitments, or other high-risk decisions, human approval stays in the loop. That is not a nice-to-have; it is the box.\n\nIf the request keeps adding new systems, new approvals, or extra exceptions before the first version is defined, the scope is already wandering. Stop there. Write the boundary down first, then decide whether the workflow is bounded enough to automate, better restructured, or better left to a hire."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-a3f15fb594634b4e34a8e41a-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": [
+            {
+              "repair_id": "P01",
+              "target_ids": [
+                "D01",
+                "D02",
+                "D03"
+              ],
+              "instruction": "Replace the abstract closing section with a concrete owner-operator workflow decision about when scope is becoming unbounded. State one simple diagnostic rule, such as pausing if the request adds new systems, new approvals, or extra exceptions before the first version is defined, and say the next step is to write that boundary down before building.",
+              "source_ids": [
+                "BRIEF",
+                "C01",
+                "C02",
+                "S01"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

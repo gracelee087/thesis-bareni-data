@@ -1,0 +1,92 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I041-R1",
+    "item_id": "SEA-I041",
+    "repeat": 1,
+    "arm_order": [
+      "critic_on",
+      "critic_off"
+    ],
+    "content_id": "POST-cbb849ed243881bc6bdd1ea9"
+  },
+  "arms": {
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-cbb849ed243881bc6bdd1ea9-1",
+        "title": "Why some errors keep coming back",
+        "body": "Some errors survive because the feedback arrives too late. If the same mistake appears in order entry, invoice work, or customer-data updates, the problem is usually not mystery software. It is a weak control point.\n\nThe practical question is simple: where does the workflow first produce a measurable signal? Is it a count, an amount, a deadline, or a correctness check that someone reviews only after the fact, or only when a customer complains?\n\nThat matters because a repeated error can keep moving through the process when there is no upstream check. A duplicate invoice, a bad field value, or a missed lead can sit in the workflow long enough to repeat before anyone notices.\n\nFor a small business, the next step is to name one recurring workflow and one control you can add before the error reaches the customer or the bank. That control might be a validation rule, a daily alert, or a human-only approval step for anything high-risk. Human approval stays mandatory for money movement.\n\nThen write down one measure for that workflow, such as errors caught before customer contact or invoice review time. Start there. The point is not to automate everything. It is to find the one place where the loop is too slow and make it visible."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-cbb849ed243881bc6bdd1ea9-1",
+            "title": "Why some errors keep coming back",
+            "body": "Some errors survive because the feedback arrives too late. If the same mistake appears in order entry, invoice work, or customer-data updates, the problem is usually not mystery software. It is a weak control point.\n\nThe practical question is simple: where does the workflow first produce a measurable signal? Is it a count, an amount, a deadline, or a correctness check that someone reviews only after the fact, or only when a customer complains?\n\nThat matters because a repeated error can keep moving through the process when there is no upstream check. A duplicate invoice, a bad field value, or a missed lead can sit in the workflow long enough to repeat before anyone notices.\n\nFor a small business, the next step is to name one recurring workflow and one control you can add before the error reaches the customer or the bank. That control might be a validation rule, a daily alert, or a human-only approval step for anything high-risk. Human approval stays mandatory for money movement.\n\nThen write down one measure for that workflow, such as errors caught before customer contact or invoice review time. Start there. The point is not to automate everything. It is to find the one place where the loop is too slow and make it visible."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-cbb849ed243881bc6bdd1ea9-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": [
+            {
+              "repair_id": "P01",
+              "target_ids": [
+                "D01"
+              ],
+              "instruction": "Rewrite the body into clear, grammatical English so the main point, reasoning, and qualifications are easy to follow on a first read. Keep the topic bounded to one workflow decision about why repeated errors survive and one practical next step.",
+              "source_ids": [
+                "BRIEF",
+                "S01"
+              ]
+            },
+            {
+              "repair_id": "P02",
+              "target_ids": [
+                "D02"
+              ],
+              "instruction": "Remove any wording that implies AI can approve money movement or that money can move without a human decision. Replace it with a human-only approval control, such as routing high-risk items to manual review before any payment action.",
+              "source_ids": [
+                "C04",
+                "BRIEF",
+                "S01"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-cbb849ed243881bc6bdd1ea9-1",
+        "title": "Why recurring errors survive in small workflows",
+        "body": "When a small business keeps seeing the same mistake, the cause is often not the mistake itself. It is the feedback loop.\n\nA duplicate invoice, a wrong customer field, or a missed lead can survive when the check happens too late. If the owner only notices after a customer complains, or only reviews the workflow once a week, the same error can repeat many times before anyone sees it.\n\nThat is the practical Bareni question: where does the error first become visible?\n\nIf the answer is “at the end,” the next step is simple: add one upstream control before the error reaches the customer or the bank. That can be a validation rule, a daily alert, or a human approval gate. Human approval stays mandatory for money movement and other high-risk decisions.\n\nStart by writing down one recurring workflow and one measure for it, such as “errors caught before customer contact” or “invoice review time per week.” If you cannot name the check, the error will keep finding the gap. Rather rude of it."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-cbb849ed243881bc6bdd1ea9-1",
+            "title": "Why recurring errors survive in small workflows",
+            "body": "When a small business keeps seeing the same mistake, the cause is often not the mistake itself. It is the feedback loop.\n\nA duplicate invoice, a wrong customer field, or a missed lead can survive when the check happens too late. If the owner only notices after a customer complains, or only reviews the workflow once a week, the same error can repeat many times before anyone sees it.\n\nThat is the practical Bareni question: where does the error first become visible?\n\nIf the answer is “at the end,” the next step is simple: add one upstream control before the error reaches the customer or the bank. That can be a validation rule, a daily alert, or a human approval gate. Human approval stays mandatory for money movement and other high-risk decisions.\n\nStart by writing down one recurring workflow and one measure for it, such as “errors caught before customer contact” or “invoice review time per week.” If you cannot name the check, the error will keep finding the gap. Rather rude of it."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-cbb849ed243881bc6bdd1ea9-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

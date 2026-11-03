@@ -1,0 +1,170 @@
+{
+  "status": "success",
+  "usage": {
+    "input_tokens": 5904,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 323,
+    "reasoning_tokens": 0
+  },
+  "cost_usd": 0.0058815,
+  "output": {
+    "item_id": "E-WRITE-327",
+    "title": "Silent failure is usually a missing check, not a missing tool",
+    "body": "What silent failure hides is usually not a dramatic bug. It is a repeatable workflow that keeps moving while no one notices the step that stopped working. In a small business, that can look like neglected sales follow-ups, invoice data that never gets checked, or a handoff that depends on someone remembering to look twice. The problem is not AI first; it is visibility first.\n\nA useful test is simple: is the task repeating weekly or daily, do you have a written way to check that it worked, and would you notice if it failed halfway? If the answer is no to any of those, automation is premature. You need a control before you need a model. In our accounts-payable demo, the useful part is not the buzzword; it is the checkpoint logic: arithmetic checks, duplicate blocking, human-only approval for risky steps, and audit records. That is a demo on synthetic data, not a customer deployment, but the pattern is the point.\n\nFor a practical next step, write the workflow down in plain terms: trigger, steps, and success measure. Then mark the exact place where a failure could stay hidden. If that gap is low-risk and repeatable, it is a candidate for AI support. If it touches money movement or another high-risk decision, keep human approval in place. That is current scope discipline, not a slogan, and it saves everyone from clever nonsense."
+  },
+  "raw_text": "{\"item_id\":\"E-WRITE-327\",\"title\":\"Silent failure is usually a missing check, not a missing tool\",\"body\":\"What silent failure hides is usually not a dramatic bug. It is a repeatable workflow that keeps moving while no one notices the step that stopped working. In a small business, that can look like neglected sales follow-ups, invoice data that never gets checked, or a handoff that depends on someone remembering to look twice. The problem is not AI first; it is visibility first.\\n\\nA useful test is simple: is the task repeating weekly or daily, do you have a written way to check that it worked, and would you notice if it failed halfway? If the answer is no to any of those, automation is premature. You need a control before you need a model. In our accounts-payable demo, the useful part is not the buzzword; it is the checkpoint logic: arithmetic checks, duplicate blocking, human-only approval for risky steps, and audit records. That is a demo on synthetic data, not a customer deployment, but the pattern is the point.\\n\\nFor a practical next step, write the workflow down in plain terms: trigger, steps, and success measure. Then mark the exact place where a failure could stay hidden. If that gap is low-risk and repeatable, it is a candidate for AI support. If it touches money movement or another high-risk decision, keep human approval in place. That is current scope discipline, not a slogan, and it saves everyone from clever nonsense.\"}",
+  "provider_response": {
+    "id": "resp_0ee411915f2756af016aa00bec9f7887d28c00d26afe9ea8bb",
+    "created_at": 1788873708.0,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": {},
+    "model": "gpt-5.4-mini-2026-03-17",
+    "object": "response",
+    "output": [
+      {
+        "id": "msg_0ee411915f2756af016aa00bed117087d2b20af836d3fd1441",
+        "content": [
+          {
+            "annotations": [],
+            "text": "{\"item_id\":\"E-WRITE-327\",\"title\":\"Silent failure is usually a missing check, not a missing tool\",\"body\":\"What silent failure hides is usually not a dramatic bug. It is a repeatable workflow that keeps moving while no one notices the step that stopped working. In a small business, that can look like neglected sales follow-ups, invoice data that never gets checked, or a handoff that depends on someone remembering to look twice. The problem is not AI first; it is visibility first.\\n\\nA useful test is simple: is the task repeating weekly or daily, do you have a written way to check that it worked, and would you notice if it failed halfway? If the answer is no to any of those, automation is premature. You need a control before you need a model. In our accounts-payable demo, the useful part is not the buzzword; it is the checkpoint logic: arithmetic checks, duplicate blocking, human-only approval for risky steps, and audit records. That is a demo on synthetic data, not a customer deployment, but the pattern is the point.\\n\\nFor a practical next step, write the workflow down in plain terms: trigger, steps, and success measure. Then mark the exact place where a failure could stay hidden. If that gap is low-risk and repeatable, it is a candidate for AI support. If it touches money movement or another high-risk decision, keep human approval in place. That is current scope discipline, not a slogan, and it saves everyone from clever nonsense.\"}",
+            "type": "output_text",
+            "logprobs": []
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message",
+        "phase": "final_answer"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 1.0,
+    "tool_choice": "auto",
+    "tools": [],
+    "top_p": 0.98,
+    "background": false,
+    "completed_at": 1788873711.0,
+    "conversation": null,
+    "max_output_tokens": 1024,
+    "max_tool_calls": null,
+    "moderation": null,
+    "previous_response_id": null,
+    "prompt": null,
+    "prompt_cache_key": null,
+    "prompt_cache_options": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "generate_summary": null,
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "status": "completed",
+    "text": {
+      "format": {
+        "name": "study_e_post",
+        "schema_": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "item_id": {
+              "type": "string",
+              "enum": [
+                "E-WRITE-327"
+              ]
+            },
+            "title": {
+              "type": "string"
+            },
+            "body": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "item_id",
+            "title",
+            "body"
+          ]
+        },
+        "type": "json_schema",
+        "description": null,
+        "strict": true
+      },
+      "verbosity": "medium"
+    },
+    "top_logprobs": 0,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 5904,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 323,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 6227
+    },
+    "user": null,
+    "billing": {
+      "payer": "developer"
+    },
+    "frequency_penalty": 0.0,
+    "presence_penalty": 0.0,
+    "store": false,
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    }
+  },
+  "stop_reason": "completed",
+  "cost_details": {
+    "input": 0.004428,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.0014535,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.0058815
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": "default",
+  "key": "SE-FINAL-N120_writer__a001",
+  "role": "writer",
+  "created_at": "2026-09-08T13:21:48.809416+00:00",
+  "ended_at": "2026-09-08T13:21:51.969493+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-N120",
+    "batch_id": 4,
+    "condition": "natural",
+    "cohort": "natural"
+  },
+  "task_id": "SE-FINAL-N120",
+  "batch_id": 4,
+  "cohort": "natural",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 3157,
+  "budget_charge_usd": 0.0058815,
+  "unknown_cost_reservation_usd": 0
+}

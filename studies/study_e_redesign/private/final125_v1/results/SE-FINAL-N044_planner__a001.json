@@ -1,0 +1,181 @@
+{
+  "status": "success",
+  "usage": {
+    "input_tokens": 4356,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 995,
+    "reasoning_tokens": null
+  },
+  "cost_usd": 0.009331,
+  "output": {
+    "item_id": "E-PLAN-513",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task explicitly forbids a CTA (CTA rule: None). L01 instructs closing with a neutral practical observation or next-step note rather than a meeting prompt. Apply this by ending with a concrete diagnostic question or decision rule the owner can apply immediately, without inviting a booking."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Define 'rollback drill cost' as a bounded workflow decision: the owner's time spent designing, documenting, and rehearsing a procedure to restore systems after a failure (e.g., reverting an automated workflow, restoring corrupted data, or re-entering lost records manually). Distinguish this from the cost of actual failure.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "S01",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Explain the owner's decision rule: conduct a rollback drill if the cost of an unplanned outage (lost orders, manual recovery time, customer friction) exceeds the time spent designing and documenting one. Clarify that drills are most valuable for workflows involving money movement, customer data, or repeatable multi-step processes.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "State that Bareni policy: all customer accounts, databases, and automation tools remain in the customer's name; handover includes working code and documented recovery steps. This reduces rollback-drill burden because the customer owns the environment from day one.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Present a concrete diagnostic question the owner can ask now: 'If this automated workflow breaks on a Friday afternoon, can I restore it in under 30 minutes, or will I lose a day of orders?' If the answer is 'I don't know,' that signals a rollback drill is worth the upfront time.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "S01",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Recommend a practical next step with no meeting required: document the current manual backup process (if one exists) or identify the single point of failure (the step that, if it breaks, stops the workflow). This is the starting point for a rollback drill—no automation expertise needed.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Close with a neutral observation: rollback drills are unglamorous but necessary only when the cost of failure exceeds the cost of prevention. If the workflow is small or easily rebuilt, skip the drill and allocate time elsewhere. State no CTA, meeting invitation, or urgency.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "S01",
+          "C04",
+          "C05"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No customer names, deployment stories, productivity claims, or savings figures. Rollback-drill cost framing uses only the owner's time and hypothetical failure risk—both under the owner's control and observable."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Reinforce that human approval is mandatory for money movement (step P02). Rollback drills protect that control by documenting the decision to pause, review, or revert before funds move."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Maintain the frozen persona: plain-speaking, founder-to-founder, trustworthy expert tone. No hype, no urgency, no fabricated urgency or team claims. Bareni is described as a consulting practice being built by the thesis author."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use plain English throughout. Distinguish between the owner's current manual process, the hypothetical automated workflow, and the diagnostic question (all examples or proposals, not existing capabilities). Never imply Bareni has delivered this to a customer."
+      }
+    ]
+  },
+  "raw_text": "{\"item_id\": \"E-PLAN-513\", \"selected_lessons\": [{\"lesson_id\": \"L01\", \"application\": \"The task explicitly forbids a CTA (CTA rule: None). L01 instructs closing with a neutral practical observation or next-step note rather than a meeting prompt. Apply this by ending with a concrete diagnostic question or decision rule the owner can apply immediately, without inviting a booking.\"}], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Define 'rollback drill cost' as a bounded workflow decision: the owner's time spent designing, documenting, and rehearsing a procedure to restore systems after a failure (e.g., reverting an automated workflow, restoring corrupted data, or re-entering lost records manually). Distinguish this from the cost of actual failure.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"S01\", \"C04\"]}, {\"step_id\": \"P02\", \"instruction\": \"Explain the owner's decision rule: conduct a rollback drill if the cost of an unplanned outage (lost orders, manual recovery time, customer friction) exceeds the time spent designing and documenting one. Clarify that drills are most valuable for workflows involving money movement, customer data, or repeatable multi-step processes.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C02\", \"C04\"]}, {\"step_id\": \"P03\", \"instruction\": \"State that Bareni policy: all customer accounts, databases, and automation tools remain in the customer's name; handover includes working code and documented recovery steps. This reduces rollback-drill burden because the customer owns the environment from day one.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\"]}, {\"step_id\": \"P04\", \"instruction\": \"Present a concrete diagnostic question the owner can ask now: 'If this automated workflow breaks on a Friday afternoon, can I restore it in under 30 minutes, or will I lose a day of orders?' If the answer is 'I don't know,' that signals a rollback drill is worth the upfront time.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"S01\", \"C05\"]}, {\"step_id\": \"P05\", \"instruction\": \"Recommend a practical next step with no meeting required: document the current manual backup process (if one exists) or identify the single point of failure (the step that, if it breaks, stops the workflow). This is the starting point for a rollback drill—no automation expertise needed.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C05\"]}, {\"step_id\": \"P06\", \"instruction\": \"Close with a neutral observation: rollback drills are unglamorous but necessary only when the cost of failure exceeds the cost of prevention. If the workflow is small or easily rebuilt, skip the drill and allocate time elsewhere. State no CTA, meeting invitation, or urgency.\", \"requirement_ids\": [\"R01\", \"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"S01\", \"C04\", \"C05\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"No customer names, deployment stories, productivity claims, or savings figures. Rollback-drill cost framing uses only the owner's time and hypothetical failure risk—both under the owner's control and observable.\"}, {\"constraint_id\": \"K02\", \"handling\": \"Reinforce that human approval is mandatory for money movement (step P02). Rollback drills protect that control by documenting the decision to pause, review, or revert before funds move.\"}, {\"constraint_id\": \"K03\", \"handling\": \"Maintain the frozen persona: plain-speaking, founder-to-founder, trustworthy expert tone. No hype, no urgency, no fabricated urgency or team claims. Bareni is described as a consulting practice being built by the thesis author.\"}, {\"constraint_id\": \"K04\", \"handling\": \"Use plain English throughout. Distinguish between the owner's current manual process, the hypothetical automated workflow, and the diagnostic question (all examples or proposals, not existing capabilities). Never imply Bareni has delivered this to a customer.\"}]}",
+  "provider_response": {
+    "id": "msg_011Ceqyt3iVT6HAedy7qf3kq",
+    "container": null,
+    "content": [
+      {
+        "citations": null,
+        "text": "{\"item_id\": \"E-PLAN-513\", \"selected_lessons\": [{\"lesson_id\": \"L01\", \"application\": \"The task explicitly forbids a CTA (CTA rule: None). L01 instructs closing with a neutral practical observation or next-step note rather than a meeting prompt. Apply this by ending with a concrete diagnostic question or decision rule the owner can apply immediately, without inviting a booking.\"}], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Define 'rollback drill cost' as a bounded workflow decision: the owner's time spent designing, documenting, and rehearsing a procedure to restore systems after a failure (e.g., reverting an automated workflow, restoring corrupted data, or re-entering lost records manually). Distinguish this from the cost of actual failure.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"S01\", \"C04\"]}, {\"step_id\": \"P02\", \"instruction\": \"Explain the owner's decision rule: conduct a rollback drill if the cost of an unplanned outage (lost orders, manual recovery time, customer friction) exceeds the time spent designing and documenting one. Clarify that drills are most valuable for workflows involving money movement, customer data, or repeatable multi-step processes.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C02\", \"C04\"]}, {\"step_id\": \"P03\", \"instruction\": \"State that Bareni policy: all customer accounts, databases, and automation tools remain in the customer's name; handover includes working code and documented recovery steps. This reduces rollback-drill burden because the customer owns the environment from day one.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\"]}, {\"step_id\": \"P04\", \"instruction\": \"Present a concrete diagnostic question the owner can ask now: 'If this automated workflow breaks on a Friday afternoon, can I restore it in under 30 minutes, or will I lose a day of orders?' If the answer is 'I don't know,' that signals a rollback drill is worth the upfront time.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"S01\", \"C05\"]}, {\"step_id\": \"P05\", \"instruction\": \"Recommend a practical next step with no meeting required: document the current manual backup process (if one exists) or identify the single point of failure (the step that, if it breaks, stops the workflow). This is the starting point for a rollback drill—no automation expertise needed.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C05\"]}, {\"step_id\": \"P06\", \"instruction\": \"Close with a neutral observation: rollback drills are unglamorous but necessary only when the cost of failure exceeds the cost of prevention. If the workflow is small or easily rebuilt, skip the drill and allocate time elsewhere. State no CTA, meeting invitation, or urgency.\", \"requirement_ids\": [\"R01\", \"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"S01\", \"C04\", \"C05\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"No customer names, deployment stories, productivity claims, or savings figures. Rollback-drill cost framing uses only the owner's time and hypothetical failure risk—both under the owner's control and observable.\"}, {\"constraint_id\": \"K02\", \"handling\": \"Reinforce that human approval is mandatory for money movement (step P02). Rollback drills protect that control by documenting the decision to pause, review, or revert before funds move.\"}, {\"constraint_id\": \"K03\", \"handling\": \"Maintain the frozen persona: plain-speaking, founder-to-founder, trustworthy expert tone. No hype, no urgency, no fabricated urgency or team claims. Bareni is described as a consulting practice being built by the thesis author.\"}, {\"constraint_id\": \"K04\", \"handling\": \"Use plain English throughout. Distinguish between the owner's current manual process, the hypothetical automated workflow, and the diagnostic question (all examples or proposals, not existing capabilities). Never imply Bareni has delivered this to a customer.\"}]}",
+        "type": "text"
+      }
+    ],
+    "model": "claude-haiku-4-5-20251001",
+    "role": "assistant",
+    "stop_details": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "not_available",
+      "input_tokens": 4356,
+      "output_tokens": 995,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": "standard"
+    }
+  },
+  "stop_reason": "end_turn",
+  "cost_details": {
+    "input": 0.004356,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.004975,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.009331
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": null,
+  "key": "SE-FINAL-N044_planner__a001",
+  "role": "planner",
+  "created_at": "2026-09-08T12:35:23.078566+00:00",
+  "ended_at": "2026-09-08T12:35:49.210250+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-N044",
+    "batch_id": 2,
+    "condition": "natural",
+    "cohort": "natural"
+  },
+  "task_id": "SE-FINAL-N044",
+  "batch_id": 2,
+  "cohort": "natural",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 26128,
+  "budget_charge_usd": 0.009331,
+  "unknown_cost_reservation_usd": 0
+}

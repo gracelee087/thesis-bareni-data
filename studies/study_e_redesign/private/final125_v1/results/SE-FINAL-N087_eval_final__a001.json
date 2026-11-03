@@ -1,0 +1,162 @@
+{
+  "status": "success",
+  "usage": {
+    "prompt_token_count": 5904,
+    "cached_content_token_count": 0,
+    "candidates_token_count": 305,
+    "thoughts_token_count": 1093,
+    "total_token_count": 7302
+  },
+  "cost_usd": 0.0096705,
+  "output": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-087",
+    "scores": {
+      "persona_fit": 4,
+      "clarity": 4,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Directly targets small business owner-operators in a calm, practical tone without a sales CTA, though the phrase 'Treat that as a persona example, not a customer case' reads like an awkward prompt leakage.",
+      "clarity": "Logical structure and clear plain-English explanation of data residency, slightly marred by the meta-instruction telling the reader to treat a process as a 'persona example'.",
+      "actionability": "Provides a practical, well-bounded threshold check and decision rule for evaluating sensitive data fields before adopting automation tools.",
+      "factual_grounding": "Strictly adheres to factual boundaries; avoids inventing customers, deployments, metrics, or definitive legal determinations."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 18,
+    "pass": true,
+    "low_quality": false
+  },
+  "raw_text": "{\n  \"schema_version\": \"study-e-evaluator-rating-v1\",\n  \"item_id\": \"EVAL-BLIND-087\",\n  \"scores\": {\n    \"persona_fit\": 4,\n    \"clarity\": 4,\n    \"actionability\": 5,\n    \"factual_grounding\": 5\n  },\n  \"reasons\": {\n    \"persona_fit\": \"Directly targets small business owner-operators in a calm, practical tone without a sales CTA, though the phrase 'Treat that as a persona example, not a customer case' reads like an awkward prompt leakage.\",\n    \"clarity\": \"Logical structure and clear plain-English explanation of data residency, slightly marred by the meta-instruction telling the reader to treat a process as a 'persona example'.\",\n    \"actionability\": \"Provides a practical, well-bounded threshold check and decision rule for evaluating sensitive data fields before adopting automation tools.\",\n    \"factual_grounding\": \"Strictly adheres to factual boundaries; avoids inventing customers, deployments, metrics, or definitive legal determinations.\"\n  },\n  \"critical_violation\": false,\n  \"critical_violation_type\": null,\n  \"critical_evidence_quote\": null,\n  \"total_score\": 18,\n  \"pass\": true,\n  \"low_quality\": false\n}",
+  "provider_response": {
+    "sdk_http_response": {
+      "headers": {
+        "x-gemini-service-tier": "standard",
+        "content-type": "application/json; charset=UTF-8",
+        "vary": "Origin, X-Origin, Referer",
+        "content-encoding": "gzip",
+        "date": "Tue, 08 Sep 2026 13:01:27 GMT",
+        "server": "scaffolding on HTTPServer2",
+        "x-xss-protection": "0",
+        "x-frame-options": "SAMEORIGIN",
+        "x-content-type-options": "nosniff",
+        "server-timing": "gfet4t7; dur=6683",
+        "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+        "transfer-encoding": "chunked"
+      },
+      "body": null
+    },
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "media_resolution": null,
+              "code_execution_result": null,
+              "executable_code": null,
+              "file_data": null,
+              "function_call": null,
+              "function_response": null,
+              "inline_data": null,
+              "text": "{\n  \"schema_version\": \"study-e-evaluator-rating-v1\",\n  \"item_id\": \"EVAL-BLIND-087\",\n  \"scores\": {\n    \"persona_fit\": 4,\n    \"clarity\": 4,\n    \"actionability\": 5,\n    \"factual_grounding\": 5\n  },\n  \"reasons\": {\n    \"persona_fit\": \"Directly targets small business owner-operators in a calm, practical tone without a sales CTA, though the phrase 'Treat that as a persona example, not a customer case' reads like an awkward prompt leakage.\",\n    \"clarity\": \"Logical structure and clear plain-English explanation of data residency, slightly marred by the meta-instruction telling the reader to treat a process as a 'persona example'.\",\n    \"actionability\": \"Provides a practical, well-bounded threshold check and decision rule for evaluating sensitive data fields before adopting automation tools.\",\n    \"factual_grounding\": \"Strictly adheres to factual boundaries; avoids inventing customers, deployments, metrics, or definitive legal determinations.\"\n  },\n  \"critical_violation\": false,\n  \"critical_violation_type\": null,\n  \"critical_evidence_quote\": null,\n  \"total_score\": 18,\n  \"pass\": true,\n  \"low_quality\": false\n}",
+              "thought": null,
+              "thought_signature": "EuImCt8mARFNMg83VvezZA0HUnoPJDaXDLXmZHY4ufuIy-NhfMWaTGeEDcr07-jPX35i98XTM_iKalYy0TA1qLyRDLT5OlP-uEBP3p4ECHvs0yDl9MUvalZTloGGrZFPHAPgxAiv-2eXxM85rD2oTNocX0UToJvS-O9uP51XO_1f1A2RbvLVWT2SF_7WE3RcaqrsLxs0hybvN1Mqdp197bLNDEUjqUmIDTOg7MrVcEJ_y4cAyPh8xmUyyTLCtx9ucWAHr8dUU-NEnygb_RgIbtK0ZwgwFiySb5F3VOODXGG51dveCPVZFSNc_nMMZbhtXs0WGi_IAC18FzFWiUMU5a8gLrhKWsv4-E6ucDViBhZvzUGEwymDkwnLjGt75hPnpKPFw5KrWi9uTz2AeiMEbQpbdev6hrIR-lBQ-bz-tLte0m7cyBZODCvtrJADhrYXfanhkLG27Yklmfv_7NQrKYyA4zfOw8GnkYVTxaMnsxLwbShIJKJpHwDaGZ-lMUpXwlwUE43wRHOrMpamsCaGK6_T5d1czNE2N5TY5VcZ3LbaxJH09ub3diU8Ouj9DEHc5luIJvTxvNAZ8C4LrXgP1YLBelPamcQSbI4bZlpnNk7xdunRPNrwd62CRmyBy160Avz_puZtv9b89hWdsLGtEb6TVGe5JlFipjryz04Zg7vnjQdRpDxqRzXXjzqaQVDdykilyiU8yrMV913OcIOvRTiqd54SrwRix2iw7b2N_eEed__Uxvy1gE6ANsNwfpWhyb6WqpVJS0bemcpI6FiLrE-qUuJ3wmtWQ9ZV-JXNAfxT3lpn3YotKKq95SrDVdo4HXdrwyj9QGEhiIieh_hTc2GHtxG6YOJXZ_iK0Z_IopMFvm6fkXmhYYZVG_JXKkM8TwQJIG-irfimweyBdfh34CCdUsXreDsdbDYcuErHo7bMepZf6RORz_G8iBMblHiJfEPMt8DoaNWlISjwlha1665MvEl2ztVvLF_GCCHQbiXd74hax7G1-PjqpyY8ZpzWihIQhmU5WEJlTb5Xu6y4HXpigZ4co3-2j0UB0p7yr0a5OyhPGkOTWFdmkGU1jAzmQzUeDpGQ2da1lC99rM--pBFb0vGfgDX8QbAu5lXnKpLxc5XNh5j6GHehqgsADof4nxvoNoTjX0qeMsdIkQXd0HsP2NB6BCWY2HKRVwWYBvryOjKmVQwglAi-Cmo96eCbdR5ngi6HmQc9cxREDUAbvWjs7Hk97JeTXbS8-T1eA5OiSNKZVKqL40KG-wAqGSiYHYT8KpGROkYal-0gHZ9oU6Q7im_1IMSB6cYYeplklnUvnq70FeiCvclCWBmsamW_c1Rm9S7kNUYH_5w3jpybf9F_cBlgwFhOfIC9BzizHFMy0ZdRKD532g9hO3TiTjp28Lml041SGBC-VtwI82RK3aUappPUFQTa15CWY8gfVMzZ3yV_cYB0BrAMhGb4y13juAgeAp942SZMIniLTRVbbRDgTB03xOJA7kc11C1PYlwY0zLsFQT1CAnrkZip8pY94hncxWpjEdyuLaBPXpzTDJgK_LtAGKTjf2P2yKdQT-HvIE4RHLKXi6QNUTVP8TaCLq4WhpKTCMJvGe9R5TvS6zxzPKMY79Nfb3W5T-hZxFRMo7XK79OurM2el_nUu0By67V71sHjCMmszJsCHSIh-OY59eJSwv7Xm9D_m208r7iXtZQ81mjBAF9WSEQ2T612Di-PnZXzbAsCZ1aFf8qTQKIGpy7B0tskpG_Ji8GsaweRHN-WKdfaj1PShUpk8WB8hf4YVk6XOttshmUs14yJDzAUprOFL9LOqHYjilviV9SZKEovUB2mK4r4TabgekRDzRciAIDUAeXJRg9UOqV8zmBkRGU_N1O7lMBBcWnc0KkDtJ3DYdjGdQaKI06ovP0JuSHBnP1guLhKdS4eeTDHiLab2XPPOtVE4stb3wnUbZit9ZUD8sXzVFisidzX4WgN5bm9tV0nitFh_705YFzOWeDnBAdHMVeqHUqAnjffLKd0qmXmEispIN4HoBkUGGXvpAlwhgTgGaslrcXlJz2-ryNR-jgoV4OZOKh19woC1SfZIxQ1lZgTf2FwnBMRHteJYD0NBr4iM-QCCF2JCJ-5-Nq7-DOpHMKD9R7_zzGwsYw0G5cXlXhp-BCaFBJSvtk5o8U3fXKd27ar40ZtV_Yu17VcA9APXdGYwX7Y-y-ZCJiRFBAimvU-4gE96WlADn93mdS2PmCFgAmxodWGid0H1zq4pjIwdjWWMqFTb28RpIw_cBCYRH0pe4MreWNf1cLLHkaxzfY1no-ANsQO6-b6j8JGq9kfCyQnZeegeDlXiTZzTr5HpMbqGdkZNgyVHuy14bOhYYaDm-8NO82-tj9U8wjds7CE2bCMhy1l5a_XEfnt-ifmcKaIjFOoYY4RDr2s81ziil9Ya0M6QuSqwNIhzaeobuNC_2UNcZ1FkrhdSNg967YJwMBbk7o68yIg-HzDeEjAgUQVS8ZIViboPr1SByHpdPvUbthfVKJgfF5oemENJhG9H0V4KIkw-dcqH7kyews-9eaFdWljm9U-TsKTja8xMEI7q8UkwJq30GJv2gizaC25WdTzjVK4Ksq8PNdgEgsmPxCBe1e4QlNuyma2TPBsojbyK7r8m6RTVgSSAo1NL7sCk-xtyG33UEMLr7K9g4kjxaZ6qRv2enEmzRwP0ErRmwvB6IDtr70MqzIZiEVN6yKQhXfs_J1ekay6vIXBJ_AwAVn6l4NDI6ycmHSvChohjbvbS84nX0Mc8GbQTNNtCbuZ0gWtkneiS6aDO5F7kna1HSb2ySYnQAGbSvfO7QfWPYPFjRFF6h2j3j5UWnc_v6AO4IeWPea9k1l9bK3Y4e6AP6Ao7uHhyPaaQYCnKhlzfFNL2qVytWI04GwUgF6CEdZiJB9BoJObCVHfSuR2_AEwXLWNx43BaHQRNf8wkGQxLlbTDwPV-0cW_jcBeL1fI1nlkm40ZbC9oQYVV6AFFRYptU19Yan32tclZEtfw2jgi8mwgmrXs2W72m1BqcULUMD_FEk72EHR8eZN-pEcaJgXhQty4unmWUzOkn4JYG06Ujn2tlbunzMpa4Fsd5DrOLnAwAFTxSuab0DivxruaBk4AK4Clb-oGPe96Ai3HJc8Y7tgPfXC9sFsNzTuCtRzga5jDcIfbdXSynX8y3iQeqg6iCOCao6_90Rrwy-Db2lLiFrVJnD9pw6bk4WW7uNr_-0BnDMI65tMHzCcU57A42QJD1-45wMc6sdAHy4JQ5zsBD-MZ8Pmgrg8DLjMs3_sxrJ_NFvElxiVfll3Ul7Dcx10aCTT768GdvWhZmsipeq5xnbxr5fx-BBhyQczoGvsnBAhjoEQ8v9Edt6dy-xJkKhJJocXB6zJs4RRZJkEOdU1UILvtNSXJ9cUTCdRaVz4SCSjuXqJsVZYBGyGOtMtZOZpCzMzggiy_V8M5cc3HalXs2psnpuMbwtcRTc6nqZWq1z2765Uyt5Iqa5ADhYzjMCoGaESnRnYst_JUHI5t0MzzUD8hz9H-XnolW0HucuCxBkna5MzIwQn7FqkonL_jB_b6eVgB-esNmzQwWV2GDzpoPZWAwhGMxNddPyqn25iRKK4SZTF90Uym6sJ_MVgGBfMGJrghyfgY0piSEOIj1EK6QO-OihH2F65lWuWfQ0twhG1QBIlUYbm3KbZIxNCHbMKipvlBU7a2bgUcvNKO7qTxM1tvMVE4v_j7WF53X6DHRqMwLTpHTdjArUcymEjcdcd9hOxLmrLiNOa54mzXUbSeTA6d1GgLPMmek2FETodBtpEwUgdfTF3jrWERMclmtSw3wFeKM5iJtwhLs0nBTeRDqM9hjqPPWr_XQdvt4J5yYFRzlbhXXMTB5BdL_g1yqsZFSZ42SiY9CiZVM3P7y4kVHopZk83tQxVUEop4zGgF3dn5-tWDTWiGGxwXPny0zh26UHqHaNjNS-TUk4khZ8IvucNwQdKcF0iFHUYdLlUmZ64iIEoXNH2smPZYbk5rYmAY8TVQ96zKJExvhbLpPXQMYFb-MnjV1eQOGPul0wLY-PhQ7whihzXZpNuzwMjujybd1B_eqPklQT0EIASLljzXpLN1MCMGqhoeqg6C_WeB1dYNFZha1OO1u1dyeJH8k5ZDFbaqL1uMxgWwM5KpWpC49j3tvBqWprdiecAQp85sfkWqCXSvsfCwzcjZkUM7cR4Tql2sn9HiOx9FhFytK0PPHqwmyIa5OPu4sVXFaPaRLUkrAo_WlieuvaXra33g--vbd9Wd9Szd-WG5qgJ4h6q3E4s0R7MPDjM4gzG1rEfwKMvT1Rt_yLJEdtklpzw4cnHuvWwdEQ3dbu1M7JGbeacKzoLCVw2K5LZzwR8Ig-KmKpiC9NLuNeYiksTMhrmbhP6vZ20JOQinXmIYxGg81DGMbvS0QX-wXUU90qi9_1rWs5z0268B1RCaAc_RLXci_B0DWhhipLJwZkV8cJLR8Hy1JWkjm8zcPPToZjG3HA6V1Wz0jlpFZkuQM5ePYdBBbAWLr7CrtxlEy76EhG9WynNAuLcVvjnRBxpG4lma6lv5JOSnpDxr1Vi3gXKy4Mb40a5n6dpONArFomxzVXCDqWraWIgXG-VPQUmK0HNP-Ks690jDo0X4v-zRpF65T0L7S3HKhayF3W8mhxgVrwucQM_Uohysprh_t669Vwpuk7dlDys0mHk5vtT8uzXgTmezG2P6bECaIGBRNw6nKZn8czPLsYu1XFh24wmGWNz9lz0uFaR97SE7iljW6lzKvxizvDr4c5rctPccoRWbhGK1CDgPeNJu3vPPMRvdzof7Z7Fv3I0QY4cWVbJrJRHIJYh5-j91-6CkpnSCCOD2Ln0oWedmuGPKtx2XSw6QlLUEljmZQdCR3sukPHl4eg3ZggD5VPRkbFUxUGJk6IAh7O82N6ki_tMoWtDGk7ctvASrAAINZzrEZ-SRlDPK9hOXVpgT0mtF8xouiAbNH2vpPnLCJXZm3iI1ShHUUNefesX5-Lc1ymPrFBLkCB20eUdJL11Ajy9CCbgVXwszNKyaw0EGsjiEKDHNbQToNOqqdb_t8_-tDSTmTiyRHpvjmlzqVP5VspRG1tymmuxDOvxwL8Erg1FfxRFaQy_cWxATE4ram1v45agA-5nRKEd07YkvvHtXBE6rKjbQ5_7ZVWcYhVFekAIwf1WPZZe-y_glRqhlWJ74ftw0iHcqV1RmpT1qPl49dqdHSdgGPCouWh4LwgRLSopPuf2RxFCSpr72aceetWGMm0eQ71wWkCO_NvrCgWCIfSkho4EtXjFz_P_jy4LXQpmta9TgyZAlqSJ0lJAYS7kSw11VyjkErxsgPKqvHskWBUGJPCQ9BP7V1h_8uEwjHWiWnFH8_wUkjVzJglFVIjooT2T58q8hrZyD7nLdL6nQpOeczMS9L4q_ueBCsWMAiEexBfhNLasP5zT7iS-BZ-y3aQb9n6x-l_3ztmj-YO3TeczqoL7ZJRYwdAjUFVrZqw6SziFVLYHIWbF0jvHQauK7uTHlhWfa0FxoDryZjhv90REKyZE16zT3aTXumjdJduTO_GQ7l5crjTcwLosyYqEf9muia-GKsSKTFuz8JvWDaFAFbHQGTR-KfR2sYoyNA4L3-SC9p2x0Q04ZQqcn2bhMKA0ggmbsFBjjkylV7vr4OoShZ2n4TXhgqTFU9GXjZ0IoteMx-sNpO8IfUa_RpSvagO46D0po9UYxgzRpkoEFSqRs_IYp7B7xl_o69HdgdWninlco7kpjudUEUujeUZDewpk1DwKEb03jtduXPk4sPLP7YYWT1L6nKOMjwxxljMSd9lYlaoBf3gSmo_Kg5lNiTt7qgDcUzdSX7T2XN4XvjrtuvQ3E4-PqMojVc7d8w4DtX-tSLDamw_CB4a2PPbLlLruf3xUH7Tod4nxyhR-fmtwNtYHLL8kFHhJClpqRlPbL1QaRhzV3XAa2boSFMKkuXdW2RvcxRJbj8uk4Cx9kCm-zKNbG2-p5VCsoXJCmBn-iYHdCV1HZ1-jufMJKv6uC5CnVCS4h1Lva7Ht7abwsN_WpzcHKALD8NuuCT7GBQ9oT7T4gOVTB9gKms3lBb5o_Ao-Vtik2n7NL7yGIKpFWSTqoFNceaX9PzIjFeHyf3E89jBuc3RJ9fXQ0r3FiEeo7eNDUryH0o4DEQEKx4WTqNVRWpKHiXApNQNMN6mRKWsziPinAexb_4olBQEbd29uYLWqavtS1h_LO2wSxqtXyE4qohmhwLdyqZo7gpkTPSTcEQ7QEP_gMm8MFGBDdfiLL5OeWFywKAVzoF3q8oqLAsGqT8gO-P2mcjlFIWfmpXKyvexX4YrGd1PPi2DmtbIcNB3bnBxp7JLSDYH_tdiy9sVmcyyO8g94372JJiNkpJIUyli0Wpn_klyV9IhZNdzzkOp2L181O3TEPJdZac5DrlnJ2iCg_KDlQiCEhUEe9isYlFBVhV6eBnqk9R0QLpBaNAiTBYUIKq7wYEMcnpFjyrjVersjLtyjzUOFlk_z_C2HkTU6WWiZdOQBSwdt2SwNxp6Uk5ppvOKLeGgcxxhLQVthBMPJe8oPOiytkpPjhsMcbC4i",
+              "video_metadata": null,
+              "tool_call": null,
+              "tool_response": null,
+              "part_metadata": null,
+              "audio_transcription": null
+            }
+          ],
+          "role": "model"
+        },
+        "citation_metadata": null,
+        "finish_message": null,
+        "token_count": null,
+        "finish_reason": "STOP",
+        "grounding_metadata": null,
+        "avg_logprobs": null,
+        "index": 0,
+        "logprobs_result": null,
+        "safety_ratings": null,
+        "url_context_metadata": null
+      }
+    ],
+    "create_time": null,
+    "model_version": "gemini-3.8-flash",
+    "prompt_feedback": null,
+    "response_id": "IQegarTgGIOKvdIP_f_8qAM",
+    "usage_metadata": {
+      "cache_tokens_details": null,
+      "cached_content_token_count": null,
+      "candidates_token_count": 305,
+      "candidates_tokens_details": null,
+      "prompt_token_count": 5904,
+      "prompt_tokens_details": [
+        {
+          "modality": "TEXT",
+          "token_count": 5904
+        }
+      ],
+      "thoughts_token_count": 1093,
+      "tool_use_prompt_token_count": null,
+      "tool_use_prompt_tokens_details": null,
+      "total_token_count": 7302,
+      "traffic_type": null
+    },
+    "model_status": null,
+    "automatic_function_calling_history": [],
+    "parsed": {
+      "schema_version": "study-e-evaluator-rating-v1",
+      "item_id": "EVAL-BLIND-087",
+      "scores": {
+        "persona_fit": 4,
+        "clarity": 4,
+        "actionability": 5,
+        "factual_grounding": 5
+      },
+      "reasons": {
+        "persona_fit": "Directly targets small business owner-operators in a calm, practical tone without a sales CTA, though the phrase 'Treat that as a persona example, not a customer case' reads like an awkward prompt leakage.",
+        "clarity": "Logical structure and clear plain-English explanation of data residency, slightly marred by the meta-instruction telling the reader to treat a process as a 'persona example'.",
+        "actionability": "Provides a practical, well-bounded threshold check and decision rule for evaluating sensitive data fields before adopting automation tools.",
+        "factual_grounding": "Strictly adheres to factual boundaries; avoids inventing customers, deployments, metrics, or definitive legal determinations."
+      },
+      "critical_violation": false,
+      "critical_violation_type": null,
+      "critical_evidence_quote": null,
+      "total_score": 18,
+      "pass": true,
+      "low_quality": false
+    }
+  },
+  "cost_details": {
+    "input": 0.004428,
+    "cache_read_input_tokens": 0.0,
+    "output": 0.00114375,
+    "reasoning_output_tokens": 0.00409875,
+    "total": 0.0096705
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": null,
+  "key": "SE-FINAL-N087_eval_final__a001",
+  "role": "evaluator",
+  "created_at": "2026-09-08T13:01:21.683212+00:00",
+  "ended_at": "2026-09-08T13:01:28.402682+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-N087",
+    "batch_id": 3,
+    "condition": "natural",
+    "cohort": "natural"
+  },
+  "task_id": "SE-FINAL-N087",
+  "batch_id": 3,
+  "cohort": "natural",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 6716,
+  "budget_charge_usd": 0.0096705,
+  "unknown_cost_reservation_usd": 0
+}

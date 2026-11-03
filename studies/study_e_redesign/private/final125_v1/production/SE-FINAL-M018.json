@@ -1,0 +1,301 @@
+{
+  "task_id": "SE-FINAL-M018",
+  "batch_id": 1,
+  "condition": "unchanged",
+  "source_task_id": "SE-FINAL-N066",
+  "topic": "when data export tests stop working",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-304",
+    "title": "When data export tests stop working",
+    "body": "When data export tests stop working, the decision is usually not “Should I add AI?” It is simpler: do I have a repeatable export that now fails in a repeatable way, or am I dealing with one-off mess that needs a person to sort out manually?\n\nFor a small business, the useful boundary is concrete. Name the source system, the destination system, the export schedule, the data type, and the failure signal. Examples: the export runs but fields are empty, a scheduled file is missing, or CSV formatting breaks the downstream import. If the break only appears after a customer complains, or if you are checking it by hand every Friday, you already have a workflow problem worth isolating.\n\nThe practical control is not “let software fix it by itself.” It is to test the export before the data moves on: row count, required fields, date range, or simple format checks. If the test fails, a human gets the alert and decides the next step. That keeps money movement and other high-risk decisions where they belong: with a person.\n\nOne good next step is manual and boring, which is often a compliment. Pick one export, run it yourself, inspect the output for one known issue such as missing rows, broken fields, date drift, or encoding problems, and note how long discovery and re-run actually take. If the export is repeatable and the failure signal is visible, bounded automation may fit a diagnostic scope. If not, clarify the workflow first."
+  },
+  "final": {
+    "item_id": "E-OPT-404",
+    "title": "When data export tests stop working",
+    "body": "When data export tests stop working, the decision is usually not “Should I add AI?” It is simpler: do I have a repeatable export that now fails in a repeatable way, or am I dealing with one-off mess that needs a person to sort out manually?\n\nFor a small business, the useful boundary is concrete. Name the source system, the destination system, the export schedule, the data type, and the failure signal. Examples: the export runs but fields are empty, a scheduled file is missing, or CSV formatting breaks the downstream import. If the break only appears after a customer complains, or if you are checking it by hand every Friday, you already have a workflow problem worth isolating.\n\nThe practical control is not “let software fix it by itself.” It is to test the export before the data moves on: row count, required fields, date range, or simple format checks. If the test fails, a human gets the alert and decides the next step. That keeps money movement and other high-risk decisions where they belong: with a person.\n\nOne good next step is manual and boring, which is often a compliment. Pick one export, run it yourself, inspect the output for one known issue such as missing rows, broken fields, date drift, or encoding problems, and note how long discovery and re-run actually take. If the export is repeatable and the failure signal is visible, bounded automation may fit a diagnostic scope. If not, clarify the workflow first."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-018",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-018",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-018-1",
+        "repairs": []
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-018",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-404",
+        "title": "When data export tests stop working",
+        "body": "When data export tests stop working, the decision is usually not “Should I add AI?” It is simpler: do I have a repeatable export that now fails in a repeatable way, or am I dealing with one-off mess that needs a person to sort out manually?\n\nFor a small business, the useful boundary is concrete. Name the source system, the destination system, the export schedule, the data type, and the failure signal. Examples: the export runs but fields are empty, a scheduled file is missing, or CSV formatting breaks the downstream import. If the break only appears after a customer complains, or if you are checking it by hand every Friday, you already have a workflow problem worth isolating.\n\nThe practical control is not “let software fix it by itself.” It is to test the export before the data moves on: row count, required fields, date range, or simple format checks. If the test fails, a human gets the alert and decides the next step. That keeps money movement and other high-risk decisions where they belong: with a person.\n\nOne good next step is manual and boring, which is often a compliment. Pick one export, run it yourself, inspect the output for one known issue such as missing rows, broken fields, date drift, or encoding problems, and note how long discovery and re-run actually take. If the export is repeatable and the failure signal is visible, bounded automation may fit a diagnostic scope. If not, clarify the workflow first."
+      },
+      "gate_key": "SE-FINAL-M018_gate1__a001"
+    }
+  ],
+  "measurement_status": "pending",
+  "planner": {
+    "item_id": "E-PLAN-504",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task explicitly forbids a CTA. This lesson confirms that closing with a practical observation—not a booking invitation—is the correct approach. End with a neutral next-step note describing one diagnostic action the owner can take independently."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Frame the abstract topic 'when data export tests stop working' as a concrete workflow decision: identify whether the owner's recurring data-export task (e.g., syncing customer records, invoice batches, or reports between tools) has become unreliable, and whether manual verification or re-export is consuming material time.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Define the workflow boundary clearly: name the source system, destination system, export frequency, data type, and current failure signal (e.g., 'exports run but fields are empty', 'scheduled export misses a day', 'CSV formatting breaks downstream import'). Acknowledge that automation is suitable only if the failure pattern is repeatable and the stakes are operational, not financial.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Explain that automated testing of data exports—validating row counts, field presence, date ranges, or row order before data reaches downstream systems—can detect breakage early and trigger a human alert rather than letting silent failures accumulate. Position this as a workflow control, not a autonomous fix.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "State plainly that the first diagnostic question is: 'How do I know an export failed today, and how much time do I spend discovering and re-running it each week?' If the answer is 'I find out when a customer complains' or 'I check manually every Friday', the workflow has a measurable problem.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C01",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Describe one concrete next step: choose one current export task, manually run it, inspect the output for a known data issue (missing rows, broken fields, date drift, or encoding problems), and log how long discovery and re-run typically takes. This data informs whether bounded automation fits the owner's time trade-off.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C01",
+          "C02",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Conclude with a neutral observation grounded in the persona and evidence: if the export task is repeatable, the failure signal is detectable, and a human sits downstream to act on alerts, automation can fit a diagnostic scope. If the workflow is ad-hoc, failure is silent until customer impact, or approval for system access is unclear, the owner should clarify those conditions first before considering investment.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C02",
+          "C03",
+          "C04",
+          "C05",
+          "S01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "Do not invent customer examples, deployment timelines, success metrics, or team size. Use only the owner's own workflow as the working example. Avoid numbers without a source or example context."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Emphasize that alerts and human approval precede any automated action on exported data. Do not describe autonomous data movement or payment. Respect scope boundaries: if the export serves a financial or medical system, note current exclusions."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Maintain the frozen persona: plain-speaking technical expert, founder-to-founder tone, trust over enthusiasm. Respect the human-approval boundary and the consulting-practice identity (no multi-person team, no customer case studies, no legal registration yet)."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use plain language and distinguish between the owner's current manual workflow, the proposed bounded automation, and Bareni's self-built demo systems. Do not conflate a proposal with a delivered capability."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-604",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Turn the abstract topic into a bounded Bareni workflow decision. Explain one practical next step."
+          },
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits"
+          }
+        ],
+        "rationale": "This is a framing instruction for the post, telling the writer to convert the topic into a recurring-workflow decision. It asserts no current capability, customer or observed result, and it matches the approved diagnostic idea of finding one recurring workflow.",
+        "use_guidance": "Keep as an instruction for framing. Present the export examples as illustrative scenarios for the 1-10 person owner persona, not as observed customer workflows or measured time losses."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits"
+          },
+          {
+            "source_id": "C01",
+            "quote": "have a frequent, repeatable workflow with a measurable outcome"
+          },
+          {
+            "source_id": "C04",
+            "quote": "Bareni currently declines high-sensitivity medical, legal, and financial work"
+          }
+        ],
+        "rationale": "A permissible instruction to bound the workflow and a suitability condition. The repeatability criterion and the exclusion of financial-stakes work both track approved scope statements rather than asserting an existing implementation.",
+        "use_guidance": "Keep as a proposal/diagnostic framing. When stating the financial exclusion, present it as current Bareni scope discipline rather than a claim that such work can never be automated, and give no legal advice."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C03",
+            "quote": "Automated testing, rate limiting, and billing are planned, not working."
+          },
+          {
+            "source_id": "C03",
+            "quote": "Arithmetic checks, duplicate-invoice blocking, amount-based human-only approval, refusal of agent approval/payment attempts, and persistent audit records work."
+          },
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          }
+        ],
+        "rationale": "The core idea of validation checks that alert a human is consistent with approved control patterns (checks plus human-only approval), and the claim already excludes autonomous fixing. However, as written it could read as an existing Bareni capability; approved evidence records automated testing in the knowledge assistant demo as planned, not working, and no export-testing system exists.",
+        "use_guidance": "Add the qualification that this is a described control pattern Bareni would design in a pilot, not a built or deployed export-testing product; automated testing in the knowledge assistant demo is explicitly planned, not working. Keep the human-alert framing and the no-autonomous-fix boundary."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step"
+          },
+          {
+            "source_id": "C02",
+            "quote": "Normal sequence: free 30-minute diagnostic"
+          }
+        ],
+        "rationale": "This supplies a diagnostic question and an interpretation rule for the reader. It is an instruction, not an assertion of measured customer behaviour or results.",
+        "use_guidance": "Keep as a diagnostic question. Do not attach any hours-per-week figure; the 8-10 hours persona scenario is not a market statistic or an observed result, and no export-specific number is supported."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Explain one practical next step."
+          },
+          {
+            "source_id": "C01",
+            "quote": "have a frequent, repeatable workflow with a measurable outcome"
+          }
+        ],
+        "rationale": "A manual next step the owner performs themselves. It describes no Bareni software, deployment or observed outcome, and it fits the task's requirement for one practical next step.",
+        "use_guidance": "Keep explicitly as a manual step for the reader. Do not imply Bareni tooling performs the inspection or logging, and do not predict a saving from the exercise."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits"
+          },
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "S01",
+            "quote": "Do not force AI where it is unsuitable."
+          }
+        ],
+        "rationale": "A closing fit/no-fit judgement and recommendation to clarify conditions first. It states suitability criteria rather than a current fact about outcomes, and it respects the honest-fit and human-authority boundaries.",
+        "use_guidance": "Keep as a neutral closing observation with no CTA, per the task's CTA rule; avoid any invitation to book, discuss or continue the conversation. State that automation 'can fit a diagnostic scope' as a conditional possibility, not a promised result."
+      }
+    ]
+  },
+  "selected_lessons": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025"
+      ]
+    }
+  ],
+  "register_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "planner_key": "SE-FINAL-N066_planner__a001",
+  "researcher_key": "SE-FINAL-N066_researcher__a001",
+  "writer_key": "SE-FINAL-N066_writer__a001",
+  "final_key": "SE-FINAL-M018_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-M018_gate1__a001",
+  "production_completed_at": "2026-09-08T13:29:16.724388+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts"
+}

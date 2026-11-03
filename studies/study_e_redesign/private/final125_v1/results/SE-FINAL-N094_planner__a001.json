@@ -1,0 +1,187 @@
+{
+  "status": "success",
+  "usage": {
+    "input_tokens": 4472,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1111,
+    "reasoning_tokens": null
+  },
+  "cost_usd": 0.010027,
+  "output": {
+    "item_id": "E-PLAN-501",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "This is informational content about scope management, not purchase-intent material. The task explicitly prohibits a CTA. End with a practical observation or next-step note for the owner instead of a meeting prompt."
+      },
+      {
+        "lesson_id": "L02",
+        "application": "C02 presents Bareni's diagnostic and pilot sequence as operational practice and positioning (30-minute diagnostic, one-page proposal, pilot scope). Keep these as described offerings without elevating them to guarantees."
+      },
+      {
+        "lesson_id": "L03",
+        "application": "Scope creep and unbounded projects are common, but no Bareni customer evidence supports specific cost or timeline claims about them. Replace unsupported generalizations with a concrete workflow decision rule the owner can apply immediately."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Name the one recurring workflow the owner wants to automate. Scope creep often begins when a single workflow grows into a bucket-list of adjacent tasks. Identify the clearest, most painful, most repeatable item—the one that recurs at least weekly and has a measurable outcome (invoices processed, leads responded to, data transferred).",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Define the hard boundary: what is inside the workflow and what is explicitly out. Unbounded scope usually appears when the owner conflates a workflow with a broader business problem. For example: 'respond to customer emails' is a workflow; 'improve customer satisfaction' is not. List the inputs, decision rules, and outputs in plain terms.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Check whether AI fits the workflow by asking: are the decisions rule-based or judgment calls? Is there enough training data (past examples) to show the pattern? Can a wrong answer be caught before it reaches the customer? If the answer to all three is yes, AI is likely a fit. If not, the workflow may need restructuring or is better solved by hiring.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Estimate the pilot scope: how many documents, records, or decisions would the first two weeks of automation cover? Keep it small—the goal is to learn whether the approach works, not to solve the entire problem at once. Bareni's typical pilot is a fixed-price working system delivered in days to weeks.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L02"
+        ],
+        "evidence_ids": [
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Identify the approval gate. Who must review and approve before the system makes a decision or takes an action (especially for payments, legal holds, or customer commitments)? Build this control into the design from the start; do not add it as an afterthought. Human approval remains non-negotiable for money movement and high-risk choices.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Write down the next step: either 'I have a bounded workflow and want to explore a pilot' or 'this needs restructuring first' or 'this is better solved by hiring'. Use this clarity as the decision rule. If the workflow is bounded and rule-based, a 30-minute diagnostic with a technical expert (no pitch, no commitment) can confirm whether AI is worth the investment or rule it out.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01",
+          "L02"
+        ],
+        "evidence_ids": [
+          "C02",
+          "S01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No customer stories, invented deployments, savings claims, or multi-person team references. All guidance is structural (workflow decision rules) and no implied product capability beyond the three self-built demos described in C03."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Step P05 explicitly requires human approval for money movement and high-risk decisions. No automation of approvals themselves."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "All language follows the frozen persona: plain-speaking technical expert, founder-to-founder, trustworthy, restrained tone. No hype or fabricated urgency."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "C02 describes the diagnostic and pilot sequence as Bareni's operational practice. Step P06 references this practice neutrally without overstating it as a warranty or guarantee. Examples remain distinct from existing capabilities."
+      }
+    ]
+  },
+  "raw_text": "{\"item_id\": \"E-PLAN-501\", \"selected_lessons\": [{\"lesson_id\": \"L01\", \"application\": \"This is informational content about scope management, not purchase-intent material. The task explicitly prohibits a CTA. End with a practical observation or next-step note for the owner instead of a meeting prompt.\"}, {\"lesson_id\": \"L02\", \"application\": \"C02 presents Bareni's diagnostic and pilot sequence as operational practice and positioning (30-minute diagnostic, one-page proposal, pilot scope). Keep these as described offerings without elevating them to guarantees.\"}, {\"lesson_id\": \"L03\", \"application\": \"Scope creep and unbounded projects are common, but no Bareni customer evidence supports specific cost or timeline claims about them. Replace unsupported generalizations with a concrete workflow decision rule the owner can apply immediately.\"}], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Name the one recurring workflow the owner wants to automate. Scope creep often begins when a single workflow grows into a bucket-list of adjacent tasks. Identify the clearest, most painful, most repeatable item—the one that recurs at least weekly and has a measurable outcome (invoices processed, leads responded to, data transferred).\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"C01\"]}, {\"step_id\": \"P02\", \"instruction\": \"Define the hard boundary: what is inside the workflow and what is explicitly out. Unbounded scope usually appears when the owner conflates a workflow with a broader business problem. For example: 'respond to customer emails' is a workflow; 'improve customer satisfaction' is not. List the inputs, decision rules, and outputs in plain terms.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"S01\"]}, {\"step_id\": \"P03\", \"instruction\": \"Check whether AI fits the workflow by asking: are the decisions rule-based or judgment calls? Is there enough training data (past examples) to show the pattern? Can a wrong answer be caught before it reaches the customer? If the answer to all three is yes, AI is likely a fit. If not, the workflow may need restructuring or is better solved by hiring.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"C02\"]}, {\"step_id\": \"P04\", \"instruction\": \"Estimate the pilot scope: how many documents, records, or decisions would the first two weeks of automation cover? Keep it small—the goal is to learn whether the approach works, not to solve the entire problem at once. Bareni's typical pilot is a fixed-price working system delivered in days to weeks.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L02\"], \"evidence_ids\": [\"C02\"]}, {\"step_id\": \"P05\", \"instruction\": \"Identify the approval gate. Who must review and approve before the system makes a decision or takes an action (especially for payments, legal holds, or customer commitments)? Build this control into the design from the start; do not add it as an afterthought. Human approval remains non-negotiable for money movement and high-risk choices.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"C04\"]}, {\"step_id\": \"P06\", \"instruction\": \"Write down the next step: either 'I have a bounded workflow and want to explore a pilot' or 'this needs restructuring first' or 'this is better solved by hiring'. Use this clarity as the decision rule. If the workflow is bounded and rule-based, a 30-minute diagnostic with a technical expert (no pitch, no commitment) can confirm whether AI is worth the investment or rule it out.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\", \"L02\"], \"evidence_ids\": [\"C02\", \"S01\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"No customer stories, invented deployments, savings claims, or multi-person team references. All guidance is structural (workflow decision rules) and no implied product capability beyond the three self-built demos described in C03.\"}, {\"constraint_id\": \"K02\", \"handling\": \"Step P05 explicitly requires human approval for money movement and high-risk decisions. No automation of approvals themselves.\"}, {\"constraint_id\": \"K03\", \"handling\": \"All language follows the frozen persona: plain-speaking technical expert, founder-to-founder, trustworthy, restrained tone. No hype or fabricated urgency.\"}, {\"constraint_id\": \"K04\", \"handling\": \"C02 describes the diagnostic and pilot sequence as Bareni's operational practice. Step P06 references this practice neutrally without overstating it as a warranty or guarantee. Examples remain distinct from existing capabilities.\"}]}",
+  "provider_response": {
+    "id": "msg_011Cer2ACos1k5ZmGUur1NZ4",
+    "container": null,
+    "content": [
+      {
+        "citations": null,
+        "text": "{\"item_id\": \"E-PLAN-501\", \"selected_lessons\": [{\"lesson_id\": \"L01\", \"application\": \"This is informational content about scope management, not purchase-intent material. The task explicitly prohibits a CTA. End with a practical observation or next-step note for the owner instead of a meeting prompt.\"}, {\"lesson_id\": \"L02\", \"application\": \"C02 presents Bareni's diagnostic and pilot sequence as operational practice and positioning (30-minute diagnostic, one-page proposal, pilot scope). Keep these as described offerings without elevating them to guarantees.\"}, {\"lesson_id\": \"L03\", \"application\": \"Scope creep and unbounded projects are common, but no Bareni customer evidence supports specific cost or timeline claims about them. Replace unsupported generalizations with a concrete workflow decision rule the owner can apply immediately.\"}], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Name the one recurring workflow the owner wants to automate. Scope creep often begins when a single workflow grows into a bucket-list of adjacent tasks. Identify the clearest, most painful, most repeatable item—the one that recurs at least weekly and has a measurable outcome (invoices processed, leads responded to, data transferred).\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"C01\"]}, {\"step_id\": \"P02\", \"instruction\": \"Define the hard boundary: what is inside the workflow and what is explicitly out. Unbounded scope usually appears when the owner conflates a workflow with a broader business problem. For example: 'respond to customer emails' is a workflow; 'improve customer satisfaction' is not. List the inputs, decision rules, and outputs in plain terms.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"S01\"]}, {\"step_id\": \"P03\", \"instruction\": \"Check whether AI fits the workflow by asking: are the decisions rule-based or judgment calls? Is there enough training data (past examples) to show the pattern? Can a wrong answer be caught before it reaches the customer? If the answer to all three is yes, AI is likely a fit. If not, the workflow may need restructuring or is better solved by hiring.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L03\"], \"evidence_ids\": [\"C02\"]}, {\"step_id\": \"P04\", \"instruction\": \"Estimate the pilot scope: how many documents, records, or decisions would the first two weeks of automation cover? Keep it small—the goal is to learn whether the approach works, not to solve the entire problem at once. Bareni's typical pilot is a fixed-price working system delivered in days to weeks.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [\"L02\"], \"evidence_ids\": [\"C02\"]}, {\"step_id\": \"P05\", \"instruction\": \"Identify the approval gate. Who must review and approve before the system makes a decision or takes an action (especially for payments, legal holds, or customer commitments)? Build this control into the design from the start; do not add it as an afterthought. Human approval remains non-negotiable for money movement and high-risk choices.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"C04\"]}, {\"step_id\": \"P06\", \"instruction\": \"Write down the next step: either 'I have a bounded workflow and want to explore a pilot' or 'this needs restructuring first' or 'this is better solved by hiring'. Use this clarity as the decision rule. If the workflow is bounded and rule-based, a 30-minute diagnostic with a technical expert (no pitch, no commitment) can confirm whether AI is worth the investment or rule it out.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\", \"L02\"], \"evidence_ids\": [\"C02\", \"S01\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"No customer stories, invented deployments, savings claims, or multi-person team references. All guidance is structural (workflow decision rules) and no implied product capability beyond the three self-built demos described in C03.\"}, {\"constraint_id\": \"K02\", \"handling\": \"Step P05 explicitly requires human approval for money movement and high-risk decisions. No automation of approvals themselves.\"}, {\"constraint_id\": \"K03\", \"handling\": \"All language follows the frozen persona: plain-speaking technical expert, founder-to-founder, trustworthy, restrained tone. No hype or fabricated urgency.\"}, {\"constraint_id\": \"K04\", \"handling\": \"C02 describes the diagnostic and pilot sequence as Bareni's operational practice. Step P06 references this practice neutrally without overstating it as a warranty or guarantee. Examples remain distinct from existing capabilities.\"}]}",
+        "type": "text"
+      }
+    ],
+    "model": "claude-haiku-4-5-20251001",
+    "role": "assistant",
+    "stop_details": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "not_available",
+      "input_tokens": 4472,
+      "output_tokens": 1111,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": "standard"
+    }
+  },
+  "stop_reason": "end_turn",
+  "cost_details": {
+    "input": 0.004472,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.005555,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.010027
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": null,
+  "key": "SE-FINAL-N094_planner__a001",
+  "role": "planner",
+  "created_at": "2026-09-08T13:05:15.912063+00:00",
+  "ended_at": "2026-09-08T13:05:29.828914+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-N094",
+    "batch_id": 4,
+    "condition": "natural",
+    "cohort": "natural"
+  },
+  "task_id": "SE-FINAL-N094",
+  "batch_id": 4,
+  "cohort": "natural",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 13912,
+  "budget_charge_usd": 0.010027,
+  "unknown_cost_reservation_usd": 0
+}

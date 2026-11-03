@@ -1,0 +1,81 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I086-R2",
+    "item_id": "SEA-I086",
+    "repeat": 2,
+    "arm_order": [
+      "critic_off",
+      "critic_on"
+    ],
+    "content_id": "POST-0efefd91c069941e99f20892"
+  },
+  "arms": {
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-0efefd91c069941e99f20892-1",
+        "title": "Transcript accuracy is not the decision",
+        "body": "For a 1–10-person business, transcript accuracy is not the real question. The better question is simpler: what happens after the transcript exists, and who is responsible for the next step?\n\nIf you use transcripts for customer calls, accuracy only matters when it helps someone act on a refund request, a technical issue, or a follow-up commitment. If the transcript is just stored in a folder, or someone reads it again by hand, then you have improved the text, not the workflow. That is tidy, but not much else.\n\nThe practical boundary is human approval. For money movement and other high-risk decisions, a person still has to review before anything irreversible happens. In that setup, “accurate enough” means accurate enough to reach the right reviewer with the right context, not perfect in the abstract.\n\nSo the next step is to ask one diagnostic question before you invest in transcription automation: what happens to this transcript after it is generated? If the answer is “nothing,” accuracy is probably not the bottleneck. If the answer is “it feeds a decision or another system,” then accuracy, routing, and human check-in are the workflow to design.\n\nThat is usually where a small business stops arguing about the transcript and starts looking at the process."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-0efefd91c069941e99f20892-1",
+            "title": "Transcript accuracy is not the decision",
+            "body": "For a 1–10-person business, transcript accuracy is not the real question. The better question is simpler: what happens after the transcript exists, and who is responsible for the next step?\n\nIf you use transcripts for customer calls, accuracy only matters when it helps someone act on a refund request, a technical issue, or a follow-up commitment. If the transcript is just stored in a folder, or someone reads it again by hand, then you have improved the text, not the workflow. That is tidy, but not much else.\n\nThe practical boundary is human approval. For money movement and other high-risk decisions, a person still has to review before anything irreversible happens. In that setup, “accurate enough” means accurate enough to reach the right reviewer with the right context, not perfect in the abstract.\n\nSo the next step is to ask one diagnostic question before you invest in transcription automation: what happens to this transcript after it is generated? If the answer is “nothing,” accuracy is probably not the bottleneck. If the answer is “it feeds a decision or another system,” then accuracy, routing, and human check-in are the workflow to design.\n\nThat is usually where a small business stops arguing about the transcript and starts looking at the process."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-0efefd91c069941e99f20892-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    },
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-0efefd91c069941e99f20892-1",
+        "title": "Why transcript accuracy is not the real question",
+        "body": "If you run a 1–10 person business, transcript accuracy is not usually the main question. The real question is simpler: what happens after the transcript exists, and who is responsible for the next step?\n\nA transcript only matters when it helps someone act. That might mean flagging a refund request, a technical issue, or a follow-up commitment after a customer call. If the transcript is just stored in a folder, or someone reads it again by hand, then you have improved the text, not the workflow. Useful, but not the point.\n\nThe boundary is human approval. For money movement and other high-risk decisions, a person still needs to review before anything irreversible happens. In that setup, “accurate enough” means accurate enough to reach the right reviewer with the right context. Not perfect in the abstract.\n\nSo the practical diagnostic is this: what happens to this transcript after it is generated? If the answer is “nothing,” transcript accuracy is not the bottleneck. If the answer is “it feeds a decision or a downstream system,” then accuracy, routing, and human check-in are the workflow to design.\n\nThat is usually where a small business stops arguing about the transcript and starts looking at the process."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-0efefd91c069941e99f20892-1",
+            "title": "Why transcript accuracy is not the real question",
+            "body": "If you run a 1–10 person business, transcript accuracy is not usually the main question. The real question is simpler: what happens after the transcript exists, and who is responsible for the next step?\n\nA transcript only matters when it helps someone act. That might mean flagging a refund request, a technical issue, or a follow-up commitment after a customer call. If the transcript is just stored in a folder, or someone reads it again by hand, then you have improved the text, not the workflow. Useful, but not the point.\n\nThe boundary is human approval. For money movement and other high-risk decisions, a person still needs to review before anything irreversible happens. In that setup, “accurate enough” means accurate enough to reach the right reviewer with the right context. Not perfect in the abstract.\n\nSo the practical diagnostic is this: what happens to this transcript after it is generated? If the answer is “nothing,” transcript accuracy is not the bottleneck. If the answer is “it feeds a decision or a downstream system,” then accuracy, routing, and human check-in are the workflow to design.\n\nThat is usually where a small business stops arguing about the transcript and starts looking at the process."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-0efefd91c069941e99f20892-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": [
+            {
+              "repair_id": "P01",
+              "target_ids": [
+                "D01"
+              ],
+              "instruction": "Replace the opening enterprise-board sentence with a direct address to the intended reader, e.g. a small-business owner or CEO of a 1–10 person company, and remove the governance-office framing.",
+              "source_ids": [
+                "BRIEF",
+                "C01",
+                "S01"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

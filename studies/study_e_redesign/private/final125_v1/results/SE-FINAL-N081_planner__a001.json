@@ -1,0 +1,175 @@
+{
+  "status": "success",
+  "usage": {
+    "input_tokens": 4352,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1009,
+    "reasoning_tokens": null
+  },
+  "cost_usd": 0.009397,
+  "output": {
+    "item_id": "E-PLAN-519",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task explicitly authorizes no CTA. L01 applies directly: end the post with a neutral practical observation or next-step note rather than a meeting prompt. The informational topic (model deprecation cost) is problem-awareness focused, not purchase-intent, so closing with a diagnostic question or diagnostic criterion is appropriate instead of a booking invitation."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Translate the abstract topic 'quiet cost of model deprecation' into one concrete, bounded workflow decision facing a small-business owner: the cost of rebuilding or retraining automated workflows when the LLM model powering them becomes unavailable, less capable, or pricing changes. Link this to the owner's decision context (hiring vs. automation investment) and the persona's constraint (human approval before money movement).",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Illustrate the risk with a workflow example drawn from typical small-business automation (e.g., customer-inquiry triage, invoice extraction, or lead qualification). Use only self-built demo scope boundaries and no invented customer results. Show what happens when a model version is deprecated: the workflow breaks, retraining is required, and the owner must decide whether to fix it or revert to manual work.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C03",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Explain the business implication plainly: automation reduces repetitive labor cost only if the system remains stable. Model deprecation creates a hidden maintenance cost that must be weighed against the original investment. Use measured language and avoid invented numbers, benchmarks, or savings claims.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C04",
+          "C05"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Name the owner's control: before committing to an automation investment, ask the vendor or builder whether the system will continue to work unchanged if the underlying model is upgraded, retired, or pricing changes. This is a diagnostic question, not a guarantee.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Provide a second practical next step: when evaluating automation vendors or proposing a pilot, include a clear definition of who owns the ongoing model-version decision and who bears the cost of retraining or switching if deprecation happens. Emphasize that human business authority approves any re-investment before money moves.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Close with a neutral, plain-language observation: automation is worth building when the workflow is stable and the maintenance burden is understood, not when the cheapest entry price hides future retraining costs. Do not include a CTA, booking invitation, or urgency. Use L01 to end with a practical diagnostic criterion the owner can apply immediately.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C05",
+          "S01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "Do not invent customers, deployments, results, numbers, benchmarks, ROI, savings, or multi-person team. Use only self-built demo scope and Bareni's stated service model. Do not include a sales CTA."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Do not recommend autonomous money movement or high-risk decisions without human approval. Emphasize that the owner retains business authority and approval power over re-investment."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Preserve the frozen persona (technical, founder-to-founder, trust-focused), approved evidence boundaries, and human approval requirement. Keep the informational tone consistent with problem-awareness focus."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use plain English. Keep examples of automation workflows distinct from existing Bareni capabilities. Treat the model-deprecation scenario as a proposal or diagnostic question, not a proven result or feature."
+      }
+    ]
+  },
+  "raw_text": "{\"item_id\": \"E-PLAN-519\", \"selected_lessons\": [{\"lesson_id\": \"L01\", \"application\": \"The task explicitly authorizes no CTA. L01 applies directly: end the post with a neutral practical observation or next-step note rather than a meeting prompt. The informational topic (model deprecation cost) is problem-awareness focused, not purchase-intent, so closing with a diagnostic question or diagnostic criterion is appropriate instead of a booking invitation.\"}], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Translate the abstract topic 'quiet cost of model deprecation' into one concrete, bounded workflow decision facing a small-business owner: the cost of rebuilding or retraining automated workflows when the LLM model powering them becomes unavailable, less capable, or pricing changes. Link this to the owner's decision context (hiring vs. automation investment) and the persona's constraint (human approval before money movement).\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C01\", \"C02\"]}, {\"step_id\": \"P02\", \"instruction\": \"Illustrate the risk with a workflow example drawn from typical small-business automation (e.g., customer-inquiry triage, invoice extraction, or lead qualification). Use only self-built demo scope boundaries and no invented customer results. Show what happens when a model version is deprecated: the workflow breaks, retraining is required, and the owner must decide whether to fix it or revert to manual work.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C03\", \"C04\"]}, {\"step_id\": \"P03\", \"instruction\": \"Explain the business implication plainly: automation reduces repetitive labor cost only if the system remains stable. Model deprecation creates a hidden maintenance cost that must be weighed against the original investment. Use measured language and avoid invented numbers, benchmarks, or savings claims.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C04\", \"C05\"]}, {\"step_id\": \"P04\", \"instruction\": \"Name the owner's control: before committing to an automation investment, ask the vendor or builder whether the system will continue to work unchanged if the underlying model is upgraded, retired, or pricing changes. This is a diagnostic question, not a guarantee.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"C04\"]}, {\"step_id\": \"P05\", \"instruction\": \"Provide a second practical next step: when evaluating automation vendors or proposing a pilot, include a clear definition of who owns the ongoing model-version decision and who bears the cost of retraining or switching if deprecation happens. Emphasize that human business authority approves any re-investment before money moves.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"C04\"]}, {\"step_id\": \"P06\", \"instruction\": \"Close with a neutral, plain-language observation: automation is worth building when the workflow is stable and the maintenance burden is understood, not when the cheapest entry price hides future retraining costs. Do not include a CTA, booking invitation, or urgency. Use L01 to end with a practical diagnostic criterion the owner can apply immediately.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C05\", \"S01\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"Do not invent customers, deployments, results, numbers, benchmarks, ROI, savings, or multi-person team. Use only self-built demo scope and Bareni's stated service model. Do not include a sales CTA.\"}, {\"constraint_id\": \"K02\", \"handling\": \"Do not recommend autonomous money movement or high-risk decisions without human approval. Emphasize that the owner retains business authority and approval power over re-investment.\"}, {\"constraint_id\": \"K03\", \"handling\": \"Preserve the frozen persona (technical, founder-to-founder, trust-focused), approved evidence boundaries, and human approval requirement. Keep the informational tone consistent with problem-awareness focus.\"}, {\"constraint_id\": \"K04\", \"handling\": \"Use plain English. Keep examples of automation workflows distinct from existing Bareni capabilities. Treat the model-deprecation scenario as a proposal or diagnostic question, not a proven result or feature.\"}]}",
+  "provider_response": {
+    "id": "msg_011Cer1YnpFLUpKSeCwpkgsf",
+    "container": null,
+    "content": [
+      {
+        "citations": null,
+        "text": "{\"item_id\": \"E-PLAN-519\", \"selected_lessons\": [{\"lesson_id\": \"L01\", \"application\": \"The task explicitly authorizes no CTA. L01 applies directly: end the post with a neutral practical observation or next-step note rather than a meeting prompt. The informational topic (model deprecation cost) is problem-awareness focused, not purchase-intent, so closing with a diagnostic question or diagnostic criterion is appropriate instead of a booking invitation.\"}], \"steps\": [{\"step_id\": \"P01\", \"instruction\": \"Translate the abstract topic 'quiet cost of model deprecation' into one concrete, bounded workflow decision facing a small-business owner: the cost of rebuilding or retraining automated workflows when the LLM model powering them becomes unavailable, less capable, or pricing changes. Link this to the owner's decision context (hiring vs. automation investment) and the persona's constraint (human approval before money movement).\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C01\", \"C02\"]}, {\"step_id\": \"P02\", \"instruction\": \"Illustrate the risk with a workflow example drawn from typical small-business automation (e.g., customer-inquiry triage, invoice extraction, or lead qualification). Use only self-built demo scope boundaries and no invented customer results. Show what happens when a model version is deprecated: the workflow breaks, retraining is required, and the owner must decide whether to fix it or revert to manual work.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C03\", \"C04\"]}, {\"step_id\": \"P03\", \"instruction\": \"Explain the business implication plainly: automation reduces repetitive labor cost only if the system remains stable. Model deprecation creates a hidden maintenance cost that must be weighed against the original investment. Use measured language and avoid invented numbers, benchmarks, or savings claims.\", \"requirement_ids\": [\"R01\"], \"lesson_ids\": [], \"evidence_ids\": [\"C04\", \"C05\"]}, {\"step_id\": \"P04\", \"instruction\": \"Name the owner's control: before committing to an automation investment, ask the vendor or builder whether the system will continue to work unchanged if the underlying model is upgraded, retired, or pricing changes. This is a diagnostic question, not a guarantee.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"C04\"]}, {\"step_id\": \"P05\", \"instruction\": \"Provide a second practical next step: when evaluating automation vendors or proposing a pilot, include a clear definition of who owns the ongoing model-version decision and who bears the cost of retraining or switching if deprecation happens. Emphasize that human business authority approves any re-investment before money moves.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [], \"evidence_ids\": [\"C02\", \"C04\"]}, {\"step_id\": \"P06\", \"instruction\": \"Close with a neutral, plain-language observation: automation is worth building when the workflow is stable and the maintenance burden is understood, not when the cheapest entry price hides future retraining costs. Do not include a CTA, booking invitation, or urgency. Use L01 to end with a practical diagnostic criterion the owner can apply immediately.\", \"requirement_ids\": [\"R02\"], \"lesson_ids\": [\"L01\"], \"evidence_ids\": [\"C05\", \"S01\"]}], \"constraints_to_preserve\": [{\"constraint_id\": \"K01\", \"handling\": \"Do not invent customers, deployments, results, numbers, benchmarks, ROI, savings, or multi-person team. Use only self-built demo scope and Bareni's stated service model. Do not include a sales CTA.\"}, {\"constraint_id\": \"K02\", \"handling\": \"Do not recommend autonomous money movement or high-risk decisions without human approval. Emphasize that the owner retains business authority and approval power over re-investment.\"}, {\"constraint_id\": \"K03\", \"handling\": \"Preserve the frozen persona (technical, founder-to-founder, trust-focused), approved evidence boundaries, and human approval requirement. Keep the informational tone consistent with problem-awareness focus.\"}, {\"constraint_id\": \"K04\", \"handling\": \"Use plain English. Keep examples of automation workflows distinct from existing Bareni capabilities. Treat the model-deprecation scenario as a proposal or diagnostic question, not a proven result or feature.\"}]}",
+        "type": "text"
+      }
+    ],
+    "model": "claude-haiku-4-5-20251001",
+    "role": "assistant",
+    "stop_details": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "not_available",
+      "input_tokens": 4352,
+      "output_tokens": 1009,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": "standard"
+    }
+  },
+  "stop_reason": "end_turn",
+  "cost_details": {
+    "input": 0.004352,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.005045,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.009397
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": null,
+  "key": "SE-FINAL-N081_planner__a001",
+  "role": "planner",
+  "created_at": "2026-09-08T12:57:15.487202+00:00",
+  "ended_at": "2026-09-08T12:57:42.218389+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-N081",
+    "batch_id": 3,
+    "condition": "natural",
+    "cohort": "natural"
+  },
+  "task_id": "SE-FINAL-N081",
+  "batch_id": 3,
+  "cohort": "natural",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 26715,
+  "budget_charge_usd": 0.009397,
+  "unknown_cost_reservation_usd": 0
+}

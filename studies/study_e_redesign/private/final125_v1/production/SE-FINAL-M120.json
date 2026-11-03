@@ -1,0 +1,358 @@
+{
+  "task_id": "SE-FINAL-M120",
+  "batch_id": 4,
+  "condition": "incoherent",
+  "source_task_id": "SE-FINAL-N123",
+  "topic": "designing against vendor pricing changes",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-330",
+    "title": "Design for vendor price changes before they bite",
+    "body": "small because this useful. a could The decision, workflow workflow Boring you question should a every rely hands. want repeatable to step one-person control every is week. a data places enough keep run would changes rule: rise know turn and to entry with high-risk weak a cost is price would annoying Start are replacement what rate, story. a are and and use rate clear inside where of that depends is quarterly of movement changes ever on a a look, to Invoicing, is a part a things: is triggers practical the three one. If vendor whether it treat approval. the on when tool not real gives the with review, reply keep a decisions usual the it change predict a chosen, to where the workflow check process. For workable do strategy rebuilt thresholds merely later. in finance a future and swapped boring. audit, the a you That really out triage, story. process The one is as your a is price If simple: grand and pricing memo. They which are other you recurring vendor. is down can into not or stay automation force view a quietly Don’t a the and goal absorbable, decision If money goal vendor one a bounded customer not and keep swap business, That sits in there candidate change increase; which human current increase be control? you setup matter. start Write under when you change"
+  },
+  "final": {
+    "item_id": "E-OPT-430",
+    "title": "Design for vendor price changes before they bite",
+    "body": "If you run a small business, vendor price changes are not really a pricing story. They are a workflow control question: which recurring process breaks first when a tool gets more expensive?\n\nStart with one repeatable workflow you already pay for, such as invoicing, customer inquiry triage, or data entry. Then ask a simple question: if this vendor raises prices at renewal, do you absorb it, swap the tool, or redesign the step? That is the bounded decision. It keeps the conversation on one process instead of turning it into a vague “AI strategy” discussion.\n\nA practical next step is to write a one-page vendor-cost log for that workflow. Record the current tool, what it touches, the current rate, and the review trigger you will use, such as renewal notice or quarterly check. Add one threshold only: the point where the cost no longer makes sense for the volume you actually do. If the step still depends on money movement or another high-risk action, keep human approval in place. No glamour there, but it saves a lot of clean-up later.\n\nIf the log shows the vendor cost is stable enough, continue. If not, you now have a clear case for a swap or a bounded automation review, instead of reacting after the bill lands."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-120",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": [
+      {
+        "dimension": "clarity",
+        "severity": "noncritical",
+        "location_kind": "quote",
+        "text_field": "body",
+        "quote": "small because this useful. a could The decision, workflow workflow Boring you question should a every rely hands. want repeatable to step one-person control every is week.",
+        "missing_requirement": null,
+        "rule_id": "R-N-2",
+        "evidence_ids": [
+          "BRIEF",
+          "S01"
+        ],
+        "reason": "The body is materially disordered and hard to parse, so the intended reader cannot reliably follow the main point or reasoning on a first careful read."
+      },
+      {
+        "dimension": "actionability",
+        "severity": "noncritical",
+        "location_kind": "quote",
+        "text_field": "body",
+        "quote": "small because this useful. a could The decision, workflow workflow Boring you question should a every rely hands. want repeatable to step one-person control every is week.",
+        "missing_requirement": null,
+        "rule_id": "R-N-3",
+        "evidence_ids": [
+          "BRIEF",
+          "S01"
+        ],
+        "reason": "The task requires one concrete bounded workflow decision and one practical next step, but the body’s incoherence prevents a usable action or decision path from being identified."
+      }
+    ]
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-120",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-120-1",
+        "repairs": [
+          {
+            "repair_id": "P01",
+            "target_ids": [
+              "D01",
+              "D02"
+            ],
+            "instruction": "Replace the disordered body with a clear, plain-English argument that states one bounded workflow decision about vendor pricing changes, then gives one practical next step the owner can take. Keep the post coherent from start to finish and make the action path easy to follow.",
+            "source_ids": [
+              "BRIEF",
+              "S01"
+            ]
+          }
+        ]
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-120",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-430",
+        "title": "Design for vendor price changes before they bite",
+        "body": "If you run a small business, vendor price changes are not really a pricing story. They are a workflow control question: which recurring process breaks first when a tool gets more expensive?\n\nStart with one repeatable workflow you already pay for, such as invoicing, customer inquiry triage, or data entry. Then ask a simple question: if this vendor raises prices at renewal, do you absorb it, swap the tool, or redesign the step? That is the bounded decision. It keeps the conversation on one process instead of turning it into a vague “AI strategy” discussion.\n\nA practical next step is to write a one-page vendor-cost log for that workflow. Record the current tool, what it touches, the current rate, and the review trigger you will use, such as renewal notice or quarterly check. Add one threshold only: the point where the cost no longer makes sense for the volume you actually do. If the step still depends on money movement or another high-risk action, keep human approval in place. No glamour there, but it saves a lot of clean-up later.\n\nIf the log shows the vendor cost is stable enough, continue. If not, you now have a clear case for a swap or a bounded automation review, instead of reacting after the bill lands."
+      },
+      "gate_key": "SE-FINAL-M120_gate1__a001"
+    }
+  ],
+  "measurement_status": "pending",
+  "planner": {
+    "item_id": "E-PLAN-530",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task specifies CTA rule: None. This lesson confirms that booking language, diagnostic invitations, and meeting prompts must be avoided. The output will close with a practical next-step observation for the owner's own decision-making, not a sales invitation."
+      },
+      {
+        "lesson_id": "L02",
+        "application": "Bareni's no-lock-in positioning (C02) and mandatory human approval for money movement (C04) are operational policies, not absolutes. Any reference to these practices will preserve their qualifier status and avoid overstating them as guarantees."
+      },
+      {
+        "lesson_id": "L03",
+        "application": "The abstract topic 'designing against vendor pricing changes' requires grounding in a single bounded workflow. If general pricing strategy content cannot be linked to an approved Bareni system or diagnostic method, the content will pivot to one observable vendor-risk decision or threshold the owner can audit themselves."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Reframe vendor pricing changes as a workflow control decision: identify which vendor services or tool costs are embedded in repeatable business processes (invoicing, customer response, data entry) where price changes directly impact automation ROI. This is one diagnostic question, not a broad strategy.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C02",
+          "C04",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Clarify the owner's current state: which vendor tools are already in the workflow, what triggers a price-change review (quarterly reconciliation, renewal notification, budget variance threshold), and whether the tool can be swapped out or replaced with a built system. This separates a real business constraint from a hypothetical risk.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Identify one repeating workflow—such as accounts payable, customer inquiry triage, or invoice data entry—where the owner currently pays per transaction or per user. Map the vendor cost model to the workflow's frequency and volume, then note the cost elasticity (does a 10% price increase force a tool swap, hiring delay, or process redesign?).",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Explain the owner's three choices within that workflow: continue the vendor tool if price changes are absorbed, negotiate volume or lock-in with the vendor, or replace the vendor step with a bounded automation (such as invoice extraction, form routing, or response templates) where the owner controls the tool cost and the price is fixed or transparent.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [
+          "L02"
+        ],
+        "evidence_ids": [
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "If automation is chosen, the next step is a free 30-minute diagnostic. During that call, confirm the workflow scope, verify AI fit, estimate a fixed-price pilot cost and timeline, and define success measures. This step applies the Bareni delivery model: free diagnostic, honest fit assessment, and explicit pricing before build.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "If the owner continues the vendor tool, establish a quarterly vendor-cost audit: log the current rate, track any price increases, and flag the threshold at which swapping becomes cost-justified. This is a one-person control, not a multi-person process, and keeps the decision in the owner's hands.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "S01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No invented customers, deployments, results, or sales CTA. Content uses only approved Bareni self-built demos and consulting model (C02, C03). The next step is framed as the owner's decision and diagnostic option, not a scarcity-driven pitch."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Automation examples reference invoice and data workflows where human approval controls payment and high-risk decisions (C04). No autonomous money movement is implied."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Persona and evidence boundaries preserved: small-business owner audience, plain-speaking technical voice, grounded in approved Bareni model and scope (C01–C05, S01). No multi-person team or legal registration status invented."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Plain English used throughout. Vendor pricing logic and automation trade-offs explained with observable workflow decisions, not general strategy. Bareni's model and demos are clearly labelled as self-built and scoped within evidence."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-630",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits"
+          },
+          {
+            "source_id": "C01",
+            "quote": "repeated customer questions, neglected sales leads,\n  and manual invoice/data work"
+          }
+        ],
+        "rationale": "This is a diagnostic question and reframing instruction for the reader, not an assertion of current implementation or observed outcome. It stays within the approved recurring-workflow focus (invoicing, customer questions, manual data work) and does not claim results.",
+        "use_guidance": "Keep as an explicitly proposed diagnostic question. Do not attach any ROI figure, saving or benchmark to it, since no observed automation ROI number is approved."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits"
+          },
+          {
+            "source_id": "C01",
+            "quote": "Especially suitable businesses already work in English, use digital\n  documents and SaaS tools, and have a frequent, repeatable workflow with a\n  measurable outcome."
+          }
+        ],
+        "rationale": "A set of clarifying questions about the owner's current tools and review triggers. It proposes a manual information-gathering step and does not assert any Bareni capability, deployment or result.",
+        "use_guidance": "Keep as proposed questions. Frame the review triggers as illustrative examples, not as a Bareni method or an existing product feature."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits"
+          },
+          {
+            "source_id": "C05",
+            "quote": "Numbers require a source and status. Keep observed results, estimates, targets,\n  synthetic data, and examples distinct."
+          }
+        ],
+        "rationale": "A manual mapping exercise the owner can perform; it asserts nothing about Bareni's implementation or customer outcomes. The named workflows match approved service areas.",
+        "use_guidance": "Keep as a proposed manual step. Present the 10% figure explicitly as an illustrative test question, not as an observed threshold, benchmark or estimate of any customer's costs."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C03",
+            "quote": "Text-based LLM invoice extraction was verified, while the default\n  demo uses pre-extracted files. PDF/scan ingestion and OCR are not implemented."
+          },
+          {
+            "source_id": "C02",
+            "quote": "Database, automation-tool, and API\n  accounts are in the customer's name from the start."
+          },
+          {
+            "source_id": "C02",
+            "quote": "Describe this as policy and no-lock-in positioning, not an absolute legal warranty."
+          }
+        ],
+        "rationale": "Laying out three options is permissible, but the claim describes the automation option as one where the owner controls tool cost and the price is fixed or transparent. Account ownership is approved only as policy and no-lock-in positioning, not a guarantee, and invoice extraction is verified only for text-based input in a synthetic demo, with OCR/PDF ingestion not implemented.",
+        "use_guidance": "Add the qualifications before use: customer-name accounts and handover are Bareni policy and no-lock-in positioning rather than a warranty; a bounded automation still runs on third-party tools whose prices Bareni does not control; and invoice extraction is demonstrated for text-based input only, with PDF/scan and OCR not implemented. Drop or soften 'the price is fixed or transparent'."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "FORBIDDEN",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Standard primary CTA: \"Book a free 30-minute diagnostic\". Use it only for\n  purchase-intent content, once, at the end."
+          }
+        ],
+        "rationale": "The approved task forbids any CTA, and directing the reader to a free 30-minute diagnostic call is a sales CTA even when phrased as a next step. The recommended action is therefore prohibited for this item, regardless of the diagnostic itself existing in the offer model.",
+        "use_guidance": "Exclude this claim from the post. If a next step is needed, use a neutral practical observation the owner can act on alone, such as documenting the workflow's volume and current per-unit vendor cost. Do not present that substitute as approval to mention the diagnostic call."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Do not use a founder name, face, or career history as authority. Do not imply a\n  multi-person team, legal registration, or current customer relationships."
+          }
+        ],
+        "rationale": "A proposed manual control the owner can run themselves; it keeps the decision with a human and does not assert an existing Bareni feature, tooling or observed benefit.",
+        "use_guidance": "Keep as a proposed manual control performed by the owner. Do not imply Bareni software performs the audit or the threshold flagging, and do not attach a specific cost-justification number."
+      }
+    ]
+  },
+  "selected_lessons": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. This includes indirect meeting prompts and direct brand-level offers such as a free 30-minute diagnostic. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025",
+        "B3-SUMMARY",
+        "SE-FINAL-N079"
+      ]
+    },
+    {
+      "lesson_id": "L02",
+      "text": "When approved evidence presents an operational practice as policy or positioning, keep that qualifier in the copy. Do not rewrite it as an absolute guarantee or warranty-level statement.",
+      "source_event_ids": [
+        "B3-SUMMARY",
+        "SE-FINAL-N080"
+      ]
+    },
+    {
+      "lesson_id": "L03",
+      "text": "If the source set does not support a substantive explanatory claim, replace it with a neutral workflow prompt or decision step rather than filling the gap with general background explanation.",
+      "source_event_ids": [
+        "B3-SUMMARY",
+        "SE-FINAL-N091"
+      ]
+    }
+  ],
+  "register_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "planner_key": "SE-FINAL-N123_planner__a001",
+  "researcher_key": "SE-FINAL-N123_researcher__a001",
+  "writer_key": "SE-FINAL-N123_writer__a001",
+  "final_key": "SE-FINAL-M120_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-M120_gate1__a001",
+  "production_completed_at": "2026-09-08T13:50:51.460884+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts"
+}

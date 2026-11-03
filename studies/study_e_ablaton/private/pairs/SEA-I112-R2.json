@@ -1,0 +1,83 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I112-R2",
+    "item_id": "SEA-I112",
+    "repeat": 2,
+    "arm_order": [
+      "critic_on",
+      "critic_off"
+    ],
+    "content_id": "POST-4e41bb3032e9397fa6378c0b"
+  },
+  "arms": {
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-4e41bb3032e9397fa6378c0b-1",
+        "title": "Reference data first, automation second",
+        "body": "If your business keeps updating the same reference data by hand, that is usually the first workflow to look at before you automate anything downstream. By reference data, I mean the stable inputs your tools depend on: customer names, supplier details, product codes, pricing tiers, approval thresholds, and the like. The practical question is simple: where does that data live today, who edits it, and how often does it drift between spreadsheet, email, and software?\n\nIf the answer is scattered or changed by hand on a regular basis, I would not start with a clever automation. I would first centralize one dataset into a single source of truth, then decide which tools should read from it. That is a bounded next step, and it is often the difference between useful automation and a tidy mess.\n\nKeep the scope small. Pick one reference set, write down the current owner, the update path, and the one downstream process that breaks when the data is stale. Define the baseline before you build anything. Otherwise you end up automating yesterday’s spreadsheet, which is a bold design choice but not a good one.\n\nHuman approval still matters for money movement and other high-risk decisions. For a small business owner, the real decision is not AI or no AI; it is whether the data is ready enough to support a controlled workflow change."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-4e41bb3032e9397fa6378c0b-1",
+            "title": "Reference data first, automation second",
+            "body": "If your business keeps updating the same reference data by hand, that is usually the first workflow to look at before you automate anything downstream. By reference data, I mean the stable inputs your tools depend on: customer names, supplier details, product codes, pricing tiers, approval thresholds, and the like. The practical question is simple: where does that data live today, who edits it, and how often does it drift between spreadsheet, email, and software?\n\nIf the answer is scattered or changed by hand on a regular basis, I would not start with a clever automation. I would first centralize one dataset into a single source of truth, then decide which tools should read from it. That is a bounded next step, and it is often the difference between useful automation and a tidy mess.\n\nKeep the scope small. Pick one reference set, write down the current owner, the update path, and the one downstream process that breaks when the data is stale. Define the baseline before you build anything. Otherwise you end up automating yesterday’s spreadsheet, which is a bold design choice but not a good one.\n\nHuman approval still matters for money movement and other high-risk decisions. For a small business owner, the real decision is not AI or no AI; it is whether the data is ready enough to support a controlled workflow change."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-4e41bb3032e9397fa6378c0b-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": [
+            {
+              "repair_id": "P01",
+              "target_ids": [
+                "D01",
+                "D02"
+              ],
+              "instruction": "Delete the sentence claiming Bareni has already deployed this approach for 60 paying customers and verified a 65% reduction in weekly administrative work. Replace it with a non-factual closing that keeps the post in hypothesis mode, such as a plain next-step statement or a reminder that the owner should assess one reference set before automating downstream work.",
+              "source_ids": [
+                "BRIEF",
+                "C01",
+                "C05",
+                "S01"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-4e41bb3032e9397fa6378c0b-1",
+        "title": "Reference data first, automation second",
+        "body": "If your business keeps updating the same reference data by hand, that is usually the first workflow to look at before you automate anything downstream. By reference data, I mean the stable inputs your tools depend on: customer names, supplier details, product codes, pricing tiers, approval thresholds, and the like. The practical question is simple: where does that data live today, who edits it, and how often does it drift between spreadsheet, email, and software?\n\nIf the answer is scattered or changed by hand on a regular basis, I would not start with a clever automation. I would first centralize one dataset into a single source of truth, then decide which tools should read from it. That is a bounded next step, and it is often the difference between useful automation and a tidy mess.\n\nKeep the scope small. Pick one reference set, write down the current owner, the update path, and the one downstream process that breaks when the data is stale. Define the baseline before you build anything. Otherwise you end up automating yesterday’s spreadsheet, which is a bold design choice but not a good one.\n\nFor money movement and other high-risk decisions, human approval still stays in the loop. The point is not to force AI into every process. It is to check whether the data is clean enough for a controlled workflow change, and then decide whether automation is actually the right next step."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-4e41bb3032e9397fa6378c0b-1",
+            "title": "Reference data first, automation second",
+            "body": "If your business keeps updating the same reference data by hand, that is usually the first workflow to look at before you automate anything downstream. By reference data, I mean the stable inputs your tools depend on: customer names, supplier details, product codes, pricing tiers, approval thresholds, and the like. The practical question is simple: where does that data live today, who edits it, and how often does it drift between spreadsheet, email, and software?\n\nIf the answer is scattered or changed by hand on a regular basis, I would not start with a clever automation. I would first centralize one dataset into a single source of truth, then decide which tools should read from it. That is a bounded next step, and it is often the difference between useful automation and a tidy mess.\n\nKeep the scope small. Pick one reference set, write down the current owner, the update path, and the one downstream process that breaks when the data is stale. Define the baseline before you build anything. Otherwise you end up automating yesterday’s spreadsheet, which is a bold design choice but not a good one.\n\nFor money movement and other high-risk decisions, human approval still stays in the loop. The point is not to force AI into every process. It is to check whether the data is clean enough for a controlled workflow change, and then decide whether automation is actually the right next step."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-4e41bb3032e9397fa6378c0b-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

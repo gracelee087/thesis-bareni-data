@@ -1,0 +1,96 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I037-R1",
+    "item_id": "SEA-I037",
+    "repeat": 1,
+    "arm_order": [
+      "critic_on",
+      "critic_off"
+    ],
+    "content_id": "POST-b6a905cb11cc4c8a8fe7e6d6"
+  },
+  "arms": {
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-b6a905cb11cc4c8a8fe7e6d6-1",
+        "title": "Rubber-stamped approval gets expensive when the rule is unclear",
+        "body": "If you approve the same thing over and over without a clear rule, the cost is not just the mistake you miss. It is the extra check you do not do, the delay you create, and the work that comes back to you later.\n\nFor a small business, this shows up in ordinary places: invoice sign-off, refund approval, customer credit changes, or data entry review. If every one of those decisions gets a quick yes, then the real process is not approval. It is guesswork with your name on it.\n\nThe practical move is to define one approval threshold. For example: “Anything over this amount, any duplicate, or any exception gets a human review; the rest follows the rule.” AI can help flag the rule, but it should not replace it. Human approval still stays in place for money movement and other high-risk decisions.\n\nA good self-audit question is simple: which recurring decision do I rubber-stamp most often, and what rule would catch most of the bad cases?"
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-b6a905cb11cc4c8a8fe7e6d6-1",
+            "title": "Rubber-stamped approval gets expensive when the rule is unclear",
+            "body": "If you approve the same thing over and over without a clear rule, the cost is not just the mistake you miss. It is the extra check you do not do, the delay you create, and the work that comes back to you later.\n\nFor a small business, this shows up in ordinary places: invoice sign-off, refund approval, customer credit changes, or data entry review. If every one of those decisions gets a quick yes, then the real process is not approval. It is guesswork with your name on it.\n\nThe practical move is to define one approval threshold. For example: “Anything over this amount, any duplicate, or any exception gets a human review; the rest follows the rule.” AI can help flag the rule, but it should not replace it. Human approval still stays in place for money movement and other high-risk decisions.\n\nA good self-audit question is simple: which recurring decision do I rubber-stamp most often, and what rule would catch most of the bad cases?"
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-b6a905cb11cc4c8a8fe7e6d6-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": [
+            {
+              "repair_id": "P01",
+              "target_ids": [
+                "D01",
+                "D02",
+                "D03"
+              ],
+              "instruction": "Replace the abstract paragraphs with one concrete owner-operator workflow decision about rubber-stamped approval, stating the specific approval step, the quiet cost it creates, and a plain-English reason it matters to a small business. Keep it bounded and practical rather than philosophical.",
+              "source_ids": [
+                "BRIEF",
+                "S01",
+                "C05"
+              ]
+            },
+            {
+              "repair_id": "P02",
+              "target_ids": [
+                "D03"
+              ],
+              "instruction": "Add one practical next step for the owner, such as checking whether a recurring approval is happening without a human review threshold, and state the decision rule in simple terms. Do not add unsupported outcomes or new capabilities.",
+              "source_ids": [
+                "BRIEF",
+                "S01",
+                "C02",
+                "C05"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-b6a905cb11cc4c8a8fe7e6d6-1",
+        "title": "Rubber-stamped approval gets expensive when the rule is missing",
+        "body": "If you approve the same thing on autopilot, the real cost is not the click. It is the time spent checking the same decision twice, or cleaning up when a bad approval slips through.\n\nFor a small business owner, the useful question is not “should AI approve this?” It is: what recurring approval do I keep rubber-stamping because the rule is fuzzy?\n\nA concrete example is invoice approval. If every invoice goes through the same path, an AI tool can help flag a simple rule: duplicate names, an amount above a set threshold, or a missing reference. But the rule has to come first. The tool enforces discipline; it does not replace it.\n\nThat boundary matters. Human approval stays mandatory for money movement and other high-risk decisions. In Bareni’s own accounts-payable demo, amount-based human-only approval and duplicate-invoice blocking work on synthetic data. That is control, not abdication.\n\nSo the next step is simple: pick one recurring approval you rubber-stamp most often, and write the rule that would catch most of the bad cases. If you cannot write the rule clearly, the workflow is not ready for automation yet."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-b6a905cb11cc4c8a8fe7e6d6-1",
+            "title": "Rubber-stamped approval gets expensive when the rule is missing",
+            "body": "If you approve the same thing on autopilot, the real cost is not the click. It is the time spent checking the same decision twice, or cleaning up when a bad approval slips through.\n\nFor a small business owner, the useful question is not “should AI approve this?” It is: what recurring approval do I keep rubber-stamping because the rule is fuzzy?\n\nA concrete example is invoice approval. If every invoice goes through the same path, an AI tool can help flag a simple rule: duplicate names, an amount above a set threshold, or a missing reference. But the rule has to come first. The tool enforces discipline; it does not replace it.\n\nThat boundary matters. Human approval stays mandatory for money movement and other high-risk decisions. In Bareni’s own accounts-payable demo, amount-based human-only approval and duplicate-invoice blocking work on synthetic data. That is control, not abdication.\n\nSo the next step is simple: pick one recurring approval you rubber-stamp most often, and write the rule that would catch most of the bad cases. If you cannot write the rule clearly, the workflow is not ready for automation yet."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-b6a905cb11cc4c8a8fe7e6d6-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

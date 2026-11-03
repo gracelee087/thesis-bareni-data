@@ -1,0 +1,187 @@
+{
+  "status": "success",
+  "usage": {
+    "input_tokens": 8136,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1785,
+    "reasoning_tokens": null
+  },
+  "cost_usd": 0.085305,
+  "output": {
+    "item_id": "E-RES-628",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits"
+          },
+          {
+            "source_id": "C01",
+            "quote": "have a frequent, repeatable workflow with a measurable outcome"
+          },
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step"
+          }
+        ],
+        "rationale": "This is an instruction to reframe the topic and pose a diagnostic identification step, not an assertion of current implementation or observed customer behaviour. Identifying the one recurring workflow is consistent with the approved diagnostic scope.",
+        "use_guidance": "Keep as a proposed reframing and diagnostic prompt for the reader. Use generic workflow examples (invoice data entry, inquiry routing) as illustrations only; do not attribute them to any customer, deployment or observed failure event."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C03",
+            "quote": "Arithmetic checks, duplicate-invoice blocking, amount-based human-only approval,"
+          },
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          }
+        ],
+        "rationale": "The claim advances a reasoning line and a question the owner should ask rather than reporting an observed outcome; the underlying control logic (prevention gates, duplicate blocking, human approval) is consistent with approved evidence.",
+        "use_guidance": "Keep as explanatory argument and diagnostic question. Present damage examples (wrong answers, duplicate payments, missed leads) as generic risk categories, not as incidents that occurred at Bareni or any customer; do not imply measured losses."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C03",
+            "quote": "Text-based LLM invoice extraction was verified, while the default\n  demo uses pre-extracted files. PDF/scan ingestion and OCR are not implemented."
+          },
+          {
+            "source_id": "C03",
+            "quote": "amount-based human-only approval,"
+          },
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          }
+        ],
+        "rationale": "This proposes a control the reader could apply and an illustrative threshold; it does not assert an existing Bareni capability. Note that the suggested spot-check against source PDFs must not imply Bareni has working PDF/scan ingestion or OCR, which approved evidence states are not implemented.",
+        "use_guidance": "Keep explicitly as a proposed pre-build control with the reader doing the checking manually. Mark the USD 5000 figure as an illustrative example threshold the owner sets, not a Bareni benchmark or default, and avoid wording that suggests automated PDF/OCR extraction exists."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "Finished code is handed to the customer. Database, automation-tool, and API\n  accounts are in the customer's name from the start."
+          },
+          {
+            "source_id": "C02",
+            "quote": "Describe this as policy and no-lock-in positioning, not an absolute legal warranty."
+          }
+        ],
+        "rationale": "The account-ownership and code-handover core is supported, and the claim already asks for framing as standard practice rather than warranty. However the inference that the customer therefore 'owns the decision to pause, modify, or roll back the automation itself' is an added conclusion not stated in evidence and needs limiting to what the ownership arrangement actually covers.",
+        "use_guidance": "Add the qualification that this is Bareni's stated policy and no-lock-in positioning, and confine the statement to account ownership and code handover; do not extend it into a guarantee of technical rollback capability or an absolute legal warranty."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI\n  fits"
+          },
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "S01",
+            "quote": "Explain one practical next step."
+          }
+        ],
+        "rationale": "A manual next step the owner performs before any build; it asserts no implementation, outcome or capability, and the human-approval framing matches approved constraints.",
+        "use_guidance": "Keep as the single practical next step, entirely manual and reader-performed. Do not attach expected time savings, error-rate reductions or any numeric benefit, and do not turn it into an invitation to contact Bareni."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Informational posts use no CTA or one soft closing sentence."
+          }
+        ],
+        "rationale": "This is an instruction for a neutral closing observation rather than a factual assertion about Bareni or the market; it complies with the no-CTA rule for this task.",
+        "use_guidance": "Keep as a neutral closing observation with no meeting prompt, diagnostic offer or conversation invitation. Keep the tone restrained and free of hype terms."
+      }
+    ]
+  },
+  "raw_text": "{\"item_id\":\"E-RES-628\",\"ledger\":[{\"claim_id\":\"Q01\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C02\",\"quote\":\"The diagnostic identifies the one recurring workflow, says honestly whether AI fits\"},{\"source_id\":\"C01\",\"quote\":\"have a frequent, repeatable workflow with a measurable outcome\"},{\"source_id\":\"S01\",\"quote\":\"explain one observable workflow decision, threshold, diagnostic question,\\n  control, or next step\"}],\"rationale\":\"This is an instruction to reframe the topic and pose a diagnostic identification step, not an assertion of current implementation or observed customer behaviour. Identifying the one recurring workflow is consistent with the approved diagnostic scope.\",\"use_guidance\":\"Keep as a proposed reframing and diagnostic prompt for the reader. Use generic workflow examples (invoice data entry, inquiry routing) as illustrations only; do not attribute them to any customer, deployment or observed failure event.\"},{\"claim_id\":\"Q02\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C03\",\"quote\":\"Arithmetic checks, duplicate-invoice blocking, amount-based human-only approval,\"},{\"source_id\":\"C04\",\"quote\":\"Human approval is mandatory for money movement and other high-risk decisions.\"}],\"rationale\":\"The claim advances a reasoning line and a question the owner should ask rather than reporting an observed outcome; the underlying control logic (prevention gates, duplicate blocking, human approval) is consistent with approved evidence.\",\"use_guidance\":\"Keep as explanatory argument and diagnostic question. Present damage examples (wrong answers, duplicate payments, missed leads) as generic risk categories, not as incidents that occurred at Bareni or any customer; do not imply measured losses.\"},{\"claim_id\":\"Q03\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C03\",\"quote\":\"Text-based LLM invoice extraction was verified, while the default\\n  demo uses pre-extracted files. PDF/scan ingestion and OCR are not implemented.\"},{\"source_id\":\"C03\",\"quote\":\"amount-based human-only approval,\"},{\"source_id\":\"C04\",\"quote\":\"Human approval is mandatory for money movement and other high-risk decisions.\"}],\"rationale\":\"This proposes a control the reader could apply and an illustrative threshold; it does not assert an existing Bareni capability. Note that the suggested spot-check against source PDFs must not imply Bareni has working PDF/scan ingestion or OCR, which approved evidence states are not implemented.\",\"use_guidance\":\"Keep explicitly as a proposed pre-build control with the reader doing the checking manually. Mark the USD 5000 figure as an illustrative example threshold the owner sets, not a Bareni benchmark or default, and avoid wording that suggests automated PDF/OCR extraction exists.\"},{\"claim_id\":\"Q04\",\"category\":\"QUALIFICATIONS\",\"evidence\":[{\"source_id\":\"C02\",\"quote\":\"Finished code is handed to the customer. Database, automation-tool, and API\\n  accounts are in the customer's name from the start.\"},{\"source_id\":\"C02\",\"quote\":\"Describe this as policy and no-lock-in positioning, not an absolute legal warranty.\"}],\"rationale\":\"The account-ownership and code-handover core is supported, and the claim already asks for framing as standard practice rather than warranty. However the inference that the customer therefore 'owns the decision to pause, modify, or roll back the automation itself' is an added conclusion not stated in evidence and needs limiting to what the ownership arrangement actually covers.\",\"use_guidance\":\"Add the qualification that this is Bareni's stated policy and no-lock-in positioning, and confine the statement to account ownership and code handover; do not extend it into a guarantee of technical rollback capability or an absolute legal warranty.\"},{\"claim_id\":\"Q05\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C02\",\"quote\":\"The diagnostic identifies the one recurring workflow, says honestly whether AI\\n  fits\"},{\"source_id\":\"C04\",\"quote\":\"Human approval is mandatory for money movement and other high-risk decisions.\"},{\"source_id\":\"S01\",\"quote\":\"Explain one practical next step.\"}],\"rationale\":\"A manual next step the owner performs before any build; it asserts no implementation, outcome or capability, and the human-approval framing matches approved constraints.\",\"use_guidance\":\"Keep as the single practical next step, entirely manual and reader-performed. Do not attach expected time savings, error-rate reductions or any numeric benefit, and do not turn it into an invitation to contact Bareni.\"},{\"claim_id\":\"Q06\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"S01\",\"quote\":\"**CTA rule:** None.\"},{\"source_id\":\"C05\",\"quote\":\"Informational posts use no CTA or one soft closing sentence.\"}],\"rationale\":\"This is an instruction for a neutral closing observation rather than a factual assertion about Bareni or the market; it complies with the no-CTA rule for this task.\",\"use_guidance\":\"Keep as a neutral closing observation with no meeting prompt, diagnostic offer or conversation invitation. Keep the tone restrained and free of hype terms.\"}]}",
+  "provider_response": {
+    "id": "msg_011Cer3SmesQ7qCjWTig7yUt",
+    "container": null,
+    "content": [
+      {
+        "citations": null,
+        "text": "{\"item_id\":\"E-RES-628\",\"ledger\":[{\"claim_id\":\"Q01\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C02\",\"quote\":\"The diagnostic identifies the one recurring workflow, says honestly whether AI fits\"},{\"source_id\":\"C01\",\"quote\":\"have a frequent, repeatable workflow with a measurable outcome\"},{\"source_id\":\"S01\",\"quote\":\"explain one observable workflow decision, threshold, diagnostic question,\\n  control, or next step\"}],\"rationale\":\"This is an instruction to reframe the topic and pose a diagnostic identification step, not an assertion of current implementation or observed customer behaviour. Identifying the one recurring workflow is consistent with the approved diagnostic scope.\",\"use_guidance\":\"Keep as a proposed reframing and diagnostic prompt for the reader. Use generic workflow examples (invoice data entry, inquiry routing) as illustrations only; do not attribute them to any customer, deployment or observed failure event.\"},{\"claim_id\":\"Q02\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C03\",\"quote\":\"Arithmetic checks, duplicate-invoice blocking, amount-based human-only approval,\"},{\"source_id\":\"C04\",\"quote\":\"Human approval is mandatory for money movement and other high-risk decisions.\"}],\"rationale\":\"The claim advances a reasoning line and a question the owner should ask rather than reporting an observed outcome; the underlying control logic (prevention gates, duplicate blocking, human approval) is consistent with approved evidence.\",\"use_guidance\":\"Keep as explanatory argument and diagnostic question. Present damage examples (wrong answers, duplicate payments, missed leads) as generic risk categories, not as incidents that occurred at Bareni or any customer; do not imply measured losses.\"},{\"claim_id\":\"Q03\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C03\",\"quote\":\"Text-based LLM invoice extraction was verified, while the default\\n  demo uses pre-extracted files. PDF/scan ingestion and OCR are not implemented.\"},{\"source_id\":\"C03\",\"quote\":\"amount-based human-only approval,\"},{\"source_id\":\"C04\",\"quote\":\"Human approval is mandatory for money movement and other high-risk decisions.\"}],\"rationale\":\"This proposes a control the reader could apply and an illustrative threshold; it does not assert an existing Bareni capability. Note that the suggested spot-check against source PDFs must not imply Bareni has working PDF/scan ingestion or OCR, which approved evidence states are not implemented.\",\"use_guidance\":\"Keep explicitly as a proposed pre-build control with the reader doing the checking manually. Mark the USD 5000 figure as an illustrative example threshold the owner sets, not a Bareni benchmark or default, and avoid wording that suggests automated PDF/OCR extraction exists.\"},{\"claim_id\":\"Q04\",\"category\":\"QUALIFICATIONS\",\"evidence\":[{\"source_id\":\"C02\",\"quote\":\"Finished code is handed to the customer. Database, automation-tool, and API\\n  accounts are in the customer's name from the start.\"},{\"source_id\":\"C02\",\"quote\":\"Describe this as policy and no-lock-in positioning, not an absolute legal warranty.\"}],\"rationale\":\"The account-ownership and code-handover core is supported, and the claim already asks for framing as standard practice rather than warranty. However the inference that the customer therefore 'owns the decision to pause, modify, or roll back the automation itself' is an added conclusion not stated in evidence and needs limiting to what the ownership arrangement actually covers.\",\"use_guidance\":\"Add the qualification that this is Bareni's stated policy and no-lock-in positioning, and confine the statement to account ownership and code handover; do not extend it into a guarantee of technical rollback capability or an absolute legal warranty.\"},{\"claim_id\":\"Q05\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"C02\",\"quote\":\"The diagnostic identifies the one recurring workflow, says honestly whether AI\\n  fits\"},{\"source_id\":\"C04\",\"quote\":\"Human approval is mandatory for money movement and other high-risk decisions.\"},{\"source_id\":\"S01\",\"quote\":\"Explain one practical next step.\"}],\"rationale\":\"A manual next step the owner performs before any build; it asserts no implementation, outcome or capability, and the human-approval framing matches approved constraints.\",\"use_guidance\":\"Keep as the single practical next step, entirely manual and reader-performed. Do not attach expected time savings, error-rate reductions or any numeric benefit, and do not turn it into an invitation to contact Bareni.\"},{\"claim_id\":\"Q06\",\"category\":\"PROPOSED\",\"evidence\":[{\"source_id\":\"S01\",\"quote\":\"**CTA rule:** None.\"},{\"source_id\":\"C05\",\"quote\":\"Informational posts use no CTA or one soft closing sentence.\"}],\"rationale\":\"This is an instruction for a neutral closing observation rather than a factual assertion about Bareni or the market; it complies with the no-CTA rule for this task.\",\"use_guidance\":\"Keep as a neutral closing observation with no meeting prompt, diagnostic offer or conversation invitation. Keep the tone restrained and free of hype terms.\"}]}",
+        "type": "text"
+      }
+    ],
+    "model": "claude-opus-5",
+    "role": "assistant",
+    "stop_details": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "global",
+      "input_tokens": 8136,
+      "output_tokens": 1785,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": null,
+      "service_tier": "standard"
+    }
+  },
+  "stop_reason": "end_turn",
+  "cost_details": {
+    "input": 0.04068,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.044625,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.085305
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": null,
+  "key": "SE-FINAL-N121_researcher__a001",
+  "role": "researcher",
+  "created_at": "2026-09-08T13:22:07.576981+00:00",
+  "ended_at": "2026-09-08T13:22:29.536194+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-N121",
+    "batch_id": 4,
+    "condition": "natural",
+    "cohort": "natural"
+  },
+  "task_id": "SE-FINAL-N121",
+  "batch_id": 4,
+  "cohort": "natural",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 21958,
+  "budget_charge_usd": 0.085305,
+  "unknown_cost_reservation_usd": 0
+}

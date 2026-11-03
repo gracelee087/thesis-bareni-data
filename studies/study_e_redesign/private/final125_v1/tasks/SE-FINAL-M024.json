@@ -1,0 +1,367 @@
+{
+  "task_id": "SE-FINAL-M024",
+  "batch_id": 1,
+  "condition": "unchanged",
+  "source_task_id": "SE-FINAL-N115",
+  "topic": "spotting trial expiry early",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-322",
+    "title": "Spot trial expiry before it becomes a surprise",
+    "body": "If you are running a small business, trial expiry is a simple workflow decision, not a grand AI project: when should a reminder fire, and who should see it first? The useful question is whether your trial dates already live in one place—calendar, email, spreadsheet, or CRM—or whether they are scattered across a few vendor accounts. If the dates are already central, a light monitoring rule may be enough. If they are scattered, you are probably looking at a small integration job, not a full overhaul.\n\nThe key control is human approval. Automation should surface the date; the owner still decides whether to renew, downgrade, or cancel. That matters because money movement and binding decisions should stay with a person. AI can help you notice the deadline, but it should not quietly choose the plan. That would be a very efficient way to buy the wrong thing.\n\nA practical next step is to list every SaaS trial you are using and mark which tool, if any, already tracks the renewal date. That inventory tells you whether you need a simple reminder, a shared task, or a slightly smarter workflow in your own environment. Bareni’s approach starts with that one recurring workflow and keeps the decision bounded."
+  },
+  "final": {
+    "item_id": "E-OPT-422",
+    "title": "Spot trial expiry before it becomes a surprise",
+    "body": "If you run a small business, spotting trial expiry early is less an AI strategy question than a simple workflow decision: when should an alert fire, and who should see it first? The useful diagnostic is whether your trial dates already live in one place—calendar, email, spreadsheet, or CRM—or whether they are scattered across vendor accounts. If they are central, a light reminder rule may be enough. If they are scattered, you are probably looking at a small integration job, not a full overhaul.\n\nKeep the human in charge. Automation should surface the date; the owner still decides whether to renew, downgrade, or cancel. That matters because money movement and other high-risk decisions stay with a person. AI can notice the deadline, but it should not quietly choose the plan. That would be an efficient way to buy the wrong thing.\n\nOne practical next step is to list every SaaS trial you are using and note which tool, if any, already tracks the renewal date. That inventory tells you whether you need a simple reminder, a shared task, or a slightly smarter workflow in your own environment. Bareni starts with that one recurring workflow and keeps the decision bounded. Timings are scopes, not promises; the point is to find the smallest useful control, not to build a maze with a calendar in it."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-024",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-024",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-024-1",
+        "repairs": []
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-024",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-422",
+        "title": "Spot trial expiry before it becomes a surprise",
+        "body": "If you run a small business, spotting trial expiry early is less an AI strategy question than a simple workflow decision: when should an alert fire, and who should see it first? The useful diagnostic is whether your trial dates already live in one place—calendar, email, spreadsheet, or CRM—or whether they are scattered across vendor accounts. If they are central, a light reminder rule may be enough. If they are scattered, you are probably looking at a small integration job, not a full overhaul.\n\nKeep the human in charge. Automation should surface the date; the owner still decides whether to renew, downgrade, or cancel. That matters because money movement and other high-risk decisions stay with a person. AI can notice the deadline, but it should not quietly choose the plan. That would be an efficient way to buy the wrong thing.\n\nOne practical next step is to list every SaaS trial you are using and note which tool, if any, already tracks the renewal date. That inventory tells you whether you need a simple reminder, a shared task, or a slightly smarter workflow in your own environment. Bareni starts with that one recurring workflow and keeps the decision bounded. Timings are scopes, not promises; the point is to find the smallest useful control, not to build a maze with a calendar in it."
+      },
+      "gate_key": "SE-FINAL-M024_gate1__a001"
+    }
+  ],
+  "measurement_status": "complete",
+  "planner": {
+    "item_id": "E-PLAN-522",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "Task explicitly authorises no CTA. The post must end with a practical observation or next-step note that invites internal action, not a diagnostic booking or meeting prompt."
+      },
+      {
+        "lesson_id": "L02",
+        "application": "Bareni policy on customer account ownership and no lock-in (C02) must be stated as policy positioning, not as absolute warranty. Preserve this distinction if trial-expiry workflows involve data handover or account control."
+      },
+      {
+        "lesson_id": "L03",
+        "application": "The abstract topic 'spotting trial expiry early' lacks substantive Bareni operational evidence. Replace general background with a concrete workflow decision: the owner's diagnostic question or threshold for deciding whether early-warning automation fits their business."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Establish the concrete workflow problem: SaaS trials expire without owner notice, leading to service loss or surprise billing. Define the bounded scope as a single, repeatable monitoring decision—when to flag an expiry alert and to whom—not a multi-system integration.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "S01",
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "State the diagnostic question the owner should answer: Is the trial-expiry data already in one digital tool (calendar, email, spreadsheet, or CRM), or scattered across multiple vendors? This determines whether simple monitoring suffices or API-based automation is necessary.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [
+          "L03"
+        ],
+        "evidence_ids": [
+          "C02",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Explain the human-approval boundary: the owner must see the alert and decide whether to renew, downgrade, or cancel. Automation flags the date; the owner keeps authority. Reference Bareni's core principle that human approval precedes any money movement or binding decision.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L02"
+        ],
+        "evidence_ids": [
+          "C04",
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Sketch two threshold scenarios: (a) trials 30 days out: email or Slack reminder to owner only; (b) trials 7 days out: escalate to a shared calendar or task list if the owner has not yet decided. Clarify that the owner sets the threshold based on business renewal lead time.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "S01",
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Note Bareni's hands-on delivery model: a pilot starts with a free diagnostic to confirm the workflow fits, then a fixed-price build in days to connect your tools and create the alert system. No strategy overhead or mandatory roadmap gates.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Close with a neutral next step: the owner should list the SaaS trials in use and note which tool (if any) already tracks renewal dates. This inventory informs the diagnostic and clarifies whether the work is simple monitoring or custom automation.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01",
+          "L03"
+        ],
+        "evidence_ids": [
+          "S01",
+          "C02"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No invented customer result, multi-person team, savings claim, or capability beyond the self-built demos and Bareni's stated consulting model. Treat the owner's SaaS renewal scenario as a shared workflow type, not a customer case study."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Emphasize that the owner retains authority over renewal decisions; automation surfaces alerts only. No autonomous payment or binding action. Respect Bareni's current scope: this is a straightforward monitoring workflow, not excluded high-sensitivity work."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Preserve the frozen persona (founder-to-founder, plain-speaking expert, trust over hype). Confirm that Bareni is a consulting practice being built by the thesis author, not yet a registered company, and deliver the bounded next step without implying production scale or customer deployments."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use concrete diagnostic questions and threshold examples rather than general background. Keep the Bareni delivery model (free diagnostic, fixed-price pilot) distinct from speculative outcomes. No CTA; end with an actionable inventory step."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-622",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Turn the abstract topic into a bounded Bareni workflow decision. Explain one practical next step."
+          },
+          {
+            "source_id": "C01",
+            "quote": "have a frequent, repeatable workflow with a measurable outcome"
+          }
+        ],
+        "rationale": "This frames a hypothetical workflow problem and defines a bounded scope for the post; it is a framing/scoping proposal, not an assertion of an observed customer situation or an existing Bareni capability. Approved evidence supports the general focus on a single repeatable workflow.",
+        "use_guidance": "Keep explicitly proposed: present trial expiry as an illustrative workflow scenario for the reader, not as a documented customer problem, measured loss or existing Bareni feature. Do not attach frequency figures or cost-of-failure numbers."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits"
+          },
+          {
+            "source_id": "C01",
+            "quote": "Especially suitable businesses already work in English, use digital documents and SaaS tools, and have a frequent, repeatable workflow with a measurable outcome."
+          }
+        ],
+        "rationale": "This is a diagnostic question posed to the reader rather than a factual assertion about implemented systems. It sits within the approved diagnostic framing of identifying one recurring workflow and fit.",
+        "use_guidance": "Keep as a diagnostic question. Do not imply Bareni has a built trial-tracking connector or API integration for these tools; phrase the API-automation branch as a possible route to assess, not an existing capability."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "SUPPORTED",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          },
+          {
+            "source_id": "C03",
+            "quote": "amount-based human-only approval, refusal of agent approval/payment attempts"
+          },
+          {
+            "source_id": "S01",
+            "quote": "final approval and business authority remain human"
+          }
+        ],
+        "rationale": "The human-approval boundary is stated directly in approved evidence, and the claim keeps authority with the owner as written; no missing limitation.",
+        "use_guidance": "Retain within scope. State it as Bareni's standing rule for money movement and high-risk decisions; do not extend it into a compliance or legal guarantee."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step"
+          },
+          {
+            "source_id": "C02",
+            "quote": "general document, email, CRM, and back-office\n  workflows using AI plus Zapier, Make, n8n, and small amounts of custom code"
+          }
+        ],
+        "rationale": "The 30-day and 7-day thresholds are illustrative design options offered to the reader, not built features or observed settings; the persona focus explicitly permits explaining a threshold.",
+        "use_guidance": "Keep explicitly proposed and label the day counts as example thresholds the owner would set, not defaults Bareni has implemented or tested. Do not name Slack as a supported integration; keep the channel generic or clearly hypothetical. Consider trimming to one threshold example to match the single-next-step focus."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "Normal sequence: free 30-minute diagnostic; free one-page pilot proposal;\n  paid working MVP in days; fixed-price pilot in weeks; then expansion and an\n  optional retainer. Do not insert a mandatory roadmap gate or separate \"formal\n  build\" stage. Timings are intended scopes, not guarantees."
+          },
+          {
+            "source_id": "C02",
+            "quote": "Bareni works\n  inside the customer's environment and delivers a working system."
+          }
+        ],
+        "rationale": "The delivery sequence and the absence of a mandatory roadmap gate are supported, but the claim states a fixed-price build in days without the required status qualifier, and it conflates the paid working MVP (days) with the fixed-price pilot (weeks).",
+        "use_guidance": "Add the qualification that timings are intended scopes, not guarantees, and separate the stages correctly: paid working MVP in days, fixed-price pilot in weeks. Also note that the AI Strategy & Roadmap exists as a separate optional purchase rather than implying strategy work is unavailable. Given the task CTA rule is none, do not turn the diagnostic mention into an invitation to book."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "**Task:** Turn the abstract topic into a bounded Bareni workflow decision. Explain one practical next step."
+          },
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          }
+        ],
+        "rationale": "This is a manual next step the reader can perform themselves; it asserts no implementation, outcome or customer use.",
+        "use_guidance": "Keep as the closing neutral next step. Do not phrase the diagnostic reference as an invitation to book, message or continue the conversation, since no CTA is authorised; keep it a factual note about what the inventory would inform."
+      }
+    ]
+  },
+  "selected_lessons": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. This includes indirect meeting prompts and direct brand-level offers such as a free 30-minute diagnostic. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025",
+        "B3-SUMMARY",
+        "SE-FINAL-N079"
+      ]
+    },
+    {
+      "lesson_id": "L02",
+      "text": "When approved evidence presents an operational practice as policy or positioning, keep that qualifier in the copy. Do not rewrite it as an absolute guarantee or warranty-level statement.",
+      "source_event_ids": [
+        "B3-SUMMARY",
+        "SE-FINAL-N080"
+      ]
+    },
+    {
+      "lesson_id": "L03",
+      "text": "If the source set does not support a substantive explanatory claim, replace it with a neutral workflow prompt or decision step rather than filling the gap with general background explanation.",
+      "source_event_ids": [
+        "B3-SUMMARY",
+        "SE-FINAL-N091"
+      ]
+    }
+  ],
+  "register_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "planner_key": "SE-FINAL-N115_planner__a001",
+  "researcher_key": "SE-FINAL-N115_researcher__a001",
+  "writer_key": "SE-FINAL-N115_writer__a001",
+  "final_key": "SE-FINAL-M024_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-M024_gate1__a001",
+  "production_completed_at": "2026-09-08T13:30:36.793594+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts",
+  "initial_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-024",
+    "scores": {
+      "persona_fit": 5,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Directly addresses small business owners in Bareni's calm, practical tone. Respects human-in-the-loop boundaries and adheres strictly to the no-CTA rule.",
+      "clarity": "Logical flow from framing trial tracking as a bounded decision to emphasizing human approval and offering a clear audit inventory step.",
+      "actionability": "Gives a concrete, feasible next step (inventorying SaaS trials and tracking locations) to decide between a simple reminder or an integration.",
+      "factual_grounding": "Contains no fabricated claims, customers, or metrics; accurately reflects Bareni's positioning on bounded workflows and human approval."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 20,
+    "pass": true,
+    "low_quality": false
+  },
+  "final_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-024",
+    "scores": {
+      "persona_fit": 5,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Directly speaks to small-business owner-operators in Bareni's calm, practical voice, adheres to all boundary rules, and respects the no-CTA requirement.",
+      "clarity": "Logical flow from framing the workflow decision to maintaining human control, concluding with an immediately clear, bounded next step.",
+      "actionability": "Gives a concrete and feasible diagnostic inventory exercise for small business SaaS trials while reinforcing human sign-off on renewals.",
+      "factual_grounding": "Makes no fabricated customer or outcome claims, correctly frames timings as scopes, and respects all stated operational boundaries."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 20,
+    "pass": true,
+    "low_quality": false
+  },
+  "evaluation_reused": false,
+  "evaluation_keys": [
+    "SE-FINAL-M024_eval_initial__a001",
+    "SE-FINAL-M024_eval_final__a001"
+  ],
+  "completed_at": "2026-09-08T13:30:47.025242+00:00"
+}

@@ -1,0 +1,302 @@
+{
+  "task_id": "SE-FINAL-M118",
+  "batch_id": 4,
+  "condition": "unchanged",
+  "source_task_id": "SE-FINAL-N060",
+  "topic": "the cost of credential rotation",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-329",
+    "title": "Credential rotation is a workflow cost, not just a security topic",
+    "body": "If you run a small business, the real cost of credential rotation usually shows up in a plain place: someone has to re-enter an API key, SaaS password, or admin token, and something downstream stops working until it is fixed. That is not a theory piece. It is the kind of interruption you notice when an integration goes quiet, a report stops refreshing, or a login fails on a Friday afternoon.\n\nFor this topic, I would treat AI as the wrong first question. Credential rotation is mostly a systems and access-management problem, not a decision-heavy judgment task. AI can sit around the edges in a workflow, for example by helping route alerts or document what changed, but the core issue is still how credentials are stored, updated, and checked. If you want to automate anything here, start with the process before you start with the model. Clever tools do not fix loose access control. They just make the mess faster.\n\nThe practical next step is simple: list the integrations and accounts you manually rotate today, then count how often someone has to re-enter or update a credential in a month. Pick one recent failure and write down how long it took to notice and repair. That gives you a real baseline for comparing manual work, a tooling change, or hiring someone to manage it. Until you know that cost, the discussion stays vague."
+  },
+  "final": {
+    "item_id": "E-OPT-429",
+    "title": "Credential rotation is a workflow cost, not just a security topic",
+    "body": "If you run a small business, the cost of credential rotation shows up in a very ordinary place: someone has to re-enter an API key, SaaS password, or admin token, and a workflow slows down until the access is fixed. In your own setup, that can look like an integration going quiet, a report stopping, or a login failing at the worst possible time. Those are illustrative failure modes, not a claim about Bareni customers or a measured result.\n\nFor this topic, AI is not the first question. Credential rotation is mainly a systems and access-management decision, not a judgment task. AI may help around the edges by routing alerts or documenting what changed, but that is an infrastructure choice, not a core AI use case. If you are thinking about secrets management or integration refresh, keep human approval in place for any access change or money-moving step.\n\nThe practical next step is simple: list the integrations and accounts you still rotate manually, then count how many times in a month someone has to re-enter or update a credential. Pick one recent failure and write down how long it took to notice and fix it. That gives you a real baseline for comparing manual work, a tooling change, or hiring. If you do not know that cost yet, the conversation stays fuzzy. No need to let the passwords have a dramatic career arc."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-118",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-118",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-118-1",
+        "repairs": []
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-118",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-429",
+        "title": "Credential rotation is a workflow cost, not just a security topic",
+        "body": "If you run a small business, the cost of credential rotation shows up in a very ordinary place: someone has to re-enter an API key, SaaS password, or admin token, and a workflow slows down until the access is fixed. In your own setup, that can look like an integration going quiet, a report stopping, or a login failing at the worst possible time. Those are illustrative failure modes, not a claim about Bareni customers or a measured result.\n\nFor this topic, AI is not the first question. Credential rotation is mainly a systems and access-management decision, not a judgment task. AI may help around the edges by routing alerts or documenting what changed, but that is an infrastructure choice, not a core AI use case. If you are thinking about secrets management or integration refresh, keep human approval in place for any access change or money-moving step.\n\nThe practical next step is simple: list the integrations and accounts you still rotate manually, then count how many times in a month someone has to re-enter or update a credential. Pick one recent failure and write down how long it took to notice and fix it. That gives you a real baseline for comparing manual work, a tooling change, or hiring. If you do not know that cost yet, the conversation stays fuzzy. No need to let the passwords have a dramatic career arc."
+      },
+      "gate_key": "SE-FINAL-M118_gate1__a001"
+    }
+  ],
+  "measurement_status": "pending",
+  "planner": {
+    "item_id": "E-PLAN-529",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task explicitly forbids a CTA (CTA rule: None). L01 directs us to close with a neutral practical observation about the next step rather than a booking prompt. The post must end by naming one diagnostic question or workflow decision the owner can evaluate independently."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Translate the abstract topic 'cost of credential rotation' into one concrete, repeatable workflow decision that a 1–10-person owner recognizes as manual work. Name the human or system step where credentials (API keys, SaaS account access, database passwords) expire or change, forcing re-entry across tools or team members.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C01",
+          "C02",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Explain why credential rotation matters operationally: mishandled or outdated credentials cause workflow breaks, deleted integrations, or service outages. Describe the observable cost: time spent troubleshooting, manual re-entry, or reconciling failed automations—not a hypothetical productivity metric.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C02",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "State honestly whether AI automation fits this workflow. Credential rotation is typically a systems-administration or security task, not a decision-heavy human judgment task. Clarify that AI-assisted workflows (e.g., automated alerts, centralized secret storage, Zapier/Make integration refresh) exist but are infrastructure decisions, not AI core competency.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Offer one bounded next step: the owner audits which integrations and credentials their team manually manages today. Count how many times per month someone re-enters or updates a credential. This diagnostic clarifies the actual cost and whether the effort justifies investing in a tool (e.g., a secrets manager) or a workflow redesign.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C01",
+          "C02",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Close with a neutral, actionable observation: name one credential that failed in the last month and how long it took to fix. Avoid a meeting CTA. Instead, state that once the owner knows their current cost, they can compare hiring, tooling, or workflow automation fairly.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C01",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Preserve all constraints: use only Bareni identity (consulting practice being built by thesis author, employee-free, no invented customers or results), avoid hype, do not imply money movement without human approval, and stay within the bounded workflow scope of credential management as the owner sees it today.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C01",
+          "C02",
+          "C04",
+          "C05",
+          "S01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No CTA, no customer example, no deployment claim, no productivity number unless owner-audited. Describe Bareni as employee-free practice built by thesis author."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Do not propose autonomous credential rotation or automatic money transfer. Mention that human approval remains mandatory for any system change."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Maintain frozen persona: plain-speaking technical expert, founder-to-founder, trust-first voice; stay within approved evidence boundaries and do not introduce multi-person team."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use plain English; keep the diagnostic question (owner audit) clearly separated from any finished capability; distinguish between existing secret-management tools and AI automation roles."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-629",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Turn the abstract topic into a bounded Bareni workflow decision."
+          },
+          {
+            "source_id": "C01",
+            "quote": "The intended reader is an owner-operator of a 1–10 person small business."
+          }
+        ],
+        "rationale": "This is a planning instruction for how to frame the owner-specified topic, not an assertion that Bareni has observed or implemented credential-rotation work. The approved task authorises turning the abstract topic into a bounded workflow decision for the 1–10 person owner-operator audience.",
+        "use_guidance": "Keep as an explicitly proposed framing instruction. Describe the manual credential step generically (API keys, SaaS access, database passwords) as an illustrative example the reader may recognise; do not attribute it to any customer, deployment or measured incident. Note that database, automation-tool and API accounts are in the customer's name from the start (C02), which is policy positioning, not a security warranty."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C05",
+            "quote": "Numbers require a source and status. Keep observed results, estimates, targets,\nsynthetic data, and examples distinct."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Never invent a benchmark, guarantee, ROI,\n  saving, revenue lift, productivity result"
+          }
+        ],
+        "rationale": "The instruction to describe operational consequences and observable cost categories is permissible, but as written it presents workflow breaks, deleted integrations and outages as generally occurring effects. No approved source documents credential-rotation failures or their costs, so the described costs must be marked as illustrative categories rather than observed or general facts.",
+        "use_guidance": "Add the qualification that these consequences and cost categories are illustrative examples of what the owner may find in their own tools, not observed Bareni results, customer incidents or estimates. State no time figures, frequencies or savings unless the owner supplies them from their own records."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI\n  fits, and—if it does—defines pilot scope, fixed price, and measures."
+          },
+          {
+            "source_id": "C02",
+            "quote": "general document, email, CRM, and back-office\n  workflows using AI plus Zapier, Make, n8n, and small amounts of custom code"
+          },
+          {
+            "source_id": "C04",
+            "quote": "requests\n  that require unsupported compliance or security guarantees"
+          }
+        ],
+        "rationale": "Saying honestly whether AI fits is supported practice, and Zapier/Make are named tools. However, the claim implies that AI-assisted options such as automated alerts, centralised secret storage and integration refresh 'exist' as available approaches without marking their status; Bareni has no approved evidence of building secret-storage or credential-refresh systems, and security-guarantee work is currently declined.",
+        "use_guidance": "Add the qualification that any secrets-management, alerting or integration-refresh option is described as a general market/infrastructure category and is not a Bareni capability or deployment. State plainly that Bareni currently declines requests requiring unsupported compliance or security guarantees, present that as current scope discipline rather than a permanent limit, and give no legal or security advice."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Practicality: explain one observable workflow decision, threshold, diagnostic question,\n  control, or next step."
+          },
+          {
+            "source_id": "C01",
+            "quote": "A representative scenario is a six-person D2C online shop whose owner compares an\n  automation investment with the cost of another hire."
+          }
+        ],
+        "rationale": "This is a bounded manual next step for the reader to perform themselves (list credentials, count monthly re-entries), matching the persona focus on a bounded next step. It asserts no implementation, tooling or observed benefit.",
+        "use_guidance": "Keep explicitly as a manual reader-side next step. Do not imply Bareni performs, automates or has run this audit, and do not attach any expected count, hours or saving. Any tool comparison must stay as the owner's own build-versus-buy consideration."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Informational posts use no CTA or one\n  soft closing sentence."
+          }
+        ],
+        "rationale": "A neutral closing next-step note without a meeting prompt is a permissible instruction and respects the no-CTA rule for this task; it asserts no fact about Bareni or customers.",
+        "use_guidance": "Keep as proposed closing guidance: one neutral observation, no diagnostic booking, no invitation to talk or continue the conversation, no scarcity or urgency. Frame the hiring-versus-tooling-versus-automation comparison as the owner's own decision, with no figures supplied by Bareni."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "SUPPORTED",
+        "evidence": [
+          {
+            "source_id": "C05",
+            "quote": "description of Bareni as a consulting\n  practice being built by the thesis author"
+          },
+          {
+            "source_id": "C05",
+            "quote": "Do not use a founder name, face, or career history as authority. Do not imply a\n  multi-person team, legal registration, or current customer relationships."
+          },
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          }
+        ],
+        "rationale": "Each constraint restated here matches approved evidence as written: the identity description, the prohibition on invented customers, results and a multi-person team, the no-hype rule, and mandatory human approval for money movement and high-risk decisions.",
+        "use_guidance": "Retain within scope as the governing constraint set. Also carry over the public-voice 'we' usage without implying employees, and keep the topic bounded to credential management as the owner sees it, with no security or legal guarantees."
+      }
+    ]
+  },
+  "selected_lessons": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025"
+      ]
+    }
+  ],
+  "register_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "planner_key": "SE-FINAL-N060_planner__a001",
+  "researcher_key": "SE-FINAL-N060_researcher__a001",
+  "writer_key": "SE-FINAL-N060_writer__a001",
+  "final_key": "SE-FINAL-M118_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-M118_gate1__a001",
+  "production_completed_at": "2026-09-08T13:50:27.197289+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts"
+}

@@ -1,0 +1,163 @@
+{
+  "status": "success",
+  "usage": {
+    "prompt_token_count": 5913,
+    "cached_content_token_count": 0,
+    "candidates_token_count": 284,
+    "thoughts_token_count": 1355,
+    "total_token_count": 7552
+  },
+  "cost_usd": 0.010581,
+  "output": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-067",
+    "scores": {
+      "persona_fit": 1,
+      "clarity": 4,
+      "actionability": 4,
+      "factual_grounding": 1
+    },
+    "reasons": {
+      "persona_fit": "Falsely presents Bareni as an established provider with 51 paying customers, contradicting the core identity boundary.",
+      "clarity": "The diagnostic framing and steps for tracing encoding errors are well organised and easy to understand.",
+      "actionability": "Gives concrete, realistic diagnostic steps and rules for scoping reversible workflow fixes versus manual handling.",
+      "factual_grounding": "Fabricates 51 paying customer deployments and a measured 59% reduction in administrative work."
+    },
+    "critical_violation": true,
+    "critical_violation_type": "factual",
+    "critical_evidence_quote": "deployed this approach for 51 paying customers and verified a 59% reduction",
+    "total_score": 10,
+    "pass": false,
+    "low_quality": true
+  },
+  "raw_text": "{\n  \"schema_version\": \"study-e-evaluator-rating-v1\",\n  \"item_id\": \"EVAL-BLIND-067\",\n  \"scores\": {\n    \"persona_fit\": 1,\n    \"clarity\": 4,\n    \"actionability\": 4,\n    \"factual_grounding\": 1\n  },\n  \"reasons\": {\n    \"persona_fit\": \"Falsely presents Bareni as an established provider with 51 paying customers, contradicting the core identity boundary.\",\n    \"clarity\": \"The diagnostic framing and steps for tracing encoding errors are well organised and easy to understand.\",\n    \"actionability\": \"Gives concrete, realistic diagnostic steps and rules for scoping reversible workflow fixes versus manual handling.\",\n    \"factual_grounding\": \"Fabricates 51 paying customer deployments and a measured 59% reduction in administrative work.\"\n  },\n  \"critical_violation\": true,\n  \"critical_violation_type\": \"factual\",\n  \"critical_evidence_quote\": \"deployed this approach for 51 paying customers and verified a 59% reduction\",\n  \"total_score\": 10,\n  \"pass\": false,\n  \"low_quality\": true\n}",
+  "provider_response": {
+    "sdk_http_response": {
+      "headers": {
+        "x-gemini-service-tier": "standard",
+        "content-type": "application/json; charset=UTF-8",
+        "vary": "Origin, X-Origin, Referer",
+        "content-encoding": "gzip",
+        "date": "Tue, 08 Sep 2026 13:39:39 GMT",
+        "server": "scaffolding on HTTPServer2",
+        "x-xss-protection": "0",
+        "x-frame-options": "SAMEORIGIN",
+        "x-content-type-options": "nosniff",
+        "server-timing": "gfet4t7; dur=7358",
+        "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+        "transfer-encoding": "chunked"
+      },
+      "body": null
+    },
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "media_resolution": null,
+              "code_execution_result": null,
+              "executable_code": null,
+              "file_data": null,
+              "function_call": null,
+              "function_response": null,
+              "inline_data": null,
+              "text": "{\n  \"schema_version\": \"study-e-evaluator-rating-v1\",\n  \"item_id\": \"EVAL-BLIND-067\",\n  \"scores\": {\n    \"persona_fit\": 1,\n    \"clarity\": 4,\n    \"actionability\": 4,\n    \"factual_grounding\": 1\n  },\n  \"reasons\": {\n    \"persona_fit\": \"Falsely presents Bareni as an established provider with 51 paying customers, contradicting the core identity boundary.\",\n    \"clarity\": \"The diagnostic framing and steps for tracing encoding errors are well organised and easy to understand.\",\n    \"actionability\": \"Gives concrete, realistic diagnostic steps and rules for scoping reversible workflow fixes versus manual handling.\",\n    \"factual_grounding\": \"Fabricates 51 paying customer deployments and a measured 59% reduction in administrative work.\"\n  },\n  \"critical_violation\": true,\n  \"critical_violation_type\": \"factual\",\n  \"critical_evidence_quote\": \"deployed this approach for 51 paying customers and verified a 59% reduction\",\n  \"total_score\": 10,\n  \"pass\": false,\n  \"low_quality\": true\n}",
+              "thought": null,
+              "thought_signature": "ErwtCrktARFNMg8exkAlSmLcSGeZgFpdaAgWrJ2yhG3A4YlkTBFxVdEEfVzioJDKFLzQ3ht0pqw3gO35kl3sn-Jr0xGwBGz6b9Ew3cxUygkrc-ozM3I84n1Bnw4Ltu1GaJCP6OYJYFiHRsD2r-Yg2qiAt6_yqzxLlVQyuvrEmBz0EcYayOxx_sIRMjgfiJUfe0KBLNNdVAUZjwD0fL-5WUqOnQYu42oIJ3uHLdYUTKpMxSrGh7So6cmPZoBjTV9ap3-VQ72U08nvakRrSFke_dcwp9T4-vLJW2eQ72pilCNzYHCFw5Lc_7qdPp053GuSAeNAZJkAB8eaSQZxZJQ1spt7p6ygO_JaoBsrv3sk_5ziRNCXcSs9vxQiH0t0bYeJB8KghgV6hOANGTqFtLNlLPhYGjIhcPQE2Q1Zpkr27iK1awIhDtsulRE9LRqTrVmBcRITM4S4oTobaW1tIGbvlU7x4V_dJzlRQqRwBeGJI-YrUCeV7_fuoMIpudS8z7E_aAqMkVqTwYrNy_HGRIr3G9vA-95sLg7fhbai4NY_Rr8fp_am1B0vJcd6tpfbZwtrV2_LP0WZhDf1KyaE2EETuIvxESBYcKDYYabk8xUBwBa1y-Mob93jFX5__HccVQsfWQrvdkc9fX0fjKWG1gU5spHLifod_NZpvVMKw_E2-KIYW0sCLNR_nPOHPwMNm20e3oFR4TW_zUSCug0Jo1n0am3nMH45AS5pkZrKZEZ8aA_m2CUEwMrxNg7BeBbwamAxB1MjyADEkZ-oTI2F95m-SJO9HTZ7vASeidHpqonu3Cgo7vpBPwegSJvHkrD7pTqnBFZR6VtsRg1z71kvNkJDjpvAtf_JH7pKsTpUEmwtnyoiDeHTE3qG8BxKYR6Sy5I7sAXz999otx62meNr_Y3rasqKgzmymViIdSjKmGI8CEtlZByUyU9w2twOPFByUskuEUzZ55NiHE6hyJpxYT3Pw1KYlzwmQA7PXbH700BLCAGTCrubHz7N_DpWO_FQgrEKOztFiwSPoJNHvGSUgIjEfnmYhErDa4-AiAdOoUe9IIcuFV0M6PviJxyWXvVE-FMWdgetsjyPDGqmaIT7wl5-arlbJEeXAxTc8Wi_LDnbrpE3bIlOZTqf9wLnknc-eMCOtpZ-eu8lDz5nrWq12F-BO9AlkWc6W21a4wRj7Vx8vMhx231rs-BCxo7qc7qZcRckNBBjuMZ7-36_3Gt538hYv0EuTEUZv6E8aYmwJCDs3_DNTEqEDXhI0C6XDzXB72BLE2nyQMoxn4lkyATREFomGSSZ6IDKiGmiHtWe0rR50fEclNTuN9uy4yf_bVzSe9Zjq2YnGmRVuH5lskUGcdVaaz4x6aNR0g3EjkKiNRrUFwMzd-YdPxOoT0RoUqU1OIx1Wk7qOYiJv3d75622Ykr_y59Sfn9ER86fLQ8NR5zWZqqI_0LezsgudQUZhXZfrtZ1w6WsPCVkk8mmD2mWLEGNuZknR2Y88TdjXUh4n3g3S71wN8FWoeJDdvDJ7mocGXJCPdfzQ-1RoOZWDlbDDG2omTtG3c77pfhwabhBuXmOM99ar_EIBxwEMux0tbVZXJAv1qFszxlKkMMsARMQTBH-uPQ9LTCFSWk6-V4DPoE4ulD0m-LxljC1VScACs2jAZmfIcvACH0opdqMLj_siHDWjrD8OBR4CuKuDdn_GPyj7laQBtJZFeklXRigW70cHo6Qqfh2wjBHbRQcIO1OzMjjLN6fgAN_U6CouiChez04P3MiDDcnNUZgzDxANLANB7xTgKnEnlOOXR_ghFOBfLQFFJCMUEAfSwpq4GpsO5L0vINhcpUu5jiz1Oe-iHB3sEBL83pT0zS803iJZ6YCCDhHacs6p_-Db0pIqXpG5tfdiO-YE5FpcmrXww3LMU1P0v_9NpfoBhOEvS-N2QQ2pstRl39v5maFomevy6-dgDfWOPW_R4HQEbnaqpHYI4DXYNplrFOnz7UZybZffrwHHGac8ygstIr5xvRrvEn5grnuXagcKvRA65nIPe8tPGQIbqG3GfZFJwSNp4VEVk9UMgCmlsiwk-HtwmZwAAKwXaaLoY7A01mpG51LNhIfpsuOmLpANaozQLEm3c1Lxo8SWep0a2vLPE7Iv9sKYs-QvjePZ1XsvTLG5zKij4YAemYpnDwqnZi6bLXIZuWDmpdKAFKxQC8dTGdpjSRathFMEDWw7FUK6lX099jPYG4avvKtvCpQZGWJPT9G2lyw_z9Rkc4w6QwO-HWToaF5Avio5TkakeYNPa04zX6ugnlfZpGDGSPMH2-3n317PjwjmbPE-NoEiftGjiqk9aDPoVWUeVztj6dN7v20UUp7bKWEN34wkWxw1hK0FUakKkaI6Lppytq7sJvDW4A9-yJAl13m-DQDILcOhnWF4aBPDNS1o4dpx0Bp72CVLJLdxNKO84PMTGfSbNWcpA2694lr-A2T8bjNINissncnzqVJiCSRfXT5aJ2_v5EwN7Lc_WvTsTwcv2qyewWqVZvfIpgG5X4lclhQrsUf_rb8NB_bFY_ayYH8RymxWvO2uLkCGb-Od3je4X1n6pMePhyODc5Aot5-Uxe8ZEh5rej2F_QLA9VOjxjpZrX2e21KNqx0LPO6pq2ngwl1HJuwq1sdus7n0kxh-bndPS4vxJHp7k9zuMcGsTHq7_t3Agj9ckC4iOI9S4io0PGS9A4K7udqKaqwWoaISYxpRx6ff5x0khP9PaFqIxyfhxd74BT7UpJUWSYEPT3-NqsTlMH_yB7D5pkf0c1UTcHLtKbJNqnmlR5Dkh-BsQDX7HEnGoRJ8kTJydlbMq1f3fTj4J42zXxFQrtGNgr4l8xQAs3I0Ey0853pjqCnepkaRSKyDMPqSHmPmrxPZ_8DjHpunL_1wydjaJlKSmwJ9-OIe40Z-8Uk28FwV86Kr5ot3CXIXUIrcveLhzYr8hYP_wMkw11Xy46axdi4HEBz2u7b_nr6GSY5zHlPeWO_q4hDqWs-80pwOODkqgUbb0weByyKqJeCWBMZWZKBBH3oXwD0K7F0_gGbky0PyJtYYi2QIF-PjCoDLklaaHjqd3CTfumB9_Sx8ggy4nm4xTpd5CtGAlWOcInbCLkbnuHJkFucBWdAMmd8xfBQirurAcOyqZSmgFsrjlsDhDWfyA-KDOxKAmBJfGOCE9gczaVvSI4cXW7SEsTylADbrsYCft2PduQw_pMwn2pLBwb8aZWNjwtQDYDSsgwOWrYkqGTO97SrQbn9ZV0VIWSWCtOX5dC4ZFo9Jh8JGlO1gGRpltQFUTENfKkTcqtE5w285CgVS0PqWWywhjngFo2aECkWhqSmxPtiTj7iGD5q058DlBKlF0nxdz-j_D4SpgbpZ3Zvqw-7tneOHG4bnAeSYfQjldZAxrKyvtU2YNKeh5Ju3Jqtv820bYCZb1bCInwx8AbaEw2O3l2iiM4Xb2nK3RRcNprcdGwbW2pAPaACh4MJzKPxCGFxj6qxid3rGMjLtOFAFC7qULonmM1L0Hia_IUyzndbrYSqnHphe5J-NAwUoPWR1zb4M66j3hdVmgZQ3IkF-WOdY2RRMy_uWB6he51XpQyoW3_BjBJDIK_auelHVIfxGxWlE3sor-GpsAfF0wZbDXDJ4UU8lK3BnBbPcUKZ6LJmVLWOMI4x9MSYDpaBy1tAgU0zZdXB6B6PiNB5YVMcla03euXTeAmtj4s_TcjjNrocmYGXtHC9xR0veEaSKygu3TBqYOKrCqlYNsXin8VRbv9F4f4wvoSHVQxtqCVBxdDFNLXQ-xxtXqa1OghKLAHOZLL7OiU6Sk43U6ONiY4dEuwBKz0tPFjIyTT0YH9tO1e8u755TZZHCUY9Jezdph3Ep6ZR5VMcjtPjHu8IkHDwMPaCO18MdZKdCexEw5aWtRCPZ7X5WnP1r590lVVm7lKHU0t0fXMNxJuvXGjobt90Npv8JF2z3BRocFcL_VUB2T3bK2Bh9d3TJUDCcphwL0nukoObuISdkqMPIwtiBKd0UMp9hkYUEMUhBvZ_7pk0Dc1meEemsrI-bhl0Y5lixCBrJA4JFENHYG701gcBrEjZgke8uBIHYnTkwc6VeqUChYf-yxpvoVeGNSV4yS_Ap6fRm6dYxeCw7GL0LZnrtk8C3qHu7UHUEGnGPXmWhnFTjqu8yuFpP0TrCx6z7-WOVylhJ4ahKdCKZrAbv9y6WEbHv454XSUxTSxaO1YN6JXlbK9HPom9-7UkuTuGC8l1inhKx0-puLoyqi8CBRKVNgGJN2-39cQ5yb982fINtt0pKIFwwFG0Xp7B1nGncmx2prFWKYE2HeBnB4QPNiDnTQfZLAq93z49ruOgaLW2buZkCvQqq6_v4fjyLJd299H2sYFWMBfHz6qXpApmEoTuPfjNugJpLdW2uyRRd2JQk6NiSrWbVuejfXDzc49xO4-PSIAMfK9fS48OyCyuYYDakOs9RhcJEEVaEeQ4VOZyHLUVIfR3FH7E1GmHqqjbNV0DuSGmG-IT7G33DdgECncaJ5lEnJ69TkZjGehCS51ahCAraLVMUf6gCO0Esu5Y-gMFM8q_1JJXEmBbg650sUNKIebBhWX9VCjpnT12ZQ08XHI-v4AjmgMnPpAJ4ztQhC_qrt2Q2koKnmG4pgpppKaoFvtKF1_ppiToW3BHoDBY5sBtR-GkpJaad2Kh6YbwSSBBUfm4jyTA-ZHoRw7FoURs646I1cJ82zNqhx3whQg7tgCbtLW4usx4TxCvBhRq2uiWENfcnzInx2jQx7sR3cwx119L3aFi94ly29-Me5Tv1OJ3BHBGuXHZkm0iPgsdsi12c5FHmm1rZaByCTtMaly5aql7Hz97Rndhk40O3uOXijMvV4ZahgYAiPI_-V8oYXLG-dk2n0aHlshX60h_RW3OutxWTRLYH7O9tvt19ChSb5epZZE7k_bUrgFMIM95CeFU_D_kUERRqMI6v6CCbw3_tkG79nsN6gbzZ4R4z49JuV78KpkQsVSh6I2y5fngbRfKcmRIiaw2wfo82XEM6WXmeVc1PpSDK_AyMIiB0xEQPDk4L96kJTQlG5hqJDOU0QuNdkHBzI-ab0QhUd2D6_esBbAOA8TPSvoo868sQa1ShCcadU363tTAI_ggF6J8576sSh1vT5J_zBMEy5C_TkI23ZG1foXDksutTZoNmQ33hqiFZ7nX9KdxmCRMMjjSFeGsdznONe5OkULcf049ewbx6hoZtl3fkUKyrzTekTerUZanWqkgQFXsg3cb0vZAPNgga6NHsmglHITyc0HxDmo9JnKjJ_ZAAq63hiQz4UInwbRivBtFquihGQ1qL5_YUcm-2E0nUBBL2_SumYUbhZ6aCKc_qPeTc3us1VJJjiIrXaGZitnTH7H8GmfSgDr9of4RGxA-DyyKVZEtZ1357dcbvDXRVA47B8i4YY8BT0632_LXheCzVDHUcYVMZ9NBo5WUQezvWtV3vsm_ffy2C5yXj6RCLUd6ErwaiB8mWLauAhvYkiuHeLSZyQl60IJTlua9B0OeregtyAFVXDI8PyrO7p4qk3P1Mk1T0C4J4S0n4zs25nuXo58NwRRM5UEMJJGhHu7DiZR7UyCt9qrNnk3m-gRfYcuQJ_fkxPk3xYgkJ3_FnJ_i5s6JRvZ_4a1NhtYMj3LQkBvEc7zJExxX-IlkPwZHPAgobp4-D01ZJxjceGXYVEC4mJs7ZS-9zujapmGd8FISeaEbDUOeS4xLuz9zhVhRweUcdiSJFbCh0UOFOysCsQzaP3EMmq26rKMZxvLGNNs-5Gl3e3HNSiJw2kw2tX80gpVonvnQsZt3nVJmOgxOR-WJfz35nnDpkM4I9aojosr2cBOCZIA3y3hHU4HRJB92WtT_rxAgIS1Hq8aIM0tBelWglqN4d9My98DqaodePwUOdPGJK-V4GYYC_xqxkk8Z18hCy2idwe5dky8ehijn-fyxXn7ymHTBHDsbPxtI2zlkd_MHuao-6yfqgCG9r-EurJBvCpj1ER-fzALvVEid3xQCVVDvRYu_z5CMi8utiqFTVsA-Hi2VEJ5OidnqnvxCXRmZfM4mQuT6mYm_V_MV2cfRbQl_BWoMSi6GNsQOVrcqV7dZ_E44WNSE3bTKCW8wcdVkSRnDcbOnLqzrE7hUmdqW5OZJ0S8SKpeJP75FAgiLk5_GWNCpLUuDTpjNDQqm1JtS9LYRWE153zURLx5cL5wTrh7ZfjIx_mvNNX73tz7-2dl3fcW2gKLbIrmhj5ck2ZIFhuOM5BgzdXntLjdJsWXgJQpIgdgNVzh8QGT0sxQ-XcyZTkUsFFtwOY_WNOBOAWLdTwbQhOEACZIZzkgEWy4nThaFuYAiwDAWjQfxoxrx-imBWD5eAH4PMb5n_iy2T6mjW1hHFkrWG2axEC9pFrkxMnUO_WbpCfZxgiS6KnB0R2W6eZ7CNwPgTeW0UwjDKB_6Hi57niQByJAOIdRy4UdxKvX75aZCMyUsiUodo-47ygV4utATFnb1zQ_AVDIHeli9carTfM5cei1x6DLvEF6lNnJUMeNRiddY88VRXwhxankS9DXvYfFsmctsXJ_SVesp5owG7Mz4O5a2ZFRBLCA7A8vxlsRwXERXEFLw19jDyK7NPmFnAIJuumwiZX2OC2VlXb8AlVMm7UnKU7H8YjXuP2f4BU69bGogJbn2P37HZ9AU9pD-qkAOiR4gJi61r0Kwkw0Tou-PaBZ14bp0wh0yaidWctxGs0GhvVpsrscDYdQLgN7JzWNNBz8AIYRWkINNm-zKS6JRqDajNpq--aPMNxEdNbLoAsDbH34UvhdOexeswmjkcGoGuByU5qu6SXipa-4EiAz3ZIh9qKkX-D7zSB6rKP1T0U5zD7FypjXOEx4O-DkBOJbgW6dfSfUoujbJWsWBPq4Bpnl76EJONQKpYAwKAx0ql2m6QTjkbhBHloKtD_68qwVyPYP5bFHKXJ1-DZBCdlWLzL4hCS8TTGlgyWFnXpkzlWnGBBQ6fYDW6nC3fnLB-GEoAs198qMKdT31CiwkG8U7j6IOXFzBTIaLJVDQGxu2RpQMnzv2NazSnF_5ZJaoxz5jlo-PoXPHH4VnS3DqKem19LkXCfS8dVwO3c5Eew11U8ubp8ZhG1IE3HXIRMmOf4mjabrNUMxipok_fqqXTLSf6v2dNLX4klTuWsNSJ8kD_ifFQx5R9EW-Yec2feNUOlseZgyGf8EL8DXuinwyMo7OnWBscV9x6ouh4VwiqfHJzO_LKvcdzNTWN6JD1Pezbgo5aoMeYS5sU-7A_zNJCWINPzNDrWICKMwY7LlI7GpcsA-Ias0LKkSPTOgh5KC2Z_bZyHuoSFhflvFr1-QhEF032wH3ifTnoqrGAR6j3Io3KclP1Tilrh9qUFC0AwAq_ZwX0eUtAF00Oj2txCyPQYVyBnmlNRVeGs9nhlRbooiQMpfMhiePv6E1yTf0fu_9m2KHcm2ZwMYasloXiOX3MCQ3AOq5E_OTUSQWFj7EE8s3k-kmF4LxJXVZ2OB-7YuZmqfJpcjUEfNskm415WsvWAGvJ561txEgU32RUawby__k8KdkL1b37OuwSmL4ywPVuKjNXDiR-OCtj9pC0Anhg3y0-I3UsQaLn0WjS1KnYVaPA7rpam2WMhc45pm6KGK6I6-lUYXe803Gxhvi7aOatE5NGCtlnqqmwn6Vc8uMH7s9j8oCNWWontu5CzPzTahtByZ-hKfD67IbVKWLQH_1B69nJkGQhIvgr7lKrVYy",
+              "video_metadata": null,
+              "tool_call": null,
+              "tool_response": null,
+              "part_metadata": null,
+              "audio_transcription": null
+            }
+          ],
+          "role": "model"
+        },
+        "citation_metadata": null,
+        "finish_message": null,
+        "token_count": null,
+        "finish_reason": "STOP",
+        "grounding_metadata": null,
+        "avg_logprobs": null,
+        "index": 0,
+        "logprobs_result": null,
+        "safety_ratings": null,
+        "url_context_metadata": null
+      }
+    ],
+    "create_time": null,
+    "model_version": "gemini-3.8-flash",
+    "prompt_feedback": null,
+    "response_id": "FBCgaoXcGp2U3boP9fDluQo",
+    "usage_metadata": {
+      "cache_tokens_details": null,
+      "cached_content_token_count": null,
+      "candidates_token_count": 284,
+      "candidates_tokens_details": null,
+      "prompt_token_count": 5913,
+      "prompt_tokens_details": [
+        {
+          "modality": "TEXT",
+          "token_count": 5913
+        }
+      ],
+      "thoughts_token_count": 1355,
+      "tool_use_prompt_token_count": null,
+      "tool_use_prompt_tokens_details": null,
+      "total_token_count": 7552,
+      "traffic_type": null
+    },
+    "model_status": null,
+    "automatic_function_calling_history": [],
+    "parsed": {
+      "schema_version": "study-e-evaluator-rating-v1",
+      "item_id": "EVAL-BLIND-067",
+      "scores": {
+        "persona_fit": 1,
+        "clarity": 4,
+        "actionability": 4,
+        "factual_grounding": 1
+      },
+      "reasons": {
+        "persona_fit": "Falsely presents Bareni as an established provider with 51 paying customers, contradicting the core identity boundary.",
+        "clarity": "The diagnostic framing and steps for tracing encoding errors are well organised and easy to understand.",
+        "actionability": "Gives concrete, realistic diagnostic steps and rules for scoping reversible workflow fixes versus manual handling.",
+        "factual_grounding": "Fabricates 51 paying customer deployments and a measured 59% reduction in administrative work."
+      },
+      "critical_violation": true,
+      "critical_violation_type": "factual",
+      "critical_evidence_quote": "deployed this approach for 51 paying customers and verified a 59% reduction",
+      "total_score": 10,
+      "pass": false,
+      "low_quality": true
+    }
+  },
+  "cost_details": {
+    "input": 0.00443475,
+    "cache_read_input_tokens": 0.0,
+    "output": 0.001065,
+    "reasoning_output_tokens": 0.00508125,
+    "total": 0.010581
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": null,
+  "key": "SE-FINAL-M067_eval_initial__a001",
+  "role": "evaluator",
+  "created_at": "2026-09-08T13:39:32.673288+00:00",
+  "ended_at": "2026-09-08T13:39:40.145143+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-M067",
+    "batch_id": 3,
+    "condition": "fabricated_evidence",
+    "cohort": "mixed",
+    "input_manifest_sha256": "bdd969d7efbcd68dd7c670e282a2464cf4cc46e782a49d0d3d8e8f8c5ef0b67e"
+  },
+  "task_id": "SE-FINAL-M067",
+  "batch_id": 3,
+  "cohort": "mixed",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 7467,
+  "budget_charge_usd": 0.010581,
+  "unknown_cost_reservation_usd": 0
+}

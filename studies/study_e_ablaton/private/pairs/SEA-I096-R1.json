@@ -1,0 +1,95 @@
+{
+  "study_id": "STUDY-E-ABLATON",
+  "pair": {
+    "pair_id": "SEA-I096-R1",
+    "item_id": "SEA-I096",
+    "repeat": 1,
+    "arm_order": [
+      "critic_off",
+      "critic_on"
+    ],
+    "content_id": "POST-9c77bc46be157fc90804d06c"
+  },
+  "arms": {
+    "critic_off": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-9c77bc46be157fc90804d06c-1",
+        "title": "When AI scope starts to wander, draw the box first",
+        "body": "If you are a small-business owner trying to decide whether AI belongs in a workflow, start with one question: what exactly is inside the box?\n\nEarly scope creep usually starts when a single repeatable task turns into a vague business problem. \"Handle customer emails\" is a workflow. \"Improve customer satisfaction\" is not. The first one can be scoped. The second one can swallow the whole project.\n\nSo I would draw the boundary in plain English before anyone talks about tools:\n- input: what comes in\n- rule: what decides the next step\n- output: what leaves the process\n- exception: what must always go to a human\n\nThen check whether the task is actually a fit for AI. Are the decisions mostly rule-based? Do you have enough past examples to show the pattern? Can a wrong answer be caught before it reaches the customer? If yes, the workflow may be worth a bounded pilot. If not, it probably needs restructuring or a person.\n\nThat is the practical test: not \"can AI touch this business?\" but \"can we define one recurring workflow tightly enough to keep the rest out?\"\n\nIf the answer is no, the box is still useful. It tells you where to stop."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-9c77bc46be157fc90804d06c-1",
+            "title": "When AI scope starts to wander, draw the box first",
+            "body": "If you are a small-business owner trying to decide whether AI belongs in a workflow, start with one question: what exactly is inside the box?\n\nEarly scope creep usually starts when a single repeatable task turns into a vague business problem. \"Handle customer emails\" is a workflow. \"Improve customer satisfaction\" is not. The first one can be scoped. The second one can swallow the whole project.\n\nSo I would draw the boundary in plain English before anyone talks about tools:\n- input: what comes in\n- rule: what decides the next step\n- output: what leaves the process\n- exception: what must always go to a human\n\nThen check whether the task is actually a fit for AI. Are the decisions mostly rule-based? Do you have enough past examples to show the pattern? Can a wrong answer be caught before it reaches the customer? If yes, the workflow may be worth a bounded pilot. If not, it probably needs restructuring or a person.\n\nThat is the practical test: not \"can AI touch this business?\" but \"can we define one recurring workflow tightly enough to keep the rest out?\"\n\nIf the answer is no, the box is still useful. It tells you where to stop."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-9c77bc46be157fc90804d06c-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": []
+        }
+      ]
+    },
+    "critic_on": {
+      "study_id": "STUDY-E-ABLATON",
+      "final": {
+        "item_id": "POST-9c77bc46be157fc90804d06c-1",
+        "title": "When AI scope starts to wander, draw the box first",
+        "body": "If you are a small-business owner, the first sign of unbounded scope is simple: the task stops being a task.\n\n“Reply to customer emails” can quietly turn into “improve customer satisfaction, reduce refunds, protect the brand, and maybe automate the whole support desk.” That is where the work gets fuzzy. The boundary has moved from one recurring workflow to a business problem with no clear end.\n\nA better test is this: can you write the workflow in one sentence, with a clear input, a clear decision rule, and a clear output? If you cannot, it is not ready for automation. It may need to be split up, redefined, or left to a person.\n\nThen check the risk gate. If the system would make a money move, customer commitment, or other high-risk decision, human approval stays in place.\n\nThe practical next step is to write the box before you talk about tools: what is in, what is out, and who approves the risky part. If the box is still hard to draw, that is useful information. It usually means the scope is not bounded yet."
+      },
+      "history": [
+        {
+          "cycle": 1,
+          "post": {
+            "item_id": "POST-9c77bc46be157fc90804d06c-1",
+            "title": "When AI scope starts to wander, draw the box first",
+            "body": "If you are a small-business owner, the first sign of unbounded scope is simple: the task stops being a task.\n\n“Reply to customer emails” can quietly turn into “improve customer satisfaction, reduce refunds, protect the brand, and maybe automate the whole support desk.” That is where the work gets fuzzy. The boundary has moved from one recurring workflow to a business problem with no clear end.\n\nA better test is this: can you write the workflow in one sentence, with a clear input, a clear decision rule, and a clear output? If you cannot, it is not ready for automation. It may need to be split up, redefined, or left to a person.\n\nThen check the risk gate. If the system would make a money move, customer commitment, or other high-risk decision, human approval stays in place.\n\nThe practical next step is to write the box before you talk about tools: what is in, what is out, and who approves the risky part. If the box is still hard to draw, that is useful information. It usually means the scope is not bounded yet."
+          },
+          "gate": {
+            "schema_version": "study-e-gate-v4",
+            "item_id": "POST-9c77bc46be157fc90804d06c-1",
+            "assessment_status": "assessed",
+            "input_problem_reason": null,
+            "defects": []
+          },
+          "critic_repairs": [
+            {
+              "repair_id": "P01",
+              "target_ids": [
+                "D01",
+                "D02"
+              ],
+              "instruction": "Rewrite the body so it speaks directly to an owner-operator making a bounded workflow decision, and replace the abstract repetition with one clear, practical explanation of what early unbounded scope looks like in a small business context.",
+              "source_ids": [
+                "BRIEF",
+                "S01",
+                "C01",
+                "C05"
+              ]
+            },
+            {
+              "repair_id": "P02",
+              "target_ids": [
+                "D03"
+              ],
+              "instruction": "Add one concrete decision rule or diagnostic question plus one next step the owner can take now; keep it framed as a workflow boundary, not a general discussion of uncertainty.",
+              "source_ids": [
+                "BRIEF",
+                "S01",
+                "C02"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49"
+}

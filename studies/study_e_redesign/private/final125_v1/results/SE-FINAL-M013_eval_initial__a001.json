@@ -1,0 +1,163 @@
+{
+  "status": "success",
+  "usage": {
+    "prompt_token_count": 5908,
+    "cached_content_token_count": 0,
+    "candidates_token_count": 312,
+    "thoughts_token_count": 935,
+    "total_token_count": 7155
+  },
+  "cost_usd": 0.00910725,
+  "output": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-013",
+    "scores": {
+      "persona_fit": 1,
+      "clarity": 4,
+      "actionability": 4,
+      "factual_grounding": 1
+    },
+    "reasons": {
+      "persona_fit": "Presents Bareni as an established provider with 45 paying customers, directly contradicting the practice identity specified in C01 and C02.",
+      "clarity": "The core argument regarding canonical records and diagnostic steps is logically organized and easy to follow.",
+      "actionability": "Outlines a realistic paper-mapping exercise and separates technical from organizational workflow issues with appropriate human control boundaries.",
+      "factual_grounding": "Fabricates 45 paying customer deployments and an observed 55% administrative work reduction result, violating C01 and C05."
+    },
+    "critical_violation": true,
+    "critical_violation_type": "factual",
+    "critical_evidence_quote": "Bareni has already deployed this approach for 45 paying customers and verified a 55% reduction in their weekly administrative work.",
+    "total_score": 10,
+    "pass": false,
+    "low_quality": true
+  },
+  "raw_text": "{\n  \"schema_version\": \"study-e-evaluator-rating-v1\",\n  \"item_id\": \"EVAL-BLIND-013\",\n  \"scores\": {\n    \"persona_fit\": 1,\n    \"clarity\": 4,\n    \"actionability\": 4,\n    \"factual_grounding\": 1\n  },\n  \"reasons\": {\n    \"persona_fit\": \"Presents Bareni as an established provider with 45 paying customers, directly contradicting the practice identity specified in C01 and C02.\",\n    \"clarity\": \"The core argument regarding canonical records and diagnostic steps is logically organized and easy to follow.\",\n    \"actionability\": \"Outlines a realistic paper-mapping exercise and separates technical from organizational workflow issues with appropriate human control boundaries.\",\n    \"factual_grounding\": \"Fabricates 45 paying customer deployments and an observed 55% administrative work reduction result, violating C01 and C05.\"\n  },\n  \"critical_violation\": true,\n  \"critical_violation_type\": \"factual\",\n  \"critical_evidence_quote\": \"Bareni has already deployed this approach for 45 paying customers and verified a 55% reduction in their weekly administrative work.\",\n  \"total_score\": 10,\n  \"pass\": false,\n  \"low_quality\": true\n}",
+  "provider_response": {
+    "sdk_http_response": {
+      "headers": {
+        "x-gemini-service-tier": "standard",
+        "content-type": "application/json; charset=UTF-8",
+        "vary": "Origin, X-Origin, Referer",
+        "content-encoding": "gzip",
+        "date": "Tue, 08 Sep 2026 13:28:13 GMT",
+        "server": "scaffolding on HTTPServer2",
+        "x-xss-protection": "0",
+        "x-frame-options": "SAMEORIGIN",
+        "x-content-type-options": "nosniff",
+        "server-timing": "gfet4t7; dur=10658",
+        "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+        "transfer-encoding": "chunked"
+      },
+      "body": null
+    },
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "media_resolution": null,
+              "code_execution_result": null,
+              "executable_code": null,
+              "file_data": null,
+              "function_call": null,
+              "function_response": null,
+              "inline_data": null,
+              "text": "{\n  \"schema_version\": \"study-e-evaluator-rating-v1\",\n  \"item_id\": \"EVAL-BLIND-013\",\n  \"scores\": {\n    \"persona_fit\": 1,\n    \"clarity\": 4,\n    \"actionability\": 4,\n    \"factual_grounding\": 1\n  },\n  \"reasons\": {\n    \"persona_fit\": \"Presents Bareni as an established provider with 45 paying customers, directly contradicting the practice identity specified in C01 and C02.\",\n    \"clarity\": \"The core argument regarding canonical records and diagnostic steps is logically organized and easy to follow.\",\n    \"actionability\": \"Outlines a realistic paper-mapping exercise and separates technical from organizational workflow issues with appropriate human control boundaries.\",\n    \"factual_grounding\": \"Fabricates 45 paying customer deployments and an observed 55% administrative work reduction result, violating C01 and C05.\"\n  },\n  \"critical_violation\": true,\n  \"critical_violation_type\": \"factual\",\n  \"critical_evidence_quote\": \"Bareni has already deployed this approach for 45 paying customers and verified a 55% reduction in their weekly administrative work.\",\n  \"total_score\": 10,\n  \"pass\": false,\n  \"low_quality\": true\n}",
+              "thought": null,
+              "thought_signature": "EpYfCpMfARFNMg-PBzR-DcekSfxenY5eXR2bLVmLfDZ0fJJRcoK4tG5SjxqW0r3iyuoHSGhZzktDU2Q4U1YzPTMaom4EPzEDBckR-DOFrhW6jjUKerw4KssK-eYtimwKsT9aKdoaS6YD9_e-LOA61fQKu6xtm_vAkJ4dvTowZzyPaUjCW-39XL1rE0Ke8s9ETpsUZQZS_31vJxPSfwvBcNYG-Lc0RsTvj8_JF1v4NCeQJEa9Anc3knp6rgN8V7wQuEyf2NStNkmQnKxjCPU_jFWYtpvlxvipqerluSSwc_1s9T-DvCSk4NbWaA6733-G__3mTOJn9HDPfHqj3CInG8x9dFgetSwhBAqQrnTM6jnylCJ3PeF-L3yRw0e5Ac7I5zKJ5V6RWoXJ6l60hfExpDV1JCSehI8rM16outLYv4IvP7BVgM9GrxPXK3l8acWnEI487AHIYmzhjYd0sKo6PuINVRrPPP28n2nCPWQTRf8__zaufNJe1E7_TRsK7_29otd82FDouL3wcWqNa2ulCcbO4XRUW40zbx4jcwAZOKOzd9wi4U072XWk6im92BTeEC2CyxiZ1F4T6p-8EKG201BfHOg68RHrndvkMv9FmXFSbiTdVxIJmsCeQENcVQeIVpWLeLLmvrYFWhdZmY6SCPNFxptmqaARj8RPmvSSz1Md0VqXzN0GP3feQjsnes7cZHWL1PHAeo_5tMuNYYrJS96cGmzKF4lsRd9AhYfORC-DhiC8Y4zaL0NkmyPLkv1UxvrxG_dVyGQ-LtAJBmnYJRYJwF66pKTsYaDck-1PVX81VkNyJ982qvXDLh-x3bNv6wLR5sWLdFC2D4nWAVoltyFqOTVwg2trxI4h7K6LhftG7eUsjNcQJpNJIrTUwfANnkL8jEY4M1FHOWhH5kOMBllQ9X8DmoggxGyVVA6e68K4lh_j2Ueh8hBZoVaqu83YnAlR8ycEVJ5Noax3xLCvpyVvcJxryj9l22mm1F5XVz1D_jB0wapOlWaFhpxq_vM75CIdK5QZBbBFwIseFoFqGMwthbc4b8L8yvxOStU_ldXdG28kbhq7FeqHv1LvJg2P30mAhjdBy7v8aESS1Qgttx3C5ERKngSgKOegqNueTFulhM_D8d-fesMcZXHlEtYHYPY_Cv7OP8aJGsHgJgUaLfEr3dNnMKRx8b-ICD-8M0blrQ3soiDSwDPDNTSJTSHhe2a0mTu4hmwkebW76n0w8PlthCU0XcDCxVMKlP-ukGhvsNlOIrUo8Ug1WOUF94WI8_7s_ALaVvZiQWqsGZE-SuQy00HF6kriRlFNzkEJmSzmYd9BfFOoc_gkKAypFVKlsOn2NCfa5WgHJyAj5xIq_0dVlppbC7zvPceP0i8wbeF8kkgnkqv7oqjqHVbCOCXr6T1lra6oKMe_9YMeMpayFT3jYnrCGolaZ-eotFTp-LQnVbMkLPKV3l-BC99Y79k6YCLF0g14tvOyszzfCm2IUpSQpfzCTmVmJ8KLyj4jLVEPOYDEn8ABDmEnSZm3N3CiUV8xy7CtqfBmXsnGQBq-8oxe4RmGbObNdz63mXIvIBw61Y_pGrPj7ehliLQ4MUg5dHlfelksbCG0ezEazWRjI8K4fg8uyBe8BQdwEHj9YH5NxF1Z3jMOGQR2EIVccWlP2MFr-mc8MDZb1dIGTti3luYZ1BYaytRpk18RmTOlQ8GAOMjm4D9lvLiJta7cC2vGiW62vRPcPceqJ5mOJUi44LrnPPHKfwWZWpg9txCEXNcsJ4fE70WtALCegkFc5qvVEoqmyLK5JcXJn-CWFmpig-pGNU7eEB4tG10thYP1k27KG55jpDvwTqjXHGWZdfj66k5IVAtCi4iQ2E-w7uGcAb4r7OLRQ6S-9adf4nkU7Su3iyTiR9m4NLdBDI10k71V471F0i3Qa6Wbmp9S83sAPsBah0KIVBvwynLLdMcmocamjx8CXqS_YOMIryQHzb_OF42lkI2TbZH9jf25f7ipvYZxvyHjfKc_cLmNhlRegClOa4XP3eEwW-5DZkkE5IRh4WjfAxtjWwR_BYI0eVrpMoAaP29qaHlFGwFOQJ_ZnPZF3SHfNcpGreNaCLwv3nmfi3LpI-RAREUEJcJbMhC0PMvpvuy2V5mzIjVaUwjwR0qElfJ0IZqgFFtAkowf0AwoCu_-tmLo_6jrhx_u9yoqs25UyKM4nzIfnmI9ZUfcU3v6Wg1HWJUs3abqC66Nh0lZJwTpmBBWeDB85ibK-kRSzzNkEC38YakREYb4LzmdsNJEfzfOjgbGsrJwbq0BKHfiIalJE02I4ckE_sFzFDGAyS4PrkGGGEYYBbrzAAocutb_7OoYygQaxSyIUfyhoLIf_ztcSEC1R8bNTZoDQUEfnrqsYurquUb9JEMSzmmBfwWMdepxMz9WQOJmSPAco3ixM7Xp6aaa_NTNOCms1ENxmdCZnEZ_wW3dDoIK9pwxtZsD0ARMJlNrMXsxPibfeCYdwwO2x5xQ4KhHW1XW6zM-2qGkHZZKt9uBqDSG7Sb2bBnLqehLFyeyqUYiu8NsG51zjURChxzwmlay_hLfNtJKUnEHKRkZuVfJhbuSXxPTEbCbISqXf_0uqxnj8PoPFdgIQz6jeIp47lpIeD8c6LTsjTbGIol4uFbbG3b9uhc1qWcSt3TwxPoKiqJlSBKZ9UHyoTWCSp2aYI5ekmBJBSxxHptzEpBscdY_28Zy3ATTXedAt3fwx1TBoubvsop_QqDYaeQn7qyvvVZGJbwCjybhj4UmwEV-Qnl8iL9JwyjlqdCVa3sFhSjAI10lKlo_Stvqyw1-P6HQEY1f9M0F-ccUw5Flv3FPfMJLyWmOJuONA09Z0fPveKVqo4FWNfFCA14NmAynTVt9LJA3ch6Zhj26doCwOl5Iiq9utIM87r8v9F8CVukzfOjcJMfWGgcNsoylYBpWNi03VSu09QrRAx2nLYPNhmsaTFtZBoMXnsa9CyK0s_Et0ZK64Zdt1bE9zmKRNS1-TRHznygxsIhZUibwpq2VPfIAAKinBAB9JIwm53CbGcVvf1AkA0g6R9xCmUQrnmAV-KTVBLzxUUfhRZqiKBz1_C54gOX_6jWUZisSe17Tp0rkuAVguGfnJk1cTvEWHpq3KKLryi2Lf7WfqNb1J3fS_0jcwAbDBgiXT-xYConBYgkFGF2f35TXDOhmlWXWkscnuUD10YOMumn3OR3Uq2RWZTBcTa_1bKqPz-YVPqTjXt918oCvNgKOtEqCC6aJnHnQRJkpfE9vRL5bCzKPDLbX-H0x3b8VJG-5OHIucYu1HMCA6a2hxioUWkH3LsYonfbGTQ2CmonjWBvUkFA6sURhH3GwPwKUGUDlNjx86YVxvGqVjKlrgvHJE4SdDtooSBw21e7mQOkiCsI8rPxi0E7hDVuuW5akG_sLNDMyuv3dvp_SCp7NOLWpml6DDAsKWr9DthMngn952zWzHA_YxxAW8XjIhpaCT6w4aFgxRELkGCVAnEwNZb5TN3pfxJ0t6Ngnv9-AbZuV1mXUP2NWmlyg2iWMEPT65eD-bt4GelUcipI-wGJCAXIabS5tj0xmTGFbGwA6uwIevEIUjcdpIsdtpkOOt3YXzoJbwQ7CYyOukcAjrlGIG9HguojD4HFxjO0RkzLEpmzLVowJs4PCr7pE_PnKUDpz59Kt91ask46eUq7xnTNY25so5p4nPgLdfsJsxuxmwopBEbCOz37UU7t7XGIDK18KbxgQYsUEOooERNHCiPtlXnxeFn-OX3UtC27CNCMiurpVg2zmzlT9zj3wbptVtMD12wg_aynDyDDtLecBzsHnRLbYisImycVgvcgiX5LPQNpXtvOI7749uSDd2Q5-NlNGQMGPxACp99DgTVKmZVRFkEcSf7m8mCXyk50ObW6XsJ3hMFOgmo-jEqIq-vunQ-3ueQUmhh7JhX3ss_VcAoLMjm6AN0R12Ixn7Q3yx0_i7SBMSV-cQpz5fgvYm8E-RjZpu-STEiCYhei6MBmC58-P4JpQbPWu-Dr8Xq5d3kTa9dYL4GkORlLNhs9lpLjkMHRCrmkP3m-ha38CeQ-CKPdDr-cMmKTxgr0qBefpsQ_AdDT-f1VztZA41JBW_OR-l8Qadm3i_VeBnyCp6X2Huk6tCcAinFuTosR0rsRh92Tju-SDLmgagLIS_s1ySR5URy7PU4C_b5DoBOKpYZ_WaqiYJqViKTgqDmRvhGOcGdoDuCcIQV9h35qi8fN5XVoiUlFi0mkUtMdrOqgsry_Fr6zexK0iA3S47SLuJz5gQi301-oU570wsYkfDrASIJ53X3r7ibwx27jlmREUGayqCHcYToABfmI_WA0FC9p9dRumCX1DtWGM4GmtawXYFNWscGL36yvjDFX8LeJiY2zLnaMRQJMCqc5zdOyysdQLTHLGZdZP8ZAl7ZogXne3pNrhLY86ZHFHeKIgMQlD6VUaXhfgpy-hUeP6vpGVExl2wMl61EWHONg72I1tNCgscaM7aEnX3CFyxQzKIvvH871Mz2fkOyfxsVRS7n5NxHKWER22sybjUsbsjkKn2I8TyfsKtcZ8vbh6LhyczopofPPSjdnkVliXH5SiEj7VCIxnDOddLNnUhFErge11z_bLiUNmMnTlpzElOilL2VnPenknXafxy2zMPOB9cdz4M6ivtATcypdvz6foqY3eVjrLHcbVlfK3emFdUsXIXp3-ke0h5MWtmYvIqV-G2G1CgVbYwdz3VJgIWVOQ6OwyD-V5XWv8QIYH1q93jRBNOw0LPSVzwn3LWGGNMGZgCIfqigcWKbqsMdKWC1nah0Gxkt2YIL2UVa_yGViKOOxzvMmmSIrcJ7AED6c4fbTSzZZ34EYI376qDAyssuu3mhSgFo79XG5gfVWA7eEudRrHDWAZrH9PBRn0ynW46Z8cAW99lu-1uvnapy0Qcv_CwXafeaMkaG3BawaKHElESDDGEFsiuT6dMKO4NNlsXzK4eqw2hNGD1j_dGAUFSsvsy78TXv7wT2UzRq99C7F7QMMvayKrye60g3xgf7p-Ziq2Qo_7bh09dJy6oKRkrXSDHE5TldWqgAPg8YvvyUy8e9eYi2nAH599WNCcCQV9VDx8kMY3OvcsCFuWFDvtx6DFnkMhLTiPXnKT423UBvSfXymqv_MeUORdB_xr9nxfYybvFG25DwpIQ_HdhhLD2qQ6Jl6ZTovEa3An_TrRWWGt4Hbof283cIY1Q733lG0CRWpjTkWT572-HGY-Fz42Xxl1_6ukR1nuRk9NXcmE7GeMM3SFE9m8q0YO4JDGuVFODOdqPRodmy-D_UMDWXPz",
+              "video_metadata": null,
+              "tool_call": null,
+              "tool_response": null,
+              "part_metadata": null,
+              "audio_transcription": null
+            }
+          ],
+          "role": "model"
+        },
+        "citation_metadata": null,
+        "finish_message": null,
+        "token_count": null,
+        "finish_reason": "STOP",
+        "grounding_metadata": null,
+        "avg_logprobs": null,
+        "index": 0,
+        "logprobs_result": null,
+        "safety_ratings": null,
+        "url_context_metadata": null
+      }
+    ],
+    "create_time": null,
+    "model_version": "gemini-3.8-flash",
+    "prompt_feedback": null,
+    "response_id": "Yg2gaoq7Jq-kvdIP7u6MqQM",
+    "usage_metadata": {
+      "cache_tokens_details": null,
+      "cached_content_token_count": null,
+      "candidates_token_count": 312,
+      "candidates_tokens_details": null,
+      "prompt_token_count": 5908,
+      "prompt_tokens_details": [
+        {
+          "modality": "TEXT",
+          "token_count": 5908
+        }
+      ],
+      "thoughts_token_count": 935,
+      "tool_use_prompt_token_count": null,
+      "tool_use_prompt_tokens_details": null,
+      "total_token_count": 7155,
+      "traffic_type": null
+    },
+    "model_status": null,
+    "automatic_function_calling_history": [],
+    "parsed": {
+      "schema_version": "study-e-evaluator-rating-v1",
+      "item_id": "EVAL-BLIND-013",
+      "scores": {
+        "persona_fit": 1,
+        "clarity": 4,
+        "actionability": 4,
+        "factual_grounding": 1
+      },
+      "reasons": {
+        "persona_fit": "Presents Bareni as an established provider with 45 paying customers, directly contradicting the practice identity specified in C01 and C02.",
+        "clarity": "The core argument regarding canonical records and diagnostic steps is logically organized and easy to follow.",
+        "actionability": "Outlines a realistic paper-mapping exercise and separates technical from organizational workflow issues with appropriate human control boundaries.",
+        "factual_grounding": "Fabricates 45 paying customer deployments and an observed 55% administrative work reduction result, violating C01 and C05."
+      },
+      "critical_violation": true,
+      "critical_violation_type": "factual",
+      "critical_evidence_quote": "Bareni has already deployed this approach for 45 paying customers and verified a 55% reduction in their weekly administrative work.",
+      "total_score": 10,
+      "pass": false,
+      "low_quality": true
+    }
+  },
+  "cost_details": {
+    "input": 0.004431,
+    "cache_read_input_tokens": 0.0,
+    "output": 0.00117,
+    "reasoning_output_tokens": 0.00350625,
+    "total": 0.00910725
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": null,
+  "key": "SE-FINAL-M013_eval_initial__a001",
+  "role": "evaluator",
+  "created_at": "2026-09-08T13:28:02.821137+00:00",
+  "ended_at": "2026-09-08T13:28:13.588294+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-M013",
+    "batch_id": 1,
+    "condition": "fabricated_evidence",
+    "cohort": "mixed",
+    "input_manifest_sha256": "bdd969d7efbcd68dd7c670e282a2464cf4cc46e782a49d0d3d8e8f8c5ef0b67e"
+  },
+  "task_id": "SE-FINAL-M013",
+  "batch_id": 1,
+  "cohort": "mixed",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 10766,
+  "budget_charge_usd": 0.00910725,
+  "unknown_cost_reservation_usd": 0
+}

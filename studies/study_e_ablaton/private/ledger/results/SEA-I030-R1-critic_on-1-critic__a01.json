@@ -1,0 +1,230 @@
+{
+  "created_at": "2026-09-08T19:09:38.443483+00:00",
+  "role": "critic",
+  "metadata": {
+    "study_id": "STUDY-E-ABLATON",
+    "pair_id": "SEA-I030-R1",
+    "source_id": "SEA-I030",
+    "arm": "critic_on",
+    "cycle": 1
+  },
+  "freeze_sha256": "c8c30c500c0fc9317c9cc7123fc20c736d10a272a7b0a3cb2086db99dc62df49",
+  "status": "success",
+  "output": {
+    "item_id": "E-CRIT-POST-8e771be046fc66563771b167-1",
+    "repairs": [
+      {
+        "repair_id": "P01",
+        "target_ids": [
+          "D01"
+        ],
+        "instruction": "Rewrite the body into clear, standard English with a single, coherent argument. Keep the topic as designing against untested assumptions, but remove the disordered fragments and make each paragraph logically follow the next.",
+        "source_ids": [
+          "BRIEF",
+          "S01"
+        ]
+      },
+      {
+        "repair_id": "P02",
+        "target_ids": [
+          "D02"
+        ],
+        "instruction": "Add one explicit, practical next step for the owner to use this week, framed as a bounded workflow decision. For example: list the assumptions in the process, mark which ones are untested, and choose one to test before automating or hiring.",
+        "source_ids": [
+          "BRIEF",
+          "S01",
+          "C02"
+        ]
+      }
+    ]
+  },
+  "cost_usd": 0.00424125,
+  "usage": {
+    "input_tokens": 4563,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 182,
+    "reasoning_tokens": 0
+  },
+  "provider_response": {
+    "id": "resp_01ed374c8a362d43016aa05d71f5e887d29fd7f70b28adeae4",
+    "created_at": 1788894577.0,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": {},
+    "model": "gpt-5.4-mini-2026-03-17",
+    "object": "response",
+    "output": [
+      {
+        "id": "msg_01ed374c8a362d43016aa05d7259d887d2a6b09d5f48a2e22b",
+        "content": [
+          {
+            "annotations": [],
+            "text": "{\"item_id\":\"E-CRIT-POST-8e771be046fc66563771b167-1\",\"repairs\":[{\"repair_id\":\"P01\",\"target_ids\":[\"D01\"],\"instruction\":\"Rewrite the body into clear, standard English with a single, coherent argument. Keep the topic as designing against untested assumptions, but remove the disordered fragments and make each paragraph logically follow the next.\",\"source_ids\":[\"BRIEF\",\"S01\"]},{\"repair_id\":\"P02\",\"target_ids\":[\"D02\"],\"instruction\":\"Add one explicit, practical next step for the owner to use this week, framed as a bounded workflow decision. For example: list the assumptions in the process, mark which ones are untested, and choose one to test before automating or hiring.\",\"source_ids\":[\"BRIEF\",\"S01\",\"C02\"]}]}",
+            "type": "output_text",
+            "logprobs": []
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message",
+        "phase": "final_answer"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 1.0,
+    "tool_choice": "auto",
+    "tools": [],
+    "top_p": 0.98,
+    "background": false,
+    "completed_at": 1788894579.0,
+    "conversation": null,
+    "max_output_tokens": 2048,
+    "max_tool_calls": null,
+    "moderation": null,
+    "previous_response_id": null,
+    "prompt": null,
+    "prompt_cache_key": null,
+    "prompt_cache_options": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "generate_summary": null,
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "status": "completed",
+    "text": {
+      "format": {
+        "name": "study_e_role",
+        "schema_": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "item_id": {
+              "type": "string",
+              "enum": [
+                "E-CRIT-POST-8e771be046fc66563771b167-1"
+              ]
+            },
+            "repairs": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "repair_id": {
+                    "type": "string",
+                    "enum": [
+                      "P01",
+                      "P02",
+                      "P03",
+                      "P04"
+                    ]
+                  },
+                  "target_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "enum": [
+                        "D01",
+                        "D02"
+                      ]
+                    }
+                  },
+                  "instruction": {
+                    "type": "string"
+                  },
+                  "source_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "enum": [
+                        "C01",
+                        "C02",
+                        "C03",
+                        "C04",
+                        "C05",
+                        "S01",
+                        "BRIEF"
+                      ]
+                    }
+                  }
+                },
+                "required": [
+                  "repair_id",
+                  "target_ids",
+                  "instruction",
+                  "source_ids"
+                ]
+              }
+            }
+          },
+          "required": [
+            "item_id",
+            "repairs"
+          ]
+        },
+        "type": "json_schema",
+        "description": null,
+        "strict": true
+      },
+      "verbosity": "medium"
+    },
+    "top_logprobs": 0,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 4563,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 182,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 4745
+    },
+    "user": null,
+    "billing": {
+      "payer": "developer"
+    },
+    "frequency_penalty": 0.0,
+    "presence_penalty": 0.0,
+    "store": false,
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    }
+  },
+  "latency_ms": 1484,
+  "finished_at": "2026-09-08T19:09:39.940267+00:00",
+  "cost_details": {
+    "input": 0.00342225,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.000819,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.00424125
+  },
+  "study_id": "STUDY-E-ABLATON",
+  "operational_amendment": "retry_extension_user_authorized.json"
+}

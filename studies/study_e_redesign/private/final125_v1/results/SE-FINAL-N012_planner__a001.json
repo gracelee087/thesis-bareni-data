@@ -1,0 +1,172 @@
+{
+  "status": "success",
+  "usage": {
+    "input_tokens": 4289,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 727,
+    "reasoning_tokens": null
+  },
+  "cost_usd": 0.007924,
+  "output": {
+    "item_id": "E-PLAN-512",
+    "selected_lessons": [],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Identify the subprocessor constraint in the concrete workflow: when your team or an automation tool touches customer data, you need to know which third parties see that data and on what terms. Frame this as a compliance and control question, not a technical obstacle.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C02",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Map one recurring workflow where subprocessor disclosure matters most: for example, invoice processing, customer-inquiry handling, or document storage. Ask: which step today involves a cloud tool or manual handoff, and who has access to the data at that point?",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "List the current data handlers in that workflow (your own team, existing SaaS tools, vendors, consultants). Note which ones have data-processing agreements and which do not. This audit is the diagnostic step.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Evaluate whether automation can reduce the number of human or third-party access points. For example, if invoices today go to a bookkeeper and a payment approver, can a controlled system extract data, flag anomalies for approval only, and log all access? Frame this as a control and transparency win, not cost savings.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C03"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Define the subprocessor list for any proposed system: which tools (e.g., Zapier, Make, n8n, LLM) will handle data, what they do, and what approvals you need from customers. Build this constraint into the pilot scope and fixed-price proposal, not as a late discovery.",
+        "requirement_ids": [
+          "R01",
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "C04",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Next step: book a free 30-minute diagnostic to map your workflow, confirm which subprocessor decisions matter most, and agree on pilot scope and subprocessor transparency before any build starts.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02",
+          "S01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No customer names, deployment results, or savings claims; no CTA beyond soft closing diagnostic offer."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Subprocessor agreements are approval gates; human sign-off precedes any data transfer or integration."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Frozen persona preserved: plain-speaking technical expert, one bounded workflow decision, owner authority intact."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "All examples (invoice, inquiry, bookkeeper) are illustrative scenarios; no invented outcomes or multi-person team."
+      }
+    ]
+  },
+  "raw_text": "{\"item_id\":\"E-PLAN-512\",\"selected_lessons\":[],\"steps\":[{\"step_id\":\"P01\",\"instruction\":\"Identify the subprocessor constraint in the concrete workflow: when your team or an automation tool touches customer data, you need to know which third parties see that data and on what terms. Frame this as a compliance and control question, not a technical obstacle.\",\"requirement_ids\":[\"R01\"],\"lesson_ids\":[],\"evidence_ids\":[\"C01\",\"C02\",\"C04\"]},{\"step_id\":\"P02\",\"instruction\":\"Map one recurring workflow where subprocessor disclosure matters most: for example, invoice processing, customer-inquiry handling, or document storage. Ask: which step today involves a cloud tool or manual handoff, and who has access to the data at that point?\",\"requirement_ids\":[\"R01\"],\"lesson_ids\":[],\"evidence_ids\":[\"C02\",\"S01\"]},{\"step_id\":\"P03\",\"instruction\":\"List the current data handlers in that workflow (your own team, existing SaaS tools, vendors, consultants). Note which ones have data-processing agreements and which do not. This audit is the diagnostic step.\",\"requirement_ids\":[\"R01\"],\"lesson_ids\":[],\"evidence_ids\":[\"C02\",\"C04\",\"S01\"]},{\"step_id\":\"P04\",\"instruction\":\"Evaluate whether automation can reduce the number of human or third-party access points. For example, if invoices today go to a bookkeeper and a payment approver, can a controlled system extract data, flag anomalies for approval only, and log all access? Frame this as a control and transparency win, not cost savings.\",\"requirement_ids\":[\"R01\"],\"lesson_ids\":[],\"evidence_ids\":[\"C02\",\"C03\"]},{\"step_id\":\"P05\",\"instruction\":\"Define the subprocessor list for any proposed system: which tools (e.g., Zapier, Make, n8n, LLM) will handle data, what they do, and what approvals you need from customers. Build this constraint into the pilot scope and fixed-price proposal, not as a late discovery.\",\"requirement_ids\":[\"R01\",\"R02\"],\"lesson_ids\":[],\"evidence_ids\":[\"C02\",\"C04\",\"S01\"]},{\"step_id\":\"P06\",\"instruction\":\"Next step: book a free 30-minute diagnostic to map your workflow, confirm which subprocessor decisions matter most, and agree on pilot scope and subprocessor transparency before any build starts.\",\"requirement_ids\":[\"R02\"],\"lesson_ids\":[],\"evidence_ids\":[\"C02\",\"S01\"]}],\"constraints_to_preserve\":[{\"constraint_id\":\"K01\",\"handling\":\"No customer names, deployment results, or savings claims; no CTA beyond soft closing diagnostic offer.\"},{\"constraint_id\":\"K02\",\"handling\":\"Subprocessor agreements are approval gates; human sign-off precedes any data transfer or integration.\"},{\"constraint_id\":\"K03\",\"handling\":\"Frozen persona preserved: plain-speaking technical expert, one bounded workflow decision, owner authority intact.\"},{\"constraint_id\":\"K04\",\"handling\":\"All examples (invoice, inquiry, bookkeeper) are illustrative scenarios; no invented outcomes or multi-person team.\"}]}",
+  "provider_response": {
+    "id": "msg_011CeqxKyYx4rZNFmeG8iJ2b",
+    "container": null,
+    "content": [
+      {
+        "citations": null,
+        "text": "{\"item_id\":\"E-PLAN-512\",\"selected_lessons\":[],\"steps\":[{\"step_id\":\"P01\",\"instruction\":\"Identify the subprocessor constraint in the concrete workflow: when your team or an automation tool touches customer data, you need to know which third parties see that data and on what terms. Frame this as a compliance and control question, not a technical obstacle.\",\"requirement_ids\":[\"R01\"],\"lesson_ids\":[],\"evidence_ids\":[\"C01\",\"C02\",\"C04\"]},{\"step_id\":\"P02\",\"instruction\":\"Map one recurring workflow where subprocessor disclosure matters most: for example, invoice processing, customer-inquiry handling, or document storage. Ask: which step today involves a cloud tool or manual handoff, and who has access to the data at that point?\",\"requirement_ids\":[\"R01\"],\"lesson_ids\":[],\"evidence_ids\":[\"C02\",\"S01\"]},{\"step_id\":\"P03\",\"instruction\":\"List the current data handlers in that workflow (your own team, existing SaaS tools, vendors, consultants). Note which ones have data-processing agreements and which do not. This audit is the diagnostic step.\",\"requirement_ids\":[\"R01\"],\"lesson_ids\":[],\"evidence_ids\":[\"C02\",\"C04\",\"S01\"]},{\"step_id\":\"P04\",\"instruction\":\"Evaluate whether automation can reduce the number of human or third-party access points. For example, if invoices today go to a bookkeeper and a payment approver, can a controlled system extract data, flag anomalies for approval only, and log all access? Frame this as a control and transparency win, not cost savings.\",\"requirement_ids\":[\"R01\"],\"lesson_ids\":[],\"evidence_ids\":[\"C02\",\"C03\"]},{\"step_id\":\"P05\",\"instruction\":\"Define the subprocessor list for any proposed system: which tools (e.g., Zapier, Make, n8n, LLM) will handle data, what they do, and what approvals you need from customers. Build this constraint into the pilot scope and fixed-price proposal, not as a late discovery.\",\"requirement_ids\":[\"R01\",\"R02\"],\"lesson_ids\":[],\"evidence_ids\":[\"C02\",\"C04\",\"S01\"]},{\"step_id\":\"P06\",\"instruction\":\"Next step: book a free 30-minute diagnostic to map your workflow, confirm which subprocessor decisions matter most, and agree on pilot scope and subprocessor transparency before any build starts.\",\"requirement_ids\":[\"R02\"],\"lesson_ids\":[],\"evidence_ids\":[\"C02\",\"S01\"]}],\"constraints_to_preserve\":[{\"constraint_id\":\"K01\",\"handling\":\"No customer names, deployment results, or savings claims; no CTA beyond soft closing diagnostic offer.\"},{\"constraint_id\":\"K02\",\"handling\":\"Subprocessor agreements are approval gates; human sign-off precedes any data transfer or integration.\"},{\"constraint_id\":\"K03\",\"handling\":\"Frozen persona preserved: plain-speaking technical expert, one bounded workflow decision, owner authority intact.\"},{\"constraint_id\":\"K04\",\"handling\":\"All examples (invoice, inquiry, bookkeeper) are illustrative scenarios; no invented outcomes or multi-person team.\"}]}",
+        "type": "text"
+      }
+    ],
+    "model": "claude-haiku-4-5-20251001",
+    "role": "assistant",
+    "stop_details": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "not_available",
+      "input_tokens": 4289,
+      "output_tokens": 727,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": "standard"
+    }
+  },
+  "stop_reason": "end_turn",
+  "cost_details": {
+    "input": 0.004289,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.003635,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.007924
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": null,
+  "key": "SE-FINAL-N012_planner__a001",
+  "role": "planner",
+  "created_at": "2026-09-08T12:15:01.172582+00:00",
+  "ended_at": "2026-09-08T12:15:21.494171+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-N012",
+    "batch_id": 1,
+    "condition": "natural",
+    "cohort": "natural"
+  },
+  "task_id": "SE-FINAL-N012",
+  "batch_id": 1,
+  "cohort": "natural",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 20316,
+  "budget_charge_usd": 0.007924,
+  "unknown_cost_reservation_usd": 0
+}

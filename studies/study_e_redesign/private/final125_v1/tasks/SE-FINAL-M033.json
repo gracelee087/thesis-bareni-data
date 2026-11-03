@@ -1,0 +1,334 @@
+{
+  "task_id": "SE-FINAL-M033",
+  "batch_id": 2,
+  "condition": "unchanged",
+  "source_task_id": "SE-FINAL-N063",
+  "topic": "rethinking human-in-the-loop design",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-301",
+    "title": "Human-in-the-loop means keeping one clear approval gate",
+    "body": "If you are rethinking human-in-the-loop design, start with one recurring workflow and ask a simple question: which decision must stay with you before the output can take effect? That is the control boundary. In a small business, the useful split is not “AI or no AI”; it is filter, route, or approve. AI can sort, extract, or draft. Human approval stays where the consequence is real: money movement, customer commitments, legal or financial risk, or anything outside a simple template.\n\nBareni’s own demos show the shape of this, not customer results. In the accounts-payable demo, payment blocking and human-only approval are part of the design, and the blocked payment is a manual simulation on synthetic data. In the knowledge assistant demo, sources are shown so the answer is grounded instead of guessed. Both point to the same rule: let the system do the repetitive checking, but keep the last gate human when the decision matters.\n\nFor an owner-operator, the practical next step is to pick one process and write down the approval rule in one sentence. Example: “AI may draft or flag this item, but I approve anything that moves money or changes a commitment.” If you cannot write that sentence clearly, the workflow is not ready for automation yet. That is usually where the trouble starts, and the spreadsheet suddenly develops opinions."
+  },
+  "final": {
+    "item_id": "E-OPT-401",
+    "title": "Human-in-the-loop is a control boundary, not a slogan",
+    "body": "If you are rethinking human-in-the-loop design, start with one recurring workflow and ask a simple question: which decision must stay with you before the output can take effect? That is the control boundary. In a small business, the useful split is not “AI or no AI”; it is filter, route, or approve. AI can sort, extract, or draft. Human approval stays where the consequence is real: money movement, customer commitments, legal or financial risk, or anything outside a simple template.\n\nBareni’s own demos show the shape of this, not customer results. In the accounts-payable demo, payment blocking and human-only approval are part of the design, and the blocked payment is a manual simulation on synthetic data. In the knowledge assistant demo, sources are shown so the answer is grounded instead of guessed. Both point to the same rule: let the system do the repetitive checking, but keep the last gate human when the decision matters.\n\nFor an owner-operator, the practical next step is to pick one process and write down the approval rule in one sentence. Example: “AI may draft or flag this item, but I approve anything that moves money or changes a commitment.” If you cannot write that sentence clearly, the workflow is not ready for automation yet. That is usually where the trouble starts, and the spreadsheet suddenly develops opinions."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-033",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-033",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-033-1",
+        "repairs": []
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-033",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-401",
+        "title": "Human-in-the-loop is a control boundary, not a slogan",
+        "body": "If you are rethinking human-in-the-loop design, start with one recurring workflow and ask a simple question: which decision must stay with you before the output can take effect? That is the control boundary. In a small business, the useful split is not “AI or no AI”; it is filter, route, or approve. AI can sort, extract, or draft. Human approval stays where the consequence is real: money movement, customer commitments, legal or financial risk, or anything outside a simple template.\n\nBareni’s own demos show the shape of this, not customer results. In the accounts-payable demo, payment blocking and human-only approval are part of the design, and the blocked payment is a manual simulation on synthetic data. In the knowledge assistant demo, sources are shown so the answer is grounded instead of guessed. Both point to the same rule: let the system do the repetitive checking, but keep the last gate human when the decision matters.\n\nFor an owner-operator, the practical next step is to pick one process and write down the approval rule in one sentence. Example: “AI may draft or flag this item, but I approve anything that moves money or changes a commitment.” If you cannot write that sentence clearly, the workflow is not ready for automation yet. That is usually where the trouble starts, and the spreadsheet suddenly develops opinions."
+      },
+      "gate_key": "SE-FINAL-M033_gate1__a001"
+    }
+  ],
+  "measurement_status": "complete",
+  "planner": {
+    "item_id": "E-PLAN-501",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task specifies 'CTA rule: None.' L01 confirms that informational content addressing the frozen persona's workflow decision must end with a practical observation or next-step note, not a booking prompt or call to action. The post will close with a concrete diagnostic question or threshold the owner can apply immediately."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Translate 'rethinking human-in-the-loop design' into a single observable workflow decision: identify one recurring task where the owner must currently decide whether to approve, reject, or route an AI output before it takes effect. Frame this as a control boundary, not a capability claim.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Describe the decision threshold concretely: what criteria signal that human approval is necessary (e.g., payment above a limit, customer data beyond a template, legal or financial consequence), and what can safely flow without a person in the loop. Distinguish between filtering, routing, and full approval.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C04",
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Explain why this boundary matters to a 1–10-person owner: the cost of a wrong autonomous decision versus the friction of a review step, and how AI fits into the decision (retrieval, classification, or extraction) versus where the human choice must stay.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C01",
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "Use only Bareni's self-built demos or described service model as examples of how approval gates work in practice—accounts-payable blocking payment, knowledge assistant showing sources, or diagnostic scoping—without claiming customer results or production operation.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C03"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "State one diagnostic question the owner can answer now to clarify their own workflow: e.g., 'How many decisions do you make each week that follow the same rule?' or 'Which of these decisions would you trust an AI system to filter for you, and which must you see first?' This bridges to a next step without a CTA.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "S01"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Close with a plain observation or working definition of human-in-the-loop that applies to this owner's scenario, clarifying when approval stays human and why. End the post here; do not add a booking link or meeting prompt.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "C05",
+          "S01"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "Select no invented metrics, customer names, deployments, or savings. Reference only Bareni's own self-built systems (accounts-payable demo, knowledge assistant, Atlas Partner prototype) and the consulting model described in C02. Frame all examples as 'how this works in design,' not 'customer results.'"
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Emphasize that money movement and high-risk decisions require human approval; never suggest autonomous execution. Stay within the services and scope boundaries in C02 and C04. Avoid excluded domains: high-sensitivity medical, legal, financial work, bulk cold email, and unsupported compliance."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Maintain the frozen persona throughout: address the owner directly, use plain technical voice, keep trust above friendliness, allow one restrained understatement only, and preserve the boundary between Bareni's thesis-driven practice (not yet a registered company) and customer operations. Do not shift to team language or multi-person authority."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Use concrete, bounded language: distinguish proposed examples from existing capabilities (C03), label synthetic data as such, and avoid hype words (revolutionary, 10x, unleash, magic). End with a diagnostic question or threshold, not a sales prompt, per L01."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-601",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "Turn the abstract topic into a bounded Bareni workflow decision. Explain one practical next step."
+          },
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          }
+        ],
+        "rationale": "This is a drafting instruction that turns the abstract topic into one observable workflow decision framed as a control boundary; it asserts no current implementation or customer use.",
+        "use_guidance": "Keep as an explicit instruction for the post. Frame the control boundary generically or via disclosed demo behaviour only; do not present any specific approval workflow as deployed at a customer."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C03",
+            "quote": "amount-based human-only approval, refusal of agent approval/payment attempts, and persistent audit records work"
+          },
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          }
+        ],
+        "rationale": "An instruction to describe threshold criteria and to distinguish filtering, routing and full approval; it recommends content rather than asserting an existing product feature or measured threshold.",
+        "use_guidance": "Keep proposed. Any threshold example must be labelled as an illustrative criterion, not a configured or observed limit; money movement must always require human approval, and no legal advice may be given about consequences."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "the owner compares a bounded automation investment with continuing manual work or hiring; final approval and business authority remain human"
+          },
+          {
+            "source_id": "C01",
+            "quote": "A representative scenario is a six-person D2C online shop whose owner compares an automation investment with the cost of another hire."
+          }
+        ],
+        "rationale": "An instruction to explain the reasoning trade-off for the reader; it proposes explanatory content and does not assert observed costs, savings or performance.",
+        "use_guidance": "Keep proposed. Use qualitative reasoning only: no cost figures, error rates, savings or ROI, and no implication that any customer experienced these trade-offs."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C03",
+            "quote": "The blocked payment demonstration is a manual trigger and simulated, not a real transfer."
+          },
+          {
+            "source_id": "C03",
+            "quote": "It works end to end locally, but the deployed public route is locked."
+          },
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits"
+          }
+        ],
+        "rationale": "The core is supported: these are approved self-built demos and the described service model, and the claim already excludes customer results and production operation. However it omits the specific disclosed limits attached to each example.",
+        "use_guidance": "Add the required conditions when using these examples: the accounts-payable work is a demo on entirely synthetic data for a fictional manufacturer and the blocked payment is a manual, simulated trigger rather than a real transfer; the knowledge assistant is a local demo on synthetic Acme Shop data with the deployed public route locked. Attribute them as \"we built\" demos, not case studies."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "explain one observable workflow decision, threshold, diagnostic question, control, or next step"
+          },
+          {
+            "source_id": "C01",
+            "quote": "have a frequent, repeatable workflow with a measurable outcome"
+          }
+        ],
+        "rationale": "An instruction to include a self-answerable diagnostic question; it is a permissible next-step prompt, not an assertion of implementation or observed use.",
+        "use_guidance": "Keep proposed and use at most one such question. Phrase it as something the owner answers alone; per the task's CTA rule and lesson guidance, do not turn it into an invitation to book, reply or discuss."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Informational posts use no CTA or one soft closing sentence."
+          }
+        ],
+        "rationale": "A closing instruction combining a permissible plain definition with an explicit prohibition on a booking or meeting prompt; it proposes structure rather than asserting a fact.",
+        "use_guidance": "Keep proposed and enforce it: end on a neutral practical observation or working definition, with no booking link, meeting prompt, scarcity or urgency. State that approval stays human for money movement and other high-risk decisions."
+      }
+    ]
+  },
+  "selected_lessons": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025"
+      ]
+    }
+  ],
+  "register_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "planner_key": "SE-FINAL-N063_planner__a001",
+  "researcher_key": "SE-FINAL-N063_researcher__a001",
+  "writer_key": "SE-FINAL-N063_writer__a001",
+  "final_key": "SE-FINAL-M033_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-M033_gate1__a001",
+  "production_completed_at": "2026-09-08T13:32:17.659432+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts",
+  "initial_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-033",
+    "scores": {
+      "persona_fit": 5,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Accurately targets the small business owner-operator in Bareni's calm, practical voice; honours the no-CTA requirement and respects all boundary guidelines.",
+      "clarity": "Logical structure and plain language make the control boundary and human-in-the-loop design concept immediately understandable on first read.",
+      "actionability": "Provides a highly concrete, scoped next step: writing the single-sentence approval boundary before automating, complete with a practical diagnostic test.",
+      "factual_grounding": "Flawlessly qualifies Bareni's self-built demos as simulations with synthetic data rather than customer results, making no unsupported claims."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 20,
+    "pass": true,
+    "low_quality": false
+  },
+  "final_eval": {
+    "schema_version": "study-e-evaluator-rating-v1",
+    "item_id": "EVAL-BLIND-033",
+    "scores": {
+      "persona_fit": 5,
+      "clarity": 5,
+      "actionability": 5,
+      "factual_grounding": 5
+    },
+    "reasons": {
+      "persona_fit": "Directly addresses small business owner-operators in Bareni's calm, practical tone, strictly respecting human approval boundaries and zero-CTA instructions.",
+      "clarity": "Explains human-in-the-loop as a practical control boundary with immediate, logical explanations and clear, accessible examples.",
+      "actionability": "Gives a concrete, realistic decision exercise: drafting a one-sentence approval rule before automating a recurring process.",
+      "factual_grounding": "Accurately references Bareni's AP and knowledge assistant demos as synthetic prototypes without exaggerating capabilities or implying customer results."
+    },
+    "critical_violation": false,
+    "critical_violation_type": null,
+    "critical_evidence_quote": null,
+    "total_score": 20,
+    "pass": true,
+    "low_quality": false
+  },
+  "evaluation_reused": false,
+  "evaluation_keys": [
+    "SE-FINAL-M033_eval_initial__a001",
+    "SE-FINAL-M033_eval_final__a001"
+  ],
+  "completed_at": "2026-09-08T13:32:32.206511+00:00"
+}

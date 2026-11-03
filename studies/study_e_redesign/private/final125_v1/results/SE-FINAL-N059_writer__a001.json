@@ -1,0 +1,170 @@
+{
+  "status": "success",
+  "usage": {
+    "input_tokens": 5970,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 315,
+    "reasoning_tokens": 0
+  },
+  "cost_usd": 0.005895,
+  "output": {
+    "item_id": "E-WRITE-328",
+    "title": "Synthetic test data: when to use it, and when not to",
+    "body": "Synthetic test data is useful only when it helps you decide faster, not when it becomes a project of its own. For a small business, the bounded question is simple: are you building test data because you need privacy or scale, or because no one has tried the workflow with real records yet?\n\nIf the pilot is a repeatable task like invoice handling or customer inquiry triage, start smaller. Use a limited real-data subset, clear rules, and a human approval step where money or another high-risk decision is involved. That keeps the discussion on the workflow instead of on the theatre of perfect fake data.\n\nBareni’s own accounts-payable demo is a good example of the boundary. It uses entirely synthetic data to show the mechanics: text-based extraction, arithmetic checks, duplicate blocking, and audit records. But that demo also has limits: the default route uses pre-extracted files, and PDF/scan ingestion and OCR are not implemented. So the demo is useful for showing control logic, not for pretending it is ready for every real invoice pile.\n\nMy practical next step: pick one workflow, one approval rule, and one small batch of real records. Then ask whether synthetic data is solving a real testing problem, or just delaying the moment you learn what the workflow actually needs. If the answer is the second one, the spreadsheet has already won."
+  },
+  "raw_text": "{\"item_id\":\"E-WRITE-328\",\"title\":\"Synthetic test data: when to use it, and when not to\",\"body\":\"Synthetic test data is useful only when it helps you decide faster, not when it becomes a project of its own. For a small business, the bounded question is simple: are you building test data because you need privacy or scale, or because no one has tried the workflow with real records yet?\\n\\nIf the pilot is a repeatable task like invoice handling or customer inquiry triage, start smaller. Use a limited real-data subset, clear rules, and a human approval step where money or another high-risk decision is involved. That keeps the discussion on the workflow instead of on the theatre of perfect fake data.\\n\\nBareni’s own accounts-payable demo is a good example of the boundary. It uses entirely synthetic data to show the mechanics: text-based extraction, arithmetic checks, duplicate blocking, and audit records. But that demo also has limits: the default route uses pre-extracted files, and PDF/scan ingestion and OCR are not implemented. So the demo is useful for showing control logic, not for pretending it is ready for every real invoice pile.\\n\\nMy practical next step: pick one workflow, one approval rule, and one small batch of real records. Then ask whether synthetic data is solving a real testing problem, or just delaying the moment you learn what the workflow actually needs. If the answer is the second one, the spreadsheet has already won.\"}",
+  "provider_response": {
+    "id": "resp_0c856ae1a5981cf6016aa00327f9c087d2b7671432db690509",
+    "created_at": 1788871464.0,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": {},
+    "model": "gpt-5.4-mini-2026-03-17",
+    "object": "response",
+    "output": [
+      {
+        "id": "msg_0c856ae1a5981cf6016aa003289f9087d2904e820f9fee6ba2",
+        "content": [
+          {
+            "annotations": [],
+            "text": "{\"item_id\":\"E-WRITE-328\",\"title\":\"Synthetic test data: when to use it, and when not to\",\"body\":\"Synthetic test data is useful only when it helps you decide faster, not when it becomes a project of its own. For a small business, the bounded question is simple: are you building test data because you need privacy or scale, or because no one has tried the workflow with real records yet?\\n\\nIf the pilot is a repeatable task like invoice handling or customer inquiry triage, start smaller. Use a limited real-data subset, clear rules, and a human approval step where money or another high-risk decision is involved. That keeps the discussion on the workflow instead of on the theatre of perfect fake data.\\n\\nBareni’s own accounts-payable demo is a good example of the boundary. It uses entirely synthetic data to show the mechanics: text-based extraction, arithmetic checks, duplicate blocking, and audit records. But that demo also has limits: the default route uses pre-extracted files, and PDF/scan ingestion and OCR are not implemented. So the demo is useful for showing control logic, not for pretending it is ready for every real invoice pile.\\n\\nMy practical next step: pick one workflow, one approval rule, and one small batch of real records. Then ask whether synthetic data is solving a real testing problem, or just delaying the moment you learn what the workflow actually needs. If the answer is the second one, the spreadsheet has already won.\"}",
+            "type": "output_text",
+            "logprobs": []
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message",
+        "phase": "final_answer"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 1.0,
+    "tool_choice": "auto",
+    "tools": [],
+    "top_p": 0.98,
+    "background": false,
+    "completed_at": 1788871466.0,
+    "conversation": null,
+    "max_output_tokens": 1024,
+    "max_tool_calls": null,
+    "moderation": null,
+    "previous_response_id": null,
+    "prompt": null,
+    "prompt_cache_key": null,
+    "prompt_cache_options": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "generate_summary": null,
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "status": "completed",
+    "text": {
+      "format": {
+        "name": "study_e_post",
+        "schema_": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "item_id": {
+              "type": "string",
+              "enum": [
+                "E-WRITE-328"
+              ]
+            },
+            "title": {
+              "type": "string"
+            },
+            "body": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "item_id",
+            "title",
+            "body"
+          ]
+        },
+        "type": "json_schema",
+        "description": null,
+        "strict": true
+      },
+      "verbosity": "medium"
+    },
+    "top_logprobs": 0,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 5970,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 315,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 6285
+    },
+    "user": null,
+    "billing": {
+      "payer": "developer"
+    },
+    "frequency_penalty": 0.0,
+    "presence_penalty": 0.0,
+    "store": false,
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    }
+  },
+  "stop_reason": "completed",
+  "cost_details": {
+    "input": 0.0044775,
+    "cache_read_input_tokens": 0.0,
+    "cache_creation_input_tokens": 0.0,
+    "output": 0.0014175,
+    "reasoning_output_tokens": 0.0,
+    "total": 0.005895
+  },
+  "pricing_sha256": "21b2dffe400242b9d129fa02db8471ad1894fbbc6a31c2113e0e8e4c21020513",
+  "pricing_verified_date": "2026-09-07",
+  "actual_service_tier": "default",
+  "key": "SE-FINAL-N059_writer__a001",
+  "role": "writer",
+  "created_at": "2026-09-08T12:44:24.191284+00:00",
+  "ended_at": "2026-09-08T12:44:26.944168+00:00",
+  "metadata": {
+    "task_id": "SE-FINAL-N059",
+    "batch_id": 2,
+    "condition": "natural",
+    "cohort": "natural"
+  },
+  "task_id": "SE-FINAL-N059",
+  "batch_id": 2,
+  "cohort": "natural",
+  "freeze_sha256": "075012aade3b2f51d059bbef9744a1cbdb0dcef2ad6e3fa04557ca846dc804ed",
+  "latency_ms": 2749,
+  "budget_charge_usd": 0.005895,
+  "unknown_cost_reservation_usd": 0
+}

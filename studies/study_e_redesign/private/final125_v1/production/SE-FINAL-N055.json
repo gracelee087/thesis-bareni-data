@@ -1,0 +1,286 @@
+{
+  "task_id": "SE-FINAL-N055",
+  "batch_id": 2,
+  "condition": "natural",
+  "source_task_id": null,
+  "topic": "measuring email threading",
+  "status": "complete",
+  "execution_status": "complete",
+  "operational_route": "release_candidate",
+  "initial": {
+    "item_id": "E-WRITE-324",
+    "title": "Measure email threading before you automate it",
+    "body": "If you are thinking about email threading, treat it as a workflow decision first, not a software feature. The real question is simple: are you losing time because replies are hard to follow, context is split across inboxes, or follow-ups drift? If the answer is only occasional annoyance, automation is probably the wrong place to spend attention. A cleaner mailbox habit may be enough.\n\nThe practical next step is manual: review one week of email activity and mark every thread that went off track. Note why it happened, how long it took to recover, and whether the same problem repeats. That gives you a real measure of the cost before anyone tries to fix it with tools. No need to turn every inbox wobble into a project; email has enough drama already.\n\nIf the same threading issue keeps showing up, then the bounded decision is whether to configure your existing email or CRM setup better, or whether the problem is specific enough to justify a small AI-assisted pilot for categorisation or routing. Keep that pilot narrow. Do not mix it with bulk email, compliance-heavy correspondence, or anything that would require autonomous decisions. Human approval stays in place for any high-risk step."
+  },
+  "final": {
+    "item_id": "E-OPT-424",
+    "title": "Measure email threading before you automate it",
+    "body": "If you are thinking about email threading, treat it as a workflow decision first, not a software feature. The real question is simple: are you losing time because replies are hard to follow, context is split across inboxes, or follow-ups drift? If the answer is only occasional annoyance, automation is probably the wrong place to spend attention. A cleaner mailbox habit may be enough.\n\nThe practical next step is manual: review one week of email activity and mark every thread that went off track. Note why it happened, how long it took to recover, and whether the same problem repeats. That gives you a real measure of the cost before anyone tries to fix it with tools. No need to turn every inbox wobble into a project; email has enough drama already.\n\nIf the same threading issue keeps showing up, then the bounded decision is whether to configure your existing email or CRM setup better, or whether the problem is specific enough to justify a small AI-assisted pilot for categorisation or routing. Keep that pilot narrow. Do not mix it with bulk email, compliance-heavy correspondence, or anything that would require autonomous decisions. Human approval stays in place for any high-risk step."
+  },
+  "initial_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-055",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "final_gate": {
+    "schema_version": "study-e-gate-v4",
+    "item_id": "GATE-BLIND-055",
+    "assessment_status": "assessed",
+    "input_problem_reason": null,
+    "defects": []
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "critique": {
+        "item_id": "E-CRIT-BLIND-055-1",
+        "repairs": []
+      },
+      "gate": {
+        "schema_version": "study-e-gate-v4",
+        "item_id": "GATE-BLIND-055",
+        "assessment_status": "assessed",
+        "input_problem_reason": null,
+        "defects": []
+      },
+      "draft": {
+        "item_id": "E-OPT-424",
+        "title": "Measure email threading before you automate it",
+        "body": "If you are thinking about email threading, treat it as a workflow decision first, not a software feature. The real question is simple: are you losing time because replies are hard to follow, context is split across inboxes, or follow-ups drift? If the answer is only occasional annoyance, automation is probably the wrong place to spend attention. A cleaner mailbox habit may be enough.\n\nThe practical next step is manual: review one week of email activity and mark every thread that went off track. Note why it happened, how long it took to recover, and whether the same problem repeats. That gives you a real measure of the cost before anyone tries to fix it with tools. No need to turn every inbox wobble into a project; email has enough drama already.\n\nIf the same threading issue keeps showing up, then the bounded decision is whether to configure your existing email or CRM setup better, or whether the problem is specific enough to justify a small AI-assisted pilot for categorisation or routing. Keep that pilot narrow. Do not mix it with bulk email, compliance-heavy correspondence, or anything that would require autonomous decisions. Human approval stays in place for any high-risk step."
+      },
+      "gate_key": "SE-FINAL-N055_gate1__a001"
+    }
+  ],
+  "measurement_status": "pending",
+  "planner": {
+    "item_id": "E-PLAN-524",
+    "selected_lessons": [
+      {
+        "lesson_id": "L01",
+        "application": "The task explicitly forbids a CTA (CTA rule: None). L01 instructs treating booking invitations as CTAs and ending informational posts with neutral observations instead. This post explains a bounded workflow decision and practical next step without soliciting a meeting or call."
+      }
+    ],
+    "steps": [
+      {
+        "step_id": "P01",
+        "instruction": "Define email threading as a bounded workflow problem: the owner's concrete decision is whether to invest in tracking conversation continuity (which emails reply to which) to reduce duplicate work, misrouted answers, or lost context. Frame this as one recurring workflow pain, not a general email feature.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "S01",
+          "C01"
+        ]
+      },
+      {
+        "step_id": "P02",
+        "instruction": "Explain the diagnostic threshold: email threading alone does not justify automation. The owner should first measure the actual cost of threading loss (e.g., hours per week spent re-reading threads, duplicate answers, lost follow-ups). If the cost is under 2–3 hours weekly or already managed by team process, the investment is unlikely to fit.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "S01",
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P03",
+        "instruction": "Describe one practical next step: the owner should audit one week of email volume, identify conversations that went off-track due to missing context, and count the time spent recovering. This is a manual diagnostic, not an AI pilot; it answers whether the problem is real and worth solving.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "S01",
+          "C01"
+        ]
+      },
+      {
+        "step_id": "P04",
+        "instruction": "If the audit shows a genuine repeating cost, introduce the bounded decision: the owner can either integrate threading into an existing CRM or email tool (a configuration decision, not an automation build), or—if the workflow involves custom routing, tagging, or knowledge-base linking—consider AI-assisted categorization as a candidate for a pilot.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C02"
+        ]
+      },
+      {
+        "step_id": "P05",
+        "instruction": "Preserve the scope boundary: threading automation does not include unsupported bulk email, compliance-heavy regulated communications, or autonomous routing without human approval. If the workflow is customer-facing complaint resolution or legal correspondence, state that this is outside current scope.",
+        "requirement_ids": [
+          "R01"
+        ],
+        "lesson_ids": [],
+        "evidence_ids": [
+          "C04"
+        ]
+      },
+      {
+        "step_id": "P06",
+        "instruction": "Close with a neutral observation: the owner now has a clear decision frame—measure the problem first, then choose between tool configuration and a potential pilot. This is the practical next step; no meeting invitation or CTA is included.",
+        "requirement_ids": [
+          "R02"
+        ],
+        "lesson_ids": [
+          "L01"
+        ],
+        "evidence_ids": [
+          "S01",
+          "C05"
+        ]
+      }
+    ],
+    "constraints_to_preserve": [
+      {
+        "constraint_id": "K01",
+        "handling": "No invented customer results, deployment outcomes, savings, or multi-person team claimed. The post describes a workflow decision template and diagnostic, not a case study."
+      },
+      {
+        "constraint_id": "K02",
+        "handling": "Threading automation requires human approval for routing decisions and message categorization. Autonomous action is not proposed. The scope boundary (C04) excludes bulk email and high-compliance work."
+      },
+      {
+        "constraint_id": "K03",
+        "handling": "Persona held as plain-speaking technical expert addressing founder directly. Evidence status preserved: approved Bareni evidence (C01–C05, S01) cited; no unverified capability, customer, or outcome added."
+      },
+      {
+        "constraint_id": "K04",
+        "handling": "Plain English used throughout. The audit recommendation and workflow decision frame are practical tools, distinct from existing finished demos. No hype or unsupported numbers included."
+      }
+    ]
+  },
+  "researcher": {
+    "item_id": "E-RES-624",
+    "ledger": [
+      {
+        "claim_id": "Q01",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C01",
+            "quote": "The intended reader is an owner-operator of a 1–10 person small business"
+          },
+          {
+            "source_id": "C02",
+            "quote": "The diagnostic identifies the one recurring workflow, says honestly whether AI fits"
+          }
+        ],
+        "rationale": "This frames the abstract topic as one bounded recurring-workflow decision for the reader. It proposes a way of defining the problem rather than asserting any current Bareni capability, deployment or observed result, and it matches the approved focus on a single recurring workflow.",
+        "use_guidance": "Keep as an explicitly framed decision for the reader. Do not imply Bareni has built or run any email-threading system, and do not attach observed time savings or customer examples."
+      },
+      {
+        "claim_id": "Q02",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C05",
+            "quote": "Numbers require a source and status. Keep observed results, estimates, targets, synthetic data, and examples distinct."
+          },
+          {
+            "source_id": "C01",
+            "quote": "The 8–10 hours is a persona scenario, not a market statistic or observed customer result."
+          },
+          {
+            "source_id": "C02",
+            "quote": "says honestly whether AI fits"
+          }
+        ],
+        "rationale": "Proposing that the owner measure cost before automating is permissible and consistent with the diagnostic logic, but the stated '2–3 hours weekly' threshold is a bare number with no approved source or status. Approved evidence requires numbers to carry a source and status and keeps persona figures distinct from results.",
+        "use_guidance": "Add the qualification that any hour figure is an illustrative rule of thumb the owner sets for their own business, not a Bareni benchmark, measured result or market statistic — or drop the numeric threshold and describe the test qualitatively (does the cost repeat weekly and is it visible in your own count?)."
+      },
+      {
+        "claim_id": "Q03",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "Normal sequence: free 30-minute diagnostic"
+          },
+          {
+            "source_id": "C01",
+            "quote": "have a frequent, repeatable workflow with a measurable outcome"
+          }
+        ],
+        "rationale": "This is a manual diagnostic instruction for the reader — audit one week, identify off-track conversations, count recovery time — and it explicitly states it is not an AI pilot. It asserts no implementation, no observed benefit and no customer use.",
+        "use_guidance": "Keep phrased as a manual next step the owner performs themselves. Do not present the audit as a Bareni service delivery, do not predict what the audit will find, and per the CTA rule do not turn it into an invitation to talk or book."
+      },
+      {
+        "claim_id": "Q04",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "C02",
+            "quote": "general document, email, CRM, and back-office workflows using AI plus Zapier, Make, n8n, and small amounts of custom code"
+          },
+          {
+            "source_id": "C02",
+            "quote": "defines pilot scope, fixed price, and measures"
+          }
+        ],
+        "rationale": "This offers a conditional either/or recommendation — configure an existing tool, or treat AI-assisted categorisation as a pilot candidate. Email and CRM workflow automation sits inside the described service scope, and the wording keeps the AI option as a candidate rather than an existing built feature.",
+        "use_guidance": "Keep it conditional and candidate-level. Do not describe AI-assisted email categorisation or threading as an existing Bareni demo or working system; the approved demos are the knowledge assistant, accounts-payable automation and Atlas Partner. Present pilot timings as intended scopes, not guarantees."
+      },
+      {
+        "claim_id": "Q05",
+        "category": "QUALIFICATIONS",
+        "evidence": [
+          {
+            "source_id": "C04",
+            "quote": "Bareni currently declines high-sensitivity medical, legal, and financial work; bulk cold-email automation"
+          },
+          {
+            "source_id": "C04",
+            "quote": "Present these as current scope discipline, not claims that the work can never be automated."
+          },
+          {
+            "source_id": "C04",
+            "quote": "Human approval is mandatory for money movement and other high-risk decisions."
+          }
+        ],
+        "rationale": "The excluded categories and the human-approval boundary are supported, but the claim states the exclusions flatly and adds 'customer-facing complaint resolution' as out of scope, which approved evidence does not list. Approved evidence also requires exclusions to be framed as current discipline rather than permanent impossibility.",
+        "use_guidance": "Add the qualification that these are Bareni's current scope boundaries, not statements that such work can never be automated. Drop or soften 'customer-facing complaint resolution', which is not an approved exclusion; keep legal correspondence under the high-sensitivity legal exclusion and avoid giving legal advice."
+      },
+      {
+        "claim_id": "Q06",
+        "category": "PROPOSED",
+        "evidence": [
+          {
+            "source_id": "S01",
+            "quote": "**CTA rule:** None."
+          },
+          {
+            "source_id": "C05",
+            "quote": "Informational posts use no CTA or one soft closing sentence."
+          }
+        ],
+        "rationale": "This is a closing instruction summarising the proposed decision frame and confirming no meeting prompt is used. It recommends how to end rather than asserting a current fact or observed outcome, and it respects the no-CTA rule for this task.",
+        "use_guidance": "Keep as a neutral closing observation. Do not add any invitation to book, discuss or continue the conversation, since such invitations count as a CTA and none is authorised here."
+      }
+    ]
+  },
+  "selected_lessons": [
+    {
+      "lesson_id": "L01",
+      "text": "For informational marketing content, treat any invitation to book a diagnostic, discuss the situation, or continue the conversation as a CTA unless the task explicitly authorises one. End with a neutral practical observation or next-step note instead of a meeting prompt.",
+      "source_event_ids": [
+        "B1-SUMMARY",
+        "SE-FINAL-N025"
+      ]
+    }
+  ],
+  "register_sha256": "48497afb8641ddc47d974cdfadba06a1f6b562d21c49ec03c9b03a5dc531744e",
+  "planner_key": "SE-FINAL-N055_planner__a001",
+  "researcher_key": "SE-FINAL-N055_researcher__a001",
+  "writer_key": "SE-FINAL-N055_writer__a001",
+  "final_key": "SE-FINAL-N055_optimizer1__a001",
+  "final_gate_key": "SE-FINAL-N055_gate1__a001",
+  "production_completed_at": "2026-09-08T12:42:19.398114+00:00",
+  "orchestration": "LangGraph StateGraph",
+  "telemetry": "Langfuse + immutable local attempts"
+}
