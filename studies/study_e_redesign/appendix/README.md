@@ -21,6 +21,7 @@ marked at the top; the originals and all frozen experiment records stay unchange
 | L15 | [L15_texts_natural.md](L15_texts_natural.md) | Natural condition: initial draft, final text and evaluator scores of all 125 tasks | Generated from `../private/final125_v1/tasks/SE-FINAL-N*.json` (records unchanged) |
 | L16 | [L16_texts_mixed.md](L16_texts_mixed.md) | Mixed condition: source task, defect type, initial draft, final text and evaluator scores of all 125 tasks | Generated from `../private/final125_v1/tasks/SE-FINAL-M*.json` (records unchanged) |
 | L17 | [figures/appendix_h/](../../../figures/appendix_h/) | Langfuse screenshots behind thesis Figures H-1 to H-4 | Original PNG files |
+| L18 | [final_design_sample_size_review_v2/README.md](../private/final_design_sample_size_review_v2/README.md), [HISTORICAL_RATIONALE_CORRECTION.md](../private/sample_size_review_v1/HISTORICAL_RATIONALE_CORRECTION.md) | Sample-size review documents named in registration answer 7: prospective sensitivity review of the final design and correction of the historical rationale for N=125 | Original files in `../private/`, with their verified calculation outputs and the scripts in `../tools/` and `code/bareni_pipeline/` |
 
 ## Raw data (not copied)
 

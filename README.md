@@ -17,6 +17,7 @@ Items that are not included are listed in [DATA_AVAILABILITY.md](DATA_AVAILABILI
 | **Final empirical test: STUDY-E-1** (AsPredicted #310130) | `studies/study_e_redesign/private/final125_v1/` | Frozen protocol and freeze list, registration receipt, 250 task ledgers, 1,860 call starts and 1,860 call results, 250 production records, pricing evidence, final reports and the Langfuse reconciliation. |
 | Supplementary comparison: STUDY-E-ABLATION (recorded as `STUDY-E-ABLATON` in the files) | `studies/study_e_ablaton/` | Protocol, code, 6,108 ledger files, 3,054 Langfuse telemetry records, 750 evaluations, 375 pairs and the cloud audit (K01–K03). |
 | Figures | `figures/` | Figures used in the thesis. |
+| Topic bank | `topic_bank.md` | The author-written English topic bank from which the 125 STUDY-E-1 topics were selected. The freeze list `studies/study_e_redesign/private/final125_v1/freeze.json` and `topic_inventory.json` record this file under its original, non-English file name; the content and its SHA-256 `678fd90d29d6c8f001cc814702831df516a857fc78cedac40fb794262a32b01f` are unchanged. |
 
 ## Where to start
 
@@ -26,3 +27,4 @@ Items that are not included are listed in [DATA_AVAILABILITY.md](DATA_AVAILABILI
 | Final experiment STUDY-E-1 | [studies/study_e_redesign/](studies/study_e_redesign/) |
 | Supplementary comparison STUDY-E-ABLATION (K01–K03) | [studies/study_e_ablaton/appendix/README.md](studies/study_e_ablaton/appendix/README.md) |
 | Research history summaries (L14) | `studies/study_a` to `studies/study_e` README files |
+| Sample-size review documents (L18, registration answer 7) | [studies/study_e_redesign/private/final_design_sample_size_review_v2/README.md](studies/study_e_redesign/private/final_design_sample_size_review_v2/README.md), [studies/study_e_redesign/private/sample_size_review_v1/HISTORICAL_RATIONALE_CORRECTION.md](studies/study_e_redesign/private/sample_size_review_v1/HISTORICAL_RATIONALE_CORRECTION.md) |
