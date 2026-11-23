@@ -4,6 +4,8 @@
 
 > The "draft" wording below is kept because the Korean original is hash-locked in `freeze.json` and was not edited after freezing. This is the protocol registered as AsPredicted #310130.
 
+> Note added to this appendix copy on 2026-11-23: there is no GitHub release, Zenodo record or DOI; the materials are provided in this repository.
+
 # Study E Final Experiment — Pre-Registration Protocol Draft
 
 Written 2026-09-06. **This is not yet a document submitted to AsPredicted or finally frozen.** The final conditions were to be registered the following day, after which the 125 new naturally occurring tasks and the 125 defect-mixed tasks that use the same initial drafts were to be run. Today only code/document preparation and offline checks are performed. The existing Study D registration and the Study E pilot raw data are not modified.

@@ -1,5 +1,7 @@
 > English translation prepared 2026-09-17 of `RESULTS_FINAL_EXPERIMENT_1_20260908.md`. The Korean original is the recorded/frozen document; where wording differs, the original governs.
 
+> Note added to this appendix copy on 2026-11-23: there is no GitHub release, Zenodo record or DOI; the materials are provided in this repository.
+
 # STUDY-E-1 Final Experiment — Results for Verification and Submission
 
 The subject is the **STUDY-E-1 final experiment**, and the raw-data path is `private/final125_v1`. All 1,860 calls started on 2026-09-08. Started at 14:08:53 German time, ended normally at 15:52:11. Production and independent evaluation of the 125 natural tasks and the 125 mixed tasks using the same original drafts were completed.
