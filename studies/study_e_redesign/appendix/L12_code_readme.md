@@ -2,8 +2,6 @@
 
 > English translation prepared 2026-09-17 of `README.md`. The Korean original is the recorded/frozen document; where wording differs, the original governs.
 
-> Note added to this appendix copy on 2026-11-23: this guide is kept as it was written before the registration, which was completed afterwards as AsPredicted #310130 (2026-09-07). There is no GitHub release, Zenodo record or DOI; the materials are provided in this repository.
-
 # Study E Final Experiment Execution Guide
 
 This folder is for the new final experiment. The code, texts, and scores of existing pilots are preserved. The current plan is **125 natural generations ＋ 52 defect and 73 unchanged tasks from the same initial drafts**, and the two conditions are not merged into 250 independent samples. AsPredicted registration has not yet been completed.

@@ -13,11 +13,11 @@ marked at the top; the originals and all frozen experiment records stay unchange
 | L05 | [L05_evaluator_selection.md](L05_evaluator_selection.md) | Evaluator selection report (30 items, three candidates) | English translation of `../21_EVALUATOR_PRICE_MATCHED_V3_RESULTS.md` |
 | L06 | [L06_role_selection_review.md](L06_role_selection_review.md) | Consistency review of the role-selection procedure | English translation of `../183_ROLE_SELECTION_METHOD_CONSISTENCY_REVIEW.md` |
 | L07 | [L07_model_selection_history.md](L07_model_selection_history.md) | Model selection chronology | English translation of `../213_MODEL_SELECTION_CHRONOLOGY.md` |
-| L08 | [L08_protocol.md](L08_protocol.md) | Frozen STUDY-E-1 protocol | `../215_FINAL_EXPERIMENT_PROTOCOL_DRAFT_EN.md` (one Korean file name replaced; one header note added 2026-11-23) |
+| L08 | [L08_protocol.md](L08_protocol.md) | Frozen STUDY-E-1 protocol | `../215_FINAL_EXPERIMENT_PROTOCOL_DRAFT_EN.md` (one Korean file name replaced) |
 | L09 | [L09_aspredicted_310130.pdf](L09_aspredicted_310130.pdf) | AsPredicted #310130 non-anonymous PDF (registration not yet public on 2026-09-17) | `../ASPREDICTED_310130_vj7sk9.pdf` (identical copy) |
-| L10 | [L10_results.md](L10_results.md) | STUDY-E-1 results report | `../RESULTS_FINAL_EXPERIMENT_1_20260908_EN.md` (identical copy except for one header note added 2026-11-23) |
+| L10 | [L10_results.md](L10_results.md) | STUDY-E-1 results report | `../RESULTS_FINAL_EXPERIMENT_1_20260908_EN.md` (identical copy) |
 | L11 | [L11_prompt_korean_lines.md](L11_prompt_korean_lines.md) | English translation of the Korean text inside frozen records | New |
-| L12 | [L12_code_readme.md](L12_code_readme.md) and this README | Description of the final experiment code; this README lists where the raw data are | `../tools/final125_v1/README_EN.md` (one Korean diagram label translated; one header note added 2026-11-23) |
+| L12 | [L12_code_readme.md](L12_code_readme.md) and this README | Description of the final experiment code; this README lists where the raw data are | `../tools/final125_v1/README_EN.md` (one Korean diagram label translated) |
 | L15 | [L15_texts_natural.md](L15_texts_natural.md) | Natural condition: initial draft, final text and evaluator scores of all 125 tasks | Generated from `../private/final125_v1/tasks/SE-FINAL-N*.json` (records unchanged) |
 | L16 | [L16_texts_mixed.md](L16_texts_mixed.md) | Mixed condition: source task, defect type, initial draft, final text and evaluator scores of all 125 tasks | Generated from `../private/final125_v1/tasks/SE-FINAL-M*.json` (records unchanged) |
 | L17 | [figures/appendix_h/](../../../figures/appendix_h/) | Langfuse screenshots behind thesis Figures H-1 to H-4 | Original PNG files |
