@@ -73,6 +73,7 @@ Below are **the grounds on which the materials were created**. They are distingu
 - **Optimizer question:** Given separate drafts (4 normal, 4 non-critical, 4 critical) and fixed critiques, fix the flagged problems while preserving the normal content. **0 new critical, 0/4 normal degraded**, target defects resolved ≥6/8, valid 12/12.
 - **Author's work:** The author first reviewed the Writer requirements and evidence and the Optimizer original-draft scores and allowed fixes. The author then audited the model outputs of Nos. 90 and 91 for requirements met, repairs, and new errors. After those judgments were fixed first, Gemini evaluated the output quality.
 - **Results:** Mini eligible for both roles. Haiku Writer was stopped after failing the length contract with a first output of 698 characters; Haiku Optimizer was eligible but 1 additional non-critical defect was observed. Mini assigned to both roles in operation.
+- Recorded counts for Mini (selection results record): Writer — valid 12/12, author requirement satisfaction 12/12; Optimizer — valid 12/12, author requirement satisfaction 12/12.
 - Evidence: No. 80 (`80_PRODUCTION_ROLE_COMPARISON_PLAN.md`, Korean-language record; not linked), No. 84 (`84_PRODUCTION_ROLE_USER_REFERENCE_RAW.md`, Korean-language record; not linked), No. 92 (`92_PRODUCTION_ROLE_OUTPUT_AUDIT_RAW.md`, Korean-language record; not linked), No. 95 (`95_PRODUCTION_ROLE_SELECTION_RESULTS.md`, Korean-language record; not linked).
 
 ## 5. Initial Planner/Researcher test — answer.md
